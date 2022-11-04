@@ -1,0 +1,19 @@
+
+{% macro render(title, changeLinkHiddenText, changeLinkUrl, value) %}
+    <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+            {{ title }}
+        </dt>
+        <dd class="govuk-summary-list__value">
+            {{ value }}
+        </dd>
+        <dd class="govuk-summary-list__actions">
+            <a href="{{ changeLinkUrl }}" class="govuk-link">
+                Change
+                <span class="govuk-visually-hidden">
+                    {{ changeLinkHiddenText }}
+                </span>
+            </a>
+        </dd>
+    </div>
+{% endmacro %}

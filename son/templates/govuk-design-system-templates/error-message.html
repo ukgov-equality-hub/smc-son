@@ -1,0 +1,30 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+
+{% macro render(errorMessageOptions) %}
+
+    <p class="govuk-error-message {{ errorMessageOptions.classes }}"
+       id="{{ errorMessageOptions.id }}"
+       {{ attributes.render(errorMessageOptions.attributes) }}
+    >
+        <span class="govuk-visually-hidden">
+            {{ errorMessageOptions.visuallyHiddenText if errorMessageOptions.visuallyHiddenText else 'Error:' }}
+        </span>
+        {{ errorMessageOptions.text }}
+    </p>
+
+{% endmacro %}
+
+{% macro renderFor(fieldName, errors, errorMessageOptions) %}
+
+    {% if errors %}
+        {% for error in errors %}
+            {{ render({
+                'text': error,
+                'id': fieldName + '-error',
+                'classes': errorMessageOptions.classes if errorMessageOptions and errorMessageOptions.classes else ''
+               })
+            }}
+        {% endfor %}
+    {% endif %}
+
+{% endmacro %}

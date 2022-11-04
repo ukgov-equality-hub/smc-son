@@ -1,0 +1,14 @@
+{
+  "name": "son-flask",
+  "version": "1.0.0",
+  "description": "Used for installing GOV UK frontend",
+  "author": "Panos Paralakis",
+  "license": "ISC",
+  "scripts": {
+    "build": "sass son/sass/app.scss son/static/app.css --style=compressed"
+  },
+  "dependencies": {
+    "govuk-frontend": "^3.14.0",
+    "sass": "^1.45.0"
+  }
+}

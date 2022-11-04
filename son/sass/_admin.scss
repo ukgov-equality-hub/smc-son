@@ -1,0 +1,35 @@
+.govuk-header__content.admin {
+  padding-left: 0px;
+
+  a.govuk-header__link--service-name {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  nav {
+    ul {
+      position: absolute;
+      top: 10px;
+      right: 5px;
+    }
+  }
+}
+
+// Fix the header navigation on the Admin site
+.govuk-header__navigation {
+  // Unusually, !important is needed here because we're overriding a style set in the Gov.UK Design System stylesheet
+  // TODO: Work out why we need to override this (we shouldn't need to)
+  //  Perhaps the Gov.UK HTML we're using doesn't match the version of the Gov.UK CSS that we're using
+  display: block !important;
+}
+
+.govuk-header__navigation-list {
+  display: none;
+  padding-left: 0;
+}
+
+@media (min-width: 48.0625em) {
+  .govuk-header__navigation-list {
+    display: block;
+  }
+}

@@ -1,0 +1,40 @@
+// This is a GOV.UK Publishing specific component that
+// can be seen at http://govuk-static.herokuapp.com/component-guide/related_items
+
+.internal {
+
+  // Remove the GOV.UK logo
+  .govuk-header__logo {
+    display: none;
+  }
+    // Remove the service name padding so its flush with the container
+    .govuk-header__content {
+      padding-left: 0;
+    }
+    // Bump up the service name size to match the removed GOV.UK logo
+    .govuk-header__link--service-name {
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    // Move sign out link to top right
+    .govuk-header__navigation {
+      @include govuk-media-query($from: desktop) {
+        position: absolute;
+        top: 10px;
+        right: 5px;
+      }
+    }
+
+  // Hide the OGL licence
+  .govuk-footer__licence-logo,
+  .govuk-footer__licence-description {
+    display: none;
+  }
+    // Remove margin so links line up now we've removed the OLG
+    .govuk-footer__inline-list,
+    .govuk-footer__inline-list-item {
+      margin-bottom: 0;
+    }
+
+}

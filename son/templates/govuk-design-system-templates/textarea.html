@@ -1,0 +1,50 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+{% import "govuk-design-system-templates/label.html" as label %}
+
+{% macro render(textareaOptions) %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if textareaOptions.errors }}">
+        {{ label.render(textareaOptions.labelOptions) }}
+
+        {{ hint.render(textareaOptions.hintOptions) }}
+
+        {{ errorMessage.renderFor(textareaOptions.id, textareaOptions.errors, textareaOptions.errorMessageOptions) }}
+
+        <textarea class="govuk-textarea {{ textareaOptions.classes }} {{ 'govuk-textarea--error' if textareaOptions.errors }}"
+           id="{{ textareaOptions.id }}"
+           name="{{ textareaOptions.name }}"
+           rows="{{ textareaOptions.rows if textareaOptions.rows else 5 }}"
+           {% if textareaOptions.describedBy %} aria-describedby="{{ textareaOptions.describedBy }}" {% endif %}
+           {% if textareaOptions.autocomplete %} autocomplete="{{ textareaOptions.autocomplete }}" {% endif %}
+           {{ attributes.render(textareaOptions.attributes) }}
+
+        {# Note: the next line should not have any spaces between the <textarea> and the </textarea>, otherwise these will be shown to the user! #}
+        >{{ textareaOptions.value if textareaOptions.value else '' }}</textarea>
+        {# End Note #}
+    </div>
+
+{% endmacro %}
+
+{% macro renderFor(form, fieldName, textareaForOptions) %}
+
+    {% set _ = textareaForOptions.labelOptions.__setitem__("for", fieldName) %}
+
+    {{ render({
+        'id': fieldName,
+        'name': fieldName,
+        'value': form[fieldName].data,
+        'errors': form[fieldName].errors,
+
+        'labelOptions': textareaForOptions.labelOptions,
+        'hintOptions': textareaForOptions.hintOptions,
+        'errorMessageOptions': textareaForOptions.errorMessageOptions,
+        'classes': textareaForOptions.classes,
+        'rows': textareaForOptions.rows,
+        'describedBy': textareaForOptions.describedBy,
+        'autocomplete': textareaForOptions.autocomplete,
+        'attributes': textareaForOptions.attributes
+    }) }}
+
+{% endmacro %}

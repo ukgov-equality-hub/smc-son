@@ -1,0 +1,52 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+{% import "govuk-design-system-templates/label.html" as label %}
+
+{% macro render(textInputOptions) %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if textInputOptions.errors }}">
+        {{ label.render(textInputOptions.labelOptions) }}
+
+        {{ hint.render(textInputOptions.hintOptions) }}
+
+        {{ errorMessage.renderFor(textInputOptions.id, textInputOptions.errors, textInputOptions.errorMessageOptions) }}
+
+        <input class="govuk-input {{ textInputOptions.classes }} {{ 'govuk-input--error' if textInputOptions.errors }}"
+           id="{{ textInputOptions.id }}"
+           name="{{ textInputOptions.name }}"
+           type="{{ textInputOptions.type if textInputOptions.type else 'text' }}"
+           value="{{ textInputOptions.value if textInputOptions.value else '' }}"
+           {% if textInputOptions.describedBy %} aria-describedby="{{ textInputOptions.describedBy }}" {% endif %}
+           {% if textInputOptions.autocomplete %} autocomplete="{{ textInputOptions.autocomplete }}" {% endif %}
+           {% if textInputOptions.pattern %} pattern="{{ textInputOptions.pattern }}" {% endif %}
+           {% if textInputOptions.inputMode %} inputmode="{{ textInputOptions.inputMode }}" {% endif %}
+           {{ attributes.render(textInputOptions.attributes) }}
+        >
+    </div>
+
+{% endmacro %}
+
+{% macro renderFor(form, fieldName, textInputForOptions) %}
+
+    {% set _ = textInputForOptions.labelOptions.__setitem__("for", fieldName) %}
+
+    {{ render({
+        'id': fieldName,
+        'name': fieldName,
+        'value': form[fieldName].data,
+        'errors': form[fieldName].errors,
+
+        'labelOptions': textInputForOptions.labelOptions,
+        'hintOptions': textInputForOptions.hintOptions,
+        'errorMessageOptions': textInputForOptions.errorMessageOptions,
+        'classes': textInputForOptions.classes,
+        'type': textInputForOptions.type,
+        'describedBy': textInputForOptions.describedBy,
+        'autocomplete': textInputForOptions.autocomplete,
+        'pattern': textInputForOptions.pattern,
+        'inputMode': textInputForOptions.inputMode,
+        'attributes': textInputForOptions.attributes
+    }) }}
+
+{% endmacro %}

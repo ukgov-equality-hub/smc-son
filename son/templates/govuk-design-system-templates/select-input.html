@@ -1,0 +1,49 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+{% import "govuk-design-system-templates/label.html" as label %}
+
+{% macro render(selectInputOptions) %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if selectInputOptions.errors }}">
+        {{ label.render(selectInputOptions.labelOptions) }}
+
+        {{ hint.render(selectInputOptions.hintOptions) }}
+
+        {{ errorMessage.renderFor(selectInputOptions.id, selectInputOptions.errors, selectInputOptions.errorMessageOptions) }}
+
+        <select class="govuk-select {{ selectInputOptions.classes }} {{ 'govuk-input--error' if selectInputOptions.errors }}"
+           id="{{ selectInputOptions.id }}"
+           name="{{ selectInputOptions.name }}"
+           {% if selectInputOptions.describedBy %} aria-describedby="{{ selectInputOptions.describedBy }}" {% endif %}
+           {{ attributes.render(selectInputOptions.attributes) }}
+        >
+            {% for option in selectInputOptions.options %}
+                <option value="{{ option.Value }}"{{ ' selected="selected"' if selectInputOptions.value == option.Value else '' }}>{{ option.Option }}</option>
+            {% endfor %}
+        </select>
+    </div>
+
+{% endmacro %}
+
+{% macro renderFor(form, fieldName, selectInputForOptions) %}
+
+    {% set _ = selectInputForOptions.labelOptions.__setitem__("for", fieldName) %}
+
+    {{ render({
+        'id': fieldName,
+        'name': fieldName,
+        'value': form[fieldName].data,
+        'errors': form[fieldName].errors,
+
+        'labelOptions': selectInputForOptions.labelOptions,
+        'hintOptions': selectInputForOptions.hintOptions,
+        'errorMessageOptions': selectInputForOptions.errorMessageOptions,
+        'classes': selectInputForOptions.classes,
+        'describedBy': selectInputForOptions.describedBy,
+        'autocomplete': selectInputForOptions.autocomplete,
+        'attributes': selectInputForOptions.attributes,
+        'options': selectInputForOptions.options
+    }) }}
+
+{% endmacro %}

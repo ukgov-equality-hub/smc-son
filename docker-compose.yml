@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  son_db:
+    image: "postgres:13.5"
+    container_name: "son_db"
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=son
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_HOST=son_db
+
+  son_app:
+    container_name: "son_app"
+    build:
+      context: .
+    ports:
+      - 5000:5000
+    env_file: .env
+    volumes:
+      - ./:/app
+    entrypoint: dockerize -wait tcp://son_db:5432
+    depends_on:
+      - son_db
+    command: /app/run.sh
+
+volumes:
+  dbdata:

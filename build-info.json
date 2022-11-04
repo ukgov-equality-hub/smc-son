@@ -1,0 +1,7 @@
+{
+  "comment": "This file is populated by the build pipeline with the build number",
+  "git_commit": "LOCAL",
+  "git_branch": "LOCAL",
+  "github_action_name": "LOCAL",
+  "github_action_run_url": "LOCAL"
+}

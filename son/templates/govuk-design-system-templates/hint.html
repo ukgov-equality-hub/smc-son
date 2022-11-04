@@ -1,0 +1,14 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+
+{% macro render(hintOptions) %}
+
+    {% if hintOptions %}
+        <div class="govuk-hint {{ hintOptions.classes }}"
+               {% if hintOptions.hintId %} id="{{ hintOptions.hintId }}" {% endif %}
+               {{ attributes.render(hintOptions.attributes) }}
+        >
+            {{ hintOptions.htmlOrText }}
+        </div>
+    {% endif %}
+
+{% endmacro %}

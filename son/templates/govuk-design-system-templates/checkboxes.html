@@ -1,0 +1,64 @@
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+
+{% macro renderFor(form, fieldName, question, checkboxesOptions) %}
+
+    {% set hintOptions = None %}
+    {% if checkboxesOptions.hintOptions %}
+        {% set hintOptions = {
+            'hintId': (checkboxesOptions.hintOptions.hintId if 'hintId' in checkboxesOptions.hintOptions else 'fieldset-hint'),
+            'htmlOrText': checkboxesOptions.hintOptions.htmlOrText,
+            'classes': checkboxesOptions.hintOptions.classes,
+            'attributes': checkboxesOptions.hintOptions.attributes
+        } %}
+    {% endif %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if form[fieldName].errors }}">
+        <fieldset class="govuk-fieldset" {% if hintOptions and 'hintId' in hintOptions %} aria-describedby="{{ hintOptions.hintId }}" {% endif %}>
+            {% if checkboxesOptions.questionIsPageHeading %}
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        {{ question }}
+                    </h1>
+                </legend>
+            {% else %}
+                <legend class="govuk-fieldset__legend {{ checkboxesOptions.questionClasses }}">
+                    {{ question }}
+                </legend>
+            {% endif %}
+
+            {{ hint.render(hintOptions) }}
+
+            {{ errorMessage.renderFor(fieldName, form[fieldName].errors, checkboxesOptions.errorMessageOptions) }}
+
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                {% for choiceId, choiceLabel in form[fieldName].choices %}
+                    {% macro str(value) %}{{ value }}{% endmacro %}
+                    {% set index = form[fieldName].choices.index((choiceId, choiceLabel)) %}
+                    {% set indexSuffix = ('-' + str(index))
+                                         if index > 0
+                                         else '' %}
+                    <div class="govuk-checkboxes__item">
+                        <input id="{{ fieldName }}{{ indexSuffix }}" type="checkbox" name="{{ fieldName }}"
+                               value="{{ choiceId }}" class="govuk-checkboxes__input" {{ 'checked' if form[fieldName].data is iterable and choiceId in form[fieldName].data }}
+                               data-aria-controls="conditional-{{ fieldName }}{{ indexSuffix }}">
+                        <label for="{{ fieldName }}{{ indexSuffix }}" class="govuk-label govuk-checkboxes__label">
+                            {{ choiceLabel }}
+                        </label>
+                    </div>
+
+                    {% if checkboxesOptions.conditionalOptions %}
+                        {% for optionChoiceId, conditionalHtml in checkboxesOptions.conditionalOptions %}
+                            {%  if optionChoiceId == choiceId %}
+                                <div class="govuk-checkboxes__conditional govuk-checkboxes__conditional--hidden" id="conditional-{{ fieldName }}{{ indexSuffix }}">
+                                    {{ conditionalHtml }}
+                                </div>
+                            {%  endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </fieldset>
+    </div>
+
+{% endmacro %}

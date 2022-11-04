@@ -1,0 +1,43 @@
+$govuk-new-link-styles: true;
+$govuk-assets-path: "/static/assets/";
+@import "./../../node_modules/govuk-frontend/govuk/all";
+@import "./related-navigation";
+@import "./patterns/interuption-card";
+
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+// Update inset text to callout more important information, eg reference number
+.callout {
+  background: govuk-colour("light-grey");
+  // padding: govuk-spacing(6) govuk-spacing(4);
+  margin-bottom: govuk-spacing(8);
+}
+
+.callout__title {
+  @include govuk-font($size: 48, $weight: bold);
+}
+
+// align text on multi line checkboxes
+.checkboxes-long-text {
+  .govuk-checkboxes__input,
+  .govuk-checkboxes__label::before {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .govuk-checkboxes__label::after {
+    top: calc(50% - 3px);
+    transform: translateY(-50%) rotate(-45deg);
+  }
+}
+
+// cookie banner
+div.govuk-cookie-banner[hidden] {
+  display: none;
+}
+
+@import "./task-list";
+@import "./admin";

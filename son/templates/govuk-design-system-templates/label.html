@@ -1,0 +1,25 @@
+{% import "govuk-design-system-templates/_attributes.html" as attributes %}
+
+{% macro renderInner(labelOptions) %}
+
+    <label class="govuk-label {{ labelOptions.classes }}"
+           {{ attributes.render(labelOptions.attributes) }}
+           for="{{ labelOptions.for }}">
+        {{ labelOptions.htmlOrText }}
+    </label>
+
+{% endmacro %}
+
+{% macro render(labelOptions) %}
+
+    {% if labelOptions %}
+        {% if labelOptions.isPageHeading %}
+            <h1 class="govuk-label-wrapper">
+                {{ renderInner(labelOptions) }}
+            </h1>
+        {% else %}
+            {{ renderInner(labelOptions) }}
+        {% endif %}
+    {% endif %}
+
+{% endmacro %}

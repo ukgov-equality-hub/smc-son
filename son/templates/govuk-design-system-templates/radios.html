@@ -1,0 +1,75 @@
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+
+{% macro renderFor(form, fieldName, question, radiosOptions) %}
+
+    {% set hintOptions = None %}
+    {% if radiosOptions.hintOptions %}
+        {% set hintOptions = {
+            'hintId': (radiosOptions.hintOptions.hintId if 'hintId' in radiosOptions.hintOptions else 'fieldset-hint'),
+            'htmlOrText': radiosOptions.hintOptions.htmlOrText,
+            'classes': radiosOptions.hintOptions.classes,
+            'attributes': radiosOptions.hintOptions.attributes
+        } %}
+    {% endif %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if form[fieldName].errors }}">
+        <fieldset class="govuk-fieldset" {% if hintOptions and 'hintId' in hintOptions %} aria-describedby="{{ hintOptions.hintId }}" {% endif %}>
+            {% if radiosOptions.questionIsPageHeading %}
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        {{ question }}
+                    </h1>
+                </legend>
+            {% else %}
+                <legend class="govuk-fieldset__legend {{ radiosOptions.questionClasses }}">
+                    {{ question }}
+                </legend>
+            {% endif %}
+
+            {{ hint.render(hintOptions) }}
+
+            {{ errorMessage.renderFor(fieldName, form[fieldName].errors, radiosOptions.errorMessageOptions) }}
+
+            <div class="govuk-radios" data-module="govuk-radios">
+                {% for choiceId, choiceLabel in form[fieldName].choices %}
+                    {% macro str(value) %}{{ value }}{% endmacro %}
+                    {% set index = form[fieldName].choices.index((choiceId, choiceLabel)) %}
+                    {% set indexSuffix = ('-' + str(index))
+                                         if index > 0
+                                         else '' %}
+
+                    {% if radiosOptions.dividerOptions %}
+                        {% for dividerChoiceId, dividerHtml in radiosOptions.dividerOptions %}
+                            {%  if dividerChoiceId == choiceId %}
+                                <div class="govuk-radios__divider">
+                                    {{ dividerHtml }}
+                                </div>
+                            {%  endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="govuk-radios__item">
+                        <input id="{{ fieldName }}{{ indexSuffix }}" type="radio" name="{{ fieldName }}"
+                               value="{{ choiceId }}" class="govuk-radios__input" {{ 'checked' if str(form[fieldName].data) == str(choiceId) }}
+                               data-aria-controls="conditional-{{ fieldName }}{{ indexSuffix }}">
+                        <label for="{{ fieldName }}{{ indexSuffix }}" class="govuk-label govuk-radios__label">
+                            {{ choiceLabel }}
+                        </label>
+                    </div>
+
+                    {% if radiosOptions.conditionalOptions %}
+                        {% for optionChoiceId, conditionalHtml in radiosOptions.conditionalOptions %}
+                            {%  if optionChoiceId == choiceId %}
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-{{ fieldName }}{{ indexSuffix }}">
+                                    {{ conditionalHtml }}
+                                </div>
+                            {%  endif %}
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </fieldset>
+    </div>
+
+{% endmacro %}

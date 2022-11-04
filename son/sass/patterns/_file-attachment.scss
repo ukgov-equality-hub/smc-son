@@ -1,0 +1,116 @@
+// Attachment links stolen from GOV.UK
+// https://components.publishing.service.gov.uk/component-guide/attachment
+.gem-c-attachment {
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.25;
+  position: relative; }
+  @media print {
+    .gem-c-attachment {
+      font-family: sans-serif; } }
+  @media (min-width: 40.0625em) {
+    .gem-c-attachment {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 1.3157894737; } }
+  @media print {
+    .gem-c-attachment {
+      font-size: 14pt;
+      line-height: 1.15; } }
+  .gem-c-attachment:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .gem-c-attachment .govuk-details__summary {
+    font-weight: 400;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1.25; }
+    @media print {
+      .gem-c-attachment .govuk-details__summary {
+        font-family: sans-serif; } }
+    @media (min-width: 40.0625em) {
+      .gem-c-attachment .govuk-details__summary {
+        font-size: 14px;
+        font-size: 0.875rem;
+        line-height: 1.4285714286; } }
+    @media print {
+      .gem-c-attachment .govuk-details__summary {
+        font-size: 12pt;
+        line-height: 1.2; } }
+
+.gem-c-attachment__thumbnail {
+  position: relative;
+  width: auto;
+  margin-right: 20px;//25px;
+  margin-bottom: 15px;
+  padding: 5px;
+  float: left; }
+
+.gem-c-attachment__thumbnail-image {
+  display: block;
+  width: auto;
+  max-width: 69px;//99px;
+  height: 99px;//140px;
+  border: rgba(11, 12, 12, 0.1);
+  outline: 5px solid rgba(11, 12, 12, 0.1);
+  background: #ffffff;
+  box-shadow: 0 2px 2px rgba(11, 12, 12, 0.4);
+  fill: #b1b4b6;
+  stroke: #b1b4b6; }
+
+.gem-c-attachment__details {
+  padding-left: 90px;//134px; 
+}
+
+.gem-c-attachment__title {
+  font-weight: 400;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.1111111111;
+  margin: 0 0 15px; }
+  @media print {
+    .gem-c-attachment__title {
+      font-family: sans-serif; } }
+  @media (min-width: 40.0625em) {
+    .gem-c-attachment__title {
+      font-size: 24px;
+      font-size: 1.5rem;
+      line-height: 1.1111111111; } }
+  @media print {
+    .gem-c-attachment__title {
+      font-size: 18pt;
+      line-height: 1.15; } }
+
+.gem-c-attachment__link {
+  line-height: 1.29; }
+
+.gem-c-attachment__metadata {
+  font-weight: 400;
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  margin: 0 0 15px; }
+  @media print {
+    .gem-c-attachment__metadata {
+      font-family: sans-serif; } }
+  @media (min-width: 40.0625em) {
+    .gem-c-attachment__metadata {
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 1.4285714286; } }
+  @media print {
+    .gem-c-attachment__metadata {
+      font-size: 12pt;
+      line-height: 1.2; } }
+  .gem-c-attachment__metadata:last-of-type {
+    margin-bottom: 0; }
+
+.gem-c-attachment__abbr {
+  text-decoration: none;
+  cursor: help; }
+
+.gem-c-attachment-link__abbr {
+  text-decoration: none;
+  cursor: help; }

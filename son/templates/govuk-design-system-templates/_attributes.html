@@ -1,0 +1,10 @@
+
+{% macro render(attributes) %}
+
+   {% if attributes %}
+       {% for attributeKey, attributeValue in attributes %}
+           {{ attributeKey }}="{{ attributeValue }}"
+       {% endfor %}
+   {% endif %}
+
+{%- endmacro %}

@@ -1,0 +1,47 @@
+{% import "govuk-design-system-templates/error-message.html" as errorMessage %}
+{% import "govuk-design-system-templates/hint.html" as hint %}
+
+{% macro renderFor(form, fieldName, question, label, checkboxOptions) %}
+
+    {% set hintOptions = None %}
+    {% if checkboxOptions.hintOptions %}
+        {% set hintOptions = {
+            'hintId': (checkboxOptions.hintOptions.hintId if 'hintId' in checkboxOptions.hintOptions else 'fieldset-hint'),
+            'htmlOrText': checkboxOptions.hintOptions.htmlOrText,
+            'classes': checkboxOptions.hintOptions.classes,
+            'attributes': checkboxOptions.hintOptions.attributes
+        } %}
+    {% endif %}
+
+    <div class="govuk-form-group {{ 'govuk-form-group--error' if form[fieldName].errors }}">
+        <fieldset class="govuk-fieldset" {% if hintOptions and 'hintId' in hintOptions %} aria-describedby="{{ hintOptions.hintId }}" {% endif %}>
+            {% if question %}
+                {% if checkboxOptions.questionIsPageHeading %}
+                    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                        <h1 class="govuk-fieldset__heading">
+                            {{ question }}
+                        </h1>
+                    </legend>
+                {% else %}
+                    <legend class="govuk-fieldset__legend {{ checkboxOptions.questionClasses }}">
+                        {{ question }}
+                    </legend>
+                {% endif %}
+            {% endif %}
+
+            {{ hint.render(hintOptions) }}
+
+            {{ errorMessage.renderFor(fieldName, form[fieldName].errors, checkboxOptions.errorMessageOptions) }}
+
+            <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="{{ fieldName }}" name="{{ fieldName }}" type="checkbox" {{ 'checked' if form[fieldName].data }}>
+                    <label class="govuk-label govuk-checkboxes__label" for="{{ fieldName }}">
+                        {{ label }}
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+{% endmacro %}
