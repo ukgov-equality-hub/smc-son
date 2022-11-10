@@ -1,0 +1,178 @@
+/* Collapsible menus */
+.collapsible {
+    position: relative;
+}
+
+.collapsible__body {
+    display: none;
+}
+
+ul.collapsible {
+    li.moj-side-navigation__item {
+        position: relative;
+        ul.moj-side-navigation__list {
+            li.moj-side-navigation__item {
+                ul.moj-side-navigation__list {
+                    li.moj-side-navigation__item {
+                        a {
+                            padding-left: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        ul {
+            display: none;
+        }
+
+        & > ul {
+            display: none;
+        }
+
+        a, a:link, a:active, a:hover, a:visited {
+            width: calc(100% - 40px);
+            border-color: transparent;
+            background-color: transparent;
+            box-shadow: none;
+            font-weight: 400;
+            padding: 5px 10px 7px 10px;
+        }
+
+        a.collapsible-level1, a.collapsible-level1:link, a.collapsible-level1:active, a.collapsible-level1:hover, a.collapsible-level1:visited {
+            font-weight: 700;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    li.moj-side-navigation__item.is-open {
+        & > a:first-child {
+            font-weight: 700;
+        }
+
+        & > .collapsible__toggle-icon::after {
+            transform: rotate(315deg);
+        }
+
+        & > ul {
+            display: block;
+        }
+    }
+
+    li.moj-side-navigation__item.is-active {
+        & > a:first-child {
+            border-color: #1d70b8;
+            background-color: #f3f2f1;
+        }
+    }
+
+    .collapsible__toggle {
+        position: absolute;
+        top: 0;
+        right: -25px;
+        width: 50px;
+        height: 40px;
+        overflow: hidden;
+        text-indent: -999em;
+        border: 0;
+        background: 0;
+        color: inherit;
+        padding: 0;
+    }
+
+    .collapsible__toggle-icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    .collapsible__toggle-icon::after {
+        content: '';
+        display: block;
+        border: 2px solid #0b0c0c;
+        border-width: 2px 2px 0 0;
+        transform: rotate(135deg);
+        width: 10px;
+        height: 10px;
+        margin-top: 10px;
+    }
+}
+
+nav.moj-side-navigation {
+    margin-top: 30px;
+}
+
+nav.moj-side-navigation-mobile {
+    display: block;
+    margin: 0;
+
+    ul.collapsible {
+        display: block;
+
+        li.moj-side-navigation__item {
+            display: block;
+
+            ul.moj-side-navigation__list {
+                li.moj-side-navigation__item {
+                    a {
+                        font-weight: 700;
+                        background-color: transparent;
+                        white-space: normal;
+                    }
+
+                    ul.moj-side-navigation__list {
+                        li.moj-side-navigation__item {
+                            a {
+                                font-weight: 400;
+                                background-color: transparent;
+                                white-space: normal;
+                            }
+                        }
+
+                        li.moj-side-navigation__item.is-active {
+                            a {
+                                background-color: #f3f2f1;
+                            }
+                        }
+                    }
+                }
+
+                li.moj-side-navigation__item.is-active {
+                    a {
+                        background-color: #f3f2f1;
+                    }
+                }
+            }
+
+            a {
+                width: 100%;
+                font-weight: 700;
+                background-color: #f3f2f1;
+            }
+
+            a.secondary-nav {
+                font-weight: 400;
+                background-color: transparent;
+            }
+        }
+
+        li.moj-side-navigation__item.is-active {
+            & > a:first-child {
+                border-bottom: none;
+                border-left: 4px solid #1d70b8;
+            }
+        }
+
+        .collapsible__toggle-icon {
+            right: 15px;
+        }
+
+        hr {
+            margin: 10px;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+/* Overwrite GOVUK defaults so we can use different breakpoints */
+@media(min-width: 40.0625em) {
+    .govuk-width-container {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container {
+            margin-right: unset;
+            margin-left: unset;
+        }
+    }
+}
+
+@media(min-width: 1020px) {
+    .govuk-width-container {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container {
+            margin-right: unset;
+            margin-left: unset;
+        }
+    }
+}
+
+/* Set our own breakpoints */
+.govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+    max-width: 1920px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+@supports(margin: max(calc(0px))) {
+    .govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+        margin-right: max(15px, calc(15px + env(safe-area-inset-right)));
+        margin-left: max(15px, calc(15px + env(safe-area-inset-left)));
+    }
+}
+
+@media(min-width: 49.9375em) {
+    .govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+            margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
+            margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
+        }
+    }
+}
+
+@media(min-width: 1980px) {
+    .govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @supports(margin: max(calc(0px))) {
+        .govuk-width-container, .moj-primary-navigation__container, .govuk-phase-banner {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+@media(min-width: 40.0625em) {
+    nav.govuk-header__navigation {
+        display: none;
+    }
+
+    div#mobile-nav {
+        display: none;
+    }
+}
+
+@media(max-width: 40.0625em) {
+    .js-enabled {
+        nav.govuk-header__navigation {
+            display: block;
+        }
+    }
+
+    div.moj-primary-navigation {
+        display: none;
+    }
+
+    div.dashboard-menu {
+        display: none;
+    }
+}
+
+.govuk-header {
+    border-color: #1d70b8;
+}

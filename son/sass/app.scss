@@ -1,8 +1,8 @@
 $govuk-new-link-styles: true;
 $govuk-assets-path: "/static/assets/";
 @import "./../../node_modules/govuk-frontend/govuk/all";
-@import "./related-navigation";
-@import "./patterns/interuption-card";
+//@import "./related-navigation";
+//@import "./patterns/interuption-card";
 
 html,
 body {
@@ -39,5 +39,6 @@ div.govuk-cookie-banner[hidden] {
   display: none;
 }
 
-@import "./task-list";
-@import "./admin";
+@import "./dashboard";
+@import "./son";
+@import "./menu";

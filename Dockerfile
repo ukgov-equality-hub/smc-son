@@ -24,7 +24,7 @@ ADD . .
 # RUN pre-commit install --install-hooks
 
 RUN npm install
-RUN npm run build
+RUN npm run-script build
 
 #RUN rm /app/admin -r
 CMD /app/run.sh

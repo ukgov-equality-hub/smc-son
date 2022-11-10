@@ -9,7 +9,7 @@
     <title>
         {% if form and form.errors %}Error: {% endif %}
         {% block title %}{% endblock %}
-        - DEMO
+        - Social Mobility Commission
         - Gov.UK
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -22,14 +22,14 @@
     <link rel="apple-touch-icon" sizes="152x152" href="{{ url_for('static', filename='assets/images/govuk-apple-touch-icon-152x152.png') }}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='assets/images/govuk-apple-touch-icon.png') }}">
     <!--[if !IE 8]><!-->
-    <link href="{{ url_for('static', filename='app.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/govuk-frontend-4.3.1.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/moj-frontend.min.css') }}" rel="stylesheet">
     <!--<![endif]-->
     <!--[if IE 8]>
-    <link href="/govuk-frontend/all-ie8.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/govuk-frontend-ie8-4.3.1.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/moj-frontend-ie8.min.css') }}" rel="stylesheet">
     <![endif]-->
-    <!--[if lt IE 9]>
-    <script src="/html5-shiv/html5shiv.js"></script>
-    <![endif]-->
+    <link href="{{ url_for('static', filename='app.css') }}" rel="stylesheet">
     <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://d3js.org/d3.v7.min.js"></script>
@@ -45,13 +45,13 @@
     <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
     <header class="govuk-header" role="banner" data-module="govuk-header">
-        <div class="govuk-header__container __govuk-width-container">
+        <div class="govuk-header__container govuk-width-container">
             <div class="govuk-header__logo">
                 <a href="https://www.gov.uk" class="govuk-header__link govuk-header__link--homepage">
                     <span class="govuk-header__logotype">
-                        <img src="{{ url_for('static', filename='assets/images/govuk-crest-white-2x.png') }}" class="govuk-header__logotype-crown-fallback-image" width="36" height="32">
+                        <img src="{{ url_for('static', filename='assets/images/govuk-crest-white-2x.png') }}" class="govuk-header__logotype-crown-fallback-image" width="36" height="32" style="margin-right: 10px; float: left;">
 
-                        <span class="govuk-header__logotype-text" style="font-weight: 400;">
+                        <span class="govuk-header__logotype-text" style="font-weight: 400; font-size: 24px;">
                             Social Mobility Commission
                         </span>
                     </span>
@@ -62,92 +62,852 @@
                     {% block serviceTitle %}State of the Nation{% endblock %}
                 </a>
                 <nav aria-label="Menu" class="govuk-header__navigation">
-                    <button type="button" class="govuk-header__menu-button govuk-js-header-toggle"
-                            aria-controls="navigation" aria-label="Show or hide menu">
+                    <button id="mobile-nav-button" type="button" class="govuk-header__menu-button govuk-js-header-toggle"
+                        aria-expanded="false" aria-controls="mobile-nav" aria-label="Show or hide menu">
                         Menu
                     </button>
-
-                    <ul id="navigation" class="govuk-header__navigation-list">
-                        <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
-                            <a href="#" target="_blank" class="govuk-header__link">
-                                Documentation
-                            </a>
-                        </li>
-                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <div class="govuk-width-container">
-        <div class="govuk-phase-banner">
-            <p class="govuk-phase-banner__content">
-                <strong class="govuk-tag govuk-phase-banner__content__tag">
-                    beta
-                </strong>
-                <span class="govuk-phase-banner__text">
-                    This is a new service - your
-                    <a href="/" class="govuk-link">
-                        feedback
-                    </a>
-                    will help us to improve it.
-                </span>
-            </p>
+    <div class="moj-primary-navigation">
+        <div class="moj-primary-navigation__container">
+            <div class="moj-primary-navigation__nav">
+                <nav class="moj-primary-navigation" aria-label="Primary navigation">
+                    <ul class="moj-primary-navigation__list">
+                        <li class="moj-primary-navigation__item">
+                            <a class="moj-primary-navigation__link" aria-current="page" href="#1">Mobility outcomes</a>
+                        </li>
+                        <li class="moj-primary-navigation__item">
+                            <a class="moj-primary-navigation__link" href="#2">Age-related outcomes</a>
+                        </li>
+                        <li class="moj-primary-navigation__item">
+                            <a class="moj-primary-navigation__link" href="#3">Drivers of mobility</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div id="mobile-nav" aria-labelledby="mobile-nav-button" class="mobile-navigation" hidden="">
+        <nav role="navigation" class="moj-side-navigation moj-side-navigation-mobile" aria-label="Mobile navigation">
+            <ul class="moj-side-navigation__list collapsible">
+                <li class="moj-side-navigation__item moj-side-navigation__item--active is-open">
+                    <a href="#">Mobility outcomes</a>
+                    <span class="collapsible__toggle-icon"></span>
+                    <ul class="moj-side-navigation__list">
+                        <li class="moj-side-navigation__item is-open">
+                            <a href="#">Education</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute educational mobility in UK</a>
+                                </li>
+                                <li class="moj-side-navigation__item is-active">
+                                    <a href="#">Relative absolute mobility in UK</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute educational mobility - OECD comparison</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative educational mobility - OECD comparison</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item  moj-side-navigation__item--active">
+                            <a href="#">Housing</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute housing mobility - LFS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative housing mobility - LFS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute housing mobility - LS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative housing mobility - LS</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Income</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative income mobility - Rank-rank correlation - UKLHS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative income mobility - Intergenerational elasticity - UKLHS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative income mobility - Rank-rank correlation - LEO</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative income mobility - Intergenerational elasticity - LEO</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Occupation</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute occupational mobility - LFS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative occupational mobility - LFS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute occupational mobility - LS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative occupational mobility - LS</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute occupational mobility - Birth cohort studies</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative occupational mobility - Birth cohort studies</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute occupational mobility - International comparison</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative occupational mobility - International comparison</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Wealth</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Absolute income mobility</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Relative wealth mobility</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="moj-side-navigation__item">
+                    <a href="#">Age-related outcomes</a>
+                    <span class="collapsible__toggle-icon"></span>
+                    <ul class="moj-side-navigation__list">
+                        <li class="moj-side-navigation__item">
+                            <a href="#">5 to 16 years</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Level of development at age 5</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Attainment at age 11</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Attainment at 16</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Skills at 15</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">16 to 24 years</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Destinations following the end of compulsory full-time schooling</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Entry to higher education</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Highest qualification by age 25</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Skills in early adulthood</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">25 to 29 years</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Economic activity</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Unemployment</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Occupational level</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Earnings</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Returns to education</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">35 to 44 years</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Acquisition of further training and qualifications</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Occupational progression</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Income progression</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Class pay gap</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                    <a href="#">Drivers of mobility</a>
+                    <span class="collapsible__toggle-icon"></span>
+                    <ul class="moj-side-navigation__list">
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Education opportunities</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Opportunities for post-16 further education and training</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Availability of high-quality school education</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Opportunities for access to higher education</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Availability of high-quality higher education</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Family inequality</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Economic inequality between families with school-age children</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Childhood poverty</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Cultural inequality between families with school-age children</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Class inequality between families with school-age children</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Inequalities in child-rearing</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Social connections</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Civic engagement</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Environment conducive to entrepreneurship</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="moj-side-navigation__item">
+                            <a href="#">Work opportunities for young people</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Vacancy rate at entry level</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Youth unemployment</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Type of employment taken by young people</a>
+                                </li>
+                                <li class="moj-side-navigation__item">
+                                    <a href="#">Median earnings of young people</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <!--<h4 class="moj-side-navigation__title">Pages</h4>-->
+                    <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+                </li>
+                <li class="moj-side-navigation__item"><a href="#" class="secondary-nav">Background</a></li>
+                <li class="moj-side-navigation__item"><a href="#" class="secondary-nav">About our analysis</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                beta
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service - your
+                <a href="/" class="govuk-link">
+                    feedback
+                </a>
+                will help us to improve it.
+            </span>
+        </p>
+    </div>
+
+<!--
+
+Mobility outcomes
+    Education
+        Absolute educational mobility in UK
+        Relative absolute mobility in UK
+        Absolute educational mobility - OECD comparison
+        Relative educational mobility - OECD comparison
+    Housing
+        Absolute housing mobility - LFS
+        Relative housing mobility - LFS
+        Absolute housing mobility - LS
+        Relative housing mobility - LS
+    Income
+        Relative income mobility - Rank-rank correlation - UKLHS
+        Relative income mobility - Intergenerational elasticity - UKLHS
+        Relative income mobility - Rank-rank correlation - LEO
+        Relative income mobility - Intergenerational elasticity - LEO
+    Occupation
+        Absolute occupational mobility - LFS
+        Relative occupational mobility - LFS
+        Absolute occupational mobility - LS
+        Relative occupational mobility - LS
+        Absolute occupational mobility - Birth cohort studies
+        Relative occupational mobility - Birth cohort studies
+        Absolute occupational mobility - International comparison
+        Relative occupational mobility - International comparison
+    Wealth
+        Absolute income mobility
+        Relative wealth mobility
+
+Age-related outcomes
+    5 to 16 years
+        Level of development at age 5
+        Attainment at age 11
+        Attainment at 16
+        Skills at 15
+    16 to 24 years
+        Destinations following the end of compulsory full-time schooling
+        Entry to higher education
+        Highest qualification by age 25
+        Skills in early adulthood
+    25 to 29 years
+        Economic activity
+        Unemployment
+        Occupational level
+        Earnings
+        Returns to education
+    35 to 44 years
+        Acquisition of further training and qualifications
+        Occupational progression
+        Income progression
+        Class pay gap
+
+Drivers of mobility
+    Education opportunities
+        Opportunities for post-16 further education and training
+        Availability of high-quality school education
+        Opportunities for access to higher education
+        Availability of high-quality higher education
+    Family inequality
+        Economic inequality between families with school-age children
+        Childhood poverty
+        Cultural inequality between families with school-age children
+        Class inequality between families with school-age children
+        Inequalities in child-rearing
+    Social connections
+        Civic engagement
+        Environment conducive to entrepreneurship
+    Work opportunities for young people
+        Vacancy rate at entry level
+        Youth unemployment
+        Type of employment taken by young people
+        Median earnings of young people
+-->
+
+
+    <div class="dashboard-container govuk-width-container">
+        <div class="dashboard-menu">
+            <nav aria-label="Side navigation"
+                class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-2" role="navigation">
+                <ul class="moj-side-navigation__list collapsible">
+                    <li class="moj-side-navigation__item is-open">
+                        <a href="#" class="collapsible-level1">Education</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute educational mobility in UK</a>
+                            </li>
+                            <li class="moj-side-navigation__item is-active">
+                                <a href="#">Relative absolute mobility in UK</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute educational mobility - OECD comparison</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative educational mobility - OECD comparison</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item  moj-side-navigation__item--active">
+                        <a href="#" class="collapsible-level1">Housing</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute housing mobility - LFS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative housing mobility - LFS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute housing mobility - LS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative housing mobility - LS</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item">
+                        <a href="#" class="collapsible-level1">Income</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative income mobility - Rank-rank correlation - UKLHS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative income mobility - Intergenerational elasticity - UKLHS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative income mobility - Rank-rank correlation - LEO</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative income mobility - Intergenerational elasticity - LEO</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item">
+                        <a href="#" class="collapsible-level1">Occupation</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute occupational mobility - LFS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative occupational mobility - LFS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute occupational mobility - LS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative occupational mobility - LS</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute occupational mobility - Birth cohort studies</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative occupational mobility - Birth cohort studies</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute occupational mobility - International comparison</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative occupational mobility - International comparison</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item">
+                        <a href="#" class="collapsible-level1">Wealth</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Absolute income mobility</a>
+                            </li>
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Relative wealth mobility</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+                <!--<h4 class="moj-side-navigation__title">Pages</h4>-->
+                <ul
+                    class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+                    <li class="moj-side-navigation__item"><a href="#">Background</a></li>
+                    <li class="moj-side-navigation__item"><a href="#">About our analysis</a></li>
+                </ul>
+            </nav>
+
+            <!--<nav aria-label="Side navigation"
+                class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-2" role="navigation">
+
+                <ul class="moj-side-navigation__list collapsible">
+                    <li class="moj-side-navigation__item moj-side-navigation__item--active is-open">
+                        <a href="#">Mobility outcomes</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item is-open">
+                                <a href="#">Education</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute educational mobility in UK</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item is-active">
+                                        <a href="#">Relative absolute mobility in UK</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute educational mobility - OECD comparison</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative educational mobility - OECD comparison</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item  moj-side-navigation__item--active">
+                                <a href="#">Housing</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute housing mobility - LFS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative housing mobility - LFS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute housing mobility - LS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative housing mobility - LS</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Income</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative income mobility - Rank-rank correlation - UKLHS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative income mobility - Intergenerational elasticity - UKLHS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative income mobility - Rank-rank correlation - LEO</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative income mobility - Intergenerational elasticity - LEO</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Occupation</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute occupational mobility - LFS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative occupational mobility - LFS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute occupational mobility - LS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative occupational mobility - LS</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute occupational mobility - Birth cohort studies</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative occupational mobility - Birth cohort studies</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute occupational mobility - International comparison</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative occupational mobility - International comparison</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Wealth</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Absolute income mobility</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Relative wealth mobility</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item">
+                        <a href="#">Age-related outcomes</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">5 to 16 years</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Level of development at age 5</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Attainment at age 11</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Attainment at 16</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Skills at 15</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">16 to 24 years</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Destinations following the end of compulsory full-time schooling</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Entry to higher education</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Highest qualification by age 25</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Skills in early adulthood</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">25 to 29 years</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Economic activity</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Unemployment</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Occupational level</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Earnings</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Returns to education</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">35 to 44 years</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Acquisition of further training and qualifications</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Occupational progression</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Income progression</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Class pay gap</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="moj-side-navigation__item moj-side-navigation__item--active">
+                        <a href="#">Drivers of mobility</a>
+                        <span class="collapsible__toggle-icon"></span>
+                        <ul class="moj-side-navigation__list">
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Education opportunities</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Opportunities for post-16 further education and training</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Availability of high-quality school education</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Opportunities for access to higher education</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Availability of high-quality higher education</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Family inequality</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Economic inequality between families with school-age children</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Childhood poverty</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Cultural inequality between families with school-age children</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Class inequality between families with school-age children</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Inequalities in child-rearing</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Social connections</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Civic engagement</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Environment conducive to entrepreneurship</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="moj-side-navigation__item">
+                                <a href="#">Work opportunities for young people</a>
+                                <span class="collapsible__toggle-icon"></span>
+                                <ul class="moj-side-navigation__list">
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Vacancy rate at entry level</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Youth unemployment</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Type of employment taken by young people</a>
+                                    </li>
+                                    <li class="moj-side-navigation__item">
+                                        <a href="#">Median earnings of young people</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+                --<h4 class="moj-side-navigation__title">Pages</h4>--
+                <ul
+                    class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+                    <li class="moj-side-navigation__item"><a href="#">Background</a></li>
+                    <li class="moj-side-navigation__item"><a href="#">About our analysis</a></li>
+                </ul>
+            </nav>-->
         </div>
 
-        {% block backLink %}{% endblock %}
-
         <main id="main-content" role="main" class="govuk-main-wrapper">
-            {% with messages = get_flashed_messages(category_filter=["email"]) %}
-                {% if messages %}
-                    <div class="govuk-grid-row">
-                        <div class="govuk-grid-column-two-thirds">
-                            <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-                                <div class="govuk-notification-banner__header">
-                                    <h2 id="govuk-notification-banner-title" class="govuk-notification-banner__title">
-                                        Success
-                                    </h2>
-                                </div>
-                                <div class="govuk-notification-banner__content">
-                                    <h3 class="govuk-notification-banner__heading">
-                                        Email resent
-                                    </h3>
-                                    {%- for msg in messages %}
-                                        <p class="govuk-body">{{ msg }}</p>
-                                    {% endfor -%}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                {% endif %}
-            {% endwith %}
-
-            {% with messages = get_flashed_messages(category_filter=["error"]) %}
-                {% if messages %}
-                    <div class="govuk-grid-row">
-                        <div class="govuk-grid-column-two-thirds">
-                            <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
-                                <h2 id="error-summary-title" class="govuk-error-summary__title">
-                                    There is a problem
-                                </h2>
-                                <div class="govuk-error-summary__body">
-                                    <ul class="govuk-list govuk-error-summary__list">
-                                        {%- for msg in messages %}
-                                            <li>
-                                                <p class="govuk-body">{{ msg }}</p>
-                                            </li>
-                                        {% endfor -%}
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                {% endif %}
-            {% endwith %}
-
-            {% block content %}{% endblock %}
+            <h1 class="govuk-heading-l">Relative absolute mobility in UK</h1>
+            <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
+                Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
+                dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
+                eros vulputate odio scelerisque tincidunt. Vivamus ac maximus turpis. Aliquam luctus, diam sed
+                vestibulum varius, magna metus imperdiet sapien, eget vestibulum tortor odio sit amet libero. Aenean
+                eleifend, sapien ut egestas feugiat, magna mi sagittis quam, ut varius purus odio in dolor. Phasellus
+                venenatis, arcu a ornare blandit, neque quam maximus nulla, eu rutrum sapien nibh eget mauris. Mauris
+                commodo augue quam, eget vestibulum erat consequat sed. Vestibulum viverra elementum velit id ornare.
+                Phasellus dignissim, nisl id semper maximus, ante ipsum hendrerit ipsum, sit amet maximus nibh nibh
+                mollis tellus. Nullam ullamcorper ultricies est, at hendrerit libero facilisis a.</p>
+            <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
+                eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
+                ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
+                nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
+                vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
+                feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
+            <p class="govuk-body">Nulla id dictum dolor. Etiam interdum blandit nisi sit amet varius. Donec
+                porttitor sem sed pretium luctus. Maecenas odio risus, consectetur ullamcorper faucibus id, luctus id
+                turpis. Morbi pulvinar turpis at quam lacinia venenatis. Vivamus id suscipit velit. Cras eleifend ligula
+                libero, non pellentesque urna hendrerit eu. In hac habitasse platea dictumst. Sed tincidunt a metus eu
+                pulvinar.</p>
+            <p class="govuk-body">Nunc semper sapien diam, nec ultricies mauris mattis sit amet. Interdum et
+                malesuada fames ac ante ipsum primis in faucibus. Donec tempor, velit et luctus iaculis, sapien metus
+                suscipit erat, gravida accumsan leo dui ut ipsum. Donec interdum velit neque, in egestas neque semper ac.
+                Cras et ante id lacus consequat gravida ac eu orci. Sed sit amet felis magna. Aliquam posuere nisi eros,
+                vitae tincidunt dolor volutpat sed. Nunc sed tincidunt tortor. Integer venenatis eu ligula non convallis.
+            </p>
+            <p class="govuk-body">Suspendisse at turpis velit. Nunc sodales euismod velit. Morbi rhoncus vitae elit
+                sit amet fringilla. Phasellus efficitur dolor dignissim sodales congue. Etiam posuere accumsan congue. Morbi
+                ut sapien nulla. In dapibus risus nisi, et sollicitudin urna ultrices ut. Donec vel augue eget lectus
+                vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
+                ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
+                Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
+                elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>
         </main>
     </div>
+
 
     <footer class="govuk-footer" role="contentinfo">
         <div class="govuk-width-container">
@@ -172,7 +932,7 @@
                         </li>
                     </ul>
 
-                    <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <svg focusable="false" class="govuk-footer__licence-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
                         <path fill="currentColor" d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
                     </svg>
                     <span class="govuk-footer__licence-description">
@@ -191,7 +951,8 @@
         </div>
     </footer>
 
-    <script src="{{ url_for('static', filename='assets/govuk-frontend-3.14.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/govuk-frontend-4.3.1.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/moj-frontend.min.js') }}"></script>
     <script>
         window.TRACKING_PREVIEW_ID = '09GCMPLXM8';
         window.TRACKING_LIVE_ID = '09GCMPLXM8';
@@ -199,6 +960,7 @@
     <script src="{{ url_for('static', filename='application.js') }}"></script>
     <script>
         window.GOVUKFrontend.initAll()
+        window.MOJFrontend.initAll()
     </script>
 </body>
 </html>

@@ -8,6 +8,7 @@
     "build": "sass son/sass/app.scss son/static/app.css --style=compressed"
   },
   "dependencies": {
+    "@ministryofjustice/frontend": "^1.6.2",
     "govuk-frontend": "^3.14.0",
     "sass": "^1.45.0"
   }
