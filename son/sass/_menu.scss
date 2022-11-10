@@ -12,9 +12,14 @@ ul.collapsible {
         position: relative;
         ul.moj-side-navigation__list {
             li.moj-side-navigation__item {
+                a {
+                    width: calc(100% - 25px);
+                }
+
                 ul.moj-side-navigation__list {
                     li.moj-side-navigation__item {
                         a {
+                            width: calc(100% - 35px);
                             padding-left: 25px;
                         }
                     }
@@ -50,6 +55,7 @@ ul.collapsible {
 
     li.moj-side-navigation__item.is-open {
         & > a:first-child {
+            width: calc(100% - 39px);
             font-weight: 700;
         }
 
@@ -109,6 +115,7 @@ nav.moj-side-navigation {
 nav.moj-side-navigation-mobile {
     display: block;
     margin: 0;
+    overflow-x: hidden;
 
     ul.collapsible {
         display: block;
@@ -118,7 +125,8 @@ nav.moj-side-navigation-mobile {
 
             ul.moj-side-navigation__list {
                 li.moj-side-navigation__item {
-                    a {
+                    & > a:first-child {
+                        width: calc(100% - 20px);
                         font-weight: 700;
                         background-color: transparent;
                         white-space: normal;
@@ -127,6 +135,7 @@ nav.moj-side-navigation-mobile {
                     ul.moj-side-navigation__list {
                         li.moj-side-navigation__item {
                             a {
+                                width: calc(100% - 35px);
                                 font-weight: 400;
                                 background-color: transparent;
                                 white-space: normal;
@@ -135,6 +144,7 @@ nav.moj-side-navigation-mobile {
 
                         li.moj-side-navigation__item.is-active {
                             a {
+                                width: calc(100% - 39px);
                                 background-color: #f3f2f1;
                             }
                         }
@@ -148,8 +158,8 @@ nav.moj-side-navigation-mobile {
                 }
             }
 
-            a {
-                width: 100%;
+            & > a:first-child {
+                width: calc(100% - 20px);
                 font-weight: 700;
                 background-color: #f3f2f1;
             }
