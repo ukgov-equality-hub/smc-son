@@ -1,0 +1,36 @@
+{% macro mobilemenu(menu, selected) %}
+    <div id="mobile-nav" aria-labelledby="mobile-nav-button" class="mobile-navigation" hidden="">
+        <nav role="navigation" class="moj-side-navigation moj-side-navigation-mobile" aria-label="Mobile navigation">
+            <ul class="moj-side-navigation__list collapsible">
+                {% for domain in menu.domains %}
+                <li class="moj-side-navigation__item{{ [domain.name, selected] | menuitem_isactive }}{{ [menu, domain.name, selected] | menuitem_isopen }}">
+                    <a href="/{{ domain.name | url_link }}">{{ domain.name }}</a>
+                    <span class="collapsible__toggle-icon"></span>
+                    <ul class="moj-side-navigation__list">
+                        {% for subdomain in domain.subdomains %}
+                        <li class="moj-side-navigation__item{{ [subdomain.name, selected] | menuitem_isactive }}{{ [menu, subdomain.name, selected] | menuitem_isopen }}">
+                            <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}">{{ subdomain.name }}</a>
+                            <span class="collapsible__toggle-icon"></span>
+                            <ul class="moj-side-navigation__list">
+                                {% for indicator in subdomain.indicators %}
+                                <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected] | menuitem_isopen }}">
+                                    <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}/{{ indicator.name | url_link }}">{{ indicator.name }}</a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+
+                <li>
+                    <!--<h4 class="moj-side-navigation__title">Pages</h4>-->
+                    <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+                </li>
+                <li class="moj-side-navigation__item"><a href="#" class="secondary-nav">Background</a></li>
+                <li class="moj-side-navigation__item"><a href="#" class="secondary-nav">About our analysis</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endmacro %}
