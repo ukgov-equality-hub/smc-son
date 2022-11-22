@@ -69,10 +69,10 @@ def create_app(test_config=None):
                                                         "script-src-elem 'self' 'unsafe-inline' https://*.googletagmanager.com https://*.google-analytics.com https://code.jquery.com https://d3js.org https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; " \
                                                         "script-src-attr 'self' 'unsafe-inline'; " \
                                                         "style-src 'self' 'unsafe-inline'; " \
-                                                        "img-src 'self'; " \
-                                                        "font-src 'self'; " \
+                                                        "img-src 'self' blob: data:; " \
+                                                        "font-src 'self' data:; " \
                                                         "connect-src 'self' https://*.google-analytics.com https://api.equality-data-store.cabinetoffice.gov.uk; " \
-                                                        f"form-action 'self' https://www.payments.service.gov.uk;"
+                                                        "form-action 'self' https://www.payments.service.gov.uk;"
 
         return response
 

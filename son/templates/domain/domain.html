@@ -9,8 +9,7 @@
 {% block content %}
 <div class="govuk-grid-row govuk-grid-row-full-width">
         <h1 class="govuk-heading-l">{{ title }}</h1>
-        <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
-            Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis.</p>
+        <p class="govuk-body">Data on the highest qualifications of 25 to 29 year olds.</p>
 
         <div class="govuk-tabs" data-module="govuk-tabs">
             <ul class="govuk-tabs__list">
@@ -41,6 +40,7 @@
                     <div id="map"></div>
                     <div id="mapTooltip"></div>
                 </div>
+                <a id="mapDownload" href="#" class="govuk-link">Download</a>
             </div>
             <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-data">
                 <div class="moj-scrollable-pane">
@@ -102,26 +102,32 @@
             </div>
             <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-about">
                 <h2 class="govuk-heading-l">About</h2>
-                <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
-                    Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
-                    dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
-                    eros vulputate odio scelerisque tincidunt. Vivamus ac maximus turpis. Aliquam luctus, diam sed
-                    vestibulum varius, magna metus imperdiet sapien, eget vestibulum tortor odio sit amet libero. Aenean
-                    eleifend, sapien ut egestas feugiat, magna mi sagittis quam, ut varius purus odio in dolor. Phasellus
-                    venenatis, arcu a ornare blandit, neque quam maximus nulla, eu rutrum sapien nibh eget mauris. Mauris
-                    commodo augue quam, eget vestibulum erat consequat sed. Vestibulum viverra elementum velit id ornare.
-                    Phasellus dignissim, nisl id semper maximus, ante ipsum hendrerit ipsum, sit amet maximus nibh nibh
-                    mollis tellus. Nullam ullamcorper ultricies est, at hendrerit libero facilisis a.</p>
-                <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
-                    eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
-                    ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
-                    nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
-                    vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
-                    feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
+                <h4 class="govuk-heading-s">Data sources</h4>
+                <p class="govuk-body">Labour Force Survey, Office for National Statistics</p>
+
+                <h4 class="govuk-heading-s">Time period</h4>
+                <p class="govuk-body">2021</p>
+
+                <h4 class="govuk-heading-s">What the data measures</h4>
+                <p class="govuk-body">The data shows the highest level of qualification achieved by 25 to 29 year olds in the UK. Figures are shown for 5 social class backgrounds, from lower working class to higher professional.</p>
+
+                <h4 class="govuk-heading-s">Things you need to know</h4>
+                <p class="govuk-body">Social class background is measured by the occupation of the main wage earner when the respondent was 14 years old. 95% confidence intervals are shown for the highest and lowest qualification levels.</p>
+
+                <h4 class="govuk-heading-s">Type of data</h4>
+                <p class="govuk-body">Survey data. Analysis uses LFS population weights.</p>
+                <p class="govuk-body">Read more about the data used in State of the Nation 2023 in <span style="text-decoration: underline;">About our analysis</span>.</p>
             </div>
         </div>
 
-        <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
+        <h3 class="govuk-heading-m">Summary main findings</h3>
+        <p class="govuk-body">25 to 29 year olds from higher social class backgrounds were more likely to have a degree than those from lower social class backgrounds.</p>
+        <p class="govuk-body">71% of 25 to 29 year olds from professional backgrounds had a first or higher degree. The figure for those from lower working class backgrounds was 28%.</p>
+        <p class="govuk-body">The differences were greater for postgraduate degrees than for first degrees.</p>
+        <p class="govuk-body">Young people from professional backgrounds were 2.5 times more likely to have a degree than those from lower working class backgrounds. The rate went up to 3.5 times for postgraduate degrees alone.</p>
+        <p class="govuk-body">Read more in State of the Nation 2023 on GOV.UK.</p>
+
+        <!--<p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
             eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
             ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
             nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
@@ -144,7 +150,7 @@
             vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
             ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
             Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
-            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>
+            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>-->
 </div>
 <script src="{{ url_for('static', filename='map.js') }}"></script>
 <script>
@@ -169,6 +175,10 @@
 
         document.getElementById('mapZoomOut').addEventListener('click', function () {
             map.zoomOut()
+        })
+
+        document.getElementById('mapDownload').addEventListener('click', function () {
+            map.download()
         })
     })()
 </script>
