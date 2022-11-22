@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+{% block title %}Demo{% endblock %}
+
+{% block backLink %}
+<a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row govuk-grid-row-full-width">
+        <h1 class="govuk-heading-l">{{ title }}</h1>
+        <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
+            Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis.</p>
+
+        <div class="govuk-tabs" data-module="govuk-tabs">
+            <ul class="govuk-tabs__list">
+                <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                    <a class="govuk-tabs__tab" href="#tab-map">
+                        Map
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#tab-data">
+                        Data
+                    </a>
+                </li>
+                <li class="govuk-tabs__list-item">
+                    <a class="govuk-tabs__tab" href="#tab-about">
+                        About
+                    </a>
+                </li>
+            </ul>
+            <div class="govuk-tabs__panel" id="tab-map">
+                <h2 class="govuk-heading-l">Map</h2>
+                <div id="mapContainer">
+                    <div id="mapLegend"></div>
+                    <div id="mapControls">
+                        <button id="mapZoomIn">+</button>
+                        <button id="mapZoomOut">-</button>
+                    </div>
+                    <div id="map"></div>
+                    <div id="mapTooltip"></div>
+                </div>
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-data">
+                <div class="moj-scrollable-pane">
+                    <table class="govuk-table" data-module="moj-sortable-table">
+                        <thead class="govuk-table__head">
+                            <tr class="govuk-table__row">
+                                <th scope="col" class="govuk-table__header" aria-sort="ascending">Name</th>
+                                <th scope="col" class="govuk-table__header" aria-sort="none">Elevation</th>
+                                <th scope="col" class="govuk-table__header" aria-sort="none">Continent</th>
+                                <th scope="col" class="govuk-table__header govuk-table__header--numeric" aria-sort="none">First summit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Aconcagua</td>
+                                <td class="govuk-table__cell" data-sort-value="6961">6,961 meters</td>
+                                <td class="govuk-table__cell">South America</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1897">1897</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Denali</td>
+                                <td class="govuk-table__cell" data-sort-value="6194">6,194 meters</td>
+                                <td class="govuk-table__cell">North America</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1913">1913</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Elbrus</td>
+                                <td class="govuk-table__cell" data-sort-value="5642">5,642 meters</td>
+                                <td class="govuk-table__cell">Europe</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1874">1874</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Everest</td>
+                                <td class="govuk-table__cell" data-sort-value="8850">8,850 meters</td>
+                                <td class="govuk-table__cell">Asia</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1953">1953</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Kilimanjaro</td>
+                                <td class="govuk-table__cell" data-sort-value="5895">5,895 meters</td>
+                                <td class="govuk-table__cell">Africa</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1889">1889</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Puncak Jaya</td>
+                                <td class="govuk-table__cell" data-sort-value="4884">4,884 meters</td>
+                                <td class="govuk-table__cell">Australia</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1962">1962</td>
+                            </tr>
+                            <tr class="govuk-table__row">
+                                <td class="govuk-table__cell">Vinson</td>
+                                <td class="govuk-table__cell" data-sort-value="4897">4,897 meters</td>
+                                <td class="govuk-table__cell">Antarctica</td>
+                                <td class="govuk-table__cell govuk-table__cell--numeric" data-sort-value="1966">1966</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-about">
+                <h2 class="govuk-heading-l">About</h2>
+                <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
+                    Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
+                    dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
+                    eros vulputate odio scelerisque tincidunt. Vivamus ac maximus turpis. Aliquam luctus, diam sed
+                    vestibulum varius, magna metus imperdiet sapien, eget vestibulum tortor odio sit amet libero. Aenean
+                    eleifend, sapien ut egestas feugiat, magna mi sagittis quam, ut varius purus odio in dolor. Phasellus
+                    venenatis, arcu a ornare blandit, neque quam maximus nulla, eu rutrum sapien nibh eget mauris. Mauris
+                    commodo augue quam, eget vestibulum erat consequat sed. Vestibulum viverra elementum velit id ornare.
+                    Phasellus dignissim, nisl id semper maximus, ante ipsum hendrerit ipsum, sit amet maximus nibh nibh
+                    mollis tellus. Nullam ullamcorper ultricies est, at hendrerit libero facilisis a.</p>
+                <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
+                    eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
+                    ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
+                    nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
+                    vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
+                    feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
+            </div>
+        </div>
+
+        <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
+            eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
+            ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
+            nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
+            vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
+            feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
+        <p class="govuk-body">Nulla id dictum dolor. Etiam interdum blandit nisi sit amet varius. Donec
+            porttitor sem sed pretium luctus. Maecenas odio risus, consectetur ullamcorper faucibus id, luctus id
+            turpis. Morbi pulvinar turpis at quam lacinia venenatis. Vivamus id suscipit velit. Cras eleifend ligula
+            libero, non pellentesque urna hendrerit eu. In hac habitasse platea dictumst. Sed tincidunt a metus eu
+            pulvinar.</p>
+        <p class="govuk-body">Nunc semper sapien diam, nec ultricies mauris mattis sit amet. Interdum et
+            malesuada fames ac ante ipsum primis in faucibus. Donec tempor, velit et luctus iaculis, sapien metus
+            suscipit erat, gravida accumsan leo dui ut ipsum. Donec interdum velit neque, in egestas neque semper ac.
+            Cras et ante id lacus consequat gravida ac eu orci. Sed sit amet felis magna. Aliquam posuere nisi eros,
+            vitae tincidunt dolor volutpat sed. Nunc sed tincidunt tortor. Integer venenatis eu ligula non convallis.
+        </p>
+        <p class="govuk-body">Suspendisse at turpis velit. Nunc sodales euismod velit. Morbi rhoncus vitae elit
+            sit amet fringilla. Phasellus efficitur dolor dignissim sodales congue. Etiam posuere accumsan congue. Morbi
+            ut sapien nulla. In dapibus risus nisi, et sollicitudin urna ultrices ut. Donec vel augue eget lectus
+            vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
+            ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
+            Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
+            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>
+</div>
+<script src="{{ url_for('static', filename='map.js') }}"></script>
+<script>
+    (function() {
+        let map = new Map(
+            'map',
+            '/static/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json', //'{{ url_for("static", filename="International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json") }}',
+            '{{ url_for("static", filename="demodata.csv") }}',
+            {
+                'nameField': 'ITL221NM',
+                'valueField': 'DR32_quintile',
+                //'palette': ['red','blue', '#FFFEC6', '#B1D678', '#47934B'],
+                'domains': ['100% - 80%', '80% - 60%', '60% - 40%', '40% - 20%', '0% - 20%'],
+                'legend': 'mapLegend',
+                'tooltip': 'mapTooltip'
+            }
+        )
+
+        document.getElementById('mapZoomIn').addEventListener('click', function () {
+            map.zoomIn()
+        })
+
+        document.getElementById('mapZoomOut').addEventListener('click', function () {
+            map.zoomOut()
+        })
+    })()
+</script>
+{% endblock %}

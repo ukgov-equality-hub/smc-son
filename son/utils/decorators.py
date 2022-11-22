@@ -11,7 +11,7 @@ def DataRequired(f):
     def decorated_function(*args, **kwargs):
         if 'file' not in session or session['file'] is None:
             logger.log(LogLevel.WARN, f"No available data for {request.host_url}")
-            return local_redirect(url_for('homepage.index'))
+            return local_redirect(url_for('son.index'))
         return f(*args, **kwargs)
     return decorated_function
 

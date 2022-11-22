@@ -1,0 +1,81 @@
+#mapContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background: white;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+
+#mapContainer svg {
+    overflow: visible;
+}
+
+#mapContainer svg g path {
+    cursor: grab;
+}
+
+#mapContainer #mapLegend, #mapContainer #mapTooltip, #mapContainer #mapControls {
+    position: absolute;
+    padding: 10px 10px 0px 10px;
+    background: #fff;
+    border: 1px solid #000;
+    font-family: "GDS Transport",arial,sans-serif;
+    z-index: 10;
+}
+
+#mapContainer #mapLegend {
+    bottom: 10px;
+    right: 10px;
+}
+
+#mapContainer #mapTooltip {
+    bottom: 10px;
+    left: 10px;
+    visibility: hidden;
+}
+
+#mapContainer #mapTooltip h2 {
+    margin-top: 10px;
+}
+
+#mapContainer #mapControls {
+    top: 10px;
+    right: 10px;
+    width: 35px;
+    padding: 0;
+    border: none;
+}
+
+#mapContainer #mapControls button {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #aaa;
+    font-weight: 700;
+    font-size: 20px;
+    background: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+#mapContainer #mapControls button:first-child {
+    border-bottom: none;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#mapContainer #mapControls button:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#map {
+    width: 100%; /*350px;*/
+    height: 630px;
+    overflow: visible;
+    position: relative;
+}

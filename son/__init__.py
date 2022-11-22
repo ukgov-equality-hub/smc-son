@@ -65,8 +65,8 @@ def create_app(test_config=None):
         response.headers['X-Frame-Options'] = 'deny'
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['Content-Security-Policy'] = "default-src 'self'; " \
-                                                        "script-src 'self' 'unsafe-inline'; " \
-                                                        "script-src-elem 'self' 'unsafe-inline' https://*.googletagmanager.com https://*.google-analytics.com https://code.jquery.com https://d3js.org; " \
+                                                        "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " \
+                                                        "script-src-elem 'self' 'unsafe-inline' https://*.googletagmanager.com https://*.google-analytics.com https://code.jquery.com https://d3js.org https://cdnjs.cloudflare.com https://cdn.jsdelivr.net; " \
                                                         "script-src-attr 'self' 'unsafe-inline'; " \
                                                         "style-src 'self' 'unsafe-inline'; " \
                                                         "img-src 'self'; " \
@@ -80,8 +80,8 @@ def create_app(test_config=None):
     app.register_blueprint(filters.blueprint)
 
     # Catalogue
-    from son.homepage import homepage
-    app.register_blueprint(homepage)
+    from son.son import son
+    app.register_blueprint(son)
 
     # Policies
     from son.policies import policies

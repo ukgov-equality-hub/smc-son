@@ -1,0 +1,208 @@
+{
+    "data": [{
+        "id": 1,
+        "ITL221CD": "TLC1",
+        "ITL221NM": "Tees Valley and Durham",
+        "colour": "1"
+    }, {
+        "id": 2,
+        "ITL221CD": "TLC2",
+        "ITL221NM": "Northumberland, and Tyne and Wear",
+        "colour": "2"
+    }, {
+        "id": 3,
+        "ITL221CD": "TLD1",
+        "ITL221NM": "Cumbria",
+        "colour": "3"
+    }, {
+        "id": 4,
+        "ITL221CD": "TLD3",
+        "ITL221NM": "Greater Manchester",
+        "colour": "1"
+    }, {
+        "id": 5,
+        "ITL221CD": "TLD4",
+        "ITL221NM": "Lancashire",
+        "colour": "4"
+    }, {
+        "id": 6,
+        "ITL221CD": "TLD6",
+        "ITL221NM": "Cheshire",
+        "colour": "5"
+    }, {
+        "id": 7,
+        "ITL221CD": "TLD7",
+        "ITL221NM": "Merseyside",
+        "colour": "1"
+    }, {
+        "id": 8,
+        "ITL221CD": "TLE1",
+        "ITL221NM": "East Yorkshire and Northern Lincolnshire",
+        "colour": "1"
+    }, {
+        "id": 9,
+        "ITL221CD": "TLE2",
+        "ITL221NM": "North Yorkshire",
+        "colour": "1"
+    }, {
+        "id": 10,
+        "ITL221CD": "TLE3",
+        "ITL221NM": "South Yorkshire",
+        "colour": "1"
+    }, {
+        "id": 11,
+        "ITL221CD": "TLE4",
+        "ITL221NM": "West Yorkshire",
+        "colour": "1"
+    }, {
+        "id": 12,
+        "ITL221CD": "TLF1",
+        "ITL221NM": "Derbyshire and Nottinghamshire",
+        "colour": "1"
+    }, {
+        "id": 13,
+        "ITL221CD": "TLF2",
+        "ITL221NM": "Leicestershire, Rutland and Northamptonshire",
+        "colour": "1"
+    }, {
+        "id": 14,
+        "ITL221CD": "TLF3",
+        "ITL221NM": "Lincolnshire",
+        "colour": "1"
+    }, {
+        "id": 15,
+        "ITL221CD": "TLG1",
+        "ITL221NM": "Herefordshire, Worcestershire and Warwickshire",
+        "colour": "1"
+    }, {
+        "id": 16,
+        "ITL221CD": "TLG2",
+        "ITL221NM": "Shropshire and Staffordshire",
+        "colour": "1"
+    }, {
+        "id": 17,
+        "ITL221CD": "TLG3",
+        "ITL221NM": "West Midlands",
+        "colour": "1"
+    }, {
+        "id": 18,
+        "ITL221CD": "TLH1",
+        "ITL221NM": "East Anglia",
+        "colour": "1"
+    }, {
+        "id": 19,
+        "ITL221CD": "TLH2",
+        "ITL221NM": "Bedfordshire and Hertfordshire",
+        "colour": "1"
+    }, {
+        "id": 20,
+        "ITL221CD": "TLH3",
+        "ITL221NM": "Essex",
+        "colour": "1"
+    }, {
+        "id": 21,
+        "ITL221CD": "TLI3",
+        "ITL221NM": "Inner London - West",
+        "colour": "1"
+    }, {
+        "id": 22,
+        "ITL221CD": "TLI4",
+        "ITL221NM": "Inner London - East",
+        "colour": "1"
+    }, {
+        "id": 23,
+        "ITL221CD": "TLI5",
+        "ITL221NM": "Outer London - East and North East",
+        "colour": "1"
+    }, {
+        "id": 24,
+        "ITL221CD": "TLI6",
+        "ITL221NM": "Outer London - South",
+        "colour": "1"
+    }, {
+        "id": 25,
+        "ITL221CD": "TLI7",
+        "ITL221NM": "Outer London - West and North West",
+        "colour": "1"
+    }, {
+        "id": 26,
+        "ITL221CD": "TLJ1",
+        "ITL221NM": "Berkshire, Buckinghamshire and Oxfordshire",
+        "colour": "1"
+    }, {
+        "id": 27,
+        "ITL221CD": "TLJ2",
+        "ITL221NM": "Surrey, East and West Sussex",
+        "colour": "1"
+    }, {
+        "id": 28,
+        "ITL221CD": "TLJ3",
+        "ITL221NM": "Hampshire and Isle of Wight",
+        "colour": "1"
+    }, {
+        "id": 29,
+        "ITL221CD": "TLJ4",
+        "ITL221NM": "Kent",
+        "colour": "1"
+    }, {
+        "id": 30,
+        "ITL221CD": "TLK1",
+        "ITL221NM": "Gloucestershire, Wiltshire and Bath/Bristol area",
+        "colour": "1"
+    }, {
+        "id": 31,
+        "ITL221CD": "TLK2",
+        "ITL221NM": "Dorset and Somerset",
+        "colour": "1"
+    }, {
+        "id": 32,
+        "ITL221CD": "TLK3",
+        "ITL221NM": "Cornwall and Isles of Scilly",
+        "colour": "1"
+    }, {
+        "id": 33,
+        "ITL221CD": "TLK4",
+        "ITL221NM": "Devon",
+        "colour": "1"
+    }, {
+        "id": 34,
+        "ITL221CD": "TLL1",
+        "ITL221NM": "West Wales and The Valleys",
+        "colour": "1"
+    }, {
+        "id": 35,
+        "ITL221CD": "TLL2",
+        "ITL221NM": "East Wales",
+        "colour": "1"
+    }, {
+        "id": 36,
+        "ITL221CD": "TLM5",
+        "ITL221NM": "North Eastern Scotland",
+        "colour": "1"
+    }, {
+        "id": 37,
+        "ITL221CD": "TLM6",
+        "ITL221NM": "Highlands and Islands",
+        "colour": "1"
+    }, {
+        "id": 38,
+        "ITL221CD": "TLM7",
+        "ITL221NM": "Eastern Scotland",
+        "colour": "1"
+    }, {
+        "id": 39,
+        "ITL221CD": "TLM8",
+        "ITL221NM": "West Central Scotland",
+        "colour": "1"
+    }, {
+        "id": 40,
+        "ITL221CD": "TLM9",
+        "ITL221NM": "Southern Scotland",
+        "colour": "1"
+    }, {
+        "id": 41,
+        "ITL221CD": "TLN0",
+        "ITL221NM": "Northern Ireland",
+        "colour": "1"
+    }]
+}

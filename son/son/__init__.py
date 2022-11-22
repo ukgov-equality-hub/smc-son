@@ -4,11 +4,11 @@ from flask import Blueprint, current_app, render_template, request, session
 from son.utils.menu import menu, get_item_title
 from son.utils.logger import LogLevel, Logger
 
-homepage = Blueprint('homepage', __name__)
+son = Blueprint('son', __name__)
 logger = Logger()
 
 
-@homepage.route('/', methods=['GET', 'POST'])
+@son.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         pass
@@ -16,18 +16,18 @@ def index():
     return render_template(
         'homepage/homepage.html',
         menu=menu,
-        domain='Mobility outcomes',
-        subdomain='',
-        indicator='Absolute housing mobility - LS',
+        domain=None,
+        subdomain=None,
+        indicator=None,
         title='Welcome',
         form=None
     )
 
 
-@homepage.route('/<domain>', methods=['GET'])
+@son.route('/<domain>', methods=['GET'])
 def domain_page(domain):
     return render_template(
-        'homepage/homepage.html',
+        'domain/domain.html',
         menu=menu,
         domain=domain,
         subdomain=None,
@@ -37,10 +37,10 @@ def domain_page(domain):
     )
 
 
-@homepage.route('/<domain>/<subdomain>', methods=['GET'])
+@son.route('/<domain>/<subdomain>', methods=['GET'])
 def subdomain_page(domain, subdomain):
     return render_template(
-        'homepage/homepage.html',
+        'subdomain/subdomain.html',
         menu=menu,
         domain=domain,
         subdomain=subdomain,
@@ -50,10 +50,10 @@ def subdomain_page(domain, subdomain):
     )
 
 
-@homepage.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
+@son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
     return render_template(
-        'homepage/homepage.html',
+        'indicator/indicator.html',
         menu=menu,
         domain=domain,
         subdomain=subdomain,
