@@ -30,5 +30,4 @@ Notes/*
 notes/*
 *notes.txt
 .DS_Store
-*.csv
 api/lambdas/awslambda-psycopg2
