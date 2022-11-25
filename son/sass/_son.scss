@@ -174,3 +174,42 @@ div.govuk-tabs {
         background: transparent;
     }
 }
+
+div.data-table-data {
+    position: relative;
+    clear: both;
+    overflow-x: scroll;
+    overflow-y: auto;
+    min-height: 300px;
+    max-height: 500px;
+}
+
+div#tab-data.govuk-tabs__panel  {
+    display: grid;
+}
+
+div#tab-data.govuk-tabs__panel--hidden {
+    display: none;
+}
+
+div.data-table-data table {
+    width: 100%;
+    font-size: 14px;
+
+    thead {
+        tr {
+            th {
+                background: #f3f2f1;
+                border-bottom: 1px solid #b1b4b6;
+            }
+        }
+    }
+
+    tbody {
+        tr:first-child {
+            td {
+                border-top: none;
+            }
+        }
+    }
+}

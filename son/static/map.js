@@ -7,23 +7,98 @@ class Map {
         this.el = el
         this.geodata = geodata
         this.data = data
-        this.options = options
+        this.options = options || {}
 
-        this.renderMap()
+        this._init()
     }
 
-    renderMap() {
+    _init() {
+        //<script src="https://d3js.org/d3.v7.min.js"></script>
+        //<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+        // https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js ???
+
+        function scriptSrc() {
+            const script =  document.querySelector('script[src*="map.js"]')
+            if (script.src) {
+                return script.src.substr(0, script.src.lastIndexOf('/') + 1)
+            }
+            return ''
+        }
+
+        const scripts = ['https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js']
+        const styles = [`${scriptSrc()}map.css`]
+        this._loadResources(scripts.concat(styles), this)
+    }
+
+    _loadResources(resources, self) {
+        const downloaded = resources.map(x => false)
+
+        function load(resource) {
+            if (resource.indexOf('.') > -1) {
+                if (resource.substr(resource.lastIndexOf('.') + 1).toLowerCase() == 'css') {
+                    if (document.querySelector(`[href="${resource}"]`) == null) {
+                        let style = document.createElement('link')
+                        style.rel = 'stylesheet'
+                        style.href = resource
+                        style.type = 'text/css'
+                        style.onload = function () {
+                            loaded(resource)
+                        }
+                        document.head.appendChild(style)
+                    } else {
+                        loaded(resource)
+                    }
+                } else if (resource.substr(resource.lastIndexOf('.') + 1).toLowerCase() == 'js') {
+                    if (document.querySelector(`[src="${resource}"]`) == null) {
+                        let script = document.createElement('script')
+                        script.type = 'text/javascript'
+                        script.src = resource
+                        script.onload = function () {
+                            loaded(resource)
+                        }
+                        document.head.appendChild(script)
+
+                    } else {
+                        loaded(resource)
+                    }
+                }
+            }
+        }
+
+        function loaded(resource) {
+            downloaded[resources.indexOf(resource)] = true
+            for (let i = 0; i < downloaded.length; i++) {
+                if (!downloaded[i]) {
+                    return
+                }
+            }
+            self.render()
+        }
+
+        for (let i = 0; i < resources.length; i++) {
+            load(resources[i])
+        }
+    }
+
+    render() {
         let self = this
         const div = document.getElementById(this.el)
-        const options = this.options || {}
+        if (!div) return
+        const options = this.options
         this.width = options.width || div.offsetWidth
         this.height = options.height || div.offsetHeight
+        this.legendDiv = options.legend || ''
+        this.tooltipDiv = options.tooltip || ''
         const nameField = options.nameField || ''
+        const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
-        const palette = options.palette || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
-        const domains = options.domains || palette.map(x => '')
-        const legendDiv = options.legend || ''
-        const tooltipDiv = options.tooltip || ''
+        const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
+        const colourformat = options.colourformat || 'linear'
+        const domains = options.domains || [] //colourformat == 'sequential' ? [] : colourScheme.map(x => '')
+        const legendSteps = options.legendSteps || 5
+        const allowRollover = typeof options.allowRollover === 'undefined' ? true : options.allowRollover
+        const allowZoom = typeof options.allowZoom === 'undefined' ? true : options.allowZoom
+        const allowZoomOnClick = typeof options.allowZoomOnClick === 'undefined' ? true : options.allowZoomOnClick
 
         // Set up map projection, and position it
         const projection = d3.geoAlbers()
@@ -34,28 +109,30 @@ class Map {
             .translate([this.width / 2, this.height / 2])
         const path = d3.geoPath(projection)
 
-        // set up SVG, viewport and clipping mask for map
+        // Set up SVG, viewport and clipping mask for map
         const svg = d3.select('#' + this.el)
             .append('svg:svg')
             .attr('width', this.width)
             .attr('height', this.height)
-            .attr('viewBox', '0 0 ' + this.width + ' ' + this.height)
+            .attr('viewBox', `0 0 ${this.width} ${this.height}`)
             .attr('perserveAspectRatio', 'xMinYMid')
             .attr('id', 'sizer-map')
             .attr('class', 'sizer')
             .on('click', reset)
         const mapContainer = svg.append('g')
-            .attr('id', this.el + '__map')
+            .attr('id', `${this.el}__map`)
 
         this.zoom = d3.zoom()
             .extent([[0, 0], [this.width, this.height]])
             .scaleExtent([1, 8])
             .on('zoom', zoomed)
-        svg.call(this.zoom)
+        if (allowZoom) {
+            svg.call(this.zoom)
+        }
 
         let tooltip
-        if (tooltipDiv != '') {
-            tooltip = d3.select('#' + tooltipDiv)
+        if (this.tooltipDiv != '') {
+            tooltip = d3.select('#' + this.tooltipDiv)
             tooltip.html(' ')
         }
 
@@ -80,67 +157,158 @@ class Map {
 
         function ready(error, geodata, data) {
             const subunits = geodata.objects[Object.keys(geodata.objects)[0]] // e.g. ['International_Territorial_Level_2_(January_2021)_UK_BUC_V2']
-            const londonunits = JSON.parse(JSON.stringify(subunits))
-            londonunits.geometries = londonunits.geometries.filter(obj => {
-                return obj.properties.ITL221NM.indexOf('London') > -1
-            })
+            //const londonunits = JSON.parse(JSON.stringify(subunits))
+            //londonunits.geometries = londonunits.geometries.filter(obj => {
+            //    return obj.properties.ITL221NM.indexOf('London') > -1
+            //})
+            const areas = subunits.geometries.map(x => x.properties[areaField])
+            let min = 0, max = 0
+            if (colourformat == 'sequential') {
+                min = d3.min((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
+                max = d3.max((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
+            }
 
             mapFeatures = topojson.feature(geodata, subunits).features
             map = mapContainer.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
 
-            // '#0F265C', '#EB652E','#3C3C3B', '#D4006D', '#1A9E1C', '#009BDA'
-            //const palette = ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
-            //const domains = ['AAA', 'BBB', 'CCC', 'DDD', 'EEE']
-            const labelLength = domains.map(x => x.length).sort(function (a, b) { return b - a })[0]
+            let labelLength = domains.map(x => x.length).sort(function (a, b) { return b - a })[0]
+            labelLength = max.toString().length * 10
 
-            // make legend
-            if (legendDiv != '') {
-                //const color = d3.scalePoint() //.domain(domains).range(palette) //d3.scaleOrdinal()//[domains, swatch]) .   ???????
+            // https://github.com/d3/d3-scale-chromatic
+            let color
+            if (colourformat == 'sequential') {
+                const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
+                color = d3.scaleSequential(interpolator)
+                    .domain([0, 100])
+            } else {
+                const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
+                color = d3.scaleLinear(scheme)
+                    .domain(domains)
+            }
 
-                const legend = d3.select('#' + legendDiv)
-                    .append('svg:svg')
-                    .attr('width', (labelLength * 15))
-                    .attr('height', (domains.length * 25))
-                    .attr('viewBox', '0 0 ' + (labelLength * 15) + ' ' + (domains.length * 25))
-                    .attr('perserveAspectRatio', 'xMinYMid')
-                    .attr('id', 'sizer-legend')
-                    .attr('class', 'legend')
-                    .selectAll('g')
-                    .data(domains)
-                    .enter().append('g')
-                    .attr('transform', function (d, i) {
-                        return 'translate(0,' + i * 25 + ')'
-                    })
+            // Legend
+            if (self.legendDiv != '') {
+                if (colourformat == 'sequential') {
 
-                legend.append('rect')
-                    .attr('width', 20)
-                    .attr('height', 20)
-                    .style('fill', function (d, i) {
-                        return palette[i]
-                    })
+                    // http://using-d3js.com/04_05_sequential_scales.html
+                    const div = document.getElementById(self.legendDiv)
+                    const width = dimensions(div).width
+                    const height = dimensions(div).height
 
-                legend.append('text')
-                    .attr('x', 30)
-                    .attr('y', 6)
-                    .attr('dy', '.5em')
-                    .text(function (d, i) {
-                        return d
-                    })
+                    d3.select('#' + self.legendDiv)
+                        .append('svg:svg')
+                        .attr('width', width)
+                        .attr('height', height)
+                        .attr('viewBox', `0 0 ${width} ${height}`)
+                        .attr('perserveAspectRatio', 'xMinYMid')
+                        .attr('id', 'sizer-legend')
+                        .attr('class', 'legend')
+                        .append('g')
+                        .selectAll('g')
+                        .data(Array.from(Array(100).keys()))
+                        .enter()
+                        .append('rect')
+                            .attr('x', (d) => {
+                                return width > height ? Math.floor(width / 100 * d) : 0
+                            })
+                            .attr('y', (d) => {
+                                return width > height ? 25 : Math.floor(height / 100 * d)
+                            })
+                            .attr('width', (d) => {
+                                return width > height ? width / 100 + 1 : width - labelLength
+                            })
+                            .attr('height', (d) => {
+                                return width > height ? height - 25 : height / 100 + 1
+                            })
+                            .attr('fill', (d) => color(d))
+
+                    d3.select('#' + self.legendDiv).select('svg')
+                        .append('g')
+                        .selectAll('g')
+                        .data(range(0, 100, legendSteps))
+                        .enter()
+                        .append('text')
+                            .attr('x', (d, i) => {
+                                return width > height ? Math.floor(width / 100 * d) - ((range(min, max, legendSteps)[i].toString().length * 10) / 2) : labelLength
+                            })
+                            .attr('y', (d) => {
+                                return width > height ? 8 : Math.floor(height / 100 * d) + 5
+                            })
+                            .text((d, i) => {
+                                return range(min, max, legendSteps)[i]
+                            })
+                            .style('font-size', '14px')
+                } else {
+                    d3.select('#' + self.legendDiv)
+                        .append('svg:svg')
+                        .attr('width', labelLength * 15)
+                        .attr('height', domains.length * 25)
+                        .attr('viewBox', `0 0 ${labelLength * 15} ${domains.length * 25}`)
+                        .attr('perserveAspectRatio', 'xMinYMid')
+                        .attr('id', 'sizer-legend')
+                        .attr('class', 'legend')
+                        .append('g')
+                        .selectAll('g')
+                        .data(domains)
+                        .enter()
+                        .append('g')
+                        .attr('transform', (d, i) => {
+                            return `translate(0,${i * 25})`
+                        })
+
+                    d3.select('#' + self.legendDiv).select('svg')
+                        .append('g')
+                        .selectAll('g')
+                        .data(domains)
+                        .enter()
+                        .append('rect')
+                            .attr('x', 0)
+                            .attr('y', (d, i) => {
+                                return i * 30
+                            })
+                            .attr('width', 20)
+                            .attr('height', 20)
+                            .style('fill', (d, i) => {
+                                return colourScheme[i]
+                            })
+
+                    d3.select('#' + self.legendDiv).select('svg')
+                        .append('g')
+                        .selectAll('g')
+                        .data(domains)
+                        .enter()
+                        .append('text')
+                            .attr('x', 30)
+                            .attr('y', (d, i) => {
+                                return (i + 0.5) * 30
+                            })
+                            .text((d) => {
+                                return d
+                            })
+                }
             }
 
             map.enter()
                 .append('path')
                 .attr('d', path)
-                .style('fill', function (d, i) {
-                    return palette[getValue(d, nameField, valueField, data) - 1]  // rnd(0, palette.length - 1)
+                .style('fill', (d, i) => {
+                    if (colourformat == 'sequential') {
+                        return color(Math.floor((getValue(d, areaField, valueField, data) / (max - min)) * 100))
+                    } else {
+                        return colourScheme[getValue(d, areaField, valueField, data) - 1]  // rnd(0, colourScheme.length - 1)
+                    }
                 })
                 .style('stroke', 'grey')
                 .style('stroke-width', '0.2')
-                .attr('data-name', function (d) {
-                    return getProperty(d, nameField)
+                .attr('data-name', (d) => {
+                    return getProperty(d, areaField)
                 })
-                .attr('data-value', function (d) {
-                    return domains[getValue(d, nameField, valueField, data) - 1]
+                .attr('data-value', (d) => {
+                    if (colourformat == 'sequential') {
+                        return getValue(d, areaField, valueField, data)
+                    } else {
+                        return domains[getValue(d, areaField, valueField, data) - 1]
+                    }
                 })
                 .attr('data-active', 'N')
                 .on('click', clicked)
@@ -158,7 +326,7 @@ class Map {
         function getValue(d, p, v, data) {
             if (getProperty(d, p) != '') {
                 const val = (data.data || data).filter(x => x[nameField] == getProperty(d, p))
-                if (val && val[0][v]) {
+                if (val && typeof val[0] !== 'undefined' && val[0][v]) {
                     return val[0][v]
                 }
             }
@@ -169,85 +337,67 @@ class Map {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
 
+        function range(min, max, n) {
+            let list = [min], interval = (max - min) / (n - 1)
+            for (let i = 1; i < n - 1; i++) {
+               list.push(Math.floor(min + interval * i))
+            }
+            list.push(max)
+            return list
+        }
+
+        function dimensions(el) {
+            const style = getComputedStyle(el)
+            let width = el.clientWidth // width with padding
+            let height = el.clientHeight // height with padding
+            height -= parseFloat(style.paddingTop) + parseFloat(style.paddingBottom)
+            width -= parseFloat(style.paddingLeft) + parseFloat(style.paddingRight)
+            return { height, width }
+        }
+
         function zoomed({transform}) {
             mapContainer.attr('transform', transform)
         }
 
         function reset() {
-            resetMap()
-            self.svg.transition().duration(750).call(
-                self.zoom.transform,
-                d3.zoomIdentity,
-                d3.zoomTransform(self.svg.node()).invert([self.width / 2, self.height / 2])
-            )
-
-            if (tooltipDiv) {
-                tooltip.style('visibility', 'hidden')
-            }
-        }
-
-        function resetMap() {
-            self.svg.selectAll('path').transition().style('opacity', 1)
-            self.svg.selectAll('path').attr('data-active', 'N')
+            self.reset()
         }
 
         function highlight(event) {
+            if (!allowRollover) return
             self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
             d3.select(this).transition().style('opacity', 1)
         }
 
         function resetHighlight(event) {
+            if (!allowRollover) return
             svg.selectAll('path').style('opacity', 1)
         }
 
         function clicked(event, d) {
-            var [[x0, y0], [x1, y1]] = path.bounds(d)
             event.stopPropagation()
-            self.svg.selectAll('path').transition().style('opacity', 0.6)
-            d3.select(this).transition().style('opacity', 1)
-            self.svg.selectAll('path').attr('data-active', 'N')
-            d3.select(this).attr('data-active', 'Y')
+            if (allowZoomOnClick) {
+                const [[x0, y0], [x1, y1]] = path.bounds(d)
+                self.svg.selectAll('path').transition().style('opacity', 0.6)
+                d3.select(this).transition().style('opacity', 1)
+                self.svg.selectAll('path').attr('data-active', 'N')
+                d3.select(this).attr('data-active', 'Y')
 
-            self.svg.transition().duration(750).call(
-                self.zoom.transform,
-                d3.zoomIdentity
-                    .translate(self.width / 2, self.height / 2)
-                    .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
-                    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
-                d3.pointer(event, self.svg.node())
-            )
+                self.svg.transition().duration(750).call(
+                    self.zoom.transform,
+                    d3.zoomIdentity
+                        .translate(self.width / 2, self.height / 2)
+                        .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
+                        .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
+                    d3.pointer(event, self.svg.node())
+                )
+            }
 
-            if (tooltipDiv) {
-                tooltip.html('<h2>' + d3.select(this).attr('data-name') + '</h2><h3>Value: ' + d3.select(this).attr('data-value') + '</h3>')
+            if (self.tooltipDiv) {
+                tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
                 tooltip.style('visibility', 'visible')
-
             }
         }
-
-        function csvJSON(csv) {
-            function replaceCommas(str) {
-                return str.replace(/"[^"]+"/g, function(s) { 
-                    return s.replace(/,/g, '###')
-                })
-            }
-
-            const lines = csv.split('\n')
-            const result = []
-            const header = replaceCommas(lines[0])
-            const headers = header.split(',')
-            for (let i = 1; i < lines.length; i++) {
-                const obj = {}
-                const currentline = replaceCommas(lines[i]).split(",")
-                for (let j = 0; j < headers.length; j++) {
-                    obj[headers[j].replace(/###/g, ',')] = currentline[j].replace(/###/g, ',')
-                }          
-                result.push(obj)
-            }
-            return JSON.stringify(result)
-        }
-
-
-
 
         /*/ this code automatically resizes the content according to the viewport dimensions. It has been commented out for Codepen, but can be used elsewhere
         var resizeMap = $('#sizer-map'),
@@ -268,7 +418,7 @@ class Map {
     }
 
     zoomIn() {
-        let mapContainer = d3.select('#' + this.el + '__map')
+        let mapContainer = d3.select('#' + `${this.el}__map`)
         let transform = mapContainer.attr('transform')
         let x, y, s
         if (transform == null) {
@@ -287,7 +437,7 @@ class Map {
     }
 
     zoomOut() {
-        let mapContainer = d3.select('#' + this.el + '__map')
+        let mapContainer = d3.select('#' + `${this.el}__map`)
         let transform = mapContainer.attr('transform')
         let x, y, s
         if (transform == null) {
@@ -305,11 +455,25 @@ class Map {
         this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
     }
 
+    reset() {
+        this.svg.selectAll('path').transition().style('opacity', 1)
+        this.svg.selectAll('path').attr('data-active', 'N')
+        this.svg.transition().duration(750).call(
+            this.zoom.transform,
+            d3.zoomIdentity,
+            d3.zoomTransform(this.svg.node()).invert([this.width / 2, this.height / 2])
+        )
+
+        if (this.tooltipDiv) {
+            d3.select('#' + this.tooltipDiv).style('visibility', 'hidden')
+        }
+    }
+
     download() {
         this.rasterize(this.el).then(data => {
             const a = document.createElement('a')
             a.href = URL.createObjectURL(data)
-            a.download = this.el + '.png'
+            a.download = `${this.el}.png`
             document.body.appendChild(a)
             a.click()
             document.body.removeChild(a)
