@@ -7,43 +7,19 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">{{ title }}</h1>
-        <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
-            Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
-            dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
-            eros vulputate odio scelerisque tincidunt. Vivamus ac maximus turpis. Aliquam luctus, diam sed
-            vestibulum varius, magna metus imperdiet sapien, eget vestibulum tortor odio sit amet libero. Aenean
-            eleifend, sapien ut egestas feugiat, magna mi sagittis quam, ut varius purus odio in dolor. Phasellus
-            venenatis, arcu a ornare blandit, neque quam maximus nulla, eu rutrum sapien nibh eget mauris. Mauris
-            commodo augue quam, eget vestibulum erat consequat sed. Vestibulum viverra elementum velit id ornare.
-            Phasellus dignissim, nisl id semper maximus, ante ipsum hendrerit ipsum, sit amet maximus nibh nibh
-            mollis tellus. Nullam ullamcorper ultricies est, at hendrerit libero facilisis a.</p>
-        <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
-            eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
-            ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
-            nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
-            vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
-            feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
-        <p class="govuk-body">Nulla id dictum dolor. Etiam interdum blandit nisi sit amet varius. Donec
-            porttitor sem sed pretium luctus. Maecenas odio risus, consectetur ullamcorper faucibus id, luctus id
-            turpis. Morbi pulvinar turpis at quam lacinia venenatis. Vivamus id suscipit velit. Cras eleifend ligula
-            libero, non pellentesque urna hendrerit eu. In hac habitasse platea dictumst. Sed tincidunt a metus eu
-            pulvinar.</p>
-        <p class="govuk-body">Nunc semper sapien diam, nec ultricies mauris mattis sit amet. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus. Donec tempor, velit et luctus iaculis, sapien metus
-            suscipit erat, gravida accumsan leo dui ut ipsum. Donec interdum velit neque, in egestas neque semper ac.
-            Cras et ante id lacus consequat gravida ac eu orci. Sed sit amet felis magna. Aliquam posuere nisi eros,
-            vitae tincidunt dolor volutpat sed. Nunc sed tincidunt tortor. Integer venenatis eu ligula non convallis.
-        </p>
-        <p class="govuk-body">Suspendisse at turpis velit. Nunc sodales euismod velit. Morbi rhoncus vitae elit
-            sit amet fringilla. Phasellus efficitur dolor dignissim sodales congue. Etiam posuere accumsan congue. Morbi
-            ut sapien nulla. In dapibus risus nisi, et sollicitudin urna ultrices ut. Donec vel augue eget lectus
-            vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
-            ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
-            Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
-            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>
-    </div>
+<div class="govuk-grid-row govuk-grid-row-full-width">
+    <h1 class="govuk-heading-l">{{ title }}</h1>
+    <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
+
+    {% for item in content %}
+    {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
+    {% if item[0] == 'Subtitle' %}
+    <h3 class="govuk-heading-m">{{ item[1] }}</h3>
+    {% endif %}
+    {% if item[0] == 'Text' %}
+    <p class="govuk-body">{{ item[1] }}</p>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
 </div>
 {% endblock %}

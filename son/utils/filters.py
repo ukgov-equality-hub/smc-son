@@ -30,7 +30,6 @@ def menuitem_isactive_filter(context, details):
     if details:
         itemname = details[0]
         selected = details[1]
-        print(f"isactive - itemname: {itemname}, selected: {selected}", flush=True)
 
         if url_link(itemname) == url_link(selected):
             return ' is-active'
@@ -45,9 +44,20 @@ def menuitem_isopen_filter(context, details):
         itemname = details[1]
         selected = details[2]
         tree = get_menu_tree(menu, selected)
-        print(f"isopen   - itemname: {itemname}, selected: {selected}", flush=True)
 
         if itemname in tree:
             return ' is-open'
         return ''
+    return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('content')
+def content_filter(context, details):
+    if details:
+        content = details[0]
+        field = details[1]
+        for item in content:
+            if item[0] == field:
+                return item[1]
     return ''
