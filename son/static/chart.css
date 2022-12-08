@@ -1,0 +1,34 @@
+div.chart {
+    position: relative;
+    display: inline-block;
+}
+
+div.chart div {
+    width: 100%;
+    height: 100%;
+}
+
+div.chart div.links {
+    margin-top: 10px;
+    height: auto;
+    text-align: right;
+}
+
+div.chart figure {
+    margin-block: 0;
+    margin-inline: 0;
+}
+
+div.chart g.tick line {
+    stroke-dasharray: 2 5;
+}
+
+div.chart figure div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    font-family: 'GDS Transport';
+    font-size: 18px;
+}

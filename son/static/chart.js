@@ -1,16 +1,17 @@
-class Choropleth {
+class Chart {
 
     // TOTO
-    // GEO and TOPO map data
-    // Build map from CSV, JSON
-    // Update map data
+    // Build chart from CSV, JSON
+    // Data from URL
+    // Error bars?
+    // Update chart data
+    // Test download data
+    // https://observablehq.com/@observablehq/plot-rule?collection=@observablehq/plot
+    // Tooltips
+    // https://observablehq.com/@mkfreeman/plot-tooltip
 
-    // GeoJSON data from https://geoportal.statistics.gov.uk/
-    // https://mapshaper.org/ to convert GeoJSON to topoJSON
-
-    constructor(el, geodata, data, options) {
+    constructor(el, data, options) {
         this.el = el
-        this.geodata = geodata
         this.data = data
         this.options = options || {}
         this.loaded = false
@@ -19,20 +20,16 @@ class Choropleth {
     }
 
     _init() {
-        //<script src="https://d3js.org/d3.v7.min.js"></script>
-        //<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
-        // https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js ???
-
         function scriptSrc() {
-            const script =  document.querySelector('script[src*="map.js"]')
+            const script =  document.querySelector('script[src*="chart.js"]')
             if (script.src) {
                 return script.src.substr(0, script.src.lastIndexOf('/') + 1)
             }
             return ''
         }
 
-        const scripts = [`${scriptSrc()}data-utils.js`, 'https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js']
-        const styles = [`${scriptSrc()}map.css`]
+        const scripts = [`${scriptSrc()}data-utils.js`, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6', 'https://cdn.jsdelivr.net/npm/htl@0.3.1/dist/htl.min.js']
+        const styles = [`${scriptSrc()}chart.css`]
         this._loadResources(scripts.concat(styles), this)
     }
 
@@ -88,23 +85,24 @@ class Choropleth {
 
     render() {
         let self = this
+        this.loaded = true
         const div = document.getElementById(this.el)
         if (!div) return
         const options = this.options
         this.width = options.width || div.offsetWidth
         this.height = options.height || div.offsetHeight
-        this.legendDiv = options.legend || ''
-        this.tooltipDiv = options.tooltip || ''
-        const nameField = options.nameField || ''
-        const areaField = options.areaField || nameField
-        const valueField = options.valueField || ''
-        const dataFormat = options.dataFormat || 'linear'  // categorical | sequential | linear
-        let domains = options.domains || []
+        const type = options.type || 'bar'
+        let xkey = options.xkey || null
+        let ykey = options.ykey || null
+        let zkey = options.zkey || null
+        const lci = options.lowerConfidence || null
+        const uci = options.upperConfidence || null
+        const limit = options.limit || 0
+        let domain = options.domain || null  //[-0.1, 0.1]//data.map(x => x[xkey])
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
-        const allowRollover = typeof options.allowRollover === 'undefined' ? true : options.allowRollover
-        const allowZoom = typeof options.allowZoom === 'undefined' ? true : options.allowZoom
-        const allowZoomOnClick = typeof options.allowZoomOnClick === 'undefined' ? true : options.allowZoomOnClick
+
+        //const domain = (data[0].data || data[0]).map(x => (x[xkey]))
         const style = {
             fontFamily: 'GDS Transport',
             fontSize: '14px',
@@ -113,263 +111,114 @@ class Choropleth {
 
         this.dataUtils = new DataUtils()
         this.dataUtils.loadData(this.data).then(data => {
-            buildMap(data)
+            buildChart(data)
         })
 
-        let path, svg, mapContainer, tooltip, mapFeatures, map, content
-
-        function buildMap(data) {
-
-            // Set up map projection, and position it
-            const projection = d3.geoAlbers()
-                .center([1.5, 55.2])
-                .rotate([4.4, 0])
-                .parallels([50, 50])
-                .scale(3300)
-                .translate([self.width / 2, self.height / 2])
-            path = d3.geoPath(projection)
-
-            // Set up SVG, viewport and clipping mask for map
-            svg = d3.select('#' + self.el)
-                .append('svg:svg')
-                .attr('width', 348 /*self.width*/)
-                .attr('height', 629 /*self.height*/)
-                .attr('viewBox', `0 0 ${348 /*self.width*/} ${629 /*self.height*/}`)
-                .attr('perserveAspectRatio', 'xMinYMid')
-                .attr('id', 'sizer-map')
-                .attr('class', 'sizer')
-                .style('transform', 'scale(1)')
-                .on('click', reset)
-            mapContainer = svg.append('g')
-                .attr('id', `${self.el}__map`)
-
-            self.zoom = d3.zoom()
-                .extent([[0, 0], [self.width, self.height]])
-                .scaleExtent([1, 8])
-                .on('zoom', zoomed)
-            if (allowZoom) {
-                svg.call(self.zoom)
+        function buildChart(data) {
+            if (!xkey || !ykey) {
+                const keys = Object.keys(data[0].data ? data[0].data : data[0])
+                xkey = keys[0]
+                ykey = keys[1]
             }
+            const min = d3.min((data.data || data), d => parseFloat(d[xkey], 10))
+            const max = d3.max((data.data || data), d => parseFloat(d[xkey], 10))
+            const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
+            const color = d3.scaleQuantize(scheme)
+                .domain([min, max])
 
-            if (self.tooltipDiv != '') {
-                tooltip = d3.select('#' + self.tooltipDiv)
-                tooltip.html(' ')
-            }
+            const marks = []
+            //for (let i = 0; i < data.length; i++) {
+                let chartData = data//[i].data || data[i]
+                //let chartData = /*data[i].data ||*/ data[i]
+                //const chartTitle = data[i].title || xkey
+                //console.log(`chartData: ${JSON.stringify(chartData)}`)
+                //console.log('xkey', xkey, 'ykey', ykey, 'zkey', zkey)
 
-            self.svg = svg
-            const files = [self.geodata, self.data]
-            d3.json(files[0])
-                .then(function (geodata) {
-                    if (typeof data !== 'undefined') {
-                        ready(geodata, data)
-                    } else {
-                        if (files[1].substr(files[1].length - 3).toLowerCase() == 'csv') {
-                            d3.csv(files[1])
-                                .then(function (data) {
-                                    ready(geodata, data)
-                                })
-                        } else {
-                            d3.json(files[1])
-                                .then(function (data) {
-                                    ready(geodata, data)
-                                })
-                        }
-                    }
-                })
-        }
-
-        function ready(geodata, data) {
-            self.loaded = true
-            const subunits = geodata.objects[Object.keys(geodata.objects)[0]]
-            //const londonunits = JSON.parse(JSON.stringify(subunits))
-            //londonunits.geometries = londonunits.geometries.filter(x => {
-            //    return x.properties.ITL221NM.indexOf('London') > -1
-            //})
-            const areas = subunits.geometries.map(x => x.properties[areaField])
-            let min = 0, max = 0
-            if (dataFormat == 'categorical') {
-                if (domains.length == 0) {
-                    domains = (data.data || data).map(x => x[valueField]).filter(function (a, b, c) { return c.indexOf(a) === b })
-                }
-            } else {
-                //(data.data || data).map(x => x[valueField] = parseFloat(x[valueField], 10).toFixed(2))
-                min = d3.min((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
-                max = d3.max((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
-            }
-
-            mapFeatures = topojson.feature(geodata, subunits).features
-            map = mapContainer.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
-
-            // https://github.com/d3/d3-scale-chromatic
-            let color
-            if (dataFormat == 'sequential') {
-                const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
-                color = d3.scaleSequential(interpolator)
-                    .domain([0, 100])
-            } else {
-                const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
-                color = d3.scaleQuantize(scheme)
-                    .domain(domains.length == 0 ? [min, max] : domains)
-            }
-
-            // Legend
-            if (self.legendDiv != '') {
-                if (dataFormat == 'sequential') {
-                    let labelLength = maxLabelLength([{ 'key': max.toString() }], 'key', style)
-
-                    // http://using-d3js.com/04_05_sequential_scales.html
-                    const div = document.getElementById(self.legendDiv)
-                    const width = dimensions(div).width
-                    const height = dimensions(div).height
-
-                    d3.select('#' + self.legendDiv)
-                        .append('svg:svg')
-                            .attr('width', width)
-                            .attr('height', height)
-                            .attr('viewBox', `0 0 ${width} ${height}`)
-                            .attr('perserveAspectRatio', 'xMinYMid')
-                            .attr('id', 'sizer-legend')
-                            .attr('class', 'legend')
-                        .append('g')
-                        .selectAll('g')
-                        .data(Array.from(Array(100).keys()))
-                        .enter()
-                        .append('rect')
-                            .attr('x', (d) => {
-                                return width > height ? Math.floor(width / 100 * d) : 0
-                            })
-                            .attr('y', (d) => {
-                                return width > height ? 25 : Math.floor(height / 100 * d)
-                            })
-                            .attr('width', (d) => {
-                                return width > height ? width / 100 + 1 : width - labelLength
-                            })
-                            .attr('height', (d) => {
-                                return width > height ? height - 25 : height / 100 + 1
-                            })
-                            .attr('fill', (d) => color(d))
-
-                    d3.select('#' + self.legendDiv).select('svg')
-                        .append('g')
-                        .selectAll('g')
-                        .data(range(0, 100, legendSteps))
-                        .enter()
-                        .append('text')
-                            .attr('x', (d, i) => {
-                                return width > height ? Math.floor(width / 100 * d) - ((range(min, max, legendSteps)[i].toString().length * 10) / 2) : labelLength + 5
-                            })
-                            .attr('y', (d) => {
-                                return width > height ? 8 : Math.floor(height / 100 * d) + 5
-                            })
-                            .text((d, i) => {
-                                return range(min, max, legendSteps)[i]
-                            })
-                            .style('font-size', style.fontSize)
+                if (lci && uci) {
+                    chartData = chartData.map(x => ({ [xkey]: x[xkey], [ykey]: x[ykey], [zkey]: x[zkey] || null, lci: x[lci], uci: x[uci] }))
+                    const mlci = d3.min((data.data || data), d => parseFloat(d[lci], 10))
+                    const muci = d3.max((data.data || data), d => parseFloat(d[uci], 10))
+                    domain = domain || [mlci * 1.2, muci * 1.2]
                 } else {
-                    let legends = dataFormat == 'categorical' ? domains : colourScheme.map((x, i) => `${(min + (((max - min) / colourScheme.length) * i)).toFixed(5)} to ${(min + (((max - min) / colourScheme.length) * (i + 1))).toFixed(5)}`)
-                    //color.ticks(colourScheme.length - 1).map((x, i, a) => { return a[i + 1] ? `${a[i]} - ${a[i + 1]}` : `${a[i]}` }).slice(0, -1)
-                    let labelLength = maxLabelLength(legends.map(x => { return { 'key': x } }), 'key', style)
-
-                    d3.select('#' + self.legendDiv)
-                        .append('svg:svg')
-                            .attr('width', labelLength + 50)
-                            .attr('height', (legends.length * 20) + ((legends.length - 1) * 10))
-                            .attr('viewBox', `0 0 ${labelLength + 50} ${(legends.length * 20) + ((legends.length - 1) * 10)}`)
-                            .attr('perserveAspectRatio', 'xMinYMid')
-                            .attr('id', 'sizer-legend')
-                            .attr('class', 'legend')
-                        .append('g')
-                        .selectAll('g')
-                        .data(legends)
-                        .enter()
-                        .append('g')
-                        .attr('transform', (d, i) => {
-                            return `translate(0,${i * 25})`
-                        })
-
-                    d3.select('#' + self.legendDiv).select('svg')
-                        .append('g')
-                        .selectAll('g')
-                        .data(legends)
-                        .enter()
-                        .append('rect')
-                            .attr('x', 0)
-                            .attr('y', (d, i) => {
-                                return i * 30
-                            })
-                            .attr('width', 20)
-                            .attr('height', 20)
-                            .style('fill', (d, i) => {
-                                return colourScheme[i]
-                            })
-
-                    d3.select('#' + self.legendDiv).select('svg')
-                        .append('g')
-                        .selectAll('g')
-                        .data(legends)
-                        .enter()
-                        .append('text')
-                            .attr('x', 30)
-                            .attr('y', (d, i) => {
-                                return (i + 0.5) * 30
-                            })
-                            .text((d) => {
-                                return d
-                            })
+                    chartData = chartData.map(x => ({ [xkey]: x[xkey], [ykey]: x[ykey], [zkey]: x[zkey] || null, x1: 0, x2: 0 }))
+                    domain = domain || [min * 1.2, max * 1.2]
                 }
-            }
+                if (limit > 0) chartData = chartData.slice(0 - limit)
 
-            map.enter()
-                .append('path')
-                .attr('d', path)
-                .style('fill', (d, i) => {
-                    const val = getValue(d, areaField, valueField, data)  // rnd(0, colourScheme.length - 1)
-                    if (dataFormat == 'categorical') {
-                        return colourScheme[val - 1]
-                    } else if (dataFormat == 'sequential') {
-                        return isNaN(val) ? 'grey' : color(Math.floor((val / (max - min)) * 100))
-                    } else {
-                        return isNaN(val) ? 'grey' : color(val)
-                    }
-                })
-                .style('stroke', 'grey')
-                .style('stroke-width', '0.2')
-                .attr('data-name', (d) => {
-                    return getProperty(d, areaField)
-                })
-                .attr('data-value', (d) => {
-                    if (dataFormat == 'categorical') {
-                        return domains[getValue(d, areaField, valueField, data) - 1]
-                    } else {
-                        const val = getValue(d, areaField, valueField, data)
-                        return isNaN(val) ? 'N/A' : val
-                    }
-                })
-                .attr('data-active', 'N')
-                .on('click', clicked)
-                .on('mouseover', highlight)
-                .on('mouseout', resetHighlight)
-        }
-
-        function getProperty(d, p) {
-            if (d.properties[p]) {
-                return d.properties[p]
-            }
-            return ''
-        }
-
-        function getValue(d, p, v, data) {
-            if (getProperty(d, p) != '') {
-                const val = (data.data || data).filter(x => x[nameField] == getProperty(d, p))
-                if (val && typeof val[0] !== 'undefined' && val[0][v]) {
-                    return val[0][v]
+                const chartOptions = {
+                    x: xkey,
+                    y: ykey,
+                    fill: '#1d70b8',///*zkey ||*/ x => color(x[xkey]), //'red',//colours[i],  // use colours logic from map
+                    title: x => `${xkey}: ${x[xkey]}\n${ykey}: ${x[ykey]}`.replace(/_/g, ' '),
+                    sort: { y: 'x', reverse: true }
                 }
-            }
-            return ''
-        }
 
-        function rnd(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min)
+                const confidenceIntervalOptions = {
+                    y: ykey,
+                    x1: 'lci',
+                    x2: 'uci',
+                    //strokeLinecap: 'square'
+                    //markerStart: 'arrow',
+                    //markerEnd: 'arrow'
+                }
+
+                if (type == 'area') {
+                    marks.push(Plot.areaY(chartData, chartOptions))
+                }
+                if (type == 'bar') {
+                    marks.push(Plot.barX(chartData, chartOptions))
+                }
+                if (type == 'dot') {
+                    marks.push(Plot.dot(chartData, chartOptions))
+                }
+
+
+                if (lci && uci) {
+                    marks.push(Plot.link(chartData, confidenceIntervalOptions))
+                }
+
+
+            //}
+            //marks.push(Plot.ruleY([0]))
+            //marks.push(Plot.ruleX([0]))
+
+            let plot = Plot.plot({
+                x: {
+                    label: '', //xkey,
+                    domain: domain,
+                    grid: true
+                },
+                y: {
+                    label: '', //ykey,
+                    grid: true
+                },
+                marks: marks,
+                color: {
+                    range: colourScheme,
+                    legend: true
+                },
+                width: self.width,
+                height: self.height,
+                marginTop: 10,
+                marginRight: 0,
+                marginBottom: 30,
+                marginLeft: maxLabelLength(data, ykey, style) + 20,
+                style: style
+            })
+            //plot = tooltips(plot)
+            div.appendChild(plot)
+
+            if (zkey && 1==2) {
+                legend = Plot.legend({
+                    color: {
+                        domain: domain
+                    },
+                    legend: 'swatches',
+                    swatchSize: 20,
+                    style: style
+                })
+                div.appendChild(legend)
+            }
         }
 
         function maxLabelLength(data, key, style) {
@@ -379,135 +228,116 @@ class Choropleth {
             return Math.ceil(context.measureText(max).width)
         }
 
-        function range(min, max, n) {
-            let list = [min], interval = (max - min) / (n - 1)
-            for (let i = 1; i < n - 1; i++) {
-               list.push(Math.floor(min + interval * i))
+        function tooltips(chart, styles) {
+            const id_generator = function () {
+                const S4 = function () {
+                    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
+                }
+                return 'a' + S4() + S4()
             }
-            list.push(max)
-            return list
+            const html = htl.html
+            const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
+            const fill_styles = { fill: 'blue', opacity: 0.5 }
+            const type = d3.select(chart).node().tagName
+            let wrapper = type === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
+            const svgs = d3.select(chart).selectAll('svg')
+            if (svgs.size() > 1) wrapper = d3.select([...svgs].pop())
+            wrapper.style('overflow', 'visible')
+
+            wrapper.selectAll('path').each(function (data, index, nodes) {
+                if (d3.select(this).attr('fill') === null || d3.select(this).attr('fill') === 'none') {
+                    d3.select(this).style('pointer-events', 'visibleStroke')
+                    if (styles === undefined) styles = stroke_styles
+                }
+            })
+            if (styles === undefined) styles = fill_styles
+
+            const tip = wrapper
+                .selectAll('.hover')
+                .data([1])
+                .join('g')
+                .attr('class', 'hover')
+                .style('pointer-events', 'none')
+                .style('text-anchor', 'middle')
+
+            const id = id_generator()
+
+            // Add the event listeners
+            d3.select(chart).classed(id, true)
+            wrapper.selectAll('title').each(function () {
+                const title = d3.select(this)
+                const parent = d3.select(this.parentNode)
+                const t = title.text()
+                if (t) {
+                    parent.attr('__title', t).classed('has-title', true)
+                    title.remove()
+                }
+
+                // Mouse events
+                parent
+                    .on('pointerenter pointermove', function (event) {
+                        const text = d3.select(this).attr('__title')
+                        const pointer = d3.pointer(event, wrapper.node())
+                        if (text) tip.call(hover, pointer, text.split('\n'))
+                        else tip.selectAll('*').remove()
+
+                        d3.select(this).raise()
+                        const tipSize = tip.node().getBBox()
+                        if (pointer[0] + tipSize.x < 0) {
+                            tip.attr(
+                                'transform',
+                                `translate(${tipSize.width / 2}, ${pointer[1] + 7})`
+                            )
+                        } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
+                            tip.attr(
+                                'transform',
+                                `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`
+                            )
+                        }
+                    })
+                    .on('pointerout', function (event) {
+                        tip.selectAll('*').remove()
+                        d3.select(this).lower()
+                    })
+            })
+            wrapper.on('touchstart', () => tip.selectAll('*').remove())
+
+            chart.appendChild(html`<style>
+                .${id} .has-title { cursor: pointer  pointer-events: all }
+                .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
+
+            return chart
         }
 
-        function dimensions(el) {
-            const style = getComputedStyle(el)
-            let width = el.clientWidth // width with padding
-            let height = el.clientHeight // height with padding
-            height -= parseFloat(style.paddingTop) + parseFloat(style.paddingBottom)
-            width -= parseFloat(style.paddingLeft) + parseFloat(style.paddingRight)
-            return { height, width }
-        }
+        function hover(tip, pos, text) {
+            const side_padding = 10
+            const vertical_padding = 10
+            const vertical_offset = 15
+            tip.selectAll('*').remove()
 
-        function zoomed({transform}) {
-            mapContainer.attr('transform', transform)
-        }
+            tip
+                .style('text-anchor', 'middle')
+                .style('pointer-events', 'none')
+                .attr('transform', `translate(${pos[0]}, ${pos[1] + 7})`)
+                .selectAll('text')
+                .data(text)
+                .join('text')
+                .style('dominant-baseline', 'ideographic')
+                .text((d) => d)
+                .attr('y', (d, i) => (i - (text.length - 1)) * 15 - vertical_offset)
+                .style('font-weight', (d, i) => (i === 0 ? 'bold' : 'normal'))
 
-        function reset() {
-            self.reset()
-        }
+            const bbox = tip.node().getBBox()
 
-        function highlight(event) {
-            if (!allowRollover) return
-            self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
-            d3.select(this).transition().style('opacity', 1)
-        }
-
-        function resetHighlight(event) {
-            if (!allowRollover) return
-            svg.selectAll('path').style('opacity', 1)
-        }
-
-        function clicked(event, d) {
-            event.stopPropagation()
-            if (allowZoomOnClick) {
-                const [[x0, y0], [x1, y1]] = path.bounds(d)
-                self.svg.selectAll('path').transition().style('opacity', 0.6)
-                d3.select(this).transition().style('opacity', 1)
-                self.svg.selectAll('path').attr('data-active', 'N')
-                d3.select(this).attr('data-active', 'Y')
-
-                self.svg.transition().duration(750).call(
-                    self.zoom.transform,
-                    d3.zoomIdentity
-                        .translate(self.width / 2, self.height / 2)
-                        .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
-                        .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
-                    d3.pointer(event, self.svg.node())
-                )
-            }
-
-            if (self.tooltipDiv) {
-                tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
-                tooltip.style('visibility', 'visible')
-            }
-        }
-
-        /*/ this code automatically resizes the content according to the viewport dimensions. It has been commented out for Codepen, but can be used elsewhere
-        var resizeMap = $('#sizer-map'),
-            aspectMap = resizeMap.width() / resizeMap.height(),
-            containerResizeMap = resizeMap.parent(),
-            resizeLegend = $('#sizer-legend'),
-            aspectLegend = resizeLegend.width() / resizeLegend.height(),
-            containerResizeLegend = $('#electionLegend')
-
-        $(window).on('resize', function () {
-            var targetContainerResizeMapWidth = containerResizeMap.width()
-            resizeMap.attr('width', targetContainerResizeMapWidth)
-            resizeMap.attr('height', Math.round(targetContainerResizeMapWidth / aspectMap))
-            var targetContainerResizeLegendWidth = containerResizeLegend.width()
-            resizeLegend.attr('width', targetContainerResizeLegendWidth)
-            resizeLegend.attr('height', Math.round(targetContainerResizeLegendWidth / aspectLegend))
-        }).trigger('resize')*/
-    }
-
-    zoomIn() {
-        let mapContainer = d3.select('#' + `${this.el}__map`)
-        let transform = mapContainer.attr('transform')
-        let x, y, s
-        if (transform == null) {
-            x = this.width * -0.1
-            y = this.height * -0.1
-            s = 1.2
-        } else {
-            transform = transform.replace(/, /, ',').split(' ')
-            let translate = transform[0].match(/\(([^)]+)\)/)[1].split(',').map(x => parseFloat(x, 10))
-            let scale = parseFloat(transform[1].match(/\(([^)]+)\)/)[1], 10)
-            x = translate[0] - (this.width * (scale * 1.2) * 0.1)
-            y = translate[1] - (this.height * (scale * 1.2) * 0.1)
-            s = scale * 1.2
-        }
-        this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
-    }
-
-    zoomOut() {
-        let mapContainer = d3.select('#' + `${this.el}__map`)
-        let transform = mapContainer.attr('transform')
-        let x, y, s
-        if (transform == null) {
-            x = this.width * 0.1
-            y = this.height * 0.1
-            s = 1 / 1.2
-        } else {
-            transform = transform.replace(/, /, ',').split(' ')
-            let translate = transform[0].match(/\(([^)]+)\)/)[1].split(',').map(x => parseFloat(x, 10))
-            let scale = parseFloat(transform[1].match(/\(([^)]+)\)/)[1], 10)
-            x = translate[0] + (this.width * (scale / 1.2) * 0.1)
-            y = translate[1] + (this.height * (scale / 1.2) * 0.1)
-            s = scale / 1.2
-        }
-        this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
-    }
-
-    reset() {
-        this.svg.selectAll('path').transition().style('opacity', 1)
-        this.svg.selectAll('path').attr('data-active', 'N')
-        this.svg.transition().duration(750).call(
-            this.zoom.transform,
-            d3.zoomIdentity,
-            d3.zoomTransform(this.svg.node()).invert([this.width / 2, this.height / 2])
-        )
-
-        if (this.tooltipDiv) {
-            d3.select('#' + this.tooltipDiv).style('visibility', 'hidden')
+            tip
+                .append('rect')
+                .attr('y', bbox.y - vertical_padding)
+                .attr('x', bbox.x - side_padding)
+                .attr('width', bbox.width + side_padding * 2)
+                .attr('height', bbox.height + vertical_padding * 2)
+                .style('fill', 'white')
+                .style('stroke', '#d3d3d3')
+                .lower()
         }
     }
 

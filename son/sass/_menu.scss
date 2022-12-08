@@ -35,7 +35,7 @@ ul.collapsible {
             display: none;
         }
 
-        a, a:link, a:active, a:hover, a:visited {
+        a, a:link, a:active, a:hover, a:visited, span.collapsible-level1 {
             width: calc(100% - 40px);
             border-color: transparent;
             background-color: transparent;
@@ -44,8 +44,14 @@ ul.collapsible {
             padding: 5px 10px 7px 10px;
         }
 
-        a.collapsible-level1, a.collapsible-level1:link, a.collapsible-level1:active, a.collapsible-level1:hover, a.collapsible-level1:visited {
+        a.collapsible-level1, a.collapsible-level1:link, a.collapsible-level1:active, a.collapsible-level1:hover, a.collapsible-level1:visited, span.collapsible-level1 {
             font-weight: 700;
+            color: #1d70b8;
+        }
+
+        span.collapsible-level1 {
+            display: block;
+            border-left: 4px solid transparent;
         }
 
         a:hover {

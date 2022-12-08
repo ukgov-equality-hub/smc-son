@@ -63,6 +63,7 @@ def create_app(test_config=None):
     @app.after_request
     def add_header(response):
         response.headers['X-Frame-Options'] = 'deny'
+        response.headers['Access-Control-Allow-Origin'] = '*'
         response.headers['X-Content-Type-Options'] = 'nosniff'
         response.headers['Content-Security-Policy'] = "default-src 'self'; " \
                                                         "script-src 'self' 'unsafe-inline' 'unsafe-eval'; " \
@@ -71,7 +72,7 @@ def create_app(test_config=None):
                                                         "style-src 'self' 'unsafe-inline'; " \
                                                         "img-src 'self' blob: data:; " \
                                                         "font-src 'self' data:; " \
-                                                        "connect-src 'self' https://*.google-analytics.com https://api.equality-data-store.cabinetoffice.gov.uk; " \
+                                                        "connect-src 'self' http://localhost:5000 https://*.google-analytics.com https://api.equality-data-store.cabinetoffice.gov.uk; " \
                                                         "form-action 'self' https://www.payments.service.gov.uk;"
 
         return response

@@ -9,7 +9,8 @@
                     <ul class="moj-side-navigation__list">
                         {% for subdomain in domain.subdomains %}
                         <li class="moj-side-navigation__item{{ [subdomain.name, selected] | menuitem_isactive }}{{ [menu, subdomain.name, selected] | menuitem_isopen }}">
-                            <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}">{{ subdomain.name }}</a>
+                            <!--<a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}"></a>-->
+                            <span class="subdomain">{{ subdomain.name }}</span>
                             <span class="collapsible__toggle-icon"></span>
                             <ul class="moj-side-navigation__list">
                                 {% for indicator in subdomain.indicators %}

@@ -1,6 +1,7 @@
 import os
 from pathlib import Path
 import requests
+import csv
 from flask import Blueprint, current_app, render_template, request, session
 #from son.catalogue.forms import Form
 from son.utils.menu import menu, get_item_title
@@ -19,7 +20,6 @@ def get_content(domain, subdomain=None, indicator=None):
     else:
         file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
 
-    print(file_path, flush=True)
     if Path(file_path).is_file():
         f = open(file_path, 'r')
         current_section = ''
@@ -40,7 +40,30 @@ def get_content(domain, subdomain=None, indicator=None):
 
         f.close()
 
-    print(content, flush=True)
+    for index in range(len(content)):
+        if content[index][1][:1] == '#':
+            current_subsection = ''
+            current_subcontent = ''
+            current_section = []
+            items = content[index][1].split("\r\n")
+            for item in items:
+                if len(item) > 1 and item[:1] == '#':
+                    if current_subsection != '':
+                        current_section.append(['Subtitle', current_subsection])
+                        current_section.append(['Text', current_subcontent])
+                        current_subsection = ''
+                        current_subcontent = ''
+                    current_subsection = item[1:].strip()
+                elif item.strip() != '':
+                    if current_subcontent != '': current_subcontent += "\r\n"
+                    current_subcontent += item.strip()
+
+            if current_subsection != '':
+                current_section.append(['Subtitle', current_subsection])
+                current_section.append(['Text', current_subcontent])
+
+            content[index][1] = current_section
+
     return content
 
 
@@ -90,6 +113,28 @@ def subdomain_page(domain, subdomain):
 
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
+    content = get_content(domain, subdomain, indicator)
+    data_src = ''
+    map_src = ''
+    map_options = ''
+    data_table = []
+    for item in content:
+        if item[0] == 'Data Table':
+            for index in range(len(item[1])):
+                if item[1][index][1] == 'data-src':
+                    data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{item[1][index + 1][1].replace('data-src:', '').strip()}"
+                    if Path(data_src).is_file():
+                        with open(data_src, encoding='utf8', errors='ignore') as csv_file:
+                            data_table = list(csv.reader(csv_file, delimiter=','))
+        elif item[0] == 'Map':
+            for index in range(len(item[1])):
+                #if item[1][index][1] == 'data-src':
+                #    data_src = item[1][index + 1][1].strip()
+                if item[1][index][1] == 'map-src':
+                    map_src = item[1][index + 1][1].strip()
+                if item[1][index][1] == 'options':
+                    map_options = item[1][index + 1][1].strip()
+
     return render_template(
         'indicator/indicator.html',
         menu=menu,
@@ -97,6 +142,10 @@ def indicator_page(domain, subdomain, indicator):
         subdomain=subdomain,
         indicator=indicator,
         title=get_item_title(indicator),
-        content=get_content(domain, subdomain, indicator),
+        content=content,
+        data_src=data_src[data_src.index('..') + 2:] if '..' in data_src else data_src,
+        map_src=map_src,
+        map_options=map_options,
+        data_table=data_table,
         form=None
     )

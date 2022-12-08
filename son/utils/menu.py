@@ -57,7 +57,7 @@ Drivers of mobility
         Availability of high-quality school education
         Opportunities for access to higher education
         Availability of high-quality higher education
-    Family inequality
+    Inequality among children
         Economic inequality between families with school-age children
         Childhood poverty
         Cultural inequality between families with school-age children
@@ -172,7 +172,7 @@ menu = {
             ]
         },
         {
-            'name': 'Age-related outcomes',
+            'name': 'Intermediate outcomes',
             'subdomains': [
                 {
                     'name': '5 to 16 years',
@@ -268,7 +268,7 @@ menu = {
                     ]
                 },
                 {
-                    'name': 'Family inequality',
+                    'name': 'Inequality among children',
                     'indicators': [
                         {
                             'name': 'Economic inequality between families with school-age children'

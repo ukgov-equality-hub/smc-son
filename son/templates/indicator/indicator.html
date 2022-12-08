@@ -7,19 +7,162 @@
 {% endblock %}
 
 {% block content %}
+<script src="{{ url_for('static', filename='data-utils.js') }}"></script>
+<script src="{{ url_for('static', filename='map.js') }}"></script>
+<script src="{{ url_for('static', filename='chart.js') }}"></script>
+<script src="{{ url_for('static', filename='data-table.js') }}"></script>
 <div class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
+    <div class="govuk-tabs" data-module="govuk-tabs">
+        <ul class="govuk-tabs__list">
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#tab-map">
+                    Map
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-data">
+                    Data
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-about">
+                    About
+                </a>
+            </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="tab-map">
+            <h2 class="govuk-heading-l">Map</h2>
+            <div id="map-container">
+                <div id="map-legend"></div>
+                <div id="map-controls">
+                    <button id="mapZoomIn">+</button>
+                    <button id="mapZoomOut">-</button>
+                </div>
+                <div id="map"></div>
+                <div id="map-tooltip"></div>
+            </div>
+            <a id="mapDownload" href="#" class="govuk-link">Download</a>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-data">
+            <div class="data-table-data">
+                <table id="table-data" class="govuk-table table-container" data-module="_moj-sortable-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            {% for column in data_table[0] %}
+                            <th scope="col" class="govuk-table__header" aria-sort="none">{{ column }}</th>
+                            {% endfor %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in data_table %}
+                        {% if loop.index > 1 %}
+                        <tr class="govuk-table__row">
+                            {% for column in row %}
+                            <td class="govuk-table__cell">{{ column }}</td>
+                            {% endfor %}
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-about">
+            <h2 class="govuk-heading-l">About</h2>
+            {% for item in content %}
+            {% if item[0] == 'About' %}
+            {% for subitem in item[1] %}
+            {% if subitem[0] == 'Subtitle' %}
+            <h4 class="govuk-heading-s">{{ subitem[1] | safe }}</h4>
+            {% endif %}
+            {% if subitem[0] == 'Text' %}
+            <p class="govuk-body">{{ subitem[1] | safe }}</p>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
     {% if item[0] == 'Subtitle' %}
-    <h3 class="govuk-heading-m">{{ item[1] }}</h3>
+    <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
     {% endif %}
     {% if item[0] == 'Text' %}
-    <p class="govuk-body">{{ item[1] }}</p>
+    <p class="govuk-body">{{ item[1] | safe }}</p>
     {% endif %}
     {% endif %}
     {% endfor %}
+
+    <div class="chart" style="width: 775px; height: 1000px;">
+        <div id="dotplot"></div>
+        <div class="links">
+            <a href="javascript:download('dotplot')" class="govuk-link">Download image</a> |
+            <a href="/download/dotplot" target="_blank" class="govuk-link">Download data</a>
+        </div>
+    </div>
+
 </div>
+<script>
+    (function() {
+        let table = new DataTable(
+            'table-data',
+            undefined,
+            {
+                'allowColumnResize': true,
+                'allowFilter': true,
+                'allowSort': true,
+                'allowPagination': false
+            }
+        )
+
+        const dataUtils = new DataUtils()
+        dataUtils.loadData(`${location.protocol}//${location.host}{{ data_src | safe }}`).then(data => {
+            data = data.data || data
+            data = data.filter(x => { return !['', 'United Kingdom'].includes(x['Area_name']) })
+            data = data.map(x => { return { Area_name: x['Area_name'], Value: parseFloat(x['Value'], 10), LCI: parseFloat(x['LCI'], 10), UCI: parseFloat(x['UCI'], 10) }})
+
+            let map = new Choropleth(
+                'map',
+                `${location.protocol}//${location.host}{{ map_src | safe }}`,
+                data,
+                {{ map_options | safe }}
+            )
+
+            document.getElementById('mapZoomIn').addEventListener('click', function () {
+                map.zoomIn()
+            })
+
+            document.getElementById('mapZoomOut').addEventListener('click', function () {
+                map.zoomOut()
+            })
+
+            document.getElementById('mapDownload').addEventListener('click', function () {
+                map.download()
+            })
+
+            let chart = new Chart(
+                'dotplot',
+                data,//.sort(function (a, b) { return a.Value - b.Value }),
+                {
+                    type: 'dot',
+                    ykey: 'Area_name',
+                    xkey: 'Value',
+                    //zkey: 'status',
+                    //limit: 12,
+                    lowerConfidence: 'LCI',
+                    upperConfidence: 'UCI'
+                    // OPTIONS FOR SORT
+                    // OPTIONS FOR ORIENTATION
+                }
+            )/**/
+        })
+
+        //chart('applications_by_month', [{ 'title': 'applications', 'data': [{'application date': 'Jun-22', 'number of applications': 129, 'status': 'started'}, {'application date': 'Jul-22', 'number of applications': 29, 'status': 'submitted'}, {'application date': 'Jul-22', 'number of applications': 488, 'status': 'started'}, {'application date': 'Aug-22', 'number of applications': 104, 'status': 'submitted'}, {'application date': 'Aug-22', 'number of applications': 358, 'status': 'started'}, {'application date': 'Sep-22', 'number of applications': 115, 'status': 'submitted'}, {'application date': 'Sep-22', 'number of applications': 420, 'status': 'started'}, {'application date': 'Oct-22', 'number of applications': 81, 'status': 'submitted'}, {'application date': 'Oct-22', 'number of applications': 333, 'status': 'started'}, {'application date': 'Nov-22', 'number of applications': 101, 'status': 'submitted'}, {'application date': 'Nov-22', 'number of applications': 392, 'status': 'started'}] }], { type: 'area', xkey: 'application date', ykey: 'number of applications', zkey: 'status', limit: 12 })
+    })()
+</script>
 {% endblock %}
