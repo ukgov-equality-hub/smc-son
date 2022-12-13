@@ -15,7 +15,7 @@ Data on the highest qualifications of 25 to 29 year olds by social class backgro
 /static/data/IN23.csv
 
 # options
-{ 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'rollover', 'rolloverBehaviour': 'fade' }
+{ 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'rollover', 'rolloverBehaviour': 'fade', 'clickBehaviour': 'zoom' }
 
 ## Data Table
 # data-src

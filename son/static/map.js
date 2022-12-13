@@ -446,8 +446,8 @@ class Choropleth {
 
             if (self.clickBehaviour == 'zoom') {
                 const [[x0, y0], [x1, y1]] = path.bounds(d)
-                self.svg.selectAll('path').transition().style('opacity', 0.6)
-                d3.select(this).transition().style('opacity', 1)
+                self.svg.selectAll('path').transition() /////////.style('opacity', 0.6)
+                /////////d3.select(this).transition().style('opacity', 1)
                 self.svg.selectAll('path').attr('data-active', 'N')
                 d3.select(this).attr('data-active', 'Y')
 
@@ -528,7 +528,7 @@ class Choropleth {
     }
 
     resetZoom() {
-        this.svg.selectAll('path').transition().style('opacity', 1)
+        this.svg.selectAll('path').transition()//////////.style('opacity', 1) . // TODO
         this.svg.selectAll('path').attr('data-active', 'N')
         this.svg.transition().duration(750).call(
             this.zoom.transform,
