@@ -32,6 +32,15 @@
     right: 10px;
 }
 
+#map-legend {
+    height: auto;
+    overflow: hidden;
+}
+
+#map-legend > p {
+    cursor: pointer;
+}
+
 #map-container #map-tooltip {
     bottom: 10px;
     left: 10px;

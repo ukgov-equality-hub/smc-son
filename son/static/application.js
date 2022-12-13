@@ -491,7 +491,7 @@
     this.$nav = this.$module.querySelector('.mobile-navigation');
     this.$navToggler = this.$module.querySelector('.govuk-js-header-toggle');
     this.$navButtons = this.$module.querySelectorAll('.collapsible__toggle-icon');
-    this.$navLinks = this.$module.querySelectorAll('.js-app-navigation__link');
+    this.$navLinks = this.$module.querySelectorAll('.collapsible__toggle-link');
 
     // Save the opened/closed state for the nav in memory so that we can accurately maintain state when the screen is changed from small to big and back to small
     this.mobileNavOpen = false;
@@ -557,6 +557,7 @@
     var $nav = this.$nav;
     var $navToggler = this.$navToggler;
     var $navButtons = this.$navButtons;
+    var $navLinks = this.$navLinks;
 
     $navToggler.addEventListener('click', function (event) {
       if (this.mobileNavOpen) {
@@ -571,6 +572,24 @@
     }.bind(this));
 
     nodeListForEach($navButtons, function ($button, index) {
+      $button.addEventListener('click', function (event) {
+        var $nextSubNav = $button.parentNode.querySelector(subNavJSClass);
+
+        if ($nextSubNav) {
+          if ($nextSubNav.hasAttribute('hidden')) {
+            $nextSubNav.parentNode.classList.add(subNavActiveClass);
+            $nextSubNav.removeAttribute('hidden');
+            $button.setAttribute('aria-expanded', 'true');
+          } else {
+            $nextSubNav.parentNode.classList.remove(subNavActiveClass);
+            $nextSubNav.setAttribute('hidden', '');
+            $button.setAttribute('aria-expanded', 'false');
+          }
+        }
+      });
+    });
+
+    nodeListForEach($navLinks, function ($button, index) {
       $button.addEventListener('click', function (event) {
         var $nextSubNav = $button.parentNode.querySelector(subNavJSClass);
 

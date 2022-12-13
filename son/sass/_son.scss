@@ -194,11 +194,12 @@ div#tab-data.govuk-tabs__panel--hidden {
 
 div.data-table-data table {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
 
     thead {
         tr {
             th {
+                padding: 12px 7px;
                 background: #f3f2f1;
                 border-bottom: 1px solid #b1b4b6;
             }
@@ -209,6 +210,12 @@ div.data-table-data table {
         tr:first-child {
             td {
                 border-top: none;
+            }
+        }
+
+        tr {
+            td {
+                padding: 12px 7px;
             }
         }
     }

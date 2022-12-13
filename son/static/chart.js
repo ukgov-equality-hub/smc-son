@@ -135,7 +135,7 @@ class Chart {
                 //console.log('xkey', xkey, 'ykey', ykey, 'zkey', zkey)
 
                 if (lci && uci) {
-                    chartData = chartData.map(x => ({ [xkey]: x[xkey], [ykey]: x[ykey], [zkey]: x[zkey] || null, lci: x[lci], uci: x[uci] }))
+                    chartData = chartData.map(x => ({ [xkey]: x[xkey], [ykey]: x[ykey], [zkey]: x[zkey] || null, lci: x[lci], uci: x[uci], _ci: '|' }))
                     const mlci = d3.min((data.data || data), d => parseFloat(d[lci], 10))
                     const muci = d3.max((data.data || data), d => parseFloat(d[uci], 10))
                     domain = domain || [mlci * 1.2, muci * 1.2]
@@ -156,10 +156,7 @@ class Chart {
                 const confidenceIntervalOptions = {
                     y: ykey,
                     x1: 'lci',
-                    x2: 'uci',
-                    //strokeLinecap: 'square'
-                    //markerStart: 'arrow',
-                    //markerEnd: 'arrow'
+                    x2: 'uci'
                 }
 
                 if (type == 'area') {
@@ -168,19 +165,23 @@ class Chart {
                 if (type == 'bar') {
                     marks.push(Plot.barX(chartData, chartOptions))
                 }
-                if (type == 'dot') {
+                if (type == 'dot' && !(lci && uci)) {
                     marks.push(Plot.dot(chartData, chartOptions))
                 }
 
-
                 if (lci && uci) {
-                    marks.push(Plot.link(chartData, confidenceIntervalOptions))
+                    marks.push(Plot.ruleY(chartData, confidenceIntervalOptions))
+                    if (type == 'dot') {
+                        marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
+                    }
+                    //marks.push(Plot.tickX(chartData, { x: 'lci', y: ykey, strokeOpacity: 0.2 }))
+                    //marks.push(Plot.tickX(chartData, { x: 'uci', y: ykey, strokeOpacity: 0.2 }))
+                    marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', _fill: '#ccc' }))
+                    marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', _fill: '#ccc' }))
                 }
-
-
             //}
-            //marks.push(Plot.ruleY([0]))
-            //marks.push(Plot.ruleX([0]))
+            //marks.push(Plot.tickY([0]))
+            //marks.push(Plot.tickX([0]))
 
             let plot = Plot.plot({
                 x: {

@@ -34,9 +34,8 @@
             </li>
         </ul>
         <div class="govuk-tabs__panel" id="tab-map">
-            <h2 class="govuk-heading-l">Map</h2>
             <div id="map-container">
-                <div id="map-legend"></div>
+                <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
                 <div id="map-controls">
                     <button id="mapZoomIn">+</button>
                     <button id="mapZoomOut">-</button>

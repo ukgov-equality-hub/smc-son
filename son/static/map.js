@@ -93,8 +93,6 @@ class Choropleth {
         const options = this.options
         this.width = options.width || div.offsetWidth
         this.height = options.height || div.offsetHeight
-        this.legendDiv = options.legend || ''
-        this.tooltipDiv = options.tooltip || ''
         const nameField = options.nameField || ''
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
@@ -102,9 +100,13 @@ class Choropleth {
         let domains = options.domains || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
-        const allowRollover = typeof options.allowRollover === 'undefined' ? true : options.allowRollover
+        this.legendDiv = options.legend || ''
+        this.tooltip = ''
+        this.tooltipDiv = options.tooltip || ''
+        this.tooltipBehaviour = ['rollover', 'click'].includes(options.tooltipBehaviour) ? options.tooltipBehaviour : ''
+        this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
+        this.clickBehaviour = ['outline', 'fade', 'zoom'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         const allowZoom = typeof options.allowZoom === 'undefined' ? true : options.allowZoom
-        const allowZoomOnClick = typeof options.allowZoomOnClick === 'undefined' ? true : options.allowZoomOnClick
         const style = {
             fontFamily: 'GDS Transport',
             fontSize: '14px',
@@ -116,7 +118,7 @@ class Choropleth {
             buildMap(data)
         })
 
-        let path, svg, mapContainer, tooltip, mapFeatures, map, content
+        let path, svg, mapContainer, mapOutline, mapFeatures, map, content
 
         function buildMap(data) {
 
@@ -130,18 +132,23 @@ class Choropleth {
             path = d3.geoPath(projection)
 
             // Set up SVG, viewport and clipping mask for map
-            svg = d3.select('#' + self.el)
+            svg = d3.select(`#${self.el}`)
                 .append('svg:svg')
                 .attr('width', 348 /*self.width*/)
                 .attr('height', 629 /*self.height*/)
                 .attr('viewBox', `0 0 ${348 /*self.width*/} ${629 /*self.height*/}`)
                 .attr('perserveAspectRatio', 'xMinYMid')
-                .attr('id', 'sizer-map')
+                .attr('id', `${self.el}__mapSVG`)
                 .attr('class', 'sizer')
                 .style('transform', 'scale(1)')
-                .on('click', reset)
+                .on('click', resetZoom)
+            //svg.append('g')
+            //    .attr('id', `${self.el}__map`)
+
             mapContainer = svg.append('g')
                 .attr('id', `${self.el}__map`)
+            mapOutline = svg.append('g')
+                .attr('id', `${self.el}__outline`)
 
             self.zoom = d3.zoom()
                 .extent([[0, 0], [self.width, self.height]])
@@ -151,9 +158,9 @@ class Choropleth {
                 svg.call(self.zoom)
             }
 
-            if (self.tooltipDiv != '') {
-                tooltip = d3.select('#' + self.tooltipDiv)
-                tooltip.html(' ')
+            if (self.tooltipDiv != '' && self.tooltipBehaviour != '') {
+                self.tooltip = d3.select(`#${self.tooltipDiv}`)
+                self.tooltip.html(' ')
             }
 
             self.svg = svg
@@ -199,6 +206,7 @@ class Choropleth {
 
             mapFeatures = topojson.feature(geodata, subunits).features
             map = mapContainer.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
+            let outline = mapOutline.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
 
             // https://github.com/d3/d3-scale-chromatic
             let color
@@ -209,7 +217,7 @@ class Choropleth {
             } else {
                 const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
                 color = d3.scaleQuantize(scheme)
-                    .domain(domains.length == 0 ? [min, max] : domains)
+                    .domain(dataFormat == 'categorical' && domains.length > 0 ? domains : [min, max])
             }
 
             // Legend
@@ -222,7 +230,7 @@ class Choropleth {
                     const width = dimensions(div).width
                     const height = dimensions(div).height
 
-                    d3.select('#' + self.legendDiv)
+                    d3.select(`#${self.legendDiv}`)
                         .append('svg:svg')
                             .attr('width', width)
                             .attr('height', height)
@@ -249,7 +257,7 @@ class Choropleth {
                             })
                             .attr('fill', (d) => color(d))
 
-                    d3.select('#' + self.legendDiv).select('svg')
+                    d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
                         .selectAll('g')
                         .data(range(0, 100, legendSteps))
@@ -266,11 +274,11 @@ class Choropleth {
                             })
                             .style('font-size', style.fontSize)
                 } else {
-                    let legends = dataFormat == 'categorical' ? domains : colourScheme.map((x, i) => `${(min + (((max - min) / colourScheme.length) * i)).toFixed(5)} to ${(min + (((max - min) / colourScheme.length) * (i + 1))).toFixed(5)}`)
+                    let legends = dataFormat == 'categorical' || domains.length > 0 ? domains : colourScheme.map((x, i) => `${(min + (((max - min) / colourScheme.length) * i)).toFixed(5)} to ${(min + (((max - min) / colourScheme.length) * (i + 1))).toFixed(5)}`)
                     //color.ticks(colourScheme.length - 1).map((x, i, a) => { return a[i + 1] ? `${a[i]} - ${a[i + 1]}` : `${a[i]}` }).slice(0, -1)
                     let labelLength = maxLabelLength(legends.map(x => { return { 'key': x } }), 'key', style)
 
-                    d3.select('#' + self.legendDiv)
+                    d3.select(`#${self.legendDiv}`)
                         .append('svg:svg')
                             .attr('width', labelLength + 50)
                             .attr('height', (legends.length * 20) + ((legends.length - 1) * 10))
@@ -284,10 +292,10 @@ class Choropleth {
                         .enter()
                         .append('g')
                         .attr('transform', (d, i) => {
-                            return `translate(0,${i * 25})`
+                            return `translate(0, ${i * 25})`
                         })
 
-                    d3.select('#' + self.legendDiv).select('svg')
+                    d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
                         .selectAll('g')
                         .data(legends)
@@ -303,7 +311,7 @@ class Choropleth {
                                 return colourScheme[i]
                             })
 
-                    d3.select('#' + self.legendDiv).select('svg')
+                    d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
                         .selectAll('g')
                         .data(legends)
@@ -349,6 +357,17 @@ class Choropleth {
                 .on('click', clicked)
                 .on('mouseover', highlight)
                 .on('mouseout', resetHighlight)
+
+            outline.enter()
+                .append('path')
+                .attr('d', path)
+                .style('fill', 'none')
+                .style('stroke', 'red')
+                .style('stroke-width', '2')
+                .style('opacity', 0)
+                .attr('data-name', (d) => {
+                    return getProperty(d, areaField)
+                })
         }
 
         function getProperty(d, p) {
@@ -399,26 +418,33 @@ class Choropleth {
 
         function zoomed({transform}) {
             mapContainer.attr('transform', transform)
+            mapOutline.attr('transform', transform)
         }
 
-        function reset() {
-            self.reset()
+        function resetZoom() {
+            self.resetZoom()
         }
 
         function highlight(event) {
-            if (!allowRollover) return
-            self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
-            d3.select(this).transition().style('opacity', 1)
+            self.highlight(this.getAttribute('data-name'))
+            //if (!rolloverBehaviour) return
+            //self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
+            //d3.select(this).transition().style('opacity', 1)
         }
 
         function resetHighlight(event) {
-            if (!allowRollover) return
-            svg.selectAll('path').style('opacity', 1)
+            self.resetHighlight()
+            //if (!rolloverBehaviour) return
+            //svg.selectAll('path').style('opacity', 1)
         }
 
         function clicked(event, d) {
             event.stopPropagation()
-            if (allowZoomOnClick) {
+
+
+
+
+            if (self.clickBehaviour == 'zoom') {
                 const [[x0, y0], [x1, y1]] = path.bounds(d)
                 self.svg.selectAll('path').transition().style('opacity', 0.6)
                 d3.select(this).transition().style('opacity', 1)
@@ -435,14 +461,14 @@ class Choropleth {
                 )
             }
 
-            if (self.tooltipDiv) {
-                tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
-                tooltip.style('visibility', 'visible')
+            if (self.tooltipDiv && self.tooltipBehaviour == 'click') {
+                self.tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
+                self.tooltip.style('visibility', 'visible')
             }
         }
 
         /*/ this code automatically resizes the content according to the viewport dimensions. It has been commented out for Codepen, but can be used elsewhere
-        var resizeMap = $('#sizer-map'),
+        var resizeMap = $(`${self.el}__mapSVG`),
             aspectMap = resizeMap.width() / resizeMap.height(),
             containerResizeMap = resizeMap.parent(),
             resizeLegend = $('#sizer-legend'),
@@ -460,7 +486,7 @@ class Choropleth {
     }
 
     zoomIn() {
-        let mapContainer = d3.select('#' + `${this.el}__map`)
+        let mapContainer = d3.select(`#${this.el}__map`)
         let transform = mapContainer.attr('transform')
         let x, y, s
         if (transform == null) {
@@ -479,7 +505,7 @@ class Choropleth {
     }
 
     zoomOut() {
-        let mapContainer = d3.select('#' + `${this.el}__map`)
+        let mapContainer = d3.select(`#${this.el}__map`)
         let transform = mapContainer.attr('transform')
         let x, y, s
         if (transform == null) {
@@ -497,7 +523,11 @@ class Choropleth {
         this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
     }
 
-    reset() {
+    zoomTo(subunit) {
+        // TODO
+    }
+
+    resetZoom() {
         this.svg.selectAll('path').transition().style('opacity', 1)
         this.svg.selectAll('path').attr('data-active', 'N')
         this.svg.transition().duration(750).call(
@@ -507,8 +537,87 @@ class Choropleth {
         )
 
         if (this.tooltipDiv) {
-            d3.select('#' + this.tooltipDiv).style('visibility', 'hidden')
+            d3.select(`#${this.tooltipDiv}`).style('visibility', 'hidden')
         }
+    }
+
+    highlight(subunit) {
+        if (this.rolloverBehaviour == 'outline') {
+            d3.select(`#${this.el}__outline`).selectAll('path[data-active="N"]').style('opacity', 0)
+            d3.select(`#${this.el}__outline`).select(`path[data-name="${subunit}"]`).style('opacity', 1)
+        } else if (this.rolloverBehaviour == 'fade') {
+            d3.select(`#${this.el}__map`).selectAll('path[data-active="N"]').style('opacity', 0.6)
+            d3.select(`#${this.el}__map`).select(`path[data-name="${subunit}"]`).style('opacity', 1)
+        }
+
+        if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
+            this.tooltip.html(`<h2>${subunit}</h2><h3>Value: ${d3.select(`#${this.el}__map`).select(`path[data-name="${subunit}"]`).attr('data-value')}</h3>`)
+            this.tooltip.style('visibility', 'visible')
+        }
+    }
+
+    resetHighlight() {
+        if (this.rolloverBehaviour == 'outline') {
+            d3.select(`#${this.el}__outline`).selectAll('path').style('opacity', 0)
+        } else if (this.rolloverBehaviour == 'fade') {
+            d3.select(`#${this.el}__map`).selectAll('path').style('opacity', 1)
+        }
+
+        if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
+            this.tooltip.html('')
+            this.tooltip.style('visibility', 'hidden')
+        }
+    }
+
+    outline(subunit) {
+        // TODO
+    }
+
+    resetOutline() {
+        // TODO
+    }
+
+    fade(subunit) {
+        // TODO
+    }
+
+    resetFade() {
+        // TODO
+    }
+
+    select(subunit) {
+        // TODO
+        /*
+        if (allowZoomOnClick) {
+            const [[x0, y0], [x1, y1]] = path.bounds(d)
+            self.svg.selectAll('path').transition().style('opacity', 0.6)
+            d3.select(this).transition().style('opacity', 1)
+            self.svg.selectAll('path').attr('data-active', 'N')
+            d3.select(this).attr('data-active', 'Y')
+
+            self.svg.transition().duration(750).call(
+                self.zoom.transform,
+                d3.zoomIdentity
+                    .translate(self.width / 2, self.height / 2)
+                    .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
+                    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
+                d3.pointer(event, self.svg.node())
+            )
+        }
+
+        if (self.tooltipDiv) {
+            tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
+            tooltip.style('visibility', 'visible')
+        }
+        */
+    }
+
+    showTooltip(subunit) {
+        // TODO
+    }
+
+    resetTooltip() {
+        // TODO
     }
 
     update(data) {
