@@ -5,7 +5,7 @@
                 {% if (domain.name | url_link) == (selecteddomain | url_link) %}
                 {% for subdomain in domain.subdomains %}
                 <li class="moj-side-navigation__item{{ [subdomain.name, selected] | menuitem_isactive }}{{ [menu, subdomain.name, selected] | menuitem_isopen }}">
-                    <a href="#" link="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}" class="collapsible-level1 collapsible__toggle-link">{{ subdomain.name }}</a>
+                    <a href="javascript:;" link="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}" class="collapsible-level1 collapsible__toggle-link">{{ subdomain.name }}</a>
                     <!--<span class="collapsible-level1">{{ subdomain.name }}</span>-->
                     <span class="collapsible__toggle-icon"></span>
                     <ul class="moj-side-navigation__list">
