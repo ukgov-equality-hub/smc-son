@@ -7,17 +7,28 @@ Occupational level of 25 to 29 year olds
 ## Summary
 Data on the occupational level of jobs taken by 25 to 29 year olds in the UK (2014 to 2021).
 
-## Map
+## AllUK
+# chart-src
+/static/demo/SON-DR33bar-20230308.svg
+
+# chart-options
+{ type: 'line', xkey: 'Time_period', ykey: 'Value', xgrid: false, ygrid: true, legend: false, domain: [2014,2015,2016,2017,2018,2019,2020,2021], colourScheme: ['#000'], margin: [0, 0, 0, 0], ticks: 5, rotateDomainLabels: true, fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent' }
+
+## Region
 # map-src
-/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json
+/static/demo/SON-DR32map-20230308.svg
 
-# data-src
-/static/data/DR32.csv
+# map-data-src
+/static/data/DR32_region.csv
 
-# options
-//{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'rollover', 'rolloverBehaviour': 'fade', 'clickBehaviour': 'zoom', 'background': true, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'] }
+# map-options
+{ geoFormat: '', nameField: 'Area_name', valueField: 'Value', areaField: 'ITL221NM', dataFormat: 'linear', legend: 'map-legend', tooltip: 'map-tooltip', domains: ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], colourScheme: ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], rolloverBehaviour: 'outline', tooltipBehaviour: 'click', background: true }
 
-{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'click', 'domains': ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], 'rolloverBehaviour': 'outline', 'background': true, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'] }
+# chart-src
+/static/demo/SON-DR32caterpillar-20230308.svg
+
+# chart-options
+{ type: 'dot', xkey: 'Value', ykey: 'Area_name', xgrid: false, ygrid: true, legend: false, colourScheme: ['#000'], margin: [0, 0, 0, 0], fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent', lowerConfidence: 'LCI', upperConfidence: 'UCI' }
 
 ## Data Table
 # data-src
