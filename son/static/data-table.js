@@ -99,6 +99,7 @@ class DataTable {
         const allowFilter = options.allowFilter || false
         const allowSort = options.allowSort || false
         const allowPagination = options.allowPagination || false
+        const showColumns = options.columns || null
 
         if (allowColumnResize || allowFilter || allowSort | allowPagination) {
             this.dataUtils = new DataUtils(dataFormat)
@@ -126,7 +127,7 @@ class DataTable {
             }
         }
 
-        function createDataTable() {
+        function createDataTable() {console.log('!!!!!')
             if (!(`data-table-${self.el}` in self.dataTables)) return
             const table = document.getElementById(self.el)
             const headers = self.dataTables[`data-table-${self.el}`]['headers']
@@ -201,7 +202,14 @@ class DataTable {
                     cell.setAttribute('data-column', `${j}`)
                     applyAttributes(cell, data[i]['_attributes'][j + 1])
                     cell.innerHTML = data[i][type == 'array' ? j : headers[j]]
-                    row.appendChild(cell)
+                    //console.log('showColumns', showColumns)
+                    //if (Array.isArray(showColumns)) {
+                    //    if (showColumns.includes(headers[j])) {
+                    //        row.appendChild(cell)
+                    //    }
+                    //} else {
+                        row.appendChild(cell)
+                    //}
                 }
 
                 if (self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE') {

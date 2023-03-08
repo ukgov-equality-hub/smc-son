@@ -15,13 +15,52 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
+    <ul style="display: none;">
+        <li>map_src: {{ map_src }}</li>
+        <li>map_options: {{ map_options }}</li>
+        <li>chart_src: {{ chart_src }}</li>
+        <li>chart_options: {{ chart_options }}</li>
+        <li>AllUK_chart_src: {{ AllUK_chart_src }}</li>
+        <li>AllUK_chart_options: {{ AllUK_chart_options }}</li>
+        <li>Region_map_src: {{ Region_map_src }}</li>
+        <li>Region_map_options: {{ Region_map_options }}</li>
+        <li>Region_chart_src: {{ Region_chart_src }}</li>
+        <li>Region_chart_options: {{ Region_chart_options }}</li>
+    </ul>
+
+
     <div class="govuk-tabs" data-module="govuk-tabs">
         <ul class="govuk-tabs__list">
+            {% if map_src != '' %}
             <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
                 <a class="govuk-tabs__tab" href="#tab-map">
                     Map
                 </a>
             </li>
+            {% endif %}
+            {% if chart_src != '' %}
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#tab-chart">
+                    Chart
+                </a>
+            </li>
+            {% endif %}
+
+            {% if AllUK_chart_src != '' %}
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#tab-alluk">
+                    ALL UK
+                </a>
+            </li>
+            {% endif %}
+            {% if Region_map_src != '' or Region_chart_src != '' %}
+            <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+                <a class="govuk-tabs__tab" href="#tab-region">
+                    Region
+                </a>
+            </li>
+            {% endif %}
+
             <li class="govuk-tabs__list-item">
                 <a class="govuk-tabs__tab" href="#tab-data">
                     Data
@@ -33,6 +72,7 @@
                 </a>
             </li>
         </ul>
+        {% if map_src != '' %}
         <div class="govuk-tabs__panel" id="tab-map">
             <div id="map-container">
                 <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
@@ -45,6 +85,42 @@
             </div>
             <a id="mapDownload" href="#" class="govuk-link">Download</a>
         </div>
+        {% endif %}
+        {% if chart_src != '' %}
+        <div class="govuk-tabs__panel" id="tab-chart">
+            <img src="{{ chart_src }}" style="width: 100%;">
+            <!--<div id="chart" style="width: 100%; height: 500px;"></div>-->
+        </div>
+        {% endif %}
+
+        {% if AllUK_chart_src != '' %}
+        <div class="govuk-tabs__panel" id="tab-alluk">
+            <img src="{{ AllUK_chart_src }}" style="width: 100%;">
+            <!--<div id="chart_alluk" style="width: 100%; height: 500px;"></div>-->
+        </div>
+        {% endif %}
+        {% if Region_map_src != '' or Region_chart_src != '' %}
+        <div class="govuk-tabs__panel" id="tab-region">
+            <div style="width: 100%; height: auto; min-height: 500px;">
+                <div style="display: inline-block; width: calc(50% - 25px); height: 100%; margin-right: 25px; vertical-align: top;">
+                    <img src="{{ Region_map_src }}" style="width: 100%;">
+                    <!--<div id="region_map-container">
+                        <div id="region_map-legend"><p style="margin-top: 0;" onclick="document.getElementById('region_map-legend').style.height != '25px' ? document.getElementById('region_map-legend').style.height = '25px' : document.getElementById('region_map-legend').style.height = 'auto'">Legend</p></div>
+                        <div id="region_map-controls">
+                            <button id="region_mapZoomIn">+</button>
+                            <button id="region_mapZoomOut">-</button>
+                        </div>
+                        <div id="region_map"></div>
+                        <div id="region_map-tooltip"></div>
+                    </div>-->
+                </div><div style="display: inline-block; width: calc(50% - 25px); height: 100%; margin-left: 25px; vertical-align: top;">
+                    <img src="{{ Region_chart_src }}" style="width: 100%;">
+                    <!--<div id="region_alluk" style="width: 100%; height: 500px;"></div>-->
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
         <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="tab-data">
             <div class="data-table-data">
                 <table id="table-data" class="govuk-table table-container" data-module="_moj-sortable-table">
@@ -97,9 +173,24 @@
     {% endif %}
     {% endfor %}
 
-    <div class="chart" style="width: 775px; height: 1000px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="chart" style="display: none; width: 775px; height: 1000px;">
         <div id="dotplot"></div>
-        <div class="links">
+        <div class="links" style="display: none;">
             <a href="javascript:download('dotplot')" class="govuk-link">Download image</a> |
             <a href="/download/dotplot" target="_blank" class="govuk-link">Download data</a>
         </div>
@@ -112,10 +203,11 @@
             'table-data',
             undefined,
             {
-                'allowColumnResize': true,
-                'allowFilter': true,
-                'allowSort': true,
-                'allowPagination': false
+                allowColumnResize: true,
+                allowFilter: true,
+                allowSort: true,
+                allowPagination: false,
+                //columns: ['Time_period', 'Value', 'Ind_name']
             }
         )
 
@@ -125,6 +217,7 @@
             data = data.filter(x => { return !['', 'United Kingdom'].includes(x['Area_name']) })
             data = data.map(x => { return { Area_name: x['Area_name'], Value: parseFloat(x['Value'], 10), LCI: parseFloat(x['LCI'], 10), UCI: parseFloat(x['UCI'], 10) }})
 
+            {% if map_src != '' %}
             let map = new Choropleth(
                 'map',
                 `${location.protocol}//${location.host}{{ map_src | safe }}`,
@@ -143,23 +236,92 @@
             document.getElementById('mapDownload').addEventListener('click', function () {
                 map.download()
             })
+            {% endif %}
 
+            {% if chart_src != '' %}
             let chart = new Chart(
-                'dotplot',
-                data,//.sort(function (a, b) { return a.Value - b.Value }),
-                {
-                    type: 'dot',
-                    ykey: 'Area_name',
-                    xkey: 'Value',
-                    //zkey: 'status',
-                    //limit: 12,
-                    lowerConfidence: 'LCI',
-                    upperConfidence: 'UCI'
-                    // OPTIONS FOR SORT
-                    // OPTIONS FOR ORIENTATION
-                }
-            )/**/
+                'chart',
+                `${location.protocol}//${location.host}{{ chart_src | safe }}`,
+                {{ chart_options | safe }}
+            )
+            {% endif %}
+
+
+
+
+
+/*
+            <!--
+        AllUK_chart_src=AllUK_chart_src,
+        AllUK_chart_options=AllUK_chart_options,
+        Region_map_src=Region_map_src,
+        Region_map_options=Region_map_options,
+        Region_chart_src=Region_chart_src,
+        Region_chart_options=Region_chart_options,
+
+-->*/
+            {% if AllUK_chart_src != '' %}
+            let chart_alluk = new Chart(
+                'chart_alluk',
+                `${location.protocol}//${location.host}{{ AllUK_chart_src | safe }}`,
+                {{ AllUK_chart_options | safe }}
+            )
+            {% endif %}
+
+            {% if Region_map_src != '' %}
+            let region_map = new Choropleth(
+                'region_map',
+                `${location.protocol}//${location.host}{{ Region_map_src | safe }}`,
+                `${location.protocol}//${location.host}{{ Region_map_data_src | safe }}`,
+                {{ Region_map_options | safe }}
+            )
+
+            /*document.getElementById('region_mapZoomIn').addEventListener('click', function () {
+                region_map.zoomIn()
+            })
+
+            document.getElementById('region_mapZoomOut').addEventListener('click', function () {
+                region_map.zoomOut()
+            })
+
+            document.getElementById('region_mapDownload').addEventListener('click', function () {
+                region_map.download()
+            })*/
+            {% endif %}
+
+            {% if Region_chart_src != '' %}
+            let region_alluk = new Chart(
+                'region_alluk',
+                `${location.protocol}//${location.host}{{ Region_chart_src | safe }}`,
+                {{ Region_chart_options | safe }}
+            )
+            {% endif %}
         })
+
+
+
+
+
+        new Chart(
+            'dotplot',
+            data,//.sort(function (a, b) { return a.Value - b.Value }),
+            {
+                type: 'dot',
+                ykey: 'Area_name',
+                xkey: 'Value',
+                //zkey: 'status',
+                //limit: 12,
+                lowerConfidence: 'LCI',
+                upperConfidence: 'UCI'
+                // OPTIONS FOR SORT
+                // OPTIONS FOR ORIENTATION
+            }
+        )
+
+
+
+
+
 
         //chart('applications_by_month', [{ 'title': 'applications', 'data': [{'application date': 'Jun-22', 'number of applications': 129, 'status': 'started'}, {'application date': 'Jul-22', 'number of applications': 29, 'status': 'submitted'}, {'application date': 'Jul-22', 'number of applications': 488, 'status': 'started'}, {'application date': 'Aug-22', 'number of applications': 104, 'status': 'submitted'}, {'application date': 'Aug-22', 'number of applications': 358, 'status': 'started'}, {'application date': 'Sep-22', 'number of applications': 115, 'status': 'submitted'}, {'application date': 'Sep-22', 'number of applications': 420, 'status': 'started'}, {'application date': 'Oct-22', 'number of applications': 81, 'status': 'submitted'}, {'application date': 'Oct-22', 'number of applications': 333, 'status': 'started'}, {'application date': 'Nov-22', 'number of applications': 101, 'status': 'submitted'}, {'application date': 'Nov-22', 'number of applications': 392, 'status': 'started'}] }], { type: 'area', xkey: 'application date', ykey: 'number of applications', zkey: 'status', limit: 12 })
     })()

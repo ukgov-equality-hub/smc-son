@@ -15,7 +15,9 @@ Data on the highest qualifications of 25 to 29 year olds by social class backgro
 /static/data/IN23.csv
 
 # options
-{ 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'rollover', 'rolloverBehaviour': 'fade', 'clickBehaviour': 'zoom' }
+//{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'rollover', 'rolloverBehaviour': 'fade', 'clickBehaviour': 'zoom', 'background': true, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'] }
+
+{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'click', 'domains': ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], 'rolloverBehaviour': 'outline', 'background': true, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'] }
 
 ## Data Table
 # data-src

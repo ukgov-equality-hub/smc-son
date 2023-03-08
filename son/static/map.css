@@ -89,3 +89,173 @@
     overflow: visible;
     position: relative;
 }
+
+.layer {
+    position: absolute;
+    will-change: transform;
+}
+
+.tile {
+    position: absolute;
+    width: 256px;
+    height: 256px;
+}
+
+.tile path {
+    fill: none;
+    stroke: #000;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+.tile .major_road {
+    stroke: #776;
+}
+
+.tile .minor_road {
+    stroke: #ccb;
+}
+
+.tile .highway {
+    stroke: #f39;
+    stroke-width: 1.5px;
+}
+
+.tile .rail {
+    stroke: #7de;
+}
+
+.tile .water, .tile .river, .tile .riverbank, .tile .fountain, .tile .ocean, .tile .stream, .tile .lake, .tile .basin, .tile .dock {
+    stroke: #7de;
+    fill: #7de;
+}
+
+.info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+svg.zoom1 .label {
+    display: none;
+    font-size: 11px;
+}
+
+svg.zoom2 .label {
+    display: none;
+    font-size: 8.5px;
+}
+
+svg.zoom3 .label {
+    display: none;
+    font-size: 8px;
+}
+
+svg.zoom4 .label {
+    display: none;
+    font-size: 8px;
+}
+
+svg.zoom5 .label {
+    display: none;
+    font-size: 7px;
+}
+
+svg.zoom6 .label {
+    display: none;
+    font-size: 7px;
+}
+
+svg.zoom7 .label {
+    display: none;
+    font-size: 7px;
+}
+
+svg.zoom8 .label {
+    display: none;
+    font-size: 6px;
+}
+
+svg.zoom9 .label {
+    display: none;
+    font-size: 6px;
+}
+
+svg.zoom10 .label {
+    display: none;
+    font-size: 5px;
+}
+
+svg.zoom11 .label {
+    display: none;
+    font-size: 5px;
+}
+
+svg.zoom12 .label {
+    display: none;
+    font-size: 4px;
+}
+
+svg.zoom13 .label {
+    display: none;
+    font-size: 4px;
+}
+
+svg.zoom14 .label {
+    display: none;
+    font-size: 3px;
+}
+
+svg.zoom15 .label {
+    display: none;
+    font-size: 3px;
+}
+
+svg.zoom1 .label.zoom1,
+svg.zoom2 .label.zoom2,
+svg.zoom3 .label.zoom3,
+svg.zoom4 .label.zoom4,
+svg.zoom5 .label.zoom5,
+svg.zoom6 .label.zoom6,
+svg.zoom7 .label.zoom7,
+svg.zoom8 .label.zoom8,
+svg.zoom9 .label.zoom9,
+svg.zoom10 .label.zoom10,
+svg.zoom11 .label.zoom11,
+svg.zoom12 .label.zoom12,
+svg.zoom13 .label.zoom13,
+svg.zoom14 .label.zoom14,
+svg.zoom15 .label.zoom15 {
+    display: inline;
+}
+
+.label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.label_state {
+    display: inline !important;
+    font-weight: bold;
+    fill: #ccc;
+    stroke: #fff;
+    stroke-width: 4;
+    paint-order: stroke fill;
+}
+
+.label_city {
+    fill: #000;
+    stroke: #fff;
+    stroke-width: 3;
+    paint-order: stroke fill;
+}

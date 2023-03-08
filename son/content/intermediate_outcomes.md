@@ -23,7 +23,6 @@ Highlighted content
                 <div id="map2" class="map-container" style="position: absolute; margin-top: -170px; width: 348px; height: 629px; transform: scale(.5);"></div>
             </div>
         </a>
-
     </div>
 </div>
 <script>
@@ -32,14 +31,13 @@ Highlighted content
             'map1',
             `${location.protocol}//${location.host}/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json`,
             `${location.protocol}//${location.host}/static/data/IN23.csv`,
-            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false }
+            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], 'background': true }
         )
-
         let map2 = new Choropleth(
             'map2',
             `${location.protocol}//${location.host}/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json`,
             `${location.protocol}//${location.host}/static/data/IN33.csv`,
-            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false }
+            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], 'background': true }
         )
     })()
 </script>
