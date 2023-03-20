@@ -83,39 +83,100 @@
                 <div id="map"></div>
                 <div id="map-tooltip"></div>
             </div>
+            <script>
+                let map = new Choropleth(
+                    'map',
+                    `${location.protocol}//${location.host}{{ map_src | safe }}`,
+                    `${location.protocol}//${location.host}{{ data_src | safe }}`,
+                    {{ map_options | safe }}
+                )
+
+                document.getElementById('mapZoomIn').addEventListener('click', function () {
+                    map.zoomIn()
+                })
+
+                document.getElementById('mapZoomOut').addEventListener('click', function () {
+                    map.zoomOut()
+                })
+
+                document.getElementById('mapDownload').addEventListener('click', function () {
+                    map.download()
+                })
+            </script>
             <a id="mapDownload" href="#" class="govuk-link">Download</a>
         </div>
         {% endif %}
         {% if chart_src != '' %}
         <div class="govuk-tabs__panel" id="tab-chart">
-            <img src="{{ chart_src }}" style="width: 100%;">
-            <!--<div id="chart" style="width: 100%; height: 500px;"></div>-->
+            <!--<img src="{{ chart_src }}" style="width: 100%;">-->
+            <div id="chart" style="width: 100%; height: 500px;"></div>
+            <script>
+                let chart = new Chart(
+                    'chart',
+                    `${location.protocol}//${location.host}{{ chart_src | safe }}`,
+                    {{ chart_options | safe }}
+                )
+            </script>
         </div>
         {% endif %}
 
         {% if AllUK_chart_src != '' %}
         <div class="govuk-tabs__panel" id="tab-alluk">
-            <img src="{{ AllUK_chart_src }}" style="width: 100%;">
-            <!--<div id="chart_alluk" style="width: 100%; height: 500px;"></div>-->
+            <!--<img src="{{ AllUK_chart_src }}" style="width: 100%;">-->
+            <div id="chart_alluk" style="width: 100%; height: 500px;"></div>
+            <script>
+                let chart_alluk = new Chart(
+                    'chart_alluk',
+                    `${location.protocol}//${location.host}{{ AllUK_chart_src | safe }}`,
+                    {{ AllUK_chart_options | safe }}
+                )
+            </script>
         </div>
         {% endif %}
         {% if Region_map_src != '' or Region_chart_src != '' %}
         <div class="govuk-tabs__panel" id="tab-region">
             <div style="width: 100%; height: auto; min-height: 500px;">
-                <div style="display: inline-block; width: calc(50% - 25px); height: 100%; margin-right: 25px; vertical-align: top;">
-                    <img src="{{ Region_map_src }}" style="width: 100%;">
-                    <!--<div id="region_map-container">
-                        <div id="region_map-legend"><p style="margin-top: 0;" onclick="document.getElementById('region_map-legend').style.height != '25px' ? document.getElementById('region_map-legend').style.height = '25px' : document.getElementById('region_map-legend').style.height = 'auto'">Legend</p></div>
-                        <div id="region_map-controls">
-                            <button id="region_mapZoomIn">+</button>
-                            <button id="region_mapZoomOut">-</button>
+                <div style="display: inline-block; display: none1; width: calc(50% - 25px); height: 100%; margin-right: 25px; vertical-align: top;">
+                    <!--<img src="{{ Region_map_src }}" style="width: 100%;">-->
+                    <div id="map-container">
+                        <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
+                        <div id="map-controls">
+                            <button id="mapZoomIn">+</button>
+                            <button id="mapZoomOut">-</button>
                         </div>
-                        <div id="region_map"></div>
-                        <div id="region_map-tooltip"></div>
-                    </div>-->
+                        <div id="map"></div>
+                        <div id="map-tooltip"></div>
+                    </div>
+                    <script>
+                        let map = new Choropleth(
+                            'map',
+                            `${location.protocol}//${location.host}{{ Region_map_src | safe }}`,
+                            `${location.protocol}//${location.host}{{ Region_map_data_src | safe }}`,
+                            {{ Region_map_options | safe }}
+                        )
+
+                        document.getElementById('region_mapZoomIn').addEventListener('click', function () {
+                            region_map.zoomIn()
+                        })
+
+                        document.getElementById('region_mapZoomOut').addEventListener('click', function () {
+                            region_map.zoomOut()
+                        })
+
+                        document.getElementById('region_mapDownload').addEventListener('click', function () {
+                            region_map.download()
+                        })
+                    </script>
                 </div><div style="display: inline-block; width: calc(50% - 25px); height: 100%; margin-left: 25px; vertical-align: top;">
-                    <img src="{{ Region_chart_src }}" style="width: 100%;">
-                    <!--<div id="region_alluk" style="width: 100%; height: 500px;"></div>-->
+                    <!--<img src="{{ Region_chart_src }}" style="width: 100%;">-->
+                    <div id="region_alluk" style="width: 100%; height: 630px;"></div>
+                    <script>
+                        let region_alluk = new Chart(
+                            'region_alluk',
+                            `${location.protocol}//${location.host}{{ Region_chart_src | safe }}`,
+                            {{ Region_chart_options | safe }}
+                        )
+                    </script>
                 </div>
             </div>
         </div>
@@ -218,90 +279,56 @@
             data = data.map(x => { return { Area_name: x['Area_name'], Value: parseFloat(x['Value'], 10), LCI: parseFloat(x['LCI'], 10), UCI: parseFloat(x['UCI'], 10) }})
 
             {% if map_src != '' %}
-            let map = new Choropleth(
-                'map',
-                `${location.protocol}//${location.host}{{ map_src | safe }}`,
-                data,
-                {{ map_options | safe }}
-            )
 
-            document.getElementById('mapZoomIn').addEventListener('click', function () {
-                map.zoomIn()
-            })
-
-            document.getElementById('mapZoomOut').addEventListener('click', function () {
-                map.zoomOut()
-            })
-
-            document.getElementById('mapDownload').addEventListener('click', function () {
-                map.download()
-            })
             {% endif %}
 
             {% if chart_src != '' %}
-            let chart = new Chart(
-                'chart',
-                `${location.protocol}//${location.host}{{ chart_src | safe }}`,
-                {{ chart_options | safe }}
-            )
+
             {% endif %}
 
-
-
-
-
 /*
-            <!--
-        AllUK_chart_src=AllUK_chart_src,
-        AllUK_chart_options=AllUK_chart_options,
-        Region_map_src=Region_map_src,
-        Region_map_options=Region_map_options,
-        Region_chart_src=Region_chart_src,
-        Region_chart_options=Region_chart_options,
+<!--
+AllUK_chart_src=AllUK_chart_src,
+AllUK_chart_options=AllUK_chart_options,
+Region_map_src=Region_map_src,
+Region_map_options=Region_map_options,
+Region_chart_src=Region_chart_src,
+Region_chart_options=Region_chart_options,
 
+
+
+
+
+https://socialmobilityworks.org/
+https://medium.com/government-equalities
+https://leadersaschangeagents.com/
+https://government-equalities-office.shinyapps.io/lgbt-survey-2017/
+https://www.womensbusinesscouncil.co.uk/
+https://cred.independent-commission.uk/
+New website for SMC
 -->*/
-            {% if AllUK_chart_src != '' %}
+
+            /*{% if AllUK_chart_src != '' %}
             let chart_alluk = new Chart(
                 'chart_alluk',
                 `${location.protocol}//${location.host}{{ AllUK_chart_src | safe }}`,
                 {{ AllUK_chart_options | safe }}
             )
-            {% endif %}
+            {% endif %}*/
 
             {% if Region_map_src != '' %}
-            let region_map = new Choropleth(
-                'region_map',
-                `${location.protocol}//${location.host}{{ Region_map_src | safe }}`,
-                `${location.protocol}//${location.host}{{ Region_map_data_src | safe }}`,
-                {{ Region_map_options | safe }}
-            )
 
-            /*document.getElementById('region_mapZoomIn').addEventListener('click', function () {
-                region_map.zoomIn()
-            })
-
-            document.getElementById('region_mapZoomOut').addEventListener('click', function () {
-                region_map.zoomOut()
-            })
-
-            document.getElementById('region_mapDownload').addEventListener('click', function () {
-                region_map.download()
-            })*/
             {% endif %}
 
             {% if Region_chart_src != '' %}
-            let region_alluk = new Chart(
-                'region_alluk',
-                `${location.protocol}//${location.host}{{ Region_chart_src | safe }}`,
-                {{ Region_chart_options | safe }}
-            )
+
             {% endif %}
         })
 
 
 
 
-
+/*
         new Chart(
             'dotplot',
             data,//.sort(function (a, b) { return a.Value - b.Value }),
@@ -317,7 +344,7 @@
                 // OPTIONS FOR ORIENTATION
             }
         )
-
+*/
 
 
 

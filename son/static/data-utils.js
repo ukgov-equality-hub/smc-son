@@ -200,8 +200,8 @@ class DataUtils {
             for (let j = 0; j < headers.length; j++) {
                 let str = currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : ''
                 if (str.substr(0, 1) == '"' && str.substr(-1) == '"') str = str.substr(1, str.length - 2)
-                row[headers[j].replace(/###/g, csvFormat.delimiter)] = str.trim()
-            }          
+                row[headers[j].replace(/###/g, csvFormat.delimiter)] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+            }
             result.push(row)
         }
 
@@ -362,8 +362,12 @@ class DataUtils {
         return str
     }
 
+    isNumeric(n) {
+        return !isNaN(parseFloat(n)) && isFinite(n)
+    }
+
     substituteCommas(str) {
-        return str.replace(/"[^"]+"/g, function (s) { 
+        return str.replace(/"[^"]+"/g, function (s) {
             return s.replace(/,/g, '###')
         })
     }

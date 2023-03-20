@@ -3,7 +3,6 @@ class Chart {
     // TOTO
     // Build chart from CSV, JSON
     // Data from URL
-    // Error bars?
     // Update chart data
     // Test download data
     // https://observablehq.com/@observablehq/plot-rule?collection=@observablehq/plot
@@ -97,7 +96,7 @@ class Chart {
                 }
             }
             console.info('Chart resources loaded')
-            self.render()
+            if (self.el && self.data) self.render()
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -113,15 +112,22 @@ class Chart {
         const options = this.options
         this.width = options.width || div.offsetWidth
         this.height = options.height || div.offsetHeight
+        if (this.height == 0 && this.width == 0 && div.offsetParent === null) {     // element hidden?
+            const dims = getDims(div)
+            this.width = dims.width
+            this.height = dims.height
+        }
         const type = options.type.toLowerCase() || 'bar'
         let xkey = options.xkey || null
         let ykey = options.ykey || null
         let zkey = options.zkey || null
         let group = options.group || null
         const sort = options.sort || null
-        const sortkey = options.sortkey || null
+        const sortFacet = options.sortFacet || null
         const lci = options.lowerConfidence || null
         const uci = options.upperConfidence || null
+        const xvalue = options.yvalue || null
+        const yvalue = options.yvalue || null
         const scale = ['absolute', 'relative', 'percent', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
         const limit = options.limit || 0
         let domain = options.domain || null
@@ -131,16 +137,14 @@ class Chart {
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const labelScheme = options.labelScheme || null
         const labelColour = options.labelColour || '#000'
-        const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : ''
+        const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : Array.isArray(options.textLabels) ? options.textLabels : ''
         const textLabelFormat = ['currency', 'percent', 'number'].includes(options.textLabelFormat) ? options.textLabelFormat : ''
         const labelKey = options.labelKey || null
         const rotateDomainLabels = options.rotateDomainLabels || false
         const grid = options.grid == false ? false : true
-        const xgrid = options.xgrid == false ? false : grid
-        const ygrid = options.ygrid == false ? false : grid
-        const xaxis = options.xaxis == false ? false : true
-        const yaxis = options.yaxis == false ? false : true
-        const ticks = options.ticks == false ? false : options.ticks
+        let xgrid = options.xgrid == false ? false : grid
+        let ygrid = options.ygrid == false ? false : grid
+        let ticks = options.ticks == false ? false : options.ticks
         const legend = options.legend || false
         const swatchSize = 20
         const margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
@@ -170,12 +174,20 @@ class Chart {
                 ykey = keys[1]
             }
 
-            const orientation = ['bary'].includes(type) ? 'y' : 'x'
-            let min = d3.min((Array.isArray(data[0]) ? data.flat() : data), d => parseFloat(d[orientation == 'y' ? ykey : xkey], 10))
+            const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
+            if (['quartile', 'quintile', 'decile'].includes(type)) self.height = 35
+            let min = d3.min((Array.isArray(data[0]) ? data.flat() : data), x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (min > 0) min = 0
-            let max = d3.max((Array.isArray(data[0]) ? data.flat() : data), d => parseFloat(d[orientation == 'y' ? ykey : xkey], 10))
+            let max = d3.max((Array.isArray(data[0]) ? data.flat() : data), x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (!domain && orientation != 'y') domain = [min, max]
+            if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
+            if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
+            if (!range && orientation == 'y') range = [min, max]
             self.height -= zkey && legend ? legendHeight(domain, self.width) : 0
+//console.log('min1', min, 'max1', max, (Array.isArray(data[0]) ? data.flat() : data).map(x => x[orientation == 'y' ? ykey : xkey]))
+//console.log('domain', domain)
+//console.log('range', range)
+//console.log('xkey', xkey, 'ykey', ykey, 'zkey', zkey, 'group', group, 'orientation', orientation)
 
             let scheme
             if (Array.isArray(colourScheme)) {
@@ -193,49 +205,47 @@ class Chart {
             }
 
             const marks = []
+            let chartData
             for (let i = 0; i < data.length; i++) {
-                let chartData = data[i]
+                chartData = data[i]
 
                 if (lci && uci) {
                     chartData = chartData.map(x => ({
-                        [xkey]: orientation == 'y' ? parseFloat(x[xkey], 10) : x[xkey],
-                        [ykey]: orientation != 'y' ? parseFloat(x[ykey], 10) : x[ykey],
+                        [xkey]: orientation == 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
+                        [ykey]: orientation != 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
                         [zkey]: x[zkey] || null,
                         [group]: x[group],
                         labelkey: x[labelKey] || null,
-                        sortkey: x[sortkey] || null,
-                        lci: x[lci],
-                        uci: x[uci],
+                        lci: isNumeric(x[lci]) ? parseFloat(x[lci], 10) : x[lci],
+                        uci: isNumeric(x[uci]) ? parseFloat(x[uci], 10) : x[uci],
                         _ci: '|'
                     }))
-                    const mlci = d3.min((data[i]), d => parseFloat(d[lci], 10))
-                    const muci = d3.max((data[i]), d => parseFloat(d[uci], 10))
-                    range = range || [mlci * 1.2, muci * 1.2]
+                    const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
+                    const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
+                    if (orientation != 'y') domain = [mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y') range = [mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
-                        [xkey]: orientation == 'y' ? parseFloat(x[xkey], 10) : x[xkey],
-                        [ykey]: orientation != 'y' ? parseFloat(x[ykey], 10) : x[ykey],
+                        [xkey]: orientation == 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
+                        [ykey]: orientation != 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
                         [zkey]: x[zkey] || null,
                         [group]: x[group],
-                        labelkey: x[labelKey] || null,
-                        sortkey: x[sortkey] || null,
-                        //x1: 0,
-                        //x2: 0
+                        labelkey: x[labelKey] || null
                     }))
-                    range = range || [min, max]
                 }
                 if (limit > 0) chartData = chartData.slice(0 - limit)
 
                 const chartOptions = {
                     x: xkey,
                     y: ykey,
+                    z: zkey,
                     facet: group ? true : null,
-                    fill: zkey ? zkey : orientation == 'y' ? xkey : ykey,//x => zkey ,//? getCategoryColour(x[zkey]) : getMarkColour(x[xkey]),
-                    title: x => `${x[orientation == 'y' ? xkey : ykey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? ykey : xkey])}`.replace(/_/g, ' ')
+                    fill: ['line', 'linex', 'liney'].includes(type) ? undefined : zkey ? zkey : orientation == 'y' ? xkey : ykey,//x => zkey ,//? getCategoryColour(x[zkey]) : getMarkColour(x[xkey]),
+                    stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
+                    title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
                 }
-                if (sort) chartOptions['sort'] = sort
-                //console.log('chartData', chartData)
-                //console.log('chartOptions', chartOptions)
+                console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
+                console.log('chartOptions', chartOptions)
 
                 if (type == 'area') {
                     marks.push(Plot.areaY(chartData, chartOptions))
@@ -247,15 +257,31 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    //marks.push(Plot.line(chartData, chartOptions))
-                    marks.push(Plot.dot(chartData, chartOptions))
+                    marks.push(Plot.line(chartData, { sort: xkey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, chartOptions))
-                    marks.push(Plot.dot(chartData, chartOptions))
+                    marks.push(Plot.line(chartData, { sort: ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
-                if (type == 'dot' && !(lci && uci)) {
-                    marks.push(Plot.dot(chartData, chartOptions))
+                if (type == 'dot' || type == 'doty') {
+                    marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
+                }
+                if (['quartile', 'quintile', 'decile'].includes(type)) {
+                    ticks = type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
+                    xgrid = false
+                    ygrid = false
+                    domain = Array.from({ length: ticks }, (_, i) => i * (max - min) / (ticks - 1) + min)
+                    let q = -1, d = chartData.filter(x => x[ykey] == yvalue), ranges = Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)
+                    if (d) {
+                        for (let i = 0; i < ranges.length - 1; i++) {
+                            if (d[0][xkey] >= ranges[i] && d[0][xkey] <= ranges[i + 1]) {
+                                q = i
+                                break
+                            }
+                        }
+                        marks.push(Plot.cell(domain, { x: x => x, fill: x => x }))
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, _fill: 'red', fill: x => domain[q], _stroke: x => x[xkey] }))
+
+                    }
                 }
 
                 if (lci && uci) {
@@ -267,9 +293,6 @@ class Chart {
                         }
 
                         marks.push(Plot.ruleX(chartData, confidenceIntervalOptions))
-                        if (type == 'dot') {
-                            marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
-                        }
                         marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', _fill: '#ccc', rotate: 90 }))
                         marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', _fill: '#ccc', rotate: 90 }))
                     } else {
@@ -280,9 +303,6 @@ class Chart {
                         }
 
                         marks.push(Plot.ruleY(chartData, confidenceIntervalOptions))
-                        if (type == 'dot') {
-                            marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
-                        }
                         marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', _fill: '#ccc' }))
                         marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', _fill: '#ccc' }))
                     }
@@ -313,65 +333,87 @@ class Chart {
                 }
             }
 
-            const xOptions = {
+            let xOptions = {
                 grid: xgrid
-            }
-            if (zkey) {
-                if (orientation != 'y') xOptions['domain'] = domain
-                if (domain) xOptions['domain'] = domain
             }
             if (group && orientation == 'y') xOptions['axis'] = null
 
-            const yOptions = {
+            let yOptions = {
                 grid: ygrid
-            }
-            if (zkey) {
-                if (orientation == 'y') yOptions['domain'] = range
             }
             if (group && orientation != 'y') yOptions['axis'] = null
 
-            if (!(group && orientation == 'y')) {
+            if (!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
                 marks.push(Plot.axisX({
                     label: xtitle,
                     labelAnchor: 'center',
                     labelOffset: 50,
                     lineWidth: rotateDomainLabels ? undefined : 6,
                     ticks: ticks ? ticks : undefined,
-                    tickRotate: rotateDomainLabels ? 90 : undefined
+                    tickRotate: rotateDomainLabels ? 90 : undefined,
+                    tickFormat: x => x.toString()
                 }))
             }
-            //marks.push(
-            //    Plot.ruleX([0])
-            //)
-            if (!(group && orientation != 'y')) {
+            if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
                 marks.push(Plot.axisY({
                     label: ytitle,
                     labelAnchor: 'center',
                     labelOffset: 50,
-                    ticks: null//ticks ? ticks : undefined
-                    ,range:[0, 2]
+                    ticks: null
                 }))
             }
-            //marks.push(
-            //    Plot.ruleY([0])
-            //)
+
+            if (['quartile', 'quintile', 'decile'].includes(type)) {
+                xOptions = { axis: null, domain: domain, ticks: 5 }
+                yOptions = { axis: null, domain: [yvalue], ticks: 1 }
+            } else if (!group) {
+                if (orientation == 'y') {
+                    xOptions['domain'] = sort ? sortDomain(chartData, sort, ykey) : domain
+                    yOptions['domain'] = range
+                } else {
+                    xOptions['domain'] = domain
+                    yOptions['domain'] = sort ? sortDomain(chartData, sort, ykey) : range
+                }
+            } else {
+                if (orientation == 'y') {
+                    xOptions['domain'] = domain
+                    yOptions['group'] = group
+                } else {
+                    xOptions['domain'] = domain
+                    yOptions['group'] = group
+                }
+            }
+//console.log('domain', domain, 'range', range, 'min', min, 'max', max, 'orientation', orientation, 'group', group)
+//console.log('yOptions', yOptions)
+//console.log('xOptions', xOptions)
+
+
+
+
+
+
 
             let plot = Plot.plot({
                 x: xOptions,
                 y: yOptions,
-                fx: group ? {
-                    label: null,
-                } : undefined,
                 facet: group ? {
-                    data: data[0],
+                    data: chartData,
                     x: orientation == 'y' ? group : null,
                     y: orientation != 'y' ? group : null,
                     label: null
                 } : undefined,
+                fx: orientation == 'y' && group ? {
+                    label: null,
+                    domain: sort ? sortDomain(chartData, sort, group, xkey, sortFacet) : domain,
+                    tickRotate: rotateDomainLabels ? 90 : undefined
+                } : undefined,
+                fy: orientation != 'y' && group ? {
+                    domain: sort ? sortDomain(chartData, sort, group, ykey, sortFacet) : range
+                } : undefined,
                 marks: marks,
                 color: {
                     range: colourScheme,
-                    legend: false //legend
+                    legend: false
                 },
                 width: self.width,
                 height: self.height,
@@ -382,14 +424,35 @@ class Chart {
                 style: style
             })
 
-            plot = tooltips(plot)
+
+
+            var plot1 = Plot.plot({
+                x: { axis: null },
+                y: { axis: null },
+                marks: marks,
+                color: {
+                  range: colourScheme,
+                  legend: false
+                },
+                width: self.width,
+                height: self.height,
+                marginTop: margin[0],
+                marginRight: margin[1],
+                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2]: margin[2] + (xtitle != null ? 30 : 0) + 20,
+                marginLeft: maxLabelLength(data, group && orientation != 'y' ? group : ykey, style) + margin[3] + (ytitle != null ? 10 : 0),
+                style: style
+              })
+
+
+
+            //plot = tooltips(plot)
             div.appendChild(plot)
 
             // Legend
             if ((zkey || (ykey && group)) && legend) {
                 const legendDiv = Plot.legend({
                         color: {
-                            domain: orientation == 'y' ? (ykey && group ? [...new Set(data.flat().map(x => x[ykey]))].sort() : domain) : [...new Set(data.flat().map(x => x[zkey]))].sort(),
+                            domain: orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))].sort() : domain) : [...new Set(data.flat().map(x => x[zkey]))].sort(),
                             range: colourScheme
                         },
                         legend: 'swatches',
@@ -512,11 +575,76 @@ class Chart {
             }
         }
 
+        function getDims(el) {
+            function getElDims(el, dim) {
+                const cs = getComputedStyle(el)
+                paddingX += (parseFloat(cs.paddingLeft, 10) + parseFloat(cs.paddingRight, 10))
+                paddingY += (parseFloat(cs.paddingTop, 10) + parseFloat(cs.paddingBottom, 10))
+                borderX += (parseFloat(cs.borderLeftWidth, 10) + parseFloat(cs.borderRightWidth, 10))
+                borderY += (parseFloat(cs.borderTopWidth, 10) + parseFloat(cs.borderBottomWidth, 10))
+    
+                if (el.clientWidth) {
+                    return dim == 'width' ? el.clientWidth - paddingX - borderX : el.clientHeight - paddingY - borderY
+                }
+                return getElDims(el.parentElement, dim)
+            }
+    
+            let w = el.style.width || '100%'
+            let h = el.style.height || '0px'
+            let paddingX = 0, paddingY = 0, borderX = 0, borderY = 0
+    
+            if (w.substr(-1) == '%') {
+                w = getElDims(el, 'width')
+            } else {
+                w = parseFloat(w, 10)
+            }
+            if (h.substr(-1) == '%') {
+                h = getElDims(el, 'height')
+            } else {
+                h = parseFloat(h, 10)
+            }
+    
+            return { width: w, height: h }
+        }
+
+        function isNumeric(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n)
+        }
+
         function numberWithCommas(x) {
             return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
         }
 
+        function sortDomain(data, keys, xkey, ykey, facet) {
+            function sortKeys(keys) {
+                function sortKey(key) {
+                    let sortOrder = 1
+                    if (key[0] == '-') {
+                        sortOrder = -1
+                        key = key.substr(1)
+                    }
+                    return function (a, b) {
+                        return ((a[key] < b[key]) ? -1 : (a[key] > b[key]) ? 1 : 0) * sortOrder
+                    }
+                }
+
+                return function (a, b) {
+                    let i = 0, result = 0
+                    while (result == 0 && i < keys.length) {
+                        result = sortKey(keys[i])(a, b)
+                        i++
+                    }
+                    return result
+                }
+            }
+
+            let unsorted = data.slice()
+            if (ykey && facet) unsorted = unsorted.filter(x => x[ykey] == facet)
+            return unsorted.sort(sortKeys(Array.isArray(keys) ? keys : [keys])).map(x => x[xkey])
+        }
+
         function maxLabelLength(data, key, style) {
+            if (['quartile', 'quintile', 'decile'].includes(type)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': x[key].toString(), 'length': x[key].toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
             return labelLength(max, style) * 1.1
         }
@@ -580,7 +708,7 @@ class Chart {
                 const parent = d3.select(this.parentNode)
                 const t = title.text()
                 if (t) {
-                    parent.attr('data-test', 'TEST!!!!!')
+                    //parent.attr('data-test', 'TEST!!!!!')
                     parent.attr('__title', t).classed('has-title', true)
                     title.remove()
                 }
@@ -716,3 +844,5 @@ class Chart {
         return promise
     }
 }
+
+new Chart()

@@ -94,7 +94,8 @@ class Choropleth {
                     return
                 }
             }
-            self.render()
+            console.info('Map resources loaded')
+            if (self.el && self.geodata && self.data) self.render()
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -111,6 +112,11 @@ class Choropleth {
         const options = this.options
         this.width = options.width || div.offsetWidth
         this.height = options.height || div.offsetHeight
+        if (this.height == 0 && this.width == 0 && div.offsetParent === null) {     // element hidden?
+            const dims = getDims(div)
+            this.width = dims.width
+            this.height = dims.height
+        }
         const geoFormat = options.geoFormat || 'topo'
         const nameField = options.nameField || ''
         const areaField = options.areaField || nameField
@@ -480,6 +486,38 @@ class Choropleth {
             }
         }
 
+        function getDims(el) {
+            function getElDims(el, dim) {
+                const cs = getComputedStyle(el)
+                paddingX += (parseFloat(cs.paddingLeft, 10) + parseFloat(cs.paddingRight, 10))
+                paddingY += (parseFloat(cs.paddingTop, 10) + parseFloat(cs.paddingBottom, 10))
+                borderX += (parseFloat(cs.borderLeftWidth, 10) + parseFloat(cs.borderRightWidth, 10))
+                borderY += (parseFloat(cs.borderTopWidth, 10) + parseFloat(cs.borderBottomWidth, 10))
+    
+                if (el.clientWidth) {
+                    return dim == 'width' ? el.clientWidth - paddingX - borderX : el.clientHeight - paddingY - borderY
+                }
+                return getElDims(el.parentElement, dim)
+            }
+    
+            let w = el.style.width || '100%'
+            let h = el.style.height || '0px'
+            let paddingX = 0, paddingY = 0, borderX = 0, borderY = 0
+    
+            if (w.substr(-1) == '%') {
+                w = getElDims(el, 'width')
+            } else {
+                w = parseFloat(w, 10)
+            }
+            if (h.substr(-1) == '%') {
+                h = getElDims(el, 'height')
+            } else {
+                h = parseFloat(h, 10)
+            }
+    
+            return { width: w, height: h }
+        }
+
         function getBounds(data, boundary, width = self.width, height = self.height, format = geoFormat) {
             data = getFeatures(data, undefined, format)
             let projection, path, bounds
@@ -607,7 +645,7 @@ class Choropleth {
             return { height, width }
         }
 
-        function zoomed(transform) {console.log('ZOOMED!!!')
+        function zoomed(transform) {
             mapContainer.attr('transform', transform)
             if (self.background) {
                 mapBg.attr('transform', transform)
@@ -920,4 +958,4 @@ class Choropleth {
     }
 }
 
-//new Choropleth()
+new Choropleth()
