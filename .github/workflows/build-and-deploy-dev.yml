@@ -15,8 +15,8 @@ jobs:
       TERRAFORM_SERVICE_NAME: Demo_App
       TERRAFORM_SERVICE_NAME_HYPHENS: Demo-App
       TERRAFORM_ENVIRONMENT_NAME: Dev
-      TERRAFORM_STATE_BUCKET: uk-gov-equality-hub-demo-app-terraform-state-bucket
-      TERRAFORM_STATE_FILE: demo-app-dev.tfstate
+      TERRAFORM_STATE_BUCKET: uk-gov-equality-hub-terraform-state-bucket
+      TERRAFORM_STATE_FILE: smc-son_dev.tfstate
       TERRAFORM_TFVARS_FILE: dev.tfvars
     secrets:
       TERRAFORM_AWS_ACCESS_KEY_ID: ${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}
