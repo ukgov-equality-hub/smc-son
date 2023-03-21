@@ -90,7 +90,7 @@ jobs:
     environment: ${{ inputs.GITHUB_ACTIONS_ENVIRONMENT }}
 
     env:
-      ZIP_FILE_NAME: "demo_app_run${{ github.run_id }}_attempt${{ github.run_attempt }}.zip"
+      ZIP_FILE_NAME: "smc_son_run${{ github.run_id }}_attempt${{ github.run_attempt }}.zip"
       EB_CODE_BUCKET: "${{needs.terraform.outputs.main_app_elastic_beanstalk_code_s3_bucket}}"
       EB_APP_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}__${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}__Elastic_Beanstalk_Application"
       EB_ENVIRONMENT_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME_HYPHENS }}--${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}--EB-Env"

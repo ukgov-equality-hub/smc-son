@@ -401,7 +401,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "FLASK_APP"
-    value     = "demo_app"
+    value     = "smc_son"
   }
 
   setting {

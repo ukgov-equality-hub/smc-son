@@ -12,8 +12,8 @@ jobs:
     uses: ./.github/workflows/_build-and-deploy-shared.yml
     with:
       GITHUB_ACTIONS_ENVIRONMENT: Dev
-      TERRAFORM_SERVICE_NAME: Demo_App
-      TERRAFORM_SERVICE_NAME_HYPHENS: Demo-App
+      TERRAFORM_SERVICE_NAME: smc_son
+      TERRAFORM_SERVICE_NAME_HYPHENS: smc-son
       TERRAFORM_ENVIRONMENT_NAME: Dev
       TERRAFORM_STATE_BUCKET: uk-gov-equality-hub-terraform-state-bucket
       TERRAFORM_STATE_FILE: smc-son_dev.tfstate
