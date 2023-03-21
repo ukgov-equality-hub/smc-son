@@ -1,0 +1,133 @@
+name: '(shared functionality) Terraform, Build, Deploy'
+
+on:
+  workflow_call:
+    inputs:
+      GITHUB_ACTIONS_ENVIRONMENT:
+        required: true
+        type: string
+      TERRAFORM_SERVICE_NAME:
+        required: true
+        type: string
+      TERRAFORM_SERVICE_NAME_HYPHENS:
+        required: true
+        type: string
+      TERRAFORM_ENVIRONMENT_NAME:
+        required: true
+        type: string
+      TERRAFORM_STATE_BUCKET:
+        required: true
+        type: string
+      TERRAFORM_STATE_FILE:
+        required: true
+        type: string
+      TERRAFORM_TFVARS_FILE:
+        required: true
+        type: string
+    secrets:
+      TERRAFORM_AWS_ACCESS_KEY_ID:
+        required: true
+      TERRAFORM_AWS_SECRET_ACCESS_KEY:
+        required: true
+      SECRET_KEY:
+        required: true
+      MAINTENANCE_MODE:
+        required: true
+      BASIC_AUTH_USERNAME:
+        required: true
+      BASIC_AUTH_PASSWORD:
+        required: true
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.TERRAFORM_AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: eu-west-2
+
+jobs:
+  terraform:
+    name: 'Terraform'
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.GITHUB_ACTIONS_ENVIRONMENT }}
+
+    outputs:
+      main_app_elastic_beanstalk_code_s3_bucket: ${{ steps.step_elastic_beanstalk_code_s3_bucket.outputs.test }}
+
+    steps:
+      - name: 'Checkout Code'
+        uses: actions/checkout@v3
+
+      - name: 'Init Terraform'
+        run: |
+          terraform init "-backend-config=bucket=${{ inputs.TERRAFORM_STATE_BUCKET }}" "-backend-config=key=${{ inputs.TERRAFORM_STATE_FILE }}" "-backend-config=region=${{ env.AWS_DEFAULT_REGION }}" "-backend-config=access_key=${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}" "-backend-config=secret_key=${{ secrets.TERRAFORM_AWS_SECRET_ACCESS_KEY }}"
+        working-directory: ./terraform
+
+      - name: 'Apply Terraform changes'
+        run: |
+          terraform apply \
+          -var-file "${{ inputs.TERRAFORM_TFVARS_FILE }}" \
+          -var "SECRET_KEY=${{ secrets.SECRET_KEY }}" \
+          -var "MAINTENANCE_MODE=${{ secrets.MAINTENANCE_MODE }}" \
+          -var "BASIC_AUTH_USERNAME=${{ secrets.BASIC_AUTH_USERNAME }}" \
+          -var "BASIC_AUTH_PASSWORD=${{ secrets.BASIC_AUTH_PASSWORD }}" \
+          -auto-approve
+        working-directory: ./terraform
+
+      - name: 'Download the TFState file'
+        run: |
+          aws s3 cp "s3://${{ inputs.TERRAFORM_STATE_BUCKET }}/${{ inputs.TERRAFORM_STATE_FILE }}" ./current_tf_state.json
+
+      - id: step_elastic_beanstalk_code_s3_bucket
+        name: 'Find the name of the Elastic Beanstalk application code versions S3 bucket'
+        run: |
+          echo test=$(jq -r '.resources[] | select(.name == "main_app_elastic_beanstalk_code_s3_bucket").instances[].attributes.bucket' current_tf_state.json) >> main_app_elastic_beanstalk_code_s3_bucket.txt
+          cat main_app_elastic_beanstalk_code_s3_bucket.txt
+          cat main_app_elastic_beanstalk_code_s3_bucket.txt >> $GITHUB_OUTPUT
+
+  build_and_deploy:
+    name: 'Build and Deploy'
+    runs-on: ubuntu-latest
+    needs: terraform
+    environment: ${{ inputs.GITHUB_ACTIONS_ENVIRONMENT }}
+
+    env:
+      ZIP_FILE_NAME: "demo_app_run${{ github.run_id }}_attempt${{ github.run_attempt }}.zip"
+      EB_CODE_BUCKET: "${{needs.terraform.outputs.main_app_elastic_beanstalk_code_s3_bucket}}"
+      EB_APP_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}__${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}__Elastic_Beanstalk_Application"
+      EB_ENVIRONMENT_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME_HYPHENS }}--${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}--EB-Env"
+      EB_VERSION_LABEL: "v_run${{ github.run_id }}_attempt${{ github.run_attempt }}"
+
+    steps:
+      - name: 'Checkout Code'
+        uses: actions/checkout@v3
+
+      - name: 'Save build run info to JSON file'
+        run: |
+          echo '{ "git_commit": "${{ github.sha }}", "git_branch": "${{ github.ref_name }}", "github_action_name": "${{ github.workflow }}", "github_action_run_url": "https://github.com/cabinetoffice/grc-app/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}" }' > build-info.json
+
+      - name: 'Install Node.JS dependencies'
+        run: |
+          npm ci
+
+      - name: 'Build the CSS and JS code'
+        run: |
+          npm run build
+
+      - name: 'Zip up the code'
+        run: |
+          zip -rq "${{ env.ZIP_FILE_NAME }}" .
+
+      - name: 'Copy the zip file to AWS S3'
+        run: |
+          aws s3 cp "./${{ env.ZIP_FILE_NAME }}" "s3://${{ env.EB_CODE_BUCKET }}"
+
+      - name: 'Create Elastic Beanstalk application version'
+        run: |
+          aws elasticbeanstalk create-application-version --application-name "${{ env.EB_APP_NAME }}" --version-label "${{ env.EB_VERSION_LABEL }}" --source-bundle "S3Bucket=${{ env.EB_CODE_BUCKET }},S3Key=${{ env.ZIP_FILE_NAME }}"
+
+      - name: 'Deploy new version to Elastic Beanstalk instances'
+        run: |
+          aws elasticbeanstalk update-environment --application-name "${{ env.EB_APP_NAME }}" --environment-name "${{ env.EB_ENVIRONMENT_NAME }}" --version-label "${{ env.EB_VERSION_LABEL }}"
+
+      - name: 'Wait for the Elastic Beanstalk environment to finish updating (to prevent us trying to deploy two changes at once)'
+        run: |
+          aws elasticbeanstalk wait environment-updated --application-name "${{ env.EB_APP_NAME }}" --environment-name "${{ env.EB_ENVIRONMENT_NAME }}" --version-label "${{ env.EB_VERSION_LABEL }}"

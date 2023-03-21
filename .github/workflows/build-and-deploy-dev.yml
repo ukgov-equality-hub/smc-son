@@ -1,0 +1,27 @@
+name: 'Terraform, Build, Deploy (dev)'
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency: ${{ github.workflow }}  # Prevents more than one instance of this workflow running at the same time
+
+jobs:
+  terraform_build_deploy:
+    uses: ./.github/workflows/_build-and-deploy-shared.yml
+    with:
+      GITHUB_ACTIONS_ENVIRONMENT: Dev
+      TERRAFORM_SERVICE_NAME: Demo_App
+      TERRAFORM_SERVICE_NAME_HYPHENS: Demo-App
+      TERRAFORM_ENVIRONMENT_NAME: Dev
+      TERRAFORM_STATE_BUCKET: uk-gov-equality-hub-demo-app-terraform-state-bucket
+      TERRAFORM_STATE_FILE: demo-app-dev.tfstate
+      TERRAFORM_TFVARS_FILE: dev.tfvars
+    secrets:
+      TERRAFORM_AWS_ACCESS_KEY_ID: ${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}
+      TERRAFORM_AWS_SECRET_ACCESS_KEY: ${{ secrets.TERRAFORM_AWS_SECRET_ACCESS_KEY }}
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      MAINTENANCE_MODE: ${{ secrets.MAINTENANCE_MODE }}
+      BASIC_AUTH_USERNAME: ${{ secrets.BASIC_AUTH_USERNAME }}
+      BASIC_AUTH_PASSWORD: ${{ secrets.BASIC_AUTH_PASSWORD }}
