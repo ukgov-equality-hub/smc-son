@@ -1,6 +1,6 @@
 
 locals {
-  main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2 v3.4.1 running Python 3.8"
+  main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2 v3.5.0 running Python 3.8"
   main_app_elastic_beanstalk_ec2_instance_type = "t4g.micro"
 
   main_app_elastic_beanstalk_min_instances = 2
