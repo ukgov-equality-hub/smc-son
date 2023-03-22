@@ -127,7 +127,3 @@ jobs:
       - name: 'Deploy new version to Elastic Beanstalk instances'
         run: |
           aws elasticbeanstalk update-environment --application-name "${{ env.EB_APP_NAME }}" --environment-name "${{ env.EB_ENVIRONMENT_NAME }}" --version-label "${{ env.EB_VERSION_LABEL }}"
-
-      - name: 'Wait for the Elastic Beanstalk environment to finish updating (to prevent us trying to deploy two changes at once)'
-        run: |
-          aws elasticbeanstalk wait environment-updated --application-name "${{ env.EB_APP_NAME }}" --environment-name "${{ env.EB_ENVIRONMENT_NAME }}" --version-label "${{ env.EB_VERSION_LABEL }}"
