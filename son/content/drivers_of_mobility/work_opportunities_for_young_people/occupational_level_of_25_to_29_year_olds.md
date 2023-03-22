@@ -22,7 +22,7 @@ Data on the occupational level of jobs taken by 25 to 29 year olds in the UK (20
 /static/data/DR32_region.csv
 
 # map-options
-{ geoFormat: '', nameField: 'Area_name', valueField: 'Value', areaField: 'ITL221NM', dataFormat: 'linear', legend: 'map-legend', tooltip: 'map-tooltip', domains: ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], colourScheme: ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], rolloverBehaviour: 'outline', tooltipBehaviour: 'click', background: true }
+{ geoFormat: '', nameField: 'Area_name', valueField: 'Value', areaField: 'ITL221NM', dataFormat: 'linear', legend: 'map-legend', tooltip: 'map-tooltip', domains: ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], rolloverBehaviour: 'outline', tooltipBehaviour: 'click', background: true }
 
 # chart-src
 /static/demo/SON-DR32caterpillar-20230308.svg

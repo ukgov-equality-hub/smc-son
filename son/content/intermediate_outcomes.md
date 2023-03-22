@@ -31,13 +31,13 @@ Highlighted content
             'map1',
             `${location.protocol}//${location.host}/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json`,
             `${location.protocol}//${location.host}/static/data/IN23.csv`,
-            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], 'background': true }
+            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], 'background': true }
         )
         let map2 = new Choropleth(
             'map2',
             `${location.protocol}//${location.host}/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json`,
             `${location.protocol}//${location.host}/static/data/IN33.csv`,
-            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'], 'background': true }
+            { 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'allowRollover': false, 'allowZoom': false, 'allowZoomOnClick': false, 'colourScheme': ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], 'background': true }
         )
     })()
 </script>

@@ -15,7 +15,7 @@ Data on the occupational class people are in at 25 to 29 years old, by social ba
 /static/data/IN33.csv
 
 # options
-{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'click', 'domains': ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], 'rolloverBehaviour': 'outline', 'background': true, 'colourScheme': ['#fde725', '#5ec962', '#21918c', '#3b528b', '#440154'] }
+{ 'geoFormat': '', 'nameField': 'Area_name', 'valueField': 'Value', 'areaField': 'ITL221NM', 'dataFormat': 'linear', 'legend': 'map-legend', 'tooltip': 'map-tooltip', 'tooltipBehaviour': 'click', 'domains': ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], 'rolloverBehaviour': 'outline', 'background': true, 'colourScheme': ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'] }
 
 ## Data Table
 # data-src
