@@ -7,7 +7,7 @@ locals {
   main_app_elastic_beanstalk_max_instances = 8
 
   main_app_elastic_beanstalk_health_check_path = "/"  // Was "/health-check"
-  main_app_elastic_beanstalk_health_check_matcher_http_code = 200
+  main_app_elastic_beanstalk_health_check_matcher_code = 200
 }
 
 // An S3 bucket to store the code that is deployed by Elastic Beanstalk
@@ -284,21 +284,21 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:https"
     name      = "HealthCheckPath"
-    value     = local.elb_health_check_path
+    value     = local.main_app_elastic_beanstalk_health_check_path
   }
-//
+
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:https"
     name      = "MatcherHTTPCode"
-    value     = local.elb_matcher_http_code
+    value     = local.main_app_elastic_beanstalk_health_check_matcher_code
   }
-//
+
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:https"
     name      = "Port"
     value     = "443"
   }
-//
+
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:https"
     name      = "Protocol"
@@ -336,7 +336,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elasticbeanstalk:environment:process:default"
     name      = "MatcherHTTPCode"
-    value     = local.main_app_elastic_beanstalk_health_check_matcher_http_code
+    value     = local.main_app_elastic_beanstalk_health_check_matcher_code
   }
 
   // Elastic beanstalk log config
