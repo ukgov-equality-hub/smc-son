@@ -3,11 +3,12 @@ locals {
   main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2 v3.5.0 running Python 3.8"
   main_app_elastic_beanstalk_ec2_instance_type = "t4g.micro"
 
-  main_app_elastic_beanstalk_min_instances = 2
-  main_app_elastic_beanstalk_max_instances = 8
+  main_app_elastic_beanstalk_min_instances = var.environment == "Prod" ? 2 : 1
+  main_app_elastic_beanstalk_max_instances = var.environment == "Prod" ? 8 : 1
 
   main_app_elastic_beanstalk_health_check_path = "/"  // Was "/health-check"
   main_app_elastic_beanstalk_health_check_matcher_code = 200
+  elb_load_balancer_ssl_certificate_arn = "arn:aws:acm:eu-west-2:049823448487:certificate/638edafe-3eff-4f92-87c8-433304f0004d"
 }
 
 // An S3 bucket to store the code that is deployed by Elastic Beanstalk
@@ -120,7 +121,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:default"
     name      = "ListenerEnabled"
-    value     = "false"  // was false // disabled. we create our own port 80 listener which redirects to https
+    value     = "false"  // disabled. we create our own port 80 listener which redirects to https
   }
 
   // HTTPS secure listener config
@@ -139,7 +140,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:443"
     name      = "SSLCertificateArns"
-    value     = var.ELB_LOAD_BALANCER_SSL_CERTIFICATE_ARN
+    value     = local.elb_load_balancer_ssl_certificate_arn
   }
 
   setting {

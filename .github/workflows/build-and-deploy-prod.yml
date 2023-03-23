@@ -1,0 +1,27 @@
+name: 'Terraform, Build, Deploy (production)'
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+concurrency: ${{ github.workflow }}  # Prevents more than one instance of this workflow running at the same time
+
+jobs:
+  terraform_build_deploy:
+    uses: ./.github/workflows/_build-and-deploy-shared.yml
+    with:
+      GITHUB_ACTIONS_ENVIRONMENT: Prod
+      TERRAFORM_SERVICE_NAME: smc_son
+      TERRAFORM_SERVICE_NAME_HYPHENS: smc-son
+      TERRAFORM_ENVIRONMENT_NAME: Prod
+      TERRAFORM_STATE_BUCKET: uk-gov-equality-hub-terraform-state-bucket
+      TERRAFORM_STATE_FILE: smc-son_prod.tfstate
+      TERRAFORM_TFVARS_FILE: prod.tfvars
+    secrets:
+      TERRAFORM_AWS_ACCESS_KEY_ID: ${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}
+      TERRAFORM_AWS_SECRET_ACCESS_KEY: ${{ secrets.TERRAFORM_AWS_SECRET_ACCESS_KEY }}
+      SECRET_KEY: ${{ secrets.SECRET_KEY }}
+      MAINTENANCE_MODE: ${{ secrets.MAINTENANCE_MODE }}
+      BASIC_AUTH_USERNAME: ${{ secrets.BASIC_AUTH_USERNAME }}
+      BASIC_AUTH_PASSWORD: ${{ secrets.BASIC_AUTH_PASSWORD }}
