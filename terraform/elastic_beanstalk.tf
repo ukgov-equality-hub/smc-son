@@ -3,8 +3,8 @@ locals {
   main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2 v3.5.0 running Python 3.8"
   main_app_elastic_beanstalk_ec2_instance_type = "t4g.micro"
 
-  main_app_elastic_beanstalk_min_instances = var.environment == "Prod" ? 2 : 1
-  main_app_elastic_beanstalk_max_instances = var.environment == "Prod" ? 8 : 1
+  main_app_elastic_beanstalk_min_instances = 2
+  main_app_elastic_beanstalk_max_instances = var.environment == "Prod" ? 8 : 2
 
   main_app_elastic_beanstalk_health_check_path = "/"  // Was "/health-check"
   main_app_elastic_beanstalk_health_check_matcher_code = 200
