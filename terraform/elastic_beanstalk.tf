@@ -120,33 +120,33 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:default"
     name      = "ListenerEnabled"
-    value     = "true"  // was false // disabled. we create our own port 80 listener which redirects to https
+    value     = "false"  // was false // disabled. we create our own port 80 listener which redirects to https
   }
 
   // HTTPS secure listener config
-//  setting {
-//    namespace = "aws:elbv2:listener:443"
-//    name      = "ListenerEnabled"
-//    value     = "true"
-//  }
-//
-//  setting {
-//    namespace = "aws:elbv2:listener:443"
-//    name      = "Protocol"
-//    value     = "HTTPS"
-//  }
-//
-//  setting {
-//    namespace = "aws:elbv2:listener:443"
-//    name      = "SSLCertificateArns"
-//    value     = var.ELB_LOAD_BALANCER_SSL_CERTIFICATE_ARN
-//  }
-//
-//  setting {
-//    namespace = "aws:elbv2:listener:default"
-//    name = "SSLPolicy"
-//    value = "ELBSecurityPolicy-2016-08"
-//  }
+  setting {
+    namespace = "aws:elbv2:listener:443"
+    name      = "ListenerEnabled"
+    value     = "true"
+  }
+
+  setting {
+    namespace = "aws:elbv2:listener:443"
+    name      = "Protocol"
+    value     = "HTTPS"
+  }
+
+  setting {
+    namespace = "aws:elbv2:listener:443"
+    name      = "SSLCertificateArns"
+    value     = var.ELB_LOAD_BALANCER_SSL_CERTIFICATE_ARN
+  }
+
+  setting {
+    namespace = "aws:elbv2:listener:default"
+    name = "SSLPolicy"
+    value = "ELBSecurityPolicy-2016-08"
+  }
 
   ////////////////////////
   // Auto-scaling
@@ -280,29 +280,29 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   }
 
   // HTTPS secure listener rules
-//  setting {
-//    namespace = "aws:elasticbeanstalk:environment:process:https"
-//    name      = "HealthCheckPath"
-//    value     = local.main_app_elastic_beanstalk_health_check_path
-//  }
-//
-//  setting {
-//    namespace = "aws:elasticbeanstalk:environment:process:https"
-//    name      = "MatcherHTTPCode"
-//    value     = local.main_app_elastic_beanstalk_health_check_matcher_code
-//  }
-//
-//  setting {
-//    namespace = "aws:elasticbeanstalk:environment:process:https"
-//    name      = "Port"
-//    value     = "443"
-//  }
-//
-//  setting {
-//    namespace = "aws:elasticbeanstalk:environment:process:https"
-//    name      = "Protocol"
-//    value     = "HTTPS"
-//  }
+  setting {
+    namespace = "aws:elasticbeanstalk:environment:process:https"
+    name      = "HealthCheckPath"
+    value     = local.main_app_elastic_beanstalk_health_check_path
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:environment:process:https"
+    name      = "MatcherHTTPCode"
+    value     = local.main_app_elastic_beanstalk_health_check_matcher_code
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:environment:process:https"
+    name      = "Port"
+    value     = "443"
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:environment:process:https"
+    name      = "Protocol"
+    value     = "HTTPS"
+  }
 
   ///////////////////////////
   // Sticky Sessions
