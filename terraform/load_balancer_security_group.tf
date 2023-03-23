@@ -9,15 +9,15 @@ resource "aws_security_group" "security_group_main_app_load_balancer" {
   }
 }
 
-//resource "aws_security_group_rule" "security_group_main_app_load_balancer__ingress_port80_everywhere" {
-//  security_group_id = aws_security_group.security_group_main_app_load_balancer.id
-//  type              = "ingress"
-//  description       = "Allow ingress: Port 80 from everywhere"
-//  protocol          = "tcp"
-//  from_port         = 80
-//  to_port           = 80
-//  cidr_blocks       = ["0.0.0.0/0"]
-//}
+resource "aws_security_group_rule" "security_group_main_app_load_balancer__ingress_port80_everywhere" {
+  security_group_id = aws_security_group.security_group_main_app_load_balancer.id
+  type              = "ingress"
+  description       = "Allow ingress: Port 80 from everywhere"
+  protocol          = "tcp"
+  from_port         = 80
+  to_port           = 80
+  cidr_blocks       = ["0.0.0.0/0"]
+}
 
 resource "aws_security_group_rule" "security_group_main_app_load_balancer__ingress_port443_everywhere" {
   security_group_id = aws_security_group.security_group_main_app_load_balancer.id
