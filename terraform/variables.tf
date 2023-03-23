@@ -44,3 +44,7 @@ variable "BASIC_AUTH_PASSWORD" {
   type = string
   default = ""
 }
+variable "ELB_LOAD_BALANCER_SSL_CERTIFICATE_ARN" {
+  type = "string"
+  default = "arn:aws:acm:eu-west-2:049823448487:certificate/638edafe-3eff-4f92-87c8-433304f0004d"
+}
