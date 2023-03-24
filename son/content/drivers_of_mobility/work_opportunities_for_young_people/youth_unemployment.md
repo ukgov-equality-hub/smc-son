@@ -28,7 +28,7 @@ Data on the number of 16 to 24 year olds who were unemployed in the UK from 2014
 /static/data/DR32_region.csv
 
 # chart-options
-{ type: 'dot', xkey: 'Value', ykey: 'Area_name', sort: '-Value', xgrid: false, ygrid: true, legend: false, colourScheme: ['#1d70b8'], margin: [0, 0, 0, 0], fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent', lowerConfidence: 'LCI', upperConfidence: 'UCI' }
+{ type: 'dot', xkey: 'Value', ykey: 'Area_name', sort: '-Value', scale: 'quintile', xgrid: false, ygrid: true, legend: false, colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], colourScheme1: ['#1d70b8'], margin: [0, 0, 0, 0], fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent', lowerConfidence: 'LCI', upperConfidence: 'UCI' }
 
 # _chart-options
 { type: 'quintile', xkey: 'Value', ykey: 'Area_name', yvalue: 'Highlands and Islands', colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], margin: [0, 0, 0, 0], backgroundColor: 'transparent' }

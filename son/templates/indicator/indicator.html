@@ -135,8 +135,8 @@
         {% endif %}
         {% if Region_map_src != '' or Region_chart_src != '' %}
         <div class="govuk-tabs__panel" id="tab-region">
-            <div style="width: 100%; height: auto; min-height: 500px;">
-                <div style="display: inline-block; display: none1; width: calc(50% - 25px); height: 100%; margin-right: 25px; vertical-align: top;">
+            <div class="cols">
+                <div>
                     <!--<img src="{{ Region_map_src }}" style="width: 100%;">-->
                     <div id="map-container">
                         <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
@@ -167,7 +167,7 @@
                             region_map.download()
                         })
                     </script>
-                </div><div style="display: inline-block; width: calc(50% - 25px); height: 100%; margin-left: 25px; vertical-align: top;">
+                </div><div>
                     <!--<img src="{{ Region_chart_src }}" style="width: 100%;">-->
                     <div id="region_alluk" style="width: 100%; height: 630px;"></div>
                     <script>

@@ -128,7 +128,7 @@ class Chart {
         const uci = options.upperConfidence || null
         const xvalue = options.yvalue || null
         const yvalue = options.yvalue || null
-        const scale = ['absolute', 'relative', 'percent', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
+        const scale = ['absolute', 'relative', 'percent', 'quartile', 'quintile', 'decile', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
@@ -208,6 +208,21 @@ class Chart {
             let chartData
             for (let i = 0; i < data.length; i++) {
                 chartData = data[i]
+                if (sort) {
+                    if (group) {
+                        if (orientation == 'y') {
+                            domain = sortDomain(chartData, sort, group, xkey, sortFacet)
+                        } else {
+                            range = sortDomain(chartData, sort, group, ykey, sortFacet)
+                        }
+                    } else {
+                        if (orientation == 'y') {
+                            domain = sortDomain(chartData, sort, ykey)
+                        } else {
+                            range = sortDomain(chartData, sort, ykey)
+                        }
+                    }
+                }
 
                 if (lci && uci) {
                     chartData = chartData.map(x => ({
@@ -240,7 +255,7 @@ class Chart {
                     y: ykey,
                     z: zkey,
                     facet: group ? true : null,
-                    fill: ['line', 'linex', 'liney'].includes(type) ? undefined : zkey ? zkey : orientation == 'y' ? xkey : ykey,//x => zkey ,//? getCategoryColour(x[zkey]) : getMarkColour(x[xkey]),
+                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : zkey ? zkey : getMarkColour(orientation, chartData, xkey, ykey, x),
                     stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
                     title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
                 }
@@ -266,21 +281,15 @@ class Chart {
                     marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
-                    ticks = type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
+                    ticks = getScaledTicks(type)
                     xgrid = false
                     ygrid = false
-                    domain = Array.from({ length: ticks }, (_, i) => i * (max - min) / (ticks - 1) + min)
-                    let q = -1, d = chartData.filter(x => x[ykey] == yvalue), ranges = Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)
+                    domain = getInterDomain(ticks, 0, chartData.length) //getScaledDomain(ticks)
+                    let d = chartData.filter(x => x[ykey] == yvalue)
                     if (d) {
-                        for (let i = 0; i < ranges.length - 1; i++) {
-                            if (d[0][xkey] >= ranges[i] && d[0][xkey] <= ranges[i + 1]) {
-                                q = i
-                                break
-                            }
-                        }
+                        let q = getInterValue(chartData, ticks, d[0][xkey])
                         marks.push(Plot.cell(domain, { x: x => x, fill: x => x }))
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, _fill: 'red', fill: x => domain[q], _stroke: x => x[xkey] }))
-
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(orientation, chartData, xkey, ykey, x) }))
                     }
                 }
 
@@ -368,11 +377,11 @@ class Chart {
                 yOptions = { axis: null, domain: [yvalue], ticks: 1 }
             } else if (!group) {
                 if (orientation == 'y') {
-                    xOptions['domain'] = sort ? sortDomain(chartData, sort, ykey) : domain
+                    xOptions['domain'] = domain //sort ? sortDomain(chartData, sort, ykey) : domain
                     yOptions['domain'] = range
                 } else {
                     xOptions['domain'] = domain
-                    yOptions['domain'] = sort ? sortDomain(chartData, sort, ykey) : range
+                    yOptions['domain'] = range //sort ? sortDomain(chartData, sort, ykey) : range
                 }
             } else {
                 if (orientation == 'y') {
@@ -392,7 +401,6 @@ class Chart {
 
 
 
-
             let plot = Plot.plot({
                 x: xOptions,
                 y: yOptions,
@@ -404,11 +412,11 @@ class Chart {
                 } : undefined,
                 fx: orientation == 'y' && group ? {
                     label: null,
-                    domain: sort ? sortDomain(chartData, sort, group, xkey, sortFacet) : domain,
+                    domain: domain, //sort ? sortDomain(chartData, sort, group, xkey, sortFacet) : domain,
                     tickRotate: rotateDomainLabels ? 90 : undefined
                 } : undefined,
                 fy: orientation != 'y' && group ? {
-                    domain: sort ? sortDomain(chartData, sort, group, ykey, sortFacet) : range
+                    domain: range, //sort ? sortDomain(chartData, sort, group, ykey, sortFacet) : range
                 } : undefined,
                 marks: marks,
                 color: {
@@ -424,28 +432,7 @@ class Chart {
                 style: style
             })
 
-
-
-            var plot1 = Plot.plot({
-                x: { axis: null },
-                y: { axis: null },
-                marks: marks,
-                color: {
-                  range: colourScheme,
-                  legend: false
-                },
-                width: self.width,
-                height: self.height,
-                marginTop: margin[0],
-                marginRight: margin[1],
-                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2]: margin[2] + (xtitle != null ? 30 : 0) + 20,
-                marginLeft: maxLabelLength(data, group && orientation != 'y' ? group : ykey, style) + margin[3] + (ytitle != null ? 10 : 0),
-                style: style
-              })
-
-
-
-            //plot = tooltips(plot)
+            plot = tooltips(plot)
             div.appendChild(plot)
 
             // Legend
@@ -465,6 +452,51 @@ class Chart {
                 div.appendChild(legendDiv)
             }
 
+
+            function getScaledTicks(type) {
+                return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
+            }
+
+            function getScaledDomain(ticks) {
+                return Array.from({ length: ticks }, (_, i) => i * (max - min) / (ticks - 1) + min)
+            }
+
+            function getScaledRanges(ticks) {
+                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)                
+            }
+
+            function getScaleValue(data, ticks) {
+                let ranges = getScaledRanges(ticks)
+                if (data) {
+                    for (let i = 0; i < ranges.length - 1; i++) {
+                        if (data[0][xkey] >= ranges[i] && data[0][xkey] <= ranges[i + 1]) {
+                            return i
+                        }
+                    }
+                }
+                return -1
+            }
+
+            function getInterDomain(ticks, min, max) {
+                return Array.from({ length: ticks }, (_, i) => i * (max - min) / (ticks - 1) + min)
+            }
+
+            function getInterRanges(ticks, min, max) {
+                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)                
+            }
+
+            function getInterValue(data, ticks, value) {
+                let ranges = getInterRanges(ticks, 0, data.length)
+                if (data) {
+                    for (let i = 0; i < ranges.length - 1; i++) {
+                        if (value >= ranges[i] && value <= ranges[i + 1]) {
+                            return i
+                        }
+                    }
+                }
+                return -1
+            }
+
             function getCategoryColour(key) {
                 if (!!scheme && scheme.constructor === Object && scheme[key]) {
                     return scheme[key]
@@ -472,8 +504,15 @@ class Chart {
                 return scheme[categories.indexOf(key)]
             }
 
-            function getMarkColour(key) {
-                return color(key)
+            function getMarkColour(orientation, data, xkey, ykey, x) {
+                if (['quartile', 'quintile', 'decile'].includes(scale)) {
+                    data = data.map(x => x[xkey]).sort(function (a, b) { return a - b })
+                    let ticks = getScaledTicks(scale), q = getInterValue(data, ticks, data.indexOf(x[xkey]))
+                    return colourScheme[q]
+
+                }
+                return orientation == 'y' ? xkey : ykey//x => zkey ,//? getCategoryColour(x[zkey]) : getMarkColour(x[xkey]),
+                //return color(key)
             }
 
             function getLabelColour(key) {
