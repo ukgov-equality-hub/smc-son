@@ -121,7 +121,7 @@ class Choropleth {
         const nameField = options.nameField || ''
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
-        const dataFormat = options.dataFormat || 'linear'  // categorical | sequential | linear
+        const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         let domains = options.domains || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
@@ -312,19 +312,19 @@ class Choropleth {
                         .data(Array.from(Array(100).keys()))
                         .enter()
                         .append('rect')
-                            .attr('x', (d) => {
-                                return width > height ? Math.floor(width / 100 * d) : 0
+                            .attr('x', x => {
+                                return width > height ? Math.floor(width / 100 * x) : 0
                             })
-                            .attr('y', (d) => {
-                                return width > height ? 25 : Math.floor(height / 100 * d)
+                            .attr('y', x => {
+                                return width > height ? 25 : Math.floor(height / 100 * x)
                             })
-                            .attr('width', (d) => {
+                            .attr('width', x => {
                                 return width > height ? width / 100 + 1 : width - labelLen
                             })
-                            .attr('height', (d) => {
+                            .attr('height', x => {
                                 return width > height ? height - 25 : height / 100 + 1
                             })
-                            .attr('fill', (d) => color(d))
+                            .attr('fill', x => getMarkColour(data, x) /*color(x)*/)
 
                     d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
@@ -332,13 +332,13 @@ class Choropleth {
                         .data(range(0, 100, legendSteps))
                         .enter()
                         .append('text')
-                            .attr('x', (d, i) => {
-                                return width > height ? Math.floor(width / 100 * d) - ((range(min, max, legendSteps)[i].toString().length * 10) / 2) : labelLen + 5
+                            .attr('x', (x, i) => {
+                                return width > height ? Math.floor(width / 100 * x) - ((range(min, max, legendSteps)[i].toString().length * 10) / 2) : labelLen + 5
                             })
-                            .attr('y', (d) => {
-                                return width > height ? 8 : Math.floor(height / 100 * d) + 5
+                            .attr('y', x => {
+                                return width > height ? 8 : Math.floor(height / 100 * x) + 5
                             })
-                            .text((d, i) => {
+                            .text((x, i) => {
                                 return range(min, max, legendSteps)[i]
                             })
                             .style('font-size', style.fontSize)
@@ -389,8 +389,8 @@ class Choropleth {
                             .attr('y', (d, i) => {
                                 return (i + 0.5) * 30
                             })
-                            .text((d) => {
-                                return d
+                            .text(x => {
+                                return x
                             })
                 }
             }
@@ -402,11 +402,11 @@ class Choropleth {
                     .style('fill', '#f3f2f1')
                     .style('stroke', '#ddd')
                     .style('stroke-width', '.1')
-                    .style('visibility', (d) => {
-                        return d.properties.NUTS_NAME == 'United Kingdom' ? 'hidden' : 'visible'
+                    .style('visibility', x => {
+                        return x.properties.NUTS_NAME == 'United Kingdom' ? 'hidden' : 'visible'
                     })
-                    .attr('data-name', (d) => {
-                        return d.properties.NUTS_NAME
+                    .attr('data-name', x => {
+                        return x.properties.NUTS_NAME
                     })
 
                 const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return x.properties.NUTS_NAME === 'United Kingdom' }) }, self.bg, undefined, undefined, '')
@@ -418,8 +418,8 @@ class Choropleth {
             map.enter()
                 .append('path')
                 .attr('d', self.path)
-                .style('fill', (d, i) => {
-                    const val = getValue(d, areaField, valueField, data)  // rnd(0, colourScheme.length - 1)
+                .style('fill', x => getMarkColour(data, x) /*(x, i) => {
+                    const val = getValue(x, areaField, valueField, data)
                     if (dataFormat == 'categorical') {
                         return colourScheme[val - 1]
                     } else if (dataFormat == 'sequential') {
@@ -427,17 +427,17 @@ class Choropleth {
                     } else {
                         return isNaN(val) ? 'grey' : color(val)
                     }
-                })
+                }*/)
                 .style('stroke', 'grey')
                 .style('stroke-width', '0.2')
-                .attr('data-name', (d) => {
-                    return getProperty(d, areaField)
+                .attr('data-name', x => {
+                    return getProperty(x, areaField)
                 })
-                .attr('data-value', (d) => {
+                .attr('data-value', x => {
                     if (dataFormat == 'categorical') {
-                        return domains[getValue(d, areaField, valueField, data) - 1]
+                        return domains[getValue(x, areaField, valueField, data) - 1]
                     } else {
-                        const val = getValue(d, areaField, valueField, data)
+                        const val = getValue(x, areaField, valueField, data)
                         return isNaN(val) ? 'N/A' : val
                     }
                 })
@@ -453,8 +453,8 @@ class Choropleth {
                 .style('stroke', 'red')
                 .style('stroke-width', '2')
                 .style('opacity', 0)
-                .attr('data-name', (d) => {
-                    return getProperty(d, areaField)
+                .attr('data-name', x => {
+                    return getProperty(x, areaField)
                 })
                 .on('click', clicked)
                 .on('mouseover', highlight)
@@ -483,6 +483,75 @@ class Choropleth {
                         .attr('class', `label label_city${city.zoom ? ' zoom' + city.zoom.join(' zoom') : ''}`)
                         .text(city.name)
                 }
+            }
+
+            function getScaledTicks(type) {
+                return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
+            }
+
+            function getScaledDomain(ticks) {
+                return Array.from({ length: ticks }, (_, i) => i * (max - min) / (ticks - 1) + min)
+            }
+
+            function getScaledRanges(ticks) {
+                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)                
+            }
+
+            function getScaleValue(data, ticks) {
+                let ranges = getScaledRanges(ticks)
+                if (data) {
+                    for (let i = 0; i < ranges.length - 1; i++) {
+                        if (data[0][xkey] >= ranges[i] && data[0][xkey] <= ranges[i + 1]) {
+                            return i
+                        }
+                    }
+                }
+                return -1
+            }
+
+            function getQuantileTicks(type) {
+                let quantiles = []
+                if (type == 'quartile') {
+                    quantiles = [.25, .5, .75, 1]
+                } else if (type == 'quintile') {
+                    quantiles = [.2, .4, .6, .8, 1]
+                } else if (type == 'decile') {
+                    quantiles = [.1, .2, .3, .4, .5, .6, .7, .8, .9, 1]
+                }
+                return quantiles
+            }
+
+            function getQuantileRanges(data, type) {
+                let ranges = [], quantiles = getQuantileTicks(type)
+                for (const quantile of quantiles) {
+                    ranges.push(d3.quantile(data, quantile))
+                }
+                return ranges
+            }
+
+            function getQuantile(ranges, value) {
+                for (let i = 0; i < ranges.length; i++) {
+                    if (value <= ranges[i]) {
+                        return i
+                    }
+                }
+                return -1
+            }
+
+            function getMarkColour(data, x) {
+                const val = getValue(x, areaField, valueField, data)
+                if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                    data = (data.data || data).map(x => x[valueField]).sort(function (a, b) { return a - b })
+                    let ranges = getQuantileRanges(data, dataFormat), q = getQuantile(ranges, val)
+                    return colourScheme[q] || 'grey'
+                } else if (dataFormat == 'categorical') {
+                    return colourScheme[val - 1]
+                } else if (dataFormat == 'sequential') {
+                    return isNaN(val) ? 'grey' : color(Math.floor((val / (max - min)) * 100))
+                } else {
+                    return isNaN(val) ? 'grey' : color(val)
+                }
+                //return color(x)
             }
         }
 
@@ -666,7 +735,7 @@ class Choropleth {
 
             const tiles = tile(transform)
             image = image.data(tiles, d => d).join('image')
-                .attr('xlink:href', d => url(...d3.tileWrap(d)))
+                .attr('xlink:href', x => url(...d3.tileWrap(x)))
                 .attr('x', ([x]) => (x + tiles.translate[0]) * tiles.scale)
                 .attr('y', ([, y]) => (y + tiles.translate[1]) * tiles.scale)
                 .attr('width', tiles.scale)
@@ -686,18 +755,18 @@ class Choropleth {
             const image = layer
                 .style('transform', stringify(tiles.scale, tiles.translate))
                 .selectAll('.tile')
-                .data(tiles, d => d)
+                .data(tiles, x => x)
 
             image.exit()
-                .each(function (d) { this._xhr.abort() })
+                .each(function (x) { this._xhr.abort() })
                 .remove()
 
             image.enter().append('svg')
                 .attr('class', 'tile')
-                .style('left', d => `${d[0] * tileSize}px`)
-                .style('top', d => `${d[1] * tileSize}px`)
+                .style('left', x => `${x[0] * tileSize}px`)
+                .style('top', x => `${x[1] * tileSize}px`)
                 .style('border', '1px solid red')
-                //.each(function (d) { this._xhr = renderTile(d, this) })
+                //.each(function (x) { this._xhr = renderTile(x, this) })
 
 */
 
@@ -722,14 +791,11 @@ class Choropleth {
             //svg.selectAll('path').style('opacity', 1)
         }
 
-        function clicked(event, d) {
+        function clicked(event, x) {
             event.stopPropagation()
 
-
-
-
             if (self.clickBehaviour == 'zoom') {
-                const [[x0, y0], [x1, y1]] = self.path.bounds(d)
+                const [[x0, y0], [x1, y1]] = self.path.bounds(x)
                 self.svg.selectAll('path').transition() /////////.style('opacity', 0.6)
                 /////////d3.select(this).transition().style('opacity', 1)
                 self.svg.selectAll('path').attr('data-active', 'N')

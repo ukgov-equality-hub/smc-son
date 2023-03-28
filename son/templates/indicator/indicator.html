@@ -75,7 +75,7 @@
         {% if map_src != '' %}
         <div class="govuk-tabs__panel" id="tab-map">
             <div id="map-container">
-                <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
+                <div id="map-legend" style="display: none;"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
                 <div id="map-controls">
                     <button id="mapZoomIn">+</button>
                     <button id="mapZoomOut">-</button>
@@ -83,6 +83,16 @@
                 <div id="map"></div>
                 <div id="map-tooltip"></div>
             </div>
+                <div style="text-align: center;">
+                    <div style="display: inline; margin: 5px;">
+                        <div style="width: 20px; height: 20px; background: red;"> Q1</div>
+                    
+                    
+                    </div>
+
+
+
+                </div>
             <script>
                 let map = new Choropleth(
                     'map',
@@ -139,7 +149,7 @@
                 <div>
                     <!--<img src="{{ Region_map_src }}" style="width: 100%;">-->
                     <div id="map-container">
-                        <div id="map-legend"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
+                        <div id="map-legend" style="display: none;"><p style="margin-top: 0;" onclick="document.getElementById('map-legend').style.height != '25px' ? document.getElementById('map-legend').style.height = '25px' : document.getElementById('map-legend').style.height = 'auto'">Legend</p></div>
                         <div id="map-controls">
                             <button id="mapZoomIn">+</button>
                             <button id="mapZoomOut">-</button>
@@ -147,6 +157,24 @@
                         <div id="map"></div>
                         <div id="map-tooltip"></div>
                     </div>
+
+
+
+                    <div style="text-align: center;"><div style="display: inline-block; width: calc(20% - 20px); margin: 5px 10px;">
+                            <div style="display: inline-block; width: 20px; height: 20px; background: #ca0020; vertical-align: middle;"></div> Q1
+                        </div><div style="display: inline-block; width: calc(20% - 20px); margin: 5px 10px;">
+                            <div style="display: inline-block; width: 20px; height: 20px; background: #f4a582; vertical-align: middle;"></div>
+                        </div><div style="display: inline-block; width: calc(20% - 20px); margin: 5px 10px;">
+                            <div style="display: inline-block; width: 20px; height: 20px; background: #f7f7f7; vertical-align: middle;"></div>
+                        </div><div style="display: inline-block; width: calc(20% - 20px); margin: 5px 10px;">
+                            <div style="display: inline-block; width: 20px; height: 20px; background: #92c5de; vertical-align: middle;"></div>
+                        </div><div style="display: inline-block; width: calc(20% - 20px); margin: 5px 10px;">
+                            <div style="display: inline-block; width: 20px; height: 20px; background: #0571b0; vertical-align: middle;"></div> Q5
+                        </div></div>
+
+
+
+
                     <script>
                         let map = new Choropleth(
                             'map',
@@ -167,7 +195,7 @@
                             region_map.download()
                         })
                     </script>
-                </div><div>
+                </div><div class="caterpillar">
                     <!--<img src="{{ Region_chart_src }}" style="width: 100%;">-->
                     <div id="region_alluk" style="width: 100%; height: 630px;"></div>
                     <script>

@@ -10,6 +10,7 @@
 ul.collapsible {
     li.moj-side-navigation__item {
         position: relative;
+
         ul.moj-side-navigation__list {
             li.moj-side-navigation__item {
                 a {
@@ -128,6 +129,13 @@ nav.moj-side-navigation-mobile {
 
         li.moj-side-navigation__item {
             display: block;
+
+            span.subdomain {
+                display: block;
+                padding: 5px 0 5px 10px;
+                font-weight: 700;
+                color: #1d70b8;
+            }
 
             ul.moj-side-navigation__list {
                 li.moj-side-navigation__item {

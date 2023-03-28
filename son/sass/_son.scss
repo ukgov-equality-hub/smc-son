@@ -174,7 +174,7 @@ div.govuk-tabs {
         background: transparent;
     }
 
-    @media(max-width: 1020px) {
+    @media(max-width: 1400px) {
         div.cols {
             width: 100%;
             height: auto;
@@ -188,7 +188,19 @@ div.govuk-tabs {
         }
     }
 
-    @media(min-width: 1020px) {
+    @media(max-width: 750px) {
+        div.cols {
+            width: 100%;
+            height: auto;
+            min-height: 500px;
+
+            div.caterpillar {
+                display: none;
+            }
+        }
+    }
+
+    @media(min-width: 1400px) {
         div.cols {
             width: 100%;
             height: auto;

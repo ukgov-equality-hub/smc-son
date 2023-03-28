@@ -19,16 +19,16 @@ Data on the number of 16 to 24 year olds who were unemployed in the UK from 2014
 /static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json
 
 # map-data-src
-/static/data/DR32.csv
+/static/data/DR32_region.csv
 
 # map-options
-{ geoFormat: '', nameField: 'Area_name', valueField: 'Value', areaField: 'ITL221NM', dataFormat: 'linear', legend: 'map-legend', tooltip: 'map-tooltip', domains: ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], rolloverBehaviour: 'outline', tooltipBehaviour: 'click' }
+{ geoFormat: '', nameField: 'Area_name', valueField: 'Value', areaField: 'ITL221NM', dataFormat: 'quintile', _legend: 'map-legend', tooltip: 'map-tooltip', domains: ['Q1 - Bottom 20%', 'Q2', 'Q3', 'Q4', 'Q5 - Top 20%'], colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], rolloverBehaviour: 'outline', tooltipBehaviour: 'click', background: true }
 
 # chart-src
 /static/data/DR32_region.csv
 
 # chart-options
-{ type: 'dot', xkey: 'Value', ykey: 'Area_name', sort: '-Value', scale: 'quintile', xgrid: false, ygrid: true, legend: false, colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], colourScheme1: ['#1d70b8'], margin: [0, 0, 0, 0], fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent', lowerConfidence: 'LCI', upperConfidence: 'UCI' }
+{ type: 'dot', xkey: 'Value', ykey: 'Area_name', sort: '-Value', dataFormat: 'quintile', xgrid: false, ygrid: true, legend: false, colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], colourScheme1: ['#1d70b8'], margin: [0, 0, 0, 0], fontFamily: 'GDS Transport', fontSize: '15px', backgroundColor: 'transparent', lowerConfidence: 'LCI', upperConfidence: 'UCI' }
 
 # _chart-options
 { type: 'quintile', xkey: 'Value', ykey: 'Area_name', yvalue: 'Highlands and Islands', colourScheme: ['#ca0020', '#f4a582', '#f7f7f7', '#92c5de', '#0571b0'], margin: [0, 0, 0, 0], backgroundColor: 'transparent' }
