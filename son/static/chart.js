@@ -282,9 +282,6 @@ class Chart {
                 if (type == 'liney') {
                     marks.push(Plot.line(chartData, { sort: ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
-                if (type == 'dot' || type == 'doty') {
-                    marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
-                }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
                     ticks = getScaledTicks(type)
                     xgrid = false
@@ -297,7 +294,6 @@ class Chart {
                         marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(orientation, chartData, xkey, ykey, x) }))
                     }
                 }
-
                 if (lci && uci) {
                     if (orientation == 'y') {
                         const confidenceIntervalOptions = {
@@ -320,6 +316,9 @@ class Chart {
                         marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', _fill: '#ccc' }))
                         marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', _fill: '#ccc' }))
                     }
+                }
+                if (type == 'dot' || type == 'doty') {
+                    marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
                 }
 
                 if (textLabels != '') {

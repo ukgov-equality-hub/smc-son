@@ -1,79 +1,365 @@
-'''
-Mobility outcomes
-    Education
-        Absolute educational mobility in UK
-        Relative absolute mobility in UK
-        Absolute educational mobility - OECD comparison
-        Relative educational mobility - OECD comparison
-    Housing
-        Absolute housing mobility - LFS
-        Relative housing mobility - LFS
-        Absolute housing mobility - LS
-        Relative housing mobility - LS
-    Income
-        Relative income mobility - Rank-rank correlation - UKLHS
-        Relative income mobility - Intergenerational elasticity - UKLHS
-        Relative income mobility - Rank-rank correlation - LEO
-        Relative income mobility - Intergenerational elasticity - LEO
-    Occupation
-        Absolute occupational mobility - LFS
-        Relative occupational mobility - LFS
-        Absolute occupational mobility - LS
-        Relative occupational mobility - LS
-        Absolute occupational mobility - Birth cohort studies
-        Relative occupational mobility - Birth cohort studies
-        Absolute occupational mobility - International comparison
-        Relative occupational mobility - International comparison
-    Wealth
-        Absolute income mobility
-        Relative wealth mobility
-
-Age-related outcomes
-    5 to 16 years
-        Level of development at age 5
-        Attainment at age 11
-        Attainment at 16
-        Skills at 15
-    16 to 24 years
-        Destinations following the end of compulsory full-time schooling
-        Entry to higher education
-        Highest qualification by age 25
-        Skills in early adulthood
-    25 to 29 years
-        Economic activity
-        Unemployment
-        Occupational level
-        Earnings
-        Returns to education
-    35 to 44 years
-        Acquisition of further training and qualifications
-        Occupational progression
-        Income progression
-        Class pay gap
-
-Drivers of mobility
-    Education opportunities
-        Opportunities for post-16 further education and training
-        Availability of high-quality school education
-        Opportunities for access to higher education
-        Availability of high-quality higher education
-    Inequality among children
-        Economic inequality between families with school-age children
-        Childhood poverty
-        Cultural inequality between families with school-age children
-        Class inequality between families with school-age children
-        Inequalities in child-rearing
-    Social connections
-        Civic engagement
-        Environment conducive to entrepreneurship
-    Work opportunities for young people
-        Vacancy rate at entry level
-        Youth unemployment
-        Type of employment taken by young people
-        Median earnings of young people
-'''
-
 menu = {
+    'domains': [
+        {
+            'name': 'Mobility outcomes',
+            'subdomains': [
+                {
+                    'name': 'Occupation',
+                    'indicators': [
+                        {
+                            'id': 'MO11',
+                            'name': 'Occupational mobility (absolute)'
+                        },
+                        {
+                            'id': 'MO12',
+                            'name': 'Occupational mobility (relative)'
+                        },
+                        {
+                            'id': 'MO13',
+                            'name': 'Occupational mobility (absolute) [LS] '
+                        },
+                        {
+                            'id': 'MO14',
+                            'name': 'Occupational mobility (relative) [LS]'
+                        },
+                        {
+                            'id': 'MO15',
+                            'name': 'Occupational mobility by year of birth (absolute)'
+                        },
+                        {
+                            'id': 'MO16',
+                            'name': 'Occupational mobility (relative, birth-cohort studies)'
+                        },
+                        {
+                            'id': 'MO17',
+                            'name': 'Occupational mobility - international comparisons (absolute)'
+                        },
+                        {
+                            'id': 'MO18',
+                            'name': 'Occupational mobility - international comparisons (relative)'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Income',
+                    'indicators': [
+                        {
+                            'id': 'MO21',
+                            'name': 'Income mobility (absolute)'
+                        },
+                        {
+                            'id': 'MO22',
+                            'name': 'Income mobility (relative)'
+                        },
+                        {
+                            'id': 'MO23',
+                            'name': 'Income mobility (relative, rank-rank correlation, LEO)'
+                        },
+                        {
+                            'id': 'MO24',
+                            'name': 'Income mobility - international comparisons (absolute)'
+                        },
+                        {
+                            'id': 'MO25',
+                            'name': 'Income mobility - international comparisons (relative)'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Education',
+                    'indicators': [
+                        {
+                            'id': 'MO31',
+                            'name': 'Educational mobility (absolute)'
+                        },
+                        {
+                            'id': 'MO32',
+                            'name': 'Educational mobility (relative)'
+                        },
+                        {
+                            'id': 'MO33',
+                            'name': 'Educational mobility - international comparisons (absolute)'
+                        },
+                        {
+                            'id': 'MO34',
+                            'name': 'Educational mobility - international comparisons (relative)'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Housing',
+                    'indicators': [
+                        {
+                            'id': 'MO41',
+                            'name': 'Housing mobility (absolute)'
+                        },
+                        {
+                            'id': 'MO42',
+                            'name': 'Housing mobility (relative)'
+                        },
+                        {
+                            'id': 'MO43',
+                            'name': 'Housing mobility (absolute) [LS]'
+                        },
+                        {
+                            'id': 'MO44',
+                            'name': 'Housing mobility (relative) [LS]'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Wealth',
+                    'indicators': [
+                        {
+                            'id': 'MO51',
+                            'name': 'Wealth mobility (relative)'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'name': 'Intermediate outcomes',
+            'subdomains': [
+                {
+                    'name': 'The years of compulsory schooling (5 to 16 years)',
+                    'indicators': [
+                        {
+                            'id': 'IN11',
+                            'name': 'Level of development at age 5'
+                        },
+                        {
+                            'id': 'IN12',
+                            'name': 'Attainment at age 11'
+                        },
+                        {
+                            'id': 'IN13',
+                            'name': 'Attainment at age 16'
+                        },
+                        {
+                            'id': 'IN14',
+                            'name': 'Skills at age 15'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Routes into work (16 to 29 years)',
+                    'indicators': [
+                        {
+                            'id': 'IN21a',
+                            'name': 'TBD - Destinations after 16: NEET'
+                        },
+                        {
+                            'id': 'IN21b',
+                            'name': 'TBD - Destinations after age 16: education and training'
+                        },
+                        {
+                            'id': 'IN21c',
+                            'name': 'TBD - Destinations after age 16: employment'
+                        },
+                        {
+                            'id': 'IN22',
+                            'name': 'Entry to higher education'
+                        },
+                        {
+                            'id': 'IN23',
+                            'name': 'Highest qualification'
+                        },
+                        {
+                            'id': 'IN24',
+                            'name': 'Skills in early adulthood'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Work in early adulthood (25 to 29 years)',
+                    'indicators': [
+                        {
+                            'id': 'IN31',
+                            'name': 'Economic activity'
+                        },
+                        {
+                            'id': 'IN32',
+                            'name': 'Unemployment'
+                        },
+                        {
+                            'id': 'IN33',
+                            'name': 'Occupational level'
+                        },
+                        {
+                            'id': 'IN34',
+                            'name': 'Earnings'
+                        },
+                        {
+                            'id': 'IN35',
+                            'name': 'TBD - Returns to education (income, controlling by SEB)'
+                        },
+                        {
+                            'id': 'IN36',
+                            'name': 'TBD - Direct effect of social origin on earnings'
+                        },
+                        {
+                            'id': 'IN37',
+                            'name': 'TBD - Returns to education (economic activity, controlling by SEB)'
+                        },
+                        {
+                            'id': 'IN38',
+                            'name': 'TBD - Direct effect of social origin on economic activity'
+                        },
+                        {
+                            'id': 'IN39',
+                            'name': 'TBD - Returns to education (employment, controlling by SEB)'
+                        },
+                        {
+                            'id': 'IN310',
+                            'name': 'TBD - Direct effect of social origin on unemployment'
+                        },
+                        {
+                            'id': 'IN311',
+                            'name': 'TBD - Returns to education (occupation level, controlling by SEB)'
+                        },
+                        {
+                            'id': 'IN312',
+                            'name': 'TBD - Direct effect of social origin on occupation level'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Career progression (35 to 44 years)',
+                    'indicators': [
+                        {
+                            'id': 'IN41',
+                            'name': 'Further training and qualifications'
+                        },
+                        {
+                            'id': 'IN42',
+                            'name': 'Occupational progression'
+                        },
+                        {
+                            'id': 'IN43',
+                            'name': 'Income progression'
+                        },
+                        {
+                            'id': 'IN44',
+                            'name': 'Class pay gap'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'name': 'Drivers of mobility',
+            'subdomains': [
+                {
+                    'name': 'Conditions of childhood',
+                    'indicators': [
+                        {
+                            'id': 'DR11',
+                            'name': 'Distribution of earnings'
+                        },
+                        {
+                            'id': 'DR12',
+                            'name': 'Childhood poverty'
+                        },
+                        {
+                            'id': 'DR13',
+                            'name': 'Distribution of parental education'
+                        },
+                        {
+                            'id': 'DR14',
+                            'name': 'Distribution of parental occupation'
+                        },
+                        {
+                            'id': 'DR15',
+                            'name': 'Inequalities in child-rearing practices'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Educational opportunities and quality of schooling',
+                    'indicators': [
+                        {
+                            'id': 'DR21',
+                            'name': 'Further education and training opportunities'
+                        },
+                        {
+                            'id': 'DR22',
+                            'name': 'Availability of high-quality school education'
+                        },
+                        {
+                            'id': 'DR23a',
+                            'name': 'TBC - Access to higher education: enrollment rate in secondary or tertiary education at age 19'
+                        },
+                        {
+                            'id': 'DR23b',
+                            'name': 'TBC - Access to higher education: initial entrants to higher education'
+                        },
+                        {
+                            'id': 'DR24',
+                            'name': 'Availability of high-quality higher education'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Work opportunities for young people',
+                    'indicators': [
+                        {
+                            'id': 'DR31',
+                            'name': 'Job vacancy rate'
+                        },
+                        {
+                            'id': 'DR32',
+                            'name': 'Youth unemployment'
+                        },
+                        {
+                            'id': 'DR33',
+                            'name': 'Occupational level of 25 to 29 year olds'
+                        },
+                        {
+                            'id': 'DR34',
+                            'name': 'Earnings of 22 to 29 year olds'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Social capital and connections',
+                    'indicators': [
+                        {
+                            'id': 'DR41',
+                            'name': 'Civic engagement'
+                        },
+                        {
+                            'id': 'DR42',
+                            'name': 'Level of trust, fairness and helpfulness'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Environment favouring entrepreneurship',
+                    'indicators': [
+                        {
+                            'id': 'DR51',
+                            'name': 'Broadband speed'
+                        },
+                        {
+                            'id': 'DR52',
+                            'name': 'Business expenditure on R and D'
+                        },
+                        {
+                            'id': 'DR53',
+                            'name': 'University research students'
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            'name': 'Social mobility by area'
+        }
+    ]
+}
+
+_menu2 = {
     'domains': [
         {
             'name': 'Mobility outcomes',
@@ -377,7 +663,7 @@ menu = {
     ]
 }
 
-_menu = {
+_menu1 = {
     'domains': [
         {
             'name': 'Mobility outcomes',
