@@ -177,21 +177,15 @@ class Chart {
 
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
             if (['quartile', 'quintile', 'decile'].includes(type)) self.height = 35
-            let min = d3.min((Array.isArray(data[0]) ? data.flat() : data), x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            const vals = zkey ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
+            let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (min > 0) min = 0
-            let max = d3.max((Array.isArray(data[0]) ? data.flat() : data), x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let max = d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (!domain && orientation != 'y') domain = [min, max]
             if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
             self.height -= zkey && legend ? legendHeight(domain, self.width) : 0
-
-            let scheme
-            if (Array.isArray(colourScheme)) {
-                scheme = colourScheme
-            } else {
-                scheme = d3[colourScheme]
-            }
 
             let categories = []
             if (zkey) {
@@ -260,7 +254,7 @@ class Chart {
                     y: ykey,
                     z: zkey,
                     facet: group ? true : null,
-                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : zkey ? zkey : getMarkColour(orientation, chartData, xkey, ykey, x),
+                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(orientation, chartData, xkey, ykey, zkey, x),
                     stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
                     title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
                 }
@@ -291,7 +285,7 @@ class Chart {
                     if (d) {
                         let q = getQuantile(domain, d[0][xkey])
                         marks.push(Plot.cell(domain, { x: x => x, fill: x => x }))
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(orientation, chartData, xkey, ykey, x) }))
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(orientation, chartData, xkey, ykey, zkey, x) }))
                     }
                 }
                 if (lci && uci) {
@@ -379,14 +373,6 @@ class Chart {
             if (['quartile', 'quintile', 'decile'].includes(type)) {
                 xOptions = { axis: null, domain: domain, ticks: 5 }
                 yOptions = { axis: null, domain: [yvalue], ticks: 1 }
-            //} else if (!group) {
-            //    if (orientation == 'y') {
-            //        xOptions['domain'] = domain //sort ? sortDomain(chartData, sort, ykey) : domain
-            //        yOptions['domain'] = range
-            //    } else {
-            //        xOptions['domain'] = domain
-            //        yOptions['domain'] = range //sort ? sortDomain(chartData, sort, ykey) : range
-            //    }
             } else {
                 xOptions['domain'] = domain
                 if (!group) {
@@ -394,13 +380,6 @@ class Chart {
                 } else {
                     yOptions['group'] = group
                 }
-            //    if (orientation == 'y') {
-            //        xOptions['domain'] = domain
-            //        yOptions['group'] = group
-            //    } else {
-            //        xOptions['domain'] = domain
-            //        yOptions['group'] = group
-            //    }
             }
 
             let plot = Plot.plot({
@@ -507,14 +486,17 @@ class Chart {
                 return -1
             }
 
-            function getMarkColour(orientation, data, xkey, ykey, x) {
+            function getMarkColour(orientation, data, xkey, ykey, zkey, x) {
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                     data = data.map(x => x[xkey]).sort(function (a, b) { return a - b })
                     let ranges = getQuantileRanges(data, dataFormat), q = getQuantile(ranges, x[xkey])
                     return colourScheme[q] || 'grey'
 
                 }
-                return orientation == 'y' ? xkey : ykey//x => zkey
+                if (zkey) {
+                    return colourScheme[categories.indexOf(x[zkey])] //zkey
+                }
+                return orientation == 'y' ? xkey : ykey
                 //return color(x)
             }
 

@@ -51,8 +51,7 @@
                 <a class="govuk-tabs__tab" href="#tab-alluk">
                     ALL UK
                 </a>
-            </li>
-            {% endif %}
+            </li>            {% endif %}
             {% if Region_map_src != '' or Region_chart_src != '' %}
             <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
                 <a class="govuk-tabs__tab" href="#tab-region">
@@ -60,6 +59,30 @@
                 </a>
             </li>
             {% endif %}
+
+
+
+
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-data">
+                    Sex
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-data">
+                    Ethnicity
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-data">
+                    Disability
+                </a>
+            </li>
+            <li class="govuk-tabs__list-item">
+                <a class="govuk-tabs__tab" href="#tab-data">
+                    Region
+                </a>
+            </li>
 
             <li class="govuk-tabs__list-item">
                 <a class="govuk-tabs__tab" href="#tab-data">
@@ -86,12 +109,7 @@
                 <div style="text-align: center;">
                     <div style="display: inline; margin: 5px;">
                         <div style="width: 20px; height: 20px; background: red;"> Q1</div>
-                    
-                    
                     </div>
-
-
-
                 </div>
             <script>
                 let map = new Choropleth(
@@ -133,6 +151,18 @@
         {% if AllUK_chart_src != '' %}
         <div class="govuk-tabs__panel" id="tab-alluk">
             <!--<img src="{{ AllUK_chart_src }}" style="width: 100%;">-->
+            <div class="govuk-form-group" style="display: none;">
+                <label class="govuk-label" for="sort">
+                  Sort by
+                </label>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option>All UK</option>
+                    <option>Sex</option>
+                    <option>Ethnicity</option>
+                    <option>Disability</option>
+                    <option>Region</option>
+                </select>
+            </div>
             <div id="chart_alluk" style="width: 100%; height: 500px;"></div>
             <script>
                 let chart_alluk = new Chart(

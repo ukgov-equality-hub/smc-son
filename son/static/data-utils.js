@@ -324,6 +324,38 @@ class DataUtils {
         //
     }
 
+    groupBy(arr, groups, key) {
+        var map = new Map;
+        groups = [].concat(groups);
+        return arr.reduce((r, o) => {
+            groups.reduce((m, k, i, { length }) => {
+                var child
+                if (m.has(o[k])) return m.get(o[k])
+                if (i + 1 === length) {
+                    child = Object
+                        .assign(...groups.map(k => ({ [k]: o[k] })), { [key]: 0 })
+                    r.push(child)
+                } else {
+                    child = new Map
+                }
+                m.set(o[k], child)
+                return child
+            }, map)[key] += +o[key]
+            return r
+        }, [])
+    }
+
+    merge(arr1, arr2, key) {
+        return arr1.map((x) => {
+            const y = arr2.find(item => x[key] === item[key])
+            if (y) {
+                return Object.assign({}, x, y);
+            } else {
+                return x
+            }
+        }).concat(arr2.filter(item => arr1.every( x => x[key] !== item[key])))
+    }
+
     downloadData(data, filename, format) {
         let blob
         if (format == 'csv') {

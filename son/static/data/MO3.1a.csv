@@ -1,0 +1,17 @@
+﻿SEB,Category,Value
+No qualifications,No qualifications,0.301
+School qualifications,No qualifications,0.137
+Post-school qualifications,No qualifications,0.131
+University,No qualifications,0.064
+No qualifications,School qualifications,0.419
+School qualifications,School qualifications,0.44
+Post-school qualifications,School qualifications,0.374
+University,School qualifications,0.201
+No qualifications,Post-school qualifications,0.103
+School qualifications,Post-school qualifications,0.123
+Post-school qualifications,Post-school qualifications,0.136
+University,Post-school qualifications,0.095
+No qualifications,University,0.176
+School qualifications,University,0.3
+Post-school qualifications,University,0.359
+University,University,0.64
