@@ -149,6 +149,8 @@ class Chart {
         const legend = options.legend || false
         const swatchSize = 20
         const margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
+        const onRollover = options.onRollover || undefined
+        const onClick = options.onClick || undefined
         const style = options.style || {
             fontFamily: options.fontFamily || 'GDS Transport',
             fontSize: options.fontSize || '14px',
@@ -181,6 +183,8 @@ class Chart {
             let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (min > 0) min = 0
             let max = d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let mean = d3.mean(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let median = d3.median(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (!domain && orientation != 'y') domain = [min, max]
             if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
@@ -256,7 +260,8 @@ class Chart {
                     facet: group ? true : null,
                     fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(orientation, chartData, xkey, ykey, zkey, x),
                     stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
-                    title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
+                    title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
+                    //title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
                 }
                 //console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
                 //console.log('chartOptions', chartOptions)
@@ -277,10 +282,10 @@ class Chart {
                     marks.push(Plot.line(chartData, { sort: ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
-                    ticks = getScaledTicks(type)
+                    ticks = getScaledTicks(dataFormat)
                     xgrid = false
                     ygrid = false
-                    domain = getQuantileRanges(chartData.map(x => x[xkey]).sort(function (a, b) { return a - b }), type) // getScaledDomain(ticks)
+                    domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat) // getScaledDomain(ticks)
                     let d = chartData.filter(x => x[ykey] == yvalue)
                     if (d) {
                         let q = getQuantile(domain, d[0][xkey])
@@ -488,8 +493,7 @@ class Chart {
 
             function getMarkColour(orientation, data, xkey, ykey, zkey, x) {
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                    data = data.map(x => x[xkey]).sort(function (a, b) { return a - b })
-                    let ranges = getQuantileRanges(data, dataFormat), q = getQuantile(ranges, x[xkey])
+                    let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, x[xkey])
                     return colourScheme[q] || 'grey'
 
                 }
@@ -597,6 +601,113 @@ class Chart {
                 }
                 return (Math.ceil(total / width) * swatchSize) + (swatchSize * 1.75)
             }
+
+            function tooltips(chart, styles) {
+                const id_generator = function () {
+                    const S4 = function () {
+                        return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
+                    }
+                    return 'a' + S4() + S4()
+                }
+                const html = htl.html
+                const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
+                const fill_styles = { fill: 'blue', opacity: 0.5 }
+                const type = d3.select(chart).node().tagName
+                let wrapper = type === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
+                const svgs = d3.select(chart).selectAll('svg')
+                if (svgs.size() > 1) wrapper = d3.select([...svgs].pop())
+                wrapper.style('overflow', 'visible')
+
+                wrapper.selectAll('path').each(function (data, index, nodes) {
+                    if (d3.select(this).attr('fill') === null || d3.select(this).attr('fill') === 'none') {
+                        d3.select(this).style('pointer-events', 'visibleStroke')
+                        if (styles === undefined) styles = stroke_styles
+                    }
+                })
+                if (styles === undefined) styles = fill_styles
+
+                const tip = wrapper
+                    .selectAll('.hover')
+                    .data([1])
+                    .join('g')
+                    .attr('class', 'hover')
+                    .style('pointer-events', 'none')
+                    .style('text-anchor', 'middle')
+
+                const id = id_generator()
+
+                // Add the event listeners
+                d3.select(chart).classed(id, true)
+                wrapper.selectAll('title').each(function () {
+                    const title = d3.select(this)
+                    const parent = d3.select(this.parentNode)
+                    const data = chartData.filter(x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` == title.text())[0]
+                    const val = parseFloat(data[orientation == 'y' ? ykey : xkey], 10)
+
+                    if (title.text()) {
+                        parent.attr('data-title', title.text()).classed('has-title', true)
+                        parent.attr('data-name', data[orientation == 'y' ? xkey : ykey])
+                        parent.attr('data-group', data[group] || '')
+                        parent.attr('data-value', val)
+                        parent.attr('data-quantile', x => {
+                            if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                                const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
+                                return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
+                            }
+                            return -1
+                        })
+                        parent.attr('data-rank', x => {
+                            const ranges = chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b })
+                            return isNaN(val) ? 0 : `${ranges.indexOf(val) + 1}/${chartData.length}`
+                        })
+                        parent.attr('data-percentile', x => {
+                            return isNaN(val) ? 0 : ((val - min) / (max - min)) * 100
+                        })
+                        title.remove()
+                    }
+
+                    // Mouse events
+                    parent
+                        .on('pointerenter pointermove', function (event) {
+                            const text = `${d3.select(this).attr('data-name')}: ${d3.select(this).attr('data-value')}`
+                            const status = {
+                                name: d3.select(this).attr('data-name'),
+                                value: isNumeric(d3.select(this).attr('data-value')) ? parseFloat(d3.select(this).attr('data-value'), 10) : d3.select(this).attr('data-value'),
+                                min: min,
+                                max: max,
+                                mean: mean,
+                                median: median,
+                                quantile: isNumeric(d3.select(this).attr('data-quantile')) ? parseFloat(d3.select(this).attr('data-quantile'), 10) : d3.select(this).attr('data-quantile'),
+                                rank: isNumeric(d3.select(this).attr('data-rank')) ? parseFloat(d3.select(this).attr('data-rank'), 10) : d3.select(this).attr('data-rank'),
+                                percentile: isNumeric(d3.select(this).attr('data-percentile')) ? parseFloat(d3.select(this).attr('data-percentile'), 10) : d3.select(this).attr('data-percentile')
+                            }
+
+                            const pointer = d3.pointer(event, wrapper.node())
+                            if (text) tip.call(hover, pointer, text.split('\n'), status)
+                            else tip.selectAll('*').remove()
+
+                            d3.select(this).raise()
+                            const tipSize = tip.node().getBBox()
+                            if (pointer[0] + tipSize.x < 0) {
+                                tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
+                            } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
+                                tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
+                            }
+                        })
+                        .on('pointerout', function (event) {
+                            tip.call(resetHover)
+                            tip.selectAll('*').remove()
+                            d3.select(this).lower()
+                        })
+                })
+                wrapper.on('touchstart', () => tip.selectAll('*').remove())
+
+                chart.appendChild(html`<style>
+                    .${id} .has-title { cursor: pointer  pointer-events: all }
+                    .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
+
+                return chart
+            }
         }
 
         function getDims(el) {
@@ -631,8 +742,8 @@ class Chart {
             return { width: w, height: h }
         }
 
-        function isNumeric(n) {
-            return !isNaN(parseFloat(n)) && isFinite(n)
+        function isNumeric(x) {
+            return !isNaN(parseFloat(x)) && isFinite(x)
         }
 
         function numberWithCommas(x) {
@@ -691,83 +802,14 @@ class Chart {
             return w
         }
 
-        function tooltips(chart, styles) {
-            const id_generator = function () {
-                const S4 = function () {
-                    return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
+        function hover(tip, pos, text, status) {
+            if (onRollover) {
+                try {
+                    window[onRollover](status)
                 }
-                return 'a' + S4() + S4()
+                catch (e) {}
             }
-            const html = htl.html
-            const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
-            const fill_styles = { fill: 'blue', opacity: 0.5 }
-            const type = d3.select(chart).node().tagName
-            let wrapper = type === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
-            const svgs = d3.select(chart).selectAll('svg')
-            if (svgs.size() > 1) wrapper = d3.select([...svgs].pop())
-            wrapper.style('overflow', 'visible')
 
-            wrapper.selectAll('path').each(function (data, index, nodes) {
-                if (d3.select(this).attr('fill') === null || d3.select(this).attr('fill') === 'none') {
-                    d3.select(this).style('pointer-events', 'visibleStroke')
-                    if (styles === undefined) styles = stroke_styles
-                }
-            })
-            if (styles === undefined) styles = fill_styles
-
-            const tip = wrapper
-                .selectAll('.hover')
-                .data([1])
-                .join('g')
-                .attr('class', 'hover')
-                .style('pointer-events', 'none')
-                .style('text-anchor', 'middle')
-
-            const id = id_generator()
-
-            // Add the event listeners
-            d3.select(chart).classed(id, true)
-            wrapper.selectAll('title').each(function () {
-                const title = d3.select(this)
-                const parent = d3.select(this.parentNode)
-                const t = title.text()
-                if (t) {
-                    //parent.attr('data-test', 'TEST!!!!!')
-                    parent.attr('__title', t).classed('has-title', true)
-                    title.remove()
-                }
-
-                // Mouse events
-                parent
-                    .on('pointerenter pointermove', function (event) {
-                        const text = d3.select(this).attr('__title')
-                        const pointer = d3.pointer(event, wrapper.node())
-                        if (text) tip.call(hover, pointer, text.split('\n'))
-                        else tip.selectAll('*').remove()
-
-                        d3.select(this).raise()
-                        const tipSize = tip.node().getBBox()
-                        if (pointer[0] + tipSize.x < 0) {
-                            tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
-                        } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
-                            tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
-                        }
-                    })
-                    .on('pointerout', function (event) {
-                        tip.selectAll('*').remove()
-                        d3.select(this).lower()
-                    })
-            })
-            wrapper.on('touchstart', () => tip.selectAll('*').remove())
-
-            chart.appendChild(html`<style>
-                .${id} .has-title { cursor: pointer  pointer-events: all }
-                .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
-
-            return chart
-        }
-
-        function hover(tip, pos, text) {
             const side_padding = 10
             const vertical_padding = 10
             const vertical_offset = 15
@@ -782,8 +824,8 @@ class Chart {
                 .join('text')
                 .style('dominant-baseline', 'ideographic')
                 .text(x => x)
-                .attr('y', (d, i) => (i - (text.length - 1)) * 15 - vertical_offset)
-                .style('font-weight', (d, i) => (i === 0 ? 'bold' : 'normal'))
+                .attr('y', (x, i) => (i - (text.length - 1)) * 15 - vertical_offset)
+                .style('font-weight', (x, i) => (i === 0 ? 'bold' : 'normal'))
 
             const bbox = tip.node().getBBox()
             tip
@@ -796,6 +838,62 @@ class Chart {
                 .style('stroke', '#d3d3d3')
                 .lower()
         }
+
+        function resetHover() {
+            if (onRollover) {
+                try {
+                    window[onRollover]()
+                }
+                catch (e) {}
+            }
+        }
+    }
+
+    highlight(item) {
+        function rgbToHex(r, g, b) {
+            function componentToHex(c) {
+                const hex = c.toString(16)
+                return hex.length == 1 ? '0' + hex : hex
+            }
+            return `#${componentToHex(r)}${componentToHex(g)}${componentToHex(b)}`
+        }
+
+        function hexToRgb(hex) {
+            const regex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i
+            hex = hex.replace(regex, function (m, r, g, b) {
+              return r + r + g + g + b + b
+            })
+            const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex)
+            return result ? {
+                r: parseInt(result[1], 16),
+                g: parseInt(result[2], 16),
+                b: parseInt(result[3], 16)
+            } : null
+        }
+
+        try {
+            const type = this.options.type.toLowerCase() || 'bar'
+
+            if (type == 'dot') {
+                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', '1')
+                d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke-width', '10')
+                const fill = hexToRgb(d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).attr('fill'))
+                d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
+            }
+        }
+        catch (e) {}
+    }
+
+    resetHighlight() {
+        try {
+            const type = this.options.type.toLowerCase() || 'bar'
+
+            if (type == 'dot') {
+                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', '1')
+                d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
+            }
+        }
+        catch (e) {}
     }
 
     update(data) {

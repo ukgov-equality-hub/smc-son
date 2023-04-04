@@ -2,6 +2,7 @@ from datetime import datetime
 from dateutil import tz
 import jinja2
 import flask
+import json
 from son.utils.menu import url_link, get_menu_tree
 
 blueprint = flask.Blueprint('filters', __name__)
@@ -58,6 +59,27 @@ def content_filter(context, details):
         content = details[0]
         field = details[1]
         for item in content:
-            if item[0] == field:
-                return item[1]
+            if isinstance(item[1], list):
+                if item[0][0] == field:
+                    return item[0][1]
+                elif item[1][0] == field:
+                    return item[1][1]
+            else:
+                if item[0] == field:
+                    return item[1]
+    return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('attribute')
+def attribute_filter(context, details):
+    if details:
+        data = details[0]
+        field = details[1]
+        try:
+            attributes = json.loads(data)
+            if field in attributes:
+                return attributes[field]
+        except:
+            pass
     return ''

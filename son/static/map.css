@@ -1,4 +1,4 @@
-#map-container {
+.map-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -10,15 +10,15 @@
     overflow: hidden;
 }
 
-#map-container svg {
+.map-container svg {
     overflow: visible;
 }
 
-#map-container svg g path {
+.map-container svg g path {
     cursor: grab;
 }
 
-#map-container #map-legend, #map-container #map-tooltip, #map-container #map-controls {
+.map-container .map-legend, .map-container .map-tooltip, .map-container .map-controls {
     position: absolute;
     padding: 10px 10px 5px 10px;
     background: #fff;
@@ -27,31 +27,31 @@
     z-index: 10;
 }
 
-#map-container #map-legend {
+.map-container .map-legend {
     bottom: 10px;
     right: 10px;
 }
 
-#map-legend {
+.map-legend {
     height: auto;
     overflow: hidden;
 }
 
-#map-legend > p {
+.map-legend > p {
     cursor: pointer;
 }
 
-#map-container #map-tooltip {
+.map-container .map-tooltip {
     bottom: 10px;
     left: 10px;
     visibility: hidden;
 }
 
-#map-container #map-tooltip h2 {
+.map-container .map-tooltip h2 {
     margin-top: 10px;
 }
 
-#map-container #map-controls {
+.map-container .map-controls {
     top: 10px;
     right: 10px;
     width: 35px;
@@ -60,7 +60,7 @@
     border: none;
 }
 
-#map-container #map-controls button {
+.map-container .map-controls button {
     display: block;
     width: 100%;
     height: 35px;
@@ -72,18 +72,18 @@
     cursor: pointer;
 }
 
-#map-container #map-controls button:first-child {
+.map-container .map-controls button:first-child {
     border-bottom: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
-#map-container #map-controls button:last-child {
+.map-container .map-controls button:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-#map {
+.map {
     width: 100%;
     height: 630px;
     overflow: visible;

@@ -133,6 +133,8 @@ class Choropleth {
         this.tooltipBehaviour = ['rollover', 'click'].includes(options.tooltipBehaviour) ? options.tooltipBehaviour : ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'zoom'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
+        this.onRollover = options.onRollover || undefined
+        this.onClick = options.onClick || undefined
         const allowZoom = typeof options.allowZoom === 'undefined' ? true : options.allowZoom
         const style = {
             fontFamily: 'GDS Transport',
@@ -184,6 +186,13 @@ class Choropleth {
         }
 
         function ready(eudata, geodata, data) {
+            const subunits = getFeatures(geodata, 'features')
+            //const londonunits = JSON.parse(JSON.stringify(subunits))
+            //londonunits.geometries = londonunits.geometries.filter(x => {
+            //    return x.properties.ITL221NM.indexOf('London') > -1
+            //})
+            const areas = geoFormat == 'topo' ? subunits.geometries.map(x => x.properties[areaField]) : subunits.map(x => x.properties[areaField])
+            data = (data.data || data).filter(x => areas.includes(x[nameField]))
 
             // Set up map projection, and position it
             self.projection = d3.geoMercator().fitSize(
@@ -254,22 +263,20 @@ class Choropleth {
 
             self.loaded = true
 
-            const subunits = getFeatures(geodata, 'features')
-            //const londonunits = JSON.parse(JSON.stringify(subunits))
-            //londonunits.geometries = londonunits.geometries.filter(x => {
-            //    return x.properties.ITL221NM.indexOf('London') > -1
-            //})
-            const areas = geoFormat == 'topo' ? subunits.geometries.map(x => x.properties[areaField]) : subunits.map(x => x.properties[areaField])
             let min = 0, max = 0
             if (dataFormat == 'categorical') {
                 if (domains.length == 0) {
-                    domains = (data.data || data).map(x => x[valueField]).filter(function (a, b, c) { return c.indexOf(a) === b })
+                    domains = data.map(x => x[valueField]).filter(function (a, b, c) { return c.indexOf(a) === b })
                 }
             } else {
-                //(data.data || data).map(x => x[valueField] = parseFloat(x[valueField], 10).toFixed(2))
-                min = d3.min((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
-                max = d3.max((data.data || data).filter(x => areas.includes(x[nameField])), d => parseFloat(d[valueField], 10))
+                //data.map(x => x[valueField] = parseFloat(x[valueField], 10).toFixed(2))
+                min = d3.min(data, x => parseFloat(x[valueField], 10))
+                max = d3.max(data, x => parseFloat(x[valueField], 10))
             }
+            self.min = min
+            self.max = max
+            self.mean = d3.mean(data, x => parseFloat(x[valueField], 10))
+            self.median = d3.median(data, x => parseFloat(x[valueField], 10))
 
             mapFeatures = geoFormat == 'topo' ? topojson.feature(geodata, subunits).features : subunits
             map = mapContainer.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
@@ -410,7 +417,7 @@ class Choropleth {
                     })
 
                 const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return x.properties.NUTS_NAME === 'United Kingdom' }) }, self.bg, undefined, undefined, '')
-                d3.select('#map__bg g.bg')
+                d3.select(`#${self.el}__bg g.bg`)
                     .style('transform-origin', 'left top')
                     .style('transform', `translate(${bgAdjust.transform[0]}px, ${bgAdjust.transform[1]}px) scale(${bgAdjust.scale}`)
             }
@@ -440,6 +447,23 @@ class Choropleth {
                         const val = getValue(x, areaField, valueField, data)
                         return isNaN(val) ? 'N/A' : val
                     }
+                })
+                .attr('data-quantile', x => {
+                    if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                        const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
+                        const val = getValue(x, areaField, valueField, data)
+                        return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
+                    }
+                    return -1
+                })
+                .attr('data-rank', x => {
+                    const ranges = data.map(x => x[valueField]).sort(function (a, b) { return a - b })
+                    const val = getValue(x, areaField, valueField, data)
+                    return isNaN(val) ? 0 : `${ranges.indexOf(val) + 1}/${data.length}`
+                })
+                .attr('data-percentile', x => {
+                    const val = getValue(x, areaField, valueField, data)
+                    return isNaN(val) ? 0 : ((val - min) / (max - min)) * 100
                 })
                 .attr('data-active', 'N')
                 .on('click', clicked)
@@ -540,9 +564,9 @@ class Choropleth {
 
             function getMarkColour(data, x) {
                 const val = getValue(x, areaField, valueField, data)
+                if (val == null) return 'grey'
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                    data = (data.data || data).map(x => x[valueField]).sort(function (a, b) { return a - b })
-                    let ranges = getQuantileRanges(data, dataFormat), q = getQuantile(ranges, val)
+                    const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, val)
                     return colourScheme[q] || 'grey'
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
@@ -587,6 +611,14 @@ class Choropleth {
             return { width: w, height: h }
         }
 
+        function isNumeric(x) {
+            return !isNaN(parseFloat(x)) && isFinite(x)
+        }
+
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+        }
+
         function getBounds(data, boundary, width = self.width, height = self.height, format = geoFormat) {
             data = getFeatures(data, undefined, format)
             let projection, path, bounds
@@ -622,12 +654,12 @@ class Choropleth {
 
         function getValue(d, p, v, data) {
             if (getProperty(d, p) != '') {
-                const val = (data.data || data).filter(x => x[nameField] == getProperty(d, p))
+                const val = data.filter(x => x[nameField] == getProperty(d, p))
                 if (val && typeof val[0] !== 'undefined' && val[0][v]) {
                     return val[0][v]
                 }
             }
-            return ''
+            return null
         }
 
         function stringify(scale, translate) {
@@ -727,51 +759,6 @@ class Choropleth {
                 if (c.substring(0, 4) == 'zoom') map.classList.remove(c)
             }
             map.classList.add(`zoom${transform.k.toFixed(0)}`)
-
-            /*function url(x, y, z) {
-                console.log('x', x, 'y', y, 'z', z)
-                return `https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/${z}/${x}/${y}${devicePixelRatio > 1 ? '@2x' : ''}?access_token=pk.eyJ1IjoiYWxpc3RhaXJrbmlnaHQiLCJhIjoiY2xjN3I1ZHRlMDNodTN1cXJ1YnA4ZzdjZCJ9.xIVo0Ytt4EugKideY-4YsA`
-            }
-
-            const tiles = tile(transform)
-            image = image.data(tiles, d => d).join('image')
-                .attr('xlink:href', x => url(...d3.tileWrap(x)))
-                .attr('x', ([x]) => (x + tiles.translate[0]) * tiles.scale)
-                .attr('y', ([, y]) => (y + tiles.translate[1]) * tiles.scale)
-                .attr('width', tiles.scale)
-                .attr('height', tiles.scale)*/
-
-
-/*
-
-            const tiles = tile //.attr('transform', transform)
-                .scale(transform.k)
-                .translate([transform.x, transform.y])()
-
-            //self.projection
-            //    .scale(transform.k / tau)
-            //    .translate([transform.x, transform.y])
-
-            const image = layer
-                .style('transform', stringify(tiles.scale, tiles.translate))
-                .selectAll('.tile')
-                .data(tiles, x => x)
-
-            image.exit()
-                .each(function (x) { this._xhr.abort() })
-                .remove()
-
-            image.enter().append('svg')
-                .attr('class', 'tile')
-                .style('left', x => `${x[0] * tileSize}px`)
-                .style('top', x => `${x[1] * tileSize}px`)
-                .style('border', '1px solid red')
-                //.each(function (x) { this._xhr = renderTile(x, this) })
-
-*/
-
-
-
         }
 
         function resetZoom() {
@@ -779,6 +766,23 @@ class Choropleth {
         }
 
         function highlight(event) {
+            if (self.onRollover) {
+                try {
+                    const status = {
+                        name: this.getAttribute('data-name'),
+                        value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
+                        min: self.min,
+                        max: self.max,
+                        mean: self.mean,
+                        median: self.median,
+                        quantile: isNumeric(this.getAttribute('data-quantile')) ? parseFloat(this.getAttribute('data-quantile'), 10) : this.getAttribute('data-quantile'),
+                        rank: isNumeric(this.getAttribute('data-rank')) ? parseFloat(this.getAttribute('data-rank'), 10) : this.getAttribute('data-rank'),
+                        percentile: isNumeric(this.getAttribute('data-percentile')) ? parseFloat(this.getAttribute('data-percentile'), 10) : this.getAttribute('data-percentile')
+                    }
+                    if (status.name != null && status.value != null) window[self.onRollover](status)
+                }
+                catch (e) {}
+            }
             self.highlight(this.getAttribute('data-name'))
             //if (!rolloverBehaviour) return
             //self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
@@ -793,6 +797,24 @@ class Choropleth {
 
         function clicked(event, x) {
             event.stopPropagation()
+
+            if (self.onClick) {
+                try {
+                    const status = {
+                        name: this.getAttribute('data-name'),
+                        value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
+                        min: self.min,
+                        max: self.max,
+                        mean: self.mean,
+                        median: self.median,
+                        quantile: isNumeric(this.getAttribute('data-quantile')) ? parseFloat(this.getAttribute('data-quantile'), 10) : this.getAttribute('data-quantile'),
+                        rank: isNumeric(this.getAttribute('data-rank')) ? parseFloat(this.getAttribute('data-rank'), 10) : this.getAttribute('data-rank'),
+                        percentile: isNumeric(this.getAttribute('data-percentile')) ? parseFloat(this.getAttribute('data-percentile'), 10) : this.getAttribute('data-percentile')
+                    }
+                    window[self.onClick](status)
+                }
+                catch (e) {}
+            }
 
             if (self.clickBehaviour == 'zoom') {
                 const [[x0, y0], [x1, y1]] = self.path.bounds(x)
@@ -874,83 +896,38 @@ class Choropleth {
         }
     }
 
-    highlight(subunit) {
-        if (this.rolloverBehaviour == 'outline') {
-            d3.select(`#${this.el}__outline`).selectAll('path[data-active="N"]').style('opacity', 0)
-            d3.select(`#${this.el}__outline`).select(`path[data-name="${subunit}"]`).style('opacity', 1)
-        } else if (this.rolloverBehaviour == 'fade') {
-            d3.select(`#${this.el}__map`).selectAll('path[data-active="N"]').style('opacity', 0.6)
-            d3.select(`#${this.el}__map`).select(`path[data-name="${subunit}"]`).style('opacity', 1)
-        }
+    highlight(item) {
+        try {
+            if (this.rolloverBehaviour == 'outline') {
+                d3.select(`#${this.el}__outline`).selectAll('path[data-active="N"]').style('opacity', 0)
+                d3.select(`#${this.el}__outline`).select(`path[data-name="${item}"]`).style('opacity', 1)
+            } else if (this.rolloverBehaviour == 'fade') {
+                d3.select(`#${this.el}__map`).selectAll('path[data-active="N"]').style('opacity', 0.6)
+                d3.select(`#${this.el}__map`).select(`path[data-name="${item}"]`).style('opacity', 1)
+            }
 
-        if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
-            this.tooltip.html(`<h2>${subunit}</h2><h3>Value: ${d3.select(`#${this.el}__map`).select(`path[data-name="${subunit}"]`).attr('data-value')}</h3>`)
-            this.tooltip.style('visibility', 'visible')
+            if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
+                this.tooltip.html(`<h2>${item}</h2><h3>Value: ${d3.select(`#${this.el}__map`).select(`path[data-name="${item}"]`).attr('data-value')}</h3>`)
+                this.tooltip.style('visibility', 'visible')
+            }
         }
+        catch (e) {}
     }
 
     resetHighlight() {
-        if (this.rolloverBehaviour == 'outline') {
-            d3.select(`#${this.el}__outline`).selectAll('path').style('opacity', 0)
-        } else if (this.rolloverBehaviour == 'fade') {
-            d3.select(`#${this.el}__map`).selectAll('path').style('opacity', 1)
+        try {
+            if (this.rolloverBehaviour == 'outline') {
+                d3.select(`#${this.el}__outline`).selectAll('path').style('opacity', 0)
+            } else if (this.rolloverBehaviour == 'fade') {
+                d3.select(`#${this.el}__map`).selectAll('path').style('opacity', 1)
+            }
+
+            if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
+                this.tooltip.html('')
+                this.tooltip.style('visibility', 'hidden')
+            }
         }
-
-        if (this.tooltipDiv && this.tooltipBehaviour == 'rollover') {
-            this.tooltip.html('')
-            this.tooltip.style('visibility', 'hidden')
-        }
-    }
-
-    outline(subunit) {
-        // TODO
-    }
-
-    resetOutline() {
-        // TODO
-    }
-
-    fade(subunit) {
-        // TODO
-    }
-
-    resetFade() {
-        // TODO
-    }
-
-    select(subunit) {
-        // TODO
-        /*
-        if (allowZoomOnClick) {
-            const [[x0, y0], [x1, y1]] = path.bounds(d)
-            self.svg.selectAll('path').transition().style('opacity', 0.6)
-            d3.select(this).transition().style('opacity', 1)
-            self.svg.selectAll('path').attr('data-active', 'N')
-            d3.select(this).attr('data-active', 'Y')
-
-            self.svg.transition().duration(750).call(
-                self.zoom.transform,
-                d3.zoomIdentity
-                    .translate(self.width / 2, self.height / 2)
-                    .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
-                    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
-                d3.pointer(event, self.svg.node())
-            )
-        }
-
-        if (self.tooltipDiv) {
-            tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
-            tooltip.style('visibility', 'visible')
-        }
-        */
-    }
-
-    showTooltip(subunit) {
-        // TODO
-    }
-
-    resetTooltip() {
-        // TODO
+        catch (e) {}
     }
 
     update(data) {

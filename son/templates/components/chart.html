@@ -1,0 +1,15 @@
+{% macro chart(id, data) %}
+<div id="chart{{ id }}" style="width: 100%; height: 100%;"></div>
+<a id="chart{{ id }}_download" href="javascript:;" class="govuk-link">Download</a>
+<script>
+    let chart{{ id }} = new Chart(
+        'chart{{ id }}',
+        `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
+        {{ data | safe }}
+    )
+
+    document.getElementById('chart{{ id }}_download').addEventListener('click', function () {
+        chart{{ id }}.download()
+    })
+</script>
+{% endmacro %}

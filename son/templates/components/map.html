@@ -1,0 +1,48 @@
+{% macro map(id, data) %}
+<div class="map-container">
+    <div class="map-controls">
+        <button id="mapZoomIn{{ id }}">+</button>
+        <button id="mapZoomOut{{ id }}">-</button>
+    </div>
+    <div id="map{{ id }}" class="map"></div>
+    <div class="map-tooltip"></div>
+</div>
+
+<div class="govuk-body">
+    <div id="map_legend{{ id }}" style="margin: 10px 0;"></div>
+    <div style="height: 37px;">
+        <img id="map_marker{{ id }}" src="/static/assets/images/down_arrow.svg" width="30" height="37" style="margin-left: -1000000px; transition: margin 500ms;">
+    </div>
+    <div class="grid grid5" style="margin: 0 0 10px 0; height: 20px;">
+        <div style="background: #ca0020; vertical-align: middle;"></div>
+        <div style="background: #f4a582; vertical-align: middle;"></div>
+        <div style="background: #f7f7f7; vertical-align: middle;"></div>
+        <div style="background: #92c5de; vertical-align: middle;"></div>
+        <div style="background: #0571b0; vertical-align: middle;"></div>
+    </div>
+    <div class="grid grid2" style="margin: 10px 0;">
+        <div>Q1 - Bottom 20%</div>
+        <div style="text-align: right;">Q5 - Top 20%</div>
+    </div>
+</div>
+<script>
+    let map{{ id }} = new Choropleth(
+        'map{{ id }}',
+        `${location.protocol}//${location.host}{{ [data, 'map'] | attribute | safe }}`,
+        `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
+        {{ data | safe }}
+    )
+
+    /*document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {
+        map{{ id }}.zoomIn()
+    })
+
+    document.getElementById('mapZoomOut{{ id }}').addEventListener('click', function () {
+        map{{ id }}.zoomOut()
+    })
+
+    document.getElementById('mapDownload{{ id }}').addEventListener('click', function () {
+        map{{ id }}.download()
+    })*/
+</script>
+{% endmacro %}

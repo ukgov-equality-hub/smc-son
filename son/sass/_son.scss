@@ -269,3 +269,25 @@ div.data-table-data table {
         }
     }
 }
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    gap: 0;
+}
+
+.grid2 {
+    > div {
+        width: 50%;
+    }
+}
+
+.grid5 {
+    > div {
+        width: 20%;
+    }
+}
