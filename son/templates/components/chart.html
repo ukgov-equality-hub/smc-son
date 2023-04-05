@@ -1,9 +1,9 @@
 {% macro chart(id, data) %}
 {% set data_table = [data, 'data'] | table %}
 <div style="width: 100%; height: 100%; margin: 30px 0;">
-    <div id="chart{{ id }}" style="width: 100%; height: 100%;"></div>
-    <div id="chart{{ id }}_data" style="display none; width: 100%; height: 100%;">
-        <table id="table{{ id }}" class="govuk-body-s" style="width: 100%;">
+    <div id="chart{{ id }}" style="display: block; width: 100%; height: 100%;"></div>
+    <div id="chart{{ id }}_data" style="display: none; width: 100%; height: 100%;">
+        <table id="table{{ id }}" class="govuk-body-s table-container" style="width: 100%;">
             {% for row in data_table %}
             <tr>
                 {% for cell in row %}
@@ -13,21 +13,38 @@
             {% endfor %}
         </table>
     </div>
-    <a id="chart{{ id }}_download" href="javascript:;" class="govuk-link">Download</a>
     <script>
+        let chart{{ id }}
         window.document.addEventListener('DOMContentLoaded', function () {
-            let chart{{ id }} = new Chart(
+            chart{{ id }} = new Chart(
                 'chart{{ id }}',
                 `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
                 {{ data | safe }}
             )
 
-            document.getElementById('chart{{ id }}_download').addEventListener('click', function () {
-                chart{{ id }}.download()
-            })
-
-            //new DataTable('table{{ id }}', null, { 'dataFormat': 'json', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'allowPagination': false, 'showColumns': false })
+            //document.getElementById('chart{{ id }}_download').addEventListener('click', function () {
+            //    chart{{ id }}.download()
+            //})
         })
+
+        let tbl{{ id }} = false
+        function toggle{{ id }}() {
+            if (document.getElementById('chart{{ id }}').style.display == 'block') {
+                try {
+                    if (!tbl{{ id }}) new DataTable('table{{ id }}', null, { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'allowPagination': false, 'showColumns': false })
+                }
+                catch (e) {}
+                document.getElementById('chart{{ id }}').style.display = 'none'
+                document.getElementById('chart{{ id }}_data').style.display = 'block'
+                tbl{{ id }} = true
+            } else {
+                document.getElementById('chart{{ id }}').style.display = 'block'
+                document.getElementById('chart{{ id }}_data').style.display = 'none'
+            }
+        }
     </script>
+    <p class="govuk-body-s">
+        <a href="javascript:;" class="govuk-link" onclick="toggle{{ id }}()">View data</a> | Download <a href="javascript:;" class="govuk-link" onclick="chart{{ id }}.download()">Chart</a> <a href="javascript:;" class="govuk-link">Data</a>
+    </p>
 </div>
 {% endmacro %}

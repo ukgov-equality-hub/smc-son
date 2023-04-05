@@ -148,7 +148,7 @@ def indicator_page(domain, subdomain, indicator):
         subdomain=subdomain,
         indicator=indicator,
         title=get_item_title(indicator),
-        tabs=False,
+        tabs='Tab' in str(content),
         content=content,
         data_table=data_table,
         form=None

@@ -104,7 +104,7 @@ class DataTable {
                     return
                 }
             }
-            console.info('Chart resources loaded')
+            console.info('Data table resources loaded')
             if (self.el) self.render()
         }
 
@@ -608,3 +608,5 @@ class DataTable {
         return this.dataUtils.downloadData(this.data, `download.${format}`, format)
     }
 }
+
+new DataTable()

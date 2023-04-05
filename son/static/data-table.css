@@ -67,6 +67,10 @@
     cursor: ew-resize;
 }
 
+.table-container tbody .table-row td {
+    border-top: 1px solid #ccc;
+}
+
 .icons {
     position: absolute;
     right: 3px;
