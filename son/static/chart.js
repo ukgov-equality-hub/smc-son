@@ -220,7 +220,7 @@ class Chart {
                         }
                     } else {
                         if (orientation == 'y') {
-                            domain = sortDomain(chartData, sort, ykey)
+                            domain = sortDomain(chartData, sort, xkey)
                         } else {
                             range = sortDomain(chartData, sort, ykey)
                         }
@@ -646,7 +646,7 @@ class Chart {
 
                     if (title.text()) {
                         parent.attr('data-title', title.text()).classed('has-title', true)
-                        parent.attr('data-name', data[orientation == 'y' ? xkey : ykey])
+                        parent.attr('data-name', `${data[orientation == 'y' ? xkey : ykey]}${zkey ? ' / ' + data[zkey] : ''}`)
                         parent.attr('data-group', data[group] || '')
                         parent.attr('data-value', val)
                         parent.attr('data-quantile', x => {

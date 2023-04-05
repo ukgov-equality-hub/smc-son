@@ -1,5 +1,8 @@
 from datetime import datetime
 from dateutil import tz
+import os
+from pathlib import Path
+import csv
 import jinja2
 import flask
 import json
@@ -80,6 +83,25 @@ def attribute_filter(context, details):
             attributes = json.loads(data)
             if field in attributes:
                 return attributes[field]
+        except:
+            pass
+    return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('table')
+def table_filter(context, details):
+    if details:
+        data = details[0]
+        field = details[1]
+        try:
+            attributes = json.loads(data)
+            if field in attributes:
+                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{attributes[field].replace('data-src:', '').strip()}"
+                if Path(data_src).is_file():
+                    with open(data_src, encoding='utf-8-sig', errors='ignore') as csv_file:
+                        data_table = list(csv.reader(csv_file, delimiter=','))
+                        return data_table
         except:
             pass
     return ''

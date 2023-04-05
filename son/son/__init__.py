@@ -128,6 +128,7 @@ def subdomain_page(domain, subdomain):
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
     content = get_content(domain, subdomain, indicator)
+    #print(content, flush=True)
     data_src = ''
 
     data_table = []
@@ -147,6 +148,7 @@ def indicator_page(domain, subdomain, indicator):
         subdomain=subdomain,
         indicator=indicator,
         title=get_item_title(indicator),
+        tabs=False,
         content=content,
         data_table=data_table,
         form=None

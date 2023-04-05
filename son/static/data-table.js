@@ -28,17 +28,17 @@ class DataTable {
     }
 
     _init() {
-        function scriptSrc() {
-            const script =  document.querySelector('script[src*="data-table.js"]')
-            if (script.src) {
-                return script.src.substr(0, script.src.lastIndexOf('/') + 1)
-            }
-            return ''
-        }
-
-        const scripts = [`${scriptSrc()}data-utils.js`]
-        const styles = [`${scriptSrc()}data-table.css`]
+        const scripts = [`${this._scriptSrc()}data-utils.js`]
+        const styles = [`${this._scriptSrc()}data-table.css`]
         this._loadResources(scripts.concat(styles), this)
+    }
+
+    _scriptSrc() {
+        const script =  document.querySelector('script[src*="data-table.js"]')
+        if (script.src) {
+            return script.src.substr(0, script.src.lastIndexOf('/') + 1)
+        }
+        return ''
     }
 
     _loadResources(resources, self) {
@@ -52,38 +52,60 @@ class DataTable {
                         style.rel = 'stylesheet'
                         style.href = resource
                         style.type = 'text/css'
+                        style.setAttribute('data-loaded', 'false')
                         style.onload = function () {
-                            loaded(resource)
+                            loaded(resource, 'css', false)
                         }
                         document.head.appendChild(style)
                     } else {
-                        loaded(resource)
+                        loaded(resource, 'css', true)
                     }
                 } else {
                     if (document.querySelector(`[src$="${resource.substr(resource.lastIndexOf('/'))}"]`) == null) {
                         let script = document.createElement('script')
                         script.type = 'text/javascript'
                         script.src = resource
+                        script.setAttribute('data-loaded', 'false')
                         script.onload = function () {
-                            loaded(resource)
+                            loaded(resource, 'js', false)
                         }
                         document.head.appendChild(script)
-
                     } else {
-                        loaded(resource)
+                        loaded(resource, 'js', true)
                     }
                 }
             }
         }
 
-        function loaded(resource) {
-            downloaded[resources.indexOf(resource)] = true
+        function loaded(resource, type, preloaded) {
+            let el = null
+            if (type == 'css' && document.querySelector(`[href$="${resource.substr(resource.lastIndexOf('/'))}"]`) != null) {
+                el = document.querySelector(`[href$="${resource.substr(resource.lastIndexOf('/'))}"]`)
+            } else if (type == 'js' && document.querySelector(`[src$="${resource.substr(resource.lastIndexOf('/'))}"]`) != null) {
+                el = document.querySelector(`[src$="${resource.substr(resource.lastIndexOf('/'))}"]`)
+            }
+            if (!el) return
+
+            if (preloaded) {
+                if (!el.hasAttribute('data-loaded') || el.getAttribute('data-loaded') == 'true') {
+                    downloaded[resources.indexOf(resource)] = true
+                } else {
+                    setTimeout(function () {
+                        loaded(resource, type, preloaded)
+                    }, 100)
+                }
+            } else {
+                downloaded[resources.indexOf(resource)] = true
+                el.setAttribute('data-loaded', 'true')
+            }
+
             for (let i = 0; i < downloaded.length; i++) {
                 if (!downloaded[i]) {
                     return
                 }
             }
-            self.render()
+            console.info('Chart resources loaded')
+            if (self.el) self.render()
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -127,7 +149,7 @@ class DataTable {
             }
         }
 
-        function createDataTable() {console.log('!!!!!')
+        function createDataTable() {
             if (!(`data-table-${self.el}` in self.dataTables)) return
             const table = document.getElementById(self.el)
             const headers = self.dataTables[`data-table-${self.el}`]['headers']

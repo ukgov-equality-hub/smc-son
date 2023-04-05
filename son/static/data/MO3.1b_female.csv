@@ -1,0 +1,17 @@
+﻿SEB,Sex,Category,Value
+No qualifications,Female,No qualifications,0.284
+School qualifications,Female,No qualifications,0.127
+Post-school qualifications,Female,No qualifications,0.122
+University,Female,No qualifications,0.055
+No qualifications,Female,School qualifications,0.422
+School qualifications,Female,School qualifications,0.42
+Post-school qualifications,Female,School qualifications,0.373
+University,Female,School qualifications,0.165
+No qualifications,Female,Post-school qualifications,0.121
+School qualifications,Female,Post-school qualifications,0.148
+Post-school qualifications,Female,Post-school qualifications,0.146
+University,Female,Post-school qualifications,0.113
+No qualifications,Female,University,0.173
+School qualifications,Female,University,0.305
+Post-school qualifications,Female,University,0.359
+University,Female,University,0.667

@@ -13,6 +13,7 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
+    {% if tabs %}
     <div class="govuk-tabs" data-module="govuk-tabs">
         <ul class="govuk-tabs__list">
             {% set ns.counter1 = 0 %}
@@ -81,6 +82,7 @@
         {% endif %}
         {% endfor %}
     </div>
+    {% endif %}
 
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
@@ -93,8 +95,28 @@
     {% endif %}
 
     {% if item[0] == 'Chart' %}
-    {{ chart(ns.counter1, item[1]) }}
+    <div style="max-width: 775px;">
+        {{ chart(ns.counter1, item[1]) }}
+    </div>
     {% endif %}
+
+    {% if item[0] == 'Grid' %}
+    <div class="grid" style="max-width: 775px;">
+        {% for subitem in item[1] %}
+        {% if subitem[0] == 'Chart' %}
+        <div style="height: 500px;">
+            {{ chart(ns.counter2, subitem[1]) }}
+        </div>
+        {% endif %}
+        {% set ns.counter2 = ns.counter2 + 1 %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
+
+
+
+
 
     {% set ns.counter1 = ns.counter1 + 1 %}
     {% endif %}
