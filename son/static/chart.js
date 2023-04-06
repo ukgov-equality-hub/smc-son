@@ -14,6 +14,7 @@ class Chart {
         this.data = data
         this.options = options || {}
         this.loaded = false
+        this.debug = false
 
         this._init()
     }
@@ -25,7 +26,7 @@ class Chart {
     }
 
     _scriptSrc() {
-        const script =  document.querySelector('script[src*="map.js"]')
+        const script =  document.querySelector('script[src*="chart.js"]')
         if (script.src) {
             return script.src.substr(0, script.src.lastIndexOf('/') + 1)
         }
@@ -190,10 +191,13 @@ class Chart {
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
             self.height -= zkey && legend ? legendHeight(domain, self.width) : 0
+            if (self.debug) console.log('min', min, 'max', max, 'range', range)
 
             let categories = []
             if (zkey) {
                 categories = Array.from(new Set(data.flat().map(x => x[zkey])))
+            } else if (group) {
+                categories = Array.from(new Set(data.flat().map(x => x[group])))
             }
 
             let color
@@ -210,11 +214,17 @@ class Chart {
             const marks = []
             let chartData
             for (let i = 0; i < data.length; i++) {
-                chartData = data[i]
+                chartData = data[i].map(x => ({
+                    ...x,
+                    [xkey]: orientation != 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
+                    [ykey]: orientation == 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
+                    [zkey]: isNumeric(x[zkey]) ? parseFloat(x[zkey], 10) : x[zkey] || null
+                }))
+
                 if (sort) {
                     if (group) {
                         if (orientation == 'y') {
-                            domain = sortDomain(chartData, sort, group, xkey, sortFacet)
+                            categories = sortDomain(chartData, sort, group, ykey)
                         } else {
                             range = sortDomain(chartData, sort, group, ykey, sortFacet)
                         }
@@ -229,8 +239,8 @@ class Chart {
 
                 if (lci && uci) {
                     chartData = chartData.map(x => ({
-                        [xkey]: orientation == 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
-                        [ykey]: orientation != 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
+                        [xkey]: x[xkey],
+                        [ykey]: x[ykey],
                         [zkey]: x[zkey] || null,
                         [group]: x[group],
                         labelkey: x[labelKey] || null,
@@ -244,8 +254,8 @@ class Chart {
                     if (orientation == 'y') range = [mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
-                        [xkey]: orientation == 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
-                        [ykey]: orientation != 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
+                        [xkey]: x[xkey],
+                        [ykey]: x[ykey],
                         [zkey]: x[zkey] || null,
                         [group]: x[group],
                         labelkey: x[labelKey] || null
@@ -258,13 +268,12 @@ class Chart {
                     y: ykey,
                     z: zkey,
                     facet: group ? true : null,
-                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(orientation, chartData, xkey, ykey, zkey, x),
+                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(chartData, x),
                     stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
-                    //title: x => `${x[orientation == 'y' ? ykey : xkey]}${zkey && x[zkey] ? ' - ' + x[zkey] : ''}${group && x[group] ? ' - ' + x[group] : ''}: ${getLabelText(x[orientation == 'y' ? xkey : ykey])}`.replace(/_/g, ' ')
                 }
-                //console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
-                //console.log('chartOptions', chartOptions)
+                if (self.debug) console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
+                if (self.debug) console.log('chartOptions', chartOptions)
 
                 if (type == 'area') {
                     marks.push(Plot.areaY(chartData, chartOptions))
@@ -276,10 +285,10 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    marks.push(Plot.line(chartData, { sort: xkey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
                     ticks = getScaledTicks(dataFormat)
@@ -290,7 +299,7 @@ class Chart {
                     if (d) {
                         let q = getQuantile(domain, d[0][xkey])
                         marks.push(Plot.cell(domain, { x: x => x, fill: x => x }))
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(orientation, chartData, xkey, ykey, zkey, x) }))
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(chartData, x) }))
                     }
                 }
                 if (lci && uci) {
@@ -378,14 +387,14 @@ class Chart {
             if (['quartile', 'quintile', 'decile'].includes(type)) {
                 xOptions = { axis: null, domain: domain, ticks: 5 }
                 yOptions = { axis: null, domain: [yvalue], ticks: 1 }
+            } else if (!group) {
+                xOptions['domain'] = domain
+                yOptions['domain'] = range
             } else {
                 xOptions['domain'] = domain
-                if (!group) {
-                    yOptions['domain'] = range
-                } else {
-                    yOptions['group'] = group
-                }
+                yOptions['group'] = group
             }
+            if (self.debug) console.log('group', group, range, domain, categories)
 
             let plot = Plot.plot({
                 x: xOptions,
@@ -398,11 +407,11 @@ class Chart {
                 } : undefined,
                 fx: orientation == 'y' && group ? {
                     label: null,
-                    domain: domain, //sort ? sortDomain(chartData, sort, group, xkey, sortFacet) : domain,
+                    domain: categories,
                     tickRotate: rotateDomainLabels ? 90 : undefined
                 } : undefined,
                 fy: orientation != 'y' && group ? {
-                    domain: range, //sort ? sortDomain(chartData, sort, group, ykey, sortFacet) : range
+                    domain: range,
                 } : undefined,
                 marks: marks,
                 color: {
@@ -425,7 +434,7 @@ class Chart {
             if ((zkey || (ykey && group)) && legend) {
                 const legendDiv = Plot.legend({
                         color: {
-                            domain: orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))].sort() : domain) : [...new Set(data.flat().map(x => x[zkey]))].sort(),
+                            domain: zkey ? [...new Set(data.flat().map(x => x[zkey]))].sort() : orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))].sort() : domain) : [...new Set(data.flat().map(x => x[zkey]))].sort(),
                             range: colourScheme
                         },
                         legend: 'swatches',
@@ -491,17 +500,22 @@ class Chart {
                 return -1
             }
 
-            function getMarkColour(orientation, data, xkey, ykey, zkey, x) {
+            function getMarkColour(data, x) {
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                     let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, x[xkey])
                     return colourScheme[q] || 'grey'
+                }
 
+                let colours = []
+                for (let i = 0; i < Math.ceil(data.length / colourScheme.length); i++) {
+                    colours = colours.concat(colourScheme)
                 }
-                if (zkey) {
-                    return colourScheme[categories.indexOf(x[zkey])] //zkey
+                if (zkey) {console.log('!!!!', categories, x[zkey], zkey, x)
+                    return colours[categories.indexOf(x[zkey])]
+                } else if (group) {
+                    return x[orientation == 'y' ? xkey : ykey]
                 }
-                return orientation == 'y' ? xkey : ykey
-                //return color(x)
+                return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
             }
 
             function getLabelColour(key) {

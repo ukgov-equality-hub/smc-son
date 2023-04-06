@@ -47,11 +47,11 @@
 }
 
 .table-container tbody .table-row:last-child .table-column {
-    border: none;
+    /*border: none;*/
 }
 
 .table-container tbody .table-row:first-child .table-column {
-    border-top: none;
+    /*border-top: none;*/
 }
 
 .table-container .table-row .table-column span.table-drag {
