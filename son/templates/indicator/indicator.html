@@ -95,7 +95,7 @@
 
     {% if item[0] == 'Section' %}
     <hr>
-    <a name="{{ item[1] | safe }}"></a>
+    <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
     {% if item[0] == 'Subtitle' %}
