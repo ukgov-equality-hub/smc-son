@@ -13,6 +13,12 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
+    {% for item in content %}
+    {% if item[0] == 'Section' %}
+    <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
+    {% endif %}
+    {% endfor %}
+
     {% if tabs %}
     <div class="govuk-tabs" data-module="govuk-tabs">
         <ul class="govuk-tabs__list">
@@ -86,6 +92,12 @@
 
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
+
+    {% if item[0] == 'Section' %}
+    <hr>
+    <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
+    {% endif %}
+
     {% if item[0] == 'Subtitle' %}
     <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
     {% endif %}
