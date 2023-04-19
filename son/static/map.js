@@ -12,21 +12,25 @@ class Choropleth {
         this.geodata = geodata
         this.data = data
         this.options = options || {}
+        this.scriptSrc = ''
         this.loaded = false
+        this.debug = false
 
         this._init()
     }
 
     _init() {
-        const scripts = [`${this._scriptSrc()}data-utils.js`, `${this._scriptSrc()}map-labels.js`, 'https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo.v3.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js', 'https://cdn.observableusercontent.com/npm/d3-tile@1.0.0/dist/d3-tile.min.js']
+        const scripts = [`${this._scriptSrc()}data-utils.js`, `${this._scriptSrc()}map-labels.js`, 'https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo.v3.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js']
         const styles = [`${this._scriptSrc()}map.css`]
         this._loadResources(scripts.concat(styles), this)
     }
 
     _scriptSrc() {
+        if (this.scriptSrc != '') return this.scriptSrc
         const script =  document.querySelector('script[src*="map.js"]')
         if (script.src) {
-            return script.src.substr(0, script.src.lastIndexOf('/') + 1)
+            this.scriptSrc = script.src.substr(0, script.src.lastIndexOf('/') + 1)
+            return this.scriptSrc
         }
         return ''
     }

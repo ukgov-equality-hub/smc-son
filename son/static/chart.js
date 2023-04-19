@@ -13,6 +13,7 @@ class Chart {
         this.el = el
         this.data = data
         this.options = options || {}
+        this.scriptSrc = ''
         this.loaded = false
         this.debug = false
 
@@ -26,9 +27,11 @@ class Chart {
     }
 
     _scriptSrc() {
+        if (this.scriptSrc != '') return this.scriptSrc
         const script =  document.querySelector('script[src*="chart.js"]')
         if (script.src) {
-            return script.src.substr(0, script.src.lastIndexOf('/') + 1)
+            this.scriptSrc = script.src.substr(0, script.src.lastIndexOf('/') + 1)
+            return this.scriptSrc
         }
         return ''
     }
