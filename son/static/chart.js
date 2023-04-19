@@ -180,7 +180,7 @@ class Chart {
 
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
             if (['quartile', 'quintile', 'decile'].includes(type)) self.height = 35
-            const vals = zkey ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
+            const vals = zkey && !['line', 'liney'].includes(type) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
             let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (min > 0) min = 0
             let max = d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
@@ -216,8 +216,8 @@ class Chart {
             for (let i = 0; i < data.length; i++) {
                 chartData = data[i].map(x => ({
                     ...x,
-                    [xkey]: orientation != 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey],
-                    [ykey]: orientation == 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey],
+                    [xkey]: orientation != 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey].toString(),
+                    [ykey]: orientation == 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey].toString(),
                     [zkey]: isNumeric(x[zkey]) ? parseFloat(x[zkey], 10) : x[zkey] || null
                 }))
 
@@ -288,7 +288,7 @@ class Chart {
                     marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : ykey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], marker: 'circle', ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
                     ticks = getScaledTicks(dataFormat)

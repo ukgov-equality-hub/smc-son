@@ -90,10 +90,10 @@ class DataUtils {
         if (this.isCSV(str)) {
             if (this.type == 'json') {
                 const result = this.csv2json(str)
-                headers = result.headers
+                headers = this.cleanCSV(result.headers)
                 data = result.data
             } else {
-                headers = this.headersFromCSV(str)
+                headers = this.cleanCSV(this.headersFromCSV(str))
                 data = str
             }
         } else if (this.isJSON(str)) {
@@ -187,6 +187,14 @@ class DataUtils {
         return !!document.getElementById(data)
     }
 
+    cleanCSV(data) {
+        return data.map(x => this.stripQuote(x))  
+    }
+
+    stripQuote(str) {
+        return str.substr(0, 1) == '"' && str.substr(-1) == '"' ? str.substr(1, str.length - 2) : str
+    }
+
     csv2json(data) {
         const csvFormat = this.isCSV(data)
         if (!csvFormat) return data
@@ -196,13 +204,14 @@ class DataUtils {
         const headers = this.substituteCommas(rows[0]).split(csvFormat.delimiter)
         for (let i = 1; i < rows.length; i++) {
             const row = {}
-            const currentline = this.substituteCommas(rows[i]).split(csvFormat.delimiter)
-            for (let j = 0; j < headers.length; j++) {
-                let str = currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : ''
-                if (str.substr(0, 1) == '"' && str.substr(-1) == '"') str = str.substr(1, str.length - 2)
-                row[headers[j].replace(/###/g, csvFormat.delimiter)] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+            if ((`${rows[i]} `).trim() != '') {
+                const currentline = this.substituteCommas(rows[i]).split(csvFormat.delimiter)
+                for (let j = 0; j < headers.length; j++) {
+                    let str = this.stripQuote(currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : '')
+                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+                }
+                result.push(row)
             }
-            result.push(row)
         }
 
         return {

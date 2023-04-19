@@ -13,11 +13,20 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
-    {% for item in content %}
-    {% if item[0] == 'Section' %}
-    <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
-    {% endif %}
-    {% endfor %}
+    <ol class="govuk-body">
+        {% for item in content %}
+        {% if item[0] == 'Section' %}
+        <li>
+            <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
+        </li>
+        {% endif %}
+        {% if item[0] == 'About' %}
+        <li>
+            <a href="#About" class="govuk-link" style="display: block;">About</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ol>
 
     {% if tabs %}
     <div class="govuk-tabs" data-module="govuk-tabs">
@@ -63,19 +72,6 @@
                     {{ chart(ns.counter2, subitem[1]) }}
                 </div>
             </div>
-            <script>
-                function mapselect(a) {
-                    if (typeof a !== 'undefined') {
-                        document.getElementById('map_legend{{ ns.counter2 }}').innerText = `${a.name}: ${a.value}`
-                        document.getElementById('map_marker{{ ns.counter2 }}').style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
-                        map{{ ns.counter2 }}.highlight(a.name)
-                        chart{{ ns.counter2 }}.highlight(a.name)
-                    } else {
-                        map{{ ns.counter2 }}.resetHighlight()
-                        chart{{ ns.counter2 }}.resetHighlight()
-                    }
-                }
-            </script>
             {% endif %}
 
             {% if subitem[0] == 'Text' %}
@@ -107,8 +103,20 @@
     {% endif %}
 
     {% if item[0] == 'Chart' %}
-    <div style="max-width: 775px;">
+    <div style="height: 500px;">
         {{ chart(ns.counter1, item[1]) }}
+    </div>
+    {% endif %}
+
+    {% if item[0] == 'Map' %}
+    <h3 class="govuk-heading-s">{{ [item[1], 'title'] | attribute | safe }}</h3>
+    <div class="grid grid2">
+        <div>
+            {{ map(ns.counter1, item[1]) }}
+        </div>
+        <div>
+            {{ chart(ns.counter1, item[1]) }}
+        </div>
     </div>
     {% endif %}
 
@@ -125,11 +133,58 @@
     </div>
     {% endif %}
 
+    {% if item[0] == 'About' %}
+    <hr>
+    <h3 class="govuk-heading-m"><a name="About"></a>About</hs>
+        {% for subitem in item[1] %}
+        <p class="govuk-body">{{ subitem[1] }}</p>
+        {% endfor %}
+    {% endif %}
+
     {% set ns.counter1 = ns.counter1 + 1 %}
     {% endif %}
     {% endfor %}
 </div>
 <script>
+function mapselect(a) {console.log('!!!!!!!!!')
+    let map, el
+    if (typeof map1 !== 'undefined') {
+        map = map1
+        el = 1
+    } else if (typeof map2 !== 'undefined') {
+        map = map2
+        el = 2
+    } else if (typeof map3 !== 'undefined') {
+        map = map3
+        el = 3
+    } else if (typeof map4 !== 'undefined') {
+        map = map4
+        el = 4
+    } else if (typeof map5 !== 'undefined') {
+        map = map5
+        el = 5
+    } else if (typeof map6 !== 'undefined') {
+        map = map6
+        el = 6
+    } else if (typeof map7 !== 'undefined') {
+        map = map7
+        el = 7
+    } else if (typeof map8 !== 'undefined') {
+        map = map8
+        el = 8
+    }
+
+    if (typeof a !== 'undefined') {
+        document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
+        document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
+        map.highlight(a.name)
+        chart.highlight(a.name)
+    } else {
+        map.resetHighlight()
+        chart.resetHighlight()
+    }
+}
+
     (function() {
 /*
 https://socialmobilityworks.org/
