@@ -146,44 +146,44 @@
     {% endfor %}
 </div>
 <script>
-function mapselect(a) {console.log('!!!!!!!!!')
-    let map, el
-    if (typeof map1 !== 'undefined') {
-        map = map1
-        el = 1
-    } else if (typeof map2 !== 'undefined') {
-        map = map2
-        el = 2
-    } else if (typeof map3 !== 'undefined') {
-        map = map3
-        el = 3
-    } else if (typeof map4 !== 'undefined') {
-        map = map4
-        el = 4
-    } else if (typeof map5 !== 'undefined') {
-        map = map5
-        el = 5
-    } else if (typeof map6 !== 'undefined') {
-        map = map6
-        el = 6
-    } else if (typeof map7 !== 'undefined') {
-        map = map7
-        el = 7
-    } else if (typeof map8 !== 'undefined') {
-        map = map8
-        el = 8
-    }
+    function mapselect(a) {
+        let map, el
+        if (typeof map1 !== 'undefined') {
+            map = map1
+            el = 1
+        } else if (typeof map2 !== 'undefined') {
+            map = map2
+            el = 2
+        } else if (typeof map3 !== 'undefined') {
+            map = map3
+            el = 3
+        } else if (typeof map4 !== 'undefined') {
+            map = map4
+            el = 4
+        } else if (typeof map5 !== 'undefined') {
+            map = map5
+            el = 5
+        } else if (typeof map6 !== 'undefined') {
+            map = map6
+            el = 6
+        } else if (typeof map7 !== 'undefined') {
+            map = map7
+            el = 7
+        } else if (typeof map8 !== 'undefined') {
+            map = map8
+            el = 8
+        }
 
-    if (typeof a !== 'undefined') {
-        document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
-        document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
-        map.highlight(a.name)
-        chart.highlight(a.name)
-    } else {
-        map.resetHighlight()
-        chart.resetHighlight()
+        if (typeof a !== 'undefined') {
+            document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
+            document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
+            map.highlight(a.name)
+            chart.highlight(a.name)
+        } else {
+            map.resetHighlight()
+            chart.resetHighlight()
+        }
     }
-}
 
     (function() {
 /*
