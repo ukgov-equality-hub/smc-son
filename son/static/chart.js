@@ -626,7 +626,7 @@ class Chart {
                     }
                     return 'a' + S4() + S4()
                 }
-                const html = htl.html
+                //const html = htl.html
                 const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
                 const fill_styles = { fill: 'blue', opacity: 0.5 }
                 const type = d3.select(chart).node().tagName
