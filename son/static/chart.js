@@ -986,4 +986,4 @@ class Chart {
     }
 }
 
-//new Chart()
+new Chart()
