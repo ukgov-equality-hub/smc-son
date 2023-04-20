@@ -27,7 +27,7 @@ class Choropleth {
 
     _scriptSrc() {
         if (this.scriptSrc != '') return this.scriptSrc
-        const script =  document.querySelector('script[src*="map.js"]')
+        const script = document.querySelector('script[src*="map.js"]')
         if (script.src) {
             this.scriptSrc = script.src.substr(0, script.src.lastIndexOf('/') + 1)
             return this.scriptSrc

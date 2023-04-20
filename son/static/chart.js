@@ -28,7 +28,7 @@ class Chart {
 
     _scriptSrc() {
         if (this.scriptSrc != '') return this.scriptSrc
-        const script =  document.querySelector('script[src*="chart.js"]')
+        const script = document.querySelector('script[src*="chart.js"]')
         if (script.src) {
             this.scriptSrc = script.src.substr(0, script.src.lastIndexOf('/') + 1)
             return this.scriptSrc
@@ -100,7 +100,7 @@ class Chart {
                 }
             }
             console.info('Chart resources loaded')
-            if (self.el && self.data) self.render()
+            if (self.el && self.data && typeof Plot !== 'undefined') self.render()
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -986,4 +986,4 @@ class Chart {
     }
 }
 
-//new Chart()
+new Chart()
