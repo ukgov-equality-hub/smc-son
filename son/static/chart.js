@@ -21,7 +21,7 @@ class Chart {
     }
 
     _init() {
-        const scripts = [`${this._scriptSrc()}data-utils.js`, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6', 'https://cdn.jsdelivr.net/npm/htl@0.3.1/dist/htl.min.js']
+        const scripts = [`${this._scriptSrc()}data-utils.js`]//, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6', 'https://cdn.jsdelivr.net/npm/htl@0.3.1/dist/htl.min.js']
         const styles = [`${this._scriptSrc()}chart.css`]
         this._loadResources(scripts.concat(styles), this)
     }
@@ -620,7 +620,7 @@ class Chart {
             }
 
             function tooltips(chart, styles) {
-                const id_generator = function () {
+                const idGenerator = function () {
                     const S4 = function () {
                         return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
                     }
@@ -651,7 +651,7 @@ class Chart {
                     .style('pointer-events', 'none')
                     .style('text-anchor', 'middle')
 
-                const id = id_generator()
+                const id = idGenerator()
 
                 // Add the event listeners
                 d3.select(chart).classed(id, true)
@@ -719,9 +719,16 @@ class Chart {
                 })
                 wrapper.on('touchstart', () => tip.selectAll('*').remove())
 
-                chart.appendChild(html`<style>
-                    .${id} .has-title { cursor: pointer  pointer-events: all }
-                    .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
+                document.head.insertAdjacentHTML('beforeend', `
+                    <style>
+                        .${id} .has-title { cursor: pointer  pointer-events: all }
+                        .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }
+                    </style>`
+                )
+
+                //chart.appendChild(html`<style>
+                //    .${id} .has-title { cursor: pointer  pointer-events: all }
+                //    .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
 
                 return chart
             }
@@ -984,4 +991,4 @@ class Chart {
     }
 }
 
-new Chart()
+//new Chart()
