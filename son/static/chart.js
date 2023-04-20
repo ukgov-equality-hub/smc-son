@@ -21,7 +21,7 @@ class Chart {
     }
 
     _init() {
-        const scripts = [`${this._scriptSrc()}data-utils.js`]//, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6', 'https://cdn.jsdelivr.net/npm/htl@0.3.1/dist/htl.min.js']
+        const scripts = [`${this._scriptSrc()}data-utils.js`, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6']
         const styles = [`${this._scriptSrc()}chart.css`]
         this._loadResources(scripts.concat(styles), this)
     }
@@ -626,7 +626,6 @@ class Chart {
                     }
                     return 'a' + S4() + S4()
                 }
-                //const html = htl.html
                 const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
                 const fill_styles = { fill: 'blue', opacity: 0.5 }
                 const type = d3.select(chart).node().tagName
@@ -725,10 +724,6 @@ class Chart {
                         .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }
                     </style>`
                 )
-
-                //chart.appendChild(html`<style>
-                //    .${id} .has-title { cursor: pointer  pointer-events: all }
-                //    .${id} .has-title:hover { ${Object.entries(styles).map(([key, value]) => `${key}: ${value}`).join(' ')} }`)
 
                 return chart
             }
