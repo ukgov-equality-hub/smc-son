@@ -21,7 +21,7 @@ class Chart {
     }
 
     _init() {
-        const scripts = [`${this._scriptSrc()}data-utils.js`, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6']
+        const scripts = [`${this._scriptSrc()}data-utils.js`]//, 'https://d3js.org/d3.v7.min.js', 'https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6']
         const styles = [`${this._scriptSrc()}chart.css`]
         this._loadResources(scripts.concat(styles), this)
     }
@@ -986,4 +986,4 @@ class Chart {
     }
 }
 
-new Chart()
+//new Chart()
