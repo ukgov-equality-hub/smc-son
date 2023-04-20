@@ -20,7 +20,7 @@ class Choropleth {
     }
 
     _init() {
-        const scripts = [`${this._scriptSrc()}data-utils.js`, `${this._scriptSrc()}map-labels.js`, 'https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo.v3.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js']
+        const scripts = [`${this._scriptSrc()}data-utils.js`, `${this._scriptSrc()}map-labels.js`]//, 'https://d3js.org/d3.v7.min.js', 'https://d3js.org/d3-geo.v3.min.js', 'https://d3js.org/d3-geo-projection.v2.min.js', 'https://d3js.org/d3-scale.v4.min.js', 'https://d3js.org/d3-scale-chromatic.v0.3.min.js', 'https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js']
         const styles = [`${this._scriptSrc()}map.css`]
         this._loadResources(scripts.concat(styles), this)
     }
@@ -151,7 +151,7 @@ class Choropleth {
             buildMap(data)
         })
 
-        let svg, mapContainer, mapBg, mapOutline, mapNames, mapFeatures, map, bg, outline, info, tile, tileSize = 2048
+        let svg, mapContainer, mapBg, mapOutline, mapNames, mapFeatures, map, bg, outline, info
 
         function buildMap(data) {
             function loadFiles(eudata) {
@@ -242,13 +242,6 @@ class Choropleth {
             info = d3.select(`#${self.el}`).append('div')
                 .attr('class', 'info')
                 .style('display', 'none')
-
-            //tile = d3.tile()
-            //    .extent([[0, 0], [self.width, self.height]])  //348, 629
-            //    .tileSize(512)
-            //    .clampX(false)
-            tile = d3.tile()
-                .size([self.width, self.height])  //348, 629
 
             self.zoom = d3.zoom()
                 .scaleExtent([1, 15])  // [1 << 8, 1 << 22]
@@ -664,11 +657,6 @@ class Choropleth {
                 }
             }
             return null
-        }
-
-        function stringify(scale, translate) {
-            const k = scale / tileSize, r = scale % 1 ? Number : Math.round
-            return 'matrix3d(' + [k, 0, 0, 0, 0, k, 0, 0, 0, 0, k, 0, r(translate[0] * scale), r(translate[1] * scale), 0, 1 ] + ')'
         }
 
         function mouseMoved(e) {
