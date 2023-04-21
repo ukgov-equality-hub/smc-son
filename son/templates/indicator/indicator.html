@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
-{% from 'components/chart.html' import chart %}
-{% from 'components/map.html' import map %}
+{% from 'components/visualisation.html' import visualisation %}
 {% from 'components/placeholder.html' import placeholder %}
 {% set ns = namespace(counter1=0, counter2=0) %}
 {% block title %}Demo{% endblock %}
@@ -59,19 +58,13 @@
 
             {% if subitem[0] == 'Chart' %}
             <div style="height: 500px;">
-                {{ chart(ns.counter2, subitem[1]) }}
+                {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
             </div>
             {% endif %}
 
             {% if subitem[0] == 'Map' %}
-            <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute | safe }}</h3>
-            <div class="grid grid2">
-                <div>
-                    {{ map(ns.counter2, subitem[1]) }}
-                </div>
-                <div>
-                    {{ chart(ns.counter2, subitem[1]) }}
-                </div>
+            <div style="height: 900px;">
+                {{ visualisation(ns.counter2, 'map', subitem[1]) }}
             </div>
             {% endif %}
 
@@ -105,19 +98,13 @@
 
     {% if item[0] == 'Chart' %}
     <div style="height: 500px;">
-        {{ chart(ns.counter1, item[1]) }}
+        {{ visualisation(ns.counter1, 'chart', item[1]) }}
     </div>
     {% endif %}
 
     {% if item[0] == 'Map' %}
-    <h3 class="govuk-heading-s">{{ [item[1], 'title'] | attribute | safe }}</h3>
-    <div class="grid grid2">
-        <div>
-            {{ map(ns.counter1, item[1]) }}
-        </div>
-        <div>
-            {{ chart(ns.counter1, item[1]) }}
-        </div>
+    <div style="height: 900px;">
+        {{ visualisation(ns.counter1, 'map', item[1]) }}
     </div>
     {% endif %}
 
@@ -126,7 +113,7 @@
         {% for subitem in item[1] %}
         {% if subitem[0] == 'Chart' %}
         <div style="height: 500px;">
-            {{ chart(ns.counter2, subitem[1]) }}
+            {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
         </div>
         {% endif %}
         {% set ns.counter2 = ns.counter2 + 1 %}
@@ -184,6 +171,7 @@
         }
 
         if (typeof a !== 'undefined') {
+            document.getElementById(`map_marker${el}`).style.visibility = 'visible'
             document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
             document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
             map.highlight(a.name)

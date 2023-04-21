@@ -1,5 +1,22 @@
 {% macro datatable(id, data) %}
-
-
-
+{% set data_table = [data, 'data'] | table %}
+<table id="table{{ id }}" class="govuk-body-s table-container" style="width: 100%;">
+    {% for row in data_table %}
+    <tr>
+        {% for cell in row %}
+        <td>{{ cell }}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+</table>
+<script>
+    let tbl{{ id }} = false
+    window.document.addEventListener('DOMContentLoaded', function () {
+        try {
+            if (!tbl{{ id }}) new DataTable('table{{ id }}', null, { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'allowPagination': false, 'showColumns': false })
+            tbl{{ id }} = true
+        }
+        catch (e) {}
+    })
+</script>
 {% endmacro %}
