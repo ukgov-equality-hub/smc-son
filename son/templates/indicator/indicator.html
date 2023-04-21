@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% from 'components/chart.html' import chart %}
 {% from 'components/map.html' import map %}
+{% from 'components/placeholder.html' import placeholder %}
 {% set ns = namespace(counter1=0, counter2=0) %}
 {% block title %}Demo{% endblock %}
 
@@ -130,6 +131,12 @@
         {% endif %}
         {% set ns.counter2 = ns.counter2 + 1 %}
         {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if item[0] == 'Placeholder' %}
+    <div style="height: 500px;">
+        {{ placeholder(ns.counter1, item[1]) }}
     </div>
     {% endif %}
 

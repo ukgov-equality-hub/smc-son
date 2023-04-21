@@ -16,7 +16,9 @@ Placeholder summary main findings
 ## Section
 Overview
 
-## Chart
+## Placeholder
+
+Chart
 { "data": "/static/data/prototypes/IN41_overview-20230420.csv", "width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Section

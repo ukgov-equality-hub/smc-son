@@ -16,21 +16,34 @@ Placeholder summary main findings
 ## Section
 Overview
 
+## Placeholder
+
 ## Section
 Breakdown by Area
+
+## Placeholder
 
 ## Section
 Breakdown by Sex
 
+## Placeholder
+
 ## Section
 Breakdown by Ethnicity
+
+## Placeholder
 
 ## Section
 Download the data
 
 ## Text
-[Link text Here](https://link-url-here.org)
-This file contains the following: ethnicity, year, age group, value, numerator, denominator and confidence intervals
+<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
+    Note: This is an example CSV file download with fictitious values
+</p>
+
+<p class="govuk-body">
+    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
+</p>
 
 ## About
 # Data source(s)

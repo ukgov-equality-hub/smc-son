@@ -1,0 +1,50 @@
+{% macro placeholder(id, data) %}
+
+<div class="govuk-tabs" data-module="govuk-tabs" style="width: 100%; height: 100%; margin: 30px 0; background-color: #fff;">
+    <ul class="govuk-tabs__list" role="tablist">
+        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart_{{ id }}tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
+                Chart
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item" role="presentation">
+            <a class="govuk-tabs__tab" href="#data_table{{ id }}_tab" id="tab_data_table{{ id }}_tab" role="tab" aria-controls="data_table{{ id }}_tab" aria-selected="false" tabindex="-1">
+                Data
+            </a>
+        </li>
+        <li class="govuk-tabs__list-item" role="presentation">
+            <a class="govuk-tabs__tab" href="#download{{ id }}_tab" id="tab_download{{ id }}tab" role="tab" aria-controls="download{{ id }}_tab" aria-selected="false" tabindex="-1">
+                Download
+            </a>
+        </li>
+    </ul>
+
+    <div class="govuk-tabs__panel" id="chart{{ id }}_tab" role="tabpanel" aria-labelledby="tab_chart{{ id }}_tab">
+        <h2 class="govuk-visually-hidden">
+            Chart
+        </h2>
+
+        <div style="display: block; width: 100%; height: 300px; background-color: #f3f2f1;"></div>
+    </div>
+
+    <div class="govuk-tabs__panel" id="data_table{{ id }}_tab" role="tabpanel" aria-labelledby="tab_data_table{{ id }}_tab">
+        <h2 class="govuk-visually-hidden">
+            Data
+        </h2>
+
+        <div style="display: block; width: 100%; height: 300px; background-color: #f3f2f1;"></div>
+    </div>
+
+    <div class="govuk-tabs__panel" id="download{{ id }}_tab" role="tabpanel" aria-labelledby="tab_download{{ id }}_tab">
+        <h2 class="govuk-visually-hidden">
+            Download
+        </h2>
+
+        <p class="govuk-body">
+            <a href="#" class="govuk-link">
+                Download the data
+            </a>
+        </p>
+    </div>
+</div>
+{% endmacro %}

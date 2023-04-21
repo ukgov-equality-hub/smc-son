@@ -16,8 +16,12 @@ Placeholder summary main findings
 ## Section
 Overview
 
+## Placeholder
+
 ## Section
 Breakdown by Sex
+
+## Placeholder
 
 ## Section
 Download the data

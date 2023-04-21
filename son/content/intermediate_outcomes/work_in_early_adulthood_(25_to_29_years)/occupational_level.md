@@ -16,17 +16,27 @@ Placeholder summary main findings
 ## Section
 Overview
 
+## Placeholder
+
 ## Section
 Breakdown by Area
+
+## Placeholder
 
 ## Section
 Breakdown by Sex
 
+## Placeholder
+
 ## Section
 Breakdown by Ethnicity
 
+## Placeholder
+
 ## Section
 Breakdown by Disability
+
+## Placeholder
 
 ## Section
 Download the data

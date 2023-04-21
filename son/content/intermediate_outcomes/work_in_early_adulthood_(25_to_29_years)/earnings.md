@@ -16,20 +16,30 @@ Placeholder summary main findings
 ## Section
 Overview
 
-## Chart
+## Placeholder
+
+Chart
 { "data": "/static/data/prototypes/IN34_overview-20230420.csv", "width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Section
 Breakdown by Area
 
+## Placeholder
+
 ## Section
 Breakdown by Sex
+
+## Placeholder
 
 ## Section
 Breakdown by Ethnicity
 
+## Placeholder
+
 ## Section
 Breakdown by Disability
+
+## Placeholder
 
 ## Section
 Download the data
