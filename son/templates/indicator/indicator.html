@@ -14,7 +14,7 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
-    <ol class="govuk-body">
+    <ol class="govuk-list govuk-list--number">
         {% for item in content %}
         {% if item[0] == 'Section' %}
         <li>
@@ -91,7 +91,7 @@
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
 
     {% if item[0] == 'Section' %}
-    <hr>
+    <hr style="margin: 40px 0;">
     <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
@@ -141,7 +141,7 @@
     {% endif %}
 
     {% if item[0] == 'About' %}
-    <hr>
+    <hr style="margin: 40px 0;">
     <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
     {% set ns.counter2 = 0 %}
     {% for subitem in item[1] %}
