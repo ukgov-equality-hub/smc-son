@@ -135,10 +135,12 @@
 
     {% if item[0] == 'About' %}
     <hr>
-    <h3 class="govuk-heading-m"><a name="About"></a>About</hs>
-        {% for subitem in item[1] %}
-        <p class="govuk-body">{{ subitem[1] }}</p>
-        {% endfor %}
+    <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
+    {% set ns.counter2 = 0 %}
+    {% for subitem in item[1] %}
+    <p class="govuk-body"{% if ns.counter2 % 2 == 0 %} style="margin-bottom: 5px; font-weight: bold;"{% endif %}>{{ subitem[1] | safe }}</p>
+    {% set ns.counter2 = ns.counter2 + 1 %}
+    {% endfor %}
     {% endif %}
 
     {% set ns.counter1 = ns.counter1 + 1 %}

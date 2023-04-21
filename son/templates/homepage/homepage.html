@@ -9,7 +9,102 @@
 {% block content %}
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-l">{{ title }}</h1>
+        <h1 class="govuk-heading-m">
+            State of the Nation 2023: data about social mobility in the UK
+        </h1>
+
+        <p class="govuk-body">
+            State of the Nation is an annual report into social mobility in the UK. It uses original data and analysis from ​​the Social Mobility Commission (SMC).
+        </p>
+
+        <p class="govuk-body">
+            State of the Nation uses the SMC’s own measurement framework, the <span style="font-weight: bold;">Social Mobility Index</span>. This looks at:
+        </p>
+
+        <ul class="govuk-body">
+            <li><a href="/mobility_outcomes" class="govuk-link">mobility outcomes</a> – looking backwards</li>
+            <li><a href="/intermediate_outcomes" class="govuk-link">intermediate outcomes</a> – looking at the present</li>
+            <li><a href="/drivers_of_mobility" class="govuk-link">drivers of social mobility</a> – looking at the future</li>
+        </ul>
+
+        <h3 class="govuk-heading-s">
+            What you can do on this site
+        </h3>
+
+        <p class="govuk-body">
+            You can explore and download data by different breakdowns, such as region, sex and ethnicity.
+        </p>
+
+        <h3 class="govuk-heading-s">
+            See data by topic
+        </h3>
+
+        <div style="display: flex; height: 300px; gap: 20px;">
+            <a href="/mobility_outcomes" style="display: inherit; width: 33%; text-decoration: none;">
+                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                    <p style="font-weight: bold;">Mobility outcomes</p>
+                    <p>People’s income, education, housing and class in their 40s and 50s, compared with their parents.</p>
+                </div>
+            </a>
+            <a href="/intermediate_outcomes" style="display: inherit; width: 33%; text-decoration: none;">
+                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                    <p style="font-weight: bold;">Age-related outcomes</p>
+                    <p>The experiences of young people as they move through education and into the labour market.</p>
+                </div>
+            </a>
+            <a href="/drivers_of_mobility" style="display: inherit; width: 33%; text-decoration: none;">
+                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                    <p style="font-weight: bold;">Driver of social mobility</p>
+                    <p>The background conditions that make social mobility easier.</p>
+                </div>
+            </a>
+        </div>
+
+        <h3 class="govuk-heading-s">
+            Highlighted content
+        </h3>
+
+        <div style="display: flex; height: 300px; gap: 20px;">
+            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                <p style="font-weight: bold;">Occupational mobility</p>
+                <div id="chart1" style="width: 260px; height: 180px;"></div>
+                <script>
+                    new Chart(
+                        'chart1',
+                        `${location.protocol}//${location.host}/static/data/prototypes/DR23a_overview-20230417.csv`,
+                        { "data": "/static/data/prototypes/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                    )
+                </script>
+            </div>
+            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                <p style="font-weight: bold;">Young people who are NEET</p>
+                <div id="chart2" style="width: 260px; height: 180px;"></div>
+                <script>
+                    new Chart(
+                        'chart2',
+                        `${location.protocol}//${location.host}/static/data/prototypes/DR23a_overview-20230417.csv`,
+                        { "data": "/static/data/prototypes/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                    )
+                </script>
+            </div>
+            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
+                <p style="font-weight: bold;">Pupil attainment compared internationally</p>
+                <div id="chart3" style="width: 260px; height: 180px;"></div>
+                <script>
+                    new Chart(
+                        'chart3',
+                        `${location.protocol}//${location.host}/static/data/prototypes/DR23a_overview-20230417.csv`,
+                        { "data": "/static/data/prototypes/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                    )
+                </script>
+            </div>
+        </div>
+
+        <p class="govuk-body">
+            Read the <a href="#" class="govuk-link">full State of the Nation 2023 report</a> on GOV.UK.
+        </p>
+
+        <!--<h1 class="govuk-heading-l">{{ title }}</h1>
         <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
             Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
             dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
@@ -43,7 +138,7 @@
             vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
             ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
             Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
-            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>
+            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>-->
     </div>
 </div>
 {% endblock %}

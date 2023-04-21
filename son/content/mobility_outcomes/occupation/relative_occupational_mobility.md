@@ -28,21 +28,36 @@ Breakdown by Ethnicity
 ## Section
 Download the data
 
+## Text
+<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
+    Note: This is an example CSV file download with fictitious values
+</p>
+
+<p class="govuk-body">
+    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
+</p>
+
 ## About
-# Data sources
-Labour Force Survey, Office for National Statistics
+# Data source(s)
+We would list the data sources here. e.g.<br>
+XYZ Survey, Office for National Statistics
 
 # Time period
-2021
+e.g. 20XX to 20YY
+
+# Geographic area
+e.g. UK
 
 # What the data measures
-The data shows the highest level of qualification achieved by 25 to 29 year olds in the UK. Figures are shown for 5 social class backgrounds, from lower working class to higher professional. Percentages are rounded to 1 decimal place in the chart and table.
+A paragraph or two of text explaining what has been measured.<br>
+We might use this space to define specific terms.
 
 # Things you need to know
-Social class background is measured by the occupation of the main wage earner when the respondent was 14 years old. 95% confidence intervals are shown for the highest and lowest qualification levels.
+Here is a space to discuss the source and limitations of the data.<br>
+For example, who has been surveyed and how, whether anyone has been excluded from the data.
 
 # Type of data
-Survey data. Analysis uses LFS population weights.
+e.g. Survey data, weighted
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
