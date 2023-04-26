@@ -51,7 +51,11 @@
 }
 
 .table-container tbody .table-row:first-child .table-column {
-    /*border-top: none;*/
+    border-top: none;
+}
+
+.table-container .table-row .table-column.numeric {
+    text-align: right;
 }
 
 .table-container .table-row .table-column span.table-drag {
@@ -61,14 +65,14 @@
     width: 2px;
     height: calc(100% - 6px);
     margin: 3px 0;
-    background-color: #eee;
+    /*background-color: #eee;*/
     border-left: 1px dotted #777;
     overflow: hidden;
     cursor: ew-resize;
 }
 
 .table-container tbody .table-row td {
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
 }
 
 .icons {

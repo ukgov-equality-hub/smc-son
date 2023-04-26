@@ -297,6 +297,30 @@ class DataUtils {
         return data
     }
 
+    sortDataNumeric(data, sort, sortOrder) {
+        const headers = this.data['headers']
+
+        if (sort > -1) {
+            if (this.type == 'json') {
+                if (sortOrder == 'asc') {
+                    data.sort((a, b) => a[headers[sort]] - b[headers[sort]])
+                } else {
+                    data.sort((a, b) => b[headers[sort]] - a[headers[sort]])
+                }
+            } else {
+                if (sortOrder == 'asc') {
+                    data.sort((a, b) => a[sort] - b[sort])
+                } else {
+                    data.sort((a, b) => b[sort] - a[sort])
+                }
+            }
+        }
+
+        this.data['sort'] = sort
+        this.data['sortOrder'] = sortOrder == 'asc' ? 'desc' : 'asc'
+        return data
+    }
+
     filterData(data, filters) {
         const headers = this.data['headers']
 
