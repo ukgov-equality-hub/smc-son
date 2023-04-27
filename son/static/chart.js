@@ -687,6 +687,7 @@ class Chart {
                         .on('pointerenter pointermove', function (event) {
                             const text = `${d3.select(this).attr('data-name')}: ${d3.select(this).attr('data-value')}`
                             const status = {
+                                chart: self,
                                 name: d3.select(this).attr('data-name'),
                                 value: isNumeric(d3.select(this).attr('data-value')) ? parseFloat(d3.select(this).attr('data-value'), 10) : d3.select(this).attr('data-value'),
                                 min: min,
@@ -924,6 +925,13 @@ class Chart {
     }
 
     download() {
+        function isHidden(el) {
+            el = document.getElementById(el)
+            return el.offsetParent === null
+            const style = window.getComputedStyle(el)
+            return style.display === 'none'
+        }
+
         this.rasterize(this.el).then(data => {
             const a = document.createElement('a')
             a.href = URL.createObjectURL(data)
@@ -954,7 +962,7 @@ class Chart {
             svg.setAttributeNS(xmlns, 'xmlns:xlink', xlinkns)
             const serializer = new window.XMLSerializer
             const string = serializer.serializeToString(svg)
-            return new Blob([string], {type: 'image/svg+xml'})
+            return new Blob([string], { type: 'image/svg+xml' })
         }
 
         function addfont(svg) {
@@ -966,7 +974,7 @@ class Chart {
         }
 
         const svgs = document.getElementById(this.el).getElementsByTagName('svg')
-        let svg = svgs[svgs.length - 1]
+        let svg = svgs[0]//[svgs.length - 1]
         svg = addfont(svg)
         let resolve, reject
         const promise = new Promise((y, n) => (resolve = y, reject = n))
@@ -974,6 +982,8 @@ class Chart {
         image.onerror = reject
         image.onload = () => {
             const rect = svg.getBoundingClientRect()
+            if (rect.width == 0) rect.width = svg.getAttribute('width')
+            if (rect.height == 0) rect.height = svg.getAttribute('height')
             const canvas = document.createElement('canvas')
             canvas.width = rect.width
             canvas.height = rect.height

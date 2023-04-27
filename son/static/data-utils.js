@@ -4,6 +4,7 @@ class DataUtils {
         this.data = {
             'headers': [],
             'data': [],
+            'url': '',
             'type': this.type,
             'tag': '',
             'sort': -1,
@@ -32,6 +33,7 @@ class DataUtils {
         } else if (this.isJSON(data)) {
             return this.loadDataFromString(data)
         } else if (this.isURL(data)) {
+            this.data.url = data
             return this.loadDataFromURL(data)
         } else if (this.isHTMLNode(data)) {
             return this.loadDataFromElement(data, true)
@@ -393,15 +395,15 @@ class DataUtils {
         let blob
         if (format == 'csv') {
             if (this.type == 'json') {
-                blob = new Blob(json2csv(data), { 'type': 'text/csv' })
+                blob = new Blob([this.json2csv(data).join('\n')], { 'type': 'text/csv', endings: 'native' })
             } else {
-                blob = new Blob(data, { 'type': 'text/csv' })
+                blob = new Blob([data.join('\n')], { 'type': 'text/csv', endings: 'native' })
             }
         } else {
             if (this.type == 'json') {
                 blob = new Blob(data, { 'type': 'text/json' })
             } else {
-                blob = new Blob(csv2json(data), { 'type': 'text/json' })
+                blob = new Blob(this.csv2json(data), { 'type': 'text/json' })
             }
         }
 
@@ -427,8 +429,8 @@ class DataUtils {
         return str
     }
 
-    isNumeric(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n)
+    isNumeric(x) {
+        return !isNaN(parseFloat(x)) && isFinite(x)
     }
 
     substituteCommas(str) {

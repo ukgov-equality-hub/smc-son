@@ -63,12 +63,19 @@
 
         <ul class="govuk-list">
             <li>
-                <a href="#" class="govuk-link">
-                    Download the visualisation
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}()">
+                    Download the chart
                 </a>
             </li>
+            {% if type == 'map' %}
             <li>
-                <a href="#" class="govuk-link">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}()">
+                    Download the map
+                </a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="{{ [data, 'data'] | attribute | safe }}" target="_blank" type="text/csv" class="govuk-link" _onclick="downloadData{{ id }}()">
                     Download the data
                 </a>
             </li>

@@ -802,7 +802,8 @@ class DataTable {
     }
 
     downloadData(format) {
-        return this.dataUtils.downloadData(this.data, `download.${format}`, format)
+        const data = this.dataTables[`data-table-${this.el}`]['data']
+        return this.dataUtils.downloadData(data, `download.${format}`, format)
     }
 }
 

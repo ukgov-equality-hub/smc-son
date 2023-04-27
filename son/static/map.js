@@ -761,6 +761,7 @@ class Choropleth {
             if (self.onRollover) {
                 try {
                     const status = {
+                        map: self,
                         name: this.getAttribute('data-name'),
                         value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
                         min: self.min,
@@ -793,6 +794,7 @@ class Choropleth {
             if (self.onClick) {
                 try {
                     const status = {
+                        map: self,
                         name: this.getAttribute('data-name'),
                         value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
                         min: self.min,
@@ -871,7 +873,7 @@ class Choropleth {
     }
 
     zoomTo(subunit) {
-        // TODO
+        //
     }
 
     resetZoom() {
@@ -923,7 +925,7 @@ class Choropleth {
     }
 
     update(data) {
-        // TODO
+        //
     }
 
     downloadData(format) {
@@ -931,6 +933,13 @@ class Choropleth {
     }
 
     download() {
+        function isHidden(el) {
+            el = document.getElementById(el)
+            return el.offsetParent === null
+            const style = window.getComputedStyle(el)
+            return style.display === 'none'
+        }
+
         this.rasterize(this.el).then(data => {
             const a = document.createElement('a')
             a.href = URL.createObjectURL(data)
@@ -961,7 +970,7 @@ class Choropleth {
             svg.setAttributeNS(xmlns, 'xmlns:xlink', xlinkns)
             const serializer = new window.XMLSerializer
             const string = serializer.serializeToString(svg)
-            return new Blob([string], {type: 'image/svg+xml'})
+            return new Blob([string], { type: 'image/svg+xml' })
         }
 
         function addfont(svg) {
@@ -981,6 +990,8 @@ class Choropleth {
         image.onerror = reject
         image.onload = () => {
             const rect = svg.getBoundingClientRect()
+            if (rect.width == 0) rect.width = svg.getAttribute('width')
+            if (rect.height == 0) rect.height = svg.getAttribute('height')
             const canvas = document.createElement('canvas')
             canvas.width = rect.width
             canvas.height = rect.height

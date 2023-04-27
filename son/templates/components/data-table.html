@@ -10,13 +10,19 @@
     {% endfor %}
 </table>
 <script>
-    let tbl{{ id }} = false
+    let tbl{{ id }} = false, dataTable{{ id }}
     window.document.addEventListener('DOMContentLoaded', function () {
         try {
-            if (!tbl{{ id }}) new DataTable('table{{ id }}', null, { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10, '_columns': ['Ind_code', 'Ind_name', 'Value', 'Unit'] })
+            if (!tbl{{ id }}) dataTable{{ id }} = new DataTable('table{{ id }}', null, { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10, '_columns': ['Ind_code', 'Ind_name', 'Value', 'Unit'] })
             tbl{{ id }} = true
         }
         catch (e) {}
     })
+
+    function downloadData{{ id }}() {
+        if (dataTable{{ id }}) {
+            dataTable{{ id }}.downloadData('csv')
+        }
+    }
 </script>
 {% endmacro %}
