@@ -284,7 +284,7 @@ class Chart {
                     z: zkey,
                     facet: group ? true : null,
                     fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(originalData || chartData, x),
-                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x)/*zkey ? zkey : orientation == 'y' ? xkey : ykey*/ : undefined,
+                    stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
                     strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : undefined,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                 }
@@ -297,7 +297,7 @@ class Chart {
                 if (type == 'bar' || type == 'barx') {
                     marks.push(Plot.barX(chartData, chartOptions))
                 }
-                if (type == 'bary') {
+                if (type == 'bary') {console.log('!!!!!', chartData, chartOptions)
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
@@ -985,8 +985,13 @@ class Chart {
                 const fill = hexToRgb(d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).attr('fill'))
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
-                d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
-                d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
+                if (this.rolloverBehaviour == 'outline') {
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none' ).style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('stroke', 'red').style('stroke-width', 3)
+                } else if (this.rolloverBehaviour == 'fade') {
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
+                    d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
+                }
             }
 
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
@@ -1004,10 +1009,14 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', '1')
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
-                d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 1)
-                d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+                if (this.rolloverBehaviour == 'outline') {
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none' ).style('stroke-width', 0)
+                } else if (this.rolloverBehaviour == 'fade') {
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 1)
+                }
             }
 
+            d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
