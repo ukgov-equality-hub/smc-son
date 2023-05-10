@@ -297,7 +297,7 @@ class Chart {
                 if (type == 'bar' || type == 'barx') {
                     marks.push(Plot.barX(chartData, chartOptions))
                 }
-                if (type == 'bary') {console.log('!!!!!', chartData, chartOptions)
+                if (type == 'bary') {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
@@ -424,6 +424,7 @@ class Chart {
                 fx: orientation == 'y' && group ? {
                     label: null,
                     domain: categories,
+                    tickFormat: x => x.toString(),
                     tickRotate: rotateDomainLabels ? 90 : undefined
                 } : undefined,
                 fy: orientation != 'y' && group ? {
@@ -986,7 +987,7 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none' ).style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none').style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('stroke', 'red').style('stroke-width', 3)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
@@ -1010,7 +1011,7 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none' ).style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none').style('stroke-width', 0)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 1)
                 }
@@ -1025,7 +1026,7 @@ class Chart {
     }
 
     update(data) {
-        //
+        this.render(data)
     }
 
     downloadData(format) {
