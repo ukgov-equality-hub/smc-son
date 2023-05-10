@@ -9,7 +9,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-grid-row-full-width">
+<div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
@@ -57,7 +57,7 @@
             {% endif %}
 
             {% if subitem[0] == 'Chart' %}
-            <div style="height: 500px;">
+            <div style="_height: 500px;">
                 {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
             </div>
             {% endif %}
@@ -97,7 +97,7 @@
     {% endif %}
 
     {% if item[0] == 'Chart' %}
-    <div style="height: 500px;">
+    <div style="_height: 500px;">
         {{ visualisation(ns.counter1, 'chart', item[1]) }}
     </div>
     {% endif %}
@@ -112,7 +112,7 @@
     <div class="grid" style="max-width: 775px;">
         {% for subitem in item[1] %}
         {% if subitem[0] == 'Chart' %}
-        <div style="height: 500px;">
+        <div style="_height: 500px;">
             {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
         </div>
         {% endif %}
@@ -122,7 +122,7 @@
     {% endif %}
 
     {% if item[0] == 'Placeholder' %}
-    <div style="height: 500px;">
+    <div style="_height: 500px;">
         {{ placeholder(ns.counter1, item[1]) }}
     </div>
     {% endif %}

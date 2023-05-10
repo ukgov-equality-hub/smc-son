@@ -8,6 +8,19 @@ div.chart div {
     height: 100%;
 }
 
+div.chart svg g[aria-label="y-axis tick"] {
+    visibility: hidden;
+}
+
+div.chart svg.line path.has-title, div.chart svg.liney path.has-title {
+    stroke-width: 3px;
+}
+
+div.chart svg.line marker circle, div.chart svg.liney marker circle {
+    stroke-width: 0px;
+    scale: 0.5;
+}
+
 div.chart div.links {
     margin-top: 10px;
     height: auto;

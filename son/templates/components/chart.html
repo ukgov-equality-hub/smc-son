@@ -3,10 +3,15 @@
 <script>
     let chart{{ id }}
     window.document.addEventListener('DOMContentLoaded', function () {
+        const options = {{ data | safe }}
+        if (options.type != 'dot') {
+            options.width = document.getElementById('maincontent').offsetWidth
+        }
+
         chart{{ id }} = new Chart(
             'chart{{ id }}',
             `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
-            {{ data | safe }}
+            options
         )
 
         //document.getElementById('chart{{ id }}_download').addEventListener('click', function () {

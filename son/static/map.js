@@ -190,11 +190,13 @@ class Choropleth {
         }
 
         function ready(eudata, geodata, data) {
-            const subunits = getFeatures(geodata, 'features')
-            //const londonunits = JSON.parse(JSON.stringify(subunits))
+            let subunits = getFeatures(geodata, 'features')
+            //let londonunits = JSON.parse(JSON.stringify(subunits))
             //londonunits.geometries = londonunits.geometries.filter(x => {
             //    return x.properties.ITL221NM.indexOf('London') > -1
             //})
+            //subunits = londonunits
+
             const areas = geoFormat == 'topo' ? subunits.geometries.map(x => x.properties[areaField]) : subunits.map(x => x.properties[areaField])
             data = (data.data || data).filter(x => areas.includes(x[nameField]))
 
@@ -675,7 +677,7 @@ class Choropleth {
         }
 
         function maxLabelLength(data, key, style) {
-            let max = data.map(x => { return { 'text': x[key].toString(), 'length': x[key].toString().length } }).sort(function (a, b) { return b['length'] - a['length'] })[0].text
+            let max = data.map(x => { return { 'text': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString(), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length } }).sort(function (a, b) { return b['length'] - a['length'] })[0].text
             return labelLength(max, style) * 1.1
         }
 
@@ -757,35 +759,35 @@ class Choropleth {
             self.resetZoom()
         }
 
+        function getStatus(item) {
+            return {
+                map: self,
+                name: item.getAttribute('data-name'),
+                value: isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
+                min: self.min,
+                max: self.max,
+                mean: self.mean,
+                median: self.median,
+                quantile: isNumeric(item.getAttribute('data-quantile')) ? parseFloat(item.getAttribute('data-quantile'), 10) : item.getAttribute('data-quantile'),
+                rank: isNumeric(item.getAttribute('data-rank')) ? parseFloat(item.getAttribute('data-rank'), 10) : item.getAttribute('data-rank'),
+                percentile: isNumeric(item.getAttribute('data-percentile')) ? parseFloat(item.getAttribute('data-percentile'), 10) : item.getAttribute('data-percentile')
+            }
+        }
+
         function highlight(event) {
             if (self.onRollover) {
                 try {
-                    const status = {
-                        map: self,
-                        name: this.getAttribute('data-name'),
-                        value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
-                        min: self.min,
-                        max: self.max,
-                        mean: self.mean,
-                        median: self.median,
-                        quantile: isNumeric(this.getAttribute('data-quantile')) ? parseFloat(this.getAttribute('data-quantile'), 10) : this.getAttribute('data-quantile'),
-                        rank: isNumeric(this.getAttribute('data-rank')) ? parseFloat(this.getAttribute('data-rank'), 10) : this.getAttribute('data-rank'),
-                        percentile: isNumeric(this.getAttribute('data-percentile')) ? parseFloat(this.getAttribute('data-percentile'), 10) : this.getAttribute('data-percentile')
-                    }
+                    const status = getStatus(this)
                     if (status.name != null && status.value != null) window[self.onRollover](status)
                 }
                 catch (e) {}
             }
+
             self.highlight(this.getAttribute('data-name'))
-            //if (!rolloverBehaviour) return
-            //self.svg.selectAll('path[data-active="N"]').style('opacity', 0.6)
-            //d3.select(this).transition().style('opacity', 1)
         }
 
         function resetHighlight(event) {
             self.resetHighlight()
-            //if (!rolloverBehaviour) return
-            //svg.selectAll('path').style('opacity', 1)
         }
 
         function clicked(event, x) {
@@ -793,27 +795,16 @@ class Choropleth {
 
             if (self.onClick) {
                 try {
-                    const status = {
-                        map: self,
-                        name: this.getAttribute('data-name'),
-                        value: isNumeric(this.getAttribute('data-value')) ? parseFloat(this.getAttribute('data-value'), 10) : this.getAttribute('data-value'),
-                        min: self.min,
-                        max: self.max,
-                        mean: self.mean,
-                        median: self.median,
-                        quantile: isNumeric(this.getAttribute('data-quantile')) ? parseFloat(this.getAttribute('data-quantile'), 10) : this.getAttribute('data-quantile'),
-                        rank: isNumeric(this.getAttribute('data-rank')) ? parseFloat(this.getAttribute('data-rank'), 10) : this.getAttribute('data-rank'),
-                        percentile: isNumeric(this.getAttribute('data-percentile')) ? parseFloat(this.getAttribute('data-percentile'), 10) : this.getAttribute('data-percentile')
-                    }
-                    window[self.onClick](status)
+                    const status = getStatus(this)
+                    if (status.name != null && status.value != null) window[self.onClick](status)
                 }
                 catch (e) {}
             }
 
             if (self.clickBehaviour == 'zoom') {
+                // TODO - move to zoomTo
                 const [[x0, y0], [x1, y1]] = self.path.bounds(x)
-                self.svg.selectAll('path').transition() /////////.style('opacity', 0.6)
-                /////////d3.select(this).transition().style('opacity', 1)
+                self.svg.selectAll('path').transition()
                 self.svg.selectAll('path').attr('data-active', 'N')
                 d3.select(this).attr('data-active', 'Y')
 
@@ -873,7 +864,25 @@ class Choropleth {
     }
 
     zoomTo(subunit) {
-        //
+
+
+                const [[x0, y0], [x1, y1]] = self.path.bounds(x)
+                self.svg.selectAll('path').transition()
+                self.svg.selectAll('path').attr('data-active', 'N')
+                //d3.select(this).attr('data-active', 'Y')
+
+                self.svg.transition().duration(750).call(
+                    self.zoom.transform,
+                    d3.zoomIdentity
+                        .translate(self.width / 2, self.height / 2)
+                        .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
+                        .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
+                    d3.pointer(event, self.svg.node())
+                )
+
+
+
+
     }
 
     resetZoom() {
