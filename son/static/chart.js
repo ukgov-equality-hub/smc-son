@@ -284,8 +284,8 @@ class Chart {
                     z: zkey,
                     facet: group ? true : null,
                     fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(originalData || chartData, x),
-                    stroke: ['line', 'linex', 'liney'].includes(type) ? zkey ? zkey : orientation == 'y' ? xkey : ykey : undefined,
-                    strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : undefined,
+                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : undefined,
+                    strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : 0,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                 }
                 if (self.debug) console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
@@ -455,9 +455,10 @@ class Chart {
 
             // Legend
             if ((zkey || (ykey && group)) && legend && !plotted) {
+                const legends = zkey ? [...new Set(data.flat().map(x => x[zkey]))] : orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))] : domain) : [...new Set(data.flat().map(x => x[zkey]))]
                 const legendDiv = Plot.legend({
                     color: {
-                        domain: (zkey ? [...new Set(data.flat().map(x => x[zkey]))] : orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))] : domain) : [...new Set(data.flat().map(x => x[zkey]))]),//.sort(),
+                        domain: legends,
                         range: colourScheme
                     },
                     legend: 'swatches',
@@ -550,7 +551,8 @@ class Chart {
                 } else if (group) {
                     return x[orientation == 'y' ? xkey : ykey]
                 }
-                return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
+                return orientation == 'y' ? xkey : ykey
+                //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
             }
 
             function getLabelColour(key) {
@@ -921,16 +923,16 @@ class Chart {
             }
 
             if (self.clickBehaviour == 'outline') {
-
-
             } else if (self.clickBehaviour == 'fade') {
                 const item = event.target.getAttribute('data-series')
-                d3.select(`#${self.el}`).selectAll(`[data-series="${item}"]`).each(function () {
+                d3.select(`#${self.el}`).selectAll(`[data-series="${item}"]`).style('opacity', function () {
                     const item = d3.select(this)
                     if (item.attr('data-faded') == 'true') {
                         item.attr('data-faded', 'false')
+                        return 1
                     } else {
                         item.attr('data-faded', 'true')
+                        return 0.1
                     }
                 })
             } else if (self.clickBehaviour == 'filter') {
@@ -1017,7 +1019,9 @@ class Chart {
                 }
             }
 
+            d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
             d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+            d3.select(`#${this.el}`).selectAll(`span[data-filtered="false"]`).style('opacity', 1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
