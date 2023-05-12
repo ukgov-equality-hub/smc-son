@@ -28,15 +28,8 @@ Overview
 ## Section
 Breakdown by Area
 
-
-["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"]
-
-
-
-["#d7191c", "#fdae61", "#ffffbf", "#a6d96a", "#1a9641"]
-
 ## Map
-{ "title": "", "map": "/static/data/Countries_December_2022_UK_BUC_7375516370003975813.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTRY20NM", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+{ "title": "", "map": "/static/data/Countries_December_2022_UK_BUC_7375516370003975813.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTRY20NM", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
 
 ## Section
 Download the data

@@ -1009,7 +1009,7 @@ class Chart {
             const type = this.options.type.toLowerCase() || 'bar'
 
             if (type == 'dot') {
-                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', '1')
+                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', 0)
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
