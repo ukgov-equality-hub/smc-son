@@ -983,8 +983,8 @@ class Chart {
             const type = this.options.type.toLowerCase() || 'bar'
 
             if (type == 'dot') {
-                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', '1')
-                d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke-width', '10')
+                d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', 0)
+                d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke-width', 10)
                 const fill = hexToRgb(d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).attr('fill'))
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {

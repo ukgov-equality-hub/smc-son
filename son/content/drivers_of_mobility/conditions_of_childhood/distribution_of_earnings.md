@@ -5,25 +5,38 @@ DR11
 Distribution of earnings
 
 ## Summary
-Placeholder summary text
+Data on inequality in hourly pay between high earners and low earners.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+Inequality in hourly pay between high and low earners got narrower between 2011 and 2021.
+## Text
+From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly pay) earned around 4 times as much as ‘low earners’ (people in the 10th percentile). 
+## Text
+Inequality in hourly pay then went down every year over the next 10 years. In 2021, higher earners earned around 3.2 times as much as low earners.
+## Text
+Inequality in hourly pay was higher in England than Scotland, Wales and Northern Ireland. In England, wage inequality was highest in London.
 
 ## Section
 Overview
 
 ## Chart
-{ "data": "/static/data/prototypes/DR11_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade" }
+{ "data": "/static/data/prototypes/DR11_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "outline", "_datatable": { "dataFormat": "array", "allowColumnResize": true, "allowFilter": true, "allowSort": true, "pageSize": 10, "columns": ["Time_period", "Value"] } }
 
 ## Section
 Breakdown by Area
 
+
+["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"]
+
+
+
+["#d7191c", "#fdae61", "#ffffbf", "#a6d96a", "#1a9641"]
+
 ## Map
-{ "title": "test title", "map": "/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+{ "title": "", "map": "/static/data/Countries_December_2022_UK_BUC_7375516370003975813.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTRY20NM", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
 
 ## Section
 Download the data
@@ -39,25 +52,27 @@ Download the data
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+ONS, Annual Survey of Hours and Earnings (ASHE). Analysis by Nuffield College.
 
 # Time period
-e.g. 20XX to 20YY
+1997 to 2021
 
 # Geographic area
-e.g. UK
+UK
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data measures the gap in hourly earnings between people at the:<br>
+<br>
+90th percentile (‘high earners’) – they earn more than 90% of people<br>
+10th percentile (‘low earners’) – they earn less than 90% of people<br>
+<br>
+The ‘90:10 ratio’ is calculated as income at the 90th percentile divided by income at the 10th percentile. For example, a ratio of 2 means that people at the 90th percentile earn twice as much as people at the 10th percentile.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+This data uses the ‘90:10 ratio’ rather than the Gini coefficient (a commonly-used measure of income inequality). This is for ease of understanding. It uses data from ASHE instead of other sources because ASHE includes data on regional differences.
 
 # Type of data
-e.g. Survey data, weighted
+Survey data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.

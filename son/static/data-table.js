@@ -195,7 +195,7 @@ class DataTable {
                         for (let j = 0; j < rows[i].children.length; j++) {
                             if (rows[i].children[j].tagName == 'TD') {
                                 let th = document.createElement('th')
-                                th.innerHTML = rows[i].children[j].innerHTML
+                                th.innerHTML = rows[i].children[j].innerHTML.replace(/_/g, ' ')
                                 rows[i].children[j].parentNode.replaceChild(th, rows[i].children[j])
                             }
                             rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)

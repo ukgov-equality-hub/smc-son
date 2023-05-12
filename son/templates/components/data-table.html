@@ -13,7 +13,23 @@
     let tbl{{ id }} = false, dataTable{{ id }}
     window.document.addEventListener('DOMContentLoaded', function () {
         try {
-            if (!tbl{{ id }}) dataTable{{ id }} = new DataTable('table{{ id }}', null, { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10, '_columns': ['Ind_code', 'Ind_name', 'Value', 'Unit'] })
+            let options = {{ data | safe }}
+            if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
+                if ('datatable' in options) {
+                    options = options['datatable']
+                } else {
+                    const columns = []
+                    if ('xkey' in options) columns.push(options['xkey'])
+                    if ('ykey' in options) columns.push(options['ykey'])
+                    if ('zkey' in options) columns.push(options['zkey'])
+                    if ('group' in options) columns.push(options['group'])
+                    options = { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10, 'columns': columns }
+                }
+            } else {
+                options = { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10 }
+            }
+
+            if (!tbl{{ id }}) dataTable{{ id }} = new DataTable('table{{ id }}', null, options)
             tbl{{ id }} = true
         }
         catch (e) {}

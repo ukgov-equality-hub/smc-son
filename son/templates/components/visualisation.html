@@ -35,8 +35,8 @@
         {% if type == 'chart' %}
         {{ chart(id, data) }}
         {% else %}
-        <div class="grid grid2" style="height: 700px;">
-            <div style="height: 700px;">
+        <div class="grid grid2" style="height: 700px; padding: 10px; background: #fafafa;">
+            <div style="height: 700px; position: relative;">
                 {{ map(id, data) }}
             </div>
             <div style="height: 700px;">

@@ -5,24 +5,22 @@
         <button id="mapZoomOut{{ id }}">-</button>
     </div>
     <div id="map{{ id }}" class="map"></div>
-    <div class="map-tooltip"></div>
-</div>
-
-<div class="govuk-body">
-    <div id="map_legend{{ id }}" style="height: 40px; margin: 10px 0;"></div>
-    <div style="height: 37px;">
-        <img id="map_marker{{ id }}" src="/static/assets/images/down_arrow.svg" width="30" height="37" style="margin-left: 0; transition: margin 500ms; visibility: hidden;">
-    </div>
-    <div class="grid grid5" style="margin: 0 0 10px 0; height: 20px;">
-        <div style="background: #ca0020; vertical-align: middle;"></div>
-        <div style="background: #f4a582; vertical-align: middle;"></div>
-        <div style="background: #f7f7f7; vertical-align: middle;"></div>
-        <div style="background: #92c5de; vertical-align: middle;"></div>
-        <div style="background: #0571b0; vertical-align: middle;"></div>
-    </div>
-    <div class="grid grid2" style="margin: 10px 0;">
-        <div>Q1 - Bottom 20%</div>
-        <div style="text-align: right;">Q5 - Top 20%</div>
+    <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body" style="margin: 0; width: calc(100% - 40px); border: none; background: rgba(255, 255, 255, 0.8);">
+        <div id="map_legend{{ id }}" _style="height: 40px; margin: 10px 0;"></div>
+        <div style="height: 20px;">
+            <img id="map_marker{{ id }}" src="/static/assets/images/down_triangle.svg" width="30" height="16" style="margin-left: 0; transition: margin 500ms; visibility: hidden;">
+        </div>
+        <div class="grid grid5" style="margin: 0 0 10px 0; height: 20px;">
+            <div style="background: #ca0020; vertical-align: middle;"></div>
+            <div style="background: #f4a582; vertical-align: middle;"></div>
+            <div style="background: #f7f7f7; vertical-align: middle;"></div>
+            <div style="background: #92c5de; vertical-align: middle;"></div>
+            <div style="background: #0571b0; vertical-align: middle;"></div>
+        </div>
+        <div class="grid grid2" style="font-size: 1rem;">
+            <div>Q1 - Bottom 20%</div>
+            <div style="text-align: right;">Q5 - Top 20%</div>
+        </div>
     </div>
 </div>
 <script>

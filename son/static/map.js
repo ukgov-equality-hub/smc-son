@@ -143,7 +143,8 @@ class Choropleth {
         const style = {
             fontFamily: 'GDS Transport',
             fontSize: '14px',
-            overflow: 'visible'
+            overflow: 'visible',
+            backgroundColor: options.backgroundColor || '#fff'
         }
 
         this.dataUtils = new DataUtils()
@@ -226,6 +227,7 @@ class Choropleth {
                 .attr('id', `${self.el}__mapSVG`)
                 .attr('class', 'zoom1')
                 .style('transform', 'scale(1)')
+                .style('background', self.options.backgroundColor || style.backgroundColor)
                 .style('overscroll-behavior', 'none')
                 .on('click', resetZoom)
                 .on('mousemove', mouseMoved)
@@ -864,21 +866,6 @@ class Choropleth {
     }
 
     zoomTo(subunit) {
-
-
-                const [[x0, y0], [x1, y1]] = self.path.bounds(x)
-                self.svg.selectAll('path').transition()
-                self.svg.selectAll('path').attr('data-active', 'N')
-                //d3.select(this).attr('data-active', 'Y')
-
-                self.svg.transition().duration(750).call(
-                    self.zoom.transform,
-                    d3.zoomIdentity
-                        .translate(self.width / 2, self.height / 2)
-                        .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / self.width, (y1 - y0) / self.height)))
-                        .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
-                    d3.pointer(event, self.svg.node())
-                )
 
 
 
