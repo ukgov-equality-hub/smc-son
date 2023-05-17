@@ -23,13 +23,18 @@ Inequality in hourly pay was higher in England than Scotland, Wales and Northern
 Overview
 
 ## Chart
-{ "data": "/static/data/prototypes/DR11_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "outline", "_datatable": { "dataFormat": "array", "allowColumnResize": true, "allowFilter": true, "allowSort": true, "pageSize": 10, "columns": ["Time_period", "Value"] } }
+{ "title": "Distribution of earnings", "data": "/static/data/prototypes/DR11_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "outline", "_datatable": { "dataFormat": "array", "allowColumnResize": true, "allowFilter": true, "allowSort": true, "pageSize": 10, "columns": ["Time_period", "Value"] } }
 
 ## Section
-Breakdown by Area
+Breakdown by Country
 
-## Map
-{ "title": "", "map": "/static/data/Countries_December_2022_UK_BUC_7375516370003975813.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTRY20NM", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+## Chart
+{ "title": "Distribution of earnings", "data": "/static/data/prototypes/DR11_area-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
+
+
+## Map1
+<!--{ "title": "", "map": "/static/data/Country_(December_2021)_UK_BUC.json", "data": "/static/data/prototypes/DR11_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTRY21NM", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+-->
 
 ## Section
 Download the data

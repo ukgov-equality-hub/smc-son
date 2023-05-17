@@ -17,7 +17,7 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "data": "/static/data/prototypes/DR22_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
+{ "title": "Availability of high-quality school education", "data": "/static/data/prototypes/DR22_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
 
 ## Section
 Download the data

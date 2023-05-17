@@ -566,6 +566,12 @@ class Chart {
                     return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
                 } else if (textLabelFormat == 'number') {
                     return numberWithCommas(key)
+                } else if (isNumeric(key)) {
+                    if (parseInt(key, 10) != parseFloat(key, 10)) {
+                        return parseFloat(key, 10).toFixed(2)
+                    } else {
+                        return key
+                    }
                 }
                 return key
             }
@@ -660,8 +666,7 @@ class Chart {
                     }
                     return 'a' + S4() + S4()
                 }
-                const stroke_styles = { stroke: 'blue', 'stroke-width': 3 }
-                const fill_styles = { fill: 'blue', opacity: 0.5 }
+
                 const type = d3.select(chart).node().tagName
                 let wrapper = type === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
                 const svgs = d3.select(chart).selectAll('svg')
@@ -672,10 +677,9 @@ class Chart {
                     const item = d3.select(this)
                     if (item.attr('fill') === null || item.attr('fill') === 'none') {
                         item.style('pointer-events', 'visibleStroke')
-                        if (styles === undefined) styles = stroke_styles
                     }
                 })
-                if (styles === undefined) styles = fill_styles
+                if (styles === undefined) styles = {}
 
                 const tip = wrapper
                     .selectAll('.hover')
@@ -683,7 +687,7 @@ class Chart {
                     .join('g')
                     .attr('class', 'hover')
                     .style('pointer-events', 'none')
-                    .style('text-anchor', 'middle')
+                    .style('text-anchor', 'start')
 
                 const id = idGenerator()
 
@@ -699,8 +703,8 @@ class Chart {
                     if (text) {
                         parent
                             .attr('data-title', text).classed('has-title', true)
-                            .attr('data-name', `${data[orientation == 'y' ? xkey : ykey]}${zkey ? ' / ' + data[zkey] : ''}`)
-                            .attr('data-group', data[group] || '')
+                            .attr('data-name', `${data[orientation == 'y' ? xkey : ykey]}`)
+                            .attr('data-group', data[group] || zkey ? data[zkey] : '')
                             .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                             .attr('data-value', val)
                             .attr('data-quantile', x => {
@@ -724,9 +728,9 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            const text = `${this.getAttribute('data-name')}: ${this.getAttribute('data-value')}`
+                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'))}`
                             const pointer = d3.pointer(event, wrapper.node())
-                            if (text) tip.call(hover, pointer, text.split('\n'))
+                            if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
 
                             d3.select(this).raise()
@@ -745,7 +749,7 @@ class Chart {
                             d3.select(this).lower()
                         })
                 })
-                wrapper.on('touchstart', () => tip.selectAll('*').remove())
+                wrapper.on('touchstart', _ => tip.selectAll('*').remove())
 
                 document.head.insertAdjacentHTML('beforeend', `
                     <style>
@@ -857,7 +861,7 @@ class Chart {
             tip.selectAll('*').remove()
 
             tip
-                .style('text-anchor', 'middle')
+                .style('text-anchor', 'start')
                 .style('pointer-events', 'none')
                 .attr('transform', `translate(${pos[0]}, ${pos[1] + 7})`)
                 .selectAll('text')
@@ -865,8 +869,9 @@ class Chart {
                 .join('text')
                 .style('dominant-baseline', 'ideographic')
                 .text(x => x)
-                .attr('y', (x, i) => (i - (text.length - 1)) * 15 - vertical_offset)
-                .style('font-weight', (x, i) => (i === 0 ? 'bold' : 'normal'))
+                .attr('y', (_, i) => { return (i - (text.length - 1)) * 20 - vertical_offset })
+                .style('font-weight', (x, i) => { return (x.indexOf(':') > -1 ? 'bold' : 'normal') })
+                .style('color', x => { return x.substr(0, 1) == '(' && x.substr(-1) == ')' ? '#999' : '' })
 
             const bbox = tip.node().getBBox()
             tip
