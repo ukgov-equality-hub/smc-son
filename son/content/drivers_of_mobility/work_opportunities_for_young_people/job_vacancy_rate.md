@@ -17,7 +17,7 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "title": "Job vacancy rate", "data": "/static/data/prototypes/DR31_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "Year", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade" }
+{ "title": "Job vacancy rate", "data": "/static/data/prototypes/DR31_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade" }
 
 ## Section
 Download the data

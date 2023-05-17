@@ -150,7 +150,8 @@ class Chart {
         const grid = options.grid == false ? false : true
         let xgrid = options.xgrid == false ? false : grid
         let ygrid = options.ygrid == false ? false : grid
-        let ticks = options.ticks == false ? false : options.ticks
+        let xticks = options.xticks == false ? false : options.xticks
+        let yticks = options.yticks == false ? false : options.yticks
         const legend = options.legend || false
         const swatchSize = 20
         const margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
@@ -277,6 +278,7 @@ class Chart {
                 }
                 if (limit > 0) chartData = chartData.slice(0 - limit)
                 if (!filteredData) self.chartData = chartData
+                domain = domain.filter(function (value, index, array) { return array.indexOf(value) === index })
 
                 const chartOptions = {
                     x: xkey,
@@ -307,10 +309,10 @@ class Chart {
                     marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
-                    ticks = getScaledTicks(dataFormat)
+                    xticks = getScaledTicks(dataFormat)
                     xgrid = false
                     ygrid = false
-                    domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat) // getScaledDomain(ticks)
+                    domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
                     let d = chartData.filter(x => x[ykey] == yvalue)
                     if (d) {
                         let q = getQuantile(domain, d[0][xkey])
@@ -386,9 +388,9 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     lineWidth: rotateDomainLabels ? undefined : 6,
-                    ticks: ticks ? ticks : undefined,
+                    ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => x.toString()
+                    tickFormat: x => orientation != 'y' ? getLabelText(x) : x.toString()
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
@@ -396,12 +398,13 @@ class Chart {
                     label: ytitle,
                     labelAnchor: 'center',
                     labelOffset: 50,
-                    ticks: null
+                    ticks: yticks ? yticks : undefined,
+                    tickFormat: x => orientation == 'y' ? getLabelText(x) : x.toString()
                 }))
             }
 
             if (['quartile', 'quintile', 'decile'].includes(type)) {
-                xOptions = { axis: null, domain: domain, ticks: 5 }
+                xOptions = { axis: null, domain: domain, ticks: getScaledTicks(type) }
                 yOptions = { axis: null, domain: [yvalue], ticks: 1 }
             } else if (!group) {
                 xOptions['domain'] = domain
@@ -409,6 +412,12 @@ class Chart {
             } else {
                 xOptions['domain'] = domain
                 yOptions['group'] = group
+            }
+            if (isNumeric(xticks)) {
+                xOptions['domain'] = [
+                    isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
+                    isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
+                ]
             }
             if (self.debug) console.log('group', group, range, domain, categories)
 
@@ -557,23 +566,6 @@ class Chart {
 
             function getLabelColour(key) {
                 return labelColour /*labelScheme[colourScheme.indexOf(color(key))]*/
-            }
-
-            function getLabelText(key) {
-                if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
-                    return `${key}%`
-                } else if (textLabelFormat == 'currency' || ['£', '$'].includes(scale)) {
-                    return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
-                } else if (textLabelFormat == 'number') {
-                    return numberWithCommas(key)
-                } else if (isNumeric(key)) {
-                    if (parseInt(key, 10) != parseFloat(key, 10)) {
-                        return parseFloat(key, 10).toFixed(2)
-                    } else {
-                        return key
-                    }
-                }
-                return key
             }
 
             function getLabelPos(x) {
@@ -830,10 +822,39 @@ class Chart {
             return unsorted.sort(sortKeys(Array.isArray(keys) ? keys : [keys])).map(x => x[xkey])
         }
 
+        function formatNumber(x, dp = 2) {
+            if (isNumeric(x)) {
+                if (parseInt(x, 10) != parseFloat(x, 10)) {
+                    return parseFloat(x, 10).toFixed(dp).toString()
+                } else {
+                    return parseInt(x, 10).toString()
+                }
+            }
+            return x.toString()
+        }
+
+        function getLabelText(key) {
+            if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
+                return `${key}%`
+            } else if (textLabelFormat == 'currency' || ['£', '$'].includes(scale)) {
+                return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+            } else if (textLabelFormat == 'number') {
+                return numberWithCommas(key)
+            } else {
+                return formatNumber(key, 2)
+            }
+        }
+
         function maxLabelLength(data, key, style) {
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
-            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString(), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(max, style) * 1.1
+            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
+
+
+console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] }))
+
+
+
+            return labelLength(getLabelText(max), style) * 1.1
         }
 
         function labelLength(text, style) {
