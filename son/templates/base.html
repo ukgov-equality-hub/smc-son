@@ -38,6 +38,16 @@
     <script src="{{ url_for('static', filename='data-utils.js') }}"></script>
     <script src="{{ url_for('static', filename='map.js') }}"></script>
     <script src="{{ url_for('static', filename='chart.js') }}"></script>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+
+    <script src="https://d3js.org/d3-geo.v3.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.19/topojson.min.js"></script>
+
     <script src="{{ url_for('static', filename='data-table.js') }}"></script>
 </head>
 
@@ -103,7 +113,7 @@
         </div>
         {% endif %}
 
-        <main id="main-content" role="main" class="govuk-main-wrapper">
+        <main id="main-content" role="main" class="govuk-main-wrapper" style="padding-left: 20px;">
             {% with messages = get_flashed_messages(category_filter=["error"]) %}
                 {% if messages %}
                     <div class="govuk-grid-row">

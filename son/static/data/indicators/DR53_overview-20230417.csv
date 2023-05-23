@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR53","FTE university research students","National",NA,"United Kingdom",2015,NA,NA,"Total",NA,NA,1,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","National",NA,"United Kingdom",2016,NA,NA,"Total",NA,NA,1.01376146788991,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","National",NA,"United Kingdom",2017,NA,NA,"Total",NA,NA,1.03516819571865,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","National",NA,"United Kingdom",2018,NA,NA,"Total",NA,NA,1.03822629969419,NA,NA,NA,NA,"Number of students",NA

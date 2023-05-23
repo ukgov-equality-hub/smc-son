@@ -3,6 +3,8 @@ from pathlib import Path
 import requests
 import csv
 from flask import Blueprint, current_app, render_template, request, session, Response, abort
+import markdown
+from bs4 import BeautifulSoup
 #from son.catalogue.forms import Form
 from son.utils.menu import menu, get_item_title
 from son.utils.logger import LogLevel, Logger
@@ -12,6 +14,23 @@ logger = Logger()
 
 
 def get_content(domain, subdomain=None, indicator=None):
+    def format_html(html):
+        #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])
+        #return html
+        html = markdown.markdown(html, extensions=['nl2br', 'attr_list', 'sane_lists'])
+
+        soup = BeautifulSoup(html, 'html.parser')
+        for el in soup.find_all('p'):
+            el['class'] = 'govuk-body'
+        for el in soup.find_all('ul'):
+            el['class'] = 'govuk-list'
+        for el in soup.find_all('ol'):
+            el['class'] = 'govuk-list'
+        for el in soup.find_all('a'):
+            el['class'] = 'govuk-link'
+
+        return str(soup)
+
     content = []
     if indicator is not None:
         file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}.md"
@@ -27,12 +46,12 @@ def get_content(domain, subdomain=None, indicator=None):
         for line in f:
             if len(line) > 2 and line[:2] == '##':
                 if current_section != '':
-                    content.append([current_section, current_content])
+                    content.append(['HTML' if current_section == 'Text' else current_section, format_html(current_content) if current_section == 'Text' else current_content])
                     current_section = ''
                     current_content = ''
                 current_section = line[2:].strip()
             elif line.strip() != '':
-                if current_content != '': current_content += "\r\n"
+                if current_content != '': current_content += "\n"
                 current_content += line.strip()
 
         if current_section != '':
@@ -45,7 +64,7 @@ def get_content(domain, subdomain=None, indicator=None):
             current_subsection = ''
             current_subcontent = ''
             current_section = []
-            items = content[index][1].split("\r\n")
+            items = content[index][1].split("\n")
             for item in items:
                 if len(item) > 1 and item[:1] == '#':
                     if current_subsection != '':
@@ -57,13 +76,13 @@ def get_content(domain, subdomain=None, indicator=None):
                             current_section.append(['Map', current_subcontent])
                         else:
                             current_section.append(['Subtitle', current_subsection])
-                            current_section.append(['Text', current_subcontent])
+                            current_section.append(['HTML', format_html(current_subcontent)])
 
                         current_subsection = ''
                         current_subcontent = ''
                     current_subsection = item[1:].strip()
                 elif item.strip() != '':
-                    if current_subcontent != '': current_subcontent += "\r\n"
+                    if current_subcontent != '': current_subcontent += "\n"
                     current_subcontent += item.strip()
 
             if current_subsection.upper() == 'TITLE':
@@ -74,7 +93,7 @@ def get_content(domain, subdomain=None, indicator=None):
                 current_section.append(['Map', current_subcontent])
             elif current_subsection != '':
                 current_section.append(['Subtitle', current_subsection])
-                current_section.append(['Text', current_subcontent])
+                current_section.append(['HTML', format_html(current_subcontent)])
 
             content[index][1] = current_section
 

@@ -1,0 +1,81 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR41","Civic participation","National","E92000001","England","2013/14",NA,"Adults (16+)","Total",NA,NA,38.560886,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2014/15",NA,"Adults (16+)","Total",NA,NA,35.365065,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2015/16",NA,"Adults (16+)","Total",NA,NA,33.334913,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2016/17",NA,"Adults (16+)","Total",NA,NA,41.122823,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2017/18",NA,"Adults (16+)","Total",NA,NA,37.8274397401941,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2018/19",NA,"Adults (16+)","Total",NA,NA,34.3507416483112,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2019/20",NA,"Adults (16+)","Total",NA,NA,40.7,NA,39.5,41.9,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2020/21",NA,"Adults (16+)","Total",NA,NA,41.255972522874,NA,40.0826954890883,42.4392676391549,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2014",NA,"Adults (16+)","Total",NA,NA,34.609020065889,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2015",NA,"Adults (16+)","Total",NA,NA,34.629704956202,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2016",NA,"Adults (16+)","Total",NA,NA,27.689816093134,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2017",NA,"Adults (16+)","Total",NA,NA,34.8714749443642,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2018",NA,"Adults (16+)","Total",NA,NA,32.322431048844,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2019",NA,"Adults (16+)","Total",NA,NA,31.8209354194766,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2020",NA,"Adults (16+)","Total",NA,NA,36.8,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North East","2021",NA,"Adults (16+)","Total",NA,NA,37.1851052097434,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2014",NA,"Adults (16+)","Total",NA,NA,38.6596882244679,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2015",NA,"Adults (16+)","Total",NA,NA,34.2591497867625,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2016",NA,"Adults (16+)","Total",NA,NA,32.5097845580692,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2017",NA,"Adults (16+)","Total",NA,NA,40.1495037876989,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2018",NA,"Adults (16+)","Total",NA,NA,37.8366545878994,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2019",NA,"Adults (16+)","Total",NA,NA,32.26682600081,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2020",NA,"Adults (16+)","Total",NA,NA,41.6,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"North West","2021",NA,"Adults (16+)","Total",NA,NA,38.8197563182765,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2014",NA,"Adults (16+)","Total",NA,NA,34.3140985527928,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2015",NA,"Adults (16+)","Total",NA,NA,36.9598991695382,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2016",NA,"Adults (16+)","Total",NA,NA,33.1786584056655,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2017",NA,"Adults (16+)","Total",NA,NA,41.864636350179,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2018",NA,"Adults (16+)","Total",NA,NA,30.9421711753258,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2019",NA,"Adults (16+)","Total",NA,NA,36.2036027733437,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2020",NA,"Adults (16+)","Total",NA,NA,32.4,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"Yorkshire and The Humber","2021",NA,"Adults (16+)","Total",NA,NA,38.107229919205,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2014",NA,"Adults (16+)","Total",NA,NA,41.0406339456334,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2015",NA,"Adults (16+)","Total",NA,NA,36.2069680761878,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2016",NA,"Adults (16+)","Total",NA,NA,26.5891365561455,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2017",NA,"Adults (16+)","Total",NA,NA,38.3387149014818,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2018",NA,"Adults (16+)","Total",NA,NA,36.5268977772965,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2019",NA,"Adults (16+)","Total",NA,NA,30.6051731758327,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2020",NA,"Adults (16+)","Total",NA,NA,34.4,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East Midlands","2021",NA,"Adults (16+)","Total",NA,NA,36.5422676245493,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2014",NA,"Adults (16+)","Total",NA,NA,39.7519112606243,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2015",NA,"Adults (16+)","Total",NA,NA,28.5964481516963,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2016",NA,"Adults (16+)","Total",NA,NA,33.4137710573519,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2017",NA,"Adults (16+)","Total",NA,NA,37.5453587809426,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2018",NA,"Adults (16+)","Total",NA,NA,35.747692319019,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2019",NA,"Adults (16+)","Total",NA,NA,27.3065865699626,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2020",NA,"Adults (16+)","Total",NA,NA,38.9,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"West Midlands","2021",NA,"Adults (16+)","Total",NA,NA,40.196207064827,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2014",NA,"Adults (16+)","Total",NA,NA,36.6857998487202,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2015",NA,"Adults (16+)","Total",NA,NA,35.2569094812323,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2016",NA,"Adults (16+)","Total",NA,NA,34.8302656061965,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2017",NA,"Adults (16+)","Total",NA,NA,39.2808487401206,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2018",NA,"Adults (16+)","Total",NA,NA,35.6592176638367,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2019",NA,"Adults (16+)","Total",NA,NA,34.6952267413873,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2020",NA,"Adults (16+)","Total",NA,NA,39.4,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"East of England","2021",NA,"Adults (16+)","Total",NA,NA,39.2631271659565,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2014",NA,"Adults (16+)","Total",NA,NA,38.5678660841165,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2015",NA,"Adults (16+)","Total",NA,NA,35.3046125703961,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2016",NA,"Adults (16+)","Total",NA,NA,36.9813569370622,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2017",NA,"Adults (16+)","Total",NA,NA,44.3368584044616,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2018",NA,"Adults (16+)","Total",NA,NA,39.1765890135581,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2019",NA,"Adults (16+)","Total",NA,NA,37.131439456011,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2020",NA,"Adults (16+)","Total",NA,NA,44.4,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"London","2021",NA,"Adults (16+)","Total",NA,NA,47.348389533265,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2014",NA,"Adults (16+)","Total",NA,NA,38.9626875501435,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2015",NA,"Adults (16+)","Total",NA,NA,38.1096185309331,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2016",NA,"Adults (16+)","Total",NA,NA,34.1736110908038,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2017",NA,"Adults (16+)","Total",NA,NA,43.5328991265231,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2018",NA,"Adults (16+)","Total",NA,NA,42.3968354863707,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2019",NA,"Adults (16+)","Total",NA,NA,35.7816417447393,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2020",NA,"Adults (16+)","Total",NA,NA,45.6,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South East","2021",NA,"Adults (16+)","Total",NA,NA,43.2321890732165,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2014",NA,"Adults (16+)","Total",NA,NA,42.5717422065474,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2015",NA,"Adults (16+)","Total",NA,NA,37.6663692589985,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2016",NA,"Adults (16+)","Total",NA,NA,34.3732165712375,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2017",NA,"Adults (16+)","Total",NA,NA,43.892938259845,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2018",NA,"Adults (16+)","Total",NA,NA,43.229843776255,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2019",NA,"Adults (16+)","Total",NA,NA,39.856142528312,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2020",NA,"Adults (16+)","Total",NA,NA,43.9,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","ITL1",NA,"South West","2021",NA,"Adults (16+)","Total",NA,NA,43.8077128534114,NA,NA,NA,NA,"Percent",NA

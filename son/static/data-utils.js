@@ -4,6 +4,7 @@ class DataUtils {
         this.data = {
             'headers': [],
             'data': [],
+            'url': '',
             'type': this.type,
             'tag': '',
             'sort': -1,
@@ -32,6 +33,7 @@ class DataUtils {
         } else if (this.isJSON(data)) {
             return this.loadDataFromString(data)
         } else if (this.isURL(data)) {
+            this.data.url = data
             return this.loadDataFromURL(data)
         } else if (this.isHTMLNode(data)) {
             return this.loadDataFromElement(data, true)
@@ -90,10 +92,10 @@ class DataUtils {
         if (this.isCSV(str)) {
             if (this.type == 'json') {
                 const result = this.csv2json(str)
-                headers = result.headers
+                headers = this.cleanCSV(result.headers)
                 data = result.data
             } else {
-                headers = this.headersFromCSV(str)
+                headers = this.cleanCSV(this.headersFromCSV(str))
                 data = str
             }
         } else if (this.isJSON(str)) {
@@ -187,6 +189,14 @@ class DataUtils {
         return !!document.getElementById(data)
     }
 
+    cleanCSV(data) {
+        return data.map(x => this.stripQuote(x))  
+    }
+
+    stripQuote(str) {
+        return str.substr(0, 1) == '"' && str.substr(-1) == '"' ? str.substr(1, str.length - 2) : str
+    }
+
     csv2json(data) {
         const csvFormat = this.isCSV(data)
         if (!csvFormat) return data
@@ -196,13 +206,14 @@ class DataUtils {
         const headers = this.substituteCommas(rows[0]).split(csvFormat.delimiter)
         for (let i = 1; i < rows.length; i++) {
             const row = {}
-            const currentline = this.substituteCommas(rows[i]).split(csvFormat.delimiter)
-            for (let j = 0; j < headers.length; j++) {
-                let str = currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : ''
-                if (str.substr(0, 1) == '"' && str.substr(-1) == '"') str = str.substr(1, str.length - 2)
-                row[headers[j].replace(/###/g, csvFormat.delimiter)] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+            if ((`${rows[i]} `).trim() != '') {
+                const currentline = this.substituteCommas(rows[i]).split(csvFormat.delimiter)
+                for (let j = 0; j < headers.length; j++) {
+                    let str = this.stripQuote(currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : '')
+                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+                }
+                result.push(row)
             }
-            result.push(row)
         }
 
         return {
@@ -288,6 +299,30 @@ class DataUtils {
         return data
     }
 
+    sortDataNumeric(data, sort, sortOrder) {
+        const headers = this.data['headers']
+
+        if (sort > -1) {
+            if (this.type == 'json') {
+                if (sortOrder == 'asc') {
+                    data.sort((a, b) => a[headers[sort]] - b[headers[sort]])
+                } else {
+                    data.sort((a, b) => b[headers[sort]] - a[headers[sort]])
+                }
+            } else {
+                if (sortOrder == 'asc') {
+                    data.sort((a, b) => a[sort] - b[sort])
+                } else {
+                    data.sort((a, b) => b[sort] - a[sort])
+                }
+            }
+        }
+
+        this.data['sort'] = sort
+        this.data['sortOrder'] = sortOrder == 'asc' ? 'desc' : 'asc'
+        return data
+    }
+
     filterData(data, filters) {
         const headers = this.data['headers']
 
@@ -360,15 +395,15 @@ class DataUtils {
         let blob
         if (format == 'csv') {
             if (this.type == 'json') {
-                blob = new Blob(json2csv(data), { 'type': 'text/csv' })
+                blob = new Blob([this.json2csv(data).join('\n')], { 'type': 'text/csv', endings: 'native' })
             } else {
-                blob = new Blob(data, { 'type': 'text/csv' })
+                blob = new Blob([data.join('\n')], { 'type': 'text/csv', endings: 'native' })
             }
         } else {
             if (this.type == 'json') {
                 blob = new Blob(data, { 'type': 'text/json' })
             } else {
-                blob = new Blob(csv2json(data), { 'type': 'text/json' })
+                blob = new Blob(this.csv2json(data), { 'type': 'text/json' })
             }
         }
 
@@ -394,8 +429,8 @@ class DataUtils {
         return str
     }
 
-    isNumeric(n) {
-        return !isNaN(parseFloat(n)) && isFinite(n)
+    isNumeric(x) {
+        return !isNaN(parseFloat(x)) && isFinite(x)
     }
 
     substituteCommas(str) {

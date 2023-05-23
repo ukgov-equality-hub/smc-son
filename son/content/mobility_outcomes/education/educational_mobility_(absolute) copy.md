@@ -12,14 +12,14 @@ Data on how people's socio-economic background affects their qualification level
 ALL UK
 
 # Chart
-{ "data": "/static/data/MO3.1a.csv", "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Sex
 
 # Map
-{ "title": "test title", "map": "/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC_V2.json", "data": "/static/data/DR32_region.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+{ "title": "", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/DR32_region.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
 
 # Random text
 Random text goes here...
@@ -55,7 +55,7 @@ In 2021, 71% of 25 to 29 year olds from professional backgrounds had a first or 
 The differences were greater for postgraduate degrees than for first degrees.
 
 ## Chart
-{ "data": "/static/data/MO3.1a.csv", "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 
 ## Text

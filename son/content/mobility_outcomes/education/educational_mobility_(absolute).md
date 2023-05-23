@@ -20,35 +20,35 @@ In 2021, 71% of 25 to 29 year olds from professional backgrounds had a first or 
 The differences were greater for postgraduate degrees than for first degrees.
 
 ## Section
-By parents qualifications
+Breakdown by parents qualifications
 
 ## Chart
-{ "data": "/static/data/MO3.1a.csv", "width": 775, "height": 450, "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "width": 775, "height": 450, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Text
 Young people from professional backgrounds were 2.5 times more likely to have a degree than those from lower working class backgrounds. The rate went up to 3.5 times for postgraduate degrees alone.
 
 ## Section
-By sex
+Breakdown by sex
 
 ## Grid
 # Chart
-{ "data": "/static/data/MO3.1b_male.csv", "width": 375, "height": 350, "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rotateDomainLabels": true, "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_male.csv", "width": 375, "height": 350, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rotateDomainLabels": true, "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 # Chart
-{ "data": "/static/data/MO3.1b_female.csv", "width": 375, "height": 350, "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_female.csv", "width": 375, "height": 350, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Section
-By ethnicity
+Breakdown by ethnicity
 
 ## Chart
-{ "data": "/static/data/MO3.1c.csv", "width": 775, "height": 450, "title": "Fancy chart", "type": "bary", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Ethnicity", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1c.csv", "width": 775, "height": 450, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Ethnicity", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Section
-By area
+Breakdown by area
 
 ## Chart
-{ "data": "/static/data/MO3.1d.csv", "width": 775, "height": 450, "title": "Fancy chart", "type": "liney", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Area", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1d.csv", "width": 775, "height": 450, "title": "", "type": "liney", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Area", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.

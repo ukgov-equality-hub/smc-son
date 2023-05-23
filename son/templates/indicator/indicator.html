@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
-{% from 'components/chart.html' import chart %}
-{% from 'components/map.html' import map %}
+{% from 'components/visualisation.html' import visualisation %}
+{% from 'components/placeholder.html' import placeholder %}
 {% set ns = namespace(counter1=0, counter2=0) %}
 {% block title %}Demo{% endblock %}
 
@@ -9,15 +9,24 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-grid-row-full-width">
+<div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
-    {% for item in content %}
-    {% if item[0] == 'Section' %}
-    <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
-    {% endif %}
-    {% endfor %}
+    <ol class="govuk-list govuk-list--number">
+        {% for item in content %}
+        {% if item[0] == 'Section' %}
+        <li>
+            <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
+        </li>
+        {% endif %}
+        {% if item[0] == 'About' %}
+        <li>
+            <a href="#About" class="govuk-link" style="display: block;">About</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ol>
 
     {% if tabs %}
     <div class="govuk-tabs" data-module="govuk-tabs">
@@ -48,38 +57,23 @@
             {% endif %}
 
             {% if subitem[0] == 'Chart' %}
-            <div style="height: 500px;">
-                {{ chart(ns.counter2, subitem[1]) }}
+            <div style="_height: 500px;">
+                {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
             </div>
             {% endif %}
 
             {% if subitem[0] == 'Map' %}
-            <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute | safe }}</h3>
-            <div class="grid grid2">
-                <div>
-                    {{ map(ns.counter2, subitem[1]) }}
-                </div>
-                <div>
-                    {{ chart(ns.counter2, subitem[1]) }}
-                </div>
+            <div style="height: 900px;">
+                {{ visualisation(ns.counter2, 'map', subitem[1]) }}
             </div>
-            <script>
-                function mapselect(a) {
-                    if (typeof a !== 'undefined') {
-                        document.getElementById('map_legend{{ ns.counter2 }}').innerText = `${a.name}: ${a.value}`
-                        document.getElementById('map_marker{{ ns.counter2 }}').style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
-                        map{{ ns.counter2 }}.highlight(a.name)
-                        chart{{ ns.counter2 }}.highlight(a.name)
-                    } else {
-                        map{{ ns.counter2 }}.resetHighlight()
-                        chart{{ ns.counter2 }}.resetHighlight()
-                    }
-                }
-            </script>
             {% endif %}
 
             {% if subitem[0] == 'Text' %}
             <p class="govuk-body">{{ subitem[1] | safe }}</p>
+            {% endif %}
+
+            {% if subitem[0] == 'HTML' %}
+            {{ subitem[1] | safe }}
             {% endif %}
             {% set ns.counter2 = ns.counter2 + 1 %}
             {% endfor %}
@@ -94,7 +88,7 @@
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
 
     {% if item[0] == 'Section' %}
-    <hr>
+    <hr style="margin: 40px 0;">
     <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
@@ -106,9 +100,19 @@
     <p class="govuk-body">{{ item[1] | safe }}</p>
     {% endif %}
 
+    {% if item[0] == 'HTML' %}
+    {{ item[1] | safe }}
+    {% endif %}
+
     {% if item[0] == 'Chart' %}
-    <div style="max-width: 775px;">
-        {{ chart(ns.counter1, item[1]) }}
+    <div style="_height: 500px;">
+        {{ visualisation(ns.counter1, 'chart', item[1]) }}
+    </div>
+    {% endif %}
+
+    {% if item[0] == 'Map' %}
+    <div style="height: 900px;">
+        {{ visualisation(ns.counter1, 'map', item[1]) }}
     </div>
     {% endif %}
 
@@ -116,8 +120,8 @@
     <div class="grid" style="max-width: 775px;">
         {% for subitem in item[1] %}
         {% if subitem[0] == 'Chart' %}
-        <div style="height: 500px;">
-            {{ chart(ns.counter2, subitem[1]) }}
+        <div style="_height: 500px;">
+            {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
         </div>
         {% endif %}
         {% set ns.counter2 = ns.counter2 + 1 %}
@@ -125,21 +129,57 @@
     </div>
     {% endif %}
 
+    {% if item[0] == 'Placeholder' %}
+    <div style="_height: 500px;">
+        {{ placeholder(ns.counter1, item[1]) }}
+    </div>
+    {% endif %}
+
+    {% if item[0] == 'About' %}
+    <hr style="margin: 40px 0;">
+    <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
+    {% set ns.counter2 = 0 %}
+    {% for subitem in item[1] %}
+    {% if subitem[0] == 'HTML' %}
+    {{ subitem[1] | safe }}
+    {% else %}
+    <p class="govuk-body"{% if ns.counter2 % 2 == 0 %} style="margin-bottom: 5px; font-weight: bold;"{% endif %}>{{ subitem[1] | safe }}</p>
+    {% endif %}
+    {% set ns.counter2 = ns.counter2 + 1 %}
+    {% endfor %}
+    {% endif %}
+
     {% set ns.counter1 = ns.counter1 + 1 %}
     {% endif %}
     {% endfor %}
 </div>
 <script>
+    let map, chart
+    function mapselect(a) {
+        try {
+            const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
+            map = eval(`map${el}`)
+            chart = eval(`chart${el}`)
+
+            if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
+                document.getElementById(`map_marker${el}`).style.visibility = 'visible'
+                document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
+                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
+                map.highlight(a.name)
+                chart.highlight(a.name)
+            } else {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
+                document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
+                map.resetHighlight()
+                chart.resetHighlight()
+            }
+        }
+        catch (e) {}
+    }
+
     (function() {
-/*
-https://socialmobilityworks.org/
-https://medium.com/government-equalities
-https://leadersaschangeagents.com/
-https://government-equalities-office.shinyapps.io/lgbt-survey-2017/
-https://www.womensbusinesscouncil.co.uk/
-https://cred.independent-commission.uk/
-New website for SMC
-*/
+        //
     })()
 </script>
 {% endblock %}
