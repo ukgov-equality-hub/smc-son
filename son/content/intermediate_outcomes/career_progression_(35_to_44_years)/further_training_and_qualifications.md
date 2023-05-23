@@ -16,22 +16,14 @@ Placeholder summary main findings
 ## Section
 Overview
 
-## Placeholder
-
-Chart
-{ "data": "/static/data/prototypes/IN41_overview-20230420.csv", "_width": 1575, "height": 450, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+## Chart
+{ "title": "Acquisition of further training and qualifications", "data": "/static/data/indicators/IN41_overview-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
 
 ## Section
 Download the data
 
 ## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download the data (CSV)](/static/data/indicators/2023-03-27 IN41.csv){: target="_blank" }
 
 ## About
 # Data source(s)

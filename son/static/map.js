@@ -126,6 +126,7 @@ class Choropleth {
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        const scale = ['absolute', 'relative', 'percent', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
         let domains = options.domains || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
@@ -240,8 +241,10 @@ class Choropleth {
                 .attr('id', `${self.el}__map`)
             mapOutline = self.svg.append('g')
                 .attr('id', `${self.el}__outline`)
+                .attr('class', 'outlines')
             mapNames = self.svg.append('g')
                 .attr('id', `${self.el}__names`)
+                .attr('class', 'names')
 
             info = d3.select(`#${self.el}`).append('div')
                 .attr('class', 'info')
@@ -475,8 +478,6 @@ class Choropleth {
                 .append('path')
                 .attr('d', self.path)
                 .style('fill', 'none')
-                .style('stroke', 'red')
-                .style('stroke-width', '2')
                 .style('opacity', 0)
                 .attr('data-name', x => {
                     return getProperty(x, areaField)
@@ -678,9 +679,32 @@ class Choropleth {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
 
+        function formatNumber(x, dp = 2) {
+            if (isNumeric(x)) {
+                if (parseInt(x, 10) != parseFloat(x, 10)) {
+                    return parseFloat(x, 10).toFixed(dp).toString()
+                } else {
+                    return parseInt(x, 10).toString()
+                }
+            }
+            return x.toString()
+        }
+
+        function getLabelText(key) {
+            if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
+                return `${key}%`
+            } else if (textLabelFormat == 'currency' || ['£', '$'].includes(scale)) {
+                return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+            } else if (textLabelFormat == 'number') {
+                return numberWithCommas(key)
+            } else {
+                return formatNumber(key, 2)
+            }
+        }
+
         function maxLabelLength(data, key, style) {
-            let max = data.map(x => { return { 'text': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString(), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length } }).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(max, style) * 1.1
+            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
+            return labelLength(getLabelText(max), style) * 1.1
         }
 
         function labelLength(text, style) {
@@ -789,6 +813,13 @@ class Choropleth {
         }
 
         function resetHighlight(event) {
+            if (self.onRollover) {
+                try {
+                    window[self.onRollover]({ map: self, name: '' })
+                }
+                catch (e) {}
+            }
+
             self.resetHighlight()
         }
 

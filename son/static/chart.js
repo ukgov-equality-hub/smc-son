@@ -204,9 +204,10 @@ class Chart {
 
             let categories = []
             if (zkey) {
-                categories = Array.from(new Set(data.flat().map(x => x[zkey])))
+                categories = Array.from(new Set(data.flat().map(x => x[zkey].toString())))
             } else if (group) {
-                categories = Array.from(new Set(data.flat().map(x => x[group])))
+                //categories = Array.from(new Set(data.flat().map(x => x[group].toString())))
+                categories = Array.from(new Set(data.flat().map(x => x[orientation == 'y' ? xkey : ykey].toString())))
             }
 
             let color
@@ -325,12 +326,13 @@ class Chart {
                         const confidenceIntervalOptions = {
                             x: xkey,
                             y1: 'lci',
-                            y2: 'uci'
+                            y2: 'uci',
+                            title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                         }
 
                         marks.push(Plot.ruleX(chartData, confidenceIntervalOptions))
-                        marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', _fill: '#ccc', rotate: 90 }))
-                        marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', _fill: '#ccc', rotate: 90 }))
+                        marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, _fill: '#ccc', rotate: 90 }))
+                        marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, _fill: '#ccc', rotate: 90 }))
                     } else {
                         const confidenceIntervalOptions = {
                             y: ykey,
@@ -392,6 +394,14 @@ class Chart {
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: x => orientation != 'y' ? getLabelText(x) : x.toString()
                 }))
+            } else if (group && orientation == 'y') {
+                marks.push(Plot.axisFx({
+                    anchor: 'bottom',
+                    lineWidth: rotateDomainLabels ? undefined : 8,
+                    ticks: xticks ? xticks : undefined,
+                    tickRotate: rotateDomainLabels ? 90 : undefined,
+                    tickFormat: x => orientation != 'y' ? getLabelText(x) : x.toString()
+                }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
                 marks.push(Plot.axisY({
@@ -414,10 +424,13 @@ class Chart {
                 yOptions['group'] = group
             }
             if (isNumeric(xticks)) {
-                xOptions['domain'] = [
-                    isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
-                    isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
-                ]
+                if (type == 'line' || type == 'linex' || type == 'liney') {
+                    xOptions['domain'] = [
+                        isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
+                        isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
+                    ]
+                } else if (type == 'bar' || type == 'barx' || type == 'bary') {
+                }
             }
             if (self.debug) console.log('group', group, range, domain, categories)
 
@@ -431,8 +444,8 @@ class Chart {
                     label: null
                 } : undefined,
                 fx: orientation == 'y' && group ? {
-                    label: null,
                     domain: categories,
+                    label: null,
                     tickFormat: x => x.toString(),
                     tickRotate: rotateDomainLabels ? 90 : undefined
                 } : undefined,
@@ -461,6 +474,8 @@ class Chart {
                 div.removeChild(div.getElementsByTagName('svg')[0])
             }
             div.insertBefore(plot, div.firstChild)
+            d3.select(`#${self.el} svg`).classed(type, true)
+            if (self.rolloverBehaviour != '') d3.select(`#${self.el} svg`).classed(self.rolloverBehaviour, true)
 
             // Legend
             if ((zkey || (ykey && group)) && legend && !plotted) {
@@ -558,7 +573,7 @@ class Chart {
                 if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
-                    return x[orientation == 'y' ? xkey : ykey]
+                    return colours[domain.indexOf(x[orientation == 'y' ? xkey : ykey])] //x[orientation == 'y' ? xkey : ykey]
                 }
                 return orientation == 'y' ? xkey : ykey
                 //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
@@ -696,7 +711,7 @@ class Chart {
                         parent
                             .attr('data-title', text).classed('has-title', true)
                             .attr('data-name', `${data[orientation == 'y' ? xkey : ykey]}`)
-                            .attr('data-group', data[group] || zkey ? data[zkey] : '')
+                            .attr('data-group', group ? data[group] : zkey ? data[zkey] : '')
                             .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                             .attr('data-value', val)
                             .attr('data-quantile', x => {
@@ -725,7 +740,7 @@ class Chart {
                             if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
 
-                            d3.select(this).raise()
+                            //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise() //d3.select(this).raise()
                             const tipSize = tip.node().getBBox()
                             if (pointer[0] + tipSize.x < 0) {
                                 tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
@@ -733,7 +748,7 @@ class Chart {
                                 tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
                             }
 
-                            self.highlight(this.getAttribute('data-series'))
+                            highlight(event, this.getAttribute('data-series'))
                         })
                         .on('pointerout', function (event) {
                             tip.call(resetHighlight)
@@ -848,12 +863,6 @@ class Chart {
         function maxLabelLength(data, key, style) {
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-
-
-console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] }))
-
-
-
             return labelLength(getLabelText(max), style) * 1.1
         }
 
@@ -908,7 +917,7 @@ console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { retu
 
         function getStatus(item) {
             return {
-                map: self,
+                chart: self,
                 name: item.getAttribute('data-name'),
                 value: isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
                 min: self.min,
@@ -921,19 +930,26 @@ console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { retu
             }
         }
 
-        function highlight(event) {
+        function highlight(event, series) {
             if (self.onRollover) {
                 try {
-                    const status = getStatus(this)
+                    const status = getStatus(event.target || this)
                     if (status.name != null && status.value != null) window[self.onRollover](status)
                 }
                 catch (e) {}
             }
 
-            self.highlight(this.getAttribute('data-name') || this.innerText)
+            self.highlight(series || this.getAttribute('data-name') || this.innerText)
         }
 
         function resetHighlight(event) {
+            if (self.onRollover) {
+                try {
+                    window[self.onRollover]({ chart: self, name: '' })
+                }
+                catch (e) {}
+            }
+
             self.resetHighlight()
         }
 
@@ -1015,14 +1031,17 @@ console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { retu
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none').style('stroke-width', 0)
-                    d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('stroke', 'red').style('stroke-width', 3)
+                    d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 3)
+                    d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 0.1)
+                    d3.select(`#${this.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
                     d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
                 }
             }
 
+            d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).classed('highlight', true)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
@@ -1039,12 +1058,14 @@ console.log('max', (Array.isArray(data[0]) ? data.flat() : data).map(x => { retu
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('stroke', 'none').style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
+                    d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 1)
                 }
             }
 
+            d3.select(`#${this.el}`).selectAll(`[data-series]`).classed('highlight', false)
             d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
             d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="false"]`).style('opacity', 1)

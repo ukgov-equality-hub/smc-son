@@ -90,54 +90,119 @@
     position: relative;
 }
 
-.layer {
+.map .layer {
     position: absolute;
     will-change: transform;
 }
 
-.tile {
+.map .tile {
     position: absolute;
     width: 256px;
     height: 256px;
 }
 
-.tile path {
+.map .tile path {
     fill: none;
     stroke: #000;
     stroke-linejoin: round;
     stroke-linecap: round;
 }
 
-.tile .major_road {
+.map .tile .major_road {
     stroke: #776;
 }
 
-.tile .minor_road {
+.map .tile .minor_road {
     stroke: #ccb;
 }
 
-.tile .highway {
+.map .tile .highway {
     stroke: #f39;
     stroke-width: 1.5px;
 }
 
-.tile .rail {
+.map .tile .rail {
     stroke: #7de;
 }
 
-.tile .water, .tile .river, .tile .riverbank, .tile .fountain, .tile .ocean, .tile .stream, .tile .lake, .tile .basin, .tile .dock {
+.map .tile .water, .map .tile .river, .map .tile .riverbank, .map .tile .fountain, .map .tile .ocean, .map .tile .stream, .map .tile .lake, .map .tile .basin, .map .tile .dock {
     stroke: #7de;
     fill: #7de;
 }
 
-.info {
+.map .info {
     position: absolute;
     top: 10px;
     left: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.label {
+.map svg g.outlines path {
+    stroke: red;
+    stroke-width: 2;
+}
+
+.map svg.zoom1 g.outlines path {
+    stroke-width: 2;
+}
+
+.map svg.zoom2 g.outlines path {
+    stroke-width: 1.9;
+}
+
+.map svg.zoom3 g.outlines path {
+    stroke-width: 1.8;
+}
+
+.map svg.zoom4 g.outlines path {
+    stroke-width: 1.7;
+}
+
+.map svg.zoom5 g.outlines path {
+    stroke-width: 1.6;
+}
+
+.map svg.zoom6 g.outlines path {
+    stroke-width: 1.5;
+}
+
+.map svg.zoom7 g.outlines path {
+    stroke-width: 1.4;
+}
+
+.map svg.zoom8 g.outlines path {
+    stroke-width: 1.3;
+}
+
+.map svg.zoom9 g.outlines path {
+    stroke-width: 1.2;
+}
+
+.map svg.zoom10 g.outlines path {
+    stroke-width: 1.1;
+}
+
+.map svg.zoom11 g.outlines path {
+    stroke-width: 1;
+}
+
+.map svg.zoom12 g.outlines path {
+    stroke-width: 0.9;
+}
+
+.map svg.zoom13 g.outlines path {
+    stroke-width: 0.8;
+}
+
+.map svg.zoom14 g.outlines path {
+    stroke-width: 0.7;
+}
+
+.map svg.zoom15 g.outlines path {
+    stroke-width: 0.6;
+}
+
+.map .label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
 }

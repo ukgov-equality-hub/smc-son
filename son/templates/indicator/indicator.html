@@ -71,6 +71,10 @@
             {% if subitem[0] == 'Text' %}
             <p class="govuk-body">{{ subitem[1] | safe }}</p>
             {% endif %}
+
+            {% if subitem[0] == 'HTML' %}
+            {{ subitem[1] | safe }}
+            {% endif %}
             {% set ns.counter2 = ns.counter2 + 1 %}
             {% endfor %}
         </div>
@@ -94,6 +98,10 @@
 
     {% if item[0] == 'Text' %}
     <p class="govuk-body">{{ item[1] | safe }}</p>
+    {% endif %}
+
+    {% if item[0] == 'HTML' %}
+    {{ item[1] | safe }}
     {% endif %}
 
     {% if item[0] == 'Chart' %}
@@ -132,7 +140,11 @@
     <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
     {% set ns.counter2 = 0 %}
     {% for subitem in item[1] %}
+    {% if subitem[0] == 'HTML' %}
+    {{ subitem[1] | safe }}
+    {% else %}
     <p class="govuk-body"{% if ns.counter2 % 2 == 0 %} style="margin-bottom: 5px; font-weight: bold;"{% endif %}>{{ subitem[1] | safe }}</p>
+    {% endif %}
     {% set ns.counter2 = ns.counter2 + 1 %}
     {% endfor %}
     {% endif %}
@@ -145,11 +157,11 @@
     let map, chart
     function mapselect(a) {
         try {
-            const el = a.map.el.substr(3)
+            const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
             map = eval(`map${el}`)
             chart = eval(`chart${el}`)
 
-            if (typeof a !== 'undefined') {
+            if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
@@ -157,6 +169,8 @@
                 map.highlight(a.name)
                 chart.highlight(a.name)
             } else {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
+                document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
                 map.resetHighlight()
                 chart.resetHighlight()
             }

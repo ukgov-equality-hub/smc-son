@@ -1,0 +1,41 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2014","2014",NA,"Total","Occupational level","Lower working",15.51,2269,14.628,16.392,0.45,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2015","2015",NA,"Total","Occupational level","Lower working",15.37,2118,14.488,16.252,0.45,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2016","2016",NA,"Total","Occupational level","Lower working",14.26,1912,13.378,15.142,0.45,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2017","2017",NA,"Total","Occupational level","Lower working",14.87,1758,13.9684,15.7716,0.46,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2018","2018",NA,"Total","Occupational level","Lower working",13.76,1718,12.8584,14.6616,0.46,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2019","2019",NA,"Total","Occupational level","Lower working",13.01,1619,12.128,13.892,0.45,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2020","2020",NA,"Total","Occupational level","Lower working",12.75,1080,11.6916,13.8084,0.54,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2021","2021",NA,"Total","Occupational level","Lower working",15.71,1556,14.7104,16.7096,0.51,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2014","2014",NA,"Total","Occupational level","Higher working",25.06,2058,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2015","2015",NA,"Total","Occupational level","Higher working",24.43,1919,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2016","2016",NA,"Total","Occupational level","Higher working",25.82,1914,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2017","2017",NA,"Total","Occupational level","Higher working",24.71,1752,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2018","2018",NA,"Total","Occupational level","Higher working",22.89,1592,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2019","2019",NA,"Total","Occupational level","Higher working",23.52,1538,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2020","2020",NA,"Total","Occupational level","Higher working",20.44,979,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2021","2021",NA,"Total","Occupational level","Higher working",17.45,1035,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2014","2014",NA,"Total","Occupational level","Intermediate",21.62,1616,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2015","2015",NA,"Total","Occupational level","Intermediate",22.58,1612,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2016","2016",NA,"Total","Occupational level","Intermediate",22.4,1565,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2017","2017",NA,"Total","Occupational level","Intermediate",22.7,1522,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2018","2018",NA,"Total","Occupational level","Intermediate",22.64,1438,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2019","2019",NA,"Total","Occupational level","Intermediate",21.42,1329,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2020","2020",NA,"Total","Occupational level","Intermediate",22.12,964,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2021","2021",NA,"Total","Occupational level","Intermediate",22.92,1282,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2014","2014",NA,"Total","Occupational level","Lower professional",27.28,1833,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2015","2015",NA,"Total","Occupational level","Lower professional",26.47,1771,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2016","2016",NA,"Total","Occupational level","Lower professional",25.97,1689,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2017","2017",NA,"Total","Occupational level","Lower professional",26.79,1673,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2018","2018",NA,"Total","Occupational level","Lower professional",27.45,1619,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2019","2019",NA,"Total","Occupational level","Lower professional",28.24,1651,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2020","2020",NA,"Total","Occupational level","Lower professional",30.45,1222,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2021","2021",NA,"Total","Occupational level","Lower professional",27.02,1441,NA,NA,NA,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2014","2014",NA,"Total","Occupational level","Higher professional",10.53,670,9.7852,11.2748,0.38,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2015","2015",NA,"Total","Occupational level","Higher professional",11.14,694,10.356,11.924,0.4,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2016","2016",NA,"Total","Occupational level","Higher professional",11.55,670,10.7464,12.3536,0.41,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2017","2017",NA,"Total","Occupational level","Higher professional",10.93,641,10.1264,11.7336,0.41,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2018","2018",NA,"Total","Occupational level","Higher professional",13.25,710,12.368,14.132,0.45,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2019","2019",NA,"Total","Occupational level","Higher professional",13.81,747,12.9084,14.7116,0.46,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2020","2020",NA,"Total","Occupational level","Higher professional",14.24,559,13.1228,15.3572,0.57,"Percentage",NA
+"DR33","Type of employment opportunities for young people","Country","K02000001","United Kingdom","2021","2021",NA,"Total","Occupational level","Higher professional",16.9,862,15.8612,17.9388,0.53,"Percentage",NA

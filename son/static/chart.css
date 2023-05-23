@@ -21,6 +21,11 @@ div.chart svg.line marker circle, div.chart svg.liney marker circle {
     scale: 0.5;
 }
 
+div.chart svg.outline rect.highlight {
+    stroke: red;
+    stroke-width: 3;
+}
+
 div.chart div.links {
     margin-top: 10px;
     height: auto;

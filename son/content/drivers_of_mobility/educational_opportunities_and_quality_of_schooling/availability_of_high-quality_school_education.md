@@ -17,19 +17,13 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "title": "Availability of high-quality school education", "data": "/static/data/prototypes/DR22_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "outline", "clickBehaviour": "fade" }
+{ "title": "Availability of high-quality school education", "data": "/static/data/indicators/DR22_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "outline", "clickBehaviour": "fade" }
 
 ## Section
 Download the data
 
 ## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download the data (CSV)](/static/data/indicators/2023-03-27 DR22.csv){: target="_blank" }
 
 ## About
 # Data source(s)

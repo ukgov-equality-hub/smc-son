@@ -11,35 +11,27 @@ Data on the number of children living in relative poverty after housing costs.
 Summary main findings
 
 ## Text
-The percentage of children living in relative poverty has gone up since 2010, but is below the levels reached in the 1990s.
-## Text
-Between 2014 and 2019, the percentage of children living in relative poverty stayed roughly the same at 30%.
-## Text
+The percentage of children living in relative poverty has gone up since 2010, but is below the levels reached in the 1990s.<br>
+Between 2014 and 2019, the percentage of children living in relative poverty stayed roughly the same at 30%.<br>
 The metropolitan areas of Greater London, Greater Manchester, and the West Midlands have some of the highest levels of childhood poverty.
 
 ## Section
 Overview
 
 ## Chart
-{ "title": "Childhood poverty", "data": "/static/data/prototypes/DR12_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
+{ "title": "Childhood poverty", "data": "/static/data/indicators/DR12_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
 
 ## Section
 Breakdown by Area
 
 ## Map
-{ "title": "Childhood poverty", "map": "/static/data/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/prototypes/DR12_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": true, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "lowerConfidence": "LCI", "upperConfidence": "UCI" }
+{ "title": "Childhood poverty", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR12_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "lowerConfidence": "LCI", "upperConfidence": "UCI", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": true, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa" }
 
 ## Section
 Download the data
 
 ## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download the data (CSV)](/static/data/indicators/2023-03-27 DR12.csv){: target="_blank" }
 
 ## About
 # Data source(s)
@@ -53,8 +45,7 @@ UK
 
 # What the data measures
 The data shows the percentage of children living in households in relative poverty after housing costs in the UK.<br>
-<br>
-Data is calculated using 3-year averages. For example, the figure for 2019 represents the average of the financial years starting in 2017, 2018 and 2019. 
+Data is calculated using 3-year averages. For example, the figure for 2019 represents the average of the financial years starting in 2017, 2018 and 2019.<br>
 Financial years are reported by the year in which they start. For example, 2019 represents the financial year ending in 2020.
 
 # Things you need to know

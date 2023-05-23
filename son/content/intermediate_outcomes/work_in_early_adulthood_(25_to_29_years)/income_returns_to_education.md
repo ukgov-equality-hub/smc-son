@@ -16,22 +16,20 @@ Placeholder summary main findings
 ## Section
 Overview
 
-## Placeholder
+## Chart
+{ "title": "Returns to education for young people", "data": "/static/data/indicators/IN35_overview-20230327.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "£", "xgrid": false, "ygrid": true, "_xticks": 7, "yticks": 3, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
 
-Chart
-{ "data": "/static/data/prototypes/IN35_overview-20230420.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "xgrid": false, "ygrid": true, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+## Section
+Difference
+
+## Chart
+{ "title": "Returns to education for young people", "data": "/static/data/indicators/IN35_difference-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade" }
 
 ## Section
 Download the data
 
 ## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download the data (CSV)](/static/data/indicators/2023-03-27 IN35.csv){: target="_blank" }
 
 ## About
 # Data source(s)
