@@ -570,7 +570,9 @@ class Chart {
                 for (let i = 0; i < Math.ceil(data.length / colourScheme.length); i++) {
                     colours = colours.concat(colourScheme)
                 }
-                if (zkey) {
+                if (zkey && group) {
+                    return colours[domain.indexOf(x[zkey])]
+                } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
                     return colours[domain.indexOf(x[orientation == 'y' ? xkey : ykey])] //x[orientation == 'y' ? xkey : ykey]

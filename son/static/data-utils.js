@@ -177,7 +177,7 @@ class DataUtils {
             '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' +                      // port and path
             '(\\?[;&a-z\\d%_.~+=-]*)?' +                             // query string
             '(\\#[-a-z\\d_]*)?$','i')                                // fragment locator
-        return !!pattern.test(data.replace(/\/localhost/, '/127.0.0.1'))
+        return !!pattern.test(data.replace(/\/localhost/, '/127.0.0.1').replace(/ /g, ''))
     }
 
     isHTML(data) {
