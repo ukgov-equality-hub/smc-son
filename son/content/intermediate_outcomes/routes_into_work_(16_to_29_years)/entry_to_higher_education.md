@@ -17,13 +17,7 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "title": "Destinations following the end of compulsory full-time education:NEET", "data": "/static/data/indicators/IN22_overview-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade" }
-
-## Section
-Download the data
-
-## Text
-[Download the data (CSV)](/static/data/indicators/2023-03-27 IN22.csv){: target="_blank" }
+{ "title": "Destinations following the end of compulsory full-time education:NEET", "data": "/static/data/indicators/IN22_overview-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade" }
 
 ## About
 # Data source(s)
@@ -49,3 +43,9 @@ e.g. Survey data, weighted
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
+
+## Section
+Download the data
+
+## Text
+[Download the data (CSV)](/static/data/indicators/2023-03-27 IN22.csv){: target="_blank" }

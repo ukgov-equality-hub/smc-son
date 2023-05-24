@@ -19,13 +19,7 @@ The percentage of adults in families who were in professional and managerial occ
 Overview
 
 ## Chart
-{ "title": "Distribution of parental occupation", "data": "/static/data/indicators/DR14_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "_top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter" }
-
-## Section
-Download the data
-
-## Text
-[Download the data (CSV)](/static/data/indicators/2023-03-27 DR14.csv){: target="_blank" }
+{ "title": "Distribution of parental occupation", "data": "/static/data/indicators/DR14_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter" }
 
 ## About
 # Data source(s)
@@ -58,3 +52,9 @@ Survey data, weighted
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
+
+## Section
+Download the data
+
+## Text
+[Download the data (CSV)](/static/data/indicators/2023-03-27 DR14.csv){: target="_blank" }

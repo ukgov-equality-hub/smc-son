@@ -327,12 +327,13 @@ class Chart {
                             x: xkey,
                             y1: 'lci',
                             y2: 'uci',
+                            stroke: '#555',
                             title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                         }
 
                         marks.push(Plot.ruleX(chartData, confidenceIntervalOptions))
-                        marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, _fill: '#ccc', rotate: 90 }))
-                        marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, _fill: '#ccc', rotate: 90 }))
+                        marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, fill: '#555', rotate: 90 }))
+                        marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, fill: '#555', rotate: 90 }))
                     } else {
                         const confidenceIntervalOptions = {
                             y: ykey,
@@ -341,8 +342,8 @@ class Chart {
                         }
 
                         marks.push(Plot.ruleY(chartData, confidenceIntervalOptions))
-                        marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', _fill: '#ccc' }))
-                        marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', _fill: '#ccc' }))
+                        marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', fill: '#555' }))
+                        marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', fill: '#555' }))
                     }
                 }
                 if (type == 'dot' || type == 'doty') {
@@ -357,7 +358,7 @@ class Chart {
                             dy: getLabelShift(),
                             z: zkey,
                             facet: group ? true : null,
-                            text: x => getLabelText(x['labelkey'] || x[ykey]),
+                            text: x => getLabelText(x['labelkey'] || x[ykey], 'label'),
                             fill: labelColour
                         }))
                     } else {
@@ -367,7 +368,7 @@ class Chart {
                             y: ykey,
                             z: zkey,
                             facet: group ? true : null,
-                            text: x => getLabelText(x['labelkey'] || x[xkey]),
+                            text: x => getLabelText(x['labelkey'] || x[xkey], 'label'),
                             fill: labelColour
                         }))
                     }
@@ -392,7 +393,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x) : x.toString()
+                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -400,7 +401,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : 8,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x) : x.toString()
+                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
@@ -409,7 +410,7 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => orientation == 'y' ? getLabelText(x) : x.toString()
+                    tickFormat: x => orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             }
 
@@ -737,7 +738,7 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), true)}`
+                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             const pointer = d3.pointer(event, wrapper.node())
                             if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
@@ -850,10 +851,10 @@ class Chart {
             return x.toString()
         }
 
-        function getLabelText(key, tooltip) {
+        function getLabelText(key, pos) {
             let text
             if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
-                return `${key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
             } else if (textLabelFormat == 'currency' || ['£', '$', '€'].includes(scale)) {
                 return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
             } else if (textLabelFormat == 'number') {
@@ -861,13 +862,13 @@ class Chart {
             } else {
                 text = formatNumber(key, 2)
             }
-            return tooltip && scale != '' ? `${text} (${scale})` : text
+            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }
 
         function maxLabelLength(data, key, style) {
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(getLabelText(max), style) * 1.1
+            return labelLength(getLabelText(max, 'axis'), style) * 1.1
         }
 
         function labelLength(text, style) {

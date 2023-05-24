@@ -19,26 +19,14 @@ Overview
 ## Placeholder
 
 ## Section
-Breakdown by Area
+By area (ITL2)
 
 ## Placeholder
 
 ## Section
-Breakdown by Sex
+By sex
 
 ## Placeholder
-
-## Section
-Download the data
-
-## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
 
 ## About
 # Data source(s)
@@ -64,3 +52,15 @@ e.g. Survey data, weighted
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
+
+## Section
+Download the data
+
+## Text
+<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
+    Note: This is an example CSV file download with fictitious values
+</p>
+
+<p class="govuk-body">
+    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
+</p>

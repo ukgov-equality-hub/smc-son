@@ -55,7 +55,7 @@ def get_content(domain, subdomain=None, indicator=None):
                 current_content += line.strip()
 
         if current_section != '':
-            content.append([current_section, current_content])
+            content.append(['HTML' if current_section == 'Text' else current_section, format_html(current_content) if current_section == 'Text' else current_content])
 
         f.close()
 
@@ -147,7 +147,7 @@ def subdomain_page(domain, subdomain):
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
     content = get_content(domain, subdomain, indicator)
-    #print(content, flush=True)
+    print(content, flush=True)
     data_src = ''
 
     data_table = []
