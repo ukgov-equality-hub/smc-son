@@ -134,7 +134,7 @@ class Chart {
         const xvalue = options.yvalue || null
         const yvalue = options.yvalue || null
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
-        const scale = ['absolute', 'relative', 'percent', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
+        const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
@@ -591,7 +591,7 @@ class Chart {
                     return pos
                 } else {
                     let pos = textLabels == 'inside' ? -30 : 20
-                    if (['£', '$'].includes(scale) && textLabels == 'inside' ) pos -= 15
+                    if (['£', '$', '€'].includes(scale) && textLabels == 'inside' ) pos -= 15
                     return pos
                 }*/
                 const key = orientation == 'y' ? xkey : ykey
@@ -737,7 +737,7 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'))}`
+                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), true)}`
                             const pointer = d3.pointer(event, wrapper.node())
                             if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
@@ -850,16 +850,18 @@ class Chart {
             return x.toString()
         }
 
-        function getLabelText(key) {
+        function getLabelText(key, tooltip) {
+            let text
             if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
                 return `${key}%`
-            } else if (textLabelFormat == 'currency' || ['£', '$'].includes(scale)) {
+            } else if (textLabelFormat == 'currency' || ['£', '$', '€'].includes(scale)) {
                 return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
             } else if (textLabelFormat == 'number') {
-                return numberWithCommas(key)
+                text = numberWithCommas(key)
             } else {
-                return formatNumber(key, 2)
+                text = formatNumber(key, 2)
             }
+            return tooltip && scale != '' ? `${text} (${scale})` : text
         }
 
         function maxLabelLength(data, key, style) {

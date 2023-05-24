@@ -1,3 +1,4 @@
+
 class Choropleth {
 
     // TODO
@@ -126,7 +127,7 @@ class Choropleth {
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
-        const scale = ['absolute', 'relative', 'percent', '%', '£', '$', 'currency'].includes(options.scale) ? options.scale : ''
+        const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         let domains = options.domains || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
@@ -690,16 +691,18 @@ class Choropleth {
             return x.toString()
         }
 
-        function getLabelText(key) {
+        function getLabelText(key, tooltip) {
+            let text
             if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
                 return `${key}%`
-            } else if (textLabelFormat == 'currency' || ['£', '$'].includes(scale)) {
+            } else if (textLabelFormat == 'currency' || ['£', '$', '€'].includes(scale)) {
                 return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
             } else if (textLabelFormat == 'number') {
-                return numberWithCommas(key)
+                text = numberWithCommas(key)
             } else {
-                return formatNumber(key, 2)
+                text = formatNumber(key, 2)
             }
+            return tooltip && scale != '' ? `${text} (${scale})` : text
         }
 
         function maxLabelLength(data, key, style) {
