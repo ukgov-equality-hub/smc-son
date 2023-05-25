@@ -15,21 +15,21 @@ Summary main findings
 Data
 
 # Chart
-{ "data": "/static/data/MO3.1a.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Male
 
 # Chart
-{ "data": "/static/data/MO3.1b_male.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_male.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Female
 
 # Chart
-{ "data": "/static/data/MO3.1b_female.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_female.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Tab
 # Title

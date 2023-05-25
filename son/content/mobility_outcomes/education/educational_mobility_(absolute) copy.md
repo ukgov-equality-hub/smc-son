@@ -12,7 +12,7 @@ Data on how people's socio-economic background affects their qualification level
 ALL UK
 
 # Chart
-{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
@@ -55,7 +55,7 @@ In 2021, 71% of 25 to 29 year olds from professional backgrounds had a first or 
 The differences were greater for postgraduate degrees than for first degrees.
 
 ## Chart
-{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1A9E1C", "#00703c", "#EB652E", "#0096FF", "#0F265C"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
 
 
 ## Text
