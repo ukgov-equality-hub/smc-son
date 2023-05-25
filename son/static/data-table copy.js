@@ -18,7 +18,7 @@ class DataTable {
         this.data = data
         this.options = options || {}
         this.scriptSrc = ''
-        this.dataTable = null
+        this.dataTables = []
         this.loaded = false
         this.debug = false
 
@@ -121,12 +121,12 @@ class DataTable {
         const allowFilter = options.allowFilter || false
         const allowSort = options.allowSort || false
         const pageSize = options.pageSize || -1
-        const tableColumns = options.columns || null
+        const showColumns = options.columns || null
 
         if (allowColumnResize || allowFilter || allowSort) {
-            if (self.dataTable) {
+            if (self.dataTables[`data-table-${self.el}`]) {
                 if (pageNum && isNumeric(pageNum)) {
-                    self.dataTable['page'] = pageNum
+                    self.dataTables[`data-table-${self.el}`]['page'] = pageNum
                 }
 
                 createDataTable()
@@ -148,11 +148,11 @@ class DataTable {
                         numeric.push(allNumeric)
                     }
                     data['numeric'] = numeric
-                    self.dataTable = data
+                    self.dataTables[`data-table-${self.el}`] = data
                     if (self.debug) console.log('data', data)
 
-                    self.dataTable['page'] = 1
-                    self.dataTable['pageSize'] = pageSize
+                    self.dataTables[`data-table-${self.el}`]['page'] = 1
+                    self.dataTables[`data-table-${self.el}`]['pageSize'] = pageSize
 
                     fixTable()
                     if (allowColumnResize) resizeTable()
@@ -163,57 +163,11 @@ class DataTable {
             }
         }
 
-        function columnAttributes() {
-            let columns = []
-
-
-
-
-
-
-
-            if (Array.isArray(tableColumns)) {
-                if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
-                        //return ''
-
-
-///!!!!!!!!!!
-
-
-                        [
-                            {
-                                'column': {
-                                    'heading': 'column 1',
-                                    'inlude': true,
-                                    'align': 'right',
-                                    'format': ''
-                                }
-                            }, //...
-                        ]
-
-
-
-
-
-                } else {
-                    if (tableColumns.includes(columnName)) {
-                        return columnName
-                    }
-                }
-                return false
-            } else {
-                return columnName
-            }
-
-
-
-        }
-
         function fixTable() {
             const table = document.getElementById(self.el)
-            const headers = self.dataTable['headers']
+            const headers = self.dataTables[`data-table-${self.el}`]['headers']
             const rows = table.tagName == 'TABLE' ? table.rows : table.children
-            let numColumns = Array.isArray(tableColumns) ? tableColumns.length : rows[0].children.length
+            let columns = Array.isArray(showColumns) ? showColumns.length : rows[0].children.length
             const widths = []
             if (table.tagName == 'TABLE') table.classList.add('govuk-table')
 
@@ -225,7 +179,7 @@ class DataTable {
                     rows[i].style.zIndex = '2'
 
                     for (let j = 0; j < rows[i].children.length; j++) {
-                        widths.push(`${100 / numColumns}%`)
+                        widths.push(`${100 / columns}%`)
                     }
                 }
 
@@ -249,7 +203,7 @@ class DataTable {
                             rows[i].children[j].classList.add('table-column')
                             rows[i].children[j].classList.add('govuk-table__header')
                             rows[i].children[j].setAttribute('data-column', `${j}`)
-                            rows[i].children[j].style.width = `${100 / numColumns}%`
+                            rows[i].children[j].style.width = `${100 / columns}%`
                         }
                         table.getElementsByTagName('thead')[0].appendChild(rows[i])
                         rows[i].parentElement.classList.add('govuk-table__head')
@@ -266,7 +220,7 @@ class DataTable {
                             rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
                             rows[i].children[j].classList.add('table-column', 'govuk-table__cell')
                             rows[i].children[j].setAttribute('data-column', `${j}`)
-                            rows[i].children[j].style.width = `${100 / numColumns}%`
+                            rows[i].children[j].style.width = `${100 / columns}%`
                         }
                         rows[i].parentElement.classList.add('govuk-table__body')
                         rows[i].classList.add('govuk-table__row')
@@ -276,7 +230,7 @@ class DataTable {
                         rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
                         rows[i].children[j].classList.add('table-column')
                         rows[i].children[j].setAttribute('data-column', `${j}`)
-                        rows[i].children[j].style.width = `${100 / numColumns}%`
+                        rows[i].children[j].style.width = `${100 / columns}%`
                     }
                 }
 
@@ -304,41 +258,17 @@ class DataTable {
             }
 
             table.style.width = '100%' //`${table.clientWidth}px`
-            self.dataTable['widths'] = widths
+            self.dataTables[`data-table-${self.el}`]['widths'] = widths
         }
 
         function allowColumn(columnName) {
-            if (Array.isArray(tableColumns)) {
-                if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
-                    if (columnName in tableColumns) {
-                        //return ''
-/*
-
-///!!!!!!!!!!
-
-
-                        [
-                            {
-                                'column': 'column1',
-                                'heading': 'column 1',
-                                'inlude': true,
-                                'align': 'right',
-                                'format': ''
-                            }, ...
-                        ]
-*/
-
-
-
-                    }
-                } else {
-                    if (tableColumns.includes(columnName)) {
-                        return columnName
-                    }
+            if (Array.isArray(showColumns)) {
+                if (showColumns.includes(columnName)) {
+                    return true
                 }
                 return false
             } else {
-                return columnName
+                return true
             }
         }
 
@@ -356,16 +286,16 @@ class DataTable {
         }
 
         function createDataTable() {
-            if (!(self.dataTable)) return
+            if (!(`data-table-${self.el}` in self.dataTables)) return
             const table = document.getElementById(self.el)
-            const headers = self.dataTable['headers']
-            const numeric = self.dataTable['numeric']
-            const type = self.dataTable['type']
-            let data = self.dataTable['data']
-            const filters = self.dataTable['filters']
-            const sort = self.dataTable['sort']
-            const sortOrder = self.dataTable['sortOrder']
-            const widths = self.dataTable['widths']
+            const headers = self.dataTables[`data-table-${self.el}`]['headers']
+            const numeric = self.dataTables[`data-table-${self.el}`]['numeric']
+            const type = self.dataTables[`data-table-${self.el}`]['type']
+            let data = self.dataTables[`data-table-${self.el}`]['data']
+            const filters = self.dataTables[`data-table-${self.el}`]['filters']
+            const sort = self.dataTables[`data-table-${self.el}`]['sort']
+            const sortOrder = self.dataTables[`data-table-${self.el}`]['sortOrder']
+            const widths = self.dataTables[`data-table-${self.el}`]['widths']
 
             function applyAttributes(node, attributes) {
                 for (const attribute in attributes) {
@@ -436,20 +366,20 @@ class DataTable {
             let currentPage = 1
             if (pageSize > 0) {
                 numPages = Math.ceil(data.length / pageSize)
-                currentPage = self.dataTable['page']
+                currentPage = self.dataTables[`data-table-${self.el}`]['page']
                 data = page(data, pageSize, currentPage)
             }
 
             clearDataTable()
 
             for (let i = 0; i < data.length; i++) {
-                const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                const row = document.createElement(self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE' ? 'tr' : 'div')
                 row.classList.add('table-row', 'govuk-table__row')
                 applyAttributes(row, data[i]['_attributes'][0])
 
                 for (let j = 0; j < headers.length; j++) {
                     if (allowColumn(headers[j])) {
-                        let cell = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'td' : 'div')
+                        let cell = document.createElement(self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE' ? 'td' : 'div')
                         cell.classList.add('table-column', 'govuk-table__cell')
                         if (numeric[j]) cell.classList.add('numeric')
                         if (widths[j]) cell.style.width = widths[j]
@@ -462,7 +392,7 @@ class DataTable {
                     }
                 }
 
-                if (self.dataTable['tag'] == 'TABLE') {
+                if (self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE') {
                     table.getElementsByTagName('tbody')[0].appendChild(row)
                 } else {
                     table.appendChild(row)
@@ -470,7 +400,7 @@ class DataTable {
             }
 
             if (pageSize > 0 && numPages > 1) {
-                const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                const row = document.createElement(self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE' ? 'tr' : 'div')
                 row.classList.add('table-row')
                 const nav = document.createElement('nav')
                 nav.classList.add('govuk-pagination')
@@ -555,7 +485,7 @@ class DataTable {
                 }
                 row.appendChild(nav)
 
-                if (self.dataTable['tag'] == 'TABLE') {
+                if (self.dataTables[`data-table-${self.el}`]['tag'] == 'TABLE') {
                     table.getElementsByTagName('tbody')[0].appendChild(row)
                 } else {
                     table.appendChild(row)
@@ -585,7 +515,7 @@ class DataTable {
 
                     resize.addEventListener('mousedown', function () {
                         const allResize = document.getElementsByClassName(`table-drag_${self.el}`)
-                        const widths = self.dataTable['widths']
+                        const widths = self.dataTables[`data-table-${self.el}`]['widths']
                         for (let i = 0; i < allResize.length; i++) {
                             const resize = allResize[i]
                             const leftCol = resize.parentElement
@@ -630,7 +560,7 @@ class DataTable {
                             }
 
                             const mouseUpHandler = function () {
-                                self.dataTable['widths'] = widths
+                                self.dataTables[`data-table-${self.el}`]['widths'] = widths
 
                                 resize.style.removeProperty('cursor')
                                 document.body.style.removeProperty('cursor')
@@ -708,9 +638,9 @@ class DataTable {
             let values = []
             //const table = cells.split('_')[0]
             const column = cells.split('_')[1]
-            const headers = self.dataTable['headers']
-            const type = self.dataTable['type']
-            const data = self.dataTable['data']
+            const headers = self.dataTables[`data-table-${self.el}`]['headers']
+            const type = self.dataTables[`data-table-${self.el}`]['type']
+            const data = self.dataTables[`data-table-${self.el}`]['data']
 
             for (let i = 0; i < data.length; i++) {
                 if (type == 'array') {
@@ -764,8 +694,8 @@ class DataTable {
         function applyFilterValue(cells, text) {
             //const table = cells.split('_')[0]
             const column = cells.split('_')[1]
-            const columnName = self.dataTable['headers'][parseInt(column, 10)]
-            let filters = self.dataTable['filters']
+            const columnName = self.dataTables[`data-table-${self.el}`]['headers'][parseInt(column, 10)]
+            let filters = self.dataTables[`data-table-${self.el}`]['filters']
 
             const found = filters.reduce(function (current, item, index) {
                 if (item['column'] == columnName && item['type'] == 'search' && current === -1) {
@@ -779,15 +709,15 @@ class DataTable {
             } else {
                 filters.push({ 'column': columnName, 'value': text, 'type': 'search' })
             }
-            self.dataTable['filters'] = filters
+            self.dataTables[`data-table-${self.el}`]['filters'] = filters
             createDataTable()
         }
 
         function applyFilterValues(cells) {
             //const table = cells.split('_')[0]
             const column = cells.split('_')[1]
-            const columnName = self.dataTable['headers'][parseInt(column, 10)]
-            let filters = self.dataTable['filters']
+            const columnName = self.dataTables[`data-table-${self.el}`]['headers'][parseInt(column, 10)]
+            let filters = self.dataTables[`data-table-${self.el}`]['filters']
             const values = document.querySelectorAll(`[class^="filtervalue_${self.el}_${cells}__"]`)
             for (let i = 0; i < values.length; i++) {
                 if (values[i].checked) {
@@ -800,7 +730,7 @@ class DataTable {
                     })
                 }
             }
-            self.dataTable['filters'] = filters
+            self.dataTables[`data-table-${self.el}`]['filters'] = filters
             createDataTable()
         }
 
@@ -816,11 +746,11 @@ class DataTable {
                 icon.classList.add('sort-icon', `sort-icon_${self.el}_${column}`)
                 icon.innerHTML = `<svg height="${rowHeight - 6}" width="${rowHeight - 12}" viewBox="0 0 14 20"><polygon points="0,8 7,1 14,8" fill="#fff" stroke="#555" stroke-width="1" class="desc" /><polygon points="0,12 7,19 14,12" fill="#fff" stroke="#555" stroke-width="1" class="asc" /></svg>`
                 icon.onclick = function (e) {
-                    if (self.dataTable['sort'] == column) {
-                        self.dataTable['sortOrder'] = self.dataTable['sortOrder'] != 'desc' ? 'asc' : 'desc'
+                    if (self.dataTables[`data-table-${self.el}`]['sort'] == column) {
+                        self.dataTables[`data-table-${self.el}`]['sortOrder'] = self.dataTables[`data-table-${self.el}`]['sortOrder'] != 'desc' ? 'asc' : 'desc'
                     } else {
-                        self.dataTable['sort'] = column
-                        self.dataTable['sortOrder'] = 'asc'
+                        self.dataTables[`data-table-${self.el}`]['sort'] = column
+                        self.dataTables[`data-table-${self.el}`]['sortOrder'] = 'asc'
                     }
                     createDataTable()
                 }
@@ -847,11 +777,11 @@ class DataTable {
     }
 
     page(pageNum) {
-        let currentPage = this.dataTable['page']
+        let currentPage = this.dataTables[`data-table-${this.el}`]['page']
         if (pageNum == '+') {
             currentPage += 1
-            const data = this.dataTable['data']
-            const pageSize = this.dataTable['pageSize']
+            const data = this.dataTables[`data-table-${this.el}`]['data']
+            const pageSize = this.dataTables[`data-table-${this.el}`]['pageSize']
             const numPages = Math.ceil(data.length / pageSize)
             if (currentPage > numPages) currentPage = numPages
             pageNum = currentPage
@@ -866,13 +796,13 @@ class DataTable {
     getData(format) {
         let self = this
         return new Promise((resolve, reject) => {
-            const loop = () => this.loaded ? resolve(self.dataTable.data) : setTimeout(loop)
+            const loop = () => this.loaded ? resolve(self.dataTables[`data-table-${self.el}`].data) : setTimeout(loop)
             loop()
         })
     }
 
     downloadData(format) {
-        const data = this.dataTable['data']
+        const data = this.dataTables[`data-table-${this.el}`]['data']
         return this.dataUtils.downloadData(data, `download.${format}`, format)
     }
 }

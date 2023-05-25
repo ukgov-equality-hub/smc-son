@@ -691,23 +691,24 @@ class Choropleth {
             return x.toString()
         }
 
-        function getLabelText(key, tooltip) {
+        function getLabelText(key, pos) {
+            if (!key && pos == 'tooltip') return null
             let text
-            if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
-                return `${key}%`
-            } else if (textLabelFormat == 'currency' || ['£', '$', '€'].includes(scale)) {
-                return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
-            } else if (textLabelFormat == 'number') {
+            if (['percent', '%'].includes(scale)) {
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
+            } else if (['£', '$', '€'].includes(scale)) {
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+            } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {
                 text = formatNumber(key, 2)
             }
-            return tooltip && scale != '' ? `${text} (${scale})` : text
+            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }
 
         function maxLabelLength(data, key, style) {
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(getLabelText(max), style) * 1.1
+            return labelLength(getLabelText(max, 'axis'), style) * 1.1
         }
 
         function labelLength(text, style) {
@@ -792,11 +793,12 @@ class Choropleth {
             return {
                 map: self,
                 name: item.getAttribute('data-name'),
-                value: isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
+                value: getLabelText(item.getAttribute('data-value'), 'tooltip'), //isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
                 min: self.min,
                 max: self.max,
                 mean: self.mean,
                 median: self.median,
+                scale: self.scale,
                 quantile: isNumeric(item.getAttribute('data-quantile')) ? parseFloat(item.getAttribute('data-quantile'), 10) : item.getAttribute('data-quantile'),
                 rank: isNumeric(item.getAttribute('data-rank')) ? parseFloat(item.getAttribute('data-rank'), 10) : item.getAttribute('data-rank'),
                 percentile: isNumeric(item.getAttribute('data-percentile')) ? parseFloat(item.getAttribute('data-percentile'), 10) : item.getAttribute('data-percentile')

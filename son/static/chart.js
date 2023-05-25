@@ -144,7 +144,6 @@ class Chart {
         const labelScheme = options.labelScheme || null
         const labelColour = options.labelColour || '#000'
         const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : Array.isArray(options.textLabels) ? options.textLabels : ''
-        const textLabelFormat = ['currency', 'percent', 'number'].includes(options.textLabelFormat) ? options.textLabelFormat : ''
         const labelKey = options.labelKey || null
         const rotateDomainLabels = options.rotateDomainLabels || false
         const grid = options.grid == false ? false : true
@@ -852,12 +851,13 @@ class Chart {
         }
 
         function getLabelText(key, pos) {
+            if (!key && pos == 'tooltip') return null
             let text
-            if (textLabelFormat == 'percent' || ['percent', '%'].includes(scale)) {
+            if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
-            } else if (textLabelFormat == 'currency' || ['£', '$', '€'].includes(scale)) {
-                return `${textLabelFormat == 'currency' ? '£' : scale}${numberWithCommas(key)}`
-            } else if (textLabelFormat == 'number') {
+            } else if (['£', '$', '€'].includes(scale)) {
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+            } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {
                 text = formatNumber(key, 2)
@@ -924,11 +924,12 @@ class Chart {
             return {
                 chart: self,
                 name: item.getAttribute('data-name'),
-                value: isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
+                value: getLabelText(item.getAttribute('data-value'), 'tooltip'), //isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
                 min: self.min,
                 max: self.max,
                 mean: self.mean,
                 median: self.median,
+                scale: self.scale,
                 quantile: isNumeric(item.getAttribute('data-quantile')) ? parseFloat(item.getAttribute('data-quantile'), 10) : item.getAttribute('data-quantile'),
                 rank: isNumeric(item.getAttribute('data-rank')) ? parseFloat(item.getAttribute('data-rank'), 10) : item.getAttribute('data-rank'),
                 percentile: isNumeric(item.getAttribute('data-percentile')) ? parseFloat(item.getAttribute('data-percentile'), 10) : item.getAttribute('data-percentile')

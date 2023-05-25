@@ -14,6 +14,9 @@
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
     <ol class="govuk-list govuk-list--number">
+        <li>
+            <a href="#Summary main findings" class="govuk-link" style="display: block;">Summary main findings</a>
+        </li>
         {% for item in content %}
         {% if item[0] == 'Section' %}
         <li>
@@ -63,7 +66,7 @@
             {% endif %}
 
             {% if subitem[0] == 'Map' %}
-            <div style="height: 900px;">
+            <div style="height: {% if [subitem[1], 'title'] | attribute | safe == 'Childhood poverty' %}1125px{% else %}900px{% endif %};">
                 {{ visualisation(ns.counter2, 'map', subitem[1]) }}
             </div>
             {% endif %}
@@ -84,6 +87,7 @@
     </div>
     {% endif %}
 
+    <a name="Summary main findings"></a>
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
 
@@ -111,7 +115,7 @@
     {% endif %}
 
     {% if item[0] == 'Map' %}
-    <div style="height: 900px;">
+    <div style="height: {% if [item[1], 'title'] | attribute | safe == 'Childhood poverty' %}1125px{% else %}900px{% endif %};">
         {{ visualisation(ns.counter1, 'map', item[1]) }}
     </div>
     {% endif %}
