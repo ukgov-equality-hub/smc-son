@@ -13,8 +13,9 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-def get_content(domain, subdomain=None, indicator=None):
+def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
     def format_html(html):
+        if not use_markdown: return html
         #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])
         #return html
         html = markdown.markdown(html, extensions=['nl2br', 'attr_list', 'sane_lists'])
@@ -46,7 +47,7 @@ def get_content(domain, subdomain=None, indicator=None):
         for line in f:
             if len(line) > 2 and line[:2] == '##':
                 if current_section != '':
-                    content.append(['HTML' if current_section == 'Text' else current_section, format_html(current_content) if current_section == 'Text' else current_content])
+                    content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
                     current_section = ''
                     current_content = ''
                 current_section = line[2:].strip()
@@ -55,7 +56,7 @@ def get_content(domain, subdomain=None, indicator=None):
                 current_content += line.strip()
 
         if current_section != '':
-            content.append(['HTML' if current_section == 'Text' else current_section, format_html(current_content) if current_section == 'Text' else current_content])
+            content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
 
         f.close()
 
@@ -76,7 +77,7 @@ def get_content(domain, subdomain=None, indicator=None):
                             current_section.append(['Map', current_subcontent])
                         else:
                             current_section.append(['Subtitle', current_subsection])
-                            current_section.append(['HTML', format_html(current_subcontent)])
+                            current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
 
                         current_subsection = ''
                         current_subcontent = ''
@@ -93,7 +94,7 @@ def get_content(domain, subdomain=None, indicator=None):
                 current_section.append(['Map', current_subcontent])
             elif current_subsection != '':
                 current_section.append(['Subtitle', current_subsection])
-                current_section.append(['HTML', format_html(current_subcontent)])
+                current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
 
             content[index][1] = current_section
 
@@ -125,7 +126,7 @@ def domain_page(domain):
         subdomain=None,
         indicator=None,
         title=get_item_title(domain),
-        content=get_content(domain),
+        content=get_content(domain, use_markdown=False),
         form=None
     )
 
@@ -139,7 +140,7 @@ def subdomain_page(domain, subdomain):
         subdomain=subdomain,
         indicator=None,
         title=get_item_title(subdomain),
-        content=get_content(domain, subdomain),
+        content=get_content(domain, subdomain, use_markdown=False),
         form=None
     )
 
