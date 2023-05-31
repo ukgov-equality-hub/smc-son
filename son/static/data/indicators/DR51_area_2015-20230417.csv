@@ -1,0 +1,41 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR51","Broadband speed","ITL2",NA,"Tees Valley and Durham",2015,NA,NA,NA,NA,NA,25,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Northumberland, and Tyne and Wear",2015,NA,NA,NA,NA,NA,23.75,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Cumbria",2015,NA,NA,NA,NA,NA,12.29,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Greater Manchester",2015,NA,NA,NA,NA,NA,28.26,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Lancashire",2015,NA,NA,NA,NA,NA,22.18,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Cheshire",2015,NA,NA,NA,NA,NA,21.24,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Merseyside",2015,NA,NA,NA,NA,NA,30.41,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"East Yorkshire and Northern Lincolnshire",2015,NA,NA,NA,NA,NA,20.21,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"North Yorkshire",2015,NA,NA,NA,NA,NA,17.15,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"South Yorkshire",2015,NA,NA,NA,NA,NA,21.89,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"West Yorkshire",2015,NA,NA,NA,NA,NA,23.95,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Derbyshire and Nottinghamshire",2015,NA,NA,NA,NA,NA,26.23,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",2015,NA,NA,NA,NA,NA,26.47,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Lincolnshire",2015,NA,NA,NA,NA,NA,18.38,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",2015,NA,NA,NA,NA,NA,19.34,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Shropshire and Staffordshire",2015,NA,NA,NA,NA,NA,21.05,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"West Midlands",2015,NA,NA,NA,NA,NA,31.97,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"East Anglia",2015,NA,NA,NA,NA,NA,19.32,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Bedfordshire and Hertfordshire",2015,NA,NA,NA,NA,NA,30.69,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Essex",2015,NA,NA,NA,NA,NA,23.17,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Inner London - West",2015,NA,NA,NA,NA,NA,21.39,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Inner London - East",2015,NA,NA,NA,NA,NA,26.02,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Outer London - East and North East",2015,NA,NA,NA,NA,NA,32.43,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Outer London - South",2015,NA,NA,NA,NA,NA,35.17,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Outer London - West and North West",2015,NA,NA,NA,NA,NA,30.5,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",2015,NA,NA,NA,NA,NA,23.21,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Surrey, East and West Sussex",2015,NA,NA,NA,NA,NA,25.08,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Hampshire and Isle of Wight",2015,NA,NA,NA,NA,NA,26.24,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Kent",2015,NA,NA,NA,NA,NA,21.87,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",2015,NA,NA,NA,NA,NA,24.51,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Dorset and Somerset",2015,NA,NA,NA,NA,NA,17.41,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Cornwall and Isles of Scilly",2015,NA,NA,NA,NA,NA,15.93,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Devon",2015,NA,NA,NA,NA,NA,17.97,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"West Wales and The Valleys",2015,NA,NA,NA,NA,NA,15.41,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"East Wales",2015,NA,NA,NA,NA,NA,20.57,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Eastern Scotland",2015,NA,NA,NA,NA,NA,23.96,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"South Western Scotland",2015,NA,NA,NA,NA,NA,24.73,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"North Eastern Scotland",2015,NA,NA,NA,NA,NA,13.32,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Highlands and Islands",2015,NA,NA,NA,NA,NA,10.67,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","ITL2",NA,"Northern Ireland",2015,NA,NA,NA,NA,NA,21.49,NA,NA,NA,NA,"Megabits per second",NA

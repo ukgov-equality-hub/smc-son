@@ -1,7 +1,13 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"DR51","Broadband speed","National",NA,"United Kingdom",2014,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Megabits per second",NA
-"DR51","Broadband speed","National",NA,"United Kingdom",2015,NA,NA,NA,NA,NA,1.17822811119771,NA,NA,NA,NA,"Megabits per second",NA
-"DR51","Broadband speed","National",NA,"United Kingdom",2016,NA,NA,NA,NA,NA,1.70381917381138,NA,NA,NA,NA,"Megabits per second",NA
-"DR51","Broadband speed","National",NA,"United Kingdom",2017,NA,NA,NA,NA,NA,2.15900233826968,NA,NA,NA,NA,"Megabits per second",NA
-"DR51","Broadband speed","National",NA,"United Kingdom",2018,NA,NA,NA,NA,NA,2.34502468173552,NA,NA,NA,NA,"Megabits per second",NA
-"DR51","Broadband speed","National",NA,"United Kingdom",2019,NA,NA,NA,NA,NA,2.98882826708236,NA,NA,NA,NA,"Megabits per second",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2007,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2008,NA,NA,NA,NA,NA,0.847071149797944,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2009,NA,NA,NA,NA,NA,0.990004288186204,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2010,NA,NA,NA,NA,NA,0.859496438835437,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2011,NA,NA,NA,NA,NA,0.784178364559159,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2012,NA,NA,NA,NA,NA,0.903524219324871,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2013,NA,NA,NA,NA,NA,0.98961186848932,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2014,NA,NA,NA,NA,NA,1.01183680638669,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2015,NA,NA,NA,NA,NA,1.30025560154525,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2016,NA,NA,NA,NA,NA,1.20207478198151,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2017,NA,NA,NA,NA,NA,1.32574149066285,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","National",NA,"United Kingdom",2018,NA,NA,NA,NA,NA,1.32497719605148,NA,NA,NA,NA,"Euros",NA

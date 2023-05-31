@@ -15,17 +15,17 @@
 
     <ol class="govuk-list govuk-list--number" style="margin-bottom: 100px;">
         <li>
-            <a href="#Summary main findings" class="govuk-link" style="display: block;">Summary main findings</a>
+            <a href="#Summary main findings" class="govuk-link">Summary main findings</a>
         </li>
         {% for item in content %}
         {% if item[0] == 'Section' %}
         <li>
-            <a href="#{{ item[1] | safe }}" class="govuk-link" style="display: block;">{{ item[1] | safe }}</a>
+            <a href="#{{ item[1] | safe }}" class="govuk-link">{{ item[1] | safe }}</a>
         </li>
         {% endif %}
         {% if item[0] == 'About' %}
         <li>
-            <a href="#About" class="govuk-link" style="display: block;">About</a>
+            <a href="#About" class="govuk-link">About</a>
         </li>
         {% endif %}
         {% endfor %}
@@ -60,13 +60,13 @@
             {% endif %}
 
             {% if subitem[0] == 'Chart' %}
-            <div style="_height: 500px;">
+            <div>
                 {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
             </div>
             {% endif %}
 
             {% if subitem[0] == 'Map' %}
-            <div style="height: {% if [subitem[1], 'title'] | attribute | safe == 'Childhood poverty' %}1125px{% else %}900px{% endif %};">
+            <div>
                 {{ visualisation(ns.counter2, 'map', subitem[1]) }}
             </div>
             {% endif %}
@@ -109,13 +109,13 @@
     {% endif %}
 
     {% if item[0] == 'Chart' %}
-    <div style="_height: 500px;">
+    <div>
         {{ visualisation(ns.counter1, 'chart', item[1]) }}
     </div>
     {% endif %}
 
     {% if item[0] == 'Map' %}
-    <div style="height: {% if [item[1], 'title'] | attribute | safe == 'Childhood poverty' %}1125px{% else %}900px{% endif %};">
+    <div>
         {{ visualisation(ns.counter1, 'map', item[1]) }}
     </div>
     {% endif %}
@@ -124,7 +124,7 @@
     <div class="grid" style="max-width: 775px;">
         {% for subitem in item[1] %}
         {% if subitem[0] == 'Chart' %}
-        <div style="_height: 500px;">
+        <div>
             {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
         </div>
         {% endif %}
@@ -134,7 +134,7 @@
     {% endif %}
 
     {% if item[0] == 'Placeholder' %}
-    <div style="_height: 500px;">
+    <div>
         {{ placeholder(ns.counter1, item[1]) }}
     </div>
     {% endif %}
@@ -142,6 +142,7 @@
     {% if item[0] == 'About' %}
     <hr style="margin: 40px 0;">
     <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
+    <p class="govuk-body">This page features new analysis written for State of the Nation based on data from the following source(s):</p>
     {% set ns.counter2 = 0 %}
     {% for subitem in item[1] %}
     {% if subitem[0] == 'HTML' %}

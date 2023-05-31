@@ -1,0 +1,44 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Tees Valley and Durham",2017,NA,NA,NA,NA,NA,157203320.46332,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Northumberland, and Tyne and Wear",2017,NA,NA,NA,NA,NA,291066177.606178,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cumbria",2017,NA,NA,NA,NA,NA,164322509.65251,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Greater Manchester",2017,NA,NA,NA,NA,NA,402637316.602317,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Lancashire",2017,NA,NA,NA,NA,NA,296668011.583012,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cheshire",2017,NA,NA,NA,NA,NA,1100892876.44788,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Merseyside",2017,NA,NA,NA,NA,NA,572562683.397683,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Yorkshire and Northern Lincolnshire",2017,NA,NA,NA,NA,NA,199918455.598456,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"North Yorkshire",2017,NA,NA,NA,NA,NA,249285193.050193,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"South Yorkshire",2017,NA,NA,NA,NA,NA,174942972.972973,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Yorkshire",2017,NA,NA,NA,NA,NA,470326911.196911,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Derbyshire and Nottinghamshire",2017,NA,NA,NA,NA,NA,1246075019.30502,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",2017,NA,NA,NA,NA,NA,456556119.69112,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Lincolnshire",2017,NA,NA,NA,NA,NA,72008378.3783784,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",2017,NA,NA,NA,NA,NA,1809417953.66795,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Shropshire and Staffordshire",2017,NA,NA,NA,NA,NA,249868397.683398,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Midlands",2017,NA,NA,NA,NA,NA,820330521.235521,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Anglia",2017,NA,NA,NA,NA,NA,2567193127.41313,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Bedfordshire and Hertfordshire",2017,NA,NA,NA,NA,NA,2066055617.76062,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Essex",2017,NA,NA,NA,NA,NA,824764922.779923,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Inner London - West",2017,NA,NA,NA,NA,NA,1472019749.03475,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Inner London - East",2017,NA,NA,NA,NA,NA,476862895.752896,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - East and North East",2017,NA,NA,NA,NA,NA,55552799.2277992,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - South",2017,NA,NA,NA,NA,NA,81578050.1930502,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - West and North West",2017,NA,NA,NA,NA,NA,1176634787.64479,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",2017,NA,NA,NA,NA,NA,2825698069.49807,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Surrey, East and West Sussex",2017,NA,NA,NA,NA,NA,1414249749.03475,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Hampshire and Isle of Wight",2017,NA,NA,NA,NA,NA,866895830.11583,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Kent",2017,NA,NA,NA,NA,NA,565092548.262548,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",2017,NA,NA,NA,NA,NA,1461749208.49421,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Dorset and Somerset",2017,NA,NA,NA,NA,NA,263290289.57529,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cornwall and Isles of Scilly",2017,NA,NA,NA,NA,NA,34778436.2934363,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Devon",2017,NA,NA,NA,NA,NA,168757934.362934,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Wales and The Valleys",2017,NA,NA,NA,NA,NA,272976602.316602,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Wales",2017,NA,NA,NA,NA,NA,260488861.003861,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Eastern Scotland",2017,NA,NA,NA,NA,NA,806675347.490348,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"South Western Scotland",2017,NA,NA,NA,NA,NA,427962722.007722,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"North Eastern Scotland",2017,NA,NA,NA,NA,NA,187314073.359073,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Highlands and Islands",2017,NA,NA,NA,NA,NA,33728667.953668,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Eastern Scotland",2017,NA,NA,NA,NA,NA,806675347.490348,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Central Scotland",2017,NA,NA,NA,NA,NA,362490328.185328,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Southern Scotland",2017,NA,NA,NA,NA,NA,65472393.8223938,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Northern Ireland",2017,NA,NA,NA,NA,NA,597070579.150579,NA,NA,NA,NA,"Euros",NA

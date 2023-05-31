@@ -164,54 +164,64 @@ class DataTable {
         }
 
         function columnAttributes() {
-            let columns = []
+            const columns = {}
+            const headers = self.dataTable['headers']
 
+            for (let i = 0; i < headers.length; i++) {
+                let heading = headers[i], include = true, align = '', format = '', replace = '', replaceWith = ''
 
-
-
-
-
-
-            if (Array.isArray(tableColumns)) {
-                if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
-                        //return ''
-
-
-///!!!!!!!!!!
-
-
-                        [
-                            {
-                                'column': {
-                                    'heading': 'column 1',
-                                    'inlude': true,
-                                    'align': 'right',
-                                    'format': ''
-                                }
-                            }, //...
-                        ]
-
-
-
-
-
-                } else {
-                    if (tableColumns.includes(columnName)) {
-                        return columnName
+                if (Array.isArray(tableColumns)) {
+                    include = false
+                    if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
+                        for (let j = 0; j < tableColumns.length; j++) {
+                            const tableColumn = tableColumns[j]
+                            if (tableColumn['column'] && tableColumn['column'] == heading) {
+                                heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
+                                include = true//'include' in tableColumn ? tableColumn['include'] : false
+                                align = 'align' in tableColumn ? tableColumn['align'] : ''
+                                format = 'format' in tableColumn ? tableColumn['format'] : ''
+                                replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
+                                replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
+                            }
+                        }
+                    } else {
+                        if (tableColumns.includes(heading)) {
+                            include = true
+                            heading = heading.replace(/_/g, ' ')
+                        }
+                    }
+                } else if (typeof tableColumns === 'object' && tableColumns !== null) {
+                    include = false
+                    if (heading in tableColumns) {
+                        const tableColumn = tableColumns[heading]
+                        heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
+                        include = true//'include' in tableColumn ? tableColumn['include'] : false
+                        align = 'align' in tableColumn ? tableColumn['align'] : ''
+                        format = 'format' in tableColumn ? tableColumn['format'] : ''
+                        replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
+                        replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
                     }
                 }
-                return false
-            } else {
-                return columnName
+
+                const column = {
+                    heading: heading,
+                    include: include,
+                    align: align,
+                    format: format,
+                    replace: replace,
+                    replaceWith: replaceWith
+                }
+                columns[headers[i]] = column
             }
 
-
-
+            return columns
         }
 
         function fixTable() {
             const table = document.getElementById(self.el)
             const headers = self.dataTable['headers']
+            const columns = columnAttributes()
+            self.dataTable['columns'] = columns
             const rows = table.tagName == 'TABLE' ? table.rows : table.children
             let numColumns = Array.isArray(tableColumns) ? tableColumns.length : rows[0].children.length
             const widths = []
@@ -241,7 +251,8 @@ class DataTable {
                         for (let j = 0; j < rows[i].children.length; j++) {
                             if (rows[i].children[j].tagName == 'TD') {
                                 let th = document.createElement('th')
-                                th.innerHTML = rows[i].children[j].innerHTML.replace(/_/g, ' ')
+                                if (['left', 'center', 'right'].includes(columns[rows[i].children[j].innerText].align)) th.classList.add(`align-${columns[rows[i].children[j].innerText].align}`)
+                                th.innerHTML = columns[rows[i].children[j].innerText].heading
                                 rows[i].children[j].parentNode.replaceChild(th, rows[i].children[j])
                             }
                             rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
@@ -308,38 +319,7 @@ class DataTable {
         }
 
         function allowColumn(columnName) {
-            if (Array.isArray(tableColumns)) {
-                if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
-                    if (columnName in tableColumns) {
-                        //return ''
-/*
-
-///!!!!!!!!!!
-
-
-                        [
-                            {
-                                'column': 'column1',
-                                'heading': 'column 1',
-                                'inlude': true,
-                                'align': 'right',
-                                'format': ''
-                            }, ...
-                        ]
-*/
-
-
-
-                    }
-                } else {
-                    if (tableColumns.includes(columnName)) {
-                        return columnName
-                    }
-                }
-                return false
-            } else {
-                return columnName
-            }
+            return !!self.dataTable['columns'][columnName].include
         }
 
         function clearDataTable() {
@@ -359,6 +339,7 @@ class DataTable {
             if (!(self.dataTable)) return
             const table = document.getElementById(self.el)
             const headers = self.dataTable['headers']
+            const columns = self.dataTable['columns']
             const numeric = self.dataTable['numeric']
             const type = self.dataTable['type']
             let data = self.dataTable['data']
@@ -451,11 +432,32 @@ class DataTable {
                     if (allowColumn(headers[j])) {
                         let cell = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'td' : 'div')
                         cell.classList.add('table-column', 'govuk-table__cell')
-                        if (numeric[j]) cell.classList.add('numeric')
+                        //if (numeric[j]) cell.classList.add('numeric')
                         if (widths[j]) cell.style.width = widths[j]
                         cell.setAttribute('data-column', `${j}`)
                         applyAttributes(cell, data[i]['_attributes'][j + 1])
-                        cell.innerHTML = data[i][type == 'array' ? j : headers[j]]
+                        if (['left', 'center', 'right'].includes(columns[headers[j]].align)) cell.classList.add(`align-${columns[headers[j]].align}`)
+                        let content = data[i][type == 'array' ? j : headers[j]]
+
+                        if (columns[headers[j]].format != '') {
+                            if (['percent', '%', '£', '$', '€', 'currency', 'number'].includes(columns[headers[j]].format) && isNumeric(content)) {
+                                if (['percent', '%'].includes(columns[headers[j]].format)) {
+                                    content = `${parseFloat(content, 10).toFixed(2)}%`
+                                } else if (['£', '$', '€'].includes(columns[headers[j]].format)) {
+                                    content = `${columns[headers[j]].format == 'currency' ? '£' : columns[headers[j]].format}${numberWithCommas(parseFloat(content, 10).toFixed(2))}`
+                                } else if (columns[headers[j]].format == 'number') {
+                                    content = numberWithCommas(content)
+                                }
+                            } else if (columns[headers[j]].format.substr(-2) == 'dp' && isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2))) {
+                                content = numberWithCommas(parseFloat(content, 10).toFixed(parseInt(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2), 10)))
+                            }
+                        }
+
+                        if (columns[headers[j]].replace != '' && columns[headers[j]].replaceWith != '' ) {
+                            content = content.replace(new RegExp(columns[headers[j]].replace, 'g'), columns[headers[j]].replaceWith)
+                        }
+
+                        cell.innerHTML = content
                         if (allowColumn(headers[j])) {
                             row.appendChild(cell)
                         }

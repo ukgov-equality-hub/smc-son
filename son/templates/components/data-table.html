@@ -17,6 +17,8 @@
             if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
                 if ('datatable' in options) {
                     options = options['datatable']
+                } else if ('columns' in options) {
+                    options = { 'dataFormat': 'array', 'allowColumnResize': true, 'allowFilter': true, 'allowSort': true, 'pageSize': 10, 'columns': options['columns'] }
                 } else {
                     const columns = []
                     if ('xkey' in options) columns.push(options['xkey'])

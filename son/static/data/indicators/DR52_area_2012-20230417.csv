@@ -1,0 +1,41 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Tees Valley and Durham",2012,NA,NA,NA,NA,NA,157679416.666667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Northumberland, and Tyne and Wear",2012,NA,NA,NA,NA,NA,226170875,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cumbria",2012,NA,NA,NA,NA,NA,100081666.666667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Greater Manchester",2012,NA,NA,NA,NA,NA,327478166.666667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Lancashire",2012,NA,NA,NA,NA,NA,273284562.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cheshire",2012,NA,NA,NA,NA,NA,1431917562.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Merseyside",2012,NA,NA,NA,NA,NA,296023770.833333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Yorkshire and Northern Lincolnshire",2012,NA,NA,NA,NA,NA,141067229.166667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"North Yorkshire",2012,NA,NA,NA,NA,NA,255446750,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"South Yorkshire",2012,NA,NA,NA,NA,NA,119009291.666667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Yorkshire",2012,NA,NA,NA,NA,NA,305010583.333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Derbyshire and Nottinghamshire",2012,NA,NA,NA,NA,NA,1177968062.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",2012,NA,NA,NA,NA,NA,411492000,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Lincolnshire",2012,NA,NA,NA,NA,NA,48066583.3333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",2012,NA,NA,NA,NA,NA,1121187395.83333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Shropshire and Staffordshire",2012,NA,NA,NA,NA,NA,211737208.333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Midlands",2012,NA,NA,NA,NA,NA,656181958.333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Anglia",2012,NA,NA,NA,NA,NA,2426470291.66667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Bedfordshire and Hertfordshire",2012,NA,NA,NA,NA,NA,1534586291.66667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Essex",2012,NA,NA,NA,NA,NA,735974562.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Inner London - West",2012,NA,NA,NA,NA,NA,1009394937.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Inner London - East",2012,NA,NA,NA,NA,NA,155909437.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - East and North East",2012,NA,NA,NA,NA,NA,56100500,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - South",2012,NA,NA,NA,NA,NA,104167083.333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Outer London - West and North West",2012,NA,NA,NA,NA,NA,686002187.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",2012,NA,NA,NA,NA,NA,2302151062.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Surrey, East and West Sussex",2012,NA,NA,NA,NA,NA,1313316812.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Hampshire and Isle of Wight",2012,NA,NA,NA,NA,NA,1200571458.33333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Kent",2012,NA,NA,NA,NA,NA,748093895.833333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",2012,NA,NA,NA,NA,NA,1509804375,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Dorset and Somerset",2012,NA,NA,NA,NA,NA,255991104.166667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Cornwall and Isles of Scilly",2012,NA,NA,NA,NA,NA,26280270.8333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Devon",2012,NA,NA,NA,NA,NA,64951500,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"West Wales and The Valleys",2012,NA,NA,NA,NA,NA,82516583.3333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"East Wales",2012,NA,NA,NA,NA,NA,287309687.5,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Eastern Scotland",2012,NA,NA,NA,NA,NA,525190250,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"South Western Scotland",2012,NA,NA,NA,NA,NA,260620875,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"North Eastern Scotland",2012,NA,NA,NA,NA,NA,116829666.666667,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Highlands and Islands",2012,NA,NA,NA,NA,NA,59776270.8333333,NA,NA,NA,NA,"Euros",NA
+"DR52","Business enterprise R&D expenditure","ITL2",NA,"Northern Ireland",2012,NA,NA,NA,NA,NA,571759583.333333,NA,NA,NA,NA,"Euros",NA

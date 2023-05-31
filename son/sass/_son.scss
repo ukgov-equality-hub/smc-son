@@ -286,6 +286,43 @@ div.data-table-data table {
     }
 }
 
+.grid2.map {
+    height: 700px;
+    padding: 10px;
+    background: #fafafa;
+
+    > div {
+        height: 700px;
+        position: relative;
+    }
+}
+
+@media(max-width: 1400px) {
+    .grid2 {
+        display: block;
+
+        > div {
+            width: 100%;
+        }
+    }
+
+    .grid2.map {
+        height: 1440px;
+        padding: 10px;
+        background: #fafafa;
+
+        > div {
+            height: 700px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        > div:last-child {
+            margin-top: 20px;
+        }
+    }
+}
+
 .grid5 {
     > div {
         width: 20%;

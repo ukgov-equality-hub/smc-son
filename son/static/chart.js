@@ -358,7 +358,10 @@ class Chart {
                             z: zkey,
                             facet: group ? true : null,
                             text: x => getLabelText(x['labelkey'] || x[ykey], 'label'),
-                            fill: labelColour
+                            title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`,
+                            fill: labelColour,
+                            stroke: labelColour == '#000' ? '#fff' : '#000',
+                            strokeWidth: 3
                         }))
                     } else {
                         marks.push(Plot.text(chartData, {
@@ -368,7 +371,10 @@ class Chart {
                             z: zkey,
                             facet: group ? true : null,
                             text: x => getLabelText(x['labelkey'] || x[xkey], 'label'),
-                            fill: labelColour
+                            title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`,
+                            fill: labelColour,
+                            stroke: labelColour == '#000' ? '#fff' : '#000',
+                            strokeWidth: 3
                         }))
                     }
                 }
@@ -856,7 +862,7 @@ class Chart {
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {

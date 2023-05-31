@@ -697,7 +697,7 @@ class Choropleth {
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(key)}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {
