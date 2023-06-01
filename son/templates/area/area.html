@@ -6,12 +6,13 @@
 {% endblock %}
 
 {% block content %}
-<script src="{{ url_for('static', filename='data-utils.js') }}"></script>
-<script src="{{ url_for('static', filename='map.js') }}"></script>
-<script src="{{ url_for('static', filename='chart.js') }}"></script>
 <div class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-l">{{ title }}</h1>
-    <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
+    <p class="govuk-body">This page shows how {{ title }} is ranked for 5 different aspects of social mobility.</p>
+
+    <h3 class="govuk-heading-m">How regions are ranked</h3>
+    <p class="govuk-body">For each aspect, 41 regions in the UK are divided into 5 equally-sized groups, and then ranked from the top 20% to the bottom 20%.</p>
+    <p class="govuk-body">For example, {{ title }} ranks in the _____ 20% of regions for _____.</p>
 
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}

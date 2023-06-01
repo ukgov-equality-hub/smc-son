@@ -115,6 +115,29 @@ ul.collapsible {
     }
 }
 
+ul.none-collapsible {
+    li.moj-side-navigation__item {
+        a {
+            font-weight: normal;
+        }
+
+        a:before {
+            display: none;
+            height: 0;
+        }
+    }
+
+    li.moj-side-navigation__item.is-active {
+        border-bottom: none;
+
+        a {
+            border-color: #1d70b8;
+            background-color: #f3f2f1;
+            font-weight: bold;
+        }
+    }
+}
+
 nav.moj-side-navigation {
     margin-top: 30px;
 }

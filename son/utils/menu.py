@@ -268,920 +268,902 @@ menu = {
         {
             'name': 'Social mobility by area'
         }
-    ]
-}
-
-_menu3 = {
-    'domains': [
+    ],
+    'areas': [
         {
-            'name': 'Mobility outcomes',
-            'subdomains': [
-                {
-                    'name': 'Occupation',
-                    'indicators': [
-                        {
-                            'id': 'MO11',
-                            'name': 'Occupational mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO12',
-                            'name': 'Occupational mobility (relative)'
-                        },
-                        {
-                            'id': 'MO13',
-                            'name': 'Occupational mobility (absolute) [LS]'
-                        },
-                        {
-                            'id': 'MO14',
-                            'name': 'Occupational mobility (relative) [LS]'
-                        },
-                        {
-                            'id': 'MO15',
-                            'name': 'Occupational mobility by year of birth (absolute)'
-                        },
-                        {
-                            'id': 'MO16',
-                            'name': 'Occupational mobility (relative, birth-cohort studies)'
-                        },
-                        {
-                            'id': 'MO17',
-                            'name': 'Occupational mobility - international comparisons (absolute)'
-                        },
-                        {
-                            'id': 'MO18',
-                            'name': 'Occupational mobility - international comparisons (relative)'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Income',
-                    'indicators': [
-                        {
-                            'id': 'MO21',
-                            'name': 'Income mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO22',
-                            'name': 'Income mobility (relative)'
-                        },
-                        {
-                            'id': 'MO23',
-                            'name': 'Income mobility (relative, rank-rank correlation, LEO)'
-                        },
-                        {
-                            'id': 'MO24',
-                            'name': 'Income mobility - international comparisons (absolute)'
-                        },
-                        {
-                            'id': 'MO25',
-                            'name': 'Income mobility - international comparisons (relative)'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Education',
-                    'indicators': [
-                        {
-                            'id': 'MO31',
-                            'name': 'Educational mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO32',
-                            'name': 'Educational mobility (relative)'
-                        },
-                        {
-                            'id': 'MO33',
-                            'name': 'Educational mobility - international comparisons (absolute)'
-                        },
-                        {
-                            'id': 'MO34',
-                            'name': 'Educational mobility - international comparisons (relative)'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Housing',
-                    'indicators': [
-                        {
-                            'id': 'MO41',
-                            'name': 'Housing mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO42',
-                            'name': 'Housing mobility (relative)'
-                        },
-                        {
-                            'id': 'MO43',
-                            'name': 'Housing mobility (absolute) [LS]'
-                        },
-                        {
-                            'id': 'MO44',
-                            'name': 'Housing mobility (relative) [LS]'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Wealth',
-                    'indicators': [
-                        {
-                            'id': 'MO51',
-                            'name': 'Wealth mobility (relative)'
-                        }
-                    ]
-                }
+            'id': 'TLI3',
+            'name': 'Inner London - West',
+            'itl3': [
+                'Camden and City of London',
+                'Kensington and Chelsea, and Hammersmith and Fulham',
+                'Wandsworth',
+                'Westminster'
+            ],
+            'la': [
+                'City of London',
+                'Camden',
+                'Westminster',
+                'Hammersmith and Fulham',
+                'Kensington and Chelsea',
+                'Wandsworth'
             ]
         },
         {
-            'name': 'Intermediate outcomes',
-            'subdomains': [
-                {
-                    'name': 'The years of compulsory schooling (5 to 16 years)',
-                    'indicators': [
-                        {
-                            'id': 'IN11',
-                            'name': 'Level of development at age 5'
-                        },
-                        {
-                            'id': 'IN12',
-                            'name': 'Attainment at age 11'
-                        },
-                        {
-                            'id': 'IN13',
-                            'name': 'Attainment at age 16'
-                        },
-                        {
-                            'id': 'IN14',
-                            'name': 'Skills at age 15'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Routes into work (16 to 29 years)',
-                    'indicators': [
-                        {
-                            'id': 'IN21a',
-                            'name': 'TBD - Destinations after 16: NEET'
-                        },
-                        {
-                            'id': 'IN21b',
-                            'name': 'TBD - Destinations after age 16: education and training'
-                        },
-                        {
-                            'id': 'IN21c',
-                            'name': 'TBD - Destinations after age 16: employment'
-                        },
-                        {
-                            'id': 'IN22',
-                            'name': 'Entry to higher education'
-                        },
-                        {
-                            'id': 'IN23',
-                            'name': 'Highest qualification'
-                        },
-                        {
-                            'id': 'IN24',
-                            'name': 'Skills in early adulthood'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Work in early adulthood (25 to 29 years)',
-                    'indicators': [
-                        {
-                            'id': 'IN31',
-                            'name': 'Economic activity'
-                        },
-                        {
-                            'id': 'IN32',
-                            'name': 'Unemployment'
-                        },
-                        {
-                            'id': 'IN33',
-                            'name': 'Occupational level'
-                        },
-                        {
-                            'id': 'IN34',
-                            'name': 'Earnings'
-                        },
-                        {
-                            'id': 'IN35',
-                            'name': 'TBD - Returns to education (income, controlling by SEB)'
-                        },
-                        {
-                            'id': 'IN36',
-                            'name': 'TBD - Direct effect of social origin on earnings'
-                        },
-                        {
-                            'id': 'IN37',
-                            'name': 'TBD - Returns to education (economic activity, controlling by SEB)'
-                        },
-                        {
-                            'id': 'IN38',
-                            'name': 'TBD - Direct effect of social origin on economic activity'
-                        },
-                        {
-                            'id': 'IN39',
-                            'name': 'TBD - Returns to education (employment, controlling by SEB)'
-                        },
-                        {
-                            'id': 'IN310',
-                            'name': 'TBD - Direct effect of social origin on unemployment'
-                        },
-                        {
-                            'id': 'IN311',
-                            'name': 'TBD - Returns to education (occupation level, controlling by SEB)'
-                        },
-                        {
-                            'id': 'IN312',
-                            'name': 'TBD - Direct effect of social origin on occupation level'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Career progression (35 to 44 years)',
-                    'indicators': [
-                        {
-                            'id': 'IN41',
-                            'name': 'Further training and qualifications'
-                        },
-                        {
-                            'id': 'IN42',
-                            'name': 'Occupational progression'
-                        },
-                        {
-                            'id': 'IN43',
-                            'name': 'Income progression'
-                        },
-                        {
-                            'id': 'IN44',
-                            'name': 'Class pay gap'
-                        }
-                    ]
-                }
+            'id': 'TLI4',
+            'name': 'Inner London - East',
+            'itl3': [
+                'Haringey and Islington',
+                'Hackney and Newham',
+                'Lambeth',
+                'Lewisham and Southwark',
+                'Tower Hamlets'
+            ],
+            'la': [
+                'Hackney',
+                'Newham',
+                'Tower Hamlets',
+                'Haringey',
+                'Islington',
+                'Lewisham',
+                'Southwark',
+                'Lambeth'
             ]
         },
         {
-            'name': 'Drivers of mobility',
-            'subdomains': [
-                {
-                    'name': 'Conditions of childhood',
-                    'indicators': [
-                        {
-                            'id': 'DR11',
-                            'name': 'Distribution of earnings'
-                        },
-                        {
-                            'id': 'DR12',
-                            'name': 'Childhood poverty'
-                        },
-                        {
-                            'id': 'DR13',
-                            'name': 'Distribution of parental education'
-                        },
-                        {
-                            'id': 'DR14',
-                            'name': 'Distribution of parental occupation'
-                        },
-                        {
-                            'id': 'DR15',
-                            'name': 'Inequalities in child-rearing practices'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Educational opportunities and quality of schooling',
-                    'indicators': [
-                        {
-                            'id': 'DR21',
-                            'name': 'Further education and training opportunities'
-                        },
-                        {
-                            'id': 'DR22',
-                            'name': 'Availability of high-quality school education'
-                        },
-                        {
-                            'id': 'DR23a',
-                            'name': 'TBC - Access to higher education: enrollment rate in secondary or tertiary education at age 19'
-                        },
-                        {
-                            'id': 'DR23b',
-                            'name': 'TBC - Access to higher education: initial entrants to higher education'
-                        },
-                        {
-                            'id': 'DR24',
-                            'name': 'Availability of high-quality higher education'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Work opportunities for young people',
-                    'indicators': [
-                        {
-                            'id': 'DR31',
-                            'name': 'Job vacancy rate'
-                        },
-                        {
-                            'id': 'DR32',
-                            'name': 'Youth unemployment'
-                        },
-                        {
-                            'id': 'DR33',
-                            'name': 'Occupational level of 25 to 29 year olds'
-                        },
-                        {
-                            'id': 'DR34',
-                            'name': 'Earnings of 22 to 29 year olds'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Social capital and connections',
-                    'indicators': [
-                        {
-                            'id': 'DR41',
-                            'name': 'Civic engagement'
-                        },
-                        {
-                            'id': 'DR42',
-                            'name': 'Level of trust, fairness and helpfulness'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Environment favouring entrepreneurship',
-                    'indicators': [
-                        {
-                            'id': 'DR51',
-                            'name': 'Broadband speed'
-                        },
-                        {
-                            'id': 'DR52',
-                            'name': 'Business expenditure on R and D'
-                        },
-                        {
-                            'id': 'DR53',
-                            'name': 'University research students'
-                        }
-                    ]
-                }
+            'id': 'TLI6',
+            'name': 'Outer London - South',
+            'itl3': [
+                'Bromley',
+                'Croydon',
+                'Merton, Kingston upon Thames and Sutton'
+            ],
+            'la': [
+                'Enfield',
+                'Bromley',
+                'Croydon',
+                'Kingston upon Thames',
+                'Merton',
+                'Sutton'
             ]
         },
         {
-            'name': 'Social mobility by area'
-        }
-    ]
-}
-
-_menu2 = {
-    'domains': [
-        {
-            'name': 'Mobility outcomes',
-            'subdomains': [
-                {
-                    'name': 'Education',
-                    'indicators': [
-                        {
-                            'id': 'MO11',
-                            'name': 'Educational mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO12',
-                            'name': 'Educational mobility (relative)'
-                        },
-                        {
-                            'id': 'MO13',
-                            'name': 'Educational mobility - international comparisons (absolute)'
-                        },
-                        {
-                            'id': 'MO14',
-                            'name': 'Educational mobility - international comparisons (relative)'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Occupation',
-                    'indicators': [
-                        {
-                            'id': 'MO21',
-                            'name': 'Occupational mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO22',
-                            'name': 'Occupational mobility (relative)'
-                        },
-                        #{
-                        #    'id': 'MO23',
-                        #    'name': '[No data for SON23]'
-                        #},
-                        #{
-                        #    'id': 'MO24',
-                        #    'name': '[No data for SON23]'
-                        #},
-                        {
-                            'id': 'MO25',
-                            'name': 'Occupational mobility by year of birth (absolute)'
-                        },
-                        {
-                            'id': 'MO26',
-                            'name': 'Occupational mobility (relative, birth-cohort studies)'
-                        },
-                        {
-                            'id': 'MO27',
-                            'name': 'Occupational mobility - international comparisons (absolute)'
-                        },
-                        {
-                            'id': 'MO28',
-                            'name': 'Occupational mobility - international comparisons (relative)'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Housing',
-                    'indicators': [
-                        {
-                            'id': 'MO31',
-                            'name': 'Housing mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO32',
-                            'name': 'Housing mobility (relative)'
-                        },
-                        #{
-                        #    'id': 'MO33',
-                        #    'name': '[No data for SON23]'
-                        #},
-                        #{
-                        #    'id': 'MO34',
-                        #    'name': '[No data for SON23]'
-                        #}
-                    ]
-                },
-                {
-                    'name': 'Income',
-                    'indicators': [
-                        {
-                            'id': 'MO41',
-                            'name': 'Income mobility (relative, rank-rank correlation, UKHLS)'
-                        },
-                        {
-                            'id': 'MO42',
-                            'name': 'Income mobility (relative, intergenerational elasticity, UKHLS)'
-                        },
-                        {
-                            'id': 'MO43',
-                            'name': 'Income mobility (relative, rank-rank correlation, LEO)'
-                        },
-                        #{
-                        #    'id': 'MO44',
-                        #    'name': '[No data for SON23]'
-                        #}
-                    ]
-                },
-                {
-                    'name': 'Wealth',
-                    'indicators': [
-                        {
-                            'id': 'MO45',
-                            'name': 'Income mobility (absolute)'
-                        },
-                        {
-                            'id': 'MO51',
-                            'name': 'Wealth mobility (relative)'
-                        }
-                    ]
-                }
+            'id': 'TLI5',
+            'name': 'Outer London - East and North East',
+            'itl3': [
+                'Barking and Dagenham, and Havering',
+                'Bexley and Greenwich',
+                'Enfield',
+                'Redbridge and Waltham Forest'
+            ],
+            'la': [
+                'Bexley',
+                'Greenwich',
+                'Barking and Dagenham',
+                'Havering',
+                'Redbridge',
+                'Waltham Forest'
             ]
         },
         {
-            'name': 'Intermediate outcomes',
-            'subdomains': [
-                {
-                    'name': '5 to 16 years',
-                    'indicators': [
-                        {
-                            'id': 'IN11',
-                            'name': 'Level of development at age 5'
-                        },
-                        {
-                            'id': 'IN12',
-                            'name': 'Attainment at age 11'
-                        },
-                        {
-                            'id': 'IN13',
-                            'name': 'Attainment at age 16'
-                        },
-                        {
-                            'id': 'IN14',
-                            'name': 'Skills at age 15'
-                        }
-                    ]
-                },
-                {
-                    'name': '16 to 24 years',
-                    'indicators': [
-                        {
-                            'id': 'IN21',
-                            'name': 'Destinations after age 16'
-                        },
-                        {
-                            'id': 'IN22',
-                            'name': 'Entry to higher education'
-                        },
-                        {
-                            'id': 'IN23',
-                            'name': 'Highest qualification by age 25'
-                        },
-                        {
-                            'id': 'IN24',
-                            'name': 'Skills in early adulthood'
-                        }
-                    ]
-                },
-                {
-                    'name': '25 to 29 years',
-                    'indicators': [
-                        {
-                            'id': 'IN31',
-                            'name': 'Economic activity'
-                        },
-                        {
-                            'id': 'IN32',
-                            'name': 'Unemployment'
-                        },
-                        {
-                            'id': 'IN33',
-                            'name': 'Occupational level'
-                        },
-                        {
-                            'id': 'IN34',
-                            'name': 'Earnings'
-                        },
-                        {
-                            'id': 'IN35',
-                            'name': 'Returns to education'
-                        }
-                    ]	
-                },
-                {
-                    'name': '35 to 44 years',
-                    'indicators': [
-                        {
-                            'id': 'IN41',
-                            'name': 'Further training and qualifications'
-                        },
-                        {
-                            'id': 'IN42',
-                            'name': 'Occupational progression'
-                        },
-                        {
-                            'id': 'IN43',
-                            'name': 'Income progression'
-                        },
-                        {
-                            'id': 'IN44',
-                            'name': 'Class pay gap'
-                        }
-                    ]
-                }
+            'id': 'TLI7',
+            'name': 'Outer London - West and North West',
+            'itl3': [
+                'Barnet',
+                'Brent',
+                'Ealing',
+                'Harrow and Hillingdon',
+                'Hounslow and Richmond upon Thames'
+            ],
+            'la': [
+                'Barnet',
+                'Brent',
+                'Ealing',
+                'Harrow',
+                'Hillingdon',
+                'Hounslow',
+                'Richmond upon Thames'
             ]
         },
         {
-            'name': 'Drivers of mobility',
-            'subdomains': [
-                {
-                    'name': 'Inequality among children',
-                    'indicators': [
-                        {
-                            'id': 'DR11',
-                            'name': 'Distribution of earnings across families'
-                        },
-                        {
-                            'id': 'DR12',
-                            'name': 'Childhood poverty'
-                        },
-                        {
-                            'id': 'DR13',
-                            'name': 'Distribution of parental education'
-                        },
-                        {
-                            'id': 'DR14',
-                            'name': 'Class inequality among families with school-age children'
-                        },
-                        {
-                            'id': 'DR15',
-                            'name': 'Inequalities in child-rearing practices'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Educational opportunities',
-                    'indicators': [
-                        {
-                            'id': 'DR21',
-                            'name': 'Further education and training opportunities'
-                        },
-                        {
-                            'id': 'DR22',
-                            'name': 'Availability of high-quality school education'
-                        },
-                        {
-                            'id': 'DR23',
-                            'name': 'Access to higher education'
-                        },
-                        {
-                            'id': 'DR24',
-                            'name': 'Availability of high-quality higher education'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Work opportunities for young people',
-                    'indicators': [
-                        {
-                            'id': 'DR31',
-                            'name': 'Job vacancy rate'
-                        },
-                        {
-                            'id': 'DR32',
-                            'name': 'Youth unemployment'
-                        },
-                        {
-                            'id': 'DR33',
-                            'name': 'Occupational level of 25 to 29 year olds'
-                        },
-                        {
-                            'id': 'DR34',
-                            'name': 'Earnings of 22 to 29 year olds'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Social connections',
-                    'indicators': [
-                        {
-                            'id': 'DR41',
-                            'name': 'Civic engagement'
-                        },
-                        {
-                            'id': 'DR42',
-                            'name': 'Environment favouring entrepreneurship'
-                        }
-                    ]	
-                }
+            'id': 'TLH2',
+            'name': 'Bedfordshire and Hertfordshire',
+            'itl3': [
+                'Luton',
+                'Bedford',
+                'Central Bedfordshire',
+                'Hertfordshire CC'
+            ],
+            'la': [
+                'Luton',
+                'Broxbourne',
+                'Dacorum',
+                'Hertsmere',
+                'North Hertfordshire',
+                'Three Rivers',
+                'Watford',
+                'St Albans',
+                'Welwyn Hatfield',
+                'East Hertfordshire',
+                'Stevenage',
+                'Bedford',
+                'Central Bedfordshire'
             ]
         },
         {
-            'name': 'Social mobility by area'
-        }
-    ]
-}
-
-_menu1 = {
-    'domains': [
-        {
-            'name': 'Mobility outcomes',
-            'subdomains': [
-                {
-                    'name': 'Education',
-                    'indicators': [
-                        {
-                            'name': 'Absolute educational mobility in UK'
-                        },
-                        {
-                            'name': 'Relative absolute mobility in UK'
-                        },
-                        {
-                            'name': 'Absolute educational mobility - OECD comparison'
-                        },
-                        {
-                            'name': 'Relative educational mobility - OECD comparison'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Housing',
-                    'indicators': [
-                        {
-                            'name': 'Absolute housing mobility - LFS'
-                        },
-                        {
-                            'name': 'Relative housing mobility - LFS'
-                        },
-                        {
-                            'name': 'Absolute housing mobility - LS'
-                        },
-                        {
-                            'name': 'Relative housing mobility - LS'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Income',
-                    'indicators': [
-                        {
-                            'name': 'Relative income mobility - Rank-rank correlation - UKLHS'
-                        },
-                        {
-                            'name': 'Relative income mobility - Intergenerational elasticity - UKLHS'
-                        },
-                        {
-                            'name': 'Relative income mobility - Rank-rank correlation - LEO'
-                        },
-                        {
-                            'name': 'Relative income mobility - Intergenerational elasticity - LEO'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Occupation',
-                    'indicators': [
-                        {
-                            'name': 'Absolute occupational mobility - LFS'
-                        },
-                        {
-                            'name': 'Relative occupational mobility - LFS'
-                        },
-                        {
-                            'name': 'Absolute occupational mobility - LS'
-                        },
-                        {
-                            'name': 'Relative occupational mobility - LS'
-                        },
-                        {
-                            'name': 'Absolute occupational mobility - Birth cohort studies'
-                        },
-                        {
-                            'name': 'Relative occupational mobility - Birth cohort studies'
-                        },
-                        {
-                            'name': 'Absolute occupational mobility - International comparison'
-                        },
-                        {
-                            'name': 'Relative occupational mobility - International comparison'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Wealth',
-                    'indicators': [
-                        {
-                            'name': 'Absolute income mobility'
-                        },
-                        {
-                            'name': 'Relative wealth mobility'
-                        }
-                    ]
-                }
+            'id': 'TLJ1',
+            'name': 'Berkshire, Buckinghamshire and Oxfordshire',
+            'itl3': [
+                'Berkshire',
+                'Milton Keynes',
+                'Buckinghamshire',
+                'Oxfordshire CC'
+            ],
+            'la': [
+                'Bracknell Forest',
+                'West Berkshire',
+                'Reading',
+                'Slough',
+                'Windsor and Maidenhead',
+                'Wokingham',
+                'Milton Keynes',
+                'Buckinghamshire',
+                'Cherwell',
+                'Oxford',
+                'South Oxfordshire',
+                'Vale of White Horse',
+                'West Oxfordshire'
             ]
         },
         {
-            'name': 'Intermediate outcomes',
-            'subdomains': [
-                {
-                    'name': '5 to 16 years',
-                    'indicators': [
-                        {
-                            'name': 'Level of development at age 5'
-                        },
-                        {
-                            'name': 'Attainment at age 11'
-                        },
-                        {
-                            'name': 'Attainment at 16'
-                        },
-                        {
-                            'name': 'Skills at 15'
-                        }
-                    ]
-                },
-                {
-                    'name': '16 to 24 years',
-                    'indicators': [
-                        {
-                            'name': 'Destinations following the end of compulsory full-time schooling'
-                        },
-                        {
-                            'name': 'Entry to higher education'
-                        },
-                        {
-                            'name': 'Highest qualification by age 25'
-                        },
-                        {
-                            'name': 'Skills in early adulthood'
-                        }
-                    ]
-                },
-                {
-                    'name': '25 to 29 years',
-                    'indicators': [
-                        {
-                            'name': 'Economic activity'
-                        },
-                        {
-                            'name': 'Unemployment'
-                        },
-                        {
-                            'name': 'Occupational level'
-                        },
-                        {
-                            'name': 'Earnings'
-                        },
-                        {
-                            'name': 'Returns to education'
-                        }
-                    ]
-                },
-                {
-                    'name': '35 to 44 years',
-                    'indicators': [
-                        {
-                            'name': 'Acquisition of further training and qualifications'
-                        },
-                        {
-                            'name': 'Occupational progression'
-                        },
-                        {
-                            'name': 'Income progression'
-                        },
-                        {
-                            'name': 'Class pay gap'
-                        }
-                    ]
-                }
+            'id': 'TLD6',
+            'name': 'Cheshire',
+            'itl3': [
+                'Warrington',
+                'Cheshire East',
+                'Cheshire West and Chester'
+            ],
+            'la': [
+                'Warrington',
+                'Cheshire East',
+                'Cheshire West and Chester'
             ]
         },
         {
-            'name': 'Drivers of mobility',
-            'subdomains': [
-                {
-                    'name': 'Education opportunities',
-                    'indicators': [
-                        {
-                            'name': 'Opportunities for post-16 further education and training'
-                        },
-                        {
-                            'name': 'Availability of high-quality school education'
-                        },
-                        {
-                            'name': 'Opportunities for access to higher education'
-                        },
-                        {
-                            'name': 'Availability of high-quality higher education'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Inequality among children',
-                    'indicators': [
-                        {
-                            'name': 'Economic inequality between families with school-age children'
-                        },
-                        {
-                            'name': 'Childhood poverty'
-                        },
-                        {
-                            'name': 'Cultural inequality between families with school-age children'
-                        },
-                        {
-                            'name': 'Class inequality between families with school-age children'
-                        },
-                        {
-                            'name': 'Inequalities in child-rearing'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Social connections',
-                    'indicators': [
-                        {
-                            'name': 'Civic engagement'
-                        },
-                        {
-                            'name': 'Environment conducive to entrepreneurship'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Work opportunities for young people',
-                    'indicators': [
-                        {
-                            'name': 'Vacancy rate at entry level'
-                        },
-                        {
-                            'name': 'Youth unemployment'
-                        },
-                        {
-                            'name': 'Type of employment taken by young people'
-                        },
-                        {
-                            'name': 'Median earnings of young people'
-                        }
-                    ]
-                }
+            'id': 'TLK3',
+            'name': 'Cornwall and Isles of Scilly',
+            'itl3': [
+                'Cornwall and Isles of Scilly'
+            ],
+            'la': [
+                'Cornwall',
+                'Isles of Scilly'
             ]
         },
         {
-            'name': 'Social mobility by area'
+            'id': 'TLD1',
+            'name': 'Cumbria',
+            'itl3': [
+                'West Cumbria',
+                'East Cumbria'
+            ],
+            'la': [
+                'Allerdale',
+                'Barrow-in-Furness',
+                'Copeland',
+                'Carlisle',
+                'Eden',
+                'South Lakeland'
+            ]
+        },
+        {
+            'id': 'TLF1',
+            'name': 'Derbyshire and Nottinghamshire',
+            'itl3': [
+                'Derby',
+                'East Derbyshire',
+                'South and West Derbyshire',
+                'Nottingham',
+                'North Nottinghamshire',
+                'South Nottinghamshire'
+            ],
+            'la': [
+                'Derby',
+                'Bolsover',
+                'Chesterfield',
+                'North East Derbyshire',
+                'Amber Valley',
+                'Derbyshire Dales',
+                'Erewash',
+                'High Peak',
+                'South Derbyshire',
+                'Nottingham',
+                'Ashfield',
+                'Bassetlaw',
+                'Mansfield',
+                'Newark and Sherwood',
+                'Broxtowe',
+                'Gedling',
+                'Rushcliffe'
+            ]
+        },
+        {
+            'id': 'TLK4',
+            'name': 'Devon',
+            'itl3': [
+                'Plymouth',
+                'Torbay',
+                'Devon CC'
+            ],
+            'la': [
+                'Plymouth',
+                'Torbay',
+                'East Devon',
+                'Exeter',
+                'Mid Devon',
+                'North Devon',
+                'South Hams',
+                'Teignbridge',
+                'Torridge',
+                'West Devon'
+            ]
+        },
+        {
+            'id': 'TLK2',
+            'name': 'Dorset and Somerset',
+            'itl3': [
+                'Bournemouth, Christchurch and Poole',
+                'Dorset',
+                'Somerset CC'
+            ],
+            'la': [
+                'Mendip',
+                'Sedgemoor',
+                'South Somerset',
+                'Somerset West and Taunton',
+                'Bournemouth, Christchurch and Poole',
+                'Dorset'
+            ]
+        },
+        {
+            'id': 'TLH1',
+            'name': 'East Anglia',
+            'itl3': [
+                'Norwich and East Norfolk',
+                'North and West Norfolk',
+                'Breckland and South Norfolk',
+                'Peterborough',
+                'Suffolk CC',
+                'Cambridgeshire CC'
+            ],
+            'la': [
+                'Peterborough',
+                'Cambridge',
+                'East Cambridgeshire',
+                'Fenland',
+                'Huntingdonshire',
+                'South Cambridgeshire',
+                'Babergh',
+                'Ipswich',
+                'Mid Suffolk',
+                'East Suffolk',
+                'West Suffolk',
+                'Broadland',
+                'Great Yarmouth',
+                'Norwich',
+                'King’s Lynn and West Norfolk',
+                'North Norfolk',
+                'Breckland',
+                'South Norfolk'
+            ]
+        },
+        {
+            'id': 'TLE1',
+            'name': 'East Yorkshire and Northern Lincolnshire',
+            'itl3': [
+                'Kingston upon Hull, City of',
+                'East Riding of Yorkshire',
+                'North and North East Lincolnshire'
+            ],
+            'la': [
+                'Kingston upon Hull, City of',
+                'East Riding of Yorkshire',
+                'North East Lincolnshire',
+                'North Lincolnshire'
+            ]
+        },
+        {
+            'id': 'TLH3',
+            'name': 'Essex',
+            'itl3': [
+                'Heart of Essex',
+                'Essex Thames Gateway',
+                'Essex Haven Gateway',
+                'West Essex',
+                'Southend-on-Sea',
+                'Thurrock'
+            ],
+            'la': [
+                'Southend-on-Sea',
+                'Thurrock',
+                'Braintree',
+                'Colchester',
+                'Tendring',
+                'Epping Forest',
+                'Harlow',
+                'Uttlesford',
+                'Brentwood',
+                'Chelmsford',
+                'Maldon',
+                'Basildon',
+                'Castle Point',
+                'Rochford'
+            ]
+        },
+        {
+            'id': 'TLK1',
+            'name': 'Gloucestershire, Wiltshire and Bath/Bristol area',
+            'itl3': [
+                'Bristol, City of',
+                'Bath and North East Somerset, North Somerset and South Gloucestershire',
+                'Gloucestershire CC',
+                'Swindon',
+                'Wiltshire'
+            ],
+            'la': [
+                'Bristol, City of',
+                'Bath and North East Somerset',
+                'North Somerset',
+                'South Gloucestershire',
+                'Cheltenham',
+                'Cotswold',
+                'Forest of Dean',
+                'Gloucester',
+                'Stroud',
+                'Tewkesbury',
+                'Swindon',
+                'Wiltshire'
+            ]
+        },
+        {
+            'id': 'TLD3',
+            'name': 'Greater Manchester',
+            'itl3': [
+                'Greater Manchester South East',
+                'Greater Manchester South West',
+                'Greater Manchester North East',
+                'Greater Manchester North West',
+                'Manchester'
+            ],
+            'la': [
+                'Manchester',
+                'Salford',
+                'Trafford',
+                'Stockport',
+                'Tameside',
+                'Bolton',
+                'Wigan',
+                'Bury',
+                'Oldham',
+                'Rochdale'
+            ]
+        },
+        {
+            'id': 'TLJ3',
+            'name': 'Hampshire and Isle of Wight',
+            'itl3': [
+                'Portsmouth',
+                'Southampton',
+                'Isle of Wight',
+                'Central Hampshire',
+                'South Hampshire',
+                'North Hampshire'
+            ],
+            'la': [
+                'Portsmouth',
+                'Southampton',
+                'Isle of Wight',
+                'Eastleigh',
+                'Fareham',
+                'Gosport',
+                'Havant',
+                'East Hampshire',
+                'New Forest',
+                'Test Valley',
+                'Winchester',
+                'Basingstoke and Deane',
+                'Hart',
+                'Rushmoor'
+            ]
+        },
+        {
+            'id': 'TLG1',
+            'name': 'Herefordshire, Worcestershire and Warwickshire',
+            'itl3': [
+                'Herefordshire, County of',
+                'Worcestershire CC',
+                'Warwickshire CC'
+            ],
+            'la': [
+                'Herefordshire, County of',
+                'Bromsgrove',
+                'Malvern Hills',
+                'Redditch',
+                'Worcester',
+                'Wychavon',
+                'Wyre Forest',
+                'North Warwickshire',
+                'Nuneaton and Bedworth',
+                'Rugby',
+                'Stratford-on-Avon',
+                'Warwick'
+            ]
+        },
+        {
+            'id': 'TLJ4',
+            'name': 'Kent',
+            'itl3': [
+                'Kent Thames Gateway',
+                'Mid Kent',
+                'West Kent',
+                'East Kent',
+                'Medway'
+            ],
+            'la': [
+                'Medway',
+                'Dartford',
+                'Gravesham',
+                'Swale',
+                'Canterbury',
+                'Dover',
+                'Folkestone and Hythe',
+                'Thanet',
+                'Ashford',
+                'Maidstone',
+                'Sevenoaks',
+                'Tonbridge and Malling',
+                'Tunbridge Wells'
+            ]
+        },
+        {
+            'id': 'TLD4',
+            'name': 'Lancashire',
+            'itl3': [
+                'Blackburn and Darwen',
+                'Blackpool',
+                'Chorley and West Lancashire',
+                'East Lancashire',
+                'Mid Lancashire',
+                'Lancaster and Wyre'
+            ],
+            'la': [
+                'Blackburn with Darwen',
+                'Blackpool',
+                'Lancaster',
+                'Wyre',
+                'Fylde',
+                'Preston',
+                'Ribble Valley',
+                'South Ribble',
+                'Burnley',
+                'Hyndburn',
+                'Pendle',
+                'Rossendale',
+                'Chorley',
+                'West Lancashire'
+            ]
+        },
+        {
+            'id': 'TLF2',
+            'name': 'Leicestershire, Rutland and Northamptonshire',
+            'itl3': [
+                'Leicester',
+                'Leicestershire CC and Rutland',
+                'West Northamptonshire',
+                'North Northamptonshire'
+            ],
+            'la': [
+                'Leicester',
+                'Rutland',
+                'Blaby',
+                'Charnwood',
+                'Harborough',
+                'Hinckley and Bosworth',
+                'Melton',
+                'North West Leicestershire',
+                'Oadby and Wigston',
+                'Daventry',
+                'Northampton',
+                'South Northamptonshire',
+                'Corby',
+                'East Northamptonshire',
+                'Kettering',
+                'Wellingborough'
+            ]
+        },
+        {
+            'id': 'TLF3',
+            'name': 'Lincolnshire',
+            'itl3': [
+                'Lincolnshire CC'
+            ],
+            'la': [
+                'Boston',
+                'East Lindsey',
+                'Lincoln',
+                'North Kesteven',
+                'South Holland',
+                'South Kesteven',
+                'West Lindsey'
+            ]
+        },
+        {
+            'id': 'TLD7',
+            'name': 'Merseyside',
+            'itl3': [
+                'East Merseyside',
+                'Liverpool',
+                'Sefton',
+                'Wirral'
+            ],
+            'la': [
+                'Halton',
+                'Knowsley',
+                'St. Helens',
+                'Liverpool',
+                'Sefton',
+                'Wirral'
+            ]
+        },
+        {
+            'id': 'TLE2',
+            'name': 'North Yorkshire',
+            'itl3': [
+                'York',
+                'North Yorkshire CC'
+            ],
+            'la': [
+                'York',
+                'Craven',
+                'Hambleton',
+                'Harrogate',
+                'Richmondshire',
+                'Ryedale',
+                'Scarborough',
+                'Selby'
+            ]
+        },
+        {
+            'id': 'TLN0',
+            'name': 'Northern Ireland',
+            'itl3': [
+                'Belfast',
+                'Armagh City, Banbridge and Craigavon',
+                'Antrim and Newtownabbey',
+                'Ards and North Down',
+                'Causeway Coast and Glens',
+                'Derry City and Strabane',
+                'Fermanagh and Omagh',
+                'Lisburn and Castlereagh',
+                'Mid Ulster',
+                'Mid and East Antrim',
+                'Newry, Mourne and Down'
+            ],
+            'la': [
+                'Belfast',
+                'Armagh City, Banbridge and Craigavon',
+                'Newry, Mourne and Down',
+                'Ards and North Down',
+                'Derry City and Strabane',
+                'Mid Ulster',
+                'Causeway Coast and Glens',
+                'Antrim and Newtownabbey',
+                'Lisburn and Castlereagh',
+                'Mid and East Antrim',
+                'Fermanagh and Omagh'
+            ]
+        },
+        {
+            'id': 'TLC2',
+            'name': 'Northumberland and Tyne and Wear',
+            'itl3': [
+                'Northumberland',
+                'Tyneside',
+                'Sunderland'
+            ],
+            'la': [
+                'Northumberland',
+                'Newcastle upon Tyne',
+                'North Tyneside',
+                'South Tyneside',
+                'Gateshead',
+                'Sunderland'
+            ]
+        },
+        {
+            'id': 'TLG2',
+            'name': 'Shropshire and Staffordshire',
+            'itl3': [
+                'Telford and Wrekin',
+                'Shropshire',
+                'Stoke-on-Trent',
+                'Staffordshire CC'
+            ],
+            'la': [
+                'Telford and Wrekin',
+                'Shropshire',
+                'Stoke-on-Trent',
+                'Cannock Chase',
+                'East Staffordshire',
+                'Lichfield',
+                'Newcastle-under-Lyme',
+                'South Staffordshire',
+                'Stafford',
+                'Staffordshire Moorlands',
+                'Tamworth'
+            ]
+        },
+        {
+            'id': 'TLE3',
+            'name': 'South Yorkshire',
+            'itl3': [
+                'Barnsley, Doncaster and Rotherham',
+                'Sheffield'
+            ],
+            'la': [
+                'Barnsley',
+                'Doncaster',
+                'Rotherham',
+                'Sheffield'
+            ]
+        },
+        {
+            'id': 'TLJ2',
+            'name': 'Surrey, East and West Sussex',
+            'itl3': [
+                'Brighton and Hove',
+                'East Surrey',
+                'East Sussex CC',
+                'West Surrey',
+                'West Sussex (North East)',
+                'West Sussex (South West)'
+            ],
+            'la': [
+                'Brighton and Hove',
+                'Eastbourne',
+                'Hastings',
+                'Lewes',
+                'Rother',
+                'Wealden',
+                'Elmbridge',
+                'Guildford',
+                'Runnymede',
+                'Spelthorne',
+                'Surrey Heath',
+                'Waverley',
+                'Woking',
+                'Epsom and Ewell',
+                'Mole Valley',
+                'Reigate and Banstead',
+                'Tandridge',
+                'Adur',
+                'Arun',
+                'Chichester',
+                'Worthing',
+                'Crawley',
+                'Horsham',
+                'Mid Sussex'
+            ]
+        },
+        {
+            'id': 'TLC1',
+            'name': 'Tees Valley and Durham',
+            'itl3': [
+                'Hartlepool and Stockton-on-Tees',
+                'South Teesside',
+                'Darlington',
+                'Durham'
+            ],
+            'la': [
+                'Hartlepool',
+                'Stockton-on-Tees',
+                'Middlesbrough',
+                'Redcar and Cleveland',
+                'Darlington',
+                'County Durham'
+            ]
+        },
+        {
+            'id': 'TLG3',
+            'name': 'West Midlands',
+            'itl3': [
+                'Birmingham',
+                'Solihull',
+                'Coventry',
+                'Dudley',
+                'Walsall',
+                'Sandwell',
+                'Wolverhampton'
+            ],
+            'la': [
+                'Birmingham',
+                'Solihull',
+                'Coventry',
+                'Dudley',
+                'Sandwell',
+                'Walsall',
+                'Wolverhampton'
+            ]
+        },
+        {
+            'id': 'TLE4',
+            'name': 'West Yorkshire',
+            'itl3': [
+                'Bradford',
+                'Leeds',
+                'Calderdale and Kirklees',
+                'Wakefield'
+            ],
+            'la': [
+                'Bradford',
+                'Leeds',
+                'Calderdale',
+                'Kirklees',
+                'Wakefield'
+            ]
+        },
+        {
+            'id': 'TLL1',
+            'name': 'West Wales and The Valleys',
+            'itl3': [
+                'Isle of Anglesey',
+                'Gwynedd',
+                'Conwy and Denbighshire',
+                'South West Wales',
+                'Central Valleys',
+                'Gwent Valleys',
+                'Bridgend and Neath Port Talbot',
+                'Swansea'
+            ],
+            'la': [
+                'Isle of Anglesey',
+                'Gwynedd',
+                'Conwy',
+                'Denbighshire',
+                'Ceredigion',
+                'Pembrokeshire',
+                'Carmarthenshire',
+                'Rhondda Cynon Taf',
+                'Merthyr Tydfil',
+                'Caerphilly',
+                'Blaenau Gwent',
+                'Torfaen',
+                'Neath Port Talbot',
+                'Bridgend',
+                'Swansea'
+            ]
+        },
+        {
+            'id': 'TLL2',
+            'name': 'East Wales',
+            'itl3': [
+                'Monmouthshire and Newport',
+                'Cardiff and Vale of Glamorgan',
+                'Flintshire and Wrexham',
+                'Powys'
+            ],
+            'la': [
+                'Monmouthshire',
+                'Newport',
+                'Vale of Glamorgan',
+                'Cardiff',
+                'Flintshire',
+                'Wrexham',
+                'Powys'
+            ]
+        },
+        {
+            'id': 'TLM6',
+            'name': 'Highlands and Islands',
+            'itl3': [
+                'Caithness and Sutherland, and Ross and Cromarty',
+                'Inverness and Nairn, Moray, and Badenoch and Strathspey',
+                'Lochaber, Skye and Lochalsh, Arran and Cumbrae, and Argyll and Bute',
+                'Na h-Eileanan Siar',
+                'Orkney Islands',
+                'Shetland Islands'
+            ],
+            'la': [
+                'Ross and Cromarty',
+                'Caithness and Sutherland',
+                'Inverness and Nairn',
+                'Badenoch and Strathspey',
+                'West Moray',
+                'North East Moray',
+                'Arran and Cumbrae',
+                'Argyll and Bute Islands',
+                'Argyll and Bute Mainland',
+                'Lochaber',
+                'Skye and Lochalsh',
+                'Na h-Eileanan Siar',
+                'Orkney Islands',
+                'Shetland Islands'
+            ]
+        },
+        {
+            'id': 'TLM7',
+            'name': 'Eastern Scotland',
+            'itl3': [
+                'Angus and Dundee City',
+                'Clackmannanshire and Fife',
+                'East Lothian and Midlothian',
+                'City of Edinburgh',
+                'Falkirk',
+                'Perth and Kinross, and Stirling',
+                'West Lothian'
+            ],
+            'la': [
+                'Angus',
+                'Dundee City',
+                'Clackmannanshire',
+                'Fife',
+                'East Lothian',
+                'Midlothian',
+                'City of Edinburgh',
+                'Falkirk',
+                'Perth and Kinross',
+                'Stirling',
+                'West Lothian'
+            ]
+        },
+        {
+            'id': 'TLM8',
+            'name': 'West Central Scotland',
+            'itl3': [
+                'East Dunbartonshire, West Dunbartonshire and Helensburgh and Lomond',
+                'Glasgow City',
+                'Inverclyde, East Renfrewshire, and Renfrewshire',
+                'North Lanarkshire'
+            ],
+            'la': [
+                'Helensburgh and Lomond',
+                'West Dunbartonshire',
+                'East Dunbartonshire',
+                'Glasgow City',
+                'East Renfrewshire',
+                'Renfrewshire',
+                'Inverclyde',
+                'North Lanarkshire'
+            ]
+        },
+        {
+            'id': 'TLM9',
+            'name': 'Southern Scotland',
+            'itl3': [
+                'Dumfries and Galloway',
+                'East Ayrshire and North Ayrshire mainland',
+                'South Ayrshire',
+                'South Lanarkshire',
+                'Scottish Borders'
+            ],
+            'la': [
+                'Scottish Borders',
+                'Dumfries and Galloway',
+                'East Ayrshire',
+                'North Ayrshire mainland',
+                'South Ayrshire',
+                'South Lanarkshire'
+            ]
+        },
+        {
+            'id': 'TLM5',
+            'name': 'North Eastern Scotland',
+            'itl3': [
+                'Aberdeen City and Aberdeenshire'
+            ],
+            'la': [
+                'Aberdeen City',
+                'Aberdeenshire'
+            ]
         }
     ]
 }
@@ -1233,5 +1215,9 @@ def get_item_title(link):
                         for indicator in subdomain['indicators']:
                             if url_link(indicator['name']) == url_link(link):
                                 return indicator['name']
+
+        for area in menu['areas']:
+            if url_link(area['name']) == url_link(link):
+                return area['name']
 
     return ''

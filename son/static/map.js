@@ -284,6 +284,7 @@ class Choropleth {
             self.median = d3.median(data, x => parseFloat(x[valueField], 10))
 
             mapFeatures = geoFormat == 'topo' ? topojson.feature(geodata, subunits).features : subunits
+            self.mapFeatures = mapFeatures
             map = mapContainer.append('g').attr('class', 'subunits').selectAll('path').data(mapFeatures)
             if (self.background) {
                 bg = mapBg.append('g').attr('class', 'bg').selectAll('path').data(topoFeatures(eudata).features)
@@ -840,7 +841,6 @@ class Choropleth {
             }
 
             if (self.clickBehaviour == 'zoom') {
-                // TODO - move to zoomTo
                 const [[x0, y0], [x1, y1]] = self.path.bounds(x)
                 self.svg.selectAll('path').transition()
                 self.svg.selectAll('path').attr('data-active', 'N')
@@ -901,15 +901,41 @@ class Choropleth {
         this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
     }
 
-    zoomTo(subunit) {
+    zoomTo(subunits, duration = 0) {
+        const nameField = this.options.nameField || ''
+        const areaField = this.options.areaField || nameField
 
+        if (!Array.isArray(subunits)) {
+            const arr = []
+            arr.push(subunits)
+            subunits = arr
+        }
+        const features = this.mapFeatures.filter(x => subunits.includes(x.properties[areaField])), bounds = []
 
+        if (features.length > 0) {
+            for (const feature of features) {
+                bounds.push(this.path.bounds(feature))
+            }
 
+            const x0 = bounds.map(x => x[0][0]).sort(function (a, b) { return a - b })[0]
+            const y0 = bounds.map(x => x[0][1]).sort(function (a, b) { return a - b })[0]
+            const x1 = bounds.map(x => x[1][0]).sort(function (a, b) { return b - a })[0]
+            const y1 = bounds.map(x => x[1][1]).sort(function (a, b) { return b - a })[0]
+            this.svg.selectAll('path').transition()
+            this.svg.selectAll('path').attr('data-active', 'N')
 
+            this.svg.transition().duration(duration).call(
+                this.zoom.transform,
+                d3.zoomIdentity
+                    .translate(this.width / 2, this.height / 2)
+                    .scale(Math.min(8, 0.9 / Math.max((x1 - x0) / this.width, (y1 - y0) / this.height)))
+                    .translate(-(x0 + x1) / 2, -(y0 + y1) / 2),
+            )
+        }
     }
 
     resetZoom() {
-        this.svg.selectAll('path').transition()//////////.style('opacity', 1) . // TODO
+        this.svg.selectAll('path').transition()
         this.svg.selectAll('path').attr('data-active', 'N')
         this.svg.transition().duration(750).call(
             this.zoom.transform,

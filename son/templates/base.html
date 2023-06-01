@@ -2,6 +2,7 @@
 {% from 'menu/domain-menu.html' import domainmenu %}
 {% from 'menu/mobile-menu.html' import mobilemenu %}
 {% from 'menu/side-menu.html' import sidemenu %}
+{% from 'menu/area-menu.html' import areamenu %}
 <!-- git commit: {{ g.build_info.git_commit }} -->
 <!-- git branch: {{ g.build_info.git_branch }} -->
 <!-- GitHub Action name: {{ g.build_info.github_action_name }} -->
@@ -107,7 +108,11 @@
     </div>-->
 
     <div class="dashboard-container govuk-width-container">
-        {% if domain %}
+        {% if area %}
+        <div class="dashboard-area-menu">
+            {{ areamenu(menu, area, selected) }}
+        </div>
+        {% elif domain %}
         <div class="dashboard-menu">
             {{ sidemenu(menu, domain, indicator or subdomain or domain) }}
         </div>
