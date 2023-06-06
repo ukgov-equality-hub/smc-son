@@ -108,7 +108,7 @@ class Choropleth {
         }
     }
 
-    render() {
+    render(filteredData) {
         let self = this
         //if (typeof self.el !== 'undefined' && typeof self.geodata !== 'undefined' && typeof self.data !== 'undefined') return
 
@@ -141,6 +141,8 @@ class Choropleth {
         this.clickBehaviour = ['outline', 'fade', 'zoom'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
         this.onClick = options.onClick || undefined
+        this.zoomToArea = options.zoomTo || undefined
+        this.highlightArea = options.highlight || undefined
         const allowZoom = typeof options.allowZoom === 'undefined' ? true : options.allowZoom
         const style = {
             fontFamily: 'GDS Transport',
@@ -149,10 +151,14 @@ class Choropleth {
             backgroundColor: options.backgroundColor || '#fff'
         }
 
-        this.dataUtils = new DataUtils()
-        this.dataUtils.loadData(this.data).then(data => {
-            buildMap(data)
-        })
+        if (filteredData) {
+            buildMap(filteredData)
+        } else {
+            this.dataUtils = new DataUtils()
+            this.dataUtils.loadData(this.data).then(data => {
+                buildMap(data)
+            })
+        }
 
         let svg, mapContainer, mapBg, mapOutline, mapNames, mapFeatures, map, bg, outline, info
 
@@ -231,8 +237,8 @@ class Choropleth {
                 .style('transform', 'scale(1)')
                 .style('background', self.options.backgroundColor || style.backgroundColor)
                 .style('overscroll-behavior', 'none')
-                .on('click', resetZoom)
-                .on('mousemove', mouseMoved)
+                .on('click', allowZoom ? resetZoom : '')
+                .on('mousemove', allowZoom ? mouseMoved : '')
 
             if (self.background) {
                 mapBg = self.svg.append('g')
@@ -488,7 +494,6 @@ class Choropleth {
                 .on('mouseover', highlight)
                 .on('mouseout', resetHighlight)
 
-            // Labels
             if (self.background) {
                 for (const state of states) {
                     if (!(typeof state.display !== 'undefined' && state.display === false)) {
@@ -502,8 +507,9 @@ class Choropleth {
                 }
             }
 
+            // Labels
             if (self.labels) {
-                for (const city of cities) {
+                for (const city of cities.filter(x => x.hasOwnProperty('zoom'))) {
                     const loc = self.projection([city.longitude, city.latitude])
                     mapNames.append('text')
                         .attr('x', loc[0])
@@ -511,6 +517,24 @@ class Choropleth {
                         .attr('class', `label label_city${city.zoom ? ' zoom' + city.zoom.join(' zoom') : ''}`)
                         .text(city.name)
                 }
+
+
+                for (const town of towns.filter(x => x.hasOwnProperty('zoom'))) {
+                    const loc = self.projection([town.longitude, town.latitude])
+                    mapNames.append('text')
+                        .attr('x', loc[0])
+                        .attr('y', loc[1])
+                        .attr('class', `label label_town${town.zoom ? ' zoom' + town.zoom.join(' zoom') : ''}`)
+                        .text(town.name)
+                }
+            }
+
+            if (self.zoomToArea) {
+                self.zoomTo(self.zoomToArea)
+            }
+
+            if (self.highlightArea) {
+                self.highlight(self.highlightArea)
             }
 
             function getScaledTicks(type) {
@@ -708,8 +732,11 @@ class Choropleth {
         }
 
         function maxLabelLength(data, key, style) {
-            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(getLabelText(max, 'axis'), style) * 1.1
+            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })
+            if (max[0] && max[0].text) {
+                return labelLength(getLabelText(max[0].text, 'axis'), style) * 1.1
+            }
+            return ''
         }
 
         function labelLength(text, style) {
@@ -794,7 +821,7 @@ class Choropleth {
             return {
                 map: self,
                 name: item.getAttribute('data-name'),
-                value: getLabelText(item.getAttribute('data-value'), 'tooltip'), //isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
+                value: getLabelText(item.getAttribute('data-value'), 'tooltip'),
                 min: self.min,
                 max: self.max,
                 mean: self.mean,
@@ -950,7 +977,7 @@ class Choropleth {
 
     highlight(item) {
         try {
-            if (this.rolloverBehaviour == 'outline') {
+            if (this.rolloverBehaviour == 'outline'){//} || this.highlightArea) {
                 d3.select(`#${this.el}__outline`).selectAll('path[data-active="N"]').style('opacity', 0)
                 d3.select(`#${this.el}__outline`).select(`path[data-name="${item}"]`).style('opacity', 1)
             } else if (this.rolloverBehaviour == 'fade') {
@@ -982,8 +1009,32 @@ class Choropleth {
         catch (e) {}
     }
 
+    status(item) {
+        if (!item) return
+
+        function isNumeric(x) {
+            return !isNaN(parseFloat(x)) && isFinite(x)
+        }
+
+        item = d3.select(`#${this.el}`).selectAll(`[data-name="${item}"]`).nodes()[0]
+
+        return {
+            map: this,
+            name: item.getAttribute('data-name'),
+            value: item.getAttribute('data-value'),
+            min: this.min,
+            max: this.max,
+            mean: this.mean,
+            median: this.median,
+            scale: this.scale,
+            quantile: isNumeric(item.getAttribute('data-quantile')) ? parseFloat(item.getAttribute('data-quantile'), 10) : item.getAttribute('data-quantile'),
+            rank: isNumeric(item.getAttribute('data-rank')) ? parseFloat(item.getAttribute('data-rank'), 10) : item.getAttribute('data-rank'),
+            percentile: isNumeric(item.getAttribute('data-percentile')) ? parseFloat(item.getAttribute('data-percentile'), 10) : item.getAttribute('data-percentile')
+        }
+    }
+
     update(data) {
-        //
+        this.render(data)
     }
 
     downloadData(format) {

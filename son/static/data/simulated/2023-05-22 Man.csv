@@ -1,0 +1,6 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+CI3,Socio-cultural advantage,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,-0.166426655,NA,NA,NA,NA,NA,NA
+CI4,Childhood poverty and disadvantage,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,1.500584174,NA,NA,NA,NA,NA,NA
+CI5,R & D environment,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,-0.947137898,NA,NA,NA,NA,NA,NA
+CI2,Precarious situations,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,0.469172914,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,0.749537381,NA,NA,NA,NA,NA,NA

@@ -1,0 +1,42 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+CI1,Promising prospects,ITL2,TLH2,Bedfordshire and Hertfordshire,NA,NA,NA,Total,NA,NA,0.748517916,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,Total,NA,NA,0.446685299,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD6,Cheshire,NA,NA,NA,Total,NA,NA,1.123495213,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLK3,Cornwall and Isles of Scilly,NA,NA,NA,Total,NA,NA,1.657331557,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD1,Cumbria,NA,NA,NA,Total,NA,NA,0.920901024,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLF1,Derbyshire and Nottinghamshire,NA,NA,NA,Total,NA,NA,0.390014479,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLK4,Devon,NA,NA,NA,Total,NA,NA,0.048942808,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLK2,Dorset and Somerset,NA,NA,NA,Total,NA,NA,1.357530805,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLH1,East Anglia,NA,NA,NA,Total,NA,NA,-0.58705384,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLL2,East Wales,NA,NA,NA,Total,NA,NA,-0.834107599,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLE1,East Yorkshire and Northern Lincolnshire,NA,NA,NA,Total,NA,NA,0.573887324,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLM7,Eastern Scotland,NA,NA,NA,Total,NA,NA,0.507108957,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLH3,Essex,NA,NA,NA,Total,NA,NA,-1.44869512,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,Total,NA,NA,2.798779189,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,1.287499165,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLJ3,Hampshire and Isle of Wight,NA,NA,NA,Total,NA,NA,-0.054701504,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLG1,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,Total,NA,NA,0.191367008,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLM6,Highlands and Islands,NA,NA,NA,Total,NA,NA,-1.588414453,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLI4,Inner London - East,NA,NA,NA,Total,NA,NA,2.040363243,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLI3,Inner London - West,NA,NA,NA,Total,NA,NA,0.838515796,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,0.11593834,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD4,Lancashire,NA,NA,NA,Total,NA,NA,1.001992446,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLF2,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,Total,NA,NA,1.640286934,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLF3,Lincolnshire,NA,NA,NA,Total,NA,NA,-0.917908264,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLD7,Merseyside,NA,NA,NA,Total,NA,NA,-0.568144557,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLM5,North Eastern Scotland,NA,NA,NA,Total,NA,NA,-0.276277814,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLE2,North Yorkshire,NA,NA,NA,Total,NA,NA,0.658546731,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLN0,Northern Ireland,NA,NA,NA,Total,NA,NA,1.013139232,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLC2,Northumberland and Tyne and Wear,NA,NA,NA,Total,NA,NA,-0.732503247,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLI5,Outer London - East and North East,NA,NA,NA,Total,NA,NA,-0.721051517,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLI6,Outer London - South,NA,NA,NA,Total,NA,NA,-1.391101741,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLI7,Outer London - West and North West,NA,NA,NA,Total,NA,NA,0.529141721,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLG2,Shropshire and Staffordshire,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLE3,South Yorkshire,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLM9,Southern Scotland,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLJ2,"Surrey, East and West Sussex",NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLC1,Tees Valley and Durham,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLM8,West Central Scotland,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLG3,West Midlands,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLL1,West Wales and The Valleys,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLE4,West Yorkshire,NA,NA,NA,Total,NA,NA,,NA,NA,NA,NA,NA,NA

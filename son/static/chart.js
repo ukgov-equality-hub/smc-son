@@ -131,7 +131,7 @@ class Chart {
         const sortFacet = options.sortFacet || null
         const lci = options.lowerConfidence || null
         const uci = options.upperConfidence || null
-        const xvalue = options.yvalue || null
+        const xvalue = options.xvalue || null
         const yvalue = options.yvalue || null
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
@@ -153,7 +153,7 @@ class Chart {
         let yticks = options.yticks == false ? false : options.yticks
         const legend = options.legend || false
         const swatchSize = 20
-        const margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
+        let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'filter'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
@@ -185,7 +185,6 @@ class Chart {
             }
 
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
-            if (['quartile', 'quintile', 'decile'].includes(type)) self.height = 35
             const vals = zkey && !['line', 'liney'].includes(type) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
             let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (min > 0) min = 0
@@ -198,7 +197,12 @@ class Chart {
             if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
-            self.height -= zkey && legend ? legendHeight(domain, self.width) : 0
+            if (['quartile', 'quintile', 'decile'].includes(type)) {
+                self.height = 35
+                margin = [0, -7, 0, -7]
+            } else {
+                self.height -= zkey && legend ? legendHeight(domain, self.width) : 0
+            }
             if (self.debug) console.log('min', min, 'max', max, 'range', range)
 
             let categories = []
@@ -309,38 +313,25 @@ class Chart {
                     marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
-                    xticks = getScaledTicks(dataFormat)
+                    xticks = getScaledTicks(type)
                     xgrid = false
                     ygrid = false
-                    domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
+                    domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), type)
                     let d = chartData.filter(x => x[ykey] == yvalue)
                     if (d) {
                         let q = getQuantile(domain, d[0][xkey])
-                        marks.push(Plot.cell(domain, { x: x => x, fill: x => x }))
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, r: 15, fill: x => getMarkColour(originalData || chartData, x) }))
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, stroke: 'grey' }))
+                        marks.push(Plot.cell(domain, { x: x => x, dy: 9, fill: x => x, stroke: 'grey' }))
+                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, fill: x => getMarkColour(originalData || chartData, x), title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` }))
                     }
                 }
                 if (lci && uci) {
                     if (orientation == 'y') {
-                        const confidenceIntervalOptions = {
-                            x: xkey,
-                            y1: 'lci',
-                            y2: 'uci',
-                            stroke: '#555',
-                            title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
-                        }
-
-                        marks.push(Plot.ruleX(chartData, confidenceIntervalOptions))
+                        marks.push(Plot.ruleX(chartData, { x: xkey, y1: 'lci', y2: 'uci', stroke: '#555', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` }))
                         marks.push(Plot.text(chartData, { x: xkey, y: 'lci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, fill: '#555', rotate: 90 }))
                         marks.push(Plot.text(chartData, { x: xkey, y: 'uci', text: '_ci', title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`, fill: '#555', rotate: 90 }))
                     } else {
-                        const confidenceIntervalOptions = {
-                            y: ykey,
-                            x1: 'lci',
-                            x2: 'uci'
-                        }
-
-                        marks.push(Plot.ruleY(chartData, confidenceIntervalOptions))
+                        marks.push(Plot.ruleY(chartData, { y: ykey, x1: 'lci', x2: 'uci' }))
                         marks.push(Plot.text(chartData, { x: 'lci', y: ykey, text: '_ci', fill: '#555' }))
                         marks.push(Plot.text(chartData, { x: 'uci', y: ykey, text: '_ci', fill: '#555' }))
                     }
@@ -567,8 +558,8 @@ class Chart {
             }
 
             function getMarkColour(data, x) {
-                if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                    let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, x[xkey])
+                if (['quartile', 'quintile', 'decile'].includes(type)) {
+                    let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), type), q = getQuantile(ranges, x[xkey])
                     return colourScheme[q] || 'grey'
                 }
 
@@ -682,8 +673,7 @@ class Chart {
                     return 'a' + S4() + S4()
                 }
 
-                const type = d3.select(chart).node().tagName
-                let wrapper = type === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
+                let wrapper = d3.select(chart).node().tagName === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
                 const svgs = d3.select(chart).selectAll('svg')
                 if (svgs.size() > 1) wrapper = d3.select([...svgs].pop())
                 wrapper.style('overflow', 'visible')
@@ -723,8 +713,8 @@ class Chart {
                             .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                             .attr('data-value', val)
                             .attr('data-quantile', x => {
-                                if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                                    const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
+                                if (['quartile', 'quintile', 'decile'].includes(type)) {
+                                    const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), type)
                                     return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
                                 }
                                 return -1
@@ -873,8 +863,11 @@ class Chart {
 
         function maxLabelLength(data, key, style) {
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
-            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })[0].text
-            return labelLength(getLabelText(max, 'axis'), style) * 1.1
+            let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })
+            if (max[0] && max[0].text) {
+                return labelLength(getLabelText(max[0].text, 'axis'), style) * 1.1
+            }
+            return ''
         }
 
         function labelLength(text, style) {
@@ -930,7 +923,7 @@ class Chart {
             return {
                 chart: self,
                 name: item.getAttribute('data-name'),
-                value: getLabelText(item.getAttribute('data-value'), 'tooltip'), //isNumeric(item.getAttribute('data-value')) ? parseFloat(item.getAttribute('data-value'), 10) : item.getAttribute('data-value'),
+                value: getLabelText(item.getAttribute('data-value'), 'tooltip'),
                 min: self.min,
                 max: self.max,
                 mean: self.mean,
@@ -1086,6 +1079,31 @@ class Chart {
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
         }
         catch (e) {}
+    }
+
+    status(item) {
+        if (!item) item = this.options.yvalue
+        if (!item) return
+
+        function isNumeric(x) {
+            return !isNaN(parseFloat(x)) && isFinite(x)
+        }
+
+        item = d3.select(`#${this.el}`).selectAll(`[data-name="${item}"]`).nodes()[0]
+
+        return {
+            chart: this,
+            name: item.getAttribute('data-name'),
+            value: item.getAttribute('data-value'),
+            min: this.min,
+            max: this.max,
+            mean: this.mean,
+            median: this.median,
+            scale: this.scale,
+            quantile: isNumeric(item.getAttribute('data-quantile')) ? parseFloat(item.getAttribute('data-quantile'), 10) : item.getAttribute('data-quantile'),
+            rank: isNumeric(item.getAttribute('data-rank')) ? parseFloat(item.getAttribute('data-rank'), 10) : item.getAttribute('data-rank'),
+            percentile: isNumeric(item.getAttribute('data-percentile')) ? parseFloat(item.getAttribute('data-percentile'), 10) : item.getAttribute('data-percentile')
+        }
     }
 
     update(data) {

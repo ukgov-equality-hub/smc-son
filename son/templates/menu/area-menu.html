@@ -10,8 +10,8 @@
             {% for area in menu.areas | sort(attribute='name') %}
 
             <li class="moj-side-navigation__item{% if (area.name | url_link) == (selectedarea | url_link) %} is-active{% endif %}"{% if not loop.index in selected %} style="display: none;"{% endif %}>
-                <a href="/social_mobility_by_area/{{ area.name | url_link }}" class="moj-primary-navigation__link"{% if (area.name | url_link) == (selectedarea | url_link) %} aria-current="page"{% endif %}>{{ area.name }}</a>
-                <div id="{{ area.name }}_matches"></div>
+                <a href="/social_mobility_by_area/{{ area.name | url_link }}" class="moj-primary-navigation__link"{% if (area.name | url_link) == (selectedarea | url_link) %} aria-current="page"{% endif %}>{{ area.name }}
+                <div id="{{ area.name }}_matches" style="color: #777; font-size: smaller;"></div></a>
             </li>
 
             {% endfor %}
@@ -35,13 +35,9 @@
 
         function search(value) {
             let found = []
-
-
-
-// clear matches
-
-
-
+            for (area of areas) {
+                document.getElementById(`${area.name}_matches`).innerHTML = ''
+            }
 
             if (value.length > 2) {
                 found = found.concat(areas.filter(x => x.name.toLowerCase().indexOf(value.toLowerCase()) > -1))
@@ -56,24 +52,13 @@
                         const item = menu[i].innerText.trim()
                         if (found.indexOf(item) > -1) {
                             menu[i].style.display = 'unset'
-                            const area = areas.filter(x => x.name.toLowerCase() ==item.toLowerCase())[0]
+                            const area = areas.filter(x => x.name.toLowerCase() == item.toLowerCase())[0]
                             let matches = []
                             matches = matches.concat(area.itl3.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1))
                             matches = matches.concat(area.la.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1))
-
-                            //const itl3 = area.itl3.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1)
-                            //if (itl3.length > 0) matches = matches.concat(itl3)
-                            //const la = area.la.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1)
-                            //if (la.length > 0) matches = matches.concat(la)
                             matches = matches.filter(function (value, index, array) { return array.indexOf(value) === index }).map(x => x).sort()
-
-                            //const la = ''//area.filter(x => (x.la.map(x => x.toLowerCase()).map(x => x.indexOf(item.toLowerCase()) > -1)).indexOf(true) > -1)
-
-
-console.log(item, matches)
-
-
-
+                            matches = matches.map(x => `${x.substring(0, x.toLowerCase().indexOf(value.toLowerCase()))}<strong>${x.substring(x.toLowerCase().indexOf(value.toLowerCase()), x.toLowerCase().indexOf(value.toLowerCase()) + value.length)}</strong>${x.substring(x.toLowerCase().indexOf(value.toLowerCase()) + value.length)}`)
+                            document.getElementById(`${area.name}_matches`).innerHTML = matches.join(', ')
                         } else {
                             menu[i].style.display = 'none'
                         }

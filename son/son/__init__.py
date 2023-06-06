@@ -137,7 +137,6 @@ def area_page(area):
     for a in menu['areas']:
         areas.append(url_link(a['name']))
     areas.sort()
-    print(areas, flush=True)
     selected = areas.index(area) + 1
     if selected < 3: selected = 3
     if selected > len(areas) - 2: selected = len(areas) - 2
