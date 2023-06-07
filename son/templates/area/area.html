@@ -19,57 +19,51 @@
 
             <h3 class="govuk-heading-m">Intermediate outcomes</h3>
             <p class="govuk-body">Intermediate outcomes measure the experiences of young people as they move through education and into work.</p>
-            <table class="govuk-body" style="width: 100%;">
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <span style="display: inline-block; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
-                        </td>
-                        <td style="text-align: right;">
-                            <span style="display: inline-block; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 50%; text-align: right;">Promising prospects</td>
-                        <td colspan="2" style="width: 50%; padding-top: 10px;"><div id="chart1" style="width: 100%; height: 35px;"></div></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 50%; text-align: right;">Precarious situations</td>
-                        <td colspan="2" style="width: 50%; padding-top: 10px;"><div id="chart2" style="width: 100%; height: 35px;"></div></td>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;"></div>
+                <div style="width: calc(100% - 350px); height: 35px;">
+                    <span style="float: left; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
+                    <span style="float: right; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>                
+                </div>
+            </div>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;">Promising prospects</div>
+                <div id="chart1" style="width: calc(100% - 350px); height: 35px;"></div>
+            </div>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;">Precarious situations</div>
+                <div id="chart2" style="width: calc(100% - 350px); height: 35px;"></div>
+            </div>
             <p>&nbsp;</p>
 
             <h3 class="govuk-heading-m">Drivers of social mobility</h3>
             <p class="govuk-body">Drivers are the background conditions that make social mobility easier or more difficult.</p>
-            <table class="govuk-body" style="width: 100%;">
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <span style="display: inline-block; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
-                        </td>
-                        <td style="text-align: right;">
-                            <span style="display: inline-block; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 50%; text-align: right;">Socio-cultural advantage</td>
-                        <td colspan="2" style="width: 50%; padding-top: 10px;"><div id="chart3" style="width: 100%; height: 35px;"></div></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 50%; text-align: right;">Childhood poverty and disadvantage</td>
-                        <td colspan="2" style="width: 50%; padding-top: 10px;"><div id="chart4" style="width: 100%; height: 35px;"></div></td>
-                    </tr>
-                    <tr>
-                        <td style="width: 50%; text-align: right;">Research and development</td>
-                        <td colspan="2" style="width: 50%; padding-top: 10px;"><div id="chart5" style="width: 100%; height: 35px;"></div></td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>&nbsp;</p>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;"></div>
+                <div style="width: calc(100% - 350px); height: 35px;">
+                    <span style="float: left; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
+                    <span style="float: right; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>                
+                </div>
+            </div>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;">Socio-cultural advantage</div>
+                <div id="chart3" style="width: calc(100% - 350px); height: 35px;"></div>
+            </div>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;">Childhood poverty and disadvantage</div>
+                <div id="chart4" style="width: calc(100% - 350px); height: 35px;"></div>
+            </div>
+
+            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
+                <div style="width: 350px; text-align: right;">Research and development</div>
+                <div id="chart5" style="width: calc(100% - 350px); height: 35px;"></div>
+            </div>
         </div>
         <div style="width: 300px;">
             <div class="map-container" style="margin-bottom: 15px; border: 1px solid #333;">
@@ -95,11 +89,11 @@
                         dataFormat: 'quintile'
                     }
 
-                    const chart1 = new Chart('chart1', data.filter(x => x['Ind_name'] == 'Promising prospects'), options)
-                    const chart2 = new Chart('chart2', data.filter(x => x['Ind_name'] == 'Precarious situations'), options)
-                    const chart3 = new Chart('chart3', data.filter(x => x['Ind_name'] == 'Socio-cultural advantage'), options)
-                    const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'Childhood poverty and disadvantage'), options)
-                    const chart5 = new Chart('chart5', data.filter(x => x['Ind_name'] == 'R & D environment'), options)
+                    const chart1 = new Chart('chart1', data.filter(x => x['Ind_name'] == 'Promising prospects'), { ...options, title: 'Promising prospects' })
+                    const chart2 = new Chart('chart2', data.filter(x => x['Ind_name'] == 'Precarious situations'), { ...options, title: 'Precarious situations' })
+                    const chart3 = new Chart('chart3', data.filter(x => x['Ind_name'] == 'Socio-cultural advantage'), { ...options, title: 'Socio-cultural advantage' })
+                    const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'Childhood poverty and disadvantage'), { ...options, title: 'Childhood poverty and disadvantage' })
+                    const chart5 = new Chart('chart5', data.filter(x => x['Ind_name'] == 'R & D environment'), { ...options, title: 'Research and development' })
 
                     let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/areas.csv`)
                     mapData = mapData.data

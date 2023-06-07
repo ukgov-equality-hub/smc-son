@@ -666,11 +666,18 @@ class Chart {
             }
 
             function tooltips(chart, styles) {
-                const idGenerator = function () {
-                    const S4 = function () {
+                function idGenerator() {
+                    function S4() {
                         return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1)
                     }
                     return 'a' + S4() + S4()
+                }
+
+                function ordinal(num) {
+                    if (num == 1) return '1st'
+                    if (num == 2) return '2nd'
+                    if (num == 3) return '3rd'
+                    return `${num}th`
                 }
 
                 let wrapper = d3.select(chart).node().tagName === 'FIGURE' ? d3.select(chart).select('svg') : d3.select(chart)
@@ -733,7 +740,10 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            const text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            if (['quartile', 'quintile', 'decile'].includes(type)) {
+                                text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
+                            }
                             const pointer = d3.pointer(event, wrapper.node())
                             if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
