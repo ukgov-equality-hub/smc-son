@@ -6,7 +6,7 @@ from flask import Blueprint, current_app, render_template, request, session, Res
 import markdown
 from bs4 import BeautifulSoup
 #from son.catalogue.forms import Form
-from son.utils.menu import menu, get_item_title
+from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import LogLevel, Logger
 
 son = Blueprint('son', __name__)
@@ -117,6 +117,42 @@ def index():
     )
 
 
+@son.route('/social_mobility_by_area', methods=['GET'])
+def area_home_page():
+    return render_template(
+        'area/homepage.html',
+        menu=menu,
+        area='Social mobility by area',
+        domain='social_mobility_by_area',
+        selected=[1, 2, 3, 4, 5],
+        title=get_item_title('social_mobility_by_area'),
+        content=get_content('social_mobility_by_area', use_markdown=False),
+        form=None
+    )
+
+
+@son.route('/social_mobility_by_area/<area>', methods=['GET'])
+def area_page(area):
+    areas = []
+    for a in menu['areas']:
+        areas.append(url_link(a['name']))
+    areas.sort()
+    selected = areas.index(area) + 1
+    if selected < 3: selected = 3
+    if selected > len(areas) - 2: selected = len(areas) - 2
+
+    return render_template(
+        'area/area.html',
+        menu=menu,
+        area=area,
+        domain='social_mobility_by_area',
+        selected=[selected - 2, selected - 1, selected, selected + 1, selected + 2],
+        title=get_item_title(area),
+        content=get_content('social_mobility_by_area', use_markdown=False),
+        form=None
+    )
+
+
 @son.route('/<domain>', methods=['GET'])
 def domain_page(domain):
     return render_template(
@@ -148,7 +184,7 @@ def subdomain_page(domain, subdomain):
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
     content = get_content(domain, subdomain, indicator)
-    print(content, flush=True)
+    #print(content, flush=True)
     data_src = ''
 
     data_table = []

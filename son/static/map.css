@@ -205,46 +205,57 @@
 .map .label {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    fill: #000;
+    stroke: #fff;
+    paint-order: stroke fill;
 }
 
 svg.zoom1 .label {
     display: none;
-    font-size: 11px;
+    font-size: 0.6rem;
+    stroke-width: 1px;
 }
 
 svg.zoom2 .label {
     display: none;
-    font-size: 8.5px;
+    font-size: 0.4rem;
+    stroke-width: 0.8px;
 }
 
 svg.zoom3 .label {
     display: none;
-    font-size: 8px;
+    font-size: 0.3rem;
+    stroke-width: 0.7px;
 }
 
 svg.zoom4 .label {
     display: none;
-    font-size: 8px;
+    font-size: 0.2rem;
+    stroke-width: 0.5px;
 }
 
 svg.zoom5 .label {
     display: none;
-    font-size: 7px;
+    font-size: 0.15rem;
+    stroke-width: 0.4px;
 }
 
 svg.zoom6 .label {
     display: none;
-    font-size: 7px;
+    font-size: 0.15rem;
+    stroke-width: 0.4px;
 }
 
 svg.zoom7 .label {
     display: none;
-    font-size: 7px;
+    font-size: 0.12rem;
+    stroke-width: 0.3px;
 }
 
 svg.zoom8 .label {
     display: none;
-    font-size: 6px;
+    font-size: 0.11rem;
+    stroke-width: 0.2px;
 }
 
 svg.zoom9 .label {
@@ -313,14 +324,4 @@ svg.zoom15 .label.zoom15 {
     display: inline !important;
     font-weight: bold;
     fill: #ccc;
-    stroke: #fff;
-    stroke-width: 4;
-    paint-order: stroke fill;
-}
-
-.label_city {
-    fill: #000;
-    stroke: #fff;
-    stroke-width: 3;
-    paint-order: stroke fill;
 }

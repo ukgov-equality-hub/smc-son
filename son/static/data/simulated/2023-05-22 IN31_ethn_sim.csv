@@ -1,0 +1,21 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,White British,85.65562198,,84.65562198,86.65562198,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,White British,86.58760862,,85.58760862,87.58760862,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,White other,86.80998529,,85.80998529,87.80998529,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,White other,85.97001294,,84.97001294,86.97001294,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Mixed,84.47435661,,83.47435661,85.47435661,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Mixed,85.51432321,,84.51432321,86.51432321,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Indian,86.23136566,,85.23136566,87.23136566,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Indian,86.58324724,,85.58324724,87.58324724,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Other,86.75437764,,85.75437764,87.75437764,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Other,85.58149262,,84.58149262,86.58149262,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Black African,85.90572036,,84.90572036,86.90572036,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Black African,84.38671551,,83.38671551,85.38671551,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Bangladeshi,86.38405202,,85.38405202,87.38405202,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Bangladeshi,85.21658247,,84.21658247,86.21658247,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Pakistani,87.71472527,,86.71472527,88.71472527,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Pakistani,85.59298169,,84.59298169,86.59298169,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Chinese,86.258106,,85.258106,87.258106,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Chinese,86.43922275,,85.43922275,87.43922275,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Higher professional,25-29,Total,Ethnicity,Black Caribbean,86.36249173,,85.36249173,87.36249173,,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014-21,Lower working,25-29,Total,Ethnicity,Black Caribbean,85.69607565,,84.69607565,86.69607565,,Percentage,NA

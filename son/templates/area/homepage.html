@@ -13,10 +13,10 @@
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
     {% if item[0] == 'Subtitle' %}
-    <h3 class="govuk-heading-m">{{ item[1] }}</h3>
+    <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
     {% endif %}
     {% if item[0] == 'Text' %}
-    <p class="govuk-body">{{ item[1] }}</p>
+    <p class="govuk-body">{{ item[1] | safe }}</p>
     {% endif %}
     {% endif %}
     {% endfor %}

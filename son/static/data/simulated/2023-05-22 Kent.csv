@@ -1,0 +1,6 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+CI3,Socio-cultural advantage,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,-0.901753945,NA,NA,NA,NA,NA,NA
+CI4,Childhood poverty and disadvantage,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,-0.614703438,NA,NA,NA,NA,NA,NA
+CI5,R & D environment,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,-0.595822467,NA,NA,NA,NA,NA,NA
+CI2,Precarious situations,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,0.8482204,NA,NA,NA,NA,NA,NA
+CI1,Promising prospects,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,1.529593752,NA,NA,NA,NA,NA,NA

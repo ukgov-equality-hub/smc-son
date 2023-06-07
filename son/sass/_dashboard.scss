@@ -5,7 +5,7 @@
     display: flex;
 }
 
-.dashboard-menu {
+.dashboard-menu, .dashboard-area-menu {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: -30px;
@@ -21,6 +21,10 @@
     @include govuk-media-query($from: desktop) {
         width: 240px;
     }
+}
+
+.dashboard-area-menu {
+    padding-top: 40px;
 }
 
 .dashboard-content {
