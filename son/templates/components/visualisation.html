@@ -1,6 +1,7 @@
 
 {% from 'components/chart.html' import chart %}
 {% from 'components/map.html' import map %}
+{% from 'components/composite.html' import composite %}
 {% from 'components/data-table.html' import datatable %}
 
 {% macro visualisation(id, type, data) %}
@@ -50,9 +51,15 @@
             <div>
                 {{ map(id, data) }}
             </div>
+            {% if ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+            <div>
+                {{ composite(id, data) }}
+            </div>
+            {% else %}
             <div>
                 {{ chart(id, data) }}
             </div>
+            {% endif %}
         </div>
         {% endif %}
     </div>

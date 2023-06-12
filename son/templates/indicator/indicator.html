@@ -13,6 +13,7 @@
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
+    {% if not ([content, 'Code'] | content) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
     <ol class="govuk-list govuk-list--number" style="margin-bottom: 100px;">
         <li>
             <a href="#Summary main findings" class="govuk-link">Summary main findings</a>
@@ -30,6 +31,7 @@
         {% endif %}
         {% endfor %}
     </ol>
+    {% endif %}
 
     {% if tabs %}
     <div class="govuk-tabs" data-module="govuk-tabs">
@@ -159,25 +161,25 @@
     {% endfor %}
 </div>
 <script>
-    let map, chart
-    function mapselect(a) {
+    let map = undefined, chart = undefined
+    function mapSelect(a) {
         try {
             const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
-            map = eval(`map${el}`)
-            chart = eval(`chart${el}`)
+            if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
+            if (typeof window[`chart${el}`] !== 'undefined') chart = eval(`chart${el}`)
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
                 document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
-                map.highlight(a.name)
-                chart.highlight(a.name)
+                if (map) map.highlight(a.name)
+                if (chart) chart.highlight(a.name)
             } else {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
                 document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
-                map.resetHighlight()
-                chart.resetHighlight()
+                if (map) map.resetHighlight()
+                if (chart) chart.resetHighlight()
             }
         }
         catch (e) {}
