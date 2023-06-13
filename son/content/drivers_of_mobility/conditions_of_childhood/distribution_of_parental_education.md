@@ -25,7 +25,7 @@ Over time
 By area (ITL2)
 
 ## Map
-{ "title": "Distribution of parental education", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR13_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapselect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "2dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "2dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "2dp" }] }
+{ "code": "DR13", "title": "Distribution of parental education", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR13_area-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "height": "700", "dataFormat": "quintile", "_legend": "map-legend", "_tooltip": "map-tooltip", "_tooltipBehaviour": "click", "domains": ["Q1 - Bottom 20%", "Q2", "Q3", "Q4", "Q5 - Top 20%"], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onRollover": "mapSelect", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "2dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "2dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "2dp" }] }
 
 ## About
 # Data source(s)
@@ -42,11 +42,11 @@ The data shows the education levels of adults in families with dependent childre
 The education levels are:
 
 <ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
-  <li>lower level (below CSE grade 1)</li>
-  <li>O level, GCSE and equivalent</li>
-  <li>A level and equivalent</li>
-  <li>further education (below degree level)</li>
-  <li>higher education (above degree level)</li>
+    <li>lower level (below CSE grade 1)</li>
+    <li>O level, GCSE and equivalent</li>
+    <li>A level and equivalent</li>
+    <li>further education (below degree level)</li>
+    <li>higher education (above degree level)</li>
 </ul>
 
 # Things you need to know

@@ -2,20 +2,27 @@
     /*overflow: hidden;*/
     width: 100%;
     border-collapse: separate;
-}
-
-.table-container thead tr th {
-    display: table-cell;
+    position: relative;
 }
 
 .table-container .table-row {
-    display: flex;
     width: 100%;
     border-collapse: separate;
 }
 
+.table-container.allow-column-resize .table-row {
+    display: flex;
+}
+
+.table-container thead tr th {
+    position: sticky;
+    align-self: flex-start;
+    height: auto;
+    top: 0;
+    display: table-cell;
+}
+
 .table-container .table-row .table-column {
-    position: relative;
     justify-content: top;
     align-items: left;
     width: auto;

@@ -27,7 +27,7 @@
 "CI3","Socio-cultural advantage","ITL2","TLM5","North Eastern Scotland",NA,NA,NA,"Total",NA,NA,0.443243802,NA,NA,NA,NA,NA,NA
 "CI3","Socio-cultural advantage","ITL2","TLE2","North Yorkshire",NA,NA,NA,"Total",NA,NA,0.41974544,NA,NA,NA,NA,NA,NA
 "CI3","Socio-cultural advantage","ITL2","TLN0","Northern Ireland",NA,NA,NA,"Total",NA,NA,0.266262212,NA,NA,NA,NA,NA,NA
-"CI3","Socio-cultural advantage","ITL2","TLC2","Northumberland and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.204465439,NA,NA,NA,NA,NA,NA
+"CI3","Socio-cultural advantage","ITL2","TLC2","Northumberland, and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.204465439,NA,NA,NA,NA,NA,NA
 "CI3","Socio-cultural advantage","ITL2","TLI5","Outer London - East and North East",NA,NA,NA,"Total",NA,NA,0.40692614,NA,NA,NA,NA,NA,NA
 "CI3","Socio-cultural advantage","ITL2","TLI6","Outer London - South",NA,NA,NA,"Total",NA,NA,0.636605954,NA,NA,NA,NA,NA,NA
 "CI3","Socio-cultural advantage","ITL2","TLI7","Outer London - West and North West",NA,NA,NA,"Total",NA,NA,0.552473461,NA,NA,NA,NA,NA,NA
@@ -68,7 +68,7 @@
 "CI4","Childhood poverty and disadvantage","ITL2","TLM5","North Eastern Scotland",NA,NA,NA,"Total",NA,NA,0,NA,NA,NA,NA,NA,NA
 "CI4","Childhood poverty and disadvantage","ITL2","TLE2","North Yorkshire",NA,NA,NA,"Total",NA,NA,0.17060666,NA,NA,NA,NA,NA,NA
 "CI4","Childhood poverty and disadvantage","ITL2","TLN0","Northern Ireland",NA,NA,NA,"Total",NA,NA,0.343050828,NA,NA,NA,NA,NA,NA
-"CI4","Childhood poverty and disadvantage","ITL2","TLC2","Northumberland and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.595625478,NA,NA,NA,NA,NA,NA
+"CI4","Childhood poverty and disadvantage","ITL2","TLC2","Northumberland, and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.595625478,NA,NA,NA,NA,NA,NA
 "CI4","Childhood poverty and disadvantage","ITL2","TLI5","Outer London - East and North East",NA,NA,NA,"Total",NA,NA,0.698109398,NA,NA,NA,NA,NA,NA
 "CI4","Childhood poverty and disadvantage","ITL2","TLI6","Outer London - South",NA,NA,NA,"Total",NA,NA,0.441122923,NA,NA,NA,NA,NA,NA
 "CI4","Childhood poverty and disadvantage","ITL2","TLI7","Outer London - West and North West",NA,NA,NA,"Total",NA,NA,0.652368431,NA,NA,NA,NA,NA,NA
@@ -109,7 +109,7 @@
 "CI5","R & D environment","ITL2","TLM5","North Eastern Scotland",NA,NA,NA,"Total",NA,NA,0.266742889,NA,NA,NA,NA,NA,NA
 "CI5","R & D environment","ITL2","TLE2","North Yorkshire",NA,NA,NA,"Total",NA,NA,0.483741778,NA,NA,NA,NA,NA,NA
 "CI5","R & D environment","ITL2","TLN0","Northern Ireland",NA,NA,NA,"Total",NA,NA,0.57803831,NA,NA,NA,NA,NA,NA
-"CI5","R & D environment","ITL2","TLC2","Northumberland and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.582402961,NA,NA,NA,NA,NA,NA
+"CI5","R & D environment","ITL2","TLC2","Northumberland, and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.582402961,NA,NA,NA,NA,NA,NA
 "CI5","R & D environment","ITL2","TLI5","Outer London - East and North East",NA,NA,NA,"Total",NA,NA,0.414629715,NA,NA,NA,NA,NA,NA
 "CI5","R & D environment","ITL2","TLI6","Outer London - South",NA,NA,NA,"Total",NA,NA,0.426430136,NA,NA,NA,NA,NA,NA
 "CI5","R & D environment","ITL2","TLI7","Outer London - West and North West",NA,NA,NA,"Total",NA,NA,0.72238946,NA,NA,NA,NA,NA,NA
@@ -150,7 +150,7 @@
 "CI2","Precarious situations","ITL2","TLM5","North Eastern Scotland",NA,NA,NA,"Total",NA,NA,0.355665563,NA,NA,NA,NA,NA,NA
 "CI2","Precarious situations","ITL2","TLE2","North Yorkshire",NA,NA,NA,"Total",NA,NA,0,NA,NA,NA,NA,NA,NA
 "CI2","Precarious situations","ITL2","TLN0","Northern Ireland",NA,NA,NA,"Total",NA,NA,0.475651884,NA,NA,NA,NA,NA,NA
-"CI2","Precarious situations","ITL2","TLC2","Northumberland and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.836101369,NA,NA,NA,NA,NA,NA
+"CI2","Precarious situations","ITL2","TLC2","Northumberland, and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.836101369,NA,NA,NA,NA,NA,NA
 "CI2","Precarious situations","ITL2","TLI5","Outer London - East and North East",NA,NA,NA,"Total",NA,NA,0.241233245,NA,NA,NA,NA,NA,NA
 "CI2","Precarious situations","ITL2","TLI6","Outer London - South",NA,NA,NA,"Total",NA,NA,0.527374647,NA,NA,NA,NA,NA,NA
 "CI2","Precarious situations","ITL2","TLI7","Outer London - West and North West",NA,NA,NA,"Total",NA,NA,0.399208822,NA,NA,NA,NA,NA,NA
@@ -191,7 +191,7 @@
 "CI1","Promising prospects","ITL2","TLM5","North Eastern Scotland",NA,NA,NA,"Total",NA,NA,0.37462946,NA,NA,NA,NA,NA,NA
 "CI1","Promising prospects","ITL2","TLE2","North Yorkshire",NA,NA,NA,"Total",NA,NA,0.591729886,NA,NA,NA,NA,NA,NA
 "CI1","Promising prospects","ITL2","TLN0","Northern Ireland",NA,NA,NA,"Total",NA,NA,0.252119882,NA,NA,NA,NA,NA,NA
-"CI1","Promising prospects","ITL2","TLC2","Northumberland and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.181324286,NA,NA,NA,NA,NA,NA
+"CI1","Promising prospects","ITL2","TLC2","Northumberland, and Tyne and Wear",NA,NA,NA,"Total",NA,NA,0.181324286,NA,NA,NA,NA,NA,NA
 "CI1","Promising prospects","ITL2","TLI5","Outer London - East and North East",NA,NA,NA,"Total",NA,NA,0.705026477,NA,NA,NA,NA,NA,NA
 "CI1","Promising prospects","ITL2","TLI6","Outer London - South",NA,NA,NA,"Total",NA,NA,0.49845474,NA,NA,NA,NA,NA,NA
 "CI1","Promising prospects","ITL2","TLI7","Outer London - West and North West",NA,NA,NA,"Total",NA,NA,0.600074903,NA,NA,NA,NA,NA,NA

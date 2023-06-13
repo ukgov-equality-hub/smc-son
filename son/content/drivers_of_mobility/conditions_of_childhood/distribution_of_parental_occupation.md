@@ -36,11 +36,11 @@ The data shows the occupation levels of adults in families with dependent childr
 The occupation levels are:
 
 <ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
-  <li>higher professional</li>
-  <li>lower professional</li>
-  <li>intermediate</li>
-  <li>higher working</li>
-  <li>lower working</li>
+    <li>higher professional</li>
+    <li>lower professional</li>
+    <li>intermediate</li>
+    <li>higher working</li>
+    <li>lower working</li>
 </ul>
 
 # Things you need to know

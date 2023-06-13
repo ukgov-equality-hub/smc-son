@@ -7,10 +7,8 @@ class DataTable {
     // Data from URL
     // Data from data object
     // filter - choose between AND and OR
-    // Paginate table
     // Table summary
     // Fix sticky header on TABLE tag
-    // Show/hide columns
     // Group / sum / aggregate data
 
     constructor(el, data, options) {
@@ -120,8 +118,10 @@ class DataTable {
         const allowColumnResize = options.allowColumnResize || false
         const allowFilter = options.allowFilter || false
         const allowSort = options.allowSort || false
-        const pageSize = options.pageSize || -1
+        const limit = options.limit || 0
+        const pageSize = options.pageSize || 0
         const tableColumns = options.columns || null
+        const backgroundColor = options.backgroundColor || ''
 
         if (allowColumnResize || allowFilter || allowSort) {
             if (self.dataTable) {
@@ -151,6 +151,7 @@ class DataTable {
                     self.dataTable = data
                     if (self.debug) console.log('data', data)
 
+                    self.dataTable['limit'] = limit
                     self.dataTable['page'] = 1
                     self.dataTable['pageSize'] = pageSize
 
@@ -168,7 +169,7 @@ class DataTable {
             const headers = self.dataTable['headers']
 
             for (let i = 0; i < headers.length; i++) {
-                let heading = headers[i], include = true, align = '', format = '', replace = '', replaceWith = ''
+                let heading = headers[i], include = true, align = '', width = '', format = '', replace = '', replaceWith = ''
 
                 if (Array.isArray(tableColumns)) {
                     include = false
@@ -179,6 +180,7 @@ class DataTable {
                                 heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
                                 include = true//'include' in tableColumn ? tableColumn['include'] : false
                                 align = 'align' in tableColumn ? tableColumn['align'] : ''
+                                width = 'width' in tableColumn ? tableColumn['width'] : `${(1 / tableColumns.length) * 100}%`
                                 format = 'format' in tableColumn ? tableColumn['format'] : ''
                                 replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
                                 replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
@@ -197,6 +199,7 @@ class DataTable {
                         heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
                         include = true//'include' in tableColumn ? tableColumn['include'] : false
                         align = 'align' in tableColumn ? tableColumn['align'] : ''
+                        width = `${(1 / tableColumns.length) * 100}%`
                         format = 'format' in tableColumn ? tableColumn['format'] : ''
                         replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
                         replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
@@ -207,6 +210,7 @@ class DataTable {
                     heading: heading,
                     include: include,
                     align: align,
+                    width: width,
                     format: format,
                     replace: replace,
                     replaceWith: replaceWith
@@ -226,17 +230,20 @@ class DataTable {
             let numColumns = Array.isArray(tableColumns) ? tableColumns.length : rows[0].children.length
             const widths = []
             if (table.tagName == 'TABLE') table.classList.add('govuk-table')
+            if (allowColumnResize) table.classList.add('allow-column-resize')
 
             for (let i = 0; i < rows.length; i++) {
                 rows[i].classList.add('table-row', `table_row_${i}`)
                 if (i == 0) {
-                    rows[i].style.position = 'sticky'
-                    rows[i].style.top = '0px'
-                    rows[i].style.zIndex = '2'
-
-                    for (let j = 0; j < rows[i].children.length; j++) {
-                        widths.push(`${100 / numColumns}%`)
-                    }
+                    if (typeof columns[Object.keys(columns)[0]]['width'] !== 'undefined') {
+                        Object.keys(columns).forEach(function (column) {
+                            widths.push(columns[column]['width'])
+                        })
+                    } else {
+                        for (let j = 0; j < rows[i].children.length; j++) {
+                            widths.push(`${100 / numColumns}%`)
+                        }
+                    } 
                 }
 
                 if (table.tagName == 'TABLE') {
@@ -260,7 +267,8 @@ class DataTable {
                             rows[i].children[j].classList.add('table-column')
                             rows[i].children[j].classList.add('govuk-table__header')
                             rows[i].children[j].setAttribute('data-column', `${j}`)
-                            rows[i].children[j].style.width = `${100 / numColumns}%`
+                            rows[i].children[j].style.width = widths[j] //`${100 / numColumns}%`
+                            if (backgroundColor != '') rows[i].children[j].style.backgroundColor = backgroundColor
                         }
                         table.getElementsByTagName('thead')[0].appendChild(rows[i])
                         rows[i].parentElement.classList.add('govuk-table__head')
@@ -277,7 +285,8 @@ class DataTable {
                             rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
                             rows[i].children[j].classList.add('table-column', 'govuk-table__cell')
                             rows[i].children[j].setAttribute('data-column', `${j}`)
-                            rows[i].children[j].style.width = `${100 / numColumns}%`
+                            rows[i].children[j].style.width = widths[j] //`${100 / numColumns}%`
+                            if (backgroundColor != '') rows[i].children[j].style.backgroundColor = backgroundColor
                         }
                         rows[i].parentElement.classList.add('govuk-table__body')
                         rows[i].classList.add('govuk-table__row')
@@ -287,7 +296,8 @@ class DataTable {
                         rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
                         rows[i].children[j].classList.add('table-column')
                         rows[i].children[j].setAttribute('data-column', `${j}`)
-                        rows[i].children[j].style.width = `${100 / numColumns}%`
+                        rows[i].children[j].style.width = widths[j] //`${100 / numColumns}%`
+                        if (backgroundColor != '') rows[i].children[j].style.backgroundColor = backgroundColor
                     }
                 }
 
@@ -346,6 +356,8 @@ class DataTable {
             const filters = self.dataTable['filters']
             const sort = self.dataTable['sort']
             const sortOrder = self.dataTable['sortOrder']
+            const pageSize = self.dataTable['pageSize']
+            const limit = self.dataTable['limit']
             const widths = self.dataTable['widths']
 
             function applyAttributes(node, attributes) {
@@ -401,6 +413,9 @@ class DataTable {
             } else {
                 data = self.dataUtils.sortData(data, sort, sortOrder)
             }
+            self.dataTable['sort'] = sort
+            self.dataTable['sortOrder'] = sortOrder
+
             if (document.getElementsByClassName(`sort-icon_${self.el}_0`).length > 0) {
                 for (let i = 0; i < headers.length; i++) {
                     if (allowColumn(headers[i]) && document.getElementsByClassName(`sort-icon_${self.el}_${i}`)[0]) {
@@ -424,50 +439,52 @@ class DataTable {
             clearDataTable()
 
             for (let i = 0; i < data.length; i++) {
-                const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
-                row.classList.add('table-row', 'govuk-table__row')
-                applyAttributes(row, data[i]['_attributes'][0])
+                if (limit == 0 || (limit > 0 && i < limit)) {
+                    const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                    row.classList.add('table-row', 'govuk-table__row')
+                    applyAttributes(row, data[i]['_attributes'][0])
 
-                for (let j = 0; j < headers.length; j++) {
-                    if (allowColumn(headers[j])) {
-                        let cell = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'td' : 'div')
-                        cell.classList.add('table-column', 'govuk-table__cell')
-                        //if (numeric[j]) cell.classList.add('numeric')
-                        if (widths[j]) cell.style.width = widths[j]
-                        cell.setAttribute('data-column', `${j}`)
-                        applyAttributes(cell, data[i]['_attributes'][j + 1])
-                        if (['left', 'center', 'right'].includes(columns[headers[j]].align)) cell.classList.add(`align-${columns[headers[j]].align}`)
-                        let content = data[i][type == 'array' ? j : headers[j]]
+                    for (let j = 0; j < headers.length; j++) {
+                        if (allowColumn(headers[j])) {
+                            let cell = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'td' : 'div')
+                            cell.classList.add('table-column', 'govuk-table__cell')
+                            //if (numeric[j]) cell.classList.add('numeric')
+                            if (widths[j]) cell.style.width = widths[j]
+                            cell.setAttribute('data-column', `${j}`)
+                            applyAttributes(cell, data[i]['_attributes'][j + 1])
+                            if (['left', 'center', 'right'].includes(columns[headers[j]].align)) cell.classList.add(`align-${columns[headers[j]].align}`)
+                            let content = data[i][type == 'array' ? j : headers[j]]
 
-                        if (columns[headers[j]].format != '') {
-                            if (['percent', '%', '£', '$', '€', 'currency', 'number'].includes(columns[headers[j]].format) && isNumeric(content)) {
-                                if (['percent', '%'].includes(columns[headers[j]].format)) {
-                                    content = `${parseFloat(content, 10).toFixed(2)}%`
-                                } else if (['£', '$', '€'].includes(columns[headers[j]].format)) {
-                                    content = `${columns[headers[j]].format == 'currency' ? '£' : columns[headers[j]].format}${numberWithCommas(parseFloat(content, 10).toFixed(2))}`
-                                } else if (columns[headers[j]].format == 'number') {
-                                    content = numberWithCommas(content)
+                            if (columns[headers[j]].format != '') {
+                                if (['percent', '%', '£', '$', '€', 'currency', 'number'].includes(columns[headers[j]].format) && isNumeric(content)) {
+                                    if (['percent', '%'].includes(columns[headers[j]].format)) {
+                                        content = `${parseFloat(content, 10).toFixed(2)}%`
+                                    } else if (['£', '$', '€'].includes(columns[headers[j]].format)) {
+                                        content = `${columns[headers[j]].format == 'currency' ? '£' : columns[headers[j]].format}${numberWithCommas(parseFloat(content, 10).toFixed(2))}`
+                                    } else if (columns[headers[j]].format == 'number') {
+                                        content = numberWithCommas(content)
+                                    }
+                                } else if (columns[headers[j]].format.substr(-2) == 'dp' && isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2))) {
+                                    content = numberWithCommas(parseFloat(content, 10).toFixed(parseInt(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2), 10)))
                                 }
-                            } else if (columns[headers[j]].format.substr(-2) == 'dp' && isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2))) {
-                                content = numberWithCommas(parseFloat(content, 10).toFixed(parseInt(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2), 10)))
+                            }
+
+                            if (columns[headers[j]].replace != '' && columns[headers[j]].replaceWith != '' ) {
+                                content = content.replace(new RegExp(columns[headers[j]].replace, 'g'), columns[headers[j]].replaceWith)
+                            }
+
+                            cell.innerHTML = content
+                            if (allowColumn(headers[j])) {
+                                row.appendChild(cell)
                             }
                         }
-
-                        if (columns[headers[j]].replace != '' && columns[headers[j]].replaceWith != '' ) {
-                            content = content.replace(new RegExp(columns[headers[j]].replace, 'g'), columns[headers[j]].replaceWith)
-                        }
-
-                        cell.innerHTML = content
-                        if (allowColumn(headers[j])) {
-                            row.appendChild(cell)
-                        }
                     }
-                }
 
-                if (self.dataTable['tag'] == 'TABLE') {
-                    table.getElementsByTagName('tbody')[0].appendChild(row)
-                } else {
-                    table.appendChild(row)
+                    if (self.dataTable['tag'] == 'TABLE') {
+                        table.getElementsByTagName('tbody')[0].appendChild(row)
+                    } else {
+                        table.appendChild(row)
+                    }
                 }
             }
 
@@ -666,8 +683,7 @@ class DataTable {
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('filter-icon', `filter-icon_${self.el}_${column}`)
-                icon.innerHTML = `<svg height="${rowHeight - 6}" width="${rowHeight - 6}" viewBox="0 0 20 20"><polygon points="0,1 8,12 8,20 12,16 12,12 20,1" fill="#fff" stroke="#555" stroke-width="1" /></svg>`
-
+                icon.innerHTML = `<svg height="${rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight < 16 ? 10 : rowHeight - 6}" viewBox="0 0 20 20"><polygon points="0,1 8,12 8,20 12,16 12,12 20,1" fill="#fff" stroke="#555" stroke-width="1" /></svg>`
 
                 icon.onclick = function (e) {
                     if (document.getElementsByClassName(`filter_${self.el}_${column}`)[0].style.display == 'block') {
@@ -816,7 +832,7 @@ class DataTable {
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('sort-icon', `sort-icon_${self.el}_${column}`)
-                icon.innerHTML = `<svg height="${rowHeight - 6}" width="${rowHeight - 12}" viewBox="0 0 14 20"><polygon points="0,8 7,1 14,8" fill="#fff" stroke="#555" stroke-width="1" class="desc" /><polygon points="0,12 7,19 14,12" fill="#fff" stroke="#555" stroke-width="1" class="asc" /></svg>`
+                icon.innerHTML = `<svg height="${rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight < 16 ? 10 : rowHeight - 12}" viewBox="0 0 14 20"><polygon points="0,8 7,1 14,8" fill="#fff" stroke="#555" stroke-width="1" class="desc" /><polygon points="0,12 7,19 14,12" fill="#fff" stroke="#555" stroke-width="1" class="asc" /></svg>`
                 icon.onclick = function (e) {
                     if (self.dataTable['sort'] == column) {
                         self.dataTable['sortOrder'] = self.dataTable['sortOrder'] != 'desc' ? 'asc' : 'desc'
@@ -863,6 +879,11 @@ class DataTable {
             pageNum = currentPage
         }
         this.render(pageNum)
+    }
+
+    limit(num) {
+        this.dataTable['limit'] = num
+        this.render(this.dataTable['page'])
     }
 
     getData(format) {

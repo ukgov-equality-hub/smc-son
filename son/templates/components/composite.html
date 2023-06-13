@@ -1,0 +1,58 @@
+{% macro composite(id, data) %}
+<div id="ranking" style="height: calc(100% - 30px); padding-right: 10px; overflow-y: {% if [data, 'title'] | attribute | safe == 'Research and development' %}hidden{% else %}auto{% endif %};">
+    {% set data_table = [data, 'data'] | table | sort(attribute = '11', reverse = True) %}
+    <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table" style="width: 100%; margin-bottom: 0px;">
+        <thead>
+            <tr >
+                <th style="text-align: left;">ITL2 region</td>
+                <th style="text-align: right;">Quintile</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data_table %}
+            {% if not row[4] == 'Area_name' %}
+            <tr>
+                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect({ chart: { el: 'chart{{ id }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}' })" onmouseout="mapSelect({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
+                <td class="govuk-table__cell">{{ row[18] }}</td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% if [data, 'title'] | attribute | safe == 'Research and development' %}
+    <a id="showmore" href="javascript:;" class="govuk-link" style="display: inline-block; margin: 15px 10px;" onclick="showMore()">Show more</a>
+    {% endif %}
+</div>
+<script>
+    let quintilesTable{{ id }}
+
+    function scrollTo(a) {
+        const el = document.getElementById('ranking')
+
+        let rows = el.querySelectorAll('td')
+        for (row of rows) {
+            row.style.fontWeight = 'normal'
+        }
+        const item = document.getElementById(`area_${a.name}`)
+        item.style.fontWeight = 'bold'
+        {% if [data, 'title'] | attribute | safe != 'Research and development' %}el.scrollTo({ top: item.offsetTop - 45, behavior: 'smooth' }){% endif %}
+
+        mapSelect(a)
+    }
+
+    function showMore() {
+        quintilesTable{{ id }}.limit(0)
+
+        const el = document.getElementById('ranking')
+        el.style.height = 'auto'
+        el.parentElement.style.height = 'auto'
+        el.parentElement.parentElement.style.height = 'auto'
+        document.getElementById('showmore').style.display = 'none'
+    }
+
+    window.document.addEventListener('DOMContentLoaded', function () {
+        quintilesTable{{ id }} = new DataTable('quintiles{{ id }}', null, { allowColumnResize: false, allowFilter: true, allowSort: true{% if [data, 'title'] | attribute | safe == 'Research and development' %}, limit: 12{% endif %}, columns: [{ column: 'ITL2 region', width: '70%' }, { column: 'Quintile', align: 'right', width: '30%' }], backgroundColor: '#fafafa' })
+    })
+</script>
+{% endmacro %}

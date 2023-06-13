@@ -70,6 +70,19 @@ menu = {
             'name': 'Intermediate outcomes',
             'subdomains': [
                 {
+                    'name': 'Composite indices',
+                    'indicators': [
+                        {
+                            'id': 'CI1',
+                            'name': 'Promising prospects'
+                        },
+                        {
+                            'id': 'CI2',
+                            'name': 'Precarious situations'
+                        }
+                    ]
+                },
+                {
                     'name': 'Compulsory school age (5 to 16 years)',
                     'indicators': [
                         {
@@ -170,6 +183,23 @@ menu = {
         {
             'name': 'Drivers of mobility',
             'subdomains': [
+                {
+                    'name': 'Composite indices',
+                    'indicators': [
+                        {
+                            'id': 'CI3',
+                            'name': 'Socio-cultural advantage'
+                        },
+                        {
+                            'id': 'CI4',
+                            'name': 'Childhood poverty and disadvantage'
+                        },
+                        {
+                            'id': 'CI5',
+                            'name': 'Research and development'
+                        }
+                    ]
+                },
                 {
                     'name': 'Conditions of childhood',
                     'indicators': [

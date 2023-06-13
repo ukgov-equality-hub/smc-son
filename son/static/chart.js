@@ -133,7 +133,7 @@ class Chart {
         const uci = options.upperConfidence || null
         const xvalue = options.xvalue || null
         const yvalue = options.yvalue || null
-        const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        let dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         const limit = options.limit || 0
         let domain = options.domain || null
@@ -198,6 +198,7 @@ class Chart {
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
             if (['quartile', 'quintile', 'decile'].includes(type)) {
+                dataFormat = type
                 self.height = 35
                 margin = [0, -7, 0, -7]
             } else {
@@ -558,8 +559,8 @@ class Chart {
             }
 
             function getMarkColour(data, x) {
-                if (['quartile', 'quintile', 'decile'].includes(type)) {
-                    let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), type), q = getQuantile(ranges, x[xkey])
+                if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                    let ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, x[xkey])
                     return colourScheme[q] || 'grey'
                 }
 
