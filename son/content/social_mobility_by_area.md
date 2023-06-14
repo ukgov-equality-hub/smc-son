@@ -1,5 +1,5 @@
 ## Summary
-Mobility outcomes look at where people end up, typically in their 40s or 50s. They look at people’s socio-economic class, income, education and housing.
+Social mobility by area looks at the differences between different ITL2 areas, comparing a number of different social outcomes.
 
 ## Subtitle
 Highlighted content
