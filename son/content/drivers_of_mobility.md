@@ -5,10 +5,10 @@ Drivers of social mobility are the background conditions that make social mobili
 Highlighted content
 
 ## Text
-<div style="display: flex; height: 300px; max-width: 775px; gap: 20px;">
-    <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;"></div>
-    <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;"></div>
-    <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;"></div>
+<div class="grid grid3 grid-three-quarters">
+    <div class="govuk-body"></div>
+    <div class="govuk-body"></div>
+    <div class="govuk-body"></div>
 </div>
 
 ## Subtitle
