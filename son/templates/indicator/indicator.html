@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% from 'components/visualisation.html' import visualisation %}
+{% from 'components/map.html' import map %}
+{% from 'components/chart.html' import chart %}
 {% from 'components/placeholder.html' import placeholder %}
 {% set ns = namespace(counter1=0, counter2=0) %}
 {% block title %}Social Mobility Commission{% endblock %}
@@ -131,6 +133,12 @@
             {{ visualisation(ns.counter2, 'chart', subitem[1]) }}
         </div>
         {% endif %}
+        {% if subitem[0] == 'Map' %}
+        <div>
+            <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute }}</h3>
+            {{ map(ns.counter2, subitem[1]) }}
+        </div>
+        {% endif %}
         {% set ns.counter2 = ns.counter2 + 1 %}
         {% endfor %}
     </div>
@@ -162,8 +170,18 @@
     {% endfor %}
 </div>
 <script>
-    let map = undefined, chart = undefined
-    function mapSelect(a) {
+    function mapSelect1(a) {
+        let map = undefined, chart = undefined
+
+        const scaleQunitile = document.getElementsByClassName('scale-qunitile')
+        for (let i = 0; i < scaleQunitile.length; i++) {
+            scaleQunitile[i].style.display = 'block'
+        }
+        const scaleViridis = document.getElementsByClassName('scale-viridis')
+        for (let i = 0; i < scaleViridis.length; i++) {
+            scaleViridis[i].style.display = 'none'
+        }
+
         try {
             const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
             if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
@@ -181,6 +199,38 @@
                 document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
                 if (map) map.resetHighlight()
                 if (chart) chart.resetHighlight()
+            }
+        }
+        catch (e) {}
+    }
+
+    function mapSelect2(a) {
+        let map = undefined, chart = undefined, map1 = undefined, map2 = undefined
+
+        const scaleQunitile = document.getElementsByClassName('scale-qunitile')
+        for (let i = 0; i < scaleQunitile.length; i++) {
+            scaleQunitile[i].style.display = 'none'
+        }
+        const scaleViridis = document.getElementsByClassName('scale-viridis')
+        for (let i = 0; i < scaleViridis.length; i++) {
+            scaleViridis[i].style.display = 'block'
+        }
+
+        try {
+            const el = a.map.el.replace('map', '')
+            if (typeof window[`map${el}`] !== 'undefined') map1 = eval(`map${el}`)
+            //if (typeof window[`map${el == '0' ? '1' : '0'}`] !== 'undefined') map2 = eval(`map${el == '0' ? '1' : '0'}`)
+
+            if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
+                document.getElementById(`map_marker${el}`).style.visibility = 'visible'
+                document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
+                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.value, 10) - parseInt(a.min, 10)) / (parseInt(a.max, 10) - parseInt(a.min, 10)) * 100}% - 15px)`
+                //if (map2) map2.highlight(a.name)
+            } else {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
+                document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
+                //if (map2) map2.resetHighlight()
             }
         }
         catch (e) {}

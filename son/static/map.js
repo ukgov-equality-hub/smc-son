@@ -128,7 +128,7 @@ class Choropleth {
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
-        let domains = options.domains || []
+        let domain = options.domain || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
         this.background = options.background || false
@@ -188,8 +188,7 @@ class Choropleth {
             if (self.background) {
 
                 // https://github.com/Dataninja/geo-shapes/tree/master/europe
-                // https://raw.githubusercontent.com/eurostat/Nuts2json/master/pub/v2/2016/3035/20M/0.json
-                d3.json(`${self._scriptSrc()}nuts0.topo.json`)
+                d3.json(`${self._scriptSrc()}nuts1.topo.json`)
                     .then(function (eudata) {
                         loadFiles(eudata)
                     })
@@ -202,17 +201,22 @@ class Choropleth {
             let subunits = getFeatures(geodata, 'features')
             //let londonunits = JSON.parse(JSON.stringify(subunits))
             //londonunits.geometries = londonunits.geometries.filter(x => {
-            //    return x.properties.ITL221NM.indexOf('London') > -1
+            //    return x.properties[areaField].indexOf('London') > -1
             //})
             //subunits = londonunits
 
-            const areas = geoFormat == 'topo' ? subunits.geometries.map(x => x.properties[areaField]) : subunits.map(x => x.properties[areaField])
-            data = (data.data || data).filter(x => areas.includes(x[nameField]))
+            data = (data.data || data).filter(x => (geoFormat == 'topo' ? subunits.geometries.map(x => x.properties[areaField]) : subunits.map(x => x.properties[areaField])).includes(x[nameField]))
+
+            let filteredunits = JSON.parse(JSON.stringify(subunits))
+            filteredunits.geometries = filteredunits.geometries.filter(x => {
+                return data.map(x => x[nameField]).indexOf(x.properties[areaField]) > -1
+            })
+            subunits = filteredunits
 
             // Set up map projection, and position it
             self.projection = d3.geoMercator().fitSize(
                 [self.width, self.height],
-                geoFormat == 'topo' ? topoFeatures(geodata) : geodata
+                { type: 'FeatureCollection', features: (geoFormat == 'topo' ? topoFeatures(geodata) : geodata).features.filter(x => data.map(x => x[nameField]).indexOf(x.properties[areaField]) > -1) }
             )
             self.path = d3.geoPath(self.projection)
 
@@ -276,18 +280,14 @@ class Choropleth {
 
             let min = 0, max = 0
             if (dataFormat == 'categorical') {
-                if (domains.length == 0) {
-                    domains = data.map(x => x[valueField]).filter(function (a, b, c) { return c.indexOf(a) === b })
+                if (domain.length == 0) {
+                    domain = data.map(x => x[valueField]).filter(function (a, b, c) { return c.indexOf(a) === b })
                 }
             } else {
                 //data.map(x => x[valueField] = parseFloat(x[valueField], 10).toFixed(2))
                 min = d3.min(data, x => parseFloat(x[valueField], 10))
                 max = d3.max(data, x => parseFloat(x[valueField], 10))
             }
-            self.min = min
-            self.max = max
-            self.mean = d3.mean(data, x => parseFloat(x[valueField], 10))
-            self.median = d3.median(data, x => parseFloat(x[valueField], 10))
 
             mapFeatures = geoFormat == 'topo' ? topojson.feature(geodata, subunits).features : subunits
             self.mapFeatures = mapFeatures
@@ -301,13 +301,21 @@ class Choropleth {
             let color
             if (dataFormat == 'sequential') {
                 const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
+                if (domain.length > 0 && isNumeric(domain[0]) && isNumeric(domain[1])) {
+                    min = domain[0]
+                    max = domain[1]
+                }
                 color = d3.scaleSequential(interpolator)
-                    .domain([0, 100])
+                    .domain([min, max])
             } else {
                 const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
                 color = d3.scaleQuantize(scheme)
-                    .domain(dataFormat == 'categorical' && domains.length > 0 ? domains : [min, max])
+                    .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
             }
+            self.min = min
+            self.max = max
+            self.mean = d3.mean(data, x => parseFloat(x[valueField], 10))
+            self.median = d3.median(data, x => parseFloat(x[valueField], 10))
 
             // Legend
             if (self.legendDiv != '') {
@@ -343,7 +351,7 @@ class Choropleth {
                             .attr('height', x => {
                                 return width > height ? height - 25 : height / 100 + 1
                             })
-                            .attr('fill', x => getMarkColour(data, x) /*color(x)*/)
+                            .attr('fill', x => color(x))
 
                     d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
@@ -362,7 +370,7 @@ class Choropleth {
                             })
                             .style('font-size', style.fontSize)
                 } else {
-                    let legends = dataFormat == 'categorical' || domains.length > 0 ? domains : colourScheme.map((x, i) => `${(min + (((max - min) / colourScheme.length) * i)).toFixed(5)} to ${(min + (((max - min) / colourScheme.length) * (i + 1))).toFixed(5)}`)
+                    let legends = dataFormat == 'categorical' || domain.length > 0 ? domain : colourScheme.map((x, i) => `${(min + (((max - min) / colourScheme.length) * i)).toFixed(5)} to ${(min + (((max - min) / colourScheme.length) * (i + 1))).toFixed(5)}`)
                     //color.ticks(colourScheme.length - 1).map((x, i, a) => { return a[i + 1] ? `${a[i]} - ${a[i + 1]}` : `${a[i]}` }).slice(0, -1)
                     let labelLen = maxLabelLength(legends.map(x => { return { 'key': x } }), 'key', style)
 
@@ -378,9 +386,7 @@ class Choropleth {
                         .data(legends)
                         .enter()
                         .append('g')
-                        .attr('transform', (d, i) => {
-                            return `translate(0, ${i * 25})`
-                        })
+                        .attr('transform', (d, i) => `translate(0, ${i * 25})`)
 
                     d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
@@ -389,14 +395,10 @@ class Choropleth {
                         .enter()
                         .append('rect')
                             .attr('x', 0)
-                            .attr('y', (d, i) => {
-                                return i * 30
-                            })
+                            .attr('y', (d, i) => i * 30)
                             .attr('width', 20)
                             .attr('height', 20)
-                            .style('fill', (d, i) => {
-                                return colourScheme[i]
-                            })
+                            .style('fill', (d, i) => colourScheme[i])
 
                     d3.select(`#${self.legendDiv}`).select('svg')
                         .append('g')
@@ -405,30 +407,23 @@ class Choropleth {
                         .enter()
                         .append('text')
                             .attr('x', 30)
-                            .attr('y', (d, i) => {
-                                return (i + 0.5) * 30
-                            })
-                            .text(x => {
-                                return x
-                            })
+                            .attr('y', (d, i) => (i + 0.5) * 30)
+                            .text(x => x)
                 }
             }
 
             if (self.background) {
+                let areas = getAreas(data.map(x => x[nameField]))
                 bg.enter()
                     .append('path')
                     .attr('d', self.bg)
                     .style('fill', '#f3f2f1')
                     .style('stroke', '#ddd')
                     .style('stroke-width', '.1')
-                    .style('visibility', x => {
-                        return x.properties.NUTS_NAME == 'United Kingdom' ? 'hidden' : 'visible'
-                    })
-                    .attr('data-name', x => {
-                        return x.properties.NUTS_NAME
-                    })
+                    .style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
+                    .attr('data-name', x => x.properties.NUTS_NAME || x.properties.NUTS_ID)
 
-                const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return x.properties.NUTS_NAME === 'United Kingdom' }) }, self.bg, undefined, undefined, '')
+                const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return areas.indexOf(x.properties.NUTS_ID) > -1 }) }, self.bg, undefined, undefined, '')
                 d3.select(`#${self.el}__bg g.bg`)
                     .style('transform-origin', 'left top')
                     .style('transform', `translate(${bgAdjust.transform[0]}px, ${bgAdjust.transform[1]}px) scale(${bgAdjust.scale}`)
@@ -437,29 +432,19 @@ class Choropleth {
             map.enter()
                 .append('path')
                 .attr('d', self.path)
-                .style('fill', x => getMarkColour(data, x) /*(x, i) => {
-                    const val = getValue(x, areaField, valueField, data)
-                    if (dataFormat == 'categorical') {
-                        return colourScheme[val - 1]
-                    } else if (dataFormat == 'sequential') {
-                        return isNaN(val) ? 'grey' : color(Math.floor((val / (max - min)) * 100))
-                    } else {
-                        return isNaN(val) ? 'grey' : color(val)
-                    }
-                }*/)
+                .style('fill', x => getMarkColour(data, x))
                 .style('stroke', 'grey')
                 .style('stroke-width', '0.2')
-                .attr('data-name', x => {
-                    return getProperty(x, areaField)
-                })
+                .attr('data-name', x => getProperty(x, areaField))
                 .attr('data-value', x => {
                     if (dataFormat == 'categorical') {
-                        return domains[getValue(x, areaField, valueField, data) - 1]
+                        return domain[getValue(x, areaField, valueField, data) - 1]
                     } else {
                         const val = getValue(x, areaField, valueField, data)
                         return isNaN(val) ? 'N/A' : val
                     }
                 })
+                .attr('data-colour', x => getMarkColour(data, x))
                 .attr('data-quantile', x => {
                     if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                         const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
@@ -487,9 +472,8 @@ class Choropleth {
                 .attr('d', self.path)
                 .style('fill', 'none')
                 .style('opacity', 0)
-                .attr('data-name', x => {
-                    return getProperty(x, areaField)
-                })
+                .attr('data-name', x => getProperty(x, areaField))
+                .attr('data-colour', x => getMarkColour(data, x))
                 .on('click', clicked)
                 .on('mouseover', highlight)
                 .on('mouseout', resetHighlight)
@@ -599,7 +583,7 @@ class Choropleth {
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
                 } else if (dataFormat == 'sequential') {
-                    return isNaN(val) ? 'grey' : color(Math.floor((val / (max - min)) * 100))
+                    return isNaN(val) ? 'grey' : color(Math.floor(((val - min) / (max - min)) * 100))
                 } else {
                     return isNaN(val) ? 'grey' : color(val)
                 }
@@ -790,6 +774,7 @@ class Choropleth {
         }
 
         function dimensions(el) {
+            if (!el) return { height: 0, width: 0 }
             const style = getComputedStyle(el)
             let width = el.clientWidth // width with padding
             let height = el.clientHeight // height with padding
@@ -834,6 +819,7 @@ class Choropleth {
         }
 
         function highlight(event) {
+            if (this.getAttribute('data-colour') == 'grey') return
             if (self.onRollover) {
                 try {
                     const status = getStatus(this)
@@ -887,6 +873,23 @@ class Choropleth {
                 self.tooltip.html(`<h2>${d3.select(this).attr('data-name')}</h2><h3>Value: ${d3.select(this).attr('data-value')}</h3>`)
                 self.tooltip.style('visibility', 'visible')
             }
+        }
+
+        function getAreas(data) {
+            function hasArea(areas, data) {
+                return data.findIndex(x => x.toLowerCase().includes(areas)) > -1
+                for (const area of areas) {
+                    if (data.indexOf(area) > -1) return true
+                }
+                return false
+            }
+
+            let areas = ['UK', 'UKC', 'UKD', 'UKE', 'UKF', 'UKG', 'UKH', 'UKI', 'UKJ', 'UKK']
+            if (hasArea('scotland', data)) areas = ['UKM', ...areas]
+            if (hasArea('wales', data)) areas = ['UKL', ...areas]
+            if (hasArea('ireland', data)) areas = ['UKI', ...areas]
+
+            return areas
         }
     }
 

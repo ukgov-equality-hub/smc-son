@@ -12,7 +12,7 @@
             {% for row in data_table %}
             {% if not row[4] == 'Area_name' %}
             <tr>
-                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect({ chart: { el: 'chart{{ id }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}' })" onmouseout="mapSelect({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
+                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect1({ chart: { el: 'chart{{ id }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}' })" onmouseout="mapSelect1({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
                 <td class="govuk-table__cell">{{ row[18] }}</td>
             </tr>
             {% endif %}
@@ -38,7 +38,7 @@
         item.style.fontWeight = 'bold'
         {% if [data, 'title'] | attribute | safe != 'Research and development' %}el.scrollTo({ top: item.offsetTop - 45, behavior: 'smooth' }){% endif %}
 
-        mapSelect(a)
+        mapSelect1(a)
     }
 
     function showMore() {

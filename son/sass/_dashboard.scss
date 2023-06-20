@@ -1,6 +1,4 @@
-/* Dashboard
-*/
-
+/* Dashboard */
 .dashboard-container {
     display: flex;
 }
@@ -52,6 +50,7 @@
         @extend .govuk-list;
         margin-bottom: .2rem;
         margin-top: 0 !important;
+        list-style-type: decimal;
     }
 
     & a {
@@ -65,15 +64,12 @@
     }
 }
 
-
 .developers-guide {
-
     @extend .govuk-body;
 
     & a {
         @extend .govuk-link;
     }
-
 }
 
 .card {
