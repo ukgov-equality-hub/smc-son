@@ -23,6 +23,7 @@
     .dashboard-container {
         main#main-content {
             width: 100%;
+            padding: 20px 0 0 20px;
         }
 
         .govuk-grid-row.govuk-grid-row-full-width {
@@ -58,11 +59,16 @@
     }
 
     .dashboard-container {
+        main#main-content {
+            width: 100%;
+            padding: 20px 0 0 0;
+        }
+
         .govuk-grid-row.govuk-grid-row-full-width {
             padding: 0 15px;
 
             .govuk-tabs {
-                padding: 10px;
+                /*padding: 10px;*/
 
                 p {
                     width: 100%;
@@ -130,6 +136,80 @@
 
 .govuk-header {
     border-color: #1d70b8;
+}
+
+.mobile {
+    display: none;
+
+    @media(max-width: 40.0625em) {
+        display: block
+    }
+}
+
+.mobile-hide {
+    display: block;
+
+    @media(max-width: 40.0625em) {
+        display: none
+    }
+}
+
+/* Side menu */
+#sidemenu {
+    li#sidemenu_showmore a, li#sidemenu_showless a {
+        padding-left: 14px;
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+#searchquery {
+    --govuk-frontend-version: "4.6.0";
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2.5rem;
+    margin-bottom: 0;
+    padding: 5px;
+    padding-left: 35px;
+    border: 2px solid #000;
+    border-radius: 0;
+    -webkit-appearance: none;
+    position: relative;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center left -2px;
+    background-size: 40px 40px;
+    font-family: "GDS Transport",arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 400;
+    font-size: 1.1875rem;
+    line-height: 1.3157894737;
+}
+
+.search-summary {
+    color: #777;
+    font-size: smaller;
+}
+
+ol.toc {
+    margin-bottom: 100px;
+}
+
+hr.divider {
+    margin: 40px 0;
+}
+
+ul.list-disc {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+p.sub-header {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 /* Tabs panel */
@@ -270,6 +350,7 @@ div.data-table-data table {
     }
 }
 
+/* Grid layouts */
 .grid {
     display: flex;
     justify-content: space-between;
@@ -286,6 +367,14 @@ div.data-table-data table {
     > div {
         width: 50%;
     }
+
+    @media(max-width: 1400px) {
+        display: block;
+
+        > div {
+            width: 100%;
+        }
+    }
 }
 
 .grid2.map {
@@ -297,18 +386,8 @@ div.data-table-data table {
         height: 700px;
         position: relative;
     }
-}
 
-@media(max-width: 1400px) {
-    .grid2 {
-        display: block;
-
-        > div {
-            width: 100%;
-        }
-    }
-
-    .grid2.map {
+    @media(max-width: 1400px) {
         height: 1440px;
         padding: 10px;
         background: #fafafa;
@@ -323,6 +402,59 @@ div.data-table-data table {
             margin-top: 20px;
         }
     }
+
+    @media(max-width: 40.0625em) {
+        width: unset;
+        height: 720px;
+    }
+}
+
+.grid3 {
+    height: 300px;
+    gap: 20px;
+
+    > a {
+        display: inherit;
+        width: 33%;
+        text-decoration: none;
+    }
+
+    > a > div, > div {
+        width: 33%;
+        padding: 20px;
+        flex-grow: 1;
+        background-color: #f3f2f1;
+
+        > p:first-child {
+            margin-top: 0;
+        }
+
+        > p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    div.chart {
+        width: 260px;
+        height: 180px;
+    }
+
+    @media(max-width: 40.0625em) {
+        display: block;
+        height: auto;
+
+        > a {
+            width: 100%;
+
+            div {
+                width: calc(100% - 40px);
+            }
+        }
+
+        > div {
+            width: inherit;
+        }
+    }
 }
 
 .grid5 {
@@ -331,26 +463,263 @@ div.data-table-data table {
     }
 }
 
-#searchquery {
-    --govuk-frontend-version: "4.6.0";
-    text-size-adjust: 100%;
-    box-sizing: border-box;
+.grid-three-quarters {
+    max-width: 775px;
+}
+
+/* Area page */
+div.area-page {
+    main.govuk-main-wrapper {
+        div.grid.grid2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: stretch;
+            gap: 0;
+
+            > div:first-child {
+                margin-right: 30px;
+                width: calc(100% - 330px);
+            }
+
+            > div:last-child {
+                width: 300px;
+            }
+        }
+
+        div.area-quintile-header {
+            > div {
+                margin-left: 350px;
+                width: calc(100% - 350px);
+                height: 35px;
+
+                > span:first-child {
+                    float: left;
+                    font-size: smaller;
+                    text-align: center;
+                }
+
+                > span:last-child {
+                    float: right;
+                    font-size: smaller;
+                    text-align: center;
+                }
+            }
+        }
+
+        div.area-quintile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            > div:first-child {
+                width: 350px;
+                text-align: right;
+            }
+
+            > div:last-child {
+                width: calc(100% - 350px);
+                height: 35px;
+            }
+        }
+
+        div.map-container {
+            margin-bottom: 15px;
+            border: 1px solid #333;
+        }
+    }
+
+    @media(max-width: 40.0625em) {
+        display: block;
+
+        h1.govuk-heading-l.mobile {
+            padding-top: 20px;
+        }
+
+        div.dashboard-area-menu {
+            display: block;
+            position: relative;
+            width: 100%;
+
+            ul#sidemenu {
+                display: block;
+
+                + hr.govuk-section-break {
+                    display: none;
+
+                    + ul.moj-side-navigation__list {
+                        display: none;
+                    }
+                }
+            }
+
+            /*ul#sidemenu + hr.govuk-section-break {
+                display: none;
+            }
+
+            ul#sidemenu + hr.govuk-section-break + ul.moj-side-navigation__list {
+                display: none;
+            }*/
+        }
+    }
+
+    @media(max-width: 1200px) {
+        main.govuk-main-wrapper {
+            div.area-quintile-header {
+                > div {
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+
+            div.area-quintile {
+                display: block;
+
+                > div:first-child, > div:last-child {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    @media(max-width: 1020px) {
+        main.govuk-main-wrapper {
+            div.grid.grid2 {
+                display: initial;
+
+                > div:first-child, > div:last-child {
+                    margin: 0;
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+/* Visualisations */
+div.visualisation-tabs {
     width: 100%;
-    height: 2.5rem;
-    margin-bottom: 0;
-    padding: 5px;
-    padding-left: 35px;
-    border: 2px solid #000;
-    border-radius: 0;
-    -webkit-appearance: none;
-    position: relative;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36' width='40' height='40'%3E%3Cpath d='M25.7 24.8L21.9 21c.7-1 1.1-2.2 1.1-3.5 0-3.6-2.9-6.5-6.5-6.5S10 13.9 10 17.5s2.9 6.5 6.5 6.5c1.6 0 3-.6 4.1-1.5l3.7 3.7 1.4-1.4zM12 17.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5-2 4.5-4.5 4.5-4.5-2-4.5-4.5z' fill='%23505a5f'%3E%3C/path%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center left -2px;
-    background-size: 40px 40px;
-    font-family: "GDS Transport",arial,sans-serif;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 400;
-    font-size: 1.1875rem;
-    line-height: 1.3157894737;
+    height: 100%;
+    margin: 30px 0;
+    background-color: #fff;
+
+    ul {
+        li:first-child {
+            padding-left: 0 !important;
+        }
+    }
+
+    div[role="tabpanel"] {
+        padding: 30px 0;
+    }
+}
+
+div.map-tooltip {
+    margin: 0;
+    width: calc(100% - 40px);
+    border: none !important;
+    background: rgba(255, 255, 255, 0.8) !important;
+
+    /*div.legend {
+        height: 40px;
+        margin: 10px 0;
+    }*/
+
+    div.marker {
+        height: 20px;
+
+        img {
+            margin-left: 0;
+            transition: margin 500ms;
+            visibility: hidden;
+        }
+    }
+}
+
+div.quintile {
+    margin: 0 0 10px 0;
+    height: 20px;
+
+    div {
+        vertical-align: middle;
+    }
+
+    div.q1 {
+        background: #ca0020;
+    }
+    div.q2 {
+        background: #f4a582;
+    }
+    div.q3 {
+        background: #f7f7f7;
+    }
+    div.q4 {
+        background: #92c5de;
+    }
+    div.q5 {
+        background: #0571b0;
+    }
+}
+
+div.quintile-legend {
+    font-size: 1rem;
+
+    div:last-child {
+        text-align: right;
+    }
+}
+
+.table-container .table-row {
+    @media(max-width: 40.0625em) {
+        white-space: unset;
+
+        th, td {
+            padding: 10px 0 !important;
+            font-size: smaller;
+        }
+
+        span.table-drag {
+            display: none;
+        }
+    }
+}
+
+.grid-composite{
+    @media(max-width: 40.0625em) {
+        display: none;
+    }
+}
+
+.ranking-table {
+    height: calc(100% - 30px);
+    padding-right: 10px;
+
+    &.showhide {
+        overflow-y: hidden;
+    }
+
+    &.scroll {
+        overflow-y: auto;
+    }
+
+    > table {
+        width: 100%;
+        margin-bottom: 0px;
+
+        th.align-left {
+            text-align: left;
+        }
+
+        th.align-right {
+            text-align: right;
+        }
+    }
+
+    a#showmore {
+        display: inline-block;
+        margin: 15px 10px;
+    }
 }

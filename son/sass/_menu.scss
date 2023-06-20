@@ -205,6 +205,10 @@ nav.moj-side-navigation-mobile {
                 font-weight: 400;
                 background-color: transparent;
             }
+
+            a[href="/social_mobility_by_area"] + span.collapsible__toggle-icon {
+                visibility: hidden;
+            }
         }
 
         li.moj-side-navigation__item.is-active {

@@ -45,7 +45,7 @@ UK
 # What the data measures
 <p class="govuk-body">The data measures the gap in hourly earnings between people at the:</p>
 
-<ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
+<ul class="govuk-list list-disc">
     <li>90th percentile (‘high earners’) – they earn more than 90% of people</li>
     <li>10th percentile (‘low earners’) – they earn less than 90% of people</li>
 </ul>

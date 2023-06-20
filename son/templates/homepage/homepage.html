@@ -17,7 +17,7 @@
         </p>
 
         <p class="govuk-body">
-            State of the Nation uses the SMC’s own measurement framework, the <span style="font-weight: bold;">Social Mobility Index</span>. This looks at:
+            State of the Nation uses the SMC’s own measurement framework, the <span class="govuk-!-font-weight-bold">Social Mobility Index</span>. This looks at:
         </p>
 
         <ul class="govuk-body">
@@ -38,22 +38,22 @@
             See data by topic
         </h3>
 
-        <div style="display: flex; height: 300px; gap: 20px;">
-            <a href="/mobility_outcomes" style="display: inherit; width: 33%; text-decoration: none;">
-                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                    <p style="font-weight: bold;">Mobility outcomes</p>
+        <div class="grid grid3">
+            <a href="/mobility_outcomes">
+                <div class="govuk-body">
+                    <p class="govuk-!-font-weight-bold">Mobility outcomes</p>
                     <p>People’s income, education, housing and class in their 40s and 50s, compared with their parents.</p>
                 </div>
             </a>
-            <a href="/intermediate_outcomes" style="display: inherit; width: 33%; text-decoration: none;">
-                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                    <p style="font-weight: bold;">Age-related outcomes</p>
+            <a href="/intermediate_outcomes">
+                <div class="govuk-body">
+                    <p class="govuk-!-font-weight-bold">Age-related outcomes</p>
                     <p>The experiences of young people as they move through education and into the labour market.</p>
                 </div>
             </a>
-            <a href="/drivers_of_mobility" style="display: inherit; width: 33%; text-decoration: none;">
-                <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                    <p style="font-weight: bold;">Driver of social mobility</p>
+            <a href="/drivers_of_mobility">
+                <div class="govuk-body">
+                    <p class="govuk-!-font-weight-bold">Driver of social mobility</p>
                     <p>The background conditions that make social mobility easier.</p>
                 </div>
             </a>
@@ -63,37 +63,37 @@
             Highlighted content
         </h3>
 
-        <div style="display: flex; height: 300px; gap: 20px;">
-            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                <p style="font-weight: bold;">Occupational mobility</p>
-                <div id="chart1" style="width: 260px; height: 180px;"></div>
+        <div class="grid grid3">
+            <div class="govuk-body">
+                <p class="govuk-!-font-weight-bold">Occupational mobility</p>
+                <div id="chart1"></div>
                 <script>
                     new Chart(
                         'chart1',
                         `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": false, "rotateDomainLabels": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
                     )
                 </script>
             </div>
-            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                <p style="font-weight: bold;">Young people who are NEET</p>
-                <div id="chart2" style="width: 260px; height: 180px;"></div>
+            <div class="govuk-body">
+                <p class="govuk-!-font-weight-bold">Young people who are NEET</p>
+                <div id="chart2"></div>
                 <script>
                     new Chart(
                         'chart2',
                         `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
                     )
                 </script>
             </div>
-            <div class="govuk-body" style="width: 33%; padding: 20px; flex-grow: 1; background-color: #f3f2f1;">
-                <p style="font-weight: bold;">Pupil attainment compared internationally</p>
-                <div id="chart3" style="width: 260px; height: 180px;"></div>
+            <div class="govuk-body">
+                <p class="govuk-!-font-weight-bold">Pupil attainment compared internationally</p>
+                <div id="chart3"></div>
                 <script>
                     new Chart(
                         'chart3',
                         `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "legend": false, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+                        { "data": "/static/data/indicators/DR23a_overview-20230417.csv", "width": 260, "height": 180, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": false, "rotateDomainLabels": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
                     )
                 </script>
             </div>
@@ -102,42 +102,6 @@
         <p class="govuk-body">
             Read the <a href="#" class="govuk-link">full State of the Nation 2023 report</a> on GOV.UK.
         </p>
-
-        <!--<h1 class="govuk-heading-l">{{ title }}</h1>
-        <p class="govuk-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in consectetur quam.
-            Mauris rhoncus eget velit eu elementum. In lacinia tempor convallis. Mauris id suscipit nibh, a
-            dignissim nunc. Aliquam dolor sapien, auctor commodo tincidunt nec, elementum ac tellus. Curabitur ac
-            eros vulputate odio scelerisque tincidunt. Vivamus ac maximus turpis. Aliquam luctus, diam sed
-            vestibulum varius, magna metus imperdiet sapien, eget vestibulum tortor odio sit amet libero. Aenean
-            eleifend, sapien ut egestas feugiat, magna mi sagittis quam, ut varius purus odio in dolor. Phasellus
-            venenatis, arcu a ornare blandit, neque quam maximus nulla, eu rutrum sapien nibh eget mauris. Mauris
-            commodo augue quam, eget vestibulum erat consequat sed. Vestibulum viverra elementum velit id ornare.
-            Phasellus dignissim, nisl id semper maximus, ante ipsum hendrerit ipsum, sit amet maximus nibh nibh
-            mollis tellus. Nullam ullamcorper ultricies est, at hendrerit libero facilisis a.</p>
-        <p class="govuk-body">Maecenas semper neque at lacus faucibus, sit amet sodales libero euismod. Aenean
-            eget congue quam, et sollicitudin odio. Vivamus lacinia velit sit amet semper ultricies. Vivamus quis
-            ultricies neque. Vestibulum ut rutrum ligula. Curabitur nec pharetra augue. Fusce sed dui molestie, viverra
-            nunc vitae, euismod erat. Nunc ullamcorper risus vitae suscipit sollicitudin. Praesent malesuada justo id
-            vehicula laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquet quis eros vel
-            feugiat. Morbi ut ipsum velit. Nunc sapien purus, viverra in volutpat sit amet, blandit eget nulla.</p>
-        <p class="govuk-body">Nulla id dictum dolor. Etiam interdum blandit nisi sit amet varius. Donec
-            porttitor sem sed pretium luctus. Maecenas odio risus, consectetur ullamcorper faucibus id, luctus id
-            turpis. Morbi pulvinar turpis at quam lacinia venenatis. Vivamus id suscipit velit. Cras eleifend ligula
-            libero, non pellentesque urna hendrerit eu. In hac habitasse platea dictumst. Sed tincidunt a metus eu
-            pulvinar.</p>
-        <p class="govuk-body">Nunc semper sapien diam, nec ultricies mauris mattis sit amet. Interdum et
-            malesuada fames ac ante ipsum primis in faucibus. Donec tempor, velit et luctus iaculis, sapien metus
-            suscipit erat, gravida accumsan leo dui ut ipsum. Donec interdum velit neque, in egestas neque semper ac.
-            Cras et ante id lacus consequat gravida ac eu orci. Sed sit amet felis magna. Aliquam posuere nisi eros,
-            vitae tincidunt dolor volutpat sed. Nunc sed tincidunt tortor. Integer venenatis eu ligula non convallis.
-        </p>
-        <p class="govuk-body">Suspendisse at turpis velit. Nunc sodales euismod velit. Morbi rhoncus vitae elit
-            sit amet fringilla. Phasellus efficitur dolor dignissim sodales congue. Etiam posuere accumsan congue. Morbi
-            ut sapien nulla. In dapibus risus nisi, et sollicitudin urna ultrices ut. Donec vel augue eget lectus
-            vulputate cursus rhoncus vitae dui. Praesent mollis ante ante, venenatis ornare eros vehicula in. Phasellus
-            ornare libero pulvinar, sagittis mauris nec, accumsan orci. Proin congue elit vitae efficitur vehicula.
-            Donec in fermentum ligula. Quisque sit amet mi ac erat blandit ultricies ut et nibh. Aliquam laoreet nibh
-            elit, vitae accumsan quam blandit vitae. Mauris turpis felis, cursus vel laoreet et, fringilla ut nunc.</p>-->
     </div>
 </div>
 {% endblock %}

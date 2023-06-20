@@ -35,7 +35,7 @@ UK
 The data shows the occupation levels of adults in families with dependent children. Dependent children are classed as all 0 to 15 year olds, and 16 to 18 years olds who are in full-time education.<br>
 The occupation levels are:
 
-<ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
+<ul class="govuk-list list-disc">
     <li>higher professional</li>
     <li>lower professional</li>
     <li>intermediate</li>

@@ -6,29 +6,29 @@
     </div>
     <div id="map{{ id }}" class="map"></div>
     <div id="map_scale{{ id }}" style="width: 50px; height: 300px; position: absolute; top: 20px; left: 20px;"></div>
-    <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body" style="margin: 0; width: calc(100% - 40px); border: none; background: rgba(255, 255, 255, 0.8);">
-        <div id="map_legend{{ id }}" _style="height: 40px; margin: 10px 0;"></div>
-        <div style="height: 20px;">
-            <img id="map_marker{{ id }}" src="/static/assets/images/down_triangle.svg" width="30" height="16" style="margin-left: 0; transition: margin 500ms; visibility: hidden;">
+    <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body">
+        <div id="map_legend{{ id }}" class="legend"></div>
+        <div class="marker">
+            <img id="map_marker{{ id }}" src="/static/assets/images/down_triangle.svg" width="30" height="16">
         </div>
         <div class="scale-qunitile">
-            <div class="grid grid5" style="margin: 0 0 10px 0; height: 20px;">
-                <div style="background: #ca0020; vertical-align: middle;"></div>
-                <div style="background: #f4a582; vertical-align: middle;"></div>
-                <div style="background: #f7f7f7; vertical-align: middle;"></div>
-                <div style="background: #92c5de; vertical-align: middle;"></div>
-                <div style="background: #0571b0; vertical-align: middle;"></div>
+            <div class="grid grid5 quintile">
+                <div class="q1"></div>
+                <div class="q2"></div>
+                <div class="q3"></div>
+                <div class="q4"></div>
+                <div class="q5"></div>
             </div>
-            <div class="grid grid2" style="font-size: 1rem;">
+            <div class="grid grid2 quintile-legend">
                 <div>Q1 - Bottom 20%</div>
-                <div style="text-align: right;">Q5 - Top 20%</div>
+                <div>Q5 - Top 20%</div>
             </div>
         </div>
         <div class="scale-viridis">
             <div class="viridis" style="height: 20px; background: #4a7d70; background-image: linear-gradient(90deg, #440154, #482475, #414487, #355f8d, #2a788e, #21908d, #22a884, #42be71, #7ad151, #bddf26, #bddf26);"></div>
-            <div class="grid grid2" style="font-size: 1rem;">
+            <div class="grid grid2 quintile-legend">
                 <div>20</div>
-                <div style="text-align: right;">80</div>
+                <div>80</div>
             </div>
         </div>
     </div>

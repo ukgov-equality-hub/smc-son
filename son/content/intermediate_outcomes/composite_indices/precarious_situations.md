@@ -31,7 +31,7 @@ About the data
 ## Text
 This page combines data from the following 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns:
 
-<ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
+<ul class="govuk-list list-disc">
     <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity" class="govuk-link">Economic inactivity</a></li>
     <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/unemployment" class="govuk-link">Unemployment</a></li>
     <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level" class="govuk-link">Occupational level</a> – data on young people in lower working class occupations</li>

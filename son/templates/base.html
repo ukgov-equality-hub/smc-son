@@ -107,10 +107,13 @@
         </p>
     </div>-->
 
-    <div class="dashboard-container govuk-width-container">
+    <div class="dashboard-container govuk-width-container{% if area %} area-page{% endif %}">
         {% if area %}
+        <h1 class="govuk-heading-l mobile">
+            Social mobility by area
+        </h1>
         <div class="dashboard-area-menu">
-            {{ areamenu(menu, area, selected) }}
+            {{ areamenu('menu', menu, area, selected) }}
         </div>
         {% elif domain %}
         <div class="dashboard-menu">
@@ -118,7 +121,7 @@
         </div>
         {% endif %}
 
-        <main id="main-content" role="main" class="govuk-main-wrapper" style="padding-left: 20px;">
+        <main id="main-content" role="main" class="govuk-main-wrapper">
             {% with messages = get_flashed_messages(category_filter=["error"]) %}
                 {% if messages %}
                     <div class="govuk-grid-row">
