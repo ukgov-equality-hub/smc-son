@@ -14,10 +14,11 @@
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
     {% if not ([content, 'Code'] | content) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
-    <ol class="govuk-list govuk-list--number" style="margin-bottom: 100px;">
+    <ol class="govuk-list govuk-list--number toc">
         <li>
             <a href="#Summary main findings" class="govuk-link">Summary main findings</a>
         </li>
+
         {% for item in content %}
         {% if item[0] == 'Section' %}
         <li>
@@ -94,7 +95,7 @@
     {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
 
     {% if item[0] == 'Section' %}
-    <hr style="margin: 40px 0;">
+    <hr class="divider">
     <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
@@ -123,7 +124,7 @@
     {% endif %}
 
     {% if item[0] == 'Grid' %}
-    <div class="grid" style="max-width: 775px;">
+    <div class="grid grid-three-quarters">
         {% for subitem in item[1] %}
         {% if subitem[0] == 'Chart' %}
         <div>
@@ -142,7 +143,7 @@
     {% endif %}
 
     {% if item[0] == 'About' %}
-    <hr style="margin: 40px 0;">
+    <hr class="divider">
     <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
     <p class="govuk-body">This page features new analysis written for State of the Nation based on data from the following source(s):</p>
     {% set ns.counter2 = 0 %}
@@ -150,7 +151,7 @@
     {% if subitem[0] == 'HTML' %}
     {{ subitem[1] | safe }}
     {% else %}
-    <p class="govuk-body"{% if ns.counter2 % 2 == 0 %} style="margin-bottom: 5px; font-weight: bold;"{% endif %}>{{ subitem[1] | safe }}</p>
+    <p class="govuk-body{% if ns.counter2 % 2 == 0 %} sub-header{% endif %}">{{ subitem[1] | safe }}</p>
     {% endif %}
     {% set ns.counter2 = ns.counter2 + 1 %}
     {% endfor %}

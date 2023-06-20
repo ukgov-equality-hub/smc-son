@@ -1,0 +1,88 @@
+{% macro areasearch(id, menu, selectedarea, selected) %}
+<h3 class="govuk-heading-s">Find an area</h3>
+<div id="search">
+    <input id="searchquery" type="text" placeholder="Find an area" oninput="search(this.value)" onmouseenter="showresults()" _onmouseleave="document.getElementById('searchresults').style.display = 'none'">
+    <div id="searchresults" onmouseenter="showresults()" _onmouseleave="this.style.display = 'none'"></div>
+</div>
+<script>
+    const areas = {{ menu.areas | safe }}
+
+    function search(value) {
+        let found = []
+        for (area of areas) {
+            document.getElementById(`${area.name}_matches`).innerHTML = ''
+        }
+
+        if (value.length > 2) {
+            found = found.concat(areas.filter(x => x.name.toLowerCase().indexOf(value.toLowerCase()) > -1))
+            found = found.concat(areas.filter(x => (x.itl3.map(x => x.toLowerCase()).map(x => x.indexOf(value.toLowerCase()) > -1)).indexOf(true) > -1))
+            found = found.concat(areas.filter(x => (x.la.map(x => x.toLowerCase()).map(x => x.indexOf(value.toLowerCase()) > -1)).indexOf(true) > -1))
+
+            if (found.length > 0) {
+                found = found.filter(function (value, index, array) { return array.indexOf(value) === index }).map(x => x.name)
+                const menu = document.getElementById('sidemenu').children
+
+                for (let i = 0; i < menu.length; i++) {
+                    const item = menu[i].innerText.trim()
+                    if (found.indexOf(item) > -1) {
+                        menu[i].style.display = 'unset'
+                        const area = areas.filter(x => x.name.toLowerCase() == item.toLowerCase())[0]
+                        let matches = []
+                        matches = matches.concat(area.itl3.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1))
+                        matches = matches.concat(area.la.filter(x => x.toLowerCase().indexOf(value.toLowerCase()) > -1))
+                        matches = matches.filter(function (value, index, array) { return array.indexOf(value) === index }).map(x => x).sort()
+                        matches = matches.map(x => `${x.substring(0, x.toLowerCase().indexOf(value.toLowerCase()))}<strong>${x.substring(x.toLowerCase().indexOf(value.toLowerCase()), x.toLowerCase().indexOf(value.toLowerCase()) + value.length)}</strong>${x.substring(x.toLowerCase().indexOf(value.toLowerCase()) + value.length)}`)
+                        document.getElementById(`${area.name}_matches`).innerHTML = matches.join(', ')
+                    } else {
+                        menu[i].style.display = 'none'
+                    }
+                }
+                document.getElementById('sidemenu_showmore').style.display = 'none'
+                document.getElementById('sidemenu_showless').style.display = 'none'
+            }
+        } else {
+            collapsenavigation()
+        }
+    }
+
+    function select(value) {
+        document.getElementById('searchquery').value = value
+        document.getElementById('searchresults').style.display = 'none'
+        document.getElementById('searchresults').innerHTML = ''
+    }
+
+    function showresults() {
+        const results = document.getElementById('searchresults')
+        if (results.innerHTML != '' && results.style.display == 'none') {
+            results.style.display = 'block'
+        }
+    }
+
+    function expandnavigation() {
+        const menu = document.getElementById('sidemenu').children
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].style.display = 'unset'
+        }
+        document.getElementById('sidemenu_showmore').style.display = 'none'
+        document.getElementById('sidemenu_showless').style.display = 'unset'
+    }
+
+    function collapsenavigation() {
+        const selected = {{ selected }}
+        const menu = document.getElementById('sidemenu').children
+        for (let i = 0; i < menu.length; i++) {
+            menu[i].style.display = selected.indexOf(i + 1) > -1 ? 'unset' : 'none'
+        }
+        document.getElementById('sidemenu_showmore').style.display = 'unset'
+        document.getElementById('sidemenu_showless').style.display = 'none'
+    }
+
+    (function() {
+        document.getElementById('searchquery').addEventListener('keypress', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault()
+            }
+        })
+    })()
+</script>
+{% endmacro %}

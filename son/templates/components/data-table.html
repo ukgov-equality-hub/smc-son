@@ -1,6 +1,6 @@
 {% macro datatable(id, data) %}
 {% set data_table = [data, 'data'] | table %}
-<table id="table{{ id }}" class="govuk-body-s table-container" style="width: 100%;">
+<table id="table{{ id }}" class="govuk-body-s table-container">
     <tbody>
         {% for row in data_table %}
         <tr>

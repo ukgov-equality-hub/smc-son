@@ -28,7 +28,7 @@ About the data
 ## Text
 This page combines data from the following 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns:
 
-<ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
+<ul class="govuk-list list-disc">
     <li><a href="/intermediate_outcomes/routes_into_work_(16_to_29_years)/highest_qualification" class="govuk-link">Highest qualification</a> – data on young people with university degrees</li>
     <li><a href="/intermediate_outcomes/composite_indices/promising_prospects" class="govuk-link">Occupation level</a> – data on young people in professional occupations</li>
     <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings" class="govuk-link">Hourly earnings</a></li>

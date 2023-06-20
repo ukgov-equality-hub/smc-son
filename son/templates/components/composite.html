@@ -1,11 +1,11 @@
 {% macro composite(id, data) %}
-<div id="ranking" style="height: calc(100% - 30px); padding-right: 10px; overflow-y: {% if [data, 'title'] | attribute | safe == 'Research and development' %}hidden{% else %}auto{% endif %};">
+<div id="ranking" class="ranking-table {% if [data, 'title'] | attribute | safe == 'Research and development' %}showhide{% else %}scroll{% endif %}">
     {% set data_table = [data, 'data'] | table | sort(attribute = '11', reverse = True) %}
-    <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table" style="width: 100%; margin-bottom: 0px;">
+    <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table">
         <thead>
             <tr >
-                <th style="text-align: left;">ITL2 region</td>
-                <th style="text-align: right;">Quintile</td>
+                <th class="text-align">ITL2 region</td>
+                <th class="text-align">Quintile</td>
             </tr>
         </thead>
         <tbody>
@@ -21,7 +21,7 @@
     </table>
 
     {% if [data, 'title'] | attribute | safe == 'Research and development' %}
-    <a id="showmore" href="javascript:;" class="govuk-link" style="display: inline-block; margin: 15px 10px;" onclick="showMore()">Show more</a>
+    <a id="showmore" href="javascript:;" class="govuk-link" onclick="showMore()">Show more</a>
     {% endif %}
 </div>
 <script>

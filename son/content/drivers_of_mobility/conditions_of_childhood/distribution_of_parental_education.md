@@ -41,7 +41,7 @@ UK
 The data shows the education levels of adults in families with dependent children. Dependent children are classed as all 0 to 15 year olds, and 16 to 18 year olds who are in full-time education.<br>
 The education levels are:
 
-<ul class="govuk-list" style="list-style-type: disc; margin-left: 20px;">
+<ul class="govuk-list list-disc">
     <li>lower level (below CSE grade 1)</li>
     <li>O level, GCSE and equivalent</li>
     <li>A level and equivalent</li>

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% from 'menu/area-search.html' import areasearch %}
 {% block title %}Social Mobility Commission{% endblock %}
 
 {% block backLink %}
@@ -7,7 +8,7 @@
 
 {% block content %}
 <div class="govuk-grid-row govuk-grid-row-full-width">
-    <h1 class="govuk-heading-l">{{ title }}</h1>
+    <h1 class="govuk-heading-l mobile-hide">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
     {% for item in content %}

@@ -7,8 +7,8 @@
 
 {% block content %}
 <div class="govuk-grid-row govuk-grid-row-full-width">
-    <div class="grid grid2" style="display: flex;">
-        <div style="margin-right: 30px; width: calc(100% - 330px);">
+    <div class="grid grid2">
+        <div>
             <h1 class="govuk-heading-l">{{ title }}</h1>
             <p class="govuk-body">This page shows how {{ title }} is ranked for 5 different aspects of social mobility.</p>
 
@@ -20,58 +20,56 @@
             <h3 class="govuk-heading-m">Intermediate outcomes</h3>
             <p class="govuk-body">Intermediate outcomes measure the experiences of young people as they move through education and into work.</p>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;"></div>
-                <div style="width: calc(100% - 350px); height: 35px;">
-                    <span style="float: left; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
-                    <span style="float: right; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>                
+            <div class="govuk-body area-quintile-header">
+                <div>
+                    <span>Worst outcomes<br>(bottom 20%)</span>
+                    <span>Best outcomes<br>(top 20%)</span>                
                 </div>
             </div>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;">Promising prospects</div>
-                <div id="chart1" style="width: calc(100% - 350px); height: 35px;"></div>
+            <div class="govuk-body area-quintile">
+                <div>Promising prospects</div>
+                <div id="chart1"></div>
             </div>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;">Precarious situations</div>
-                <div id="chart2" style="width: calc(100% - 350px); height: 35px;"></div>
+            <div class="govuk-body area-quintile">
+                <div>Precarious situations</div>
+                <div id="chart2"></div>
             </div>
             <p>&nbsp;</p>
 
             <h3 class="govuk-heading-m">Drivers of social mobility</h3>
             <p class="govuk-body">Drivers are the background conditions that make social mobility easier or more difficult.</p>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;"></div>
-                <div style="width: calc(100% - 350px); height: 35px;">
-                    <span style="float: left; font-size: smaller; text-align: center;">Worst outcomes<br>(bottom 20%)</span>
-                    <span style="float: right; font-size: smaller; text-align: center;">Best outcomes<br>(top 20%)</span>                
+            <div class="govuk-body area-quintile-header">
+                <div>
+                    <span>Worst outcomes<br>(bottom 20%)</span>
+                    <span>Best outcomes<br>(top 20%)</span>                
                 </div>
             </div>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;">Socio-cultural advantage</div>
-                <div id="chart3" style="width: calc(100% - 350px); height: 35px;"></div>
+            <div class="govuk-body area-quintile">
+                <div>Socio-cultural advantage</div>
+                <div id="chart3"></div>
             </div>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;">Childhood poverty and disadvantage</div>
-                <div id="chart4" style="width: calc(100% - 350px); height: 35px;"></div>
+            <div class="govuk-body area-quintile">
+                <div>Childhood poverty and disadvantage</div>
+                <div id="chart4"></div>
             </div>
 
-            <div class="govuk-body" style="display: flex; align-items: center; gap: 20px;">
-                <div style="width: 350px; text-align: right;">Research and development</div>
-                <div id="chart5" style="width: calc(100% - 350px); height: 35px;"></div>
+            <div class="govuk-body area-quintile">
+                <div>Research and development</div>
+                <div id="chart5"></div>
             </div>
         </div>
-        <div style="width: 300px;">
-            <div class="map-container" style="margin-bottom: 15px; border: 1px solid #333;">
+        <div>
+            <div class="map-container">
                 <div id="map" class="map"></div>
             </div>
             <h3 class="govuk-heading-s">Districts in the {{ title }} region</h3>
-            <p class="govuk-body-s"><span style="font-weight: bold;">ITL3 areas:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].itl3 | join(', ') }}</p>
-            <p class="govuk-body-s"><span style="font-weight: bold;">Local authorities:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].la | join(', ') }}</p>
+            <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">ITL3 areas:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].itl3 | join(', ') }}</p>
+            <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">Local authorities:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].la | join(', ') }}</p>
             <script>
                 (async function() {
                     const indicators = [ 'Promising prospects', 'Precarious situations', 'Socio-cultural advantage', 'Childhood poverty and disadvantage', 'Research and development' ]
