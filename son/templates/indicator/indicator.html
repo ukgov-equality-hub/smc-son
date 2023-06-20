@@ -191,7 +191,7 @@
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
-                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${parseInt(a.rank.split('/')[0], 10) / parseInt(a.rank.split('/')[1], 10) * 100}% - 15px)`
+                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.rank.split('/')[0], 10) - 1) / (parseInt(a.rank.split('/')[1], 10) - 1) * 100}%)`
                 if (map) map.highlight(a.name)
                 if (chart) chart.highlight(a.name)
             } else {
@@ -205,7 +205,7 @@
     }
 
     function mapSelect2(a) {
-        let map = undefined, chart = undefined, map1 = undefined, map2 = undefined
+        let map1 = undefined, map2 = undefined
 
         const scaleQunitile = document.getElementsByClassName('scale-qunitile')
         for (let i = 0; i < scaleQunitile.length; i++) {
@@ -225,7 +225,7 @@
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
-                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.value, 10) - parseInt(a.min, 10)) / (parseInt(a.max, 10) - parseInt(a.min, 10)) * 100}% - 15px)`
+                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.value, 10) - parseInt(a.min, 10)) / (parseInt(a.max, 10) - parseInt(a.min, 10)) * 100}%)`
                 //if (map2) map2.highlight(a.name)
             } else {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'

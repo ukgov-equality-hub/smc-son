@@ -9,7 +9,9 @@
     <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body">
         <div id="map_legend{{ id }}" class="legend"></div>
         <div class="marker">
-            <img id="map_marker{{ id }}" src="/static/assets/images/down_triangle.svg" width="30" height="16">
+            <div id="map_marker{{ id }}">
+                <img src="/static/assets/images/down_triangle.svg" width="30" height="16">
+            </div>
         </div>
         <div class="scale-qunitile">
             <div class="grid grid5 quintile">
@@ -46,17 +48,13 @@
             options
         )
 
-        /*document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {
+        document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {
             map{{ id }}.zoomIn()
         })
 
         document.getElementById('mapZoomOut{{ id }}').addEventListener('click', function () {
             map{{ id }}.zoomOut()
         })
-
-        document.getElementById('mapDownload{{ id }}').addEventListener('click', function () {
-            map{{ id }}.download()
-        })*/
     }
     buildMap{{ id }}()
 

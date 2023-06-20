@@ -447,19 +447,22 @@ class Choropleth {
                 .attr('data-colour', x => getMarkColour(data, x))
                 .attr('data-quantile', x => {
                     if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                        const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
-                        const val = getValue(x, areaField, valueField, data)
+                        const d = data.filter(x => isNumeric(x[valueField]))
+                        const ranges = getQuantileRanges(d.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
+                        const val = getValue(x, areaField, valueField, d)
                         return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
                     }
                     return -1
                 })
                 .attr('data-rank', x => {
-                    const ranges = data.map(x => x[valueField]).sort(function (a, b) { return a - b })
-                    const val = getValue(x, areaField, valueField, data)
-                    return isNaN(val) ? 0 : `${ranges.indexOf(val) + 1}/${data.length}`
+                    const d = data.filter(x => isNumeric(x[valueField]))
+                    const ranges = d.map(x => x[valueField]).sort(function (a, b) { return a - b })
+                    const val = getValue(x, areaField, valueField, d)
+                    return isNaN(val) ? 0 : `${ranges.indexOf(val) + 1}/${d.length}`
                 })
                 .attr('data-percentile', x => {
-                    const val = getValue(x, areaField, valueField, data)
+                    const d = data.filter(x => isNumeric(x[valueField]))
+                    const val = getValue(x, areaField, valueField, d)
                     return isNaN(val) ? 0 : ((val - min) / (max - min)) * 100
                 })
                 .attr('data-active', 'N')

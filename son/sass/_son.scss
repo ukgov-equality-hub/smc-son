@@ -631,10 +631,16 @@ div.map-tooltip {
     div.marker {
         height: 20px;
 
-        img {
-            margin-left: 0;
+        > div {
+            display: inline-block;
+            width: 1px;
+            height: 20px;
             transition: margin 500ms;
             visibility: hidden;
+
+            img {
+                margin-left: -15px;
+            }
         }
     }
 }
