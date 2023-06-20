@@ -18,6 +18,10 @@
     cursor: grab;
 }
 
+.map-container svg g path[data-colour="grey"] {
+    opacity: 0.5;
+}
+
 .map-container .map-legend, .map-container .map-tooltip, .map-container .map-controls {
     position: absolute;
     padding: 10px 10px 5px 10px;

@@ -222,7 +222,7 @@ class Chart {
             } else {
                 const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
                 color = d3.scaleQuantize(scheme)
-                    .domain(dataFormat == 'categorical' && domains.length > 0 ? domains : [min, max])
+                    .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
             }
 
             const marks = []
