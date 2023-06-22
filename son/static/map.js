@@ -214,6 +214,9 @@ class Choropleth {
             subunits = filteredunits
 
             // Set up map projection, and position it
+            if (div.getElementsByTagName('svg').length > 0) {
+                div.removeChild(div.getElementsByTagName('svg')[0])
+            }
             self.projection = d3.geoMercator().fitSize(
                 [self.width, self.height],
                 { type: 'FeatureCollection', features: (geoFormat == 'topo' ? topoFeatures(geodata) : geodata).features.filter(x => data.map(x => x[nameField]).indexOf(x.properties[areaField]) > -1) }
@@ -420,7 +423,7 @@ class Choropleth {
                     .style('fill', '#f3f2f1')
                     .style('stroke', '#ddd')
                     .style('stroke-width', '.1')
-                    .style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
+                    //.style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
                     .attr('data-name', x => x.properties.NUTS_NAME || x.properties.NUTS_ID)
 
                 const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return areas.indexOf(x.properties.NUTS_ID) > -1 }) }, self.bg, undefined, undefined, '')
@@ -705,6 +708,7 @@ class Choropleth {
 
         function getLabelText(key, pos) {
             if (!key && pos == 'tooltip') return null
+            if (!isNumeric(key)) return key
             let text
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`

@@ -37,6 +37,47 @@
         </h2>
 
         <h3 class="govuk-heading-s">{{ [data, 'title'] | attribute | safe }}</h3>
+
+        {% if [data, 'data'] | attribute_type == 'list' %}
+        <div class="govuk-form-group">
+            {% if [data, 'title'] | attribute | safe == 'Broadband speed' %}
+            <fieldset class="govuk-fieldset">
+                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                    {% for item in ([data, 'data'] | attribute) %}
+                    <div class="govuk-radios__item">
+                        <input id="range-option{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange{{ id }}(this.value)"{% if loop.index == loop.length %} checked{% endif %}>
+                        <label for="range-option{{ loop.index }}" class="govuk-label govuk-radios__label">
+                            {{ item.label }}
+                        </label>
+                    </div>
+                    {% endfor %}
+                </div>
+            </fieldset>
+            {% else %}
+            <input id="range{{ id }}" type="range" value="{{ ([data, 'data'] | attribute)[-1].label }}" min="{{ ([data, 'data'] | attribute)[0].label }}" max="{{ ([data, 'data'] | attribute)[-1].label }}" step="1" oninput="selectRange{{ id }}(this.value)" list="values{{ id }}">
+            <datalist id="values{{ id }}" class="govuk-body">
+                {% for item in ([data, 'data'] | attribute) %}
+                <option value="0" label="{{ item.label }}"></option>
+                {% endfor %}
+            </datalist>
+            {% endif %}
+        </div>
+        <script>
+            const options{{ id }} = {{ [data, 'data'] | attribute | safe }}
+
+            document.getElementById('range{{ id }}').addEventListener('input', function (e) {
+                let target = e.target
+                target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
+            })
+
+            function selectRange{{ id }}(id) {console.log('id', id)
+                const datafile = options{{ id }}.filter(x => x.label == id)[0].data
+                buildMap{{ id }}(datafile)
+                buildChart{{ id }}(datafile)
+            }
+        </script>
+        {% endif %}
+
         {% if type == 'chart' %}
         {{ chart(id, data) }}
         {% else %}
@@ -90,6 +131,7 @@
         <p class="govuk-body">The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about <a href="https://www.ethnicity-facts-figures.service.gov.uk/understanding-our-data/how-to-read-survey-data#confidence-intervals" target="_blank" class="govuk-link">confidence intervals</a>.</p>
     </div>
     {% endif %}
+
     <div id="download{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_download{{ id }}_tab">
         <h2 class="govuk-visually-hidden">
             Download

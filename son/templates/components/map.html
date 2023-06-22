@@ -37,14 +37,16 @@
 </div>
 <script>
     let map{{ id }}
-    function buildMap{{ id }}() {
+
+    function buildMap{{ id }}(datafile) {
         const options = {{ data | safe }}
+        if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
 
         map{{ id }} = new Choropleth(
             'map{{ id }}',
-            `${location.protocol}//${location.host}{{ [data, 'map'] | attribute | safe }}`,
-            `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
+            `${location.protocol}//${location.host}${options.map}`,
+            `${location.protocol}//${location.host}${datafile || options.data.data || options.data}`,
             options
         )
 
@@ -56,7 +58,10 @@
             map{{ id }}.zoomOut()
         })
     }
-    buildMap{{ id }}()
+
+    window.document.addEventListener('DOMContentLoaded', function () {
+        buildMap{{ id }}()
+    })
 
     function downloadMap{{ id }}() {
         map{{ id }}.download()

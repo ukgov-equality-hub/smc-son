@@ -89,6 +89,41 @@ def attribute_filter(context, details):
 
 
 @jinja2.pass_context
+@blueprint.app_template_filter('attribute_type')
+def attribute_type_filter(context, details):
+    if details:
+        data = details[0]
+        field = details[1]
+        try:
+            attributes = json.loads(data)
+            if field in attributes:
+                if type(attributes[field]) == tuple: return 'tuple'
+                if type(attributes[field]) == list: return 'list'
+                if type(attributes[field]) == dict: return 'dict'
+                return 'str'
+        except:
+            pass
+    return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('latest_data')
+def latest_data_filter(context, details):
+    if details:
+        data = details[0]
+        field = details[1]
+        try:
+            attributes = json.loads(data)
+            if field in attributes:
+                if type(attributes[field]) == list:
+                    attributes[field] = attributes[field][-1]
+                    return attributes
+        except:
+            pass
+    return details[0]
+
+
+@jinja2.pass_context
 @blueprint.app_template_filter('table')
 def table_filter(context, details):
     if details:

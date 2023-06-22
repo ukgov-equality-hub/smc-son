@@ -2,21 +2,23 @@
 <div id="chart{{ id }}" class="chart-container"></div>
 <script>
     let chart{{ id }}
-    window.document.addEventListener('DOMContentLoaded', function () {
+
+    function buildChart{{ id }}(datafile) {
         const options = {{ data | safe }}
+        if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (options.type != 'dot') {
             options.width = document.getElementById('maincontent').offsetWidth
         }
 
         chart{{ id }} = new Chart(
             'chart{{ id }}',
-            `${location.protocol}//${location.host}{{ [data, 'data'] | attribute | safe }}`,
+            `${location.protocol}//${location.host}${datafile || options.data.data || options.data}`,
             options
         )
+    }
 
-        //document.getElementById('chart{{ id }}_download').addEventListener('click', function () {
-        //    chart{{ id }}.download()
-        //})
+    window.document.addEventListener('DOMContentLoaded', function () {
+        buildChart{{ id }}()
     })
 
     function downloadChart{{ id }}() {

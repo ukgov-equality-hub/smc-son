@@ -682,7 +682,8 @@ div.viridis {
     margin: 0 0 10px 0;
     height: 20px;
     background: #4a7d70;
-    background-image: linear-gradient(90deg, #440154, #482475, #414487, #355f8d, #2a788e, #21908d, #22a884, #42be71, #7ad151, #bddf26, #bddf26);
+    /*background-image: linear-gradient(90deg, #440154, #482475, #414487, #355f8d, #2a788e, #21908d, #22a884, #42be71, #7ad151, #bddf26, #bddf26); viridis */
+    background-image: linear-gradient(90deg, #ca0020, #f4a582, #f7f7f7, #92c5de, #0571b0);
 }
 
 div.scale-legend {
@@ -743,4 +744,55 @@ div.scale-legend {
         display: inline-block;
         margin: 15px 10px;
     }
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background: #ccc;
+    border-radius: 6px;
+    background-image: linear-gradient(#12407f, #12407f);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+input[type="range"]::-webkit-slider-thumb, input[type="range"]::-moz-range-thumb, input[type="range"]::-ms-thumb {
+    -webkit-appearance: none;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    background: #12407f;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover, input[type="range"]::-moz-range-thumb:hover, input[type="range"]::-ms-thumb:hover {
+    background: #1f598d;
+}
+
+input[type=range]::-webkit-slider-runnable-track, input[type=range]::-moz-range-track, input[type="range"]::-ms-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+datalist {
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    overflow: hidden;
+    margin-top: 16px; 
+}
+
+datalist option:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: auto;
+    padding-left: 3px;
+    text-indent: 0;
 }

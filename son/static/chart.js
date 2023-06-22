@@ -477,7 +477,23 @@ class Chart {
 
             // Legend
             if ((zkey || (ykey && group)) && legend && !plotted) {
-                const legends = zkey ? [...new Set(data.flat().map(x => x[zkey]))] : orientation == 'y' ? (xkey && group ? [...new Set(data.flat().map(x => x[xkey]))] : domain) : [...new Set(data.flat().map(x => x[zkey]))]
+                let legends
+                if (zkey) {
+                    legends = [...new Set(data.flat().map(x => x[zkey]))]
+                } else if (orientation == 'y') {
+                    if (group) {
+                        legends = [...new Set(data.flat().map(x => x[xkey]))]
+                    } else {
+                        legends = domain
+                    }
+                } else {
+                    if (group) {
+                        legends = [...new Set(data.flat().map(x => x[ykey]))]
+                    } else {
+                        legends = [...new Set(data.flat().map(x => x[zkey]))]
+                    }
+                }
+
                 const legendDiv = Plot.legend({
                     color: {
                         domain: legends,
@@ -573,7 +589,8 @@ class Chart {
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
-                    return colours[domain.indexOf(x[orientation == 'y' ? xkey : ykey])] //x[orientation == 'y' ? xkey : ykey]
+                    return x[orientation == 'y' ? xkey : ykey]
+                    return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
                 }
                 return orientation == 'y' ? xkey : ykey
                 //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
@@ -859,6 +876,7 @@ class Chart {
 
         function getLabelText(key, pos) {
             if (!key && pos == 'tooltip') return null
+            if (!isNumeric(key)) return key
             let text
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
@@ -890,7 +908,7 @@ class Chart {
             svg.appendChild(txt)
             document.body.appendChild(svg)
             const w = txt.getComputedTextLength()
-            svg.remove()
+            //svg.remove()
 
             //const canvas = document.createElement('canvas'), context = canvas.getContext('2d')
             //context.font = `${style.fontSize} "${style.fontFamily}" ${style.fontWeight || 'normal'}`

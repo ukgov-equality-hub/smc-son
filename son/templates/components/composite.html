@@ -35,8 +35,10 @@
             row.style.fontWeight = 'normal'
         }
         const item = document.getElementById(`area_${a.name}`)
-        item.style.fontWeight = 'bold'
-        {% if [data, 'title'] | attribute | safe != 'Research and development' %}el.scrollTo({ top: item.offsetTop - 45, behavior: 'smooth' }){% endif %}
+        if (item) {
+            item.style.fontWeight = 'bold'
+            {% if [data, 'title'] | attribute | safe != 'Research and development' %}el.scrollTo({ top: item.offsetTop - 45, behavior: 'smooth' }){% endif %}
+        }
 
         mapSelect1(a)
     }
