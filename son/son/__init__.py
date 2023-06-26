@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-import requests
+import re
 import csv
 from flask import Blueprint, current_app, render_template, request, session, Response, abort
 import markdown
@@ -18,17 +18,70 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
         if not use_markdown: return html
         #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])
         #return html
+
+        if '[Download full dataset (CSV)]' in html:
+            file_size = -1
+            matches = re.findall('\(.*?\)', html)
+            try:
+                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{matches[1][1: -1]}"
+                if Path(data_src).is_file():
+                    file_size = os.path.getsize(data_src)
+                    with open(data_src, encoding='utf8', errors='ignore') as csv_file:
+                        data_table = list(csv.reader(csv_file, delimiter=','))
+                        ul = '<ul>'
+
+                        for i in range(len(data_table[0])):
+                            item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('_', ' ')
+                            include = False
+
+                            for j in range(len(data_table)):
+                                if j > 0:
+                                    if data_table[j][i] == "NA" or data_table[j][i] == "N/A" or data_table[j][i] == "N\A":
+                                        pass
+                                    else:
+                                        include = True
+                                        break
+
+                            if include:
+                                ul += f"<li>{item}</li>"
+                            #else:
+                            #    ul += f"<li>{item} (NA)</li>"
+
+                        ul += '</ul>'
+                        if ul != '<ul></ul>': ul = '<p>This file contains the following variables:</p>' + ul
+                        html += ul
+            except:
+                pass
+
+            if file_size > -1:
+                if file_size > 1000000: file_size = f"{int(file_size / 1000000)}MB"
+                elif file_size > 1000: file_size = f"{int(file_size / 1000)}KB"
+                else: file_size = f"{int(file_size)}B"
+                html = html.replace('[Download full dataset (CSV)]', f"[Download full dataset (CSV, {file_size})]")
+
         html = markdown.markdown(html, extensions=['nl2br', 'attr_list', 'sane_lists'])
 
         soup = BeautifulSoup(html, 'html.parser')
         for el in soup.find_all('p'):
-            el['class'] = 'govuk-body'
+            if el.has_attr('class'):
+                el['class'] = ' '.join(el['class']) + ' govuk-body'
+            else:
+                el['class'] = 'govuk-body'
         for el in soup.find_all('ul'):
-            el['class'] = 'govuk-list'
+            if el.has_attr('class'):
+                el['class'] = ' '.join(el['class']) + ' govuk-list govuk-list--bullet'
+            else:
+                el['class'] = 'govuk-list govuk-list--bullet'
         for el in soup.find_all('ol'):
-            el['class'] = 'govuk-list'
+            if el.has_attr('class'):
+                el['class'] = ' '.join(el['class']) + ' govuk-list'
+            else:
+                el['class'] = 'govuk-list'
         for el in soup.find_all('a'):
-            el['class'] = 'govuk-link'
+            if el.has_attr('class'):
+                el['class'] = ' '.join(el['class']) + ' govuk-link'
+            else:
+                el['class'] = 'govuk-link'
 
         return str(soup)
 

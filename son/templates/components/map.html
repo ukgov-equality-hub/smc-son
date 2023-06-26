@@ -57,6 +57,10 @@
         document.getElementById('mapZoomOut{{ id }}').addEventListener('click', function () {
             map{{ id }}.zoomOut()
         })
+
+        map{{ id }}.downloadSize().then(data => {
+            document.getElementById('mapSize{{ id }}').innerText = ' ' + data
+        })
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {

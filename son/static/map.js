@@ -15,6 +15,7 @@ class Choropleth {
         this.options = options || {}
         this.scriptSrc = ''
         this.loaded = false
+        this.rendered = false
         this.debug = false
 
         this._init()
@@ -108,8 +109,16 @@ class Choropleth {
         }
     }
 
+    _until(x) {
+        const poll = resolve => {
+            if (x()) resolve()
+            else setTimeout(_ => poll(resolve), 100)
+        }
+        return new Promise(poll)
+    }
+
     render(filteredData) {
-        let self = this
+        this.loaded = true
         //if (typeof self.el !== 'undefined' && typeof self.geodata !== 'undefined' && typeof self.data !== 'undefined') return
 
         const div = document.getElementById(this.el)
@@ -150,6 +159,7 @@ class Choropleth {
             overflow: 'visible',
             backgroundColor: options.backgroundColor || '#fff'
         }
+        let self = this
 
         if (filteredData) {
             buildMap(filteredData)
@@ -278,8 +288,6 @@ class Choropleth {
                 self.tooltip = d3.select(`#${self.tooltipDiv}`)
                 self.tooltip.html(' ')
             }
-
-            self.loaded = true
 
             let min = 0, max = 0
             if (dataFormat == 'categorical') {
@@ -526,6 +534,8 @@ class Choropleth {
             if (self.highlightArea) {
                 self.highlight(self.highlightArea)
             }
+
+            self.rendered = true
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
@@ -1051,7 +1061,28 @@ class Choropleth {
         return this.dataUtils.downloadData(this.data, `download.${format}`, format)
     }
 
-    download() {
+    async downloadSize() {
+        await this._until(_ => this.rendered == true)
+        const svgs = document.getElementById(this.el).getElementsByTagName('svg')
+        if (svgs) {
+            let size = await this.download('size')
+            if (isNaN(size)) {
+                size = ''
+            } else if (size > 1000000) {
+                size = `${parseInt(size / 1000000, 10)}MB`
+            } else if (size > 1000) {
+                size = `${parseInt(size / 1000, 10)}KB`
+            } else {
+                size = `${parseInt(size, 10)}B`
+            }
+            return size
+        }
+        return 0
+    }
+
+    async download(mode) {
+        await this._until(_ => this.rendered == true)
+
         function isHidden(el) {
             el = document.getElementById(el)
             return el.offsetParent === null
@@ -1059,13 +1090,22 @@ class Choropleth {
             return style.display === 'none'
         }
 
-        this.rasterize(this.el).then(data => {
-            const a = document.createElement('a')
-            a.href = URL.createObjectURL(data)
-            a.download = `${this.el}.png`
-            document.body.appendChild(a)
-            a.click()
-            document.body.removeChild(a)
+        return this.rasterize(this.el).then(data => {
+            if (mode == 'size') {
+                return data && data.size || 0
+            } else {
+                const filename = `${this.el}.png`
+                if (window.navigator.msSaveOrOpenBlob) {
+                    window.navigator.msSaveBlob(data, filename)
+                } else {
+                    const a = document.createElement('a')
+                    a.href = URL.createObjectURL(data)
+                    a.download = filename
+                    document.body.appendChild(a)
+                    a.click()
+                    document.body.removeChild(a)
+                }
+            }
         })
     }
 

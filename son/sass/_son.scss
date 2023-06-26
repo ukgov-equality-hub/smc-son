@@ -196,6 +196,12 @@
 
 ol.toc {
     margin-bottom: 100px;
+
+    li {
+        a {
+            font-size: 1.1875rem;
+        }
+    }
 }
 
 hr.divider {
@@ -795,4 +801,12 @@ datalist option:before {
     height: auto;
     padding-left: 3px;
     text-indent: 0;
+}
+
+a.download {
+    display: block;
+    max-width: 745px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f8f8;
 }

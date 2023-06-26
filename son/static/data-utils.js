@@ -391,7 +391,7 @@ class DataUtils {
         }).concat(arr2.filter(item => arr1.every( x => x[key] !== item[key])))
     }
 
-    downloadData(data, filename, format) {
+    downloadData(data, filename, format, mode) {
         let blob
         if (format == 'csv') {
             if (this.type == 'json') {
@@ -407,15 +407,19 @@ class DataUtils {
             }
         }
 
-        if (window.navigator.msSaveOrOpenBlob) {
-            window.navigator.msSaveBlob(blob, filename)
+        if (mode == 'size') {
+            return blob.size || 0
         } else {
-            const a = document.createElement('a')
-            a.href = URL.createObjectURL(blob)
-            a.download = filename
-            document.body.appendChild(a)
-            a.click()
-            document.body.removeChild(a)
+            if (window.navigator.msSaveOrOpenBlob) {
+                window.navigator.msSaveBlob(blob, filename)
+            } else {
+                const a = document.createElement('a')
+                a.href = URL.createObjectURL(blob)
+                a.download = filename
+                document.body.appendChild(a)
+                a.click()
+                document.body.removeChild(a)
+            }
         }
     }
 
