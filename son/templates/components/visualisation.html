@@ -139,23 +139,24 @@
 
         <ul class="govuk-list">
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}()">
-                    Download the chart
+                <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
+                    Download the chart (PNG<span id="chartSize{{ id }}"></span>)
                 </a>
             </li>
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}()">
-                    Download the map
+                <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
+                    Download the map (PNG<span id="mapSize{{ id }}"></span>)
                 </a>
             </li>
             {% endif %}
             <li>
-                <a href="{{ [data, 'data'] | attribute | safe }}" target="_blank" type="text/csv" class="govuk-link" _onclick="downloadData{{ id }}()">
-                    Download the data
+                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
+                    Download the data (CSV<span id="dataTableSize{{ id }}"></span>)
                 </a>
             </li>
         </ul>
+        <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
     </div>
 </div>
 {% endmacro %}

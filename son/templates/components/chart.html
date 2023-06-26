@@ -15,6 +15,10 @@
             `${location.protocol}//${location.host}${datafile || options.data.data || options.data}`,
             options
         )
+
+        chart{{ id }}.downloadSize().then(data => {
+            document.getElementById('chartSize{{ id }}').innerText = ' ' + data
+        })
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {

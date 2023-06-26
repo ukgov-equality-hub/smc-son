@@ -18,6 +18,7 @@ class DataTable {
         this.scriptSrc = ''
         this.dataTable = null
         this.loaded = false
+        this.rendered = false
         this.debug = false
 
         this._init()
@@ -109,6 +110,14 @@ class DataTable {
         for (let i = 0; i < resources.length; i++) {
             load(resources[i])
         }
+    }
+
+    _until(x) {
+        const poll = resolve => {
+            if (x()) resolve()
+            else setTimeout(_ => poll(resolve), 100)
+        }
+        return new Promise(poll)
     }
 
     render(pageNum) {
@@ -430,17 +439,24 @@ class DataTable {
 
             let numPages = 1
             let currentPage = 1
+            let start = 0
+            let end = data.length
+
             if (pageSize > 0) {
                 numPages = Math.ceil(data.length / pageSize)
                 currentPage = self.dataTable['page']
-                data = page(data, pageSize, currentPage)
+                start = (currentPage - 1) * pageSize
+                end = start + pageSize
+                //data = page(data, pageSize, currentPage)
             }
 
             clearDataTable()
+            const userData = []
 
             for (let i = 0; i < data.length; i++) {
                 if (limit == 0 || (limit > 0 && i < limit)) {
                     const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                    const userRow = []
                     row.classList.add('table-row', 'govuk-table__row')
                     applyAttributes(row, data[i]['_attributes'][0])
 
@@ -464,7 +480,7 @@ class DataTable {
                                     } else if (columns[headers[j]].format == 'number') {
                                         content = numberWithCommas(content)
                                     }
-                                } else if (columns[headers[j]].format.substr(-2) == 'dp' && isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2))) {
+                                } else if (columns[headers[j]].format.substr(-2) == 'dp' && isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2)) && isNumeric(content)) {
                                     content = numberWithCommas(parseFloat(content, 10).toFixed(parseInt(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2), 10)))
                                 }
                             }
@@ -476,15 +492,19 @@ class DataTable {
                             cell.innerHTML = content
                             if (allowColumn(headers[j])) {
                                 row.appendChild(cell)
+                                userRow.push(cell.innerText.indexOf(',') > -1 ? `"${cell.innerText}"` : cell.innerText)
                             }
                         }
                     }
 
-                    if (self.dataTable['tag'] == 'TABLE') {
-                        table.getElementsByTagName('tbody')[0].appendChild(row)
-                    } else {
-                        table.appendChild(row)
+                    if (i >= start && i < end) {
+                        if (self.dataTable['tag'] == 'TABLE') {
+                            table.getElementsByTagName('tbody')[0].appendChild(row)
+                        } else {
+                            table.appendChild(row)
+                        }
                     }
+                    userData.push(userRow)
                 }
             }
 
@@ -580,6 +600,9 @@ class DataTable {
                     table.appendChild(row)
                 }
             }
+
+            self.dataTable['userData'] = userData
+            self.rendered = true
         }
 
         function tableIcons(row, column) {
@@ -894,9 +917,44 @@ class DataTable {
         })
     }
 
-    downloadData(format) {
-        const data = this.dataTable['data']
+    async downloadData(format, filtered) {
+        await this._until(_ => this.rendered == true)
+        const columns = this.dataTable['columns']
+        let data = this.dataTable[filtered ? 'userData' : 'data']
+        const headers = []
+        for (const key in columns) {
+            if (columns.hasOwnProperty(key)) {
+                if (columns[key].include) headers.push(columns[key].heading)
+            }
+        }
+        if (JSON.stringify(data[0]) != JSON.stringify(headers)) data.unshift(headers)
+
         return this.dataUtils.downloadData(data, `download.${format}`, format)
+    }
+
+    async downloadSize(format, filtered) {
+        await this._until(_ => this.rendered == true)
+        const columns = this.dataTable['columns']
+        let data = this.dataTable[filtered ? 'userData' : 'data']
+        const headers = []
+        for (const key in columns) {
+            if (columns.hasOwnProperty(key)) {
+                if (columns[key].include) headers.push(columns[key].heading)
+            }
+        }
+        if (JSON.stringify(data[0]) != JSON.stringify(headers)) data.unshift(headers)
+
+        let size = this.dataUtils.downloadData(data, `download.${format}`, format, 'size')
+        if (isNaN(size)) {
+            size = ''
+        } else if (size > 1000000) {
+            size = `${parseInt(size / 1000000, 10)}MB`
+        } else if (size > 1000) {
+            size = `${parseInt(size / 1000, 10)}KB`
+        } else {
+            size = `${parseInt(size, 10)}B`
+        }
+        return size
     }
 }
 

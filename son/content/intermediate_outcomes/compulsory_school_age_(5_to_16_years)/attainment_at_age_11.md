@@ -80,4 +80,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download the data (CSV)](/static/data/indicators/2023-04-19 IN12.csv){: target="_blank" }
+[Download full dataset (CSV)](/static/data/indicators/2023-04-19 IN12.csv){: target="_blank" class="download" }
