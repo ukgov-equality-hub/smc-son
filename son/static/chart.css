@@ -19,7 +19,7 @@ div.chart svg g[aria-label="y-axis tick"] {
 }
 
 div.chart svg.line path.has-title, div.chart svg.liney path.has-title {
-    stroke-width: 3px;
+    stroke-width: 5px;
 }
 
 div.chart svg.line marker circle, div.chart svg.liney marker circle {

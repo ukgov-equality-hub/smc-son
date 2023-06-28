@@ -810,3 +810,13 @@ a.download {
     padding: 15px;
     background-color: #f8f8f8;
 }
+
+p.chart-hint {
+    margin: 0;
+    text-align: center;
+    color: #555;
+
+    svg {
+        vertical-align: bottom;
+    }
+}

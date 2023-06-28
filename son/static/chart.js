@@ -6,7 +6,6 @@ class Chart {
     // Update chart data
     // Test download data
     // https://observablehq.com/@observablehq/plot-rule?collection=@observablehq/plot
-    // Tooltips
     // https://observablehq.com/@mkfreeman/plot-tooltip
 
     constructor(el, data, options) {
@@ -163,7 +162,7 @@ class Chart {
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
-        this.clickBehaviour = ['outline', 'fade', 'filter'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
+        this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
         this.onClick = options.onClick || undefined
         const style = options.style || {
@@ -347,7 +346,7 @@ class Chart {
                     }
                 }
                 if (type == 'dot' || type == 'doty') {
-                    marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
+                    marks.push(Plot.dot(chartData, { strokeWidth: 5, stroke: '#1d70b8', ...chartOptions }))
                 }
 
                 if (textLabels != '') {
@@ -1009,10 +1008,11 @@ class Chart {
                 catch (e) {}
             }
 
+            const series = event.target.getAttribute('data-series')
+
             if (self.clickBehaviour == 'outline') {
             } else if (self.clickBehaviour == 'fade') {
-                const item = event.target.getAttribute('data-series')
-                d3.select(`#${self.el}`).selectAll(`[data-series="${item}"]`).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`[data-series="${series}"]`).transition().duration(150).style('opacity', function () {
                     const item = d3.select(this)
                     if (item.attr('data-faded') == 'true') {
                         item.attr('data-faded', 'false')
@@ -1023,16 +1023,15 @@ class Chart {
                     }
                 })
             } else if (self.clickBehaviour == 'filter') {
-                const item = event.target.getAttribute('data-series')
                 let hidden = self.hidden || [], chartData = self.chartData, filtered = true
-                if (hidden.indexOf(item) > -1) {
+                if (hidden.indexOf(series) > -1) {
                     filtered = false
-                    hidden = hidden.filter(x => x != item)
+                    hidden = hidden.filter(x => x != series)
                 } else {
-                    hidden.push(item)
+                    hidden.push(series)
                 }
 
-                d3.select(`#${self.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`span[data-series="${series}"]`).transition().duration(150).style('opacity', function () {
                     d3.select(this).attr('data-filtered', filtered)
                     return 0.1
                 })
@@ -1040,6 +1039,22 @@ class Chart {
                 const filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
                 self.render(filteredData)
                 self.hidden = hidden
+            } else if (self.clickBehaviour == 'isolate') {
+                d3.select(`#${self.el}`).selectAll(`[data-series]`).transition().duration(150).style('opacity', function () {
+                    const item = d3.select(this)
+                    if (item.attr('data-series') == series) {
+                        if (item.attr('data-isolated') == 'true') {
+                            item.attr('data-isolated', 'false')
+                            return 0.1
+                        } else {
+                            item.attr('data-isolated', 'true')
+                            return 1
+                        }
+                    } else {
+                        if (!item.attr('data-isolated')) item.attr('data-isolated', 'false')
+                        return 0.1
+                    }
+                })
             }
         }
     }
@@ -1077,12 +1092,17 @@ class Chart {
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
-                    d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 3)
+                    d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 5)
                     d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 0.1)
                     d3.select(`#${this.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
-                    d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`)/*.transition().duration(150)*/.style('opacity', function () {
+                        if (d3.select(this).attr('data-series') == item) {
+                            return 1
+                        }
+                        return 0.1
+                    })
+                    //d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
                 }
             }
 
@@ -1111,8 +1131,17 @@ class Chart {
             }
 
             d3.select(`#${this.el}`).selectAll(`[data-series]`).classed('highlight', false)
-            d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
-            d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+            if (this.clickBehaviour == 'fade') {
+                d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
+                d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+            } else if (this.clickBehaviour == 'isolate') {
+                if (d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                } else {
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="false"]`).style('opacity', 0.1)
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).style('opacity', 1)
+                }
+            }
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="false"]`).style('opacity', 1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
