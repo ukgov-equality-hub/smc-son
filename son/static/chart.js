@@ -1008,7 +1008,10 @@ class Chart {
                 catch (e) {}
             }
 
-            const series = event.target.getAttribute('data-series')
+            let series = event.target.getAttribute('data-series')
+            if (!series && event.target.nodeName == 'rect') {
+                series = event.target.parentNode.parentNode.getAttribute('data-series')
+            }
 
             if (self.clickBehaviour == 'outline') {
             } else if (self.clickBehaviour == 'fade') {
