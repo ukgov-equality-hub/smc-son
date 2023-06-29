@@ -140,6 +140,7 @@ class Choropleth {
         let domain = options.domain || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
+        this.title = options.title || ''
         this.background = options.background || false
         this.legendDiv = options.legend || ''
         this.tooltip = ''

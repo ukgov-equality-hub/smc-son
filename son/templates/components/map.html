@@ -1,19 +1,31 @@
 {% macro map(id, data) %}
-<div class="map-container">
-    <div class="map-controls">
-        <button id="mapZoomIn{{ id }}">+</button>
-        <button id="mapZoomOut{{ id }}">-</button>
-    </div>
-    <div id="map{{ id }}" class="map"></div>
-    <div id="map_scale{{ id }}" class="map-scale govuk-body"></div>
-    <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body">
-        <div id="map_legend{{ id }}" class="legend"></div>
-        <div class="marker">
-            <div id="map_marker{{ id }}">
-                <img src="/static/assets/images/down_triangle.svg" width="30" height="16">
+<div>
+    <div class="map-container">
+        <div class="map-controls">
+            <button id="mapZoomIn{{ id }}">+</button>
+            <button id="mapZoomOut{{ id }}">-</button>
+        </div>
+        <div id="map{{ id }}" class="map"></div>
+        <div id="map_scale{{ id }}" class="map-scale govuk-body"></div>
+        <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body" style="_visibility: visible !important;">
+            <svg width="20px" height="20px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onclick="this.parentNode.style.visibility = 'hidden'; mapSelect1()">
+                <path d="M50,35.882L25.233,11.115C23.285,9.167 20.122,9.167 18.174,11.115L11.115,18.174C9.167,20.122 9.167,23.285 11.115,25.233L35.882,50L11.115,74.767C9.167,76.715 9.167,79.878 11.115,81.826L18.174,88.885C20.122,90.833 23.285,90.833 25.233,88.885L50,64.118L74.767,88.885C76.715,90.833 79.878,90.833 81.826,88.885L88.885,81.826C90.833,79.878 90.833,76.715 88.885,74.767L64.118,50L88.885,25.233C90.833,23.285 90.833,20.122 88.885,18.174L81.826,11.115C79.878,9.167 76.715,9.167 74.767,11.115L50,35.882Z"/>
+            </svg>
+            <h4 id="map_tooltip{{ id }}_area" class="area"></h4>
+            <p id="map_tooltip{{ id }}_title" class="title"></p>
+            <p id="map_tooltip{{ id }}_value" class="value"></p>
+            <p id="map_tooltip{{ id }}_quintile" class="quintile"></p>
+            <p id="map_tooltip{{ id }}_performance" class="performance"></p>
+            <div id="map_legend{{ id }}" class="legend"></div>
+            <div class="marker">
+                <div id="map_marker{{ id }}">
+                    <img src="/static/assets/images/down_triangle.svg" width="30" height="16">
+                </div>
             </div>
         </div>
-        <div class="scale-qunitile">
+    </div>
+    <div class="govuk-body scale">
+        <div id="scaleQunitile{{ id }}" class="scale-qunitile">
             <div class="grid grid5 quintile">
                 <div class="q1"></div>
                 <div class="q2"></div>
@@ -26,12 +38,12 @@
                 <div>Q5 - Top 20%</div>
             </div>
         </div>
-        <div class="scale-viridis">
-            <div class="viridis"></div>
-            <div class="grid grid2 scale-legend">
-                <div>20</div>
-                <div>80</div>
-            </div>
+        <div id="scaleContinuous{{ id }}" class="scale-continuous">
+            <div class="continuous"></div>
+            <!--<div class="grid grid2 scale-legend">
+                <div>0</div>
+                <div>100</div>
+            </div>-->
         </div>
     </div>
 </div>
@@ -42,6 +54,16 @@
         const options = {{ data | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
+
+        document.getElementById('scaleQunitile{{ id }}').style.display = 'none'
+        document.getElementById('scaleContinuous{{ id }}').style.display = 'none'
+        if (typeof options.dataFormat !== 'undefined') {
+            if (options.dataFormat == 'quintile') {
+                document.getElementById('scaleQunitile{{ id }}').style.display = 'block'
+            } else if (options.dataFormat == 'sequential') {
+                document.getElementById('scaleContinuous{{ id }}').style.display = 'block'
+            }
+        }
 
         map{{ id }} = new Choropleth(
             'map{{ id }}',

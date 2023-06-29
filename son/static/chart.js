@@ -130,6 +130,7 @@ class Chart {
             this.height = dims.height
         }
         const type = options.type.toLowerCase() || 'bar'
+        div.classList.add(`chart-${type}`)
         let xkey = options.xkey || null
         let ykey = options.ykey || null
         let zkey = options.zkey || null
@@ -145,6 +146,7 @@ class Chart {
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
+        const zero = options.zero == false ? false : true
         const xtitle = options.xtitle || null
         const ytitle = options.ytitle || null
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
@@ -161,6 +163,7 @@ class Chart {
         const legend = options.legend || false
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
+        this.title = options.title || ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
@@ -195,7 +198,7 @@ class Chart {
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
             const vals = zkey && !['line', 'liney'].includes(type) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
             let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
-            if (min > 0) min = 0
+            if (zero && min > 0) min = 0
             let max = d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             self.min = min
             self.max = max
@@ -278,8 +281,8 @@ class Chart {
                     }))
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
-                    if (orientation != 'y') domain = [mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y') range = [mlci > 0 ? 0 : mlci, muci]
+                    if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
@@ -1015,7 +1018,7 @@ class Chart {
 
             if (self.clickBehaviour == 'outline') {
             } else if (self.clickBehaviour == 'fade') {
-                d3.select(`#${self.el}`).selectAll(`[data-series="${series}"]`).transition().duration(150).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`[data-series="${series}"]`).style('opacity', function () {
                     const item = d3.select(this)
                     if (item.attr('data-faded') == 'true') {
                         item.attr('data-faded', 'false')
@@ -1034,7 +1037,7 @@ class Chart {
                     hidden.push(series)
                 }
 
-                d3.select(`#${self.el}`).selectAll(`span[data-series="${series}"]`).transition().duration(150).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`span[data-series="${series}"]`).style('opacity', function () {
                     d3.select(this).attr('data-filtered', filtered)
                     return 0.1
                 })
@@ -1043,7 +1046,7 @@ class Chart {
                 self.render(filteredData)
                 self.hidden = hidden
             } else if (self.clickBehaviour == 'isolate') {
-                d3.select(`#${self.el}`).selectAll(`[data-series]`).transition().duration(150).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`[data-series]`).style('opacity', function () {
                     const item = d3.select(this)
                     if (item.attr('data-series') == series) {
                         if (item.attr('data-isolated') == 'true') {
@@ -1058,6 +1061,9 @@ class Chart {
                         return 0.1
                     }
                 })
+                if (d3.select(`#${self.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
+                    d3.select(`#${self.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                }
             }
         }
     }
