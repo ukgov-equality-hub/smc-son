@@ -519,7 +519,7 @@ class Chart {
                         .attr('data-series', item.text())
                         .style('cursor', 'pointer')
                         .on('click', clicked)
-                        .on('pointerenter pointermove', highlight)
+                        //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
                 })
 
@@ -1096,13 +1096,9 @@ class Chart {
                     d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 0.1)
                     d3.select(`#${this.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`)/*.transition().duration(150)*/.style('opacity', function () {
-                        if (d3.select(this).attr('data-series') == item) {
-                            return 1
-                        }
-                        return 0.1
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', function () {
+                        return d3.select(this).attr('data-series') == item ? 1 : 0.1
                     })
-                    //d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
                 }
             }
 
