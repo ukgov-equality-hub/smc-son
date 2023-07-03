@@ -176,15 +176,7 @@
 <script>
     function mapSelect1(a) {
         let map = undefined, chart = undefined
-        /*const scaleQunitile = document.getElementsByClassName('scale-qunitile')
-        for (let i = 0; i < scaleQunitile.length; i++) {
-            scaleQunitile[i].style.display = 'block'
-        }
-        const scaleContinuous = document.getElementsByClassName('scale-continuous')
-        for (let i = 0; i < scaleContinuous.length; i++) {
-            scaleContinuous[i].style.display = 'none'
-        }*/
-
+console.log('a',a)
         try {
             const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
             if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
@@ -192,11 +184,11 @@
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 let performance = ''
-                if (a.quantile == 1) performance = 'Top 20% (best outcomes)'
-                if (a.quantile == 2) performance = 'Second 20% (second best outcomes)'
+                if (a.quantile == 5) performance = 'Top 20% (best outcomes)'
+                if (a.quantile == 4) performance = 'Second 20% (second best outcomes)'
                 if (a.quantile == 3) performance = 'Middle 20% (middle outcomes)'
-                if (a.quantile == 4) performance = 'Forth 20% (second worst outcomes)'
-                if (a.quantile == 5) performance = 'Bottom 20% (worst outcomes)'
+                if (a.quantile == 2) performance = 'Forth 20% (second worst outcomes)'
+                if (a.quantile == 1) performance = 'Bottom 20% (worst outcomes)'
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name

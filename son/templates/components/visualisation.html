@@ -88,6 +88,11 @@
         <p class="govuk-body">The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about confidence intervals.</p>
         {% endif %}
 
+        {% if ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+        <p class="govuk-body">How regions are ranked:</p>
+        <p class="govuk-body">Based on their composite scores, 41 regions in the UK are ranked from the best to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’) – from 1 (top 20%) to 5 (bottom 20%).</p>
+        {% endif %}
+
         <div class="grid grid2 map">
             <div class="grid-map">
                 {{ map(id, data) }}
@@ -138,11 +143,13 @@
         </h2>
 
         <ul class="govuk-list">
+            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
                     Download the chart (PNG<span id="chartSize{{ id }}"></span>)
                 </a>
             </li>
+            {% endif %}
             {% if type == 'map' %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
@@ -156,7 +163,9 @@
                 </a>
             </li>
         </ul>
+        {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
+        {% endif %}
     </div>
 </div>
 {% endmacro %}

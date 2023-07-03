@@ -82,7 +82,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
             else:
                 el['class'] = 'govuk-link'
 
-        return str(soup)
+        return str(soup).strip()
 
     content = []
     newline = '\n' #os.linesep
@@ -100,10 +100,17 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
 
         def update(content, current_section, current_content, new_content):
             if current_section != '':
-                content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
+                content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content.strip()])
             if new_content:
-                content.append(new_content)
+                content.append(new_content.strip())
             return content, '', ''
+        
+        def trim(content):
+            content = content.strip()
+            content = content.strip('\t')
+            content = content.strip('\n')
+            content = content.strip(newline)
+            return content
 
         for line in f:
             if   len(line) > 8 and line[:6] == '######':
@@ -116,12 +123,12 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 content, current_section, current_content = update(content, current_section, current_content, ['H3', line[3:].strip()])
             elif len(line) > 4 and line[:2] == '##':
                 tag = line[2:].strip()
-                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'GRID', 'MAP', 'CHART']:
+                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'GRID', 'MAP', 'CHART', 'ABOUT']:
                     content, current_section, current_content = update(content, current_section, current_content, None)
                     current_section = tag
                 else:
                     content, current_section, current_content = update(content, current_section, current_content, ['H2', line[2:].strip()])
-            elif len(line) > 3 and line[:1] == '#':
+            elif len(line) > 3 and line[:1] == '#' and current_section.upper() != 'ABOUT':
                 content, current_section, current_content = update(content, current_section, current_content, ['H1', line[1:].strip()])
             else: #if line.strip() != '':
                 if current_section == '':
@@ -130,7 +137,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 current_content += line.strip()
 
         if current_section != '':
-            content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
+            content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content.strip()])
 
         f.close()
 
