@@ -17,7 +17,7 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "title": "University research students", "data": "/static/data/indicators/DR53_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Number of students", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Number of students", "align": "right", "format": "2dp" }] }
+{ "title": "University research students", "data": "/static/data/indicators/DR53_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Number of students", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Number of students", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area (ITL2)
