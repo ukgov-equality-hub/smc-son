@@ -6,7 +6,6 @@ class Chart {
     // Update chart data
     // Test download data
     // https://observablehq.com/@observablehq/plot-rule?collection=@observablehq/plot
-    // Tooltips
     // https://observablehq.com/@mkfreeman/plot-tooltip
 
     constructor(el, data, options) {
@@ -131,6 +130,7 @@ class Chart {
             this.height = dims.height
         }
         const type = options.type.toLowerCase() || 'bar'
+        div.classList.add(`chart-${type}`)
         let xkey = options.xkey || null
         let ykey = options.ykey || null
         let zkey = options.zkey || null
@@ -146,6 +146,7 @@ class Chart {
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
+        const zero = options.zero == false ? false : true
         const xtitle = options.xtitle || null
         const ytitle = options.ytitle || null
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
@@ -162,8 +163,9 @@ class Chart {
         const legend = options.legend || false
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
+        this.title = options.title || ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
-        this.clickBehaviour = ['outline', 'fade', 'filter'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
+        this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
         this.onClick = options.onClick || undefined
         const style = options.style || {
@@ -196,7 +198,7 @@ class Chart {
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
             const vals = zkey && !['line', 'liney'].includes(type) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
             let min = d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
-            if (min > 0) min = 0
+            if (zero && min > 0) min = 0
             let max = d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             self.min = min
             self.max = max
@@ -279,8 +281,8 @@ class Chart {
                     }))
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
-                    if (orientation != 'y') domain = [mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y') range = [mlci > 0 ? 0 : mlci, muci]
+                    if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
@@ -347,7 +349,7 @@ class Chart {
                     }
                 }
                 if (type == 'dot' || type == 'doty') {
-                    marks.push(Plot.dot(chartData, { strokeWidth: 4, stroke: '#1d70b8', ...chartOptions }))
+                    marks.push(Plot.dot(chartData, { strokeWidth: 5, stroke: '#1d70b8', ...chartOptions }))
                 }
 
                 if (textLabels != '') {
@@ -520,7 +522,7 @@ class Chart {
                         .attr('data-series', item.text())
                         .style('cursor', 'pointer')
                         .on('click', clicked)
-                        .on('pointerenter pointermove', highlight)
+                        //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
                 })
 
@@ -890,7 +892,7 @@ class Chart {
             if (!isNumeric(key)) return key
             let text
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
             } else if (scale == 'number') {
@@ -1009,10 +1011,14 @@ class Chart {
                 catch (e) {}
             }
 
+            let series = event.target.getAttribute('data-series')
+            if (!series && event.target.nodeName == 'rect') {
+                series = event.target.parentNode.parentNode.getAttribute('data-series')
+            }
+
             if (self.clickBehaviour == 'outline') {
             } else if (self.clickBehaviour == 'fade') {
-                const item = event.target.getAttribute('data-series')
-                d3.select(`#${self.el}`).selectAll(`[data-series="${item}"]`).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`[data-series="${series}"]`).style('opacity', function () {
                     const item = d3.select(this)
                     if (item.attr('data-faded') == 'true') {
                         item.attr('data-faded', 'false')
@@ -1023,16 +1029,15 @@ class Chart {
                     }
                 })
             } else if (self.clickBehaviour == 'filter') {
-                const item = event.target.getAttribute('data-series')
                 let hidden = self.hidden || [], chartData = self.chartData, filtered = true
-                if (hidden.indexOf(item) > -1) {
+                if (hidden.indexOf(series) > -1) {
                     filtered = false
-                    hidden = hidden.filter(x => x != item)
+                    hidden = hidden.filter(x => x != series)
                 } else {
-                    hidden.push(item)
+                    hidden.push(series)
                 }
 
-                d3.select(`#${self.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`span[data-series="${series}"]`).style('opacity', function () {
                     d3.select(this).attr('data-filtered', filtered)
                     return 0.1
                 })
@@ -1040,6 +1045,25 @@ class Chart {
                 const filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
                 self.render(filteredData)
                 self.hidden = hidden
+            } else if (self.clickBehaviour == 'isolate') {
+                d3.select(`#${self.el}`).selectAll(`[data-series]`).style('opacity', function () {
+                    const item = d3.select(this)
+                    if (item.attr('data-series') == series) {
+                        if (item.attr('data-isolated') == 'true') {
+                            item.attr('data-isolated', 'false')
+                            return 0.1
+                        } else {
+                            item.attr('data-isolated', 'true')
+                            return 1
+                        }
+                    } else {
+                        if (!item.attr('data-isolated')) item.attr('data-isolated', 'false')
+                        return 0.1
+                    }
+                })
+                if (d3.select(`#${self.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
+                    d3.select(`#${self.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                }
             }
         }
     }
@@ -1077,12 +1101,13 @@ class Chart {
             } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
-                    d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 3)
+                    d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 5)
                     d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 0.1)
                     d3.select(`#${this.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
-                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 0.1)
-                    d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', function () {
+                        return d3.select(this).attr('data-series') == item ? 1 : 0.1
+                    })
                 }
             }
 
@@ -1111,8 +1136,17 @@ class Chart {
             }
 
             d3.select(`#${this.el}`).selectAll(`[data-series]`).classed('highlight', false)
-            d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
-            d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+            if (this.clickBehaviour == 'fade') {
+                d3.select(`#${this.el}`).selectAll(`[data-faded="false"]`).style('opacity', 1)
+                d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
+            } else if (this.clickBehaviour == 'isolate') {
+                if (d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                } else {
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="false"]`).style('opacity', 0.1)
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).style('opacity', 1)
+                }
+            }
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="false"]`).style('opacity', 1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
             d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')

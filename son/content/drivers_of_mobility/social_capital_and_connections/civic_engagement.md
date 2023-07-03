@@ -17,7 +17,7 @@ Placeholder summary main findings
 Overview
 
 ## Chart
-{ "title": "Civic engagement", "data": "/static/data/indicators/DR41_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Area_name" }, { "column": "Time_period", "replace": "/", "replaceWith": " to 20" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "2dp" }] }
+{ "title": "Civic engagement", "data": "/static/data/indicators/DR41_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Area_name" }, { "column": "Time_period", "replace": "/", "replaceWith": " to 20" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
