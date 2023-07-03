@@ -868,3 +868,31 @@ p.chart-hint {
         vertical-align: bottom;
     }
 }
+
+div.area-map {
+    > div:first-child {
+        position: relative;
+        max-width: 775px;
+
+        > div.map {
+            width: 537px;
+            height: 704px;
+            margin: 0 auto;
+
+            svg path[data-value="1"] {
+                cursor: pointer;
+            }
+        }
+    }
+
+    div#areaName {
+        display: none;
+        position: absolute;
+        height: 25px;
+        bottom: 20px;
+        left: 20px;
+        padding: 5px;
+        background: #fff;
+        border: 1px solid #666;
+    }
+}

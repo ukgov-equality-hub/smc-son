@@ -101,6 +101,10 @@
     <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
+    {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
+    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1', 'H2'] %}l{% endif %}{% if item[0] in ['H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %}">{{ item[1] | safe }}</{{ item[0] | lower }}>
+    {% endif %}
+
     {% if item[0] == 'Subtitle' %}
     <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
     {% endif %}
