@@ -1,5 +1,5 @@
 ## Summary
-Social mobility by area looks at the differences between different ITL2 areas, comparing a number of different social outcomes.
+This section shows how different areas in the UK are ranked for 5 different measures of social mobility.
 
 ## HTML
 <div class="area-map">
