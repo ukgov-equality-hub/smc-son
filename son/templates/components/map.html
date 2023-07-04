@@ -80,9 +80,11 @@
             map{{ id }}.zoomOut()
         })
 
-        map{{ id }}.downloadSize().then(data => {
-            document.getElementById('mapSize{{ id }}').innerText = ' ' + data
-        })
+        if (document.getElementById('mapSize{{ id }}')) {
+            map{{ id }}.downloadSize().then(data => {
+                document.getElementById('mapSize{{ id }}').innerText = ' ' + data
+            })
+        }
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {

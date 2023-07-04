@@ -12,7 +12,7 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print_output=False):
+def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print_output=True):
     def format_html(html):
         if not use_markdown: return html
         #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])
@@ -102,7 +102,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
             if current_section != '':
                 content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content.strip()])
             if new_content:
-                content.append(new_content.strip())
+                content.append(new_content.strip() if type(new_content) == 'str' else new_content)
             return content, '', ''
         
         def trim(content):
@@ -123,12 +123,12 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 content, current_section, current_content = update(content, current_section, current_content, ['H3', line[3:].strip()])
             elif len(line) > 4 and line[:2] == '##':
                 tag = line[2:].strip()
-                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'GRID', 'MAP', 'CHART', 'ABOUT']:
+                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'TABS', 'GRID', 'ABOUT', 'MAP', 'CHART', 'PLACEHOLDER']:
                     content, current_section, current_content = update(content, current_section, current_content, None)
                     current_section = tag
                 else:
                     content, current_section, current_content = update(content, current_section, current_content, ['H2', line[2:].strip()])
-            elif len(line) > 3 and line[:1] == '#' and current_section.upper() != 'ABOUT':
+            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT']:
                 content, current_section, current_content = update(content, current_section, current_content, ['H1', line[1:].strip()])
             else: #if line.strip() != '':
                 if current_section == '':
@@ -156,9 +156,15 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                             current_section.append(['Chart', current_subcontent])
                         elif current_subsection.upper() == 'MAP':
                             current_section.append(['Map', current_subcontent])
+                        elif current_subsection.upper() == 'DATATABLE':
+                            current_section.append(['DataTable', current_subcontent])
+                        elif current_subsection.upper() == 'DOWNLOAD':
+                            current_section.append(['Download', current_subcontent])
+                        elif current_subsection.upper() == 'TAB':
+                            current_section.append(['Tab', current_subcontent])
                         else:
-                            current_section.append(['Subtitle', current_subsection])
-                            current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
+                            current_section.append(['Subtitle3', current_subsection])
+                            current_section.append(['HTML3' if use_markdown else 'Text', format_html(current_subcontent)])
 
                         current_subsection = ''
                         current_subcontent = ''
@@ -173,11 +179,38 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 current_section.append(['Chart', current_subcontent])
             elif current_subsection.upper() == 'MAP':
                 current_section.append(['Map', current_subcontent])
+            elif current_subsection.upper() == 'DATATBALE':
+                current_section.append(['DataTable', current_subcontent])
+            elif current_subsection.upper() == 'DOWNLOAD':
+                current_section.append(['Download', current_subcontent])
+            elif current_subsection.upper() == 'TAB':
+                current_section.append(['Tab', current_subcontent])
             elif current_subsection != '':
                 current_section.append(['Subtitle', current_subsection])
                 current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
 
             content[index][1] = current_section
+
+    for index in range(len(content)):
+        if content[index][0] == 'Tabs':
+            tabs = []
+            tab = []
+            current_tab = ''
+
+            items = content[index][1]
+            for item in items:
+                if item[0] == 'Tab':
+                    if current_tab != '':
+                        tabs.append([current_tab, tab])
+                        tab = []
+                    current_tab = item[1]
+                else:
+                    tab.append(item)
+
+            if current_tab != '':
+                tabs.append([current_tab, tab])
+
+            content[index][1] = tabs
 
     if print_output: print(content, flush=True)
     return content
@@ -285,7 +318,7 @@ def indicator_page(domain, subdomain, indicator):
         subdomain=subdomain,
         indicator=indicator,
         title=get_item_title(indicator),
-        tabs='Tab' in str(content),
+        tabs=False, #'Tabs' in str(content),
         content=content,
         data_table=data_table,
         form=None
