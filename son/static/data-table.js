@@ -180,7 +180,7 @@ class DataTable {
             for (let i = 0; i < headers.length; i++) {
                 let heading = headers[i], include = true, align = '', width = '', format = '', replace = '', replaceWith = ''
 
-                if (Array.isArray(tableColumns)) {
+                if (Array.isArray(tableColumns) && tableColumns.length > 0) {
                     include = false
                     if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
                         for (let j = 0; j < tableColumns.length; j++) {
@@ -201,7 +201,7 @@ class DataTable {
                             heading = heading.replace(/_/g, ' ')
                         }
                     }
-                } else if (typeof tableColumns === 'object' && tableColumns !== null) {
+                } else if (typeof tableColumns === 'object' && tableColumns !== null && !Array.isArray(tableColumns)) {
                     include = false
                     if (heading in tableColumns) {
                         const tableColumn = tableColumns[heading]
@@ -213,6 +213,9 @@ class DataTable {
                         replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
                         replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
                     }
+                } else {
+                    heading = heading.replace(/_/g, ' ')
+                    width = `${(1 / headers.length) * 100}%`
                 }
 
                 const column = {

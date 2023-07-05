@@ -859,6 +859,27 @@ a.download {
     background-color: #f8f8f8;
 }
 
+div.content-tabs {
+    display: flex;
+    justify-content: space-between; 
+    align-items: stretch; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: stretch;
+
+    height: 100%;
+    padding: 15px;
+    gap: 20px;
+
+    > div {
+        flex-grow: 1;
+    }
+
+    div:first-child:nth-last-child(2), div:first-child:nth-last-child(2) ~ div {
+        /*width: 50%;*/
+    }
+}
+
 p.chart-hint {
     margin: 0;
     text-align: center;

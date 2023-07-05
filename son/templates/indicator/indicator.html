@@ -170,15 +170,19 @@
                 {{ tab[0] }}
             </h2>
 
-            <div>
+            <div class="content-tabs">
                 {% set ns.counter3 = 0 %}
                 {% for subitem in tab[1] %}
                 {% if subitem[0] == 'Map' %}
-                {{ map(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                <div>
+                    {{ map(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                </div>
                 {% endif %}
 
                 {% if subitem[0] == 'Chart' %}
-                {{ chart(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                <div>
+                    {{ chart(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                </div>
                 {% endif %}
 
                 {% if subitem[0] == 'DataTable' %}
