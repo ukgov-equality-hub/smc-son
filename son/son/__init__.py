@@ -12,7 +12,7 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print_output=True):
+def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print_output=False):
     def format_html(html):
         if not use_markdown: return html
         #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])

@@ -175,12 +175,14 @@
                 {% for subitem in tab[1] %}
                 {% if subitem[0] == 'Map' %}
                 <div>
+                    <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute }}</h3>
                     {{ map(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
                 </div>
                 {% endif %}
 
                 {% if subitem[0] == 'Chart' %}
                 <div>
+                    <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute }}</h3>
                     {{ chart(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
                 </div>
                 {% endif %}
@@ -244,8 +246,10 @@
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name
                 document.getElementById(`map_tooltip${el}_title`).innerText = a.map.title
                 document.getElementById(`map_tooltip${el}_value`).innerText = a.value
-                document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
-                document.getElementById(`map_tooltip${el}_performance`).innerText = performance
+                if (performance != '') {
+                    document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
+                    document.getElementById(`map_tooltip${el}_performance`).innerText = performance
+                }
                 //document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 //document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
                 //document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.rank.split('/')[0], 10) - 1) / (parseInt(a.rank.split('/')[1], 10) - 1) * 100}%)`

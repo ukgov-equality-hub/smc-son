@@ -40,10 +40,10 @@
         </div>
         <div id="scaleContinuous{{ id }}" class="scale-continuous">
             <div class="continuous"></div>
-            <!--<div class="grid grid2 scale-legend">
-                <div>0</div>
-                <div>100</div>
-            </div>-->
+            <div class="grid grid2 scale-legend">
+                <div id="min_{{ id }}"></div>
+                <div id="max_{{ id }}"></div>
+            </div>
         </div>
     </div>
 </div>
@@ -80,11 +80,16 @@
             map{{ id }}.zoomOut()
         })
 
-        if (document.getElementById('mapSize{{ id }}')) {
-            map{{ id }}.downloadSize().then(data => {
+        map{{ id }}.downloadSize().then(data => {
+            if (options.dataFormat == 'sequential') {
+                document.getElementById('min_{{ id }}').innerText = parseInt(map{{ id }}.min, 10)
+                document.getElementById('max_{{ id }}').innerText = parseInt(map{{ id }}.max, 10)
+            }
+
+            if (document.getElementById('mapSize{{ id }}')) {
                 document.getElementById('mapSize{{ id }}').innerText = ' ' + data
-            })
-        }
+            }
+        })
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {
