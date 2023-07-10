@@ -11,10 +11,10 @@ Data on inequality in hourly pay between high earners and low earners.
 Summary main findings
 
 ## Text
-Inequality in hourly pay between high and low earners got narrower between 2011 and 2021.<br>
+Inequality in hourly pay between high and low earners got narrower between 2010 and 2022.<br>
 From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly pay) earned around 4 times as much as ‘low earners’ (people in the 10th percentile).<br>
-Inequality in hourly pay then went down every year over the next 10 years. In 2021, higher earners earned around 3.2 times as much as low earners.<br>
-Inequality in hourly pay was higher in England than Scotland, Wales and Northern Ireland. In England, wage inequality was highest in London.
+Inequality in hourly pay then went down every year over the next 10 years. In 2022, higher earners earned around 3.1 times as much as low earners.<br>
+Inequality in hourly pay was higher in England than Scotland, Wales and Northern Ireland.
 
 ## Section
 Overview
@@ -29,11 +29,11 @@ By country
 { "title": "Distribution of earnings", "data": "/static/data/indicators/DR11_area-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Area_name", "heading": "Country" }, { "column": "Time_period" }, { "column": "Value", "heading": "Ratio", "align": "right", "format": "2dp" }] }
 
 ## About
-# Data source(s)
-ONS, Annual Survey of Hours and Earnings (ASHE). Analysis by Nuffield College.
+# Data source
+ONS, Annual Survey of Hours and Earnings (ASHE).
 
 # Time period
-1997 to 2021
+1997 to 2022
 
 # Geographic area
 UK
