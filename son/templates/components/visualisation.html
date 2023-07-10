@@ -40,7 +40,7 @@
 
         {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
-            {% if [data, 'title'] | attribute | safe == 'Broadband speed' %}
+            {% if [data, 'toggle'] | attribute == 'radio' %}
             <fieldset class="govuk-fieldset">
                 <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                     {% for item in ([data, 'data'] | attribute) %}
@@ -70,7 +70,7 @@
                 target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
             })
 
-            function selectRange{{ id }}(id) {console.log('id', id)
+            function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
                 buildMap{{ id }}(datafile)
                 buildChart{{ id }}(datafile)

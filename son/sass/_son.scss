@@ -746,6 +746,20 @@ div.scale {
             text-align: right;
         }
     }
+
+    @media(max-width: 1400px) {
+        div.scale-legend {
+            div:first-child {
+                float: left;
+                width: 49%;
+            }
+
+            div:last-child {
+                float: right;
+                width: 49%;
+            }
+        }
+    }
 }
 
 .table-container .table-row {
@@ -763,7 +777,7 @@ div.scale {
     }
 }
 
-.grid-composite{
+.grid-composite {
     @media(max-width: 40.0625em) {
         display: none;
     }
