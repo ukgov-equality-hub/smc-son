@@ -23,7 +23,7 @@ Overview
 By sex
 
 ## Chart
-{ "title": "Level of development at age 5", "data": "/static/data/indicators/IN11_gender-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "Sex", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "title": "Level of development at age 5", "data": "/static/data/indicators/IN11_gender-20230327.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "Sex", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity

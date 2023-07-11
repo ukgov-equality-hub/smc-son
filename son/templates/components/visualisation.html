@@ -8,7 +8,7 @@
 <div class="govuk-tabs visualisation-tabs" data-module="govuk-tabs">
     <ul class="govuk-tabs__list" role="tablist">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart_{{ id }}tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
+            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart{{ id }}_tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
                 Visualisation
             </a>
         </li>
@@ -40,7 +40,7 @@
 
         {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
-            {% if [data, 'title'] | attribute | safe == 'Broadband speed' %}
+            {% if [data, 'toggle'] | attribute == 'radio' %}
             <fieldset class="govuk-fieldset">
                 <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                     {% for item in ([data, 'data'] | attribute) %}
@@ -70,10 +70,16 @@
                 target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
             })
 
-            function selectRange{{ id }}(id) {console.log('id', id)
+            function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
-                buildMap{{ id }}(datafile)
-                buildChart{{ id }}(datafile)
+                try {
+                    buildMap{{ id }}(datafile)
+                }
+                catch (e) {}
+                try {
+                    buildChart{{ id }}(datafile)
+                }
+                catch (e) {}
             }
         </script>
         {% endif %}

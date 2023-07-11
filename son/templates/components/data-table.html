@@ -38,11 +38,11 @@
         if (!tbl{{ id }}) dataTable{{ id }} = new DataTable('table{{ id }}', null, options)
         tbl{{ id }} = true
 
-        dataTable{{ id }}.downloadSize('csv', true).then(data => {
-            document.getElementById('dataTableSize{{ id }}').innerText = ' ' + data
-        })
-
-        //document.getElementById('dataTableSize{{ id }}').innerText = ' ' + dataTable{{ id }}.downloadSize()
+        if (document.getElementById('dataTableSize{{ id }}')) {
+            dataTable{{ id }}.downloadSize('csv', true).then(data => {
+                document.getElementById('dataTableSize{{ id }}').innerText = ' ' + data
+            })
+        }
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {

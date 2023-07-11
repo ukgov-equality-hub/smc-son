@@ -24,9 +24,11 @@
             options
         )
 
-        chart{{ id }}.downloadSize().then(data => {
-            document.getElementById('chartSize{{ id }}').innerText = ' ' + data
-        })
+        if (document.getElementById('chartSize{{ id }}')) {
+            chart{{ id }}.downloadSize().then(data => {
+                    document.getElementById('chartSize{{ id }}').innerText = ' ' + data
+            })
+        }
     }
 
     window.document.addEventListener('DOMContentLoaded', function () {
