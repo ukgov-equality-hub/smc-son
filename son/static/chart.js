@@ -1007,7 +1007,7 @@ class Chart {
             svg.appendChild(txt)
             document.body.appendChild(svg)
             const w = txt.getComputedTextLength()
-            //svg.remove()
+            svg.remove()
 
             //const canvas = document.createElement('canvas'), context = canvas.getContext('2d')
             //context.font = `${style.fontSize} "${style.fontFamily}" ${style.fontWeight || 'normal'}`
