@@ -387,7 +387,7 @@ class Chart {
                         marks.push(Plot.ruleY(chartData, { y: ykey, x1: x1key, x2: x2key, strokeWidth: 5, stroke: '#ccc' }))
                         marks.push(Plot.dot(chartData, { ...chartOptions, r: 5, stroke: colourScheme[0], fill: colourScheme[0], x: x1key }))
                         marks.push(Plot.dot(chartData, { ...chartOptions, r: 5, stroke: colourScheme[colourScheme.length - 1], fill: colourScheme[colourScheme.length - 1], x: x2key }))
-                    } else {  // TIDY UP DOT SIZE...
+                    } else {
                         marks.push(Plot.dot(chartData, { stroke: '#1d70b8', ...chartOptions,  }))
                     }
                 }
@@ -664,7 +664,7 @@ class Chart {
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
-                    return x[orientation == 'y' ? xkey : ykey]
+                    //return x[orientation == 'y' ? xkey : ykey]
                     return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
                 }
                 return orientation == 'y' ? xkey : ykey
@@ -686,7 +686,7 @@ class Chart {
                 }*/
                 const key = orientation == 'y' ? xkey : ykey
                 const valKey = orientation == 'y' ? ykey : xkey
-                const vals = data.flat().filter(y => y[key] == x[key])
+                const vals = chartData.flat().filter(y => y[key] == x[key])
                 let stackedVals = new Array(vals.length).fill(0), val = 0
                 if (zkey) {
                     for (let j = 0; j < vals.length; j++) {

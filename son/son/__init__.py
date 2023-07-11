@@ -30,7 +30,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                         ul = '<ul>'
 
                         for i in range(len(data_table[0])):
-                            item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('_', ' ')
+                            item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('SE', 'Standard error').replace('_', ' ')
                             include = False
 
                             for j in range(len(data_table)):
