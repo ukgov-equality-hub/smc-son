@@ -72,8 +72,14 @@
 
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
-                buildMap{{ id }}(datafile)
-                buildChart{{ id }}(datafile)
+                try {
+                    buildMap{{ id }}(datafile)
+                }
+                catch (e) {}
+                try {
+                    buildChart{{ id }}(datafile)
+                }
+                catch (e) {}
             }
         </script>
         {% endif %}
