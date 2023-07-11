@@ -15,35 +15,35 @@ Summary main findings
 Data
 
 # Chart
-{ "data": "/static/data/MO3.1a.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1a.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "_group": "Sex", "_sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification", "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Male
 
 # Chart
-{ "data": "/static/data/MO3.1b_male.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_male.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Male)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Female
 
 # Chart
-{ "data": "/static/data/MO3.1b_female.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1b_female.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "xgrid": false, "ygrid": true, "xtitle": "Parents highest qualification (Female)", "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Ethnicity
 
 # Chart
-{ "data": "/static/data/MO3.1c.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Ethnicity", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1c.csv", "width": 1000, "height": 500, "title": "", "type": "bary", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Ethnicity", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent" }
 
 ## Tab
 # Title
 Area
 
 # Chart
-{ "data": "/static/data/MO3.1d.csv", "width": 1000, "height": 500, "title": "", "type": "liney", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Area", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "top", "labelColour": "#1d70b8", "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent" }
+{ "data": "/static/data/MO3.1d.csv", "width": 1000, "height": 500, "title": "", "type": "liney", "xkey": "SEB", "ykey": "Value", "sort": "-Value", "xgrid": false, "ygrid": true, "xtitle": "Area", "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "textLabels": "top", "labelColour": "#1d70b8", "backgroundColor": "transparent" }
 
 ## Text
 There is a strong relationship between young people's social class background and the qualification level they achieve.
