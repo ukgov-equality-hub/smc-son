@@ -3,8 +3,6 @@ class Chart {
     // TOTO
     // Build chart from CSV, JSON
     // Data from URL
-    // Update chart data
-    // Test download data
     // https://observablehq.com/@observablehq/plot-rule?collection=@observablehq/plot
     // https://observablehq.com/@mkfreeman/plot-tooltip
 
@@ -664,8 +662,9 @@ class Chart {
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
+                    return orientation == 'x' ? x[ykey] : colours[domain.indexOf(x[orientation == 'y' ? xkey : group])]
                     //return x[orientation == 'y' ? xkey : ykey]
-                    return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
+                    //return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
                 }
                 return orientation == 'y' ? xkey : ykey
                 //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]

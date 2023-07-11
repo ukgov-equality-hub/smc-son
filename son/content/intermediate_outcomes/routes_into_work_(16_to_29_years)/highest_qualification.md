@@ -32,6 +32,16 @@ By sex
 { "title": "Destinations following the end of compulsory full-time education:NEET", "data": [{ "label": "Men", "data": "/static/data/indicators/IN23_gender_male-20230327.csv" }, { "label": "Women", "data": "/static/data/indicators/IN23_gender_female-20230327.csv" }], "toggle": "radio", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Qualification" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Sex" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
+By sex
+
+## Grid
+# Chart
+{ "title": "Destinations following the end of compulsory full-time education:NEET (Men)", "data": "/static/data/indicators/IN23_gender_male-20230327.csv", "toggle": "radio", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Qualification" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Sex" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+
+# Chart
+{ "title": "Destinations following the end of compulsory full-time education:NEET (Women)", "data": "/static/data/indicators/IN23_gender_female-20230327.csv", "toggle": "radio", "_width": 1575, "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Qualification" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Sex" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+
+## Section
 By ethnicity
 
 ## Chart
