@@ -181,7 +181,7 @@ menu = {
             ]
         },
         {
-            'name': 'Drivers of mobility',
+            'name': 'Drivers of social mobility',
             'subdomains': [
                 {
                     'name': 'Composite indices',
