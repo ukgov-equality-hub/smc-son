@@ -5,41 +5,47 @@ DR34
 Earnings of 22 to 29 year olds
 
 ## Summary
-Placeholder summary text
+Data on median (average) hourly pay for 22 to 29 year olds in the UK.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+In 2022, the median (average) real hourly pay for 22 to 29 year olds in the UK was £12.20.
+<br>
+Growth in real hourly pay for 22 to 29 year olds has been low over the last 15 years. This is partly down to sharp falls after:
+
+<ul class="govuk-list">
+<li>the financial crisis in 2008 – average hourly pay went down from £13.31 in 2009 to £12.21 in 2011</li>
+<li>the cost of living crisis in 2022 – average hourly pay went down from £13.33 in 2021 to £12.20 in 2022</li>
+</ul>
 
 ## Section
 Overview
 
 ## Chart
-{ "title": "Earnings of 22 to 29 year olds", "data": "/static/data/indicators/DR34_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "£", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Mean real hourly wage (£)", "align": "right", "format": "2dp" }] }
+{ "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)", "data": "/static/data/indicators/DR34_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "£", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Mean real hourly wage (£)", "align": "right", "format": "2dp" }] }
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Office for National Statistics, Annual Survey of Hours and Earnings
 
 # Time period
-e.g. 20XX to 20YY
+1997 to 2022
 
 # Geographic area
-e.g. UK
+UK
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows median (average) real hourly pay for 22 to 29 year olds in the UK.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+Earnings are adjusted for inflation using the Consumer Price Index, with a base year of 2021.
+<br>
+The data does not include self-employed people or employees who were not paid during the survey period.
 
 # Type of data
-e.g. Survey data, weighted
+Survey data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
