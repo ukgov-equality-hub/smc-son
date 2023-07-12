@@ -6,9 +6,6 @@
 {% endblock %}
 
 {% block content %}
-<script src="{{ url_for('static', filename='data-utils.js') }}"></script>
-<script src="{{ url_for('static', filename='map.js') }}"></script>
-<script src="{{ url_for('static', filename='chart.js') }}"></script>
 <div class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-l">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
