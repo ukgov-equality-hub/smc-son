@@ -13,13 +13,44 @@ div.chart div {
     width: 100%;
     height: 100%;
 }
+div.chart svg * {
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+}
 
 div.chart svg g[aria-label="y-axis tick"] {
     visibility: hidden;
 }
 
-div.chart svg.line path.has-title, div.chart svg.liney path.has-title {
-    stroke-width: 3px;
+div.chart svg.line path.plot-item, div.chart svg.liney path.plot-item {
+    stroke-width: 5px;
+}
+
+div.chart svg line.plot-item.confidence-interval, div.chart svg text.plot-item.confidence-interval {
+    visibility: hidden;
+}
+
+div.chart svg.highlight-ci line.plot-item.confidence-interval, div.chart svg.highlight-ci text.plot-item.confidence-interval {
+    visibility: visible;
+}
+
+span.confidence-interval {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 1em;
+    white-space: nowrap;
+}
+
+span.confidence-interval > input {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+}
+
+span.confidence-interval > input, span.confidence-interval > label {
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 div.chart svg.line marker circle, div.chart svg.liney marker circle {

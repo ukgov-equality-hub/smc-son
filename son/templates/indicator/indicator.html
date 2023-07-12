@@ -2,8 +2,9 @@
 {% from 'components/visualisation.html' import visualisation %}
 {% from 'components/map.html' import map %}
 {% from 'components/chart.html' import chart %}
+{% from 'components/data-table.html' import datatable %}
 {% from 'components/placeholder.html' import placeholder %}
-{% set ns = namespace(counter1=0, counter2=0) %}
+{% set ns = namespace(counter1=0, counter2=0, counter3=0) %}
 {% block title %}Social Mobility Commission{% endblock %}
 
 {% block backLink %}
@@ -101,6 +102,10 @@
     <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
     {% endif %}
 
+    {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
+    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1', 'H2'] %}l{% endif %}{% if item[0] in ['H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %}">{{ item[1] | safe }}</{{ item[0] | lower }}>
+    {% endif %}
+
     {% if item[0] == 'Subtitle' %}
     <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
     {% endif %}
@@ -144,6 +149,57 @@
     </div>
     {% endif %}
 
+    {% if item[0] == 'Tabs' %}
+    <div class="govuk-tabs visualisation-tabs" data-module="govuk-tabs">
+        <ul class="govuk-tabs__list" role="tablist">
+            {% set ns.counter2 = 0 %}
+            {% for tab in item[1] %}
+            <li class="govuk-tabs__list-item{% if ns.counter2 == 0 %} govuk-tabs__list-item--selected{% endif %}" role="presentation">
+                <a class="govuk-tabs__tab" href="#tabs{{ ns.counter1 }}_{{ ns.counter2 }}_tab" id="tab_tabs{{ ns.counter1 }}_{{ ns.counter2 }}_tab" role="tab" aria-controls="tabs{{ ns.counter1 }}_{{ ns.counter2 }}_tab" aria-selected="{% if ns.counter2 == 0 %}true{% else %}false{% endif %}" tabindex="{% if ns.counter2 == 0 %}0{% else %}-1{% endif %}">
+                    {{ tab[0] }}
+                </a>
+            </li>
+            {% set ns.counter2 = ns.counter2 + 1 %}
+            {% endfor %}
+        </ul>
+
+        {% set ns.counter2 = 0 %}
+        {% for tab in item[1] %}
+        <div id="tabs{{ ns.counter1 }}_{{ ns.counter2 }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_tabs{{ ns.counter1 }}_{{ ns.counter2 }}_tab">
+            <h2 class="govuk-visually-hidden">
+                {{ tab[0] }}
+            </h2>
+
+            <div class="content-tabs">
+                {% set ns.counter3 = 0 %}
+                {% for subitem in tab[1] %}
+                {% if subitem[0] == 'Map' %}
+                <div>
+                    <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute }}</h3>
+                    {{ map(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                </div>
+                {% endif %}
+
+                {% if subitem[0] == 'Chart' %}
+                <div>
+                    <h3 class="govuk-heading-s">{{ [subitem[1], 'title'] | attribute }}</h3>
+                    {{ chart(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                </div>
+                {% endif %}
+
+                {% if subitem[0] == 'DataTable' %}
+                {{ datatable(('1' + (ns.counter1 | string) + '00' + (ns.counter2 | string) + '00' + (ns.counter3 | string)), subitem[1]) }}
+                {% endif %}
+
+                {% set ns.counter3 = ns.counter3 + 1 %}
+                {% endfor %}
+            </div>
+        </div>
+        {% set ns.counter2 = ns.counter2 + 1 %}
+        {% endfor %}
+    </div>
+    {% endif %}
+
     {% if item[0] == 'Placeholder' %}
     <div>
         {{ placeholder(ns.counter1, item[1]) }}
@@ -173,30 +229,35 @@
     function mapSelect1(a) {
         let map = undefined, chart = undefined
 
-        const scaleQunitile = document.getElementsByClassName('scale-qunitile')
-        for (let i = 0; i < scaleQunitile.length; i++) {
-            scaleQunitile[i].style.display = 'block'
-        }
-        const scaleViridis = document.getElementsByClassName('scale-viridis')
-        for (let i = 0; i < scaleViridis.length; i++) {
-            scaleViridis[i].style.display = 'none'
-        }
-
         try {
             const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
             if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
             if (typeof window[`chart${el}`] !== 'undefined') chart = eval(`chart${el}`)
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
+                let performance = ''
+                if (a.quantile == 5) performance = 'Top 20% (best outcomes)'
+                if (a.quantile == 4) performance = 'Second 20% (second best outcomes)'
+                if (a.quantile == 3) performance = 'Middle 20% (middle outcomes)'
+                if (a.quantile == 2) performance = 'Forth 20% (second worst outcomes)'
+                if (a.quantile == 1) performance = 'Bottom 20% (worst outcomes)'
+
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
-                document.getElementById(`map_marker${el}`).style.visibility = 'visible'
-                document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
-                document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.rank.split('/')[0], 10) - 1) / (parseInt(a.rank.split('/')[1], 10) - 1) * 100}%)`
+                document.getElementById(`map_tooltip${el}_area`).innerText = a.name
+                document.getElementById(`map_tooltip${el}_title`).innerText = a.map.title
+                document.getElementById(`map_tooltip${el}_value`).innerText = a.value
+                if (performance != '') {
+                    document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
+                    document.getElementById(`map_tooltip${el}_performance`).innerText = performance
+                }
+                //document.getElementById(`map_marker${el}`).style.visibility = 'visible'
+                //document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
+                //document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.rank.split('/')[0], 10) - 1) / (parseInt(a.rank.split('/')[1], 10) - 1) * 100}%)`
                 if (map) map.highlight(a.name)
                 if (chart) chart.highlight(a.name)
             } else {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
-                document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
+                //document.getElementById(`map_marker${el}`).style.visibility = 'hidden'
                 if (map) map.resetHighlight()
                 if (chart) chart.resetHighlight()
             }
@@ -211,9 +272,9 @@
         for (let i = 0; i < scaleQunitile.length; i++) {
             scaleQunitile[i].style.display = 'none'
         }
-        const scaleViridis = document.getElementsByClassName('scale-viridis')
-        for (let i = 0; i < scaleViridis.length; i++) {
-            scaleViridis[i].style.display = 'block'
+        const scaleContinuous = document.getElementsByClassName('scale-continuous')
+        for (let i = 0; i < scaleContinuous.length; i++) {
+            scaleContinuous[i].style.display = 'block'
         }
 
         try {

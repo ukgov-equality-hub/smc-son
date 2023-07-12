@@ -8,7 +8,7 @@
 <div class="govuk-tabs visualisation-tabs" data-module="govuk-tabs">
     <ul class="govuk-tabs__list" role="tablist">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart_{{ id }}tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
+            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart{{ id }}_tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
                 Visualisation
             </a>
         </li>
@@ -40,7 +40,7 @@
 
         {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
-            {% if [data, 'title'] | attribute | safe == 'Broadband speed' %}
+            {% if [data, 'toggle'] | attribute == 'radio' %}
             <fieldset class="govuk-fieldset">
                 <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                     {% for item in ([data, 'data'] | attribute) %}
@@ -70,10 +70,16 @@
                 target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
             })
 
-            function selectRange{{ id }}(id) {console.log('id', id)
+            function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
-                buildMap{{ id }}(datafile)
-                buildChart{{ id }}(datafile)
+                try {
+                    buildMap{{ id }}(datafile)
+                }
+                catch (e) {}
+                try {
+                    buildChart{{ id }}(datafile)
+                }
+                catch (e) {}
             }
         </script>
         {% endif %}
@@ -86,6 +92,11 @@
         <p class="govuk-body">41 regions in the UK are divided into 5 equally-sized groups, and then ranked from the best outcomes (top 20%) to the worst outcomes (bottom 20%).</p>
         <p class="govuk-body">The figure for each region shows the percentage of children in relative poverty after housing costs.</p>
         <p class="govuk-body">The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about confidence intervals.</p>
+        {% endif %}
+
+        {% if ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+        <p class="govuk-body">How regions are ranked:</p>
+        <p class="govuk-body">Based on their composite scores, 41 regions in the UK are ranked from the best to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’) – from 1 (top 20%) to 5 (bottom 20%).</p>
         {% endif %}
 
         <div class="grid grid2 map">
@@ -138,11 +149,13 @@
         </h2>
 
         <ul class="govuk-list">
+            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
                     Download the chart (PNG<span id="chartSize{{ id }}"></span>)
                 </a>
             </li>
+            {% endif %}
             {% if type == 'map' %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
@@ -156,7 +169,9 @@
                 </a>
             </li>
         </ul>
+        {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
+        {% endif %}
     </div>
 </div>
 {% endmacro %}

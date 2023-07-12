@@ -140,6 +140,7 @@ class Choropleth {
         let domain = options.domain || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
+        this.title = options.title || ''
         this.background = options.background || false
         this.legendDiv = options.legend || ''
         this.tooltip = ''
@@ -431,7 +432,7 @@ class Choropleth {
                     .style('fill', '#f3f2f1')
                     .style('stroke', '#ddd')
                     .style('stroke-width', '.1')
-                    //.style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
+                    .style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
                     .attr('data-name', x => x.properties.NUTS_NAME || x.properties.NUTS_ID)
 
                 const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return areas.indexOf(x.properties.NUTS_ID) > -1 }) }, self.bg, undefined, undefined, '')
@@ -721,7 +722,7 @@ class Choropleth {
             if (!isNumeric(key)) return key
             let text
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(2) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
             } else if (scale == 'number') {

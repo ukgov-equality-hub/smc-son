@@ -12,7 +12,7 @@
             {% for row in data_table %}
             {% if not row[4] == 'Area_name' %}
             <tr>
-                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect1({ chart: { el: 'chart{{ id }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}' })" onmouseout="mapSelect1({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
+                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect1({ map: { el: 'map{{ id }}', title: '{{ [data, 'title'] | attribute }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}', quantile: {{ row[18] }} })" onmouseout="mapSelect1({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
                 <td class="govuk-table__cell">{{ row[18] }}</td>
             </tr>
             {% endif %}

@@ -5,7 +5,6 @@ import csv
 from flask import Blueprint, current_app, render_template, request, session, Response, abort
 import markdown
 from bs4 import BeautifulSoup
-#from son.catalogue.forms import Form
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import LogLevel, Logger
 
@@ -13,7 +12,7 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
+def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print_output=False):
     def format_html(html):
         if not use_markdown: return html
         #html = markdown.markdown(html + "\n{: .govuk-body }", extensions=['nl2br', 'attr_list', 'sane_lists'])
@@ -31,7 +30,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
                         ul = '<ul>'
 
                         for i in range(len(data_table[0])):
-                            item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('_', ' ')
+                            item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('SE', 'Standard error').replace('_', ' ')
                             include = False
 
                             for j in range(len(data_table)):
@@ -83,9 +82,10 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
             else:
                 el['class'] = 'govuk-link'
 
-        return str(soup)
+        return str(soup).strip()
 
     content = []
+    newline = '\n' #os.linesep
     if indicator is not None:
         file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}.md"
     elif subdomain is not None:
@@ -97,19 +97,47 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
         f = open(file_path, 'r')
         current_section = ''
         current_content = ''
+
+        def update(content, current_section, current_content, new_content):
+            if current_section != '':
+                content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content.strip()])
+            if new_content:
+                content.append(new_content.strip() if type(new_content) == 'str' else new_content)
+            return content, '', ''
+        
+        def trim(content):
+            content = content.strip()
+            content = content.strip('\t')
+            content = content.strip('\n')
+            content = content.strip(newline)
+            return content
+
         for line in f:
-            if len(line) > 2 and line[:2] == '##':
-                if current_section != '':
-                    content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
-                    current_section = ''
-                    current_content = ''
-                current_section = line[2:].strip()
-            elif line.strip() != '':
-                if current_content != '': current_content += "\n"
+            if   len(line) > 8 and line[:6] == '######':
+                content, current_section, current_content = update(content, current_section, current_content, ['H6', line[6:].strip()])
+            elif len(line) > 7 and line[:5] == '#####':
+                content, current_section, current_content = update(content, current_section, current_content, ['H5', line[5:].strip()])
+            elif len(line) > 6 and line[:4] == '####':
+                content, current_section, current_content = update(content, current_section, current_content, ['H4', line[4:].strip()])
+            elif len(line) > 5 and line[:3] == '###':
+                content, current_section, current_content = update(content, current_section, current_content, ['H3', line[3:].strip()])
+            elif len(line) > 4 and line[:2] == '##':
+                tag = line[2:].strip()
+                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'TABS', 'GRID', 'ABOUT', 'MAP', 'CHART', 'PLACEHOLDER']:
+                    content, current_section, current_content = update(content, current_section, current_content, None)
+                    current_section = tag
+                else:
+                    content, current_section, current_content = update(content, current_section, current_content, ['H2', line[2:].strip()])
+            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT']:
+                content, current_section, current_content = update(content, current_section, current_content, ['H1', line[1:].strip()])
+            else: #if line.strip() != '':
+                if current_section == '':
+                    current_section = 'Text'
+                if current_content != '': current_content += newline
                 current_content += line.strip()
 
         if current_section != '':
-            content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content])
+            content.append(['HTML' if current_section == 'Text' and use_markdown else current_section, format_html(current_content) if current_section == 'Text' else current_content.strip()])
 
         f.close()
 
@@ -118,7 +146,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
             current_subsection = ''
             current_subcontent = ''
             current_section = []
-            items = content[index][1].split("\n")
+            items = content[index][1].split(newline)
             for item in items:
                 if len(item) > 1 and item[:1] == '#':
                     if current_subsection != '':
@@ -128,15 +156,21 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
                             current_section.append(['Chart', current_subcontent])
                         elif current_subsection.upper() == 'MAP':
                             current_section.append(['Map', current_subcontent])
+                        elif current_subsection.upper() == 'DATATABLE':
+                            current_section.append(['DataTable', current_subcontent])
+                        elif current_subsection.upper() == 'DOWNLOAD':
+                            current_section.append(['Download', current_subcontent])
+                        elif current_subsection.upper() == 'TAB':
+                            current_section.append(['Tab', current_subcontent])
                         else:
-                            current_section.append(['Subtitle', current_subsection])
-                            current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
+                            current_section.append(['Subtitle3', current_subsection])
+                            current_section.append(['HTML3' if use_markdown else 'Text', format_html(current_subcontent)])
 
                         current_subsection = ''
                         current_subcontent = ''
                     current_subsection = item[1:].strip()
                 elif item.strip() != '':
-                    if current_subcontent != '': current_subcontent += "\n"
+                    if current_subcontent != '': current_subcontent += newline
                     current_subcontent += item.strip()
 
             if current_subsection.upper() == 'TITLE':
@@ -145,12 +179,40 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True):
                 current_section.append(['Chart', current_subcontent])
             elif current_subsection.upper() == 'MAP':
                 current_section.append(['Map', current_subcontent])
+            elif current_subsection.upper() == 'DATATBALE':
+                current_section.append(['DataTable', current_subcontent])
+            elif current_subsection.upper() == 'DOWNLOAD':
+                current_section.append(['Download', current_subcontent])
+            elif current_subsection.upper() == 'TAB':
+                current_section.append(['Tab', current_subcontent])
             elif current_subsection != '':
                 current_section.append(['Subtitle', current_subsection])
                 current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
 
             content[index][1] = current_section
 
+    for index in range(len(content)):
+        if content[index][0] == 'Tabs':
+            tabs = []
+            tab = []
+            current_tab = ''
+
+            items = content[index][1]
+            for item in items:
+                if item[0] == 'Tab':
+                    if current_tab != '':
+                        tabs.append([current_tab, tab])
+                        tab = []
+                    current_tab = item[1]
+                else:
+                    tab.append(item)
+
+            if current_tab != '':
+                tabs.append([current_tab, tab])
+
+            content[index][1] = tabs
+
+    if print_output: print(content, flush=True)
     return content
 
 
@@ -179,7 +241,7 @@ def area_home_page():
         domain='social_mobility_by_area',
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
-        content=get_content('social_mobility_by_area', use_markdown=False),
+        content=get_content('social_mobility_by_area', use_markdown=True),
         form=None
     )
 
@@ -237,7 +299,6 @@ def subdomain_page(domain, subdomain):
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
     content = get_content(domain, subdomain, indicator)
-    #print(content, flush=True)
     data_src = ''
 
     data_table = []
@@ -257,7 +318,7 @@ def indicator_page(domain, subdomain, indicator):
         subdomain=subdomain,
         indicator=indicator,
         title=get_item_title(indicator),
-        tabs='Tab' in str(content),
+        tabs=False, #'Tabs' in str(content),
         content=content,
         data_table=data_table,
         form=None
