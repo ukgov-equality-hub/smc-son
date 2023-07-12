@@ -5,41 +5,51 @@ DR31
 Job vacancy rate
 
 ## Summary
-Placeholder summary text
+Data on the number of vacancies for every unemployed person in the UK from 2001 to 2022.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+There were more vacancies for every jobseeker in 2021 and 2022 than at any time in the previous 20 years, at around 0.9 vacancies for every unemployed person.
+<br>
+The job vacancy rate was at its lowest between 2010 and 2012, at around 0.2 vacancies for every unemployed person.
 
 ## Section
 Overview
 
 ## Chart
-{ "title": "Job vacancy rate", "data": "/static/data/indicators/DR31_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Rate", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "2dp" }]  }
+{ "title": "Number of job vacancies for every unemployed 16 to 64 year old (UK, 2001 to 2022)", "data": "/static/data/indicators/DR31_overview-20230417.csv", "_width": 1575, "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Rate", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "fontFamily": "GDS Transport", "fontSize": "15px", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "2dp" }]  }
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Office for National Statistics, Vacancy Survey and Labour Force Survey
 
 # Time period
-e.g. 20XX to 20YY
+2001 to 2022
 
 # Geographic area
-e.g. UK
+UK
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the number of vacancies for every unemployed person in the UK. 
+<br>
+The vacancy rate is based on:
+
+<ul class="govuk-list">
+<li>the number of unemployed people aged 16 to 64</li>
+<li>the number of vacancies</li>
+</ul>
+
+All estimates are based on data for October to December each year.
+<br>
+Rates are rounded to 1 decimal place.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+Figures are seasonally adjusted to account for variations during the year. Read more about [seasonal adjustment](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/seasonaladjustment){: target="_blank"} from ONS.
 
 # Type of data
-e.g. Survey data, weighted
+Survey data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
