@@ -1,17 +1,21 @@
 ## Code
-DR231
+DR23
 
 ## Title
 Access to higher education
 
 ## Summary
-Placeholder summary text
+Data on the percentage of 19 year olds enrolled in higher education in the UK and internationally, over time.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+63% of 19 year olds in the UK entered higher education in 2020, compared with 48% in 2010. 
+<br>
+UK enrolment in higher education among 19 year olds has been higher than the international average for OECD countries in 3 of the last 4 years – it was lower than the international average every year from 2010 to 2016.
+<br>
+The percentage of 19 year olds from OECD countries entering higher education has stayed roughly the same since 2010, at 61% or 62%.
 
 ## Section
 Overview
@@ -20,26 +24,25 @@ Overview
 { "title": "Access to higher education: enrollment rate in secondary or tertiary education at age 19", "data": "/static/data/indicators/DR23a_overview-20230417.csv", "_width": 1575, "height": 450, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About
-# Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+# Data source
+Organisation for Economic Cooperation and Development (OECD), Online Education Database
 
 # Time period
-e.g. 20XX to 20YY
+2010 to 2020
 
 # Geographic area
-e.g. UK
+UK
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the percentage of 19 year olds entered in higher education in the UK, over time. It also shows the international average, measured in [OECD countries](https://www.oecd.org/about/document/ratification-oecd-convention.htm){: target="_blank" }.
+<br>
+The data is based on headcounts and includes both full-time and part-time students. In some OECD countries, part-time education is only partially covered in the data.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+Entrance rates in higher education are calculated by dividing the number of students aged 19 years by the size of the population of 19 year olds.
 
 # Type of data
-e.g. Survey data, weighted
+Administrative data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.

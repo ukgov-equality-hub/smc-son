@@ -5,13 +5,15 @@ DR21
 Further education and training opportunities
 
 ## Summary
-Placeholder summary text
+Data on the percentage of 16 to 18 year olds in education, training and employment.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+93% of 16 to 18 year olds were in education, training or employment in 2021, compared with 91% in 2011.
+<br>
+6% of 16 to 18 year olds were not in any form of education, employment or training (known as ‘NEET’) in 2021, compared with 10% in 2011.
 
 ## Section
 Overview
@@ -21,25 +23,26 @@ Overview
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Department for Education, Participation in education, training and employment, 2022
 
 # Time period
-e.g. 20XX to 20YY
+2011 to 2021
 
 # Geographic area
-e.g. UK
+England
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the percentage of young people aged 16 to 18 years old in education, training and employment in England, from 2011 to 2021.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+A person identified as NEET is either unemployed or economically inactive. In previous data, there have been very small overlaps of students studying in further or higher education, and work-based learning at the same time. The total number of young people in training is calculated by removing these overlaps.
+<br>
+Since 2013, 16 to 17 year olds have been legally required to remain in education and training (at least part-time) in England, but not in Wales, Scotland or Northern Ireland. 
+<br>
+Data for 2020 and 2021 may be impacted by the COVID-19 pandemic.
 
 # Type of data
-e.g. Survey data, weighted
+Administrative data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
