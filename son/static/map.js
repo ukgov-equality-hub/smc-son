@@ -100,8 +100,19 @@ class Choropleth {
                     return
                 }
             }
+
             console.info('Map resources loaded')
-            if (self.el && self.geodata && self.data) self.render()
+
+            if (self.el && self.geodata && self.data) {
+                /*window.addEventListener('resize', function (event) {
+                    clearTimeout(window[`resized${self.el}`])
+                    window[`resized${self.el}`] = setTimeout(function () {
+                        self.render(self.filteredData)
+                    }, 250)
+                }, true)*/
+
+                self.render()
+            }
         }
 
         for (let i = 0; i < resources.length; i++) {

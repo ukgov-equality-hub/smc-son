@@ -97,8 +97,19 @@ class Chart {
                     return
                 }
             }
+
             console.info('Chart resources loaded')
-            if (self.el && self.data && typeof Plot !== 'undefined') self.render()
+
+            if (self.el && self.data && typeof Plot !== 'undefined') {
+                /*window.addEventListener('resize', function (event) {
+                    clearTimeout(window[`resized${self.el}`])
+                    window[`resized${self.el}`] = setTimeout(function () {
+                        self.render(self.filteredData)
+                    }, 250)
+                }, true)*/
+
+                self.render()
+            }
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -1127,8 +1138,8 @@ class Chart {
                     return 0.1
                 })
 
-                const filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
-                self.render(filteredData)
+                self.filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
+                self.render(self.filteredData)
                 self.hidden = hidden
             } else if (self.clickBehaviour == 'isolate') {
                 d3.select(`#${self.el}`).selectAll(`[data-series]`).style('opacity', function () {
