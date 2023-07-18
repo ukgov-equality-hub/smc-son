@@ -45,8 +45,8 @@
                 <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
                     {% for item in ([data, 'data'] | attribute) %}
                     <div class="govuk-radios__item">
-                        <input id="range-option{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange{{ id }}(this.value)"{% if loop.index == loop.length %} checked{% endif %}>
-                        <label for="range-option{{ loop.index }}" class="govuk-label govuk-radios__label">
+                        <input id="range-option{{ id }}_{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange{{ id }}(this.value)"{% if loop.index == loop.length %} checked{% endif %}>
+                        <label for="range-option{{ id }}_{{ loop.index }}" class="govuk-label govuk-radios__label">
                             {{ item.label }}
                         </label>
                     </div>
@@ -65,10 +65,12 @@
         <script>
             const options{{ id }} = {{ [data, 'data'] | attribute | safe }}
 
-            document.getElementById('range{{ id }}').addEventListener('input', function (e) {
-                let target = e.target
-                target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
-            })
+            if (document.getElementById('range{{ id }}')) {
+                document.getElementById('range{{ id }}').addEventListener('input', function (e) {
+                    let target = e.target
+                    target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
+                })
+            }
 
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data

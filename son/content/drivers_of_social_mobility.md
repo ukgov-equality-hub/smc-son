@@ -14,7 +14,7 @@ Highlighted data
         <script>
             new Chart(
                 'chart1',
-                `${location.protocol}//${location.host}/static/data/indicators/DR11_overview-20230417.csv`,
+                `${location.protocol}//${location.host}/static/data/indicators/DR11_overview-20230413.csv`,
                 { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
             )
         </script>
@@ -30,7 +30,7 @@ Highlighted data
             new Chart(
                 'chart2',
                 `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-                { "height": 200, "title": "", "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
             )
         </script>
         <p class="govuk-body">63% of 19 year olds in the UK entered higher education in 2020, compared with 48% in 2010.</p>
@@ -44,7 +44,7 @@ Highlighted data
         <script>
             new Chart(
                 'chart3',
-                `${location.protocol}//${location.host}/static/data/indicators/DR31_overview-20230417.csv`,
+                `${location.protocol}//${location.host}/static/data/indicators/DR31_overview-20230413.csv`,
                 { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Rate", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
             )
         </script>

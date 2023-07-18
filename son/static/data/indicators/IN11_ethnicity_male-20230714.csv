@@ -1,0 +1,13 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","White",39.9,15961,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","White",64.3,118927,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Mixed/multiple ethnic groups",47.2,2615,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Mixed/multiple ethnic groups",64.6,11336,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Asian/Asian British",48.7,2437,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Asian/Asian British",59.9,19775,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Black/African/Caribbean/Black British",47.1,2097,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Black/African/Caribbean/Black British",54.1,6080,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Other ethnic group",41.8,794,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Other ethnic group",52.1,2631,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Unclassified",37.6,451,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Unclassified",44.9,3696,NA,NA,NA,"Percentage",NA

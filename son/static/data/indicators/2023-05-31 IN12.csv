@@ -1,16 +1,23 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Total","11","Total",NA,NA,53,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201516","Disadvantaged","11","Total",NA,NA,39,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201516","Not known to be disadvantaged","11","Total",NA,NA,60,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Total","11","Total",NA,NA,61,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201617","Disadvantaged","11","Total",NA,NA,47,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201617","Not known to be disadvantaged","11","Total",NA,NA,67,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Total","11","Total",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201718","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201718","Not known to be disadvantaged","11","Total",NA,NA,70,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Total","11","Total",NA,NA,65,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201819","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be disadvantaged","11","Total",NA,NA,71,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201920","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","201920","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","202021","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","202021","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Total","11","Total",NA,NA,59,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","202122","Disadvantaged","11","Total",NA,NA,43,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","202122","Not known to be disadvantaged","11","Total",NA,NA,66,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2011",NA,"11","Total",NA,NA,3.3408,NA,NA,NA,NA,"Gap index","Disadvantage attainment gap index for England at key stage 2"
@@ -623,69 +630,69 @@
 "IN12","Attaintment at age 11","Local authority","E10000013","Gloucestershire","202122","Not known to be disadvantaged","11","Total",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","Local authority","E10000027","Somerset","202122","Disadvantaged","11","Total",NA,NA,36,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","Local authority","E10000027","Somerset","202122","Not known to be disadvantaged","11","Total",NA,NA,60,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLC2","Northumberland, and Tyne and Wear","2021-2022","FSM eligible","11","Total",NA,NA,43.565862,NA,42.61842351,44.5133005,0.483386987,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLC1","Tees Valley and Durham","2021-2022","FSM eligible","11","Total",NA,NA,44.12579114,NA,43.15798252,45.09359976,0.493779909,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD7","Merseyside","2021-2022","FSM eligible","11","Total",NA,NA,39.36673739,NA,38.50169515,40.23177963,0.441348081,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD3","Greater Manchester","2021-2022","FSM eligible","11","Total",NA,NA,42.42450614,NA,41.785523,43.06348927,0.326011803,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD6","Cheshire","2021-2022","FSM eligible","11","Total",NA,NA,40.04608295,NA,38.58827602,41.50388988,0.743779044,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD4","Lancashire","2021-2022","FSM eligible","11","Total",NA,NA,45.68288854,NA,43.74868813,47.61708895,0.986836944,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD1","Cumbria","2021-2022","FSM eligible","11","Total",NA,NA,36.85220729,NA,34.78102629,38.9233883,1.056725002,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE3","South Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,38.35536547,NA,37.41574754,39.29498341,0.479396905,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE4","West Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,39.83539095,NA,39.09967697,40.57110492,0.375364273,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE1","East Yorkshire and Northern Lincolnshire","2021-2022","FSM eligible","11","Total",NA,NA,43.14984709,NA,41.94945633,44.35023786,0.612444269,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE2","North Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,38.33865815,NA,34.52980837,42.14750793,1.943290705,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF1","Derbyshire and Nottinghamshire","2021-2022","FSM eligible","11","Total",NA,NA,40.31214313,NA,38.98575089,41.63853537,0.676730737,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF2","Leicestershire, Rutland and Northamptonshire","2021-2022","FSM eligible","11","Total",NA,NA,40.81447964,NA,39.63139947,41.99755981,0.60361233,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF3","Lincolnshire","2021-2022","FSM eligible","11","Total",NA,NA,37.46569076,NA,36.03088852,38.900493,0.732041958,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG3","West Midlands","2021-2022","FSM eligible","11","Total",NA,NA,45.1436861,NA,44.5704565,45.7169157,0.29246408,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG2","Shropshire and Staffordshire","2021-2022","FSM eligible","11","Total",NA,NA,41.01057579,NA,39.66145549,42.3596961,0.688326685,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG1","Herefordshire, Worcestershire and Warwickshire","2021-2022","FSM eligible","11","Total",NA,NA,40.1734104,NA,36.5206642,43.82615661,1.863646023,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH2","Bedfordshire and Hertfordshire","2021-2022","FSM eligible","11","Total",NA,NA,41.02833158,NA,39.46682701,42.58983616,0.796686008,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH1","East Anglia","2021-2022","FSM eligible","11","Total",NA,NA,40.35874439,NA,38.08207034,42.63541845,1.161568396,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH3","Essex","2021-2022","FSM eligible","11","Total",NA,NA,42.34388366,NA,40.34101784,44.34674948,1.021870315,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI3","Inner London - West","2021-2022","FSM eligible","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI5","Outer London - East and North East","2021-2022","FSM eligible","11","Total",NA,NA,50.44052863,NA,49.57136354,51.30969373,0.443451579,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI4","Inner London - East","2021-2022","FSM eligible","11","Total",NA,NA,54.89328763,NA,54.16807557,55.61849968,0.370006152,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI7","Outer London - West and North West","2021-2022","FSM eligible","11","Total",NA,NA,48.29189769,NA,47.36568066,49.21811473,0.47255971,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI6","Outer London - South","2021-2022","FSM eligible","11","Total",NA,NA,46.84962195,NA,45.69230485,48.00693906,0.590467912,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","2021-2022","FSM eligible","11","Total",NA,NA,36.82689782,NA,35.74347418,37.91032145,0.552767161,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ2","Surrey, East and West Sussex","2021-2022","FSM eligible","11","Total",NA,NA,40.03164557,NA,37.33051659,42.73277454,1.378127028,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ3","Hampshire and Isle of Wight","2021-2022","FSM eligible","11","Total",NA,NA,36.23453962,NA,34.80870772,37.66037153,0.727465259,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ4","Kent","2021-2022","FSM eligible","11","Total",NA,NA,43.08012487,NA,40.86626654,45.2939832,1.129519556,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK3","Cornwall and Isles of Scilly","2021-2022","FSM eligible","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","FSM eligible","11","Total",NA,NA,36.4867916,NA,35.48428302,37.48930018,0.511483968,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK2","Dorset and Somerset","2021-2022","FSM eligible","11","Total",NA,NA,37.0918053,NA,35.43002192,38.75358868,0.847848662,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK4","Devon","2021-2022","FSM eligible","11","Total",NA,NA,41.57650696,NA,39.67765243,43.47536148,0.968803331,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLC2","Northumberland, and Tyne and Wear","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,67.332254,NA,66.71580252,67.94870548,0.314516062,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLC1","Tees Valley and Durham","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,68.20696721,NA,67.5536915,68.86024293,0.333303936,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD7","Merseyside","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,63.62422827,NA,63.01522263,64.2332339,0.310717159,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD3","Greater Manchester","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.90235793,NA,64.49344268,65.31127319,0.208630233,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD6","Cheshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,66.4621905,NA,65.77116133,67.15321966,0.352565902,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD4","Lancashire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,63.71292567,NA,62.43775013,64.98810121,0.650599767,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLD1","Cumbria","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,61.06547759,NA,60.03021478,62.10074039,0.528195309,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE3","South Yorkshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,63.80869565,NA,63.18763473,64.42975658,0.316867818,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE4","West Yorkshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.15785191,NA,63.71101319,64.60469063,0.22797894,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE1","East Yorkshire and Northern Lincolnshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.02555911,NA,63.27363741,64.7774808,0.383633519,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLE2","North Yorkshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,69.57284962,NA,68.03036594,71.1153333,0.786981471,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF1","Derbyshire and Nottinghamshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,62.53403141,NA,61.56322848,63.50483435,0.495307621,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF2","Leicestershire, Rutland and Northamptonshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,62.95661122,NA,62.33684117,63.57638126,0.316209206,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLF3","Lincolnshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,60.91627172,NA,60.06630119,61.76624225,0.433658434,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG3","West Midlands","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,63.12538367,NA,62.71120635,63.53956099,0.211314958,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG2","Shropshire and Staffordshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,61.29781632,NA,60.45774547,62.13788718,0.428607578,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLG1","Herefordshire, Worcestershire and Warwickshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.62179869,NA,63.00456373,66.23903365,0.825119877,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH2","Bedfordshire and Hertfordshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,58.89236631,NA,58.09690751,59.68782511,0.405846327,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH1","East Anglia","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,60.44203879,NA,59.00276065,61.88131693,0.734325582,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLH3","Essex","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.94960806,NA,63.84318797,66.05602816,0.564500049,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI3","Inner London - West","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI5","Outer London - East and North East","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,70.18089763,NA,69.72046383,70.64133143,0.234915204,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI4","Inner London - East","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,71.36317396,NA,70.86359534,71.86275258,0.25488705,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI7","Outer London - West and North West","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,71.06970468,NA,70.61696067,71.52244869,0.230991842,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLI6","Outer London - South","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,71.32271527,NA,70.74425774,71.9011728,0.295131392,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,65.21692726,NA,64.73472193,65.69913259,0.246023128,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ2","Surrey, East and West Sussex","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,65.80645161,NA,64.3418825,67.27102073,0.747229139,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ3","Hampshire and Isle of Wight","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,57.0122631,NA,55.98775291,58.03677329,0.522709279,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLJ4","Kent","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,61.31171702,NA,60.01603743,62.60739662,0.661061017,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK3","Cornwall and Isles of Scilly","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,64.02226862,NA,63.51573942,64.52879781,0.258433264,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK2","Dorset and Somerset","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,63.61621279,NA,62.7772207,64.45520489,0.428057192,"Percentage",NA
-"IN12","Attainment at age 11","ITL2","TLK4","Devon","2021-2022","Not known to be FSM eligible","11","Total",NA,NA,65.18698693,NA,64.03576144,66.33821242,0.587359944,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Bedfordshire and Hertfordshire","2021-2022","FSM eligible","11","Total",NA,NA,37.35955056,4272,35.88305032,38.80657113,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Berkshire, Buckinghamshire and Oxfordshire","2021-2022","FSM eligible","11","Total",NA,NA,35.97249509,5090,34.65259718,37.30849837,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cheshire","2021-2022","FSM eligible","11","Total",NA,NA,40.04608295,2170,37.97604695,42.14304521,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cornwall and Isles of Scilly","2021-2022","FSM eligible","11","Total",NA,NA,37.69230769,1430,35.10418725,40.19153977,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cumbria","2021-2022","FSM eligible","11","Total",NA,NA,36.85220729,1042,33.82173034,39.76580029,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Derbyshire and Nottinghamshire","2021-2022","FSM eligible","11","Total",NA,NA,39.98049052,7176,38.83053785,41.11073032,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Devon","2021-2022","FSM eligible","11","Total",NA,NA,37.33102253,2885,35.52802843,39.09049935,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Dorset and Somerset","2021-2022","FSM eligible","11","Total",NA,NA,35.79387187,2872,34.0384121,37.57832531,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","East Anglia","2021-2022","FSM eligible","11","Total",NA,NA,34.96866881,6543,33.81246372,36.13828552,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","East Yorkshire and Northern Lincolnshire","2021-2022","FSM eligible","11","Total",NA,NA,43.14984709,3270,41.41333823,44.83751376,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Essex","2021-2022","FSM eligible","11","Total",NA,NA,38.91719745,4710,37.50032026,40.30539203,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","FSM eligible","11","Total",NA,NA,36.26335746,5802,35.00775302,37.49833615,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Greater Manchester","2021-2022","FSM eligible","11","Total",NA,NA,42.42450614,11491,41.51852797,43.33432431,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Hampshire and Isle of Wight","2021-2022","FSM eligible","11","Total",NA,NA,36.28318584,5085,34.94049503,37.60233183,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Herefordshire, Worcestershire and Warwickshire","2021-2022","FSM eligible","11","Total",NA,NA,38.29165313,3079,36.53806274,40.00262572,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Inner London - East","2021-2022","FSM eligible","11","Total",NA,NA,54.89328763,9043,53.86073385,55.92268726,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Inner London - West","2021-2022","FSM eligible","11","Total",NA,NA,57.80542986,2652,55.86128767,59.65698729,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Kent","2021-2022","FSM eligible","11","Total",NA,NA,39.11290323,5456,37.81495926,40.422503,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Lancashire","2021-2022","FSM eligible","11","Total",NA,NA,39.70557308,4755,38.290133,41.09163162,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Leicestershire, Rutland and Northamptonshire","2021-2022","FSM eligible","11","Total",NA,NA,40.63107845,4627,39.18991498,42.0408803,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Lincolnshire","2021-2022","FSM eligible","11","Total",NA,NA,37.46569076,2186,35.43168273,39.53336141,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Merseyside","2021-2022","FSM eligible","11","Total",NA,NA,39.36673739,6127,38.12432584,40.58665435,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","North Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,34.93975904,1411,32.45012906,37.4922679,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Northumberland, and Tyne and Wear","2021-2022","FSM eligible","11","Total",NA,NA,43.565862,5261,42.20145441,44.89941896,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - East and North East","2021-2022","FSM eligible","11","Total",NA,NA,50.44052863,6356,49.18780564,51.66139523,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - South","2021-2022","FSM eligible","11","Total",NA,NA,46.84962195,3571,45.17418057,48.47426492,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - West and North West","2021-2022","FSM eligible","11","Total",NA,NA,48.29189769,5591,46.95642965,49.59339663,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Shropshire and Staffordshire","2021-2022","FSM eligible","11","Total",NA,NA,40.42925975,4566,39.00135465,41.86941779,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","South Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,38.35536547,5144,37.00446951,39.68063016,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Surrey, East and West Sussex","2021-2022","FSM eligible","11","Total",NA,NA,36.4375605,5165,35.10418509,37.74757954,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Tees Valley and Durham","2021-2022","FSM eligible","11","Total",NA,NA,44.12579114,5056,42.75096361,45.50740636,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","West Midlands","2021-2022","FSM eligible","11","Total",NA,NA,45.1436861,14476,44.32372679,45.95178491,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","West Yorkshire","2021-2022","FSM eligible","11","Total",NA,NA,39.83539095,8505,38.79270547,40.88504513,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Bedfordshire and Hertfordshire","2021-2022","Not eligible","11","Total",NA,NA,62.46703185,19716,61.78172609,63.13851683,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Berkshire, Buckinghamshire and Oxfordshire","2021-2022","Not eligible","11","Total",NA,NA,64.60183979,25329,64.00930291,65.19102498,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cheshire","2021-2022","Not eligible","11","Total",NA,NA,66.4621905,8966,65.47414072,67.43953346,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cornwall and Isles of Scilly","2021-2022","Not eligible","11","Total",NA,NA,59.7107438,4840,58.29232781,61.07613716,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Cumbria","2021-2022","Not eligible","11","Total",NA,NA,61.06547759,4261,59.58250642,62.53326211,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Derbyshire and Nottinghamshire","2021-2022","Not eligible","11","Total",NA,NA,63.49714166,19067,62.80914553,64.18101963,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Devon","2021-2022","Not eligible","11","Total",NA,NA,62.20128904,10085,61.23661291,63.1390886,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Dorset and Somerset","2021-2022","Not eligible","11","Total",NA,NA,61.63177285,11129,60.72087339,62.53658314,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","East Anglia","2021-2022","Not eligible","11","Total",NA,NA,59.389693,21694,58.72803553,60.03961558,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","East Yorkshire and Northern Lincolnshire","2021-2022","Not eligible","11","Total",NA,NA,64.02555911,7825,62.95074226,65.08991986,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Essex","2021-2022","Not eligible","11","Total",NA,NA,64.41579465,17297,63.69703763,65.12970179,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","Not eligible","11","Total",NA,NA,63.71422329,22885,63.08298417,64.33323935,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Greater Manchester","2021-2022","Not eligible","11","Total",NA,NA,64.90235793,26167,64.31669872,65.47706386,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Hampshire and Isle of Wight","2021-2022","Not eligible","11","Total",NA,NA,62.95867577,17278,62.22777273,63.67364109,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Herefordshire, Worcestershire and Warwickshire","2021-2022","Not eligible","11","Total",NA,NA,64.47778324,12198,63.61277287,65.31948783,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Inner London - East","2021-2022","Not eligible","11","Total",NA,NA,71.36317396,15728,70.64959111,72.06884807,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Inner London - West","2021-2022","Not eligible","11","Total",NA,NA,76.03952244,4858,74.8134991,77.2341759,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Kent","2021-2022","Not eligible","11","Total",NA,NA,64.84770081,17006,64.11878099,65.55978114,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Lancashire","2021-2022","Not eligible","11","Total",NA,NA,62.92247951,13906,62.11345054,63.72609793,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Leicestershire, Rutland and Northamptonshire","2021-2022","Not eligible","11","Total",NA,NA,64.20717904,18554,63.50709472,64.89203067,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Lincolnshire","2021-2022","Not eligible","11","Total",NA,NA,60.91627172,6330,59.6856713,62.10522404,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Merseyside","2021-2022","Not eligible","11","Total",NA,NA,63.62422827,11986,62.75558217,64.48625317,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","North Yorkshire","2021-2022","Not eligible","11","Total",NA,NA,63.496483,6824,62.32656085,64.62556598,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Northumberland, and Tyne and Wear","2021-2022","Not eligible","11","Total",NA,NA,67.332254,11118,66.44247181,68.19496755,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - East and North East","2021-2022","Not eligible","11","Total",NA,NA,70.18089763,18961,69.51875543,70.82629988,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - South","2021-2022","Not eligible","11","Total",NA,NA,71.32271527,11741,70.48660503,72.13121165,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Outer London - West and North West","2021-2022","Not eligible","11","Total",NA,NA,71.06970468,19267,70.4236987,71.70934693,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Shropshire and Staffordshire","2021-2022","Not eligible","11","Total",NA,NA,63.17394317,14430,62.37394917,63.95476494,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","South Yorkshire","2021-2022","Not eligible","11","Total",NA,NA,63.80869565,11500,62.91390384,64.67910519,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Surrey, East and West Sussex","2021-2022","Not eligible","11","Total",NA,NA,63.90825972,25812,63.31500056,64.49063886,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","Tees Valley and Durham","2021-2022","Not eligible","11","Total",NA,NA,68.20696721,9760,67.26233624,69.12023641,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","West Midlands","2021-2022","Not eligible","11","Total",NA,NA,63.12538367,26064,62.53245452,63.70771273,NA,"Percentage",NA
+"IN12","Attainment at age 11","ITL2","","West Yorkshire","2021-2022","Not eligible","11","Total",NA,NA,64.15785191,22122,63.51731285,64.78562943,NA,"Percentage",NA

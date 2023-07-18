@@ -18,7 +18,11 @@ class Choropleth {
         this.rendered = false
         this.debug = false
 
-        this._init()
+        if (window['mapjs']) {
+            this.render()
+        } else {
+            this._init()
+        }
     }
 
     _init() {
@@ -104,13 +108,15 @@ class Choropleth {
             console.info('Map resources loaded')
 
             if (self.el && self.geodata && self.data) {
-                /*window.addEventListener('resize', function (event) {
-                    clearTimeout(window[`resized${self.el}`])
-                    window[`resized${self.el}`] = setTimeout(function () {
-                        self.render(self.filteredData)
-                    }, 250)
-                }, true)*/
-
+                if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
+                    window.addEventListener('resize', function (event) {
+                        clearTimeout(window[`resized${self.el}`])
+                        window[`resized${self.el}`] = setTimeout(function () {
+                            self.render(self.filteredData)
+                        }, 250)
+                    }, true)
+                }
+                window['mapjs'] = true
                 self.render()
             }
         }

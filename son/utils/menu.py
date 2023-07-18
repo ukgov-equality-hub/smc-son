@@ -107,16 +107,8 @@ menu = {
                     'name': 'Routes into work (16 to 29 years)',
                     'indicators': [
                         {
-                            'id': 'IN211',
-                            'name': 'Young people who are NEET'
-                        },
-                        {
-                            'id': 'IN212',
-                            'name': 'Young people in education and training'
-                        },
-                        {
-                            'id': 'IN213',
-                            'name': 'Young people in employment'
+                            'id': 'IN21',
+                            'name': 'Destinations after age 16'
                         },
                         {
                             'id': 'IN22',
@@ -233,7 +225,7 @@ menu = {
                             'name': 'Availability of high-quality school education'
                         },
                         {
-                            'id': 'DR231',
+                            'id': 'DR23a',
                             'name': 'Access to higher education'
                         },
                         {

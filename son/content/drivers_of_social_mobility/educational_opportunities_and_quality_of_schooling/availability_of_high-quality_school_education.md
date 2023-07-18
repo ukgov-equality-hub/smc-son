@@ -23,7 +23,7 @@ The average attainment score for students in OECD countries was 487 in 2018, up 
 Overview
 
 ## Chart
-{ "title": "Availability of high-quality school education", "data": "/static/data/indicators/DR22_overview-20230417.csv", "_width": 1575, "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "Average pupil attainment scores", "xgrid": false, "ygrid": true, "yticks": 5, "xtitle": "", "ytitle": "", "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Average pupil attainment scores", "align": "right", "format": "1dp" }] }
+{ "code": "DR22", "title": "Availability of high-quality school education", "data": "/static/data/indicators/DR22_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "Average pupil attainment scores", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Average pupil attainment scores", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source
