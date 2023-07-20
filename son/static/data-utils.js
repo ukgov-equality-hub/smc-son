@@ -207,10 +207,13 @@ class DataUtils {
         for (let i = 1; i < rows.length; i++) {
             const row = {}
             if ((`${rows[i]} `).trim() != '') {
-                const currentline = this.substituteCommas(rows[i]).split(csvFormat.delimiter)
+                let currentLine = rows[i]
+                currentLine = currentLine.replace(/,""/g, ',##EMPTY##')
+                currentLine = currentLine.replace(/"",/g, '##EMPTY##,')
+                currentLine = this.substituteCommas(currentLine).split(csvFormat.delimiter)
                 for (let j = 0; j < headers.length; j++) {
-                    let str = this.stripQuote(currentline[j] ? currentline[j].replace(/###/g, csvFormat.delimiter) : '')
-                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.trim()
+                    let str = this.stripQuote(currentLine[j] ? currentLine[j].replace(/###/g, csvFormat.delimiter) : '')
+                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.indexOf('##EMPTY##') > -1 ? '' : str.trim()
                 }
                 result.push(row)
             }

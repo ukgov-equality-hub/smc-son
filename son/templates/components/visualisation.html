@@ -82,6 +82,10 @@
                     buildChart{{ id }}(datafile)
                 }
                 catch (e) {}
+
+                if (document.getElementById('map_tooltip{{ id }}')) {
+                    document.getElementById('map_tooltip{{ id }}').style.visibility = 'hidden'
+                }
             }
         </script>
         {% endif %}

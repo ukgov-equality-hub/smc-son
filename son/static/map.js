@@ -288,9 +288,13 @@ class Choropleth {
                 .attr('id', `${self.el}__names`)
                 .attr('class', 'names')
 
-            info = d3.select(`#${self.el}`).append('div')
-                .attr('class', 'info')
-                .style('display', 'none')
+            //if (!document.getElementById(`${self.el}__info`)) {
+            //    info = d3.select(`#${self.el}`).append('div')
+            //        .attr('id', `${self.el}__info`)
+            //        .attr('class', 'info')
+            //} else {
+            //    info = d3.select(`#${self.el}__info`)
+            //}
 
             self.zoom = d3.zoom()
                 .scaleExtent([1, 15])  // [1 << 8, 1 << 22]
@@ -709,7 +713,7 @@ class Choropleth {
         }
 
         function mouseMoved(e) {
-            info.text(formatLocation(self.projection.invert(d3.pointer(e)), d3.zoomTransform(this).k))
+            //info.text(formatLocation(self.projection.invert(d3.pointer(e)), d3.zoomTransform(this).k))
         }
 
         function formatLocation(p, k) {

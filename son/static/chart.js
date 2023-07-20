@@ -618,7 +618,7 @@ class Chart {
                 legendDiv.style.marginTop = `${swatchSize * 1.75}px`
                 div.appendChild(legendDiv)
             } else if (lci && uci) {
-                if (document.getElementById(`${self.el}_cicb`) && document.getElementById(`${self.el}_cicb`).checked) {
+                if (document.getElementById(`${self.el}_cicb`) && document.getElementById(`${self.el}_cicb`).checked || showCi == 'visible') {
                     document.getElementById(self.el).getElementsByTagName('svg')[0].classList.add('highlight-ci')
                 }
             }
