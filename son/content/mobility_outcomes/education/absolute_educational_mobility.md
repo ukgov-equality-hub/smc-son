@@ -80,7 +80,7 @@ For data by disability status, respondents were asked if they had a physical or 
 For data by area, the region used is where respondents currently live, not where they grew up. Because of this, the percentages may reflect graduates moving in from, or out to, other areas. 
 
 # Type of data
-Survey data
+Survey data, weighted using UKHLS population weights.
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
