@@ -17,7 +17,7 @@ The median (average) number of research students in the UK went up by 4% from 20
 Overview
 
 ## Chart
-{ "code": "DR53", "title": "Ratio (relative to 2015) of the median (average) number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)", "data": "/static/data/indicators/DR53_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Number of students", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Number of students", "align": "right", "format": "2dp" }] }
+{ "code": "DR53", "title": "Ratio (relative to 2015) of the median (average) number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)", "data": "/static/data/indicators/DR53_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Number of students", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Number of students", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area (ITL2)

@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",13.7169,146,12.770024,14.663776,0.4831,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","Yes",12.7096,141,11.717644,13.701556,0.5061,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","Yes",12.9011,149,11.729804,14.072396,0.5976,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","Yes",10.829,135,10.074792,11.583208,0.3848,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",10.405,140,9.561808,11.248192,0.4302,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",16.5602,1230,16.078824,17.041576,0.2456,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","No",14.8846,1356,14.511612,15.257588,0.1903,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","No",13.047,1480,12.73928,13.35472,0.157,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","No",12.4924,1228,12.124116,12.860684,0.1879,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","Yes",10.829,135,10.074792,11.583208,0.3848,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","Yes",12.9011,149,11.729804,14.072396,0.5976,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","Yes",12.7096,141,11.717644,13.701556,0.5061,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",13.7169,146,12.770024,14.663776,0.4831,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",11.35,1024,11.060116,11.639884,0.1479,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","No",12.4924,1228,12.124116,12.860684,0.1879,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","No",13.047,1480,12.73928,13.35472,0.157,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","No",14.8846,1356,14.511612,15.257588,0.1903,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",16.5602,1230,16.078824,17.041576,0.2456,"Pounds",NA

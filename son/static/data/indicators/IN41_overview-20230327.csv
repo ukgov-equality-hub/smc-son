@@ -1,7 +1,7 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2014","Professional","25","Total",NA,NA,56.7,217,53.00023655,60.39976345,1.8876691,"Percentage",NA
-"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2014","Intermediate","25","Total",NA,NA,34.2,258,30.65787013,37.74212987,1.807242324,"Percentage",NA
 "IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2014","Working","25","Total",NA,NA,20.3,214,17.29658283,23.30341717,1.532383859,"Percentage",NA
-"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2021","Professional","32","Total",NA,NA,69.7,295,66.28094522,73.11905478,1.744447759,"Percentage",NA
-"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2021","Intermediate","32","Total",NA,NA,54.7,217,50.99651048,58.40348952,1.88957019,"Percentage",NA
+"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2014","Intermediate","25","Total",NA,NA,34.2,258,30.65787013,37.74212987,1.807242324,"Percentage",NA
+"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2014","Professional","25","Total",NA,NA,56.7,217,53.00023655,60.39976345,1.8876691,"Percentage",NA
 "IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2021","Working","32","Total",NA,NA,33.9,182,30.37816557,37.42183443,1.796887318,"Percentage",NA
+"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2021","Intermediate","32","Total",NA,NA,54.7,217,50.99651048,58.40348952,1.88957019,"Percentage",NA
+"IN41","Acquisition of further training and qualifications","Country","K02000001","United Kingdom","2021","Professional","32","Total",NA,NA,69.7,295,66.28094522,73.11905478,1.744447759,"Percentage",NA

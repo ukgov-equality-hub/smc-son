@@ -1,7 +1,7 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Higher professional","25-29","Total",NA,NA,90.32,577,87.9092,92.7308,1.23,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Lower professional","25-29","Total",NA,NA,92.84,626,90.8212,94.8588,1.03,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Intermediate","25-29","Total",NA,NA,90.14,673,87.886,92.394,1.15,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Higher working","25-29","Total",NA,NA,87.84,421,84.7236,90.9564,1.59,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Lower working","25-29","Total",NA,NA,76.89,508,73.2248,80.5552,1.87,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Higher working","25-29","Total",NA,NA,87.84,421,84.7236,90.9564,1.59,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Intermediate","25-29","Total",NA,NA,90.14,673,87.886,92.394,1.15,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Lower professional","25-29","Total",NA,NA,92.84,626,90.8212,94.8588,1.03,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Higher professional","25-29","Total",NA,NA,90.32,577,87.9092,92.7308,1.23,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2021","Total","25-29","Total",NA,NA,87.95,2805,86.7544,89.1456,0.61,"Percentage",NA

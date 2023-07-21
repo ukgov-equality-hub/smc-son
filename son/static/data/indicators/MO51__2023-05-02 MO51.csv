@@ -1,0 +1,41 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-64","Total",NA,NA,70.94329707,12159,70.11897797,71.74120888,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-64","Total",NA,NA,46.1839995,5785,44.88003038,47.46609848,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-64","Total","Disability","No",73.58565724,7218,72.54646768,74.59433353,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-64","Total","Disability","No",53.46115495,2661,51.52161131,55.34792869,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-64","Total","Disability","Yes",60.67430112,3379,58.99834004,62.32084791,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-64","Total","Disability","Yes",34.15432473,2486,32.28659125,36.05330991,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-34","Total",NA,NA,56.28623137,1514,53.73292829,58.79222395,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-34","Total",NA,NA,22.16348221,562,18.70109688,25.72374946,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","35-44","Total",NA,NA,69.07218431,2920,67.32861778,70.71533707,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","35-44","Total",NA,NA,37.81712556,915,34.66108015,41.04606429,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","45-54","Total",NA,NA,75.05249043,3921,73.64601037,76.38034853,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","45-54","Total",NA,NA,47.93337798,1642,45.48809917,50.37802418,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","55-64","Total",NA,NA,80.76680929,3804,79.46779697,81.99896501,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","55-64","Total",NA,NA,59.64306345,2666,57.74904916,61.50957317,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"North East","2016-20","Owned","25-64","Total",NA,NA,72.24072343,468,67.92544877,76.23555695,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"North East","2016-20","Not owned","25-64","Total",NA,NA,45.34926484,451,40.57283206,49.95571708,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"South West","2016-20","Owned","25-64","Total",NA,NA,72.66820735,1154,69.94538904,75.17276364,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"South West","2016-20","Not owned","25-64","Total",NA,NA,53.96334843,432,49.10588061,58.7102436,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Wales","2016-20","Owned","25-64","Total",NA,NA,72.2035913,620,68.38599461,75.59557209,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Wales","2016-20","Not owned","25-64","Total",NA,NA,51.93740574,297,46.00703086,57.65936822,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Scotland","2016-20","Owned","25-64","Total",NA,NA,73.07891256,857,69.94046962,75.99114217,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Scotland","2016-20","Not owned","25-64","Total",NA,NA,49.69912234,767,46.07751189,53.27311234,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"North West","2016-20","Owned","25-64","Total",NA,NA,72.07739416,1522,69.74839522,74.31854362,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"North West","2016-20","Not owned","25-64","Total",NA,NA,45.62363327,698,41.81799566,49.33717401,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Yorkshire and The Humber","2016-20","Owned","25-64","Total",NA,NA,72.96079869,1288,70.3871784,75.31529222,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"Yorkshire and The Humber","2016-20","Not owned","25-64","Total",NA,NA,43.46446703,599,39.39408123,47.4825965,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"East Midlands","2016-20","Owned","25-64","Total",NA,NA,70.5888682,1044,67.62876397,73.25132491,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"East Midlands","2016-20","Not owned","25-64","Total",NA,NA,48.27908556,510,43.82163185,52.66952087,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"West Midlands","2016-20","Owned","25-64","Total",NA,NA,72.29794702,1111,69.54341664,74.89251424,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"West Midlands","2016-20","Not owned","25-64","Total",NA,NA,46.86959117,508,42.44192189,51.2957161,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"East of England","2016-20","Owned","25-64","Total",NA,NA,72.68871617,1305,70.13753432,75.04740159,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"East of England","2016-20","Not owned","25-64","Total",NA,NA,45.37939322,547,41.10991712,49.61711542,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"London","2016-20","Owned","25-64","Total",NA,NA,59.59102402,1124,56.5836746,62.4055097,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"London","2016-20","Not owned","25-64","Total",NA,NA,35.30692617,439,30.61543718,39.74664579,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"South East","2016-20","Owned","25-64","Total",NA,NA,74.94422536,1666,72.755428,76.97638261,NA,"Percentage",NA
+"MO51","Absolute housing mobility","ITL1",NA,"South East","2016-20","Not owned","25-64","Total",NA,NA,47.83530081,537,43.37766483,51.99258896,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-64","Women",NA,NA,63.86228146,4674,62.44613322,65.2216189,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-64","Women",NA,NA,34.93488699,2545,33.0775733,36.8196361,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Owned","25-64","Men",NA,NA,75.08129684,7485,74.07376881,76.04695249,NA,"Percentage",NA
+"MO51","Absolute housing mobility","Country","K02000001","United Kingdom","2016-20","Not owned","25-64","Men",NA,NA,54.88668871,3240,53.14391055,56.60036368,NA,"Percentage",NA

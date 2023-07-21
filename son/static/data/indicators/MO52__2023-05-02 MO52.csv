@@ -1,0 +1,25 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","1991",NA,NA,"Total",NA,NA,2.88,NA,NA,NA,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2001",NA,NA,"Total",NA,NA,3.17,NA,NA,NA,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2011",NA,NA,"Total",NA,NA,3.79,NA,NA,NA,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,NA,"Total",NA,NA,4.59,NA,NA,NA,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-64","Women",NA,NA,3.291338,NA,2.977077,3.638774,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-64","Men",NA,NA,2.476532,NA,2.270467,2.7013,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"North East","2016-20",NA,"25-64","Total",NA,NA,3.136171,NA,2.381662,4.129707,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"Yorkshire and The Humber","2016-20",NA,"25-64","Total",NA,NA,3.509804,NA,2.868092,4.295094,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"East Midlands","2016-20",NA,"25-64","Total",NA,NA,2.571175,NA,2.070483,3.192946,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"West Midlands","2016-20",NA,"25-64","Total",NA,NA,2.958462,NA,2.383512,3.672101,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"North West","2016-20",NA,"25-64","Total",NA,NA,3.076546,NA,2.558467,3.699534,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"East of England","2016-20",NA,"25-64","Total",NA,NA,3.203485,NA,2.601966,3.944063,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"London","2016-20",NA,"25-64","Total",NA,NA,2.702097,NA,2.149586,3.39662,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"South East","2016-20",NA,"25-64","Total",NA,NA,3.261809,NA,2.673328,3.979833,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"South West","2016-20",NA,"25-64","Total",NA,NA,2.268199,NA,1.804934,2.850368,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"Wales","2016-20",NA,"25-64","Total",NA,NA,2.403793,NA,1.804672,3.201813,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","ITL1",NA,"Scotland","2016-20",NA,"25-64","Total",NA,NA,2.747428,NA,2.233154,3.380135,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-64","Total",NA,NA,2.845017,NA,2.666722,3.035233,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-34","Total",NA,NA,4.521987,NA,3.62284,5.644293,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"35-44","Total",NA,NA,3.672284,NA,3.150919,4.279916,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"45-54","Total",NA,NA,3.267829,NA,2.901502,3.680406,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"55-64","Total",NA,NA,2.841449,NA,2.541667,3.176589,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-64","Total","Disability","No",2.425105,NA,2.211953,2.658798,NA,"Odds ratio",NA
+"MO52","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,"25-64","Total","Disability","Yes",2.974472,NA,2.670838,3.312625,NA,"Odds ratio",NA

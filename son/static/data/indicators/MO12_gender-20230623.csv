@@ -1,0 +1,3 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64",NA,"Sex","Men",0,NA,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000002","United Kingdom","2018-22",NA,"25-64",NA,"Sex","Women",-0.0079,NA,-0.012016,-0.003784,0.0021,"Unidiff parameter estimates",NA
