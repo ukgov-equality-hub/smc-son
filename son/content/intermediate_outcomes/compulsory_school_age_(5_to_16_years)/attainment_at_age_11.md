@@ -5,13 +5,23 @@ IN12
 Attainment at age 11
 
 ## Summary
-Placeholder summary text
+Data on the percentage of pupils meeting the expected standard in reading, writing and maths by the age of 11 years.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+In the 4 school years ending in July 2019, the percentage of pupils who met the expected standard in reading, writing and maths by 11 years old went up from 53% to 65%. It went down to 59% in the 2021 to 2022 school year.
+<br>
+In the 9 school years ending in July 2019, the gap between pupils from disadvantaged backgrounds and non-disadvantaged pupils (the ‘disadvantage gap’) went down. It then went up in the 2021 to 2022 school year to the highest level since 2012.
+<br>
+In the 2021 to 2022 school year:
+<ul class="govuk-list">
+<li>43% of disadvantaged pupils and 66% of non-disadvantaged pupils met the expected standard</li>
+<li>47% of disadvantaged girls and 39% of disadvantaged boys met the expected standard, compared with 70% of non-disadvantaged girls and 61% of non-disadvantaged boys</li>
+<li>there were large variations between pupils eligible for free school meals (FSM) in different ethnic groups – for example, 76% of FSM-eligible pupils from the Chinese ethnic group met the expected standard, compared with 12% of Gypsy or Roma pupils</li>
+<li>disadvantaged pupils in London, the West Midlands, and Tees Valley and Durham were the most likely to meet the expected standard out of all regions – pupils in southern and eastern parts of England were the least likely to</li>
+</ul>
 
 ## Section
 Overview
@@ -85,25 +95,33 @@ FSM eligible vs. Not FSM eligible
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Department for Education. National curriculum assessments at key stage 2 in England, 2022
 
 # Time period
-e.g. 20XX to 20YY
+September 2015 to July 2022
 
 # Geographic area
-e.g. UK
+England
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the percentage of pupils who met the expected standard in reading, writing and maths at the end of key stage 2, when pupils are usually 11 years old.
+<br>
+Disadvantaged pupils are those who:
+<ul class="govuk-list">
+<li>were registered as eligible for free school meals at any point in the last 6 years</li>
+<li>are looked after by a local authority in England and Wales, or who left local authority care through adoption, a special guardianship order, a residence order or a child arrangements order</li>
+</ul>
+The ‘disadvantage gap index’ summarises the relative attainment gap between disadvantaged pupils and all other pupils.It is based on their scores in reading and maths at the end of key stage 2. A disadvantage gap score of 0 means there was no difference in achievement. A score of +10 means that every non-disadvantaged pupil did better than every disadvantaged pupil.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
+<br>
+Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
+<br>
+Figures for the 2021 to 2022 school year are based on revised data. Figures for other years are based on final data.
 
 # Type of data
-e.g. Survey data, weighted
+Administrative data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.

@@ -5,13 +5,15 @@ MO21
 Absolute income mobility
 
 ## Summary
-Placeholder summary text
+UK and international data on upward absolute income mobility – people whose income at 30 years old was higher than their parents’ income at the same age.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+Data on people born between 1960 and 1987 in the UK shows that absolute income mobility was above 70% for people born in the mid-1970s. It went down to below 70% for people born later.
+<br>
+The Netherlands had the highest level of absolute income mobility out of the 8 countries included in the data, at nearly 80% for people born in the mid-1970s. It also went down for people born in the 1980s.
 
 ## Section
 Overview
@@ -21,25 +23,24 @@ Overview
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Manduca and others (2020). Trends in absolute income mobility in North America and Europe.
 
 # Time period
-e.g. 20XX to 20YY
+1960 to 1987 (people’s year of birth)
 
 # Geographic area
-e.g. UK
+UK and internationally
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows estimates of upward absolute income mobility for people born between 1960 and 1987.
+<br>
+The upward absolute mobility rate is the percentage of children in each year (‘birth cohort’) whose family income at 30 years old was higher than their parents’ family income at 30 years old.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+Income is calculated before tax but after benefits, and adjusted for inflation. Incomes for each country are based on both register and survey data.
 
 # Type of data
-e.g. Survey data, weighted
+Survey data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.

@@ -5,60 +5,70 @@ IN11
 Level of development at age 5
 
 ## Summary
-Placeholder summary text
+Data on the percentage of 5 year olds who achieve a ‘good level of development’.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+In the 7 school years ending in July 2019, the percentage of 5 year olds who achieved a good level of development (meeting at least the expected standard in the early years foundation stage) went up from 52% to 72%. It went down to 65% in the 2021 to 2022 school year.
+<br>
+In the 2021 to 2022 school year:
+<ul class="govuk-list">
+<li>49% of pupils eligible for free school meals (FSM) and 69% of non-eligible pupils achieved a good level of development</li>
+<li>75% of girls and 62% of boys achieved a good level of development – for students eligible for FSM, 57% of girls and 42% of boys achieved the level</li>
+<li>FSM-eligible children from Black, Asian and Mixed ethnic backgrounds were more likely to achieve a good level of development than FSM-eligible White children</li>
+<li>FSM-eligible pupils in London, East Yorkshire and North Lincolnshire, and the West Midlands were the most likely out of all areas to to achieve a good level of development – pupils in Cumbria were the least likely to</li>
+</ul>
 
 ## Section
-Overview
+By year
 
 ## Chart
-{ "code": "IN11", "title": "Level of development at age 5", "data": "/static/data/indicators/IN11_overview-20230714.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "SEB", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
-
+{ "code": "IN11", "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)", "data": "/static/data/indicators/IN11_overview-20230714.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "SEB", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
-By area (ITL2)
+By area
 
 ## Map
-{ "code": "IN11", "title": "Level of development at age 5", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Number of students", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Number of students", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by region (England, September 2012 to July 2022)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Number of students", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Number of students", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By sex
 
 ## Chart
-{ "code": "IN11", "title": "Level of development at age 5", "data": "/static/data/indicators/IN11_gender-20230714.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "SEB", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)", "data": "/static/data/indicators/IN11_gender-20230714.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "SEB", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
 ## Chart
-{ "code": "IN11", "title": "Level of development at age 5", "data": [{ "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" }, { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" }, { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "range": [0, 80], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "outside", "labelColour": "#000", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)", "data": [{ "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" }, { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" }, { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "range": [0, 80], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "outside", "labelColour": "#000", "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Department for Education. Early years foundation stage (EYFS) profile results from the 2021 to 2022 academic year, 2022.
 
 # Time period
-e.g. 20XX to 20YY
+September 2012 to July 2022
 
 # Geographic area
-e.g. UK
+England
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
+<br>
+A child is classed as having a good level of development if they meet at least the expected standard in the early years foundation stage (EYFS).
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+The EYFS was updated in September 2021. This means data for the 2021 to 2022 school year is not directly comparable with data for earlier years.
+<br>
+Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
+<br>
+Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
 
 # Type of data
-e.g. Survey data, weighted
+Administrative data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
