@@ -15,7 +15,11 @@ class Chart {
         this.rendered = false
         this.debug = false
 
-        this._init()
+        if (window['chartjs']) {
+            this.render()
+        } else {
+            this._init()
+        }
     }
 
     _init() {
@@ -101,13 +105,15 @@ class Chart {
             console.info('Chart resources loaded')
 
             if (self.el && self.data && typeof Plot !== 'undefined') {
-                /*window.addEventListener('resize', function (event) {
-                    clearTimeout(window[`resized${self.el}`])
-                    window[`resized${self.el}`] = setTimeout(function () {
-                        self.render(self.filteredData)
-                    }, 250)
-                }, true)*/
-
+                if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
+                    window.addEventListener('resize', function (event) {
+                        clearTimeout(window[`resized${self.el}`])
+                        window[`resized${self.el}`] = setTimeout(function () {
+                            self.render(self.filteredData)
+                        }, 250)
+                    }, true)
+                }
+                window['chartjs'] = true
                 self.render()
             }
         }
@@ -146,8 +152,9 @@ class Chart {
         let group = options.group || null
         const sort = options.sort || null
         const sortFacet = options.sortFacet || null
-        const lci = options.lowerConfidence || null
-        const uci = options.upperConfidence || null
+        let lci = options.lowerConfidence || null
+        let uci = options.upperConfidence || null
+        const showCi = options.confidenceIntervals || null
         const xvalue = options.xvalue || null
         const yvalue = options.yvalue || null
         let dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
@@ -164,6 +171,7 @@ class Chart {
         const labelColour = options.labelColour || '#000'
         const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : Array.isArray(options.textLabels) ? options.textLabels : ''
         const labelKey = options.labelKey || null
+        const maximumLabelLength = options.maxLabelLength || -1
         const rotateDomainLabels = options.rotateDomainLabels || false
         const grid = options.grid == false ? false : true
         let xgrid = options.xgrid == false ? false : grid
@@ -303,6 +311,12 @@ class Chart {
                 }
 
                 if (lci && uci) {
+                    if ([...chartData.map(x => isNumeric(x[lci])), ...chartData.map(x => isNumeric(x[uci]))].indexOf(false) > -1) {
+                        lci = undefined
+                        uci = undefined
+                    }
+                }
+                if (lci && uci) {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
                         [ykey]: x[ykey],
@@ -316,7 +330,7 @@ class Chart {
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
                     if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y' && !range) range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
@@ -397,7 +411,7 @@ class Chart {
                         marks.push(Plot.dot(chartData, { ...chartOptions, r: 5, stroke: colourScheme[0], fill: colourScheme[0], x: x1key }))
                         marks.push(Plot.dot(chartData, { ...chartOptions, r: 5, stroke: colourScheme[colourScheme.length - 1], fill: colourScheme[colourScheme.length - 1], x: x2key }))
                     } else {
-                        marks.push(Plot.dot(chartData, { stroke: '#1d70b8', ...chartOptions,  }))
+                        marks.push(Plot.dot(chartData, { r: 5, stroke: '#1d70b8', ...chartOptions }))
                     }
                 }
 
@@ -481,6 +495,9 @@ class Chart {
                 xOptions['domain'] = domain
                 yOptions['group'] = group
             }
+            if (orientation == 'y' && !yOptions['domain'] && range) {
+                yOptions['domain'] = range
+            }
             if (isNumeric(xticks)) {
                 if (type == 'line' || type == 'linex' || type == 'liney') {
                     xOptions['domain'] = [
@@ -539,18 +556,18 @@ class Chart {
             if ((zkey || (ykey && group)) && legend && !plotted) {
                 let legends
                 if (zkey) {
-                    legends = [...new Set(data.flat().map(x => x[zkey]))]
+                    legends = [...new Set(chartData.flat().map(x => x[zkey]))]
                 } else if (orientation == 'y') {
                     if (group) {
-                        legends = [...new Set(data.flat().map(x => x[xkey]))]
+                        legends = [...new Set(chartData.flat().map(x => x[xkey]))]
                     } else {
                         legends = domain
                     }
                 } else {
                     if (group) {
-                        legends = [...new Set(data.flat().map(x => x[ykey]))]
+                        legends = [...new Set(chartData.flat().map(x => x[ykey]))].sort()
                     } else {
-                        legends = [...new Set(data.flat().map(x => x[zkey]))]
+                        legends = [...new Set(chartData.flat().map(x => x[zkey]))]
                     }
                 }
 
@@ -568,34 +585,42 @@ class Chart {
                     const item = d3.select(this)
                     const text = item.text()
                     item
-                        .attr('data-series', item.text())
+                        .attr('data-series', text)
                         .style('cursor', 'pointer')
                         .on('click', clicked)
                         //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
                 })
 
-                if (lci && uci) {
-                    const ci = document.createElement('span')
-                    ci.classList.add('confidence-interval')
-                    const cb = document.createElement('input')
-                    cb.setAttribute('id', `${self.el}_cicb`)
-                    cb.type = 'checkbox'
-                    cb.onclick = function () {
-                        document.getElementById(self.el).getElementsByTagName('svg')[0].classList.toggle('highlight-ci')
+                if (lci && uci ) {
+                    if (showCi == 'visible') {
+                        document.getElementById(self.el).getElementsByTagName('svg')[0].classList.add('highlight-ci')
+                    } else {
+                        const ci = document.createElement('span')
+                        ci.classList.add('confidence-interval')
+                        const cb = document.createElement('input')
+                        cb.setAttribute('id', `${self.el}_cicb`)
+                        cb.type = 'checkbox'
+                        cb.onclick = function () {
+                            document.getElementById(self.el).getElementsByTagName('svg')[0].classList.toggle('highlight-ci')
+                        }
+                        ci.appendChild(cb)
+                        const ciLabel = document.createElement('label')
+                        ciLabel.setAttribute('for', `${self.el}_cicb`)
+                        ciLabel.innerHTML = 'Confidence Intervals'
+                        ci.appendChild(ciLabel)
+                        legendDiv.appendChild(ci)
                     }
-                    ci.appendChild(cb)
-                    const ciLabel = document.createElement('label')
-                    ciLabel.setAttribute('for', `${self.el}_cicb`)
-                    ciLabel.innerHTML = 'Confidence Intervals'
-                    ci.appendChild(ciLabel)
-                    legendDiv.appendChild(ci)
                 }
 
                 legendDiv.style.display = 'block'
                 legendDiv.style.textAlign = 'center'
                 legendDiv.style.marginTop = `${swatchSize * 1.75}px`
                 div.appendChild(legendDiv)
+            } else if (lci && uci) {
+                if (document.getElementById(`${self.el}_cicb`) && document.getElementById(`${self.el}_cicb`).checked || showCi == 'visible') {
+                    document.getElementById(self.el).getElementsByTagName('svg')[0].classList.add('highlight-ci')
+                }
             }
 
             self.rendered = true
@@ -833,7 +858,7 @@ class Chart {
                     const parent = d3.select(this.parentNode)
 
                     if (text) {
-                        const data = chartData.filter(x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` == text)[0]
+                        const data = chartData.filter(x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` == (text.substr(text.length - 3) == '|CI' ? text.substr(0, text.length - 3) : text))[0]
                         if (data) {
                             const val = parseFloat(data[orientation == 'y' ? ykey : xkey], 10)
                             parent
@@ -872,7 +897,7 @@ class Chart {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
                             }
                             const pointer = d3.pointer(event, wrapper.node())
-                            if (text) tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
+                            if (text && text != 'null: null') tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
 
                             //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise() //d3.select(this).raise()
@@ -1000,6 +1025,7 @@ class Chart {
         }
 
         function maxLabelLength(data, key, style) {
+            if (maximumLabelLength > 0) {console.log();return maximumLabelLength}
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })
             if (max[0] && max[0].text) {
@@ -1082,7 +1108,9 @@ class Chart {
                 catch (e) {}
             }
 
-            self.highlight(series || this.getAttribute('data-name') || this.innerText)
+            if (series || this) {
+                self.highlight(series || this.getAttribute('data-name') || this.innerText)
+            }
         }
 
         function resetHighlight(event) {

@@ -1,0 +1,22 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Disadvantaged","11","Total",NA,NA,39,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Not known to be disadvantaged","11","Total",NA,NA,60,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Total","11","Total",NA,NA,53,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Disadvantaged","11","Total",NA,NA,47,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Not known to be disadvantaged","11","Total",NA,NA,67,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Total","11","Total",NA,NA,61,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Not known to be disadvantaged","11","Total",NA,NA,70,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Total","11","Total",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be disadvantaged","11","Total",NA,NA,71,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Total","11","Total",NA,NA,65,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Disadvantaged","11","Total",NA,NA,43,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Not known to be disadvantaged","11","Total",NA,NA,66,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Total","11","Total",NA,NA,59,NA,NA,NA,NA,"Percentage",NA

@@ -1,0 +1,11 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men","Sex","Men",8.843719139,7045,8.484285008,9.218380585,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women","Sex","Women",7.883907943,7045,7.555720097,8.226350852,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Men","Sex","Men",9.136831579,7045,8.761292453,9.528467604,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Women","Sex","Women",8.145208813,7045,7.800899035,8.504715457,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Men","Sex","Men",9.302636969,7045,8.924436172,9.696865204,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Women","Sex","Women",8.2930193,7045,7.944673702,8.656638609,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Men","Sex","Men",10.04449341,7045,9.615902901,10.49218664,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Women","Sex","Women",8.954361867,7045,8.561424193,9.365333925,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men","Sex","Men",10.59524538,7045,10.13001712,11.08183959,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women","Sex","Women",9.445340578,7045,9.019120189,9.891703045,NA,"Pounds",NA

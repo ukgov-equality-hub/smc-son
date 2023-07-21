@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,93.01309488,1945,91.78874997,94.02872024,0.571420988,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,88.65236542,2088,87.27854555,89.88380593,0.664607239,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men",NA,NA,85.94167547,2054,84.44573145,87.29204912,0.726101444,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women",NA,NA,70.81153995,2041,69.08604667,72.44000832,0.855602462,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Men",NA,NA,92.35591891,2143,91.17293703,93.38690971,0.564788949,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Women",NA,NA,80.04811928,2140,78.46345559,81.53035007,0.78237104,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Men",NA,NA,93.16308223,2694,92.17946547,94.05339384,0.478042953,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Women",NA,NA,83.22907432,2673,81.88418057,84.49446217,0.665888162,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Men",NA,NA,93.52684065,2274,92.44044115,94.44364691,0.511021879,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Women",NA,NA,86.92062944,2453,85.60764878,88.12995487,0.643445432,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men",NA,NA,85.94167547,2054,84.44573145,87.29204912,0.726101444,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women",NA,NA,70.81153995,2041,69.08604667,72.44000832,0.855602462,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,93.01309488,1945,91.78874997,94.02872024,0.571420988,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,88.65236542,2088,87.27854555,89.88380593,0.664607239,"Percentage",NA

@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",92.17345332,3619,91.28035315,92.98603028,0.435121716,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",81.29693521,400,77.40612987,84.46839601,1.801598505,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",85.1090016,3521,83.98677688,86.17536896,0.558314306,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",52.19809837,555,49.10953764,55.19371822,1.552086883,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","No",89.88872683,3820,88.94440052,90.77592886,0.467226618,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","Yes",64.73442316,451,61.01312948,68.25609652,1.847695673,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","No",91.45936165,4825,90.65858993,92.18276078,0.388819093,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","Yes",68.44368624,524,64.98380764,71.59965978,1.687717383,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","No",92.87554971,4239,92.07422217,93.58797641,0.386161794,"Percentage",NA
 "IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","Yes",72.03519936,474,68.3274414,75.32913064,1.786145213,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",85.1090016,3521,83.98677688,86.17536896,0.558314306,"Percentage",NA
-"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",52.19809837,555,49.10953764,55.19371822,1.552086883,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",92.17345332,3619,91.28035315,92.98603028,0.435121716,"Percentage",NA
+"IN31","Economic activity of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",81.29693521,400,77.40612987,84.46839601,1.801598505,"Percentage",NA

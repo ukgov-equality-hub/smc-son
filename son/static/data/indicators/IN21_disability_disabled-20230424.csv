@@ -1,0 +1,16 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Category_type2","Category2","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Total","Destinations","NEET","Disability","Yes",44.93,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Total","Destinations","NEET","Disability","Yes",38.78,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Total","Destinations","NEET","Disability","Yes",30.31,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Total","Destinations","NEET","Disability","Yes",29.01,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Total","Destinations","NEET","Disability","Yes",22.93,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Total","Destinations","Education and training","Disability","Yes",31.46,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Total","Destinations","Education and training","Disability","Yes",26.54,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Total","Destinations","Education and training","Disability","Yes",27.48,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Total","Destinations","Education and training","Disability","Yes",31.61,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Total","Destinations","Education and training","Disability","Yes",32.33,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Total","Destinations","Employment","Disability","Yes",23.61,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Total","Destinations","Employment","Disability","Yes",34.68,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Total","Destinations","Employment","Disability","Yes",42.21,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Total","Destinations","Employment","Disability","Yes",39.38,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Total","Destinations","Employment","Disability","Yes",44.73,NA,NA,NA,NA,"Percentage",NA

@@ -1,0 +1,16 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Category_type2","Category2","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Men","Destinations","NEET",NA,NA,21.09,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Men","Destinations","NEET",NA,NA,14.11,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Men","Destinations","NEET",NA,NA,11.89,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Men","Destinations","NEET",NA,NA,11.39,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Men","Destinations","NEET",NA,NA,10.16,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Men","Destinations","Education and training",NA,NA,30.68,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Men","Destinations","Education and training",NA,NA,28.26,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Men","Destinations","Education and training",NA,NA,29.53,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Men","Destinations","Education and training",NA,NA,30.47,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Men","Destinations","Education and training",NA,NA,35.99,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower working","16-24","Men","Destinations","Employment",NA,NA,48.23,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher working","16-24","Men","Destinations","Employment",NA,NA,57.63,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Intermediate","16-24","Men","Destinations","Employment",NA,NA,58.58,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Lower professional","16-24","Men","Destinations","Employment",NA,NA,58.14,NA,NA,NA,NA,"Percentage",NA
+"IN21","Destinations after age 16","Country","K02000001","United Kingdom","2022","Higher professional","16-24","Men","Destinations","Employment",NA,NA,53.84,NA,NA,NA,NA,"Percentage",NA
