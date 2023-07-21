@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,4.035965629,82,3.182631554,4.979959178,0.458501945,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,3.55064894,70,2.792892031,4.428993934,0.417372934,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men",NA,NA,7.806965465,158,6.667182101,9.034321794,0.603862167,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women",NA,NA,7.822685187,156,6.664310846,9.039219298,0.605843993,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Men",NA,NA,4.698666625,103,3.812591651,5.646667105,0.467876391,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Women",NA,NA,4.781631106,104,3.902833586,5.756283799,0.472818932,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Men",NA,NA,4.497684212,119,3.740645472,5.343045813,0.408775597,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Women",NA,NA,5.56244364,140,4.700257072,6.472400091,0.452077301,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Men",NA,NA,3.752719197,90,2.996409027,4.601421819,0.409442039,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Women",NA,NA,3.90555223,93,3.144417189,4.713779451,0.400347516,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men",NA,NA,7.806965465,158,6.667182101,9.034321794,0.603862167,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women",NA,NA,7.822685187,156,6.664310846,9.039219298,0.605843993,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,4.035965629,82,3.182631554,4.979959178,0.458501945,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,3.55064894,70,2.792892031,4.428993934,0.417372934,"Percentage",NA

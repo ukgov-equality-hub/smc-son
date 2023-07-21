@@ -18,7 +18,7 @@ This section shows how different areas in the UK are ranked for 5 different meas
         location.href = `/social_mobility_by_area/${a.name.toLowerCase().replace(/ /g, '_')}`
     }
 
-    (async function() {
+    (async function () {
         document.onmousemove = handleMouseMove
         function handleMouseMove(event) {
             let eventDoc, doc, body

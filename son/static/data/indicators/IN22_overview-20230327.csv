@@ -1,7 +1,7 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Higher professional","18-20","Total",NA,NA,50.55733713,397,45.34668387,55.4033108,2.565466053,"Percentage",NA
-"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Lower professional","18-20","Total",NA,NA,38.23519237,365,33.07813171,43.28126875,2.602841083,"Percentage",NA
-"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Intermediate","18-20","Total",NA,NA,34.69234416,335,29.53867897,39.98964777,2.666063472,"Percentage",NA
-"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Higher working","18-20","Total",NA,NA,33.67961866,220,27.42487649,40.29577636,3.283392822,"Percentage",NA
 "IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Lower working","18-20","Total",NA,NA,20.54638692,235,15.46104946,26.1526326,2.727444677,"Percentage",NA
+"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Higher working","18-20","Total",NA,NA,33.67961866,220,27.42487649,40.29577636,3.283392822,"Percentage",NA
+"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Intermediate","18-20","Total",NA,NA,34.69234416,335,29.53867897,39.98964777,2.666063472,"Percentage",NA
+"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Lower professional","18-20","Total",NA,NA,38.23519237,365,33.07813171,43.28126875,2.602841083,"Percentage",NA
+"IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Higher professional","18-20","Total",NA,NA,50.55733713,397,45.34668387,55.4033108,2.565466053,"Percentage",NA
 "IN22","Entry of young people into higher education","Country","K02000001","United Kingdom","2021","Total","18-20","Total",NA,NA,33.9,2128,31.87046361,35.93718519,1.037428976,"Percentage",NA

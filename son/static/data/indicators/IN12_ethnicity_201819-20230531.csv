@@ -1,0 +1,39 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Any other ethnic group",51,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Any other ethnic group",65,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Asian - Any other Asian",57,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Asian - Any other Asian",74,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Asian - Bangladeshi",66,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Asian - Bangladeshi",71,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Asian - Chinese",75,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Asian - Chinese",80,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Asian - Indian",62,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Asian - Indian",78,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Asian - Pakistani",55,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Asian - Pakistani",64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Black - Any other Black background",54,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Black - Any other Black background",63,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Black - Black African",60,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Black - Black African",69,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Black - Black Caribbean",48,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Black - Black Caribbean",60,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Mixed - Any other Mixed background",52,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Mixed - Any other Mixed background",72,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Mixed - White and Asian",53,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Mixed - White and Asian",77,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Mixed - White and Black African",53,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Mixed - White and Black African",71,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Mixed - White and Black Caribbean",47,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Mixed - White and Black Caribbean",64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","Unclassified",47,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","Unclassified",49,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","White - Any other White background",49,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","White - Any other White background",64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","White - Gypsy/Roma",17,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","White - Gypsy/Roma",21,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","White - Irish",47,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","White - Irish",78,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","White - Traveller of Irish heritage",23,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","White - Traveller of Irish heritage",32,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","FSM eligible","11","Total","Ethnicity","White - White British",44,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be FSM eligible","11","Total","Ethnicity","White - White British",69,NA,NA,NA,NA,"Percentage",NA

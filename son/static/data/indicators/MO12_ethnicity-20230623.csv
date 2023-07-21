@@ -1,0 +1,21 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","White British",0,12252,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","White other",0.018,12252,0.006632,0.029368,0.0058,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Mixed",-0.006,12252,-0.030892,0.018892,0.0127,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Black Caribbean",-0.075,12252,-0.109888,-0.040112,0.0178,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Black African",-0.067,12252,-0.090716,-0.043284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Indian",-0.012,12252,-0.029444,0.005444,0.0089,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Pakistani",-0.05,12252,-0.073716,-0.026284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Bangladeshi",-0.075,12252,-0.11126,-0.03874,0.0185,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Chinese",-0.034,12252,-0.07516,0.00716,0.021,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Other",-0.025,12252,-0.042444,-0.007556,0.0089,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","White British",0,13995,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","White other",-0.002,13995,-0.013172,0.009172,0.0057,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Mixed",-0.034,13995,-0.057716,-0.010284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Black Caribbean",-0.066,13995,-0.09834,-0.03366,0.0165,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Black African",-0.034,13995,-0.056932,-0.011068,0.0117,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Indian",-0.055,13995,-0.072248,-0.037752,0.0088,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Pakistani",-0.116,13995,-0.138932,-0.093068,0.0117,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Bangladeshi",-0.072,13995,-0.10924,-0.03476,0.019,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Chinese",-0.106,13995,-0.138144,-0.073856,0.0164,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Other",-0.063,13995,-0.079464,-0.046536,0.0084,"Unidiff parameter estimates",NA

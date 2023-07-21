@@ -18,7 +18,11 @@ class Choropleth {
         this.rendered = false
         this.debug = false
 
-        this._init()
+        if (window['mapjs']) {
+            this.render()
+        } else {
+            this._init()
+        }
     }
 
     _init() {
@@ -100,8 +104,21 @@ class Choropleth {
                     return
                 }
             }
+
             console.info('Map resources loaded')
-            if (self.el && self.geodata && self.data) self.render()
+
+            if (self.el && self.geodata && self.data) {
+                if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
+                    window.addEventListener('resize', function (event) {
+                        clearTimeout(window[`resized${self.el}`])
+                        window[`resized${self.el}`] = setTimeout(function () {
+                            self.render(self.filteredData)
+                        }, 250)
+                    }, true)
+                }
+                window['mapjs'] = true
+                self.render()
+            }
         }
 
         for (let i = 0; i < resources.length; i++) {
@@ -271,9 +288,13 @@ class Choropleth {
                 .attr('id', `${self.el}__names`)
                 .attr('class', 'names')
 
-            info = d3.select(`#${self.el}`).append('div')
-                .attr('class', 'info')
-                .style('display', 'none')
+            //if (!document.getElementById(`${self.el}__info`)) {
+            //    info = d3.select(`#${self.el}`).append('div')
+            //        .attr('id', `${self.el}__info`)
+            //        .attr('class', 'info')
+            //} else {
+            //    info = d3.select(`#${self.el}__info`)
+            //}
 
             self.zoom = d3.zoom()
                 .scaleExtent([1, 15])  // [1 << 8, 1 << 22]
@@ -692,7 +713,7 @@ class Choropleth {
         }
 
         function mouseMoved(e) {
-            info.text(formatLocation(self.projection.invert(d3.pointer(e)), d3.zoomTransform(this).k))
+            //info.text(formatLocation(self.projection.invert(d3.pointer(e)), d3.zoomTransform(this).k))
         }
 
         function formatLocation(p, k) {

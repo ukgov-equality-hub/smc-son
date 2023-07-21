@@ -1,0 +1,28 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN11","Level of development at age 5","National","E92000001","England","201819","FSM",5,"Total",NA,NA,57,50732,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201819","All other pupils",5,"Total",NA,NA,74,408083,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201819","Total",5,"Total",NA,NA,72,458815,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","FSM",5,"Total",NA,NA,57,49312,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","All other pupils",5,"Total",NA,NA,74,417356,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","Total",5,"Total",NA,NA,72,466668,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","FSM",5,"Total",NA,NA,56,51316,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","All other pupils",5,"Total",NA,NA,73,422310,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","Total",5,"Total",NA,NA,71,473626,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","FSM",5,"Total",NA,NA,54,50890,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","All other pupils",5,"Total",NA,NA,72,412711,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","Total",5,"Total",NA,NA,69,463601,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","FSM",5,"Total",NA,NA,51,49747,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","All other pupils",5,"Total",NA,NA,69,384134,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","Total",5,"Total",NA,NA,66,433881,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","FSM",5,"Total",NA,NA,45,50452,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","All other pupils",5,"Total",NA,NA,64,336634,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","Total",5,"Total",NA,NA,60,387086,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","FSM",5,"Total",NA,NA,36,43079,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","All other pupils",5,"Total",NA,NA,55,289359,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","Total",5,"Total",NA,NA,52,332438,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201920",NA,5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202021",NA,5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201920","Total",5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total",NA,NA,49.1,55944,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total",NA,NA,68.8,349779,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","Total",5,"Total",NA,NA,65.2,405723,NA,NA,NA,"Percentage",NA

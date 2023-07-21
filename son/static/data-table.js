@@ -21,7 +21,11 @@ class DataTable {
         this.rendered = false
         this.debug = false
 
-        this._init()
+        if (window['datatablejs']) {
+            this.render()
+        } else {
+            this._init()
+        }
     }
 
     _init() {
@@ -104,7 +108,10 @@ class DataTable {
                 }
             }
             console.info('Data table resources loaded')
-            if (self.el) self.render()
+            if (self.el) {
+                window['datatablejs'] = true
+                self.render()
+            }
         }
 
         for (let i = 0; i < resources.length; i++) {

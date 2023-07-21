@@ -1,7 +1,7 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Higher professional","25-29","Total",NA,NA,3.4,527,1.8516,4.9484,0.79,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Lower professional","25-29","Total",NA,NA,4.68,574,2.9552,6.4048,0.88,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Intermediate","25-29","Total",NA,NA,4,606,2.432,5.568,0.8,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Higher working","25-29","Total",NA,NA,4.9,375,2.7048,7.0952,1.12,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Lower working","25-29","Total",NA,NA,6.39,404,3.9988,8.7812,1.22,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Higher working","25-29","Total",NA,NA,4.9,375,2.7048,7.0952,1.12,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Intermediate","25-29","Total",NA,NA,4,606,2.432,5.568,0.8,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Lower professional","25-29","Total",NA,NA,4.68,574,2.9552,6.4048,0.88,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Higher professional","25-29","Total",NA,NA,3.4,527,1.8516,4.9484,0.79,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2021","Total","25-29","Total",NA,NA,4.56,2486,3.7368,5.3832,0.42,"Percentage",NA

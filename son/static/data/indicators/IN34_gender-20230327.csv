@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,17.0254,629,16.275896,17.774904,0.3824,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Men",NA,NA,15.3812,697,14.859252,15.903148,0.2663,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Men",NA,NA,13.5312,771,13.073344,13.989056,0.2336,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Men",NA,NA,12.9325,642,12.395068,13.469932,0.2742,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Men",NA,NA,12.0084,549,11.545252,12.471548,0.2363,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,15.449,753,14.95508,15.94292,0.252,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Women",NA,NA,13.97,802,13.4996,14.4404,0.24,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Women",NA,NA,12.4639,861,12.082876,12.844924,0.1944,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Women",NA,NA,11.6376,725,11.220316,12.054884,0.2129,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Men",NA,NA,12.9325,642,12.395068,13.469932,0.2742,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Men",NA,NA,13.5312,771,13.073344,13.989056,0.2336,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Men",NA,NA,15.3812,697,14.859252,15.903148,0.2663,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Men",NA,NA,17.0254,629,16.275896,17.774904,0.3824,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Women",NA,NA,10.397,620,10.10888,10.68512,0.147,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Women",NA,NA,11.6376,725,11.220316,12.054884,0.2129,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Women",NA,NA,12.4639,861,12.082876,12.844924,0.1944,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Women",NA,NA,13.97,802,13.4996,14.4404,0.24,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Women",NA,NA,15.449,753,14.95508,15.94292,0.252,"Pounds",NA

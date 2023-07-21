@@ -1,0 +1,11 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",8.555345101,7025,8.210319814,8.914869513,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",7.553378425,7025,7.182437165,7.943477169,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","No",8.843609935,7025,8.482963573,9.219588887,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","Yes",7.807882873,7025,7.416479274,8.219942739,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","No",9.004023968,7025,8.640460034,9.382885552,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","Yes",7.949509877,7025,7.552656311,8.367216072,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","No",9.712647455,7025,9.300870301,10.14265521,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","Yes",8.575142308,7025,8.133243197,9.041050885,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",10.27960401,7025,9.830240062,10.74950947,NA,"Pounds",NA
+"IN352","Direct effect of social origins on hourly earnings","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",9.075699254,7025,8.601079373,9.57650934,NA,"Pounds",NA

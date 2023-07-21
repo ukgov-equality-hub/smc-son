@@ -1,21 +1,21 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","White other",15.39799066,6235,14.73605643,16.08965856,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","White other",10.92406226,6235,10.44084947,11.42963861,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","White British",15.47026095,6235,15.0473208,15.90508883,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","White other",15.39799066,6235,14.73605643,16.08965856,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","White British",10.97533422,6235,10.64727676,11.31349959,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Bangladeshi",13.77034839,6235,11.92828332,15.89688052,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","White British",15.47026095,6235,15.0473208,15.90508883,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Bangladeshi",9.769335911,6235,8.467389594,11.27146957,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Indian",16.72252451,6235,15.55645995,17.97599368,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Bangladeshi",13.77034839,6235,11.92828332,15.89688052,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Indian",11.86374916,6235,11.01310859,12.78009229,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Mixed",16.19986358,6235,14.77273796,17.76485717,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Indian",16.72252451,6235,15.55645995,17.97599368,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Mixed",11.4929488,6235,10.46916386,12.61685019,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Other",15.39932418,6235,14.2940703,16.59003909,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Mixed",16.19986358,6235,14.77273796,17.76485717,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Other",10.92500832,6235,10.12409289,11.78928404,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Black Caribbean",16.0611557,6235,14.29156445,18.04985895,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Other",15.39932418,6235,14.2940703,16.59003909,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Black Caribbean",11.39454288,6235,10.14993853,12.79176292,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Pakistani",15.44145517,6235,13.85569879,17.20869811,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Black Caribbean",16.0611557,6235,14.29156445,18.04985895,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Pakistani",10.95489803,6235,9.826424887,12.21296578,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Chinese",18.154378,6235,15.83201738,20.81740011,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Pakistani",15.44145517,6235,13.85569879,17.20869811,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Chinese",12.8795737,6235,11.2174289,14.78800714,NA,"Pounds",NA
-"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Black African",16.88201811,6235,15.50784127,18.37796315,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Chinese",18.154378,6235,15.83201738,20.81740011,NA,"Pounds",NA
 "IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Ethnicity","Black African",11.97690146,6235,11.00827682,13.03075595,NA,"Pounds",NA
+"IN34","Earnings of young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Ethnicity","Black African",16.88201811,6235,15.50784127,18.37796315,NA,"Pounds",NA

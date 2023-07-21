@@ -1,0 +1,15 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Disadvantaged","11","Boys",NA,NA,36,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201516","Not known to be disadvantaged","11","Boys",NA,NA,56,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Disadvantaged","11","Boys",NA,NA,43,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201617","Not known to be disadvantaged","11","Boys",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Disadvantaged","11","Boys",NA,NA,46,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201718","Not known to be disadvantaged","11","Boys",NA,NA,67,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Disadvantaged","11","Boys",NA,NA,46,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201819","Not known to be disadvantaged","11","Boys",NA,NA,66,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Disadvantaged","11","Boys",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","201920","Not known to be disadvantaged","11","Boys",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Disadvantaged","11","Boys",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202021","Not known to be disadvantaged","11","Boys",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Disadvantaged","11","Boys",NA,NA,39,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Not known to be disadvantaged","11","Boys",NA,NA,61,NA,NA,NA,NA,"Percentage",NA

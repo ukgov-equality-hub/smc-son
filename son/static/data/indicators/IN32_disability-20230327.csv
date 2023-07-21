@@ -1,11 +1,11 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",3.329343746,121,2.756642393,3.951978486,0.304932677,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",7.825141711,29,5.326265844,10.82029347,1.401537659,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",6.174327631,212,5.391159263,7.008615474,0.41261638,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",17.73413387,99,14.5744052,21.08982263,1.662096282,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","No",3.785500019,149,3.188171025,4.42311259,0.315036114,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher working","25-29","Total","Disability","Yes",12.7122685,57,9.714621375,16.06294998,1.619471582,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","No",4.291872342,196,3.735854279,4.900583595,0.297124826,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Intermediate","25-29","Total","Disability","Yes",10.81224794,59,8.174374614,13.6530236,1.397614538,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","No",3.280614822,142,2.763577194,3.860189784,0.27974811,"Percentage",NA
 "IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower professional","25-29","Total","Disability","Yes",8.937313709,41,6.460649871,11.78841825,1.359124587,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","No",6.174327631,212,5.391159263,7.008615474,0.41261638,"Percentage",NA
-"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Lower working","25-29","Total","Disability","Yes",17.73413387,99,14.5744052,21.08982263,1.662096282,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","No",3.329343746,121,2.756642393,3.951978486,0.304932677,"Percentage",NA
+"IN32","Unemployment among young people","Country","K02000001","United Kingdom","2014-21","Higher professional","25-29","Total","Disability","Yes",7.825141711,29,5.326265844,10.82029347,1.401537659,"Percentage",NA
