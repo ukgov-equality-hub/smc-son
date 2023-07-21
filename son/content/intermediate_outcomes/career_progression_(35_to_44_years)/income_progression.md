@@ -5,13 +5,17 @@ IN43
 Income progression
 
 ## Summary
-Placeholder summary text
+Data on changes in the annual incomes of men and women aged 25 to 44 years in the UK, by socio-economic background (SEB).
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Placeholder summary main findings
+Data from 2014 to 2021 shows that annual incomes of men and women aged 25 to 44 years from professional backgrounds went up more than for those from intermediate or working class backgrounds.
+<br>
+Men from professional backgrounds earned around £25,000 at 25 years old, rising to nearly £50,000 at 44 years old. Those from lower working class backgrounds earned around £20,000 at 25 years old, and just over £30,000 at 44 years old.
+<br>
+Women’s average earnings were lower, and did not go up as quickly as men’s.
 
 ## Section
 Overview
@@ -25,25 +29,40 @@ By sex
 
 ## About
 # Data source(s)
-We would list the data sources here. e.g.<br>
-XYZ Survey, Office for National Statistics
+Office for National Statistics (ONS), Labour Force Survey (LFS) 
 
 # Time period
-e.g. 20XX to 20YY
+2014 to 2021 (combined)
 
 # Geographic area
-e.g. UK
+UK
 
 # What the data measures
-A paragraph or two of text explaining what has been measured.<br>
-We might use this space to define specific terms.
+The data shows the levels of income progression for people aged 25 to 44 years in the UK, by sex and socio-economic background.
+<br>
+Data is shown for the following socio-economic backgrounds:
+<ul class="govuk-list">
+<li>higher professional class</li>
+<li>lower professional class</li>
+<li>intermediate class</li>
+<li>higher working class</li>
+<li>lower working classes</li>
+</ul>
+These are based on the National Statistics Socio-economic Classification (NS-SEC), set by the ONS.
 
 # Things you need to know
-Here is a space to discuss the source and limitations of the data.<br>
-For example, who has been surveyed and how, whether anyone has been excluded from the data.
+The data used is weighted using the LFS population weights.
+<br>
+Estimates are the average marginal effects taken from a logistic regression model of access to the professional classes controlling for:
+<ul class="govuk-list">
+<li>age</li>
+<li>age squared (to account for the changing importance of age as people get older)</li>
+<li>survey year</li>
+<li>SEB</li>
+</ul>
 
 # Type of data
-e.g. Survey data, weighted
+Survey data
 
 ## Text
 Read more in State of the Nation 2023 on GOV.UK.
@@ -52,10 +71,6 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-<p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-2" style="color: #f47738;">
-    Note: This is an example CSV file download with fictitious values
-</p>
-
 <p class="govuk-body">
     <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
 </p>
