@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO42","Relative housing mobility","Country","K02000001","United Kingdom","1991",NA,NA,"Total",NA,NA,2.877493,NA,2.76919,2.990032,NA,"Odds ratio",NA
+"MO42","Relative housing mobility","Country","K02000001","United Kingdom","2001",NA,NA,"Total",NA,NA,3.166923,NA,3.052419,3.285722,NA,"Odds ratio",NA
+"MO42","Relative housing mobility","Country","K02000001","United Kingdom","2011",NA,NA,"Total",NA,NA,3.785744,NA,3.633131,3.944768,NA,"Odds ratio",NA
+"MO42","Relative housing mobility","Country","K02000001","United Kingdom","2016-20",NA,NA,"Total",NA,NA,4.586242,NA,3.465529,6.06938,NA,"Odds ratio",NA

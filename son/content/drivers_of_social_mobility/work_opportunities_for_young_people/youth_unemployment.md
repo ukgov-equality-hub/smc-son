@@ -17,7 +17,6 @@ In the 3 years from 2018 to 2021, unemployment rates for 16 to 24 year olds were
 <br>
 Rates were lower in more rural areas, such as the Highlands and Islands, Northern Ireland, and North Yorkshire.
 
-
 ## Section
 Overview
 

@@ -23,26 +23,35 @@ Relative educational mobility was similar:
 
 Relative educational mobility was greater in Scotland, but did not vary significantly across other parts of the UK.
 
-
 ## Section
 Overview
 
-## Placeholder
+## Chart
+{ "code": "MO32", "title": "Relative educational mobility", "data": "/static/data/indicators/MO32_overview-20230607.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Ratio", "align": "right", "format": "1dp" }] }
 
 ## Section
-By area (ITL2)
+By area
 
-## Placeholder
+## Chart
+{ "code": "MO32", "title": "Relative educational mobility", "data": "/static/data/indicators/MO32_area-20230607.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "zkey": "Area_type", "sort": "Area_name", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By sex
 
-## Placeholder
+## Chart
+{ "code": "MO32", "title": "Relative occupational mobility", "data": "/static/data/indicators/MO32_gender-20230607.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "zkey": "Sex", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
-## Placeholder
+## Chart
+{ "code": "MO32", "title": "Relative educational mobility", "data": "/static/data/indicators/MO32_ethnicity-20230607.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+By disability
+
+## Chart
+{ "code": "MO32", "title": "Relative occupational mobility", "data": "/static/data/indicators/MO32_disability-20230607.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
@@ -85,6 +94,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download full dataset (CSV)](/static/data/indicators/2023-06-07 MO32.csv.csv){: target="_blank" class="download" }

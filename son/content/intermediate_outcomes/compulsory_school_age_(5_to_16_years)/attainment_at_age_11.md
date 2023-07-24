@@ -64,10 +64,10 @@ Compare maps
 Independent maps
 
 # Map
-{ "code": "IN12", "title": "Disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "_domain": [20, 80], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{ "code": "IN12", "title": "Disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
 
 # Map
-{ "code": "IN12", "title": "Not disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "_domain": [20, 80], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{ "code": "IN12", "title": "Not disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#f7f7f7", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
 
 # Tab
 Bar chart

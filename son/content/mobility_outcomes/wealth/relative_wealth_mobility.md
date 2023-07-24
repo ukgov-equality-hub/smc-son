@@ -12,27 +12,56 @@ Summary main findings
 
 ## Text
 Data from 2016 to 2020 shows that older people had more wealth than younger people, particularly from property and pensions.
-<br>
+
 Estimated average total wealth by age group was:
-<ul class="govuk-list">
-<li>under £100,000 for 25 to 34 year olds</li>
-<li>around £200,000 for 35 to 44 year olds</li>
-<li>£375,000 for 45 to 54 year olds</li>
-<li>under £600,000 for 55 to 64 year olds</li>
-</ul>
+
+* under £100,000 for 25 to 34 year olds
+* around £200,000 for 35 to 44 year olds
+* £375,000 for 45 to 54 year olds
+* under £600,000 for 55 to 64 year olds
 
 The relationship in wealth between people and their parents was greater among women than men. 
-<br>
+
 A 10% increase in parents’ wealth was associated with the following increases in their children’s wealth:
-<ul class="govuk-list">
-<li>3.8% increase for women</li>
-<li>2.9% increase for men</li>
-</ul>
+
+* 3.8% increase for women
+* 2.9% increase for men
 
 ## Section
 Overview
 
-## Placeholder
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_overview-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Category", "sort": "Age", "scale": "£", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+Total wealth
+
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_total_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+Physical wealth
+
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_physical_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+Pension wealth
+
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_pension_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+Financial wealth
+
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_financial_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+Property wealth
+
+## Chart
+{ "code": "MO51", "title": "Relative wealth mobility", "data": "/static/data/indicators/MO51_property_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "%", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
@@ -74,6 +103,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download full dataset (CSV)](/static/data/indicators/2023-06-26 MO51.csv){: target="_blank" class="download" }
