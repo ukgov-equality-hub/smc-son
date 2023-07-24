@@ -1,0 +1,14 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO32","Relative educational mobility","ITL1",NA,"North East",2020,NA,"25-64","Total",NA,NA,4.44,NA,2.66,7.4,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"North West",2020,NA,"25-64","Total",NA,NA,3.95,NA,2.92,5.35,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"Yorkshire & Humberside",2020,NA,"25-64","Total",NA,NA,5.59,NA,3.9,8.01,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"East Midlands",2020,NA,"25-64","Total",NA,NA,3.18,NA,2.18,4.63,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"West Midlands",2020,NA,"25-64","Total",NA,NA,4.46,NA,3.1,6.42,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"East of England",2020,NA,"25-64","Total",NA,NA,5.51,NA,4.03,7.65,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"London",2020,NA,"25-64","Total",NA,NA,4.1,NA,3.21,5.24,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"South East",2020,NA,"25-64","Total",NA,NA,3.85,NA,3.02,4.91,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"South West",2020,NA,"25-64","Total",NA,NA,4.41,NA,3.18,6.11,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"Wales",2020,NA,"25-64","Total",NA,NA,3.76,NA,2.13,5.24,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"Scotland",2020,NA,"25-64","Total",NA,NA,3.13,NA,2.22,4.41,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"Northern Ireland",2020,NA,"25-64","Total",NA,NA,3.08,NA,1.31,7.22,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","ITL1",NA,"Overall",2020,NA,"25-64","Total",NA,NA,4.35,NA,3.94,4.79,NA,"Odds ratio",NA

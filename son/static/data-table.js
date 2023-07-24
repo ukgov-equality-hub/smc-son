@@ -107,7 +107,9 @@ class DataTable {
                     return
                 }
             }
+
             console.info('Data table resources loaded')
+
             if (self.el) {
                 window['datatablejs'] = true
                 self.render()
@@ -280,6 +282,9 @@ class DataTable {
                                 if (['left', 'center', 'right'].includes(columns[rows[i].children[j].innerText].align)) th.classList.add(`align-${columns[rows[i].children[j].innerText].align}`)
                                 th.innerHTML = columns[rows[i].children[j].innerText].heading
                                 rows[i].children[j].parentNode.replaceChild(th, rows[i].children[j])
+                            } else if (rows[i].children[j].tagName == 'TH') {
+                                if (['left', 'center', 'right'].includes(columns[rows[i].children[j].innerText].align)) rows[i].children[j].classList.add(`align-${columns[rows[i].children[j].innerText].align}`)
+                                rows[i].children[j].innerHTML = columns[rows[i].children[j].innerText].heading
                             }
                             rows[i].children[j].setAttribute('title', rows[i].children[j].innerText)
                             rows[i].children[j].setAttribute('scope', 'col')

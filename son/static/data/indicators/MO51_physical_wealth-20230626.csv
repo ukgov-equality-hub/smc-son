@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"25-34",NA,"Type of wealth","Physical wealth",19252.68044,6147,18673.85423,19831.50665,295.3194963,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"35-44",NA,"Type of wealth","Physical wealth",26708.89382,8224,25999.90451,27417.88312,361.729239,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"45-54",NA,"Type of wealth","Physical wealth",29638.30178,10754,28822.9726,30453.63097,415.9842768,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"55-64",NA,"Type of wealth","Physical wealth",35190.4223,12041,34321.81525,36059.02935,443.1668614,"Pounds",NA
