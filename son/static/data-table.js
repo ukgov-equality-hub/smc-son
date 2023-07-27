@@ -169,7 +169,7 @@ class DataTable {
                     self.dataTable['limit'] = limit
                     self.dataTable['page'] = 1
                     self.dataTable['pageSize'] = pageSize
-                    const columns = columnAttributes()
+                    const columns = self.dataUtils.columnAttributes(tableColumns, self.dataTable['headers'])
                     self.dataTable['columns'] = columns
                     const widths = []
                     for (const column in columns) {
@@ -186,66 +186,6 @@ class DataTable {
                     createDataTable()
                 })
             }
-        }
-
-        function columnAttributes() {
-            const columns = {}
-            const headers = self.dataTable['headers']
-
-            for (let i = 0; i < headers.length; i++) {
-                let heading = headers[i], include = true, align = '', width = '', format = '', replace = '', replaceWith = ''
-
-                if (Array.isArray(tableColumns) && tableColumns.length > 0) {
-                    include = false
-                    if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
-                        for (let j = 0; j < tableColumns.length; j++) {
-                            const tableColumn = tableColumns[j]
-                            if (tableColumn['column'] && tableColumn['column'] == heading) {
-                                heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
-                                include = true//'include' in tableColumn ? tableColumn['include'] : false
-                                align = 'align' in tableColumn ? tableColumn['align'] : ''
-                                width = 'width' in tableColumn ? tableColumn['width'] : `${(1 / tableColumns.length) * 100}%`
-                                format = 'format' in tableColumn ? tableColumn['format'] : ''
-                                replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
-                                replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
-                            }
-                        }
-                    } else {
-                        if (tableColumns.includes(heading)) {
-                            include = true
-                            heading = heading.replace(/_/g, ' ')
-                        }
-                    }
-                } else if (typeof tableColumns === 'object' && tableColumns !== null && !Array.isArray(tableColumns)) {
-                    include = false
-                    if (heading in tableColumns) {
-                        const tableColumn = tableColumns[heading]
-                        heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
-                        include = true//'include' in tableColumn ? tableColumn['include'] : false
-                        align = 'align' in tableColumn ? tableColumn['align'] : ''
-                        width = `${(1 / tableColumns.length) * 100}%`
-                        format = 'format' in tableColumn ? tableColumn['format'] : ''
-                        replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
-                        replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
-                    }
-                } else {
-                    heading = heading.replace(/_/g, ' ')
-                    width = `${(1 / headers.length) * 100}%`
-                }
-
-                const column = {
-                    heading: heading,
-                    include: include,
-                    align: align,
-                    width: width,
-                    format: format,
-                    replace: replace,
-                    replaceWith: replaceWith
-                }
-                columns[headers[i]] = column
-            }
-
-            return columns
         }
 
         function fixTable() {
@@ -510,10 +450,8 @@ class DataTable {
                             }
 
                             cell.innerHTML = content
-                            if (allowColumn(headers[j])) {
-                                row.appendChild(cell)
-                                userRow.push(cell.innerText.indexOf(',') > -1 ? `"${cell.innerText}"` : cell.innerText)
-                            }
+                            row.appendChild(cell)
+                            userRow.push(cell.innerText.indexOf(',') > -1 ? `"${cell.innerText}"` : cell.innerText)
                         }
                     }
 

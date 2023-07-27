@@ -1,5 +1,5 @@
 {% macro datatable(id, data) %}
-{% set data_table = [data, 'data'] | table %}
+{% set data_table = [data, 'dataTable', 'data'] | table %}
 <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
     {% for row in data_table %}
     {% if loop.index == 1 %}
@@ -69,12 +69,8 @@
     }
 
     function downloadDataFile(datafile, options) {
-
-
-
-
-
-
+        format = 'csv'
+        return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
     }
 </script>
 {% endmacro %}

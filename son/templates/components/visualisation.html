@@ -82,10 +82,10 @@
                     buildChart{{ id }}(datafile)
                 }
                 catch (e) {}
-                try {
-                    buildTable{{ id }}(`${location.protocol}//${location.host}${datafile}`)
-                }
-                catch (e) {}
+                //try {
+                //    buildTable{{ id }}(`${location.protocol}//${location.host}${datafile}`)
+                //}
+                //catch (e) {}
 
                 if (document.getElementById('map_tooltip{{ id }}')) {
                     document.getElementById('map_tooltip{{ id }}').style.visibility = 'hidden'
@@ -175,11 +175,16 @@
             </li>
             {% endif %}
 
-            <h1>{{ [data, 'columns'] | attribute }}</h1>
-            {% if [data, 'data'] | attribute_type == 'list' %}
+            {% if [data, 'dataTable'] | attribute %}
+            <li>
+                <a href="javascript:;" data-file="{{ [data, 'dataTable'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ [data, 'dataTable'] | attribute | safe }}`, {{ [data, 'columns'] | attribute | safe }})">
+                    Download the data (CSV {{ [data, 'dataTable'] | file_size | safe }})
+                </a>
+            </li>
+            {% elif [data, 'data'] | attribute_type == 'list' %}
             {% for item in ([data, 'data'] | attribute) %}
             <li>
-                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile('{{ item.data }}', {{ [data, 'columns'] | attribute }})">
+                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ item.data }}`, {{ [data, 'columns'] | attribute | safe }})">
                     Download the {{ item.label }} data (CSV<span id="dataTableSize{{ id }}"></span>)
                 </a>
             </li>
@@ -187,7 +192,7 @@
             {% else %}
             <li>
                 <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
-                    Download the data (CSV<span id="dataTableSize{{ id }}"></span>)
+                    Download the data (CSV {{ [data, 'dataTable'] | file_size | safe }})
                 </a>
             </li>
             {% endif %}
