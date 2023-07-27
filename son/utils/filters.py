@@ -132,7 +132,11 @@ def table_filter(context, details):
         try:
             attributes = json.loads(data)
             if field in attributes:
-                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{attributes[field].replace('data-src:', '').strip()}"
+                file_path = attributes[field]
+                if type(file_path) == list and 'data' in file_path[-1]:
+                    file_path = file_path[-1]['data']
+                file_path = file_path.replace('data-src:', '').strip()
+                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
                 if Path(data_src).is_file():
                     with open(data_src, encoding='utf-8-sig', errors='ignore') as csv_file:
                         data_table = list(csv.reader(csv_file, delimiter=','))

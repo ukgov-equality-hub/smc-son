@@ -103,6 +103,7 @@ class Chart {
             }
 
             console.info('Chart resources loaded')
+            window['chartjs'] = true
 
             if (self.el && self.data && typeof Plot !== 'undefined') {
                 if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
@@ -113,7 +114,6 @@ class Chart {
                         }, 250)
                     }, true)
                 }
-                window['chartjs'] = true
                 self.render()
             }
         }

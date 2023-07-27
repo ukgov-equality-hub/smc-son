@@ -40,7 +40,7 @@ class DataUtils {
         }
     }
 
-    async loadDataFromElement(el, hasHeader=true) {
+    /*async*/ loadDataFromElement(el, hasHeader=true) {
         const table = document.getElementById(el)
         let headers = []
         let data = []
@@ -85,11 +85,12 @@ class DataUtils {
         return this.data
     }
 
-    async loadDataFromString(str) {
+    /*async*/ loadDataFromString(str) {
         let headers = []
         let data = []
+        const csvFormat = this.isCSV(str)
 
-        if (this.isCSV(str)) {
+        if (csvFormat) {
             if (this.type == 'json') {
                 const result = this.csv2json(str)
                 headers = this.cleanCSV(result.headers)
@@ -97,6 +98,26 @@ class DataUtils {
             } else {
                 headers = this.cleanCSV(this.headersFromCSV(str))
                 data = str
+
+                if (!Array.isArray(str)) {
+                    data = []
+                    const rows = str.split('\n')
+
+                    for (let i = 1; i < rows.length; i++) {
+                        const row = []
+                        if ((`${rows[i]} `).trim() != '') {
+                            let items = rows[i]
+                            items = items.replace(/,""/g, ',##EMPTY##')
+                            items = items.replace(/"",/g, '##EMPTY##,')
+                            items = this.substituteCommas(items).split(csvFormat.delimiter)
+                            for (let j = 0; j < items.length; j++) {
+                                let item = this.stripQuote(items[j] ? items[j].replace(/###/g, csvFormat.delimiter) : '')
+                                row.push(this.isNumeric(item) ? parseFloat(item, 10) : item.indexOf('##EMPTY##') > -1 ? '' : item.trim())
+                            }
+                        }
+                        if (row.length > 0) data.push(row)
+                    }
+                }
             }
         } else if (this.isJSON(str)) {
             if (this.type == 'json') {
@@ -207,13 +228,13 @@ class DataUtils {
         for (let i = 1; i < rows.length; i++) {
             const row = {}
             if ((`${rows[i]} `).trim() != '') {
-                let currentLine = rows[i]
-                currentLine = currentLine.replace(/,""/g, ',##EMPTY##')
-                currentLine = currentLine.replace(/"",/g, '##EMPTY##,')
-                currentLine = this.substituteCommas(currentLine).split(csvFormat.delimiter)
+                let items = rows[i]
+                items = items.replace(/,""/g, ',##EMPTY##')
+                items = items.replace(/"",/g, '##EMPTY##,')
+                items = this.substituteCommas(items).split(csvFormat.delimiter)
                 for (let j = 0; j < headers.length; j++) {
-                    let str = this.stripQuote(currentLine[j] ? currentLine[j].replace(/###/g, csvFormat.delimiter) : '')
-                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.indexOf('##EMPTY##') > -1 ? '' : str.trim()
+                    let item = this.stripQuote(items[j] ? items[j].replace(/###/g, csvFormat.delimiter) : '')
+                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(item) ? parseFloat(item, 10) : item.indexOf('##EMPTY##') > -1 ? '' : item.trim()
                 }
                 result.push(row)
             }
@@ -334,7 +355,7 @@ class DataUtils {
             let filtered = []
             for (let i = 0; i < data.length; i++) {
                 let ok = ''
-                for (let filter of filters) {
+                for (const filter of filters) {
                     const columnNumber = headers.indexOf(filter['column'])
                     const column = this.type == 'json' ? filter['column'] : columnNumber
 

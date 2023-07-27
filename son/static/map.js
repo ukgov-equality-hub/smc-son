@@ -106,6 +106,7 @@ class Choropleth {
             }
 
             console.info('Map resources loaded')
+            window['mapjs'] = true
 
             if (self.el && self.geodata && self.data) {
                 if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
@@ -116,7 +117,6 @@ class Choropleth {
                         }, 250)
                     }, true)
                 }
-                window['mapjs'] = true
                 self.render()
             }
         }

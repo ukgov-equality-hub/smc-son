@@ -3,12 +3,9 @@ class DataTable {
     // TOTO
     // DATA-SORT numeric
     // Add row with msg when filter returns nothing
-    // Build table from CSV, JSON
-    // Data from URL
     // Data from data object
     // filter - choose between AND and OR
     // Table summary
-    // Fix sticky header on TABLE tag
     // Group / sum / aggregate data
 
     constructor(el, data, options) {
@@ -109,9 +106,9 @@ class DataTable {
             }
 
             console.info('Data table resources loaded')
+            window['datatablejs'] = true
 
             if (self.el) {
-                window['datatablejs'] = true
                 self.render()
             }
         }
@@ -150,7 +147,7 @@ class DataTable {
                 createDataTable()
             } else {
                 this.dataUtils = new DataUtils(dataFormat)
-                this.dataUtils.loadData(this.el).then((data) => {
+                this.dataUtils.loadData(this.data || this.el).then((data) => {
                     self.loaded = true
                     const numeric = []
                     const headers = data['headers']
@@ -172,8 +169,17 @@ class DataTable {
                     self.dataTable['limit'] = limit
                     self.dataTable['page'] = 1
                     self.dataTable['pageSize'] = pageSize
+                    const columns = columnAttributes()
+                    self.dataTable['columns'] = columns
+                    const widths = []
+                    for (const column in columns) {
+                        if (columns.hasOwnProperty(column)) {
+                            widths.push(columns[column]['width'])
+                        }
+                    }
+                    self.dataTable['widths'] = widths
 
-                    fixTable()
+                    if (!self.data) fixTable()
                     if (allowColumnResize) resizeTable()
                     if (allowFilter) filterTable()
                     if (allowSort) sortTable()
@@ -245,8 +251,7 @@ class DataTable {
         function fixTable() {
             const table = document.getElementById(self.el)
             const headers = self.dataTable['headers']
-            const columns = columnAttributes()
-            self.dataTable['columns'] = columns
+            const columns = self.dataTable['columns']
             const rows = table.tagName == 'TABLE' ? table.rows : table.children
             let numColumns = Array.isArray(tableColumns) ? tableColumns.length : rows[0].children.length
             const widths = []
@@ -470,19 +475,19 @@ class DataTable {
 
             for (let i = 0; i < data.length; i++) {
                 if (limit == 0 || (limit > 0 && i < limit)) {
-                    const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                    const row = document.createElement(table.tagName == 'TABLE' ? 'tr' : 'div')
                     const userRow = []
                     row.classList.add('table-row', 'govuk-table__row')
-                    applyAttributes(row, data[i]['_attributes'][0])
+                    if (data[i]['_attributes'] && data[i]['_attributes'][0]) applyAttributes(row, data[i]['_attributes'][0])
 
                     for (let j = 0; j < headers.length; j++) {
                         if (allowColumn(headers[j])) {
-                            let cell = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'td' : 'div')
+                            let cell = document.createElement(table.tagName == 'TABLE' ? 'td' : 'div')
                             cell.classList.add('table-column', 'govuk-table__cell')
                             //if (numeric[j]) cell.classList.add('numeric')
                             if (widths[j]) cell.style.width = widths[j]
                             cell.setAttribute('data-column', `${j}`)
-                            applyAttributes(cell, data[i]['_attributes'][j + 1])
+                            if (data[i]['_attributes'] && data[i]['_attributes'][j + 1]) applyAttributes(cell, data[i]['_attributes'][j + 1])
                             if (['left', 'center', 'right'].includes(columns[headers[j]].align)) cell.classList.add(`align-${columns[headers[j]].align}`)
                             let content = data[i][type == 'array' ? j : headers[j]]
 
@@ -513,7 +518,7 @@ class DataTable {
                     }
 
                     if (i >= start && i < end) {
-                        if (self.dataTable['tag'] == 'TABLE') {
+                        if (table.tagName == 'TABLE') {
                             table.getElementsByTagName('tbody')[0].appendChild(row)
                         } else {
                             table.appendChild(row)
@@ -524,7 +529,7 @@ class DataTable {
             }
 
             if (pageSize > 0 && numPages > 1) {
-                const row = document.createElement(self.dataTable['tag'] == 'TABLE' ? 'tr' : 'div')
+                const row = document.createElement(table.tagName == 'TABLE' ? 'tr' : 'div')
                 row.classList.add('table-row')
                 const nav = document.createElement('nav')
                 nav.classList.add('govuk-pagination')
@@ -609,7 +614,7 @@ class DataTable {
                 }
                 row.appendChild(nav)
 
-                if (self.dataTable['tag'] == 'TABLE') {
+                if (table.tagName == 'TABLE') {
                     table.getElementsByTagName('tbody')[0].appendChild(row)
                 } else {
                     table.appendChild(row)
@@ -718,6 +723,9 @@ class DataTable {
             const rowHeight = rows[0].getBoundingClientRect().height
             for (let i = 0; i < rows[0].children.length; i++) {
                 let icons = tableIcons(rows[0], i)
+                for (const existing of icons.querySelectorAll('.filter-icon')) {
+                    existing.parentElement.removeChild(existing)
+                }
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('filter-icon', `filter-icon_${self.el}_${column}`)
@@ -760,7 +768,9 @@ class DataTable {
         }
 
         function populateFilterValues(cells) {
-            if (document.getElementsByClassName(`filter_${cells}`)[0].innerHTML != '') return
+            if (document.getElementsByClassName(`filter_${cells}`)[0].innerHTML != '') {
+                document.getElementsByClassName(`filter_${cells}`)[0].innerHTML = ''
+            }
             let values = []
             //const table = cells.split('_')[0]
             const column = cells.split('_')[1]
@@ -867,6 +877,9 @@ class DataTable {
             const rowHeight = rows[0].getBoundingClientRect().height
             for (let i = 0; i < rows[0].children.length; i++) {
                 let icons = tableIcons(rows[0], i)
+                for (const existing of icons.querySelectorAll('.sort-icon')) {
+                    existing.parentElement.removeChild(existing)
+                }
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('sort-icon', `sort-icon_${self.el}_${column}`)

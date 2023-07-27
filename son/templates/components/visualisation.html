@@ -82,6 +82,10 @@
                     buildChart{{ id }}(datafile)
                 }
                 catch (e) {}
+                try {
+                    buildTable{{ id }}(`${location.protocol}//${location.host}${datafile}`)
+                }
+                catch (e) {}
 
                 if (document.getElementById('map_tooltip{{ id }}')) {
                     document.getElementById('map_tooltip{{ id }}').style.visibility = 'hidden'
@@ -162,6 +166,7 @@
                 </a>
             </li>
             {% endif %}
+
             {% if type == 'map' %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
@@ -169,11 +174,23 @@
                 </a>
             </li>
             {% endif %}
+
+            <h1>{{ [data, 'columns'] | attribute }}</h1>
+            {% if [data, 'data'] | attribute_type == 'list' %}
+            {% for item in ([data, 'data'] | attribute) %}
+            <li>
+                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile('{{ item.data }}', {{ [data, 'columns'] | attribute }})">
+                    Download the {{ item.label }} data (CSV<span id="dataTableSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% endfor %}
+            {% else %}
             <li>
                 <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
                     Download the data (CSV<span id="dataTableSize{{ id }}"></span>)
                 </a>
             </li>
+            {% endif %}
         </ul>
         {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
