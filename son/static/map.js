@@ -558,6 +558,7 @@ class Choropleth {
             }
 
             self.rendered = true
+            if (options.download) self.download()
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4

@@ -51,9 +51,10 @@
         }
         tbl{{ id }} = true
 
-        if (document.getElementById('dataTableSize{{ id }}')) {
+        const items = document.getElementsByClassName('dataTableSize{{ id }}')
+        for (let i = 0; i < items.length; i++) {
             dataTable{{ id }}.downloadSize('csv', true).then(data => {
-                document.getElementById('dataTableSize{{ id }}').innerText = ' ' + data
+                items.item(i).innerText = ' ' + data
             })
         }
     }
