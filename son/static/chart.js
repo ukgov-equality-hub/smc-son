@@ -464,7 +464,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -481,7 +481,7 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             }
 
