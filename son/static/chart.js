@@ -103,6 +103,7 @@ class Chart {
             }
 
             console.info('Chart resources loaded')
+            window['chartjs'] = true
 
             if (self.el && self.data && typeof Plot !== 'undefined') {
                 if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
@@ -113,7 +114,6 @@ class Chart {
                         }, 250)
                     }, true)
                 }
-                window['chartjs'] = true
                 self.render()
             }
         }
@@ -464,7 +464,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -481,7 +481,7 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             }
 
@@ -624,6 +624,7 @@ class Chart {
             }
 
             self.rendered = true
+            if (options.download) self.download()
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4

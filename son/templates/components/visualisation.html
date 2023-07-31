@@ -75,11 +75,11 @@
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
                 try {
-                    buildMap{{ id }}(datafile)
+                    buildMap{{ id }}(datafile, false)
                 }
                 catch (e) {}
                 try {
-                    buildChart{{ id }}(datafile)
+                    buildChart{{ id }}(datafile, false)
                 }
                 catch (e) {}
 
@@ -155,25 +155,63 @@
         </h2>
 
         <ul class="govuk-list">
+            {% if [data, 'data'] | attribute_type == 'list' %}
+            {% for item in ([data, 'data'] | attribute) %}
+            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+            <li>
+                <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}('{{ item.data }}')">
+                    Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% endif %}
+
+            {% if type == 'map' %}
+            <li>
+                <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}('{{ item.data }}')">
+                    Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% else %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
-                    Download the chart (PNG<span id="chartSize{{ id }}"></span>)
+                    Download the chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
             {% endif %}
+
             {% if type == 'map' %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
-                    Download the map (PNG<span id="mapSize{{ id }}"></span>)
+                    Download the map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
             {% endif %}
+            {% endif %}
+
+            {% if [data, 'dataTable'] | attribute %}
             <li>
-                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
-                    Download the data (CSV<span id="dataTableSize{{ id }}"></span>)
+                <a href="javascript:;" data-file="{{ [data, 'dataTable'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ [data, 'dataTable'] | attribute | safe }}`, {{ [data, 'columns'] | attribute | safe }})">
+                    Download the data (CSV {{ [data, 'dataTable'] | file_size | safe }})
                 </a>
             </li>
+            {% elif [data, 'data'] | attribute_type == 'list' %}
+            {% for item in ([data, 'data'] | attribute) %}
+            <li>
+                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ item.data }}`, {{ [data, 'columns'] | attribute | safe }})">
+                    Download the {{ item.label }} data (CSV {{ item.data | file_size | safe }})
+                </a>
+            </li>
+            {% endfor %}
+            {% else %}
+            <li>
+                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
+                    Download the data (CSV {{ [data, 'data'] | file_size | safe }})
+                </a>
+            </li>
+            {% endif %}
         </ul>
         {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
