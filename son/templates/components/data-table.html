@@ -26,7 +26,7 @@
     let tbl{{ id }} = false, dataTable{{ id }}
 
     function buildTable{{ id }}(datafile) {
-        let options = {{ data | safe }}
+        let options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
 
         if (typeof options === 'object' && !Array.isArray(options) && options !== null) {

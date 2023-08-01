@@ -123,14 +123,15 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 content, current_section, current_content = update(content, current_section, current_content, ['H3', line[3:].strip()])
             elif len(line) > 4 and line[:2] == '##':
                 tag = line[2:].strip()
+                if ':' in tag: tag = tag[: tag.index(':')]
                 if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'TABS', 'GRID', 'ABOUT', 'MAP', 'CHART', 'PLACEHOLDER']:
                     content, current_section, current_content = update(content, current_section, current_content, None)
                     current_section = tag
                 else:
                     content, current_section, current_content = update(content, current_section, current_content, ['H2', line[2:].strip()])
-            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT']:
+            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT', 'MAP', 'CHART']:
                 content, current_section, current_content = update(content, current_section, current_content, ['H1', line[1:].strip()])
-            else: #if line.strip() != '':
+            else:
                 if current_section == '':
                     current_section = 'Text'
                 if current_content != '': current_content += newline
@@ -162,9 +163,13 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                             current_section.append(['Download', current_subcontent])
                         elif current_subsection.upper() == 'TAB':
                             current_section.append(['Tab', current_subcontent])
+                        elif current_subsection.upper() == 'SRC':
+                            current_section.append(['Src', current_subcontent])
+                        elif current_subsection.upper() == 'GUIDANCE':
+                            current_section.append(['Guidance', format_html(current_subcontent)])
                         else:
-                            current_section.append(['Subtitle3', current_subsection])
-                            current_section.append(['HTML3' if use_markdown else 'Text', format_html(current_subcontent)])
+                            current_section.append(['Subtitle', current_subsection])
+                            current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])
 
                         current_subsection = ''
                         current_subcontent = ''
@@ -185,6 +190,10 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 current_section.append(['Download', current_subcontent])
             elif current_subsection.upper() == 'TAB':
                 current_section.append(['Tab', current_subcontent])
+            elif current_subsection.upper() == 'SRC':
+                current_section.append(['Src', current_subcontent])
+            elif current_subsection.upper() == 'GUIDANCE':
+                current_section.append(['Guidance', format_html(current_subcontent)])
             elif current_subsection != '':
                 current_section.append(['Subtitle', current_subsection])
                 current_section.append(['HTML' if use_markdown else 'Text', format_html(current_subcontent)])

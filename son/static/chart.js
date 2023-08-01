@@ -190,7 +190,7 @@ class Chart {
             fontFamily: options.fontFamily || 'GDS Transport',
             fontSize: options.fontSize || '14px',
             overflow: 'visible',
-            backgroundColor: options.backgroundColor || '#fff'
+            backgroundColor: options.backgroundColor || 'transparent'
         }
         let self = this
 
@@ -248,6 +248,7 @@ class Chart {
             if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
+
             if (['quartile', 'quintile', 'decile'].includes(type)) {
                 dataFormat = type
                 self.height = 35
@@ -263,17 +264,6 @@ class Chart {
             } else if (group) {
                 //categories = Array.from(new Set(data.flat().map(x => x[group].toString())))
                 categories = Array.from(new Set(data.flat().map(x => x[orientation == 'y' ? xkey : ykey].toString())))
-            }
-
-            let color
-            if (dataFormat == 'sequential') {
-                const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
-                color = d3.scaleSequential(interpolator)
-                    .domain([min, max])
-            } else {
-                const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
-                color = d3.scaleQuantize(scheme)
-                    .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
             }
 
             const marks = []
@@ -330,7 +320,7 @@ class Chart {
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
                     if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y' && !range) range = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
@@ -354,8 +344,8 @@ class Chart {
                     y: ykey,
                     z: zkey,
                     facet: group ? true : null,
-                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(originalData || chartData, x),
-                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : undefined,
+                    fill: x => ['line', 'linex', 'liney'].includes(type) ? '' : getMarkColour(originalData || chartData, x),
+                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : '',
                     strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : 0,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                 }
@@ -565,7 +555,7 @@ class Chart {
                     }
                 } else {
                     if (group) {
-                        legends = [...new Set(chartData.flat().map(x => x[ykey]))].sort()
+                        legends = [...new Set(chartData.flat().map(x => x[ykey]))]
                     } else {
                         legends = [...new Set(chartData.flat().map(x => x[zkey]))]
                     }
@@ -586,7 +576,7 @@ class Chart {
                     const text = item.text()
                     item
                         .attr('data-series', text)
-                        .style('cursor', 'pointer')
+                        .style('cursor', (self.rolloverBehaviour == '' && self.clickBehaviour == '') ? 'default' : 'pointer')
                         .on('click', clicked)
                         //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
@@ -687,6 +677,16 @@ class Chart {
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
                 } else if (dataFormat == 'sequential') {
+                    let color
+                    if (dataFormat == 'sequential') {
+                        const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
+                        color = d3.scaleSequential(interpolator)
+                            .domain([min, max])
+                    } else {
+                        const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
+                        color = d3.scaleQuantize(scheme)
+                            .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
+                    }
                     return isNaN(val) ? 'grey' : color(Math.floor(((val - min) / (max - min)) * 100))
                 }
 
@@ -699,7 +699,8 @@ class Chart {
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
-                    return orientation == 'x' ? x[ykey] : colours[domain.indexOf(x[orientation == 'y' ? xkey : group])]
+                    return orientation == 'x' ? colours[categories.indexOf(x[ykey])] : colours[domain.indexOf(x[xkey])]
+                    //return orientation == 'x' ? x[ykey] : colours[domain.indexOf(x[xkey])]
                     //return x[orientation == 'y' ? xkey : ykey]
                     //return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
                 }
@@ -707,19 +708,7 @@ class Chart {
                 //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
             }
 
-            function getLabelColour(key) {
-                return labelColour /*labelScheme[colourScheme.indexOf(color(key))]*/
-            }
-
             function getLabelPos(x) {
-                /*if (orientation == 'y') {
-                    let pos = textLabels == 'inside' ? 20 : -30
-                    return pos
-                } else {
-                    let pos = textLabels == 'inside' ? -30 : 20
-                    if (['£', '$', '€'].includes(scale) && textLabels == 'inside' ) pos -= 15
-                    return pos
-                }*/
                 const key = orientation == 'y' ? xkey : ykey
                 const valKey = orientation == 'y' ? ykey : xkey
                 const vals = chartData.flat().filter(y => y[key] == x[key])
@@ -1167,7 +1156,7 @@ class Chart {
                     return 0.1
                 })
 
-                self.filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
+                self.filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : ['bary', 'doty', 'liney'].includes(type) == 'y' ? xkey : ykey]) == -1)
                 self.render(self.filteredData)
                 self.hidden = hidden
             } else if (self.clickBehaviour == 'isolate') {

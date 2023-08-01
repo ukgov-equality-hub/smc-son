@@ -74,6 +74,22 @@ def content_filter(context, details):
 
 
 @jinja2.pass_context
+@blueprint.app_template_filter('content_list')
+def content_list_filter(context, details):
+    if details:
+        content = details[0]
+        field = details[1]
+        try:
+            for item in content:
+                if isinstance(item, list):
+                    if item[0] == field:
+                        return item[1]
+        except:
+            pass
+    return details[0] if details[1] == 'Src' else ''
+
+
+@jinja2.pass_context
 @blueprint.app_template_filter('attribute')
 def attribute_filter(context, details):
     if details:
@@ -128,6 +144,7 @@ def latest_data_filter(context, details):
 def table_filter(context, details):
     if details:
         data = details[0]
+        data = content_list_filter(context, [data, 'Src'])
         field1 = details[1]
         field2 = details[2] if len(details) > 2 else ''
         try:
