@@ -2,16 +2,13 @@ import json
 import os
 from datetime import timedelta
 from flask import Flask, g, session
-from flask_migrate import Migrate
 from flask_uuid import FlaskUUID
-from son.models import db
 from son.utils import filters
 from son.config import Config, DevConfig, TestConfig
 from son.utils.http_basic_authentication import HttpBasicAuthentication
 from son.utils.maintenance_mode import Maintenance
 from son.utils.custom_error_handlers import CustomErrorHandlers
 
-migrate = Migrate()
 flask_uuid = FlaskUUID()
 
 
@@ -47,10 +44,6 @@ def create_app(test_config=None):
     build_info_string = f.read()
     f.close()
     build_info = json.loads(build_info_string)
-
-    # Database
-    db.init_app(app)
-    migrate.init_app(app, db)
 
     flask_uuid.init_app(app)
 
