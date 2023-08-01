@@ -1,16 +1,18 @@
 {% macro chart(id, data) %}
 <div id="chart{{ id }}" class="chart-container"></div>
 {% if ([data, 'type'] | attribute == 'liney' or [data, 'type'] | attribute == 'bar' or [data, 'type'] | attribute == 'bary') and ([data, 'group'] | attribute != '' or [data, 'zkey'] | attribute != '') %}
+{% if ([data, 'rolloverBehaviour'] | attribute != '') or ([data, 'clickBehaviour'] | attribute != '') %}
 <p class="govuk-body govuk-!-font-size-14 chart-hint">
     <img src="/static/assets/images/pointer.svg" width="25" height="25">
     Click or tap on legend items to toggle visibility
 </p>
 {% endif %}
+{% endif %}
 <script>
     let chart{{ id }}, chartData{{ id }}
 
     function buildChart{{ id }}(datafile, download) {
-        const options = {{ data | safe }}
+        const options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (options.type != 'dot') {
             options.width = document.getElementById('maincontent').offsetWidth

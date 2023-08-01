@@ -51,7 +51,7 @@
     let map{{ id }}, mapData{{ id }}
 
     function buildMap{{ id }}(datafile, download) {
-        const options = {{ data | safe }}
+        const options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
         if (download) options.download = download

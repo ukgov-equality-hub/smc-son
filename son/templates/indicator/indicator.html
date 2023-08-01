@@ -244,7 +244,7 @@
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name
-                document.getElementById(`map_tooltip${el}_title`).innerText = a.map.title
+                document.getElementById(`map_tooltip${el}_title`).innerText = a.map.tooltipTitle || a.map.title
                 document.getElementById(`map_tooltip${el}_value`).innerText = a.value
                 if (performance != '') {
                     document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
