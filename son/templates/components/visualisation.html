@@ -35,7 +35,7 @@
         </h2>
 
         {% if [data, 'title'] | attribute != '' %}
-        <h3 class="govuk-heading-s">{{ [data, 'title'] | attribute | safe }}</h3>
+        <h3 class="govuk-heading-s grid-three-quarters">{{ [data, 'title'] | attribute | safe }}</h3>
         {% endif %}
 
         {% if [data, 'data'] | attribute_type == 'list' %}
@@ -90,7 +90,9 @@
         </script>
         {% endif %}
 
+        <div class="grid-three-quarters">
         {{ [data, 'Guidance'] | content_list | safe }}
+        </div>
         {% if type == 'chart' %}
         {{ chart(id, data) }}
         {% else %}

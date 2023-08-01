@@ -124,12 +124,12 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
             elif len(line) > 4 and line[:2] == '##':
                 tag = line[2:].strip()
                 if ':' in tag: tag = tag[: tag.index(':')]
-                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'TABS', 'GRID', 'ABOUT', 'MAP', 'CHART', 'PLACEHOLDER']:
+                if tag.upper() in ['CODE', 'SUMMARY', 'TITLE', 'SECTION', 'SUBTITLE', 'TEXT', 'HTML', 'TABS', 'GRID', 'ABOUT', 'ABOUT THE DATA', 'MAP', 'CHART', 'PLACEHOLDER']:
                     content, current_section, current_content = update(content, current_section, current_content, None)
                     current_section = tag
                 else:
                     content, current_section, current_content = update(content, current_section, current_content, ['H2', line[2:].strip()])
-            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT', 'MAP', 'CHART']:
+            elif len(line) > 3 and line[:1] == '#' and current_section.upper() not in ['TABS', 'GRID', 'ABOUT', 'ABOUT THE DATA', 'MAP', 'CHART']:
                 content, current_section, current_content = update(content, current_section, current_content, ['H1', line[1:].strip()])
             else:
                 if current_section == '':

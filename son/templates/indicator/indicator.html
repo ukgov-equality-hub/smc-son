@@ -28,9 +28,9 @@
             <a href="#{{ item[1] | safe }}" class="govuk-link">{{ item[1] | safe }}</a>
         </li>
         {% endif %}
-        {% if item[0] == 'About' %}
+        {% if item[0] == 'About' or item[0] == 'About the data' %}
         <li>
-            <a href="#About" class="govuk-link">About</a>
+            <a href="#About" class="govuk-link">About the data</a>
         </li>
         {% endif %}
         {% endfor %}
@@ -206,9 +206,9 @@
     </div>
     {% endif %}
 
-    {% if item[0] == 'About' %}
+    {% if item[0] == 'About' or item[0] == 'About the data' %}
     <hr class="divider">
-    <h3 class="govuk-heading-m"><a name="About"></a>About</h3>
+    <h3 class="govuk-heading-m"><a name="About"></a>About the data</h3>
     <p class="govuk-body">This page features new analysis written for State of the Nation based on data from the following source(s):</p>
     {% set ns.counter2 = 0 %}
     {% for subitem in item[1] %}

@@ -363,11 +363,11 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, ...chartOptions }))
                     marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
                     marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
@@ -885,22 +885,26 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            if (['line', 'linex', 'liney'].includes(type) && parent.node().tagName != 'circle') return
-
                             let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             if (['quartile', 'quintile', 'decile'].includes(type)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
                             }
-                            const pointer = d3.pointer(event, wrapper.node())
-                            if (text && text != 'null: null') tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.tooltipTitle ? `\n(${self.tooltipTitle})` : self.title ? `\n(${self.title})` : ''}`).split('\n'))
-                            else tip.selectAll('*').remove()
 
-                            //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise() //d3.select(this).raise()
-                            const tipSize = tip.node().getBBox()
-                            if (pointer[0] + tipSize.x < 0) {
-                                tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
-                            } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
-                                tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
+                            if (!(['line', 'linex', 'liney'].includes(type) && parent.node().tagName != 'circle')) {
+                                const pointer = d3.pointer(event, wrapper.node())
+                                if (text && text != 'null: null') {
+                                    tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.tooltipTitle ? `\n(${self.tooltipTitle})` : self.title ? `\n(${self.title})` : ''}`).split('\n'))
+                                } else {
+                                    tip.selectAll('*').remove()
+                                }
+
+                                d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise()
+                                const tipSize = tip.node().getBBox()
+                                if (pointer[0] + tipSize.x < 0) {
+                                    tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
+                                } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
+                                    tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
+                                }
                             }
 
                             highlight(event, this.getAttribute('data-series'))
