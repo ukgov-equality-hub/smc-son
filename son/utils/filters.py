@@ -93,7 +93,7 @@ def content_list_filter(context, details):
 @blueprint.app_template_filter('attribute')
 def attribute_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -108,7 +108,7 @@ def attribute_filter(context, details):
 @blueprint.app_template_filter('attribute_type')
 def attribute_type_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -126,7 +126,7 @@ def attribute_type_filter(context, details):
 @blueprint.app_template_filter('latest_data')
 def latest_data_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -143,8 +143,7 @@ def latest_data_filter(context, details):
 @blueprint.app_template_filter('table')
 def table_filter(context, details):
     if details:
-        data = details[0]
-        data = content_list_filter(context, [data, 'Src'])
+        data = content_list_filter(context, [details[0], 'Src'])
         field1 = details[1]
         field2 = details[2] if len(details) > 2 else ''
         try:
@@ -176,7 +175,7 @@ def file_size(context, details):
         file_path = ''
         file_size = -1
         if type(details) == list:
-            data = details[0]
+            data = content_list_filter(context, [details[0], 'Src'])
             field1 = details[1]
             field2 = details[2] if len(details) > 2 else ''
             try:

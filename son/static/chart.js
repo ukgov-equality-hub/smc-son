@@ -362,10 +362,12 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
                     xticks = getScaledTicks(type)
@@ -489,12 +491,12 @@ class Chart {
                 yOptions['domain'] = range
             }
             if (isNumeric(xticks)) {
-                if (type == 'line' || type == 'linex' || type == 'liney') {
+                if (['line', 'linex', 'liney'].includes(type)) {
                     xOptions['domain'] = [
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
                     ]
-                } else if (type == 'bar' || type == 'barx' || type == 'bary') {
+                } else if (['bar', 'barx', 'bary'].includes(type)) {
                 }
             }
             if (self.debug) console.log('group', group, range, domain, categories)
@@ -859,8 +861,8 @@ class Chart {
                                 .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                                 .attr('data-value', val)
                                 .attr('data-quantile', x => {
-                                    if (['quartile', 'quintile', 'decile'].includes(type)) {
-                                        const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), type)
+                                    if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                                        const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
                                         return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
                                     }
                                     return -1
@@ -882,6 +884,8 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
+                            if (['line', 'linex', 'liney'].includes(type) && parent.node().tagName != 'circle') return
+
                             let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             if (['quartile', 'quintile', 'decile'].includes(type)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
@@ -1212,7 +1216,7 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke-width', 10)
                 const fill = hexToRgb(d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).attr('fill'))
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
-            } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
+            } else if (['bar', 'bary', 'line', 'liney'].includes(type)) {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 5)
@@ -1241,7 +1245,7 @@ class Chart {
             if (type == 'dot') {
                 d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', 0)
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
-            } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
+            } else if (['bar', 'bary', 'line', 'liney'].includes(type)) {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 1)
