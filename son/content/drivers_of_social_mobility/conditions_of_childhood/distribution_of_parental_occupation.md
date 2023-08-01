@@ -11,28 +11,25 @@ Data on the occupation level of adults in families with dependent children.
 Summary main findings
 
 ## Text
-20% of adults in families with dependent children were in ‘higher professional’ occupations in 2021, up from 14% in 2014.
-<br>
-46% were in professional occupations (higher or lower) in 2021, up from 39% in 2014.
-<br>
-13% were in higher working class occupations in 2021, down from 19% in 2014.
-<br>
+20% of adults in families with dependent children were in ‘higher professional’ occupations in 2021, up from 14% in 2014.<br>
+46% were in professional occupations (higher or lower) in 2021, up from 39% in 2014.<br>
+13% were in higher working class occupations in 2021, down from 19% in 2014.<br>
 32% were in working class occupations (higher or lower) in 2021, down from 40% in 2014.
 
 ## Section
-Overview
+By year
 
 ## Chart: Stacked-bar
-{ "code": "DR14", "title": "Distribution of parental occupation", "data": "/static/data/indicators/DR14_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "DR14", "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)", "data": "/static/data/indicators/DR14_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area
 
 ## Map
 # Src
-{ "code": "DR14", "title": "Distribution of parental occupation", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "Higher professional", "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv" }, { "label": "Lower working", "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "zero": false, "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{ "code": "DR14", "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "Higher professional", "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv" }, { "label": "Lower working", "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "zero": false, "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
-## About
+## About the data
 # Data source
 Labour Force Survey, Office for National Statistics
 

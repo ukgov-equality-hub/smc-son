@@ -11,18 +11,18 @@ Data on the occupational level of 25 to 29 year olds in the UK, from 2014 to 202
 Summary main findings
 
 ## Text
-From 2014 to 2021, the percentage of 25 to 29 year olds in professional and managerial jobs went up from 38% to 44%. 
-<br>
+From 2014 to 2021, the percentage of 25 to 29 year olds in professional and managerial jobs went up from 38% to 44%.
+
 The percentage in working class jobs went down from 41% to 33%. This was mainly due to the percentage in skilled manual work (‘higher working class’) going down from 25% to 17%.
-<br>
+
 In the 3 years to 2021, parts of the south-east had the highest percentages of 25 to 29 year olds in higher professional jobs out of all regions. Scotland and parts of the north and north-east had the lowest percentages. 
-<br>
+
 The highest percentages of 25 to 29 year olds in lower working class jobs were in Northern Ireland, parts of Scotland and Wales, and some metropolitan areas. Most regions in the south-east had the lowest percentages.
-<br>
+
 In parts of London, the percentages of 25 to 29 year olds in both higher professional and lower working class occupations were higher than the national average.
 
 ## Section
-Overview
+By year
 
 ## Chart: Stacked-bar
 { "code": "DR33", "title": "Percentage of 25 to 29 year olds in each of the 5 occupational classes, over time (UK, 2014 to 2021)", "data": "/static/data/indicators/DR33_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
@@ -44,7 +44,7 @@ By occupational class and area
 # Map
 { "code": "DR33", "title": "Percentage of 25 to 29 year olds in the lower working class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
 
-## About
+## About the data
 # Data source(s)
 Office for National Statistics, Labour Force Survey
 
