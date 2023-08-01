@@ -182,6 +182,7 @@ class Chart {
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.title = options.title || ''
+        this.tooltipTitle = options.tooltipTitle || undefined
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.onRollover = options.onRollover || undefined
@@ -891,7 +892,7 @@ class Chart {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
                             }
                             const pointer = d3.pointer(event, wrapper.node())
-                            if (text && text != 'null: null') tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.options.title ? `\n(${self.options.title})` : ''}`).split('\n'))
+                            if (text && text != 'null: null') tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.tooltipTitle ? `\n(${self.tooltipTitle})` : self.title ? `\n(${self.title})` : ''}`).split('\n'))
                             else tip.selectAll('*').remove()
 
                             //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise() //d3.select(this).raise()
