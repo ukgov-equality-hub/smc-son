@@ -103,6 +103,7 @@ class Chart {
             }
 
             console.info('Chart resources loaded')
+            window['chartjs'] = true
 
             if (self.el && self.data && typeof Plot !== 'undefined') {
                 if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
@@ -113,7 +114,6 @@ class Chart {
                         }, 250)
                     }, true)
                 }
-                window['chartjs'] = true
                 self.render()
             }
         }
@@ -190,7 +190,7 @@ class Chart {
             fontFamily: options.fontFamily || 'GDS Transport',
             fontSize: options.fontSize || '14px',
             overflow: 'visible',
-            backgroundColor: options.backgroundColor || '#fff'
+            backgroundColor: options.backgroundColor || 'transparent'
         }
         let self = this
 
@@ -248,6 +248,7 @@ class Chart {
             if (!domain && orientation == 'y') domain = Array.from(new Set(data.flat().map(x => x[xkey])))
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
+
             if (['quartile', 'quintile', 'decile'].includes(type)) {
                 dataFormat = type
                 self.height = 35
@@ -263,17 +264,6 @@ class Chart {
             } else if (group) {
                 //categories = Array.from(new Set(data.flat().map(x => x[group].toString())))
                 categories = Array.from(new Set(data.flat().map(x => x[orientation == 'y' ? xkey : ykey].toString())))
-            }
-
-            let color
-            if (dataFormat == 'sequential') {
-                const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
-                color = d3.scaleSequential(interpolator)
-                    .domain([min, max])
-            } else {
-                const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
-                color = d3.scaleQuantize(scheme)
-                    .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
             }
 
             const marks = []
@@ -330,7 +320,7 @@ class Chart {
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
                     if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y' && !range) range = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],
@@ -354,8 +344,8 @@ class Chart {
                     y: ykey,
                     z: zkey,
                     facet: group ? true : null,
-                    fill: x => ['line', 'linex', 'liney'].includes(type) ? undefined : getMarkColour(originalData || chartData, x),
-                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : undefined,
+                    fill: x => ['line', 'linex', 'liney'].includes(type) ? '' : getMarkColour(originalData || chartData, x),
+                    stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : '',
                     strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : 0,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                 }
@@ -372,10 +362,12 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], marker: 'circle', markerRadius: 1, ...chartOptions }))
+                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, stroke: colourScheme[0], ...chartOptions, fill: '' }))
+                    marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
                     xticks = getScaledTicks(type)
@@ -464,7 +456,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -481,7 +473,7 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
                 }))
             }
 
@@ -499,12 +491,12 @@ class Chart {
                 yOptions['domain'] = range
             }
             if (isNumeric(xticks)) {
-                if (type == 'line' || type == 'linex' || type == 'liney') {
+                if (['line', 'linex', 'liney'].includes(type)) {
                     xOptions['domain'] = [
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
                     ]
-                } else if (type == 'bar' || type == 'barx' || type == 'bary') {
+                } else if (['bar', 'barx', 'bary'].includes(type)) {
                 }
             }
             if (self.debug) console.log('group', group, range, domain, categories)
@@ -565,7 +557,7 @@ class Chart {
                     }
                 } else {
                     if (group) {
-                        legends = [...new Set(chartData.flat().map(x => x[ykey]))].sort()
+                        legends = [...new Set(chartData.flat().map(x => x[ykey]))]
                     } else {
                         legends = [...new Set(chartData.flat().map(x => x[zkey]))]
                     }
@@ -586,7 +578,7 @@ class Chart {
                     const text = item.text()
                     item
                         .attr('data-series', text)
-                        .style('cursor', 'pointer')
+                        .style('cursor', (self.rolloverBehaviour == '' && self.clickBehaviour == '') ? 'default' : 'pointer')
                         .on('click', clicked)
                         //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
@@ -624,6 +616,7 @@ class Chart {
             }
 
             self.rendered = true
+            if (options.download) self.download()
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
@@ -686,6 +679,16 @@ class Chart {
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
                 } else if (dataFormat == 'sequential') {
+                    let color
+                    if (dataFormat == 'sequential') {
+                        const interpolator = Array.isArray(colourScheme) ? d3.interpolateRgbBasis(colourScheme) : d3[colourScheme]
+                        color = d3.scaleSequential(interpolator)
+                            .domain([min, max])
+                    } else {
+                        const scheme = Array.isArray(colourScheme) ? colourScheme : d3[colourScheme]
+                        color = d3.scaleQuantize(scheme)
+                            .domain(dataFormat == 'categorical' && domain.length > 0 ? domain : [min, max])
+                    }
                     return isNaN(val) ? 'grey' : color(Math.floor(((val - min) / (max - min)) * 100))
                 }
 
@@ -698,7 +701,8 @@ class Chart {
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
-                    return orientation == 'x' ? x[ykey] : colours[domain.indexOf(x[orientation == 'y' ? xkey : group])]
+                    return orientation == 'x' ? colours[categories.indexOf(x[ykey])] : colours[domain.indexOf(x[xkey])]
+                    //return orientation == 'x' ? x[ykey] : colours[domain.indexOf(x[xkey])]
                     //return x[orientation == 'y' ? xkey : ykey]
                     //return colours[domain.indexOf(x[orientation == 'y' ? xkey : group])] //x[orientation == 'y' ? xkey : ykey]
                 }
@@ -706,19 +710,7 @@ class Chart {
                 //return orientation == 'y' ? colours[[...new Set(data.flat().map(x => x[xkey]))].sort().indexOf(x[xkey])] : colours[[...new Set(data.flat().map(x => x[ykey]))].sort().indexOf(x[ykey])]
             }
 
-            function getLabelColour(key) {
-                return labelColour /*labelScheme[colourScheme.indexOf(color(key))]*/
-            }
-
             function getLabelPos(x) {
-                /*if (orientation == 'y') {
-                    let pos = textLabels == 'inside' ? 20 : -30
-                    return pos
-                } else {
-                    let pos = textLabels == 'inside' ? -30 : 20
-                    if (['£', '$', '€'].includes(scale) && textLabels == 'inside' ) pos -= 15
-                    return pos
-                }*/
                 const key = orientation == 'y' ? xkey : ykey
                 const valKey = orientation == 'y' ? ykey : xkey
                 const vals = chartData.flat().filter(y => y[key] == x[key])
@@ -869,8 +861,8 @@ class Chart {
                                 .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                                 .attr('data-value', val)
                                 .attr('data-quantile', x => {
-                                    if (['quartile', 'quintile', 'decile'].includes(type)) {
-                                        const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), type)
+                                    if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                                        const ranges = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), dataFormat)
                                         return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
                                     }
                                     return -1
@@ -892,6 +884,8 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
+                            if (['line', 'linex', 'liney'].includes(type) && parent.node().tagName != 'circle') return
+
                             let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             if (['quartile', 'quintile', 'decile'].includes(type)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${type}`
@@ -1166,7 +1160,7 @@ class Chart {
                     return 0.1
                 })
 
-                self.filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : orientation == 'y' ? xkey : ykey]) == -1)
+                self.filteredData = chartData.filter(x => hidden.indexOf(x[zkey ? zkey : ['bary', 'doty', 'liney'].includes(type) == 'y' ? xkey : ykey]) == -1)
                 self.render(self.filteredData)
                 self.hidden = hidden
             } else if (self.clickBehaviour == 'isolate') {
@@ -1222,7 +1216,7 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke-width', 10)
                 const fill = hexToRgb(d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).attr('fill'))
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', `rgba(${fill.r}, ${fill.g}, ${fill.b}, 0.5)`)
-            } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
+            } else if (['bar', 'bary', 'line', 'liney'].includes(type)) {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 5)
@@ -1251,7 +1245,7 @@ class Chart {
             if (type == 'dot') {
                 d3.select(`#${this.el}`).selectAll('circle').style('stroke-width', 0)
                 d3.select(`#${this.el}`).selectAll(`circle[data-name="${item}"]`).style('stroke', 'unset')
-            } else if (type == 'bar' || type == 'bary' || type == 'line' || type == 'liney') {
+            } else if (['bar', 'bary', 'line', 'liney'].includes(type)) {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 1)

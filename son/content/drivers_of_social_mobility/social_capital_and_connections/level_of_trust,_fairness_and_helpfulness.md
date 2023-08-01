@@ -22,8 +22,8 @@ Between 2002 and 2018:
 ## Section
 By year
 
-## Chart
-{ "code": "DR42", "title": "People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)", "data": "/static/data/indicators/DR42_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "Mean", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Mean", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "1dp" }] }
+## Chart: Multi-line
+{ "code": "DR42", "title": "People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)", "data": "/static/data/indicators/DR42_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "Mean", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Mean", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "1dp" }] }
 
 ## About the data
 # Data source

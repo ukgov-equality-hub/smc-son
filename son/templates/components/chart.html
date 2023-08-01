@@ -1,32 +1,37 @@
 {% macro chart(id, data) %}
 <div id="chart{{ id }}" class="chart-container"></div>
 {% if ([data, 'type'] | attribute == 'liney' or [data, 'type'] | attribute == 'bar' or [data, 'type'] | attribute == 'bary') and ([data, 'group'] | attribute != '' or [data, 'zkey'] | attribute != '') %}
+{% if ([data, 'rolloverBehaviour'] | attribute != '') or ([data, 'clickBehaviour'] | attribute != '') %}
 <p class="govuk-body govuk-!-font-size-14 chart-hint">
     <img src="/static/assets/images/pointer.svg" width="25" height="25">
     Click or tap on legend items to toggle visibility
 </p>
 {% endif %}
+{% endif %}
 <script>
-    let chart{{ id }}
+    let chart{{ id }}, chartData{{ id }}
 
-    function buildChart{{ id }}(datafile) {
-        const options = {{ data | safe }}
+    function buildChart{{ id }}(datafile, download) {
+        const options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (options.type != 'dot') {
             options.width = document.getElementById('maincontent').offsetWidth
         } else {
             options.height = 800
         }
+        if (download) options.download = download
 
+        chartData{{ id }} = datafile || options.data.data || options.data
         chart{{ id }} = new Chart(
             'chart{{ id }}',
-            `${location.protocol}//${location.host}${datafile || options.data.data || options.data}`,
+            `${location.protocol}//${location.host}${chartData{{ id }}}`,
             options
         )
 
-        if (document.getElementById('chartSize{{ id }}')) {
+        const items = document.getElementsByClassName('chartSize{{ id }}')
+        for (let i = 0; i < items.length; i++) {
             chart{{ id }}.downloadSize().then(data => {
-                    document.getElementById('chartSize{{ id }}').innerText = ' ' + data
+                items.item(i).innerText = ' ' + data
             })
         }
     }
@@ -35,8 +40,16 @@
         buildChart{{ id }}()
     })
 
-    function downloadChart{{ id }}() {
-        chart{{ id }}.download()
+    function downloadChart{{ id }}(datafile) {
+        if (datafile) {
+            const data = chartData{{ id }}
+            buildChart{{ id }}(datafile, true)
+            setTimeout(function () {
+                buildChart{{ id }}(data)
+            }, 2000)
+        } else {
+            chart{{ id }}.download()
+        }
     }
 </script>
 {% endmacro %}

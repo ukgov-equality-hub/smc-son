@@ -1,6 +1,6 @@
 {% macro composite(id, data) %}
 <div id="ranking" class="ranking-table {% if [data, 'title'] | attribute | safe == 'Research and development' %}showhide{% else %}scroll{% endif %}">
-    {% set data_table = [data, 'data'] | table | sort(attribute = '11', reverse = True) %}
+    {% set data_table = [data, 'dataTable', 'data'] | table | sort(attribute = '11', reverse = True) %}
     <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table">
         <thead>
             <tr >

@@ -239,12 +239,12 @@
                 if (a.quantile == 5) performance = 'Top 20% (best outcomes)'
                 if (a.quantile == 4) performance = 'Second 20% (second best outcomes)'
                 if (a.quantile == 3) performance = 'Middle 20% (middle outcomes)'
-                if (a.quantile == 2) performance = 'Forth 20% (second worst outcomes)'
+                if (a.quantile == 2) performance = 'Fourth 20% (second worst outcomes)'
                 if (a.quantile == 1) performance = 'Bottom 20% (worst outcomes)'
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name
-                document.getElementById(`map_tooltip${el}_title`).innerText = a.map.title
+                document.getElementById(`map_tooltip${el}_title`).innerText = (a.map || a.chart).tooltipTitle || (a.map || a.chart).title
                 document.getElementById(`map_tooltip${el}_value`).innerText = a.value
                 if (performance != '') {
                     document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
@@ -262,7 +262,7 @@
                 if (chart) chart.resetHighlight()
             }
         }
-        catch (e) {}
+        catch (e) {console.log('e', e)}
     }
 
     function mapSelect2(a) {

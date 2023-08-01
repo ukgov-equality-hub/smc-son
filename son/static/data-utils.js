@@ -40,7 +40,7 @@ class DataUtils {
         }
     }
 
-    async loadDataFromElement(el, hasHeader=true) {
+    /*async*/ loadDataFromElement(el, hasHeader=true) {
         const table = document.getElementById(el)
         let headers = []
         let data = []
@@ -85,11 +85,12 @@ class DataUtils {
         return this.data
     }
 
-    async loadDataFromString(str) {
+    /*async*/ loadDataFromString(str) {
         let headers = []
         let data = []
+        const csvFormat = this.isCSV(str)
 
-        if (this.isCSV(str)) {
+        if (csvFormat) {
             if (this.type == 'json') {
                 const result = this.csv2json(str)
                 headers = this.cleanCSV(result.headers)
@@ -97,6 +98,26 @@ class DataUtils {
             } else {
                 headers = this.cleanCSV(this.headersFromCSV(str))
                 data = str
+
+                if (!Array.isArray(str)) {
+                    data = []
+                    const rows = str.split('\n')
+            
+                    for (let i = 1; i < rows.length; i++) {
+                        const row = []
+                        if ((`${rows[i]} `).trim() != '') {
+                            let items = rows[i]
+                            items = items.replace(/,""/g, ',##EMPTY##')
+                            items = items.replace(/"",/g, '##EMPTY##,')
+                            items = this.substituteCommas(items).split(csvFormat.delimiter)
+                            for (let j = 0; j < items.length; j++) {
+                                let item = this.stripQuote(items[j] ? items[j].replace(/###/g, csvFormat.delimiter) : '')
+                                row.push(this.isNumeric(item) ? parseFloat(item, 10) : item.indexOf('##EMPTY##') > -1 ? '' : item.trim())
+                            }
+                        }
+                        if (row.length > 0) data.push(row)
+                    }
+                }
             }
         } else if (this.isJSON(str)) {
             if (this.type == 'json') {
@@ -171,6 +192,7 @@ class DataUtils {
     }
 
     isURL(data) {
+        if (typeof data !== 'string') return false
         const pattern = new RegExp('^(https?:\\/\\/)?' +             // protocol
             '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' +     // domain name
             '((\\d{1,3}\\.){3}\\d{1,3}))' +                          // OR ip (v4) address
@@ -207,13 +229,13 @@ class DataUtils {
         for (let i = 1; i < rows.length; i++) {
             const row = {}
             if ((`${rows[i]} `).trim() != '') {
-                let currentLine = rows[i]
-                currentLine = currentLine.replace(/,""/g, ',##EMPTY##')
-                currentLine = currentLine.replace(/"",/g, '##EMPTY##,')
-                currentLine = this.substituteCommas(currentLine).split(csvFormat.delimiter)
+                let items = rows[i]
+                items = items.replace(/,""/g, ',##EMPTY##')
+                items = items.replace(/"",/g, '##EMPTY##,')
+                items = this.substituteCommas(items).split(csvFormat.delimiter)
                 for (let j = 0; j < headers.length; j++) {
-                    let str = this.stripQuote(currentLine[j] ? currentLine[j].replace(/###/g, csvFormat.delimiter) : '')
-                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(str) ? parseFloat(str, 10) : str.indexOf('##EMPTY##') > -1 ? '' : str.trim()
+                    let item = this.stripQuote(items[j] ? items[j].replace(/###/g, csvFormat.delimiter) : '')
+                    row[this.stripQuote(headers[j].replace(/###/g, csvFormat.delimiter))] = this.isNumeric(item) ? parseFloat(item, 10) : item.indexOf('##EMPTY##') > -1 ? '' : item.trim()
                 }
                 result.push(row)
             }
@@ -278,6 +300,66 @@ class DataUtils {
         return headers
     }
 
+    columnAttributes(tableColumns, headers) {
+        const columns = {}
+        //const headers = self.dataTable['headers']
+
+        for (let i = 0; i < headers.length; i++) {
+            let heading = headers[i], include = true, align = '', width = '', format = '', replace = '', replaceWith = ''
+
+            if (Array.isArray(tableColumns) && tableColumns.length > 0) {
+                include = false
+                if (typeof tableColumns[0] === 'object' && tableColumns[0] !== null) {
+                    for (let j = 0; j < tableColumns.length; j++) {
+                        const tableColumn = tableColumns[j]
+                        if (tableColumn['column'] && tableColumn['column'] == heading) {
+                            heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
+                            include = true//'include' in tableColumn ? tableColumn['include'] : false
+                            align = 'align' in tableColumn ? tableColumn['align'] : ''
+                            width = 'width' in tableColumn ? tableColumn['width'] : `${(1 / tableColumns.length) * 100}%`
+                            format = 'format' in tableColumn ? tableColumn['format'] : ''
+                            replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
+                            replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
+                        }
+                    }
+                } else {
+                    if (tableColumns.includes(heading)) {
+                        include = true
+                        heading = heading.replace(/_/g, ' ')
+                    }
+                }
+            } else if (typeof tableColumns === 'object' && tableColumns !== null && !Array.isArray(tableColumns)) {
+                include = false
+                if (heading in tableColumns) {
+                    const tableColumn = tableColumns[heading]
+                    heading = 'heading' in tableColumn ? tableColumn['heading'] : heading.replace(/_/g, ' ')
+                    include = true//'include' in tableColumn ? tableColumn['include'] : false
+                    align = 'align' in tableColumn ? tableColumn['align'] : ''
+                    width = `${(1 / tableColumns.length) * 100}%`
+                    format = 'format' in tableColumn ? tableColumn['format'] : ''
+                    replace = 'replace' in tableColumn ? tableColumn['replace'] : ''
+                    replaceWith = 'replaceWith' in tableColumn ? tableColumn['replaceWith'] : ''
+                }
+            } else {
+                heading = heading.replace(/_/g, ' ')
+                width = `${(1 / headers.length) * 100}%`
+            }
+
+            const column = {
+                heading: heading,
+                include: include,
+                align: align,
+                width: width,
+                format: format,
+                replace: replace,
+                replaceWith: replaceWith
+            }
+            columns[headers[i]] = column
+        }
+
+        return columns
+    }
+
     sortData(data, sort, sortOrder) {
         const headers = this.data['headers']
 
@@ -334,7 +416,7 @@ class DataUtils {
             let filtered = []
             for (let i = 0; i < data.length; i++) {
                 let ok = ''
-                for (let filter of filters) {
+                for (const filter of filters) {
                     const columnNumber = headers.indexOf(filter['column'])
                     const column = this.type == 'json' ? filter['column'] : columnNumber
 
@@ -394,7 +476,66 @@ class DataUtils {
         }).concat(arr2.filter(item => arr1.every( x => x[key] !== item[key])))
     }
 
-    downloadData(data, filename, format, mode) {
+    async downloadData(data, filename, format, mode, columns) {
+        function allowColumn(columns, columnName) {
+            return !!columns[columnName].include
+        }
+
+        let headers = []
+        if (this.isURL(data)) {
+            this.type = format
+            data = await this.loadDataFromURL(data)
+            headers = data.headers
+            data = data.data || data
+            data.unshift(headers)
+        }
+
+        if (columns) {
+            columns = this.columnAttributes(columns, headers)
+            const userData = []
+
+            for (let i = 1; i < data.length; i++) {
+                const userRow = []
+
+                for (let j = 0; j < headers.length; j++) {
+                    if (allowColumn(columns, headers[j])) {
+                        let content = data[i][j]
+
+                        if (columns[headers[j]].format != '') {
+                            if (['percent', '%', '£', '$', '€', 'currency', 'number'].includes(columns[headers[j]].format) && this.isNumeric(content)) {
+                                if (['percent', '%'].includes(columns[headers[j]].format)) {
+                                    content = `${parseFloat(content, 10).toFixed(2)}%`
+                                } else if (['£', '$', '€'].includes(columns[headers[j]].format)) {
+                                    content = `${columns[headers[j]].format == 'currency' ? '£' : columns[headers[j]].format}${this.numberWithCommas(parseFloat(content, 10).toFixed(2))}`
+                                } else if (columns[headers[j]].format == 'number') {
+                                    content = this.numberWithCommas(content)
+                                }
+                            } else if (columns[headers[j]].format.substr(-2) == 'dp' && this.isNumeric(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2)) && this.isNumeric(content)) {
+                                content = this.numberWithCommas(parseFloat(content, 10).toFixed(parseInt(columns[headers[j]].format.substr(0, columns[headers[j]].format.length - 2), 10)))
+                            }
+                        }
+
+                        if (columns[headers[j]].replace != '' && columns[headers[j]].replaceWith != '' ) {
+                            content = content.replace(new RegExp(columns[headers[j]].replace, 'g'), columns[headers[j]].replaceWith)
+                        }
+
+                        userRow.push(content.toString().indexOf(',') > -1 ? `"${content}"` : content)
+                    }
+                }
+
+                userData.push(userRow)
+            }
+
+            data = userData
+            headers = []
+            for (const key in columns) {
+                if (columns.hasOwnProperty(key)) {
+                    if (columns[key].include) headers.push(columns[key].heading)
+                }
+            }
+            data.unshift(headers)
+        }
+
         let blob
         if (format == 'csv') {
             if (this.type == 'json') {
@@ -438,6 +579,10 @@ class DataUtils {
 
     isNumeric(x) {
         return !isNaN(parseFloat(x)) && isFinite(x)
+    }
+
+    numberWithCommas(x) {
+        return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
     }
 
     substituteCommas(str) {

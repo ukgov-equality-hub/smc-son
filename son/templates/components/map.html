@@ -48,12 +48,13 @@
     </div>
 </div>
 <script>
-    let map{{ id }}
+    let map{{ id }}, mapData{{ id }}
 
-    function buildMap{{ id }}(datafile) {
-        const options = {{ data | safe }}
+    function buildMap{{ id }}(datafile, download) {
+        const options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
+        if (download) options.download = download
 
         document.getElementById('scaleQunitile{{ id }}').style.display = 'none'
         document.getElementById('scaleContinuous{{ id }}').style.display = 'none'
@@ -65,10 +66,11 @@
             }
         }
 
+        mapData{{ id }} = datafile || options.data.data || options.data
         map{{ id }} = new Choropleth(
             'map{{ id }}',
             `${location.protocol}//${location.host}${options.map}`,
-            `${location.protocol}//${location.host}${datafile || options.data.data || options.data}`,
+            `${location.protocol}//${location.host}${mapData{{ id }}}`,
             options
         )
 
@@ -86,9 +88,13 @@
                 document.getElementById('max_{{ id }}').innerText = parseInt(map{{ id }}.max, 10)
             }
 
-            if (document.getElementById('mapSize{{ id }}')) {
-                document.getElementById('mapSize{{ id }}').innerText = ' ' + data
+            const items = document.getElementsByClassName('mapSize{{ id }}')
+            for (let i = 0; i < items.length; i++) {
+                items.item(i).innerText = ' ' + data
             }
+            //if (document.getElementById('mapSize{{ id }}')) {
+            //    document.getElementById('mapSize{{ id }}').innerText = ' ' + data
+            //}
         })
     }
 
@@ -96,8 +102,16 @@
         buildMap{{ id }}()
     })
 
-    function downloadMap{{ id }}() {
-        map{{ id }}.download()
+    function downloadMap{{ id }}(datafile) {
+        if (datafile) {
+            const data = mapData{{ id }}
+            buildMap{{ id }}(datafile, true)
+            setTimeout(function () {
+                buildMap{{ id }}(data)
+            }, 2000)
+        } else {
+            map{{ id }}.download()
+        }
     }
 </script>
 {% endmacro %}

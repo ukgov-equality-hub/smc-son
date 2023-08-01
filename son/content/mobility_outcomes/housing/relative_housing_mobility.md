@@ -20,17 +20,32 @@ There were no significant differences in relative housing mobility between UK re
 ## Section
 Overview
 
-## Placeholder
+## Chart: Single-line
+{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_overview-20230602.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Area_name", "heading": "Country" }, { "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
-By area (ITL2)
+By area
 
-## Placeholder
+## Chart: Single-bar
+{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_area-20230602.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "zkey": "Area_type", "sort": "Area_name", "scale": "Odds ratio", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+By age
+
+## Chart: Single-bar
+{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_age-20230602.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "Odds ratio", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By sex
 
-## Placeholder
+## Chart: Single-bar
+{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_gender-20230602.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "zkey": "Sex", "sort": "Area_name", "scale": "Odds ratio", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Sex" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+By disability
+
+## Chart: Single-bar
+{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_disability-20230602.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "sort": "Area_name", "scale": "Odds ratio", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Category", "heading": "Disabled" }, { "column": "Value", "heading": "Odds ratio", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
@@ -69,6 +84,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download full dataset (CSV)](/static/data/indicators/2023-06-02 MO42.csv){: target="_blank" class="download" }

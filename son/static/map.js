@@ -106,6 +106,7 @@ class Choropleth {
             }
 
             console.info('Map resources loaded')
+            window['mapjs'] = true
 
             if (self.el && self.geodata && self.data) {
                 if (typeof self.options.responsive !== 'undefined' && self.options.responsive == true) {
@@ -116,7 +117,6 @@ class Choropleth {
                         }, 250)
                     }, true)
                 }
-                window['mapjs'] = true
                 self.render()
             }
         }
@@ -162,6 +162,7 @@ class Choropleth {
         this.legendDiv = options.legend || ''
         this.tooltip = ''
         this.tooltipDiv = options.tooltip || ''
+        this.tooltipTitle = options.tooltipTitle || undefined
         this.labels = options.labels || false
         this.tooltipBehaviour = ['rollover', 'click'].includes(options.tooltipBehaviour) ? options.tooltipBehaviour : ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
@@ -175,7 +176,7 @@ class Choropleth {
             fontFamily: 'GDS Transport',
             fontSize: '14px',
             overflow: 'visible',
-            backgroundColor: options.backgroundColor || '#fff'
+            backgroundColor: options.backgroundColor || 'transparent'
         }
         let self = this
 
@@ -558,6 +559,7 @@ class Choropleth {
             }
 
             self.rendered = true
+            if (options.download) self.download()
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4

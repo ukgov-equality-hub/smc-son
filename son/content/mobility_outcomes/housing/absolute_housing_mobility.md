@@ -24,17 +24,32 @@ Among people whose parents were not homeowners, home ownership was highest in th
 ## Section
 Overview
 
-## Placeholder
+## Chart: Single-bar
+{ "code": "MO41", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO41_overview-20230503.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
-By area (ITL2)
+By area
 
-## Placeholder
+## Chart: Grouped-bar
+{ "code": "MO41", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO41_area-20230503.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Area_name", "sort": "Area_name", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+By age
+
+## Chart: Grouped-bar
+{ "code": "MO41", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO41_age-20230503.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Age", "sort": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Age" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By sex
 
-## Placeholder
+## Chart: Grouped-bar
+{ "code": "MO41", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO41_gender-20230503.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "SEB", "scale": "%", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+## Section
+By disability
+
+## Chart: Grouped-bar
+{ "code": "MO41", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO41_disability-20230503.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "SEB", "scale": "%", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "SEB", "heading": "Owned" }, { "column": "Category", "heading": "Disabled" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
@@ -64,6 +79,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-<p class="govuk-body">
-    <a href="#" class="govuk-link">Download the data (CSV, 1KB)</a>
-</p>
+[Download full dataset (CSV)](/static/data/indicators/2023-05-03 MO41.csv){: target="_blank" class="download" }

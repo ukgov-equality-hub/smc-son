@@ -1,0 +1,11 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","White British",4.18,NA,3.75,4.66,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Other White",3.6,NA,2.42,5.37,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Mixed",4.72,NA,2.3,9.66,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Indian",4.17,NA,2.45,7.1,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Pakistani",4.29,NA,1.68,10.93,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Bangladeshi",4.58,NA,1.29,16.23,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Chinese",NA,NA,NA,NA,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Black Caribbean",2.9,NA,0.87,9.66,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Black African",4.83,NA,2.4,9.73,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total","Ethnicity","Other",4.85,NA,2.55,9.24,NA,"Odds ratio",NA

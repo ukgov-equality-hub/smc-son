@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_code","Area_name","Area_type","Age","SEB","Category_type","Category","Value","LCI","UCI","SE","Sample_size","Time_period","Unit","Value_note","Sex"
+"MO41","Absolute housing mobility","K02000001","United Kingdom","Country","25-64","Owned","Disability","No",73.58565724,72.54646768,74.59433353,NA,7218,"2016-20","Percentage",NA,"Total"
+"MO41","Absolute housing mobility","K02000001","United Kingdom","Country","25-64","Not owned","Disability","No",53.46115495,51.52161131,55.34792869,NA,2661,"2016-20","Percentage",NA,"Total"
+"MO41","Absolute housing mobility","K02000001","United Kingdom","Country","25-64","Owned","Disability","Yes",60.67430112,58.99834004,62.32084791,NA,3379,"2016-20","Percentage",NA,"Total"
+"MO41","Absolute housing mobility","K02000001","United Kingdom","Country","25-64","Not owned","Disability","Yes",34.15432473,32.28659125,36.05330991,NA,2486,"2016-20","Percentage",NA,"Total"

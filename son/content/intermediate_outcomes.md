@@ -15,41 +15,41 @@ Highlighted content
             new Chart(
                 'chart1',
                 `${location.protocol}//${location.host}/static/data/indicators/IN11_gender-20230327.csv`,
-                { "height": 150, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "Sex", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+                { "height": 200, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "Sex", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
         <p class="govuk-body">Girls out perform boys at age 5, while all children who receive free school meals perform worse.</p>
-        <a href="/mobility_outcomes" class="govuk-link">Read more...</a>
+        <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/level_of_development_at_age_5" class="govuk-link">Read more...</a>
     </div>
     <div class="govuk-body">
-        <h3 class="govuk-heading-s">Entry to higher education</h3>
+        <h3 class="govuk-heading-s">Attainment at age 16</h3>
         <div class="chart-container">
             <div id="chart2"></div>
         </div>
         <script>
             new Chart(
                 'chart2',
-                `${location.protocol}//${location.host}/static/data/indicators/IN22_overview-20230327.csv`,
-                { "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+                `${location.protocol}//${location.host}/static/data/indicators/IN13_year-20230601.csv`,
+                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
-        <p class="govuk-body">63% of 19 year olds in the UK entered higher education in 2020, compared with 48% in 2010.</p>
-        <a href="/intermediate_outcomes" class="govuk-link">Read more...</a>
+        <p class="govuk-body">In the 2021 to 2022 school year, 50% of all pupils got a grade 5 or above in both GCSE English and maths</p>
+        <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16" class="govuk-link">Read more...</a>
     </div>
     <div class="govuk-body">
-        <h3 class="govuk-heading-s">Job vacancy rate</h3>
+        <h3 class="govuk-heading-s">Further training</h3>
         <div class="chart-container">
             <div id="chart3"></div>
         </div>
         <script>
             new Chart(
                 'chart3',
-                `${location.protocol}//${location.host}/static/data/indicators/DR31_overview-20230413.csv`,
-                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Rate", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+                `${location.protocol}//${location.host}/static/data/indicators/IN41_overview-20230327.csv`,
+                { "height": 200, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
-        <p class="govuk-body">There were more vacancies for every jobseeker in 2021 and 2022 than at any time in the previous 20 years.</p>
-        <a href="/drivers_of_social_mobility" class="govuk-link">Read more...</a>
+        <p class="govuk-body">Between 2014 and 2021, the percentage of people with degrees went up between the ages of 25 and 32.</p>
+        <a href="/intermediate_outcomes/career_progression_(35_to_44_years)/further_training_and_qualifications" class="govuk-link">Read more...</a>
     </div>
 </div>
 

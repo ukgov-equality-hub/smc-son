@@ -27,7 +27,7 @@
             <div class="chart-container">
                 <div id="chart1"></div>
             </div>
-            <p class="govuk-body">Total occupational mobility for men aged 35 to 65 years remained stable throughout most of the 20th century.</p>
+            <p class="govuk-body">Between 1991 and 2020, relative educational mobility went up for people aged 28 to 37 years.</p>
             <a href="/mobility_outcomes" class="govuk-link">Read more...</a>
         </div>
         <div class="govuk-body">
@@ -35,7 +35,7 @@
             <div class="chart-container">
                 <div id="chart2"></div>
             </div>
-            <p class="govuk-body">Men from professional backgrounds are more likely to be in professional jobs than those from working class backgrounds, but this gap is closing.</p>
+            <p class="govuk-body">Data for the period from 2019 to 2021 shows that higher levels of education among 25 to 29 year olds led to higher earnings.</p>
             <a href="/intermediate_outcomes" class="govuk-link">Read more...</a>
         </div>
         <div class="govuk-body">
@@ -77,20 +77,20 @@
 
         new Chart(
             'chart1',
-            `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-            { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+            `${location.protocol}//${location.host}/static/data/indicators/MO32_overview-20230607.csv`,
+            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "maxLabelLength": 25 }
         )
 
         new Chart(
             'chart2',
-            `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-            { "height": 200, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+            `${location.protocol}//${location.host}/static/data/indicators/IN351_difference-20230713.csv`,
+            { "height": 220, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "xticks": -1, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
         )
 
         new Chart(
             'chart3',
             `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-            { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 3, "legend": true, "rotateDomainLabels": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent" }
+            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "rotateDomainLabels": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 35 }
         )
 
         let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/areas.csv`)

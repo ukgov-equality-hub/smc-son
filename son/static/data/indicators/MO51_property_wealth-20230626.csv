@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"25-34",NA,"Type of wealth","Property wealth",24740.72168,6147,22974.40821,26507.03515,901.1803431,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"35-44",NA,"Type of wealth","Property wealth",80249.09924,8224,75082.24919,85415.94928,2636.147983,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"45-54",NA,"Type of wealth","Property wealth",126969.3492,10754,122271.5712,131667.1273,2396.825522,"Pounds",NA
+"MO51","Level of wealth","Country",NA,"Great Britain","2016/20",NA,"55-64",NA,"Type of wealth","Property wealth",172032.249,12041,166863.8389,177200.6592,2636.943968,"Pounds",NA

@@ -74,10 +74,26 @@ def content_filter(context, details):
 
 
 @jinja2.pass_context
+@blueprint.app_template_filter('content_list')
+def content_list_filter(context, details):
+    if details:
+        content = details[0]
+        field = details[1]
+        try:
+            for item in content:
+                if isinstance(item, list):
+                    if item[0] == field:
+                        return item[1]
+        except:
+            pass
+    return details[0] if details[1] == 'Src' else ''
+
+
+@jinja2.pass_context
 @blueprint.app_template_filter('attribute')
 def attribute_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -92,7 +108,7 @@ def attribute_filter(context, details):
 @blueprint.app_template_filter('attribute_type')
 def attribute_type_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -110,7 +126,7 @@ def attribute_type_filter(context, details):
 @blueprint.app_template_filter('latest_data')
 def latest_data_filter(context, details):
     if details:
-        data = details[0]
+        data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
         try:
             attributes = json.loads(data)
@@ -127,16 +143,63 @@ def latest_data_filter(context, details):
 @blueprint.app_template_filter('table')
 def table_filter(context, details):
     if details:
-        data = details[0]
-        field = details[1]
+        data = content_list_filter(context, [details[0], 'Src'])
+        field1 = details[1]
+        field2 = details[2] if len(details) > 2 else ''
         try:
             attributes = json.loads(data)
-            if field in attributes:
-                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{attributes[field].replace('data-src:', '').strip()}"
+            file_path = ''
+            if field1 in attributes:
+                file_path = attributes[field1]
+            elif field2 in attributes:
+                file_path = attributes[field2]
+
+            if file_path != '':
+                if type(file_path) == list and 'data' in file_path[-1]:
+                    file_path = file_path[-1]['data']
+                file_path = file_path.replace('data-src:', '').strip()
+                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
                 if Path(data_src).is_file():
                     with open(data_src, encoding='utf-8-sig', errors='ignore') as csv_file:
                         data_table = list(csv.reader(csv_file, delimiter=','))
                         return data_table
         except:
             pass
+    return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('file_size')
+def file_size(context, details):
+    if details:
+        file_path = ''
+        file_size = -1
+        if type(details) == list:
+            data = content_list_filter(context, [details[0], 'Src'])
+            field1 = details[1]
+            field2 = details[2] if len(details) > 2 else ''
+            try:
+                attributes = json.loads(data)
+                if field1 in attributes:
+                    file_path = attributes[field1]
+                elif field2 in attributes:
+                    file_path = attributes[field2]
+            except:
+                pass
+        else:
+            file_path = details
+
+        if file_path != '':
+            if type(file_path) == list and 'data' in file_path[-1]:
+                file_path = file_path[-1]['data']
+            file_path = file_path.replace('data-src:', '').strip()
+            data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
+            if Path(data_src).is_file():
+                file_size = os.path.getsize(data_src)
+
+        if file_size > -1:
+            if file_size > 1000000: file_size = f"{int(file_size / 1000000)}MB"
+            elif file_size > 1000: file_size = f"{int(file_size / 1000)}KB"
+            else: file_size = f"{int(file_size)}B"
+            return file_size
     return ''

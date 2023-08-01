@@ -17,13 +17,11 @@
                 Data
             </a>
         </li>
-        {% if type == 'map' and [data, 'title'] | attribute | safe == 'Distribution of parental education' %}
-        <li class="govuk-tabs__list-item" role="presentation">
+        <!--<li class="govuk-tabs__list-item" role="presentation">
             <a class="govuk-tabs__tab" href="#guidance{{ id }}_tab" id="tab_guidance{{ id }}_tab" role="tab" aria-controls="guidance{{ id }}_tab" aria-selected="false" tabindex="-1">
                 Guidance
             </a>
-        </li>
-        {% endif %}
+        </li>-->
         <li class="govuk-tabs__list-item" role="presentation">
             <a class="govuk-tabs__tab" href="#download{{ id }}_tab" id="tab_download{{ id }}_tab" role="tab" aria-controls="download{{ id }}_tab" aria-selected="false" tabindex="-1">
                 Download
@@ -36,7 +34,9 @@
             Visualisation
         </h2>
 
+        {% if [data, 'title'] | attribute != '' %}
         <h3 class="govuk-heading-s">{{ [data, 'title'] | attribute | safe }}</h3>
+        {% endif %}
 
         {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
@@ -75,11 +75,11 @@
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
                 try {
-                    buildMap{{ id }}(datafile)
+                    buildMap{{ id }}(datafile, false)
                 }
                 catch (e) {}
                 try {
-                    buildChart{{ id }}(datafile)
+                    buildChart{{ id }}(datafile, false)
                 }
                 catch (e) {}
 
@@ -90,16 +90,10 @@
         </script>
         {% endif %}
 
+        {{ [data, 'Guidance'] | content_list | safe }}
         {% if type == 'chart' %}
         {{ chart(id, data) }}
         {% else %}
-
-        {% if [data, 'title'] | attribute | safe == 'Childhood poverty' %}
-        <p class="govuk-body">41 regions in the UK are divided into 5 equally-sized groups, and then ranked from the best outcomes (top 20%) to the worst outcomes (bottom 20%).</p>
-        <p class="govuk-body">The figure for each region shows the percentage of children in relative poverty after housing costs.</p>
-        <p class="govuk-body">The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about confidence intervals.</p>
-        {% endif %}
-
         {% if ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">How regions are ranked:</p>
         <p class="govuk-body">Based on their composite scores, 41 regions in the UK are ranked from the best to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’) – from 1 (top 20%) to 5 (bottom 20%).</p>
@@ -132,22 +126,14 @@
         </div>
     </div>
 
-    {% if type == 'map' and [data, 'title'] | attribute | safe == 'Distribution of parental education' %}
-    <div id="guidance{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_guidance{{ id }}_tab">
+    <!--<div id="guidance{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_guidance{{ id }}_tab">
         <h2 class="govuk-visually-hidden">
             Guidance
         </h2>
 
-        <h3 class="govuk-heading-m">What the map shows<h3>
-        <p class="govuk-body">The figure for each region shows the percentage of adults with dependent children who are educated to degree level or above.</p>
-        <p class="govuk-body">Regions shown in red represent those in the bottom 20% for worst outcomes. Regions in blue represent those in the top 20% for best outcomes.</p>
-        <p class="govuk-body">41 regions in the UK are divided into 5 equally-sized groups, and then ranked from the top 20% to the bottom 20%.</p>
-        <p>&nbsp;</p>
-        <h3 class="govuk-heading-m">What the caterpillar chart shows</h3>
-        <p class="govuk-body">The chart shows how each region or group of regions performs against the best (top 20%) and worst (bottom 20%) outcomes for youth unemployment.</p>
-        <p class="govuk-body">The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about <a href="https://www.ethnicity-facts-figures.service.gov.uk/understanding-our-data/how-to-read-survey-data#confidence-intervals" target="_blank" class="govuk-link">confidence intervals</a>.</p>
-    </div>
-    {% endif %}
+        <h3 class="govuk-heading-m"><h3>
+        <p class="govuk-body"></p>
+    </div>-->
 
     <div id="download{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_download{{ id }}_tab">
         <h2 class="govuk-visually-hidden">
@@ -155,25 +141,63 @@
         </h2>
 
         <ul class="govuk-list">
+            {% if [data, 'data'] | attribute_type == 'list' %}
+            {% for item in ([data, 'data'] | attribute) %}
+            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+            <li>
+                <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}('{{ item.data }}')">
+                    Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% endif %}
+
+            {% if type == 'map' %}
+            <li>
+                <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}('{{ item.data }}')">
+                    Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            {% else %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
-                    Download the chart (PNG<span id="chartSize{{ id }}"></span>)
+                    Download the chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
             {% endif %}
+
             {% if type == 'map' %}
             <li>
                 <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
-                    Download the map (PNG<span id="mapSize{{ id }}"></span>)
+                    Download the map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
             {% endif %}
+            {% endif %}
+
+            {% if [data, 'dataTable'] | attribute %}
             <li>
-                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
-                    Download the data (CSV<span id="dataTableSize{{ id }}"></span>)
+                <a href="javascript:;" data-file="{{ [data, 'dataTable'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ [data, 'dataTable'] | attribute | safe }}`, {{ [data, 'columns'] | attribute | safe }})">
+                    Download the data (CSV {{ [data, 'dataTable'] | file_size | safe }})
                 </a>
             </li>
+            {% elif [data, 'data'] | attribute_type == 'list' %}
+            {% for item in ([data, 'data'] | attribute) %}
+            <li>
+                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ item.data }}`, {{ [data, 'columns'] | attribute | safe }})">
+                    Download the {{ item.label }} data (CSV {{ item.data | file_size | safe }})
+                </a>
+            </li>
+            {% endfor %}
+            {% else %}
+            <li>
+                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
+                    Download the data (CSV {{ [data, 'data'] | file_size | safe }})
+                </a>
+            </li>
+            {% endif %}
         </ul>
         {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
         <p class="govuk-body">For the full download file, see <a href="#Download the data" class="govuk-link">Download the data</a>.
