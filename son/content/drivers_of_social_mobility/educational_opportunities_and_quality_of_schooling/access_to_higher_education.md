@@ -18,12 +18,12 @@ UK enrolment in higher education among 19 year olds has been higher than the int
 The percentage of 19 year olds from OECD countries entering higher education has stayed roughly the same since 2010, at 61% or 62%.
 
 ## Section
-Overview
+By year
 
 ## Chart
-{ "code": "DR23", "title": "Access to higher education: enrollment rate in secondary or tertiary education at age 19", "data": "/static/data/indicators/DR23a_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "DR23", "title": "Percentage of 19 year olds enrolled in secondary or post-secondary education, over time (UK and international averages, 2010 to 2020)", "data": "/static/data/indicators/DR23a_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "backgroundColor": "transparent", "rolloverBehaviour": "fade", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
-## About
+## About the data
 # Data source
 Organisation for Economic Cooperation and Development (OECD), Online Education Database
 

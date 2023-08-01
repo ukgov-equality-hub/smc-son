@@ -20,12 +20,12 @@ In 2018, UK students scored above the OECD averages in reading (504), maths (502
 The average attainment score for students in OECD countries was 487 in 2018, up from 485 in 2006 – it peaked at 493 in 2012.
 
 ## Section
-Overview
+By year
 
 ## Chart
-{ "code": "DR22", "title": "Availability of high-quality school education", "data": "/static/data/indicators/DR22_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "Average pupil attainment scores", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Average pupil attainment scores", "align": "right", "format": "1dp" }] }
+{ "code": "DR22", "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)", "data": "/static/data/indicators/DR22_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "Average pupil attainment scores", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "backgroundColor": "transparent", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Average pupil attainment scores", "align": "right", "format": "1dp" }] }
 
-## About
+## About the data
 # Data source
 Organisation for Economic Cooperation and Development (OECD), Programme for International Student Assessment (PISA)
 
