@@ -107,8 +107,8 @@ By sex
     "code": "IN12",
     "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)",
     "data": [
-        {"label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv"},
-        {"label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv"}
+        { "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" },
+        { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 450,
@@ -123,18 +123,29 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "range": [ 0, 80 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-sex-and-disadvantage--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
-    "dataTableNumberOfHeadingRows": 2
+    "columns": [
+        {
+            "column": "Time_period"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
 }
+
 ## Section
 By ethnicity
 
@@ -143,11 +154,11 @@ By ethnicity
     "code": "IN12",
     "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)",
     "data": [
-        {"label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"},
-        {"label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"},
-        {"label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"},
-        {"label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"},
-        {"label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"}
+        { "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" },
+        { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" },
+        { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" },
+        { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" },
+        { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 1450,
@@ -161,18 +172,30 @@ By ethnicity
     "ygrid": false,
     "xticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "domain": [0, 85],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "domain": [ 0, 85 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-ethnicity-and-FSM--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
-    "dataTableNumberOfHeadingColumns": 2
+    "columns": [
+        {
+            "column": "Category",
+            "heading": "Ethnicity"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
 }
+
 ## Section
 Disadvantaged vs. Not disadvantaged [delete?]
 
