@@ -18,12 +18,16 @@
     display: flex;
 }
 
-.table-container thead tr th {
+.table-container thead {
     position: sticky;
+    top: 0;
+}
+
+.table-container thead tr th {
     align-self: flex-start;
     height: auto;
-    top: 0;
     display: table-cell;
+    background-color: #ffffff;
 }
 
 .table-container .table-row .table-column {
