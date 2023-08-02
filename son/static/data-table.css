@@ -5,6 +5,10 @@
     position: relative;
 }
 
+.table-container caption {
+    width: fit-content;
+}
+
 .table-container .table-row {
     width: 100%;
     border-collapse: separate;
