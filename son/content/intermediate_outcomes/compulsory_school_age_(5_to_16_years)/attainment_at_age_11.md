@@ -39,14 +39,76 @@ By year
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attainment at age 11", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 80], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
-
+{
+    "code": "IN12",
+    "title": "Attainment at age 11",
+    "data": [
+        {"label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv"},
+        {"label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv"}
+    ],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "%",
+    "maxBarSize": 150,
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "range": [0, 80],
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-sex-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
+    "dataTableNumberOfHeadingRows": 2
+}
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attainment at age 11", "data": [{ "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" }, { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" }, { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" }, { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" }, { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }], "toggle": "radio", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "domain": [0, 85], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
-
+{
+    "code": "IN12",
+    "title": "Attainment at age 11",
+    "data": [
+        {"label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"},
+        {"label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"},
+        {"label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"},
+        {"label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"},
+        {"label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"}
+    ],
+    "toggle": "radio",
+    "height": 1450,
+    "type": "bar",
+    "xkey": "Value",
+    "ykey": "SEB",
+    "group": "Category",
+    "sort": "Category",
+    "scale": "%",
+    "xgrid": true,
+    "ygrid": false,
+    "xticks": 5,
+    "legend": true,
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "domain": [0, 85],
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-ethnicity-and-FSM--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
+    "dataTableNumberOfHeadingColumns": 2
+}
 ## Section
 Disadvantaged vs. Not disadvantaged
 
