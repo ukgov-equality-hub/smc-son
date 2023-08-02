@@ -120,6 +120,17 @@
     fill: #ddd;
 }
 
+.table-container .no-data {
+    color: #b1b4b6;
+    font-size: 14px;
+}
+
+@media (min-width: 40.0625em) {
+    .table-container .no-data {
+        font-size: 16px;
+    }
+}
+
 .sort-icon, .filter-icon {
     margin-right: 7px;
     width: 20px;

@@ -17,7 +17,13 @@
         {% else %}
             <tr class="govuk-table__row">
                 {% for cell in row %}
-                <td class="govuk-table__cell">{{ cell }}</td>
+                    <td class="govuk-table__cell">
+                        {% if cell %}
+                            {{ cell }}
+                        {% else %}
+                            <span class="no-data">No data</span>
+                        {% endif %}
+                    </td>
                 {% endfor %}
             </tr>
         {% endif %}
