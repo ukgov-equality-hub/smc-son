@@ -1,6 +1,6 @@
 .table-container {
     /*overflow: hidden;*/
-    width: 100%;
+    width: fit-content;
     border-collapse: separate;
     position: relative;
 }
