@@ -203,3 +203,23 @@ def file_size(context, details):
             else: file_size = f"{int(file_size)}B"
             return file_size
     return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('data_table_align_columns')
+def data_table_align_columns_filter(context, details):
+    if details:
+        data = content_list_filter(context, [details[0], 'Src'])
+        loop_index = details[1]
+
+        attributes = json.loads(data)
+        if 'dataTableAlignColumns' in attributes:
+            data_table_align_columns_list = attributes['dataTableAlignColumns']
+            if type(data_table_align_columns_list) == list:
+                if len(data_table_align_columns_list) >= loop_index:
+                    alignment_for_this_column = data_table_align_columns_list[loop_index - 1]
+                    if alignment_for_this_column == 'left':
+                        return ' govuk-!-text-align-left'
+                    elif alignment_for_this_column == 'right':
+                        return ' govuk-!-text-align-right'
+    return ''

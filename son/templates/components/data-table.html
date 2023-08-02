@@ -17,7 +17,7 @@
         {% else %}
             <tr class="govuk-table__row">
                 {% for cell in row %}
-                    <td class="govuk-table__cell">
+                    <td class="govuk-table__cell{{ [data, loop.index] | data_table_align_columns }}">
                         {% if cell %}
                             {{ cell }}
                         {% else %}
