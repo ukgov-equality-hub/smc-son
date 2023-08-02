@@ -22,56 +22,59 @@
     {% endfor %}
     </tbody>
 </table>
-<script>
-    let tbl{{ id }} = false, dataTable{{ id }}
 
-    function buildTable{{ id }}(datafile) {
-        let options = {{ [data, 'Src'] | content_list | safe }}
-        if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
+    {% if not ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
+        <script>
+            let tbl{{ id }} = false, dataTable{{ id }}
 
-        if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
-            if ('datatable' in options) {
-                options = options['datatable']
-            } else if ('columns' in options) {
-                options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: options['columns'] }
-            } else {
-                const columns = []
-                if ('xkey' in options) columns.push(options['xkey'])
-                if ('ykey' in options) columns.push(options['ykey'])
-                if ('zkey' in options) columns.push(options['zkey'])
-                if ('group' in options) columns.push(options['group'])
-                options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: columns }
+            function buildTable{{ id }}(datafile) {
+                let options = {{ [data, 'Src'] | content_list | safe }}
+                if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
+
+                if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
+                    if ('datatable' in options) {
+                        options = options['datatable']
+                    } else if ('columns' in options) {
+                        options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: options['columns'] }
+                    } else {
+                        const columns = []
+                        if ('xkey' in options) columns.push(options['xkey'])
+                        if ('ykey' in options) columns.push(options['ykey'])
+                        if ('zkey' in options) columns.push(options['zkey'])
+                        if ('group' in options) columns.push(options['group'])
+                        options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: columns }
+                    }
+                } else {
+                    options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10 }
+                }
+
+                if (!tbl{{ id }} || datafile) {
+                    dataTable{{ id }} = new DataTable('table{{ id }}', datafile, options)
+                }
+                tbl{{ id }} = true
+
+                const items = document.getElementsByClassName('dataTableSize{{ id }}')
+                for (let i = 0; i < items.length; i++) {
+                    dataTable{{ id }}.downloadSize('csv', true).then(data => {
+                        items.item(i).innerText = ' ' + data
+                    })
+                }
             }
-        } else {
-            options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10 }
-        }
 
-        if (!tbl{{ id }} || datafile) {
-            dataTable{{ id }} = new DataTable('table{{ id }}', datafile, options)
-        }
-        tbl{{ id }} = true
-
-        const items = document.getElementsByClassName('dataTableSize{{ id }}')
-        for (let i = 0; i < items.length; i++) {
-            dataTable{{ id }}.downloadSize('csv', true).then(data => {
-                items.item(i).innerText = ' ' + data
+            window.document.addEventListener('DOMContentLoaded', function () {
+                buildTable{{ id }}()
             })
-        }
-    }
 
-    window.document.addEventListener('DOMContentLoaded', function () {
-        buildTable{{ id }}()
-    })
+            function downloadData{{ id }}() {
+                if (dataTable{{ id }}) {
+                    dataTable{{ id }}.downloadData('csv', true)
+                }
+            }
 
-    function downloadData{{ id }}() {
-        if (dataTable{{ id }}) {
-            dataTable{{ id }}.downloadData('csv', true)
-        }
-    }
-
-    function downloadDataFile(datafile, options) {
-        format = 'csv'
-        return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
-    }
-</script>
+            function downloadDataFile(datafile, options) {
+                format = 'csv'
+                return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
+            }
+        </script>
+    {% endif %}
 {% endmacro %}
