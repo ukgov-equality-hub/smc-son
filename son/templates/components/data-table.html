@@ -2,6 +2,8 @@
     {% set data_table = [data, 'dataTable', 'data'] | table %}
     {% set number_of_heading_rows = ([data, 'dataTableNumberOfHeadingRows'] | attribute) or 1 %}
     {% set number_of_heading_columns = ([data, 'dataTableNumberOfHeadingColumns'] | attribute) or 1 %}
+    {% set number_of_data_rows = [data_table, number_of_heading_rows] | number_of_data_rows %}
+    {% set default_number_of_rows_to_show = 20 %}
 
     <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--s">
@@ -29,7 +31,7 @@
             {% for row in data_table %}
                 {% set row_number = loop.index %}
                 {% if row_number > number_of_heading_rows %}
-                    <tr class="govuk-table__row">
+                    <tr class="govuk-table__row{{ ' would-be-truncated' if row_number > number_of_heading_rows + default_number_of_rows_to_show else '' }}">
                         {% for cell in row %}
                             {% set column_number = loop.index %}
                             {% if column_number <= number_of_heading_columns %}
@@ -55,6 +57,18 @@
             {% endfor %}
         </tbody>
     </table>
+    {% if number_of_data_rows > default_number_of_rows_to_show and ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
+        <p class="govuk-body" id="son-show-more-rows-button-{{ id }}" style="display: none;">
+            <a href="#" class="govuk-link" onclick="event.preventDefault(); document.getElementById('table{{ id }}').classList.remove('son-table__truncated'); document.getElementById('son-show-more-rows-button-{{ id }}').style.display='none';">
+                {% set number_of_rows_hidden = number_of_data_rows - default_number_of_rows_to_show %}
+                Show {{ (number_of_rows_hidden) }} more {{ 'row' if number_of_rows_hidden == 1 else 'rows' }}
+            </a>
+        </p>
+        <script>
+            document.getElementById('table{{ id }}').classList.add('son-table__truncated');
+            document.getElementById('son-show-more-rows-button-{{ id }}').style.display = '';
+        </script>
+    {% endif %}
 
     {% if not ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
         <script>

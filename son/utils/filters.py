@@ -276,3 +276,15 @@ def data_table_row_column_span_filter(context, details):
                     extra_cells_spanned += 1
             return extra_cells_spanned + 1
     return 1
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('number_of_data_rows')
+def number_of_data_rows_filter(context, details):
+    if details:
+        data_table = details[0]
+        number_of_heading_rows = details[1]
+
+        if len(data_table) > number_of_heading_rows:
+            return len(data_table) - number_of_heading_rows
+    return 0
