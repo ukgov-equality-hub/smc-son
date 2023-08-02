@@ -131,6 +131,16 @@
     }
 }
 
+.table-container .govuk-table__header, .table-container .govuk-table__cell {
+    padding: 10px;
+    border-right: 1px solid #b1b4b6;
+}
+
+.table-container .govuk-table__header:last-child, .table-container .govuk-table__cell:last-child {
+    padding: 10px;
+    border-right: none;
+}
+
 .sort-icon, .filter-icon {
     margin-right: 7px;
     width: 20px;
