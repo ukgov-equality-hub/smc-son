@@ -178,6 +178,7 @@ class Chart {
         let ygrid = options.ygrid == false ? false : grid
         let xticks = options.xticks == false ? false : options.xticks
         let yticks = options.yticks == false ? false : options.yticks
+        let filterNaN = options.filterNaN == false ? false : true
         const legend = options.legend || false
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
@@ -282,7 +283,7 @@ class Chart {
                         [zkey]: isNumeric(x[zkey]) ? parseFloat(x[zkey], 10) : x[zkey] || null
                     }))
                 }
-                chartData = chartData.filter(x => isNumeric(x[orientation == 'y' ? ykey : xkey]))
+                if (filterNaN) chartData = chartData.filter(x => isNumeric(x[orientation == 'y' ? ykey : xkey]))
                 //chartData = chartData.filter(x => x[orientation == 'y' ? ykey : xkey] != 'NA')
 
                 if (sort) {
@@ -363,11 +364,11 @@ class Chart {
                     marks.push(Plot.barY(chartData, chartOptions))
                 }
                 if (type == 'line' || type == 'linex') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? ykey : xkey, ...chartOptions }))
+                    marks.push(Plot.lineX(chartData, { sort: zkey ? ykey : xkey, ...chartOptions }))
                     marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (type == 'liney') {
-                    marks.push(Plot.line(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
+                    marks.push(Plot.lineY(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
                     marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(type)) {
@@ -898,7 +899,7 @@ class Chart {
                                     tip.selectAll('*').remove()
                                 }
 
-                                d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise()
+                                //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise()
                                 const tipSize = tip.node().getBBox()
                                 if (pointer[0] + tipSize.x < 0) {
                                     tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
@@ -996,7 +997,7 @@ class Chart {
             return unsorted.sort(sortKeys(Array.isArray(keys) ? keys : [keys])).map(x => x[xkey])
         }
 
-        function formatNumber(x, dp = 2) {
+        function formatNumber(x, dp=2) {
             if (isNumeric(x)) {
                 if (parseInt(x, 10) != parseFloat(x, 10)) {
                     return parseFloat(x, 10).toFixed(dp).toString()
@@ -1017,8 +1018,10 @@ class Chart {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
+            } else if (scale.toLowerCase() == 'ratio') {
+                text = `${formatNumber(key, 1)}x`
             } else {
-                text = formatNumber(key, 2)
+                text = formatNumber(key, 1)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }

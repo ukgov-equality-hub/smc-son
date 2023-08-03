@@ -1,10 +1,6 @@
 class DataTable {
 
-    // TOTO
-    // DATA-SORT numeric
-    // Add row with msg when filter returns nothing
-    // Data from data object
-    // filter - choose between AND and OR
+    // TODO
     // Table summary
     // Group / sum / aggregate data
 
@@ -136,6 +132,7 @@ class DataTable {
         const limit = options.limit || 0
         const pageSize = options.pageSize || 0
         const tableColumns = options.columns || null
+        const filterBehaviour = ['and', 'or'].includes(options.filterBehaviour) ? options.filterBehaviour : 'and'
         const backgroundColor = options.backgroundColor || ''
 
         if (allowColumnResize || allowFilter || allowSort) {
@@ -179,7 +176,7 @@ class DataTable {
                     }
                     self.dataTable['widths'] = widths
 
-                    if (!self.data) fixTable()
+                    if (!self.data) initTable()
                     if (allowColumnResize) resizeTable()
                     if (allowFilter) filterTable()
                     if (allowSort) sortTable()
@@ -188,7 +185,7 @@ class DataTable {
             }
         }
 
-        function fixTable() {
+        function initTable() {
             const table = document.getElementById(self.el)
             const headers = self.dataTable['headers']
             const columns = self.dataTable['columns']
@@ -282,9 +279,8 @@ class DataTable {
                             if (this.getElementsByClassName('icons')[0]) {
                                 this.getElementsByClassName('icons')[0].style.visibility = 'visible'
                             }
-                            e.stopPropagation()
                         }
-                        rows[i].children[j].onmouseout = function (e) {
+                        rows[i].children[j].onmouseleave = function (e) {
                             if (this.getElementsByClassName('icons')[0]) {
                                 this.getElementsByClassName('icons')[0].style.visibility = 'hidden'
                             }
@@ -365,14 +361,12 @@ class DataTable {
                 return data.slice(start, end)
             }
 
-            data = self.dataUtils.filterData(data, filters)
-            if (document.getElementsByClassName(`filter-icon_${self.el}_0`).length > 0) {
-                for (let i = 0; i < headers.length; i++) {
-                    if (allowColumn(headers[i]) && document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0]) {
-                        document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0].classList.remove('active')
-                        if (filters.find(item => item['column'] == headers[i])) {
-                            document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0].classList.add('active')
-                        }
+            data = self.dataUtils.filterData(data, filters, filterBehaviour)
+            for (let i = 0; i < headers.length; i++) {
+                if (allowColumn(headers[i]) && document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0]) {
+                    document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0].classList.remove('active')
+                    if (filters.find(item => item['column'] == headers[i])) {
+                        document.getElementsByClassName(`filter-icon_${self.el}_${i}`)[0].classList.add('active')
                     }
                 }
             }
@@ -382,10 +376,8 @@ class DataTable {
             } else {
                 data = self.dataUtils.sortData(data, sort, sortOrder)
             }
-            self.dataTable['sort'] = sort
-            self.dataTable['sortOrder'] = sortOrder
 
-            if (document.getElementsByClassName(`sort-icon_${self.el}_0`).length > 0) {
+            if (document.getElementsByClassName(`sort-icon_${self.el}_${sort}`).length > 0) {
                 for (let i = 0; i < headers.length; i++) {
                     if (allowColumn(headers[i]) && document.getElementsByClassName(`sort-icon_${self.el}_${i}`)[0]) {
                         document.getElementsByClassName(`sort-icon_${self.el}_${i}`)[0].classList.remove('activeasc')
@@ -466,7 +458,24 @@ class DataTable {
                 }
             }
 
-            if (pageSize > 0 && numPages > 1) {
+            if (data.length == 0) {
+                if (filters.length > 0) {
+                    if (table.tagName == 'TABLE') {
+                        const row = document.createElement('tr')
+                        const cell = document.createElement('td')
+                        cell.setAttribute('colspan', table.rows[0].children.length)
+                        cell.classList.add('no-data')
+                        cell.innerText = 'No data available, please amend your filters'
+                        row.appendChild(cell)
+                        table.getElementsByTagName('tbody')[0].appendChild(row)
+                    } else {
+                        const row = document.createElement('div')
+                        row.classList.add('no-data')
+                        row.innerText = 'No data available, please amend your filters'
+                        table.appendChild(row)
+                    }
+                }
+            } else if (pageSize > 0 && numPages > 1) {
                 const row = document.createElement(table.tagName == 'TABLE' ? 'tr' : 'div')
                 row.classList.add('table-row')
                 const nav = document.createElement('nav')
@@ -687,10 +696,9 @@ class DataTable {
                 filter.style.top = `${rowHeight - 2}px`
                 filter.onmouseover = function (e) {
                     this.style.display = 'block'
-                    e.stopPropagation()
                 }
-                filter.onmouseout = function (e) {
-                    if (['INPUT', 'P', 'UL', 'LI', 'LABEL', 'SPAN'].includes(e.toElement.tagName)) return
+                filter.onmouseleave = function (e) {
+                    if (['INPUT', 'P', 'UL', 'LI', 'LABEL', 'SPAN'].includes(e.target.tagName)) return
                     this.style.display = 'none'
                     this.parentElement.style.overflow = 'hidden'
                 }
@@ -715,6 +723,7 @@ class DataTable {
             const headers = self.dataTable['headers']
             const type = self.dataTable['type']
             const data = self.dataTable['data']
+            const filters = self.dataTable['filters']
 
             for (let i = 0; i < data.length; i++) {
                 if (type == 'array') {
@@ -731,6 +740,8 @@ class DataTable {
 
             let input = document.createElement('input')
             input.setAttribute('type', 'text')
+            const value = filters.filter(x => x['column'] == headers[column] && x['type'] == 'search')
+            if (value.length > 0) input.value = value[0].value
             input.oninput = function (e) {
                 applyFilterValue(cells, this.value)
             }
@@ -745,16 +756,18 @@ class DataTable {
                 ul.appendChild(li)
             } else {
                 for (let i = 0; i < values.length; i++) {
-                    let li = document.createElement('li')
-                    let label = document.createElement('label')
-                    let input = document.createElement('input')
+                    const li = document.createElement('li')
+                    const label = document.createElement('label')
+                    const input = document.createElement('input')
                     input.setAttribute('type', 'checkbox')
                     input.classList.add(`filtervalue_${self.el}_${cells}__"]`)
+                    const checked = filters.filter(x => x['column'] == headers[column] && x['type'] == 'match' && x['value'] == values[i])
+                    if (checked.length > 0) input.checked = true
                     input.onclick = function (e) {
                         applyFilterValues(cells)
                     }
                     label.appendChild(input)
-                    let span = document.createElement('span')
+                    const span = document.createElement('span')
                     span.innerText = ` ${values[i]}`
                     label.appendChild(span)
                     li.appendChild(label)
@@ -769,8 +782,7 @@ class DataTable {
             //const table = cells.split('_')[0]
             const column = cells.split('_')[1]
             const columnName = self.dataTable['headers'][parseInt(column, 10)]
-            let filters = self.dataTable['filters']
-
+            const filters = self.dataTable['filters']
             const found = filters.reduce(function (current, item, index) {
                 if (item['column'] == columnName && item['type'] == 'search' && current === -1) {
                     return index
@@ -783,7 +795,9 @@ class DataTable {
             } else {
                 filters.push({ 'column': columnName, 'value': text, 'type': 'search' })
             }
+
             self.dataTable['filters'] = filters
+            self.dataTable['page'] = 1
             createDataTable()
         }
 
@@ -793,18 +807,21 @@ class DataTable {
             const columnName = self.dataTable['headers'][parseInt(column, 10)]
             let filters = self.dataTable['filters']
             const values = document.querySelectorAll(`[class^="filtervalue_${self.el}_${cells}__"]`)
+
             for (let i = 0; i < values.length; i++) {
                 if (values[i].checked) {
-                    if (!(filters.some(item => item['column'] == columnName && item['value'] == values[i].parentElement.innerText))) {
+                    if (!(filters.some(x => x['column'] == columnName && x['value'] == values[i].parentElement.innerText.trim()))) {
                         filters.push({ 'column': columnName, 'value': values[i].parentElement.innerText.trim(), 'type': 'match' })
                     }
                 } else {
-                    filters = filters.filter(item => {
-                        return item['column'] == columnName && item['value'] == values[i].parentElement.innerText.trim() ? false : true
+                    filters = filters.filter(x => {
+                        return x['column'] == columnName && x['value'] == values[i].parentElement.innerText.trim() ? false : true
                     })
                 }
             }
+
             self.dataTable['filters'] = filters
+            self.dataTable['page'] = 1
             createDataTable()
         }
 
