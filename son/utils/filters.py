@@ -223,3 +223,33 @@ def data_table_align_columns_filter(context, details):
                     elif alignment_for_this_column == 'right':
                         return ' govuk-!-text-align-right'
     return ''
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('data_table_decimal_places')
+def data_table_decimal_places_filter(context, details):
+    if details:
+        data = content_list_filter(context, [details[0], 'Src'])
+        loop_index = details[1]
+        cell_value = details[2]
+
+        attributes = json.loads(data)
+        if 'dataTableDecimalPlaces' in attributes:
+            data_table_decimal_places_list = attributes['dataTableDecimalPlaces']
+            if type(data_table_decimal_places_list) == list:
+                if len(data_table_decimal_places_list) >= loop_index:
+                    decimal_places_for_this_column = data_table_decimal_places_list[loop_index - 1]
+                    if decimal_places_for_this_column or decimal_places_for_this_column == 0:
+                        if cell_value and is_a_float(cell_value):
+                            return ('{0:.' + str(decimal_places_for_this_column) + 'f}').format(float(cell_value))
+
+        return cell_value
+    return ''
+
+
+def is_a_float(string_value: str) -> float:
+    try:
+        float(string_value)
+        return True
+    except ValueError:
+        return False

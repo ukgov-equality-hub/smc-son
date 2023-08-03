@@ -19,7 +19,7 @@
                 {% for cell in row %}
                     <td class="govuk-table__cell{{ [data, loop.index] | data_table_align_columns }}">
                         {% if cell %}
-                            {{ cell }}
+                            {{ [data, loop.index, cell] | data_table_decimal_places }}
                         {% else %}
                             <span class="no-data">No data</span>
                         {% endif %}
