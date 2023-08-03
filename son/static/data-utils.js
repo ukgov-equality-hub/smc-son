@@ -408,35 +408,70 @@ class DataUtils {
         return data
     }
 
-    filterData(data, filters) {
+    filterData(data, filters, filterBehaviour='and') {
         const headers = this.data['headers']
+        this.data['filters'] = filters
+        filters = filters.reduce((filtered, filter) => {
+            const found = filtered.find(x => x.column == filter.column)
+            if (!found) {
+                filtered.push({ column: filter.column, value: [filter.type == 'search' ? `%%${filter.value}%%` : filter.value], type: 'match' })
+            } else {
+                found.value.push(filter.type == 'search' ? `%%${filter.value}%%` : filter.value)
+            }
+            return filtered
+        }, [])
 
-        let filteredColumns = []
         if (filters.length > 0) {
             let filtered = []
             for (let i = 0; i < data.length; i++) {
-                let ok = ''
+                let include = false
+                const includeRow = []
                 for (const filter of filters) {
                     const columnNumber = headers.indexOf(filter['column'])
                     const column = this.type == 'json' ? filter['column'] : columnNumber
 
-                    let include = false
-                    if (filter['type'] == 'match') {
-                        include = this.removeHTML(data[i][column]) == filter['value']
+                    if (filterBehaviour == 'or') {
+                        for (let j = 0; j < filter['value'].length; j++) {
+                            if (filter['value'][j].substr(0, 2) == '%%' && filter['value'][j].substr(filter['value'][j].length - 2) == '%%') {
+                                if (this.removeHTML(data[i][column]).toUpperCase().indexOf(filter['value'][j].substr(2, filter['value'][j].length - 4).toUpperCase()) > -1) {
+                                    include= true
+                                    break
+                                }
+                            } else {
+                                if (filter['value'][j] == this.removeHTML(data[i][column])) {
+                                    include = true
+                                    break
+                                }
+                            }
+                        }
+                        if (include) break
                     } else {
-                        include = this.removeHTML(data[i][column]).toUpperCase().indexOf(filter['value'].toUpperCase()) > -1
+                        let includeColumn = false
+                        for (let j = 0; j < filter['value'].length; j++) {
+                            if (filter['value'][j].substr(0, 2) == '%%' && filter['value'][j].substr(filter['value'][j].length - 2) == '%%') {
+                                if (this.removeHTML(data[i][column]).toUpperCase().indexOf(filter['value'][j].substr(2, filter['value'][j].length - 4).toUpperCase()) > -1) {
+                                    includeColumn = true
+                                    break
+                                }
+                            } else {
+                                if (filter['value'][j] == this.removeHTML(data[i][column])) {
+                                    includeColumn = true
+                                    break
+                                }
+                            }
+                        }
+                        includeRow.push(includeColumn)
                     }
-                    if (include) {
-                        filtered.push(data[i])
-                        if (!filteredColumns.includes(columnNumber)) filteredColumns.push(columnNumber)
-                        break
-                    }
+                }
+
+                if (filterBehaviour != 'or') include = includeRow.indexOf(false) == -1
+                if (include) {
+                    filtered.push(data[i])
                 }
             }
             data = filtered
         }
 
-        this.data['filters'] = filters
         return data
     }
 
@@ -451,9 +486,8 @@ class DataUtils {
             groups.reduce((m, k, i, { length }) => {
                 var child
                 if (m.has(o[k])) return m.get(o[k])
-                if (i + 1 === length) {
-                    child = Object
-                        .assign(...groups.map(k => ({ [k]: o[k] })), { [key]: 0 })
+                if (i + 1 == length) {
+                    child = Object.assign(...groups.map(k => ({ [k]: o[k] })), { [key]: 0 })
                     r.push(child)
                 } else {
                     child = new Map

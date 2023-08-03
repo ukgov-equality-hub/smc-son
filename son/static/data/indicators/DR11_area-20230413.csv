@@ -24,39 +24,51 @@
 "DR11",NA,"Country","S92000003","Scotland",2016,NA,NA,"Total",NA,NA,3.284552846,2218,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2016,NA,NA,"Total",NA,NA,3.2125,833,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2015,NA,NA,"Total",NA,NA,3.791304348,21822,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2015,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2015,NA,NA,"Total",NA,NA,3.38,2244,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2015,NA,NA,"Total",NA,NA,3.451219512,792,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2014,NA,NA,"Total",NA,NA,3.892053973,21006,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2014,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2014,NA,NA,"Total",NA,NA,3.468335788,2199,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2014,NA,NA,"Total",NA,NA,3.534700315,722,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2013,NA,NA,"Total",NA,NA,3.937784522,20624,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2013,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2013,NA,NA,"Total",NA,NA,3.536036036,2166,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2013,NA,NA,"Total",NA,NA,3.5792,709,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2012,NA,NA,"Total",NA,NA,3.930769231,20255,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2012,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2012,NA,NA,"Total",NA,NA,3.540832049,2132,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2012,NA,NA,"Total",NA,NA,3.544715447,753,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2011,NA,NA,"Total",NA,NA,4.026771654,20413,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2011,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2011,NA,NA,"Total",NA,NA,3.60443038,2162,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2011,NA,NA,"Total",NA,NA,3.695,715,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2010,NA,NA,"Total",NA,NA,4.036565978,20280,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2010,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2010,NA,NA,"Total",NA,NA,3.647058824,2204,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2010,NA,NA,"Total",NA,NA,3.61,720,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2009,NA,NA,"Total",NA,NA,4.016051364,20330,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2009,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2009,NA,NA,"Total",NA,NA,3.632423756,2184,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2009,NA,NA,"Total",NA,NA,3.605,691,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2008,NA,NA,"Total",NA,NA,4.03,20641,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2008,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2008,NA,NA,"Total",NA,NA,3.538971808,2197,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2008,NA,NA,"Total",NA,NA,3.674137931,712,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2007,NA,NA,"Total",NA,NA,4.013675214,20543,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2007,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2007,NA,NA,"Total",NA,NA,3.567986231,2152,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2007,NA,NA,"Total",NA,NA,3.555160142,703,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2006,NA,NA,"Total",NA,NA,4.033928571,19922,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2006,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2006,NA,NA,"Total",NA,NA,3.7,2090,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2006,NA,NA,"Total",NA,NA,3.794007491,696,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2005,NA,NA,"Total",NA,NA,4.051851852,19883,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2005,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2005,NA,NA,"Total",NA,NA,3.740037951,2136,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2005,NA,NA,"Total",NA,NA,3.75146771,621,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2004,NA,NA,"Total",NA,NA,4.036538462,18367,NA,NA,NA,"Ratio",NA
+"DR11",NA,"Country","E92000001","Wales",2004,NA,NA,"Total",NA,NA,NA,NA,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","S92000003","Scotland",2004,NA,NA,"Total",NA,NA,3.599214145,1978,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","N92000002","Northern Ireland",2004,NA,NA,"Total",NA,NA,3.492,594,NA,NA,NA,"Ratio",NA
 "DR11",NA,"Country","E92000001","England",2003,NA,NA,"Total",NA,NA,4.055555556,18654,NA,NA,NA,"Ratio",NA
