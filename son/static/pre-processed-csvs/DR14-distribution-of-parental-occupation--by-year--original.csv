@@ -1,0 +1,46 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Occupational level,Higher professional,14.05993159,3243,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Occupational level,Higher professional,14.60383471,3240,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Occupational level,Higher professional,15.50610214,3267,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Occupational level,Higher professional,15.486909,3197,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Occupational level,Higher professional,15.95745936,3245,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Occupational level,Higher professional,16.58044746,3339,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Occupational level,Higher professional,17.97993472,2954,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Occupational level,Higher professional,19.74791457,3992,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Occupational level,Lower professional,24.59831638,5712,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Occupational level,Lower professional,24.08378187,5371,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Occupational level,Lower professional,24.31761355,5240,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Occupational level,Lower professional,25.23154308,5291,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Occupational level,Lower professional,25.6505154,5305,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Occupational level,Lower professional,26.07863386,5398,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Occupational level,Lower professional,26.25204926,4273,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Occupational level,Lower professional,26.07336087,5229,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Occupational level,Intermediate,21.1764987,4894,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Occupational level,Intermediate,21.42508312,4791,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Occupational level,Intermediate,21.84397,4675,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Occupational level,Intermediate,21.91480245,4555,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Occupational level,Intermediate,21.68859629,4452,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Occupational level,Intermediate,21.74955206,4482,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Occupational level,Intermediate,21.55814597,3254,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Occupational level,Intermediate,21.73078704,3953,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Occupational level,Higher working,18.87562049,4264,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Occupational level,Higher working,19.05758007,4128,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Occupational level,Higher working,19.21573349,3992,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Occupational level,Higher working,18.69112827,3804,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Occupational level,Higher working,18.02444439,3646,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Occupational level,Higher working,17.3079789,3478,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Occupational level,Higher working,17.3012296,2271,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Occupational level,Higher working,13.2738693,2217,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Occupational level,Lower working,21.28963284,4699,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Occupational level,Lower working,20.82972023,4464,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Occupational level,Lower working,19.11658082,3904,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Occupational level,Lower working,18.6756172,3772,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Occupational level,Lower working,18.67898456,3673,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Occupational level,Lower working,18.28338772,3585,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Occupational level,Lower working,16.90864046,2108,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Occupational level,Lower working,19.17406821,2881,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Occupational level,Higher professional,16.19397016,26477,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Occupational level,Lower professional,25.27223776,41819,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Occupational level,Intermediate,21.63594238,35056,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Occupational level,Higher working,17.76812158,27800,NA,NA,NA,Percentage,NA
+DR14,Class inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Occupational level,Lower working,19.12972812,29086,NA,NA,NA,Percentage,NA

@@ -1,0 +1,339 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR12,Childhood poverty,ITL1,E12000001,North East,1994,NA,NA,Total,NA,NA,30.65961022,592744,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1994,NA,NA,Total,NA,NA,29.8511492,1596498,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1994,NA,NA,Total,NA,NA,31.4958655,1136292,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1994,NA,NA,Total,NA,NA,26.76136734,919740,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1994,NA,NA,Total,NA,NA,25.55398918,1221504,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1994,NA,NA,Total,NA,NA,22.05576148,1162236,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1994,NA,NA,Total,NA,NA,24.95476384,1532513,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1994,NA,NA,Total,NA,NA,14.79449137,1709028,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1994,NA,NA,Total,NA,NA,21.93963768,1012519,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1994,NA,NA,Total,NA,NA,27.61085573,658491,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1994,NA,NA,Total,NA,NA,28.23706731,1104024,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1994,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1994,NA,NA,Total,NA,NA,25.16124793,12645589,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,1995,NA,NA,Total,NA,NA,32.03986258,590755,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1995,NA,NA,Total,NA,NA,27.76768171,1593726,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1995,NA,NA,Total,NA,NA,29.75843035,1141023,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1995,NA,NA,Total,NA,NA,25.42334832,925497,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1995,NA,NA,Total,NA,NA,26.56804608,1226752,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1995,NA,NA,Total,NA,NA,18.61509156,1168519,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1995,NA,NA,Total,NA,NA,24.28432707,1563711,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1995,NA,NA,Total,NA,NA,15.63102469,1726528,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1995,NA,NA,Total,NA,NA,19.88618464,1018997,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1995,NA,NA,Total,NA,NA,28.8804273,659005,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1995,NA,NA,Total,NA,NA,27.70720462,1107279,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1995,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1995,NA,NA,Total,NA,NA,24.37136068,12721792,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,1996,NA,NA,Total,NA,NA,31.95273172,585239,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1996,NA,NA,Total,NA,NA,28.64527516,1582522,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1996,NA,NA,Total,NA,NA,30.42138752,1139763,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1996,NA,NA,Total,NA,NA,25.18279993,924750,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1996,NA,NA,Total,NA,NA,27.30440346,1224730,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1996,NA,NA,Total,NA,NA,19.51241683,1168509,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1996,NA,NA,Total,NA,NA,25.30534165,1585231,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1996,NA,NA,Total,NA,NA,16.56559304,1729746,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1996,NA,NA,Total,NA,NA,20.9144725,1018038,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1996,NA,NA,Total,NA,NA,28.5883828,656760,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1996,NA,NA,Total,NA,NA,28.73588966,1096753,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1996,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1996,NA,NA,Total,NA,NA,25.07557657,12712041,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,1997,NA,NA,Total,NA,NA,32.71911998,579527,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1997,NA,NA,Total,NA,NA,29.12895779,1572765,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1997,NA,NA,Total,NA,NA,30.20768099,1135741,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1997,NA,NA,Total,NA,NA,24.54464321,922256,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1997,NA,NA,Total,NA,NA,28.78649173,1220493,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1997,NA,NA,Total,NA,NA,18.74953859,1169735,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1997,NA,NA,Total,NA,NA,26.37792965,1597748,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1997,NA,NA,Total,NA,NA,17.00068564,1736528,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1997,NA,NA,Total,NA,NA,21.35357784,1022262,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1997,NA,NA,Total,NA,NA,30.4289624,654748,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1997,NA,NA,Total,NA,NA,29.44517165,1086998,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1997,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1997,NA,NA,Total,NA,NA,25.5468683,12698801,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,1998,NA,NA,Total,NA,NA,33.97147047,574522,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1998,NA,NA,Total,NA,NA,32.21483237,1566486,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1998,NA,NA,Total,NA,NA,31.30775477,1131760,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1998,NA,NA,Total,NA,NA,24.83035148,921004,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1998,NA,NA,Total,NA,NA,28.03576575,1218989,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1998,NA,NA,Total,NA,NA,19.50536207,1176260,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1998,NA,NA,Total,NA,NA,27.34664841,1604737,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1998,NA,NA,Total,NA,NA,16.80527299,1741524,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1998,NA,NA,Total,NA,NA,23.21011786,1026008,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1998,NA,NA,Total,NA,NA,30.169002,653249,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1998,NA,NA,Total,NA,NA,29.60750953,1078272,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1998,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1998,NA,NA,Total,NA,NA,26.33038832,12692811,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,1999,NA,NA,Total,NA,NA,33.58106287,569241,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,1999,NA,NA,Total,NA,NA,31.85660453,1560511,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,1999,NA,NA,Total,NA,NA,31.2769817,1131746,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,1999,NA,NA,Total,NA,NA,24.16533024,927231,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,1999,NA,NA,Total,NA,NA,27.82172254,1218266,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,1999,NA,NA,Total,NA,NA,18.80327502,1187747,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,1999,NA,NA,Total,NA,NA,27.24309464,1599995,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,1999,NA,NA,Total,NA,NA,16.22481964,1759477,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,1999,NA,NA,Total,NA,NA,23.22114017,1033489,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,1999,NA,NA,Total,NA,NA,29.85367256,654021,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,1999,NA,NA,Total,NA,NA,28.51877309,1074474,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,1999,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,1999,NA,NA,Total,NA,NA,25.91228657,12716198,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2000,NA,NA,Total,NA,NA,33.3708921,563244,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2000,NA,NA,Total,NA,NA,29.61498004,1551719,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2000,NA,NA,Total,NA,NA,29.80824193,1127991,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2000,NA,NA,Total,NA,NA,25.01566198,927502,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2000,NA,NA,Total,NA,NA,27.22088997,1214242,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2000,NA,NA,Total,NA,NA,17.05287878,1190457,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2000,NA,NA,Total,NA,NA,26.69258432,1597998,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2000,NA,NA,Total,NA,NA,14.77447318,1759986,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2000,NA,NA,Total,NA,NA,21.64507145,1036994,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2000,NA,NA,Total,NA,NA,28.66167274,652000,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2000,NA,NA,Total,NA,NA,27.04920564,1063233,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2000,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2000,NA,NA,Total,NA,NA,24.73339894,12685366,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2001,NA,NA,Total,NA,NA,30.18349588,555999,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2001,NA,NA,Total,NA,NA,27.0405534,1538781,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2001,NA,NA,Total,NA,NA,28.47487119,1122246,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2001,NA,NA,Total,NA,NA,24.45640444,925248,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2001,NA,NA,Total,NA,NA,27.70957537,1207237,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2001,NA,NA,Total,NA,NA,16.1054365,1186960,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2001,NA,NA,Total,NA,NA,25.85231092,1592468,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2001,NA,NA,Total,NA,NA,14.66009536,1755237,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2001,NA,NA,Total,NA,NA,20.03558887,1036508,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2001,NA,NA,Total,NA,NA,28.02584014,648740,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2001,NA,NA,Total,NA,NA,26.70221637,1051012,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2001,NA,NA,Total,NA,NA,NA,NA,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2001,NA,NA,Total,NA,NA,23.73949062,12620436,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2002,NA,NA,Total,NA,NA,31.29340162,543820,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2002,NA,NA,Total,NA,NA,25.30324585,1510787,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2002,NA,NA,Total,NA,NA,26.43650667,1103560,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2002,NA,NA,Total,NA,NA,25.31932652,914759,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2002,NA,NA,Total,NA,NA,26.05474763,1190643,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2002,NA,NA,Total,NA,NA,14.34806902,1176556,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2002,NA,NA,Total,NA,NA,25.43559895,1587423,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2002,NA,NA,Total,NA,NA,13.49544185,1733767,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2002,NA,NA,Total,NA,NA,18.33809623,1023893,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2002,NA,NA,Total,NA,NA,28.15722503,637360,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2002,NA,NA,Total,NA,NA,25.65736079,1034499,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2002,NA,NA,Total,NA,NA,23.06334517,436229,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2002,NA,NA,Total,NA,NA,22.70129397,12893296,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2003,NA,NA,Total,NA,NA,30.01537194,538847,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2003,NA,NA,Total,NA,NA,25.36966463,1504453,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2003,NA,NA,Total,NA,NA,25.84486622,1101274,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2003,NA,NA,Total,NA,NA,23.52405624,916106,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2003,NA,NA,Total,NA,NA,25.40729102,1190948,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2003,NA,NA,Total,NA,NA,15.18614864,1182131,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2003,NA,NA,Total,NA,NA,25.43257196,1601974,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2003,NA,NA,Total,NA,NA,13.12536393,1739071,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2003,NA,NA,Total,NA,NA,17.92080492,1025226,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2003,NA,NA,Total,NA,NA,26.39496829,635464,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2003,NA,NA,Total,NA,NA,24.70402918,1020297,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2003,NA,NA,Total,NA,NA,24.10725003,431511,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2003,NA,NA,Total,NA,NA,22.26132356,12887302,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2004,NA,NA,Total,NA,NA,30.9096086,535998,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2004,NA,NA,Total,NA,NA,23.84301457,1502133,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2004,NA,NA,Total,NA,NA,24.7557884,1103232,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2004,NA,NA,Total,NA,NA,22.87484115,920081,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2004,NA,NA,Total,NA,NA,24.87222273,1193806,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2004,NA,NA,Total,NA,NA,15.07088806,1189628,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2004,NA,NA,Total,NA,NA,26.36270472,1615674,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2004,NA,NA,Total,NA,NA,12.37249311,1749529,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2004,NA,NA,Total,NA,NA,16.71441232,1028297,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2004,NA,NA,Total,NA,NA,25.06237896,635069,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2004,NA,NA,Total,NA,NA,22.68415257,1011498,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2004,NA,NA,Total,NA,NA,24.36840516,428011,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2004,NA,NA,Total,NA,NA,21.62421346,12912956,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2005,NA,NA,Total,NA,NA,28.45662522,531364,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2005,NA,NA,Total,NA,NA,24.20297535,1493252,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2005,NA,NA,Total,NA,NA,24.78081345,1101934,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2005,NA,NA,Total,NA,NA,22.20698209,919009,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2005,NA,NA,Total,NA,NA,26.30601355,1194163,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2005,NA,NA,Total,NA,NA,15.49109827,1192995,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2005,NA,NA,Total,NA,NA,25.76565107,1630570,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2005,NA,NA,Total,NA,NA,12.93962146,1751712,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2005,NA,NA,Total,NA,NA,16.33906677,1027321,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2005,NA,NA,Total,NA,NA,23.38751505,630965,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2005,NA,NA,Total,NA,NA,21.5891351,1003367,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2005,NA,NA,Total,NA,NA,24.62600994,424779,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2005,NA,NA,Total,NA,NA,21.49274984,12901431,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2006,NA,NA,Total,NA,NA,28.36385217,530209,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2006,NA,NA,Total,NA,NA,24.19187572,1492975,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2006,NA,NA,Total,NA,NA,25.08199092,1103896,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2006,NA,NA,Total,NA,NA,23.16790307,923870,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2006,NA,NA,Total,NA,NA,26.17926038,1200083,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2006,NA,NA,Total,NA,NA,15.12775637,1200892,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2006,NA,NA,Total,NA,NA,24.91168278,1654446,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2006,NA,NA,Total,NA,NA,14.91764111,1765811,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2006,NA,NA,Total,NA,NA,16.19060945,1030829,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2006,NA,NA,Total,NA,NA,24.91211649,631467,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2006,NA,NA,Total,NA,NA,20.96938415,997087,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2006,NA,NA,Total,NA,NA,23.88219819,427178,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2006,NA,NA,Total,NA,NA,21.6806077,12958743,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2007,NA,NA,Total,NA,NA,27.78906451,527387,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2007,NA,NA,Total,NA,NA,26.16108999,1488269,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2007,NA,NA,Total,NA,NA,25.87297735,1104669,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2007,NA,NA,Total,NA,NA,25.55507704,928021,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2007,NA,NA,Total,NA,NA,27.33097431,1203236,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2007,NA,NA,Total,NA,NA,15.15769615,1206998,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2007,NA,NA,Total,NA,NA,22.88418194,1679823,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2007,NA,NA,Total,NA,NA,15.38006899,1779570,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2007,NA,NA,Total,NA,NA,16.89647166,1034728,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2007,NA,NA,Total,NA,NA,26.87098806,630173,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2007,NA,NA,Total,NA,NA,20.46016451,998671,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2007,NA,NA,Total,NA,NA,23.2734421,425434,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2007,NA,NA,Total,NA,NA,22.12052159,13006979,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2008,NA,NA,Total,NA,NA,28.4665748,522248,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2008,NA,NA,Total,NA,NA,25.79500421,1476945,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2008,NA,NA,Total,NA,NA,26.45309925,1101109,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2008,NA,NA,Total,NA,NA,24.96063045,926583,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2008,NA,NA,Total,NA,NA,28.6922548,1202717,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2008,NA,NA,Total,NA,NA,15.95029274,1206942,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2008,NA,NA,Total,NA,NA,22.87619238,1697574,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2008,NA,NA,Total,NA,NA,14.96115529,1779889,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2008,NA,NA,Total,NA,NA,17.04659111,1029963,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2008,NA,NA,Total,NA,NA,26.02530669,625414,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2008,NA,NA,Total,NA,NA,20.53597756,993205,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2008,NA,NA,Total,NA,NA,23.14262348,427168,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2008,NA,NA,Total,NA,NA,22.22222212,12989757,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2009,NA,NA,Total,NA,NA,26.5645853,526502,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2009,NA,NA,Total,NA,NA,24.96136086,1493165,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2009,NA,NA,Total,NA,NA,25.99376571,1118044,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2009,NA,NA,Total,NA,NA,23.06959615,941127,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2009,NA,NA,Total,NA,NA,28.93919611,1221448,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2009,NA,NA,Total,NA,NA,16.30903232,1225420,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2009,NA,NA,Total,NA,NA,21.05056249,1746072,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2009,NA,NA,Total,NA,NA,13.61772078,1810289,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2009,NA,NA,Total,NA,NA,16.5689594,1042419,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2009,NA,NA,Total,NA,NA,25.02984172,631216,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2009,NA,NA,Total,NA,NA,20.02624619,999210,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2009,NA,NA,Total,NA,NA,24.47179926,432482,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2009,NA,NA,Total,NA,NA,21.42324623,13187394,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2010,NA,NA,Total,NA,NA,24.58608822,525598,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2010,NA,NA,Total,NA,NA,22.03758285,1490737,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2010,NA,NA,Total,NA,NA,25.44510337,1121685,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2010,NA,NA,Total,NA,NA,18.46535874,943846,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2010,NA,NA,Total,NA,NA,27.34130244,1224665,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2010,NA,NA,Total,NA,NA,15.5804028,1231391,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2010,NA,NA,Total,NA,NA,19.58836627,1774317,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2010,NA,NA,Total,NA,NA,12.47912624,1824768,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2010,NA,NA,Total,NA,NA,15.95104108,1045513,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2010,NA,NA,Total,NA,NA,22.16450845,629458,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2010,NA,NA,Total,NA,NA,19.39984576,996095,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2010,NA,NA,Total,NA,NA,24.13141306,433556,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2010,NA,NA,Total,NA,NA,19.81813471,13241629,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2011,NA,NA,Total,NA,NA,21.0757902,524186,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2011,NA,NA,Total,NA,NA,21.53712793,1488746,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2011,NA,NA,Total,NA,NA,23.24433726,1123990,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2011,NA,NA,Total,NA,NA,16.69959521,945766,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2011,NA,NA,Total,NA,NA,23.45578008,1227394,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2011,NA,NA,Total,NA,NA,14.11289145,1236909,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2011,NA,NA,Total,NA,NA,17.88135588,1797393,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2011,NA,NA,Total,NA,NA,12.53291624,1838111,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2011,NA,NA,Total,NA,NA,14.3868508,1048098,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2011,NA,NA,Total,NA,NA,23.0239219,628246,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2011,NA,NA,Total,NA,NA,17.304134,997273,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2011,NA,NA,Total,NA,NA,23.41602156,434102,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2011,NA,NA,Total,NA,NA,18.32641273,13290214,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2012,NA,NA,Total,NA,NA,20.83847641,523609,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2012,NA,NA,Total,NA,NA,21.11156348,1492703,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2012,NA,NA,Total,NA,NA,22.54577877,1130004,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2012,NA,NA,Total,NA,NA,14.6153017,952281,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2012,NA,NA,Total,NA,NA,20.71245308,1232951,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2012,NA,NA,Total,NA,NA,12.81957704,1248612,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2012,NA,NA,Total,NA,NA,17.49902071,1833146,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2012,NA,NA,Total,NA,NA,12.58274395,1855885,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2012,NA,NA,Total,NA,NA,14.40424589,1055687,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2012,NA,NA,Total,NA,NA,21.82248723,628861,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2012,NA,NA,Total,NA,NA,16.7614673,994797,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2012,NA,NA,Total,NA,NA,21.26750313,436655,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2012,NA,NA,Total,NA,NA,17.46679526,13385191,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2013,NA,NA,Total,NA,NA,18.5828512,520605,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2013,NA,NA,Total,NA,NA,20.79218168,1496245,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2013,NA,NA,Total,NA,NA,20.62608002,1122552,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2013,NA,NA,Total,NA,NA,15.60341651,944329,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2013,NA,NA,Total,NA,NA,19.69491284,1234667,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2013,NA,NA,Total,NA,NA,14.25105762,1256115,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2013,NA,NA,Total,NA,NA,17.64516136,1863535,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2013,NA,NA,Total,NA,NA,12.50185966,1838329,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2013,NA,NA,Total,NA,NA,15.29517397,1045869,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2013,NA,NA,Total,NA,NA,21.76195833,625665,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2013,NA,NA,Total,NA,NA,15.71518366,985551,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2013,NA,NA,Total,NA,NA,21.66526978,437646,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2013,NA,NA,Total,NA,NA,17.29781151,13371108,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2014,NA,NA,Total,NA,NA,19.55267646,521470,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2014,NA,NA,Total,NA,NA,20.4855916,1505794,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2014,NA,NA,Total,NA,NA,21.32006795,1128023,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2014,NA,NA,Total,NA,NA,18.02738041,951144,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2014,NA,NA,Total,NA,NA,21.24409875,1246994,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2014,NA,NA,Total,NA,NA,14.84785354,1272486,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2014,NA,NA,Total,NA,NA,16.53110341,1907528,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2014,NA,NA,Total,NA,NA,12.16953965,1852572,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2014,NA,NA,Total,NA,NA,16.74187005,1058532,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2014,NA,NA,Total,NA,NA,20.11377436,626511,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2014,NA,NA,Total,NA,NA,16.0525495,985882,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2014,NA,NA,Total,NA,NA,22.81626649,442920,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2014,NA,NA,Total,NA,NA,17.62725564,13499856,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2015,NA,NA,Total,NA,NA,20.61982087,522405,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2015,NA,NA,Total,NA,NA,21.25308814,1509626,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2015,NA,NA,Total,NA,NA,22.20753935,1131771,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2015,NA,NA,Total,NA,NA,20.97927353,957326,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2015,NA,NA,Total,NA,NA,23.56059065,1253631,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2015,NA,NA,Total,NA,NA,15.94596805,1283190,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2015,NA,NA,Total,NA,NA,16.68212132,1931935,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2015,NA,NA,Total,NA,NA,12.68124902,1866926,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2015,NA,NA,Total,NA,NA,16.36723169,1065466,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2015,NA,NA,Total,NA,NA,19.65966497,625195,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2015,NA,NA,Total,NA,NA,16.43209603,983583,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2015,NA,NA,Total,NA,NA,23.14446732,444142,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2015,NA,NA,Total,NA,NA,18.42967275,13575196,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2016,NA,NA,Total,NA,NA,24.00242827,523641,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2016,NA,NA,Total,NA,NA,23.24209789,1514227,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2016,NA,NA,Total,NA,NA,22.65662465,1136089,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2016,NA,NA,Total,NA,NA,22.1867498,964060,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2016,NA,NA,Total,NA,NA,24.23793162,1261114,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2016,NA,NA,Total,NA,NA,15.91259765,1294835,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2016,NA,NA,Total,NA,NA,17.03923092,1957473,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2016,NA,NA,Total,NA,NA,14.44277874,1882568,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2016,NA,NA,Total,NA,NA,14.64681547,1073260,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2016,NA,NA,Total,NA,NA,19.06223224,624657,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2016,NA,NA,Total,NA,NA,18.40437696,982945,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2016,NA,NA,Total,NA,NA,22.69166613,445462,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2016,NA,NA,Total,NA,NA,19.2185768,13660331,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2017,NA,NA,Total,NA,NA,25.11672876,525172,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2017,NA,NA,Total,NA,NA,24.98204605,1537979,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2017,NA,NA,Total,NA,NA,23.90716411,1148074,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2017,NA,NA,Total,NA,NA,20.97331567,976894,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2017,NA,NA,Total,NA,NA,25.61625287,1276247,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2017,NA,NA,Total,NA,NA,17.24687935,1310430,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2017,NA,NA,Total,NA,NA,19.50926786,1987918,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2017,NA,NA,Total,NA,NA,14.86960293,1895821,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2017,NA,NA,Total,NA,NA,14.91585902,1082371,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2017,NA,NA,Total,NA,NA,19.93403715,627182,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2017,NA,NA,Total,NA,NA,20.26672877,987098,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2017,NA,NA,Total,NA,NA,20.71115646,446260,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2017,NA,NA,Total,NA,NA,20.26779599,13801446,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2018,NA,NA,Total,NA,NA,25.31080343,529185,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2018,NA,NA,Total,NA,NA,25.19731577,1552654,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2018,NA,NA,Total,NA,NA,25.32875465,1161631,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2018,NA,NA,Total,NA,NA,18.32038713,989041,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2018,NA,NA,Total,NA,NA,25.73868201,1288505,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2018,NA,NA,Total,NA,NA,16.99395958,1328349,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2018,NA,NA,Total,NA,NA,20.10910152,2029908,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2018,NA,NA,Total,NA,NA,15.12943039,1923513,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2018,NA,NA,Total,NA,NA,15.04695965,1098397,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2018,NA,NA,Total,NA,NA,19.78639857,632541,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2018,NA,NA,Total,NA,NA,19.93506048,995319,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2018,NA,NA,Total,NA,NA,21.51775055,447539,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2018,NA,NA,Total,NA,NA,20.34032301,13976582,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000001,North East,2019,NA,NA,Total,NA,NA,29.50128185,529173,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000002,North West,2019,NA,NA,Total,NA,NA,25.06748071,1556782,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000003,Yorkshire and The Humber,2019,NA,NA,Total,NA,NA,27.8069921,1157705,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000004,East Midlands,2019,NA,NA,Total,NA,NA,19.70143674,990732,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000005,West Midlands,2019,NA,NA,Total,NA,NA,28.55862733,1292336,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000006,East of England,2019,NA,NA,Total,NA,NA,17.16443011,1331370,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000007,London,2019,NA,NA,Total,NA,NA,21.06720473,2017900,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000008,South East,2019,NA,NA,Total,NA,NA,15.28729618,1919464,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,E12000009,South West,2019,NA,NA,Total,NA,NA,16.01826444,1091990,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,W92000004,Wales,2019,NA,NA,Total,NA,NA,22.38496764,628713,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,S92000003,Scotland,2019,NA,NA,Total,NA,NA,20.87668846,987110,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,N92000002,Northern Ireland,2019,NA,NA,Total,NA,NA,21.62948628,449220,NA,NA,NA,Percentage,NA
+DR12,Childhood poverty,ITL1,Total,Total,2019,NA,NA,Total,NA,NA,21.48967059,13952495,NA,NA,NA,Percentage,NA
