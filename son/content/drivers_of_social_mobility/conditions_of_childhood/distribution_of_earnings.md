@@ -38,17 +38,10 @@ By year
     "legend": true,
     "colourScheme": [ "#1d70b8" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Ratio",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## Section
@@ -75,21 +68,10 @@ By country
     "margin": [ 0, 0, 0, 0 ],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "Country"
-        },
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Ratio",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR11-distribution-of-earnings--by-country-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 2, 2, 2]
 }
 
 ## About the data

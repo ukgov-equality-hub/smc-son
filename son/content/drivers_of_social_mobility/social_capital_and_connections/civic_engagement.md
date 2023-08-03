@@ -40,22 +40,10 @@ By year
     "margin": [ 0, 0, 0, 0 ],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Area_name"
-        },
-        {
-            "column": "Time_period",
-            "replace": "/",
-            "replaceWith": " to 20"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR41-civic-engagement--by-ITL1-region-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 }
 
 ## About the data

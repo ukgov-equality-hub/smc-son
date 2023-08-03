@@ -37,17 +37,10 @@ By year
     "legend": true,
     "colourScheme": [ "#5694ca" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Rate",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR31-job-vacancy-rate--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## About the data

@@ -129,23 +129,12 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-sex-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
+    "dataTableNumberOfHeadingRows": 2
 }
-
 ## Section
 By ethnicity
 
@@ -178,24 +167,12 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-ethnicity-and-FSM--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
+    "dataTableNumberOfHeadingColumns": 2
 }
-
 ## Section
 Disadvantaged vs. Not disadvantaged [delete?]
 

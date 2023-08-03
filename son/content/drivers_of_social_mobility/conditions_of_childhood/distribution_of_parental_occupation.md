@@ -44,20 +44,10 @@ By year
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }
 
 ## Section
@@ -99,30 +89,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1],
+    "dataTableTitle": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined)"
 }
 
 # Guidance

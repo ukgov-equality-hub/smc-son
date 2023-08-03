@@ -34,18 +34,11 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": [ "#5694ca" ],
-    "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Number of students",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "margin": [ 0, 0, 0, 0 ], 
+    "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 3]
 }
 
 ## Section
@@ -85,17 +78,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Number of students",
-            "align": "right"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-ITL2-region-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
+    "dataTableTitle": "Number of research students, by area (UK, 2015 to 2018)"
 }
 
 # Guidance

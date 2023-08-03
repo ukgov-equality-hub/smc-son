@@ -40,20 +40,10 @@ By year
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR13-distribution-of-parental-education--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }
 
 ## Section
@@ -64,8 +54,7 @@ By area
 {
     "code": "DR13",
     "title": "Percentage of adults in families with dependent children with a higher education qualification, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
-    "tooltipTitle:"
-    "Percentage of adults with a higher education qualification",
+    "tooltipTitle": "Percentage of adults with a higher education qualification",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/DR13_area-20230419.csv",
     "geoFormat": "",
@@ -91,30 +80,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR13-distribution-of-parental-education--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1],
+    "dataTableTitle": "Percentage of adults in families with dependent children with a higher education qualification, by region (UK, 2014 to 2021 combined)"
 }
 
 # Guidance

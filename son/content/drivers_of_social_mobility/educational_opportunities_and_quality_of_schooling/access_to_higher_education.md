@@ -41,20 +41,10 @@ By year
     "margin": [ 0, 0, 0, 0 ],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Area_name"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR23-access-to-higher-education--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## About the data

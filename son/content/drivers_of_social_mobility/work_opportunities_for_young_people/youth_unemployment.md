@@ -39,41 +39,10 @@ By year
     "legend": true,
     "colourScheme": [ "#5694ca" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -84,8 +53,7 @@ By area
 {
     "code": "DR32",
     "title": "Percentage of 16 to 24 year olds who were unemployed, and ‘quintile’ ranking (from best 20% to worst 20%), by region (UK, 2018 to 2021 combined)",
-    "tooltipTitle:"
-    "Percentage of 16 to 24 year olds who were unemployed",
+    "tooltipTitle": "Percentage of 16 to 24 year olds who were unemployed",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/DR32_area-20230417.csv",
     "geoFormat": "",
@@ -112,30 +80,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1],
+    "dataTableTitle": "Percentage of 16 to 24 year olds who were unemployed, by area"
 }
 
 # Guidance

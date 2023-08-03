@@ -37,17 +37,10 @@ By year
     "legend": true,
     "colourScheme": [ "#5694ca" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Euros",
-            "align": "right",
-            "format": "€"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## Section
@@ -96,18 +89,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Euros",
-            "align": "right",
-            "format": "€"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "dataTableTitle": "Business spending on research and development by area (UK, 2007 to 2018), in millions of euros"
 }
 
 # Guidance
