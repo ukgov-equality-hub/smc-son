@@ -35,7 +35,7 @@
                         {% for cell in row %}
                             {% set column_number = loop.index %}
                             {% if column_number <= number_of_heading_columns %}
-                                {% if cell %}
+                                {% if not cell == '' %}
                                     <th scope="row"
                                         rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
                                         class="govuk-table__header{{ [data, column_number] | data_table_align_columns }}">
