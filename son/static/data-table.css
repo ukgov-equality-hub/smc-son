@@ -1,8 +1,12 @@
 .table-container {
     /*overflow: hidden;*/
-    width: 100%;
+    width: fit-content;
     border-collapse: separate;
     position: relative;
+}
+
+.table-container caption {
+    width: fit-content;
 }
 
 .table-container .table-row {
@@ -14,12 +18,16 @@
     display: flex;
 }
 
-.table-container thead tr th {
+.table-container thead {
     position: sticky;
+    top: 0;
+}
+
+.table-container thead tr th {
     align-self: flex-start;
     height: auto;
-    top: 0;
     display: table-cell;
+    background-color: #ffffff;
 }
 
 .table-container .table-row .table-column {
@@ -116,6 +124,46 @@
 
 .table-container thead .table-row th div.icons svg:hover polygon[fill="#fff"] {
     fill: #ddd;
+}
+
+.table-container .no-data {
+    color: #b1b4b6;
+    font-size: 14px;
+}
+
+@media (min-width: 40.0625em) {
+    .table-container .no-data {
+        font-size: 16px;
+    }
+}
+
+.table-container .govuk-table__header, .table-container .govuk-table__cell {
+    padding: 10px;
+    border-right: 1px solid #b1b4b6;
+}
+
+.table-container .govuk-table__header:last-child, .table-container .govuk-table__cell:last-child {
+    padding: 10px;
+    border-right: none;
+}
+
+.son-table__truncated {
+    margin-bottom: 10px;
+}
+
+.son-table__truncated tbody .would-be-truncated {
+    /* The styles below are copied from govuk-visually-hidden */
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    clip: rect(0 0 0 0) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    border: 0 !important;
+    white-space: nowrap !important;
 }
 
 .sort-icon, .filter-icon {
