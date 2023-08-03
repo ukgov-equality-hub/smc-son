@@ -240,7 +240,7 @@ def data_table_decimal_places_filter(context, details):
                 if len(data_table_decimal_places_list) >= loop_index:
                     decimal_places_for_this_column = data_table_decimal_places_list[loop_index - 1]
                     if decimal_places_for_this_column or decimal_places_for_this_column == 0:
-                        if cell_value and is_a_float(cell_value):
+                        if not cell_value == '' and is_a_float(cell_value):
                             return ('{0:.' + str(decimal_places_for_this_column) + 'f}').format(float(cell_value))
 
         return cell_value
