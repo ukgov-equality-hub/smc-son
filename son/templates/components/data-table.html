@@ -43,13 +43,15 @@
                                     </th>
                                 {% endif %}
                             {% else %}
-                                <td class="govuk-table__cell{{ [data, column_number] | data_table_align_columns }}">
-                                    {% if cell %}
+                                {% if not cell == '' %}
+                                    <td class="govuk-table__cell{{ [data, column_number] | data_table_align_columns }}">
                                         {{ [data, column_number, cell] | data_table_decimal_places }}
-                                    {% else %}
-                                        <span class="no-data">No data</span>
-                                    {% endif %}
-                                </td>
+                                    </td>
+                                {% else %}
+                                    <td class="govuk-table__cell no-data govuk-!-text-align-centre">
+                                        No data
+                                    </td>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </tr>
