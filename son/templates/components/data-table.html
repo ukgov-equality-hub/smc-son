@@ -7,7 +7,7 @@
 
     <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--s">
-            {{ [data, 'title'] | attribute }}
+            {{ ([data, 'dataTableTitle'] | attribute) or ([data, 'title'] | attribute) }}
         </caption>
         <thead class="govuk-table__head">
             {% for row in data_table %}
