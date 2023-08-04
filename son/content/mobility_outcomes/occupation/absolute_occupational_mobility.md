@@ -31,13 +31,95 @@ People with a disability or long-term limiting condition have a much lower likel
 Overview
 
 ## Chart: Multi-line
-{ "code": "MO11", "title": "Absolute occupational mobility", "data": [{ "label": "Female", "data": "/static/data/indicators/MO11_overview_female-20230705.csv" }, { "label": "Male", "data": "/static/data/indicators/MO11_overview_male-20230705.csv" }], "toggle": "radio", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Value_note", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "range": [0, 0.75], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Area_name", "heading": "Country" }, { "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO11",
+    "title": "Absolute occupational mobility",
+    "data": [{
+        "label": "Female",
+        "data": "/static/data/indicators/MO11_overview_female-20230705.csv"
+    }, {
+        "label": "Male",
+        "data": "/static/data/indicators/MO11_overview_male-20230705.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Value_note",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "range": [0, 0.75],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "columns": [{
+        "column": "Area_name",
+        "heading": "Country"
+    }, {
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 Long range
 
 ## Chart: Multi-line
-{ "code": "MO11", "title": "Absolute occupational mobility", "data": [{ "label": "Female", "data": "/static/data/indicators/MO11_long_range_female-20230705.csv" }, { "label": "Male", "data": "/static/data/indicators/MO11_long_range_male-20230705.csv" }], "toggle": "radio", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Value_note", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "range": [0, 0.5], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Area_name", "heading": "Country" }, { "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO11",
+    "title": "Absolute occupational mobility",
+    "data": [{
+        "label": "Female",
+        "data": "/static/data/indicators/MO11_long_range_female-20230705.csv"
+    }, {
+        "label": "Male",
+        "data": "/static/data/indicators/MO11_long_range_male-20230705.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Value_note",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "range": [0, 0.5],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "columns": [{
+        "column": "Area_name",
+        "heading": "Country"
+    }, {
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area (ITL2)

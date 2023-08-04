@@ -25,7 +25,39 @@ In the 2021 to 2022 school year:
 By year
 
 ## Chart: Multi-line
-{ "code": "IN11", "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)", "data": "/static/data/indicators/IN11_overview-20230714.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "SEB", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN11",
+    "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)",
+    "data": "/static/data/indicators/IN11_overview-20230714.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "SEB",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area

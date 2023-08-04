@@ -20,7 +20,39 @@ By year
 
 ## Chart: Multi-line
 # Src
-{ "code": "DR12", "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)", "data": "/static/data/indicators/DR12_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Area_name", "heading": "Country" }, { "column": "Time_period" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR12",
+    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)",
+    "data": "/static/data/indicators/DR12_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Area_name",
+        "heading": "Country"
+    }, {
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 # Guidance
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vestibulum sapien augue, eget condimentum purus blandit et. Nunc sed varius nulla. Proin nec magna aliquam, tristique leo at, volutpat quam. Maecenas ac ipsum suscipit, tincidunt dui sit amet, viverra ipsum. Donec rhoncus lacinia lorem vel vulputate. In ac varius metus. Ut sed nisi ut libero lobortis rutrum. Vivamus vel ipsum quis diam feugiat mattis fermentum ut ex. Etiam ultricies, mi in tempus vestibulum, augue nunc ullamcorper lectus, sed ultricies risus lectus ac libero. In sed odio ut diam commodo iaculis. Nunc vitae tempor turpis, quis aliquet tellus. Phasellus eget nunc pellentesque, tincidunt velit sed, varius arcu. Cras convallis, urna et varius suscipit, elit lacus consequat nunc, non feugiat libero ligula vel dui. Aliquam id laoreet lacus, quis consequat mi. Aliquam eget mauris vel ipsum congue maximus condimentum quis ligula. Mauris feugiat mi eget venenatis auctor.
