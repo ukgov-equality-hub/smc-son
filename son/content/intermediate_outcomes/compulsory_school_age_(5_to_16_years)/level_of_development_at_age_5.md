@@ -32,7 +32,67 @@ By area
 
 ## Map
 # Src
-{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by region (England, September 2012 to July 2022)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Number of students", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Number of students", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN11",
+    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by region (England, September 2012 to July 2022)",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": [{
+        "label": "FSM eligible",
+        "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv"
+    }, {
+        "label": "Not FSM eligible",
+        "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv"
+    }, {
+        "label": "Gap",
+        "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv"
+    }],
+    "toggle": "radio",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "Number of students",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
+    "height": 700,
+    "dataFormat": "quintile",
+    "zero": false,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "x1key": "FSM_eligible",
+    "x2key": "Not_known_to_be_FSM_eligible",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "legend": false,
+    "margin": [0, 0, 0, 0],
+    "backgroundColor": "#fafafa",
+    "columns": [{
+        "column": "Area_name",
+        "heading": "ITL2 region"
+    }, {
+        "column": "Value",
+        "heading": "Number of students",
+        "align": "right"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex

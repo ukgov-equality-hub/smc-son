@@ -32,7 +32,55 @@ By area
 
 ## Map
 # Src
-{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR33",
+    "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "%",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
+    "height": 700,
+    "dataFormat": "quintile",
+    "tooltipTitle": "",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "legend": false,
+    "margin": [0, 0, 0, 0],
+    "backgroundColor": "#fafafa",
+    "columns": [{
+        "column": "Area_name",
+        "heading": "ITL2 region"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By occupational class and area

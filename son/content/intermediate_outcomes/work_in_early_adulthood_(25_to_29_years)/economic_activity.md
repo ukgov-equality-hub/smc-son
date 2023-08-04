@@ -33,7 +33,56 @@ By area
 
 ## Map
 # Src
-{ "code": "IN31", "title": "Percentage of 25 to 29 year olds who were economically active, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/IN31_area-20230327.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Random effect", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "dataFormat": "quintile", "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "xgrid": true, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Random effect", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN31",
+    "title": "Percentage of 25 to 29 year olds who were economically active, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/IN31_area-20230327.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "Random effect",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
+    "height": 700,
+    "dataFormat": "quintile",
+    "zero": false,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "legend": false,
+    "margin": [0, 0, 0, 0],
+    "backgroundColor": "#fafafa",
+    "columns": [{
+        "column": "Area_name",
+        "heading": "ITL2 region"
+    }, {
+        "column": "Value",
+        "heading": "Random effect",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex
