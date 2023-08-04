@@ -11,9 +11,12 @@ Data on the occupation level of adults in families with dependent children.
 Summary main findings
 
 ## Text
-20% of adults in families with dependent children were in ‘higher professional’ occupations in 2021, up from 14% in 2014.<br>
-46% were in professional occupations (higher or lower) in 2021, up from 39% in 2014.<br>
-13% were in higher working class occupations in 2021, down from 19% in 2014.<br>
+20% of adults in families with dependent children were in ‘higher professional’ occupations in 2021, up from 14% in 2014.
+
+46% were in professional occupations (higher or lower) in 2021, up from 39% in 2014.
+
+13% were in higher working class occupations in 2021, down from 19% in 2014.
+
 32% were in working class occupations (higher or lower) in 2021, down from 40% in 2014.
 
 ## Section
@@ -27,7 +30,15 @@ By area
 
 ## Map
 # Src
-{ "code": "DR14", "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "Higher professional", "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv" }, { "label": "Lower working", "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "zero": false, "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{ "code": "DR14", "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "tooltipTitle:" "Percentage of adults in a higher professional or lower working class occupation" , "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "Higher professional", "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv" }, { "label": "Lower working", "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "zero": false, "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+# Guidance
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the percentage of adults in families with dependent children who were in either a higher professional or lower working class occupation.
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+
 
 ## About the data
 # Data source
