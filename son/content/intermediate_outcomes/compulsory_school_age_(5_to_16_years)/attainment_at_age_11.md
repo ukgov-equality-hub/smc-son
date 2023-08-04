@@ -12,9 +12,9 @@ Summary main findings
 
 ## Text
 In the 4 school years ending in July 2019, the percentage of pupils who met the expected standard in reading, writing and maths by 11 years old went up from 53% to 65%. It went down to 59% in the 2021 to 2022 school year.
-<br>
+
 In the 9 school years ending in July 2019, the gap between pupils from disadvantaged backgrounds and non-disadvantaged pupils (the ‘disadvantage gap’) went down. It then went up in the 2021 to 2022 school year to the highest level since 2012.
-<br>
+
 In the 2021 to 2022 school year:
 <ul class="govuk-list">
 <li>43% of disadvantaged pupils and 66% of non-disadvantaged pupils met the expected standard</li>
@@ -88,11 +88,18 @@ Download
 {}
 
 ## Section
-FSM eligible vs. Not FSM eligible
+By area
 
 ## Map
 # Src
-{ "code": "IN12", "title": "Attainment at age 11", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{ "code": "IN12", "title": "Percentage of students meeting the expected standard in reading, writing and maths by the end of key stage 2, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)", "tooltipTitle": "Percentage of 11 year olds meeting expected standard", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+# Guidance
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the percentage of pupils who met the expected standard in reading, writing and maths at 11 years old. Figures are shown separately for FSM-eligible pupils and non-eligible pupils. The gap between these 2 groups is also shown for each region.
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
 ## About
 # Data source(s)
