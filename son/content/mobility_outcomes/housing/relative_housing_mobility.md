@@ -69,25 +69,196 @@ Overview
 By area
 
 ## Chart: Single-bar
-{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_area-20230602.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "zkey": "Area_type", "sort": "Area_name", "scale": "Odds ratio", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO42",
+    "title": "Absolute housing mobility",
+    "data": "/static/data/indicators/MO42_area-20230602.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Area_name",
+    "ykey": "Value",
+    "zkey": "Area_type",
+    "sort": "Area_name",
+    "scale": "Odds ratio",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Area_name"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By age
 
 ## Chart: Single-bar
-{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_age-20230602.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "Odds ratio", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO42",
+    "title": "Absolute housing mobility",
+    "data": "/static/data/indicators/MO42_age-20230602.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "Odds ratio",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Age"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex
 
 ## Chart: Single-bar
-{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_gender-20230602.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "zkey": "Sex", "sort": "Area_name", "scale": "Odds ratio", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Sex" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO42",
+    "title": "Absolute housing mobility",
+    "data": "/static/data/indicators/MO42_gender-20230602.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "zkey": "Sex",
+    "sort": "Area_name",
+    "scale": "Odds ratio",
+    "maxBarSize": 150,
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Area_name"
+    }, {
+        "column": "Sex"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By disability
 
 ## Chart: Single-bar
-{ "code": "MO42", "title": "Absolute housing mobility", "data": "/static/data/indicators/MO42_disability-20230602.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "sort": "Area_name", "scale": "Odds ratio", "maxBarSize": 150, "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Area_name" }, { "column": "Category", "heading": "Disabled" }, { "column": "Value", "heading": "Odds ratio", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO42",
+    "title": "Absolute housing mobility",
+    "data": "/static/data/indicators/MO42_disability-20230602.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category",
+    "ykey": "Value",
+    "zkey": "Category",
+    "sort": "Area_name",
+    "scale": "Odds ratio",
+    "maxBarSize": 150,
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Area_name"
+    }, {
+        "column": "Category",
+        "heading": "Disabled"
+    }, {
+        "column": "Value",
+        "heading": "Odds ratio",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About
 # Data source(s)

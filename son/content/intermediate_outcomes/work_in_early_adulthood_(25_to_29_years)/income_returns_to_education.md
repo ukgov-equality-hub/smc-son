@@ -75,7 +75,38 @@ By year
 Relative differences
 
 ## Chart: Single-bar
-{ "code": "IN351", "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for SEB, sex and age (UK, 2019 to 2021 combined)", "data": "/static/data/indicators/IN351_difference-20230713.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Time_period" }, { "column": "Category", "heading": "Qualification" }, { "column": "Value", "heading": "Percentage difference (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN351",
+    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for SEB, sex and age (UK, 2019 to 2021 combined)",
+    "data": "/static/data/indicators/IN351_difference-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Category",
+        "heading": "Qualification"
+    }, {
+        "column": "Value",
+        "heading": "Percentage difference (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex
