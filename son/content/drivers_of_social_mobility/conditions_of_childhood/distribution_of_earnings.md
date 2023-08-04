@@ -20,7 +20,34 @@ Inequality in hourly pay was higher in England than Scotland, Wales and Northern
 By year
 
 ## Chart: Single-line
-{ "code": "DR11", "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)", "data": "/static/data/indicators/DR11_overview-20230413.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Ratio", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR11",
+    "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)",
+    "data": "/static/data/indicators/DR11_overview-20230413.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Ratio",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#1d70b8"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Ratio",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By country

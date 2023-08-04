@@ -27,7 +27,34 @@ Relative educational mobility was greater in Scotland, but did not vary signific
 Overview
 
 ## Chart: Single-line
-{ "code": "MO32", "title": "Relative educational mobility", "data": "/static/data/indicators/MO32_overview-20230607.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Ratio", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO32",
+    "title": "Relative educational mobility",
+    "data": "/static/data/indicators/MO32_overview-20230607.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Ratio",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#1d70b8"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Ratio",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area

@@ -31,7 +31,34 @@ Overview
 By year
 
 ## Chart: Single-line
-{ "code": "IN13", "title": "Attainment at age 16", "data": "/static/data/indicators/IN13_year-20230601.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Gap index", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Attainment at age 16",
+    "data": "/static/data/indicators/IN13_year-20230601.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Gap index",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Gap index",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area (ITL2)

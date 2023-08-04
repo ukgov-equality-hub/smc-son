@@ -33,7 +33,34 @@ Overview
 By year
 
 ## Chart: Single-line
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_year-20230531.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN12",
+    "title": "Attaintment at age 11",
+    "data": "/static/data/indicators/IN12_year-20230531.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Gap index",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex

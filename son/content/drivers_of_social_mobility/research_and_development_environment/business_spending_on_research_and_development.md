@@ -19,7 +19,34 @@ Spending went down by 22% between 2007 and 2011, but then went up every year unt
 By year
 
 ## Chart: Single-line
-{ "code": "DR52", "title": "Ratio (relative to 2007) of business spending on research and development (UK, 2007 to 2018)", "data": "/static/data/indicators/DR52_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Euros", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Euros", "align": "right", "format": "€" }] }
+{
+    "code": "DR52",
+    "title": "Ratio (relative to 2007) of business spending on research and development (UK, 2007 to 2018)",
+    "data": "/static/data/indicators/DR52_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Euros",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Euros",
+        "align": "right",
+        "format": "€"
+    }]
+}
 
 ## Section
 By area

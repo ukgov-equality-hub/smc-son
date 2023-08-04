@@ -46,7 +46,7 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "tooltipTitle": "test title",
+    "tooltipTitle": "",
     "rolloverBehaviour": "outline",
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],

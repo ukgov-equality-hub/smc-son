@@ -33,7 +33,34 @@ Areas with the lowest broadband speeds were:
 By year
 
 ## Chart: Single-line
-{ "code": "DR51", "title": "Ratio (relative to 2014) of the median (average) broadband speed (UK, 2014 to 2019)", "data": "/static/data/indicators/DR51_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Megabits per second", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Megabits per second", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR51",
+    "title": "Ratio (relative to 2014) of the median (average) broadband speed (UK, 2014 to 2019)",
+    "data": "/static/data/indicators/DR51_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Megabits per second",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "colourScheme": ["#5694ca"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Value",
+        "heading": "Megabits per second",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area
