@@ -17,88 +17,14 @@ The median (average) number of research students in the UK went up by 4% from 20
 By year
 
 ## Chart: Single-line
-{
-    "code": "DR53",
-    "title": "Ratio (relative to 2015) of the median (average) number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)",
-    "data": "/static/data/indicators/DR53_overview-20230417.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Number of students",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 3,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#5694ca"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "columns": [{
-        "column": "Time_period"
-    }, {
-        "column": "Value",
-        "heading": "Number of students",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "DR53", "title": "Ratio (relative to 2015) of the median (average) number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)", "data": "/static/data/indicators/DR53_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Number of students", "xgrid": false, "ygrid": true, "xticks": 3, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Number of students", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area
 
 ## Map
 # Src
-{
-    "code": "DR53",
-    "title": "Number of research students, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2015 to 2018)",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [{
-        "label": "2015",
-        "data": "/static/data/indicators/DR53_area_2015-20230417.csv"
-    }, {
-        "label": "2016",
-        "data": "/static/data/indicators/DR53_area_2016-20230417.csv"
-    }, {
-        "label": "2017",
-        "data": "/static/data/indicators/DR53_area_2017-20230417.csv"
-    }, {
-        "label": "2018",
-        "data": "/static/data/indicators/DR53_area_2018-20230417.csv"
-    }],
-    "toggle": "radio",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "Number of students",
-    "height": 700,
-    "dataFormat": "quintile",
-    "tooltipTitle": "",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "legend": false,
-    "margin": [0, 0, 0, 0],
-    "backgroundColor": "#fafafa",
-    "columns": [{
-        "column": "Area_name",
-        "heading": "ITL2 region"
-    }, {
-        "column": "Value",
-        "heading": "Number of students",
-        "align": "right"
-    }]
-}
+{ "code": "DR53", "title": "Number of research students, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2015 to 2018)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "2015", "data": "/static/data/indicators/DR53_area_2015-20230417.csv" }, { "label": "2016", "data": "/static/data/indicators/DR53_area_2016-20230417.csv" }, { "label": "2017", "data": "/static/data/indicators/DR53_area_2017-20230417.csv" }, { "label": "2018", "data": "/static/data/indicators/DR53_area_2018-20230417.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Number of students", "height": 700, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Number of students", "align": "right" }] }
 
 ## About the data
 # Data source

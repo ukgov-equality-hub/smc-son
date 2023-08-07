@@ -23,252 +23,25 @@ Disabled young people earned significantly less than those without a disability 
 By sex
 
 ## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Direct effect of social origin on earnings (2019-21, Controlling for educational level)",
-    "data": "/static/data/indicators/IN352_gender-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Sex"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "£",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN352", "title": "Direct effect of social origin on earnings (2019-21, Controlling for educational level)", "data": "/static/data/indicators/IN352_gender-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Direct effect of social origin on earnings (% difference)",
-    "data": "/static/data/indicators/IN352_gender_difference-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Sex"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN352", "title": "Direct effect of social origin on earnings (% difference)", "data": "/static/data/indicators/IN352_gender_difference-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Direct effect of social origin on earnings (2014-21)",
-    "data": "/static/data/indicators/IN352_gender_201419-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Sex"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN352", "title": "Direct effect of social origin on earnings (2014-21)", "data": "/static/data/indicators/IN352_gender_201419-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Direct effect of social origin on earnings",
-    "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Category",
-        "heading": "Ethnicity"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "£",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN352", "title": "Direct effect of social origin on earnings", "data": "/static/data/indicators/IN352_ethnicity-20230713.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By disability
 
 ## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Direct effect of social origin on earnings",
-    "data": "/static/data/indicators/IN352_disability-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Category",
-        "heading": "Disabled"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "£",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN352", "title": "Direct effect of social origin on earnings", "data": "/static/data/indicators/IN352_disability-20230713.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Disabled" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)

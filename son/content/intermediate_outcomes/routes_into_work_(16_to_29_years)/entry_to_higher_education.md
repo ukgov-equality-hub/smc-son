@@ -21,48 +21,7 @@ A similar percentage of 18 to 20 year olds from higher working class (34%), inte
 Overview
 
 ## Chart: Single-bar
-{
-    "code": "IN22",
-    "title": "Percentage of 18 to 20 year olds enrolled in higher education, by socio-economic background (UK, 2021)",
-    "data": "/static/data/indicators/IN22_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "IN22", "title": "Percentage of 18 to 20 year olds enrolled in higher education, by socio-economic background (UK, 2021)", "data": "/static/data/indicators/IN22_overview-20230327.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)
