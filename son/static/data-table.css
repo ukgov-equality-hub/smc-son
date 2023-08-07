@@ -22,9 +22,11 @@
 .table-container thead {
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .table-container thead tr th {
+    position: relative;
     align-self: flex-start;
     height: auto;
     display: table-cell;

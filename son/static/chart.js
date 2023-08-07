@@ -158,6 +158,7 @@ class Chart {
         const xvalue = options.xvalue || null
         const yvalue = options.yvalue || null
         let dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        const reversePolarity = options.reversePolarity || false
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         const limit = options.limit || 0
         let domain = options.domain || null
@@ -298,6 +299,7 @@ class Chart {
                             domain = sortDomain(chartData, sort, xkey)
                         } else {
                             range = sortDomain(chartData, sort, ykey)
+                            if (reversePolarity) range = range.reverse()
                         }
                     }
                 }
@@ -667,7 +669,7 @@ class Chart {
             function getQuantile(ranges, value) {
                 for (let i = 0; i < ranges.length; i++) {
                     if (value <= ranges[i]) {
-                        return i
+                        return reversePolarity ? ranges.length - (i + 1) : i
                     }
                 }
                 return -1
@@ -1027,7 +1029,7 @@ class Chart {
         }
 
         function maxLabelLength(data, key, style) {
-            if (maximumLabelLength > 0) {console.log();return maximumLabelLength}
+            if (maximumLabelLength > 0) return maximumLabelLength
             if (['quartile', 'quintile', 'decile'].includes(type)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })
             if (max[0] && max[0].text) {
