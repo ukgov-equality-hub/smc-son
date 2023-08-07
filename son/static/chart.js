@@ -894,7 +894,7 @@ class Chart {
                             if (!(['line', 'linex', 'liney'].includes(type) && parent.node().tagName != 'circle')) {
                                 const pointer = d3.pointer(event, wrapper.node())
                                 if (text && text != 'null: null') {
-                                    tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.tooltipTitle && self.tooltipTitle != '' ? `\n(${self.tooltipTitle})` : self.title ? `\n(${self.title})` : ''}`).split('\n'))
+                                    tip.call(hover, pointer, (`${this.getAttribute('data-group') != '' ? `${this.getAttribute('data-group')}\n` : ''}${text}${self.tooltipTitle ? `\n(${self.tooltipTitle})` : self.title ? `\n(${self.title})` : ''}`).split('\n'))
                                 } else {
                                     tip.selectAll('*').remove()
                                 }

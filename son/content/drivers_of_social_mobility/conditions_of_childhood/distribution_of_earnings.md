@@ -20,34 +20,7 @@ Inequality in hourly pay was higher in England than Scotland, Wales and Northern
 By year
 
 ## Chart: Single-line
-{
-    "code": "DR11",
-    "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)",
-    "data": "/static/data/indicators/DR11_overview-20230413.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Ratio",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#1d70b8"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "columns": [{
-        "column": "Time_period"
-    }, {
-        "column": "Value",
-        "heading": "Ratio",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "DR11", "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)", "data": "/static/data/indicators/DR11_overview-20230413.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Ratio", "align": "right", "format": "1dp" }] }
 
 ## Section
 By country
@@ -68,13 +41,11 @@ By country
     "ygrid": true,
     "xticks": 7,
     "yticks": 5,
-    "tooltipTitle": "",
+    "legend": true,
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-
     "dataTable": "/static/pre-processed-csvs/DR11-distribution-of-earnings--by-country-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],

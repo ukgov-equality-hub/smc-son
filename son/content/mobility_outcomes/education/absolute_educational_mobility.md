@@ -31,200 +31,25 @@ People with a long-term illness or disability were less likely to have a univers
 Overview
 
 ## Chart: Stacked-bar
-{
-    "code": "MO31",
-    "title": "Absolute educational mobility",
-    "data": [{
-        "label": "Female",
-        "data": "/static/data/indicators/MO31_overview_female-20230601.csv"
-    }, {
-        "label": "Male",
-        "data": "/static/data/indicators/MO31_overview_male-20230601.csv"
-    }, {
-        "label": "Total",
-        "data": "/static/data/indicators/MO31_overview_total-20230601.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "filter",
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "maxLabelLength": 30,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Category"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "MO31", "title": "Absolute educational mobility", "data": [{ "label": "Female", "data": "/static/data/indicators/MO31_overview_female-20230601.csv"}, { "label": "Male", "data": "/static/data/indicators/MO31_overview_male-20230601.csv"}, { "label": "Total", "data": "/static/data/indicators/MO31_overview_total-20230601.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area
 
 ## Chart: Single-bar
-{
-    "code": "MO31",
-    "title": "Absolute educational mobility",
-    "data": "/static/data/indicators/MO31_area-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Area_name",
-    "ykey": "Value",
-    "zkey": "Area_type",
-    "sort": "Area_name",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#5694ca"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Category",
-        "heading": "Ethnicity"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "MO31", "title": "Absolute educational mobility", "data": "/static/data/indicators/MO31_area-20230601.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "zkey": "Area_type", "sort": "Area_name", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
 ## Chart: Single-bar
-{
-    "code": "MO31",
-    "title": "Absolute educational mobility",
-    "data": "/static/data/indicators/MO31_ethnicity-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#5694ca"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Category",
-        "heading": "Ethnicity"
-    }, {
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "MO31", "title": "Absolute educational mobility", "data": "/static/data/indicators/MO31_ethnicity-20230601.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By disability
 
 ## Chart: Grouped-bar
-{
-    "code": "MO31",
-    "title": "Absolute occupational mobility",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "clickBehaviour": "fade",
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "legend": true,
-    "range": [0, 0.7],
-    "margin": [0, 0, 0, 0],
-    "maxLabelLength": 30,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "SEB",
-        "heading": "Socio-economic background"
-    }, {
-        "column": "Category"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "MO31", "title": "Absolute occupational mobility", "data": [{ "label": "Disabled", "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"}, { "label": "Not disabled", "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "range": [0, 0.7], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About
 # Data source(s)

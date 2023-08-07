@@ -21,38 +21,7 @@ The percentage of 19 year olds from OECD countries entering higher education has
 By year
 
 ## Chart: Multi-line
-{
-    "code": "DR23",
-    "title": "Percentage of 19 year olds enrolled in secondary or post-secondary education, over time (UK and international averages, 2010 to 2020)",
-    "data": "/static/data/indicators/DR23a_overview-20230417.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "columns": [{
-        "column": "Time_period"
-    }, {
-        "column": "Area_name"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "DR23", "title": "Percentage of 19 year olds enrolled in secondary or post-secondary education, over time (UK and international averages, 2010 to 2020)", "data": "/static/data/indicators/DR23a_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About the data
 # Data source

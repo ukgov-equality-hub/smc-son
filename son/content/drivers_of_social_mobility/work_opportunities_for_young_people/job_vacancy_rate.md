@@ -19,34 +19,7 @@ The job vacancy rate was at its lowest between 2010 and 2012, at around 0.2 vaca
 By year
 
 ## Chart: Single-line
-{
-    "code": "DR31",
-    "title": "Number of job vacancies for every unemployed 16 to 64 year old (UK, 2001 to 2022)",
-    "data": "/static/data/indicators/DR31_overview-20230413.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Rate",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "colourScheme": ["#5694ca"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "columns": [{
-        "column": "Time_period"
-    }, {
-        "column": "Value",
-        "heading": "Rate",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "DR31", "title": "Number of job vacancies for every unemployed 16 to 64 year old (UK, 2001 to 2022)", "data": "/static/data/indicators/DR31_overview-20230413.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Rate", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Rate", "align": "right", "format": "1dp" }] }
 
 ## About the data
 # Data source(s)

@@ -19,38 +19,7 @@ Summary main findings
 Overview
 
 ## Chart: Multi-line
-{
-    "code": "DR21",
-    "title": "Percentage of 16 to 18 year olds in education, training or employment, over time (UK, 2011 to 2021)",
-    "data": "/static/data/indicators/DR21_overview-20230417.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Time_period",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "tooltipTitle": "",
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "legend": true,
-    "margin": [0, 0, 0, 0],
-    "columns": [{
-        "column": "Time_period"
-    }, {
-        "column": "Category"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }]
-}
+{ "code": "DR21", "title": "Percentage of 16 to 18 year olds in education, training or employment, over time (UK, 2011 to 2021)", "data": "/static/data/indicators/DR21_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## About the data
 # Data source(s)
