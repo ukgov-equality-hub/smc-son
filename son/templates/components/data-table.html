@@ -1,77 +1,129 @@
 {% macro datatable(id, data) %}
-{% set data_table = [data, 'dataTable', 'data'] | table %}
-<table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
-    {% for row in data_table %}
-    {% if loop.index == 1 %}
-    <caption class="govuk-table__caption govuk-table__caption--m govuk-visually-hidden">{{ [data, 'title'] | attribute }}</caption>
-    <thead class="govuk-table__head">
-        <tr class="govuk-table__row">
-            {% for cell in row %}
-            <th scope="col" class="govuk-table__header">{{ cell }}</th>
+    {% set data_table = [data, 'dataTable', 'data'] | table %}
+    {% set number_of_heading_rows = ([data, 'dataTableNumberOfHeadingRows'] | attribute) or 1 %}
+    {% set number_of_heading_columns = ([data, 'dataTableNumberOfHeadingColumns'] | attribute) or 1 %}
+    {% set number_of_data_rows = [data_table, number_of_heading_rows] | number_of_data_rows %}
+    {% set default_number_of_rows_to_show = 20 %}
+
+    <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
+        <caption class="govuk-table__caption govuk-table__caption--s">
+            {{ ([data, 'dataTableTitle'] | attribute) or ([data, 'title'] | attribute) }}
+        </caption>
+        <thead class="govuk-table__head">
+            {% for row in data_table %}
+                {% set row_number = loop.index %}
+                {% if row_number <= number_of_heading_rows %}
+                    <tr class="govuk-table__row">
+                        {% for cell in row %}
+                            {% set column_number = loop.index %}
+                            {% if cell %}
+                                <th scope="col"
+                                    rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
+                                    colspan="{{ [data_table, row_number, column_number, 'column'] | data_table_row_column_span }}"
+                                    class="govuk-table__header">{{ cell }}</th>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endif %}
             {% endfor %}
-        </tr>
-    </thead>
-    <tbody class="govuk-table__body">
-    {% else %}
-        <tr class="govuk-table__row">
-            {% for cell in row %}
-            <td class="govuk-table__cell">{{ cell }}</td>
+        </thead>
+        <tbody class="govuk-table__body">
+            {% for row in data_table %}
+                {% set row_number = loop.index %}
+                {% if row_number > number_of_heading_rows %}
+                    <tr class="govuk-table__row{{ ' would-be-truncated' if row_number > number_of_heading_rows + default_number_of_rows_to_show else '' }}">
+                        {% for cell in row %}
+                            {% set column_number = loop.index %}
+                            {% if column_number <= number_of_heading_columns %}
+                                {% if not cell == '' %}
+                                    <th scope="row"
+                                        rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
+                                        class="govuk-table__header{{ [data, column_number] | data_table_align_columns }}">
+                                        {{ cell }}
+                                    </th>
+                                {% endif %}
+                            {% else %}
+                                {% if not cell == '' %}
+                                    <td class="govuk-table__cell{{ [data, column_number] | data_table_align_columns }}">
+                                        {{ [data, column_number, cell] | data_table_decimal_places }}
+                                    </td>
+                                {% else %}
+                                    <td class="govuk-table__cell no-data govuk-!-text-align-centre">
+                                        No data
+                                    </td>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endif %}
             {% endfor %}
-        </tr>
+        </tbody>
+    </table>
+    {% if number_of_data_rows > default_number_of_rows_to_show and ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
+        <p class="govuk-body" id="son-show-more-rows-button-{{ id }}" style="display: none;">
+            <a href="#" class="govuk-link" onclick="event.preventDefault(); document.getElementById('table{{ id }}').classList.remove('son-table__truncated'); document.getElementById('son-show-more-rows-button-{{ id }}').style.display='none';">
+                {% set number_of_rows_hidden = number_of_data_rows - default_number_of_rows_to_show %}
+                Show {{ (number_of_rows_hidden) }} more {{ 'row' if number_of_rows_hidden == 1 else 'rows' }}
+            </a>
+        </p>
+        <script>
+            document.getElementById('table{{ id }}').classList.add('son-table__truncated');
+            document.getElementById('son-show-more-rows-button-{{ id }}').style.display = '';
+        </script>
     {% endif %}
-    {% endfor %}
-    </tbody>
-</table>
-<script>
-    let tbl{{ id }} = false, dataTable{{ id }}
 
-    function buildTable{{ id }}(datafile) {
-        let options = {{ [data, 'Src'] | content_list | safe }}
-        if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
+    {% if not ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
+        <script>
+            let tbl{{ id }} = false, dataTable{{ id }}
 
-        if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
-            if ('datatable' in options) {
-                options = options['datatable']
-            } else if ('columns' in options) {
-                options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: options['columns'] }
-            } else {
-                const columns = []
-                if ('xkey' in options) columns.push(options['xkey'])
-                if ('ykey' in options) columns.push(options['ykey'])
-                if ('zkey' in options) columns.push(options['zkey'])
-                if ('group' in options) columns.push(options['group'])
-                options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: columns }
+            function buildTable{{ id }}(datafile) {
+                let options = {{ [data, 'Src'] | content_list | safe }}
+                if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
+
+                if (typeof options === 'object' && !Array.isArray(options) && options !== null) {
+                    if ('datatable' in options) {
+                        options = options['datatable']
+                    } else if ('columns' in options) {
+                        options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: options['columns'] }
+                    } else {
+                        const columns = []
+                        if ('xkey' in options) columns.push(options['xkey'])
+                        if ('ykey' in options) columns.push(options['ykey'])
+                        if ('zkey' in options) columns.push(options['zkey'])
+                        if ('group' in options) columns.push(options['group'])
+                        options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10, columns: columns }
+                    }
+                } else {
+                    options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10 }
+                }
+
+                if (!tbl{{ id }} || datafile) {
+                    dataTable{{ id }} = new DataTable('table{{ id }}', datafile, options)
+                }
+                tbl{{ id }} = true
+
+                const items = document.getElementsByClassName('dataTableSize{{ id }}')
+                for (let i = 0; i < items.length; i++) {
+                    dataTable{{ id }}.downloadSize('csv', true).then(data => {
+                        items.item(i).innerText = ' ' + data
+                    })
+                }
             }
-        } else {
-            options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true, pageSize: 10 }
-        }
 
-        if (!tbl{{ id }} || datafile) {
-            dataTable{{ id }} = new DataTable('table{{ id }}', datafile, options)
-        }
-        tbl{{ id }} = true
-
-        const items = document.getElementsByClassName('dataTableSize{{ id }}')
-        for (let i = 0; i < items.length; i++) {
-            dataTable{{ id }}.downloadSize('csv', true).then(data => {
-                items.item(i).innerText = ' ' + data
+            window.document.addEventListener('DOMContentLoaded', function () {
+                buildTable{{ id }}()
             })
-        }
-    }
 
-    window.document.addEventListener('DOMContentLoaded', function () {
-        buildTable{{ id }}()
-    })
+            function downloadData{{ id }}() {
+                if (dataTable{{ id }}) {
+                    dataTable{{ id }}.downloadData('csv', true)
+                }
+            }
 
-    function downloadData{{ id }}() {
-        if (dataTable{{ id }}) {
-            dataTable{{ id }}.downloadData('csv', true)
-        }
-    }
-
-    function downloadDataFile(datafile, options) {
-        format = 'csv'
-        return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
-    }
-</script>
+            function downloadDataFile(datafile, options) {
+                format = 'csv'
+                return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
+            }
+        </script>
+    {% endif %}
 {% endmacro %}
