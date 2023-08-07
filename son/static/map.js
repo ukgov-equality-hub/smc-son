@@ -153,6 +153,7 @@ class Choropleth {
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        const reversePolarity = options.reversePolarity || false
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         let domain = options.domain || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
@@ -608,7 +609,7 @@ class Choropleth {
             function getQuantile(ranges, value) {
                 for (let i = 0; i < ranges.length; i++) {
                     if (value <= ranges[i]) {
-                        return i
+                        return reversePolarity ? ranges.length - (i + 1) : i
                     }
                 }
                 return -1
