@@ -130,10 +130,42 @@ By occupational class and area
 
 ## Grid
 # Map
-{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "DR33",
+    "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "height": 700,
+    "dataFormat": "quintile",
+    "tooltipTitle": "",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1"
+}
 
 # Map
-{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the lower working class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "DR33",
+    "title": "Percentage of 25 to 29 year olds in the lower working class, and ‘quintile’ ranking (from best 20% to worst 20%), by area",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "height": 700,
+    "dataFormat": "quintile",
+    "tooltipTitle": "",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1"
+}
 
 ## About the data
 # Data source(s)
