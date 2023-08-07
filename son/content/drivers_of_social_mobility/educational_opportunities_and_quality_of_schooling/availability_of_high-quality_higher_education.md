@@ -21,7 +21,40 @@ This was a decrease from 6.7% in the previous year, and the lowest dropout rate 
 By year
 
 ## Chart: Multi-line
-{ "code": "DR24", "title": "Percentage of full-time undergraduate students who dropped out of university during their first year of higher education (UK, 6 academic years to August 2020)", "data": "/static/data/indicators/DR24_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period", "replace": "/", "replaceWith": " to 20" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR24",
+    "title": "Percentage of full-time undergraduate students who dropped out of university during their first year of higher education (UK, 6 academic years to August 2020)",
+    "data": "/static/data/indicators/DR24_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "columns": [{
+        "column": "Time_period",
+        "replace": "/",
+        "replaceWith": " to 20"
+    }, {
+        "column": "Area_name"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About the data
 # Data source

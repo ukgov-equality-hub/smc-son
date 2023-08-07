@@ -23,7 +23,39 @@ The average attainment score for students in OECD countries was 487 in 2018, up 
 By year
 
 ## Chart: Grouped-bar
-{ "code": "DR22", "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)", "data": "/static/data/indicators/DR22_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Area_name", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "Average pupil attainment scores", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "Area_name" }, { "column": "Value", "heading": "Average pupil attainment scores", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR22",
+    "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)",
+    "data": "/static/data/indicators/DR22_overview-20230417.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Area_name",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "Average pupil attainment scores",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Area_name"
+    }, {
+        "column": "Value",
+        "heading": "Average pupil attainment scores",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About the data
 # Data source
