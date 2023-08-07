@@ -727,11 +727,11 @@ class DataTable {
 
             for (let i = 0; i < data.length; i++) {
                 if (type == 'array') {
-                    if (!values.includes(data[i][column])) {
+                    if (!values.includes(removeHTML(data[i][column]))) {
                         values.push(removeHTML(data[i][column]))
                     }
                 } else {
-                    if (!values.includes(data[i][headers[column]])) {
+                    if (!values.includes(removeHTML(data[i][headers[column]]))) {
                         values.push(removeHTML(data[i][headers[column]]))
                     }
                 }
@@ -858,7 +858,7 @@ class DataTable {
 
         function removeHTML(html) {
             let doc = new DOMParser().parseFromString(html, 'text/html')
-            return doc.body.textContent || ''
+            return doc.body.textContent.trim() || ''
         }
 
         function isNumeric(x) {

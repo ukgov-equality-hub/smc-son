@@ -68,9 +68,9 @@ class DataUtils {
                 attributes.push(getAttributes(rows[i]))
                 for (let j = 0; j < rows[i].children.length; j++) {
                     if (this.type == 'json') {
-                        row[headers[j]] = rows[i].children[j].innerHTML
+                        row[headers[j]] = rows[i].children[j].innerHTML.trim()
                     } else {
-                        row.push(rows[i].children[j].innerHTML)
+                        row.push(rows[i].children[j].innerHTML.trim())
                     }
                     attributes.push(getAttributes(rows[i].children[j]))
                 }
