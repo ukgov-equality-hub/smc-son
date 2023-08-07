@@ -7,7 +7,7 @@
 
     <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--s">
-            {{ [data, 'title'] | attribute }}
+            {{ ([data, 'dataTableTitle'] | attribute) or ([data, 'title'] | attribute) }}
         </caption>
         <thead class="govuk-table__head">
             {% for row in data_table %}
@@ -35,7 +35,7 @@
                         {% for cell in row %}
                             {% set column_number = loop.index %}
                             {% if column_number <= number_of_heading_columns %}
-                                {% if cell %}
+                                {% if not cell == '' %}
                                     <th scope="row"
                                         rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
                                         class="govuk-table__header{{ [data, column_number] | data_table_align_columns }}">
@@ -43,13 +43,15 @@
                                     </th>
                                 {% endif %}
                             {% else %}
-                                <td class="govuk-table__cell{{ [data, column_number] | data_table_align_columns }}">
-                                    {% if cell %}
+                                {% if not cell == '' %}
+                                    <td class="govuk-table__cell{{ [data, column_number] | data_table_align_columns }}">
                                         {{ [data, column_number, cell] | data_table_decimal_places }}
-                                    {% else %}
-                                        <span class="no-data">No data</span>
-                                    {% endif %}
-                                </td>
+                                    </td>
+                                {% else %}
+                                    <td class="govuk-table__cell no-data govuk-!-text-align-centre">
+                                        No data
+                                    </td>
+                                {% endif %}
                             {% endif %}
                         {% endfor %}
                     </tr>

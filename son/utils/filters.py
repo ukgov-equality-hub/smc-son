@@ -240,7 +240,7 @@ def data_table_decimal_places_filter(context, details):
                 if len(data_table_decimal_places_list) >= loop_index:
                     decimal_places_for_this_column = data_table_decimal_places_list[loop_index - 1]
                     if decimal_places_for_this_column or decimal_places_for_this_column == 0:
-                        if cell_value and is_a_float(cell_value):
+                        if not cell_value == '' and is_a_float(cell_value):
                             return ('{0:.' + str(decimal_places_for_this_column) + 'f}').format(float(cell_value))
 
         return cell_value
@@ -268,11 +268,11 @@ def data_table_row_column_span_filter(context, details):
             extra_cells_spanned = 0
             if row_or_column == 'row':
                 while row_index + extra_cells_spanned + 1 < len(data_table) and \
-                        not data_table[row_index + extra_cells_spanned + 1][column_index]:
+                        data_table[row_index + extra_cells_spanned + 1][column_index] == '':
                     extra_cells_spanned += 1
             elif row_or_column == 'column':
                 while column_index + extra_cells_spanned + 1 < len(data_table[row_index]) and \
-                        not data_table[row_index][column_index + extra_cells_spanned + 1]:
+                        data_table[row_index][column_index + extra_cells_spanned + 1] == '':
                     extra_cells_spanned += 1
             return extra_cells_spanned + 1
     return 1
