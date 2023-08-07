@@ -130,13 +130,93 @@ By area
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)", "data": "/static/data/indicators/IN11_gender-20230714.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "SEB", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN11",
+    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "data": "/static/data/indicators/IN11_gender-20230714.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "group": "SEB",
+    "sort": "SEB",
+    "scale": "%",
+    "maxBarSize": 150,
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Sex"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)", "data": [{ "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" }, { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" }, { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 80], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "outside", "labelColour": "#000", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN11",
+    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "data": [{
+        "label": "Girls",
+        "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv"
+    }, {
+        "label": "Boys",
+        "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv"
+    }, {
+        "label": "Overall",
+        "data": "/static/data/indicators/IN11_ethnicity-20230714.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Category",
+    "sort": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "range": [0, 80],
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "outside",
+    "labelColour": "#000",
+    "columns": [{
+        "column": "Category",
+        "heading": "Ethnicity"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About
 # Data source(s)

@@ -112,19 +112,155 @@ Relative differences
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN351", "title": "Income returns to education", "data": "/static/data/indicators/IN351_gender-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "Category", "sort": "Sex", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN351",
+    "title": "Income returns to education",
+    "data": "/static/data/indicators/IN351_gender-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "group": "Category",
+    "sort": "Sex",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Sex"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN351", "title": "Income returns to education", "data": "/static/data/indicators/IN351_ethnicity-20230713.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "Category2", "sort": "Category2", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Highest qualification" }, { "column": "Category2", "heading": "Ethnicity" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN351",
+    "title": "Income returns to education",
+    "data": "/static/data/indicators/IN351_ethnicity-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category",
+    "ykey": "Value",
+    "group": "Category2",
+    "sort": "Category2",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Category",
+        "heading": "Highest qualification"
+    }, {
+        "column": "Category2",
+        "heading": "Ethnicity"
+    }, {
+        "column": "Value",
+        "heading": "£",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By disability
 
 ## Chart: Grouped-bar
-{ "code": "IN351", "title": "Income returns to education", "data": "/static/data/indicators/IN351_disability-20230713.csv", "height": 450, "type": "bary", "xkey": "Category2", "ykey": "Value", "group": "Category", "sort": "Category2", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Disabled" }, { "column": "Category2", "heading": "Highest qualification" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN351",
+    "title": "Income returns to education",
+    "data": "/static/data/indicators/IN351_disability-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category2",
+    "ykey": "Value",
+    "group": "Category",
+    "sort": "Category2",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Category",
+        "heading": "Disabled"
+    }, {
+        "column": "Category2",
+        "heading": "Highest qualification"
+    }, {
+        "column": "Value",
+        "heading": "£",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About
 # Data source(s)

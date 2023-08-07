@@ -27,7 +27,40 @@ In the 2021 to 2022 school year:
 Overview
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_overview-20230531.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN12",
+    "title": "Attaintment at age 11",
+    "data": "/static/data/indicators/IN12_overview-20230531.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By year
@@ -84,20 +117,24 @@ By sex
     "maxBarSize": 150,
     "xgrid": false,
     "ygrid": true,
+    "xticks": 7,
     "yticks": 5,
-    "legend": true,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
     "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
     "range": [0, 80],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "clickBehaviour": "fade",
+
     "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-sex-and-disadvantage--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
     "dataTableNumberOfHeadingRows": 2
 }
+
 ## Section
 By ethnicity
 
@@ -120,22 +157,25 @@ By ethnicity
     "group": "Category",
     "sort": "Category",
     "scale": "%",
-    "xgrid": true,
-    "ygrid": false,
-    "xticks": 5,
-    "legend": true,
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
     "colourScheme": ["#5694ca", "#d4351c"],
+    "legend": true,
     "domain": [0, 85],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "clickBehaviour": "fade",
     "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-ethnicity-and-FSM--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
     "dataTableNumberOfHeadingColumns": 2
 }
+
 ## Section
 Disadvantaged vs. Not disadvantaged
 

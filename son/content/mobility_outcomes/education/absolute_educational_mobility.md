@@ -183,7 +183,48 @@ By ethnicity
 By disability
 
 ## Chart: Grouped-bar
-{ "code": "MO31", "title": "Absolute occupational mobility", "data": [{ "label": "Disabled", "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"}, { "label": "Not disabled", "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "range": [0, 0.7], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO31",
+    "title": "Absolute occupational mobility",
+    "data": [{
+        "label": "Disabled",
+        "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
+    }, {
+        "label": "Not disabled",
+        "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category",
+    "ykey": "Value",
+    "group": "SEB",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "clickBehaviour": "fade",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "range": [0, 0.7],
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About
 # Data source(s)
