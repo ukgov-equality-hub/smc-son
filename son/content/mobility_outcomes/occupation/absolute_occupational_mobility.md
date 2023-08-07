@@ -188,7 +188,51 @@ By area (ITL2)
 By occupational class
 
 ## Chart: Stacked-bar
-{ "code": "MO11", "title": "Absolute occupational mobility", "data": [{ "label": "Female", "data": "/static/data/indicators/MO11_occupation_female-20230705.csv"}, { "label": "Male", "data": "/static/data/indicators/MO11_occupation_male-20230705.csv"}, { "label": "Total", "data": "/static/data/indicators/MO11_occupation_total-20230705.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO11",
+    "title": "Absolute occupational mobility",
+    "data": [{
+        "label": "Female",
+        "data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
+    }, {
+        "label": "Male",
+        "data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
+    }, {
+        "label": "Total",
+        "data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By ethnicity
@@ -200,7 +244,49 @@ By ethnicity
 By disability
 
 ## Chart: Stacked-bar
-{ "code": "MO11", "title": "Absolute occupational mobility", "data": [{ "label": "Disabled", "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"}, { "label": "Not disabled", "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "SEB", "heading": "Occupation level" }, { "column": "Category2", "heading": "Disabled" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO11",
+    "title": "Absolute occupational mobility",
+    "data": [{
+        "label": "Disabled",
+        "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
+    }, {
+        "label": "Not disabled",
+        "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "SEB",
+        "heading": "Occupation level"
+    }, {
+        "column": "Category2",
+        "heading": "Disabled"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## About
 # Data source(s)

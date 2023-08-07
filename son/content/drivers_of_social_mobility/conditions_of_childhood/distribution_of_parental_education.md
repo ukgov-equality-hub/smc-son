@@ -18,7 +18,40 @@ Summary main findings
 By year
 
 ## Chart: Stacked-bar
-{ "code": "DR13", "title": "Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)", "data": "/static/data/indicators/DR13_overview-20230419.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR13",
+    "title": "Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)",
+    "data": "/static/data/indicators/DR13_overview-20230419.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Category",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area

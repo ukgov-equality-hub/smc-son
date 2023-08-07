@@ -17,7 +17,40 @@ Placeholder summary main findings
 Overview
 
 ## Chart: Stacked-bar
-{ "code": "IN21", "title": "Destinations after age 16", "data": "/static/data/indicators/IN21_overview-20230424.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN21",
+    "title": "Destinations after age 16",
+    "data": "/static/data/indicators/IN21_overview-20230424.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Category"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By sex

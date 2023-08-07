@@ -30,7 +30,51 @@ Disabled young people from every socio-economic background were less likely than
 Overview
 
 ## Chart: Stacked-bar
-{ "code": "IN23", "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)", "data": "/static/data/indicators/IN23_overview-20230327.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Qualification" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN23",
+    "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)",
+    "data": "/static/data/indicators/IN23_overview-20230327.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Category",
+        "heading": "Qualification"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area
@@ -92,7 +136,48 @@ By area
 By sex
 
 ## Chart: Stacked-bar
-{ "code": "IN23", "title": "Destinations following the end of compulsory full-time education:NEET", "data": [{ "label": "Men", "data": "/static/data/indicators/IN23_gender_male-20230327.csv" }, { "label": "Women", "data": "/static/data/indicators/IN23_gender_female-20230327.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Category", "heading": "Qualification" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN23",
+    "title": "Destinations following the end of compulsory full-time education:NEET",
+    "data": [{
+        "label": "Men",
+        "data": "/static/data/indicators/IN23_gender_male-20230327.csv"
+    }, {
+        "label": "Women",
+        "data": "/static/data/indicators/IN23_gender_female-20230327.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Category",
+        "heading": "Qualification"
+    }, {
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By ethnicity

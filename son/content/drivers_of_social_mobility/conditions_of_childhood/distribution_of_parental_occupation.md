@@ -20,7 +20,40 @@ Summary main findings
 By year
 
 ## Chart: Stacked-bar
-{ "code": "DR14", "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)", "data": "/static/data/indicators/DR14_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR14",
+    "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)",
+    "data": "/static/data/indicators/DR14_overview-20230417.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Category",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "Time_period"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area

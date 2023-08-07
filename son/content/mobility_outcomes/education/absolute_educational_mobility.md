@@ -31,7 +31,51 @@ People with a long-term illness or disability were less likely to have a univers
 Overview
 
 ## Chart: Stacked-bar
-{ "code": "MO31", "title": "Absolute educational mobility", "data": [{ "label": "Female", "data": "/static/data/indicators/MO31_overview_female-20230601.csv"}, { "label": "Male", "data": "/static/data/indicators/MO31_overview_male-20230601.csv"}, { "label": "Total", "data": "/static/data/indicators/MO31_overview_total-20230601.csv"}], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO31",
+    "title": "Absolute educational mobility",
+    "data": [{
+        "label": "Female",
+        "data": "/static/data/indicators/MO31_overview_female-20230601.csv"
+    }, {
+        "label": "Male",
+        "data": "/static/data/indicators/MO31_overview_male-20230601.csv"
+    }, {
+        "label": "Total",
+        "data": "/static/data/indicators/MO31_overview_total-20230601.csv"
+    }],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "tooltipTitle": "",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "legend": true,
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [{
+        "column": "SEB",
+        "heading": "Socio-economic background"
+    }, {
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }]
+}
 
 ## Section
 By area
