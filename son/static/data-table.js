@@ -676,8 +676,7 @@ class DataTable {
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('filter-icon', `filter-icon_${self.el}_${column}`)
-                icon.innerHTML = `<svg height="${rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight < 16 ? 10 : rowHeight - 6}" viewBox="0 0 20 20"><polygon points="0,1 8,12 8,20 12,16 12,12 20,1" fill="#fff" stroke="#555" stroke-width="1" /></svg>`
-
+                icon.innerHTML = `<svg height="${rowHeight == 0 ? 40 : rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight == 0 ? 40 : rowHeight < 16 ? 10 : rowHeight - 6}" viewBox="0 0 20 20"><polygon points="0,1 8,12 8,20 12,16 12,12 20,1" fill="#fff" stroke="#555" stroke-width="1" /></svg>`
                 icon.onclick = function (e) {
                     if (document.getElementsByClassName(`filter_${self.el}_${column}`)[0].style.display == 'block') {
                         document.getElementsByClassName(`filter_${self.el}_${column}`)[0].style.display = 'none'
@@ -838,7 +837,7 @@ class DataTable {
                 let icon = document.createElement('span')
                 const column = rows[0].children[i].getAttribute('data-column')
                 icon.classList.add('sort-icon', `sort-icon_${self.el}_${column}`)
-                icon.innerHTML = `<svg height="${rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight < 16 ? 10 : rowHeight - 12}" viewBox="0 0 14 20"><polygon points="0,8 7,1 14,8" fill="#fff" stroke="#555" stroke-width="1" class="desc" /><polygon points="0,12 7,19 14,12" fill="#fff" stroke="#555" stroke-width="1" class="asc" /></svg>`
+                icon.innerHTML = `<svg height="${rowHeight == 0 ? 40 : rowHeight < 16 ? 10 : rowHeight - 6}" width="${rowHeight == 0 ? 40 : rowHeight < 16 ? 10 : rowHeight - 6}" viewBox="0 0 14 20"><polygon points="0,8 7,1 14,8" fill="#fff" stroke="#555" stroke-width="1" class="desc" /><polygon points="0,12 7,19 14,12" fill="#fff" stroke="#555" stroke-width="1" class="asc" /></svg>`
                 icon.onclick = function (e) {
                     if (self.dataTable['sort'] == column) {
                         self.dataTable['sortOrder'] = self.dataTable['sortOrder'] != 'desc' ? 'asc' : 'desc'
