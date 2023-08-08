@@ -12,19 +12,19 @@ Summary main findings
 
 ## Text
 34% of all 18 to 20 year olds began studying in higher education in 2021.
-<br>
+
 51% of 18 to 20 year olds from a higher professional background started a higher education course, compared with 21% of those from a lower working class background. This is one of the largest class inequalities reported in State of the Nation 2023.
-<br>
+
 A similar percentage of 18 to 20 year olds from higher working class (34%), intermediate (35%) and lower professional (38%) backgrounds began studying in higher education in 2021.
 
 ## Section
-Overview
+By socio-economic background
 
 ## Chart: Single-bar
 { "code": "IN22", "title": "Percentage of 18 to 20 year olds enrolled in higher education, by socio-economic background (UK, 2021)", "data": "/static/data/indicators/IN22_overview-20230327.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
 # Time period
