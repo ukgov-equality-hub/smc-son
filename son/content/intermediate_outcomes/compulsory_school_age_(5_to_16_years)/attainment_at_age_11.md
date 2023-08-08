@@ -24,31 +24,31 @@ In the 2021 to 2022 school year:
 </ul>
 
 ## Section
-Overview
+By disadvantage status over time
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_overview-20230531.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN12", "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status over time (England, September 2015 to July 2022)", "data": "/static/data/indicators/IN12_overview-20230531.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By year
 
 ## Chart: Single-line
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_year-20230531.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)", "align": "right", "format": "1dp" }] }
+{ "code": "IN12", "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)", "data": "/static/data/indicators/IN12_year-20230531.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)", "align": "right", "format": "1dp" }] }
 
 ## Section
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attainment at age 11", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 80], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN12", "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 80], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attainment at age 11", "data": [{ "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" }, { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" }, { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" }, { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" }, { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }], "toggle": "radio", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "domain": [0, 85], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN12", "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)", "data": [{ "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" }, { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" }, { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" }, { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" }, { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }], "toggle": "radio", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "domain": [0, 85], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
-Disadvantaged vs. Not disadvantaged
+Disadvantaged vs. Not disadvantaged [delete?]
 
 ## Tabs
 # Tab
@@ -101,8 +101,8 @@ The figure for each region shows the percentage of pupils who met the expected s
 
 The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Department for Education. National curriculum assessments at key stage 2 in England, 2022
 
 # Time period
@@ -113,7 +113,7 @@ England
 
 # What the data measures
 The data shows the percentage of pupils who met the expected standard in reading, writing and maths at the end of key stage 2, when pupils are usually 11 years old.
-<br>
+
 Disadvantaged pupils are those who:
 <ul class="govuk-list">
 <li>were registered as eligible for free school meals at any point in the last 6 years</li>
@@ -123,9 +123,9 @@ The ‘disadvantage gap index’ summarises the relative attainment gap between 
 
 # Things you need to know
 Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
-<br>
+
 Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
-<br>
+
 Figures for the 2021 to 2022 school year are based on revised data. Figures for other years are based on final data.
 
 # Type of data

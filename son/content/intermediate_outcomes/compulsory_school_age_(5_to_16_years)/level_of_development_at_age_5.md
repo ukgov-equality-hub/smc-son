@@ -53,8 +53,8 @@ By ethnicity
 ## Chart: Grouped-bar
 { "code": "IN11", "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)", "data": [{ "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" }, { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" }, { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 80], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "textLabels": "outside", "labelColour": "#000", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Department for Education. Early years foundation stage (EYFS) profile results from the 2021 to 2022 academic year, 2022.
 
 # Time period
@@ -65,14 +65,14 @@ England
 
 # What the data measures
 The data shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
-<br>
+
 A child is classed as having a good level of development if they meet at least the expected standard in the early years foundation stage (EYFS).
 
 # Things you need to know
 The EYFS was updated in September 2021. This means data for the 2021 to 2022 school year is not directly comparable with data for earlier years.
-<br>
+
 Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
-<br>
+
 Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
 
 # Type of data
