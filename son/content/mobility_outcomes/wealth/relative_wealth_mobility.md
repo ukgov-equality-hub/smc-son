@@ -31,37 +31,304 @@ A 10% increase in parents’ wealth was associated with the following increases 
 By age group and type of wealth
 
 ## Chart: Stacked-bar
-{ "code": "MO51", "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_overview-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Category", "sort": "Age", "scale": "£", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Age" }, { "column": "Category" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_overview-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Category",
+    "sort": "Age",
+    "scale": "£",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "filter",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Category"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By age group (total wealth)
 
 ## Chart: Single-bar
-{ "code": "MO51", "title": "Total wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_total_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Total wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_total_wealth-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By age group (physical wealth)
 
 ## Chart: Single-bar
-{ "code": "MO51", "title": "Physical wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_physical_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Physical wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_physical_wealth-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By age group (pension wealth)
 
 ## Chart: Single-bar
-{ "code": "MO51", "title": "Pension wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_pension_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Pension wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_pension_wealth-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By age group (financial wealth)
 
 ## Chart: Single-bar
-{ "code": "MO51", "title": "Financial wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_financial_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Financial wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_financial_wealth-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By age group (property wealth)
 
 ## Chart: Single-bar
-{ "code": "MO51", "title": "Property wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)", "data": "/static/data/indicators/MO51_property_wealth-20230626.csv", "height": 450, "type": "bary", "xkey": "Age", "ykey": "Value", "zkey": "Area_name", "sort": "Age", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "Age" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "MO51",
+    "title": "Property wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "data": "/static/data/indicators/MO51_property_wealth-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Age",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "columns": [
+        {
+            "column": "Age"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## About the data
 # Data source
