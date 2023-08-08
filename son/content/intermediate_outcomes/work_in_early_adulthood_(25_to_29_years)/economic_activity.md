@@ -12,9 +12,9 @@ Summary main findings
 
 ## Text
 In 2021, 88% of all 25 to 29 year olds were economically active, meaning they were either in work or actively looking for work.
-<br>
+
 77% of 25 to 29 year olds from lower working class backgrounds were economically active – the lowest percentage out of all socio-economic backgrounds. Percentages in all other socio-economic groups were between 88% and 93%.
-<br>
+
 Data for 2014 to 2021 combined shows that:
 <ul class="govuk-list">
 <li>young women were less likely to be economically active than young men from the same socio-economic background – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active</li>
@@ -23,7 +23,7 @@ Data for 2014 to 2021 combined shows that:
 </ul>
 
 ## Section
-Overview
+By socio-economic background
 
 ## Chart: Single-bar
 { "code": "IN31", "title": "Percentage of 25 to 29 year olds who were economically active, by SEB (UK, 2021)", "data": "/static/data/indicators/IN31_overview-20230327.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "columns": [{ "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
@@ -48,13 +48,13 @@ By ethnicity
 { "code": "IN31", "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and SEB (UK, 2014 to 2021 combined)", "data": "/static/data/indicators/IN31_ethnicity-20230327.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
-By disability
+By disability status
 
 ## Chart: Grouped-bar
 { "code": "IN31", "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and SEB (UK, 2014 to 2021 combined)", "data": "/static/data/indicators/IN31_disability-20230327.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Disabled" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
 # Time period
@@ -65,9 +65,9 @@ UK
 
 # What the data measures
 The data shows the percentage of 25 to 29 year olds in the UK who were ‘economically active’, by socio-economic background.
-<br>
+
 Someone is ‘economically active’ if they are either in work, or available for and actively looking for work. 
-<br>
+
 People can be economically inactive if they are:
 <ul class="govuk-list">
 <li>in full-time education</li>
@@ -77,9 +77,9 @@ People can be economically inactive if they are:
 
 # Things you need to know
 Data is weighted using LFS population weights.
-<br>
+
 For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower working class and higher professional class backgrounds. 
-<br>
+
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
 
 # Type of data

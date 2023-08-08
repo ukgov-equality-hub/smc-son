@@ -11,8 +11,9 @@ Data on the highest qualification levels of parents in families with dependent c
 Summary main findings
 
 ## Text
-41% of adults in families with dependent children had a degree or above in 2021, up from 30% in 2014.<br>
-426% had GCSEs or below in 2021, down from 33% in 2014.
+41% of adults in families with dependent children had a degree or above in 2021, up from 30% in 2014.
+
+26% had GCSEs or below in 2021, down from 33% in 2014.
 
 ## Section
 By year
@@ -25,7 +26,14 @@ By area
 
 ## Map
 # Src
-{ "code": "DR13", "title": "Percentage of adults in families with dependent children with a higher education qualification, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR13_area-20230419.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "dataFormat": "quintile", "zero": false, "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{ "code": "DR13", "title": "Percentage of adults in families with dependent children with a higher education qualification, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)", "tooltipTitle:" "Percentage of adults with a higher education qualification" , "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR13_area-20230419.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "dataFormat": "quintile", "zero": false, "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+
+# Guidance
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the percentage of adults in families with dependent children who had a higher education qualification (such as a degree).
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
 ## About the data
 # Data source
@@ -38,7 +46,8 @@ Labour Force Survey, Office for National Statistics.
 UK
 
 # What the data measures
-The data shows the education levels of adults in families with dependent children. Dependent children are classed as all 0 to 15 year olds, and 16 to 18 year olds who are in full-time education.<br>
+The data shows the education levels of adults in families with dependent children. Dependent children are classed as all 0 to 15 year olds, and 16 to 18 year olds who are in full-time education.
+
 The education levels are:
 
 <ul class="govuk-list list-disc">

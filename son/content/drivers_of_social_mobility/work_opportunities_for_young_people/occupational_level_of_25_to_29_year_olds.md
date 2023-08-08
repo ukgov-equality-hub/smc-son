@@ -28,7 +28,7 @@ By year
 { "code": "DR33", "title": "Percentage of 25 to 29 year olds in each of the 5 occupational classes, over time (UK, 2014 to 2021)", "data": "/static/data/indicators/DR33_overview-20230417.csv", "height": 450, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "rolloverBehaviour": "fade", "clickBehaviour": "filter", "columns": [{ "column": "Time_period" }, { "column": "Category" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
 
 ## Section
-By area
+By area – DELETE THIS BREAKDOWN? (repeated below)
 
 ## Map
 # Src
@@ -39,13 +39,18 @@ By occupational class and area
 
 ## Grid
 # Map
-{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the higher professional occupations, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2018 to 2021 combined)", "tooltipTitle:" "Percentage of 25 to 29 year olds in higher professional occupations",  "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
 
 # Map
-{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the lower working class, and ‘quintile’ ranking (from best 20% to worst 20%), by area", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{ "code": "DR33", "title": "Percentage of 25 to 29 year olds in the lower working occupations, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2018 to 2021 combined)", "tooltipTitle:" "Percentage of 25 to 29 year olds in lower working class occupations", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+
+# Guidance
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the percentage of 25 to 29 year olds in lower working class and higher professional occupations.
 
 ## About the data
-# Data source(s)
+# Data source
 Office for National Statistics, Labour Force Survey
 
 # Time period
@@ -56,9 +61,9 @@ UK
 
 # What the data measures
 The data shows the occupation level of 25 to 29 year olds in the UK between 2014 and 2021. It also shows data by region.
-<br>
+
 Regions are based on where the people surveyed lived when they were growing up.
-<br>
+
 Rates are rounded to 1 decimal place.
 
 # Things you need to know
