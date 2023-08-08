@@ -787,7 +787,7 @@ div.visualisation-tabs {
     margin: 30px 0;
     background-color: #fff;
 
-    ul {
+    > ul {
         li:first-child {
             padding-left: 0 !important;
         }
