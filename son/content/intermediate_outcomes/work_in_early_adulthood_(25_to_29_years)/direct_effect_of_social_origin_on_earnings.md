@@ -23,25 +23,272 @@ Disabled young people earned significantly less than those without a disability 
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN352", "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2019 to 2021 combined)", "data": "/static/data/indicators/IN352_gender-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN352",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2019 to 2021 combined)",
+    "data": "/static/data/indicators/IN352_gender-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "group": "SEB",
+    "sort": "Sex",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Sex"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Chart: Grouped-bar
-{ "code": "IN352", "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)", "data": "/static/data/indicators/IN352_gender_difference-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN352",
+    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)",
+    "data": "/static/data/indicators/IN352_gender_difference-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "group": "SEB",
+    "sort": "Sex",
+    "scale": "%",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Sex"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Chart: Grouped-bar
-{ "code": "IN352", "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2014 to 2021 combined)", "data": "/static/data/indicators/IN352_gender_201419-20230713.csv", "height": 450, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Sex" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN352",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2014 to 2021 combined)",
+    "data": "/static/data/indicators/IN352_gender_201419-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Sex",
+    "ykey": "Value",
+    "group": "SEB",
+    "sort": "Sex",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Sex"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN352", "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and SEB (UK, 2014 to 2021 combined)", "data": "/static/data/indicators/IN352_ethnicity-20230713.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Category", "sort": "Category", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Ethnicity" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN352",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Category",
+    "sort": "Category",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Category",
+            "heading": "Ethnicity"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By disability status
 
 ## Chart: Grouped-bar
-{ "code": "IN352", "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and SEB (UK, 2014 to 2021 combined)", "data": "/static/data/indicators/IN352_disability-20230713.csv", "height": 450, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "£", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category", "heading": "Disabled" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "£", "align": "right", "format": "1dp" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN352",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and SEB (UK, 2014 to 2021 combined)",
+    "data": "/static/data/indicators/IN352_disability-20230713.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Category",
+    "ykey": "Value",
+    "group": "SEB",
+    "sort": "Category",
+    "scale": "£",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Category",
+            "heading": "Disabled"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "£",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## About the data
 # Data source

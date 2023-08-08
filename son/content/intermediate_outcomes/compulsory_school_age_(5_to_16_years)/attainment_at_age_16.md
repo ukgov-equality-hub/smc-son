@@ -25,20 +25,144 @@ In the 2021 to 2022 school year:
 By disadvantage status over time
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)", "data": "/static/data/indicators/IN13_overview-20230601.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
+    "data": "/static/data/indicators/IN13_overview-20230601.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Time_period"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By year
 
 ## Chart: Single-line
-{ "code": "IN13", "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)", "data": "/static/data/indicators/IN13_year-20230601.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Gap index", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)",
+    "data": "/static/data/indicators/IN13_year-20230601.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Gap index",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 3,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "columns": [
+        {
+            "column": "Time_period"
+        },
+        {
+            "column": "Value",
+            "heading": "Gap index",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By area
 
 ## Map
 # Src
-{ "code": "IN13", "title": "Percentage of students achieving a grade 5 or above in both GCSE English and maths by the end of key stage 4, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)", "tooltipTitle:" "Percentage of 16 year olds getting a grade 5 or above in GCSE English and maths", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN13_area_fsm_eligible-20230601.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN13_area_not_fsm_eligible-20230601.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN13_area_fsm_compare-20230601.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Number of students", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Number of students", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Percentage of students achieving a grade 5 or above in both GCSE English and maths by the end of key stage 4, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+    "tooltipTitle": "Percentage of 16 year olds getting a grade 5 or above in GCSE English and maths",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": [
+        { "label": "FSM eligible", "data": "/static/data/indicators/IN13_area_fsm_eligible-20230601.csv" },
+        { "label": "Not FSM eligible", "data": "/static/data/indicators/IN13_area_not_fsm_eligible-20230601.csv" },
+        { "label": "Gap", "data": "/static/data/indicators/IN13_area_fsm_compare-20230601.csv" }
+    ],
+    "toggle": "radio",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "Number of students",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
+    "height": 700,
+    "zero": false,
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "x1key": "FSM_eligible",
+    "x2key": "Not_known_to_be_FSM_eligible",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "dataFormat": "quintile",
+    "xgrid": false,
+    "ygrid": true,
+    "legend": false,
+    "margin": [ 0, 0, 0, 0 ],
+    "backgroundColor": "#fafafa",
+    "columns": [
+        {
+            "column": "Area_name",
+            "heading": "ITL2 region"
+        },
+        {
+            "column": "Value",
+            "heading": "Number of students",
+            "align": "right"
+        },
+        {
+            "column": "LCI",
+            "heading": "Lower confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "UCI",
+            "heading": "Upper confidence interval (%)",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 # Guidance
 [41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
@@ -51,13 +175,89 @@ The lines either side of the dots represent confidence intervals – the range o
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN13_gender_male-20230601.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN13_gender_female-20230601.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 70], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
+    "data": [
+        { "label": "Boys", "data": "/static/data/indicators/IN13_gender_male-20230601.csv" },
+        { "label": "Girls", "data": "/static/data/indicators/IN13_gender_female-20230601.csv" }
+    ],
+    "toggle": "radio",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "%",
+    "maxBarSize": 150,
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "range": [ 0, 70 ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Time_period"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Percentage of FSM-eligible pupils getting a grade 5 or above in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)", "data": "/static/data/indicators/IN13_ethnicity-20230601.csv", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN13",
+    "title": "Percentage of FSM-eligible pupils getting a grade 5 or above in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
+    "data": "/static/data/indicators/IN13_ethnicity-20230601.csv",
+    "height": 1450,
+    "type": "bar",
+    "xkey": "Value",
+    "ykey": "SEB",
+    "group": "Category",
+    "sort": "Category",
+    "scale": "%",
+    "xgrid": true,
+    "ygrid": false,
+    "xticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "columns": [
+        {
+            "column": "Category"
+        },
+        {
+            "column": "SEB",
+            "heading": "Socio-economic background"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        }
+    ]
+}
 
 ## About the data
 # Data source
