@@ -12,9 +12,9 @@ Summary main findings
 
 ## Text
 In 2021, 88% of all 25 to 29 year olds were economically active, meaning they were either in work or actively looking for work.
-<br>
+
 77% of 25 to 29 year olds from lower working class backgrounds were economically active – the lowest percentage out of all socio-economic backgrounds. Percentages in all other socio-economic groups were between 88% and 93%.
-<br>
+
 Data for 2014 to 2021 combined shows that:
 <ul class="govuk-list">
 <li>young women were less likely to be economically active than young men from the same socio-economic background – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active</li>
