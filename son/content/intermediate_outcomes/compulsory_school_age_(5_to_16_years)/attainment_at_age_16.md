@@ -22,16 +22,16 @@ In the 2021 to 2022 school year:
 </ul>
 
 ## Section
-Overview
+By disadvantage status over time
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Attainment at age 16", "data": "/static/data/indicators/IN13_overview-20230601.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN13", "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)", "data": "/static/data/indicators/IN13_overview-20230601.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By year
 
 ## Chart: Single-line
-{ "code": "IN13", "title": "Attainment at age 16", "data": "/static/data/indicators/IN13_year-20230601.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Gap index", "align": "right", "format": "1dp" }] }
+{ "code": "IN13", "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)", "data": "/static/data/indicators/IN13_year-20230601.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 3, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Gap index", "align": "right", "format": "1dp" }] }
 
 ## Section
 By area
@@ -51,16 +51,16 @@ The lines either side of the dots represent confidence intervals – the range o
 By sex
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Attainment at age 16", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN13_gender_male-20230601.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN13_gender_female-20230601.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 70], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN13", "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)", "data": [{ "label": "Boys", "data": "/static/data/indicators/IN13_gender_male-20230601.csv" }, { "label": "Girls", "data": "/static/data/indicators/IN13_gender_female-20230601.csv" }], "toggle": "radio", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "maxBarSize": 150, "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c"], "range": [0, 70], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
 ## Section
 By ethnicity
 
 ## Chart: Grouped-bar
-{ "code": "IN13", "title": "Attainment at age 16", "data": "/static/data/indicators/IN13_ethnicity-20230601.csv", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{ "code": "IN13", "title": "Percentage of FSM-eligible pupils getting a grade 5 or above in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)", "data": "/static/data/indicators/IN13_ethnicity-20230601.csv", "height": 1450, "type": "bar", "xkey": "Value", "ykey": "SEB", "group": "Category", "sort": "Category", "scale": "%", "xgrid": true, "ygrid": false, "xticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Category" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Department for Education, National curriculum assessments at key stage 4 in England, 2022
 
 # Time period
@@ -71,7 +71,7 @@ England
 
 # What the data measures
 The data shows the percentage of children who got a grade 5 or above in both English and maths GCSEs by the end of key stage 4, when pupils are usually 16 years old.
-<br>
+
 Disadvantaged pupils are those who:
 <ul class="govuk-list">
 <li>were registered as eligible for free school meals (FSM) at any point in the last 6 years</li>
@@ -81,10 +81,10 @@ are looked after by a local authority in England and Wales, or who left local au
 The ‘disadvantage gap index’ summarises the relative attainment gap between disadvantaged pupils and all other pupils. It is based on the grades they got in GCSE English and maths. A disadvantage gap score of 0 means there was no difference in achievement. A score of +10 means that every non-disadvantaged pupil did better than every disadvantaged pupil.
 
 # Things you need to know
-Figures for the school years ending in July 2020 and July 2022 are based on revised data. Figures for the school year ending in July 2019 are based on final data. 
-<br>
+Figures for the school years ending in July 2020 and July 2022 are based on revised data. Figures for the school year ending in July 2019 are based on final data.
+
 Summer exams were cancelled in 2020 and 2021 due to the COVID-19 pandemic. During that time, pupils’ grades were based on teacher assessments and centre assessments.
-<br>
+
 Eligibility for FSM is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
 
 # Type of data
