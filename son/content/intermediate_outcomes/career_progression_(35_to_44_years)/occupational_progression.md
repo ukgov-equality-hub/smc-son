@@ -12,17 +12,17 @@ Summary main findings
 
 ## Text
 Data from 2014 to 2021 shows that men and women aged 25 to 44 years from professional socio-economic backgrounds (SEB) are more likely to work in professional occupations.
-<br>
+
 People’s chances of working in the professional classes increased between 25 to 35 years old, and then slowed in their late 30s and early 40s. The increase was greater for young people from professional backgrounds.
 
 ## Section
-Overview
+By sex
 
 ## Chart: Multi-line
-{ "code": "IN42", "title": "Occupational progression", "data": [{ "label": "Women", "data": "/static/data/indicators/IN42_gender_female-20230713.csv" }, { "label": "Men", "data": "/static/data/indicators/IN42_gender_male-20230713.csv" }], "toggle": "radio", "height": 450, "type": "liney", "xkey": "Age", "ykey": "Value", "zkey": "SEB", "sort": "Age", "scale": "Predictive margins", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "xticks": 5, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "range": [0, 0.75], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Age" }, { "column": "Category", "heading": "Profession level" }, { "column": "Value", "heading": "Controlling for SEB (£)", "align": "right", "format": "£" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "£" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "£" }] }
+{ "code": "IN42", "title": "Probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)", "data": [{ "label": "Women", "data": "/static/data/indicators/IN42_gender_female-20230713.csv" }, { "label": "Men", "data": "/static/data/indicators/IN42_gender_male-20230713.csv" }], "toggle": "radio", "height": 450, "type": "liney", "xkey": "Age", "ykey": "Value", "zkey": "SEB", "sort": "Age", "scale": "Predictive margins", "lowerConfidence": "LCI", "upperConfidence": "UCI", "xgrid": false, "ygrid": true, "xticks": 5, "yticks": 5, "legend": true, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "range": [0, 0.75], "margin": [0, 0, 0, 0], "maxLabelLength": 30, "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Age" }, { "column": "Category", "heading": "Profession level" }, { "column": "Value", "heading": "Controlling for SEB (£)", "align": "right", "format": "£" }, { "column": "LCI", "heading": "Lower confidence interval", "align": "right", "format": "£" }, { "column": "UCI", "heading": "Upper confidence interval", "align": "right", "format": "£" }] }
 
-## About
-# Data source(s)
+## About the data
+# Data source
 Office for National Statistics (ONS), Labour Force Survey (LFS)
 
 # Time period
@@ -33,7 +33,7 @@ UK
 
 # What the data measures
 The data shows the patterns of upward career mobility into the professional classes (known as intra-generational mobility) for people aged 25 to 44 years in the UK.
-<br>
+
 Data is shown for the following socio-economic backgrounds:
 <ul class="govuk-list">
 <li>higher professional class</li>
@@ -47,7 +47,7 @@ These are based on the National Statistics Socio-economic Classification (NS-SEC
 
 # Things you need to know
 The data used is weighted using the LFS population weights.
-<br>
+
 Estimates are the average marginal effects taken from a logistic regression model of access to the professional classes controlling for:
 <ul class="govuk-list">
 <li>age</li>
