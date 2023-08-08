@@ -45,33 +45,10 @@ By year
     "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
     "range": [ -0.035, 0.005 ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "Country"
-        },
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 3]
 }
 
 ## Section
@@ -108,30 +85,10 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 3]
 }
 
 ## Section
@@ -212,33 +169,10 @@ By sex and ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Sex"
-        },
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ethnicity-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 3, 3]
 }
 
 ## Section
@@ -267,30 +201,9 @@ By disability status
     "maxLabelLength": 60,
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Disabled"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"]
 }
 
 ## About the data

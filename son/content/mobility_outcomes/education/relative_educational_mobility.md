@@ -45,17 +45,10 @@ By year
     "legend": true,
     "colourScheme": [ "#1d70b8" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Ratio",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -83,29 +76,10 @@ By area
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Area_name"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## Section
@@ -131,17 +105,9 @@ By sex
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Sex"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"]
 }
 
 ## Section
@@ -169,30 +135,10 @@ By ethnicity
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## Section
@@ -218,17 +164,10 @@ By disability status
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## About the data

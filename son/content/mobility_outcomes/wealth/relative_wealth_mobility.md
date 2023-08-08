@@ -52,32 +52,10 @@ By age group and type of wealth
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age-and-type-of-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
 }
 
 ## Section
@@ -105,29 +83,10 @@ By age group (total wealth)
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age--total-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 0]
 }
 
 ## Section
@@ -155,29 +114,10 @@ By age group (physical wealth)
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age--physical-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 0]
 }
 
 ## Section
@@ -205,29 +145,10 @@ By age group (pension wealth)
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age--pension-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 0]
 }
 
 ## Section
@@ -255,29 +176,10 @@ By age group (financial wealth)
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age--financial-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
 }
 
 ## Section
@@ -305,29 +207,10 @@ By age group (property wealth)
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age--property-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
 }
 
 ## About the data
