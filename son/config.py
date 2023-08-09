@@ -31,9 +31,9 @@ class Config:
     AWS_BUCKET_NAME = os.environ.get("AWS_BUCKET_NAME")
     WTF_CSRF_ENABLED = True
     WTF_CSRF_TIME_LIMIT = None  # Stops the CSRF token expiring (before the lifetime of the session). This was an accessibility problem
-    MAINTENANCE_MODE = "OFF" #os.environ.get("MAINTENANCE_MODE")
-    BASIC_AUTH_USERNAME = None #os.environ.get("BASIC_AUTH_USERNAME")
-    BASIC_AUTH_PASSWORD = None #os.environ.get("BASIC_AUTH_PASSWORD")
+    MAINTENANCE_MODE = os.environ.get("MAINTENANCE_MODE")
+    BASIC_AUTH_USERNAME = os.environ.get("BASIC_AUTH_USERNAME")
+    BASIC_AUTH_PASSWORD = os.environ.get("BASIC_AUTH_PASSWORD")
 
 
 class DevConfig(Config):
