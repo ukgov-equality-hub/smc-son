@@ -1,20 +1,11 @@
 import logging
 import os
 from os.path import dirname
-#from son.utils.config_helper import ConfigHelper
-
-
-def get_connection_string() -> str:
-    return ""
-    #return os.environ.get("SQLALCHEMY_DATABASE_URI")
 
 
 class Config:
     BASE_DIRECTORY = dirname(dirname(os.path.abspath(__file__)))
     ENVIRONMENT = os.environ.get("ENVIRONMENT", "PRODUCTION")
-    #SQLALCHEMY_DATABASE_URI = "" #get_connection_string()
-    #SQLALCHEMY_TRACK_MODIFICATIONS = False
-    #SQLALCHEMY_KEY = os.environ.get("SQLALCHEMY_KEY")
     LOG_LEVEL = (
         logging.getLevelName(os.environ.get("LOG_LEVEL"))
         if "LOG_LEVEL" in os.environ
@@ -44,7 +35,6 @@ class DevConfig(Config):
         if "LOG_LEVEL" in os.environ
         else logging.DEBUG
     )
-    # SERVER_NAME = "localhost:5000"
 
 
 class TestConfig(Config):
