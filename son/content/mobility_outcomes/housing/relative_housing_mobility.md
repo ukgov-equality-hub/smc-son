@@ -55,6 +55,7 @@ By area
 {
     "code": "MO42",
     "title": "Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO42_area-20230602.csv",
     "height": 450,
     "type": "bary",
@@ -86,6 +87,7 @@ By age
 {
     "code": "MO42",
     "title": "Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO42_age-20230602.csv",
     "height": 450,
     "type": "bary",
@@ -117,6 +119,7 @@ By sex
 {
     "code": "MO42",
     "title": "Odds ratios of the relationship in home ownership between people and their parents, by sex (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO42_gender-20230602.csv",
     "height": 450,
     "type": "bary",
@@ -149,6 +152,7 @@ By disability
 {
     "code": "MO42",
     "title": "Odds ratios of the relationship in home ownership between people and their parents, by disability status (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO42_disability-20230602.csv",
     "height": 450,
     "type": "bary",

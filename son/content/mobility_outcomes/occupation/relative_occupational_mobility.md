@@ -100,6 +100,7 @@ By sex – DELETE THIS BREAKDOWN
 {
     "code": "MO12",
     "title": "Relative occupational mobility",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_gender-20230623.csv",
     "height": 450,
     "type": "bary",
@@ -119,29 +120,24 @@ By sex – DELETE THIS BREAKDOWN
     "maxLabelLength": 60,
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "columns": [{
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
 }
 
 ## Section
@@ -184,6 +180,7 @@ By disability status
 {
     "code": "MO12",
     "title": "Relative occupational mobility by disability status in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates for people with a disability compared with people without a disability",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_disability-20230623.csv",
     "height": 450,
     "type": "bary",

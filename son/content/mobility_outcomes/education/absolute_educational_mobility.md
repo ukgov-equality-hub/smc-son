@@ -71,6 +71,7 @@ By area
 {
     "code": "MO31",
     "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO31_area-20230601.csv",
     "height": 450,
     "type": "bary",
@@ -102,6 +103,7 @@ By ethnicity
 {
     "code": "MO31",
     "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by ethnicity (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO31_ethnicity-20230601.csv",
     "height": 450,
     "type": "bary",

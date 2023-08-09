@@ -28,6 +28,7 @@ By home ownership status of parents
 {
     "code": "MO41",
     "title": "Percentage of 25 to 64 year olds who owned their own homes, by ownership status of their parents (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO41_overview-20230503.csv",
     "height": 450,
     "type": "bary",

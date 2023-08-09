@@ -65,6 +65,7 @@ By age group (total wealth)
 {
     "code": "MO51",
     "title": "Total wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_total_wealth-20230626.csv",
     "height": 450,
     "type": "bary",
@@ -96,6 +97,7 @@ By age group (physical wealth)
 {
     "code": "MO51",
     "title": "Physical wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_physical_wealth-20230626.csv",
     "height": 450,
     "type": "bary",
@@ -127,6 +129,7 @@ By age group (pension wealth)
 {
     "code": "MO51",
     "title": "Pension wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_pension_wealth-20230626.csv",
     "height": 450,
     "type": "bary",
@@ -158,6 +161,7 @@ By age group (financial wealth)
 {
     "code": "MO51",
     "title": "Financial wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_financial_wealth-20230626.csv",
     "height": 450,
     "type": "bary",
@@ -189,6 +193,7 @@ By age group (property wealth)
 {
     "code": "MO51",
     "title": "Property wealth by age group (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_property_wealth-20230626.csv",
     "height": 450,
     "type": "bary",

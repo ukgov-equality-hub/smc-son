@@ -28,6 +28,7 @@ By socio-economic background
 {
     "code": "IN32",
     "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_overview-20230327.csv",
     "height": 450,
     "type": "bary",

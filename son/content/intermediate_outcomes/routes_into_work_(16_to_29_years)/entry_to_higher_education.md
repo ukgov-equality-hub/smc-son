@@ -24,6 +24,7 @@ By socio-economic background
 {
     "code": "IN22",
     "title": "Percentage of 18 to 20 year olds enrolled in higher education, by socio-economic background (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN22_overview-20230327.csv",
     "height": 450,
     "type": "bary",

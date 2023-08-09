@@ -59,6 +59,7 @@ By area
 {
     "code": "MO32",
     "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_area-20230607.csv",
     "height": 450,
     "type": "bary",
@@ -90,6 +91,7 @@ By sex
 {
     "code": "MO32",
     "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_gender-20230607.csv",
     "height": 450,
     "type": "bary",
@@ -118,12 +120,13 @@ By ethnicity
 {
     "code": "MO32",
     "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_ethnicity-20230607.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "Area_name",
+    "xkey": "Category",
     "ykey": "Value",
-    "group": "Category",
+    "zkey": "Area_name",
     "sort": "Category",
     "scale": "%",
     "lowerConfidence": "LCI",
@@ -149,6 +152,7 @@ By disability status
 {
     "code": "MO32",
     "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_disability-20230607.csv",
     "height": 450,
     "type": "bary",

@@ -28,6 +28,7 @@ Relative differences
 {
     "code": "IN351",
     "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for SEB, sex and age (UK, 2019 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_difference-20230713.csv",
     "height": 450,
     "type": "bary",

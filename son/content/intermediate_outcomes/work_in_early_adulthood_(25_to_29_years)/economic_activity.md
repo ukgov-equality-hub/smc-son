@@ -29,6 +29,7 @@ By socio-economic background
 {
     "code": "IN31",
     "title": "Percentage of 25 to 29 year olds who were economically active, by SEB (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_overview-20230327.csv",
     "height": 450,
     "type": "bary",
