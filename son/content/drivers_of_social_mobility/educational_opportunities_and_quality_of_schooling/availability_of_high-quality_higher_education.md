@@ -12,9 +12,9 @@ Summary main findings
 
 ## Text
 Higher education dropout rates fell sharply in the academic year 2019 to 2020.
-<br>
+
 5.3% of full-time undergraduate students who started their course in the UK in the 2019 to 2020 academic year did not start their second year. 
-<br>
+
 This was a decrease from 6.7% in the previous year, and the lowest dropout rate since 2014.
 
 ## Section
@@ -70,14 +70,14 @@ UK
 
 # What the data measures
 The data measures the non-continuation (dropout) rates of full-time students during their first year at a higher education provider. 
-<br>
+
 Students are counted as dropping out if they left their course in the first year, having attended for 50 days or more.
-<br>
+
 Percentages are rounded to 2 decimal places.
 
 # Things you need to know
 Lower dropout rates may not reflect the availability of good quality higher education. 
-<br>
+
 Other relevant factors might include changes to wages and job opportunities at the start of the COVID-19 pandemic.
 
 # Type of data
