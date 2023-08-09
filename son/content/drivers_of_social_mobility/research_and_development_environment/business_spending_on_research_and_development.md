@@ -19,14 +19,111 @@ Spending went down by 22% between 2007 and 2011, but then went up every year unt
 By year
 
 ## Chart: Single-line
-{ "code": "DR52", "title": "Ratio (relative to 2007) of business spending on research and development (UK, 2007 to 2018)", "data": "/static/data/indicators/DR52_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Euros", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Euros", "align": "right", "format": "€" }] }
+{
+    "code": "DR52",
+    "title": "Ratio (relative to 2007) of business spending on research and development (UK, 2007 to 2018)",
+    "data": "/static/data/indicators/DR52_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Euros",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
+}
 
 ## Section
 By area
 
 ## Map
 # Src
-{ "code": "DR52", "title": "Business spending on research and development by area (UK, 2007 to 2018)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "2007", "data": "/static/data/indicators/DR52_area_2007-20230417.csv" }, { "label": "2008", "data": "/static/data/indicators/DR52_area_2008-20230417.csv" }, { "label": "2009", "data": "/static/data/indicators/DR52_area_2009-20230417.csv" }, { "label": "2010", "data": "/static/data/indicators/DR52_area_2010-20230417.csv" }, { "label": "2011", "data": "/static/data/indicators/DR52_area_2011-20230417.csv" }, { "label": "2012", "data": "/static/data/indicators/DR52_area_2012-20230417.csv" }, { "label": "2013", "data": "/static/data/indicators/DR52_area_2013-20230417.csv" }, { "label": "2014", "data": "/static/data/indicators/DR52_area_2014-20230417.csv" }, { "label": "2015", "data": "/static/data/indicators/DR52_area_2015-20230417.csv" }, { "label": "2016", "data": "/static/data/indicators/DR52_area_2016-20230417.csv" }, { "label": "2017", "data": "/static/data/indicators/DR52_area_2017-20230417.csv" }, { "label": "2018", "data": "/static/data/indicators/DR52_area_2018-20230417.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "€", "height": 700, "rolloverBehaviour": "outline", "background": "full", "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "domain": [0, 3200000000], "xgrid": false, "ygrid": true, "xticks": 2, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Euros", "align": "right", "format": "€" }] }
+{
+    "code": "DR52",
+    "title": "Business spending on research and development, by region over time (UK, 2007 to 2018)",
+    "tooltipTitle": "Business spending on research and development",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": [{
+        "label": "2007",
+        "data": "/static/data/indicators/DR52_area_2007-20230417.csv"
+    }, {
+        "label": "2008",
+        "data": "/static/data/indicators/DR52_area_2008-20230417.csv"
+    }, {
+        "label": "2009",
+        "data": "/static/data/indicators/DR52_area_2009-20230417.csv"
+    }, {
+        "label": "2010",
+        "data": "/static/data/indicators/DR52_area_2010-20230417.csv"
+    }, {
+        "label": "2011",
+        "data": "/static/data/indicators/DR52_area_2011-20230417.csv"
+    }, {
+        "label": "2012",
+        "data": "/static/data/indicators/DR52_area_2012-20230417.csv"
+    }, {
+        "label": "2013",
+        "data": "/static/data/indicators/DR52_area_2013-20230417.csv"
+    }, {
+        "label": "2014",
+        "data": "/static/data/indicators/DR52_area_2014-20230417.csv"
+    }, {
+        "label": "2015",
+        "data": "/static/data/indicators/DR52_area_2015-20230417.csv"
+    }, {
+        "label": "2016",
+        "data": "/static/data/indicators/DR52_area_2016-20230417.csv"
+    }, {
+        "label": "2017",
+        "data": "/static/data/indicators/DR52_area_2017-20230417.csv"
+    }, {
+        "label": "2018",
+        "data": "/static/data/indicators/DR52_area_2018-20230417.csv"
+    }],
+    "toggle": "radio",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "€",
+    "height": 700,
+    "rolloverBehaviour": "outline",
+    "background": "full",
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "dataFormat": "quintile",
+    "domain": [0, 3200000000],
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 2,
+    "legend": false,
+    "margin": [0, 0, 0, 0],
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "dataTableTitle": "Business spending on research and development by area (UK, 2007 to 2018), in millions of euros"
+}
+
+# Guidance
+[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
+
+The figure for each region shows the business spending on research and development.
 
 ## About the data
 # Data source

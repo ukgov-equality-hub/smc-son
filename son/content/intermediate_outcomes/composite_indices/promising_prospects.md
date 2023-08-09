@@ -9,16 +9,59 @@ Data on the UK regions with the most 'promising prospects' for 25 to 29 year old
 
 ## Map
 # Src
-{ "code": "CI1", "title": "Promising prospects", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": "/static/data/indicators/CI1_20230419.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "height": 700, "dataFormat": "quintile", "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onRollover": "scrollTo", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "xgrid": true, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }, { "column": "Quintile", "heading": "Quintile", "align": "right", "format": "0dp" }] }
+{
+    "code": "CI1",
+    "title": "Index of 'promising prospects', and quintile ranking from best 20% to worst 20%, by region (UK, 2018 to 2022 combined)",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/CI1_20230419.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "height": 700,
+    "dataFormat": "quintile",
+    "zero": false,
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onRollover": "scrollTo",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "legend": false,
+    "margin": [ 0, 0, 0, 0 ],
+    "backgroundColor": "#fafafa",
+    "columns": [
+        {
+            "column": "Area_name",
+            "heading": "ITL2 region"
+        },
+        {
+            "column": "Value",
+            "heading": "Percentage",
+            "align": "right",
+            "format": "1dp"
+        },
+        {
+            "column": "Quintile",
+            "heading": "Quintile",
+            "align": "right",
+            "format": "0dp"
+        }
+    ]
+}
 
 ## Subtitle
 Summary main findings
 
 ## Text
 Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to have the best prospects.
-<br>
+
 Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse prospects. 
-<br>
+
 Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire, which contains both remote rural and urban areas.
 
 ## Subtitle

@@ -12,16 +12,39 @@ Summary main findings
 
 ## Text
 Higher education dropout rates fell sharply in the academic year 2019 to 2020.
-<br>
+
 5.3% of full-time undergraduate students who started their course in the UK in the 2019 to 2020 academic year did not start their second year. 
-<br>
+
 This was a decrease from 6.7% in the previous year, and the lowest dropout rate since 2014.
 
 ## Section
 By year
 
 ## Chart: Multi-line
-{ "code": "DR24", "title": "Percentage of full-time undergraduate students who dropped out of university during their first year of higher education (UK, 6 academic years to August 2020)", "data": "/static/data/indicators/DR24_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 3, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "rolloverBehaviour": "fade", "clickBehaviour": "isolate", "columns": [{ "column": "Time_period", "replace": "/", "replaceWith": " to 20" }, { "column": "Area_name" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR24",
+    "title": "Percentage of full-time undergraduate students who dropped out of university during their first year of higher education (UK, 6 academic years to August 2020)",
+    "data": "/static/data/indicators/DR24_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 3,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
+    "dataTable": "/static/pre-processed-csvs/DR24-availability-of-high-quality-higher-education--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
+}
 
 ## About the data
 # Data source
@@ -35,14 +58,14 @@ UK
 
 # What the data measures
 The data measures the non-continuation (dropout) rates of full-time students during their first year at a higher education provider. 
-<br>
+
 Students are counted as dropping out if they left their course in the first year, having attended for 50 days or more.
-<br>
+
 Percentages are rounded to 2 decimal places.
 
 # Things you need to know
 Lower dropout rates may not reflect the availability of good quality higher education. 
-<br>
+
 Other relevant factors might include changes to wages and job opportunities at the start of the COVID-19 pandemic.
 
 # Type of data

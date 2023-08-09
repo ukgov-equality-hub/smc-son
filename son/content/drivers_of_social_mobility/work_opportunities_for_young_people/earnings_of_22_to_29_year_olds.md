@@ -24,7 +24,29 @@ Growth in real hourly pay for 22 to 29 year olds has been low over the last 15 y
 By year
 
 ## Chart: Single-line
-{ "code": "DR34", "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)", "data": "/static/data/indicators/DR34_overview-20230414.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "£", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Mean real hourly wage (£)", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR34",
+    "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)",
+    "data": "/static/data/indicators/DR34_overview-20230414.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "£",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "dataTable": "/static/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
+}
 
 ## About the data
 # Data source(s)

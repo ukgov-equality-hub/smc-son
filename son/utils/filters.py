@@ -241,7 +241,7 @@ def data_table_decimal_places_filter(context, details):
                     decimal_places_for_this_column = data_table_decimal_places_list[loop_index - 1]
                     if decimal_places_for_this_column or decimal_places_for_this_column == 0:
                         if not cell_value == '' and is_a_float(cell_value):
-                            return ('{0:.' + str(decimal_places_for_this_column) + 'f}').format(float(cell_value))
+                            return ('{0:,.' + str(decimal_places_for_this_column) + 'f}').format(float(cell_value))
 
         return cell_value
     return ''
@@ -259,22 +259,25 @@ def is_a_float(string_value: str) -> float:
 @blueprint.app_template_filter('data_table_row_column_span')
 def data_table_row_column_span_filter(context, details):
     if details:
-        data_table = details[0]
-        row_index = details[1] - 1  # row_index is 0-indexed
-        column_index = details[2] - 1  # column_index is 0-indexed
-        row_or_column = details[3]  # 'row' or 'column'
+        try:
+            data_table = details[0]
+            row_index = details[1] - 1  # row_index is 0-indexed
+            column_index = details[2] - 1  # column_index is 0-indexed
+            row_or_column = details[3]  # 'row' or 'column'
 
-        if data_table[row_index][column_index]:
-            extra_cells_spanned = 0
-            if row_or_column == 'row':
-                while row_index + extra_cells_spanned + 1 < len(data_table) and \
-                        data_table[row_index + extra_cells_spanned + 1][column_index] == '':
-                    extra_cells_spanned += 1
-            elif row_or_column == 'column':
-                while column_index + extra_cells_spanned + 1 < len(data_table[row_index]) and \
-                        data_table[row_index][column_index + extra_cells_spanned + 1] == '':
-                    extra_cells_spanned += 1
-            return extra_cells_spanned + 1
+            if data_table[row_index][column_index]:
+                extra_cells_spanned = 0
+                if row_or_column == 'row':
+                    while row_index + extra_cells_spanned + 1 < len(data_table) and \
+                            data_table[row_index + extra_cells_spanned + 1][column_index] == '':
+                        extra_cells_spanned += 1
+                elif row_or_column == 'column':
+                    while column_index + extra_cells_spanned + 1 < len(data_table[row_index]) and \
+                            data_table[row_index][column_index + extra_cells_spanned + 1] == '':
+                        extra_cells_spanned += 1
+                return extra_cells_spanned + 1
+        except:
+            return 1
     return 1
 
 

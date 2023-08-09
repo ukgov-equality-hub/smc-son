@@ -12,7 +12,7 @@ Summary main findings
 
 ## Text
 In 2019, the median (average) broadband speed in the UK was 3 times as fast as in 2014.
-<br>
+
 Areas with the highest broadband speeds in 2019 were:
 <ul class="govuk-list">
 <li>parts of London</li>
@@ -33,14 +33,91 @@ Areas with the lowest broadband speeds were:
 By year
 
 ## Chart: Single-line
-{ "code": "DR51", "title": "Ratio (relative to 2014) of the median (average) broadband speed (UK, 2014 to 2019)", "data": "/static/data/indicators/DR51_overview-20230417.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Megabits per second", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Megabits per second", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR51",
+    "title": "Ratio (relative to 2014) of the median (average) broadband speed (UK, 2014 to 2019)",
+    "data": "/static/data/indicators/DR51_overview-20230417.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Megabits per second",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "dataTable": "/static/pre-processed-csvs/DR51-broadband-speed--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
+}
 
 ## Section
 By area
 
 ## Map
 # Src
-{ "code": "DR51", "title": "Median (average) broadband speed by area (UK, 2014 to 2019)", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "2014", "data": "/static/data/indicators/DR51_area_2014-20230417.csv" }, { "label": "2015", "data": "/static/data/indicators/DR51_area_2015-20230417.csv" }, { "label": "2016", "data": "/static/data/indicators/DR51_area_2016-20230417.csv" }, { "label": "2017", "data": "/static/data/indicators/DR51_area_2017-20230417.csv" }, { "label": "2018", "data": "/static/data/indicators/DR51_area_2018-20230417.csv" }, { "label": "2019", "data": "/static/data/indicators/DR51_area_2019-20230417.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "Megabits per second", "height": 700, "rolloverBehaviour": "outline", "background": "full", "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "domain": [0, 85], "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Megabits per second", "align": "right", "format": "1dp" }] }
+{
+    "code": "DR51",
+    "title": "Median (average) broadband speed, by area over time (UK, 2014 to 2019)",
+    "tooltipTitle": "Median (average) broadband speed",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": [{
+        "label": "2014",
+        "data": "/static/data/indicators/DR51_area_2014-20230417.csv"
+    }, {
+        "label": "2015",
+        "data": "/static/data/indicators/DR51_area_2015-20230417.csv"
+    }, {
+        "label": "2016",
+        "data": "/static/data/indicators/DR51_area_2016-20230417.csv"
+    }, {
+        "label": "2017",
+        "data": "/static/data/indicators/DR51_area_2017-20230417.csv"
+    }, {
+        "label": "2018",
+        "data": "/static/data/indicators/DR51_area_2018-20230417.csv"
+    }, {
+        "label": "2019",
+        "data": "/static/data/indicators/DR51_area_2019-20230417.csv"
+    }],
+    "toggle": "radio",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "Megabits per second",
+    "height": 700,
+    "rolloverBehaviour": "outline",
+    "background": "full",
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "dataFormat": "quintile",
+    "domain": [0, 85],
+    "xgrid": false,
+    "ygrid": true,
+    "legend": false,
+    "margin": [0, 0, 0, 0],
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/pre-processed-csvs/DR51-broadband-speed--by-ITL2-region-and-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1]
+}
+
+# Guidance
+[41 regions in the UK] are ranked from the highest to lowest average broadband speed. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the median (average) broadband speed for that region.
 
 ## About the data
 # Data source
@@ -57,7 +134,7 @@ The data shows changes in median (average) broadband speed in the UK between 201
 
 # Things you need to know
 Nesta data includes regional scores but not a national average figure. To track changes over time, we use the broadband speed for the median UK area each year. 
-<br>
+
 The median is the middle point of a range of numbers which are arranged in order. In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
 
 # Type of data

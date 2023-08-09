@@ -12,9 +12,9 @@ Summary main findings
 
 ## Text
 In the 4 school years ending in July 2019, the percentage of pupils who met the expected standard in reading, writing and maths by 11 years old went up from 53% to 65%. It went down to 59% in the 2021 to 2022 school year.
-<br>
+
 In the 9 school years ending in July 2019, the gap between pupils from disadvantaged backgrounds and non-disadvantaged pupils (the ‘disadvantage gap’) went down. It then went up in the 2021 to 2022 school year to the highest level since 2012.
-<br>
+
 In the 2021 to 2022 school year:
 <ul class="govuk-list">
 <li>43% of disadvantaged pupils and 66% of non-disadvantaged pupils met the expected standard</li>
@@ -24,16 +24,61 @@ In the 2021 to 2022 school year:
 </ul>
 
 ## Section
-Overview
+By disadvantage status over time
 
 ## Chart: Grouped-bar
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_overview-20230531.csv", "height": 450, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Time_period", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "textLabels": "center", "labelColour": "#fff", "clickBehaviour": "fade", "columns": [{ "column": "Time_period" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN12",
+    "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status over time (England, September 2015 to July 2022)",
+    "data": "/static/data/indicators/IN12_overview-20230531.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "group": "Time_period",
+    "sort": "Time_period",
+    "scale": "%",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right"]
+}
 
 ## Section
 By year
 
 ## Chart: Single-line
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_year-20230531.csv", "height": 450, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "Gap index", "xgrid": false, "ygrid": true, "xticks": 7, "yticks": 5, "legend": true, "colourScheme": ["#5694ca"], "margin": [0, 0, 0, 0], "columns": [{ "column": "Time_period" }, { "column": "Value", "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN12",
+    "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)",
+    "data": "/static/data/indicators/IN12_year-20230531.csv",
+    "height": 450,
+    "type": "liney",
+    "xkey": "Time_period",
+    "ykey": "Value",
+    "zkey": "Area_name",
+    "sort": "Time_period",
+    "scale": "Gap index",
+    "xgrid": false,
+    "ygrid": true,
+    "xticks": 7,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--gap-by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
+}
 
 ## Section
 By sex
@@ -41,10 +86,10 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN12",
-    "title": "Attainment at age 11",
+    "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)",
     "data": [
-        {"label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv"},
-        {"label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv"}
+        { "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" },
+        { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 450,
@@ -59,9 +104,9 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "range": [ 0, 80 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -77,13 +122,13 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN12",
-    "title": "Attainment at age 11",
+    "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)",
     "data": [
-        {"label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"},
-        {"label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"},
-        {"label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"},
-        {"label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"},
-        {"label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"}
+        { "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" },
+        { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" },
+        { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" },
+        { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" },
+        { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 1450,
@@ -97,9 +142,9 @@ By ethnicity
     "ygrid": false,
     "xticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "domain": [0, 85],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "domain": [ 0, 85 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -110,38 +155,134 @@ By ethnicity
     "dataTableNumberOfHeadingColumns": 2
 }
 ## Section
-Disadvantaged vs. Not disadvantaged
+Disadvantaged vs. Not disadvantaged [delete?]
 
 ## Tabs
 # Tab
 Compare maps
 
 # Map
-{ "code": "IN12", "title": "Disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "domain": [20, 80], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "IN12",
+    "title": "Disadvantaged",
+    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
+    "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "CTYUA22NM",
+    "scale": "%",
+    "width": 537,
+    "height": 700,
+    "dataFormat": "sequential",
+    "domain": [ 20, 80 ],
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1"
+}
 
 # Map
-{ "code": "IN12", "title": "Not disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "domain": [20, 80], "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "IN12",
+    "title": "Not disadvantaged",
+    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
+    "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "CTYUA22NM",
+    "scale": "%",
+    "width": 537,
+    "height": 700,
+    "dataFormat": "sequential",
+    "domain": [ 20, 80 ],
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1"
+}
 
 # Tab
 Independent maps
 
 # Map
-{ "code": "IN12", "title": "Disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "IN12",
+    "title": "Disadvantaged",
+    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
+    "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "CTYUA22NM",
+    "scale": "%",
+    "width": 537,
+    "height": 700,
+    "dataFormat": "sequential",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1"
+}
 
 # Map
-{ "code": "IN12", "title": "Not disadvantaged", "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json", "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "CTYUA22NM", "scale": "%", "width": 537, "height": 700, "dataFormat": "sequential", "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1" }
+{
+    "code": "IN12",
+    "title": "Not disadvantaged",
+    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
+    "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "CTYUA22NM",
+    "scale": "%",
+    "width": 537,
+    "height": 700,
+    "dataFormat": "sequential",
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1"
+}
 
 # Tab
 Bar chart
 
 # Chart
-{ "code": "IN12", "title": "Attaintment at age 11", "data": "/static/data/indicators/IN12_local_authority-20230531.csv", "height": 5000, "type": "bar", "ykey": "SEB", "xkey": "Value", "group": "Area_name", "sort": "Value", "scale": "%", "xgrid": true, "ygrid": false, "yticks": 5, "legend": true, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "textLabels": "outside", "labelColour": "#fff", "clickBehaviour": "fade" }
+{
+    "code": "IN12",
+    "title": "Attaintment at age 11",
+    "data": "/static/data/indicators/IN12_local_authority-20230531.csv",
+    "height": 5000,
+    "type": "bar",
+    "ykey": "SEB",
+    "xkey": "Value",
+    "group": "Area_name",
+    "sort": "Value",
+    "scale": "%",
+    "xgrid": true,
+    "ygrid": false,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
+    "margin": [ 0, 0, 0, 0 ],
+    "textLabels": "outside",
+    "labelColour": "#fff",
+    "clickBehaviour": "fade"
+}
 
 # Tab
 Data
 
 # DataTable
-{ "data": "/static/data/indicators/IN12_area-20230531.csv", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "SEB", "heading": "Socio-economic background" }, { "column": "Value", "heading": "Percentage", "align": "right", "format": "1dp" }] }
+{
+    "data": "/static/data/indicators/IN12_area-20230531.csv",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-local-authority-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
+}
 
 # Tab
 Download
@@ -150,14 +291,63 @@ Download
 {}
 
 ## Section
-FSM eligible vs. Not FSM eligible
+By area
 
 ## Map
 # Src
-{ "code": "IN12", "title": "Attainment at age 11", "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json", "data": [{ "label": "FSM eligible", "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv" }, { "label": "Not FSM eligible", "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv" }, { "label": "Gap", "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv" }], "toggle": "radio", "geoFormat": "", "nameField": "Area_name", "valueField": "Value", "areaField": "ITL221NM", "scale": "%", "lowerConfidence": "LCI", "upperConfidence": "UCI", "confidenceIntervals": "visible", "height": 700, "zero": false, "rolloverBehaviour": "outline", "background": true, "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"], "onClick": "mapSelect1", "type": "dot", "xkey": "Value", "x1key": "FSM_eligible", "x2key": "Not_known_to_be_FSM_eligible", "ykey": "Area_name", "sort": "-Value", "dataFormat": "quintile", "xgrid": false, "ygrid": true, "legend": false, "margin": [0, 0, 0, 0], "backgroundColor": "#fafafa", "columns": [{ "column": "Area_name", "heading": "ITL2 region" }, { "column": "Value", "heading": "Percentage", "align": "right" }, { "column": "LCI", "heading": "Lower confidence interval (%)", "align": "right", "format": "1dp" }, { "column": "UCI", "heading": "Upper confidence interval (%)", "align": "right", "format": "1dp" }] }
+{
+    "code": "IN12",
+    "title": "Percentage of students meeting the expected standard in reading, writing and maths by the end of key stage 2, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+    "tooltipTitle": "Percentage of 11 year olds meeting expected standard",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": [
+        { "label": "FSM eligible", "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv" },
+        { "label": "Not FSM eligible", "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv" },
+        { "label": "Gap", "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv" }
+    ],
+    "toggle": "radio",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "%",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
+    "height": 700,
+    "zero": false,
+    "rolloverBehaviour": "outline",
+    "background": true,
+    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "x1key": "FSM_eligible",
+    "x2key": "Not_known_to_be_FSM_eligible",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "dataFormat": "quintile",
+    "xgrid": false,
+    "ygrid": true,
+    "legend": false,
+    "margin": [ 0, 0, 0, 0 ],
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-ITL2-region-and-FSM--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1],
+    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
+}
 
-## About
-# Data source(s)
+# Guidance
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+
+The figure for each region shows the percentage of pupils who met the expected standard in reading, writing and maths at 11 years old. Figures are shown separately for FSM-eligible pupils and non-eligible pupils. The gap between these 2 groups is also shown for each region.
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+
+## About the data
+# Data source
 Department for Education. National curriculum assessments at key stage 2 in England, 2022
 
 # Time period
@@ -168,7 +358,7 @@ England
 
 # What the data measures
 The data shows the percentage of pupils who met the expected standard in reading, writing and maths at the end of key stage 2, when pupils are usually 11 years old.
-<br>
+
 Disadvantaged pupils are those who:
 <ul class="govuk-list">
 <li>were registered as eligible for free school meals at any point in the last 6 years</li>
@@ -178,9 +368,9 @@ The ‘disadvantage gap index’ summarises the relative attainment gap between 
 
 # Things you need to know
 Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
-<br>
+
 Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
-<br>
+
 Figures for the 2021 to 2022 school year are based on revised data. Figures for other years are based on final data.
 
 # Type of data
