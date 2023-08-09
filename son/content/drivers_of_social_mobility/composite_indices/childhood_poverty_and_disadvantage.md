@@ -11,7 +11,7 @@ Data for UK regions on factors that can reduce people’s social mobility chance
 # Src
 {
     "code": "CI4",
-    "title": "Quintile rankings for socio-cultural advantage, from top 20% to bottom 20%, by UK region",
+    "title": "Index of childhood poverty and disadvantage, and quintile ranking from best 20% to worst 20%, by region (UK, 2014 to 2021 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI4_20230419.csv",
     "geoFormat": "",
@@ -66,10 +66,8 @@ Some of the highest levels of childhood poverty and disadvantage are in:
 <li>West Midlands</li>
 </ul>
 
-## Text
 This is mainly due to the high youth unemployment rates in those areas.
 
-## Text
 Some areas have high levels of both advantage and disadvantage. For example, most of London is in the top 20% of areas for <a href="/drivers_of_social_mobility/composite_indices/socio-cultural_advantage" class="govuk-link">sociocultural advantage</a>, but also the bottom 20% for childhood poverty and disadvantage.
 
 ## Section
@@ -84,7 +82,6 @@ This page combines data from the following 3 indicators into a single ‘composi
     <li><a href="/drivers_of_social_mobility/conditions_of_childhood/distribution_of_parental_occupation" class="govuk-link">Parental occupation</a> – data on parents in lower working class occupations</li>
 </ul>
 
-## Text
 Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.<br> 
 
 See the [technical annex] for more information on how each area was scored. 
