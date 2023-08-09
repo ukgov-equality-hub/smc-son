@@ -45,21 +45,10 @@ By socio-economic background
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
 
 ## Section
@@ -92,21 +81,11 @@ By sex
     "textLabels": "outside",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## Section
@@ -140,22 +119,11 @@ By ethnicity
     "textLabels": "outside",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category2",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "Category",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-ethnicity--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## Section
@@ -188,21 +156,11 @@ By disability status
     "textLabels": "outside",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## About the data

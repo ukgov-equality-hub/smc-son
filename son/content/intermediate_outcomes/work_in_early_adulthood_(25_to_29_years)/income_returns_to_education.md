@@ -43,21 +43,10 @@ Relative differences
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Category",
-            "heading": "Qualification"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage difference (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-qualification--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -85,33 +74,10 @@ By year
     "margin": [ 0, 0, 0, 0 ],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Category",
-            "heading": "Qualification"
-        },
-        {
-            "column": "Value",
-            "heading": "Controlling for SEB (£)",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval",
-            "align": "right",
-            "format": "£"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 2, 2, 2, 2, 2]
 }
 
 ## Section
@@ -140,32 +106,10 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Sex"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 2]
 }
 
 ## Section
@@ -194,34 +138,10 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Highest qualification"
-        },
-        {
-            "column": "Category2",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-ethnicity--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 2]
 }
 
 ## Section
@@ -250,34 +170,10 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Disabled"
-        },
-        {
-            "column": "Category2",
-            "heading": "Highest qualification"
-        },
-        {
-            "column": "Value",
-            "heading": "£",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 2]
 }
 
 ## About the data

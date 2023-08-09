@@ -47,21 +47,9 @@ By disadvantage status over time
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right"]
 }
 
 ## Section
@@ -86,17 +74,10 @@ By year
     "legend": true,
     "colourScheme": [ "#5694ca" ],
     "margin": [ 0, 0, 0, 0 ],
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Disadvantage attainment gap index for England at key stage 2 (Gap index)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--gap-by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 ## Section
@@ -107,8 +88,8 @@ By sex
     "code": "IN12",
     "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)",
     "data": [
-        {"label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv"},
-        {"label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv"}
+        { "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" },
+        { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 450,
@@ -123,9 +104,9 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "range": [ 0, 80 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -143,11 +124,11 @@ By ethnicity
     "code": "IN12",
     "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)",
     "data": [
-        {"label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"},
-        {"label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"},
-        {"label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"},
-        {"label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"},
-        {"label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"}
+        { "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" },
+        { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" },
+        { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" },
+        { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" },
+        { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }
     ],
     "toggle": "radio",
     "height": 1450,
@@ -161,9 +142,9 @@ By ethnicity
     "ygrid": false,
     "xticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "domain": [0, 85],
-    "margin": [0, 0, 0, 0],
+    "colourScheme": [ "#5694ca", "#d4351c" ],
+    "domain": [ 0, 85 ],
+    "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -297,22 +278,10 @@ Data
 # DataTable
 {
     "data": "/static/data/indicators/IN12_area-20230531.csv",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-local-authority-and-disadvantage--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
 }
 
 # Tab
@@ -363,29 +332,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-ITL2-region-and-FSM--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1],
+    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
 }
 
 # Guidance

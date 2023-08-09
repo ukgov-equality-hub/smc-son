@@ -56,21 +56,11 @@ By decade of birth (upward and downward mobility)
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "Country"
-        },
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-decade-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingRows": 2
 }
 
 ## Section
@@ -102,21 +92,11 @@ By decade of birth (long-range mobility)
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "Country"
-        },
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--long-range-mobility--by-decade-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingRows": 2
 }
 
 ## Section
@@ -158,30 +138,11 @@ By area
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1],
+    "dataTableTitle": "Percentage of 25 to 64 year olds who experienced long-range upward mobility from the higher and lower working classes, long-range downward mobility from the higher and lower professional classes, by region (UK, 2018 to 2022 combined)"
 }
 
 # Guidance
@@ -217,21 +178,11 @@ By occupational class and sex
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## Section
@@ -260,30 +211,10 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ethnicity--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## Section
@@ -315,22 +246,11 @@ By disability status
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "SEB",
-            "heading": "Occupation level"
-        },
-        {
-            "column": "Category2",
-            "heading": "Disabled"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## About the data

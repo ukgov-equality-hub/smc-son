@@ -1,0 +1,46 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Highest qualification,Higher education above degree,29.65804814,6777,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Highest qualification,Higher education above degree,31.62181494,6896,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Highest qualification,Higher education above degree,33.30881029,6939,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Highest qualification,Higher education above degree,34.28441496,7065,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Highest qualification,Higher education above degree,35.14276013,7077,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Highest qualification,Higher education above degree,35.99698019,7251,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Highest qualification,Higher education above degree,38.90735202,6136,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Highest qualification,Higher education above degree,41.47378319,8078,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Highest qualification,Further education below degree,10.30834441,2434,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Highest qualification,Further education below degree,10.33687843,2325,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Highest qualification,Further education below degree,10.01634688,2154,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Highest qualification,Further education below degree,9.916121291,2103,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Highest qualification,Further education below degree,9.202751729,1933,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Highest qualification,Further education below degree,9.29792575,1972,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Highest qualification,Further education below degree,9.248304629,1444,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Highest qualification,Further education below degree,8.649558855,1681,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Highest qualification,A level and equivalent,26.48741282,5985,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Highest qualification,A level and equivalent,25.31763181,5552,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Highest qualification,A level and equivalent,25.31804531,5363,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Highest qualification,A level and equivalent,25.3230703,5201,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Highest qualification,A level and equivalent,25.09353406,5097,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Highest qualification,A level and equivalent,25.05851598,5098,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Highest qualification,A level and equivalent,24.53282954,3558,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Highest qualification,A level and equivalent,23.4319325,4128,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",16.30207429,3753,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",15.8237056,3490,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",14.9698728,3189,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",14.67732078,3036,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",14.75727739,3010,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",13.72923742,2823,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",13.21892736,1960,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",12.95025862,2319,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),17.24412033,3804,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2015,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),16.89996921,3629,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2016,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),16.38692472,3365,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2017,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),15.79907267,3214,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2018,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),15.80367669,3122,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2019,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),15.91734066,3073,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2020,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),14.09258645,1724,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2021,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),13.49446683,2010,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Highest qualification,Higher education above degree,34.96153155,56219,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Highest qualification,Further education below degree,9.634190046,16046,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Highest qualification,A level and equivalent,25.0906648,39982,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Highest qualification,"O level, GCSE and equivalent",14.5757958,23580,NA,NA,NA,Percentage,NA
+DR13,Cultural inequality between families,Country,K02000001,United Kingdom,2014-21,NA,40,Total,Highest qualification,Lower level (below CSE grade 1),15.7378178,23941,NA,NA,NA,Percentage,NA

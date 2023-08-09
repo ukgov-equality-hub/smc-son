@@ -57,21 +57,11 @@ By sex
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
-    "columns": [
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## Section
@@ -99,34 +89,10 @@ By area
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -154,34 +120,10 @@ By ethnicity
     "margin": [ 0, 0, 0, 0 ],
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category",
-            "heading": "Ethnicity"
-        },
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -213,21 +155,10 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "SEB",
-            "heading": "Socio-economic background"
-        },
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]
 }
 
 ## About the data

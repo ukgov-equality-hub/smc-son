@@ -43,20 +43,10 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "columns": [
-        {
-            "column": "Time_period"
-        },
-        {
-            "column": "Area_name"
-        },
-        {
-            "column": "Value",
-            "heading": "Average pupil attainment scores",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/DR22-availability-of-high-quality-school-education--by-year--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0]
 }
 
 ## About the data

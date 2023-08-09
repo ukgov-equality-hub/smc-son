@@ -1,0 +1,9 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2014,2014,NA,Total,NA,NA,17.49,9382,16.5296,18.4504,0.49,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2015,2015,NA,Total,NA,NA,15.29,8837,14.3492,16.2308,0.48,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2016,2016,NA,Total,NA,NA,14.35,8333,13.4092,15.2908,0.48,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2017,2017,NA,Total,NA,NA,13.19,7960,12.2492,14.1308,0.48,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2018,2018,NA,Total,NA,NA,12.33,7632,11.3892,13.2708,0.48,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2019,2019,NA,Total,NA,NA,13.11,7421,12.1104,14.1096,0.51,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2020,2020,NA,Total,NA,NA,15.93,5473,14.6756,17.1844,0.64,Percentage,NA
+DR32,Youth unemployment,Country,K02000001,United Kingdom,2021,2021,NA,Total,NA,NA,13.07,6759,12.0312,14.1088,0.53,Percentage,NA
