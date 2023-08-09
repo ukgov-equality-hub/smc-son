@@ -24,7 +24,7 @@ By year
 # Src
 {
     "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)",
+    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1997 to 2022)",
     "data": "/static/data/indicators/DR12_overview-20230419.csv",
     "height": 450,
     "type": "liney",
@@ -122,11 +122,7 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
-
-The figure for each region shows the percentage of children living in households in relative poverty after housing costs.
-
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br><br>The figure for each region shows the percentage of children living in households in relative poverty after housing costs.<br><br>The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
 ## About the data
 # Data source
