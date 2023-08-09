@@ -34,24 +34,10 @@ Data for UK regions on factors that can reduce people’s social mobility chance
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "Quintile",
-            "heading": "Quintile",
-            "align": "right",
-            "format": "0dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/CI4-childhood-poverty-and-disadvantage--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 0]
 }
 
 ## Section

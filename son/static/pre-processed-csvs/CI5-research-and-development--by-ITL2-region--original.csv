@@ -1,0 +1,42 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note,Quintile
+CI5,R & D environment,ITL2,TLH2,Bedfordshire and Hertfordshire,NA,NA,NA,Total,NA,NA,0.814844017,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,Total,NA,NA,0.789356708,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLD6,Cheshire,NA,NA,NA,Total,NA,NA,0.532146604,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLK3,Cornwall and Isles of Scilly,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLD1,Cumbria,NA,NA,NA,Total,NA,NA,0.340527763,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLF1,Derbyshire and Nottinghamshire,NA,NA,NA,Total,NA,NA,0.746275854,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLK4,Devon,NA,NA,NA,Total,NA,NA,0.486940535,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLK2,Dorset and Somerset,NA,NA,NA,Total,NA,NA,0.442690948,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLH1,East Anglia,NA,NA,NA,Total,NA,NA,0.695930959,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLL2,East Wales,NA,NA,NA,Total,NA,NA,0.52743241,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLE1,East Yorkshire and Northern Lincolnshire,NA,NA,NA,Total,NA,NA,0.653196166,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLM7,Eastern Scotland,NA,NA,NA,Total,NA,NA,0.718794039,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLH3,Essex,NA,NA,NA,Total,NA,NA,0.615180046,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,Total,NA,NA,0.755682482,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,0.691714896,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLJ3,Hampshire and Isle of Wight,NA,NA,NA,Total,NA,NA,0.716945861,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLG1,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,Total,NA,NA,0.534764248,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLM6,Highlands and Islands,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLI4,Inner London - East,NA,NA,NA,Total,NA,NA,0.654445289,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLI3,Inner London - West,NA,NA,NA,Total,NA,NA,0.777678711,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,0.616432529,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLD4,Lancashire,NA,NA,NA,Total,NA,NA,0.588174139,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLF2,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,Total,NA,NA,0.682955412,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLF3,Lincolnshire,NA,NA,NA,Total,NA,NA,0.334443838,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLD7,Merseyside,NA,NA,NA,Total,NA,NA,0.703893303,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLM5,North Eastern Scotland,NA,NA,NA,Total,NA,NA,0.266742889,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLE2,North Yorkshire,NA,NA,NA,Total,NA,NA,0.483741778,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLN0,Northern Ireland,NA,NA,NA,Total,NA,NA,0.57803831,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLC2,"Northumberland, and Tyne and Wear",NA,NA,NA,Total,NA,NA,0.582402961,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLI5,Outer London - East and North East,NA,NA,NA,Total,NA,NA,0.414629715,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLI6,Outer London - South,NA,NA,NA,Total,NA,NA,0.426430136,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLI7,Outer London - West and North West,NA,NA,NA,Total,NA,NA,0.72238946,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLG2,Shropshire and Staffordshire,NA,NA,NA,Total,NA,NA,0.530298558,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLE3,South Yorkshire,NA,NA,NA,Total,NA,NA,0.477974302,NA,NA,NA,NA,NA,NA,2
+CI5,R & D environment,ITL2,TLM9,Southern Scotland,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLJ2,"Surrey, East and West Sussex",NA,NA,NA,Total,NA,NA,0.695786667,NA,NA,NA,NA,NA,NA,4
+CI5,R & D environment,ITL2,TLC1,Tees Valley and Durham,NA,NA,NA,Total,NA,NA,0.578056755,NA,NA,NA,NA,NA,NA,3
+CI5,R & D environment,ITL2,TLM8,West Central Scotland,NA,NA,NA,Total,NA,NA,0.720377044,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLG3,West Midlands,NA,NA,NA,Total,NA,NA,0.777674905,NA,NA,NA,NA,NA,NA,5
+CI5,R & D environment,ITL2,TLL1,West Wales and The Valleys,NA,NA,NA,Total,NA,NA,0.442078927,NA,NA,NA,NA,NA,NA,1
+CI5,R & D environment,ITL2,TLE4,West Yorkshire,NA,NA,NA,Total,NA,NA,0.640956171,NA,NA,NA,NA,NA,NA,3

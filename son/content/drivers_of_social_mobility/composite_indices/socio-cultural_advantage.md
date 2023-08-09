@@ -34,24 +34,10 @@ Data on ‘sociocultural advantage’ in UK regions – measured by levels of un
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "Quintile",
-            "heading": "Quintile",
-            "align": "right",
-            "format": "0dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/CI3-socio-cultural-advantage--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 0]
 }
 
 ## Section
