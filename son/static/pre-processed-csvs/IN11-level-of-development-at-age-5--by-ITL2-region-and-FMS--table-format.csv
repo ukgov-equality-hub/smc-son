@@ -1,34 +1,34 @@
-﻿ITL2 region name TODO,FSM eligible,Not FSM eligible
-Bedfordshire and Hertfordshire,43.68,66.32
-"Berkshire, Buckinghamshire and Oxfordshire",45.81,69.41
-Cheshire,47.18,70.42
-Cornwall and Isles of Scilly,47.04,69.24
-Cumbria,35.96,65.74
-Derbyshire and Nottinghamshire,49.18,68.81
-Devon,46.36,68.76
-Dorset and Somerset,47.13,68.89
-East Anglia,46.48,67.31
-East Yorkshire and Northern Lincolnshire,53.15,68.17
-Essex,48.75,70.18
-"Gloucestershire, Wiltshire and Bath/Bristol area",45.28,70.73
-Greater Manchester,47.46,64.61
-Hampshire and Isle of Wight,48.8,72.13
-"Herefordshire, Worcestershire and Warwickshire",46.63,70.03
-Inner London - East,58.75,69.94
-Inner London - West,55.43,72.25
-Kent,47.89,69.73
-Lancashire,45.88,65.82
-"Leicestershire, Rutland and Northamptonshire",47.85,67.05
-Lincolnshire,48.53,68.53
-Merseyside,45.46,64.91
-North Yorkshire,48.33,71.82
-Northumberland and Tyne and Wear,49.09,68.99
-Outer London - East and North East,54.48,69.88
-Outer London - South,55.2,72.29
-Outer London - West and North West,54.76,69.27
-Shropshire and Staffordshire,49.9,69.04
-South Yorkshire,49.85,69.73
-"Surrey, East and West Sussex",46.9,72.43
-Tees Valley and Durham,48.39,70.2
-West Midlands,51.47,65.62
-West Yorkshire,46.43,66.79
+﻿ITL2 region name TODO,FSM eligible,Not FSM eligible,Gap
+Bedfordshire and Hertfordshire,43.68,66.32,22.64
+"Berkshire, Buckinghamshire and Oxfordshire",45.81,69.41,23.6
+Cheshire,47.18,70.42,23.24
+Cornwall and Isles of Scilly,47.04,69.24,22.2
+Cumbria,35.96,65.74,29.78
+Derbyshire and Nottinghamshire,49.18,68.81,19.63
+Devon,46.36,68.76,22.4
+Dorset and Somerset,47.13,68.89,21.76
+East Anglia,46.48,67.31,20.83
+East Yorkshire and Northern Lincolnshire,53.15,68.17,15.02
+Essex,48.75,70.18,21.43
+"Gloucestershire, Wiltshire and Bath/Bristol area",45.28,70.73,25.45
+Greater Manchester,47.46,64.61,17.15
+Hampshire and Isle of Wight,48.8,72.13,23.33
+"Herefordshire, Worcestershire and Warwickshire",46.63,70.03,23.4
+Inner London - East,58.75,69.94,11.19
+Inner London - West,55.43,72.25,16.82
+Kent,47.89,69.73,21.84
+Lancashire,45.88,65.82,19.94
+"Leicestershire, Rutland and Northamptonshire",47.85,67.05,19.2
+Lincolnshire,48.53,68.53,20
+Merseyside,45.46,64.91,19.45
+North Yorkshire,48.33,71.82,23.49
+Northumberland and Tyne and Wear,49.09,68.99,19.9
+Outer London - East and North East,54.48,69.88,15.4
+Outer London - South,55.2,72.29,17.09
+Outer London - West and North West,54.76,69.27,14.51
+Shropshire and Staffordshire,49.9,69.04,19.14
+South Yorkshire,49.85,69.73,19.88
+"Surrey, East and West Sussex",46.9,72.43,25.53
+Tees Valley and Durham,48.39,70.2,21.81
+West Midlands,51.47,65.62,14.15
+West Yorkshire,46.43,66.79,20.36
