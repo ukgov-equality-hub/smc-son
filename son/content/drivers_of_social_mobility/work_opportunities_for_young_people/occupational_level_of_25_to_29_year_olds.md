@@ -28,6 +28,7 @@ By year
 {
     "code": "DR33",
     "title": "Percentage of 25 to 29 year olds in each of the 5 occupational classes, over time (UK, 2014 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR33_overview-20230417.csv",
     "height": 450,
     "type": "bary",

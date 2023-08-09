@@ -167,11 +167,17 @@ By occupational class and sex
 {
     "code": "MO11",
     "title": "Percentages of people aged 25 to 64 years in each occupational class, by parental occupational class and sex (UK, 2022)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_occupation_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_occupation_male-20230705.csv" },
-        { "label": "Total", "data": "/static/data/indicators/MO11_occupation_total-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
+    }, {
+        "label": "Total",
+	"data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -236,10 +242,14 @@ By disability status
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",

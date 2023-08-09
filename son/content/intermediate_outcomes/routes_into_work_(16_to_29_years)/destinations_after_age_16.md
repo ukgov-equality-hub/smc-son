@@ -28,6 +28,7 @@ By socio-economic background
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years who were in education and training, employment or NEET, by socio-economic background (UK, 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN21_overview-20230424.csv",
     "height": 450,
     "type": "bary",

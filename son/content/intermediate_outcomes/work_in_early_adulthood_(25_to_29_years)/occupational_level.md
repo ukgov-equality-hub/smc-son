@@ -27,6 +27,7 @@ By socio-economic background
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_overview-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -101,10 +102,14 @@ By sex
 {
     "code": "IN33",
     "title": "Occupational level of young people",
-    "data": [
-        { "label": "Men", "data": "/static/data/indicators/IN33_gender_male-20230327.csv" },
-        { "label": "Women", "data": "/static/data/indicators/IN33_gender_female-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/IN33_gender_female-20230327.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/IN33_gender_male-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -172,10 +177,14 @@ By disability status
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by disability status SEB (UK, 2014 to 2021 combined)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/IN33_disability_disabled-20230327.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/IN33_disability_disabled-20230327.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",

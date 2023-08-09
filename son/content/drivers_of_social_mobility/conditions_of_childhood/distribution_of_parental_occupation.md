@@ -26,6 +26,7 @@ By year
 {
     "code": "DR14",
     "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR14_overview-20230417.csv",
     "height": 450,
     "type": "bary",

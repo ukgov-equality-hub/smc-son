@@ -22,6 +22,7 @@ By year
 {
     "code": "DR13",
     "title": "Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR13_overview-20230419.csv",
     "height": 450,
     "type": "bary",

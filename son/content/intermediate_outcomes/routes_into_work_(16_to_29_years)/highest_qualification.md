@@ -33,6 +33,7 @@ By socio-economic background
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN23_overview-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -104,10 +105,14 @@ By sex
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)",
-    "data": [
-        { "label": "Men", "data": "/static/data/indicators/IN23_gender_male-20230327.csv" },
-        { "label": "Women", "data": "/static/data/indicators/IN23_gender_female-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/IN23_gender_female-20230327.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/IN23_gender_male-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",

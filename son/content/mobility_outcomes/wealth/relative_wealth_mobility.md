@@ -34,6 +34,7 @@ By age group and type of wealth
 {
     "code": "MO51",
     "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO51_overview-20230626.csv",
     "height": 450,
     "type": "bary",

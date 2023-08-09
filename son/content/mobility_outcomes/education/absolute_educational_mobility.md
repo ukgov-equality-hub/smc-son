@@ -34,11 +34,17 @@ By sex
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO31_overview_female-20230601.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO31_overview_male-20230601.csv" },
-        { "label": "Total", "data": "/static/data/indicators/MO31_overview_total-20230601.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/MO31_overview_female-20230601.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/MO31_overview_male-20230601.csv"
+    }, {
+        "label": "Total",
+	"data": "/static/data/indicators/MO31_overview_total-20230601.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
