@@ -52,6 +52,7 @@ By country
 {
     "code": "DR11",
     "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, by country over time (UK, 1997 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR11_area-20230413.csv",
     "height": 450,
     "type": "liney",
@@ -66,7 +67,7 @@ By country
     "yticks": 5,
     "filterNaN": false,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
     "margin": [0, 0, 0, 0],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",

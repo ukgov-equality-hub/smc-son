@@ -24,6 +24,7 @@ By year
 {
     "code": "DR23",
     "title": "Percentage of 19 year olds enrolled in secondary or post-secondary education, over time (UK and international averages, 2010 to 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR23a_overview-20230417.csv",
     "height": 450,
     "type": "liney",

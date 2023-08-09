@@ -21,11 +21,15 @@ By sex
 ## Chart: Multi-line
 {
     "code": "IN42",
-    "title": "Probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)",
-    "data": [
-        { "label": "Women", "data": "/static/data/indicators/IN42_gender_female-20230713.csv" },
-        { "label": "Men", "data": "/static/data/indicators/IN42_gender_male-20230713.csv" }
-    ],
+    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)"
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/IN42_gender_female-20230713.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/IN42_gender_male-20230713.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "liney",
@@ -38,7 +42,7 @@ By sex
     "upperConfidence": "UCI",
     "xgrid": false,
     "ygrid": true,
-    "xticks": 5,
+    "xticks": 7,
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
@@ -52,7 +56,6 @@ By sex
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingRows": 2,
-    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)"
 }
 
 ## About the data

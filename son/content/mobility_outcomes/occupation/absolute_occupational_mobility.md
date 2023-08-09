@@ -34,10 +34,14 @@ By decade of birth (upward and downward mobility)
 {
     "code": "MO11",
     "title": "Percentages of people experiencing occupational mobility (upward, downward, and total), by birth cohort (UK, 1910 to 1999)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_overview_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_overview_male-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/MO11_overview_female-20230705.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/MO11_overview_male-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "liney",
@@ -48,9 +52,10 @@ By decade of birth (upward and downward mobility)
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
-    "yticks": 3,
+    "xticks": 7,
+    "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
     "range": [0, 0.75],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
@@ -70,10 +75,13 @@ By decade of birth (long-range mobility)
 {
     "code": "MO11",
     "title": "Percentages of people experiencing long-range occupational mobility (upward and downward), by birth cohort (UK, 1910 to 1999)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_long_range_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_long_range_male-20230705.csv" }
-    ],
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/MO11_long_range_female-20230705.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/MO11_long_range_male-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "liney",
@@ -84,9 +92,10 @@ By decade of birth (long-range mobility)
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
-    "yticks": 3,
+    "xticks": 7,
+    "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "colourScheme": ["#5694ca", "#d4351c"],
     "range": [0, 0.5],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,

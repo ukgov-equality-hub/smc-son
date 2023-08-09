@@ -28,6 +28,7 @@ By year
 {
     "code": "IN11",
     "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_overview-20230714.csv",
     "height": 450,
     "type": "liney",
@@ -38,6 +39,7 @@ By year
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
+    "xticks": 7,
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],

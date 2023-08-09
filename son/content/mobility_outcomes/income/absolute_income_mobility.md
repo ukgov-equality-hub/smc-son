@@ -22,6 +22,7 @@ By year of birth
 {
     "code": "MO21",
     "title": "Percentage of children whose family income at 30 years old was higher than their parents’ family income at 30 years old, by country and year of birth (‘birth cohort’)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO21_overview-20230526.csv",
     "height": 450,
     "type": "liney",
@@ -33,7 +34,7 @@ By year of birth
     "xgrid": false,
     "ygrid": true,
     "xticks": 7,
-    "yticks": 3,
+    "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
     "margin": [0, 0, 0, 0],
