@@ -11,7 +11,7 @@ Data on the UK regions with the most 'promising prospects' for 25 to 29 year old
 # Src
 {
     "code": "CI1",
-    "title": "Promising prospects",
+    "title": "Index of 'promising prospects', and quintile ranking from best 20% to worst 20%, by region (UK, 2018 to 2022 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI1_20230419.csv",
     "geoFormat": "",
@@ -59,9 +59,9 @@ Summary main findings
 
 ## Text
 Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to have the best prospects.
-<br>
+
 Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse prospects. 
-<br>
+
 Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire, which contains both remote rural and urban areas.
 
 ## Subtitle
