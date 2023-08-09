@@ -185,12 +185,7 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
-
-The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility for that region.
-
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
-
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br><br>The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility for that region.<br><br>The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
 ## Section
 By occupational class and sex
@@ -340,10 +335,10 @@ By disability status
 
 ## About the data
 # Data sources
-The General Household Survey (1972 to 2005)<br>
-British Household Panel Survey (1991 to 2009)<br>
-Taking Part Survey (2005 to 2006)<br>
-Understanding Society (2010 to 2019)<br>
+The General Household Survey (1972 to 2005)
+British Household Panel Survey (1991 to 2009)
+Taking Part Survey (2005 to 2006)
+Understanding Society (2010 to 2019)
 Labour Force Survey (2014 to 2022)
 
 # Time period
@@ -377,7 +372,7 @@ The figures for total mobility are the sum of the percentages of upward and down
 
 For data on mobility by year of birth (‘birth cohort studies’), the most recent cohorts are still early in their working lives as they were born between 1990 and 1999. The chances of people moving into the professional classes increases from 25 to 35 years old, and slows in their late 30s and early 40s.
 
-The data used is weighted using the LFS population weights. 
+The data used is weighted using the LFS population weights.
 
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
 
