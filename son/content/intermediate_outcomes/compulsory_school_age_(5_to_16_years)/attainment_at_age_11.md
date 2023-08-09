@@ -42,8 +42,8 @@ By disadvantage status over time
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -59,6 +59,7 @@ By year
 {
     "code": "IN12",
     "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN12_year-20230531.csv",
     "height": 450,
     "type": "liney",
@@ -72,8 +73,8 @@ By year
     "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca"],
+    "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--gap-by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
@@ -104,9 +105,9 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "range": [ 0, 80 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "range": [0, 80],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -142,9 +143,9 @@ By ethnicity
     "ygrid": false,
     "xticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "domain": [ 0, 85 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "domain": [0, 85],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -175,10 +176,10 @@ Compare maps
     "width": 537,
     "height": 700,
     "dataFormat": "sequential",
-    "domain": [ 20, 80 ],
+    "domain": [20, 80],
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 
@@ -196,10 +197,10 @@ Compare maps
     "width": 537,
     "height": 700,
     "dataFormat": "sequential",
-    "domain": [ 20, 80 ],
+    "domain": [20, 80],
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 
@@ -222,7 +223,7 @@ Independent maps
     "dataFormat": "sequential",
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 
@@ -242,7 +243,7 @@ Independent maps
     "dataFormat": "sequential",
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 
@@ -265,8 +266,8 @@ Bar chart
     "ygrid": false,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "outside",
     "labelColour": "#fff",
     "clickBehaviour": "fade"
@@ -300,11 +301,16 @@ By area
     "title": "Percentage of students meeting the expected standard in reading, writing and maths by the end of key stage 2, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
     "tooltipTitle": "Percentage of 11 year olds meeting expected standard",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [
-        { "label": "FSM eligible", "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv" },
-        { "label": "Not FSM eligible", "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv" },
-        { "label": "Gap", "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv" }
-    ],
+    "data": [{
+        "label": "FSM eligible",
+        "data": "/static/data/indicators/IN12_area_fsm_eligible-20230531.csv"
+    }, {
+        "label": "Not FSM eligible",
+        "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv"
+    }, {
+        "label": "Gap",
+        "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv"
+    }],
     "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
@@ -315,10 +321,11 @@ By area
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
     "height": 700,
+    "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -326,11 +333,10 @@ By area
     "x2key": "Not_known_to_be_FSM_eligible",
     "ykey": "Area_name",
     "sort": "-Value",
-    "dataFormat": "quintile",
-    "xgrid": false,
+    "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-ITL2-region-and-FSM--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

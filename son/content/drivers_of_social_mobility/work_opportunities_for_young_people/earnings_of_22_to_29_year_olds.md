@@ -27,6 +27,7 @@ By year
 {
     "code": "DR34",
     "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR34_overview-20230414.csv",
     "height": 450,
     "type": "liney",
@@ -40,8 +41,8 @@ By year
     "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca"],
+    "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
