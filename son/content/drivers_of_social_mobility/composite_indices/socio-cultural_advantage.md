@@ -2,7 +2,7 @@
 CI3
 
 ## Title
-Socio-cultural advantage
+Sociocultural advantage
 
 ## Summary
 Data on ‘sociocultural advantage’ in UK regions – measured by levels of university education and professional work among parents, and professional work for 25 to 29 year olds.
@@ -11,7 +11,7 @@ Data on ‘sociocultural advantage’ in UK regions – measured by levels of un
 # Src
 {
     "code": "CI3",
-    "title": "Quintile rankings for socio-cultural advantage, from top 20% to bottom 20%, by UK region",
+    "title": "Index of sociocultural advantage, and quintile ranking from best 20% to worst 20%, by region (UK, 2014 to 2021 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI3_20230419.csv",
     "geoFormat": "",
@@ -68,7 +68,6 @@ The areas with the highest levels of sociocultural advantage in the UK include:
 <li>Cheshire</li>
 </ul>
 
-## Text
 The least advantaged areas include:
 
 <ul class="govuk-list">
@@ -94,7 +93,6 @@ This page combines data from the following 3 indicators into a single ‘composi
     <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level" class="govuk-link">Occupational level of 25 to 29 year olds</a> – data on young people in higher professional occupations</li>
 </ul>
 
-## Text
 Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.<br> 
 
 See the [technical annex] for more information on how each area was scored.
