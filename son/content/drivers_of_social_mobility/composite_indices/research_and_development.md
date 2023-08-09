@@ -34,24 +34,10 @@ Data on conditions that favour research and development across UK regions – me
     "legend": false,
     "margin": [ 0, 0, 0, 0 ],
     "backgroundColor": "#fafafa",
-    "columns": [
-        {
-            "column": "Area_name",
-            "heading": "ITL2 region"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "Quintile",
-            "heading": "Quintile",
-            "align": "right",
-            "format": "0dp"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/CI5-research-and-development--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 2, 0]
 }
 
 ## Section
