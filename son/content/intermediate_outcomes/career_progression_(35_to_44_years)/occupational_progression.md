@@ -47,33 +47,12 @@ By sex
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Category",
-            "heading": "Profession level"
-        },
-        {
-            "column": "Value",
-            "heading": "Controlling for SEB (£)",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval",
-            "align": "right",
-            "format": "£"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN42-occupational-progression--by-age-and-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingRows": 2,
+    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)"
 }
 
 ## About the data

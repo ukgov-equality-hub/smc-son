@@ -49,29 +49,11 @@ By sex
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "columns": [
-        {
-            "column": "Age"
-        },
-        {
-            "column": "Value",
-            "heading": "Controlling for SEB (£)",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval",
-            "align": "right",
-            "format": "£"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval",
-            "align": "right",
-            "format": "£"
-        }
-    ]
+    "dataTable": "/static/pre-processed-csvs/IN43-income-progression--by-age-and-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    "dataTableNumberOfHeadingRows": 2
 }
 
 ## About the data
