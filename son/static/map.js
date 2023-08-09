@@ -448,14 +448,14 @@ class Choropleth {
             }
 
             if (self.background) {
-                let areas = getAreas(data.map(x => x[nameField]))
+                const areas = getAreas(data.map(x => x[nameField]))
                 bg.enter()
                     .append('path')
                     .attr('d', self.bg)
                     .style('fill', '#f3f2f1')
                     .style('stroke', '#ddd')
                     .style('stroke-width', '.1')
-                    .style('visibility', x => areas.indexOf(x.properties.NUTS_ID) > -1 ? 'hidden' : 'visible')
+                    .style('visibility', x => areas.indexOf(x.properties.NUTS_ID) == -1 || self.background == 'full' ? 'visible' : 'hidden')
                     .attr('data-name', x => x.properties.NUTS_NAME || x.properties.NUTS_ID)
 
                 const bgAdjust = getBounds({ type: 'FeatureCollection', features: topoFeatures(eudata).features.filter(x => { return areas.indexOf(x.properties.NUTS_ID) > -1 }) }, self.bg, undefined, undefined, '')
@@ -927,6 +927,7 @@ class Choropleth {
             }
 
             let areas = ['UK', 'UKC', 'UKD', 'UKE', 'UKF', 'UKG', 'UKH', 'UKI', 'UKJ', 'UKK']
+            if (!data) return areas
             if (hasArea('scotland', data)) areas = ['UKM', ...areas]
             if (hasArea('wales', data)) areas = ['UKL', ...areas]
             if (hasArea('ireland', data)) areas = ['UKI', ...areas]
