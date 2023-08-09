@@ -63,6 +63,7 @@ By country
     "ygrid": true,
     "xticks": 7,
     "yticks": 5,
+    "filterNaN": false,
     "legend": true,
     "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
     "margin": [ 0, 0, 0, 0 ],

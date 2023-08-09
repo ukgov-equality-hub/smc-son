@@ -51,12 +51,19 @@ By area
     "title": "Number of research students, and ‘quintile’ ranking (from best 20% to worst 20%), by region over time (UK, 2015 to 2018)",
     "tooltipTitle": "Number of research students",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [
-        { "label": "2015", "data": "/static/data/indicators/DR53_area_2015-20230417.csv" },
-        { "label": "2016", "data": "/static/data/indicators/DR53_area_2016-20230417.csv" },
-        { "label": "2017", "data": "/static/data/indicators/DR53_area_2017-20230417.csv" },
-        { "label": "2018", "data": "/static/data/indicators/DR53_area_2018-20230417.csv" }
-    ],
+    "data": [{
+        "label": "2015",
+        "data": "/static/data/indicators/DR53_area_2015-20230417.csv"
+    }, {
+        "label": "2016",
+        "data": "/static/data/indicators/DR53_area_2016-20230417.csv"
+    }, {
+        "label": "2017",
+        "data": "/static/data/indicators/DR53_area_2017-20230417.csv"
+    }, {
+        "label": "2018",
+        "data": "/static/data/indicators/DR53_area_2018-20230417.csv"
+    }],
     "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
@@ -65,18 +72,19 @@ By area
     "scale": "Number of students",
     "height": 700,
     "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "background": "full",
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
     "ykey": "Area_name",
     "sort": "-Value",
     "dataFormat": "quintile",
+    "domain": [0, 13000],
     "xgrid": false,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-ITL2-region-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -89,7 +97,6 @@ By area
 [41 regions in the UK] are ranked from the highest to lowest number of research students. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
 
 The figure for each region shows the number of research students in that region.
-
 
 ## About the data
 # Data source

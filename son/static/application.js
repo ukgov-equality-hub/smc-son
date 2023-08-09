@@ -6,19 +6,17 @@
       // Load gtm script
       // Script based on snippet at https://developers.google.com/tag-manager/quickstart
       (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({
-          'gtm.start': new Date().getTime(),
-          'event': 'gtm.js'
-        });
-
         var j = d.createElement(s);
-        var dl = l !== 'dataLayer' ? '&l=' + l : '';
-
         j.async = true;
-        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-        document.head.appendChild(j);
-      })(window, document, 'script', 'dataLayer', 'GTM-KMCNGTZ');
+        j.src = 'https://www.googletagmanager.com/gtag/js?id=' + i;
+        d.head.appendChild(j);
+
+        w[l] = w[l] || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', i);
+      })(window, document, 'script', 'dataLayer', 'G-YQ50C92HJX');
     }
   }
 
@@ -40,8 +38,8 @@
   var CONSENT_COOKIE_NAME = 'son_cookies_policy';
 
   /* Google Analytics tracking IDs for preview and live environments. */
-  //var TRACKING_PREVIEW_ID = '09GCMPLXM8';
-  //var TRACKING_LIVE_ID = '09GCMPLXM8';
+  //var TRACKING_PREVIEW_ID = '';
+  //var TRACKING_LIVE_ID = '';
 
   /* Users can (dis)allow different groups of cookies. */
   var COOKIE_CATEGORIES = {

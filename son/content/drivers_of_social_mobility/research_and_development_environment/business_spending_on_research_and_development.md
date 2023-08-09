@@ -53,20 +53,43 @@ By area
     "title": "Business spending on research and development, by region over time (UK, 2007 to 2018)",
     "tooltipTitle": "Business spending on research and development",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [
-        { "label": "2007", "data": "/static/data/indicators/DR52_area_2007-20230417.csv" },
-        { "label": "2008", "data": "/static/data/indicators/DR52_area_2008-20230417.csv" },
-        { "label": "2009", "data": "/static/data/indicators/DR52_area_2009-20230417.csv" },
-        { "label": "2010", "data": "/static/data/indicators/DR52_area_2010-20230417.csv" },
-        { "label": "2011", "data": "/static/data/indicators/DR52_area_2011-20230417.csv" },
-        { "label": "2012", "data": "/static/data/indicators/DR52_area_2012-20230417.csv" },
-        { "label": "2013", "data": "/static/data/indicators/DR52_area_2013-20230417.csv" },
-        { "label": "2014", "data": "/static/data/indicators/DR52_area_2014-20230417.csv" },
-        { "label": "2015", "data": "/static/data/indicators/DR52_area_2015-20230417.csv" },
-        { "label": "2016", "data": "/static/data/indicators/DR52_area_2016-20230417.csv" },
-        { "label": "2017", "data": "/static/data/indicators/DR52_area_2017-20230417.csv" },
-        { "label": "2018", "data": "/static/data/indicators/DR52_area_2018-20230417.csv" }
-    ],
+    "data": [{
+        "label": "2007",
+        "data": "/static/data/indicators/DR52_area_2007-20230417.csv"
+    }, {
+        "label": "2008",
+        "data": "/static/data/indicators/DR52_area_2008-20230417.csv"
+    }, {
+        "label": "2009",
+        "data": "/static/data/indicators/DR52_area_2009-20230417.csv"
+    }, {
+        "label": "2010",
+        "data": "/static/data/indicators/DR52_area_2010-20230417.csv"
+    }, {
+        "label": "2011",
+        "data": "/static/data/indicators/DR52_area_2011-20230417.csv"
+    }, {
+        "label": "2012",
+        "data": "/static/data/indicators/DR52_area_2012-20230417.csv"
+    }, {
+        "label": "2013",
+        "data": "/static/data/indicators/DR52_area_2013-20230417.csv"
+    }, {
+        "label": "2014",
+        "data": "/static/data/indicators/DR52_area_2014-20230417.csv"
+    }, {
+        "label": "2015",
+        "data": "/static/data/indicators/DR52_area_2015-20230417.csv"
+    }, {
+        "label": "2016",
+        "data": "/static/data/indicators/DR52_area_2016-20230417.csv"
+    }, {
+        "label": "2017",
+        "data": "/static/data/indicators/DR52_area_2017-20230417.csv"
+    }, {
+        "label": "2018",
+        "data": "/static/data/indicators/DR52_area_2018-20230417.csv"
+    }],
     "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
@@ -75,19 +98,20 @@ By area
     "scale": "€",
     "height": 700,
     "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "background": "full",
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
     "ykey": "Area_name",
     "sort": "-Value",
     "dataFormat": "quintile",
+    "domain": [0, 3200000000],
     "xgrid": false,
     "ygrid": true,
     "xticks": 2,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
