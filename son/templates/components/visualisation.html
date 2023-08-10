@@ -38,6 +38,10 @@
         <h3 class="govuk-heading-s grid-three-quarters">{{ [data, 'title'] | attribute | safe }}</h3>
         {% endif %}
 
+        <div class="grid-three-quarters">
+        {{ [data, 'Guidance'] | content_list | safe }}
+        </div>
+
         {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
             {% if [data, 'toggle'] | attribute == 'radio' %}
@@ -90,9 +94,6 @@
         </script>
         {% endif %}
 
-        <div class="grid-three-quarters">
-        {{ [data, 'Guidance'] | content_list | safe }}
-        </div>
         {% if type == 'chart' %}
         {{ chart(id, data) }}
         {% else %}

@@ -39,7 +39,6 @@ By year
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/DR13-distribution-of-parental-education--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -90,10 +89,8 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
-
-The figure for each region shows the percentage of adults in families with dependent children who had a higher education qualification (such as a degree).
-
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+The figure for each region shows the percentage of adults in families with dependent children who had a higher education qualification (such as a degree).<br>
 The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
 ## About the data

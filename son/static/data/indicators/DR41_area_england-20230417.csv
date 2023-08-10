@@ -1,0 +1,9 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR41","Civic participation","National","E92000001","England","2013/14",NA,"Adults (16+)","Total",NA,NA,38.560886,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2014/15",NA,"Adults (16+)","Total",NA,NA,35.365065,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2015/16",NA,"Adults (16+)","Total",NA,NA,33.334913,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2016/17",NA,"Adults (16+)","Total",NA,NA,41.122823,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2017/18",NA,"Adults (16+)","Total",NA,NA,37.8274397401941,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2018/19",NA,"Adults (16+)","Total",NA,NA,34.3507416483112,NA,NA,NA,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2019/20",NA,"Adults (16+)","Total",NA,NA,40.7,NA,39.5,41.9,NA,"Percent",NA
+"DR41","Civic participation","National","E92000001","England","2020/21",NA,"Adults (16+)","Total",NA,NA,41.255972522874,NA,40.0826954890883,42.4392676391549,NA,"Percent",NA

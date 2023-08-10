@@ -44,7 +44,6 @@ By socio-economic background
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

@@ -116,8 +116,7 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest average broadband speed. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
-
+[41 regions in the UK] are ranked from the highest to lowest average broadband speed. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
 The figure for each region shows the median (average) broadband speed for that region.
 
 ## About the data

@@ -268,6 +268,14 @@ div.govuk-tabs {
         div.chart-container.chart {
             margin-top: 30px;
         }
+
+        div.chart-container.chart.chart-dot {
+            margin-top: 0;
+        }
+
+        table.table-container > caption {
+            margin-bottom: 40px;
+        }
     }
 
     div.moj-scrollable-pane {

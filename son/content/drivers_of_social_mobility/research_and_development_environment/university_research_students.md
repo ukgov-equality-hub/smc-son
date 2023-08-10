@@ -95,8 +95,7 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest number of research students. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
-
+[41 regions in the UK] are ranked from the highest to lowest number of research students. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
 The figure for each region shows the number of research students in that region.
 
 ## About the data

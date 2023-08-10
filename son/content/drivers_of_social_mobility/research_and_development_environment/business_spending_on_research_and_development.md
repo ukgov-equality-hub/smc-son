@@ -121,8 +121,7 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
-
+[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
 The figure for each region shows the business spending on research and development.
 
 ## About the data

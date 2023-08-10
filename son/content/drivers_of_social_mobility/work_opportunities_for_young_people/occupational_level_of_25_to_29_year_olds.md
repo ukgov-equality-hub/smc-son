@@ -45,7 +45,6 @@ By year
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/DR33-occupation-level-of-25-to-29-year-olds--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -136,8 +135,7 @@ By occupational class and area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
-
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
 The figure for each region shows the percentage of 25 to 29 year olds in lower working class and higher professional occupations.
 
 ## About the data

@@ -25,12 +25,43 @@ By year
     "code": "DR41",
     "title": "Percentage of people who took part in democratic processes in the last 12 months (England, 8 years to March 2021)",
     "tooltipTitle": "",
-    "data": "/static/data/indicators/DR41_overview-20230417.csv",
+    "data": [{
+        "label": "North East",
+        "data": "/static/data/indicators/DR41_area_north_east-20230417.csv"
+    }, {
+        "label": "North West",
+        "data": "/static/data/indicators/DR41_area_north_west-20230417.csv"
+    }, {
+        "label": "Yorkshire and The Humber",
+        "data": "/static/data/indicators/DR41_area_yorkshire_and_the_humber-20230417.csv"
+    }, {
+        "label": "East Midlands",
+        "data": "/static/data/indicators/DR41_area_east_midlands-20230417.csv"
+    }, {
+        "label": "West Midlands",
+        "data": "/static/data/indicators/DR41_area_west_midlands-20230417.csv"
+    }, {
+        "label": "East of England",
+        "data": "/static/data/indicators/DR41_area_east_of_england-20230417.csv"
+    }, {
+        "label": "London",
+        "data": "/static/data/indicators/DR41_area_london-20230417.csv"
+    }, {
+        "label": "South East",
+        "data": "/static/data/indicators/DR41_area_south_east-20230417.csv"
+    }, {
+        "label": "South West",
+        "data": "/static/data/indicators/DR41_area_south_west-20230417.csv"
+    }, {
+        "label": "England",
+        "data": "/static/data/indicators/DR41_area_england-20230417.csv"
+    }],
+    "toggle": "radio",
     "height": 450,
     "type": "liney",
     "xkey": "Time_period",
     "ykey": "Value",
-    "zkey": "Area_name",
+    "zkey": "Sex",
     "sort": "Time_period",
     "scale": "%",
     "xgrid": false,
@@ -38,7 +69,9 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "range": [25, 50],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR41-civic-engagement--by-ITL1-region-and-year--table-format.csv",

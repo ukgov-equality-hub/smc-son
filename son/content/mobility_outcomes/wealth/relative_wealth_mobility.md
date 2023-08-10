@@ -51,7 +51,6 @@ By age group and type of wealth
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
-    "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/MO51-absolute-wealth-mobility--by-age-and-type-of-wealth--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

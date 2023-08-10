@@ -61,7 +61,6 @@ By sex
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",
-    "rolloverBehaviour": "fade",
     "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
