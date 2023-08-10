@@ -324,7 +324,7 @@ class Chart {
                     const mlci = d3.min((data[i]), x => parseFloat(x[lci], 10))
                     const muci = d3.max((data[i]), x => parseFloat(x[uci], 10))
                     if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
-                    if (orientation == 'y') range = [zero && mlci > 0 ? 0 : mlci, muci]
+                    if (orientation == 'y' && !options.range) range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
                     chartData = chartData.map(x => ({
                         [xkey]: x[xkey],

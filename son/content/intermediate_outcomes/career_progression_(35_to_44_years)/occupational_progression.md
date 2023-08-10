@@ -21,7 +21,7 @@ By sex
 ## Chart: Multi-line
 {
     "code": "IN42",
-    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)"
+    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -55,7 +55,7 @@ By sex
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingRows": 2,
+    "dataTableNumberOfHeadingRows": 2
 }
 
 ## About the data
