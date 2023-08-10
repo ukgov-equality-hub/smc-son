@@ -141,10 +141,14 @@ By disability status
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",

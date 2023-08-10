@@ -101,6 +101,7 @@ By sex
 {
     "code": "IN34",
     "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and sex (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_gender-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -133,6 +134,7 @@ By ethnicity
 {
     "code": "IN34",
     "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and ethnicity (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -165,6 +167,7 @@ By disability status
 {
     "code": "IN34",
     "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and disability (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_disability-20230327.csv",
     "height": 450,
     "type": "bary",

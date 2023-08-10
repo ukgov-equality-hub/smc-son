@@ -144,6 +144,7 @@ By ethnicity
 {
     "code": "IN23",
     "title": "Percentage of 25 to 29 year olds with a university degree, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN23_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",

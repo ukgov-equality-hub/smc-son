@@ -145,6 +145,7 @@ By ethnicity
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in a professional occupation, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",

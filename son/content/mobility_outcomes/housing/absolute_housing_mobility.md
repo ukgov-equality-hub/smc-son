@@ -60,6 +60,7 @@ By area
 {
     "code": "MO41",
     "title": "Percentage of 25 to 64 year olds who owned their own homes, by area where respondents live and ownership status of their parents (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO41_area-20230503.csv",
     "height": 450,
     "type": "bary",
@@ -92,6 +93,7 @@ By age
 {
     "code": "MO41",
     "title": "Percentage of 25 to 64 year olds who owned their own homes, by age of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO41_age-20230503.csv",
     "height": 450,
     "type": "bary",
@@ -124,6 +126,7 @@ By sex
 {
     "code": "MO41",
     "title": "Percentage of 25 to 64 year olds who owned their own homes, by sex of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO41_gender-20230503.csv",
     "height": 450,
     "type": "bary",
@@ -157,6 +160,7 @@ By disability status
 {
     "code": "MO41",
     "title": "Percentage of 25 to 64 year olds who owned their own homes, by disability status of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO41_disability-20230503.csv",
     "height": 450,
     "type": "bary",

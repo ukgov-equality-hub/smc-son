@@ -210,6 +210,7 @@ By ethnicity
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by ethnic group (UK, 2014 to 2022 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO11_ethnicity-20230705.csv",
     "height": 450,
     "type": "bary",

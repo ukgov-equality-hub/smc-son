@@ -26,6 +26,7 @@ By sex
 {
     "code": "IN352",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2019 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_gender-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -55,6 +56,7 @@ By sex
 {
     "code": "IN352",
     "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_gender_difference-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -84,6 +86,7 @@ By sex
 {
     "code": "IN352",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_gender_201419-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -116,6 +119,7 @@ By ethnicity
 {
     "code": "IN352",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -148,6 +152,7 @@ By disability status
 {
     "code": "IN352",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_disability-20230713.csv",
     "height": 450,
     "type": "bary",

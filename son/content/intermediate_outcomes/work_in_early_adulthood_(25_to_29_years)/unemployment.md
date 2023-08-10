@@ -101,6 +101,7 @@ By sex
 {
     "code": "IN32",
     "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and sex (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_gender-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -133,6 +134,7 @@ By ethnicity
 {
     "code": "IN32",
     "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and ethnicity (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -165,6 +167,7 @@ By disability status
 {
     "code": "IN32",
     "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and disability status (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_disability-20230327.csv",
     "height": 450,
     "type": "bary",

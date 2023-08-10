@@ -90,6 +90,7 @@ By sex
 {
     "code": "IN351",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_gender-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -122,6 +123,7 @@ By ethnicity
 {
     "code": "IN351",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_ethnicity-20230713.csv",
     "height": 450,
     "type": "bary",
@@ -154,6 +156,7 @@ By disability status
 {
     "code": "IN351",
     "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_disability-20230713.csv",
     "height": 450,
     "type": "bary",

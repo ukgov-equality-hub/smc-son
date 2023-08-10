@@ -118,6 +118,7 @@ By sex
 {
     "code": "IN11",
     "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_gender-20230714.csv",
     "height": 450,
     "type": "bary",
@@ -149,11 +150,17 @@ By ethnicity
 {
     "code": "IN11",
     "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)",
-    "data": [
-        { "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" },
-        { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" },
-        { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Girls",
+	"data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv"
+    }, {
+        "label": "Boys",
+	"data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv"
+    }, {
+        "label": "Overall",
+	"data": "/static/data/indicators/IN11_ethnicity-20230714.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",

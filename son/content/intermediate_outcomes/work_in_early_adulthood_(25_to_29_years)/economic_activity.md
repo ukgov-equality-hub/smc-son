@@ -102,6 +102,7 @@ By sex
 {
     "code": "IN31",
     "title": "Percentage of 25 to 29 year olds who were economically active, by sex and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_gender-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -134,6 +135,7 @@ By ethnicity
 {
     "code": "IN31",
     "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -166,6 +168,7 @@ By disability status
 {
     "code": "IN31",
     "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_disability-20230327.csv",
     "height": 450,
     "type": "bary",

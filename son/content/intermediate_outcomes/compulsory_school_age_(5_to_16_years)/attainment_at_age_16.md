@@ -28,6 +28,7 @@ By disadvantage status over time
 {
     "code": "IN13",
     "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN13_overview-20230601.csv",
     "height": 450,
     "type": "bary",
@@ -148,10 +149,14 @@ By sex
 {
     "code": "IN13",
     "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
-    "data": [
-        { "label": "Boys", "data": "/static/data/indicators/IN13_gender_male-20230601.csv" },
-        { "label": "Girls", "data": "/static/data/indicators/IN13_gender_female-20230601.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Boys",
+	"data": "/static/data/indicators/IN13_gender_male-20230601.csv"
+    }, {
+        "label": "Girls",
+	"data": "/static/data/indicators/IN13_gender_female-20230601.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -184,6 +189,7 @@ By ethnicity
 {
     "code": "IN13",
     "title": "Percentage of FSM-eligible pupils getting a grade 5 or above in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN13_ethnicity-20230601.csv",
     "height": 1450,
     "type": "bar",

@@ -30,6 +30,7 @@ By disadvantage status over time
 {
     "code": "IN12",
     "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status over time (England, September 2015 to July 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN12_overview-20230531.csv",
     "height": 450,
     "type": "bary",
@@ -88,10 +89,14 @@ By sex
 {
     "code": "IN12",
     "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)",
-    "data": [
-        { "label": "Boys", "data": "/static/data/indicators/IN12_gender_male-20230531.csv" },
-        { "label": "Girls", "data": "/static/data/indicators/IN12_gender_female-20230531.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Boys",
+	"data": "/static/data/indicators/IN12_gender_male-20230531.csv"
+    }, {
+        "label": "Girls",
+	"data": "/static/data/indicators/IN12_gender_female-20230531.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -117,6 +122,7 @@ By sex
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
     "dataTableNumberOfHeadingRows": 2
 }
+
 ## Section
 By ethnicity
 
@@ -124,13 +130,23 @@ By ethnicity
 {
     "code": "IN12",
     "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)",
-    "data": [
-        { "label": "2015-16", "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv" },
-        { "label": "2016-17", "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv" },
-        { "label": "2017-18", "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv" },
-        { "label": "2018-19", "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv" },
-        { "label": "2021-22", "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "2015-16",
+	"data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"
+    }, {
+        "label": "2016-17",
+	"data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"
+    }, {
+        "label": "2017-18",
+	"data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"
+    }, {
+        "label": "2018-19",
+	"data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"
+    }, {
+        "label": "2021-22",
+	"data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"
+    }],
     "toggle": "radio",
     "height": 1450,
     "type": "bar",
@@ -155,6 +171,7 @@ By ethnicity
     "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
     "dataTableNumberOfHeadingColumns": 2
 }
+
 ## Section
 Disadvantaged vs. Not disadvantaged [delete?]
 
@@ -176,10 +193,10 @@ Compare maps
     "width": 537,
     "height": 700,
     "dataFormat": "sequential",
-    "domain": [20, 80],
     "rolloverBehaviour": "outline",
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "domain": [20, 80],
     "onClick": "mapSelect1"
 }
 
@@ -197,10 +214,10 @@ Compare maps
     "width": 537,
     "height": 700,
     "dataFormat": "sequential",
-    "domain": [20, 80],
     "rolloverBehaviour": "outline",
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "domain": [20, 80],
     "onClick": "mapSelect1"
 }
 

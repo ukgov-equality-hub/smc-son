@@ -147,6 +147,7 @@ By sex and ethnicity
 {
     "code": "MO12",
     "title": "Relative occupational mobility by ethnicity and sex in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates compared with the White British group",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_ethnicity-20230623.csv",
     "height": 450,
     "type": "bary",
