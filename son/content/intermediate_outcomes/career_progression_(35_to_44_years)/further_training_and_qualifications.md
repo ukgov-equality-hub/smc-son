@@ -26,6 +26,7 @@ By socio-economic background
 {
     "code": "IN41",
     "title": "Percentage of young people born in 1989 who had degrees by the ages of 25 and 32 years, by socio-economic background (UK, 2014 and 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN41_overview-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -40,8 +41,8 @@ By socio-economic background
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",

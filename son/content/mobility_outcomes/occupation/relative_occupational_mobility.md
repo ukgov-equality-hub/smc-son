@@ -27,6 +27,7 @@ By year
 {
     "code": "MO12",
     "title": "Relative occupational mobility in the UK from 2014 to 2022, uniform difference (UNIDIFF) parameter estimates compared with 2014",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_overview-20230623.csv",
     "height": 450,
     "type": "liney",
@@ -40,11 +41,11 @@ By year
     "xgrid": false,
     "ygrid": true,
     "xticks": 7,
-    "yticks": 3,
+    "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "range": [ -0.035, 0.005 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca"],
+    "range": [-0.035, 0.005],
+    "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
@@ -59,6 +60,7 @@ By area
 {
     "code": "MO12",
     "title": "Relative mobility by area in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates compared with Inner London – West",
+    "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/MO12_area-20230623.csv",
     "geoFormat": "",
@@ -72,9 +74,9 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -83,7 +85,7 @@ By area
     "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -98,6 +100,7 @@ By sex – DELETE THIS BREAKDOWN
 {
     "code": "MO12",
     "title": "Relative occupational mobility",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_gender-20230623.csv",
     "height": 450,
     "type": "bary",
@@ -111,35 +114,30 @@ By sex – DELETE THIS BREAKDOWN
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ -0.015, 0 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [-0.015, 0],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 60,
     "textLabels": "center",
     "labelColour": "#fff",
-    "columns": [
-        {
-            "column": "Category"
-        },
-        {
-            "column": "Value",
-            "heading": "Percentage",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "LCI",
-            "heading": "Lower confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        },
-        {
-            "column": "UCI",
-            "heading": "Upper confidence interval (%)",
-            "align": "right",
-            "format": "1dp"
-        }
-    ]
+    "columns": [{
+        "column": "Category"
+    }, {
+        "column": "Value",
+        "heading": "Percentage",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "LCI",
+        "heading": "Lower confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }, {
+        "column": "UCI",
+        "heading": "Upper confidence interval (%)",
+        "align": "right",
+        "format": "1dp"
+    }]
 }
 
 ## Section
@@ -149,6 +147,7 @@ By sex and ethnicity
 {
     "code": "MO12",
     "title": "Relative occupational mobility by ethnicity and sex in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates compared with the White British group",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_ethnicity-20230623.csv",
     "height": 450,
     "type": "bary",
@@ -163,9 +162,9 @@ By sex and ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "range": [ -0.15, 0.035 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "range": [-0.15, 0.035],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -182,6 +181,7 @@ By disability status
 {
     "code": "MO12",
     "title": "Relative occupational mobility by disability status in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates for people with a disability compared with people without a disability",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_disability-20230623.csv",
     "height": 450,
     "type": "bary",
@@ -195,9 +195,9 @@ By disability status
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ 0, 0.02 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 0.02],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 60,
     "textLabels": "center",
     "labelColour": "#fff",

@@ -26,6 +26,7 @@ By year
 {
     "code": "DR22",
     "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR22_overview-20230417.csv",
     "height": 450,
     "type": "bary",
@@ -38,8 +39,8 @@ By year
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",

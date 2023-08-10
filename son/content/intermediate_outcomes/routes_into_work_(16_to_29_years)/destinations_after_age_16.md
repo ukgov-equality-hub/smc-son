@@ -28,6 +28,7 @@ By socio-economic background
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years who were in education and training, employment or NEET, by socio-economic background (UK, 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN21_overview-20230424.csv",
     "height": 450,
     "type": "bary",
@@ -39,8 +40,8 @@ By socio-economic background
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
@@ -58,10 +59,14 @@ By sex
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/IN21_gender_female-20230424.csv" },
-        { "label": "Male", "data": "/static/data/indicators/IN21_gender_male-20230424.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Female",
+	"data": "/static/data/indicators/IN21_gender_female-20230424.csv"
+    }, {
+        "label": "Male",
+	"data": "/static/data/indicators/IN21_gender_male-20230424.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -74,9 +79,9 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ 0, 65 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 65],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "outside",
     "labelColour": "#fff",
@@ -95,11 +100,17 @@ By ethnicity
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 from lower working-class and higher professional backgrounds in education and training, employment and NEET, by ethnic group (UK, 2014 to 2022 combined)",
-    "data": [
-        { "label": "Lower working", "data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv" },
-        { "label": "Higher professional", "data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv" },
-        { "label": "Overview", "data": "/static/data/indicators/IN21_ethnicity_overview-20230424.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Lower working",
+	"data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv"
+    }, {
+        "label": "Higher professional",
+	"data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
+    }, {
+        "label": "Overview",
+	"data": "/static/data/indicators/IN21_ethnicity_overview-20230424.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -112,9 +123,9 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ 0, 70 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 70],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "outside",
     "labelColour": "#fff",
@@ -133,10 +144,14 @@ By disability status
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by SEB and disability (UK, 2014 to 2022 combined)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/IN21_disability_disabled-20230424.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/IN21_disability_not_disabled-20230424.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/IN21_disability_disabled-20230424.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/IN21_disability_not_disabled-20230424.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -149,9 +164,9 @@ By disability status
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ 0, 70 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 70],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "outside",
     "labelColour": "#fff",

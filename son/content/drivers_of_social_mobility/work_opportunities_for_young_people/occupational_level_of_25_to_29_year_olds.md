@@ -28,6 +28,7 @@ By year
 {
     "code": "DR33",
     "title": "Percentage of 25 to 29 year olds in each of the 5 occupational classes, over time (UK, 2014 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR33_overview-20230417.csv",
     "height": 450,
     "type": "bary",
@@ -40,8 +41,8 @@ By year
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
@@ -71,19 +72,19 @@ By area – DELETE THIS BREAKDOWN? (repeated below)
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
     "height": 700,
-    "rolloverBehaviour": "outline",
+    "dataFormat": "quintile",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
     "ykey": "Area_name",
     "sort": "-Value",
-    "dataFormat": "quintile",
-    "xgrid": false,
+    "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/DR33-occupation-level-of-25-to-29-year-olds--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -111,7 +112,7 @@ By occupational class and area
     "dataFormat": "quintile",
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 
@@ -130,7 +131,7 @@ By occupational class and area
     "dataFormat": "quintile",
     "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "onClick": "mapSelect1"
 }
 

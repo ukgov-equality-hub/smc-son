@@ -28,6 +28,7 @@ By year
 {
     "code": "IN11",
     "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_overview-20230714.csv",
     "height": 450,
     "type": "liney",
@@ -38,10 +39,11 @@ By year
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
+    "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "margin": [0, 0, 0, 0],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-year--table-format.csv",
@@ -59,11 +61,16 @@ By area
     "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
     "tooltipTitle": "Percentage of children reaching a ‘good level of development’",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [
-        { "label": "FSM eligible", "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv" },
-        { "label": "Not FSM eligible", "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv" },
-        { "label": "Gap", "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv" }
-    ],
+    "data": [{
+        "label": "FSM eligible",
+        "data": "/static/data/indicators/IN11_area_fsm_eligible-20230714.csv"
+    }, {
+        "label": "Not FSM eligible",
+        "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv"
+    }, {
+        "label": "Gap",
+        "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv"
+    }],
     "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
@@ -74,10 +81,11 @@ By area
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
     "height": 700,
+    "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -85,11 +93,10 @@ By area
     "x2key": "Not_known_to_be_FSM_eligible",
     "ykey": "Area_name",
     "sort": "-Value",
-    "dataFormat": "quintile",
-    "xgrid": false,
+    "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-ITL2-region-and-FMS--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -111,6 +118,7 @@ By sex
 {
     "code": "IN11",
     "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_gender-20230714.csv",
     "height": 450,
     "type": "bary",
@@ -124,8 +132,8 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -142,11 +150,17 @@ By ethnicity
 {
     "code": "IN11",
     "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)",
-    "data": [
-        { "label": "Girls", "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv" },
-        { "label": "Boys", "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv" },
-        { "label": "Overall", "data": "/static/data/indicators/IN11_ethnicity-20230714.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Girls",
+	"data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv"
+    }, {
+        "label": "Boys",
+	"data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv"
+    }, {
+        "label": "Overall",
+	"data": "/static/data/indicators/IN11_ethnicity-20230714.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -159,9 +173,9 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "range": [ 0, 80 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "range": [0, 80],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "outside",
     "labelColour": "#000",

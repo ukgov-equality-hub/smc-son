@@ -33,6 +33,7 @@ By socio-economic background
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN23_overview-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -44,8 +45,8 @@ By socio-economic background
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
@@ -64,6 +65,7 @@ By area
 {
     "code": "IN23",
     "title": "Highest qualification of young people",
+    "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN23_area-20230327.csv",
     "geoFormat": "",
@@ -77,9 +79,9 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -88,7 +90,7 @@ By area
     "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/IN23-highest-qualification--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -103,10 +105,14 @@ By sex
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)",
-    "data": [
-        { "label": "Men", "data": "/static/data/indicators/IN23_gender_male-20230327.csv" },
-        { "label": "Women", "data": "/static/data/indicators/IN23_gender_female-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/IN23_gender_female-20230327.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/IN23_gender_male-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -118,8 +124,8 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
@@ -138,6 +144,7 @@ By ethnicity
 {
     "code": "IN23",
     "title": "Percentage of 25 to 29 year olds with a university degree, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN23_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -152,8 +159,8 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "outside",
     "labelColour": "#000",
     "clickBehaviour": "fade",

@@ -22,6 +22,7 @@ By year
 {
     "code": "DR21",
     "title": "Percentage of 16 to 18 year olds in education, training or employment, over time (UK, 2011 to 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR21_overview-20230417.csv",
     "height": 450,
     "type": "liney",
@@ -35,8 +36,8 @@ By year
     "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
+    "margin": [0, 0, 0, 0],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR21-further-education-and-training-opportunities--by-year--table-format.csv",

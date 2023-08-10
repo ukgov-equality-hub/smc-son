@@ -27,6 +27,7 @@ By socio-economic background
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB (UK, 2021)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_overview-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -39,8 +40,8 @@ By socio-economic background
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "rolloverBehaviour": "fade",
@@ -60,6 +61,7 @@ By area
 {
     "code": "IN33",
     "title": "Occupational level of young people",
+    "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN33_area-20230327.csv",
     "geoFormat": "",
@@ -73,9 +75,9 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -84,7 +86,7 @@ By area
     "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/IN33-occupational-level--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -100,10 +102,14 @@ By sex
 {
     "code": "IN33",
     "title": "Occupational level of young people",
-    "data": [
-        { "label": "Men", "data": "/static/data/indicators/IN33_gender_male-20230327.csv" },
-        { "label": "Women", "data": "/static/data/indicators/IN33_gender_female-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/IN33_gender_female-20230327.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/IN33_gender_male-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -117,8 +123,8 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 50,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -139,6 +145,7 @@ By ethnicity
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in a professional occupation, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_ethnicity-20230327.csv",
     "height": 450,
     "type": "bary",
@@ -153,8 +160,8 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "outside",
     "labelColour": "#000",
     "clickBehaviour": "fade",
@@ -171,10 +178,14 @@ By disability status
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by disability status SEB (UK, 2014 to 2021 combined)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/IN33_disability_disabled-20230327.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/IN33_disability_disabled-20230327.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -187,8 +198,8 @@ By disability status
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",

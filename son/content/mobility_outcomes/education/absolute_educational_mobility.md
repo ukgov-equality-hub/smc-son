@@ -34,11 +34,17 @@ By sex
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO31_overview_female-20230601.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO31_overview_male-20230601.csv" },
-        { "label": "Total", "data": "/static/data/indicators/MO31_overview_total-20230601.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/MO31_overview_female-20230601.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/MO31_overview_male-20230601.csv"
+    }, {
+        "label": "Total",
+	"data": "/static/data/indicators/MO31_overview_total-20230601.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -50,8 +56,8 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -71,6 +77,7 @@ By area
 {
     "code": "MO31",
     "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO31_area-20230601.csv",
     "height": 450,
     "type": "bary",
@@ -85,8 +92,8 @@ By area
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
@@ -102,6 +109,7 @@ By ethnicity
 {
     "code": "MO31",
     "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by ethnicity (UK, 2020)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO31_ethnicity-20230601.csv",
     "height": 450,
     "type": "bary",
@@ -116,8 +124,8 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
@@ -133,10 +141,14 @@ By disability status
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -148,9 +160,9 @@ By disability status
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "range": [ 0, 0.7 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 0.7],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",

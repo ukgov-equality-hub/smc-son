@@ -26,6 +26,7 @@ By year
 {
     "code": "DR42",
     "title": "People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/DR42_overview-20230417.csv",
     "height": 450,
     "type": "liney",
@@ -41,8 +42,8 @@ By year
     "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "margin": [0, 0, 0, 0],
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR42-level-of-trust-fairness-and-helpfulness--by-year--table-format.csv",

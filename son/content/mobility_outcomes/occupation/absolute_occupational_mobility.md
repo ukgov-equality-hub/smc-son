@@ -34,10 +34,14 @@ By decade of birth (upward and downward mobility)
 {
     "code": "MO11",
     "title": "Percentages of people experiencing occupational mobility (upward, downward, and total), by birth cohort (UK, 1910 to 1999)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_overview_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_overview_male-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/MO11_overview_female-20230705.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/MO11_overview_male-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "liney",
@@ -48,11 +52,11 @@ By decade of birth (upward and downward mobility)
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
-    "yticks": 3,
+    "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "range": [ 0, 0.75 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "range": [0, 0.75],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
@@ -70,10 +74,13 @@ By decade of birth (long-range mobility)
 {
     "code": "MO11",
     "title": "Percentages of people experiencing long-range occupational mobility (upward and downward), by birth cohort (UK, 1910 to 1999)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_long_range_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_long_range_male-20230705.csv" }
-    ],
+    "data": [{
+        "label": "Women",
+        "data": "/static/data/indicators/MO11_long_range_female-20230705.csv"
+    }, {
+        "label": "Men",
+        "data": "/static/data/indicators/MO11_long_range_male-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "liney",
@@ -84,11 +91,11 @@ By decade of birth (long-range mobility)
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
-    "yticks": 3,
+    "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "range": [ 0, 0.5 ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c"],
+    "range": [0, 0.5],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
@@ -109,10 +116,13 @@ By area
     "title": "Percentage of 25 to 64 year olds who experienced long-range upward mobility from the higher and lower working classes, long-range downward mobility from the higher and lower professional classes, and quintile ranking (from the best 20% to the worst 20%), by region (UK, 2018 to 2022 combined)",
     "tooltipTitle": "Percentage of people who experienced long-range mobility",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [
-        { "label": "Higher and lower working", "data": "/static/data/indicators/MO11_area_higher_and_lower_working-20230705.csv" },
-        { "label": "Higher and lower professional", "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv" }
-    ],
+    "data": [{
+        "label": "Higher and lower working",
+        "data": "/static/data/indicators/MO11_area_higher_and_lower_working-20230705.csv"
+    }, {
+        "label": "Higher and lower professional",
+        "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv"
+    }],
     "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
@@ -125,9 +135,9 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "rolloverBehaviour": "outline",
     "background": true,
-    "colourScheme": [ "#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0" ],
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
@@ -136,7 +146,7 @@ By area
     "xgrid": true,
     "ygrid": true,
     "legend": false,
-    "margin": [ 0, 0, 0, 0 ],
+    "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -155,11 +165,17 @@ By occupational class and sex
 {
     "code": "MO11",
     "title": "Percentages of people aged 25 to 64 years in each occupational class, by parental occupational class and sex (UK, 2022)",
-    "data": [
-        { "label": "Female", "data": "/static/data/indicators/MO11_occupation_female-20230705.csv" },
-        { "label": "Male", "data": "/static/data/indicators/MO11_occupation_male-20230705.csv" },
-        { "label": "Total", "data": "/static/data/indicators/MO11_occupation_total-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Women",
+	"data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
+    }, {
+        "label": "Men",
+	"data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
+    }, {
+        "label": "Total",
+	"data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -171,8 +187,8 @@ By occupational class and sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -192,6 +208,7 @@ By ethnicity
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by ethnic group (UK, 2014 to 2022 combined)",
+    "tooltipTitle": "",
     "data": "/static/data/indicators/MO11_ethnicity-20230705.csv",
     "height": 450,
     "type": "bary",
@@ -206,8 +223,8 @@ By ethnicity
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
@@ -224,10 +241,14 @@ By disability status
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
-    "data": [
-        { "label": "Disabled", "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv" },
-        { "label": "Not disabled", "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv" }
-    ],
+    "tooltipTitle": "",
+    "data": [{
+        "label": "Disabled",
+	"data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
+    }, {
+        "label": "Not disabled",
+	"data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
+    }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
@@ -239,8 +260,8 @@ By disability status
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": [ "#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080" ],
-    "margin": [ 0, 0, 0, 0 ],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",
     "labelColour": "#fff",
