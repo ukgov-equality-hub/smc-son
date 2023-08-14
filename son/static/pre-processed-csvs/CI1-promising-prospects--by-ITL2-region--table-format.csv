@@ -1,42 +1,42 @@
-﻿ITL2 region name TODO,Index of 'promising prospects',Quintile
-Bedfordshire and Hertfordshire,0.642002273,5
-"Berkshire, Buckinghamshire and Oxfordshire",0.415468845,4
-Cheshire,0.156786672,1
-Cornwall and Isles of Scilly,0.229938213,2
+﻿Region,Index of 'promising prospects',Quintile
+Bedfordshire and Hertfordshire,0.642002273,1
+"Berkshire, Buckinghamshire and Oxfordshire",0.415468845,2
+Cheshire,0.156786672,5
+Cornwall and Isles of Scilly,0.229938213,4
 Cumbria,0.360233401,3
-Derbyshire and Nottinghamshire,0.25111879,2
-Devon,0.430095801,4
-Dorset and Somerset,0.447603284,4
-East Anglia,0.000000001,1
+Derbyshire and Nottinghamshire,0.25111879,4
+Devon,0.430095801,2
+Dorset and Somerset,0.447603284,2
+East Anglia,0.000000001,5
 East Wales,0.340387397,3
 East Yorkshire and Northern Lincolnshire,0.322373786,3
-Eastern Scotland,0.000000001,1
-Essex,0.419147895,4
-"Gloucestershire, Wiltshire and Bath/Bristol area",0.210194444,2
-Greater Manchester,0.260798572,2
+Eastern Scotland,0.000000001,5
+Essex,0.419147895,2
+"Gloucestershire, Wiltshire and Bath/Bristol area",0.210194444,4
+Greater Manchester,0.260798572,4
 Hampshire and Isle of Wight,0.284456234,3
-"Herefordshire, Worcestershire and Warwickshire",0.415275206,4
+"Herefordshire, Worcestershire and Warwickshire",0.415275206,2
 Highlands and Islands,0.285128351,3
-Inner London - East,0.640524955,5
-Inner London - West,0.514215393,5
+Inner London - East,0.640524955,1
+Inner London - West,0.514215393,1
 Kent,0.292406439,3
-Lancashire,0.000000001,1
-"Leicestershire, Rutland and Northamptonshire",0.470585508,4
-Lincolnshire,0.117450904,1
-Merseyside,0.275045261,2
-North Eastern Scotland,0.37462946,4
-North Yorkshire,0.591729886,5
-Northern Ireland,0.252119882,2
-"Northumberland, and Tyne and Wear",0.181324286,2
-Outer London - East and North East,0.705026477,5
-Outer London - South,0.49845474,5
-Outer London - West and North West,0.600074903,5
-Shropshire and Staffordshire,0.270478988,2
-South Yorkshire,0.076701765,1
-Southern Scotland,0.131566033,1
-"Surrey, East and West Sussex",0.870359624,5
-Tees Valley and Durham,0.040580522,1
+Lancashire,0.000000001,5
+"Leicestershire, Rutland and Northamptonshire",0.470585508,2
+Lincolnshire,0.117450904,5
+Merseyside,0.275045261,4
+North Eastern Scotland,0.37462946,2
+North Yorkshire,0.591729886,1
+Northern Ireland,0.252119882,4
+"Northumberland, and Tyne and Wear",0.181324286,4
+Outer London - East and North East,0.705026477,1
+Outer London - South,0.49845474,1
+Outer London - West and North West,0.600074903,1
+Shropshire and Staffordshire,0.270478988,4
+South Yorkshire,0.076701765,5
+Southern Scotland,0.131566033,5
+"Surrey, East and West Sussex",0.870359624,1
+Tees Valley and Durham,0.040580522,5
 West Central Scotland,0.297985392,3
-West Midlands,0.39184467,4
+West Midlands,0.39184467,2
 West Wales and The Valleys,0.297828072,3
-West Yorkshire,0.102969694,1
+West Yorkshire,0.102969694,5
