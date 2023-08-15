@@ -962,10 +962,8 @@ class Chart {
 
                                 //d3.select(`#${self.el}`).selectAll(`[data-series="${this.getAttribute('data-series')}"]`).raise()
                                 const tipSize = tip.node().getBBox()
-                                if (pointer[0] + tipSize.x < 0) {
-                                    tip.attr('transform', `translate(${tipSize.width / 2}, ${pointer[1] + 7})`)
-                                } else if (pointer[0] + tipSize.width / 2 > wrapper.attr('width')) {
-                                    tip.attr('transform', `translate(${wrapper.attr('width') - tipSize.width / 2}, ${pointer[1] + 7})`)
+                                if (pointer[0] + tipSize.width > wrapper.attr('width')) {
+                                    tip.attr('transform', `translate(${pointer[0] - (tipSize.width - (wrapper.attr('width') - pointer[0]))}, ${pointer[1] + 7})`)
                                 }
                             }
 
