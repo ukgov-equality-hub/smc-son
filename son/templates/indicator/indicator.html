@@ -99,7 +99,7 @@
 
     {% if item[0] == 'Section' %}
     <hr class="divider">
-    <h3 class="govuk-heading-m"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h3>
+    <h2 class="govuk-heading-l"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h2>
     {% endif %}
 
     {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
@@ -107,7 +107,7 @@
     {% endif %}
 
     {% if item[0] == 'Subtitle' %}
-    <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
+    <h2 class="govuk-heading-l">{{ item[1] | safe }}</h2>
     {% endif %}
 
     {% if item[0] == 'Text' %}
