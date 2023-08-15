@@ -359,7 +359,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1],
-    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
+    "dataTableTitle": "Percentage of students meeting the expected standard in reading, writing and maths by the end of key stage 2, by region and eligibility for free school meals (FSM)"
 }
 
 # Guidance

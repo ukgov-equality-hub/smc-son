@@ -49,7 +49,7 @@ By socio-economic background
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1],
-    "dataTableTitle": "TODO: explain that rows are the parent and columns are the child TODO. Original title: Percentage of 25 to 29 year olds in different occupational levels, by SEB (UK, 2021)"
+    "dataTableHelpText": "Young people’s socio-economic background is shown in rows, occupational level is in columns"
 }
 
 ## Section
@@ -59,7 +59,7 @@ By area
 # Src
 {
     "code": "IN33",
-    "title": "Occupational level of young people",
+    "title": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average, and quintile ranking (from best 20% to worst 20%) (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN33_area-20230327.csv",
@@ -91,7 +91,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 3],
-    "dataTableTitle": "TODO explain random effect TODO. Original title: Occupational level of young people"
+    "dataTableTitle": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average (UK, 2014 to 2021 combined)"
 }
 
 ## Section
@@ -100,7 +100,7 @@ By sex
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Occupational level of young people",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2021)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -133,7 +133,7 @@ By sex
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2,
-    "dataTableTitle": "TODO: explain that rows are the parent and columns are the child TODO. Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2021)"
+    "dataTableHelpText": "Young people’s socio-economic background is shown in rows, occupational level is in columns"
 }
 
 ## Section
@@ -175,7 +175,7 @@ By disability status
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by disability status SEB (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2021)",
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
@@ -207,7 +207,7 @@ By disability status
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2,
-    "dataTableTitle": "TODO: explain that rows are the parent and columns are the child TODO. Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2021)"
+    "dataTableHelpText": "Young people’s socio-economic background is shown in rows, occupational level is in columns"
 }
 
 ## About the data

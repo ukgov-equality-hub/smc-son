@@ -137,8 +137,8 @@ By sex
     "clickBehaviour": "fade",
     "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2, 2, 2]
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## Section

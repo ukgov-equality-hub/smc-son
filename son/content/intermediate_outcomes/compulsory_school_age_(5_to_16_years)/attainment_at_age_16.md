@@ -132,7 +132,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1],
-    "dataTableTitle": "TODO perhaps we could do with a caption here, rather than the default of 'Attainment at age 16' TODO"
+    "dataTableTitle": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by region"
 }
 
 # Guidance
