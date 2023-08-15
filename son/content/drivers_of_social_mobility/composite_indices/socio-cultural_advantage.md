@@ -31,6 +31,7 @@ Data on ‘sociocultural advantage’ in UK regions – measured by levels of un
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

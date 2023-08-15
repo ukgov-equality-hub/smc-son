@@ -106,6 +106,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

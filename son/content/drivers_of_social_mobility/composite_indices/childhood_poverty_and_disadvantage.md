@@ -31,6 +31,7 @@ Data for UK regions on factors that can reduce people’s social mobility chance
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

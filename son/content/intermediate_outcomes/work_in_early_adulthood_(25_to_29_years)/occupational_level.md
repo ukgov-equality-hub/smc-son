@@ -84,6 +84,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -104,10 +105,10 @@ By sex
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
-	"data": "/static/data/indicators/IN33_gender_female-20230327.csv"
+        "data": "/static/data/indicators/IN33_gender_female-20230327.csv"
     }, {
         "label": "Men",
-	"data": "/static/data/indicators/IN33_gender_male-20230327.csv"
+        "data": "/static/data/indicators/IN33_gender_male-20230327.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -122,7 +123,7 @@ By sex
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 50,
     "textLabels": "center",
@@ -179,10 +180,10 @@ By disability status
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
-	"data": "/static/data/indicators/IN33_disability_disabled-20230327.csv"
+        "data": "/static/data/indicators/IN33_disability_disabled-20230327.csv"
     }, {
         "label": "Not disabled",
-	"data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv"
+        "data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv"
     }],
     "toggle": "radio",
     "height": 450,

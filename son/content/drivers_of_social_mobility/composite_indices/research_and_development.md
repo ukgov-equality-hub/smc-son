@@ -31,6 +31,7 @@ Data on conditions that favour research and development across UK regions – me
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

@@ -60,11 +60,11 @@ By sex
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
     "data": [{
-        "label": "Female",
-	"data": "/static/data/indicators/IN21_gender_female-20230424.csv"
+        "label": "Women",
+        "data": "/static/data/indicators/IN21_gender_female-20230424.csv"
     }, {
-        "label": "Male",
-	"data": "/static/data/indicators/IN21_gender_male-20230424.csv"
+        "label": "Men",
+        "data": "/static/data/indicators/IN21_gender_male-20230424.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -102,13 +102,13 @@ By ethnicity
     "tooltipTitle": "",
     "data": [{
         "label": "Lower working",
-	"data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv"
+        "data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv"
     }, {
         "label": "Higher professional",
-	"data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
+        "data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
     }, {
         "label": "Overview",
-	"data": "/static/data/indicators/IN21_ethnicity_overview-20230424.csv"
+        "data": "/static/data/indicators/IN21_ethnicity_overview-20230424.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -146,10 +146,10 @@ By disability status
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
-	"data": "/static/data/indicators/IN21_disability_disabled-20230424.csv"
+        "data": "/static/data/indicators/IN21_disability_disabled-20230424.csv"
     }, {
         "label": "Not disabled",
-	"data": "/static/data/indicators/IN21_disability_not_disabled-20230424.csv"
+        "data": "/static/data/indicators/IN21_disability_not_disabled-20230424.csv"
     }],
     "toggle": "radio",
     "height": 450,

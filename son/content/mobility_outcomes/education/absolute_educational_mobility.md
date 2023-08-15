@@ -37,13 +37,13 @@ By sex
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
-	"data": "/static/data/indicators/MO31_overview_female-20230601.csv"
+        "data": "/static/data/indicators/MO31_overview_female-20230601.csv"
     }, {
         "label": "Men",
-	"data": "/static/data/indicators/MO31_overview_male-20230601.csv"
+        "data": "/static/data/indicators/MO31_overview_male-20230601.csv"
     }, {
         "label": "Total",
-	"data": "/static/data/indicators/MO31_overview_total-20230601.csv"
+        "data": "/static/data/indicators/MO31_overview_total-20230601.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -143,10 +143,10 @@ By disability status
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
-	"data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
+        "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
     }, {
         "label": "Not disabled",
-	"data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
+        "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
     }],
     "toggle": "radio",
     "height": 450,

@@ -92,10 +92,10 @@ By sex
     "tooltipTitle": "",
     "data": [{
         "label": "Boys",
-	"data": "/static/data/indicators/IN12_gender_male-20230531.csv"
+        "data": "/static/data/indicators/IN12_gender_male-20230531.csv"
     }, {
         "label": "Girls",
-	"data": "/static/data/indicators/IN12_gender_female-20230531.csv"
+        "data": "/static/data/indicators/IN12_gender_female-20230531.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -133,19 +133,19 @@ By ethnicity
     "tooltipTitle": "",
     "data": [{
         "label": "2015-16",
-	"data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"
+        "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"
     }, {
         "label": "2016-17",
-	"data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"
+        "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"
     }, {
         "label": "2017-18",
-	"data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"
+        "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"
     }, {
         "label": "2018-19",
-	"data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"
+        "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"
     }, {
         "label": "2021-22",
-	"data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"
+        "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"
     }],
     "toggle": "radio",
     "height": 1450,
@@ -324,9 +324,6 @@ By area
     }, {
         "label": "Not FSM eligible",
         "data": "/static/data/indicators/IN12_area_not_fsm_eligible-20230531.csv"
-    }, {
-        "label": "Gap",
-        "data": "/static/data/indicators/IN12_area_fsm_compare-20230531.csv"
     }],
     "toggle": "radio",
     "geoFormat": "",
@@ -352,6 +349,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

@@ -31,6 +31,7 @@ Data on the UK regions with the most difficult economic circumstances for 25 to 
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
