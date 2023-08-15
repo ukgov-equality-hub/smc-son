@@ -13,7 +13,7 @@
 
 {% block content %}
 <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
-    <h1 class="govuk-heading-l">{{ title }}</h1>
+    <h1 class="govuk-heading-xl">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
     {% if not ([content, 'Code'] | content) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
@@ -103,7 +103,9 @@
     {% endif %}
 
     {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
-    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1', 'H2'] %}l{% endif %}{% if item[0] in ['H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %}">{{ item[1] | safe }}</{{ item[0] | lower }}>
+    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1', 'H2'] %}l{% endif %}{% if item[0] in ['H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %} {% if item[0] in ['H3', 'H4', 'H5', 'H6'] %}govuk-!-margin-bottom-1 govuk-!-padding-top-0{% endif %}">
+        {{ item[1] | safe }}
+    </{{ item[0] | lower }}>
     {% endif %}
 
     {% if item[0] == 'Subtitle' %}

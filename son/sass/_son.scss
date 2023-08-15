@@ -199,7 +199,7 @@
 }
 
 ol.toc {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     li {
         a {
@@ -215,6 +215,10 @@ hr.divider {
 ul.list-disc {
     list-style-type: disc;
     margin-left: 20px;
+}
+
+p.govuk-body:has(+ ul.govuk-list.govuk-list--bullet) {
+  margin-bottom: 5px;
 }
 
 p.sub-header {
