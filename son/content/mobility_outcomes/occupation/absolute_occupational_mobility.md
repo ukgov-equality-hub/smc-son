@@ -145,6 +145,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -170,13 +171,13 @@ By occupational class and sex
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
-	"data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
+        "data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
     }, {
         "label": "Men",
-	"data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
+        "data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
     }, {
         "label": "Total",
-	"data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
+        "data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
     }],
     "toggle": "radio",
     "height": 450,
@@ -245,10 +246,10 @@ By disability status
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
-	"data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
+        "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
     }, {
         "label": "Not disabled",
-	"data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
+        "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
     }],
     "toggle": "radio",
     "height": 450,

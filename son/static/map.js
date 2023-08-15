@@ -153,6 +153,7 @@ class Choropleth {
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         let domain = options.domain || []
@@ -483,6 +484,10 @@ class Choropleth {
                 .attr('data-quantile', x => {
                     if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                         const d = data.filter(x => isNumeric(x[valueField]))
+                        if (quantile && quantile != '') {
+                            const q = getValue(x, areaField, quantile, d)
+                            if (q) return q
+                        }
                         const ranges = getQuantileRanges(d.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
                         const val = getValue(x, areaField, valueField, d)
                         return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
@@ -619,7 +624,14 @@ class Choropleth {
                 const val = getValue(x, areaField, valueField, data)
                 if (val == null) return 'grey'
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                    const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat), q = getQuantile(ranges, val)
+                    let q = null
+                    if (quantile && quantile != '') q = getValue(x, areaField, quantile, data)
+                    if (q) {
+                        q -= 1
+                    } else {
+                        const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
+                        q = getQuantile(ranges, val)
+                    }
                     return colourScheme[q] || 'grey'
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
@@ -1169,6 +1181,8 @@ class Choropleth {
         const svgs = document.getElementById(this.el).getElementsByTagName('svg')
         let svg = svgs[svgs.length - 1]
         svg = addfont(svg)
+        const bg = svg.style.backgroundColor
+        svg.style.backgroundColor = '#fff'
         let resolve, reject
         const promise = new Promise((y, n) => (resolve = y, reject = n))
         const image = new Image
@@ -1185,6 +1199,7 @@ class Choropleth {
             context.canvas.toBlob(resolve)
         }
         image.src = URL.createObjectURL(serialize(svg))
+        svg.style.backgroundColor = bg
         return promise
     }
 }

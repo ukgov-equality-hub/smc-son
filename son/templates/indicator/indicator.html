@@ -253,8 +253,14 @@
                 //document.getElementById(`map_marker${el}`).style.visibility = 'visible'
                 //document.getElementById(`map_legend${el}`).innerText = `${a.name}: ${a.value}`
                 //document.getElementById(`map_marker${el}`).style.marginLeft = `calc(${(parseInt(a.rank.split('/')[0], 10) - 1) / (parseInt(a.rank.split('/')[1], 10) - 1) * 100}%)`
-                if (map) map.highlight(a.name)
-                if (chart) chart.highlight(a.name)
+                if (map) {
+                    map.resetHighlight()
+                    map.highlight(a.name)
+                }
+                if (chart) {
+                    chart.resetHighlight()
+                    chart.highlight(a.name)
+                }
             } else {
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
                 //document.getElementById(`map_marker${el}`).style.visibility = 'hidden'

@@ -67,9 +67,6 @@ By area
     }, {
         "label": "Not FSM eligible",
         "data": "/static/data/indicators/IN11_area_not_fsm_eligible-20230714.csv"
-    }, {
-        "label": "Gap",
-        "data": "/static/data/indicators/IN11_area_fsm_compare-20230714.csv"
     }],
     "toggle": "radio",
     "geoFormat": "",
@@ -95,6 +92,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -151,13 +149,13 @@ By ethnicity
     "tooltipTitle": "",
     "data": [{
         "label": "Girls",
-	"data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv"
+        "data": "/static/data/indicators/IN11_ethnicity_female-20230714.csv"
     }, {
         "label": "Boys",
-	"data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv"
+        "data": "/static/data/indicators/IN11_ethnicity_male-20230714.csv"
     }, {
         "label": "Overall",
-	"data": "/static/data/indicators/IN11_ethnicity-20230714.csv"
+        "data": "/static/data/indicators/IN11_ethnicity-20230714.csv"
     }],
     "toggle": "radio",
     "height": 450,

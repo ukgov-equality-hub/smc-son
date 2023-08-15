@@ -207,4 +207,11 @@
         {% endif %}
     </div>
 </div>
+<script>
+    function downloadDataFile(datafile, options) {
+        const filename = datafile.substring(datafile.lastIndexOf('/') + 1, datafile.lastIndexOf('.'))
+        const format = 'csv'
+        return new DataUtils().downloadData(datafile, `${filename}.${format}`, format, '', options)
+    }
+</script>
 {% endmacro %}

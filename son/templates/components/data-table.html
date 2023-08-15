@@ -121,11 +121,6 @@
             dataTable{{ id }}.downloadData('csv', true)
         }
     }
-
-    function downloadDataFile(datafile, options) {
-        format = 'csv'
-        return new DataUtils().downloadData(datafile, `download.${format}`, format, '', options)
-    }
 </script>
 {% endif %}
 {% endmacro %}
