@@ -92,7 +92,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 4],
-    "dataTableTitle": "TODO explain this in terms of random effect TODO. Original title was: Percentage of 25 to 29 year olds who were economically active, by region (UK, 2014 to 2021 combined)"
+    "dataTableTitle": "Variation in economic activity among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
 }
 
 ## Section

@@ -59,7 +59,7 @@ By area
 # Src
 {
     "code": "IN34",
-    "title": "(Not clear what this is showing and why)",
+    "title": "Variation in mean (average) hourly earnings among 25 to 29 year olds by region compared with the average, and quintile ranking (from best 20% to worst 20%) (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN34_area-20230327.csv",
@@ -91,7 +91,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1],
-    "dataTableTitle": "TODO explain random effect TODO."
+    "dataTableTitle": "Variation in mean (average) hourly earnings among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
 }
 
 ## Section

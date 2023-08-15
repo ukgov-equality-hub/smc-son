@@ -1,8 +1,8 @@
-﻿Ethnicity,Pupils receiving free school meals,,All other pupils,
-,Boys,Girls,Boys,Girls
-Asian/Asian British,48.7,63.6,59.9,73
-Black/African/Caribbean/Black British,47.1,63.2,54.1,71.4
-Mixed/multiple ethnic groups,47.2,62.6,64.6,77.2
+﻿Ethnicity,FSM-eligible pupils,,Non-eligible pupils,
+,Boys (%),Girls (%),Boys (%),Girls (%)
+Asian,48.7,63.6,59.9,73
+Black,47.1,63.2,54.1,71.4
+Mixed,47.2,62.6,64.6,77.2
 White,39.9,54.3,64.3,77.1
 Other ethnic group,41.8,54,52.1,64.5
 Unclassified,37.6,54.7,44.9,55.7

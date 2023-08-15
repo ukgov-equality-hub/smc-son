@@ -1,5 +1,5 @@
-﻿Age,Lower working,,Higher working,,Intermediate,,Lower professional,,Higher professional,
-,Men,Women,Men,Women,Men,Women,Men,Women,Men,Women
+﻿Age (years),Lower working,,Higher working,,Intermediate,,Lower professional,,Higher professional,
+,Men (%),Women (%),Men (%),Women (%),Men (%),Women (%),Men (%),Women (%),Men (%),Women (%)
 25,24.4136,25.8399,30.8492,31.3404,33.7374,34.9835,44.1435,44.2831,49.6187,48.2783
 26,25.6837,26.7435,32.5935,32.589,35.6821,36.4527,46.706,46.2547,52.4217,50.428
 27,26.8726,27.5574,34.2457,33.7403,37.5276,37.8186,49.1292,48.1013,55.0543,52.4396

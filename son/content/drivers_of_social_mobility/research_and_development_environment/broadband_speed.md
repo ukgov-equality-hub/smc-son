@@ -65,7 +65,7 @@ By area
 # Src
 {
     "code": "DR51",
-    "title": "Median (average) broadband speed, by area over time (UK, 2014 to 2019)",
+    "title": "Median (average) broadband speed in megabits per second, by area over time (UK, 2014 to 2019)",
     "tooltipTitle": "Median (average) broadband speed",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{

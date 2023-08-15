@@ -91,7 +91,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2],
-    "dataTableTitle": "TODO title including explaining random effect TODO. Original title was: Percentage of people aged 25 to 29 years who were unemployed, by region (UK, 2014 to 2021 combined)"
+    "dataTableTitle": "Variation in unemployment among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
 }
 
 ## Section
