@@ -11,15 +11,19 @@ Data on the percentage of 5 year olds who achieve a ‘good level of development
 Summary main findings
 
 ## Text
-In the 7 school years ending in July 2019, the percentage of 5 year olds who achieved a good level of development (meeting at least the expected standard in the early years foundation stage) went up from 52% to 72%. It went down to 65% in the 2021 to 2022 school year.
+In the 7 school years ending in July 2019, the percentage of 5 year olds who achieved a good level of development
+(meeting at least the expected standard in the early years foundation stage) went up from 52% to 72%.
+It went down to 65% in the 2021 to 2022 school year.
 
 In the 2021 to 2022 school year:
-<ul class="govuk-list">
-<li>49% of pupils eligible for free school meals (FSM) and 69% of non-eligible pupils achieved a good level of development</li>
-<li>75% of girls and 62% of boys achieved a good level of development – for students eligible for FSM, 57% of girls and 42% of boys achieved the level</li>
-<li>FSM-eligible children from Black, Asian and Mixed ethnic backgrounds were more likely to achieve a good level of development than FSM-eligible White children</li>
-<li>FSM-eligible pupils in London, East Yorkshire and North Lincolnshire, and the West Midlands were the most likely out of all areas to to achieve a good level of development – pupils in Cumbria were the least likely to</li>
-</ul>
+
+* 49% of pupils eligible for free school meals (FSM) and 69% of non-eligible pupils achieved a good level of development
+* 75% of girls and 62% of boys achieved a good level of development – for students eligible for FSM, 57% of girls
+  and 42% of boys achieved the level
+* FSM-eligible children from Black, Asian and Mixed ethnic backgrounds were more likely to achieve a good level of
+  development than FSM-eligible White children
+* FSM-eligible pupils in London, East Yorkshire and North Lincolnshire, and the West Midlands were the most likely
+  out of all areas to to achieve a good level of development – pupils in Cumbria were the least likely to
 
 ## Section
 By year
@@ -103,9 +107,15 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
-The figure for each region shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old. Figures are shown separately for FSM-eligible pupils and non-eligible pupils. The gap between these 2 groups is also shown for each region.<br>
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+
+The figure for each region shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
+Figures are shown separately for FSM-eligible pupils and non-eligible pupils.
+The gap between these 2 groups is also shown for each region.<br>
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
+the region is highly likely to be within. Read more about [confidence intervals].
 
 ## Section
 By sex
@@ -183,32 +193,38 @@ By ethnicity
     "dataTableNumberOfHeadingRows": 2
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Department for Education. Early years foundation stage (EYFS) profile results from the 2021 to 2022 academic year, 2022.
 
-# Time period
+### Time period
 September 2012 to July 2022
 
-# Geographic area
+### Geographic area
 England
 
-# What the data measures
+### What the data measures
 The data shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
 
-A child is classed as having a good level of development if they meet at least the expected standard in the early years foundation stage (EYFS).
+A child is classed as having a good level of development if they meet at least the expected standard in the early
+years foundation stage (EYFS).
 
-# Things you need to know
-The EYFS was updated in September 2021. This means data for the 2021 to 2022 school year is not directly comparable with data for earlier years.
+### Things you need to know
+The EYFS was updated in September 2021. This means data for the 2021 to 2022 school year is not directly comparable
+with data for earlier years.
 
 Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
 
-Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education. Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
+Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education.
+Children are eligible for FSM if their parents receive certain benefits.
+FSM are provided to roughly 15% of students. 
 
-# Type of data
+### Type of data
 Administrative data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

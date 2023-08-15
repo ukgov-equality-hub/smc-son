@@ -13,18 +13,22 @@ Summary main findings
 ## Text
 Young people’s socio-economic background is strongly related to the highest qualification level they achieve.
 
-In 2021, 71% of 25 to 29 year olds from higher professional backgrounds had a first or higher degree, compared with 27% of those from the lower working class.
+In 2021, 71% of 25 to 29 year olds from higher professional backgrounds had a first or higher degree,
+compared with 27% of those from the lower working class.
 
-Young women from every socio-economic background were more likely to have a first degree and less likely to have lower-level qualifications than young men from the same socio-economic background. 
+Young women from every socio-economic background were more likely to have a first degree and less likely to have
+lower-level qualifications than young men from the same socio-economic background. 
 
 Out of all combinations of sex and socio-economic background:
-<ul class="govuk-list">
-<li>young men from lower working-class backgrounds were the least qualified – 20% had a first or higher degree</li>
-<li>young women from higher professional backgrounds were the most qualified – 71% had a first or higher degree</li>
-</ul>
-25 to 29 year olds from higher professional backgrounds in the Chinese, Indian, Black African, Mixed and Other ethnic groups were more likely to have degrees than White people from the same socio-economic background.
 
-Disabled young people from every socio-economic background were less likely than non-disabled young people to have a university degree. They were also more likely to have lower-level qualifications.
+* young men from lower working-class backgrounds were the least qualified – 20% had a first or higher degree
+* young women from higher professional backgrounds were the most qualified – 71% had a first or higher degree
+
+25 to 29 year olds from higher professional backgrounds in the Chinese, Indian, Black African, Mixed and Other
+ethnic groups were more likely to have degrees than White people from the same socio-economic background.
+
+Disabled young people from every socio-economic background were less likely than non-disabled young people to have
+a university degree. They were also more likely to have lower-level qualifications.
 
 ## Section
 By socio-economic background
@@ -170,32 +174,39 @@ By ethnicity
     "dataTableDecimalPlaces": [null, 1, 1]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
-# Time period
+### Time period
 2014 to 2021 (combined)
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data shows the highest qualification achieved by people aged 25 to 29 years in the UK, by socio-economic background.
 
-# Things you need to know
-People’s socio-economic background is measured by the occupation of the main wage earner in their household when they were 14 years old.
+### Things you need to know
+People’s socio-economic background is measured by the occupation of the main wage earner in their household when they
+were 14 years old.
 
-For data by ethnicity, the data shows whether young people had a university degree or not. This is because the number of people surveyed was too small to measure some qualification levels reliably. The percentages shown are those for men. 
+For data by ethnicity, the data shows whether young people had a university degree or not.
+This is because the number of people surveyed was too small to measure some qualification levels reliably.
+The percentages shown are those for men. 
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months
+or more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
 Data is weighted using LFS population weights.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

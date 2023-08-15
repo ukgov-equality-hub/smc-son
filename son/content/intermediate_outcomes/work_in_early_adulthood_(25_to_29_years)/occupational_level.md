@@ -11,14 +11,18 @@ Data on the occupational class people are in at 25 to 29 years old, by socio-eco
 Summary main findings
 
 ## Text
-In 2021, 27% of 25 to 29 year olds from a higher professional-class background were in a higher professional occupation. This was nearly 3 times the percentage for people from a lower working class background in a higher professional occupation (10%).
+In 2021, 27% of 25 to 29 year olds from a higher professional-class background were in a higher professional occupation.
+This was nearly 3 times the percentage for people from a lower working class background in a higher professional occupation (10%).
 
 Data for 2014 to 2021 combined shows that:
-<ul class="govuk-list">
-<li>young women were less likely to be in higher professional occupations than young men from the same socio-economic background – for example, 20% of young women and 28% of young men from higher professional backgrounds were in higher professional occupations</li>
-<li>young people with Indian and Chinese ethnic backgrounds had higher chances of being in a professional occupation than young people from similar socio-economic backgrounds – the chances of young people with Pakistani ethnic backgrounds were lower</li>
-<li>disabled young people were more likely to be in a lower working class occupation than non-disabled young people from the same socio-economic background</li>
-</ul>
+
+* young women were less likely to be in higher professional occupations than young men from the same socio-economic
+  background – for example, 20% of young women and 28% of young men from higher professional backgrounds were in
+  higher professional occupations
+* young people with Indian and Chinese ethnic backgrounds had higher chances of being in a professional occupation than
+  young people from similar socio-economic backgrounds – the chances of young people with Pakistani ethnic backgrounds were lower
+* disabled young people were more likely to be in a lower working class occupation than non-disabled young people from
+  the same socio-economic background
 
 ## Section
 By socio-economic background
@@ -211,41 +215,47 @@ By disability status
     "dataTableHelpText": "Young people’s socio-economic background is shown in rows, occupational level is in columns"
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
-# Time period
+### Time period
 2014 to 2021 (combined)
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data shows the occupation level of 25 to 29 year olds in the UK, by socio-economic background (SEB).
 
 We use the following 5 categories of socio-economic background and occupational level:
-<ul class="govuk-list">
-<li>higher professional and managerial</li>
-<li>lower professional and managerial</li>
-<li>intermediate</li>
-<li>higher working class</li>
-<li>lower working class</li>
-</ul>
+
+* higher professional and managerial
+* lower professional and managerial
+* intermediate
+* higher working class
+* lower working class
 
 These are based on the National Statistics Socio-economic Classification (‘NS-SEC’), set by the Office for National Statistics (ONS).
 
-# Things you need to know
+### Things you need to know
 Data is weighted using LFS population weights.
 
-For data by ethnicity, the data shows whether young people are in a professional occupation (either higher or lower professional), and percentages are shown only for people from lower working class and higher professional class backgrounds. This is because the number of people surveyed was too small to measure all socio-economic backgrounds and occupation levels reliably. The estimated percentages are those for men. 
+For data by ethnicity, the data shows whether young people are in a professional occupation (either higher or lower
+professional), and percentages are shown only for people from lower working class and higher professional class backgrounds.
+This is because the number of people surveyed was too small to measure all socio-economic backgrounds and occupation levels reliably.
+The estimated percentages are those for men. 
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
+more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

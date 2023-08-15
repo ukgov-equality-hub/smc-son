@@ -96,31 +96,38 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest number of research students. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
+[41 regions in the UK] are ranked from the highest to lowest number of research students.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
+
 The figure for each region shows the number of research students in that region.
 
-## About the data
-# Data source
-Department for Business, Energy and Industrial Strategy, and Nesta Research and Development spatial data tool, 2021
-
-# Time period
-2015 to 2018
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows the relative increase in the number of research students in the UK between 2015 and 2018. It also shows the number of students in each region of the UK.
-
-# Things you need to know
-Nesta data includes regional scores but not a national average figure. To track changes over time, we use the area with the median number of university students each year. 
-<br>
-The median is the middle point of a range of numbers which are arranged in order. In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
-
-# Type of data
-Administrative data
+## Section
+About the data
 
 ## Text
+### Data source
+Department for Business, Energy and Industrial Strategy, and Nesta Research and Development spatial data tool, 2021
+
+### Time period
+2015 to 2018
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows the relative increase in the number of research students in the UK between 2015 and 2018.
+It also shows the number of students in each region of the UK.
+
+### Things you need to know
+Nesta data includes regional scores but not a national average figure.
+To track changes over time, we use the area with the median number of university students each year. 
+
+The median is the middle point of a range of numbers which are arranged in order.
+In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
+
+### Type of data
+Administrative data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

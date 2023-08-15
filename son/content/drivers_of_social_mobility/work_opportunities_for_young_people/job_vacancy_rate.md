@@ -11,8 +11,9 @@ Data on the number of vacancies for every unemployed person in the UK from 2001 
 Summary main findings
 
 ## Text
-There were more vacancies for every jobseeker in 2021 and 2022 than at any time in the previous 20 years, at around 0.9 vacancies for every unemployed person.
-<br>
+There were more vacancies for every jobseeker in 2021 and 2022 than at any time in the previous 20 years,
+at around 0.9 vacancies for every unemployed person.
+
 The job vacancy rate was at its lowest between 2010 and 2012, at around 0.2 vacancies for every unemployed person.
 
 ## Section
@@ -44,37 +45,39 @@ By year
     "dataTableDecimalPlaces": [null, 2]
 }
 
-## About the data
-# Data source(s)
-Office for National Statistics, Vacancy Survey and Labour Force Survey
-
-# Time period
-2001 to 2022
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows the number of vacancies for every unemployed person in the UK. 
-<br>
-The vacancy rate is based on:
-
-<ul class="govuk-list">
-<li>the number of unemployed people aged 16 to 64</li>
-<li>the number of vacancies</li>
-</ul>
-
-All estimates are based on data for October to December each year.
-<br>
-Rates are rounded to 1 decimal place.
-
-# Things you need to know
-Figures are seasonally adjusted to account for variations during the year. Read more about [seasonal adjustment](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/seasonaladjustment){: target="_blank"} from ONS.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source(s)
+Office for National Statistics, Vacancy Survey and Labour Force Survey
+
+### Time period
+2001 to 2022
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows the number of vacancies for every unemployed person in the UK. 
+
+The vacancy rate is based on:
+
+* the number of unemployed people aged 16 to 64
+* the number of vacancies
+
+All estimates are based on data for October to December each year.
+
+Rates are rounded to 1 decimal place.
+
+### Things you need to know
+Figures are seasonally adjusted to account for variations during the year. Read more about
+[seasonal adjustment](https://www.ons.gov.uk/methodology/methodologytopicsandstatisticalconcepts/seasonaladjustment){: target="_blank"}
+from ONS.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

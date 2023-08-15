@@ -52,39 +52,43 @@ By socio-economic background
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics (ONS), Labour Force Survey (LFS) from 2014 and 2021
 
-# Time period
+### Time period
 2014 and 2021
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
-The data shows the percentage of people born in 1989 who had a university degree by the ages of 25 and 32 years old, by socio-economic background.
+### What the data measures
+The data shows the percentage of people born in 1989 who had a university degree by the ages of 25 and 32 years old,
+by socio-economic background.
 
 Data is shown for the following socio-economic backgrounds:
-<ul class="govuk-list">
-<li>professional class (combining the higher and lower professional classes)</li>
-<li>intermediate class</li>
-<li>working class (combining the higher and lower working classes)</li>
-</ul>
+
+* professional class (combining the higher and lower professional classes)
+* intermediate class
+* working class (combining the higher and lower working classes)
 
 These are based on the National Statistics Socio-economic Classification (NS-SEC), set by the ONS.
 
-# Things you need to know
+### Things you need to know
 Data is weighted using LFS population weights.
 
-The data compares 2 separate samples from surveys carried out in 2014 and 2021. It does not compare the same individuals at different time points. 
+The data compares 2 separate samples from surveys carried out in 2014 and 2021. It does not compare the same
+individuals at different time points. 
 
-The data includes people aged 25 years in the first group, as most young people have completed full-time education and started work by that age.
+The data includes people aged 25 years in the first group, as most young people have completed full-time education
+and started work by that age.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
