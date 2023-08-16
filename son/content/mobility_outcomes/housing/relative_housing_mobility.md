@@ -82,38 +82,6 @@ By area
 }
 
 ## Section
-By age
-
-## Chart: Single-bar
-{
-    "code": "MO42",
-    "title": "Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO42_age-20230602.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Age",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Age",
-    "scale": "Odds ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "margin": [0, 0, 0, 0],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/MO42-relative-housing-mobility--by-age--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
-
-## Section
 By sex
 
 ## Chart: Single-bar
@@ -206,9 +174,9 @@ Data is weighted using the WAS individual weights.
 
 Logistic regression modelling confirms that there was:
 
-* a statistically significant difference in the relative housing mobility of men and women
-* a statistically significant difference in the relative housing mobility of disabled men and women
-* no statistically significant difference in relative housing mobility within different regions
+* a statistically significant difference between the relative housing mobility of men and women
+* a statistically significant difference between the relative housing mobility of those with and without a disability
+* no statistically significant difference between relative housing mobility between different regions
 
 ### Type of data
 Survey data

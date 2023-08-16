@@ -11,8 +11,6 @@ Data on how the education level of people in the UK compares to their parents' e
 Summary main findings
 
 ## Text
-In 2020, 39% of people had higher qualifications than their parents, and 26% had lower qualifications.
-
 For people whose parents had no qualifications, 70% had some qualifications themselves, and 18% had a university degree.
 
 People whose parents had a university degree were more likely to have a degree themselves (64%) than people whose
@@ -26,7 +24,8 @@ For people whose parents did not have a university degree:
 * those from Chinese (64%), White Other (44%), Indian (40%) and Pakistani (37%) ethnic backgrounds were the most
   likely to have a degree themselves out of all ethnic groups
 * those living in London (39%) and the South East (32%) were the most likely out of all regions to get a degree
-  themselves – those living in the East Midlands (22%), Wales (23%), and Yorkshire and the Humber (24%) were least likely
+  themselves – those living in the East Midlands (22%), Wales (23%), Yorkshire and the Humber (24%), and the
+  West Midlands (26%) were least likely
 
 People with a long-term illness or disability were less likely to have a university degree than people without a
 disability from the same education background. They were also more likely to have no qualifications.
