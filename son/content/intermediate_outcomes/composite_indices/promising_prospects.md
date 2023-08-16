@@ -47,9 +47,10 @@ Summary main findings
 
 ## Text
 Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to
-have the best prospects.
+have the best prospects in terms of attaining higher qualifications, higher earnings and a professional job.
 
-Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse prospects. 
+Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse
+prospects in terms of attaining higher qualifications, higher earnings and a professional job.
 
 Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire,
 which contains both remote rural and urban areas.

@@ -47,12 +47,13 @@ Summary main findings
 
 ## Text
 Young people brought up in densely-populated urban areas – including London – tend to have more difficult economic
-circumstances than young people in rural areas.
+circumstances than young people in rural areas. This contrast shows the importance of looking within areas, as well as between areas.
 
 London also has a high percentage of young people with
 [promising prospects](/intermediate_outcomes/composite_indices/promising_prospects).
 
-Some areas – for example, Eastern Scotland – do worse for both young people's good prospects and difficult economic circumstances.
+Some areas – for example, Eastern Scotland – do worse for young people's prospects in obtaining higher qualifications,
+higher earnings and a professional job and for difficult economic circumstances.
 
 ## Section
 About the data
@@ -71,8 +72,8 @@ picture of geographical mobility patterns:
 The data is adjusted for socio-economic background, so it measures how precarious the situations are of young people
 from similar social backgrounds.
 
-Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1,
-and the least well-performing area’s score is set to 0.
+Indicators are rescaled to make sure they use a common metric.
+The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
 See the [technical annex] for more information on how each area was scored.
 
