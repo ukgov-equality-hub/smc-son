@@ -5,13 +5,13 @@ DR53
 University research students
 
 ## Summary
-Data on the median (average) number of full-time research students enrolled in universities in the UK, from 2015 to 2018.
+Data on the median number of full-time research students enrolled in universities in the UK, from 2015 to 2018.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-The median (average) number of research students in the UK went up by 4% from 2015 to 2018.
+The median number of research students in the UK went up by 4% from 2015 to 2018.
 
 ## Section
 By year
@@ -19,7 +19,7 @@ By year
 ## Chart: Single-line
 {
     "code": "DR53",
-    "title": "Ratio (relative to 2015) of the median (average) number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)",
+    "title": "Ratio (relative to 2015) of the median number of full-time equivalent research students enrolled in universities (UK, 2015 to 2018)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/DR53_overview-20230417.csv",
     "height": 450,

@@ -11,7 +11,7 @@ Data on business spending on research and development in UK regions between 2007
 Summary main findings
 
 ## Text
-UK median (average) business spending on research and enterprise went up by 32% between 2007 and 2018.
+UK median business spending on research and enterprise went up by 32% between 2007 and 2018.
 
 Spending went down by 22% between 2007 and 2011, but then went up every year until 2015.
 It reached its peak in 2017 and has stayed roughly the same since then.

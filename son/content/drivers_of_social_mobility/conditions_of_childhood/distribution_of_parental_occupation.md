@@ -142,7 +142,7 @@ carers of dependent children, but some could be adults living in homes with pare
 Respondents aged less than 21 years old were not included.
 
 ### Type of data
-Survey data, weighted
+Survey data
 
 Read more in State of the Nation 2023 on GOV.UK.
 
