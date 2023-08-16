@@ -60,6 +60,10 @@ menu = {
                     'indicators': [
                         {
                             'id': 'MO51',
+                            'name': 'Level of wealth'
+                        },
+                        {
+                            'id': 'MO52',
                             'name': 'Relative wealth mobility'
                         }
                     ]
