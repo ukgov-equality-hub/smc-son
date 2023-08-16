@@ -13,7 +13,8 @@ Summary main findings
 ## Text
 The youth unemployment rate was 13% in 2021, having gone up to nearly 16% in 2020.
 
-In the 3 years from 2018 to 2021, unemployment rates for 16 to 24 year olds were higher in metropolitan areas, such as London, Greater Manchester and the West Midlands.
+In the 3 years from 2018 to 2021, unemployment rates for 16 to 24 year olds were higher in metropolitan areas,
+such as London, Greater Manchester and the West Midlands.
 
 Rates were lower in more rural areas, such as the Highlands and Islands, Northern Ireland, and North Yorkshire.
 
@@ -92,45 +93,48 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+
 The figure for each region shows the percentage of 16 to 24 year olds who were unemployed.<br>
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
 
-## About the data
-# Data source
-Office for National Statistics, Labour Force Survey
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
+the region is highly likely to be within. Read more about [confidence intervals].
 
-# Time period
-2014 to 2021
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows unemployment rates for 16 to 24 year olds in the UK. 
-<br>
-Unemployment is measured as the percentage of economically active 16 to 24 year olds who are currently out of work but looking for a job. 
-<br>
-Rates are rounded to 1 decimal place.
-
-# Things you need to know
-The data does not include people who are economically inactive because they are either:
-
-<ul class="govuk-list">
-<li>in full-time education</li>
-<li>looking after the home</li>
-<li>permanently sick or disabled</li>
-</ul>
-
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+Office for National Statistics, Labour Force Survey
+
+### Time period
+2014 to 2021
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows unemployment rates for 16 to 24 year olds in the UK. 
+
+Unemployment is measured as the percentage of economically active 16 to 24 year olds who are currently out of work but looking for a job. 
+
+Rates are rounded to 1 decimal place.
+
+### Things you need to know
+The data does not include people who are economically inactive because they are either:
+
+* in full-time education
+* looking after the home
+* permanently sick or disabled
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR32.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR32-youth-unemployment--full-dataset.csv){: target="_blank" class="download" }

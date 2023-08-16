@@ -11,15 +11,15 @@ Data on how the education level of people in the UK compares to their parents’
 Summary main findings
 
 ## Text
-Between 1991 and 2020, relative educational mobility went up for people aged 28 to 37 years. This means that people’s chances of getting a degree became less related to whether their parents had a degree or not.
+Between 1991 and 2020, relative educational mobility went up for people aged 28 to 37 years.
+This means that people’s chances of getting a degree became less related to whether their parents had a degree or not.
 
 There was a higher level of relative educational mobility among men than women.
 
 Relative educational mobility was similar:
-<ul class="govuk-list">
-<li>across all ethnic groups in the UK</li>
-<li>for people with or without a long-term illness or disability</li>
-</ul>
+
+* across all ethnic groups in the UK
+* for people with or without a long-term illness or disability
 
 Relative educational mobility was greater in Scotland, but did not vary significantly across other parts of the UK.
 
@@ -176,45 +176,51 @@ By disability status
     "dataTableDecimalPlaces": [null, 2]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 UK Household Longitudinal Survey (UKHLS)
 
-# Time period
+### Time period
 1991 to 2020
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data measures relative educational mobility among 25 to 64 year olds in the UK.
 
 It shows the link between parents’ and children’s education level by sex, ethnicity, disability status and area.
 
 For this data, education is used as a binary measure of attainment of an undergraduate degree qualification versus not.
 
-A higher odds ratio means a greater link between parents’ and children’s education levels (‘intergenerational persistence’), while a lower odds ratio means greater relative mobility.
+A higher odds ratio means a greater link between parents’ and children’s education levels
+(‘intergenerational persistence’), while a lower odds ratio means greater relative mobility.
 
-# Things you need to know
+### Things you need to know
 Formal modelling of the data with logistic regression shows that:
-<ul class="govuk-list">
-<li>the odds ratios for men and women are significantly different from each other</li>
-<li>the odds ratios for the different ethnic groups are not significantly different from each other</li>
-<li>the odds ratio for Scotland is significantly lower</li>
-</ul>
+
+* the odds ratios for men and women are significantly different from each other
+* the odds ratios for the different ethnic groups are not significantly different from each other
+* the odds ratio for Scotland is significantly lower
 
 Odds ratios for the Chinese ethnic group could not be calculated due to the small sample size.
 
-For data by disability status, respondents were asked if they had a physical or mental impairment, illness or disability for at least 12 months. This is different from Labour Force Survey data, which specifies that the condition should be both long-term and limiting. We do not know how long respondents had the illness or disability, and it is possible that they completed their education before the illness or disability occurred. Because of this, the data is likely to underestimate the effects of disability.
+For data by disability status, respondents were asked if they had a physical or mental impairment, illness or
+disability for at least 12 months. This is different from Labour Force Survey data, which specifies that the
+condition should be both long-term and limiting. We do not know how long respondents had the illness or disability,
+and it is possible that they completed their education before the illness or disability occurred.
+Because of this, the data is likely to underestimate the effects of disability.
 
-# Type of data
+### Type of data
 Survey data, weighted using the UKHLS population weights
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-06-07 MO32.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/MO32-relative-educational-mobility--full-dataset.csv){: target="_blank" class="download" }

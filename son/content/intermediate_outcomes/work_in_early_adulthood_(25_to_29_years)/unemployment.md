@@ -17,9 +17,11 @@ There were no significant differences in unemployment among 25 to 29 year olds f
 
 There were no significant differences in unemployment rates between young men and women from the same socio-economic backgrounds. 
 
-Young people from the Pakistani and Black ethnic groups were significantly more likely to be unemployed than White British young people from the same socio-economic background.
+Young people from the Pakistani and Black ethnic groups were significantly more likely to be unemployed than
+White British young people from the same socio-economic background.
 
-Disabled young people were around 3 times more likely to be unemployed than those without a disability, across all socio-economic backgrounds.
+Disabled young people were around 3 times more likely to be unemployed than those without a disability, across all
+socio-economic backgrounds.
 
 ## Section
 By socio-economic background
@@ -194,40 +196,49 @@ By disability status
     "dataTableDecimalPlaces": [null, 1, 1]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
-# Time period
+### Time period
 2014 to 2021 combined
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data shows the percentage of 25 to 29 year olds in the UK who were unemployed, by socio-economic background.
 
-# Things you need to know
-Unemployed people are defined as not in work but available for and looking for work. Economically inactive people (those not in work or looking for work) are excluded from the data.
+### Things you need to know
+Unemployed people are defined as not in work but available for and looking for work.
+Economically inactive people (those not in work or looking for work) are excluded from the data.
 
 The data used is weighted using LFS population weights. The charts show 95% confidence intervals.
 
-The estimated percentages and confidence intervals result from a logistic regression model, controlling for gender and ethnic group. The model assumes that class effects are the same within each ethnic group. A formal test confirms this assumption. 
+The estimated percentages and confidence intervals result from a logistic regression model, controlling for gender
+and ethnic group. The model assumes that class effects are the same within each ethnic group.
+A formal test confirms this assumption. 
 
-For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for those with lower working-class and higher professional-class backgrounds for illustrative purposes.
+For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for those with
+lower working-class and higher professional-class backgrounds for illustrative purposes.
 
-The LFS uses the occupation of the main earner in the household when the respondent was aged 14 years when reporting socio-economic background.
+The LFS uses the occupation of the main earner in the household when the respondent was aged 14 years when reporting
+socio-economic background.
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
+more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 IN32.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN32-unemployment--full-dataset.csv){: target="_blank" class="download" }

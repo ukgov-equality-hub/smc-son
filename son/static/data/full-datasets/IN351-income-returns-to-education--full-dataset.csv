@@ -41,8 +41,6 @@
 "IN35","Returns to education for young people","Country","K02000001","United Kingdom","2019-21",NA,"25-29","Total","Highest qualification","Higher degree",NA,NA,62.8690137765143,2367,NA,NA,NA,"Percentage difference","Controlling for SEB"
 "IN35","Returns to education for young people","Country","K02000001","United Kingdom","2019-21",NA,"25-29","Total","Highest qualification","First degree",NA,NA,53.9580144325388,2367,NA,NA,NA,"Percentage difference","Controlling for SEB"
 "IN35","Returns to education for young people","Country","K02000001","United Kingdom","2019-21",NA,"25-29","Total","Highest qualification","Lower level (below CSE grade 1)",NA,NA,0,2367,NA,NA,NA,"Percentage difference","Controlling for SEB"
-
-
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Men","Highest qualification","First degree","Sex","Men",13.21257723,7045,12.75969177,13.68153714,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Women","Highest qualification","First degree","Sex","Women",12.17525133,7045,11.77450029,12.58964213,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Men","Highest qualification","A level and equivalent","Sex","Men",10.85608709,7045,10.49335241,11.2313608,NA,"Pounds","Lower working"
@@ -55,8 +53,6 @@
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Women","Highest qualification","Further education below degree","Sex","Women",9.909053696,7045,9.35593758,10.49486963,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Men","Highest qualification","Lower level (below CSE grade 1)","Sex","Men",8.670453876,7045,8.256443696,9.105224136,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Women","Highest qualification","Lower level (below CSE grade 1)","Sex","Women",8.174519756,7045,7.672231873,8.709691566,NA,"Pounds","Lower working"
-
-
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","First degree","Disability","No",12.84793759,7025,12.46076426,13.24714094,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","First degree","Disability","Yes",10.78569685,7025,10.15671405,11.45363115,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","A level and equivalent","Disability","No",10.08696143,7025,9.791023956,10.39184373,NA,"Pounds","Lower working"
@@ -69,8 +65,6 @@
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Further education below degree","Disability","Yes",9.216314517,7025,8.329695647,10.19730575,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Lower level (below CSE grade 1)","Disability","No",8.472510578,7025,8.120234586,8.84006918,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Lower level (below CSE grade 1)","Disability","Yes",8.447868664,7025,7.422427223,9.614979416,NA,"Pounds","Lower working"
-
-
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Degree","Ethnicity","White British",12.94659372,6232,12.52835179,13.37879808,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Degree","Ethnicity","Bangladeshi",9.659042143,6232,7.948967274,11.73700833,NA,"Pounds","Lower working"
 "IN351","Returns to education in earnings","Country","K02000001","United Kingdom","2014-21",NA,"25-29","Total","Highest qualification","Degree","Ethnicity","Black African",13.66802281,6232,12.39739793,15.06887562,NA,"Pounds","Lower working"

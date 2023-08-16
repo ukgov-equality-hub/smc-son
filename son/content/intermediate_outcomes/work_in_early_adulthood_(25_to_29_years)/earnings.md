@@ -13,7 +13,8 @@ Summary main findings
 ## Text
 In 2021, young people aged 25 to 29 earned on average £14.40 an hour.
 
-Socio-economic background (SEB) was strongly related to the level of young people’s earnings. Young people from lower working class backgrounds earned £12.40 an hour on average, compared with £16.70 for those from higher professional backgrounds.
+Socio-economic background (SEB) was strongly related to the level of young people’s earnings. Young people from lower
+working class backgrounds earned £12.40 an hour on average, compared with £16.70 for those from higher professional backgrounds.
 
 Young men earned more than young women across all socio-economic backgrounds. 
 
@@ -194,40 +195,50 @@ By disability status
     "dataTableDecimalPlaces": [null, 2, 2]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
-# Time period
+### Time period
 2014 to 2021 combined
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data show the mean (average) earnings of people aged 25 to 29 in the UK, by socio-economic background.
 
-# Things you need to know
+### Things you need to know
 Self-employed respondents and those without earnings are excluded. 
 
 The data used is weighted using the LFS population weights. The charts show 95% confidence intervals.
 
-The estimated means and confidence intervals are derived from a linear regression model of log hourly earnings, controlling for SEB, gender and ethnic group. 
+The estimated means and confidence intervals are derived from a linear regression model of log hourly earnings,
+controlling for SEB, gender and ethnic group. 
 
-For data by ethnicity, the model assumes that class effects are the same within each ethnic group. However, the assumption does not hold for the White Other group. The means shown are those for men. Means are shown only for those with lower working-class and higher professional-class backgrounds, but other SEBs are included in the analysis. 
+For data by ethnicity, the model assumes that class effects are the same within each ethnic group.
+However, the assumption does not hold for the White Other group. The means shown are those for men.
+Means are shown only for those with lower working-class and higher professional-class backgrounds, but other SEBs
+are included in the analysis. 
 
-Among people with a disability, those in work are a more selective group (since their inactivity rate is higher). Because of the skewed distribution of earnings, we take the log of earnings when checking for interactions between disability and SEB. With this model specification we do not find a significant interaction.
+Among people with a disability, those in work are a more selective group (since their inactivity rate is higher).
+Because of the skewed distribution of earnings, we take the log of earnings when checking for interactions between
+disability and SEB. With this model specification we do not find a significant interaction.
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
+more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 IN34.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN34-earnings--full-dataset.csv){: target="_blank" class="download" }

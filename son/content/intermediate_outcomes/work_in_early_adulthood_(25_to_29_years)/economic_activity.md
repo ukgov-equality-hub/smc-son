@@ -13,14 +13,18 @@ Summary main findings
 ## Text
 In 2021, 88% of all 25 to 29 year olds were economically active, meaning they were either in work or actively looking for work.
 
-77% of 25 to 29 year olds from lower working class backgrounds were economically active – the lowest percentage out of all socio-economic backgrounds. Percentages in all other socio-economic groups were between 88% and 93%.
+77% of 25 to 29 year olds from lower working class backgrounds were economically active – the lowest percentage out
+of all socio-economic backgrounds. Percentages in all other socio-economic groups were between 88% and 93%.
 
 Data for 2014 to 2021 combined shows that:
-<ul class="govuk-list">
-<li>young women were less likely to be economically active than young men from the same socio-economic background – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active</li>
-<li>young people from Pakistani, Bangladeshi, Chinese and Other ethnic backgrounds had lower levels of economic activity – this could be partly due to higher rates of [entry to higher education]</li>
-<li>disabled young people were less likely to be economically active than non-disabled young people from the same socio-economic background – the ‘disability gap’ was largest for young people from lower working class backgrounds, where 52% of disabled people and 85% of non-disabled people were economically active</li>
-</ul>
+
+* young women were less likely to be economically active than young men from the same socio-economic background
+  – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active
+* young people from Pakistani, Bangladeshi, Chinese and Other ethnic backgrounds had lower levels of economic activity
+  – this could be partly due to higher rates of [entry to higher education]
+* disabled young people were less likely to be economically active than non-disabled young people from the same
+  socio-economic background – the ‘disability gap’ was largest for young people from lower working class backgrounds,
+  where 52% of disabled people and 85% of non-disabled people were economically active
 
 ## Section
 By socio-economic background
@@ -195,43 +199,47 @@ By disability status
     "dataTableDecimalPlaces": [null, 1, 1]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
-# Time period
+### Time period
 2014 to 2021 (combined)
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data shows the percentage of 25 to 29 year olds in the UK who were ‘economically active’, by socio-economic background.
 
 Someone is ‘economically active’ if they are either in work, or available for and actively looking for work. 
 
 People can be economically inactive if they are:
-<ul class="govuk-list">
-<li>in full-time education</li>
-<li>looking after family</li>
-<li>unable to work due to disability or ill health</li>
-</ul>
 
-# Things you need to know
+* in full-time education
+* looking after family
+* unable to work due to disability or ill health
+
+### Things you need to know
 Data is weighted using LFS population weights.
 
-For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower working class and higher professional class backgrounds. 
+For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower
+working class and higher professional class backgrounds. 
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
+more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 IN31.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN31-economic-activity--full-dataset.csv){: target="_blank" class="download" }

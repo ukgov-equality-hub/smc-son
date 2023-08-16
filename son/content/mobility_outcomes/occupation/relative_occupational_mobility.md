@@ -14,11 +14,11 @@ Summary main findings
 Between 2014 and 2022, the link between people’s occupational class and their parents’ occupational class got weaker.
 
 In the 5 years from 2018 to 2022 combined:
-<ul class="govuk-list">
-<li>people from the Black, Pakistani, Bangladeshi and Chinese ethnic groups had higher levels of relative occupational mobility than White people</li>
-<li>disabled people had lower levels of relative occupational mobility than non-disabled people</li>
-<li>levels of relative occupational mobility were similar in most parts of the UK</li>
-</ul>
+
+* people from the Black, Pakistani, Bangladeshi and Chinese ethnic groups had higher levels of relative occupational
+  mobility than White people
+* disabled people had lower levels of relative occupational mobility than non-disabled people
+* levels of relative occupational mobility were similar in most parts of the UK
 
 ## Section
 By year
@@ -207,38 +207,45 @@ By disability status
     "dataTableAlignColumns": ["left", "right"]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey 2014 to 2022
 
-# Time period
+### Time period
 2014 to 2022
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
-The data shows changes in relative occupational mobility – the extent to which your occupational class is related to your parents’ occupational class.
+### What the data measures
+The data shows changes in relative occupational mobility – the extent to which your occupational class is related to
+your parents’ occupational class.
 
 High levels of relative occupational mobility can be due to both downward and upward mobility.
 
-# Things you need to know
+### Things you need to know
 Survey respondents were 25 to 64 years old. Areas represent where respondents lived when they were aged 14 years.
 
-The data uses the ‘UNIDIFF’ (uniform difference) model, which compares ‘odds ratios’ for all groups with a benchmark group. Values are shown in log form.
+The data uses the ‘UNIDIFF’ (uniform difference) model, which compares ‘odds ratios’ for all groups with a benchmark
+group. Values are shown in log form.
 
-Values close to 0 mean relative mobility is constant across all groups. Negative values mean relative mobility is higher than in the benchmark group. The differences were statistically significant from 2019 onwards.
+Values close to 0 mean relative mobility is constant across all groups. Negative values mean relative mobility is
+higher than in the benchmark group. The differences were statistically significant from 2019 onwards.
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months
+or more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-06-23 MO12.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/MO12-relative-occupational-mobility--full-dataset.csv){: target="_blank" class="download" }

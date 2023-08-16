@@ -15,17 +15,27 @@ There is more upward than downward occupational mobility for both men and women.
 
 The chances of both men and women from working-class backgrounds getting a professional job improved greatly over the 20th century.
 
-Data from 2022 shows that 70% of people from lower working class backgrounds experienced upward mobility, and 32% experienced long-range upward mobility to the professional classes. 18% of people from higher professional backgrounds experienced long-range downward mobility into the working classes.
+Data from 2022 shows that 70% of people from lower working class backgrounds experienced upward mobility,
+and 32% experienced long-range upward mobility to the professional classes.
+18% of people from higher professional backgrounds experienced long-range downward mobility into the working classes.
 
-People who grew up in the south-east had the best upward occupational mobility rates, and people who grew up in the north and the south-west had the worst.
+People who grew up in the south-east had the best upward occupational mobility rates, and people who grew up in
+the north and the south-west had the worst.
 
-People who grew up in Outer London or Surrey and Sussex had the greatest likelihood of long-range upward mobility from the working classes to the professional classes. People who grew up in Cornwall, East Yorkshire and North Lincolnshire, and the Highlands had lower rates of long-range upward mobility or higher rates of long-range downward mobility.
+People who grew up in Outer London or Surrey and Sussex had the greatest likelihood of long-range upward mobility from
+the working classes to the professional classes. People who grew up in Cornwall, East Yorkshire and North Lincolnshire,
+and the Highlands had lower rates of long-range upward mobility or higher rates of long-range downward mobility.
 
-Women’s chances of being in the higher-professional class were poorer than the chances of men from the same socio-economic background. Women were also more likely to experience long-range downward mobility than men. For example, 12% of women and 9% of men from higher-professional backgrounds were in lower working class jobs.
+Women’s chances of being in the higher-professional class were poorer than the chances of men from the same socio-economic background.
+Women were also more likely to experience long-range downward mobility than men.
+For example, 12% of women and 9% of men from higher-professional backgrounds were in lower working class jobs.
 
-People with Indian and Chinese ethnic backgrounds had a greater likelihood of long-range upward mobility than other ethnic groups. People from Bangladeshi and Pakistani ethnic backgrounds had the highest rates of long-range downward mobility.
+People with Indian and Chinese ethnic backgrounds had a greater likelihood of long-range upward mobility than other
+ethnic groups. People from Bangladeshi and Pakistani ethnic backgrounds had the highest rates of long-range downward mobility.
 
-People with a disability or long-term limiting condition have a much lower likelihood of long-range upward mobility and much higher chances of downward mobility than the population as a whole. Disabled people from all socio-economic backgrounds were also much less likely to enter the professional classes.
+People with a disability or long-term limiting condition have a much lower likelihood of long-range upward mobility
+and much higher chances of downward mobility than the population as a whole. Disabled people from all socio-economic
+backgrounds were also much less likely to enter the professional classes.
 
 ## Section
 By decade of birth (upward and downward mobility)
@@ -157,9 +167,14 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
-The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility for that region.<br>
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+
+The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility
+for that region.<br>
+
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
+the region is highly likely to be within. Read more about [confidence intervals].
 
 ## Section
 By occupational class and sex
@@ -275,57 +290,67 @@ By disability status
     "dataTableNumberOfHeadingColumns": 2
 }
 
-## About the data
-# Data sources
-The General Household Survey (1972 to 2005)
-British Household Panel Survey (1991 to 2009)
-Taking Part Survey (2005 to 2006)
-Understanding Society (2010 to 2019)
-Labour Force Survey (2014 to 2022)
+## Section
+About the data
 
-# Time period
+## Text
+### Data sources
+* The General Household Survey (1972 to 2005)
+* British Household Panel Survey (1991 to 2009)
+* Taking Part Survey (2005 to 2006)
+* Understanding Society (2010 to 2019)
+* Labour Force Survey (2014 to 2022)
+
+### Time period
 1972 to 2022
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
-The data shows changes in absolute occupational mobility – the extent to which your occupational class is related to your parents’ occupational class.
+### What the data measures
+The data shows changes in absolute occupational mobility – the extent to which your occupational class is related
+to your parents’ occupational class.
 
-People’s socio-economic background in this data is based on the occupation of the main earner in their household when they were 14 years old. We use 5 categories:
-<ul class="govuk-list">
-    <li>higher professional and managerial</li>
-    <li>lower professional and managerial</li>
-    <li>intermediate</li>
-    <li>higher working class</li>
-    <li>lower working class</li>
-</ul>
+People’s socio-economic background in this data is based on the occupation of the main earner in their household
+when they were 14 years old. We use 5 categories:
 
-These categories are based on the National Statistics Socio-economic Classification (‘NS-SEC’), set by the Office for National Statistics (ONS).
+* higher professional and managerial
+* lower professional and managerial
+* intermediate
+* higher working class
+* lower working class
 
-‘Short range’ occupational mobility means moving between the intermediate category and either professional or working class occupations.
+These categories are based on the National Statistics Socio-economic Classification (‘NS-SEC’), set by the Office
+for National Statistics (ONS).
+
+‘Short range’ occupational mobility means moving between the intermediate category and either professional or working
+class occupations.
 
 ‘Long range’ occupational mobility means moving between working class and professional occupations.
 
-# Things you need to know
+### Things you need to know
 High levels of absolute occupational mobility can be due to both downward and upward mobility.
 
-The figures for total mobility are the sum of the percentages of upward and downward mobility. This represents the percentage of the sample as a whole who were in a different social class position from the one in which they were brought up.
+The figures for total mobility are the sum of the percentages of upward and downward mobility. This represents the
+percentage of the sample as a whole who were in a different social class position from the one in which they were brought up.
 
-For data on mobility by year of birth (‘birth cohort studies’), the most recent cohorts are still early in their working lives as they were born between 1990 and 1999. The chances of people moving into the professional classes increases from 25 to 35 years old, and slows in their late 30s and early 40s.
+For data on mobility by year of birth (‘birth cohort studies’), the most recent cohorts are still early in their
+working lives as they were born between 1990 and 1999. The chances of people moving into the professional classes
+increases from 25 to 35 years old, and slows in their late 30s and early 40s.
 
 The data used is weighted using the LFS population weights.
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months
+or more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-07-05 MO11.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/MO11-absolute-occupational-mobility--full-dataset.csv){: target="_blank" class="download" }

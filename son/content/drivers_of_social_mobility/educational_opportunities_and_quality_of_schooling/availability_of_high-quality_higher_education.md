@@ -5,7 +5,8 @@ DR24
 Availability of high-quality higher education
 
 ## Summary
-Data on the dropout rates of full-time students during their first year of higher education. This is used as a way to measure the availability of high-quality higher education.
+Data on the dropout rates of full-time students during their first year of higher education.
+This is used as a way to measure the availability of high-quality higher education.
 
 ## Subtitle
 Summary main findings
@@ -13,7 +14,8 @@ Summary main findings
 ## Text
 Higher education dropout rates fell sharply in the academic year 2019 to 2020.
 
-5.3% of full-time undergraduate students who started their course in the UK in the 2019 to 2020 academic year did not start their second year. 
+5.3% of full-time undergraduate students who started their course in the UK in the 2019 to 2020 academic year
+did not start their second year. 
 
 This was a decrease from 6.7% in the previous year, and the lowest dropout rate since 2014.
 
@@ -47,36 +49,38 @@ By year
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Higher Education Statistics Agency, non-continuation summary: UK performance indicators
 
-# Time period
+### Time period
 September 2014 to August 2020
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data measures the non-continuation (dropout) rates of full-time students during their first year at a higher education provider. 
 
 Students are counted as dropping out if they left their course in the first year, having attended for 50 days or more.
 
 Percentages are rounded to 2 decimal places.
 
-# Things you need to know
+### Things you need to know
 Lower dropout rates may not reflect the availability of good quality higher education. 
 
 Other relevant factors might include changes to wages and job opportunities at the start of the COVID-19 pandemic.
 
-# Type of data
+### Type of data
 Administrative.
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR24.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR24-availability-of-high-quality-higher-education--full-dataset.csv){: target="_blank" class="download" }

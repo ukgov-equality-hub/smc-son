@@ -14,20 +14,18 @@ Summary main findings
 In 2019, the median (average) broadband speed in the UK was 3 times as fast as in 2014.
 
 Areas with the highest broadband speeds in 2019 were:
-<ul class="govuk-list">
-<li>parts of London</li>
-<li>the West Midlands</li>
-<li>Merseyside</li>
-<li>Eastern Yorkshire and Northern Lincolnshire</li>
-</ul>
+
+* parts of London
+* the West Midlands
+* Merseyside
+* Eastern Yorkshire and Northern Lincolnshire
 
 Areas with the lowest broadband speeds were:
-<ul class="govuk-list">
-<li>parts of Scotland</li>
-<li>Cornwall</li>
-<li>West Wales and the Valleys</li>
-<li>Cumbria</li>
-</ul>
+
+* parts of Scotland
+* Cornwall
+* West Wales and the Valleys
+* Cumbria
 
 ## Section
 By year
@@ -117,35 +115,42 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest average broadband speed. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+[41 regions in the UK] are ranked from the highest to lowest average broadband speed.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+
 The figure for each region shows the median (average) broadband speed for that region.
 
-## About the data
-# Data source
-Department for Business, Energy and Industrial Strategy and Nesta Research & Development spatial data tool, 2021.
-
-# Time period
-2014 to 2019
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows changes in median (average) broadband speed in the UK between 2014 and 2019. It also shows the broadband speed for 41 regions of the UK.
-
-# Things you need to know
-Nesta data includes regional scores but not a national average figure. To track changes over time, we use the broadband speed for the median UK area each year. 
-
-The median is the middle point of a range of numbers which are arranged in order. In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
-
-# Type of data
-Administrative data
+## Section
+About the data
 
 ## Text
+### Data source
+Department for Business, Energy and Industrial Strategy and Nesta Research & Development spatial data tool, 2021.
+
+### Time period
+2014 to 2019
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows changes in median (average) broadband speed in the UK between 2014 and 2019.
+It also shows the broadband speed for 41 regions of the UK.
+
+### Things you need to know
+Nesta data includes regional scores but not a national average figure.
+To track changes over time, we use the broadband speed for the median UK area each year. 
+
+The median is the middle point of a range of numbers which are arranged in order.
+In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
+
+### Type of data
+Administrative data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-04-05 DR51.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR51-broadband-speed--full-dataset.csv){: target="_blank" class="download" }

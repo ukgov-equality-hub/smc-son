@@ -13,9 +13,11 @@ Summary main findings
 ## Text
 34% of all 18 to 20 year olds began studying in higher education in 2021.
 
-51% of 18 to 20 year olds from a higher professional background started a higher education course, compared with 21% of those from a lower working class background. This is one of the largest class inequalities reported in State of the Nation 2023.
+51% of 18 to 20 year olds from a higher professional background started a higher education course, compared with 21%
+of those from a lower working class background. This is one of the largest class inequalities reported in State of the Nation 2023.
 
-A similar percentage of 18 to 20 year olds from higher working class (34%), intermediate (35%) and lower professional (38%) backgrounds began studying in higher education in 2021.
+A similar percentage of 18 to 20 year olds from higher working class (34%), intermediate (35%) and
+lower professional (38%) backgrounds began studying in higher education in 2021.
 
 ## Section
 By socio-economic background
@@ -48,30 +50,32 @@ By socio-economic background
     "dataTableDecimalPlaces": [null, 1]
 }
 
-## About the data
-# Data source
-Office for National Statistics, Labour Force Survey (LFS), 2021
-
-# Time period
-2021
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows the percentage of 18 to 20 year olds in the UK who began studying a higher education course in 2021. 
-
-# Things you need to know
-Data used is weighted using LFS population weights. 
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+Office for National Statistics, Labour Force Survey (LFS), 2021
+
+### Time period
+2021
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows the percentage of 18 to 20 year olds in the UK who began studying a higher education course in 2021. 
+
+### Things you need to know
+Data used is weighted using LFS population weights. 
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 IN22.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN22-entry-to-higher-education--full-dataset.csv){: target="_blank" class="download" }

@@ -13,7 +13,8 @@ Summary main findings
 ## Text
 UK median (average) business spending on research and enterprise went up by 32% between 2007 and 2018.
 
-Spending went down by 22% between 2007 and 2011, but then went up every year until 2015. It reached its peak in 2017 and has stayed roughly the same since then.
+Spending went down by 22% between 2007 and 2011, but then went up every year until 2015.
+It reached its peak in 2017 and has stayed roughly the same since then.
 
 ## Section
 By year
@@ -122,35 +123,42 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development. They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
+[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.<br>
+
 The figure for each region shows the business spending on research and development.
 
-## About the data
-# Data source
-Department for Business, Energy and Industrial Strategy and Nesta Research & Development spatial data tool, 2021.
-
-# Time period
-2007 to 2018
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows changes in business spending on research and development in the UK between 2007 and 2018. It also shows average spending for 41 regions of the UK.
-
-# Things you need to know
-Nesta data includes regional scores but not a national average figure. To track changes over time, we use the broadband speed for the median UK area each year. 
-<br>
-The median is the middle point of a range of numbers which are arranged in order. In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
-
-# Type of data
-Administrative data
+## Section
+About the data
 
 ## Text
+### Data source
+Department for Business, Energy and Industrial Strategy and Nesta Research & Development spatial data tool, 2021.
+
+### Time period
+2007 to 2018
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows changes in business spending on research and development in the UK between 2007 and 2018.
+It also shows average spending for 41 regions of the UK.
+
+### Things you need to know
+Nesta data includes regional scores but not a national average figure.
+To track changes over time, we use the broadband speed for the median UK area each year. 
+
+The median is the middle point of a range of numbers which are arranged in order.
+In this case, the median area is the area ranked 21st out of the 41 regions in the UK.
+
+### Type of data
+Administrative data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-04-05 DR52.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR52-business-spending-on-research-and-development--full-dataset.csv){: target="_blank" class="download" }

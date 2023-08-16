@@ -13,13 +13,17 @@ Summary main findings
 ## Text
 From 2014 to 2021, the percentage of 25 to 29 year olds in professional and managerial jobs went up from 38% to 44%.
 
-The percentage in working class jobs went down from 41% to 33%. This was mainly due to the percentage in skilled manual work (‘higher working class’) going down from 25% to 17%.
+The percentage in working class jobs went down from 41% to 33%.
+This was mainly due to the percentage in skilled manual work (‘higher working class’) going down from 25% to 17%.
 
-In the 3 years to 2021, parts of the south-east had the highest percentages of 25 to 29 year olds in higher professional jobs out of all regions. Scotland and parts of the north and north-east had the lowest percentages. 
+In the 3 years to 2021, parts of the south-east had the highest percentages of 25 to 29 year olds in higher
+professional jobs out of all regions. Scotland and parts of the north and north-east had the lowest percentages. 
 
-The highest percentages of 25 to 29 year olds in lower working class jobs were in Northern Ireland, parts of Scotland and Wales, and some metropolitan areas. Most regions in the south-east had the lowest percentages.
+The highest percentages of 25 to 29 year olds in lower working class jobs were in Northern Ireland, parts of
+Scotland and Wales, and some metropolitan areas. Most regions in the south-east had the lowest percentages.
 
-In parts of London, the percentages of 25 to 29 year olds in both higher professional and lower working class occupations were higher than the national average.
+In parts of London, the percentages of 25 to 29 year olds in both higher professional and lower working class
+occupations were higher than the national average.
 
 ## Section
 By year
@@ -136,45 +140,47 @@ By occupational class and area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+
 The figure for each region shows the percentage of 25 to 29 year olds in lower working class and higher professional occupations.
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey
 
-# Time period
+### Time period
 2014 to 2021
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
+### What the data measures
 The data shows the occupation level of 25 to 29 year olds in the UK between 2014 and 2021. It also shows data by region.
 
 Regions are based on where the people surveyed lived when they were growing up.
 
 Rates are rounded to 1 decimal place.
 
-# Things you need to know
+### Things you need to know
 The 5 social classes shown here are based on the National Statistics Socio-economic Classification (NS-SEC) as follows:
 
-<ul class="govuk-list">
-  <li>NS-SEC level 1: higher professional</li>
-  <li>NS-SEC level 2: lower professional</li>
-  <li>NS-SEC levels 3 and 4: intermediate</li>
-  <li>NS-SEC levels 5 and 6: higher working class</li>
-  <li>NS-SEC levels 7 and 8: lower working class</li>
-</ul>
+* NS-SEC level 1: higher professional
+* NS-SEC level 2: lower professional
+* NS-SEC levels 3 and 4: intermediate
+* NS-SEC levels 5 and 6: higher working class
+* NS-SEC levels 7 and 8: lower working class
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR33.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR33-occupation-level-of-25-to-29-year-olds--full-dataset.csv){: target="_blank" class="download" }

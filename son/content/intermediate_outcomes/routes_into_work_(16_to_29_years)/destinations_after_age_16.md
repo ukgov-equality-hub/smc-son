@@ -5,21 +5,28 @@ IN21
 Destinations after age 16
 
 ## Summary
-Data on young people aged 16 to 24 years in the UK who were in education and training, employment or NEET (not in employment, education or training).
+Data on young people aged 16 to 24 years in the UK who were in education and training, employment or NEET
+(not in employment, education or training).
 
 ## Subtitle
 Summary main findings
 
 ## Text
-In 2022, young people aged 16 to 24 years from higher professional backgrounds were the most likely to be in education and training out of all socio-economic backgrounds. People from lower working-class backgrounds were the most likely to be ‘NEET’ (not in employment, education or training).
+In 2022, young people aged 16 to 24 years from higher professional backgrounds were the most likely to be in
+education and training out of all socio-economic backgrounds.
+People from lower working-class backgrounds were the most likely to be ‘NEET’ (not in employment, education or training).
 
-Social class differences in the percentages of young people in education and training, employment or NEET were similar among young men and women.
+Social class differences in the percentages of young people in education and training, employment or NEET were similar
+among young men and women.
 
-For young people from lower working class backgrounds, those in the Chinese (62%) and Black African (58%) ethnic groups were most likely to be in education and training out of all ethnic groups. White young people (26%) were least likely to be.
+For young people from lower working class backgrounds, those in the Chinese (62%) and Black African (58%) ethnic groups
+were most likely to be in education and training out of all ethnic groups. White young people (26%) were least likely to be.
 
-For young people from higher professional backgrounds, those in the Bangladeshi (66%) and Chinese (62%) ethnic groups were most likely to be in education and training out of all ethnic groups. White young people (34%) were least likely to be.
+For young people from higher professional backgrounds, those in the Bangladeshi (66%) and Chinese (62%) ethnic groups
+were most likely to be in education and training out of all ethnic groups. White young people (34%) were least likely to be.
 
-Young people with a disability were much less likely to be in employment and much more likely to be NEET than those without a disability, across all socio-economic backgrounds.
+Young people with a disability were much less likely to be in employment and much more likely to be NEET than those
+without a disability, across all socio-economic backgrounds.
 
 ## Section
 By socio-economic background
@@ -177,40 +184,48 @@ By disability status
     "dataTableNumberOfHeadingColumns": 2
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
-# Time period
+### Time period
 2014 to 2022 combined
 
-# Geographic area
+### Geographic area
 UK
 
-# What the data measures
-The data shows the percentage of young people aged 16 to 24 years in the UK who were in education and training, employment or ‘NEET’ (not in employment, education or training).
+### What the data measures
+The data shows the percentage of young people aged 16 to 24 years in the UK who were in education and training,
+employment or ‘NEET’ (not in employment, education or training).
 
 NEET is defined as not in employment, education or training in the week before the survey. 
 
-Socio-economic background (SEB) is based on the main earner’s occupation when the respondent was aged 14 years. Where there was no earner in the family, SEB is included in the lower working class. 
+Socio-economic background (SEB) is based on the main earner’s occupation when the respondent was aged 14 years.
+Where there was no earner in the family, SEB is included in the lower working class. 
 
-# Things you need to know
+### Things you need to know
 The data used is weighted using the LFS population weights. 
 
-Estimated percentages come from a logistic regression model, controlling for gender and ethnic group. The model assumes that class effects are the same for each ethnic group. 
+Estimated percentages come from a logistic regression model, controlling for gender and ethnic group.
+The model assumes that class effects are the same for each ethnic group. 
 
-For data by ethnicity, the estimated percentages shown are those for men. We show percentages only for those with lower working-class and higher professional backgrounds for illustrative purposes.
+For data by ethnicity, the estimated percentages shown are those for men. We show percentages only for those with
+lower working-class and higher professional backgrounds for illustrative purposes.
 
-For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or more, and if that condition reduced their ability to carry out day-to-day activities. This is consistent with the definition of disability in the Equality Act 2010.
+For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
+more, and if that condition reduced their ability to carry out day-to-day activities.
+This is consistent with the definition of disability in the Equality Act 2010.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-04-24 IN21.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN21-destinations-after-age-16--full-dataset.csv){: target="_blank" class="download" }

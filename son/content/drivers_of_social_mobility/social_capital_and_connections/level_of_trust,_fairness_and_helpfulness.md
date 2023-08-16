@@ -13,11 +13,10 @@ Summary main findings
 ## Text
 Between 2002 and 2018:
 
-<ul class="govuk-list">
-<li>on a scale of 0 to 10, people’s average levels of trust in other people went up from 5.1 to 5.2 (with a score of 10 meaning “most people can be trusted”)</li>
-<li>people’s average perception of fairness went up from 5.5 to 5.7 (with 10 meaning “most people try to be fair”)</li>
-<li>people’s average perception of helpfulness went up from 5.4 to 5.8 (with 10 meaning “people mostly try to be helpful”)</li>
-</ul>
+* on a scale of 0 to 10, people’s average levels of trust in other people went up from 5.1 to 5.2
+  (with a score of 10 meaning “most people can be trusted”)
+* people’s average perception of fairness went up from 5.5 to 5.7 (with 10 meaning “most people try to be fair”)
+* people’s average perception of helpfulness went up from 5.4 to 5.8 (with 10 meaning “people mostly try to be helpful”)
 
 ## Section
 By year
@@ -52,38 +51,40 @@ By year
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
 
-## About the data
-# Data source
-European Social Survey, data for the UK
-
-# Time period
-2002 to 2018
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows people’s median (average) levels of trust and perceptions of fairness and helpfulness in the UK between 2002 and 2018.
-<br>
-Trust was measured on a scale of 0 (meaning "you can't be too careful") to 10 (meaning "most people can be trusted").
-<br>
-Fairness was measured on a scale of 0 ("most people try to take advantage of me") to 10 ("most people try to be fair").
-<br>
-Helpfulness was measured on a scale of 0 ("people mostly look out for themselves") to 10 ("people mostly try to be helpful").
-<br>
-Figures are rounded to 1 decimal place.
-
-# Things you need to know
-Confidence intervals are used for each year covered by the data.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+European Social Survey, data for the UK
+
+### Time period
+2002 to 2018
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows people’s median (average) levels of trust and perceptions of fairness and helpfulness in the UK between 2002 and 2018.
+
+Trust was measured on a scale of 0 (meaning "you can't be too careful") to 10 (meaning "most people can be trusted").
+
+Fairness was measured on a scale of 0 ("most people try to take advantage of me") to 10 ("most people try to be fair").
+
+Helpfulness was measured on a scale of 0 ("people mostly look out for themselves") to 10 ("people mostly try to be helpful").
+
+Figures are rounded to 1 decimal place.
+
+### Things you need to know
+Confidence intervals are used for each year covered by the data.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR42.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR42-level-of-trust-fairness-and-helpfulness--full-dataset.csv){: target="_blank" class="download" }

@@ -5,7 +5,8 @@ CI2
 Precarious situations
 
 ## Summary
-Data on the UK regions with the most difficult economic circumstances for 25 to 29 year olds – measured by levels of unemployment, economic inactivity and lower working-class employment.
+Data on the UK regions with the most difficult economic circumstances for 25 to 29 year olds – measured by levels
+of unemployment, economic inactivity and lower working-class employment.
 
 ## Map
 # Src
@@ -45,9 +46,11 @@ Data on the UK regions with the most difficult economic circumstances for 25 to 
 Summary main findings
 
 ## Text
-Young people brought up in densely-populated urban areas – including London – tend to have more difficult economic circumstances than young people in rural areas.
+Young people brought up in densely-populated urban areas – including London – tend to have more difficult economic
+circumstances than young people in rural areas.
 
-London also has a high percentage of young people with <a href="/intermediate_outcomes/composite_indices/promising_prospects" class="govuk-link">promising prospects</a>.
+London also has a high percentage of young people with
+[promising prospects](/intermediate_outcomes/composite_indices/promising_prospects).
 
 Some areas – for example, Eastern Scotland – do worse for both young people's good prospects and difficult economic circumstances.
 
@@ -55,17 +58,21 @@ Some areas – for example, Eastern Scotland – do worse for both young people'
 About the data
 
 ## Text
-This page combines data from the following 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns:
+This page combines data from the following 3 indicators into a single ‘composite’ score to give a more reliable
+picture of geographical mobility patterns:
 
-<ul class="govuk-list list-disc">
-    <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity" class="govuk-link">Economic inactivity</a> – data on young people not in education or in employment</li>
-    <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/unemployment" class="govuk-link">Unemployment</a> – data on young people not in employment</li>
-    <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level" class="govuk-link">Occupational level</a> – data on young people in lower working class occupations</li>
-</ul>
+* [Economic inactivity](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity)
+  – data on young people not in education or in employment
+* [Unemployment](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/unemployment)
+  – data on young people not in employment
+* [Occupational level](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level)
+  – data on young people in lower working class occupations
 
-The data is adjusted for socio-economic background, so it measures how precarious the situations are of young people from similar social backgrounds.
+The data is adjusted for socio-economic background, so it measures how precarious the situations are of young people
+from similar social backgrounds.
 
-Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.
+Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1,
+and the least well-performing area’s score is set to 0.
 
 See the [technical annex] for more information on how each area was scored.
 

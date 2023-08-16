@@ -95,36 +95,44 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
-he figure for each region shows the percentage of children living in households in relative poverty after housing costs.<br>
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for the region is highly likely to be within. Read more about [confidence intervals].
+[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
 
-## About the data
-# Data source
-Department for Work and Pensions, Households below average income (HBAI) statistics.
+The figure for each region shows the percentage of children living in households in relative poverty after housing costs.<br>
 
-# Time period
-1994 to 2022
+The lines either side of the dots represent confidence intervals – the range of values that the 'true' value
+for the region is highly likely to be within. Read more about [confidence intervals].
 
-# Geographic area
-UK
-
-# What the data measures
-The data shows the percentage of children living in households in relative poverty after housing costs in the UK.
-
-Data is calculated using 3-year averages. For example, the figure for 2019 represents the average of the financial years starting in 2017, 2018 and 2019.
-
-# Things you need to know
-A household is in relative poverty if their equivalised income is below 60% of the median income for all households in the UK. ‘Equivalised’ means adjusted for the number and ages of the people living in the household.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+Department for Work and Pensions, Households below average income (HBAI) statistics.
+
+### Time period
+1994 to 2022
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows the percentage of children living in households in relative poverty after housing costs in the UK.
+
+Data is calculated using 3-year averages. For example, the figure for 2019 represents the average of the financial
+years starting in 2017, 2018 and 2019.
+
+### Things you need to know
+A household is in relative poverty if their equivalised income is below 60% of the median income for all households in the UK.
+‘Equivalised’ means adjusted for the number and ages of the people living in the household.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR12.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv){: target="_blank" class="download" }
