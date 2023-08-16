@@ -218,40 +218,42 @@ By age group (property wealth)
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
 }
 
-## About the data
-# Data source
+## Section
+About the data
+
+## Text
+### Data source
 Office for National Statistics, Wealth and Assets Survey (WAS)
 
-# Time period
+### Time period
 2016 to 2020 (combined)
 
-# Geographic area
+### Geographic area
 England, Scotland and Wales
 
-# What the data measures
+### What the data measures
 The data shows wealth estimates for 25 to 64 year olds in England, Scotland and Wales.
 
 Wealth is the value of different types of assets owned by households minus any liabilities, such as mortgages.
 
 It includes:
-<ul class="govuk-list">
-<li>property wealth, including the value of property minus any mortgage owed</li>
-<li>pension wealth, including the value of occupational and private pensions</li>
-<li>physical wealth, including the value of household contents, valuables and vehicles</li>
-<li>financial wealth, including the value of financial assets</li>
-</ul>
 
-# Things you need to know
+* property wealth, including the value of property minus any mortgage owed
+* pension wealth, including the value of occupational and private pensions
+* physical wealth, including the value of household contents, valuables and vehicles
+* financial wealth, including the value of financial assets
+
+### Things you need to know
 The survey does not directly measure the wealth of respondents’ parents.
 
-Respondents were asked about their parents’ housing and education. Estimates of parents’ wealth are based on the relationships between education, home ownership and wealth. 
+Respondents were asked about their parents’ housing and education. Estimates of parents’ wealth are based on the
+relationships between education, home ownership and wealth. 
 
 Data is adjusted for inflation, and weighted using WAS individual weights.
 
-# Type of data
+### Type of data
 Survey data
 
-## Text
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

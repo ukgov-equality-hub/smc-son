@@ -11,9 +11,14 @@ Data on inequality in hourly pay between high earners and low earners.
 Summary main findings
 
 ## Text
-Inequality in hourly pay between high and low earners got narrower between 2010 and 2022.<br>
-From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly pay) earned around 4 times as much as ‘low earners’ (people in the 10th percentile).<br>
-Inequality in hourly pay then went down every year over the next 10 years. In 2022, higher earners earned around 3.1 times as much as low earners.<br>
+Inequality in hourly pay between high and low earners got narrower between 2010 and 2022.
+
+From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly pay) earned around 4 times as much as
+‘low earners’ (people in the 10th percentile).
+
+Inequality in hourly pay then went down every year over the next 10 years. In 2022, higher earners earned around 3.1
+times as much as low earners.
+
 Inequality in hourly pay was higher in England than Scotland, Wales and Northern Ireland.
 
 ## Section
@@ -77,33 +82,35 @@ By country
     "dataTableDecimalPlaces": [null, 2, 2, 2, 2]
 }
 
-## About the data
-# Data source
-ONS, Annual Survey of Hours and Earnings (ASHE).
-
-# Time period
-1997 to 2022
-
-# Geographic area
-UK
-
-# What the data measures
-<p class="govuk-body">The data measures the gap in hourly earnings between people at the:</p>
-
-<ul class="govuk-list list-disc">
-    <li>90th percentile (‘high earners’) – they earn more than 90% of people</li>
-    <li>10th percentile (‘low earners’) – they earn less than 90% of people</li>
-</ul>
-
-The ‘90:10 ratio’ is calculated as income at the 90th percentile divided by income at the 10th percentile. For example, a ratio of 2 means that people at the 90th percentile earn twice as much as people at the 10th percentile.
-
-# Things you need to know
-This data uses the ‘90:10 ratio’ rather than the Gini coefficient (a commonly-used measure of income inequality). This is for ease of understanding. It uses data from ASHE instead of other sources because ASHE includes data on regional differences.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+ONS, Annual Survey of Hours and Earnings (ASHE).
+
+### Time period
+1997 to 2022
+
+### Geographic area
+UK
+
+### What the data measures
+The data measures the gap in hourly earnings between people at the:
+
+* 90th percentile (‘high earners’) – they earn more than 90% of people
+* 10th percentile (‘low earners’) – they earn less than 90% of people
+
+The ‘90:10 ratio’ is calculated as income at the 90th percentile divided by income at the 10th percentile.
+For example, a ratio of 2 means that people at the 90th percentile earn twice as much as people at the 10th percentile.
+
+### Things you need to know
+This data uses the ‘90:10 ratio’ rather than the Gini coefficient (a commonly-used measure of income inequality).
+This is for ease of understanding. It uses data from ASHE instead of other sources because ASHE includes data on regional differences.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

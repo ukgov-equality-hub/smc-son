@@ -12,11 +12,11 @@ Summary main findings
 
 ## Text
 In 2018, the average attainment score for 15 year olds in the UK in reading, maths and science was 504 out of 1,000 – up from 495 in 2006. 
-<br>
+
 Between 2006 and 2018, the UK’s average attainment score was higher than the international average for OECD countries.
-<br>
+
 In 2018, UK students scored above the OECD averages in reading (504), maths (502), and science (505).
-<br>
+
 The average attainment score for students in OECD countries was 487 in 2018, up from 485 in 2006 – it peaked at 493 in 2012.
 
 ## Section
@@ -50,30 +50,35 @@ By year
     "dataTableDecimalPlaces": [null, 0, 0]
 }
 
-## About the data
-# Data source
-Organisation for Economic Cooperation and Development (OECD), Programme for International Student Assessment (PISA)
-
-# Time period
-2006 to 2018
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows the performance of 15 year old students in maths, science and reading in the UK, over time. It also shows the international average, measured in [OECD countries](https://www.oecd.org/about/document/ratification-oecd-convention.htm){: target="_blank"}.
-<br>
-The data is designed to evaluate education systems by measuring performance and comparing it internationally.
-
-# Things you need to know
-The data acts as a proxy measure of opportunities for high-quality school education.
-<br>
-Average scores for students aged 15 years in reading, mathematics and science range from 0 to 1,000. Read more about the [PISA 2018 results](https://www.oecd.org/publications/pisa-2018-results-volume-i-5f07c754-en.htm){: target="_blank"}.
-
-# Type of data
-Administrative data
+## Section
+About the data
 
 ## Text
+### Data source
+Organisation for Economic Cooperation and Development (OECD), Programme for International Student Assessment (PISA)
+
+### Time period
+2006 to 2018
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows the performance of 15 year old students in maths, science and reading in the UK, over time.
+It also shows the international average, measured in
+[OECD countries](https://www.oecd.org/about/document/ratification-oecd-convention.htm){: target="_blank"}.
+
+The data is designed to evaluate education systems by measuring performance and comparing it internationally.
+
+### Things you need to know
+The data acts as a proxy measure of opportunities for high-quality school education.
+
+Average scores for students aged 15 years in reading, mathematics and science range from 0 to 1,000. Read more about the
+[PISA 2018 results](https://www.oecd.org/publications/pisa-2018-results-volume-i-5f07c754-en.htm){: target="_blank"}.
+
+### Type of data
+Administrative data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

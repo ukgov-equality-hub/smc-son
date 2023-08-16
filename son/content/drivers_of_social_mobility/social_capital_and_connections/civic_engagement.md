@@ -11,11 +11,14 @@ Data on the percentage of people taking part in civic democratic processes in En
 Summary main findings
 
 ## Text
-In the year to March 2021, 41.3% of people in England took part in civic democratic processes, both in person and online, including signing a petition or attending a public rally.
-<br>
+In the year to March 2021, 41.3% of people in England took part in civic democratic processes, both in person
+and online, including signing a petition or attending a public rally.
+
 In the 8 years to March 2021, levels of civic engagement were lowest in the year to March 2016, at 33.3%.
-<br>
-Between 2014 and 2021, the percentage of people who took part in civic democratic processes remained broadly the same, at around 40%. There were slight increases following the Brexit referendum and outbreak of the COVID-19 pandemic, but it is not clear if these events and increases are connected.
+
+Between 2014 and 2021, the percentage of people who took part in civic democratic processes remained broadly the same,
+at around 40%. There were slight increases following the Brexit referendum and outbreak of the COVID-19 pandemic,
+but it is not clear if these events and increases are connected.
 
 ## Section
 By year
@@ -80,28 +83,31 @@ By year
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 }
 
-## About the data
-# Data source
-Department for Digital, Culture, Media and Sport, Community Life Survey
-
-# Time period
-2014 to 2021
-
-# Geographic area
-England
-
-# What the data measures
-The data shows the percentages of adults who took part in civic democratic processes in the 12 months before being surveyed. This means they took part in processes both in person and online, including signing a petition or attending a public rally. 
-<br>
-The data does not include voting.
-
-# Things you need to know
-95% confidence intervals are only available for the 2 financial years to March 2020.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source
+Department for Digital, Culture, Media and Sport, Community Life Survey
+
+### Time period
+2014 to 2021
+
+### Geographic area
+England
+
+### What the data measures
+The data shows the percentages of adults who took part in civic democratic processes in the 12 months before being surveyed.
+This means they took part in processes both in person and online, including signing a petition or attending a public rally. 
+
+The data does not include voting.
+
+### Things you need to know
+95% confidence intervals are only available for the 2 financial years to March 2020.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

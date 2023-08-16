@@ -12,13 +12,11 @@ Summary main findings
 
 ## Text
 In 2022, the median (average) real hourly pay for 22 to 29 year olds in the UK was £12.20.
-<br>
+
 Growth in real hourly pay for 22 to 29 year olds has been low over the last 15 years. This is partly down to sharp falls after:
 
-<ul class="govuk-list">
-<li>the financial crisis in 2008 – average hourly pay went down from £13.31 in 2009 to £12.21 in 2011</li>
-<li>the cost of living crisis in 2022 – average hourly pay went down from £13.33 in 2021 to £12.20 in 2022</li>
-</ul>
+* the financial crisis in 2008 – average hourly pay went down from £13.31 in 2009 to £12.21 in 2011
+* the cost of living crisis in 2022 – average hourly pay went down from £13.33 in 2021 to £12.20 in 2022
 
 ## Section
 By year
@@ -49,28 +47,30 @@ By year
     "dataTableDecimalPlaces": [null, 2]
 }
 
-## About the data
-# Data source(s)
-Office for National Statistics, Annual Survey of Hours and Earnings
-
-# Time period
-1997 to 2022
-
-# Geographic area
-UK
-
-# What the data measures
-The data shows median (average) real hourly pay for 22 to 29 year olds in the UK.
-
-# Things you need to know
-Earnings are adjusted for inflation using the Consumer Price Index, with a base year of 2021.
-<br>
-The data does not include self-employed people or employees who were not paid during the survey period.
-
-# Type of data
-Survey data
+## Section
+About the data
 
 ## Text
+### Data source(s)
+Office for National Statistics, Annual Survey of Hours and Earnings
+
+### Time period
+1997 to 2022
+
+### Geographic area
+UK
+
+### What the data measures
+The data shows median (average) real hourly pay for 22 to 29 year olds in the UK.
+
+### Things you need to know
+Earnings are adjusted for inflation using the Consumer Price Index, with a base year of 2021.
+
+The data does not include self-employed people or employees who were not paid during the survey period.
+
+### Type of data
+Survey data
+
 Read more in State of the Nation 2023 on GOV.UK.
 
 ## Section

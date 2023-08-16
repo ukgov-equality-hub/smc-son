@@ -5,7 +5,8 @@ CI5
 Research and development
 
 ## Summary
-Data on conditions that favour research and development across UK regions – measured by broadband speed, numbers of university research students, and business spending on research.
+Data on conditions that favour research and development across UK regions – measured by broadband speed,
+numbers of university research students, and business spending on research.
 
 ## Map
 # Src
@@ -47,32 +48,32 @@ Summary main findings
 ## Text
 Areas with the best environments for research and development include:
 
-<ul class="govuk-list">
-  <li>Bedfordshire and Hertfordshire</li>
-  <li>Berkshire, Buckinghamshire and Oxfordshire</li>
-  <li>Inner West London</li>
-  <li>Gloucestershire, Wiltshire, and Bath and Bristol</li>
-  <li>West Midlands</li>
-  <li>Derby and Nottingham</li>
-  <li>Central Scotland</li>
-</ul>
+* Bedfordshire and Hertfordshire
+* Berkshire, Buckinghamshire and Oxfordshire
+* Inner West London
+* Gloucestershire, Wiltshire, and Bath and Bristol
+* West Midlands
+* Derby and Nottingham
+* Central Scotland
 
 Many of these areas are locations of major universities and high-tech and engineering firms.
 
-This data has similar patterns to the data on areas with <a href="/drivers_of_social_mobility/composite_indices/socio-cultural_advantage" class="govuk-link">sociocultural advantage</a> – the best environments for upward mobility tend to be in and around London, and the worst are in more remote parts of the UK.
+This data has similar patterns to the data on areas with
+[sociocultural advantage](/drivers_of_social_mobility/composite_indices/socio-cultural_advantage)
+– the best environments for upward mobility tend to be in and around London, and the worst are in more remote parts of the UK.
 
 ## Section
 About the data
 
 ## Text
-This page combines data from the following 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns:
+This page combines data from the following 3 indicators into a single ‘composite’ score to give a more
+reliable picture of geographical mobility patterns:
 
-<ul class="govuk-list list-disc">
-    <li><a href="/drivers_of_social_mobility/research_and_development_environment/broadband_speed" class="govuk-link">Broadband speed</a></li>
-    <li><a href="/drivers_of_social_mobility/research_and_development_environment/business_spending_on_research_and_development" class="govuk-link">Business expenditure on research and development</a></li>
-    <li><a href="/drivers_of_social_mobility/research_and_development_environment/university_research_students" class="govuk-link">University research students</a></li>
-</ul>
+* [Broadband speed](/drivers_of_social_mobility/research_and_development_environment/broadband_speed)
+* [Business expenditure on research and development](/drivers_of_social_mobility/research_and_development_environment/business_spending_on_research_and_development)
+* [University research students](/drivers_of_social_mobility/research_and_development_environment/university_research_students)
 
-Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.<br> 
+Indicators are rescaled to make sure they use a common metric.
+The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.
 
 See the [technical annex] for more information on how each area was scored.

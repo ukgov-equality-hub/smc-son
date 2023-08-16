@@ -5,7 +5,8 @@ CI1
 Promising prospects
 
 ## Summary
-Data on the UK regions with the most 'promising prospects' for 25 to 29 year olds – measured by levels of university education, professional work, and earnings.
+Data on the UK regions with the most 'promising prospects' for 25 to 29 year olds – measured by levels of university
+education, professional work, and earnings.
 
 ## Map
 # Src
@@ -45,27 +46,33 @@ Data on the UK regions with the most 'promising prospects' for 25 to 29 year old
 Summary main findings
 
 ## Text
-Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to have the best prospects.
+Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to
+have the best prospects.
 
 Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse prospects. 
 
-Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire, which contains both remote rural and urban areas.
+Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire,
+which contains both remote rural and urban areas.
 
 ## Subtitle
 About the data
 
 ## Text
-This page combines data from the following 3 indicators into a single 'composite' score to give a more reliable picture of geographical mobility patterns:
+This page combines data from the following 3 indicators into a single 'composite' score to give a more reliable
+picture of geographical mobility patterns:
 
-<ul class="govuk-list list-disc">
-    <li><a href="/intermediate_outcomes/routes_into_work_(16_to_29_years)/highest_qualification" class="govuk-link">Highest qualification</a> – data on young people with university degrees</li>
-    <li><a href="/intermediate_outcomes/composite_indices/promising_prospects" class="govuk-link">Occupation level</a> – data on young people in professional occupations</li>
-    <li><a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings" class="govuk-link">Hourly earnings</a> – data on young people's earnings at work</li>
-</ul>
+* [Highest qualification](/intermediate_outcomes/routes_into_work_(16_to_29_years)/highest_qualification)
+  – data on young people with university degrees
+* [Occupation level](/intermediate_outcomes/composite_indices/promising_prospects)
+  – data on young people in professional occupations
+* [Hourly earnings](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings)
+  – data on young people's earnings at work
 
-The data is adjusted for socio-economic background, so it measures how promising the prospects are of young people from similar social backgrounds.
+The data is adjusted for socio-economic background, so it measures how promising the prospects are of young people
+from similar social backgrounds.
 
-Indicators are rescaled to make sure they use a common metric. The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0. 
+Indicators are rescaled to make sure they use a common metric.
+The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0. 
 
 See the [technical annex] for more information on how each area was scored.
 

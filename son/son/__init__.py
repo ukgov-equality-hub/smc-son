@@ -58,7 +58,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                 else: file_size = f"{int(file_size)}B"
                 html = html.replace('[Download full dataset (CSV)]', f"[Download full dataset (CSV, {file_size})]")
 
-        html = markdown.markdown(html, extensions=['nl2br', 'attr_list', 'sane_lists'])
+        html = markdown.markdown(html, extensions=['attr_list', 'sane_lists'])
 
         soup = BeautifulSoup(html, 'html.parser')
         for el in soup.find_all('p'):
