@@ -39,7 +39,7 @@
                         const item = menu[i].innerText.trim()
                         if (found.indexOf(item) > -1) {
                             menu[i].style.display = 'unset'
-                            document.getElementById(`${area.name}_matches`).innerHTML = searchMatches(item)
+                            document.getElementById(`${item}_matches`).innerHTML = searchMatches(item)
                         } else {
                             menu[i].style.display = 'none'
                         }

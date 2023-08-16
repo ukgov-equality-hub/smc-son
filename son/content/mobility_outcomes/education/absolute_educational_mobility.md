@@ -32,6 +32,39 @@ People with a long-term illness or disability were less likely to have a univers
 disability from the same education background. They were also more likely to have no qualifications.
 
 ## Section
+By year
+
+## Chart: Stacked-bar
+{
+    "code": "MO31",
+    "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification (UK, 2020)",
+    "tooltipTitle": "",
+    "data": "/static/data/indicators/MO31_overview_total-20230601.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "SEB",
+    "ykey": "Value",
+    "zkey": "Category",
+    "scale": "%",
+    "multiply": 100,
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "clickBehaviour": "filter",
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
+}
+
+## Section
 By sex
 
 ## Chart: Stacked-bar
@@ -45,9 +78,6 @@ By sex
     }, {
         "label": "Men",
         "data": "/static/data/indicators/MO31_overview_male-20230601.csv"
-    }, {
-        "label": "Total",
-        "data": "/static/data/indicators/MO31_overview_total-20230601.csv"
     }],
     "toggle": "radio",
     "height": 450,
