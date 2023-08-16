@@ -59,7 +59,8 @@ Office for National Statistics, Vacancy Survey and Labour Force Survey
 UK
 
 ### What the data measures
-The data shows the number of vacancies for every unemployed person in the UK. 
+The data shows the number of vacancies for every unemployed person in the UK.
+A higher value indicates greater opportunities for job seekers.
 
 The vacancy rate is based on:
 

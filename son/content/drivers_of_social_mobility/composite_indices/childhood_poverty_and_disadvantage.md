@@ -74,6 +74,6 @@ reliable picture of geographical mobility patterns:
   – data on parents in lower working class occupations
 
 Indicators are rescaled to make sure they use a common metric.
-The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0.
+The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
 See the [technical annex] for more information on how each area was scored. 

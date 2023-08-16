@@ -16,15 +16,6 @@ From 2014 to 2021, the percentage of 25 to 29 year olds in professional and mana
 The percentage in working class jobs went down from 41% to 33%.
 This was mainly due to the percentage in skilled manual work (‘higher working class’) going down from 25% to 17%.
 
-In the 3 years to 2021, parts of the south-east had the highest percentages of 25 to 29 year olds in higher
-professional jobs out of all regions. Scotland and parts of the north and north-east had the lowest percentages. 
-
-The highest percentages of 25 to 29 year olds in lower working class jobs were in Northern Ireland, parts of
-Scotland and Wales, and some metropolitan areas. Most regions in the south-east had the lowest percentages.
-
-In parts of London, the percentages of 25 to 29 year olds in both higher professional and lower working class
-occupations were higher than the national average.
-
 ## Section
 By year
 

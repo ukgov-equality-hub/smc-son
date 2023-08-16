@@ -338,7 +338,7 @@ For data on mobility by year of birth (‘birth cohort studies’), the most rec
 working lives as they were born between 1990 and 1999. The chances of people moving into the professional classes
 increases from 25 to 35 years old, and slows in their late 30s and early 40s.
 
-The data used is weighted using the LFS population weights.
+The data used is weighted using the LFS probability weights.
 
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months
 or more, and if that condition reduced their ability to carry out day-to-day activities.

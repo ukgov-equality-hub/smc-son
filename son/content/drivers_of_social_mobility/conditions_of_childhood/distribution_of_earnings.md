@@ -19,12 +19,11 @@ From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly 
 Inequality in hourly pay then went down every year over the next 10 years. In 2022, higher earners earned around 3.1
 times as much as low earners.
 
-Inequality in hourly pay was higher in England than Scotland, Wales and Northern Ireland.
-
 ## Section
 By year
 
 ## Chart: Single-line
+# Src
 {
     "code": "DR11",
     "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)",
@@ -49,6 +48,9 @@ By year
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
+
+# Guidance
+When the ratio equals 1, there is no gap in earnings
 
 ## Section
 By country

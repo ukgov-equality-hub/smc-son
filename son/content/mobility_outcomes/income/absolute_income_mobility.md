@@ -15,9 +15,6 @@ Summary main findings
 Data on people born between 1960 and 1987 in the UK shows that absolute income mobility was above 70% for people
 born in the mid-1970s. It went down to below 70% for people born later.
 
-The Netherlands had the highest level of absolute income mobility out of the 8 countries included in the data, at
-nearly 80% for people born in the mid-1970s. It also went down for people born in the 1980s.
-
 ## Section
 By year of birth
 

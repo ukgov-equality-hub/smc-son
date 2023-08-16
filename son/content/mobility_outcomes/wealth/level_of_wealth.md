@@ -1,8 +1,8 @@
 ## Code
-MO52
+MO51
 
 ## Title
-Relative wealth mobility
+Level of wealth
 
 ## Summary
 Data on the amount of wealth people have at different ages, and on the relationship in wealth between people and their parents.
@@ -26,6 +26,35 @@ A 10% increase in parents’ wealth was associated with the following increases 
 
 * 3.8% increase for women
 * 2.9% increase for men
+
+## Section
+By age group and type of wealth
+
+## Chart: Stacked-bar
+{
+    "code": "MO51",
+    "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
+    "tooltipTitle": "",
+    "data": "/static/data/indicators/MO51_overview-20230626.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Age",
+    "ykey": "Value",
+    "zkey": "Category",
+    "sort": "Age",
+    "scale": "££",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "legend": true,
+    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "margin": [0, 0, 0, 0],
+    "clickBehaviour": "filter",
+    "dataTable": "/static/pre-processed-csvs/MO51-level-of-wealth--by-age-and-type-of-wealth--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
+}
 
 ## Section
 About the data
@@ -64,3 +93,9 @@ Data is adjusted for inflation, and weighted using WAS individual weights.
 Survey data
 
 Read more in State of the Nation 2023 on GOV.UK.
+
+## Section
+Download the data
+
+## Text
+[Download full dataset (CSV)](/static/data/full-datasets/MO51-level-of-wealth--full-dataset.csv){: target="_blank" class="download" }

@@ -15,8 +15,6 @@ The percentage of children living in relative poverty has gone up since 2012, bu
 
 Between 2017 and 2022, the percentage of children living in relative poverty stayed roughly the same at around 30%.
 
-Out of all UK regions, Greater London, Greater Manchester, and the West Midlands had some of the highest levels of childhood poverty in 2022.
-
 ## Section
 By year
 

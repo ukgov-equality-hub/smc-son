@@ -67,15 +67,13 @@ The data measures the non-continuation (dropout) rates of full-time students dur
 
 Students are counted as dropping out if they left their course in the first year, having attended for 50 days or more.
 
-Percentages are rounded to 2 decimal places.
-
 ### Things you need to know
 Lower dropout rates may not reflect the availability of good quality higher education. 
 
 Other relevant factors might include changes to wages and job opportunities at the start of the COVID-19 pandemic.
 
 ### Type of data
-Administrative.
+Administrative data.
 
 Read more in State of the Nation 2023 on GOV.UK.
 
