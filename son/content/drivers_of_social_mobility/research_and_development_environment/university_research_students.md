@@ -134,4 +134,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-04-05 DR53.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR53-university-research-students--full-dataset.csv){: target="_blank" class="download" }

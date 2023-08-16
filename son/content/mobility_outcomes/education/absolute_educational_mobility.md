@@ -225,4 +225,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-06-01 MO31.csv.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/MO31-absolute-educational-mobility--full-dataset.csv){: target="_blank" class="download" }

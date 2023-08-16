@@ -213,4 +213,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 IN23.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN23-highest-qualification--full-dataset.csv){: target="_blank" class="download" }

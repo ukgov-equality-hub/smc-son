@@ -81,4 +81,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-05-26 MO21.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/MO21-absolute-income-mobility--full-dataset.csv){: target="_blank" class="download" }

@@ -183,4 +183,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR33.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR33-occupation-level-of-25-to-29-year-olds--full-dataset.csv){: target="_blank" class="download" }

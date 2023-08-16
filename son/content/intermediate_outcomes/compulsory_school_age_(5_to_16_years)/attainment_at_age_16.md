@@ -267,4 +267,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-06-01 IN13.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN13-attainment-at-age-16--full-dataset.csv){: target="_blank" class="download" }

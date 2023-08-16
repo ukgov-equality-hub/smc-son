@@ -150,4 +150,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-04-19 DR14.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR14-distribution-of-parental-occupation--full-dataset.csv){: target="_blank" class="download" }

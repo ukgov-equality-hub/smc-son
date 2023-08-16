@@ -228,4 +228,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-07-13 IN351.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN351-income-returns-to-education--full-dataset.csv){: target="_blank" class="download" }
