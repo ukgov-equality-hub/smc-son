@@ -411,7 +411,7 @@ class Chart {
                     ygrid = false
                     domain = getQuantileRanges(chartData.map(x => x[orientation == 'y' ? ykey : xkey]).sort(function (a, b) { return a - b }), type)
                     let d = chartData.filter(x => x[ykey] == yvalue)
-                    if (d) {
+                    if (d && d.length > 0) {
                         let q = getQuantile(domain, d[0][xkey])
                         marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, stroke: 'grey' }))
                         marks.push(Plot.cell(domain, { x: x => x, dy: 9, fill: x => x, stroke: 'grey' }))
