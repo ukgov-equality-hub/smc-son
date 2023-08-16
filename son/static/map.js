@@ -761,6 +761,8 @@ class Choropleth {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
+            } else if (['££', '$$', '€€'].includes(scale)) {
+                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {
