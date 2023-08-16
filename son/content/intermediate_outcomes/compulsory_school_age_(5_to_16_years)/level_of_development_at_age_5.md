@@ -231,4 +231,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-07-14 IN11.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN11-level-of-development-at-age-5--full-dataset.csv){: target="_blank" class="download" }

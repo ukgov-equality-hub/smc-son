@@ -87,4 +87,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-03-27 DR42.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/DR42-level-of-trust-fairness-and-helpfulness--full-dataset.csv){: target="_blank" class="download" }

@@ -221,4 +221,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/data/indicators/2023-07-13 IN352.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/full-datasets/IN352-direct-effect-of-social-origin-on-earnings--full-dataset.csv){: target="_blank" class="download" }
