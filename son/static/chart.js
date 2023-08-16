@@ -165,6 +165,7 @@ class Chart {
         let domain = options.domain || null
         let range = options.range || null
         const zero = options.zero == false ? false : true
+        const multiply = options.multiply || null
         const xtitle = options.xtitle || null
         const ytitle = options.ytitle || null
         const maxBarSize = options.maxBarSize || -1
@@ -219,7 +220,22 @@ class Chart {
             }
 
             const orientation = ['bary', 'doty', 'liney'].includes(type) ? 'y' : 'x'
+            if (multiply && isNumeric(multiply)) {
+                for (let i = 0; i < data.length; i++) {
+                    data[i] = data[i].map(x => {
+                        if (isNumeric(x[orientation == 'y' ? ykey : xkey])) x[orientation == 'y' ? ykey : xkey] *= multiply
+                        if (x1key && isNumeric(x[x1key])) x[x1key] *= multiply
+                        if (x2key && isNumeric(x[x2key])) x[x2key] *= multiply
+                        if (y1key && isNumeric(x[y1key])) x[y1key] *= multiply
+                        if (y2key && isNumeric(x[y2key])) x[y2key] *= multiply
+                        if (lci && isNumeric(x[lci])) x[lci] *= multiply
+                        if (uci && isNumeric(x[uci])) x[uci] *= multiply
+                        return x
+                    })
+                }
+            }
             const vals = zkey && !['line', 'liney'].includes(type) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
+
             let min = 0 //d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
             if (orientation == 'y') {
                 min = d3.min(vals, x => parseFloat(x[ykey], 10))
@@ -1075,6 +1091,8 @@ class Chart {
                 return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
+            } else if (['££', '$$', '€€'].includes(scale)) {
+                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
