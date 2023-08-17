@@ -100,10 +100,6 @@ menu = {
                         {
                             'id': 'IN13',
                             'name': 'Attainment at age 16'
-                        },
-                        {
-                            'id': 'IN14',
-                            'name': 'Skills at age 15'
                         }
                     ]
                 },
@@ -121,10 +117,6 @@ menu = {
                         {
                             'id': 'IN23',
                             'name': 'Highest qualification'
-                        },
-                        {
-                            'id': 'IN24',
-                            'name': 'Skills in early adulthood'
                         }
                     ]
                 },
