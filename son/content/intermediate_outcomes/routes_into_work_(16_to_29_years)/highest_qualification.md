@@ -5,13 +5,14 @@ IN23
 Highest qualification
 
 ## Summary
-Data on the highest qualifications of 25 to 29 year olds by social class background.
+Data on the highest qualification achieved of 25 to 29 year olds by social class background.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Young people’s socio-economic background is strongly related to the highest qualification level they achieve.
+Young people’s socio-economic background is strongly related to the highest qualification level they have achieved by
+their mid to late 20s.
 
 In 2021, 71% of 25 to 29 year olds from higher professional backgrounds had a first or higher degree,
 compared with 27% of those from the lower working class.
@@ -172,6 +173,20 @@ By ethnicity
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
+}
+
+## Section
+By disability status
+
+## Chart: Grouped-bar
+{
+    "code": "IN23",
+    "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
+    "dataTable": "/static/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-disability--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1, 1],
+    "dataTableNumberOfHeadingColumns": 2
 }
 
 ## Section

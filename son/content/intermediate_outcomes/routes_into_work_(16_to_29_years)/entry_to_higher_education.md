@@ -5,13 +5,13 @@ IN22
 Entry to higher education
 
 ## Summary
-Data on the percentage of 19 year olds taking a full-time first degree.
+Data on the percentage of 18-20 year olds studying for a full-time first degree.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-34% of all 18 to 20 year olds began studying in higher education in 2021.
+34% of all 18 to 20 year olds were studying in higher education in 2021.
 
 51% of 18 to 20 year olds from a higher professional background started a higher education course, compared with 21%
 of those from a lower working class background. This is one of the largest class inequalities reported in State of the Nation 2023.

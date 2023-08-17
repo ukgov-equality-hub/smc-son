@@ -121,11 +121,9 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-sex-and-disadvantage--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-sex-and-disadvantage--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
-    "dataTableNumberOfHeadingRows": 2
+    "dataTableAlignColumns": ["left", "right", "right"]
 }
 
 ## Section
@@ -170,148 +168,10 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-ethnicity-and-FSM--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-ethnicity-and-FSM--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 0, 0, 0, 0, 0, 0, 0],
-    "dataTableNumberOfHeadingColumns": 2
+    "dataTableAlignColumns": ["left", "right", "right"]
 }
-
-## Section
-Disadvantaged vs. Not disadvantaged [delete?]
-
-## Tabs
-# Tab
-Compare maps
-
-# Map
-{
-    "code": "IN12",
-    "title": "Disadvantaged",
-    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
-    "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "CTYUA22NM",
-    "scale": "%",
-    "width": 537,
-    "height": 700,
-    "dataFormat": "sequential",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "domain": [20, 80],
-    "onClick": "mapSelect1"
-}
-
-# Map
-{
-    "code": "IN12",
-    "title": "Not disadvantaged",
-    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
-    "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "CTYUA22NM",
-    "scale": "%",
-    "width": 537,
-    "height": 700,
-    "dataFormat": "sequential",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "domain": [20, 80],
-    "onClick": "mapSelect1"
-}
-
-# Tab
-Independent maps
-
-# Map
-{
-    "code": "IN12",
-    "title": "Disadvantaged",
-    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
-    "data": "/static/data/indicators/IN12_local_authority_disadvantaged-20230531.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "CTYUA22NM",
-    "scale": "%",
-    "width": 537,
-    "height": 700,
-    "dataFormat": "sequential",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "onClick": "mapSelect1"
-}
-
-# Map
-{
-    "code": "IN12",
-    "title": "Not disadvantaged",
-    "map": "/static/data/maps/Counties_and_Unitary_Authorities_(December_2022)_UK_BUC.json",
-    "data": "/static/data/indicators/IN12_local_authority_not_disadvantaged-20230531.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "CTYUA22NM",
-    "scale": "%",
-    "width": 537,
-    "height": 700,
-    "dataFormat": "sequential",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "onClick": "mapSelect1"
-}
-
-# Tab
-Bar chart
-
-# Chart
-{
-    "code": "IN12",
-    "title": "Attaintment at age 11",
-    "data": "/static/data/indicators/IN12_local_authority-20230531.csv",
-    "height": 5000,
-    "type": "bar",
-    "ykey": "SEB",
-    "xkey": "Value",
-    "group": "Area_name",
-    "sort": "Value",
-    "scale": "%",
-    "xgrid": true,
-    "ygrid": false,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "margin": [0, 0, 0, 0],
-    "textLabels": "outside",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade"
-}
-
-# Tab
-Data
-
-# DataTable
-{
-    "data": "/static/data/indicators/IN12_area-20230531.csv",
-    "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--by-local-authority-and-disadvantage--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableTitle": "TODO this table needs a caption to describe what the numbers mean TODO"
-}
-
-# Tab
-Download
-
-# Download
-{}
 
 ## Section
 By area
@@ -407,7 +267,7 @@ was no difference in achievement. A score of +10 means that every non-disadvanta
 Data was not collected during the 2 school years ending in July 2021 due to the COVID-19 pandemic.
 
 Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education.
-Children are eligible for FSM if their parents receive certain benefits. FSM are provided to roughly 15% of students. 
+Children are eligible for FSM if their parents receive certain benefits.
 
 Figures for the 2021 to 2022 school year are based on revised data. Figures for other years are based on final data.
 

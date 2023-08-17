@@ -62,7 +62,7 @@ By area
 # Src
 {
     "code": "IN11",
-    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, academic year 2021 to 2022)",
     "tooltipTitle": "Percentage of children reaching a ‘good level of development’",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -113,9 +113,6 @@ They are then divided into 5 equally-sized groups (‘quintiles’), from the be
 The figure for each region shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
 Figures are shown separately for FSM-eligible pupils and non-eligible pupils.
 The gap between these 2 groups is also shown for each region.
-
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
-the region is highly likely to be within. Read more about [confidence intervals].
 
 ## Section
 By sex
@@ -220,7 +217,6 @@ Data was not collected during the 2 school years ending in July 2021 due to the 
 
 Eligibility for free school meals (FSM) is used as an indicator of deprivation by the Department for Education.
 Children are eligible for FSM if their parents receive certain benefits.
-FSM are provided to roughly 15% of students. 
 
 ### Type of data
 Administrative data
