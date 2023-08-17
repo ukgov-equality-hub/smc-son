@@ -134,7 +134,8 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
             else:
                 if current_section == '':
                     current_section = 'Text'
-                if current_content != '': current_content += newline
+                if current_content != '':
+                    current_content += newline
                 current_content += line.strip()
 
         if current_section != '':
@@ -174,7 +175,7 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
                         current_subsection = ''
                         current_subcontent = ''
                     current_subsection = item[1:].strip()
-                elif item.strip() != '':
+                else:
                     if current_subcontent != '': current_subcontent += newline
                     current_subcontent += item.strip()
 
