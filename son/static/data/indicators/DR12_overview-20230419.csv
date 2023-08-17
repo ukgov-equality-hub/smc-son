@@ -1,108 +1,4 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"DR12","Childhood poverty",NA,NA,"England",1997,NA,NA,NA,NA,NA,32.9196674570964,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",1998,NA,NA,NA,NA,NA,33.0179437934345,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",1999,NA,NA,NA,NA,NA,33.4956781374445,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2000,NA,NA,NA,NA,NA,33.0651046639933,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2001,NA,NA,NA,NA,NA,32.2361482523226,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2002,NA,NA,NA,NA,NA,31.1074003356484,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2003,NA,NA,NA,NA,NA,30.0780037054885,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2004,NA,NA,NA,NA,NA,29.4816882755488,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2005,NA,NA,NA,NA,NA,28.7838614714289,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2006,NA,NA,NA,NA,NA,28.9920725815234,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2007,NA,NA,NA,NA,NA,29.9293765809562,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2008,NA,NA,NA,NA,NA,31.0935774755835,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2009,NA,NA,NA,NA,NA,31.5284262216904,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2010,NA,NA,NA,NA,NA,30.8968092432319,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2011,NA,NA,NA,NA,NA,29.473977836562,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2012,NA,NA,NA,NA,NA,28.2162397731293,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2013,NA,NA,NA,NA,NA,27.5460671684435,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2014,NA,NA,NA,NA,NA,27.6457359539309,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2015,NA,NA,NA,NA,NA,28.2849134750095,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2016,NA,NA,NA,NA,NA,29.0279170624311,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2017,NA,NA,NA,NA,NA,30.0693636729428,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2018,NA,NA,NA,NA,NA,30.294710861406,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2019,NA,NA,NA,NA,NA,30.3541656858932,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2020,NA,NA,NA,NA,NA,30.436939892777,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2021,NA,NA,NA,NA,NA,30.6250024753726,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"England",2022,NA,NA,NA,NA,NA,30.7775489250681,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",1997,NA,NA,NA,NA,NA,35.8476280782058,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",1998,NA,NA,NA,NA,NA,36.7642330540539,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",1999,NA,NA,NA,NA,NA,35.6875609036153,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2000,NA,NA,NA,NA,NA,35.4854820831296,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2001,NA,NA,NA,NA,NA,35.1438501906091,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2002,NA,NA,NA,NA,NA,34.015938314454,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2003,NA,NA,NA,NA,NA,33.6282316760009,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2004,NA,NA,NA,NA,NA,31.2604630607254,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2005,NA,NA,NA,NA,NA,30.4308828966811,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2006,NA,NA,NA,NA,NA,28.683038924381,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2007,NA,NA,NA,NA,NA,29.992936272755,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2008,NA,NA,NA,NA,NA,32.6487174118329,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2009,NA,NA,NA,NA,NA,31.7641837725399,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2010,NA,NA,NA,NA,NA,32.6785395739309,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2011,NA,NA,NA,NA,NA,30.7246249814153,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2012,NA,NA,NA,NA,NA,32.3115506387889,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2013,NA,NA,NA,NA,NA,31.5578377182463,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2014,NA,NA,NA,NA,NA,31.0402721374973,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2015,NA,NA,NA,NA,NA,29.1236106328078,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2016,NA,NA,NA,NA,NA,29.2422429829509,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2017,NA,NA,NA,NA,NA,27.6957704672419,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2018,NA,NA,NA,NA,NA,29.0524419639112,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2019,NA,NA,NA,NA,NA,28.4806838804996,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2020,NA,NA,NA,NA,NA,30.5953134082122,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2021,NA,NA,NA,NA,NA,31.2944963040776,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Wales",2022,NA,NA,NA,NA,NA,27.8810881492456,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",1997,NA,NA,NA,NA,NA,31.7139427629693,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",1998,NA,NA,NA,NA,NA,31.9084674820019,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",1999,NA,NA,NA,NA,NA,31.559827754007,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2000,NA,NA,NA,NA,NA,30.9895953757855,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2001,NA,NA,NA,NA,NA,31.2447544866815,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2002,NA,NA,NA,NA,NA,31.2389182658504,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2003,NA,NA,NA,NA,NA,29.6098136268426,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2004,NA,NA,NA,NA,NA,27.8519761754126,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2005,NA,NA,NA,NA,NA,25.8140481425857,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2006,NA,NA,NA,NA,NA,24.9992211862907,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2007,NA,NA,NA,NA,NA,24.5525259245908,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2008,NA,NA,NA,NA,NA,24.0934619909156,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2009,NA,NA,NA,NA,NA,24.5246935471692,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2010,NA,NA,NA,NA,NA,24.3725288983465,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2011,NA,NA,NA,NA,NA,23.5253881348349,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2012,NA,NA,NA,NA,NA,21.4371797550036,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2013,NA,NA,NA,NA,NA,20.7356631799621,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2014,NA,NA,NA,NA,NA,20.9835822489987,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2015,NA,NA,NA,NA,NA,21.616792280224,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2016,NA,NA,NA,NA,NA,22.7953830828182,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2017,NA,NA,NA,NA,NA,23.3519476900375,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2018,NA,NA,NA,NA,NA,24.1967530884304,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2019,NA,NA,NA,NA,NA,23.2273317003574,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2020,NA,NA,NA,NA,NA,24.2838357952273,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2021,NA,NA,NA,NA,NA,24.6392846695019,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Scotland",2022,NA,NA,NA,NA,NA,24.4821366140172,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",1997,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",1999,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2002,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2004,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2005,NA,NA,NA,NA,NA,26.2090310545482,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2006,NA,NA,NA,NA,NA,26.6820853257366,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2007,NA,NA,NA,NA,NA,25.3727202086355,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2008,NA,NA,NA,NA,NA,25.4578069968268,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2009,NA,NA,NA,NA,NA,24.8462908557848,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2010,NA,NA,NA,NA,NA,26.6236369662739,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2011,NA,NA,NA,NA,NA,26.0048614710484,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2012,NA,NA,NA,NA,NA,26.4105299421682,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2013,NA,NA,NA,NA,NA,24.3227319819649,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2014,NA,NA,NA,NA,NA,25.0225579979936,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2015,NA,NA,NA,NA,NA,25.3026416383564,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2016,NA,NA,NA,NA,NA,25.6824083953723,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2017,NA,NA,NA,NA,NA,25.6175531595909,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2018,NA,NA,NA,NA,NA,23.9671828827516,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2019,NA,NA,NA,NA,NA,25.0869423480592,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2020,NA,NA,NA,NA,NA,24.0340648094742,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2021,NA,NA,NA,NA,NA,24.7567844817235,NA,NA,NA,NA,NA,NA
-"DR12","Childhood poverty",NA,NA,"Northern Ireland",2022,NA,NA,NA,NA,NA,22.1515557838752,NA,NA,NA,NA,NA,NA
 "DR12","Childhood poverty",NA,NA,"United Kingdom",1997,NA,NA,NA,NA,NA,32.9663019987259,NA,NA,NA,NA,NA,NA
 "DR12","Childhood poverty",NA,NA,"United Kingdom",1998,NA,NA,NA,NA,NA,33.1162710018259,NA,NA,NA,NA,NA,NA
 "DR12","Childhood poverty",NA,NA,"United Kingdom",1999,NA,NA,NA,NA,NA,33.4435607621349,NA,NA,NA,NA,NA,NA
@@ -129,3 +25,107 @@
 "DR12","Childhood poverty",NA,NA,"United Kingdom",2020,NA,NA,NA,NA,NA,29.7996688473983,NA,NA,NA,NA,NA,NA
 "DR12","Childhood poverty",NA,NA,"United Kingdom",2021,NA,NA,NA,NA,NA,30.041539170814,NA,NA,NA,NA,NA,NA
 "DR12","Childhood poverty",NA,NA,"United Kingdom",2022,NA,NA,NA,NA,NA,29.9283309682243,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",1997,NA,NA,NA,NA,NA,32.9196674570964,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",1998,NA,NA,NA,NA,NA,33.0179437934345,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",1999,NA,NA,NA,NA,NA,33.4956781374445,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2000,NA,NA,NA,NA,NA,33.0651046639933,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2001,NA,NA,NA,NA,NA,32.2361482523226,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2002,NA,NA,NA,NA,NA,31.1074003356484,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2003,NA,NA,NA,NA,NA,30.0780037054885,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2004,NA,NA,NA,NA,NA,29.4816882755488,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2005,NA,NA,NA,NA,NA,28.7838614714289,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2006,NA,NA,NA,NA,NA,28.9920725815234,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2007,NA,NA,NA,NA,NA,29.9293765809562,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2008,NA,NA,NA,NA,NA,31.0935774755835,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2009,NA,NA,NA,NA,NA,31.5284262216904,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2010,NA,NA,NA,NA,NA,30.8968092432319,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2011,NA,NA,NA,NA,NA,29.473977836562,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2012,NA,NA,NA,NA,NA,28.2162397731293,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2013,NA,NA,NA,NA,NA,27.5460671684435,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2014,NA,NA,NA,NA,NA,27.6457359539309,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2015,NA,NA,NA,NA,NA,28.2849134750095,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2016,NA,NA,NA,NA,NA,29.0279170624311,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2017,NA,NA,NA,NA,NA,30.0693636729428,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2018,NA,NA,NA,NA,NA,30.294710861406,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2019,NA,NA,NA,NA,NA,30.3541656858932,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2020,NA,NA,NA,NA,NA,30.436939892777,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2021,NA,NA,NA,NA,NA,30.6250024753726,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"England",2022,NA,NA,NA,NA,NA,30.7775489250681,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",1997,NA,NA,NA,NA,NA,31.7139427629693,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",1998,NA,NA,NA,NA,NA,31.9084674820019,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",1999,NA,NA,NA,NA,NA,31.559827754007,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2000,NA,NA,NA,NA,NA,30.9895953757855,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2001,NA,NA,NA,NA,NA,31.2447544866815,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2002,NA,NA,NA,NA,NA,31.2389182658504,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2003,NA,NA,NA,NA,NA,29.6098136268426,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2004,NA,NA,NA,NA,NA,27.8519761754126,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2005,NA,NA,NA,NA,NA,25.8140481425857,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2006,NA,NA,NA,NA,NA,24.9992211862907,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2007,NA,NA,NA,NA,NA,24.5525259245908,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2008,NA,NA,NA,NA,NA,24.0934619909156,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2009,NA,NA,NA,NA,NA,24.5246935471692,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2010,NA,NA,NA,NA,NA,24.3725288983465,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2011,NA,NA,NA,NA,NA,23.5253881348349,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2012,NA,NA,NA,NA,NA,21.4371797550036,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2013,NA,NA,NA,NA,NA,20.7356631799621,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2014,NA,NA,NA,NA,NA,20.9835822489987,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2015,NA,NA,NA,NA,NA,21.616792280224,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2016,NA,NA,NA,NA,NA,22.7953830828182,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2017,NA,NA,NA,NA,NA,23.3519476900375,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2018,NA,NA,NA,NA,NA,24.1967530884304,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2019,NA,NA,NA,NA,NA,23.2273317003574,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2020,NA,NA,NA,NA,NA,24.2838357952273,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2021,NA,NA,NA,NA,NA,24.6392846695019,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Scotland",2022,NA,NA,NA,NA,NA,24.4821366140172,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",1997,NA,NA,NA,NA,NA,35.8476280782058,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",1998,NA,NA,NA,NA,NA,36.7642330540539,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",1999,NA,NA,NA,NA,NA,35.6875609036153,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2000,NA,NA,NA,NA,NA,35.4854820831296,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2001,NA,NA,NA,NA,NA,35.1438501906091,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2002,NA,NA,NA,NA,NA,34.015938314454,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2003,NA,NA,NA,NA,NA,33.6282316760009,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2004,NA,NA,NA,NA,NA,31.2604630607254,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2005,NA,NA,NA,NA,NA,30.4308828966811,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2006,NA,NA,NA,NA,NA,28.683038924381,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2007,NA,NA,NA,NA,NA,29.992936272755,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2008,NA,NA,NA,NA,NA,32.6487174118329,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2009,NA,NA,NA,NA,NA,31.7641837725399,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2010,NA,NA,NA,NA,NA,32.6785395739309,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2011,NA,NA,NA,NA,NA,30.7246249814153,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2012,NA,NA,NA,NA,NA,32.3115506387889,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2013,NA,NA,NA,NA,NA,31.5578377182463,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2014,NA,NA,NA,NA,NA,31.0402721374973,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2015,NA,NA,NA,NA,NA,29.1236106328078,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2016,NA,NA,NA,NA,NA,29.2422429829509,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2017,NA,NA,NA,NA,NA,27.6957704672419,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2018,NA,NA,NA,NA,NA,29.0524419639112,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2019,NA,NA,NA,NA,NA,28.4806838804996,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2020,NA,NA,NA,NA,NA,30.5953134082122,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2021,NA,NA,NA,NA,NA,31.2944963040776,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Wales",2022,NA,NA,NA,NA,NA,27.8810881492456,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",1997,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",1998,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",1999,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2000,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2001,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2002,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2003,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2004,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2005,NA,NA,NA,NA,NA,26.2090310545482,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2006,NA,NA,NA,NA,NA,26.6820853257366,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2007,NA,NA,NA,NA,NA,25.3727202086355,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2008,NA,NA,NA,NA,NA,25.4578069968268,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2009,NA,NA,NA,NA,NA,24.8462908557848,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2010,NA,NA,NA,NA,NA,26.6236369662739,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2011,NA,NA,NA,NA,NA,26.0048614710484,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2012,NA,NA,NA,NA,NA,26.4105299421682,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2013,NA,NA,NA,NA,NA,24.3227319819649,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2014,NA,NA,NA,NA,NA,25.0225579979936,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2015,NA,NA,NA,NA,NA,25.3026416383564,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2016,NA,NA,NA,NA,NA,25.6824083953723,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2017,NA,NA,NA,NA,NA,25.6175531595909,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2018,NA,NA,NA,NA,NA,23.9671828827516,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2019,NA,NA,NA,NA,NA,25.0869423480592,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2020,NA,NA,NA,NA,NA,24.0340648094742,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2021,NA,NA,NA,NA,NA,24.7567844817235,NA,NA,NA,NA,NA,NA
+"DR12","Childhood poverty",NA,NA,"Northern Ireland",2022,NA,NA,NA,NA,NA,22.1515557838752,NA,NA,NA,NA,NA,NA

@@ -25,7 +25,7 @@ education, professional work, and earnings.
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "rolloverBehaviour": "outline",
-    "onRollover": "scrollTo",
+    "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
     "ykey": "Area_name",

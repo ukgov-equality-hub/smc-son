@@ -34,6 +34,7 @@ By year
     "xkey": "Time_period",
     "ykey": "Value",
     "zkey": "Area_name",
+    "yrule": [1],
     "sort": "Time_period",
     "scale": "Ratio",
     "xgrid": false,
@@ -42,6 +43,7 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca"],
+    "range": [0, 5],
     "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -51,38 +53,6 @@ By year
 
 # Guidance
 When the ratio equals 1, there is no gap in earnings
-
-## Section
-By country
-
-## Chart: Multi-line
-{
-    "code": "DR11",
-    "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, by country over time (UK, 1997 to 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR11_area-20230413.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Ratio",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "filterNaN": false,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
-    "margin": [0, 0, 0, 0],
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/pre-processed-csvs/DR11-distribution-of-earnings--by-country-and-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2, 2, 2]
-}
 
 ## Section
 About the data

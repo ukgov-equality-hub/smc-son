@@ -27,7 +27,7 @@
             <div class="chart-container">
                 <div id="chart1"></div>
             </div>
-            <p class="govuk-body">Between 1991 and 2020, relative educational mobility went up for people aged 28 to 37 years.</p>
+            <p class="govuk-body">There continues to be more upward than downward mobility for men, but the size of this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.</p>
             <a href="/mobility_outcomes" class="govuk-link">Read more...</a>
         </div>
         <div class="govuk-body">
@@ -35,7 +35,7 @@
             <div class="chart-container">
                 <div id="chart2"></div>
             </div>
-            <p class="govuk-body">Data for the period from 2019 to 2021 shows that higher levels of education among 25 to 29 year olds led to higher earnings.</p>
+            <p class="govuk-body">Socio-economic background is strongly related to the level of young people’s earnings.</p>
             <a href="/intermediate_outcomes" class="govuk-link">Read more...</a>
         </div>
         <div class="govuk-body">
@@ -43,7 +43,7 @@
             <div class="chart-container">
                 <div id="chart3"></div>
             </div>
-            <p class="govuk-body">More young people aged 19 years are enrolled in education than ever before and the UK has now reached the OECD average.</p>
+            <p class="govuk-body">In 2021, youth unemployment in the UK fell back to pre-pandemic levels.</p>
             <a href="/drivers_of_social_mobility" class="govuk-link">Read more...</a>
         </div>
     </div>
@@ -77,20 +77,20 @@
 
         new Chart(
             'chart1',
-            `${location.protocol}//${location.host}/static/data/indicators/MO32_overview-20230607.csv`,
-            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "Ratio", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#1d70b8"], "margin": [0, 0, 0, 0], "maxLabelLength": 25 }
+            `${location.protocol}//${location.host}/static/data/indicators/MO11_overview_male-20230705.csv`,
+            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Value_note", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": -2, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
         )
 
         new Chart(
             'chart2',
-            `${location.protocol}//${location.host}/static/data/indicators/IN351_difference-20230713.csv`,
-            { "height": 220, "type": "bary", "xkey": "Category", "ykey": "Value", "zkey": "Category", "scale": "%", "xgrid": false, "ygrid": true, "xticks": -1, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
+            `${location.protocol}//${location.host}/static/data/indicators/IN34_overview-20230327a.csv`,
+            { "height": 220, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "xticks": -1, "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
         )
 
         new Chart(
             'chart3',
-            `${location.protocol}//${location.host}/static/data/indicators/DR23a_overview-20230417.csv`,
-            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "rotateDomainLabels": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 35 }
+            `${location.protocol}//${location.host}/static/data/indicators/DR32_overview-20230417.csv`,
+            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": 2, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
         )
 
         let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/areas.csv`)
