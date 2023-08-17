@@ -39,6 +39,7 @@ By year
     "ygrid": true,
     "yticks": 5,
     "legend": true,
+    "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",

@@ -1,6 +1,6 @@
 {% macro composite(id, data) %}
 <div id="ranking" class="ranking-table {% if [data, 'title'] | attribute | safe == 'Research and development' %}showhide{% else %}scroll{% endif %}">
-    {% set data_table = [data, 'dataTable', 'data'] | table | sort(attribute = '11', reverse = True) %}
+    {% set data_table = [data, 'dataTable', 'data'] | table | sort(attribute = '2', reverse = True) %}
     <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table">
         <thead>
             <tr >
@@ -10,10 +10,10 @@
         </thead>
         <tbody>
             {% for row in data_table %}
-            {% if not row[4] == 'Area_name' %}
+            {% if not row[0] == 'Region' %}
             <tr>
-                <td class="govuk-table__cell" id="area_{{ row[4] }}" onmouseover="mapSelect1({ map: { el: 'map{{ id }}', title: '{{ [data, 'title'] | attribute }}' }, name: '{{ row[4] }}', value: ({{ row[11] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}', quantile: {{ row[18] }} })" onmouseout="mapSelect1({ chart: { el: 'chart{{ id }}' }})">{{ row[4] }}</td>
-                <td class="govuk-table__cell">{{ row[18] }}</td>
+                <td class="govuk-table__cell" id="area_{{ row[0] }}" onmouseover="mapSelect1({ map: { el: 'map{{ id }}', title: '{{ [data, 'title'] | attribute }}' }, name: '{{ row[0] }}', value: ({{ row[1] }}).toFixed(2), rank: '{{ loop.length - loop.index0 }}/{{ loop.length }}', quantile: {{ row[2] }} })" onmouseout="mapSelect1({ chart: { el: 'chart{{ id }}' }})">{{ row[0] }}</td>
+                <td class="govuk-table__cell">{{ row[2] }}</td>
             </tr>
             {% endif %}
             {% endfor %}

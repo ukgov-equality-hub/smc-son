@@ -40,6 +40,7 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
+    "range": [0, 600],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",

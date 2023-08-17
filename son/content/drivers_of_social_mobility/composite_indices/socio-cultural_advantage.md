@@ -25,7 +25,7 @@ and professional work among parents, and professional work for 25 to 29 year old
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "rolloverBehaviour": "outline",
-    "onRollover": "scrollTo",
+    "onClick": "mapSelect1",
     "type": "dot",
     "xkey": "Value",
     "ykey": "Area_name",

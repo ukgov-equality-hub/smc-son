@@ -545,7 +545,6 @@ class Choropleth {
                         .text(city.name)
                 }
 
-
                 for (const town of towns.filter(x => x.hasOwnProperty('zoom'))) {
                     const loc = self.projection([town.longitude, town.latitude])
                     mapNames.append('text')
@@ -576,7 +575,7 @@ class Choropleth {
             }
 
             function getScaledRanges(ticks) {
-                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)                
+                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)
             }
 
             function getScaleValue(data, ticks) {
@@ -651,17 +650,17 @@ class Choropleth {
                 paddingY += (parseFloat(cs.paddingTop, 10) + parseFloat(cs.paddingBottom, 10))
                 borderX += (parseFloat(cs.borderLeftWidth, 10) + parseFloat(cs.borderRightWidth, 10))
                 borderY += (parseFloat(cs.borderTopWidth, 10) + parseFloat(cs.borderBottomWidth, 10))
-    
+
                 if (el.clientWidth) {
                     return dim == 'width' ? el.clientWidth - paddingX - borderX : el.clientHeight - paddingY - borderY
                 }
                 return getElDims(el.parentElement, dim)
             }
-    
+
             let w = el.style.width || '100%'
             let h = el.style.height || '0px'
             let paddingX = 0, paddingY = 0, borderX = 0, borderY = 0
-    
+
             if (w.substr(-1) == '%') {
                 w = getElDims(el, 'width')
             } else {
@@ -672,7 +671,7 @@ class Choropleth {
             } else {
                 h = parseFloat(h, 10)
             }
-    
+
             return { width: w, height: h }
         }
 

@@ -157,6 +157,8 @@ class Chart {
         const showCi = options.confidenceIntervals || null
         const xvalue = options.xvalue || null
         const yvalue = options.yvalue || null
+        const xrule = options.xrule || null
+        const yrule = options.yrule || null
         let dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
@@ -184,6 +186,7 @@ class Chart {
         const xticksLength = options.xticksLength || null
         const filterNaN = options.filterNaN == false ? false : true
         const legend = options.legend || false
+        const reverseLegend = options.reverseLegend || false
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.title = options.title || ''
@@ -474,6 +477,9 @@ class Chart {
                 }
             }
 
+            if (xrule) marks.push(Plot.ruleX(xrule, { strokeWidth: 3 }))
+            if (yrule) marks.push(Plot.ruleY(yrule, { strokeWidth: 3 }))
+
             let xOptions = {
                 grid: xgrid
             }
@@ -493,7 +499,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: (x, i, t) => xticks == -2 ? i == 0 || i == (t.length - 1) ? x.toString(): null : xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -501,7 +507,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(type))) {
@@ -510,7 +516,7 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'axis') : x.toString()
+                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'yaxis') : x.toString()
                 }))
             }
 
@@ -528,7 +534,7 @@ class Chart {
                 yOptions['domain'] = range
             }
             if (isNumeric(xticks)) {
-                if (['line', 'linex', 'liney'].includes(type)) {
+                if (['line', 'linex', 'liney'].includes(type) && xticks > 0) {
                     xOptions['domain'] = [
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
@@ -615,8 +621,8 @@ class Chart {
 
                 legendDiv = Plot.legend({
                     color: {
-                        domain: legends,
-                        range: colourScheme
+                        domain: reverseLegend ? legends.reverse() : legends,
+                        range: reverseLegend ? colourScheme.slice(0, legends.length).reverse() : colourScheme
                     },
                     legend: 'swatches',
                     swatchSize: swatchSize,
@@ -696,7 +702,7 @@ class Chart {
             }
 
             function getScaledRanges(ticks) {
-                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)                
+                return Array.from({ length: ticks + 1 }, (_, i) => i * (max - min) / ticks + min)
             }
 
             function getScaleValue(data, ticks) {
@@ -1011,17 +1017,17 @@ class Chart {
                 paddingY += (parseFloat(cs.paddingTop, 10) + parseFloat(cs.paddingBottom, 10))
                 borderX += (parseFloat(cs.borderLeftWidth, 10) + parseFloat(cs.borderRightWidth, 10))
                 borderY += (parseFloat(cs.borderTopWidth, 10) + parseFloat(cs.borderBottomWidth, 10))
-    
+
                 if (el.clientWidth) {
                     return dim == 'width' ? el.clientWidth - paddingX - borderX : el.clientHeight - paddingY - borderY
                 }
                 return getElDims(el.parentElement, dim)
             }
-    
+
             let w = el.style.width || '100%'
             let h = el.style.height || '0px'
             let paddingX = 0, paddingY = 0, borderX = 0, borderY = 0
-    
+
             if (w.substr(-1) == '%') {
                 w = getElDims(el, 'width')
             } else {
@@ -1032,7 +1038,7 @@ class Chart {
             } else {
                 h = parseFloat(h, 10)
             }
-    
+
             return { width: w, height: h }
         }
 
