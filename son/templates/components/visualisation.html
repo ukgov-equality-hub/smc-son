@@ -143,12 +143,12 @@
             Download
         </h2>
 
-        <ul class="govuk-list">
+        <ul class="govuk-list govuk-list--bullet">
             {% if [data, 'data'] | attribute_type == 'list' %}
             {% for item in ([data, 'data'] | attribute) %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}('{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}('{{ item.data }}')">
                     Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
@@ -156,7 +156,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}('{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}('{{ item.data }}')">
                     Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
@@ -165,7 +165,7 @@
             {% else %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="download govuk-link" onclick="downloadChart{{ id }}()">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}()">
                     Download the chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
@@ -173,7 +173,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="download govuk-link" onclick="downloadMap{{ id }}()">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}()">
                     Download the map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
@@ -182,22 +182,8 @@
 
             {% if [data, 'dataTable'] | attribute %}
             <li>
-                <a href="javascript:;" data-file="{{ [data, 'dataTable'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ [data, 'dataTable'] | attribute | safe }}`, {{ [data, 'columns'] | attribute | safe }})">
-                    Download the data (CSV {{ [data, 'dataTable'] | file_size | safe }})
-                </a>
-            </li>
-            {% elif [data, 'data'] | attribute_type == 'list' %}
-            {% for item in ([data, 'data'] | attribute) %}
-            <li>
-                <a href="javascript:;" data-file="{{ item.data }}" type="text/csv" class="download govuk-link" onclick="downloadDataFile(`${location.protocol}//${location.host}{{ item.data }}`, {{ [data, 'columns'] | attribute | safe }})">
-                    Download the {{ item.label }} data (CSV {{ item.data | file_size | safe }})
-                </a>
-            </li>
-            {% endfor %}
-            {% else %}
-            <li>
-                <a href="javascript:;" data-file="{{ [data, 'data'] | attribute | safe }}" type="text/csv" class="download govuk-link" onclick="downloadData{{ id }}()">
-                    Download the data (CSV {{ [data, 'data'] | file_size | safe }})
+                <a href="{{ [data, 'dataTable'] | attribute }}" class="govuk-link">
+                    Download the data (CSV {{ [data, 'dataTable'] | file_size }})
                 </a>
             </li>
             {% endif %}
@@ -207,11 +193,4 @@
         {% endif %}
     </div>
 </div>
-<script>
-    function downloadDataFile(datafile, options) {
-        const filename = datafile.substring(datafile.lastIndexOf('/') + 1, datafile.lastIndexOf('.'))
-        const format = 'csv'
-        return new DataUtils().downloadData(datafile, `${filename}.${format}`, format, '', options)
-    }
-</script>
 {% endmacro %}
