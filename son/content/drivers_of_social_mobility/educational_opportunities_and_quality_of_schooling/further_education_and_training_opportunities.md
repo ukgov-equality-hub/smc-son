@@ -45,7 +45,6 @@ By year
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/DR21-further-education-and-training-opportunities--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
 }

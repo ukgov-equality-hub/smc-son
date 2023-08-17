@@ -55,7 +55,6 @@ By socio-economic background
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN33-occupational-level--by-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1],
     "dataTableHelpText": "Young people’s socio-economic background is shown in rows, occupational level is in columns"
@@ -99,7 +98,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/IN33-occupational-level--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }
@@ -152,7 +150,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN33-occupational-level--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2,
@@ -191,7 +188,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN33-occupational-level--by-SEB-and-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -228,7 +224,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN33-occupational-level--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2,

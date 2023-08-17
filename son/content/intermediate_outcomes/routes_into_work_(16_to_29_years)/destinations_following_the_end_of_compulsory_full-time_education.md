@@ -58,7 +58,6 @@ By socio-economic background
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
@@ -94,7 +93,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
@@ -137,7 +135,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
@@ -174,7 +171,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2

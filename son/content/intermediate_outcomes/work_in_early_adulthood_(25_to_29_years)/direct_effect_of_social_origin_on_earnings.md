@@ -52,7 +52,6 @@ By socio-economic background
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--relative-difference--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -89,7 +88,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }
@@ -127,7 +125,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }
@@ -164,7 +161,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }

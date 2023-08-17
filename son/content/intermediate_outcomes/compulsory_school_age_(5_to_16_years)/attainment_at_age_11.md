@@ -58,7 +58,6 @@ By disadvantage status over time
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN12-attainment-at-age-11--by-year-and-disadvantage--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"]
 }
 
@@ -89,7 +88,6 @@ By year
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 20,
     "dataTable": "/static/data/pre-processed-csvs/IN12-attainment-at-age-11--gap-by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -140,7 +138,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/IN12-attainment-at-age-11--by-ITL2-region-and-FSM--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
@@ -189,7 +186,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN12-attainment-at-age-11--by-sex-and-disadvantage--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"]
 }
 
@@ -221,7 +217,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN12-attainment-at-age-11--by-ethnicity-and-FSM--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"]
 }
 

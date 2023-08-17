@@ -47,7 +47,6 @@ By year
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 25,
     "dataTable": "/static/data/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
