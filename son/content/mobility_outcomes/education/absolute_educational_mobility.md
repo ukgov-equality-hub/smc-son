@@ -195,6 +195,7 @@ By disability status
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "range": [0, 70],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
     "textLabels": "center",

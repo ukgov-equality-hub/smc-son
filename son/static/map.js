@@ -741,7 +741,7 @@ class Choropleth {
             return Math.floor(Math.random() * (max - min + 1) + min)
         }
 
-        function formatNumber(x, dp = 2) {
+        function formatNumber(x, dp=2) {
             if (isNumeric(x)) {
                 if (parseInt(x, 10) != parseFloat(x, 10)) {
                     return parseFloat(x, 10).toFixed(dp).toString()
@@ -756,16 +756,25 @@ class Choropleth {
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
+            let dp = null
+            if (!['axis', 'xaxis', 'yaxis'].includes(pos)) {
+                if (isNumeric(rounding)) {
+                    dp = rounding
+                } else if (rounding && rounding.substr(-2) == 'dp' && isNumeric(rounding.substr(0, rounding.length - 2))) {
+                    dp = parseInt(rounding.substr(0, rounding.length - 2), 10)
+                }
+            }
+
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(dp || 1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(0))}`
+                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else {
-                text = formatNumber(key, 2)
+                text = formatNumber(key, dp || 2)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }

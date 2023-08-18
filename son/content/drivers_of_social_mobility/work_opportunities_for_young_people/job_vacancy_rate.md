@@ -38,6 +38,7 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca"],
+    "range": [0, 1],
     "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/DR31-job-vacancy-rate--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
