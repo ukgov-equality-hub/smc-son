@@ -42,6 +42,11 @@ span.confidence-interval {
     white-space: nowrap;
 }
 
+span.confidence-interval.no-intervals {
+    color: #666;
+    text-decoration: line-through;
+}
+
 span.confidence-interval > input {
     width: 20px;
     height: 20px;

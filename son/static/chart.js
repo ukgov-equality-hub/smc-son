@@ -163,6 +163,7 @@ class Chart {
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
+        const rounding = options.rounding || null
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
@@ -293,6 +294,7 @@ class Chart {
             const marks = []
             let chartData
             let originalData = null
+            let hasCi = null
             for (let i = 0; i < data.length; i++) {
                 if (filteredData) {
                     originalData = data[i]
@@ -338,10 +340,14 @@ class Chart {
                 }
 
                 if (lci && uci) {
-                    if ([...chartData.map(x => isNumeric(x[lci])), ...chartData.map(x => isNumeric(x[uci]))].indexOf(false) > -1) {
-                        lci = undefined
-                        uci = undefined
+                    const allCis = [...chartData.map(x => isNumeric(x[lci])), ...chartData.map(x => isNumeric(x[uci]))]
+                    if (allCis.indexOf(false) > -1) {
+                        if (!showCi) {
+                            lci = undefined
+                            uci = undefined
+                        }
                     }
+                    hasCi = allCis.indexOf(true) > -1
                 }
                 if (lci && uci) {
                     chartData = chartData.map(x => ({
@@ -646,6 +652,7 @@ class Chart {
                     } else {
                         const ci = document.createElement('span')
                         ci.classList.add('confidence-interval')
+                        if (!hasCi) ci.classList.add('no-intervals')
                         const cb = document.createElement('input')
                         cb.setAttribute('id', `${self.el}_cicb`)
                         cb.type = 'checkbox'
@@ -684,9 +691,12 @@ class Chart {
                 }
 
                 if (lci && uci) {
-                    if (document.getElementById(`${self.el}_cicb`) && document.getElementById(`${self.el}_cicb`).checked || showCi == 'visible') {
+                    const ci = document.getElementById(`${self.el}_cicb`)
+                    if (ci && ci.checked || showCi == 'visible') {
                         document.getElementById(self.el).getElementsByTagName('svg')[0].classList.add('highlight-ci')
                     }
+                    if (ci && hasCi) ci.parentElement.classList.remove('no-intervals')
+                    if (ci && !hasCi) ci.parentElement.classList.add('no-intervals')
                 }
             }
 
@@ -1093,18 +1103,27 @@ class Chart {
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
+            let dp = null
+            if (!['axis', 'xaxis', 'yaxis'].includes(pos)) {
+                if (isNumeric(rounding)) {
+                    dp = rounding
+                } else if (rounding && rounding.substr(-2) == 'dp' && isNumeric(rounding.substr(0, rounding.length - 2))) {
+                    dp = parseInt(rounding.substr(0, rounding.length - 2), 10)
+                }
+            }
+
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(1) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(dp || 1) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(2))}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(0))}`
+                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
-                text = `${formatNumber(key, 1)}x`
+                text = `${formatNumber(key, dp || 1)}x`
             } else {
-                text = formatNumber(key, 1)
+                text = formatNumber(key, dp || 1)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }

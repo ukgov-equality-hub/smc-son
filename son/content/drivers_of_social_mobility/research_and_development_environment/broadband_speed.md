@@ -35,6 +35,7 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca"],
+    "range": [0, 3],
     "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/DR51-broadband-speed--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

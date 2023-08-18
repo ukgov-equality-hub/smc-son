@@ -36,7 +36,8 @@ By year
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+    "reverseLegend": true,
+    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
@@ -48,25 +49,31 @@ By year
 }
 
 ## Section
-By area – DELETE THIS BREAKDOWN? (repeated below)
+By area
 
 ## Map
 # Src
 {
     "code": "DR33",
-    "title": "Percentage of 25 to 29 year olds in the higher professional class, and ‘quintile’ ranking (from best 20% to worst 20%), by area",
+    "title": "Percentage of 25 to 29 year olds in the higher professional occupations, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2018 to 2021 combined)",
+    "tooltipTitle": "Percentage of 25 to 29 year olds in higher professional occupations",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv",
+    "data": [{
+        "label": "Lower working",
+        "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv"
+    }, {
+        "label": "Higher professional",
+        "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv"
+    }],
+    "toggle": "radio",
     "geoFormat": "",
     "nameField": "Area_name",
     "valueField": "Value",
     "areaField": "ITL221NM",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
     "height": 700,
     "dataFormat": "quintile",
+    "quantile": "",
+    "zero": false,
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "rolloverBehaviour": "outline",
@@ -80,54 +87,7 @@ By area – DELETE THIS BREAKDOWN? (repeated below)
     "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR33-occupation-level-of-25-to-29-year-olds--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1],
-    "dataTableTitle": "Percentage of 25 to 29 year olds in the higher professional class, by area"
-}
-
-## Section
-By occupational class and area
-
-## Grid
-# Map
-{
-    "code": "DR33",
-    "title": "Percentage of 25 to 29 year olds in the higher professional occupations, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage of 25 to 29 year olds in higher professional occupations",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "height": 700,
-    "dataFormat": "quintile",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "onClick": "mapSelect1"
-}
-
-# Map
-{
-    "code": "DR33",
-    "title": "Percentage of 25 to 29 year olds in the lower working occupations, and ‘quintile’ ranking (from best 20% to worst 20%), by area (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage of 25 to 29 year olds in lower working class occupations",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "height": 700,
-    "dataFormat": "quintile",
-    "rolloverBehaviour": "outline",
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "onClick": "mapSelect1"
+    "backgroundColor": "#fafafa"
 }
 
 # Guidance
