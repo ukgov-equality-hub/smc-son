@@ -753,6 +753,21 @@ class Choropleth {
         }
 
         function getLabelText(key, pos) {
+            function aproximate(key, dp, pos) {
+                let num = parseFloat(key, 10).toFixed(dp).toString(), aprox = ''
+
+                if (!num.replace('.', '').match(/[^0]/g)) {
+                    aprox = '~'
+                    if (pos == 'label') return aprox + num
+                    num = parseFloat(key, 10).toFixed(dp + 1).toString()
+                }
+                if (!num.replace('.', '').match(/[^0]/g)) {
+                    num = parseFloat(key, 10).toFixed(dp + 2).toString()
+                }
+
+                return aprox + num
+            }
+
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
@@ -766,15 +781,17 @@ class Choropleth {
             }
 
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(dp || 1) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? aproximate(key, dp || 1, pos) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
+            } else if (scale.toLowerCase() == 'ratio') {
+                text = `${formatNumber(key, dp || 1)}x`
             } else {
-                text = formatNumber(key, dp || 2)
+                text = formatNumber(key, dp || 1)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }

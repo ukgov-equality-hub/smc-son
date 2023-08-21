@@ -16,7 +16,7 @@
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (options.type != 'dot') {
             options.width = document.getElementById('maincontent').offsetWidth
-        } else {
+        } else if (typeof options.map !== 'undefined') {
             options.height = 800
         }
         if (download) options.download = download

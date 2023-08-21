@@ -22,8 +22,8 @@
 
             <div class="govuk-body area-quintile-header">
                 <div>
-                    <span>Worst outcomes<br>(bottom 20%)</span>
-                    <span>Best outcomes<br>(top 20%)</span>                
+                    <span>Quintile 1<br>(bottom 20%)</span>
+                    <span>Quintile 5<br>(top 20%)</span>                
                 </div>
             </div>
 
@@ -43,8 +43,8 @@
 
             <div class="govuk-body area-quintile-header">
                 <div>
-                    <span>Worst outcomes<br>(bottom 20%)</span>
-                    <span>Best outcomes<br>(top 20%)</span>                
+                    <span>Quintile 1<br>(bottom 20%)</span>
+                    <span>Quintile 5<br>(top 20%)</span>                
                 </div>
             </div>
 
@@ -91,9 +91,9 @@
         }
 
         const chart1 = new Chart('chart1', data.filter(x => x['Ind_name'] == 'Promising prospects'), { ...options, title: 'Promising prospects' })
-        const chart2 = new Chart('chart2', data.filter(x => x['Ind_name'] == 'Precarious situations'), { ...options, title: 'Precarious situations' })
+        const chart2 = new Chart('chart2', data.filter(x => x['Ind_name'] == 'Precarious situations'), { ...options, title: 'Precarious situations', reversePolarity: true })
         const chart3 = new Chart('chart3', data.filter(x => x['Ind_name'] == 'Socio-cultural advantage'), { ...options, title: 'Socio-cultural advantage' })
-        const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'Childhood poverty and disadvantage'), { ...options, title: 'Childhood poverty and disadvantage' })
+        const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'Childhood poverty and disadvantage'), { ...options, title: 'Childhood poverty and disadvantage', reversePolarity: true })
         const chart5 = new Chart('chart5', data.filter(x => x['Ind_name'] == 'R & D environment'), { ...options, title: 'Research and development' })
 
         let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/areas.csv`)
