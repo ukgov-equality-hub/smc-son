@@ -87,7 +87,12 @@ By area
     "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],
-    "backgroundColor": "#fafafa"
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/pre-processed-csvs/DR33-occupation-level-of-25-to-29-year-olds--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1],
+    "dataTableTitle": "Percentage of 25 to 29 year olds in the higher professional class, by area"
 }
 
 # Guidance
