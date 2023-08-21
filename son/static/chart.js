@@ -391,7 +391,7 @@ class Chart {
                     facet: group ? true : null,
                     fill: x => ['line', 'linex', 'liney'].includes(type) ? '' : getMarkColour(originalData || chartData, x),
                     stroke: x => ['line', 'linex', 'liney'].includes(type) ? getMarkColour(originalData || chartData, x) : '',
-                    strokeWidth: ['line', 'linex', 'liney'].includes(type) ? 5 : 0,
+                    strokeWidth: x => ['line', 'linex', 'liney'].includes(type) ? 5 : 0,
                     title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}`
                 }
                 if (self.debug) console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
@@ -505,7 +505,20 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: (x, i, t) => xticks == -2 ? i == 0 || i == (t.length - 1) ? x.toString(): null : xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                    tickFormat: (x, i, t) => {
+                        //return xticks == -2 ? i == 0 || i == (t.length - 1) ? x.toString(): null : xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                        if (Array.isArray(xticks)) {
+                            if (t.includes(x)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                            return null
+                        } else if (xticks == -2) {
+                            if (i == 0 || i == (t.length - 1)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                            return null
+                        } else if (xticks == -1) {
+                            return null
+                        } else {
+                            return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                        }
+                    }
                 }))
             } else if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
@@ -522,7 +535,19 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     ticks: yticks ? yticks : undefined,
-                    tickFormat: x => yticks == -1 ? null : orientation == 'y' ? getLabelText(x, 'yaxis') : x.toString()
+                    tickFormat: (x, i, t) => {
+                        if (Array.isArray(yticks)) {
+                            if (t.includes(x)) return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
+                            return null
+                        } else if (yticks == -2) {
+                            if (i == 0 || i == (t.length - 1)) return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
+                            return null
+                        } else if (yticks == -1) {
+                            return null
+                        } else {
+                            return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
+                        }
+                    }
                 }))
             }
 
@@ -539,8 +564,8 @@ class Chart {
             if (orientation == 'y' && !yOptions['domain'] && range) {
                 yOptions['domain'] = range
             }
-            if (isNumeric(xticks)) {
-                if (['line', 'linex', 'liney'].includes(type) && xticks > 0) {
+            if (isNumeric(xticks) || Array.isArray(xticks)) {
+                if (['line', 'linex', 'liney'].includes(type) && (xticks > 0 || Array.isArray(xticks))) {
                     xOptions['domain'] = [
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[0], 10) : domain[0],
                         isNumeric(domain[0]) && isNumeric(domain[domain.length - 1]) ? parseFloat(domain[domain.length - 1], 10) : domain[domain.length - 1]
@@ -1100,6 +1125,21 @@ class Chart {
         }
 
         function getLabelText(key, pos) {
+            function aproximate(key, dp, pos) {
+                let num = parseFloat(key, 10).toFixed(dp).toString(), aprox = ''
+
+                if (!num.replace('.', '').match(/[^0]/g)) {
+                    aprox = '~'
+                    if (pos == 'label') return aprox + num
+                    num = parseFloat(key, 10).toFixed(dp + 1).toString()
+                }
+                if (!num.replace('.', '').match(/[^0]/g)) {
+                    num = parseFloat(key, 10).toFixed(dp + 2).toString()
+                }
+
+                return aprox + num
+            }
+
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
@@ -1113,7 +1153,7 @@ class Chart {
             }
 
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? parseFloat(key, 10).toFixed(dp || 1) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? aproximate(key, dp || 1, pos) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {

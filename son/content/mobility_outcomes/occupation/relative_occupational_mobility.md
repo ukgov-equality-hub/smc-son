@@ -76,6 +76,7 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
+    "reversePolarity": true,
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "rolloverBehaviour": "outline",
@@ -94,54 +95,6 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 3]
-}
-
-## Section
-By sex – DELETE THIS BREAKDOWN
-
-## Chart: Single-bar
-{
-    "code": "MO12",
-    "title": "Relative occupational mobility",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO12_gender-20230623.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "multiply": 100,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [-1, 0],
-    "margin": [0, 0, 0, 0],
-    "maxLabelLength": 60,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "columns": [{
-        "column": "Category"
-    }, {
-        "column": "Value",
-        "heading": "Percentage",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "LCI",
-        "heading": "Lower confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }, {
-        "column": "UCI",
-        "heading": "Upper confidence interval (%)",
-        "align": "right",
-        "format": "1dp"
-    }]
 }
 
 ## Section
@@ -168,7 +121,7 @@ By sex and ethnicity
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "range": [-12, 2],
+    "range": [-14, 3],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
@@ -189,24 +142,23 @@ By disability status
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_disability-20230623.csv",
     "height": 450,
-    "type": "bary",
+    "type": "doty",
     "xkey": "Category",
     "ykey": "Value",
-    "zkey": "Category",
+    "zkey": "Area_name",
     "scale": "%",
     "multiply": 100,
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 2],
+    "colourScheme": ["#5694ca"],
+    "range": [-1, 2],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 60,
-    "textLabels": "center",
-    "labelColour": "#fff",
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"]
