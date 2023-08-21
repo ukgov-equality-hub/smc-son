@@ -207,7 +207,7 @@ Socio-economic background (SEB) is based on the main earner’s occupation when 
 Where there was no earner in the family, SEB is included in the lower working class. 
 
 ### Things you need to know
-The data used is weighted using the LFS population weights. 
+The data used is weighted using the LFS probability weights. 
 
 Estimated percentages come from a logistic regression model, controlling for gender and ethnic group.
 The model assumes that class effects are the same for each ethnic group. 

@@ -140,14 +140,11 @@ By area
 
 # Guidance
 [41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
 
 The figure for each region shows the percentage of pupils who got a grade 5 or above in both GCSE English and maths.
 Figures are shown separately for FSM-eligible pupils and non-eligible pupils.
-The gap between these 2 groups is also shown for each region.<br>
-
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
-the region is highly likely to be within. Read more about [confidence intervals].
+The gap between these 2 groups is also shown for each region.
 
 ## Section
 By sex
@@ -183,10 +180,9 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-year-and-sex-and-disadvantage--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-sex-and-disadvantage--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableNumberOfHeadingRows": 2
+    "dataTableAlignColumns": ["left", "right", "right"]
 }
 
 ## Section
@@ -256,7 +252,6 @@ based on teacher assessments and centre assessments.
 
 Eligibility for FSM is used as an indicator of deprivation by the Department for Education.
 Children are eligible for FSM if their parents receive certain benefits.
-FSM are provided to roughly 15% of students. 
 
 ### Type of data
 Administrative data

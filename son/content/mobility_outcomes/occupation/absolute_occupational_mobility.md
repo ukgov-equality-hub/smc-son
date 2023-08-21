@@ -170,10 +170,10 @@ By area
 
 # Guidance
 [41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
 
 The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility
-for that region.<br>
+for that region.
 
 The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
 the region is highly likely to be within. Read more about [confidence intervals].

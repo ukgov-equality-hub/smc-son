@@ -92,7 +92,7 @@ By area
 
 # Guidance
 [41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.<br>
+They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
 
 The figure for each region shows the percentage of 25 to 29 year olds in lower working class and higher professional occupations.
 
