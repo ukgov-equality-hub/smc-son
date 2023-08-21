@@ -242,7 +242,7 @@ We use the following 5 categories of socio-economic background and occupational 
 These are based on the National Statistics Socio-economic Classification (‘NS-SEC’), set by the Office for National Statistics (ONS).
 
 ### Things you need to know
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 For data by ethnicity, the data shows whether young people are in a professional occupation (either higher or lower
 professional), and percentages are shown only for people from lower working class and higher professional class backgrounds.

@@ -201,7 +201,7 @@ The data shows the effect of young people’s socio-economic background on their
 are 25 to 29 years old.
 
 ### Things you need to know
-Data is weighted using LFS population weights. Earnings are adjusted for inflation.
+Data is weighted using LFS probability weights. Earnings are adjusted for inflation.
 
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
 

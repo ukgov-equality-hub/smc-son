@@ -224,7 +224,7 @@ People can be economically inactive if they are:
 * unable to work due to disability or ill health
 
 ### Things you need to know
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower
 working class and higher professional class backgrounds. 

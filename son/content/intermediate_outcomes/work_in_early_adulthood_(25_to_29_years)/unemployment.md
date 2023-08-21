@@ -216,7 +216,7 @@ The data shows the percentage of 25 to 29 year olds in the UK who were unemploye
 Unemployed people are defined as not in work but available for and looking for work.
 Economically inactive people (those not in work or looking for work) are excluded from the data.
 
-The data used is weighted using LFS population weights. The charts show 95% confidence intervals.
+The data used is weighted using LFS probability weights. The charts show 95% confidence intervals.
 
 The estimated percentages and confidence intervals result from a logistic regression model, controlling for gender
 and ethnic group. The model assumes that class effects are the same within each ethnic group.
