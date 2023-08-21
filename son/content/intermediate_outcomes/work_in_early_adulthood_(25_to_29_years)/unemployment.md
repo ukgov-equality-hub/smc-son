@@ -218,7 +218,7 @@ Economically inactive people (those not in work or looking for work) are exclude
 
 The data used is weighted using LFS probability weights. The charts show 95% confidence intervals.
 
-The estimated percentages and confidence intervals result from a logistic regression model, controlling for gender
+The estimated percentages and confidence intervals result from a logistic regression model, controlling for sex
 and ethnic group. The model assumes that class effects are the same within each ethnic group.
 A formal test confirms this assumption. 
 

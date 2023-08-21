@@ -105,7 +105,7 @@ By sex
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -180,7 +180,7 @@ By disability status
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",

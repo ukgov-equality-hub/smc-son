@@ -217,7 +217,7 @@ Self-employed respondents and those without earnings are excluded.
 The data used is weighted using the LFS probability weights. The charts show 95% confidence intervals.
 
 The estimated means and confidence intervals are derived from a linear regression model of log hourly earnings,
-controlling for SEB, gender and ethnic group. 
+controlling for SEB, sex and ethnic group. 
 
 For data by ethnicity, the model assumes that class effects are the same within each ethnic group.
 However, the assumption does not hold for the White Other group. The means shown are those for men.

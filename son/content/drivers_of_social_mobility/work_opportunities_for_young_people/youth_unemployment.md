@@ -129,7 +129,7 @@ The data does not include people who are economically inactive because they are 
 * permanently sick or disabled
 
 ### Type of data
-Survey data
+Survey data, weighted
 
 Read more in State of the Nation 2023 on GOV.UK.
 

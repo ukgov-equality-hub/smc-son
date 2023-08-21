@@ -55,7 +55,7 @@ By area
 # Src
 {
     "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, and quintile ranking (from best 20% to worst 20%), by region (UK, 2022)",
+    "title": "Percentage of children living in relative poverty after housing costs, and quintile ranking (from best 20% to worst 20%), by region (UK, 2018 to 2019)",
     "tooltipTitle": "Percentage of children in relative poverty",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/DR12_area-20230417.csv",
@@ -90,7 +90,7 @@ By area
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1],
-    "dataTableTitle": "Percentage of children living in relative poverty after housing costs, by region (UK, 2022)"
+    "dataTableTitle": "Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019)"
 }
 
 # Guidance

@@ -125,7 +125,7 @@ By area
 # Src
 {
     "code": "MO11",
-    "title": "Percentage of 25 to 64 year olds who experienced long-range upward mobility from the higher and lower working classes, long-range downward mobility from the higher and lower professional classes, and quintile ranking (from the best 20% to the worst 20%), by region (UK, 2018 to 2022 combined)",
+    "title": "Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, and quintile ranking (from the best 20% to the worst 20%), by region (UK, 2018 to 2022 combined)",
     "tooltipTitle": "Percentage of people who experienced long-range mobility",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
