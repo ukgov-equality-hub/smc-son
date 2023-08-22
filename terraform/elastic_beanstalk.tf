@@ -105,13 +105,19 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   /////////////////////////
   // Load Balancer
   setting {
-    namespace = "aws:elb:loadbalancer"
+    namespace = "aws:elasticbeanstalk:environment"
+    name      = "LoadBalancerType"
+    value     = "application"
+  }
+
+  setting {
+    namespace = "aws:elbv2:loadbalancer"
     name      = "SecurityGroups"
     value     = aws_security_group.security_group_main_app_load_balancer.id
   }
 
   setting {
-    namespace = "aws:elb:loadbalancer"
+    namespace = "aws:elbv2:loadbalancer"
     name      = "ManagedSecurityGroup"
     value     = aws_security_group.security_group_main_app_load_balancer.id
   }
@@ -144,7 +150,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   }
 
   setting {
-    namespace = "aws:elbv2:listener:default"
+    namespace = "aws:elbv2:listener:443"
     name = "SSLPolicy"
     value = "ELBSecurityPolicy-2016-08"
   }
