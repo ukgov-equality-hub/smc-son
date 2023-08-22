@@ -423,7 +423,7 @@ class Chart {
                     if (d && d.length > 0) {
                         let q = getQuantile(domain, d[0][xkey])
                         marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, stroke: 'grey' }))
-                        marks.push(Plot.cell(domain, { x: x => x, dy: 9, fill: x => x, stroke: 'grey' }))
+                        marks.push(Plot.cell(reversePolarity ? [...domain].reverse() : domain, { x: x => x, dy: 9, fill: x => x, stroke: 'grey' }))
                         marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, fill: x => getMarkColour(originalData || chartData, x), title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` }))
                     }
                 }
@@ -769,13 +769,15 @@ class Chart {
                 for (const quantile of quantiles) {
                     ranges.push(d3.quantile(data, quantile))
                 }
+                if (reversePolarity) ranges = ranges.reverse()
                 return ranges
             }
 
             function getQuantile(ranges, value) {
-                for (let i = 0; i < ranges.length; i++) {
-                    if (value <= ranges[i]) {
-                        return reversePolarity ? ranges.length - (i + 1) : i
+                const r = reversePolarity ? [...ranges].reverse() : ranges
+                for (let i = 0; i < r.length; i++) {
+                    if (value <= r[i]) {
+                        return i
                     }
                 }
                 return -1
@@ -786,13 +788,13 @@ class Chart {
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = x[quantile]
+                    const r = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat)
                     if (q) {
                         q -= 1
                     } else {
-                        const ranges = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat)
-                        q = getQuantile(ranges, val)
+                        q = getQuantile(r, val)
                     }
-                    return colourScheme[q] || 'grey'
+                    return colourScheme[reversePolarity ? r.length - (q + 1) : q] || 'grey'
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
                 } else if (dataFormat == 'sequential') {
