@@ -217,7 +217,7 @@ For data by disability status, respondents were asked if they had a health condi
 or more, and if that condition reduced their ability to carry out day-to-day activities.
 This is consistent with the definition of disability in the Equality Act 2010.
 
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 ### Type of data
 Survey data

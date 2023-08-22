@@ -205,12 +205,12 @@ UK
 The data shows the effect of different levels of education on the earnings of young people aged 25 to 29 years in the UK.
 
 ### Things you need to know
-Data is weighted using LFS population weights. Earnings are adjusted for inflation.
+Data is weighted using LFS probability weights. Earnings are adjusted for inflation.
 
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
   
 Percentage differences were estimated from a linear regression model of log hourly earnings, controlling for educational
-level, SEB, gender and age. 
+level, SEB, sex and age. 
 
 For data by year, the estimates refer to the hourly earnings of men from a lower working-class background. 
 

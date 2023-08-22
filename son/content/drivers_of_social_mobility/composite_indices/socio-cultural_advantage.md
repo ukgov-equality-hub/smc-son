@@ -5,8 +5,8 @@ CI3
 Sociocultural advantage
 
 ## Summary
-Data on ‘sociocultural advantage’ in UK regions – measured by levels of university education
-and professional work among parents, and professional work for 25 to 29 year olds.
+Data on ‘sociocultural advantage’ in UK regions – measured by parental education (university degree), parental 
+occupation (higher professional), and professional work for 25 to 29 year olds.
 
 ## Map
 # Src

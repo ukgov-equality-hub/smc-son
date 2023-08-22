@@ -105,7 +105,7 @@ By sex
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -180,7 +180,7 @@ By disability status
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
@@ -242,7 +242,7 @@ We use the following 5 categories of socio-economic background and occupational 
 These are based on the National Statistics Socio-economic Classification (‘NS-SEC’), set by the Office for National Statistics (ONS).
 
 ### Things you need to know
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 For data by ethnicity, the data shows whether young people are in a professional occupation (either higher or lower
 professional), and percentages are shown only for people from lower working class and higher professional class backgrounds.

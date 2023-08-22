@@ -88,7 +88,7 @@ Data is shown for the following socio-economic backgrounds:
 These are based on the National Statistics Socio-economic Classification (NS-SEC), set by the ONS.
 
 ### Things you need to know
-The data used is weighted using the LFS population weights.
+The data used is weighted using the LFS probability weights.
 
 Estimates are the average marginal effects taken from a logistic regression model of access to the professional classes
 controlling for:

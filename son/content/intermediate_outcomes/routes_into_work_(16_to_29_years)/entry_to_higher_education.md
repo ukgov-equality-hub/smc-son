@@ -67,7 +67,7 @@ UK
 The data shows the percentage of 18 to 20 year olds in the UK who began studying a higher education course in 2021. 
 
 ### Things you need to know
-Data used is weighted using LFS population weights. 
+Data used is weighted using LFS probability weights. 
 
 ### Type of data
 Survey data

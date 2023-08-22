@@ -78,7 +78,7 @@ Data is shown for the following socio-economic backgrounds:
 These are based on the National Statistics Socio-economic Classification (NS-SEC), set by the ONS.
 
 ### Things you need to know
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 The data compares 2 separate samples from surveys carried out in 2014 and 2021. It does not compare the same
 individuals at different time points. 

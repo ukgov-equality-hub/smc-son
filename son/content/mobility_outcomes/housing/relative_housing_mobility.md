@@ -158,7 +158,7 @@ Office for National Statistics (ONS), Wealth and Assets Survey (WAS)
 Brian Bell and others, *‘Where is the land of hope and glory? The geography of intergenerational mobility in England and Wales’*, 2018.
 
 ### Time period
-1991, 2001, 2011, and 2016 to 2020 combined
+1991, 2001, 2011, 2016 to 2017, and 2018 to 2020
 
 ### Geographic area
 UK

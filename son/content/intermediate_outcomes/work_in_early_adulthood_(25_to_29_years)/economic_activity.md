@@ -64,7 +64,7 @@ By area
 # Src
 {
     "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds who were economically active, and quintile ranking (from best 20% to worst 20%), by region (UK, 2018 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN31_area-20230327.csv",
@@ -224,7 +224,7 @@ People can be economically inactive if they are:
 * unable to work due to disability or ill health
 
 ### Things you need to know
-Data is weighted using LFS population weights.
+Data is weighted using LFS probability weights.
 
 For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower
 working class and higher professional class backgrounds. 
