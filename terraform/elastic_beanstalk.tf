@@ -8,7 +8,11 @@ locals {
 
   main_app_elastic_beanstalk_health_check_path = "/health-check"  // Was "/health-check"
   main_app_elastic_beanstalk_health_check_matcher_code = 200
-  elb_load_balancer_ssl_certificate_arn = "arn:aws:acm:eu-west-2:049823448487:certificate/638edafe-3eff-4f92-87c8-433304f0004d"
+}
+
+data "aws_acm_certificate" "social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate" {
+  domain   = "social-mobility.data.gov.uk"
+  statuses = ["ISSUED"]
 }
 
 // An S3 bucket to store the code that is deployed by Elastic Beanstalk
@@ -141,7 +145,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:443"
     name      = "SSLCertificateArns"
-    value     = local.elb_load_balancer_ssl_certificate_arn
+    value     = data.aws_acm_certificate.social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate.arn
   }
 
   setting {
