@@ -16,11 +16,6 @@ resource "aws_s3_bucket" "main_app_elastic_beanstalk_code_s3_bucket" {
   bucket_prefix = lower("${var.service_name_hyphens}--${var.environment_hyphens}--S3-Beanstalk")
 }
 
-resource "aws_s3_bucket_acl" "main_app_elastic_beanstalk_code_s3_bucket_acl" {
-  bucket = aws_s3_bucket.main_app_elastic_beanstalk_code_s3_bucket.id
-  acl    = "private"
-}
-
 resource "aws_s3_bucket_public_access_block" "main_app_elastic_beanstalk_code_s3_bucket_public_access_block" {
   bucket = aws_s3_bucket.main_app_elastic_beanstalk_code_s3_bucket.id
 
