@@ -156,6 +156,7 @@ class Choropleth {
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
+        const rounding = options.rounding || null
         let domain = options.domain || []
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
