@@ -6,7 +6,7 @@ locals {
   main_app_elastic_beanstalk_min_instances = 2
   main_app_elastic_beanstalk_max_instances = var.environment == "Prod" ? 8 : 2
 
-  main_app_elastic_beanstalk_health_check_path = "/"  // Was "/health-check"
+  main_app_elastic_beanstalk_health_check_path = "/health-check"  // Was "/health-check"
   main_app_elastic_beanstalk_health_check_matcher_code = 200
   elb_load_balancer_ssl_certificate_arn = "arn:aws:acm:eu-west-2:049823448487:certificate/638edafe-3eff-4f92-87c8-433304f0004d"
 }
