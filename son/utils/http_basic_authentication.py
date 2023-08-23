@@ -11,7 +11,7 @@ class HttpBasicAuthentication:
         app.before_request_funcs.setdefault(None, []).append(self._handler)
 
     def _handler(self):
-        if request.path.startswith('/jobs/'):
+        if request.path.startswith('/health-check'):
             # Don't require HTTP Basic Authentication for the Jobs endpoints.
             # These already require a Job Token for security
             return

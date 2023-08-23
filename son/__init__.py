@@ -36,7 +36,8 @@ def create_app(test_config=None):
         return app
 
     # Require HTTP Basic Authentication if both the username and password are set
-    if app.config['BASIC_AUTH_USERNAME'] and app.config['BASIC_AUTH_PASSWORD']:
+    if (app.config['BASIC_AUTH_USERNAME'] and app.config['BASIC_AUTH_USERNAME'] != 'OFF') and \
+       (app.config['BASIC_AUTH_PASSWORD'] and app.config['BASIC_AUTH_PASSWORD'] != 'OFF'):
         HttpBasicAuthentication(app)
 
     # Load build info from JSON file

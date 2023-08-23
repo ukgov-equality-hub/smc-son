@@ -31,3 +31,6 @@ notes/*
 *notes.txt
 .DS_Store
 api/lambdas/awslambda-psycopg2
+
+# Terraform
+.terraform

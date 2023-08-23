@@ -6,19 +6,18 @@ locals {
   main_app_elastic_beanstalk_min_instances = 2
   main_app_elastic_beanstalk_max_instances = var.environment == "Prod" ? 8 : 2
 
-  main_app_elastic_beanstalk_health_check_path = "/"  // Was "/health-check"
+  main_app_elastic_beanstalk_health_check_path = "/health-check"  // Was "/health-check"
   main_app_elastic_beanstalk_health_check_matcher_code = 200
-  elb_load_balancer_ssl_certificate_arn = "arn:aws:acm:eu-west-2:049823448487:certificate/638edafe-3eff-4f92-87c8-433304f0004d"
+}
+
+data "aws_acm_certificate" "social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate" {
+  domain   = "social-mobility.data.gov.uk"
+  statuses = ["ISSUED"]
 }
 
 // An S3 bucket to store the code that is deployed by Elastic Beanstalk
 resource "aws_s3_bucket" "main_app_elastic_beanstalk_code_s3_bucket" {
   bucket_prefix = lower("${var.service_name_hyphens}--${var.environment_hyphens}--S3-Beanstalk")
-}
-
-resource "aws_s3_bucket_acl" "main_app_elastic_beanstalk_code_s3_bucket_acl" {
-  bucket = aws_s3_bucket.main_app_elastic_beanstalk_code_s3_bucket.id
-  acl    = "private"
 }
 
 resource "aws_s3_bucket_public_access_block" "main_app_elastic_beanstalk_code_s3_bucket_public_access_block" {
@@ -105,13 +104,19 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   /////////////////////////
   // Load Balancer
   setting {
-    namespace = "aws:elb:loadbalancer"
+    namespace = "aws:elasticbeanstalk:environment"
+    name      = "LoadBalancerType"
+    value     = "application"
+  }
+
+  setting {
+    namespace = "aws:elbv2:loadbalancer"
     name      = "SecurityGroups"
     value     = aws_security_group.security_group_main_app_load_balancer.id
   }
 
   setting {
-    namespace = "aws:elb:loadbalancer"
+    namespace = "aws:elbv2:loadbalancer"
     name      = "ManagedSecurityGroup"
     value     = aws_security_group.security_group_main_app_load_balancer.id
   }
@@ -140,11 +145,11 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:443"
     name      = "SSLCertificateArns"
-    value     = local.elb_load_balancer_ssl_certificate_arn
+    value     = data.aws_acm_certificate.social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate.arn
   }
 
   setting {
-    namespace = "aws:elbv2:listener:default"
+    namespace = "aws:elbv2:listener:443"
     name = "SSLPolicy"
     value = "ELBSecurityPolicy-2016-08"
   }
@@ -408,18 +413,6 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "FLASK_ENV"
     value     = "production"
-  }
-
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "VCAP_APPLICATION"
-    value     = "{\"application_name\":\"${var.service_name_hyphens}\",\"organization_name\":\"equality-hub\",\"space_name\":\"${var.environment_hyphens}\"}"
-  }
-
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "VCAP_SERVICES"
-    value     = "{ \"aws-s3-bucket\": [{ \"credentials\": { \"aws_access_key_id\": \"TODO\", \"aws_region\": \"eu-west-2\", \"aws_secret_access_key\": \"TODO\", \"bucket_name\": \"TODO\" }, \"instance_name\": \"local-space-filestorage-enterprise-taskforce\" }]}"
   }
 
   setting {
