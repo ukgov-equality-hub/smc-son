@@ -417,18 +417,6 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
 
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "VCAP_APPLICATION"
-    value     = "{\"application_name\":\"${var.service_name_hyphens}\",\"organization_name\":\"equality-hub\",\"space_name\":\"${var.environment_hyphens}\"}"
-  }
-
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
-    name      = "VCAP_SERVICES"
-    value     = "{ \"aws-s3-bucket\": [{ \"credentials\": { \"aws_access_key_id\": \"TODO\", \"aws_region\": \"eu-west-2\", \"aws_secret_access_key\": \"TODO\", \"bucket_name\": \"TODO\" }, \"instance_name\": \"local-space-filestorage-enterprise-taskforce\" }]}"
-  }
-
-  setting {
-    namespace = "aws:elasticbeanstalk:application:environment"
     name      = "SECRET_KEY"
     value     = var.SECRET_KEY
   }
