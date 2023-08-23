@@ -21,6 +21,16 @@ variable "environment_hyphens" {
   description = "The environment name (using hyphen-style)."
 }
 
+variable "create_dns_record" {
+  type = bool
+  description = "Should terraform create a Route53 alias record for the (sub)domain."
+}
+
+variable "dns_record_subdomain_including_dot" {
+  type = string
+  description = "The subdomain (including dot - e.g. 'dev.' or just '' for production) for the Route53 alias record"
+}
+
 variable "aws_region" {
   type = string
   description = "The AWS region used for the provider and resources."
