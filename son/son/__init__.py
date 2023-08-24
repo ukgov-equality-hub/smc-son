@@ -2,8 +2,10 @@ import os
 from pathlib import Path
 import re
 import csv
+import customblocks
+from customblocks.utils import Markdown
 from flask import Blueprint, current_app, render_template, request, session, Response, abort
-import markdown
+import markdown, markdown.extensions.toc
 from bs4 import BeautifulSoup
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import LogLevel, Logger
@@ -332,6 +334,174 @@ def indicator_page(domain, subdomain, indicator):
         data_table=data_table,
         form=None
     )
+
+
+@son.route('/<domain>/<subdomain>/<indicator>2', methods=['GET'])
+def indicator_page_md(domain, subdomain, indicator):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}2.md"
+    if not Path(file_path).is_file():
+        abort(404)
+
+    f = open(file_path, 'r')
+    markdown_text = f.read()
+    f.close()
+
+    markdown_text = add_file_size_and_columns_to_full_data_download_link(markdown_text)
+
+    html = convert_markdown_to_html(markdown_text)
+
+    soup = BeautifulSoup(html, 'html.parser')
+
+    replace_toc_ul_with_ol(soup)
+    add_classes_to_elements_with_tag(soup, 'h1', 'govuk-heading-xl')
+    add_classes_to_elements_with_tag(soup, 'h2', 'govuk-heading-l')
+    add_classes_to_elements_with_tag(soup, 'h3', 'govuk-heading-m govuk-!-margin-bottom-1 govuk-!-padding-top-0')
+    add_classes_to_elements_with_tag(soup, 'h4', 'govuk-heading-s govuk-!-margin-bottom-1 govuk-!-padding-top-0')
+    add_classes_to_elements_with_tag(soup, 'p', 'govuk-body')
+    add_classes_to_elements_with_tag(soup, 'ul', 'govuk-list govuk-list--bullet')
+    add_classes_to_elements_with_tag(soup, 'ol', 'govuk-list govuk-list--number')
+    add_classes_to_elements_with_tag(soup, 'a', 'govuk-link')
+    add_classes_to_elements_with_tag(soup, 'hr', 'govuk-section-break govuk-section-break--l govuk-section-break--visible')
+
+    return render_template(
+        'indicator/indicator-md.html',
+        menu=menu,
+        domain=domain,
+        subdomain=subdomain,
+        indicator=indicator,
+        markdown_to_html=str(soup)
+    )
+
+
+def convert_markdown_to_html(markdown_text):
+
+    current_tabs_list = []
+    next_data_table_or_chart_id = ['']
+
+    def tabs_generator(ctx):
+        current_tabs_list.clear()
+
+        md2 = markdown.Markdown(extensions=[cbe, 'attr_list', 'sane_lists'])
+        html22 = md2.convert(ctx.content)
+
+        html2 = render_template(
+            'components/tabs.html',
+            tabs_data=current_tabs_list,
+            inner_content=html22
+        )
+        html2 = BeautifulSoup(html2, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html2
+
+    def tab_generator(ctx, section_name, tab_name):
+        tab_data = {'section_name': section_name, 'tab_name': tab_name}
+        current_tabs_list.append(tab_data)
+
+        md3 = markdown.Markdown(extensions=[cbe, 'attr_list', 'sane_lists'])
+        html33 = md3.convert(ctx.content)
+
+        html3 = render_template(
+            'components/tab.html',
+            tab_data=tab_data,
+            inner_content=html33
+        )
+        html3 = BeautifulSoup(html3, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html3
+
+    def data_table_generator(ctx):
+        html4 = render_template(
+            'components/data-table2.html',
+            id=len(next_data_table_or_chart_id),
+            data=[['Src', ctx.content]]
+        )
+        next_data_table_or_chart_id.append('')
+        html4 = BeautifulSoup(html4, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html4
+
+    def visualisation_generator(ctx, vis_type):
+        md5 = markdown.Markdown(extensions=[cbe, 'attr_list', 'sane_lists'])
+        html55 = md5.convert(ctx.content)
+
+        html5 = render_template(
+            'components/visualisation2.html',
+            id=len(next_data_table_or_chart_id),
+            type=vis_type,
+            data=[['Src', ctx.content]],
+            guidance=html55
+        )
+        next_data_table_or_chart_id.append('')
+        html5 = BeautifulSoup(html5, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html5
+
+    cbe = customblocks.CustomBlocksExtension()
+    cbe.setConfig('generators', {
+        'tabs': tabs_generator,
+        'tab': tab_generator,
+        'data_table': data_table_generator,
+        'visualisation': visualisation_generator,
+    })
+    md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), cbe, 'attr_list','sane_lists'])
+
+    html = md.convert(markdown_text)
+
+    return html
+
+
+def replace_toc_ul_with_ol(soup):
+    for tocElement in soup.select('div.toc ul'):
+        tocElement.name = 'ol'
+
+
+def add_classes_to_elements_with_tag(soup, tag, classes_to_add):
+    for element in soup.find_all(tag):
+        if element.has_attr('class'):
+            element['class'] = (' '.join(element['class'])) + ' ' + classes_to_add
+        else:
+            element['class'] = classes_to_add
+
+
+def add_file_size_and_columns_to_full_data_download_link(html):
+    if '[Download full dataset (CSV)]' in html:
+        file_size = -1
+        matches = re.findall('\[Download full dataset \(CSV\)]\([^)]*?\)', html)
+        ul = ''
+        try:
+            data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{matches[0][30: -1]}"
+            if Path(data_src).is_file():
+                file_size = os.path.getsize(data_src)
+                with open(data_src, encoding='utf8', errors='ignore') as csv_file:
+                    data_table = list(csv.reader(csv_file, delimiter=','))
+
+                    for i in range(len(data_table[0])):
+                        item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('SE', 'Standard error').replace('_', ' ')
+                        include = False
+
+                        for j in range(len(data_table)):
+                            if j > 0:
+                                if data_table[j][i] == "NA" or data_table[j][i] == "N/A" or data_table[j][i] == "N\A":
+                                    pass
+                                else:
+                                    include = True
+                                    break
+
+                        if include:
+                            ul += f"<li>{item}</li>"
+
+                    if ul != '':
+                        ul = f'<p>This file contains the following variables:</p><ul>{ul}</ul>'
+        except:
+            pass
+
+        if file_size > -1:
+            if file_size > 1000000: file_size = f"{int(file_size / 1000000)}MB"
+            elif file_size > 1000: file_size = f"{int(file_size / 1000)}KB"
+            else: file_size = f"{int(file_size)}B"
+            html = re.sub(r'\[Download full dataset \(CSV\)](\([^)]*?\))', rf"[Download full dataset (CSV, {file_size})]\1{ul}", html)
+
+    return html
 
 
 @son.route('/output/', defaults={'page_path': ''}, methods=['GET'])

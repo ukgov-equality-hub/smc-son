@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Social Mobility Commission
+{% endblock %}
+
+{% block content %}
+    <div id="maincontent" class="govuk-!-padding-left-0">
+        {{ markdown_to_html | safe }}
+    </div>
+{% endblock %}

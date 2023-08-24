@@ -1,0 +1,83 @@
+
+{% from 'components/chart.html' import chart %}
+{% from 'components/map.html' import map %}
+{% from 'components/composite.html' import composite %}
+{% from 'components/data-table.html' import datatable %}
+
+<div id="chart{{ id }}_tab">
+    {% if [data, 'data'] | attribute_type == 'list' %}
+        <div class="govuk-form-group">
+            {% if [data, 'toggle'] | attribute == 'radio' %}
+                <fieldset class="govuk-fieldset">
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                        {% for item in ([data, 'data'] | attribute) %}
+                            <div class="govuk-radios__item">
+                                <input id="range-option{{ id }}_{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange{{ id }}(this.value)"{% if loop.index == loop.length %} checked{% endif %}>
+                                <label for="range-option{{ id }}_{{ loop.index }}" class="govuk-label govuk-radios__label">
+                                    {{ item.label }}
+                                </label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+            {% else %}
+                <input id="range{{ id }}" type="range" value="{{ ([data, 'data'] | attribute)[-1].label }}" min="{{ ([data, 'data'] | attribute)[0].label }}" max="{{ ([data, 'data'] | attribute)[-1].label }}" step="1" oninput="selectRange{{ id }}(this.value)" list="values{{ id }}">
+                <datalist id="values{{ id }}" class="govuk-body">
+                    {% for item in ([data, 'data'] | attribute) %}
+                        <option value="0" label="{{ item.label }}"></option>
+                    {% endfor %}
+                </datalist>
+            {% endif %}
+        </div>
+        <script>
+            const options{{ id }} = {{ [data, 'data'] | attribute | safe }}
+
+            if (document.getElementById('range{{ id }}')) {
+                document.getElementById('range{{ id }}').addEventListener('input', function (e) {
+                    let target = e.target
+                    target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
+                })
+            }
+
+            function selectRange{{ id }}(id) {
+                const datafile = options{{ id }}.filter(x => x.label == id)[0].data
+                try {
+                    buildMap({{ id }}, datafile, false)
+                }
+                catch (e) {}
+                try {
+                    buildChart({{ id }}, datafile, false)
+                }
+                catch (e) {}
+
+                if (document.getElementById('map_tooltip{{ id }}')) {
+                    document.getElementById('map_tooltip{{ id }}').style.visibility = 'hidden'
+                }
+            }
+        </script>
+    {% endif %}
+
+    {% if type == 'chart' %}
+        {{ chart(id, data) }}
+    {% else %}
+        {% if ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+            <p class="govuk-body">How regions are grouped:</p>
+            <p class="govuk-body">Based on their composite scores, [41 regions in the UK] are grouped from the best to the worst outcomes. They are then divided into 5 equally-sized groups (‘quintiles’) – from 1 (top 20%) to 5 (bottom 20%).</p>
+        {% endif %}
+
+        <div class="grid grid2 map">
+            <div class="grid-map">
+                {{ map(id, data) }}
+            </div>
+            {% if ([data, 'code'] | attribute) in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
+                <div class="grid-composite">
+                    {{ composite(id, data) }}
+                </div>
+            {% else %}
+                <div class="grid-chart">
+                    {{ chart(id, data) }}
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
