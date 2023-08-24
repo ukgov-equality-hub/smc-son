@@ -43,12 +43,15 @@ By socio-economic background
     "ykey": "Value",
     "zkey": "Category",
     "scale": "%",
+    "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+    "reverseLegend": true,
+    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
@@ -61,7 +64,7 @@ By socio-economic background
 ## Section
 By sex
 
-## Chart: Grouped-bar
+## Chart: Stacked-bar
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
@@ -76,22 +79,22 @@ By sex
     "toggle": "radio",
     "height": 450,
     "type": "bary",
-    "xkey": "Category",
+    "xkey": "SEB",
     "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
+    "zkey": "Category",
     "scale": "%",
+    "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 65],
+    "reverseLegend": true,
+    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
     "margin": [0, 0, 0, 0],
-    "maxLabelLength": 30,
-    "textLabels": "outside",
+    "maxLabelLength": 45,
+    "textLabels": "center",
     "labelColour": "#fff",
-    "clickBehaviour": "fade",
+    "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
@@ -102,7 +105,7 @@ By sex
 ## Section
 By ethnicity
 
-## Chart: Grouped-bar
+## Chart: Stacked-bar
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 from lower working-class and higher professional backgrounds in education and training, employment and NEET, by ethnic group (UK, 2014 to 2022 combined)",
@@ -113,29 +116,27 @@ By ethnicity
     }, {
         "label": "Higher professional",
         "data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
-    }, {
-        "label": "Overview",
-        "data": "/static/data/indicators/IN21_ethnicity_overview-20230424.csv"
     }],
     "toggle": "radio",
     "height": 450,
     "type": "bary",
-    "xkey": "Category",
+    "xkey": "Category2",
     "ykey": "Value",
-    "group": "Category2",
-    "sort": "Category",
+    "zkey": "Category",
+    "sort": "Category2",
     "scale": "%",
+    "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 70],
+    "reverseLegend": true,
+    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
     "margin": [0, 0, 0, 0],
-    "maxLabelLength": 30,
-    "textLabels": "outside",
+    "maxLabelLength": 45,
+    "textLabels": "center",
     "labelColour": "#fff",
-    "clickBehaviour": "fade",
+    "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
@@ -146,7 +147,7 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Grouped-bar
+## Chart: Stacked-bar
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by SEB and disability (UK, 2014 to 2022 combined)",
@@ -161,22 +162,22 @@ By disability status
     "toggle": "radio",
     "height": 450,
     "type": "bary",
-    "xkey": "Category",
+    "xkey": "SEB",
     "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
+    "zkey": "Category",
     "scale": "%",
+    "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 70],
+    "reverseLegend": true,
+    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
     "margin": [0, 0, 0, 0],
-    "maxLabelLength": 30,
-    "textLabels": "outside",
+    "maxLabelLength": 45,
+    "textLabels": "center",
     "labelColour": "#fff",
-    "clickBehaviour": "fade",
+    "clickBehaviour": "filter",
     "dataTable": "/static/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right"],

@@ -158,6 +158,7 @@ class Choropleth {
         const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
         const rounding = options.rounding || null
         let domain = options.domain || []
+        const multiply = options.multiply || null
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
         this.title = options.title || ''
@@ -244,6 +245,13 @@ class Choropleth {
                 return data.map(x => x[nameField]).indexOf(x.properties[areaField]) > -1
             })
             subunits = filteredunits
+
+            if (multiply && isNumeric(multiply)) {
+                data = data.map(x => {
+                    if (isNumeric(x[valueField])) x[valueField] *= multiply
+                    return x
+                })
+            }
 
             // Set up map projection, and position it
             if (div.getElementsByTagName('svg').length > 0) {
@@ -743,6 +751,7 @@ class Choropleth {
         }
 
         function formatNumber(x, dp=2) {
+            if (!x) return ''
             if (isNumeric(x)) {
                 if (parseInt(x, 10) != parseFloat(x, 10)) {
                     return parseFloat(x, 10).toFixed(dp).toString()
@@ -754,7 +763,7 @@ class Choropleth {
         }
 
         function getLabelText(key, pos) {
-            function aproximate(key, dp, pos) {
+            function approximate(key, dp, pos) {
                 let num = parseFloat(key, 10).toFixed(dp).toString(), aprox = ''
 
                 if (!num.replace('.', '').match(/[^0]/g)) {
@@ -782,17 +791,17 @@ class Choropleth {
             }
 
             if (['percent', '%'].includes(scale)) {
-                return `${pos == 'tooltip' || pos == 'label' ? aproximate(key, dp || 1, pos) : key}%`
+                return `${pos == 'tooltip' || pos == 'label' ? approximate(key, dp != null ? dp : 1, pos) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 2))}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp || 0))}`
+                return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
-                text = `${formatNumber(key, dp || 1)}x`
+                text = `${formatNumber(key, dp != null ? dp : 1)}x`
             } else {
-                text = formatNumber(key, dp || 1)
+                text = formatNumber(key, dp != null ? dp : 1)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
         }
