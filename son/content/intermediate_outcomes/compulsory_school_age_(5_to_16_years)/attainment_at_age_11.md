@@ -44,11 +44,14 @@ By disadvantage status over time
     "group": "Time_period",
     "sort": "Time_period",
     "scale": "%",
+    "filterNaN": false,
+    "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+    "reverseLegend": true,
+    "colourScheme": ["#808080", "#eb652e", "#0f265c"],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
     "labelColour": "#fff",
@@ -74,12 +77,14 @@ By year
     "zkey": "Area_name",
     "sort": "Time_period",
     "scale": "Gap index",
+    "filterNaN": false,
     "xgrid": false,
     "ygrid": true,
     "xticks": 7,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca"],
+    "colourScheme": ["#0f265c"],
+    "range": [0, 4],
     "margin": [0, 0, 0, 0],
     "dataTable": "/static/pre-processed-csvs/IN12-attainment-at-age-11--gap-by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -95,27 +100,21 @@ By sex
     "code": "IN12",
     "title": "Percentage of pupils meeting the expected standard in reading, writing and maths at key stage 2, by disadvantage status and sex (England, school year 2021 to 2022)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Boys",
-        "data": "/static/data/indicators/IN12_gender_male-20230531.csv"
-    }, {
-        "label": "Girls",
-        "data": "/static/data/indicators/IN12_gender_female-20230531.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN12_gender-20230419.csv",
     "height": 450,
     "type": "bary",
     "xkey": "SEB",
     "ykey": "Value",
-    "group": "Time_period",
-    "sort": "Time_period",
+    "group": "Sex",
+    "sort": "Sex",
     "scale": "%",
+    "rounding": "0dp",
     "maxBarSize": 150,
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
+    "colourScheme": ["#0f265c", "#eb652e"],
     "range": [0, 80],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",
@@ -129,40 +128,24 @@ By sex
 ## Section
 By ethnicity
 
-## Chart: Grouped-bar
+## Chart: Single-bar
 {
     "code": "IN12",
     "title": "Percentage of FSM-eligible pupils meeting the expected standard in reading, writing and maths at key stage 2, by ethnicity (England, school year 2021 to 2022)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "2015-16",
-        "data": "/static/data/indicators/IN12_ethnicity_201516-20230531.csv"
-    }, {
-        "label": "2016-17",
-        "data": "/static/data/indicators/IN12_ethnicity_201617-20230531.csv"
-    }, {
-        "label": "2017-18",
-        "data": "/static/data/indicators/IN12_ethnicity_201718-20230531.csv"
-    }, {
-        "label": "2018-19",
-        "data": "/static/data/indicators/IN12_ethnicity_201819-20230531.csv"
-    }, {
-        "label": "2021-22",
-        "data": "/static/data/indicators/IN12_ethnicity_202122-20230531.csv"
-    }],
-    "toggle": "radio",
-    "height": 1450,
+    "data": "/static/data/indicators/IN12_ethnicity_fsm_202122-20230531.csv",
+    "height": 600,
     "type": "bar",
     "xkey": "Value",
-    "ykey": "SEB",
-    "group": "Category",
-    "sort": "Category",
+    "ykey": "Category",
+    "sort": "Value",
     "scale": "%",
+    "rounding": "0dp",
     "xgrid": true,
     "ygrid": false,
     "xticks": 5,
     "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
+    "colourScheme": ["#0f265c"],
     "domain": [0, 85],
     "margin": [0, 0, 0, 0],
     "textLabels": "center",

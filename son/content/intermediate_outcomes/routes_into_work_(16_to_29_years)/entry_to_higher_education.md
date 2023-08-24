@@ -34,6 +34,7 @@ By socio-economic background
     "ykey": "Value",
     "zkey": "SEB",
     "scale": "%",
+    "rounding": "0dp",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "xgrid": false,
