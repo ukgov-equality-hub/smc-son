@@ -412,6 +412,7 @@ class Chart {
                 if (limit > 0) chartData = chartData.slice(0 - limit)
                 if (!filteredData) self.chartData = chartData
                 domain = domain.filter(function (value, index, array) { return array.indexOf(value) === index })
+                if (orientation == 'y') domain = domain.map(x => x.toString())
 
                 const chartOptions = {
                     x: xkey,
@@ -535,7 +536,6 @@ class Chart {
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: (x, i, t) => {
-                        //return xticks == -2 ? i == 0 || i == (t.length - 1) ? x.toString(): null : xticks == -1 ? null : orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                         if (Array.isArray(xticks)) {
                             if (t.includes(x)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                             return null

@@ -619,7 +619,7 @@ menu = {
         },
         {
             'id': 'TLK1',
-            'name': 'Gloucestershire, Wiltshire and Bath/Bristol area',
+            'name': 'Gloucestershire, Wiltshire and Bath and Bristol area',
             'itl3': [
                 'Bristol, City of',
                 'Bath and North East Somerset, North Somerset and South Gloucestershire',
@@ -882,7 +882,7 @@ menu = {
         },
         {
             'id': 'TLC2',
-            'name': 'Northumberland and Tyne and Wear',
+            'name': 'Northumberland, and Tyne and Wear',
             'itl3': [
                 'Northumberland',
                 'Tyneside',
