@@ -90,7 +90,7 @@ The 41 ITL2 regions are as follows.
 North East (England):
 
 * [Tees Valley and Durham](/social_mobility_by_area/tees_valley_and_durham)
-* [Northumberland and Tyne and Wear](/social_mobility_by_area/northumberland_and_tyne_and_wear)
+* [Northumberland, and Tyne and Wear](/social_mobility_by_area/northumberland_and_tyne_and_wear)
 
 North West (England):
 
@@ -152,7 +152,7 @@ Scotland:
 * [Eastern Scotland](/social_mobility_by_area/eastern_scotland)
 * [Highlands and Islands](/social_mobility_by_area/highlands_and_islands)
 * [North Eastern Scotland](/social_mobility_by_area/north_eastern_scotland)
-* [South Western Scotland](/social_mobility_by_area/west_central_scotland)
+* [West Central Scotland](/social_mobility_by_area/west_central_scotland)
 * [Southern Scotland](/social_mobility_by_area/southern_scotland)
 
 Wales:
