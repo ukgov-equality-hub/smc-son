@@ -435,6 +435,10 @@ div.data-table-data table {
             overflow: hidden;
         }
 
+        > div.grid-chart {
+            overflow: visible;
+        }
+
         > div:last-child {
             margin-top: 20px;
         }
@@ -609,6 +613,7 @@ div.data-table-data table {
 
         h3.govuk-heading-s {
             margin-bottom: 10px;
+            height: 50px;
             font-weight: normal;
             color: #777;
         }
@@ -659,6 +664,10 @@ div.data-table-data table {
     @media(max-width: 720px) {
         > div {
             width: calc(100% - 20px);
+
+            h3.govuk-heading-s {
+                height: 25px;
+            }
 
             p {
                 margin-bottom: 20px;
