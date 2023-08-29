@@ -69,7 +69,6 @@ By area
     "confidenceIntervals": "visible",
     "height": 700,
     "dataFormat": "quintile",
-    "quantile": "",
     "zero": false,
     "reversePolarity": true,
     "background": true,

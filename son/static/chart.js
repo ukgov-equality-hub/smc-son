@@ -163,7 +163,7 @@ class Chart {
         let dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
-        const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
+        const scale = options.scale ? options.scale : ''
         const rounding = options.rounding || null
         const limit = options.limit || 0
         let domain = options.domain || null
@@ -180,6 +180,7 @@ class Chart {
         const labelKey = options.labelKey || null
         const maximumLabelLength = options.maxLabelLength || -1
         const rotateDomainLabels = options.rotateDomainLabels || false
+        const showDots = options.showDots == false ? false : true
         const grid = options.grid == false ? false : true
         let xgrid = options.xgrid == false ? false : grid
         let ygrid = options.ygrid == false ? false : grid
@@ -442,7 +443,7 @@ class Chart {
                 }
                 if (currentType == 'liney') {
                     marks.push(Plot.lineY(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
-                    marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
+                    marks.push(Plot.dot(chartData, { r: showDots ? 3 : 0.001, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile'].includes(currentType)) {
                     xticks = getScaledTicks(currentType)
@@ -452,9 +453,9 @@ class Chart {
                     let d = chartData.filter(x => x[ykey] == yvalue)
                     if (d && d.length > 0) {
                         let q = getQuantile(domain, d[0][xkey])
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, stroke: 'grey' }))
+                        marks.push(Plot.dot(d, { x: x => quantile && x[quantile] && isNumeric(x[quantile]) ? domain[parseInt(x[quantile], 10) - 1] : domain[q], y: ykey, dy: 9, r: 15, stroke: 'grey' }))
                         marks.push(Plot.cell(reversePolarity ? [...domain].reverse() : domain, { x: x => x, dy: 9, fill: x => x, stroke: 'grey' }))
-                        marks.push(Plot.dot(d, { x: domain[q], y: ykey, dy: 9, r: 15, fill: x => getMarkColour(originalData || chartData, x), title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[currentGroup]}` }))
+                        marks.push(Plot.dot(d, { x: x => quantile && x[quantile] && isNumeric(x[quantile]) ? domain[parseInt(x[quantile], 10) - 1] : domain[q], y: ykey, dy: 9, r: 15, fill: x => getMarkColour(originalData || chartData, x), title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[currentGroup]}` }))
                     }
                 }
                 if (lci && uci) {
@@ -545,7 +546,7 @@ class Chart {
                         } else if (xticks == -1) {
                             return null
                         } else {
-                            return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                            return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
                     }
                 }))
@@ -555,7 +556,13 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
                     ticks: xticks ? xticks : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
-                    tickFormat: x => orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
+                    tickFormat: (x, i, t) => {
+                        if (xticks == -1) {
+                            return null
+                        } else {
+                            return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
+                        }
+                    }
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
@@ -574,7 +581,7 @@ class Chart {
                         } else if (yticks == -1) {
                             return null
                         } else {
-                            return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
+                            return orientation == 'y' ? getLabelText(x, 'yaxis') : x.toString()
                         }
                     }
                 }))
@@ -815,6 +822,7 @@ class Chart {
 
             function getMarkColour(data, x) {
                 const val = x[xkey]
+                if (val == null) return 'grey'
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = x[quantile]

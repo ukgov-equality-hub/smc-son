@@ -1,0 +1,42 @@
+"Ind_code","Ind_name","Area_code","Area_name","Area_type","Age","SEB","Category_type","Category","Value","LCI","UCI","SE","Sample_size","Time_period","Unit","Value_note","Sex","Quintile"
+"CI4","Childhood poverty and disadvantage","TLH2","Bedfordshire and Hertfordshire","ITL2",NA,NA,NA,NA,0.263436498,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","ITL2",NA,NA,NA,NA,0.165000597,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLD6","Cheshire","ITL2",NA,NA,NA,NA,0.223892788,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLK3","Cornwall and Isles of Scilly","ITL2",NA,NA,NA,NA,0.390466631,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLD1","Cumbria","ITL2",NA,NA,NA,NA,0.329367943,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLF1","Derbyshire and Nottinghamshire","ITL2",NA,NA,NA,NA,0.43657324,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLK4","Devon","ITL2",NA,NA,NA,NA,0.304115598,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLK2","Dorset and Somerset","ITL2",NA,NA,NA,NA,0.228298874,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLH1","East Anglia","ITL2",NA,NA,NA,NA,0.375048584,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLL2","East Wales","ITL2",NA,NA,NA,NA,0.385473243,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLE1","East Yorkshire and Northern Lincolnshire","ITL2",NA,NA,NA,NA,0.623857298,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLM7","Eastern Scotland","ITL2",NA,NA,NA,NA,0.304781463,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLH3","Essex","ITL2",NA,NA,NA,NA,0.289326944,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","ITL2",NA,NA,NA,NA,0.18653779,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLD3","Greater Manchester","ITL2",NA,NA,NA,NA,0.638230272,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLJ3","Hampshire and Isle of Wight","ITL2",NA,NA,NA,NA,0.263857817,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLG1","Herefordshire, Worcestershire and Warwickshire","ITL2",NA,NA,NA,NA,0.26956072,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLM6","Highlands and Islands","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLI4","Inner London - East","ITL2",NA,NA,NA,NA,0.998637194,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLI3","Inner London - West","ITL2",NA,NA,NA,NA,0.611177687,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLJ4","Kent","ITL2",NA,NA,NA,NA,0.349428005,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLD4","Lancashire","ITL2",NA,NA,NA,NA,0.466605009,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLF2","Leicestershire, Rutland and Northamptonshire","ITL2",NA,NA,NA,NA,0.415318188,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLF3","Lincolnshire","ITL2",NA,NA,NA,NA,0.422947402,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLD7","Merseyside","ITL2",NA,NA,NA,NA,0.440576043,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLM5","North Eastern Scotland","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLE2","North Yorkshire","ITL2",NA,NA,NA,NA,0.17060666,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLN0","Northern Ireland","ITL2",NA,NA,NA,NA,0.343050828,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI4","Childhood poverty and disadvantage","TLC2","Northumberland, and Tyne and Wear","ITL2",NA,NA,NA,NA,0.595625478,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLI5","Outer London - East and North East","ITL2",NA,NA,NA,NA,0.698109398,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLI6","Outer London - South","ITL2",NA,NA,NA,NA,0.441122923,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLI7","Outer London - West and North West","ITL2",NA,NA,NA,NA,0.652368431,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLG2","Shropshire and Staffordshire","ITL2",NA,NA,NA,NA,0.400215916,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLE3","South Yorkshire","ITL2",NA,NA,NA,NA,0.547996936,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLM9","Southern Scotland","ITL2",NA,NA,NA,NA,0.36693868,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLJ2","Surrey, East and West Sussex","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI4","Childhood poverty and disadvantage","TLC1","Tees Valley and Durham","ITL2",NA,NA,NA,NA,0.608387493,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLM8","West Central Scotland","ITL2",NA,NA,NA,NA,0.387278698,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI4","Childhood poverty and disadvantage","TLG3","West Midlands","ITL2",NA,NA,NA,NA,0.775057231,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI4","Childhood poverty and disadvantage","TLL1","West Wales and The Valleys","ITL2",NA,NA,NA,NA,0.440964795,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI4","Childhood poverty and disadvantage","TLE4","West Yorkshire","ITL2",NA,NA,NA,NA,0.626413647,NA,NA,NA,NA,NA,NA,NA,"Total",5

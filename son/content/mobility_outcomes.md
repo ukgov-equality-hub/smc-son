@@ -22,7 +22,7 @@ Highlighted content
         <a href="/mobility_outcomes/occupation/relative_occupational_mobility" class="govuk-link">Read more...</a>
     </div>
     <div class="govuk-body">
-        <h3 class="govuk-heading-s">Absolute educational mobility by disability</h3>
+        <h3 class="govuk-heading-s"></h3>
         <div class="chart-container">
             <div id="chart2"></div>
         </div>
@@ -33,8 +33,8 @@ Highlighted content
             //    { "height": 200, "type": "bary", "xkey": "Sex", "ykey": "Value", "zkey": "Sex", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 40, "labelColour": "#fff" }
             //)
         </script>
-        <p class="govuk-body">People with a long-term illness or disability have poorer chances of upward educational mobility than their peers.</p>
-        <a href="/mobility_outcomes/education/absolute_educational_mobility" class="govuk-link">Read more...</a>
+        <p class="govuk-body"></p>
+        <a href="" class="govuk-link">Read more...</a>
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Absolute housing mobility by sex</h3>
@@ -64,6 +64,6 @@ Elsewhere in State of the Nation 2023
 
 ## Subtitle
 Read the full report
- 
+
 ## Text
 <a href="#" class="govuk-link">State of the Nation 2023</a> on GOV.UK.

@@ -235,14 +235,23 @@
             const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
             if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
             if (typeof window[`chart${el}`] !== 'undefined') chart = eval(`chart${el}`)
+            const reversePolarity = (a.map || a.chart).options.reversePolarity
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 let performance = ''
-                if (a.quantile == 5) performance = '1 (top)'
-                if (a.quantile == 4) performance = '2 (second top)'
-                if (a.quantile == 3) performance = '3 (middle)'
-                if (a.quantile == 2) performance = '4 (second bottom)'
-                if (a.quantile == 1) performance = '5 (bottom)'
+                if (reversePolarity) {
+                    if (a.quantile == 1) performance = '1 (top)'
+                    if (a.quantile == 2) performance = '2 (second top)'
+                    if (a.quantile == 3) performance = '3 (middle)'
+                    if (a.quantile == 4) performance = '4 (second bottom)'
+                    if (a.quantile == 5) performance = '5 (bottom)'
+                } else {
+                    if (a.quantile == 5) performance = '1 (top)'
+                    if (a.quantile == 4) performance = '2 (second top)'
+                    if (a.quantile == 3) performance = '3 (middle)'
+                    if (a.quantile == 2) performance = '4 (second bottom)'
+                    if (a.quantile == 1) performance = '5 (bottom)'
+                }
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name

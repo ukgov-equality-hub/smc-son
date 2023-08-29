@@ -78,7 +78,7 @@
         const indicators = [ 'Promising prospects', 'Precarious situations', 'Socio-cultural advantage', 'Childhood poverty and disadvantage', 'Research and development' ]
 
         const dataUtils = new DataUtils()
-        let data = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/CI_20230419.csv`)
+        let data = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/CI_20230817.csv`)
         data = data.data
 
         const options = {
@@ -86,6 +86,7 @@
             xkey: 'Value',
             ykey: 'Area_name',
             yvalue: '{{ title | replace("Bath and Bristol", "Bath/Bristol") }}',
+            quantile: 'Quintile',
             colourScheme: ['#ca0020', '#f4a582', '#ffffbf', '#92c5de', '#0571b0'],
             dataFormat: 'quintile'
         }

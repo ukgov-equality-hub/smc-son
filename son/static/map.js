@@ -155,7 +155,7 @@ class Choropleth {
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
-        const scale = /*['absolute', 'relative', 'percent', '%', '£', '$', '€', 'currency'].includes*/(options.scale) ? options.scale : ''
+        const scale = options.scale ? options.scale : ''
         const rounding = options.rounding || null
         let domain = options.domain || []
         const multiply = options.multiply || null
@@ -492,13 +492,13 @@ class Choropleth {
                 .attr('data-colour', x => getMarkColour(data, x))
                 .attr('data-quantile', x => {
                     if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
-                        const d = data.filter(x => isNumeric(x[valueField]))
-                        if (quantile && quantile != '') {
-                            const q = getValue(x, areaField, quantile, d)
-                            if (q) return q
+                        let val = getValue(x, areaField, quantile, data)
+                        if (quantile && quantile != '' && val && isNumeric(val)) {
+                            return val
                         }
+                        const d = data.filter(x => isNumeric(x[valueField]))
                         const ranges = getQuantileRanges(d.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
-                        const val = getValue(x, areaField, valueField, d)
+                        val = getValue(x, areaField, valueField, d)
                         return isNaN(val) ? 0 : getQuantile(ranges, val) + 1
                     }
                     return -1
@@ -616,13 +616,15 @@ class Choropleth {
                 for (const quantile of quantiles) {
                     ranges.push(d3.quantile(data, quantile))
                 }
+                if (reversePolarity) ranges = ranges.reverse()
                 return ranges
             }
 
             function getQuantile(ranges, value) {
-                for (let i = 0; i < ranges.length; i++) {
-                    if (value <= ranges[i]) {
-                        return reversePolarity ? ranges.length - (i + 1) : i
+                const r = reversePolarity ? [...ranges].reverse() : ranges
+                for (let i = 0; i < r.length; i++) {
+                    if (value <= r[i]) {
+                        return i
                     }
                 }
                 return -1
@@ -634,13 +636,13 @@ class Choropleth {
                 if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = getValue(x, areaField, quantile, data)
+                    const r = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
                     if (q) {
                         q -= 1
                     } else {
-                        const ranges = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
-                        q = getQuantile(ranges, val)
+                        q = getQuantile(r, val)
                     }
-                    return colourScheme[q] || 'grey'
+                    return colourScheme[reversePolarity ? r.length - (q + 1) : q] || 'grey'
                 } else if (dataFormat == 'categorical') {
                     return colourScheme[val - 1]
                 } else if (dataFormat == 'sequential') {
@@ -728,7 +730,7 @@ class Choropleth {
         function getValue(d, p, v, data) {
             if (getProperty(d, p) != '') {
                 const val = data.filter(x => x[nameField] == getProperty(d, p))
-                if (val && typeof val[0] !== 'undefined' && val[0][v]) {
+                if (val && typeof val[0] !== 'undefined' && (val[0][v] || val[0][v] == 0)) {
                     return val[0][v]
                 }
             }
