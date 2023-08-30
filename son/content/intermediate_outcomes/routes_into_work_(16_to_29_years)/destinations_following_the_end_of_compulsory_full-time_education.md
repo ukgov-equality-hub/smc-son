@@ -2,11 +2,11 @@
 IN21
 
 ## Title
-Destinations after age 16
+Destinations following the end of compulsory full-time education
 
 ## Summary
 Data on young people aged 16 to 24 years in the UK who were in education and training, employment or NEET
-(not in employment, education or training).
+(not in employment, education or training), by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -19,11 +19,12 @@ People from lower working-class backgrounds were the most likely to be ‘NEET�
 Social class differences in the percentages of young people in education and training, employment or NEET were similar
 among young men and women.
 
-For young people from lower working class backgrounds, those in the Chinese (62%) and Black African (58%) ethnic groups
-were most likely to be in education and training out of all ethnic groups. White young people (26%) were least likely to be.
+Overall, the percentage of people from lower working-class backgrounds who were NEET was highest among the White and
+Black Caribbean ethnic groups (both 22%), and lowest among the Chinese and Indian ethnic groups (both 10%).
 
 For young people from higher professional backgrounds, those in the Bangladeshi (66%) and Chinese (62%) ethnic groups
-were most likely to be in education and training out of all ethnic groups. White young people (34%) were least likely to be.
+were most likely to be in education and training out of all ethnic groups. White young people (34%) were least likely
+to be in education or training, but more likely to be in employment (57%).
 
 Young people with a disability were much less likely to be in employment and much more likely to be NEET than those
 without a disability, across all socio-economic backgrounds.
@@ -204,7 +205,7 @@ employment or ‘NEET’ (not in employment, education or training).
 
 NEET is defined as not in employment, education or training in the week before the survey. 
 
-Socio-economic background (SEB) is based on the main earner’s occupation when the respondent was aged 14 years.
+Socio-economic background is based on the main earner’s occupation when the respondent was aged 14 years.
 Where there was no earner in the family, SEB is included in the lower working class. 
 
 ### Things you need to know
