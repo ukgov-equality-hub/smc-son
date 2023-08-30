@@ -1,5 +1,5 @@
 ﻿Region,Index of childhood poverty and disadvantage,Quintile
-Bedfordshire and Hertfordshire,0.263436498,1
+Bedfordshire and Hertfordshire,0.263436498,2
 "Berkshire, Buckinghamshire and Oxfordshire",0.165000597,1
 Cheshire,0.223892788,1
 Cornwall and Isles of Scilly,0.390466631,3
@@ -16,15 +16,15 @@ Essex,0.289326944,2
 Greater Manchester,0.638230272,5
 Hampshire and Isle of Wight,0.263857817,2
 "Herefordshire, Worcestershire and Warwickshire",0.26956072,2
-Highlands and Islands,0.000000001,1
+Highlands and Islands,0,1
 Inner London - East,0.998637194,5
 Inner London - West,0.611177687,5
-Kent,0.349428005,2
+Kent,0.349428005,3
 Lancashire,0.466605009,4
 "Leicestershire, Rutland and Northamptonshire",0.415318188,3
 Lincolnshire,0.422947402,3
 Merseyside,0.440576043,4
-North Eastern Scotland,0.000000001,1
+North Eastern Scotland,0,1
 North Yorkshire,0.17060666,1
 Northern Ireland,0.343050828,2
 "Northumberland, and Tyne and Wear",0.595625478,4
@@ -34,8 +34,8 @@ Outer London - West and North West,0.652368431,5
 Shropshire and Staffordshire,0.400215916,3
 South Yorkshire,0.547996936,4
 Southern Scotland,0.36693868,3
-"Surrey, East and West Sussex",0.000000001,1
-Tees Valley and Durham,0.608387493,4
+"Surrey, East and West Sussex",0,1
+Tees Valley and Durham,0.608387493,5
 West Central Scotland,0.387278698,3
 West Midlands,0.775057231,5
 West Wales and The Valleys,0.440964795,4
