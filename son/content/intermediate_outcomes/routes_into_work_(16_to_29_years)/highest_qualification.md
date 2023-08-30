@@ -5,13 +5,13 @@ IN23
 Highest qualification
 
 ## Summary
-Data on the highest qualification achieved of 25 to 29 year olds by social class background.
+Data on the highest qualifications of 25 to 29 year olds, by socio-economic background.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Young people’s socio-economic background is strongly related to the highest qualification level they have achieved by
+Young people’s socio-economic background is strongly related to the highest qualification level they achieve by
 their mid to late 20s.
 
 In 2021, 71% of 25 to 29 year olds from higher professional backgrounds had a first or higher degree,
@@ -71,7 +71,7 @@ By area
 # Src
 {
     "code": "IN23",
-    "title": "Highest qualification of young people",
+    "title": "Percentage point difference from the national average in 25 to 29 year olds with a university degree, by region (UK, 2018 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN23_area-20230327.csv",
@@ -106,6 +106,16 @@ By area
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 4]
 }
+
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference to the national average. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals] – the range of values that the 'true' value for each region is highly likely to be within. In many cases the confidence intervals overlap. This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to understand overall regional patterns.
+
 
 ## Section
 By sex
