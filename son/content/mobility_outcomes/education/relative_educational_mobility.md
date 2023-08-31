@@ -29,7 +29,7 @@ By year
 ## Chart: Single-line
 {
     "code": "MO32",
-    "title": "Parent-child odds ratios relating to university degrees, respondents aged 28 to 37 years (UK, 1991 to 2020)",
+    "title": "Parent:child odds ratios relating to university degrees, respondents aged 28 to 37 years (UK, 1991 to 2020)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_overview-20230607.csv",
     "height": 450,
@@ -60,7 +60,7 @@ By area
 ## Chart: Single-bar
 {
     "code": "MO32",
-    "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)",
+    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_area-20230607.csv",
     "height": 450,
@@ -90,7 +90,7 @@ By sex
 ## Chart: Single-bar
 {
     "code": "MO32",
-    "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)",
+    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_gender-20230607.csv",
     "height": 450,
@@ -120,7 +120,7 @@ By ethnicity
 ## Chart: Single-bar
 {
     "code": "MO32",
-    "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)",
+    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_ethnicity-20230607.csv",
     "height": 450,
@@ -152,7 +152,7 @@ By disability status
 ## Chart: Single-bar
 {
     "code": "MO32",
-    "title": "Parent-child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)",
+    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO32_disability-20230607.csv",
     "height": 450,

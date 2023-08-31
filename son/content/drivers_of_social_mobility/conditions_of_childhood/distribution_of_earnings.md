@@ -80,6 +80,8 @@ For example, a ratio of 2 means that people at the 90th percentile earn twice as
 This data uses the ‘90:10 ratio’ rather than the Gini coefficient (a commonly-used measure of income inequality).
 This is for ease of understanding. It uses data from ASHE instead of other sources because ASHE includes data on regional differences.
 
+Data for 2022 is provisional.
+
 ### Type of data
 Survey data
 

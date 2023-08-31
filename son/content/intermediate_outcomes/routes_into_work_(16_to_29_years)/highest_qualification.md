@@ -108,13 +108,19 @@ By area
 }
 
 # Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference to the national average. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest
+percentage point difference to the national average.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent [confidence intervals] – the range of values that the 'true' value for each region is highly likely to be within. In many cases the confidence intervals overlap. This suggests differences between specific regions may not be statistically significant. 
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to understand overall regional patterns.
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 
 ## Section

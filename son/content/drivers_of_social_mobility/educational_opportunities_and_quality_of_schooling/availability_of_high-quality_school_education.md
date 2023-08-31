@@ -78,7 +78,7 @@ Average scores for students aged 15 years in reading, mathematics and science ra
 [PISA 2018 results](https://www.oecd.org/publications/pisa-2018-results-volume-i-5f07c754-en.htm){: target="_blank"}.
 
 ### Type of data
-Administrative data
+Survey data
 
 Read more in State of the Nation 2023 on GOV.UK.
 

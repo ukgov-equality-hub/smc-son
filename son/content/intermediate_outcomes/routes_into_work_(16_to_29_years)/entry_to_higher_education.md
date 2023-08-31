@@ -5,7 +5,7 @@ IN22
 Entry to higher education
 
 ## Summary
-Data on the percentage of 18-20 year olds studying for a full-time first degree.
+Data on the percentage of 18 to 20 year olds studying for a full-time first degree, by socio-economic background.
 
 ## Subtitle
 Summary main findings

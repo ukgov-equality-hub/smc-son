@@ -5,7 +5,7 @@ IN41
 Further training and qualifications
 
 ## Summary
-Data on the percentage of people aged 25 and 32 years with a university degree.
+Data on the percentage of people aged 25 and 32 years with a university degree, by socio-economic background.
 
 ## Subtitle
 Summary main findings

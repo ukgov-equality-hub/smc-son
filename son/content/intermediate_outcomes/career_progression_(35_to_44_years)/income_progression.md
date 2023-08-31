@@ -5,7 +5,7 @@ IN43
 Income progression
 
 ## Summary
-Data on changes in the annual incomes of men and women aged 25 to 44 years in the UK, by socio-economic background (SEB).
+Data on changes in the annual incomes of men and women aged 25 to 44 years in the UK, by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -14,8 +14,8 @@ Summary main findings
 Data from 2014 to 2021 shows that annual incomes of men and women aged 25 to 44 years from professional backgrounds
 went up more than for those from intermediate or working class backgrounds.
   
-Men from professional backgrounds earned around £25,000 at 25 years old, rising to nearly £50,000 at 44 years old.
-Those from lower working class backgrounds earned around £20,000 at 25 years old, and just over £30,000 at 44 years old.
+Average incomes increased steadily from the age of 25 to 35 years, and tended to flatten out after. The average increase
+was greater for young people from professional backgrounds than for those from intermediate or working-class backgrounds.
 
 Women’s average earnings were lower, and did not go up as quickly as men’s.
 
@@ -25,7 +25,7 @@ By sex
 ## Chart: Multi-line
 {
     "code": "IN43",
-    "title": "Income progression of men and women aged 25 to 44, by SEB (UK, 2014 to 2021 combined)",
+    "title": "Income progression of men and women aged 25 to 44, by socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -92,12 +92,8 @@ These are based on the National Statistics Socio-economic Classification (NS-SEC
 ### Things you need to know
 The data used is weighted using the LFS probability weights.
 
-Estimates are the average marginal effects taken from a logistic regression model of access to the professional classes controlling for:
-
-* age
-* age squared (to account for the changing importance of age as people get older)
-* survey year
-* SEB
+Estimates are derived from a logistic regression of annual income by socio-economic background and age, controlling for
+survey year and number of dependent children.
 
 ### Type of data
 Survey data

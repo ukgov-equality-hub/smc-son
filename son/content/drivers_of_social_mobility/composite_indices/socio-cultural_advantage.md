@@ -12,7 +12,7 @@ occupation (higher professional), and professional work for 25 to 29 year olds.
 # Src
 {
     "code": "CI3",
-    "title": "Index of sociocultural advantage, and quintile ranking from best 20% to worst 20%, by region (UK, 2014 to 2021 combined)",
+    "title": "Index of sociocultural advantage, by region (UK, 2014 to 2021 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI3_20230817.csv",
     "geoFormat": "",

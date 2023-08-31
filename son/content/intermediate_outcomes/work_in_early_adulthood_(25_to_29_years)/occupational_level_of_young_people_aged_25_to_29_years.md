@@ -98,8 +98,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN33-occupational-level--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 3],
-    "dataTableTitle": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average (UK, 2014 to 2021 combined)"
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance

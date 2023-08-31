@@ -31,7 +31,7 @@ By year
     "ykey": "Value",
     "zkey": "Area_name",
     "sort": "Time_period",
-    "scale": "Euros",
+    "scale": "Ratio of spending (relative to 2007)",
     "xgrid": false,
     "ygrid": true,
     "xticks": 7,
@@ -125,10 +125,13 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest business expenditure on research and development.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest spending.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the business spending on research and development.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 About the data

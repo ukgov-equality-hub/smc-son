@@ -5,7 +5,7 @@ IN31
 Economic activity
 
 ## Summary
-Data on the percentage of 25 to 29 year olds who are either in work or looking for work, by socio-economic background (SEB).
+Data on the percentage of 25 to 29 year olds who are either in work or looking for work, by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -21,10 +21,8 @@ Data for 2014 to 2021 combined shows that:
 * young women were less likely to be economically active than young men from the same socio-economic background
   – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active
 * young people from Pakistani, Bangladeshi, Chinese and Other ethnic backgrounds had lower levels of economic activity
-  – this could be partly due to higher rates of [entry to higher education]
 * disabled young people were less likely to be economically active than non-disabled young people from the same
-  socio-economic background – the ‘disability gap’ was largest for young people from lower working class backgrounds,
-  where 52% of disabled people and 85% of non-disabled people were economically active
+  socio-economic background – the ‘disability gap’ was relatively small among those from a higher professional background
 
 ## Section
 By socio-economic background
@@ -32,7 +30,7 @@ By socio-economic background
 ## Chart: Single-bar
 {
     "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by SEB (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds who were economically active, by socio-economic background (UK, 2021)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_overview-20230327.csv",
     "height": 450,
@@ -67,7 +65,7 @@ By area
 # Src
 {
     "code": "IN31",
-    "title": "Variation in economic activity among 25 to 29 year olds compared with the average, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
+    "title": "Variation in economic activity among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN31_area-20230327.csv",
@@ -100,9 +98,23 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 4],
-    "dataTableTitle": "Variation in economic activity among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
+    "dataTableDecimalPlaces": [null, 4]
 }
+
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
+
 
 ## Section
 By sex
@@ -110,7 +122,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by sex and SEB (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds who were economically active, by sex and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_gender-20230327.csv",
     "height": 450,
@@ -146,7 +158,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_ethnicity-20230327.csv",
     "height": 450,
@@ -183,7 +195,7 @@ By disability status
 ## Chart: Grouped-bar
 {
     "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and SEB (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN31_disability-20230327.csv",
     "height": 450,
