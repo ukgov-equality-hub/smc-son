@@ -59,6 +59,8 @@ This section shows how different areas in the UK are ranked for 5 different meas
     })()
 </script>
 
+<a name="composite-measures-by-region" />
+
 ### Composite measures by region
 The 5 composite measures of social mobility broken down by region are:
 
@@ -73,6 +75,8 @@ Each of these measures combines data from 3 indicators into a single ‘composit
 For each composite measure, 41 regions in the UK are ordered from best to worst, and then divided into 5 equally-sized groups (‘quintiles’).
 
 **We should emphasise that these are purely descriptive statistics and that we are not yet in a position to claim any causal effects of regions on outcomes. And because these statistics are based on sample surveys, they are affected by sampling error.**
+
+<a name="the-41-regions" />
 
 ### The 41 regions
 We use the ‘international territorial levels’ (ITLs) system developed by the Office for National Statistics. This divides the UK into:

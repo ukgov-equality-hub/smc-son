@@ -5,27 +5,18 @@ MO52
 Relative wealth mobility
 
 ## Summary
-Data on the amount of wealth people have at different ages, and on the relationship in wealth between people and their parents.
+Information on the relationship in wealth between people and their parents.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Data from 2016 to 2020 shows that older people had more wealth than younger people, particularly from property and pensions.
-
-Estimated average total wealth by age group was:
-
-* £66,000 for 25 to 34 year olds
-* £196,000 for 35 to 44 year olds
-* £364,000 for 45 to 54 year olds
-* £575,000 for 55 to 64 year olds
-
-The relationship in wealth between people and their parents was greater among women than men. 
-
-A 10% increase in parents’ wealth was associated with the following increases in their children’s wealth:
+A 10% increase in parents’ wealth is associated with the following increases in their children’s wealth:
 
 * 3.8% increase for women
 * 2.9% increase for men
+
+Although data is limited, it seems plausible that relative wealth mobility is worsening along with relative housing mobility.
 
 ## Section
 About the data
@@ -41,7 +32,7 @@ Office for National Statistics, Wealth and Assets Survey (WAS)
 England, Scotland and Wales
 
 ### What the data measures
-The data shows wealth estimates for 25 to 64 year olds in England, Scotland and Wales.
+The data estimates the relationship between the wealth of 25 to 64 year olds in England, Scotland and Wales and their parents.
 
 Wealth is the value of different types of assets owned by households minus any liabilities, such as mortgages.
 
