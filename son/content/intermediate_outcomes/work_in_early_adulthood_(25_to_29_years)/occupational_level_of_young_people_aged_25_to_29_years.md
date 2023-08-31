@@ -2,7 +2,7 @@
 IN33
 
 ## Title
-Occupational level
+Occupational level of young people aged 25 to 29 years
 
 ## Summary
 Data on the occupational class people are in at 25 to 29 years old, by socio-economic background.
@@ -30,7 +30,7 @@ By socio-economic background
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB (UK, 2021)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by socio-economic background (UK, 2021)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_overview-20230327.csv",
     "height": 450,
@@ -66,7 +66,7 @@ By area
 # Src
 {
     "code": "IN33",
-    "title": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average, and quintile ranking (from best 20% to worst 20%) (UK, 2014 to 2021 combined)",
+    "title": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN33_area-20230327.csv",
@@ -102,13 +102,28 @@ By area
     "dataTableTitle": "Variation in 25 to 29 year olds in higher professional occupations by region compared with the average (UK, 2014 to 2021 combined)"
 }
 
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference to the national average.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
+
+
 ## Section
 By sex
 
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and sex (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by socio-economic background and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -152,7 +167,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in a professional occupation, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds in a professional occupation, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN33_ethnicity-20230327.csv",
     "height": 450,
@@ -187,7 +202,7 @@ By disability status
 ## Chart: Stacked-bar
 {
     "code": "IN33",
-    "title": "Percentage of 25 to 29 year olds in different occupational levels, by SEB and disability status (UK, 2014 to 2021 combined)",
+    "title": "Percentage of 25 to 29 year olds in different occupational levels, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",
@@ -238,7 +253,7 @@ Office for National Statistics, Labour Force Survey (LFS), 2021
 UK
 
 ### What the data measures
-The data shows the occupation level of 25 to 29 year olds in the UK, by socio-economic background (SEB).
+The data shows the occupation level of 25 to 29 year olds in the UK, by socio-economic background.
 
 We use the following 5 categories of socio-economic background and occupational level:
 
