@@ -242,6 +242,7 @@ By ethnicity
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
+    "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
     "margin": [0, 0, 0, 0],

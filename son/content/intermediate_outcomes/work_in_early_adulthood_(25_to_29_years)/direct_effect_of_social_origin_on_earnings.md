@@ -25,7 +25,7 @@ socio-economic background. Earnings were lower for young people from the Pakista
 Disabled young people earned significantly less than those without a disability from the same socio-economic background.
 
 ## Section
-Differences?????
+By socio-economic background
 
 ## Chart: Single-bar
 {
@@ -112,6 +112,7 @@ By ethnicity
     "xgrid": false,
     "ygrid": true,
     "yticks": 3,
+    "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "margin": [0, 0, 0, 0],

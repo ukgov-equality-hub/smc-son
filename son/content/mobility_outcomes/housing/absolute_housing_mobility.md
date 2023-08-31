@@ -82,6 +82,7 @@ By area
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
+    "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "range": [0, 80],

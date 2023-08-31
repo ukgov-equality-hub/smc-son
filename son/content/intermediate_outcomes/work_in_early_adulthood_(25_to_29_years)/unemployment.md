@@ -156,6 +156,7 @@ By ethnicity
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
+    "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "margin": [0, 0, 0, 0],
