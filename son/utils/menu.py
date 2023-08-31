@@ -108,7 +108,7 @@ menu = {
                     'indicators': [
                         {
                             'id': 'IN21',
-                            'name': 'Destinations after age 16'
+                            'name': 'Destinations following the end of compulsory full-time education'
                         },
                         {
                             'id': 'IN22',
