@@ -18,7 +18,7 @@ It went down to 65% in the 2021 to 2022 school year.
 In the 2021 to 2022 school year:
 
 * 49% of pupils eligible for free school meals (FSM) and 69% of non-eligible pupils achieved a good level of development
-* 75% of girls and 62% of boys achieved a good level of development – for students eligible for FSM, 57% of girls
+* 75% of girls and 62% of boys achieved a good level of development – for pupils eligible for FSM, 57% of girls
   and 42% of boys achieved the level
 * FSM-eligible children from Black, Asian and Mixed ethnic backgrounds were more likely to achieve a good level of
   development than FSM-eligible White children
@@ -31,7 +31,7 @@ By year
 ## Chart: Multi-line
 {
     "code": "IN11",
-    "title": "Percentage of students achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)",
+    "title": "Percentage of pupils achieving a 'good level of development' at age 5 years, by eligibility for free school meals over time (England, September 2012 to July 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_overview-20230714.csv",
     "height": 450,
@@ -66,7 +66,7 @@ By area
 # Src
 {
     "code": "IN11",
-    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, academic year 2021 to 2022)",
+    "title": "Percentage of pupils achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, academic year 2021 to 2022)",
     "tooltipTitle": "Percentage of children reaching a ‘good level of development’",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -81,7 +81,7 @@ By area
     "nameField": "Area_name",
     "valueField": "Value",
     "areaField": "ITL221NM",
-    "scale": "Number of students",
+    "scale": "%",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
@@ -124,7 +124,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN11",
-    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "title": "Percentage of pupils achieving a ‘good level of development’ at age 5 years, by sex and eligibility for free school meals (England, academic year 2021 to 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN11_gender-20230714.csv",
     "height": 450,
@@ -158,7 +158,7 @@ By ethnicity
 ## Chart: Single-bar
 {
     "code": "IN11",
-    "title": "Percentage of students achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)",
+    "title": "Percentage of pupils achieving a ‘good level of development’ at age 5 years, by ethnicity and eligibility for free school meals (England, academic year 2021 to 2022)",
     "tooltipTitle": "",
     "data": [{
         "label": "Girls",
