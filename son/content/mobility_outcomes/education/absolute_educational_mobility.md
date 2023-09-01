@@ -31,7 +31,7 @@ People with a long-term illness or disability were less likely to have a univers
 disability from the same education background. They were also more likely to have no qualifications.
 
 ## Section
-By year
+By highest level of parental qualification
 
 ## Chart: Stacked-bar
 {
@@ -57,11 +57,44 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
+    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
+}
+
+## Section
+By area
+
+## Chart: Single-bar
+{
+    "code": "MO31",
+    "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
+    "tooltipTitle": "",
+    "data": "/static/data/indicators/MO31_area-20230601.csv",
+    "height": 450,
+    "type": "bary",
+    "xkey": "Area_name",
+    "ykey": "Value",
+    "zkey": "Area_type",
+    "sort": "-Value",
+    "scale": "%",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "xgrid": false,
+    "ygrid": true,
+    "yticks": 5,
+    "xticksLength": 4,
+    "legend": true,
+    "colourScheme": ["#5694ca"],
+    "margin": [0, 0, 0, 0],
+    "range": [0, 50],
+    "textLabels": "center",
+    "labelColour": "#fff",
+    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right"],
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -103,40 +136,6 @@ By sex
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
-}
-
-## Section
-By area
-
-## Chart: Single-bar
-{
-    "code": "MO31",
-    "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_area-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Area_name",
-    "ykey": "Value",
-    "zkey": "Area_type",
-    "sort": "-Value",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "margin": [0, 0, 0, 0],
-    "range": [0, 50],
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section

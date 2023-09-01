@@ -2,7 +2,7 @@
 IN34
 
 ## Title
-Earnings
+Earnings of young people aged 25 to 29 years
 
 ## Summary
 Data on the average earnings of 25 to 29 year olds in the UK, by socio-economic background.
@@ -13,7 +13,7 @@ Summary main findings
 ## Text
 In 2021, young people aged 25 to 29 earned on average £14.40 an hour.
 
-Socio-economic background (SEB) was strongly related to the level of young people’s earnings. Young people from lower
+Socio-economic background was strongly related to the level of young people’s earnings. Young people from lower
 working class backgrounds earned £12.40 an hour on average, compared with £16.70 for those from higher professional backgrounds.
 
 Young men earned more than young women across all socio-economic backgrounds. 
@@ -28,7 +28,7 @@ By socio-economic background
 ## Chart: Single-bar
 {
     "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB (UK, 2021)",
+    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds (UK, 2021)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_overview-20230327.csv",
     "height": 450,
@@ -62,7 +62,7 @@ By area
 # Src
 {
     "code": "IN34",
-    "title": "Variation in mean (average) hourly earnings among 25 to 29 year olds by region compared with the average, and quintile ranking (from best 20% to worst 20%) (UK, 2014 to 2021 combined)",
+    "title": "Variation in mean (average) hourly earnings among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN34_area-20230327.csv",
@@ -94,9 +94,23 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1],
-    "dataTableTitle": "Variation in mean (average) hourly earnings among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
+    "dataTableDecimalPlaces": [null, 1]
 }
+
+# Guidance
+
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 By sex
@@ -104,7 +118,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and sex (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_gender-20230327.csv",
     "height": 450,
@@ -139,7 +153,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and ethnicity (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and ethnicity (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_ethnicity-20230327.csv",
     "height": 450,
@@ -175,7 +189,7 @@ By disability status
 ## Chart: Grouped-bar
 {
     "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by SEB and disability (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and disability (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN34_disability-20230327.csv",
     "height": 450,
@@ -226,16 +240,16 @@ Self-employed respondents and those without earnings are excluded.
 The data used is weighted using the LFS probability weights. The charts show 95% confidence intervals.
 
 The estimated means and confidence intervals are derived from a linear regression model of log hourly earnings,
-controlling for SEB, sex and ethnic group. 
+which includes variables on socio-economic background, sex and ethnic group.
 
 For data by ethnicity, the model assumes that class effects are the same within each ethnic group.
 However, the assumption does not hold for the White Other group. The means shown are those for men.
-Means are shown only for those with lower working-class and higher professional-class backgrounds, but other SEBs
-are included in the analysis. 
+Means are shown only for those with lower working-class and higher professional-class backgrounds, but other
+socio-economic backgrounds are included in the analysis. 
 
 Among people with a disability, those in work are a more selective group (since their inactivity rate is higher).
 Because of the skewed distribution of earnings, we take the log of earnings when checking for interactions between
-disability and SEB. With this model specification we do not find a significant interaction.
+disability and socio-economic backgrounds. With this model specification we do not find a significant interaction.
 
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
 more, and if that condition reduced their ability to carry out day-to-day activities.

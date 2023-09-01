@@ -5,7 +5,7 @@ IN11
 Level of development at age 5
 
 ## Summary
-Data on the percentage of 5 year olds who achieve a ‘good level of development’.
+Data on the percentage of 5 year olds who achieve a ‘good level of development’, by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -66,7 +66,7 @@ By area
 # Src
 {
     "code": "IN11",
-    "title": "Percentage of pupils achieving a ‘good level of development’ at age 5 years, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, academic year 2021 to 2022)",
+    "title": "Percentage of pupils achieving a ‘good level of development’ at age 5 years, by region and eligibility for free school meals (FSM) (England, academic year 2021 to 2022)",
     "tooltipTitle": "Percentage of children reaching a ‘good level of development’",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -111,12 +111,18 @@ By area
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the percentage of pupils who achieved a ‘good level of development’ at 5 years old.
-Figures are shown separately for FSM-eligible pupils and non-eligible pupils.
-The gap between these 2 groups is also shown for each region.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 By sex

@@ -795,7 +795,7 @@ class Choropleth {
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? approximate(key, dp != null ? dp : 1, pos) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 2))}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
             } else if (scale == 'number') {

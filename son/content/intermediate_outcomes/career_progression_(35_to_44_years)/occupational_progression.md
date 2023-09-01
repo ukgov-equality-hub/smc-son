@@ -5,13 +5,13 @@ IN42
 Occupational progression
 
 ## Summary
-Data on the patterns of upward career mobility into the professional classes for people aged 25 to 44 in the UK.
+Data on the patterns of upward career mobility into the professional classes for people aged 25 to 44 in the UK, by socio-economic background.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Data from 2014 to 2021 shows that men and women aged 25 to 44 years from professional socio-economic backgrounds (SEB)
+Data from 2014 to 2021 shows that men and women aged 25 to 44 years from professional socio-economic backgrounds
 are more likely to work in professional occupations.
 
 People’s chances of working in the professional classes increased between 25 to 35 years old, and then slowed in their
@@ -23,7 +23,7 @@ By sex
 ## Chart: Multi-line
 {
     "code": "IN42",
-    "title": "Percentage probability of access to the professional classes by parental class controlling for age and survey year, by sex and SEB (UK, 2014 to 2021 combined)",
+    "title": "Probability of access to the professional classes by socio-economic background, sex and age, controlling for survey year (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",
@@ -91,13 +91,8 @@ These are based on the National Statistics Socio-economic Classification (NS-SEC
 ### Things you need to know
 The data used is weighted using the LFS probability weights.
 
-Estimates are the average marginal effects taken from a logistic regression model of access to the professional classes
-controlling for:
-
-* age
-* age squared (to account for the changing importance of age as people get older)
-* survey year
-* SEB
+Estimates are the average marginal effects derived from a logistic regression model of access to the professional
+classes by socio-economic background and age, controlling for survey year.
 
 ### Type of data
 Survey data

@@ -12,7 +12,7 @@ numbers of university research students, and business spending on research.
 # Src
 {
     "code": "CI5",
-    "title": "Index of research and development, and quintile ranking from best 20% to worst 20%, by region (UK)",
+    "title": "Index of research and development, by region (UK)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI5_20230817.csv",
     "geoFormat": "",

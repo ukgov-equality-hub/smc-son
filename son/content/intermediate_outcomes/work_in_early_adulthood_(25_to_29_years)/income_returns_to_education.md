@@ -5,18 +5,17 @@ IN351
 Income returns to education
 
 ## Summary
-Data on the effect of different levels of education on the earnings of young people aged 25 to 29 years.
+Data on the effect of different levels of education on the earnings of young people aged 25 to 29 years, by socio-economic background.
 
 ## Subtitle
 Summary main findings
 
 ## Text
-Data for the period from 2019 to 2021 shows that higher levels of education among 25 to 29 year olds led to higher earnings.
+Data for the period from 2019 to 2021 shows that higher levels of education among 25 to 29 year olds are associated with higher earnings.
 Young people with a higher degree – such as a master’s degree – earned 63% more than those from the same socio-economic
-background (SEB) with no GCSEs. Young people with an undergraduate degree earned 54% more.
+background with no GCSEs. Young people with an undergraduate degree earned 54% more.
 
-The ‘earnings gaps’ between young people with different levels of education remained similar in the 6 years before
-the 2019 to 2021 period. 
+The earnings gaps between levels of qualifications have remained roughly constant between 2014 to 2016, and 2019 to 2021.
 
 Young women’s hourly earnings were significantly lower than those of young men with the same level of qualification
 and from the same socio-economic background.
@@ -33,7 +32,7 @@ Relative differences
 ## Chart: Single-bar
 {
     "code": "IN351",
-    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for SEB, sex and age (UK, 2019 to 2021 combined)",
+    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for socio-economic background, sex and age (UK, 2019 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_difference-20230713.csv",
     "height": 450,
@@ -66,7 +65,7 @@ By year
 ## Chart: Multi-line
 {
     "code": "IN351",
-    "title": "Hourly earnings in pounds (£) of 25 to 29 year olds, by highest qualification controlling for SEB, sex and age (UK, 2014 to 2021, 3-year rolling averages)",
+    "title": "Hourly earnings in pounds (£) of 25 to 29 year olds, by highest qualification controlling for socio-economic background, sex and age (UK, 2014 to 2021, 3-year rolling averages)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_overview-20230713.csv",
     "height": 450,
@@ -100,7 +99,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_gender-20230713.csv",
     "height": 450,
@@ -135,7 +134,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_ethnicity-20230713.csv",
     "height": 450,
@@ -171,7 +170,7 @@ By disability status
 ## Chart: Grouped-bar
 {
     "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for SEB and age (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN351_disability-20230713.csv",
     "height": 450,
@@ -221,8 +220,8 @@ Data is weighted using LFS probability weights. Earnings are adjusted for inflat
 
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
   
-Percentage differences were estimated from a linear regression model of log hourly earnings, controlling for educational
-level, SEB, sex and age. 
+Percentage differences were estimated from a linear regression model of log hourly earnings, by educational level
+controlling for socio-economic background, sex and age. 
 
 For data by year, the estimates refer to the hourly earnings of men from a lower working-class background. 
 

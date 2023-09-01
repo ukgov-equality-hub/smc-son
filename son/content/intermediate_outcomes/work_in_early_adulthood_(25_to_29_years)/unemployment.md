@@ -13,7 +13,7 @@ Summary main findings
 ## Text
 In 2021, 5% of all 25 to 29 year olds in the UK were unemployed.
 
-There were no significant differences in unemployment among 25 to 29 year olds from different socio-economic backgrounds (SEB).
+There were no significant differences in unemployment among 25 to 29 year olds from different socio-economic backgrounds.
 
 There were no significant differences in unemployment rates between young men and women from the same socio-economic backgrounds. 
 
@@ -29,7 +29,7 @@ By socio-economic background
 ## Chart: Single-bar
 {
     "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB (UK, 2021)",
+    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background (UK, 2021)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_overview-20230327.csv",
     "height": 450,
@@ -63,7 +63,7 @@ By area
 # Src
 {
     "code": "IN32",
-    "title": "Variation in unemployment among 25 to 29 year olds compared with the average, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
+    "title": "Variation in unemployment among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN32_area-20230327.csv",
@@ -95,9 +95,23 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2],
-    "dataTableTitle": "Variation in unemployment among 25 to 29 year olds by region compared with the average (UK, 2014 to 2021 combined)"
+    "dataTableDecimalPlaces": [null, 2]
 }
+
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
+
 
 ## Section
 By sex
@@ -105,7 +119,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and sex (UK, 2014 to 2021 combined)",
+    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_gender-20230327.csv",
     "height": 450,
@@ -140,7 +154,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and ethnicity (UK, 2014 to 2021 combined)",
+    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_ethnicity-20230327.csv",
     "height": 450,
@@ -176,7 +190,7 @@ By disability status
 ## Chart: Grouped-bar
 {
     "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by SEB and disability status (UK, 2014 to 2021 combined)",
+    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN32_disability-20230327.csv",
     "height": 450,
@@ -227,9 +241,9 @@ Economically inactive people (those not in work or looking for work) are exclude
 
 The data used is weighted using LFS probability weights. The charts show 95% confidence intervals.
 
-The estimated percentages and confidence intervals result from a logistic regression model, controlling for sex
-and ethnic group. The model assumes that class effects are the same within each ethnic group.
-A formal test confirms this assumption. 
+The estimated percentages and confidence intervals result from a logistic regression model on the likelihood of being
+unemployed by ethnic group and socio-economic background, controlling for sex. The model assumes that class effects are
+the same within each ethnic group. A formal test confirms this assumption.
 
 For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for those with
 lower working-class and higher professional-class backgrounds for illustrative purposes.

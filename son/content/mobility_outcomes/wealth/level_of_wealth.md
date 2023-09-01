@@ -20,13 +20,6 @@ Estimated average total wealth by age group was:
 * £364,000 for 45 to 54 year olds
 * £575,000 for 55 to 64 year olds
 
-The relationship in wealth between people and their parents was greater among women than men. 
-
-A 10% increase in parents’ wealth was associated with the following increases in their children’s wealth:
-
-* 3.8% increase for women
-* 2.9% increase for men
-
 ## Section
 By age group and type of wealth
 
@@ -82,11 +75,6 @@ It includes:
 * financial wealth, including the value of financial assets
 
 ### Things you need to know
-The survey does not directly measure the wealth of respondents’ parents.
-
-Respondents were asked about their parents’ housing and education. Estimates of parents’ wealth are based on the
-relationships between education, home ownership and wealth. 
-
 Data is adjusted for inflation, and weighted using WAS individual weights.
 
 ### Type of data

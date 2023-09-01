@@ -12,7 +12,7 @@ youth unemployment, and lower working-class work among parents.
 # Src
 {
     "code": "CI4",
-    "title": "Index of childhood poverty and disadvantage, and quintile ranking from best 20% to worst 20%, by region (UK, 2014 to 2021 combined)",
+    "title": "Index of childhood poverty and disadvantage, by region (UK, 2014 to 2021 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI4_20230817.csv",
     "geoFormat": "",
