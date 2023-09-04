@@ -8,7 +8,7 @@ Highlighted content
 <div class="grid grid3 grid-domain">
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Key stage 4 by ethnicity</h3>
-        <div class="chart-container">
+        <div class="chart-container" aria-hidden="true">
             <div id="chart1"></div>
         </div>
         <script>
@@ -23,7 +23,7 @@ Highlighted content
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Economic activity by sex</h3>
-        <div class="chart-container">
+        <div class="chart-container" aria-hidden="true">
             <div id="chart2"></div>
         </div>
         <script>
@@ -38,7 +38,7 @@ Highlighted content
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Earnings by SEB and disability</h3>
-        <div class="chart-container">
+        <div class="chart-container" aria-hidden="true">
             <div id="chart3"></div>
         </div>
         <script>

@@ -529,7 +529,7 @@ div.data-table-data table {
         h3.govuk-heading-s {
             margin-bottom: 10px;
             font-weight: normal;
-            color: #777;
+            color: #505a5f;
         }
 
         > div.chart-container {
@@ -615,7 +615,7 @@ div.data-table-data table {
             margin-bottom: 10px;
             height: 50px;
             font-weight: normal;
-            color: #777;
+            color: #505a5f;
         }
 
         > div.chart-container {
@@ -635,7 +635,7 @@ div.data-table-data table {
 
         p {
             margin: 0;
-            height: 130px;
+            min-height: 130px;
         }
 
         p, a {
@@ -1096,6 +1096,8 @@ p.chart-hint {
 }
 
 div.area-map {
+    margin-bottom: 30px;
+
     > div:first-child {
         position: relative;
         max-width: 775px;

@@ -3,7 +3,7 @@
 {% if ([data, 'type'] | attribute == 'liney' or [data, 'type'] | attribute == 'bar' or [data, 'type'] | attribute == 'bary') and ([data, 'group'] | attribute != '' or [data, 'zkey'] | attribute != '') %}
 {% if ([data, 'rolloverBehaviour'] | attribute != '') or ([data, 'clickBehaviour'] | attribute != '') %}
 <p class="govuk-body govuk-!-font-size-14 chart-hint">
-    <img src="/static/assets/images/pointer.svg" width="25" height="25">
+    <img src="/static/assets/images/pointer.svg" width="25" height="25" alt="">
     Click or tap on legend items to toggle visibility
 </p>
 {% endif %}

@@ -9001,8 +9001,7 @@ const towns = [
     {
         'name': 'Wincanton',
         'latitude': 51.0560417,
-        'longitude': -2.4112309,
-        'zoom': [7, 8]
+        'longitude': -2.4112309
     },
     {
         'name': 'Winchcombe',

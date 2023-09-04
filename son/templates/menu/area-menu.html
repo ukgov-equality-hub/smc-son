@@ -1,30 +1,29 @@
 {% from 'menu/area-search.html' import areasearch %}
 
 {% macro areamenu(id, menu, selectedarea, selected) %}
-    {{ areasearch(id, menu, selectedarea, selected) }}
+{{ areasearch(id, menu, selectedarea, selected) }}
 
-    <nav aria-label="Side navigation" class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-0" role="navigation">
-        <ul id="sidemenu" class="moj-side-navigation__list none-collapsible">
-            {% for area in menu.areas | sort(attribute = 'name') %}
-            <li class="moj-side-navigation__item{% if (area.name | url_link) == (selectedarea | url_link) %} is-active{% endif %}{% if not loop.index in selected %} hidden{% endif %}">
-                <a href="/social_mobility_by_area/{{ area.name | url_link }}" class="moj-primary-navigation__link"{% if (area.name | url_link) == (selectedarea | url_link) %} aria-current="page"{% endif %}>{{ area.name }}
-                <div id="{{ area.name }}_matches" class="search-summary"></div></a>
-            </li>
-            {% endfor %}
+<nav aria-label="Side navigation" class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-0" role="navigation">
+    <ul id="sidemenu" class="moj-side-navigation__list none-collapsible">
+        {% for area in menu.areas | sort(attribute = 'name') %}
+        <li class="moj-side-navigation__item{% if (area.name | url_link) == (selectedarea | url_link) %} is-active{% endif %}{% if not loop.index in selected %} hidden{% endif %}">
+            <a href="/social_mobility_by_area/{{ area.name | url_link }}" class="moj-primary-navigation__link"{% if (area.name | url_link) == (selectedarea | url_link) %} aria-current="page"{% endif %}>{{ area.name }}
+            <div id="{{ area.name }}_matches" class="search-summary"></div></a>
+        </li>
+        {% endfor %}
 
-            <li id="sidemenu_showmore" class="_moj-side-navigation__item">
-                <a href="javascript:;" class="govuk-link" onclick="expandnavigation()">Show more</a>
-            </li>
-            <li id="sidemenu_showless" class="_moj-side-navigation__item hidden">
-                <a href="javascript:;" class="govuk-link" onclick="collapsenavigation()">Show less</a>
-            </li>
-        </ul>
+        <li id="sidemenu_showmore" class="_moj-side-navigation__item">
+            <a href="javascript:;" class="govuk-link" onclick="expandnavigation()">Show more</a>
+        </li>
+        <li id="sidemenu_showless" class="_moj-side-navigation__item hidden">
+            <a href="javascript:;" class="govuk-link" onclick="collapsenavigation()">Show less</a>
+        </li>
+    </ul>
 
-        <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
-        <!--<h4 class="moj-side-navigation__title">Pages</h4>-->
-        <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
-            <li class="moj-side-navigation__item"><a href="/background">Background</a></li>
-            <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
-        </ul>
-    </nav>
+    <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+    <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+        <li class="moj-side-navigation__item"><a href="/background">Background</a></li>
+        <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
+    </ul>
+</nav>
 {% endmacro %}

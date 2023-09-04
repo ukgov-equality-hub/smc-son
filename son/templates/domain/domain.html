@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Social Mobility Commission{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block backLink %}
 <a href="/" class="govuk-back-link">Back</a>
@@ -13,7 +13,7 @@
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
     {% if item[0] == 'Subtitle' %}
-    <h3 class="govuk-heading-m">{{ item[1] | safe }}</h3>
+    <h2 class="govuk-heading-m">{{ item[1] | safe }}</h2>
     {% endif %}
     {% if item[0] == 'Text' %}
     <p class="govuk-body">{{ item[1] | safe }}</p>

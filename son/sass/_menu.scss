@@ -58,6 +58,13 @@ ul.collapsible {
         a:hover {
             text-decoration: underline;
         }
+
+        a:focus, a:focus-visible {
+            padding-bottom: 4px;
+            background-color: #fd0;
+            border-bottom: 3px solid #000;
+            outline: none;
+        }
     }
 
     li.moj-side-navigation__item.is-open {
@@ -224,6 +231,14 @@ nav.moj-side-navigation-mobile {
 
         hr {
             margin: 10px;
+        }
+    }
+}
+
+ul.moj-side-navigation__list {
+    li.moj-side-navigation__item {
+        a:focus, a:focus-visible {
+            outline: none;
         }
     }
 }

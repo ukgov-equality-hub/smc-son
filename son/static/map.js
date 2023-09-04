@@ -537,6 +537,7 @@ class Choropleth {
                         mapNames.append('text')
                             .attr('x', loc[0] - (labelLength(state.name, { 'fontFamily': 'Arial', 'fontSize': '12px', 'fontWeight': 'bold' }) / 2))
                             .attr('y', loc[1])
+                            .attr('aria-hidden', 'true')
                             .attr('class', 'label label_state')
                             .text(state.name)
                     }
@@ -550,6 +551,7 @@ class Choropleth {
                     mapNames.append('text')
                         .attr('x', loc[0])
                         .attr('y', loc[1])
+                        .attr('aria-hidden', 'true')
                         .attr('class', `label label_city${city.zoom ? ' zoom' + city.zoom.join(' zoom') : ''}`)
                         .text(city.name)
                 }
@@ -559,6 +561,7 @@ class Choropleth {
                     mapNames.append('text')
                         .attr('x', loc[0])
                         .attr('y', loc[1])
+                        .attr('aria-hidden', 'true')
                         .attr('class', `label label_town${town.zoom ? ' zoom' + town.zoom.join(' zoom') : ''}`)
                         .text(town.name)
                 }

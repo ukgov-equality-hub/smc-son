@@ -92,3 +92,68 @@ div.chart figure div {
     font-family: 'GDS Transport';
     font-size: 18px;
 }
+
+div.chart div.chart-legend {
+    margin: 5px;
+    display: block;
+    text-align: center;
+}
+
+div.chart div.chart-legend button, div.chart div.chart-legend span {
+    display: inline-flex;
+    align-items: center;
+    margin: 0.2em 0.5em;
+}
+
+div.chart div.chart-legend button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+div.chart div.chart-legend button svg, div.chart div.chart-legend span svg {
+    margin-right: 0.5em;
+}
+
+div.chart div.chart-legend input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+}
+
+div.chart div.chart-legend input[type="checkbox"]:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: #f3f2f1;
+}
+
+div.chart div.chart-legend input[type="checkbox"]:checked:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: #505a5f;
+}
+
+div.chart div.chart-legend input[type="checkbox"]:checked:after {
+    position: absolute;
+    display: block;
+    top: 2px;
+    left: 6px;
+    width: 5px;
+    height: 10px;
+    content: '';
+    border: solid white;
+    background-color1: red;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

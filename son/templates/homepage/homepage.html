@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% from 'menu/area-search.html' import areasearch %}
-{% block title %}Social Mobility Commission{% endblock %}
+{% block title %}Social mobility in the UK{% endblock %}
 
 {% block backLink %}
 <a href="/" class="govuk-back-link">Back</a>
@@ -18,39 +18,39 @@
         State of the Nation uses the SMC’s own measurement framework, the <span class="govuk-!-font-weight-bold">Social Mobility Index</span>.
     </p>
 
-    <h3 class="govuk-heading-s govuk-!-static-margin-top-8">
+    <h2 class="govuk-heading-s govuk-!-static-margin-top-8">
         Highlighted data
-    </h3>
+    </h2>
     <div class="grid grid3 grid-home">
         <div class="govuk-body">
             <h3 class="govuk-heading-s">Mobility outcomes</h3>
-            <div class="chart-container">
+            <div class="chart-container" aria-hidden="true">
                 <div id="chart1"></div>
             </div>
             <p class="govuk-body">There continues to be more upward than downward mobility for men, this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.</p>
-            <a href="/mobility_outcomes" class="govuk-link">Read more...</a>
+            <a href="/mobility_outcomes" class="govuk-link">Read more <span class="govuk-visually-hidden">about mobility outcomes</span></a>
         </div>
         <div class="govuk-body">
             <h3 class="govuk-heading-s">Intermediate outcomes</h3>
-            <div class="chart-container">
+            <div class="chart-container" aria-hidden="true">
                 <div id="chart2"></div>
             </div>
             <p class="govuk-body">Socio-economic background is strongly related to the level of young people’s earnings.</p>
-            <a href="/intermediate_outcomes" class="govuk-link">Read more...</a>
+            <a href="/intermediate_outcomes" class="govuk-link">Read more <span class="govuk-visually-hidden">about intermediate outcomes</span></a>
         </div>
         <div class="govuk-body">
             <h3 class="govuk-heading-s">Drivers of social mobility</h3>
-            <div class="chart-container">
+            <div class="chart-container" aria-hidden="true">
                 <div id="chart3"></div>
             </div>
             <p class="govuk-body">In 2021, youth unemployment in the UK fell back to pre-pandemic levels.</p>
-            <a href="/drivers_of_social_mobility" class="govuk-link">Read more...</a>
+            <a href="/drivers_of_social_mobility" class="govuk-link">Read more <span class="govuk-visually-hidden">about drivers of social mobility</span></a>
         </div>
     </div>
 
-    <h3 class="govuk-heading-s govuk-!-static-margin-top-8">
+    <h2 class="govuk-heading-s govuk-!-static-margin-top-8">
         Find data by region
-    </h3>
+    </h2>
     <p class="govuk-body">
         In 2023, we have delivered on our plan to break indicators down by geography. The regions that we use are part of a system developed by the Office for National Statistics (ONS), known as International Territorial Levels (ITLs).
     </p>
