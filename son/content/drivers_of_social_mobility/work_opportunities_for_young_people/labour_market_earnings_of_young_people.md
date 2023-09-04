@@ -2,7 +2,7 @@
 DR34
 
 ## Title
-Earnings of 22 to 29 year olds
+Labour market earnings of young people
 
 ## Summary
 Data on median (average) hourly pay for 22 to 29 year olds in the UK.
