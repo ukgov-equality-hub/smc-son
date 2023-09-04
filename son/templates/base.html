@@ -10,12 +10,7 @@
 <html lang="en" class="govuk-template">
 <head>
     <meta charset="utf-8">
-    <title>
-        {% if form and form.errors %}Error: {% endif %}
-        {% block title %}{% endblock %}
-        - Social Mobility Commission
-        - Gov.UK
-    </title>
+    <title>{% block title %}{% endblock %} - GOV.UK State of the Nation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <meta name="theme-color" content="#0b0c0c">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,9 +58,9 @@
     <header class="govuk-header" role="banner" data-module="govuk-header">
         <div class="govuk-header__container govuk-width-container">
             <div class="govuk-header__logo">
-                <a href="https://www.gov.uk" class="govuk-header__link govuk-header__link--homepage">
+                <a href="/" class="govuk-header__link govuk-header__link--homepage">
                     <span class="govuk-header__logotype">
-                        <img src="{{ url_for('static', filename='assets/images/govuk-crest-white-2x.png') }}" class="govuk-header__logotype-crown-fallback-image" width="36" height="32" style="margin-right: 10px; float: left;">
+                        <img src="{{ url_for('static', filename='assets/images/govuk-crest-white-2x.png') }}" width="36" height="32" alt="" class="govuk-header__logotype-crown-fallback-image" style="margin-right: 10px; float: left;">
 
                         <span class="govuk-header__logotype-text" style="font-weight: 400; font-size: 24px;">
                             Social Mobility Commission
@@ -74,9 +69,9 @@
                 </a>
             </div>
             <div class="govuk-header__content">
-                <a href="{{ url_for('son.index') }}" class="govuk-header__link govuk-header__link--service-name">
+                <span class="govuk-heading-m" style="color: #fff;">
                     {% block serviceTitle %}State of the Nation{% endblock %}
-                </a>
+                </span>
                 <nav aria-label="Menu" class="govuk-header__navigation">
                     <button id="mobile-nav-button" type="button" class="govuk-header__menu-button govuk-js-header-toggle"
                         aria-expanded="false" aria-controls="mobile-nav" aria-label="Show or hide menu">
@@ -108,9 +103,9 @@
 
     <div class="dashboard-container govuk-width-container{% if area %} area-page{% endif %}">
         {% if area %}
-        <h1 class="govuk-heading-l mobile">
+        <h2 class="govuk-heading-l mobile">
             Social mobility by area
-        </h1>
+        </h2>
         <div class="dashboard-area-menu">
             {{ areamenu('menu', menu, area, selected) }}
         </div>

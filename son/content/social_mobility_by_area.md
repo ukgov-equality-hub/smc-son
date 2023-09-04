@@ -61,7 +61,7 @@ This section shows how different areas in the UK are ranked for 5 different meas
 
 <a name="composite-measures-by-region" />
 
-### Composite measures by region
+## Composite measures by region
 The 5 composite measures of social mobility broken down by region are:
 
 * precarious situations – young people in difficult economic circumstances
@@ -78,7 +78,7 @@ For each composite measure, 41 regions in the UK are ordered from best to worst,
 
 <a name="the-41-regions" />
 
-### The 41 regions
+## The 41 regions
 We use the ‘international territorial levels’ (ITLs) system developed by the Office for National Statistics. This divides the UK into:
 
 * 12 regions (‘ITL1’)

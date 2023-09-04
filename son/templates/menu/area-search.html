@@ -1,5 +1,5 @@
 {% macro areasearch(id, menu, selectedarea, selected) %}
-<h3 class="govuk-heading-s">Find an area</h3>
+<h2 class="govuk-heading-s" for="searchquery">Find an area</h3>
 <div id="search">
     <input id="searchquery" type="text" placeholder="Find an area" oninput="search(this.value)" onmouseenter="showresults()" _onmouseleave="document.getElementById('searchresults').style.display = 'none'">
     <div id="searchresults" onmouseenter="showresults()" _onmouseleave="this.style.display = 'none'"></div>

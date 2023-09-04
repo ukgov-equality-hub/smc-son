@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Social Mobility Commission{% endblock %}
+{% block title %}Social mobility by area{% endblock %}
 
 {% block backLink %}
 <a href="/" class="govuk-back-link">Back</a>
@@ -14,7 +14,7 @@
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
 
     {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
-    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1', 'H2'] %}l{% endif %}{% if item[0] in ['H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %}">{{ item[1] | safe }}</{{ item[0] | lower }}>
+    <{{ item[0] | lower }} class="govuk-heading-{% if item[0] in ['H1'] %}l{% endif %}{% if item[0] in ['H2', 'H3', 'H4'] %}m{% endif %}{% if item[0] in ['H5', 'H6'] %}s{% endif %}">{{ item[1] | safe }}</{{ item[0] | lower }}>
     {% endif %}
 
     {% if item[0] == 'Subtitle' %}

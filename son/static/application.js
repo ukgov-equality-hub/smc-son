@@ -512,8 +512,10 @@
       nodeListForEach(this.$navButtons, function ($navButton, index) {
         if ($navButton.parentNode.classList.contains(subNavActiveClass)) {
           $navButton.parentNode.getElementsByTagName('ul')[0].removeAttribute('hidden');
+          $navButton.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'true');
         } else {
           $navButton.parentNode.getElementsByTagName('ul')[0].setAttribute('hidden', '');
+          $navButton.parentNode.getElementsByTagName('a')[0].removeAttribute('aria-expanded');
         }
       });
 
@@ -524,8 +526,10 @@
       nodeListForEach(this.$navButtons, function ($navButton, index) {
         if (!$navButton.parentNode.classList.contains(subNavActiveClass)) {
           $navButton.parentNode.getElementsByTagName('ul')[0].setAttribute('hidden', '');
+          $navButton.parentNode.getElementsByTagName('a')[0].removeAttribute('aria-expanded');
         } else {
           $navButton.parentNode.getElementsByTagName('ul')[0].removeAttribute('hidden');
+          $navButton.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'true');
         }
       });
 
@@ -538,6 +542,7 @@
 
     nodeListForEach(this.$navButtons, function ($button, index) {
       var $nextSubNav = $button.parentNode.querySelector(subNavJSClass);
+      var $buttonLink = $button.parentNode.getElementsByClassName('collapsible__toggle-link')[0];
 
       if ($nextSubNav) {
         var subNavTogglerId = 'js-mobile-nav-subnav-toggler-' + index;
@@ -545,8 +550,8 @@
 
         $nextSubNav.setAttribute('id', nextSubNavId);
         $button.setAttribute('id', subNavTogglerId);
-        $button.setAttribute('aria-expanded', $nextSubNav.hasAttribute('hidden') ? 'false' : 'true');
-        $button.setAttribute('aria-controls', nextSubNavId);
+        //$button.setAttribute('aria-expanded', $nextSubNav.hasAttribute('hidden') ? 'false' : 'true');
+        //$button.setAttribute('aria-controls', nextSubNavId);
       }
     });
   };
@@ -577,11 +582,13 @@
           if ($nextSubNav.hasAttribute('hidden')) {
             $nextSubNav.parentNode.classList.add(subNavActiveClass);
             $nextSubNav.removeAttribute('hidden');
-            $button.setAttribute('aria-expanded', 'true');
+            $nextSubNav.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'true');
+            //$button.setAttribute('aria-expanded', 'true');
           } else {
             $nextSubNav.parentNode.classList.remove(subNavActiveClass);
             $nextSubNav.setAttribute('hidden', '');
-            $button.setAttribute('aria-expanded', 'false');
+            $nextSubNav.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'false');
+            //$button.setAttribute('aria-expanded', 'false');
           }
         }
       });
@@ -595,11 +602,13 @@
           if ($nextSubNav.hasAttribute('hidden')) {
             $nextSubNav.parentNode.classList.add(subNavActiveClass);
             $nextSubNav.removeAttribute('hidden');
-            $button.setAttribute('aria-expanded', 'true');
+            $nextSubNav.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'true');
+            //$button.setAttribute('aria-expanded', 'true');
           } else {
             $nextSubNav.parentNode.classList.remove(subNavActiveClass);
             $nextSubNav.setAttribute('hidden', '');
-            $button.setAttribute('aria-expanded', 'false');
+            $nextSubNav.parentNode.getElementsByTagName('a')[0].setAttribute('aria-expanded', 'false');
+            //$button.setAttribute('aria-expanded', 'false');
           }
         }
       });

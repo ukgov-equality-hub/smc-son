@@ -196,6 +196,7 @@ class Chart {
         this.tooltipTitle = options.tooltipTitle || undefined
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
+        this.isInteractive = this.rolloverBehaviour != '' || this.clickBehaviour != ''
         this.onRollover = options.onRollover || undefined
         this.onClick = options.onClick || undefined
         const style = options.style || {
@@ -412,6 +413,7 @@ class Chart {
 
                 if (limit > 0) chartData = chartData.slice(0 - limit)
                 if (!filteredData) self.chartData = chartData
+                self.originalData = originalData || chartData
                 domain = domain.filter(function (value, index, array) { return array.indexOf(value) === index })
                 if (orientation == 'y') domain = domain.map(x => x.toString())
 
@@ -678,16 +680,16 @@ class Chart {
                 let legendDiv
                 if (self.clickBehaviour == 'filter') {
                     self.hidden = []
-                    d3.select(`#${self.el}`).selectAll('span[data-filtered="true"]').each(function () {
+                    d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).each(function () {
                         self.hidden.push(d3.select(this).text())
                     })
                     legendDiv = document.getElementById(`${self.el}_legend`)
-                    if (legendDiv && legendDiv.getElementsByTagName('span').length > 0) {
+                    if (legendDiv && legendDiv.getElementsByTagName(`${self.isInteractive ? 'button' : 'span'}`).length > 0) {
                         legendDiv.parentNode.removeChild(legendDiv)
                     }
                 }
 
-                legendDiv = Plot.legend({
+                /*legendDiv = Plot.legend({
                     color: {
                         domain: reverseLegend ? legends.reverse() : legends,
                         range: reverseLegend ? colourScheme.slice(0, legends.length).reverse() : colourScheme
@@ -697,7 +699,7 @@ class Chart {
                     style: { margin: '5px', ...style }
                 })
 
-                d3.select(legendDiv).selectAll('span').each(function () {
+                d3.select(legendDiv).selectAll(`${self.isInteractive ? 'button' : 'span'}`).each(function () {
                     const item = d3.select(this)
                     const text = item.text()
                     item
@@ -707,6 +709,28 @@ class Chart {
                         //.on('pointerenter pointermove', highlight)
                         .on('pointerout', resetHighlight)
                 })
+
+                legendDiv.setAttribute('id', `${self.el}_legend`)
+                legendDiv.style.display = 'block'
+                legendDiv.style.textAlign = 'center'
+                legendDiv.style.marginTop = `${swatchSize * 1.75}px`*/
+
+                legendDiv = document.createElement('div')
+                legendDiv.setAttribute('id', `${self.el}_legend`)
+                legendDiv.classList.add('chart-legend')
+                Object.assign(legendDiv.style, { marginTop: `${swatchSize * 1.75}px`, ...style })
+                const legendDomain = reverseLegend ? [...legends.reverse()] : legends
+                const legendRange = reverseLegend ? [...colourScheme.slice(0, legends.length).reverse()] : colourScheme
+                for (let i = 0; i < legendDomain.length; i++) {
+                    const l = document.createElement(`${self.isInteractive ? 'button' : 'span'}`)
+                    l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${legendDomain[i]}`
+                    l.setAttribute('data-series', legendDomain[i])
+                    l.addEventListener('click', clicked)
+                    //l.addEventListener('pointerenter pointermove', highlight)
+                    l.addEventListener('pointerout', resetHighlight)
+                    legendDiv.appendChild(l)
+                }
+
 
                 if (lci && uci ) {
                     if (showCi == 'visible') {
@@ -730,10 +754,6 @@ class Chart {
                     }
                 }
 
-                legendDiv.setAttribute('id', `${self.el}_legend`)
-                legendDiv.style.display = 'block'
-                legendDiv.style.textAlign = 'center'
-                legendDiv.style.marginTop = `${swatchSize * 1.75}px`
                 div.appendChild(legendDiv)
 
                 if (self.hidden && self.hidden.length > 0) {
@@ -1074,6 +1094,10 @@ class Chart {
                 })
                 wrapper.on('touchstart', _ => tip.selectAll('*').remove())
 
+                wrapper.selectAll('g[aria-label]').each(function () {
+                    d3.select(this).attr('aria-label', null)
+                })
+
                 document.head.insertAdjacentHTML('beforeend', `
                     <style>
                         .${id} .plot-item { cursor: pointer  pointer-events: all }
@@ -1333,7 +1357,8 @@ class Chart {
                 const selector = (Array.isArray(series) ? series : [series]).map(x => `[data-series="${x}"]`).join(', ')
                 d3.select(`#${self.el}`).selectAll(selector).style('opacity', function () {
                     const item = d3.select(this)
-                    if (!(item.node().nodeName == 'SPAN' && selected === true)) {
+                    const parent = d3.select(this.parentNode)
+                    if (!(item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN') && selected === true)) {
                         if (item.attr('data-faded') == 'true') {
                             item.attr('data-faded', 'false')
                             return 1
@@ -1354,18 +1379,21 @@ class Chart {
                     hidden.push(series)
                 }
 
-                d3.select(`#${self.el}`).selectAll(`span[data-series="${series}"]`).style('opacity', function () {
-                    d3.select(this).attr('data-filtered', filtered)
+                d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? 'button' : 'span'}[data-series="${series}"]`).style('opacity', function () {
+                    const item = d3.select(this)
+                    item.attr('data-filtered', filtered)
+                    item.classed('active', filtered)
                     return 0.1
                 })
 
-                self.filteredData = self.chartData.filter(x => hidden.indexOf(x[zkey ? zkey : ['bary', 'doty', 'liney'].includes(chartType) == 'y' ? xkey : ykey]) == -1)
+                self.filteredData = self.originalData.filter(x => hidden.indexOf(x[zkey ? zkey : ['bary', 'doty', 'liney'].includes(chartType) == 'y' ? xkey : ykey]) == -1)
                 self.render(self.filteredData)
                 self.hidden = hidden
             } else if (self.clickBehaviour == 'isolate') {
                 d3.select(`#${self.el}`).selectAll(`[data-series]`).style('opacity', function () {
                     const item = d3.select(this)
-                    if (!(item.node().nodeName == 'SPAN' && selected === true)) {
+                    const parent = d3.select(this.parentNode)
+                    if (!(item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN') && selected === true)) {
                         if ((Array.isArray(series) ? series : [series]).includes(item.attr('data-series'))) {
                             if (item.attr('data-isolated') == 'true') {
                                 item.attr('data-isolated', 'false')
@@ -1378,12 +1406,14 @@ class Chart {
                             if (!item.attr('data-isolated')) item.attr('data-isolated', 'false')
                             return 0.1
                         }
-                    } else if (item.node().nodeName == 'SPAN') {
+                    } else if (item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN')) {
                         return (Array.isArray(series) ? series : [series]).includes(item.attr('data-series')) ? 1 : 0.1
                     }
                 })
                 if (d3.select(`#${self.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
-                    d3.select(`#${self.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                    d3.select(`#${self.el}`).selectAll(`[data-isolated]`).style('opacity', 1).classed('active', true).classed('inactive', false)
+                } else {
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="false"]`).style('opacity', 0.1).classed('active', false).classed('inactive', true)
                 }
             }
         }
@@ -1423,8 +1453,8 @@ class Chart {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
                     d3.select(`#${this.el}`).selectAll(`rect[data-series="${item}"]`).style('stroke-width', 5)
-                    d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 0.1)
-                    d3.select(`#${this.el}`).selectAll(`span[data-series="${item}"]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-series]`).style('opacity', 0.1)
+                    d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-series="${item}"]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', function () {
                         return d3.select(this).attr('data-series') == item ? 1 : 0.1
@@ -1434,9 +1464,9 @@ class Chart {
 
             //d3.select(`#${this.el}`).selectAll('svg').classed('highlight-ci', true)
             d3.select(`#${this.el}`).selectAll(`[data-series="${item}"]`).classed('highlight', true)
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).style('opacity', 0.1)
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered]`).style('text-decoration', 'none')
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).style('text-decoration', 'line-through')
         }
         catch (e) {}
     }
@@ -1451,7 +1481,7 @@ class Chart {
             } else if (['bar', 'bary', 'line', 'liney'].includes(type)) {
                 if (this.rolloverBehaviour == 'outline') {
                     d3.select(`#${this.el}`).selectAll(`rect[data-series]`).style('stroke-width', 0)
-                    d3.select(`#${this.el}`).selectAll(`span[data-series]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-series]`).style('opacity', 1)
                 } else if (this.rolloverBehaviour == 'fade') {
                     d3.select(`#${this.el}`).selectAll(`[data-series]`).style('opacity', 1)
                 }
@@ -1464,16 +1494,16 @@ class Chart {
                 d3.select(`#${this.el}`).selectAll(`[data-faded="true"]`).style('opacity', 0.1)
             } else if (this.clickBehaviour == 'isolate') {
                 if (d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).size() == 0) {
-                    d3.select(`#${this.el}`).selectAll(`[data-isolated]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated]`).style('opacity', 1).classed('active', true).classed('inactive', false)
                 } else {
-                    d3.select(`#${this.el}`).selectAll(`[data-isolated="false"]`).style('opacity', 0.1)
-                    d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).style('opacity', 1)
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="false"]`).style('opacity', 0.1).classed('active', false).classed('inactive', true)
+                    d3.select(`#${this.el}`).selectAll(`[data-isolated="true"]`).style('opacity', 1).classed('active', true).classed('inactive', false)
                 }
             }
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered="false"]`).style('opacity', 1)
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('opacity', 0.1)
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered]`).style('text-decoration', 'none')
-            d3.select(`#${this.el}`).selectAll(`span[data-filtered="true"]`).style('text-decoration', 'line-through')
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered="false"]`).style('opacity', 1)
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).style('opacity', 0.1)
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered]`).style('text-decoration', 'none')
+            d3.select(`#${this.el}`).selectAll(`${this.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).style('text-decoration', 'line-through')
         }
         catch (e) {}
     }

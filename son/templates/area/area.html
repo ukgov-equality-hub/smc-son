@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %}Social Mobility Commission{% endblock %}
+{% block title %}{{ title }}{% endblock %}
 
 {% block backLink %}
 <a href="/" class="govuk-back-link">Back</a>
@@ -12,7 +12,7 @@
             <h1 class="govuk-heading-l">{{ title }}</h1>
             <p class="govuk-body">This page shows how {{ title }} is ranked for 5 different aspects of social mobility.</p>
 
-            <h3 class="govuk-heading-m">How regions are ranked</h3>
+            <h2 class="govuk-heading-m">How regions are ranked</h2>
             <p class="govuk-body">
                 For each aspect,
                 <a href="/social_mobility_by_area#the-41-regions"
@@ -24,7 +24,7 @@
             <p class="govuk-body">For example, {{ title }} ranks in the <span id="selectedIndicatorRank"></span> of regions for <span id="selectedIndicator"></span>.</p>
             <p>&nbsp;</p>
 
-            <h3 class="govuk-heading-m">Intermediate outcomes</h3>
+            <h2 class="govuk-heading-m">Intermediate outcomes</h2>
             <p class="govuk-body">Intermediate outcomes measure the experiences of young people as they move through education and into work.</p>
 
             <div class="govuk-body area-quintile-header">
@@ -45,7 +45,7 @@
             </div>
             <p>&nbsp;</p>
 
-            <h3 class="govuk-heading-m">Drivers of social mobility</h3>
+            <h2 class="govuk-heading-m">Drivers of social mobility</h2>
             <p class="govuk-body">Drivers are the background conditions that make social mobility easier or more difficult.</p>
 
             <div class="govuk-body area-quintile-header">
@@ -74,7 +74,7 @@
             <div class="map-container">
                 <div id="map" class="map"></div>
             </div>
-            <h3 class="govuk-heading-s">Districts in the {{ title }} region</h3>
+            <h2 class="govuk-heading-s">Districts in the {{ title }} region</h2>
             <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">ITL3 areas:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].itl3 | join(', ') }}</p>
             <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">Local authorities:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].la | join(', ') }}</p>
         </div>
