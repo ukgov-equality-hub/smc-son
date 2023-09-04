@@ -94,7 +94,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 # Guidance
