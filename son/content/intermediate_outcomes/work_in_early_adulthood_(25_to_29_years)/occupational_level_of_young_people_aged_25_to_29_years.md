@@ -75,6 +75,7 @@ By area
     "valueField": "Value",
     "areaField": "ITL221NM",
     "scale": "%",
+    "multiply": 100,
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",

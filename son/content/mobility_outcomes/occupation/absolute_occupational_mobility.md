@@ -133,7 +133,8 @@ By area
         "data": "/static/data/indicators/MO11_area_higher_and_lower_working-20230705.csv"
     }, {
         "label": "Long-range downward",
-        "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv"
+        "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv",
+        "reversePolarity": "true"
     }],
     "toggle": "radio",
     "geoFormat": "",
@@ -147,7 +148,6 @@ By area
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
-    "reversePolarity": true,
     "background": true,
     "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
     "rolloverBehaviour": "outline",

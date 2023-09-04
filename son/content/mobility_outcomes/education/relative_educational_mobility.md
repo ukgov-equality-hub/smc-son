@@ -68,7 +68,7 @@ By area
     "xkey": "Value",
     "ykey": "Area_name",
     "sort": "-Value",
-    "scale": "%",
+    "scale": "Ratio",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",

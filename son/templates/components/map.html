@@ -50,7 +50,7 @@
 <script>
     let map{{ id }}, mapData{{ id }}
 
-    function buildMap{{ id }}(datafile, download) {
+    function buildMap{{ id }}(datafile, download, optionsForSelection) {
         const options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
@@ -71,7 +71,8 @@
             'map{{ id }}',
             `${location.protocol}//${location.host}${options.map}`,
             `${location.protocol}//${location.host}${mapData{{ id }}}`,
-            options
+            options,
+            optionsForSelection
         )
 
         document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {
