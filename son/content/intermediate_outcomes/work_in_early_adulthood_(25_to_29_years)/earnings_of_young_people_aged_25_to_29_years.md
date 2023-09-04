@@ -62,7 +62,7 @@ By area
 # Src
 {
     "code": "IN34",
-    "title": "Variation in mean (average) hourly earnings among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
+    "title": "Difference in weekly earnings in pounds (£) of 25 to 29 year olds, compared to the national average (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN34_area-20230327.csv",

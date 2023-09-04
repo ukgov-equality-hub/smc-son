@@ -63,7 +63,7 @@ By area
 # Src
 {
     "code": "IN32",
-    "title": "Variation in unemployment among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
+    "title": "Percentage point difference in the likelihood of being unemployed at 25 to 29 years old, compared to the national average (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN32_area-20230327.csv",
