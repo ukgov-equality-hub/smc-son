@@ -17,7 +17,7 @@ For example, young people from higher professional backgrounds earned 18% more t
 background with the same qualification level.
 
 Young women’s hourly earnings were significantly lower than those of young men with the same level of qualification and
-from the same socio-economic background (SEB).
+from the same socio-economic background.
 
 Young people from most ethnic minority groups earned around the same as White British young people from the same
 socio-economic background. Earnings were lower for young people from the Pakistani and Bangladeshi ethnic groups.
@@ -61,7 +61,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and SEB (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_gender-20230713.csv",
     "height": 450,
@@ -96,7 +96,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and SEB (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
     "height": 450,
@@ -132,7 +132,7 @@ By disability status
 ## Chart: Grouped-bar
 {
     "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and SEB (UK, 2014 to 2021 combined)",
+    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and socio-economic background (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN352_disability-20230713.csv",
     "height": 450,
@@ -183,8 +183,8 @@ Data is weighted using LFS probability weights. Earnings are adjusted for inflat
 
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
 
-Percentage differences were estimated from a linear regression model of log hourly earnings, controlling for
-educational level, socio-economic background and age. 
+Percentage differences were estimated from a linear regression model of log hourly earnings by socio-economic background,
+controlling for educational level and age. 
 
 For data by sex, ethnicity and disability status, estimates are shown for people aged 27 years with the lowest levels
 of education. For data by ethnicity, a simplified measure of socio-economic background is used (professional and

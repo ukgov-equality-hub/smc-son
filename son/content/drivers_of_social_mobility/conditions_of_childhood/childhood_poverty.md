@@ -22,7 +22,7 @@ By year
 # Src
 {
     "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1997 to 2022)",
+    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/DR12_overview-20230419.csv",
     "height": 450,
@@ -55,7 +55,7 @@ By area
 # Src
 {
     "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, and quintile ranking (from best 20% to worst 20%), by region (UK, 2018 to 2019)",
+    "title": "Percentage of children living in relative poverty after housing costs, by region (UK, 2022)",
     "tooltipTitle": "Percentage of children in relative poverty",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/DR12_area-20230417.csv",
@@ -88,18 +88,22 @@ By area
     "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1],
-    "dataTableTitle": "Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019)"
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the percentage of children living in households in relative poverty after housing costs.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value
-for the region is highly likely to be within. Read more about [confidence intervals].
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 About the data
@@ -123,6 +127,9 @@ years starting in 2017, 2018 and 2019.
 ### Things you need to know
 A household is in relative poverty if their equivalised income is below 60% of the median income for all households in the UK.
 ‘Equivalised’ means adjusted for the number and ages of the people living in the household.
+
+The data for the analysis by area comes from statistics produced by the Centre for Research in Social Policy at Loughborough University.
+These statistics use Valuation Office Agency rent data and the Understanding Society survey for the year 2018 to 2019.
 
 ### Type of data
 Survey data

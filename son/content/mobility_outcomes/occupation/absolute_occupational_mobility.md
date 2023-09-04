@@ -125,7 +125,7 @@ By area
 # Src
 {
     "code": "MO11",
-    "title": "Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, and quintile ranking (from the best 20% to the worst 20%), by region (UK, 2018 to 2022 combined)",
+    "title": "Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, by region (UK, 2018 to 2022 combined)",
     "tooltipTitle": "Percentage of people who experienced long-range mobility",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -165,19 +165,22 @@ By area
     "dataTable": "/static/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1],
-    "dataTableTitle": "Percentage of 25 to 64 year olds who experienced long-range upward mobility from the higher and lower working classes, long-range downward mobility from the higher and lower professional classes, by region (UK, 2018 to 2022 combined)"
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The percentage for each region shows the percentage of people who experienced long-range upward or downward mobility
-for that region.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
-the region is highly likely to be within. Read more about [confidence intervals].
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 By occupational class and sex
@@ -185,7 +188,7 @@ By occupational class and sex
 ## Chart: Stacked-bar
 {
     "code": "MO11",
-    "title": "Percentages of people aged 25 to 64 years in each occupational class, by parental occupational class and sex (UK, 2022)",
+    "title": "Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)",
     "tooltipTitle": "",
     "data": [{
         "label": "Women",

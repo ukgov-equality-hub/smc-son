@@ -133,11 +133,11 @@ menu = {
                         },
                         {
                             'id': 'IN33',
-                            'name': 'Occupational level'
+                            'name': 'Occupational level of young people aged 25 to 29 years'
                         },
                         {
                             'id': 'IN34',
-                            'name': 'Earnings'
+                            'name': 'Earnings of young people aged 25 to 29 years'
                         },
                         {
                             'id': 'IN351',
@@ -243,7 +243,7 @@ menu = {
                         },
                         {
                             'id': 'DR33',
-                            'name': 'Occupational level of 25 to 29 year olds'
+                            'name': 'Type of employment opportunities for young people'
                         },
                         {
                             'id': 'DR34',

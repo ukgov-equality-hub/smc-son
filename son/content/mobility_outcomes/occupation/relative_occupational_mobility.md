@@ -26,7 +26,7 @@ By year
 ## Chart: Single-line
 {
     "code": "MO12",
-    "title": "Relative occupational mobility in the UK from 2014 to 2022, uniform difference (UNIDIFF) parameter estimates compared with 2014",
+    "title": "Percentage point difference in relative occupational mobility compared to the odds ratio in 2014 (UK, 2014 to 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/MO12_overview-20230623.csv",
     "height": 450,
@@ -60,7 +60,7 @@ By area
 # Src
 {
     "code": "MO12",
-    "title": "Relative mobility by area in the UK, 2018 to 2022 (combined), uniform difference (UNIDIFF) parameter estimates compared with Inner London – West",
+    "title": "Percentage point difference in relative mobility between UK regions and Inner West London (UK, 2018 to 2022 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/MO12_area-20230623.csv",
@@ -96,6 +96,21 @@ By area
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 3]
 }
+
+# Guidance
+
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 By sex and ethnicity

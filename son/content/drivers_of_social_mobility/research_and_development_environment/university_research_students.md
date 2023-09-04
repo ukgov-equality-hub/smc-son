@@ -52,7 +52,7 @@ By area
 # Src
 {
     "code": "DR53",
-    "title": "Number of research students, and ‘quintile’ ranking (from best 20% to worst 20%), by region over time (UK, 2015 to 2018)",
+    "title": "Number of research students, by region over time (UK, 2015 to 2018)",
     "tooltipTitle": "Number of research students",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -94,15 +94,17 @@ By area
     "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-ITL2-region-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0, 0, 0],
-    "dataTableTitle": "Number of research students, by area (UK, 2015 to 2018)"
+    "dataTableDecimalPlaces": [null, 0, 0, 0, 0]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the highest to lowest number of research students.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the top 20% to the bottom 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest number of research students.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the number of research students in that region.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 About the data

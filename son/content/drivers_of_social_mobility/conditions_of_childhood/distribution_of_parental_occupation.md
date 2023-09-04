@@ -58,7 +58,7 @@ By area
 # Src
 {
     "code": "DR14",
-    "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, and quintile ranking (from best 20% to worst 20%), by region (UK, 2014 to 2021 combined)",
+    "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined)",
     "tooltipTitle": "Percentage of adults in a higher professional or lower working class occupation",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -97,26 +97,29 @@ By area
     "dataTable": "/static/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1],
-    "dataTableTitle": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined)"
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the percentage of adults in families with dependent children who were in either
-a higher professional or lower working class occupation.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
-the region is highly likely to be within. Read more about [confidence intervals].
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 About the data
 
 ## Text
 ### Data source
-Labour Force Survey, Office for National Statistics
+Labour Force Survey (LFS), Office for National Statistics
 
 ### Time period
 2014 to 2021
@@ -142,8 +145,10 @@ carers of dependent children, but some could be adults living in homes with pare
 
 Respondents aged less than 21 years old were not included.
 
+Data is weighted using LFS probability weights.
+
 ### Type of data
-Survey data, weighted
+Survey data
 
 Read more in State of the Nation 2023 on GOV.UK.
 

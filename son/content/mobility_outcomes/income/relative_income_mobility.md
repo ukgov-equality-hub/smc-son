@@ -27,7 +27,7 @@ Data
     "dataTable": "/static/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableTitle": "Estimates of the strength of intergenerational income mobility (intergenerational elasticity), from 1975 to 1978, and 2020"
+    "dataTableTitle": "Estimates of the strength of intergenerational income mobility (intergenerational elasticity), from 1975 to 2020"
 }
 
 # Text

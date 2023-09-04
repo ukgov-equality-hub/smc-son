@@ -78,10 +78,11 @@
     </script>
 {% endif %}
 </div>
+
+{% if not ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
 <script>
     let tbl{{ id }} = false, dataTable{{ id }}
 
-    {% if not ([data, 'disableJavascriptAlterationOfDataTable'] | attribute == True) %}
     function buildTable{{ id }}(datafile) {
         let options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
@@ -115,23 +116,6 @@
             })
         }
     }
-    {% else %}
-    function buildTable{{ id }}(datafile) {
-        let options = { dataFormat: 'array', allowColumnResize: true, allowFilter: true, allowSort: true }
-
-        if (!tbl{{ id }}) {
-            dataTable{{ id }} = new DataTable('table{{ id }}', null, options)
-        }
-        tbl{{ id }} = true
-
-        const items = document.getElementsByClassName('dataTableSize{{ id }}')
-        for (let i = 0; i < items.length; i++) {
-            dataTable{{ id }}.downloadSize('csv', true).then(data => {
-                items.item(i).innerText = ' ' + data
-            })
-        }
-    }
-    {% endif %}
 
     window.document.addEventListener('DOMContentLoaded', function () {
         buildTable{{ id }}()
@@ -143,4 +127,5 @@
         }
     }
 </script>
+{% endif %}
 {% endmacro %}

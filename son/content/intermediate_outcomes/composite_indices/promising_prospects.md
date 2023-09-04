@@ -12,7 +12,7 @@ education, professional work, and earnings.
 # Src
 {
     "code": "CI1",
-    "title": "Index of 'promising prospects', and quintile ranking from best 20% to worst 20%, by region (UK, 2018 to 2022 combined)",
+    "title": "Index of 'promising prospects', by region (UK, 2018 to 2022 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI1_20230817.csv",
     "geoFormat": "",
@@ -51,7 +51,7 @@ Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfords
 have the best prospects in terms of attaining higher qualifications, higher earnings and a professional job.
 
 Young people brought up in more rural or remote areas, and in some former industrial areas, tend to have worse
-prospects in terms of attaining higher qualifications, higher earnings and a professional job.
+prospects.
 
 Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire,
 which contains both remote rural and urban areas.

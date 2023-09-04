@@ -12,7 +12,7 @@ of unemployment, economic inactivity and lower working-class employment.
 # Src
 {
     "code": "CI2",
-    "title": "Index of ‘precarious situations’, and quintile ranking from best 20% to worst 20%, by region (UK, 2018 to 2022 combined)",
+    "title": "Index of ‘precarious situations’, by region (UK, 2018 to 2022 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI2_20230817.csv",
     "geoFormat": "",

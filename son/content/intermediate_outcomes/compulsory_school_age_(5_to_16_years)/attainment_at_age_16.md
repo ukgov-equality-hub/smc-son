@@ -5,7 +5,7 @@ IN13
 Attainment at age 16
 
 ## Summary
-Data on the percentage of pupils getting a grade 5 or above in GCSE English and Maths.
+Data on the percentage of pupils getting a grade 5 or above in GCSE English and Maths, by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -96,7 +96,7 @@ By area
 # Src
 {
     "code": "IN13",
-    "title": "Percentage of students achieving a grade 5 or above in both GCSE English and maths by the end of key stage 4, and ‘quintile’ ranking (from best 20% to worst 20%), by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+    "title": "Percentage of students achieving a grade 5 or above in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
     "tooltipTitle": "Percentage of 16 year olds getting a grade 5 or above in GCSE English and maths",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
@@ -111,7 +111,7 @@ By area
     "nameField": "Area_name",
     "valueField": "Value",
     "areaField": "ITL221NM",
-    "scale": "Number of students",
+    "scale": "%",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
@@ -137,17 +137,22 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-ITL2-region-and-FMS--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1],
-    "dataTableTitle": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by region"
+    "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the percentage of pupils who got a grade 5 or above in both GCSE English and maths.
-Figures are shown separately for FSM-eligible pupils and non-eligible pupils.
-The gap between these 2 groups is also shown for each region.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 By sex

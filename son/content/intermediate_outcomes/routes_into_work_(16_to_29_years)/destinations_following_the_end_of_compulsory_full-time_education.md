@@ -151,7 +151,7 @@ By disability status
 ## Chart: Stacked-bar
 {
     "code": "IN21",
-    "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by SEB and disability (UK, 2014 to 2022 combined)",
+    "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by socio-economic background and disability (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
     "data": [{
         "label": "Disabled",

@@ -13,11 +13,6 @@ Summary main findings
 ## Text
 The youth unemployment rate was 13% in 2021, having gone up to nearly 16% in 2020.
 
-In the 3 years from 2018 to 2021, unemployment rates for 16 to 24 year olds were higher in metropolitan areas,
-such as London, Greater Manchester and the West Midlands.
-
-Rates were lower in more rural areas, such as the Highlands and Islands, Northern Ireland, and North Yorkshire.
-
 ## Section
 By year
 
@@ -56,7 +51,7 @@ By area
 # Src
 {
     "code": "DR32",
-    "title": "Percentage of 16 to 24 year olds who were unemployed, and ‘quintile’ ranking (from best 20% to worst 20%), by region (UK, 2018 to 2021 combined)",
+    "title": "Percentage of 16 to 24 year olds who were unemployed, by region (UK, 2018 to 2021 combined)",
     "tooltipTitle": "Percentage of 16 to 24 year olds who were unemployed",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/DR32_area-20230417.csv",
@@ -88,25 +83,29 @@ By area
     "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1],
-    "dataTableTitle": "Percentage of 16 to 24 year olds who were unemployed, by area"
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
-[41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
 
-The figure for each region shows the percentage of 16 to 24 year olds who were unemployed.
+The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent confidence intervals – the range of values that the 'true' value for
-the region is highly likely to be within. Read more about [confidence intervals].
+The lines either side of the dots represent [confidence intervals]
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
 
 ## Section
 About the data
 
 ## Text
 ### Data source
-Office for National Statistics, Labour Force Survey
+Office for National Statistics, Labour Force Survey (LFS)
 
 ### Time period
 2014 to 2021
@@ -127,6 +126,8 @@ The data does not include people who are economically inactive because they are 
 * in full-time education
 * looking after the home
 * permanently sick or disabled
+
+Data is weighted using LFS probability weights.
 
 ### Type of data
 Survey data, weighted
