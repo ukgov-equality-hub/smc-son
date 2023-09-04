@@ -230,6 +230,12 @@ For data by sex, ethnicity and disability status, estimates are shown for people
 For data by ethnicity, a simplified measure of educational level is used, (degree-level and non-degree level qualifications)
 so that sample sizes are large enough to analyse.
 
+The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
+
 ### Type of data
 Survey data
 
