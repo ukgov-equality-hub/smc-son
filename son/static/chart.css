@@ -35,7 +35,7 @@ div.chart svg.highlight-ci line.plot-item.confidence-interval, div.chart svg.hig
     visibility: visible;
 }
 
-span.confidence-interval {
+span.legend-cb, span.confidence-interval {
     display: inline-flex;
     align-items: center;
     margin-right: 1em;
@@ -47,13 +47,13 @@ span.confidence-interval.no-intervals {
     text-decoration: line-through;
 }
 
-span.confidence-interval > input {
+span.legend-cb > input, span.confidence-interval > input {
     width: 20px;
     height: 20px;
     margin-right: 7px;
 }
 
-span.confidence-interval > input, span.confidence-interval > label {
+span.legend-cb > input, span.legend-cb > label, span.confidence-interval > input, span.confidence-interval > label {
     white-space: nowrap;
     cursor: pointer;
 }

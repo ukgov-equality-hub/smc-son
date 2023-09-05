@@ -134,7 +134,7 @@ By area
     }, {
         "label": "Long-range downward",
         "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv",
-        "reversePolarity": "true"
+        "reversePolarity": true
     }],
     "toggle": "radio",
     "geoFormat": "",

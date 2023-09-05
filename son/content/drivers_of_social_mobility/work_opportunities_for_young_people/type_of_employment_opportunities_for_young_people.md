@@ -61,7 +61,7 @@ By area
     "data": [{
         "label": "Lower working",
         "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv",
-        "reversePolarity": "true"
+        "reversePolarity": true
     }, {
         "label": "Higher professional",
         "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv"

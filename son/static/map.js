@@ -8,12 +8,11 @@ class Choropleth {
     // GeoJSON data from https://geoportal.statistics.gov.uk/
     // https://mapshaper.org/ to convert GeoJSON to topoJSON
 
-    constructor(el, geodata, data, options, optionsForSelection) {
+    constructor(el, geodata, data, options) {
         this.el = el
         this.geodata = geodata
         this.data = data
         this.options = options || {}
-        this.optionsForSelection = optionsForSelection || {}
         this.scriptSrc = ''
         this.loaded = false
         this.rendered = false
@@ -155,7 +154,7 @@ class Choropleth {
         const valueField = options.valueField || ''
         const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const quantile = options.quantile || undefined
-        const reversePolarity = (this.optionsForSelection.reversePolarity == "true") || options.reversePolarity || false
+        const reversePolarity = options.reversePolarity || false
         const scale = options.scale ? options.scale : ''
         const rounding = options.rounding || null
         let domain = options.domain || []
