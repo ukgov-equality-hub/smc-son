@@ -94,7 +94,7 @@ The 41 ITL2 regions are as follows.
 North East (England):
 
 * [Tees Valley and Durham](/social_mobility_by_area/tees_valley_and_durham)
-* [Northumberland, and Tyne and Wear](/social_mobility_by_area/northumberland_and_tyne_and_wear)
+* [Northumberland, and Tyne and Wear](/social_mobility_by_area/northumberland,_and_tyne_and_wear)
 
 North West (England):
 
@@ -146,7 +146,7 @@ South East (England):
 
 South West (England):
 
-* [Gloucestershire, Wiltshire and Bristol and Bath](/social_mobility_by_area/gloucestershire,_wiltshire_and_bath/bristol_area)
+* [Gloucestershire, Wiltshire and Bristol and Bath](/social_mobility_by_area/gloucestershire,_wiltshire_and_bath_and_bristol_area)
 * [Dorset and Somerset](/social_mobility_by_area/dorset_and_somerset)
 * [Cornwall and Isles of Scilly](/social_mobility_by_area/cornwall_and_isles_of_scilly)
 * [Devon](/social_mobility_by_area/devon)
