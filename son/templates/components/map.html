@@ -50,8 +50,8 @@
 <script>
     let map{{ id }}, mapData{{ id }}
 
-    function buildMap{{ id }}(datafile, download, optionsForSelection) {
-        const options = {{ [data, 'Src'] | content_list | safe }}
+    function buildMap{{ id }}(datafile, download, overrideOptions) {
+        let options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
         if (download) options.download = download
@@ -67,12 +67,12 @@
         }
 
         mapData{{ id }} = datafile || options.data.data || options.data
+        if (overrideOptions) options = { ...options, ...overrideOptions }
         map{{ id }} = new Choropleth(
             'map{{ id }}',
             `${location.protocol}//${location.host}${options.map}`,
             `${location.protocol}//${location.host}${mapData{{ id }}}`,
-            options,
-            optionsForSelection
+            options
         )
 
         document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {

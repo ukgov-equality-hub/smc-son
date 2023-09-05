@@ -190,6 +190,7 @@ class Chart {
         const filterNaN = options.filterNaN == false ? false : true
         const legend = options.legend || false
         const reverseLegend = options.reverseLegend || false
+        this.legendCheckboxes = options.legendCheckboxes || false
         const swatchSize = 20
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.title = options.title || ''
@@ -680,40 +681,14 @@ class Chart {
                 let legendDiv
                 if (self.clickBehaviour == 'filter') {
                     self.hidden = []
-                    d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? 'button' : 'span'}[data-filtered="true"]`).each(function () {
-                        self.hidden.push(d3.select(this).text())
+                    d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? self.legendCheckboxes ? 'input' : 'button' : 'span'}[data-filtered="true"]`).each(function () {
+                        self.hidden.push(d3.select(this).attr('data-series'))
                     })
                     legendDiv = document.getElementById(`${self.el}_legend`)
-                    if (legendDiv && legendDiv.getElementsByTagName(`${self.isInteractive ? 'button' : 'span'}`).length > 0) {
+                    if (legendDiv && legendDiv.getElementsByTagName(`${self.isInteractive ? self.legendCheckboxes ? 'input' : 'button' : 'span'}`).length > 0) {
                         legendDiv.parentNode.removeChild(legendDiv)
                     }
                 }
-
-                /*legendDiv = Plot.legend({
-                    color: {
-                        domain: reverseLegend ? legends.reverse() : legends,
-                        range: reverseLegend ? colourScheme.slice(0, legends.length).reverse() : colourScheme
-                    },
-                    legend: 'swatches',
-                    swatchSize: swatchSize,
-                    style: { margin: '5px', ...style }
-                })
-
-                d3.select(legendDiv).selectAll(`${self.isInteractive ? 'button' : 'span'}`).each(function () {
-                    const item = d3.select(this)
-                    const text = item.text()
-                    item
-                        .attr('data-series', text)
-                        .style('cursor', (self.rolloverBehaviour == '' && self.clickBehaviour == '') ? 'default' : 'pointer')
-                        .on('click', clicked)
-                        //.on('pointerenter pointermove', highlight)
-                        .on('pointerout', resetHighlight)
-                })
-
-                legendDiv.setAttribute('id', `${self.el}_legend`)
-                legendDiv.style.display = 'block'
-                legendDiv.style.textAlign = 'center'
-                legendDiv.style.marginTop = `${swatchSize * 1.75}px`*/
 
                 legendDiv = document.createElement('div')
                 legendDiv.setAttribute('id', `${self.el}_legend`)
@@ -721,36 +696,61 @@ class Chart {
                 Object.assign(legendDiv.style, { marginTop: `${swatchSize * 1.75}px`, ...style })
                 const legendDomain = reverseLegend ? [...legends.reverse()] : legends
                 const legendRange = reverseLegend ? [...colourScheme.slice(0, legends.length).reverse()] : colourScheme
+                let css = ''
                 for (let i = 0; i < legendDomain.length; i++) {
-                    const l = document.createElement(`${self.isInteractive ? 'button' : 'span'}`)
-                    l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${legendDomain[i]}`
-                    l.setAttribute('data-series', legendDomain[i])
-                    l.addEventListener('click', clicked)
-                    //l.addEventListener('pointerenter pointermove', highlight)
-                    l.addEventListener('pointerout', resetHighlight)
-                    legendDiv.appendChild(l)
+                    if (self.legendCheckboxes && self.isInteractive) {
+                        const l = document.createElement('span')
+                        l.classList.add('legend', 'legend-cb')
+                        const cb = document.createElement('input')
+                        cb.setAttribute('id', `${self.el}_cb_${legendDomain[i]}`)
+                        cb.type = 'checkbox'
+                        cb.checked = self.hidden && self.hidden.includes(legendDomain[i]) ? false : true
+                        cb.classList.add(legendDomain[i].replace(/ /g, '_'))
+                        css += `input[type="checkbox"].${legendDomain[i].replace(/ /g, '_')}:before, input[type="checkbox"].${legendDomain[i].replace(/ /g, '_')}:checked:before { background-color: var(--${legendDomain[i].replace(/ /g, '_')}, ${legendRange[i]}) !important; }`
+                        cb.setAttribute('data-series', legendDomain[i])
+                        cb.addEventListener('click', clicked)
+                        l.appendChild(cb)
+                        const cbLabel = document.createElement('label')
+                        cbLabel.setAttribute('for', `${self.el}_cb_${legendDomain[i]}`)
+                        cbLabel.innerText = legendDomain[i]
+                        l.appendChild(cbLabel)
+                        legendDiv.appendChild(l)
+                    } else {
+                        const l = document.createElement(`${self.isInteractive ? 'button' : 'span'}`)
+                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${legendDomain[i]}`
+                        l.setAttribute('data-series', legendDomain[i])
+                        l.addEventListener('click', clicked)
+                        //l.addEventListener('pointerenter pointermove', highlight)
+                        l.addEventListener('pointerout', resetHighlight)
+                        legendDiv.appendChild(l)
+                    }
                 }
 
+                if (css != '') {
+                    let style = document.createElementNS('http://www.w3.org/2000/svg', 'style')
+                    style.textContent = css
+                    legendDiv.appendChild(style)
+                }
 
                 if (lci && uci ) {
                     if (showCi == 'visible') {
                         document.getElementById(self.el).getElementsByTagName('svg')[0].classList.add('highlight-ci')
                     } else {
-                        const ci = document.createElement('span')
-                        ci.classList.add('confidence-interval')
-                        if (!hasCi) ci.classList.add('no-intervals')
+                        const l = document.createElement('span')
+                        l.classList.add('confidence-interval')
+                        if (!hasCi) l.classList.add('no-intervals')
                         const cb = document.createElement('input')
                         cb.setAttribute('id', `${self.el}_cicb`)
                         cb.type = 'checkbox'
                         cb.onclick = function () {
                             document.getElementById(self.el).getElementsByTagName('svg')[0].classList.toggle('highlight-ci')
                         }
-                        ci.appendChild(cb)
-                        const ciLabel = document.createElement('label')
-                        ciLabel.setAttribute('for', `${self.el}_cicb`)
-                        ciLabel.innerHTML = 'Confidence Intervals'
-                        ci.appendChild(ciLabel)
-                        legendDiv.appendChild(ci)
+                        l.appendChild(cb)
+                        const cbLabel = document.createElement('label')
+                        cbLabel.setAttribute('for', `${self.el}_cicb`)
+                        cbLabel.innerText = 'Confidence Intervals'
+                        l.appendChild(cbLabel)
+                        legendDiv.appendChild(l)
                     }
                 }
 
@@ -760,7 +760,7 @@ class Chart {
                     const selector = self.hidden.map(x => `[data-series="${x}"]`).join(', ')
                     d3.select(legendDiv).selectAll(selector).style('opacity', function () {
                         d3.select(this).attr('data-filtered', true)
-                        return 0.1
+                        return self.legendCheckboxes ? 0.3 : 0.1
                     })
                 }
             } else {
@@ -1358,7 +1358,7 @@ class Chart {
                 d3.select(`#${self.el}`).selectAll(selector).style('opacity', function () {
                     const item = d3.select(this)
                     const parent = d3.select(this.parentNode)
-                    if (!(item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN') && selected === true)) {
+                    if (!(item.node().nodeName == (self.isInteractive && !self.legendCheckboxes ? 'BUTTON' : 'SPAN') && selected === true)) {
                         if (item.attr('data-faded') == 'true') {
                             item.attr('data-faded', 'false')
                             return 1
@@ -1379,7 +1379,7 @@ class Chart {
                     hidden.push(series)
                 }
 
-                d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? 'button' : 'span'}[data-series="${series}"]`).style('opacity', function () {
+                d3.select(`#${self.el}`).selectAll(`${self.isInteractive ? self.legendCheckboxes ? 'input' : 'button' : 'span'}[data-series="${series}"]`).style('opacity', function () {
                     const item = d3.select(this)
                     item.attr('data-filtered', filtered)
                     item.classed('active', filtered)
@@ -1393,7 +1393,7 @@ class Chart {
                 d3.select(`#${self.el}`).selectAll(`[data-series]`).style('opacity', function () {
                     const item = d3.select(this)
                     const parent = d3.select(this.parentNode)
-                    if (!(item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN') && selected === true)) {
+                    if (!(item.node().nodeName == (self.isInteractive && !self.legendCheckboxes ? 'BUTTON' : 'SPAN') && selected === true)) {
                         if ((Array.isArray(series) ? series : [series]).includes(item.attr('data-series'))) {
                             if (item.attr('data-isolated') == 'true') {
                                 item.attr('data-isolated', 'false')
@@ -1406,7 +1406,7 @@ class Chart {
                             if (!item.attr('data-isolated')) item.attr('data-isolated', 'false')
                             return 0.1
                         }
-                    } else if (item.node().nodeName == (self.isInteractive ? 'BUTTON' : 'SPAN')) {
+                    } else if (item.node().nodeName == (self.isInteractive && !self.legendCheckboxes ? 'BUTTON' : 'SPAN')) {
                         return (Array.isArray(series) ? series : [series]).includes(item.attr('data-series')) ? 1 : 0.1
                     }
                 })

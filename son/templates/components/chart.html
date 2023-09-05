@@ -11,8 +11,8 @@
 <script>
     let chart{{ id }}, chartData{{ id }}
 
-    function buildChart{{ id }}(datafile, download) {
-        const options = {{ [data, 'Src'] | content_list | safe }}
+    function buildChart{{ id }}(datafile, download, overrideOptions) {
+        let options = {{ [data, 'Src'] | content_list | safe }}
         if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
         if (options.type != 'dot') {
             options.width = document.getElementById('maincontent').offsetWidth
@@ -22,6 +22,7 @@
         if (download) options.download = download
 
         chartData{{ id }} = datafile || options.data.data || options.data
+        if (overrideOptions) options = { ...options, ...overrideOptions }
         chart{{ id }} = new Chart(
             'chart{{ id }}',
             `${location.protocol}//${location.host}${chartData{{ id }}}`,

@@ -72,7 +72,7 @@
             {% endif %}
         </div>
         <script>
-            const options{{ id }} = {{ [data, 'data'] | attribute | safe }}
+            const options{{ id }} = {{ [data, 'data'] | attribute | safe | replace("True", "true") }}
 
             if (document.getElementById('range{{ id }}')) {
                 document.getElementById('range{{ id }}').addEventListener('input', function (e) {
@@ -83,13 +83,19 @@
 
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
-                const optionsForSelection = options{{ id }}.filter(x => x.label == id)[0]
+                let overrideOptions = options{{ id }}.filter(x => x.label == id)[0]
+                if (typeof overrideOptions.reversePolarity !== 'undefined') {
+                    overrideOptions = { reversePolarity: overrideOptions.reversePolarity }
+                } else {
+                    overrideOptions = {}
+                }
+
                 try {
-                    buildMap{{ id }}(datafile, false, optionsForSelection)
+                    buildMap{{ id }}(datafile, false, overrideOptions)
                 }
                 catch (e) {}
                 try {
-                    buildChart{{ id }}(datafile, false, optionsForSelection)
+                    buildChart{{ id }}(datafile, false, overrideOptions)
                 }
                 catch (e) {}
 
