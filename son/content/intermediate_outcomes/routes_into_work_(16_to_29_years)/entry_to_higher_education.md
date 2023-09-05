@@ -70,6 +70,12 @@ The data shows the percentage of 18 to 20 year olds in the UK who began studying
 ### Things you need to know
 Data used is weighted using LFS probability weights. 
 
+The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
+
 ### Type of data
 Survey data
 

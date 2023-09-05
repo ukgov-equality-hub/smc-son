@@ -71,7 +71,7 @@ By area
 # Src
 {
     "code": "IN23",
-    "title": "Percentage point difference from the national average in 25 to 29 year olds with a university degree, by region (UK, 2018 to 2021 combined)",
+    "title": "Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN23_area-20230327.csv",
@@ -114,7 +114,7 @@ They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent [confidence intervals]
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
 – the range of values that the 'true' value for each region is highly likely to be within.
 In many cases the confidence intervals overlap.
 This suggests differences between specific regions may not be statistically significant. 

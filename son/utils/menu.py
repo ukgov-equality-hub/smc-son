@@ -247,7 +247,7 @@ menu = {
                         },
                         {
                             'id': 'DR34',
-                            'name': 'Earnings of 22 to 29 year olds'
+                            'name': 'Labour market earnings of young people'
                         }
                     ]
                 },

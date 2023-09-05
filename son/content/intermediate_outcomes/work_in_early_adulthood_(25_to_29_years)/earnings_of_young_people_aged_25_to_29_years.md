@@ -62,7 +62,7 @@ By area
 # Src
 {
     "code": "IN34",
-    "title": "Variation in mean (average) hourly earnings among 25 to 29 year olds compared with the average, by region (UK, 2014 to 2021 combined)",
+    "title": "Difference in weekly earnings in pounds (£) of 25 to 29 year olds, compared to the national average (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN34_area-20230327.csv",
@@ -70,7 +70,7 @@ By area
     "nameField": "Area_name",
     "valueField": "Value",
     "areaField": "ITL221NM",
-    "scale": "%",
+    "scale": "£",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
     "confidenceIntervals": "visible",
@@ -94,7 +94,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 # Guidance
@@ -104,7 +104,7 @@ They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent [confidence intervals]
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
 – the range of values that the 'true' value for each region is highly likely to be within.
 In many cases the confidence intervals overlap.
 This suggests differences between specific regions may not be statistically significant. 
@@ -254,6 +254,12 @@ disability and socio-economic backgrounds. With this model specification we do n
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
 more, and if that condition reduced their ability to carry out day-to-day activities.
 This is consistent with the definition of disability in the Equality Act 2010.
+
+The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
 
 ### Type of data
 Survey data

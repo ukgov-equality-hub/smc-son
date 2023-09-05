@@ -60,7 +60,8 @@ By area
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
         "label": "Lower working",
-        "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv"
+        "data": "/static/data/indicators/DR33_area_lower_working-20230417.csv",
+        "reversePolarity": "true"
     }, {
         "label": "Higher professional",
         "data": "/static/data/indicators/DR33_area_higher_professional-20230417.csv"

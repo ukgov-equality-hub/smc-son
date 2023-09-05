@@ -83,12 +83,13 @@
 
             function selectRange{{ id }}(id) {
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
+                const optionsForSelection = options{{ id }}.filter(x => x.label == id)[0]
                 try {
-                    buildMap{{ id }}(datafile, false)
+                    buildMap{{ id }}(datafile, false, optionsForSelection)
                 }
                 catch (e) {}
                 try {
-                    buildChart{{ id }}(datafile, false)
+                    buildChart{{ id }}(datafile, false, optionsForSelection)
                 }
                 catch (e) {}
 

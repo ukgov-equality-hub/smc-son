@@ -116,7 +116,7 @@ They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent [confidence intervals]
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
 – the range of values that the 'true' value for each region is highly likely to be within.
 In many cases the confidence intervals overlap.
 This suggests differences between specific regions may not be statistically significant. 

@@ -95,7 +95,7 @@ They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
-The lines either side of the dots represent [confidence intervals]
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
 – the range of values that the 'true' value for each region is highly likely to be within.
 In many cases the confidence intervals overlap.
 This suggests differences between specific regions may not be statistically significant. 
@@ -135,6 +135,12 @@ or carers of dependent children, but some could be adults living in homes with p
 Respondents aged less than 21 years old were not included.
 
 Data is weighted using LFS probability weights.
+
+The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
 
 ### Type of data
 Survey data
