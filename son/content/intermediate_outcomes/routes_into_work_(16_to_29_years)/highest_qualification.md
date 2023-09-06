@@ -204,7 +204,7 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Grouped-bar
+## Chart: stacked-bar
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)",

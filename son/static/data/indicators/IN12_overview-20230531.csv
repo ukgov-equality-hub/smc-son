@@ -1,22 +1,22 @@
 "Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN12","Attaintment at age 11","National","E92000001","England","2015/16","Total","11","Total",NA,NA,53,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2015/16","Disadvantaged","11","Total",NA,NA,39,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2015/16","Not known to be disadvantaged","11","Total",NA,NA,60,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2016/17","Total","11","Total",NA,NA,61,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2015/16","Total","11","Total",NA,NA,53,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2016/17","Disadvantaged","11","Total",NA,NA,47,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2016/17","Not known to be disadvantaged","11","Total",NA,NA,67,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2017/18","Total","11","Total",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2016/17","Total","11","Total",NA,NA,61,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2017/18","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2017/18","Not known to be disadvantaged","11","Total",NA,NA,70,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2018/19","Total","11","Total",NA,NA,65,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2017/18","Total","11","Total",NA,NA,64,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2018/19","Disadvantaged","11","Total",NA,NA,51,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2018/19","Not known to be disadvantaged","11","Total",NA,NA,71,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2019/20","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2018/19","Total","11","Total",NA,NA,65,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2019/20","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2019/20","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2020/21","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2019/20","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2020/21","Disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2020/21","Not known to be disadvantaged","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
-"IN12","Attaintment at age 11","National","E92000001","England","2021/22","Total","11","Total",NA,NA,59,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2020/21","Total","11","Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2021/22","Disadvantaged","11","Total",NA,NA,43,NA,NA,NA,NA,"Percentage",NA
 "IN12","Attaintment at age 11","National","E92000001","England","2021/22","Not known to be disadvantaged","11","Total",NA,NA,66,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","2021/22","Total","11","Total",NA,NA,59,NA,NA,NA,NA,"Percentage",NA

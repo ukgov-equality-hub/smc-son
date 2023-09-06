@@ -21,7 +21,7 @@ The percentage of 19 year olds from OECD countries entering higher education has
 ## Section
 By year
 
-## Chart: Multi-line
+## Chart: Grouped-bar
 {
     "code": "DR23",
     "title": "Percentage of 19 year olds enrolled in secondary or post-secondary education, over time (UK and international averages, 2010 to 2020)",

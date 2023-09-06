@@ -22,7 +22,17 @@
         if (download) options.download = download
 
         chartData{{ id }} = datafile || options.data.data || options.data
-        if (overrideOptions) options = { ...options, ...overrideOptions }
+        if (overrideOptions && typeof overrideOptions.label !== 'undefined') {
+            options['label'] = overrideOptions.label
+        } else if (!overrideOptions && !datafile && options.data && typeof options.data.label !== 'undefined') {
+            options['label'] = options.data.label
+        }
+        if (overrideOptions && typeof overrideOptions.reversePolarity !== 'undefined') {
+            options['reversePolarity'] = overrideOptions.reversePolarity
+        } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
+            options['reversePolarity'] = options.data.reversePolarity
+        }
+
         chart{{ id }} = new Chart(
             'chart{{ id }}',
             `${location.protocol}//${location.host}${chartData{{ id }}}`,
