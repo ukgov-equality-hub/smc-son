@@ -22,6 +22,15 @@
         if (download) options.download = download
 
         chartData{{ id }} = datafile || options.data.data || options.data
+        if (!overrideOptions) overrideOptions = {}
+        if (typeof options.data !== 'undefined') {
+            if (typeof options.data.label !== 'undefined') {
+                overrideOptions['label'] = options.data.label
+            }
+            if (typeof options.data.reversePolarity !== 'undefined') {
+                overrideOptions['reversePolarity'] = options.data.reversePolarity
+            }
+        }
         if (overrideOptions) options = { ...options, ...overrideOptions }
         chart{{ id }} = new Chart(
             'chart{{ id }}',

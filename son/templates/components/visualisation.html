@@ -85,9 +85,9 @@
                 const datafile = options{{ id }}.filter(x => x.label == id)[0].data
                 let overrideOptions = options{{ id }}.filter(x => x.label == id)[0]
                 if (typeof overrideOptions.reversePolarity !== 'undefined') {
-                    overrideOptions = { reversePolarity: overrideOptions.reversePolarity }
+                    overrideOptions = { label: overrideOptions.label, reversePolarity: overrideOptions.reversePolarity }
                 } else {
-                    overrideOptions = {}
+                    overrideOptions = { label: overrideOptions.label }
                 }
 
                 try {

@@ -23,7 +23,7 @@ Estimated average total wealth by age group was:
 ## Section
 By age group and type of wealth
 
-## Chart: Stacked-bar
+## Chart: Multi-line
 {
     "code": "MO51",
     "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
@@ -44,7 +44,8 @@ By age group and type of wealth
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
     "margin": [0, 0, 0, 0],
-    "clickBehaviour": "filter",
+    "rolloverBehaviour": "fade",
+    "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/MO51-level-of-wealth--by-age-and-type-of-wealth--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],

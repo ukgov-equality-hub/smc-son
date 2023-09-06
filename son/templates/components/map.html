@@ -67,6 +67,15 @@
         }
 
         mapData{{ id }} = datafile || options.data.data || options.data
+        if (!overrideOptions) overrideOptions = {}
+        if (typeof options.data !== 'undefined') {
+            if (typeof options.data.label !== 'undefined') {
+                overrideOptions['label'] = options.data.label
+            }
+            if (typeof options.data.reversePolarity !== 'undefined') {
+                overrideOptions['reversePolarity'] = options.data.reversePolarity
+            }
+        }
         if (overrideOptions) options = { ...options, ...overrideOptions }
         map{{ id }} = new Choropleth(
             'map{{ id }}',
@@ -93,9 +102,6 @@
             for (let i = 0; i < items.length; i++) {
                 items.item(i).innerText = ' ' + data
             }
-            //if (document.getElementById('mapSize{{ id }}')) {
-            //    document.getElementById('mapSize{{ id }}').innerText = ' ' + data
-            //}
         })
     }
 
