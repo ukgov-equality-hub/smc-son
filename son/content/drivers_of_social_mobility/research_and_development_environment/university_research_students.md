@@ -87,6 +87,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
+    "xticks": 2,
     "xtitle": "",
     "legend": false,
     "margin": [0, 0, 0, 0],

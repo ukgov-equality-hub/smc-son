@@ -98,7 +98,7 @@ By area
     "nameField": "Area_name",
     "valueField": "Value",
     "areaField": "ITL221NM",
-    "scale": "€",
+    "scale": "€€",
     "height": 700,
     "dataFormat": "quintile",
     "background": "full",
