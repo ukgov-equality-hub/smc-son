@@ -11,10 +11,7 @@ Information on the relationship in wealth between people and their parents.
 Summary main findings
 
 ## Text
-A 10% increase in parents’ wealth is associated with the following increases in their children’s wealth:
-
-* 3.8% increase for women
-* 2.9% increase for men
+A 10% increase in parents' wealth is associated with around a 3% increase in their children's wealth at a similar stage of life.
 
 Although data is limited, it seems plausible that relative wealth mobility is worsening along with relative housing mobility.
 
