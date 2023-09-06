@@ -5,7 +5,7 @@ IN23
 Highest qualification
 
 ## Summary
-Data on the highest qualifications of 25 to 29 year olds, by socio-economic background.
+Data on the highest qualification achieved of 25 to 29 year olds by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -108,9 +108,9 @@ By area
 }
 
 # Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
 percentage point difference to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 

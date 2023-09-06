@@ -44,6 +44,11 @@ youth unemployment, and lower working-class work among parents.
     "dataTableDecimalPlaces": [null, 2, 0]
 }
 
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+Areas with the highest scores have the highest levels of childhood poverty and disadvantage.
+
 ## Section
 Summary main findings
 

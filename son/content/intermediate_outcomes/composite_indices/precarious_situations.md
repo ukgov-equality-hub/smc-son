@@ -44,6 +44,11 @@ of unemployment, economic inactivity and lower working-class employment.
     "dataTableDecimalPlaces": [null, 2, 0]
 }
 
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+Areas with the highest scores have the most precarious situations for young people.
+
 ## Section
 Summary main findings
 
@@ -53,6 +58,7 @@ circumstances than young people in rural areas. This contrast shows the importan
 
 London also has a high percentage of young people with
 [promising prospects](/intermediate_outcomes/composite_indices/promising_prospects).
+This contrast shows the importance of looking within areas, as well as between areas.
 
 Some areas – for example, Eastern Scotland – do worse for young people's prospects in obtaining higher qualifications,
 higher earnings and a professional job and for difficult economic circumstances.
