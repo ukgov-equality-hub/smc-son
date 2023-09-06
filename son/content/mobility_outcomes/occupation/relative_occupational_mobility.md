@@ -50,7 +50,7 @@ By year
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 3]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -94,7 +94,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 3]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
@@ -145,7 +145,7 @@ By sex and ethnicity
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ethnicity-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 3, 3]
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## Section

@@ -98,7 +98,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 4]
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 # Guidance

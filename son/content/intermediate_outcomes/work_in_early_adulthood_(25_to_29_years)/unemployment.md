@@ -97,7 +97,7 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
