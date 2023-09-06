@@ -61,7 +61,7 @@ By area
 {
     "code": "MO12",
     "title": "Percentage point difference in relative mobility between UK regions and Inner West London (UK, 2018 to 2022 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared with Inner West London",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/MO12_area-20230623.csv",
     "geoFormat": "",
@@ -99,8 +99,8 @@ By area
 
 # Guidance
 
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentage point difference.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 

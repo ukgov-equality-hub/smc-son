@@ -240,19 +240,11 @@
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 let performance = ''
-                if (reversePolarity === true) {
-                    if (a.quantile == 1) performance = '1 (top)'
-                    if (a.quantile == 2) performance = '2 (second top)'
-                    if (a.quantile == 3) performance = '3 (middle)'
-                    if (a.quantile == 4) performance = '4 (second bottom)'
-                    if (a.quantile == 5) performance = '5 (bottom)'
-                } else {
-                    if (a.quantile == 1) performance = '1 (bottom)'
-                    if (a.quantile == 2) performance = '2 (second bottom)'
-                    if (a.quantile == 3) performance = '3 (middle)'
-                    if (a.quantile == 4) performance = '4 (second top)'
-                    if (a.quantile == 5) performance = '5 (top)'
-                }
+                if (a.quantile == 1) performance = '1 (lowest)'
+                if (a.quantile == 2) performance = '2 (second lowest)'
+                if (a.quantile == 3) performance = '3 (middle)'
+                if (a.quantile == 4) performance = '4 (second highest)'
+                if (a.quantile == 5) performance = '5 (highest)'
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name

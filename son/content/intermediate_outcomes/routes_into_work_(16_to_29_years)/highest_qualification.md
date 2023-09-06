@@ -72,7 +72,7 @@ By area
 {
     "code": "IN23",
     "title": "Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared to the national average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN23_area-20230327.csv",
     "geoFormat": "",

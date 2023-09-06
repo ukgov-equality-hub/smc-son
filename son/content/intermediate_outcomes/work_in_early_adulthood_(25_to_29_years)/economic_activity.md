@@ -66,7 +66,7 @@ By area
 {
     "code": "IN31",
     "title": "Percentage point difference in the likelihood of being economically active at 25 to 29 years old, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared to the national average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN31_area-20230327.csv",
     "geoFormat": "",

@@ -66,7 +66,8 @@ By area
         "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv"
     }, {
         "label": "Lower working",
-        "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv"
+        "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv",
+        "reversePolarity": true
     }],
     "toggle": "radio",
     "geoFormat": "",
