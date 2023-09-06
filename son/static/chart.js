@@ -1178,7 +1178,7 @@ class Chart {
         }
 
         function formatNumber(x, dp=2) {
-            if (!x) return ''
+            if (!x && x != 0) return ''
             if (isNumeric(x)) {
                 if (parseInt(x, 10) != parseFloat(x, 10)) {
                     return parseFloat(x, 10).toFixed(dp).toString()
@@ -1230,7 +1230,7 @@ class Chart {
             } else {
                 text = formatNumber(key, dp != null ? dp : 1)
             }
-            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
+            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text.toString()
         }
 
         function maxLabelLength(data, key, style) {
