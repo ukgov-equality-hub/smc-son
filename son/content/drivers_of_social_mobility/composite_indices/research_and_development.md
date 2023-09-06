@@ -43,6 +43,11 @@ numbers of university research students, and business spending on research.
     "dataTableDecimalPlaces": [null, 2, 0]
 }
 
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+Areas with the highest scores have the best environments for research and development.
+
 ## Section
 Summary main findings
 

@@ -66,7 +66,7 @@ By area
 {
     "code": "IN31",
     "title": "Percentage point difference in the likelihood of being economically active at 25 to 29 years old, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared to the national average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN31_area-20230327.csv",
     "geoFormat": "",
@@ -98,12 +98,13 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 4]
+    "dataTableDecimalPlaces": [null, 2]
 }
 
 # Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
+percentage point difference to the national average.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 

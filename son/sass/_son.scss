@@ -928,6 +928,24 @@ div.quintile {
     }
 }
 
+.reversePolarity .quintile {
+    div.q1 {
+        background: #0571b0;
+    }
+    div.q2 {
+        background: #92c5de;
+    }
+    div.q3 {
+        background: #ffffbf;
+    }
+    div.q4 {
+        background: #f4a582;
+    }
+    div.q5 {
+        background: #ca0020;
+    }
+}
+
 div.continuous {
     margin: 0 0 10px 0;
     height: 20px;

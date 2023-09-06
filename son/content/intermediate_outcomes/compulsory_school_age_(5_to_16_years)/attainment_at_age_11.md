@@ -142,6 +142,20 @@ By area
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
 
+# Guidance
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+
+The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
+
+See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+understand overall regional patterns.
+
 ## Section
 By sex
 
@@ -205,20 +219,6 @@ By ethnicity
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"]
 }
-
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
-
-The regional estimates have a large margin of error – do not rank or compare specific regions.
-
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
-
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
 
 ## Section
 About the data

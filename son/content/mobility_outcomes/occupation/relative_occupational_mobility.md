@@ -50,7 +50,7 @@ By year
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 3]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 ## Section
@@ -61,7 +61,7 @@ By area
 {
     "code": "MO12",
     "title": "Percentage point difference in relative mobility between UK regions and Inner West London (UK, 2018 to 2022 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared with Inner West London",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/MO12_area-20230623.csv",
     "geoFormat": "",
@@ -94,13 +94,13 @@ By area
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 3]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
 
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentage point difference.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentage point difference.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
@@ -145,7 +145,7 @@ By sex and ethnicity
     "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ethnicity-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 3, 3]
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## Section

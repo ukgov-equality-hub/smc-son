@@ -66,7 +66,8 @@ By area
         "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv"
     }, {
         "label": "Lower working",
-        "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv"
+        "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv",
+        "reversePolarity": true
     }],
     "toggle": "radio",
     "geoFormat": "",
@@ -101,8 +102,8 @@ By area
 }
 
 # Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 

@@ -5,7 +5,7 @@ IN23
 Highest qualification
 
 ## Summary
-Data on the highest qualifications of 25 to 29 year olds, by socio-economic background.
+Data on the highest qualification achieved of 25 to 29 year olds by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -72,7 +72,7 @@ By area
 {
     "code": "IN23",
     "title": "Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "",
+    "tooltipTitle": "Percentage point difference compared to the national average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN23_area-20230327.csv",
     "geoFormat": "",
@@ -104,13 +104,13 @@ By area
     "dataTable": "/static/pre-processed-csvs/IN23-highest-qualification--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 4]
+    "dataTableDecimalPlaces": [null, 1]
 }
 
 # Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the highest to lowest
+[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
 percentage point difference to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (top) to 5 (bottom).
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 

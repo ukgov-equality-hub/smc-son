@@ -34,8 +34,8 @@
                 <div class="q5"></div>
             </div>
             <div class="grid grid2 scale-legend">
-                <div>{% if [data, 'reversePolarity'] | attribute == True %}Q5{% else %}Q1{% endif %} - Bottom 20%</div>
-                <div>{% if [data, 'reversePolarity'] | attribute == True %}Q1{% else %}Q5{% endif %} - Top 20%</div>
+                <div>Q1 - Lowest 20%</div>
+                <div>Q5 - Highest 20%</div>
             </div>
         </div>
         <div id="scaleContinuous{{ id }}" class="scale-continuous">
@@ -76,6 +76,14 @@
             options['reversePolarity'] = overrideOptions.reversePolarity
         } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
             options['reversePolarity'] = options.data.reversePolarity
+        }
+
+        const reversePolarity = typeof options.reversePolarity !== 'undefined' && options.reversePolarity;
+        if (reversePolarity) {
+            document.getElementById('scaleQunitile{{ id }}').classList.add('reversePolarity');
+        }
+        else {
+            document.getElementById('scaleQunitile{{ id }}').classList.remove('reversePolarity');
         }
 
         map{{ id }} = new Choropleth(

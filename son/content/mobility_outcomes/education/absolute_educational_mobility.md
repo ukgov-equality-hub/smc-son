@@ -77,7 +77,6 @@ By area
     "xkey": "Area_name",
     "ykey": "Value",
     "zkey": "Area_type",
-    "sort": "-Value",
     "scale": "%",
     "lowerConfidence": "LCI",
     "upperConfidence": "UCI",
