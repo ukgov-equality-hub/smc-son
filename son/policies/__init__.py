@@ -43,19 +43,6 @@ def cookies():
     )
 
 
-@policies.route('/background', methods=['GET'])
-def background():
-    return render_template(
-        'policies/background.html',
-        menu=menu,
-        domain=None,
-        subdomain=None,
-        indicator=None,
-        title='Background',
-        form=None
-    )
-
-
 @policies.route('/about-our-analysis', methods=['GET'])
 def about_our_analysis():
     return render_template(
