@@ -56,7 +56,7 @@ By area
 {
     "code": "DR33",
     "title": "Percentage of 22 to 29 year olds in the higher professional and lower working occupations, by area (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage of 22 to 29 year olds in higher professional occupations",
+    "tooltipTitle": "Percentage of 22 to 29 year olds in occupations:",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
         "label": "Lower working",
