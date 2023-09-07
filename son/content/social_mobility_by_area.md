@@ -64,15 +64,15 @@ This section shows how different areas in the UK are ranked for 5 different meas
 ## Composite measures by region
 The 5 composite measures of social mobility broken down by region are:
 
-* precarious situations – young people in difficult economic circumstances
-* promising prospects – young people in good economic circumstances
-* socio-cultural advantage – factors that can help people’s chances of social mobility
-* childhood poverty and disadvantage – factors that can reduce people’s chances of social mobility
-* research and development – economic opportunity, innovation and business location, and their effect on social mobility
+* [Precarious situations](/intermediate_outcomes/composite_indices/precarious_situations) – young people in difficult economic circumstances
+* [Promising prospects](/intermediate_outcomes/composite_indices/promising_prospects) – young people in good economic circumstances
+* [Socio-cultural advantage](/drivers_of_social_mobility/composite_indices/socio-cultural_advantage) – factors that can help people’s chances of social mobility
+* [Childhood poverty and disadvantage](/drivers_of_social_mobility/composite_indices/childhood_poverty_and_disadvantage) – factors that can reduce people’s chances of social mobility
+* [Research and development](/drivers_of_social_mobility/composite_indices/research_and_development) – economic opportunity, innovation and business location, and their effect on social mobility
 
 Each of these measures combines data from 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns.
 
-For each composite measure, 41 regions in the UK are ordered from best to worst, and then divided into 5 equally-sized groups (‘quintiles’).
+For each composite measure, [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite score. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 **We should emphasise that these are purely descriptive statistics and that we are not yet in a position to claim any causal effects of regions on outcomes. And because these statistics are based on sample surveys, they are affected by sampling error.**
 
@@ -166,4 +166,4 @@ Wales:
 
 [Northern Ireland](/social_mobility_by_area/northern_ireland)
 
-Please see our technical annex and main report for more information.
+Please see our <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex" target="_blank" class="govuk-link">technical annex</a> and <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/" target="_blank" class="govuk-link">main report</a> for more information.
