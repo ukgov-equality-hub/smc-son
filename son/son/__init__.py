@@ -285,6 +285,10 @@ def area_page(area):
 
 @son.route('/<domain>', methods=['GET'])
 def domain_page(domain):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
+    if not Path(file_path).is_file():
+        abort(404)
+
     return render_template(
         'domain/domain.html',
         menu=menu,
@@ -297,22 +301,12 @@ def domain_page(domain):
     )
 
 
-@son.route('/<domain>/<subdomain>', methods=['GET'])
-def subdomain_page(domain, subdomain):
-    return render_template(
-        'subdomain/subdomain.html',
-        menu=menu,
-        domain=domain,
-        subdomain=subdomain,
-        indicator=None,
-        title=get_item_title(subdomain),
-        content=get_content(domain, subdomain, use_markdown=False),
-        form=None
-    )
-
-
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page(domain, subdomain, indicator):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}.md"
+    if not Path(file_path).is_file():
+        abort(404)
+
     content = get_content(domain, subdomain, indicator)
     data_src = ''
 
