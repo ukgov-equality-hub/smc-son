@@ -83,10 +83,10 @@ picture of geographical mobility patterns:
   – data on parents with a university degree
 * [Distribution of parental occupation](/drivers_of_social_mobility/conditions_of_childhood/distribution_of_parental_occupation)
   – data on parents in higher professional occupations
-* [Occupational level of 25 to 29 year olds](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level)
+* [Occupational level of 25 to 29 year olds](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level_of_young_people_aged_25_to_29_years)
   – data on young people in higher professional occupations
 
 Indicators are rescaled to make sure they use a common metric.
 The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
-See the [technical annex] for more information on how each area was scored.
+See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology" target="_blank" class="govuk-link">technical annex</a> for more information on how each area was scored.
