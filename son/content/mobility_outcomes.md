@@ -60,10 +60,10 @@ Elsewhere in State of the Nation 2023
 <a href="/intermediate_outcomes" class="govuk-link">Intermediate outcomes</a> focus on the experiences of young people as they move through education and into the labour market.
 
 ## Text
-<a href="/drivers_of_mobility" class="govuk-link">Drivers of social mobility</a> are the background conditions that make social mobility easier.
+<a href="/drivers_of_social_mobility" class="govuk-link">Drivers of social mobility</a> are the background conditions that make social mobility easier.
 
 ## Subtitle
 Read the full report
 
 ## Text
-<a href="#" class="govuk-link">State of the Nation 2023</a> on GOV.UK.
+<a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places" class="govuk-link">State of the Nation 2023</a> on GOV.UK.
