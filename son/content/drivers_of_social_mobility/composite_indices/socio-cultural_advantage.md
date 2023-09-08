@@ -83,7 +83,7 @@ picture of geographical mobility patterns:
   – data on parents with a university degree
 * [Distribution of parental occupation](/drivers_of_social_mobility/conditions_of_childhood/distribution_of_parental_occupation)
   – data on parents in higher professional occupations
-* [Occupational level of 25 to 29 year olds](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level_of_young_people_aged_25_to_29_years)
+* [Type of employment opportunities for young people](/drivers_of_social_mobility/work_opportunities_for_young_people/type_of_employment_opportunities_for_young_people)
   – data on young people in higher professional occupations
 
 Indicators are rescaled to make sure they use a common metric.
