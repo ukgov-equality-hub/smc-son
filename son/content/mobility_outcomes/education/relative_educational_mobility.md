@@ -225,7 +225,8 @@ The narrower the confidence interval or range, the more precise the estimate. Re
 ### Type of data
 Survey data, weighted using the UKHLS population weights
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

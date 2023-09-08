@@ -63,6 +63,7 @@ By decade of birth (upward and downward mobility)
     "multiply": 100,
     "xgrid": false,
     "ygrid": true,
+    "__EXPERIMENTAL__xticksSmallScreen": -2,
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#808080", "#5694ca", "#d4351c"],
@@ -158,7 +159,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
-    "xtitle": "",
+    "xtitle": "Absolute occupational mobility (%)",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -209,6 +210,7 @@ By occupational class and sex
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
+    "__EXPERIMENTAL__xticksSmallScreen": "abreviate",
     "yticks": 5,
     "xtitle": "Socio-economic background",
     "legend": true,
@@ -246,6 +248,7 @@ By ethnicity
     "xgrid": false,
     "ygrid": true,
     "yticks": 5,
+    "__EXPERIMENTAL__xticksSmallScreen": "abreviate",
     "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
@@ -362,7 +365,8 @@ The narrower the confidence interval or range, the more precise the estimate. Re
 ### Type of data
 Survey data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

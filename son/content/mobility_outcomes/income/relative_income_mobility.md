@@ -65,10 +65,17 @@ There are differences between the data and methodology of the different studies,
 The 1991 and 2004 studies are closest in methodology and safest to compare.
 The estimates are likely to be underestimates of the likely strength of the link between parents’ and children’s income.
 
+The "95% confidence interval" column shows 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
+
 ### Type of data
 Survey data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

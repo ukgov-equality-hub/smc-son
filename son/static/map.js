@@ -171,6 +171,7 @@ class Choropleth {
         this.tooltipBehaviour = ['rollover', 'click'].includes(options.tooltipBehaviour) ? options.tooltipBehaviour : ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'zoom'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
+        this.isInteractive = this.rolloverBehaviour != '' || this.clickBehaviour != ''
         this.onRollover = options.onRollover || undefined
         this.onClick = options.onClick || undefined
         this.zoomToArea = options.zoomTo || undefined

@@ -168,7 +168,7 @@ class Chart {
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
-        const zero = options.zero == false ? false : true
+        const zero = options.zero === false ? false : true
         const multiply = options.multiply || null
         const xtitle = options.xtitle || null
         const ytitle = options.ytitle || null
@@ -180,14 +180,22 @@ class Chart {
         const labelKey = options.labelKey || null
         const maximumLabelLength = options.maxLabelLength || -1
         const rotateDomainLabels = options.rotateDomainLabels || false
-        const showDots = options.showDots == false ? false : true
-        const grid = options.grid == false ? false : true
-        let xgrid = options.xgrid == false ? false : grid
-        let ygrid = options.ygrid == false ? false : grid
-        let xticks = options.xticks == false ? false : options.xticks
-        let yticks = options.yticks == false ? false : options.yticks
+        const showDots = options.showDots === false ? false : true
+        const grid = options.grid === false ? false : true
+        let xgrid = options.xgrid === false ? false : grid
+        let ygrid = options.ygrid === false ? false : grid
+        const xscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.xscale) ? options.xscale : null
+        const yscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.yscale) ? options.yscale : null
+        let xticks = options.xticks === false ? false : options.xticks
+        if (typeof options.xticksSmallScreen !== 'undefined' && this.width < 400) {
+            xticks = options.xticksSmallScreen === false ? false : options.xticksSmallScreen
+        }
+        let yticks = options.yticks === false ? false : options.yticks
+        if (typeof options.yticksSmallScreen !== 'undefined' && this.height < 400) {
+            yticks = options.yticksSmallScreen === false ? false : options.yticksSmallScreen
+        }
         const xticksLength = options.xticksLength || null
-        const filterNaN = options.filterNaN == false ? false : true
+        const filterNaN = options.filterNaN === false ? false : true
         const legend = options.legend || false
         const reverseLegend = options.reverseLegend || false
         this.legendCheckboxes = options.legendCheckboxes || false
@@ -228,6 +236,7 @@ class Chart {
             }
 
             const orientation = ['bary', 'doty', 'liney'].includes(chartType) ? 'y' : 'x'
+            self.isSmallScreen = ((orientation == 'y' && self.width < 400) || (orientation != 'y' && self.height < 400))
             if (multiply && isNumeric(multiply)) {
                 for (let i = 0; i < data.length; i++) {
                     data[i] = data[i].map(x => {
@@ -329,7 +338,7 @@ class Chart {
                 const currentType = data[i].type || chartType
                 const currentGroup = group//[ 'barx', 'bary'].includes(chartType) ? group : null
                 if (filteredData) {
-                    originalData = data[i].data || data[i]
+                    originalData = self.originalData || data[i].data || data[i]
                     chartData = filteredData
                 } else {
                     chartData = (data[i].data || data[i]).map(x => ({
@@ -393,8 +402,10 @@ class Chart {
                         uci: isNumeric(x[uci]) ? parseFloat(x[uci], 10) : x[uci],
                         _ci: '|'
                     }))
-                    const mlci = d3.min((data[i].data || data[i]), x => parseFloat(x[lci], 10))
-                    const muci = d3.max((data[i].data || data[i]), x => parseFloat(x[uci], 10))
+                    let mlci = d3.min((data[i].data || data[i]), x => parseFloat(x[lci], 10))
+                    if (mlci > min) mlci = min
+                    let muci = d3.max((data[i].data || data[i]), x => parseFloat(x[uci], 10))
+                    if (muci < max) mlci = max
                     if (orientation != 'y') domain = [zero && mlci > 0 ? 0 : mlci, muci]
                     if (orientation == 'y' && !options.range) range = [zero && mlci > 0 ? 0 : mlci, muci]
                 } else {
@@ -537,17 +548,19 @@ class Chart {
                     labelAnchor: 'center',
                     labelOffset: 50,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
-                    ticks: xticks ? xticks : undefined,
+                    ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: (x, i, t) => {
                         if (Array.isArray(xticks)) {
                             if (t.includes(x)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                             return null
-                        } else if (xticks == -2) {
+                        } else if ([-1, 'none', 'hide'].includes(xticks)) {
+                            return null
+                        } else if ([-2, 'first-last'].includes(xticks)) {
                             if (i == 0 || i == (t.length - 1)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                             return null
-                        } else if (xticks == -1) {
-                            return null
+                        } else if ([-3, 'abreviate'].includes(xticks)) {
+                            return abreviate(orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString())
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
@@ -557,11 +570,13 @@ class Chart {
                 marks.push(Plot.axisFx({
                     anchor: 'bottom',
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
-                    ticks: xticks ? xticks : undefined,
+                    ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: (x, i, t) => {
-                        if (xticks == -1) {
+                        if ([-1, 'none', 'hide'].includes(xticks)) {
                             return null
+                        } else if ([-3, 'abreviate'].includes(xticks)) {
+                            return abreviate(orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString())
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
@@ -573,16 +588,18 @@ class Chart {
                     label: ytitle,
                     labelAnchor: 'center',
                     labelOffset: 50,
-                    ticks: yticks ? yticks : undefined,
+                    ticks: yticks ? ticksId(yticks) : undefined,
                     tickFormat: (x, i, t) => {
                         if (Array.isArray(yticks)) {
                             if (t.includes(x)) return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
                             return null
-                        } else if (yticks == -2) {
+                        } else if ([-1, 'none', 'hide'].includes(yticks)) {
+                            return null
+                        } else if ([-2, 'first-last'].includes(yticks)) {
                             if (i == 0 || i == (t.length - 1)) return orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
                             return null
-                        } else if (yticks == -1) {
-                            return null
+                        } else if ([-3, 'abreviate'].includes(yticks) && !group) {
+                            return abreviate(orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString())
                         } else {
                             return orientation == 'y' ? getLabelText(x, 'yaxis') : x.toString()
                         }
@@ -612,6 +629,8 @@ class Chart {
                 } else if (['bar', 'barx', 'bary'].includes(chartType)) {
                 }
             }
+            if (orientation != 'y' && xscale) xOptions.type = xscale
+            if (orientation == 'y' && yscale) yOptions.type = yscale
             if (self.debug) console.log('group', group, range, domain, categories)
 
             const plotOptions = {
@@ -693,7 +712,9 @@ class Chart {
                 legendDiv = document.createElement('div')
                 legendDiv.setAttribute('id', `${self.el}_legend`)
                 legendDiv.classList.add('chart-legend')
-                Object.assign(legendDiv.style, { marginTop: `${swatchSize * 1.75}px`, ...style })
+                const legendStyle = { marginTop: `${group && [-3, 'abreviate'].includes(xticks) ? '15' : swatchSize * 1.75}px` }
+                if (self.isSmallScreen) legendStyle.marginLeft = 0
+                Object.assign(legendDiv.style, { ...legendStyle, ...style })
                 const legendDomain = reverseLegend ? [...legends.reverse()] : legends
                 const legendRange = reverseLegend ? [...colourScheme.slice(0, legends.length).reverse()] : colourScheme
                 let css = ''
@@ -717,7 +738,11 @@ class Chart {
                         legendDiv.appendChild(l)
                     } else {
                         const l = document.createElement(`${self.isInteractive ? 'button' : 'span'}`)
-                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${legendDomain[i]}`
+                        if (self.isSmallScreen) {
+                            l.style.marginLeft = 0
+                            l.style.paddingLeft = 0
+                        }
+                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${ticksId(orientation == 'y' ? xticks : yticks) == -3 && !group ? '(' + abreviate(legendDomain[i]) + ') ' : ''}${legendDomain[i]}`
                         l.setAttribute('data-series', legendDomain[i])
                         l.addEventListener('click', clicked)
                         //l.addEventListener('pointerenter pointermove', highlight)
@@ -745,6 +770,11 @@ class Chart {
                         cb.onclick = function () {
                             document.getElementById(self.el).getElementsByTagName('svg')[0].classList.toggle('highlight-ci')
                         }
+                        if (self.isSmallScreen) {
+                            l.style.marginLeft = 0
+                            l.style.paddingLeft = 0
+                            cb.style.marginLeft = 0
+                        }
                         l.appendChild(cb)
                         const cbLabel = document.createElement('label')
                         cbLabel.setAttribute('for', `${self.el}_cicb`)
@@ -752,6 +782,19 @@ class Chart {
                         l.appendChild(cbLabel)
                         legendDiv.appendChild(l)
                     }
+                }
+
+                if (group && [-3, 'abreviate'].includes(xticks)) {
+                    const explainDiv = document.createElement('div')
+                    const explanations = [...new Set(categories)]
+                    explainDiv.classList.add('chart-explanation')
+                    Object.assign(explainDiv.style, { marginTop: `${swatchSize * 1.75}px`, ...style })
+                    for (const [i, item] of explanations.entries()) {
+                        const e = document.createElement('span')
+                        e.innerHTML = `${abreviate(item)}: <em>${item}${i < explanations.length - 1 ? ',' : ''}</em>`
+                        explainDiv.appendChild(e)
+                    }
+                    div.appendChild(explainDiv)
                 }
 
                 div.appendChild(legendDiv)
@@ -960,6 +1003,17 @@ class Chart {
                     total += (labelLength(label, style) + swatchSize + padding)
                 }
                 return (Math.ceil(total / width) * swatchSize) + (swatchSize * 1.75)
+            }
+
+            function ticksId(id) {
+                if ([-1, 'none', 'hide'].includes(id)) {
+                    return -1
+                } else if ([-2, 'first-last'].includes(id)) {
+                    return -2
+                } else if ([-3, 'abreviate'].includes(id)) {
+                    return -3
+                }
+                return id
             }
 
             function tooltips(chart, styles) {
@@ -1205,6 +1259,20 @@ class Chart {
                 return aprox + num
             }
 
+            function fraction(key){
+                const test = (String(key).split('.')[1] || []).length
+                const num = key * (10**Number(test))
+                const den = 10**Number(test)
+                function reduce(numerator, denominator) {
+                    let gcd = function gcd(a, b) {
+                        return b ? gcd(b, a % b) : a
+                    }
+                    gcd = gcd(numerator, denominator)
+                    return [numerator / gcd, denominator / gcd]
+                }
+                return `${reduce(num,den)[0]}/${reduce(num,den)[1]}`
+            }
+
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
@@ -1226,11 +1294,25 @@ class Chart {
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
-                text = `${formatNumber(key, dp != null ? dp : 1)}x`
+                if ((xscale == 'log' || yscale == 'log') && key < 1) {
+                    text = '' //`${fraction(key)}x`
+                    for (let i = 1; i < 10; i++) {
+                        if (key.toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                    }
+                } else {
+                    text = `${formatNumber(key, dp != null ? dp : 1)}x`
+                }
             } else {
                 text = formatNumber(key, dp != null ? dp : 1)
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text.toString()
+        }
+
+        function abreviate(text) {
+            if (!text && text != 0) return ''
+            if (text.toLowerCase() == 'total') return 'TTL'
+            if (text.toLowerCase() == 'average') return 'AVG'
+            return text.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('')
         }
 
         function maxLabelLength(data, key, style) {

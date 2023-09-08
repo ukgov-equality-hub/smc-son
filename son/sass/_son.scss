@@ -339,6 +339,28 @@ div.govuk-tabs {
             }
         }
     }
+
+    @media(max-width: 40.0625em) {
+        div[id^="chart"] {
+            svg {
+                text[data-series] {
+                    visibility: hidden;
+                }
+            }
+
+            div.chart-legend {
+                text-align: left;
+
+                > * {
+                    display: flex;
+                }
+            }
+        }
+
+        div[id^="data_table"] > div {
+            overflow-x: auto;
+        }
+    }
 }
 
 div.data-table-data {

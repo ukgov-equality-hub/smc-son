@@ -81,7 +81,8 @@ Confidence intervals are used for each year covered by the data.
 ### Type of data
 Survey data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data
