@@ -132,7 +132,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
-    "xtitle": "",
+    "xtitle": "Attainment at age 11 (%)",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -258,7 +258,8 @@ Figures for the 2021 to 2022 school year are based on revised data. Figures for 
 ### Type of data
 Administrative data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

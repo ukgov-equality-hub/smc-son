@@ -99,7 +99,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
-    "xtitle": "",
+    "xtitle": "Level of attainment at age 5 (%)",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -231,7 +231,8 @@ Children are eligible for FSM if their parents receive certain benefits.
 ### Type of data
 Administrative data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

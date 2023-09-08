@@ -78,7 +78,8 @@ Data for 2020 and 2021 may be impacted by the COVID-19 pandemic.
 ### Type of data
 Administrative data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

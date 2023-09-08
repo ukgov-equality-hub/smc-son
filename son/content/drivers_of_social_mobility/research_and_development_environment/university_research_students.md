@@ -88,7 +88,7 @@ By area
     "xgrid": true,
     "ygrid": true,
     "xticks": 2,
-    "xtitle": "",
+    "xtitle": "University research students (# of students)",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -134,7 +134,8 @@ In this case, the median area is the area ranked 21st out of the 41 regions in t
 ### Type of data
 Administrative data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

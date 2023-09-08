@@ -5,7 +5,7 @@ IN13
 Attainment at age 16
 
 ## Summary
-Data on the percentage of pupils getting a grade 5 or above in GCSE English and Maths, by socio-economic background.
+Data on the percentage of pupils getting a pass (grade 5 or above) in GCSE English and Maths, by socio-economic background.
 
 ## Subtitle
 Summary main findings
@@ -13,15 +13,15 @@ Summary main findings
 ## Text
 In the 2021 to 2022 school year:
 
-* 50% of all pupils got a grade 5 or above in both GCSE English and maths
-* 30% of disadvantaged pupils and 57% of all other pupils got a grade 5 or above
+* 50% of all pupils got a pass (grade 5 or above) in both GCSE English and maths
+* 30% of disadvantaged pupils and 57% of all other pupils got a pass (grade 5 or above)
 * the ‘disadvantage gap index’ – which measures the attainment gap between disadvantaged pupils and all other
   pupils – was at its widest since the 2011 to 2012 school year
-* girls were more likely than boys to get a grade 5 or above, regardless of their disadvantage status – for
-  non-disadvantaged pupils, 60% of girls and 54% of boys got a grade 5 or above, and for disadvantaged pupils,
-  32% of girls and 27% for boys got a grade 5 or above
+* girls were more likely than boys to get a pass (grade 5 or above), regardless of their disadvantage status – for
+  non-disadvantaged pupils, 60% of girls and 54% of boys got a pass (grade 5 or above), and for disadvantaged pupils,
+  32% of girls and 27% for boys got a pass (grade 5 or above)
 * there were large variations between pupils eligible for free school meals (FSM) in different ethnic groups
-  – for example, 70% of FSM-eligible pupils from the Chinese ethnic group got a grade 5 or above, compared with
+  – for example, 70% of FSM-eligible pupils from the Chinese ethnic group got a pass (grade 5 or above), compared with
   6% of Gypsy or Roma pupils
 * disadvantaged pupils in London, the West Midlands, and Surrey and Sussex were the most likely to get a grade 5 or
   above – pupils in rural areas of England, such as Cornwall and Cumbria, were less likely to
@@ -32,7 +32,7 @@ By disadvantage status over time
 ## Chart: Grouped-bar
 {
     "code": "IN13",
-    "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
+    "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN13_overview-20230601.csv",
     "height": 450,
@@ -95,8 +95,8 @@ By area
 # Src
 {
     "code": "IN13",
-    "title": "Percentage of students achieving a grade 5 or above in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
-    "tooltipTitle": "Percentage of 16 year olds getting a grade 5 or above in GCSE English and maths",
+    "title": "Percentage of students achieving a pass (grade 5 or above) in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+    "tooltipTitle": "Percentage of 16 year olds getting a pass (grade 5 or above) in GCSE English and maths",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
         "label": "FSM eligible",
@@ -129,7 +129,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
-    "xtitle": "",
+    "xtitle": "Attainment at age 16 (%)",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
@@ -159,7 +159,7 @@ By sex
 ## Chart: Grouped-bar
 {
     "code": "IN13",
-    "title": "Percentage of pupils getting a grade 5 or above in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
+    "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN13_gender-20230601.csv",
     "height": 450,
@@ -192,7 +192,7 @@ By ethnicity
 ## Chart: Grouped-bar
 {
     "code": "IN13",
-    "title": "Percentage of FSM-eligible pupils getting a grade 5 or above in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
+    "title": "Percentage of FSM-eligible pupils getting a pass (grade 5 or above) in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
     "tooltipTitle": "",
     "data": "/static/data/indicators/IN13_ethnicity_fsm-20230601.csv",
     "height": 600,
@@ -232,7 +232,7 @@ September 2010 to July 2022
 England
 
 ### What the data measures
-The data shows the percentage of children who got a grade 5 or above in both English and maths GCSEs by the end of
+The data shows the percentage of children who got a pass (grade 5 or above) in both English and maths GCSEs by the end of
 key stage 4, when pupils are usually 16 years old.
 
 Disadvantaged pupils are those who:
@@ -258,7 +258,8 @@ Children are eligible for FSM if their parents receive certain benefits.
 ### Type of data
 Administrative data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data

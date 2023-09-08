@@ -66,15 +66,15 @@ By area
     "title": "Percentage point difference in the likelihood of being unemployed at 25 to 29 years old, compared to the national average (UK, 2014 to 2021 combined)",
     "tooltipTitle": "Percentage point difference compared to the national average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/IN32_area-20230327.csv",
+    "data": "/static/data/indicators/IN32_area_ratio-20230327.csv",
     "geoFormat": "",
     "nameField": "Area_name",
-    "valueField": "Value",
+    "valueField": "Multiplier_value",
     "areaField": "ITL221NM",
-    "scale": "%",
-    "multiply": 100,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
+    "scale": "Ratio",
+    "_multiply": 100,
+    "lowerConfidence": "Multiplier_LCI",
+    "upperConfidence": "Multiplier_UCI",
     "confidenceIntervals": "visible",
     "height": 700,
     "dataFormat": "quintile",
@@ -85,14 +85,18 @@ By area
     "rolloverBehaviour": "outline",
     "onClick": "mapSelect1",
     "type": "dot",
-    "xkey": "Value",
+    "xkey": "Multiplier_value",
     "ykey": "Area_name",
-    "sort": "-Value",
+    "sort": "-Multiplier_value",
     "xgrid": true,
     "ygrid": true,
+    "xscale": "log",
+    "xticks": 3,
     "xtitle": "% point difference compared to the national average",
+    "rotateDomainLabels": false,
     "legend": false,
     "margin": [0, 0, 0, 0],
+    "range": [-2, 10],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -267,7 +271,8 @@ The narrower the confidence interval or range, the more precise the estimate. Re
 ### Type of data
 Survey data
 
-Read more in State of the Nation 2023 on GOV.UK.
+### Full report
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ## Section
 Download the data
