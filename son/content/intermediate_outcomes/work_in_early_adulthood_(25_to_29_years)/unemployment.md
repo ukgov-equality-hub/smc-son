@@ -63,8 +63,8 @@ By area
 # Src
 {
     "code": "IN32",
-    "title": "Percentage point difference in the likelihood of being unemployed at 25 to 29 years old, compared to the national average (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "Percentage point difference compared to the national average",
+    "title": "Likelihood of being unemployed at 25 to 29 years old, by region compared to the national average (UK, 2014 to 2021 combined)",
+    "tooltipTitle": "Likelihood of unemployment compared with UK average",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/IN32_area_ratio-20230327.csv",
     "geoFormat": "",
@@ -92,7 +92,7 @@ By area
     "ygrid": true,
     "xscale": "log",
     "xticks": 3,
-    "xtitle": "% point difference compared to the national average",
+    "xtitle": "Likelihood of unemployment compared with UK average",
     "rotateDomainLabels": false,
     "legend": false,
     "margin": [0, 0, 0, 0],
@@ -106,15 +106,15 @@ By area
 
 # Guidance
 [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
-percentage point difference compared to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+likelihood of being unemployed compared to the UK average. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+
+For example, the value for Eastern Scotland (1.89) means that 25 to 29 year olds in that area are nearly twice as likely to be unemployed compared with the UK average. The value for Devon (0.56) means they are just over half as likely to be unemployed.
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
 
 The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
 – the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+In many cases the confidence intervals overlap. This suggests differences between specific regions may not be statistically significant. 
 
 See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
 understand overall regional patterns.
