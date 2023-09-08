@@ -92,7 +92,7 @@ By area
     "ygrid": true,
     "xscale": "log",
     "xticks": 3,
-    "xtitle": "Likelihood of unemployment compared with UK average",
+    "xtitle": "Likelihood compared with UK average",
     "rotateDomainLabels": false,
     "legend": false,
     "margin": [0, 0, 0, 0],
