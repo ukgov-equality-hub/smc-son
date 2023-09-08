@@ -28,38 +28,7 @@ By year
     "code": "DR41",
     "title": "Percentage of people who took part in democratic processes in the last 12 months (England, 8 years to March 2021)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "North East",
-        "data": "/static/data/indicators/DR41_area_north_east-20230417.csv"
-    }, {
-        "label": "North West",
-        "data": "/static/data/indicators/DR41_area_north_west-20230417.csv"
-    }, {
-        "label": "Yorkshire and The Humber",
-        "data": "/static/data/indicators/DR41_area_yorkshire_and_the_humber-20230417.csv"
-    }, {
-        "label": "East Midlands",
-        "data": "/static/data/indicators/DR41_area_east_midlands-20230417.csv"
-    }, {
-        "label": "West Midlands",
-        "data": "/static/data/indicators/DR41_area_west_midlands-20230417.csv"
-    }, {
-        "label": "East of England",
-        "data": "/static/data/indicators/DR41_area_east_of_england-20230417.csv"
-    }, {
-        "label": "London",
-        "data": "/static/data/indicators/DR41_area_london-20230417.csv"
-    }, {
-        "label": "South East",
-        "data": "/static/data/indicators/DR41_area_south_east-20230417.csv"
-    }, {
-        "label": "South West",
-        "data": "/static/data/indicators/DR41_area_south_west-20230417.csv"
-    }, {
-        "label": "England",
-        "data": "/static/data/indicators/DR41_area_england-20230417.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/DR41_area_england-20230417.csv",
     "height": 450,
     "type": "liney",
     "xkey": "Time_period",
@@ -80,7 +49,7 @@ By year
     "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "dataTable": "/static/pre-processed-csvs/DR41-civic-engagement--by-ITL1-region-and-year--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/DR41-civic-engagement--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1]

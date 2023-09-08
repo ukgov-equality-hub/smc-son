@@ -56,7 +56,7 @@ By area
 {
     "code": "DR33",
     "title": "Percentage of 22 to 29 year olds in the higher professional and lower working occupations, by area (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage of 22 to 29 year olds in higher professional occupations",
+    "tooltipTitle": "Percentage of 22 to 29 year olds in occupations:",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": [{
         "label": "Lower working",
@@ -72,6 +72,9 @@ By area
     "valueField": "Value",
     "areaField": "ITL221NM",
     "scale": "%",
+    "lowerConfidence": "LCI",
+    "upperConfidence": "UCI",
+    "confidenceIntervals": "visible",
     "height": 700,
     "dataFormat": "quintile",
     "zero": false,
@@ -100,6 +103,11 @@ By area
 They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
 The regional estimates have a large margin of error – do not rank or compare specific regions.
+
+The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+– the range of values that the 'true' value for each region is highly likely to be within.
+In many cases the confidence intervals overlap.
+This suggests differences between specific regions may not be statistically significant. 
 
 See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
 understand overall regional patterns.

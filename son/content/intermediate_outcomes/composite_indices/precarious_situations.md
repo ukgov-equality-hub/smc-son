@@ -74,7 +74,7 @@ picture of geographical mobility patterns:
   – data on young people not in education or in employment
 * [Unemployment](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/unemployment)
   – data on young people not in employment
-* [Occupational level](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level)
+* [Occupational level](/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/occupational_level_of_young_people_aged_25_to_29_years)
   – data on young people in lower working class occupations
 
 The data is adjusted for socio-economic background, so it measures how precarious the situations are of young people
@@ -83,7 +83,7 @@ from similar social backgrounds.
 Indicators are rescaled to make sure they use a common metric.
 The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
-See the [technical annex] for more information on how each area was scored.
+See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology" target="_blank" class="govuk-link">technical annex</a> for more information on how each area was scored.
 
 ## Subtitle
 Data source

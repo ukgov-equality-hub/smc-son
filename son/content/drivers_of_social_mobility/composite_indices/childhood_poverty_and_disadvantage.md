@@ -83,4 +83,4 @@ reliable picture of geographical mobility patterns:
 Indicators are rescaled to make sure they use a common metric.
 The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
-See the [technical annex] for more information on how each area was scored. 
+See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology" target="_blank" class="govuk-link">technical annex</a> for more information on how each area was scored. 

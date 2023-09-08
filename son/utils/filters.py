@@ -291,3 +291,9 @@ def number_of_data_rows_filter(context, details):
         if len(data_table) > number_of_heading_rows:
             return len(data_table) - number_of_heading_rows
     return 0
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('toc_id')
+def toc_id(context, details):
+    return details.lower().replace(' ', '-')

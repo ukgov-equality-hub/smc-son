@@ -19,13 +19,13 @@
     {% if not ([content, 'Code'] | content) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
     <ol class="govuk-list govuk-list--number toc">
         <li>
-            <a href="#Summary main findings" class="govuk-link">Summary main findings</a>
+            <a href="#summary-main-findings" class="govuk-link">Summary main findings</a>
         </li>
 
         {% for item in content %}
         {% if item[0] == 'Section' %}
         <li>
-            <a href="#{{ item[1] | safe }}" class="govuk-link">{{ item[1] | safe }}</a>
+            <a href="#{{ item[1] | toc_id }}" class="govuk-link">{{ item[1] | safe }}</a>
         </li>
         {% endif %}
         {% if item[0] == 'About' or item[0] == 'About the data' %}
@@ -93,14 +93,14 @@
     </div>
     {% endif %}
 
-    <a name="Summary main findings"></a>
+    <a name="summary-main-findings"></a>
     {% for item in content %}
         {% if item[0] not in ['Title', 'Summary', 'Tab'] %}
 
         {% if item[0] == 'Section' %}
         {% set ns.section = item[1] | safe | lower %}
         <hr class="divider">
-        <h2 class="govuk-heading-l"><a name="{{ item[1] | safe }}"></a>{{ item[1] | safe }}</h2>
+        <h2 class="govuk-heading-l"><a name="{{ item[1] | toc_id }}"></a>{{ item[1] | safe }}</h2>
         {% endif %}
 
         {% if item[0] in ['H1', 'H2', 'H3', 'H4', 'H5', 'H6'] %}
