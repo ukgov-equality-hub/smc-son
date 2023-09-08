@@ -66,4 +66,4 @@ Elsewhere in State of the Nation 2023
 Read the full report
 
 ## Text
-<a href="#" class="govuk-link">State of the Nation 2023</a> on GOV.UK.
+<a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places" class="govuk-link">State of the Nation 2023</a> on GOV.UK.
