@@ -12,7 +12,7 @@ of unemployment, economic inactivity and lower working-class employment.
 # Src
 {
     "code": "CI2",
-    "title": "Index of ‘precarious situations’, by region (UK, 2018 to 2022 combined)",
+    "title": "Index of ‘precarious situations’, by region (UK, 2018 to 2021 combined)",
     "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
     "data": "/static/data/indicators/CI2_20230817.csv",
     "geoFormat": "",
@@ -89,7 +89,7 @@ See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-
 Data source
 
 ## Text
-Labour Force Survey pooled, from 2018 to 2022.
+Labour Force Survey pooled, from 2018 to 2021.
 
 ## Text
 Areas are those where respondents lived when they were aged 14 years.
