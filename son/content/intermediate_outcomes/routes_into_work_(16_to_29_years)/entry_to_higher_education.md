@@ -39,6 +39,7 @@ By socio-economic background
     "upperConfidence": "UCI",
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "abreviate",
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],

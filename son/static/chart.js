@@ -170,8 +170,8 @@ class Chart {
         let range = options.range || null
         const zero = options.zero === false ? false : true
         const multiply = options.multiply || null
-        const xtitle = options.xtitle || null
-        const ytitle = options.ytitle || null
+        let xtitle = options.xtitle || null
+        let ytitle = options.ytitle || null
         const maxBarSize = options.maxBarSize || -1
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const labelScheme = options.labelScheme || null
@@ -186,12 +186,13 @@ class Chart {
         let ygrid = options.ygrid === false ? false : grid
         const xscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.xscale) ? options.xscale : null
         const yscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.yscale) ? options.yscale : null
+        const smallScreenSize = 440
         let xticks = options.xticks === false ? false : options.xticks
-        if (typeof options.xticksSmallScreen !== 'undefined' && this.width < 400) {
+        if (typeof options.xticksSmallScreen !== 'undefined' && this.width < smallScreenSize) {
             xticks = options.xticksSmallScreen === false ? false : options.xticksSmallScreen
         }
         let yticks = options.yticks === false ? false : options.yticks
-        if (typeof options.yticksSmallScreen !== 'undefined' && this.height < 400) {
+        if (typeof options.yticksSmallScreen !== 'undefined' && this.height < smallScreenSize) {
             yticks = options.yticksSmallScreen === false ? false : options.yticksSmallScreen
         }
         const xticksLength = options.xticksLength || null
@@ -236,7 +237,7 @@ class Chart {
             }
 
             const orientation = ['bary', 'doty', 'liney'].includes(chartType) ? 'y' : 'x'
-            self.isSmallScreen = ((orientation == 'y' && self.width < 400) || (orientation != 'y' && self.height < 400))
+            self.isSmallScreen = ((orientation == 'y' && self.width < smallScreenSize) || (orientation != 'y' && self.height < smallScreenSize))
             if (multiply && isNumeric(multiply)) {
                 for (let i = 0; i < data.length; i++) {
                     data[i] = data[i].map(x => {
@@ -497,7 +498,7 @@ class Chart {
                     }
                 }
 
-                if (textLabels != '' && ['bar', 'barx', 'bary'].includes(currentType)) {
+                if (textLabels != '' && ['bar', 'barx', 'bary'].includes(currentType) && !self.isSmallScreen) {
                     if (orientation == 'y') {
                         marks.push(Plot.text(chartData, {
                             x: xkey,
@@ -541,6 +542,11 @@ class Chart {
             }
             if (group && orientation != 'y') yOptions['axis'] = null
 
+            if (self.isSmallScreen) {
+                xtitle = null
+                ytitle = null
+            }
+
             if (!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
                 marks.push(Plot.axisX({
                     label: xtitle,
@@ -551,7 +557,7 @@ class Chart {
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: (x, i, t) => {
-                        if (Array.isArray(xticks)) {
+                        if (Array.isArray(xticks)) {console.log(t, i, t[i], x)
                             if (t.includes(x)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                             return null
                         } else if ([-1, 'none', 'hide'].includes(xticks)) {
@@ -561,6 +567,9 @@ class Chart {
                             return null
                         } else if ([-3, 'abreviate'].includes(xticks)) {
                             return abreviate(orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString())
+                        } else if (['2nd', '3rd', '4th', '5th'].includes(xticks)) {
+                            if (i % parseInt(xticks.substr(0, 1), 10) == 0) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                            return null
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
@@ -577,6 +586,9 @@ class Chart {
                             return null
                         } else if ([-3, 'abreviate'].includes(xticks)) {
                             return abreviate(orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString())
+                        } else if (['2nd', '3rd', '4th', '5th'].includes(xticks)) {
+                            if (i % parseInt(xticks.substr(0, 1), 10) == 0) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
+                            return null
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
@@ -600,6 +612,9 @@ class Chart {
                             return null
                         } else if ([-3, 'abreviate'].includes(yticks) && !group) {
                             return abreviate(orientation == 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString())
+                        } else if (['2nd', '3rd', '4th', '5th'].includes(yticks)) {
+                            if (i % parseInt(yticks.substr(0, 1), 10) == 0) return orientation != 'y' ? getLabelText(x, 'yaxis', chartData, i) : x.toString()
+                            return null
                         } else {
                             return orientation == 'y' ? getLabelText(x, 'yaxis') : x.toString()
                         }
@@ -742,7 +757,7 @@ class Chart {
                             l.style.marginLeft = 0
                             l.style.paddingLeft = 0
                         }
-                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${ticksId(orientation == 'y' ? xticks : yticks) == -3 && !group ? '(' + abreviate(legendDomain[i]) + ') ' : ''}${legendDomain[i]}`
+                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${ticksId(orientation == 'y' ? xticks : yticks) == -3 && !((zkey && zkey != xkey) || group) ? '(' + abreviate(legendDomain[i]) + ') ' : ''}${legendDomain[i]}`
                         l.setAttribute('data-series', legendDomain[i])
                         l.addEventListener('click', clicked)
                         //l.addEventListener('pointerenter pointermove', highlight)
@@ -784,15 +799,17 @@ class Chart {
                     }
                 }
 
-                if (group && [-3, 'abreviate'].includes(xticks)) {
+                if (((zkey && zkey != xkey) || group) && [-3, 'abreviate'].includes(xticks)) {
                     const explainDiv = document.createElement('div')
-                    const explanations = [...new Set(categories)]
+                    const explanations = zkey ? [...domain] : [...new Set(categories)]
                     explainDiv.classList.add('chart-explanation')
                     Object.assign(explainDiv.style, { marginTop: `${swatchSize * 1.75}px`, ...style })
                     for (const [i, item] of explanations.entries()) {
-                        const e = document.createElement('span')
-                        e.innerHTML = `${abreviate(item)}: <em>${item}${i < explanations.length - 1 ? ',' : ''}</em>`
-                        explainDiv.appendChild(e)
+                        if (abreviate(item) != item && abreviate(item).substr(0, 1) != '’') {
+                            const e = document.createElement('span')
+                            e.innerHTML = `${abreviate(item)}: <em>${item}${i < explanations.length - 1 ? ',' : ''}</em>`
+                            explainDiv.appendChild(e)
+                        }
                     }
                     div.appendChild(explainDiv)
                 }
@@ -1012,6 +1029,8 @@ class Chart {
                     return -2
                 } else if ([-3, 'abreviate'].includes(id)) {
                     return -3
+                } else if (['2nd', '3rd', '4th', '5th'].includes(id)) {
+                    return 0
                 }
                 return id
             }
@@ -1310,8 +1329,10 @@ class Chart {
 
         function abreviate(text) {
             if (!text && text != 0) return ''
+            text = (text + ' ').trim()
             if (text.toLowerCase() == 'total') return 'TTL'
             if (text.toLowerCase() == 'average') return 'AVG'
+            if (text.length == 4 && isNumeric(text) && (text.substr(0, 2) == '19' || text.substr(0, 2) == '20')) return `’${text.substr(2)}`
             return text.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('')
         }
 

@@ -137,6 +137,7 @@ By ethnicity
     "confidenceIntervals": "visible",
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "abreviate",
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca"],

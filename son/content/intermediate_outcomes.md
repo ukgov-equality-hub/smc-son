@@ -15,7 +15,7 @@ Highlighted content
             new Chart(
                 'chart1',
                 `${location.protocol}//${location.host}/static/data/indicators/IN13_ethnicity_fsm-20230601.csv`,
-                { "height": 200, "type": "bar", "xkey": "Value", "ykey": "Category", "sort": "Value", "scale": "%", "rounding": "0dp", "xgrid": true, "ygrid": false, "xticks": 2, "yticks": -1, "legend": false, "colourScheme": ["#0f265c"], "margin": [0, 0, 0, 0], "maxLabelLength": 20 }
+                { "height": 200, "type": "bar", "xkey": "Value", "ykey": "Category", "sort": "Value", "scale": "%", "rounding": "0dp", "xgrid": true, "ygrid": false, "xticks": 2, "yticks": "none", "legend": false, "colourScheme": ["#0f265c"], "margin": [0, 0, 0, 0], "maxLabelLength": 20 }
             )
         </script>
         <p class="govuk-body">There is great variation across ethnicities in the attainment of pupils eligible for free school meals (FSM).</p>
@@ -30,7 +30,7 @@ Highlighted content
             new Chart(
                 'chart2',
                 `${location.protocol}//${location.host}/static/data/indicators/IN31_gender-20230327.csv`,
-                { "height": 200, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "%", "rounding": "0dp", "xgrid": false, "ygrid": true, "xticks": -1, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
+                { "height": 200, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "%", "rounding": "0dp", "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
         <p class="govuk-body">Young women are less likely to be economically active than young men from the same socio-economic background (SEB).</p>
@@ -45,7 +45,7 @@ Highlighted content
             new Chart(
                 'chart3',
                 `${location.protocol}//${location.host}/static/data/indicators/IN34_disability-20230327.csv`,
-                { "height": 200, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "££", "rounding": "1dp", "xgrid": false, "ygrid": true, "xticks": -1, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
+                { "height": 200, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "££", "rounding": "1dp", "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
         <p class="govuk-body">Young people with a disability tend to earn significantly less than those without a disability.</p>

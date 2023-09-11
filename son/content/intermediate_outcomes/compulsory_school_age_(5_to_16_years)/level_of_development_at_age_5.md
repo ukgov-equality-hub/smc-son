@@ -45,6 +45,7 @@ By year
     "filterNaN": false,
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "2nd",
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#eb652e", "#0f265c", "#808080"],

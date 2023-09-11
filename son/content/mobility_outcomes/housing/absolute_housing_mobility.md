@@ -82,6 +82,7 @@ By area
     "upperConfidence": "UCI",
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "abreviate",
     "yticks": 5,
     "xticksLength": 4,
     "legend": true,
