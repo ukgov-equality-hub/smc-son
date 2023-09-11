@@ -557,7 +557,7 @@ class Chart {
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
                     tickFormat: (x, i, t) => {
-                        if (Array.isArray(xticks)) {console.log(t, i, t[i], x)
+                        if (Array.isArray(xticks)) {
                             if (t.includes(x)) return orientation != 'y' ? getLabelText(x, 'xaxis', chartData, i) : x.toString()
                             return null
                         } else if ([-1, 'none', 'hide'].includes(xticks)) {
@@ -1314,9 +1314,13 @@ class Chart {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
                 if ((xscale == 'log' || yscale == 'log') && key < 1) {
-                    text = '' //`${fraction(key)}x`
-                    for (let i = 1; i < 10; i++) {
-                        if (key.toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                    text = ''
+                    if (pos == 'tooltip' || pos == 'label') {
+                        text = `${parseFloat(key, 10).toFixed(1)}x` //`${fraction(key)}x`
+                    } else {
+                        for (let i = 1; i < 10; i++) {
+                            if (parseFloat(key, 10).toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                        }
                     }
                 } else {
                     text = `${formatNumber(key, dp != null ? dp : 1)}x`

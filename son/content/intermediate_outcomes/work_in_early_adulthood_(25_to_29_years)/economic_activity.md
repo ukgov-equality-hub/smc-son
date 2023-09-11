@@ -92,7 +92,7 @@ By area
     "sort": "-Value",
     "xgrid": true,
     "ygrid": true,
-    "xtitle": "% point difference compared to the national average",
+    "xtitle": "% point diff compared to national avg",
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",

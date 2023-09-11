@@ -159,6 +159,8 @@ class Choropleth {
         const rounding = options.rounding || null
         let domain = options.domain || []
         const multiply = options.multiply || null
+        const xscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.xscale) ? options.xscale : null
+        const yscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.yscale) ? options.yscale : null
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
         const legendSteps = options.legendSteps || 5
         this.title = options.title || ''
@@ -820,9 +822,13 @@ class Choropleth {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
                 if ((xscale == 'log' || yscale == 'log') && key < 1) {
-                    text = '' //`${fraction(key)}x`
-                    for (let i = 1; i < 10; i++) {
-                        if (key.toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                    text = ''
+                    if (pos == 'tooltip' || pos == 'label') {
+                        text = `${parseFloat(key, 10).toFixed(1)}x` //`${fraction(key)}x`
+                    } else {
+                        for (let i = 1; i < 10; i++) {
+                            if (parseFloat(key, 10).toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                        }
                     }
                 } else {
                     text = `${formatNumber(key, dp != null ? dp : 1)}x`
@@ -832,7 +838,6 @@ class Choropleth {
             }
             return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text.toString()
         }
-
 
         function maxLabelLength(data, key, style) {
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })

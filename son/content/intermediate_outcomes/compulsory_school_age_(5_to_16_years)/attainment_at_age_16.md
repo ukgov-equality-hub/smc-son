@@ -23,8 +23,8 @@ In the 2021 to 2022 school year:
 * there were large variations between pupils eligible for free school meals (FSM) in different ethnic groups
   – for example, 70% of FSM-eligible pupils from the Chinese ethnic group got a pass (grade 5 or above), compared with
   6% of Gypsy or Roma pupils
-* disadvantaged pupils in London, the West Midlands, and Surrey and Sussex were the most likely to get a grade 5 or
-  above – pupils in rural areas of England, such as Cornwall and Cumbria, were less likely to
+* disadvantaged pupils in London, the West Midlands, and Surrey and Sussex were the most likely to get a pass (grade 5
+  or above) – pupils in rural areas of England, such as Cornwall and Cumbria, were less likely to
 
 ## Section
 By disadvantage status over time
