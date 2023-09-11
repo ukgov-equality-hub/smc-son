@@ -15,7 +15,7 @@ Highlighted data
             new Chart(
                 'chart1',
                 `${location.protocol}//${location.host}/static/data/indicators/DR14_overview_no_average-20230417.csv`,
-                { "height": 200, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": -2, "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 50 }
+                { "height": 200, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 50 }
             )
         </script>
         <p class="govuk-body">There has been a continuing increase in the proportion of families in which the adults have professional and managerial occupations.</p>
@@ -30,7 +30,7 @@ Highlighted data
             new Chart(
                 'chart2',
                 `${location.protocol}//${location.host}/static/data/indicators/DR34_overview-20230414.csv`,
-                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "££", "xgrid": false, "ygrid": true, "xticks": -2, "yticks": 5, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [8, 15], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
+                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "££", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 5, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [8, 15], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
             )
         </script>
         <p class="govuk-body">Growth in real hourly pay for young people has been poor over the last 15 years, partly due to drops after 2008 and 2022.</p>
@@ -45,7 +45,7 @@ Highlighted data
             new Chart(
                 'chart3',
                 `${location.protocol}//${location.host}/static/data/indicators/DR52_overview-20230417.csv`,
-                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": -2, "yticks": 2, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [0, 2], "margin": [0, 0, 0, 0], "maxLabelLength": 35 }
+                { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [0, 2], "margin": [0, 0, 0, 0], "maxLabelLength": 35 }
             )
         </script>
         <p class="govuk-body">Business research and development (R and D) spending has been increasing since 2011, reaching its peak in 2017.</p>

@@ -35,6 +35,7 @@ By year
     "xgrid": false,
     "ygrid": true,
     "xticks": 7,
+    "xticksSmallScreen": "first-last",
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca"],

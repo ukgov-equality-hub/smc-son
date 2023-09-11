@@ -41,6 +41,7 @@ By year
     "confidenceIntervals": true,
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "first-last",
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],

@@ -33,6 +33,7 @@ By year
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
+    "xticksSmallScreen": "abreviate",
     "yticks": 5,
     "legend": true,
     "reverseLegend": true,
