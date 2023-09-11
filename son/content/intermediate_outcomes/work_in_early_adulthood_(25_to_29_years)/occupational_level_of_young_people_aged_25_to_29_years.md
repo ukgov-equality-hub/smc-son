@@ -188,6 +188,7 @@ By ethnicity
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",

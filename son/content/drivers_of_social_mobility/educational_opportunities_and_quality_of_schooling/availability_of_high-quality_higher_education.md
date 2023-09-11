@@ -41,6 +41,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR24-availability-of-high-quality-higher-education--by-year--table-format.csv",

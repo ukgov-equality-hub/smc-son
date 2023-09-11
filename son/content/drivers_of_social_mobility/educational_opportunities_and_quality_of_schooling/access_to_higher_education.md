@@ -41,6 +41,7 @@ By year
     "colourScheme": ["#5694ca", "#d4351c"],
     "range": [0, 80],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",

@@ -784,6 +784,20 @@ class Choropleth {
                 return aprox + num
             }
 
+            function fraction(key){
+                const test = (String(key).split('.')[1] || []).length
+                const num = key * (10**Number(test))
+                const den = 10**Number(test)
+                function reduce(numerator, denominator) {
+                    let gcd = function gcd(a, b) {
+                        return b ? gcd(b, a % b) : a
+                    }
+                    gcd = gcd(numerator, denominator)
+                    return [numerator / gcd, denominator / gcd]
+                }
+                return `${reduce(num,den)[0]}/${reduce(num,den)[1]}`
+            }
+
             if (!key && pos == 'tooltip') return null
             if (!isNumeric(key)) return key
             let text
@@ -799,18 +813,26 @@ class Choropleth {
             if (['percent', '%'].includes(scale)) {
                 return `${pos == 'tooltip' || pos == 'label' ? approximate(key, dp != null ? dp : 1, pos) : key}%`
             } else if (['£', '$', '€'].includes(scale)) {
-                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
+                return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {
-                text = `${formatNumber(key, dp != null ? dp : 1)}x`
+                if ((xscale == 'log' || yscale == 'log') && key < 1) {
+                    text = '' //`${fraction(key)}x`
+                    for (let i = 1; i < 10; i++) {
+                        if (key.toFixed(1) == (1 / i).toFixed(1)) text = `1/${i}x`
+                    }
+                } else {
+                    text = `${formatNumber(key, dp != null ? dp : 1)}x`
+                }
             } else {
                 text = formatNumber(key, dp != null ? dp : 1)
             }
-            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text
+            return pos == 'tooltip' && scale != '' ? `${text} (${scale})` : text.toString()
         }
+
 
         function maxLabelLength(data, key, style) {
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key]).toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })

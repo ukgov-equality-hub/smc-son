@@ -40,6 +40,7 @@ By year
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
     "range": [0, 40],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",

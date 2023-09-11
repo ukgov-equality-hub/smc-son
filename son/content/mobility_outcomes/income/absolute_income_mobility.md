@@ -40,6 +40,7 @@ By year of birth
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
     "range": [40, 80],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/MO21-absolute-income-mobility--by-year-and-country--table-format.csv",

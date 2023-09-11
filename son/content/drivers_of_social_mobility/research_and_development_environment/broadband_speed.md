@@ -37,6 +37,7 @@ By year
     "colourScheme": ["#5694ca"],
     "range": [0, 3],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
     "dataTable": "/static/pre-processed-csvs/DR51-broadband-speed--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],

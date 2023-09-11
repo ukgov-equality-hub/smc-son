@@ -40,6 +40,7 @@ By year
     "colourScheme": ["#5694ca"],
     "range": [0, 2],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 30,
     "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],

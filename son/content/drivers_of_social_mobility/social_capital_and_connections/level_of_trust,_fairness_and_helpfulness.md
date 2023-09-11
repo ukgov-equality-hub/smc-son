@@ -43,6 +43,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 20,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/pre-processed-csvs/DR42-level-of-trust-fairness-and-helpfulness--by-year--table-format.csv",

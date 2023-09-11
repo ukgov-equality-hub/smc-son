@@ -38,6 +38,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
