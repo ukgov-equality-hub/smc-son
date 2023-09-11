@@ -43,6 +43,7 @@ By socio-economic background
     "legend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [0, 0, 0, 0],
+    "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/pre-processed-csvs/IN22-entry-to-higher-education--by-SEB--table-format.csv",
