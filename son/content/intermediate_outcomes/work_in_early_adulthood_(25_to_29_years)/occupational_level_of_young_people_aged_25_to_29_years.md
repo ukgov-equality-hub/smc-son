@@ -144,7 +144,6 @@ By sex
     "sort": "Category",
     "scale": "%",
     "rounding": "0dp",
-    "maxBarSize": 150,
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
