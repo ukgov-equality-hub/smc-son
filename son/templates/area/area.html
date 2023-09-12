@@ -6,13 +6,13 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-grid-row-full-width">
+<div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
     <div class="grid grid2">
         <div>
-            <h1 class="govuk-heading-l">{{ title }}</h1>
+            <h1 class="govuk-heading-xl">{{ title }}</h1>
             <p class="govuk-body">This page shows how {{ title }} is ranked for 5 different aspects of social mobility.</p>
 
-            <h2 class="govuk-heading-m">How regions are ranked</h2>
+            <h2 class="govuk-heading-l">How regions are ranked</h2>
             <p class="govuk-body">
                 For each aspect,
                 <a href="/social_mobility_by_area#the-41-regions"
@@ -24,7 +24,7 @@
             <p class="govuk-body">For example, {{ title }} ranks in the <span id="selectedIndicatorRank"></span> of regions for <span id="selectedIndicator"></span>.</p>
             <p>&nbsp;</p>
 
-            <h2 class="govuk-heading-m">Intermediate outcomes</h2>
+            <h2 class="govuk-heading-l">Intermediate outcomes</h2>
             <p class="govuk-body">Intermediate outcomes measure the experiences of young people as they move through education and into work.</p>
 
             <div class="govuk-body area-quintile-header">
@@ -45,7 +45,7 @@
             </div>
             <p>&nbsp;</p>
 
-            <h2 class="govuk-heading-m">Drivers of social mobility</h2>
+            <h2 class="govuk-heading-l">Drivers of social mobility</h2>
             <p class="govuk-body">Drivers are the background conditions that make social mobility easier or more difficult.</p>
 
             <div class="govuk-body area-quintile-header">

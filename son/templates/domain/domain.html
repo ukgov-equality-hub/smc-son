@@ -6,14 +6,14 @@
 {% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-grid-row-full-width">
-    <h1 class="govuk-heading-l">{{ title }}</h1>
+<div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
+    <h1 class="govuk-heading-xl">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>
 
     {% for item in content %}
     {% if item[0] not in ['Title', 'Summary', 'Map', 'Data Table'] %}
     {% if item[0] == 'Subtitle' %}
-    <h2 class="govuk-heading-m">{{ item[1] | safe }}</h2>
+    <h2 class="govuk-heading-l">{{ item[1] | safe }}</h2>
     {% endif %}
     {% if item[0] == 'Text' %}
     <p class="govuk-body">{{ item[1] | safe }}</p>
