@@ -49,7 +49,7 @@ Highlighted content
             )
         </script>
         <p class="govuk-body">Young people with a disability tend to earn significantly less than those without a disability.</p>
-        <a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings" class="govuk-link">Read more...</a>
+        <a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years" class="govuk-link">Read more...</a>
     </div>
 </div>
 

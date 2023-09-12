@@ -34,7 +34,7 @@ Highlighted data
             )
         </script>
         <p class="govuk-body">Growth in real hourly pay for young people has been poor over the last 15 years, partly due to drops after 2008 and 2022.</p>
-        <a href="/drivers_of_social_mobility/work_opportunities_for_young_people/earnings_of_22_to_29_year_olds" class="govuk-link">Read more...</a>
+        <a href="/drivers_of_social_mobility/work_opportunities_for_young_people/labour_market_earnings_of_young_people" class="govuk-link">Read more...</a>
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Business research and development spending</h3>
