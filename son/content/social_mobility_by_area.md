@@ -15,7 +15,7 @@ This section shows how different areas in the UK are ranked for 5 different meas
     }
 
     function areaSelect(a) {
-        location.href = `/social_mobility_by_area/${a.name.toLowerCase().replace(/ /g, '_')}`
+        location.href = `/social_mobility_by_area/${a.name.toLowerCase().replace(/ /g, '_').replace(/\//g, '_and_')}`
     }
 
     (async function () {
