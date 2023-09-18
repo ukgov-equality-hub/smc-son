@@ -99,7 +99,7 @@ By area
     "range": [-2, 10],
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--ratio--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
