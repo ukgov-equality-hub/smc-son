@@ -95,7 +95,7 @@
                 }
                 catch (e) {}
                 try {
-                    buildChart{{ id }}(datafile, false, overrideOptions)
+                    buildChart({{ id }}, datafile, false, overrideOptions)
                 }
                 catch (e) {}
 
@@ -153,7 +153,7 @@
             {% for item in ([data, 'data'] | attribute) %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}('{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, '{{ item.data }}')">
                     Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
@@ -170,7 +170,7 @@
             {% else %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart{{ id }}()">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }})">
                     Download the chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
