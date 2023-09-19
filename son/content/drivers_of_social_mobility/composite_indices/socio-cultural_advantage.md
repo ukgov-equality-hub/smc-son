@@ -36,7 +36,7 @@ occupation (higher professional), and professional work for young people.
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/CI3-socio-cultural-advantage--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/CI3-socio-cultural-advantage--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 0]

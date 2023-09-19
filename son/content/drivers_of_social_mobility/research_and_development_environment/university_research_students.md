@@ -39,7 +39,7 @@ By year
     "range": [0.8, 1.2],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
-    "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR53-university-research-students--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 3]
@@ -92,7 +92,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR53-university-research-students--by-ITL2-region-and-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR53-university-research-students--by-ITL2-region-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0]

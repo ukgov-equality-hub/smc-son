@@ -41,7 +41,7 @@ By year
     "range": [0, 2],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 30,
-    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -118,7 +118,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],

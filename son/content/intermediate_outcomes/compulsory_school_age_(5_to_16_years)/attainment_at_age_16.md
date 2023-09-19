@@ -53,7 +53,7 @@ By disadvantage status over time
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-year-and-disadvantage--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-year-and-disadvantage--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -84,7 +84,7 @@ By year
     "range": [0, 5],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 20,
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--gap-by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--gap-by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -135,7 +135,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-ITL2-region-and-FMS--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ITL2-region-and-FMS--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]
@@ -184,7 +184,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-sex-and-disadvantage--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-sex-and-disadvantage--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"]
 }
@@ -216,7 +216,7 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN13-attainment-at-age-16--by-ethnicity-and-FMS--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ethnicity-and-FMS--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]

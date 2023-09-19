@@ -39,7 +39,7 @@ By year
     "colourScheme": ["#5694ca"],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 40,
-    "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR32-youth-unemployment--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -81,7 +81,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR32-youth-unemployment--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR32-youth-unemployment--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]

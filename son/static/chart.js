@@ -174,9 +174,8 @@ class Chart {
         let ytitle = options.ytitle || null
         const maxBarSize = options.maxBarSize || -1
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
-        const labelScheme = options.labelScheme || null
-        const labelColour = options.labelColour || '#000'
         const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : Array.isArray(options.textLabels) ? options.textLabels : ''
+        const labelColour = options.labelColour || '#000'
         const labelKey = options.labelKey || null
         const maximumLabelLength = options.maxLabelLength || -1
         const rotateDomainLabels = options.rotateDomainLabels || false

@@ -24,7 +24,7 @@ Data
 
 # DataTable
 {
-    "dataTable": "/static/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableTitle": "Estimates of the strength of intergenerational income mobility (intergenerational elasticity), from 1975 to 2020"
@@ -81,4 +81,4 @@ Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/
 Download the data
 
 ## Text
-[Download full dataset (CSV)](/static/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv){: target="_blank" class="download" }
+[Download full dataset (CSV)](/static/data/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv){: target="_blank" class="download" }

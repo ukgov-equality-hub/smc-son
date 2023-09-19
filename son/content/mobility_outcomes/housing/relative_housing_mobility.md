@@ -45,7 +45,7 @@ By year
     "range": [0, 7],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 25,
-    "dataTable": "/static/pre-processed-csvs/MO42-relative-housing-mobility--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -75,7 +75,7 @@ By area
     "zero": false,
     "colourScheme": ["#5694ca"],
     "margin": [0, 0, 0, 0],
-    "dataTable": "/static/pre-processed-csvs/MO42-relative-housing-mobility--by-ITL1-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-ITL1-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -107,7 +107,7 @@ By sex
     "range": [2, 4],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 40,
-    "dataTable": "/static/pre-processed-csvs/MO42-relative-housing-mobility--by-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -141,7 +141,7 @@ By disability
     "range": [2, 4],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 40,
-    "dataTable": "/static/pre-processed-csvs/MO42-relative-housing-mobility--by-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]

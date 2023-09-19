@@ -49,7 +49,7 @@ By year
     "range": [0, 12.5],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 45,
-    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -79,7 +79,7 @@ By area
     "zero": false,
     "colourScheme": ["#5694ca"],
     "margin": [0, 0, 0, 0],
-    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -111,7 +111,7 @@ By sex
     "range": [2, 6],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 25,
-    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"]
 }
@@ -144,7 +144,7 @@ By ethnicity
     "range": [0, 20],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 35,
-    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -177,7 +177,7 @@ By disability status
     "range": [3, 5],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 40,
-    "dataTable": "/static/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]

@@ -49,7 +49,7 @@ By year
     "range": [-35, 5],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 45,
-    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO12-relative-occupational-mobility--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -93,7 +93,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO12-relative-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -146,7 +146,7 @@ By sex and ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-ethnicity-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO12-relative-occupational-mobility--by-ethnicity-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -179,7 +179,7 @@ By disability status
     "range": [-1, 2],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 50,
-    "dataTable": "/static/pre-processed-csvs/MO12-relative-occupational-mobility--by-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO12-relative-occupational-mobility--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"]
 }

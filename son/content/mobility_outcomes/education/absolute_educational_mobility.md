@@ -59,7 +59,7 @@ By highest level of parental qualification
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
@@ -95,7 +95,7 @@ By area
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -137,7 +137,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
@@ -173,7 +173,7 @@ By ethnicity
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -216,7 +216,7 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]

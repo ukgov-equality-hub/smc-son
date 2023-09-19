@@ -52,7 +52,7 @@ By socio-economic background
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-SEB--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -99,7 +99,7 @@ By area
     "range": [-2, 10],
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-ITL2-region--ratio--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-ITL2-region--ratio--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -152,7 +152,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-SEB-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -190,7 +190,7 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-SEB-and-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -227,7 +227,7 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN32-unemployment--by-SEB-and-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]

@@ -54,7 +54,7 @@ Relative differences
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-qualification--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-qualification--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -89,7 +89,7 @@ By year
     "maxLabelLength": 55,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2, 2, 2, 2, 2]
@@ -126,7 +126,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
@@ -164,7 +164,7 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
@@ -201,7 +201,7 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN351-income-returns-to-education--by-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]

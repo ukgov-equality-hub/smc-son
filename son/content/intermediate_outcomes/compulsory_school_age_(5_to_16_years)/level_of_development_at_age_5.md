@@ -55,7 +55,7 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"]
 }
@@ -105,7 +105,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-ITL2-region-and-FMS--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-ITL2-region-and-FMS--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]
@@ -154,7 +154,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -196,7 +196,7 @@ By ethnicity
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-ethnicity-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-ethnicity-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
