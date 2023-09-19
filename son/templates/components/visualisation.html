@@ -91,7 +91,7 @@
                 }
 
                 try {
-                    buildMap{{ id }}(datafile, false, overrideOptions)
+                    buildMap({{ id }}, datafile, false, overrideOptions)
                 }
                 catch (e) {}
                 try {
@@ -161,7 +161,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}('{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, '{{ item.data }}')">
                     Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
@@ -178,7 +178,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap{{ id }}()">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }})">
                     Download the map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>

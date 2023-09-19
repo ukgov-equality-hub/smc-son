@@ -1,133 +1,52 @@
 {% macro map(id, data) %}
-<div>
-    <div class="map-container">
-        <div class="map-controls">
-            <button id="mapZoomIn{{ id }}">+</button>
-            <button id="mapZoomOut{{ id }}">-</button>
+    <div>
+        <div class="map-container">
+            <div class="map-controls">
+                <button id="mapZoomIn{{ id }}">+</button>
+                <button id="mapZoomOut{{ id }}">-</button>
+            </div>
+            <div id="map{{ id }}" class="map"></div>
+            <div id="map_scale{{ id }}" class="map-scale govuk-body"></div>
+            <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body" style="_visibility: visible !important;">
+                <svg width="20px" height="20px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onclick="this.parentNode.style.visibility = 'hidden'; mapSelect1({ map: { el: 'map{{ id }}' }})">
+                    <path d="M50,35.882L25.233,11.115C23.285,9.167 20.122,9.167 18.174,11.115L11.115,18.174C9.167,20.122 9.167,23.285 11.115,25.233L35.882,50L11.115,74.767C9.167,76.715 9.167,79.878 11.115,81.826L18.174,88.885C20.122,90.833 23.285,90.833 25.233,88.885L50,64.118L74.767,88.885C76.715,90.833 79.878,90.833 81.826,88.885L88.885,81.826C90.833,79.878 90.833,76.715 88.885,74.767L64.118,50L88.885,25.233C90.833,23.285 90.833,20.122 88.885,18.174L81.826,11.115C79.878,9.167 76.715,9.167 74.767,11.115L50,35.882Z"/>
+                </svg>
+                <h4 id="map_tooltip{{ id }}_area" class="area"></h4>
+                <p id="map_tooltip{{ id }}_title" class="title"></p>
+                <p id="map_tooltip{{ id }}_value" class="value"></p>
+                <p id="map_tooltip{{ id }}_quintile" class="quintile"></p>
+                <p id="map_tooltip{{ id }}_performance" class="performance"></p>
+                <div id="map_legend{{ id }}" class="legend"></div>
+                <div class="marker">
+                    <div id="map_marker{{ id }}">
+                        <img src="/static/assets/images/down_triangle.svg" width="30" height="16" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="map{{ id }}" class="map"></div>
-        <div id="map_scale{{ id }}" class="map-scale govuk-body"></div>
-        <div id="map_tooltip{{ id }}" class="map-tooltip govuk-body" style="_visibility: visible !important;">
-            <svg width="20px" height="20px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" onclick="this.parentNode.style.visibility = 'hidden'; mapSelect1({ map: { el: 'map{{ id }}' }})">
-                <path d="M50,35.882L25.233,11.115C23.285,9.167 20.122,9.167 18.174,11.115L11.115,18.174C9.167,20.122 9.167,23.285 11.115,25.233L35.882,50L11.115,74.767C9.167,76.715 9.167,79.878 11.115,81.826L18.174,88.885C20.122,90.833 23.285,90.833 25.233,88.885L50,64.118L74.767,88.885C76.715,90.833 79.878,90.833 81.826,88.885L88.885,81.826C90.833,79.878 90.833,76.715 88.885,74.767L64.118,50L88.885,25.233C90.833,23.285 90.833,20.122 88.885,18.174L81.826,11.115C79.878,9.167 76.715,9.167 74.767,11.115L50,35.882Z"/>
-            </svg>
-            <h4 id="map_tooltip{{ id }}_area" class="area"></h4>
-            <p id="map_tooltip{{ id }}_title" class="title"></p>
-            <p id="map_tooltip{{ id }}_value" class="value"></p>
-            <p id="map_tooltip{{ id }}_quintile" class="quintile"></p>
-            <p id="map_tooltip{{ id }}_performance" class="performance"></p>
-            <div id="map_legend{{ id }}" class="legend"></div>
-            <div class="marker">
-                <div id="map_marker{{ id }}">
-                    <img src="/static/assets/images/down_triangle.svg" width="30" height="16" alt="">
+        <div class="govuk-body scale">
+            <div id="scaleQunitile{{ id }}" class="scale-qunitile">
+                <div class="grid grid5 quintile">
+                    <div class="q1"></div>
+                    <div class="q2"></div>
+                    <div class="q3"></div>
+                    <div class="q4"></div>
+                    <div class="q5"></div>
+                </div>
+                <div class="grid grid2 scale-legend">
+                    <div>Q1 - Lowest 20%</div>
+                    <div>Q5 - Highest 20%</div>
+                </div>
+            </div>
+            <div id="scaleContinuous{{ id }}" class="scale-continuous">
+                <div class="continuous"></div>
+                <div class="grid grid2 scale-legend">
+                    <div id="min_{{ id }}"></div>
+                    <div id="max_{{ id }}"></div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="govuk-body scale">
-        <div id="scaleQunitile{{ id }}" class="scale-qunitile">
-            <div class="grid grid5 quintile">
-                <div class="q1"></div>
-                <div class="q2"></div>
-                <div class="q3"></div>
-                <div class="q4"></div>
-                <div class="q5"></div>
-            </div>
-            <div class="grid grid2 scale-legend">
-                <div>Q1 - Lowest 20%</div>
-                <div>Q5 - Highest 20%</div>
-            </div>
-        </div>
-        <div id="scaleContinuous{{ id }}" class="scale-continuous">
-            <div class="continuous"></div>
-            <div class="grid grid2 scale-legend">
-                <div id="min_{{ id }}"></div>
-                <div id="max_{{ id }}"></div>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    let map{{ id }}, mapData{{ id }}
 
-    function buildMap{{ id }}(datafile, download, overrideOptions) {
-        let options = {{ [data, 'Src'] | content_list | safe }}
-        if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
-        if (typeof options.legend !== 'undefined') options.legend = options.legend + '{{ id }}'
-        if (download) options.download = download
-
-        document.getElementById('scaleQunitile{{ id }}').style.display = 'none'
-        document.getElementById('scaleContinuous{{ id }}').style.display = 'none'
-        if (typeof options.dataFormat !== 'undefined') {
-            if (options.dataFormat == 'quintile') {
-                document.getElementById('scaleQunitile{{ id }}').style.display = 'block'
-            } else if (options.dataFormat == 'sequential') {
-                document.getElementById('scaleContinuous{{ id }}').style.display = 'block'
-            }
-        }
-
-        mapData{{ id }} = datafile || options.data.data || options.data
-        if (overrideOptions && typeof overrideOptions.label !== 'undefined') {
-            options['label'] = overrideOptions.label
-        } else if (!overrideOptions && !datafile && options.data && typeof options.data.label !== 'undefined') {
-            options['label'] = options.data.label
-        }
-        if (overrideOptions && typeof overrideOptions.reversePolarity !== 'undefined') {
-            options['reversePolarity'] = overrideOptions.reversePolarity
-        } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
-            options['reversePolarity'] = options.data.reversePolarity
-        }
-
-        const reversePolarity = typeof options.reversePolarity !== 'undefined' && options.reversePolarity;
-        if (reversePolarity) {
-            document.getElementById('scaleQunitile{{ id }}').classList.add('reversePolarity');
-        }
-        else {
-            document.getElementById('scaleQunitile{{ id }}').classList.remove('reversePolarity');
-        }
-
-        map{{ id }} = new Choropleth(
-            'map{{ id }}',
-            `${location.protocol}//${location.host}${options.map}`,
-            `${location.protocol}//${location.host}${mapData{{ id }}}`,
-            options
-        )
-
-        document.getElementById('mapZoomIn{{ id }}').addEventListener('click', function () {
-            map{{ id }}.zoomIn()
-        })
-
-        document.getElementById('mapZoomOut{{ id }}').addEventListener('click', function () {
-            map{{ id }}.zoomOut()
-        })
-
-        map{{ id }}.downloadSize().then(data => {
-            if (options.dataFormat == 'sequential') {
-                document.getElementById('min_{{ id }}').innerText = parseInt(map{{ id }}.min, 10)
-                document.getElementById('max_{{ id }}').innerText = parseInt(map{{ id }}.max, 10)
-            }
-
-            const items = document.getElementsByClassName('mapSize{{ id }}')
-            for (let i = 0; i < items.length; i++) {
-                items.item(i).innerText = ' ' + data
-            }
-        })
-    }
-
-    window.document.addEventListener('DOMContentLoaded', function () {
-        buildMap{{ id }}()
-    })
-
-    function downloadMap{{ id }}(datafile) {
-        if (datafile) {
-            const data = mapData{{ id }}
-            buildMap{{ id }}(datafile, true)
-            setTimeout(function () {
-                buildMap{{ id }}(data)
-            }, 2000)
-        } else {
-            map{{ id }}.download()
-        }
-    }
-</script>
+    <script id="mapOptions{{ id }}" type="text/plain">{{ [data, 'Src'] | content_list | base_64_encode }}</script>
 {% endmacro %}
