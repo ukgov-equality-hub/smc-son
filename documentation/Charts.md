@@ -5,12 +5,13 @@ Charts
 
 # Charts
 
-Maps use the **D3**  and **D3 observable** libraries along with the files `chart.js`, `chart.css` and `data-utils.js` to generate interactive chart. Charts are created by including the relevant javascript files in the page and placing a placeholder `div` element with a `chart-container` css class on the page of the required chart size, then initialising a `Chart` object.
+Maps use the **D3**  and **D3 observable** libraries along with the files `chart.js`, `chart-son.js`, `chart.css` and `data-utils.js` to generate interactive chart. Charts are created by including the relevant javascript files in the page and placing a placeholder `div` element with a `chart-container` css class on the page of the required chart size, then initialising a `Chart` object.
 
 ### Required files
 
 ```
 <script src="/path/to/chart.js"></script>
+<script src="/path/to/chart-son.js"></script>
 ```
 
 The file chart.js will attempt to load the required files before building a chart, pre-loading D3 and other associated files will enable charts to render quicker.
