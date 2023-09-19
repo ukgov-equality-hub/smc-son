@@ -162,13 +162,12 @@ class Choropleth {
         const xscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.xscale) ? options.xscale : null
         const yscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.yscale) ? options.yscale : null
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
-        const legendSteps = options.legendSteps || 5
         this.title = options.title || ''
         this.background = options.background || false
         this.legendDiv = options.legend || ''
+        const legendSteps = options.legendSteps || 5
         this.tooltip = ''
         this.tooltipDiv = options.tooltip || ''
-        this.tooltipTitle = options.tooltipTitle || undefined
         this.labels = options.labels || false
         this.tooltipBehaviour = ['rollover', 'click'].includes(options.tooltipBehaviour) ? options.tooltipBehaviour : ''
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
@@ -1056,7 +1055,7 @@ class Choropleth {
         this.svg.transition().duration(450).call(this.zoom.transform, d3.zoomIdentity.translate(x, y).scale(s))
     }
 
-    zoomTo(subunits, duration = 0) {
+    zoomTo(subunits, duration=0) {
         const nameField = this.options.nameField || ''
         const areaField = this.options.areaField || nameField
 
