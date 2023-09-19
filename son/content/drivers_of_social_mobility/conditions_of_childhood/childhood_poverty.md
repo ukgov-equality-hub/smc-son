@@ -43,7 +43,7 @@ By year
     "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
@@ -86,7 +86,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]

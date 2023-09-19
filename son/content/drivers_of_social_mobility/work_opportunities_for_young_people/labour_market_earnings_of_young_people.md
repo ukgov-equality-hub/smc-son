@@ -43,7 +43,7 @@ By year
     "range": [0, 15],
     "margin": [0, 0, 0, 0],
     "maxLabelLength": 35,
-    "dataTable": "/static/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]

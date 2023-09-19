@@ -46,7 +46,7 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/DR22-availability-of-high-quality-school-education--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR22-availability-of-high-quality-school-education--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0]

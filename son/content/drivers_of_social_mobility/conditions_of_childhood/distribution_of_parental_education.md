@@ -43,7 +43,7 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/DR13-distribution-of-parental-education--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR13-distribution-of-parental-education--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
@@ -85,7 +85,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR13-distribution-of-parental-education--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR13-distribution-of-parental-education--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]

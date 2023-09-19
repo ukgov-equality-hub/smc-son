@@ -47,7 +47,7 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
@@ -97,7 +97,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]

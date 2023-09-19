@@ -53,7 +53,7 @@ By socio-economic background
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-SEB--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
@@ -96,7 +96,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
@@ -149,7 +149,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-SEB-and-sex--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-sex--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -187,7 +187,7 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-SEB-and-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -224,7 +224,7 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN31-economic-activity--by-SEB-and-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]

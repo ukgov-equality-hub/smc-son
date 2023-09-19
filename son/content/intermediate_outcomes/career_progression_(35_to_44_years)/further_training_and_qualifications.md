@@ -49,7 +49,7 @@ By socio-economic background
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN41-further-training-and-qualifications--by-age-and-SEB--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN41-further-training-and-qualifications--by-age-and-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]

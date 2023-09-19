@@ -44,7 +44,7 @@ By year
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "filter",
-    "dataTable": "/static/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
@@ -94,7 +94,7 @@ By area
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]

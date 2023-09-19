@@ -47,7 +47,7 @@ By socio-economic background
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN22-entry-to-higher-education--by-SEB--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN22-entry-to-higher-education--by-SEB--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]

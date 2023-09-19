@@ -37,7 +37,7 @@ education, professional work, and earnings.
     "legend": false,
     "margin": [0, 0, 0, 0],
     "backgroundColor": "#fafafa",
-    "dataTable": "/static/pre-processed-csvs/CI1-promising-prospects--by-ITL2-region--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/CI1-promising-prospects--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 0]

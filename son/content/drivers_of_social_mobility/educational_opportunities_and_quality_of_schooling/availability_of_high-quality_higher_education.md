@@ -44,7 +44,7 @@ By year
     "maxLabelLength": 30,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
-    "dataTable": "/static/pre-processed-csvs/DR24-availability-of-high-quality-higher-education--by-year--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/DR24-availability-of-high-quality-higher-education--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]

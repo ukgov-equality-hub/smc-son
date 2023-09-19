@@ -51,7 +51,7 @@ By socio-economic background
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
-    "dataTable": "/static/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--relative-difference--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--relative-difference--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
@@ -88,7 +88,7 @@ By sex
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
@@ -126,7 +126,7 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-ethnicity--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-ethnicity--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
@@ -163,7 +163,7 @@ By disability status
     "textLabels": "center",
     "labelColour": "#fff",
     "clickBehaviour": "fade",
-    "dataTable": "/static/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-disability--table-format.csv",
+    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-disability--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
