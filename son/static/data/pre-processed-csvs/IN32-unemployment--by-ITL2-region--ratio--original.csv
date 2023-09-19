@@ -1,4 +1,4 @@
-Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note,Multiplier_value,Multiplier_LCI,Multiplier_UCI
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note,Multiplier_value,Multiplier_LCI,Multiplier_UCI
 IN32,Unemployment among young people,ITL2,TLI3,Inner London - West,2018-2021,NA,25-29,Total,NA,NA,0.8336976,63,-1.3277904,2.9951856,1.1028,Random effect,NA,1.8336976,0.4295919426,3.9951856
 IN32,Unemployment among young people,ITL2,TLI4,Inner London - East,2018-2021,NA,25-29,Total,NA,NA,0.3031593,159,-1.610501596,2.216820196,0.9763576,Random effect,NA,1.3031593,0.3830681435,3.216820196
 IN32,Unemployment among young people,ITL2,TLI6,Outer London - South,2018-2021,NA,25-29,Total,NA,NA,1.344885,130,-0.6252384,3.3150084,1.005165,Random effect,NA,2.344885,0.615294347,4.3150084
