@@ -1,3 +1,4 @@
+import base64
 from datetime import datetime
 from dateutil import tz
 import os
@@ -297,3 +298,9 @@ def number_of_data_rows_filter(context, details):
 @blueprint.app_template_filter('toc_id')
 def toc_id(context, details):
     return details.lower().replace(' ', '-')
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('base_64_encode')
+def base_64_encode_filter(context, details):
+    return base64.b64encode(details.encode("UTF-8")).decode("UTF-8")

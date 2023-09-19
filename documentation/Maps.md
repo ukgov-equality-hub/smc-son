@@ -5,12 +5,13 @@ Maps
 
 # Maps
 
-Maps use the **D3** library along with files `map.js`, `map-labels.js`, `map.css` and `data-utils.js` to generate interactive maps. Maps are created by including the relevant javascript files in the page and placing a placeholder `div` element with a `map-container` css class on the page of the required map size, then initialising a `Choropleth` object.
+Maps use the **D3** library along with files `map.js`, `map-son.js`, `map-labels.js`, `map.css` and `data-utils.js` to generate interactive maps. Maps are created by including the relevant javascript files in the page and placing a placeholder `div` element with a `map-container` css class on the page of the required map size, then initialising a `Choropleth` object.
 
 ### Required files
 
 ```
 <script src="/path/to/map.js"></script>
+<script src="/path/to/map-son.js"></script>
 ```
 
 The file map.js will attempt to load the required files before building a map, pre-loading D3 and other associated files will enable maps to render quicker.
