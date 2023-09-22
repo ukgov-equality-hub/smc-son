@@ -36,7 +36,7 @@ of unemployment, economic inactivity and lower working-class employment.
     "ygrid": true,
     "xtitle": "",
     "legend": false,
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/CI2-precarious-situations--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

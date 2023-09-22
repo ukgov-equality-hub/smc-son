@@ -67,13 +67,13 @@
 
                     {% if subitem[0] == 'Chart' %}
                     <div>
-                        {{ visualisation(ns.counter2, 'chart', subitem[1], item[1]) }}
+                        {{ visualisation(ns.counter2, 'chart', subitem[1], item[1], title) }}
                     </div>
                     {% endif %}
 
                     {% if subitem[0] == 'Map' %}
                     <div>
-                        {{ visualisation(ns.counter2, 'map', subitem[1], item[1]) }}
+                        {{ visualisation(ns.counter2, 'map', subitem[1], item[1], title) }}
                     </div>
                     {% endif %}
 
@@ -123,13 +123,13 @@
 
         {% if item[0] == 'Chart' %}
         <div>
-            {{ visualisation(ns.counter1, 'chart', item[1], ns.section) }}
+            {{ visualisation(ns.counter1, 'chart', item[1], ns.section, title) }}
         </div>
         {% endif %}
 
         {% if item[0] == 'Map' %}
         <div>
-            {{ visualisation(ns.counter1, 'map', item[1], ns.section) }}
+            {{ visualisation(ns.counter1, 'map', item[1], ns.section, title) }}
         </div>
         {% endif %}
 
@@ -138,7 +138,7 @@
             {% for subitem in item[1] %}
                 {% if subitem[0] == 'Chart' %}
                 <div>
-                    {{ visualisation(ns.counter2, 'chart', subitem[1], ns.section) }}
+                    {{ visualisation(ns.counter2, 'chart', subitem[1], ns.section, title) }}
                 </div>
                 {% endif %}
                 {% if subitem[0] == 'Map' %}

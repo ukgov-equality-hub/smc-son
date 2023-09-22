@@ -44,7 +44,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca"],
     "range": [0, 5],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 25,
     "dataTable": "/static/data/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

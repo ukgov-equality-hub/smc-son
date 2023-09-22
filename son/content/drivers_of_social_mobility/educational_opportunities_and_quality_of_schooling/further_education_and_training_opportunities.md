@@ -39,7 +39,7 @@ By year
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",

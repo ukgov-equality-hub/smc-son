@@ -43,7 +43,7 @@ By socio-economic background
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",

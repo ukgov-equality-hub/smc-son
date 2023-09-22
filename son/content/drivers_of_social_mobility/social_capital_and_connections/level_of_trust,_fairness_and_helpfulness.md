@@ -42,7 +42,7 @@ By year
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 20,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",

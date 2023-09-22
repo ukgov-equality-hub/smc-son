@@ -4,7 +4,7 @@
 {% from 'components/composite.html' import composite %}
 {% from 'components/data-table.html' import datatable %}
 
-{% macro visualisation(id, type, data, section) %}
+{% macro visualisation(id, type, data, section, indicator) %}
 <div class="govuk-tabs visualisation-tabs" data-module="govuk-tabs">
     <ul class="govuk-tabs__list" role="tablist">
         <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
@@ -153,7 +153,7 @@
             {% for item in ([data, 'data'] | attribute) %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, '{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, '{{ item.data }}', '{{ item.label }}', `{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png`)">
                     Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
@@ -161,7 +161,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, '{{ item.data }}')">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, '{{ item.data }}', '{{ item.label }}', `{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png`)">
                     Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
@@ -170,7 +170,7 @@
             {% else %}
             {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }})">
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, `{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png`)">
                     Download the chart (PNG<span class="chartSize{{ id }}"></span>)
                 </a>
             </li>
@@ -178,7 +178,7 @@
 
             {% if type == 'map' %}
             <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }})">
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, null, null, `{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}.png`)">
                     Download the map (PNG<span class="mapSize{{ id }}"></span>)
                 </a>
             </li>

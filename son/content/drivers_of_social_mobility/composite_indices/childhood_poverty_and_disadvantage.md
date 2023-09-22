@@ -36,7 +36,7 @@ youth unemployment, and lower working-class work among parents.
     "ygrid": true,
     "xtitle": "",
     "legend": false,
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/CI4-childhood-poverty-and-disadvantage--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
