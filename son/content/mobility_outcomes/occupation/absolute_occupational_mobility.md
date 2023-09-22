@@ -121,6 +121,46 @@ By decade of birth (long-range mobility)
 }
 
 ## Section
+By chances of having a professional class
+
+## Map
+# Src
+{
+    "code": "MO11",
+    "title": "Chances of having a professional class position in the UK, 2022, by International Territorial Level 2 regions, controlling for socio-economic background (SEB).",
+    "tooltipTitle": "",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/MO11_professional_class-20230705.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "%",
+    "multiply": 100,
+    "height": 700,
+    "dataFormat": "quintile",
+    "zero": false,
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "xtitle": "Absolute occupational mobility (%)",
+    "legend": false,
+    "margin": [10, 20, 5, 5],
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1]
+}
+
+## Section
 By area
 
 ## Map
