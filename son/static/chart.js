@@ -955,10 +955,11 @@ class Chart {
                 const valKey = orientation == 'y' ? ykey : xkey
                 const vals = chartData.flat().filter(y => y[key] == x[key])
                 let stackedVals = new Array(vals.length).fill(0), val = 0
+
                 if (zkey) {
                     for (let j = 0; j < vals.length; j++) {
                         stackedVals[j] = parseFloat(vals[j][valKey], 10)
-                        if (vals[j][valKey] == x[valKey]) {
+                        if (vals[j][valKey] == x[valKey] && vals[j][zkey] == x[zkey]) {
                             if (orientation == 'y') {
                                 if (textLabels == 'bottom') {
                                     stackedVals[j] = j > 0 ? stackedVals[j - 1] : 0
