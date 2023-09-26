@@ -66,30 +66,25 @@ By socio-economic background
 ## Section
 By sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/IN21_gender_female-20230424.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/IN21_gender_male-20230424.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN21_gender-20230424.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
+    "xtitle": "Socia-economic background and Sex",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
@@ -151,30 +146,25 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN21",
     "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by socio-economic background and disability (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/IN21_disability_disabled-20230424.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/IN21_disability_not_disabled-20230424.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN21_disability-20230424.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
+    "xtitle": "Socia-economic background and Disability status",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],

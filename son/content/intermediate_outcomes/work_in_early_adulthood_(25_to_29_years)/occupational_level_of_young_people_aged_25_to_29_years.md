@@ -123,24 +123,18 @@ understand overall regional patterns.
 ## Section
 By sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by socio-economic background and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/IN33_gender_female-20230327.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/IN33_gender_male-20230327.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN33_gender-20230327.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "sort": "Category",
     "scale": "%",
     "rounding": "0dp",
@@ -148,7 +142,7 @@ By sex
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Sex",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
@@ -205,24 +199,18 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN33",
     "title": "Percentage of 25 to 29 year olds in different occupational levels, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/IN33_disability_disabled-20230327.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/IN33_disability_not_disabled-20230327.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN33_disability-20230327.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "sort": "Category",
     "scale": "%",
     "rounding": "0dp",
@@ -230,7 +218,7 @@ By disability status
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Disability status",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],

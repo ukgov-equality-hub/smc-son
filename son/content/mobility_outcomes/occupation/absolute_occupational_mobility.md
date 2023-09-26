@@ -227,34 +227,26 @@ understand overall regional patterns.
 ## Section
 By occupational class and sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO11",
     "title": "Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
-    }, {
-        "label": "Total",
-        "data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO11_occupation-20230705.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Sex",
     "legend": true,
+    "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
@@ -307,31 +299,26 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO11_disability-20230705.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Disability status",
     "legend": true,
+    "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,

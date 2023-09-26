@@ -251,9 +251,14 @@ class Chart {
                     })
                 }
             }
-            const vals = zkey && !['line', 'liney'].includes(chartType) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
+            let vals = data
+            if (zkey && !['line', 'liney'].includes(chartType)) {
+                vals = new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey)
+            } else if (Array.isArray(data[0])) {
+                vals = data.flat()
+            }
 
-            let min = 0 //d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let min = 0
             if (orientation == 'y') {
                 min = d3.min(vals, x => parseFloat(x[ykey], 10))
                 if (y1key && y2key && vals[0][y1key] && vals[0][y2key]) {
@@ -266,14 +271,20 @@ class Chart {
                 }
             }
             if (zero && min > 0) min = 0
-            let max = 100 //d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let max = 100
             if (orientation == 'y') {
                 max = d3.max(vals, x => parseFloat(x[ykey], 10))
+                if (zkey && group) {
+                    max = d3.max(new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), [group, xkey], ykey), x => parseFloat(x[ykey], 10))
+                }
                 if (y1key && y2key && vals[0][y1key] && vals[0][y2key]) {
                     max = d3.max([d3.max(vals, x => parseFloat(x[y1key], 10)), d3.max(vals, x => parseFloat(x[y2key], 10))])
                 }
             } else {
                 max = d3.max(vals, x => parseFloat(x[xkey], 10))
+                if (zkey && group) {
+                    max = d3.max(new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), [group, ykey], xkey), x => parseFloat(x[xkey], 10))
+                }
                 if (x1key && x2key && vals[0][x1key] && vals[0][x2key]) {
                     max = d3.max([d3.max(vals, x => parseFloat(x[x1key], 10)), d3.max(vals, x => parseFloat(x[x2key], 10))])
                 }
@@ -296,8 +307,11 @@ class Chart {
             }
             if (self.debug) console.log('min', min, 'max', max, 'range', range)
 
-            let categories = []
-            if (zkey) {
+            let categories = [], groups = null
+            if (zkey && group) {
+                categories = Array.from(new Set(data.flat().map(x => x[zkey].toString())))
+                groups = Array.from(new Set(data.flat().map(x => x[group].toString())))
+            } else if (zkey) {
                 categories = Array.from(new Set(data.flat().map(x => x[zkey].toString())))
             } else if (group) {
                 categories = Array.from(new Set(data.flat().map(x => x[orientation == 'y' ? xkey : ykey].toString())))
@@ -546,12 +560,12 @@ class Chart {
                 ytitle = null
             }
 
-            if (!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
+            if ((!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) || (zkey && group)) {
                 marks.push(Plot.axisX({
                     label: xtitle,
                     labelArrow: 'none',
                     labelAnchor: 'center',
-                    labelOffset: 50,
+                    labelOffset: zkey && group ? 70 : 50,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
@@ -574,7 +588,8 @@ class Chart {
                         }
                     }
                 }))
-            } else if (group && orientation == 'y') {
+            }
+            if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
                     anchor: 'bottom',
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
@@ -591,7 +606,8 @@ class Chart {
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
-                    }
+                    },
+                    dy: zkey ? 20 : undefined
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
@@ -657,7 +673,7 @@ class Chart {
                     label: null
                 } : undefined,
                 fx: orientation == 'y' && group ? {
-                    domain: categories,
+                    domain: groups || categories,
                     label: null,
                     tickFormat: x => x.toString(),
                     tickRotate: rotateDomainLabels ? 90 : undefined
@@ -674,7 +690,7 @@ class Chart {
                 height: self.height,
                 marginTop: margin[0],
                 marginRight: margin[1],
-                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2]: margin[2] + (xtitle != null && xtitle != '' ? 40 : 0) + 20,
+                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2] : margin[2] + (xtitle != null && xtitle != '' ? 40 : 0) + (zkey && group && xtitle ? 15 : 0) + 20,
                 marginLeft: maxLabelLength(data, group && orientation != 'y' ? group : ykey, style) + margin[3] + (ytitle != null ? 10 : 0),
                 style: style
             }
@@ -937,7 +953,7 @@ class Chart {
                     colours = colours.concat(colourScheme)
                 }
                 if (zkey && group) {
-                    return colours[domain.indexOf(x[zkey])]
+                    return colours[categories.indexOf(x[zkey])]
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
@@ -953,8 +969,11 @@ class Chart {
             function getLabelPos(x) {
                 const key = orientation == 'y' ? xkey : ykey
                 const valKey = orientation == 'y' ? ykey : xkey
-                const vals = chartData.flat().filter(y => y[key] == x[key])
+                let vals = chartData.flat().filter(y => y[key] == x[key])
                 let stackedVals = new Array(vals.length).fill(0), val = 0
+                if (zkey && group) {
+                    vals = vals.filter(y => y[group] == x[group])
+                }
 
                 if (zkey) {
                     for (let j = 0; j < vals.length; j++) {
@@ -1141,7 +1160,7 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            let text = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             if (['quartile', 'quintile', 'decile'].includes(chartType)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${chartType}`
                             }
