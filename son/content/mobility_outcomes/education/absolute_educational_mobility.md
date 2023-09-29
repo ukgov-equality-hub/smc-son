@@ -54,7 +54,7 @@ By highest level of parental qualification
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -91,7 +91,7 @@ By area
     "legend": true,
     "colourScheme": ["#5694ca"],
     "range": [0, 50],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -104,35 +104,29 @@ By area
 ## Section
 By sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/MO31_overview_female-20230601.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/MO31_overview_male-20230601.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO31_gender-20230601.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "multiply": 100,
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Parental educational qualifications",
+    "xtitle": "Parental educational qualifications and Sex",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -169,7 +163,7 @@ By ethnicity
     "xticksLength": 4,
     "legend": true,
     "colourScheme": ["#5694ca"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -182,36 +176,30 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Grouped-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO31",
     "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/MO31_disability_disabled-20230601.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/MO31_disability_not_disabled-20230601.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO31_disability-20230601.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",    
     "scale": "%",
     "multiply": 100,
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Parental educational qualifications",
+    "xtitle": "Parental educational qualifications and Disability status",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
     "range1": [0, 70],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",

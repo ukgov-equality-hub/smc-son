@@ -251,9 +251,14 @@ class Chart {
                     })
                 }
             }
-            const vals = zkey && !['line', 'liney'].includes(chartType) ? new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey) : (Array.isArray(data[0]) ? data.flat() : data)
+            let vals = data
+            if (zkey && !['line', 'liney'].includes(chartType)) {
+                vals = new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), orientation == 'y' ? xkey : ykey, orientation == 'y' ? ykey : xkey)
+            } else if (Array.isArray(data[0])) {
+                vals = data.flat()
+            }
 
-            let min = 0 //d3.min(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let min = 0
             if (orientation == 'y') {
                 min = d3.min(vals, x => parseFloat(x[ykey], 10))
                 if (y1key && y2key && vals[0][y1key] && vals[0][y2key]) {
@@ -266,14 +271,20 @@ class Chart {
                 }
             }
             if (zero && min > 0) min = 0
-            let max = 100 //d3.max(vals, x => parseFloat(x[orientation == 'y' ? ykey : xkey], 10))
+            let max = 100
             if (orientation == 'y') {
                 max = d3.max(vals, x => parseFloat(x[ykey], 10))
+                if (zkey && group) {
+                    max = d3.max(new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), [group, xkey], ykey), x => parseFloat(x[ykey], 10))
+                }
                 if (y1key && y2key && vals[0][y1key] && vals[0][y2key]) {
                     max = d3.max([d3.max(vals, x => parseFloat(x[y1key], 10)), d3.max(vals, x => parseFloat(x[y2key], 10))])
                 }
             } else {
                 max = d3.max(vals, x => parseFloat(x[xkey], 10))
+                if (zkey && group) {
+                    max = d3.max(new DataUtils().groupBy((Array.isArray(data[0]) ? data.flat() : data), [group, ykey], xkey), x => parseFloat(x[xkey], 10))
+                }
                 if (x1key && x2key && vals[0][x1key] && vals[0][x2key]) {
                     max = d3.max([d3.max(vals, x => parseFloat(x[x1key], 10)), d3.max(vals, x => parseFloat(x[x2key], 10))])
                 }
@@ -296,8 +307,11 @@ class Chart {
             }
             if (self.debug) console.log('min', min, 'max', max, 'range', range)
 
-            let categories = []
-            if (zkey) {
+            let categories = [], groups = null
+            if (zkey && group) {
+                categories = Array.from(new Set(data.flat().map(x => x[zkey].toString())))
+                groups = Array.from(new Set(data.flat().map(x => x[group].toString())))
+            } else if (zkey) {
                 categories = Array.from(new Set(data.flat().map(x => x[zkey].toString())))
             } else if (group) {
                 categories = Array.from(new Set(data.flat().map(x => x[orientation == 'y' ? xkey : ykey].toString())))
@@ -546,12 +560,12 @@ class Chart {
                 ytitle = null
             }
 
-            if (!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
+            if ((!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) || (zkey && group)) {
                 marks.push(Plot.axisX({
                     label: xtitle,
                     labelArrow: 'none',
                     labelAnchor: 'center',
-                    labelOffset: 50,
+                    labelOffset: zkey && group ? 70 : 50,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
@@ -574,7 +588,8 @@ class Chart {
                         }
                     }
                 }))
-            } else if (group && orientation == 'y') {
+            }
+            if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
                     anchor: 'bottom',
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
@@ -591,7 +606,8 @@ class Chart {
                         } else {
                             return orientation != 'y' ? getLabelText(x, 'xaxis') : x.toString()
                         }
-                    }
+                    },
+                    dy: zkey ? 20 : undefined
                 }))
             }
             if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) {
@@ -657,7 +673,7 @@ class Chart {
                     label: null
                 } : undefined,
                 fx: orientation == 'y' && group ? {
-                    domain: categories,
+                    domain: groups || categories,
                     label: null,
                     tickFormat: x => x.toString(),
                     tickRotate: rotateDomainLabels ? 90 : undefined
@@ -674,7 +690,7 @@ class Chart {
                 height: self.height,
                 marginTop: margin[0],
                 marginRight: margin[1],
-                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2]: margin[2] + (xtitle != null && xtitle != '' ? 40 : 0) + 20,
+                marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2] : margin[2] + (xtitle != null && xtitle != '' ? 40 : 0) + (zkey && group && xtitle ? 15 : 0) + 20,
                 marginLeft: maxLabelLength(data, group && orientation != 'y' ? group : ykey, style) + margin[3] + (ytitle != null ? 10 : 0),
                 style: style
             }
@@ -688,29 +704,33 @@ class Chart {
                 div.removeChild(div.getElementsByTagName('svg')[0])
             }
             div.insertBefore(plot, div.firstChild)
-            d3.select(`#${self.el} svg`).classed(chartType, true)
+            d3.select(`#${self.el} svg`).attr('id', `${self.el}__chartSVG`).classed(chartType, true)
             if (self.rolloverBehaviour != '') d3.select(`#${self.el} svg`).classed(self.rolloverBehaviour, true)
             if (self.clickBehaviour == 'filter') plotted = false
 
             // Legend
-            if ((zkey || (ykey && group)) && legend && !plotted) {
-                let legends
-                if (zkey) {
-                    legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
-                } else if (orientation == 'y') {
-                    if (group) {
-                        legends = [...new Set((originalData || chartData).flat().map(x => x[xkey]))]
-                    } else {
-                        legends = domain
-                    }
+            let legends
+            if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                legends = getQuantileTicks(dataFormat).map((x, i) => `${dataFormat.substr(0, 1).toUpperCase()}${dataFormat.substr(1).toLowerCase()} ${i + 1}`)
+                if (reversePolarity) legends.reverse()
+            } else if (zkey) {
+                legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
+            } else if (orientation == 'y') {
+                if (group) {
+                    legends = [...new Set((originalData || chartData).flat().map(x => x[xkey]))]
                 } else {
-                    if (group) {
-                        legends = [...new Set((originalData || chartData).flat().map(x => x[ykey]))]
-                    } else {
-                        legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
-                    }
+                    legends = domain
                 }
+            } else {
+                if (group) {
+                    legends = [...new Set((originalData || chartData).flat().map(x => x[ykey]))]
+                } else {
+                    legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
+                }
+            }
+            self.legends = legends
 
+            if ((zkey || (ykey && group)) && legend && !plotted) {
                 let legendDiv
                 if (self.clickBehaviour == 'filter') {
                     self.hidden = []
@@ -842,7 +862,7 @@ class Chart {
             }
 
             self.rendered = true
-            if (options.download) self.download()
+            if (options.download) self.download(options.filename)
 
             function getScaledTicks(type) {
                 return type == 'decile' ? 10 : type == 'quintile' ? 5 : 4
@@ -933,7 +953,7 @@ class Chart {
                     colours = colours.concat(colourScheme)
                 }
                 if (zkey && group) {
-                    return colours[domain.indexOf(x[zkey])]
+                    return colours[categories.indexOf(x[zkey])]
                 } else if (zkey) {
                     return colours[categories.indexOf(x[zkey])]
                 } else if (group) {
@@ -949,12 +969,16 @@ class Chart {
             function getLabelPos(x) {
                 const key = orientation == 'y' ? xkey : ykey
                 const valKey = orientation == 'y' ? ykey : xkey
-                const vals = chartData.flat().filter(y => y[key] == x[key])
+                let vals = chartData.flat().filter(y => y[key] == x[key])
                 let stackedVals = new Array(vals.length).fill(0), val = 0
+                if (zkey && group) {
+                    vals = vals.filter(y => y[group] == x[group])
+                }
+
                 if (zkey) {
                     for (let j = 0; j < vals.length; j++) {
                         stackedVals[j] = parseFloat(vals[j][valKey], 10)
-                        if (vals[j][valKey] == x[valKey]) {
+                        if (vals[j][valKey] == x[valKey] && vals[j][zkey] == x[zkey]) {
                             if (orientation == 'y') {
                                 if (textLabels == 'bottom') {
                                     stackedVals[j] = j > 0 ? stackedVals[j - 1] : 0
@@ -1136,7 +1160,7 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            let text = `${this.getAttribute('data-name')}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            let text = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             if (['quartile', 'quintile', 'decile'].includes(chartType)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${chartType}`
                             }
@@ -1651,7 +1675,7 @@ class Chart {
         await this._until(_ => this.rendered == true)
         const svgs = document.getElementById(this.el).getElementsByTagName('svg')
         if (svgs) {
-            let size = await this.download('size')
+            let size = await this.download(null, 'size')
             if (isNaN(size)) {
                 size = ''
             } else if (size > 1000000) {
@@ -1666,7 +1690,7 @@ class Chart {
         return 0
     }
 
-    async download(mode) {
+    async download(filename, mode) {
         await this._until(_ => this.rendered == true)
 
         function isHidden(el) {
@@ -1676,11 +1700,11 @@ class Chart {
             return style.display === 'none'
         }
 
-        return this.rasterize(this.el).then(data => {
+        return this.rasterize(this.el, mode).then(data => {
             if (mode == 'size') {
                 return data && data.size || 0
             } else {
-                const filename = `${this.el}.png`
+                if (!filename) filename = `${this.el}.png`
                 if (window.navigator.msSaveOrOpenBlob) {
                     window.navigator.msSaveBlob(data, filename)
                 } else {
@@ -1695,7 +1719,7 @@ class Chart {
         })
     }
 
-    rasterize() {
+    rasterize(el, mode) {
         function serialize(svg) {
             const xmlns = 'http://www.w3.org/2000/xmlns/'
             const xlinkns = 'http://www.w3.org/1999/xlink'
@@ -1726,11 +1750,70 @@ class Chart {
             return svg
         }
 
+        function addTitle(context, title, maxWidth) {
+            let height = 0, h = 30
+            if (title != '') {
+                context.font = '21px "GDS Transport"'
+                context.textAlign = 'left'
+                context.fillStyle = '#000'
+
+                let words = title.split(' '), lines = [], currentLine = words[0]
+                for (let i = 1; i < words.length; i++) {
+                    const width = context.measureText(currentLine + ' ' + words[i]).width
+                    if (width < maxWidth) {
+                        currentLine += ' ' + words[i]
+                    } else {
+                        lines.push(currentLine)
+                        currentLine = words[i]
+                    }
+                }
+                lines.push(currentLine)
+
+                for (let i = 0; i < lines.length; i++) {
+                    height += h
+                    context.fillText(lines[i], 5, height)
+                }
+            }
+            return height == 0 ? 0 : height + h
+        }
+
+        function addLegend(context, legends, currentHeight, maxWidth, colourScheme) {
+            let height = 0, h = 30, x = 5
+            currentHeight += 10
+            if (legends) {
+                context.font = '16px "GDS Transport"'
+                context.textAlign = 'left'
+                height += h
+
+                for (let i = 0; i < legends.length; i++) {
+                    context.beginPath()
+                    context.fillStyle = colourScheme[i]
+                    context.fillRect(x, currentHeight + height - 17, 20, 20)
+
+                    context.fillStyle = '#000'
+                    context.fillText(legends[i], x + 30, currentHeight + height)
+                    x += context.measureText(legends[i]).width + 50
+                    const next = i < legends.length ? context.measureText(legends[i + 1]).width : 0
+                    if (x + next + 50 > maxWidth) {
+                        x = 5
+                        height += h
+                    }
+                }
+            }
+            return height == 0 ? 0 : height + h
+        }
+
         const svgs = document.getElementById(this.el).getElementsByTagName('svg')
         let svg = svgs[0]//[svgs.length - 1]
         svg = addfont(svg)
         const bg = svg.style.backgroundColor
         svg.style.backgroundColor = '#fff'
+        let title = this.options.title !== 'undefined' && this.options.title != '' ? this.options.title : ''
+        if (title != '') {
+            title += this.options.label && this.options.label !== 'undefined' && this.options.label != '' ? ` (${this.options.label})` : ''
+        }
+        const colourScheme = this.options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
+
         let resolve, reject
         const promise = new Promise((y, n) => (resolve = y, reject = n))
         const image = new Image
@@ -1739,11 +1822,26 @@ class Chart {
             const rect = svg.getBoundingClientRect()
             if (rect.width == 0) rect.width = svg.getAttribute('width')
             if (rect.height == 0) rect.height = svg.getAttribute('height')
-            const canvas = document.createElement('canvas')
-            canvas.width = rect.width
-            canvas.height = rect.height
-            const context = canvas.getContext('2d')
-            context.drawImage(image, 0, 0, rect.width, rect.height)
+            let canvas = document.createElement('canvas'), context = canvas.getContext('2d')
+            let width = rect.width, height = rect.height, h = 0
+            if (title != '') height += 30
+            canvas.width = width
+            canvas.height = 10000 //height
+
+            context.fillStyle = '#fff'
+            context.fillRect(0, 0, canvas.width, canvas.height)
+            h += addTitle(context, title, width - 10)
+            context.drawImage(image, 0, h, width, height)
+            h += addLegend(context, this.legends, height + h, width - 10, this.options.reverseLegend ? [...colourScheme.slice(0, this.legends.length).reverse()] : colourScheme)
+
+            if (width > 0 && h > 0) {
+                const img = canvas
+                canvas = document.createElement('canvas'), context = canvas.getContext('2d')
+                canvas.width = width
+                canvas.height = height + h
+                context.drawImage(img, 0, 0)
+            }
+
             context.canvas.toBlob(resolve)
         }
         image.src = URL.createObjectURL(serialize(svg))

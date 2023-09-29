@@ -40,7 +40,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca"],
     "range": [0, 1],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 35,
     "dataTable": "/static/data/pre-processed-csvs/DR31-job-vacancy-rate--by-year--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,

@@ -31,6 +31,9 @@ function buildMap(mapId, datafile, download, overrideOptions) {
     } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
         options['reversePolarity'] = options.data.reversePolarity
     }
+    if (overrideOptions && typeof overrideOptions.filename !== 'undefined') {
+        options['filename'] = overrideOptions.filename
+    }
 
     const reversePolarity = typeof options.reversePolarity !== 'undefined' && options.reversePolarity;
     if (reversePolarity) {
@@ -79,14 +82,14 @@ window.document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
-function downloadMap(mapId, datafile) {
+function downloadMap(mapId, datafile, label, filename) {
     if (datafile) {
         const data = mapsData[mapId]
-        buildMap(mapId, datafile, true)
+        buildMap(mapId, datafile, true, { label, filename })
         setTimeout(function () {
-            buildMap(mapId, data)
+            buildMap(mapId, data, filename)
         }, 2000)
     } else {
-        maps[mapId].download()
+        maps[mapId].download(filename)
     }
 }

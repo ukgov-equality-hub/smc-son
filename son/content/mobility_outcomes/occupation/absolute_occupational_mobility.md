@@ -68,7 +68,7 @@ By decade of birth (upward and downward mobility)
     "legend": true,
     "colourScheme": ["#808080", "#5694ca", "#d4351c"],
     "range": [20, 70],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
@@ -109,7 +109,7 @@ By decade of birth (long-range mobility)
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "range": [10, 40],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
@@ -118,6 +118,46 @@ By decade of birth (long-range mobility)
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
     "dataTableNumberOfHeadingRows": 2
+}
+
+## Section
+By chances of having a professional class
+
+## Map
+# Src
+{
+    "code": "MO11",
+    "title": "Chances of having a professional class position in the UK, 2022, by International Territorial Level 2 regions, controlling for socio-economic background (SEB).",
+    "tooltipTitle": "",
+    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+    "data": "/static/data/indicators/MO11_professional_class-20230705.csv",
+    "geoFormat": "",
+    "nameField": "Area_name",
+    "valueField": "Value",
+    "areaField": "ITL221NM",
+    "scale": "%",
+    "multiply": 100,
+    "height": 700,
+    "dataFormat": "quintile",
+    "zero": false,
+    "background": true,
+    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+    "rolloverBehaviour": "outline",
+    "onClick": "mapSelect1",
+    "type": "dot",
+    "xkey": "Value",
+    "ykey": "Area_name",
+    "sort": "-Value",
+    "xgrid": true,
+    "ygrid": true,
+    "xtitle": "Absolute occupational mobility (%)",
+    "legend": false,
+    "margin": [10, 20, 5, 5],
+    "backgroundColor": "#fafafa",
+    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
+    "disableJavascriptAlterationOfDataTable": true,
+    "dataTableAlignColumns": ["left", "right", "right"],
+    "dataTableDecimalPlaces": [null, 1, 1]
 }
 
 ## Section
@@ -162,7 +202,7 @@ By area
     "ygrid": true,
     "xtitle": "Absolute occupational mobility (%)",
     "legend": false,
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -187,36 +227,28 @@ understand overall regional patterns.
 ## Section
 By occupational class and sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO11",
     "title": "Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/MO11_occupation_female-20230705.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/MO11_occupation_male-20230705.csv"
-    }, {
-        "label": "Total",
-        "data": "/static/data/indicators/MO11_occupation_total-20230705.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO11_occupation-20230705.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Sex",
     "legend": true,
+    "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -253,7 +285,7 @@ By ethnicity
     "yticks": 5,
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -267,33 +299,28 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "MO11",
     "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/MO11_disability_disabled-20230705.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/MO11_disability_not_disabled-20230705.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/MO11_disability-20230705.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
-    "xtitle": "Socio-economic background",
+    "xtitle": "Socio-economic background and Disability status",
     "legend": true,
+    "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",

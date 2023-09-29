@@ -479,12 +479,12 @@ class DataUtils {
         //
     }
 
-    groupBy(arr, groups, key) {
-        var map = new Map;
-        groups = [].concat(groups);
-        return arr.reduce((r, o) => {
+    groupBy(data, groups, key) {
+        let map = new Map
+        groups = [].concat(groups)
+        return data.reduce((r, o) => {
             groups.reduce((m, k, i, { length }) => {
-                var child
+                let child
                 if (m.has(o[k])) return m.get(o[k])
                 if (i + 1 == length) {
                     child = Object.assign(...groups.map(k => ({ [k]: o[k] })), { [key]: 0 })

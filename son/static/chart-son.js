@@ -25,6 +25,9 @@ function buildChart(chartId, datafile, download, overrideOptions) {
     } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
         options['reversePolarity'] = options.data.reversePolarity
     }
+    if (overrideOptions && typeof overrideOptions.filename !== 'undefined') {
+        options['filename'] = overrideOptions.filename
+    }
 
     charts[chartId] = new Chart(
         'chart' + chartId,
@@ -51,14 +54,14 @@ window.document.addEventListener('DOMContentLoaded', function () {
     })
 })
 
-function downloadChart(chartId, datafile) {
+function downloadChart(chartId, datafile, label, filename) {
     if (datafile) {
         const data = chartsData[chartId]
-        buildChart(chartId, datafile, true)
+        buildChart(chartId, datafile, true, { label, filename })
         setTimeout(function () {
             buildChart(chartId, data)
         }, 2000)
     } else {
-        charts[chartId].download()
+        charts[chartId].download(filename)
     }
 }

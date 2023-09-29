@@ -41,7 +41,7 @@ By year
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "range": [0, 80],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "textLabels": "center",
     "labelColour": "#fff",

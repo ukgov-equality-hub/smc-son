@@ -52,7 +52,7 @@ By sex
     "reverseLegend": true,
     "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
     "range": [10000, 60000],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 80,
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",

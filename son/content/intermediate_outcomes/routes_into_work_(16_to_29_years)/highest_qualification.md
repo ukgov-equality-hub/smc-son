@@ -54,7 +54,7 @@ By socio-economic background
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -100,7 +100,7 @@ By area
     "ygrid": true,
     "xtitle": "% point diff compared to national avg",
     "legend": false,
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-ITL2-region--table-format.csv",
     "disableJavascriptAlterationOfDataTable": true,
@@ -127,35 +127,30 @@ understand overall regional patterns.
 ## Section
 By sex
 
-## Chart: Stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/IN23_gender_female-20230327.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/IN23_gender_male-20230327.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN23_gender-20230327.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Sex",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
+    "xtitle": "Parental educational qualifications and Sex",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
     "range": [0, 100],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -194,7 +189,7 @@ By ethnicity
     "legend": true,
     "colourScheme": ["#5694ca", "#d4351c"],
     "range": [0, 100],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
@@ -208,35 +203,30 @@ By ethnicity
 ## Section
 By disability status
 
-## Chart: stacked-bar
+## Chart: Stacked-grouped-bar
 {
     "code": "IN23",
     "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
     "tooltipTitle": "",
-    "data": [{
-        "label": "Disabled",
-        "data": "/static/data/indicators/IN23_disability_disabled-20230327.csv"
-    }, {
-        "label": "Not disabled",
-        "data": "/static/data/indicators/IN23_disability_not_disabled-20230327.csv"
-    }],
-    "toggle": "radio",
+    "data": "/static/data/indicators/IN23_disability-20230327.csv",
     "height": 450,
     "type": "bary",
-    "xkey": "SEB",
+    "xkey": "Category2",
     "ykey": "Value",
     "zkey": "Category",
+    "group": "SEB",
     "scale": "%",
     "rounding": "0dp",
     "xgrid": false,
     "ygrid": true,
     "xticksSmallScreen": "abreviate",
     "yticks": 5,
+    "xtitle": "Parental educational qualifications and Disability status",
     "legend": true,
     "reverseLegend": true,
     "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
     "range": [0, 100],
-    "margin": [0, 0, 0, 0],
+    "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "textLabels": "center",
     "labelColour": "#fff",
