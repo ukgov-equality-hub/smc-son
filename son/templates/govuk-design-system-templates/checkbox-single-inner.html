@@ -1,0 +1,16 @@
+
+{% macro renderFor(form, fieldName, label) %}
+
+    <div class="govuk-checkboxes__item">
+        <input type="checkbox"
+               id="{{ fieldName }}"
+               name="{{ fieldName }}"
+               {{ 'checked' if form[fieldName].data }}
+               class="govuk-checkboxes__input">
+        <label for="{{ fieldName }}"
+               class="govuk-label govuk-checkboxes__label">
+            {{ label }}
+        </label>
+    </div>
+
+{% endmacro %}
