@@ -25,6 +25,8 @@ class Config:
     MAINTENANCE_MODE = os.environ.get("MAINTENANCE_MODE")
     BASIC_AUTH_USERNAME = os.environ.get("BASIC_AUTH_USERNAME")
     BASIC_AUTH_PASSWORD = os.environ.get("BASIC_AUTH_PASSWORD")
+    GOV_UK_NOTIFY_API_KEY = os.environ.get("GOV_UK_NOTIFY_API_KEY")
+    NOTIFY_OVERRIDE_EMAIL = os.environ.get("NOTIFY_OVERRIDE_EMAIL")
 
 
 class DevConfig(Config):

@@ -417,6 +417,12 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
 
   setting {
     namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "ENVIRONMENT"
+    value     = var.environment
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
     name      = "SECRET_KEY"
     value     = var.SECRET_KEY
   }
@@ -437,5 +443,17 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
     namespace = "aws:elasticbeanstalk:application:environment"
     name      = "BASIC_AUTH_PASSWORD"
     value     = var.BASIC_AUTH_PASSWORD
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "GOV_UK_NOTIFY_API_KEY"
+    value     = var.GOV_UK_NOTIFY_API_KEY
+  }
+
+  setting {
+    namespace = "aws:elasticbeanstalk:application:environment"
+    name      = "NOTIFY_OVERRIDE_EMAIL"
+    value     = var.NOTIFY_OVERRIDE_EMAIL
   }
 }

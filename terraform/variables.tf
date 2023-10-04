@@ -54,3 +54,10 @@ variable "BASIC_AUTH_PASSWORD" {
   type = string
   default = ""
 }
+variable "GOV_UK_NOTIFY_API_KEY" {
+  type = string
+}
+variable "NOTIFY_OVERRIDE_EMAIL" {
+  type = string
+  default = ""
+}
