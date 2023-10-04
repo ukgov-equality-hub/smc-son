@@ -12,8 +12,7 @@ class HttpBasicAuthentication:
 
     def _handler(self):
         if request.path.startswith('/health-check'):
-            # Don't require HTTP Basic Authentication for the Jobs endpoints.
-            # These already require a Job Token for security
+            # Don't require HTTP Basic Authentication for the Health Check endpoint
             return
 
         try:
