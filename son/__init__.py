@@ -24,7 +24,6 @@ def create_app(test_config=None):
         config_object = DevConfig
     else:
         config_object = TestConfig
-    config_object = DevConfig
 
     app.config.from_object(config_object)
 
