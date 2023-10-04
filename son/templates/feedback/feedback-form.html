@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{% import "govuk-design-system-templates/error-summary.html" as error_summary %}
+{% import "govuk-design-system-templates/radios.html" as radios %}
+{% import "govuk-design-system-templates/checkbox-single-inner.html" as checkbox_single_inner %}
+{% import "govuk-design-system-templates/textarea.html" as textarea %}
+{% import "govuk-design-system-templates/text-input.html" as textInput %}
+
+{% block title %}Share your feedback{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full" style="max-width: 750px;">
+
+            {{ error_summary.renderFor(form) }}
+
+            <h1 class="govuk-heading-xl">
+                Share your feedback
+            </h1>
+            <p class="govuk-body govuk-!-margin-bottom-2">
+                Please tell us about your experience using the State of the Nation Data Explorer.
+            </p>
+            <p class="govuk-body govuk-!-margin-bottom-8">
+                All questions are optional.
+            </p>
+
+            <form method="POST">
+                {{ form.csrf_token }}
+
+                <div class="govuk-form-group">
+                    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                            Why did you visit this website?
+                        </legend>
+                        <div id="waste-hint" class="govuk-hint">
+                            Select all that apply.
+                        </div>
+                        <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                            {{ checkbox_single_inner.renderFor(
+                                form,
+                                fieldName='why_visit__download_data',
+                                label="Download data"
+                            ) }}
+                            {{ checkbox_single_inner.renderFor(
+                                form,
+                                fieldName='why_visit__download_charts_and_maps',
+                                label="Download charts and maps"
+                            ) }}
+                            {{ checkbox_single_inner.renderFor(
+                                form,
+                                fieldName='why_visit__read_summary',
+                                label="Read a summary of the main findings"
+                            ) }}
+                            {{ checkbox_single_inner.renderFor(
+                                form,
+                                fieldName='why_visit__browse_website',
+                                label="Browse the website"
+                            ) }}
+                        </div>
+
+                        <div class="govuk-!-margin-bottom-8">
+                            {{ textarea.renderFor(
+                                form,
+                                fieldName='why_visit__tell_us_more',
+                                textareaForOptions={
+                                    'labelOptions': {
+                                        'htmlOrText': "Please tell us more about your reasons for visiting",
+                                        'classes': 'govuk-!-margin-top-4'
+                                     },
+                                    'rows': 4
+                                }
+                            ) }}
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="govuk-!-margin-bottom-8">
+                    {{ radios.renderFor(
+                        form,
+                        fieldName='did_you_find_everything',
+                        question='Did you find everything you were looking for?',
+                        radiosOptions={
+                            'questionClasses': 'govuk-fieldset__legend--m',
+                            'conditionalOptions': [
+                                ('NO',
+                                textarea.renderFor(
+                                    form,
+                                    fieldName='did_you_find_everything__what_did_you_not_find',
+                                    textareaForOptions={
+                                        'labelOptions': { 'htmlOrText': "What didn’t you find?" },
+                                        'rows': 4
+                                    }
+                                ))
+                            ]
+                        }
+                    ) }}
+                </div>
+
+                <div class="govuk-!-margin-bottom-8">
+                    {{ radios.renderFor(
+                        form,
+                        fieldName='how_easy_to_use_website',
+                        question='How easy or difficult do you find using this website?',
+                        radiosOptions={
+                            'questionClasses': 'govuk-fieldset__legend--m'
+                        }
+                    ) }}
+                </div>
+
+                <div class="govuk-!-margin-bottom-8">
+                    {{ textarea.renderFor(
+                        form,
+                        fieldName='how_could_we_improve_your_experience',
+                        textareaForOptions={
+                            'labelOptions': {
+                                'htmlOrText': "How could we improve your experience?",
+                                'classes': 'govuk-label--m'
+                             },
+                            'rows': 5
+                        }
+                    ) }}
+                </div>
+
+                <div class="govuk-!-margin-bottom-8">
+                    {{ textarea.renderFor(
+                        form,
+                        fieldName='what_would_you_like_to_see_on_this_website_in_the_future',
+                        textareaForOptions={
+                            'labelOptions': {
+                                'htmlOrText': "What would you like to see on this website in the future?",
+                                'classes': 'govuk-label--m'
+                             },
+                            'rows': 5
+                        }
+                    ) }}
+                </div>
+
+                <div class="govuk-!-margin-bottom-8">
+                    {{ radios.renderFor(
+                        form,
+                        fieldName='what_sector_do_you_work_in',
+                        question='What sector do you work in?',
+                        radiosOptions={
+                            'questionClasses': 'govuk-fieldset__legend--m',
+                            'conditionalOptions': [
+                                ('OTHER',
+                                textarea.renderFor(
+                                    form,
+                                    fieldName='what_sector_do_you_work_in__other',
+                                    textareaForOptions={
+                                        'labelOptions': { 'htmlOrText': "What sector do you work in?" },
+                                        'rows': 2
+                                    }
+                                ))
+                            ]
+                        }
+                    ) }}
+                </div>
+
+                <div class="govuk-button-group">
+                    <button class="govuk-button" data-module="govuk-button">
+                        Send feedback
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+{% endblock %}

@@ -3,6 +3,7 @@ import os
 from datetime import timedelta
 from flask import Flask, g, session
 from flask_uuid import FlaskUUID
+from son import feedback
 from son.utils import filters
 from son.config import Config, DevConfig, TestConfig
 from son.utils.http_basic_authentication import HttpBasicAuthentication
@@ -23,7 +24,6 @@ def create_app(test_config=None):
         config_object = DevConfig
     else:
         config_object = TestConfig
-    config_object = DevConfig
 
     app.config.from_object(config_object)
 
@@ -77,6 +77,10 @@ def create_app(test_config=None):
     # Catalogue
     from son.son import son
     app.register_blueprint(son)
+
+    # Feedback
+    from son.feedback import feedback
+    app.register_blueprint(feedback)
 
     # Policies
     from son.policies import policies

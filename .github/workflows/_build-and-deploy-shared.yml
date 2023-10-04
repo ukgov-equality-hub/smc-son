@@ -37,6 +37,10 @@ on:
         required: true
       BASIC_AUTH_PASSWORD:
         required: true
+      GOV_UK_NOTIFY_API_KEY:
+        required: true
+      NOTIFY_OVERRIDE_EMAIL:
+        required: true
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}
@@ -69,6 +73,8 @@ jobs:
           -var "MAINTENANCE_MODE=${{ secrets.MAINTENANCE_MODE }}" \
           -var "BASIC_AUTH_USERNAME=${{ secrets.BASIC_AUTH_USERNAME }}" \
           -var "BASIC_AUTH_PASSWORD=${{ secrets.BASIC_AUTH_PASSWORD }}" \
+          -var "GOV_UK_NOTIFY_API_KEY=${{ secrets.GOV_UK_NOTIFY_API_KEY }}" \
+          -var "NOTIFY_OVERRIDE_EMAIL=${{ secrets.NOTIFY_OVERRIDE_EMAIL }}" \
           -auto-approve
         working-directory: ./terraform
 

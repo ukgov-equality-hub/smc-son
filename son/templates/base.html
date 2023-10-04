@@ -84,6 +84,17 @@
         </div>
     </header>
 
+    <div class="govuk-phase-banner son-phase-banner-header">
+        <p class="govuk-phase-banner__content">
+            <span class="govuk-phase-banner__text">
+                This is a new website - your
+                <a href="/feedback?from-header-link" class="govuk-link">
+                    feedback</a>
+                will help us to improve it.
+            </span>
+        </p>
+    </div>
+
     {{ domainmenu(menu, domain) }}
 
     {{ mobilemenu(menu, indicator or subdomain or domain) }}
@@ -142,6 +153,17 @@
             {% endwith %}
 
             {% block content %}{% endblock %}
+
+            <div class="govuk-phase-banner son-phase-banner-footer">
+                <p class="govuk-phase-banner__content">
+                    <span class="govuk-phase-banner__text">
+                        This is a new website - your
+                        <a href="/feedback?from-footer-link" class="govuk-link">
+                            feedback</a>
+                        will help us to improve it.
+                    </span>
+                </p>
+            </div>
         </main>
     </div>
 

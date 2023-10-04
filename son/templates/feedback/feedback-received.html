@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% import "govuk-design-system-templates/error-summary.html" as error_summary %}
+{% import "govuk-design-system-templates/text-input.html" as textInput %}
+
+{% block title %}Feedback received{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-l">
+                Thank you for your feedback
+            </h1>
+
+            <p class="govuk-body govuk-!-margin-bottom-9">
+                <a href="/">
+                    Return to the State of the Nation data explorer homepage
+                </a>
+            </p>
+
+        </div>
+    </div>
+{% endblock %}

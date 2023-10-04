@@ -1,5 +1,6 @@
 {% import "govuk-design-system-templates/error-message.html" as errorMessage %}
 {% import "govuk-design-system-templates/hint.html" as hint %}
+{% import "govuk-design-system-templates/checkbox-single-inner.html" as checkbox_single_inner %}
 
 {% macro renderFor(form, fieldName, question, label, checkboxOptions) %}
 
@@ -34,12 +35,7 @@
             {{ errorMessage.renderFor(fieldName, form[fieldName].errors, checkboxOptions.errorMessageOptions) }}
 
             <div class="govuk-checkboxes" data-module="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                    <input class="govuk-checkboxes__input" id="{{ fieldName }}" name="{{ fieldName }}" type="checkbox" {{ 'checked' if form[fieldName].data }}>
-                    <label class="govuk-label govuk-checkboxes__label" for="{{ fieldName }}">
-                        {{ label }}
-                    </label>
-                </div>
+                {{ checkbox_single_inner.renderFor(form, fieldName, label) }}
             </div>
         </fieldset>
     </div>
