@@ -10,11 +10,6 @@ locals {
   main_app_elastic_beanstalk_health_check_matcher_code = 200
 }
 
-data "aws_acm_certificate" "social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate" {
-  domain   = "social-mobility.data.gov.uk"
-  statuses = ["ISSUED"]
-}
-
 // An S3 bucket to store the code that is deployed by Elastic Beanstalk
 resource "aws_s3_bucket" "main_app_elastic_beanstalk_code_s3_bucket" {
   bucket_prefix = lower("${var.service_name_hyphens}--${var.environment_hyphens}--S3-Beanstalk")
@@ -126,32 +121,7 @@ resource "aws_elastic_beanstalk_environment" "main_app_elastic_beanstalk_environ
   setting {
     namespace = "aws:elbv2:listener:default"
     name      = "ListenerEnabled"
-    value     = "false"  // disabled. we create our own port 80 listener which redirects to https
-  }
-
-  // HTTPS secure listener config
-  setting {
-    namespace = "aws:elbv2:listener:443"
-    name      = "ListenerEnabled"
     value     = "true"
-  }
-
-  setting {
-    namespace = "aws:elbv2:listener:443"
-    name      = "Protocol"
-    value     = "HTTPS"
-  }
-
-  setting {
-    namespace = "aws:elbv2:listener:443"
-    name      = "SSLCertificateArns"
-    value     = data.aws_acm_certificate.social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate.arn
-  }
-
-  setting {
-    namespace = "aws:elbv2:listener:443"
-    name = "SSLPolicy"
-    value = "ELBSecurityPolicy-2016-08"
   }
 
   ////////////////////////
