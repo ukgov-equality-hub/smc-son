@@ -1179,10 +1179,6 @@ class Choropleth {
         this.render(data)
     }
 
-    downloadData(format) {
-        return this.dataUtils.downloadData(this.data, `download.${format}`, format)
-    }
-
     async downloadSize() {
         await this._until(_ => this.rendered == true)
         const svgs = document.getElementById(this.el).getElementsByTagName('svg')

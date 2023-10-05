@@ -145,19 +145,14 @@ def latest_data_filter(context, details):
 def table_filter(context, details):
     if details:
         data = content_list_filter(context, [details[0], 'Src'])
-        field1 = details[1]
-        field2 = details[2] if len(details) > 2 else ''
+        field = details[1]
         try:
             attributes = json.loads(data)
             file_path = ''
-            if field1 in attributes:
-                file_path = attributes[field1]
-            elif field2 in attributes:
-                file_path = attributes[field2]
+            if field in attributes:
+                file_path = attributes[field]
 
             if file_path != '':
-                if type(file_path) == list and 'data' in file_path[-1]:
-                    file_path = file_path[-1]['data']
                 file_path = file_path.replace('data-src:', '').strip()
                 data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
                 if Path(data_src).is_file():
