@@ -1,11 +1,4 @@
 
-data "aws_acm_certificate" "social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate__us_east_1" {
-  provider = aws.us-east-1
-
-  domain   = "social-mobility.data.gov.uk"
-  statuses = ["ISSUED"]
-}
-
 resource "aws_cloudfront_cache_policy" "cloudfront_cache_policy_for_elastic_beanstalk" {
   name        = "${var.service_name_hyphens}--${var.environment_hyphens}-Cache-Policy"
   min_ttl     = 0
@@ -52,7 +45,7 @@ resource "aws_cloudfront_distribution" "distribution_for_elastic_beanstalk_envir
   aliases = ["${var.dns_record_subdomain_including_dot}${data.aws_route53_zone.social_mobility_dot_data_dot_gov_dot_uk_zone.name}"]
 
   viewer_certificate {
-    acm_certificate_arn = data.aws_acm_certificate.social_mobility_dot_data_dot_gov_dot_uk_ssl_certificate__us_east_1.arn
+    acm_certificate_arn = aws_acm_certificate_validation.certificate_validation_waiter.certificate_arn
     cloudfront_default_certificate = false
     minimum_protocol_version = "TLSv1"
     ssl_support_method = "sni-only"
