@@ -1,7 +1,9 @@
 
 resource "aws_cloudfront_cache_policy" "cloudfront_cache_policy_for_elastic_beanstalk" {
-  name        = "${var.service_name_hyphens}--${var.environment_hyphens}-Cache-Policy"
-  min_ttl     = 0
+  name = "${var.service_name_hyphens}--${var.environment_hyphens}-Cache-Policy"
+  min_ttl = 0
+  default_ttl = 60
+  max_ttl = 600
 
   parameters_in_cache_key_and_forwarded_to_origin {
     cookies_config {
