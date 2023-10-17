@@ -26,6 +26,7 @@ locals {
 }
 
 resource "aws_cloudfront_distribution" "distribution_for_elastic_beanstalk_environment" {
+  // CloudFront distributions have to be created in the us-east-1 region (for some reason!)
   provider = aws.us-east-1
 
   comment = "${var.service_name_hyphens}--${var.environment_hyphens}"

@@ -26,4 +26,11 @@ provider "aws" {
 provider "aws" { // This us-east-1 provider is needed for CloudFront (which we might use in future)
   region = "us-east-1"
   alias = "us-east-1"
+
+  default_tags {
+    tags = {
+      Service = var.service_name
+      Environment = var.environment
+    }
+  }
 }
