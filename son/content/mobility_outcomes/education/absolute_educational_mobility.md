@@ -60,7 +60,6 @@ By highest level of parental qualification
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
 }
@@ -96,7 +95,6 @@ By area
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }
@@ -132,7 +130,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
@@ -168,7 +165,6 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }
@@ -205,7 +201,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]
 }

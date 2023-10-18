@@ -44,7 +44,6 @@ By year
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }
@@ -87,7 +86,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }

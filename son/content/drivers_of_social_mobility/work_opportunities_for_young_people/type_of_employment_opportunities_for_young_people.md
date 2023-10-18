@@ -45,7 +45,6 @@ By year
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }
@@ -95,7 +94,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/DR33-type-of-employment-opportunities-for-young-people--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }

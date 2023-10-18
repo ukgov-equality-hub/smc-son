@@ -43,7 +43,6 @@ By year
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 35,
     "dataTable": "/static/data/pre-processed-csvs/DR31-job-vacancy-rate--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }

@@ -50,7 +50,6 @@ By year
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 45,
     "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }
@@ -80,7 +79,6 @@ By area
     "colourScheme": ["#5694ca"],
     "margin": [10, 20, 5, 5],
     "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -112,7 +110,6 @@ By sex
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 25,
     "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"]
 }
 
@@ -145,7 +142,6 @@ By ethnicity
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 35,
     "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -178,7 +174,6 @@ By disability status
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 40,
     "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }

@@ -47,7 +47,6 @@ By year
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/DR23-access-to-higher-education--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }

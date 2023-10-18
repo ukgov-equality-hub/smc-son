@@ -48,7 +48,6 @@ By age group and type of wealth
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/MO51-level-of-wealth--by-age-and-type-of-wealth--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
 }

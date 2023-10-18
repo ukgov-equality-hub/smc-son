@@ -45,7 +45,6 @@ By year
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/DR24-availability-of-high-quality-higher-education--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
 }

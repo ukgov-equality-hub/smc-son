@@ -42,7 +42,6 @@ By year
     "margin": [10, 20, 5, 5],
     "maxLabelLength": 30,
     "dataTable": "/static/data/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -119,7 +118,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/DR52-business-spending-on-research-and-development--by-ITL2-region-and-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
     "dataTableTitle": "Business spending on research and development by area (UK, 2007 to 2018), in millions of euros"

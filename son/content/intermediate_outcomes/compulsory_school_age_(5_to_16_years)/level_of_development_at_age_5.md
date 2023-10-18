@@ -56,7 +56,6 @@ By year
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-year--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"]
 }
 
@@ -106,7 +105,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-ITL2-region-and-FMS--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1]
 }
@@ -155,7 +153,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -197,7 +194,6 @@ By ethnicity
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/IN11-level-of-development-at-age-5--by-FSM-and-ethnicity-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
     "dataTableNumberOfHeadingRows": 2

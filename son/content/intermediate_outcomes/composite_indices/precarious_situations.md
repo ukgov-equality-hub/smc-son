@@ -39,7 +39,6 @@ of unemployment, economic inactivity and lower working-class employment.
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/CI2-precarious-situations--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 0]
 }

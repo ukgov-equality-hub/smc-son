@@ -52,7 +52,6 @@ By socio-economic background
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -94,7 +93,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 2]
 }
@@ -146,7 +144,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }
@@ -184,7 +181,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }
@@ -221,7 +217,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 2, 2]
 }

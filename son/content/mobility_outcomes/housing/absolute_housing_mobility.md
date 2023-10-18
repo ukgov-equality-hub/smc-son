@@ -57,7 +57,6 @@ By home ownership status of parents
     "textLabels": "center",
     "labelColour": "#fff",
     "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right"],
     "dataTableDecimalPlaces": [null, 1]
 }
@@ -94,7 +93,6 @@ By area
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-ITL1-region-and-SEB--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -130,7 +128,6 @@ By sex
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -166,7 +163,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }

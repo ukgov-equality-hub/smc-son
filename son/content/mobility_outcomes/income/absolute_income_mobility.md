@@ -44,7 +44,6 @@ By year of birth
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/MO21-absolute-income-mobility--by-year-and-country--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, null, 1]
 }

@@ -73,7 +73,6 @@ By decade of birth (upward and downward mobility)
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-decade-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingRows": 2
@@ -114,7 +113,6 @@ By decade of birth (long-range mobility)
     "rolloverBehaviour": "fade",
     "clickBehaviour": "isolate",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--long-range-mobility--by-decade-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
     "dataTableNumberOfHeadingRows": 2
@@ -165,7 +163,6 @@ By area
     "margin": [10, 20, 5, 5],
     "backgroundColor": "#fafafa",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -214,7 +211,6 @@ By occupational class and sex
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-sex--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
@@ -251,7 +247,6 @@ By ethnicity
     "labelColour": "#fff",
     "clickBehaviour": "fade",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ethnicity--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "right", "right"],
     "dataTableDecimalPlaces": [null, 1, 1]
 }
@@ -286,7 +281,6 @@ By disability status
     "labelColour": "#fff",
     "clickBehaviour": "filter",
     "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-disability--table-format.csv",
-    "disableJavascriptAlterationOfDataTable": true,
     "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
     "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
     "dataTableNumberOfHeadingColumns": 2
