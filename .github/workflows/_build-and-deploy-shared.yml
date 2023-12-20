@@ -108,7 +108,7 @@ jobs:
 
       - name: 'Save build run info to JSON file'
         run: |
-          echo '{ "git_commit": "${{ github.sha }}", "git_branch": "${{ github.ref_name }}", "github_action_name": "${{ github.workflow }}", "github_action_run_url": "https://github.com/cabinetoffice/smc-son/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}" }' > build-info.json
+          echo '{ "git_commit": "${{ github.sha }}", "git_branch": "${{ github.ref_name }}", "github_action_name": "${{ github.workflow }}", "github_action_run_url": "https://github.com/${{github.repository}}/actions/runs/${{ github.run_id }}/attempts/${{ github.run_attempt }}" }' > build-info.json
 
       - name: 'Install Node.JS dependencies'
         run: |
