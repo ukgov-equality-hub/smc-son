@@ -89,18 +89,10 @@ jobs:
           cat main_app_elastic_beanstalk_code_s3_bucket.txt
           cat main_app_elastic_beanstalk_code_s3_bucket.txt >> $GITHUB_OUTPUT
 
-  build_and_deploy:
-    name: 'Build and Deploy'
+  build:
+    name: 'Build'
     runs-on: ubuntu-latest
-    needs: terraform
     environment: ${{ inputs.GITHUB_ACTIONS_ENVIRONMENT }}
-
-    env:
-      ZIP_FILE_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}_run${{ github.run_id }}_attempt${{ github.run_attempt }}.zip"
-      EB_CODE_BUCKET: "${{needs.terraform.outputs.main_app_elastic_beanstalk_code_s3_bucket}}"
-      EB_APP_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}__${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}__Elastic_Beanstalk_Application"
-      EB_ENVIRONMENT_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME_HYPHENS }}--${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}--EB-Env"
-      EB_VERSION_LABEL: "v_run${{ github.run_id }}_attempt${{ github.run_attempt }}"
 
     steps:
       - name: 'Checkout Code'
@@ -120,11 +112,36 @@ jobs:
 
       - name: 'Zip up the code'
         run: |
-          zip -rq "${{ env.ZIP_FILE_NAME }}" .
+          zip -rq build.zip .
+
+      - name: 'Save build zip as GitHub Actions artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-zip
+          path: build.zip
+
+  deploy:
+    name: 'Deploy'
+    runs-on: ubuntu-latest
+    needs: [terraform, build]
+    environment: ${{ inputs.GITHUB_ACTIONS_ENVIRONMENT }}
+
+    env:
+      ZIP_FILE_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}_run${{ github.run_id }}_attempt${{ github.run_attempt }}.zip"
+      EB_CODE_BUCKET: "${{needs.terraform.outputs.main_app_elastic_beanstalk_code_s3_bucket}}"
+      EB_APP_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME }}__${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}__Elastic_Beanstalk_Application"
+      EB_ENVIRONMENT_NAME: "${{ inputs.TERRAFORM_SERVICE_NAME_HYPHENS }}--${{ inputs.TERRAFORM_ENVIRONMENT_NAME }}--EB-Env"
+      EB_VERSION_LABEL: "v_run${{ github.run_id }}_attempt${{ github.run_attempt }}"
+
+    steps:
+      - name: 'Download build zip from GitHub Actions artifacts'
+        uses: actions/download-artifact@v3
+        with:
+          name: build-zip
 
       - name: 'Copy the zip file to AWS S3'
         run: |
-          aws s3 cp "./${{ env.ZIP_FILE_NAME }}" "s3://${{ env.EB_CODE_BUCKET }}"
+          aws s3 cp ./build.zip "s3://${{ env.EB_CODE_BUCKET }}/${{ env.ZIP_FILE_NAME }}"
 
       - name: 'Create Elastic Beanstalk application version'
         run: |
