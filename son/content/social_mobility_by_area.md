@@ -1,7 +1,7 @@
 ## Summary
 This section shows how different areas in the UK are ranked for 5 different measures of social mobility.
 
-## HTML
+## Text
 <div class="area-map">
     <div>
         <div id="map" class="map"></div>

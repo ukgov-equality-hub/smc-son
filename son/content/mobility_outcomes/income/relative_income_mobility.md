@@ -34,6 +34,8 @@ Data
 
 ## Section
 About the data
+
+## Text
 ### Data source(s)
 * Study period 1975 to 1978 – Atkinson and others (1981), based on a follow up of the 1950 social survey of York.
 * Study period 1991 to 2004 – Blanden and Machin (2008), based on National Child Development Study and Birth Cohort Study 1970.
