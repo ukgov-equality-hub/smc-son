@@ -162,4 +162,4 @@ Read more in State of the Nation 2023 on GOV.UK.
 
 ## Download the data
 
-[Download full dataset (CSV)](/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv)
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv" :::

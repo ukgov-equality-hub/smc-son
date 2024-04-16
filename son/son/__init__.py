@@ -346,8 +346,6 @@ def indicator_page_md(domain, subdomain, indicator):
     markdown_text = f.read()
     f.close()
 
-    markdown_text = add_file_size_and_columns_to_full_data_download_link(markdown_text)
-
     html = convert_markdown_to_html(markdown_text)
 
     soup = BeautifulSoup(html, 'html.parser')
@@ -420,6 +418,15 @@ def convert_markdown_to_html(markdown_text):
 
         return html4
 
+    def download_full_dataset_link_generator(ctx, data_file):
+        html6 = render_template(
+            'components/download-full-dataset-link.html',
+            data_file=data_file
+        )
+        html6 = BeautifulSoup(html6, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html6
+
     def visualisation_generator(ctx, vis_type):
         md5 = markdown.Markdown(extensions=[cbe, 'attr_list', 'sane_lists'])
         html55 = md5.convert(ctx.content)
@@ -442,6 +449,7 @@ def convert_markdown_to_html(markdown_text):
         'tab': tab_generator,
         'data_table': data_table_generator,
         'visualisation': visualisation_generator,
+        'download_full_dataset_link': download_full_dataset_link_generator,
     })
     md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), cbe, 'attr_list','sane_lists'])
 
@@ -461,47 +469,6 @@ def add_classes_to_elements_with_tag(soup, tag, classes_to_add):
             element['class'] = (' '.join(element['class'])) + ' ' + classes_to_add
         else:
             element['class'] = classes_to_add
-
-
-def add_file_size_and_columns_to_full_data_download_link(html):
-    if '[Download full dataset (CSV)]' in html:
-        file_size = -1
-        matches = re.findall('\[Download full dataset \(CSV\)]\([^)]*?\)', html)
-        ul = ''
-        try:
-            data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{matches[0][30: -1]}"
-            if Path(data_src).is_file():
-                file_size = os.path.getsize(data_src)
-                with open(data_src, encoding='utf8', errors='ignore') as csv_file:
-                    data_table = list(csv.reader(csv_file, delimiter=','))
-
-                    for i in range(len(data_table[0])):
-                        item = data_table[0][i].replace('Ind_', 'Indicator ').replace('SEB', 'Socio-economic background').replace('LCI', 'Lower confidence interval').replace('UCI', 'Upper confidence interval').replace('SE', 'Standard error').replace('_', ' ')
-                        include = False
-
-                        for j in range(len(data_table)):
-                            if j > 0:
-                                if data_table[j][i] == "NA" or data_table[j][i] == "N/A" or data_table[j][i] == "N\A":
-                                    pass
-                                else:
-                                    include = True
-                                    break
-
-                        if include:
-                            ul += f"<li>{item}</li>"
-
-                    if ul != '':
-                        ul = f'<p>This file contains the following variables:</p><ul>{ul}</ul>'
-        except:
-            pass
-
-        if file_size > -1:
-            if file_size > 1000000: file_size = f"{int(file_size / 1000000)}MB"
-            elif file_size > 1000: file_size = f"{int(file_size / 1000)}KB"
-            else: file_size = f"{int(file_size)}B"
-            html = re.sub(r'\[Download full dataset \(CSV\)](\([^)]*?\))', rf"[Download full dataset (CSV, {file_size})]\1{ul}", html)
-
-    return html
 
 
 @son.route('/output/', defaults={'page_path': ''}, methods=['GET'])
