@@ -48,7 +48,7 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
         ::: data_table
             {
                 "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1997 to 2022)",
-                "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
+                "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
                 "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
                 "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
             }
@@ -118,7 +118,7 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
         ::: data_table
             {
                 "title": "Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019)",
-                "dataTable": "/static/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
+                "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
                 "dataTableAlignColumns": ["left", "right"],
                 "dataTableDecimalPlaces": [null, 1]
             }
