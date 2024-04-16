@@ -48,6 +48,10 @@
     }
 }
 
+.govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body {
+    max-width: 775px;
+}
+
 @media(max-width: 40.0625em) {
     .js-enabled {
         nav.govuk-header__navigation {
