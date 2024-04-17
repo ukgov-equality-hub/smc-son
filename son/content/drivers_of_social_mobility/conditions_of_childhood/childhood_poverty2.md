@@ -66,15 +66,18 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
 
 ::: tabs
     ::: tab section_name="By area" tab_name="Visualisation"
-        #### Percentage of children living in relative poverty after housing costs, and quintile ranking (from best 20% to worst 20%), by region (UK, 2018 to 2019) {: class="govuk-!-margin-bottom-4"}
+        #### Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019) {: class="govuk-!-margin-bottom-4"}
 
-        [41 regions in the UK] are ranked from the best outcomes to the worst outcomes.
-        They are then divided into 5 equally-sized groups (‘quintiles’), from the best 20% to the worst 20%.
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
         
-        The figure for each region shows the percentage of children living in households in relative poverty after housing costs.
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
         
-        The lines either side of the dots represent confidence intervals – the range of values that the 'true' value
-        for the region is highly likely to be within. Read more about [confidence intervals].
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals) –
+        the range of values that the 'true' value for each region is highly likely to be within. In many cases the
+        confidence intervals overlap. This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to understand overall regional patterns.
         
         ::: visualisation type="map"
             {
