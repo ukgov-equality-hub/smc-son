@@ -1134,6 +1134,14 @@ div.content-tabs {
     }
 }
 
+li.move-to-download-section {
+    display: none;
+}
+.download_section_list li.move-to-download-section {
+    display: list-item;
+}
+
+
 div.area-map {
     margin-bottom: 30px;
 

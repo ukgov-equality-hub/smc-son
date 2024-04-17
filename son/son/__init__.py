@@ -346,7 +346,7 @@ def indicator_page_md(domain, subdomain, indicator):
     markdown_text = f.read()
     f.close()
 
-    html = convert_markdown_to_html(markdown_text)
+    html = convert_markdown_to_html(markdown_text, indicator)
 
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -371,7 +371,7 @@ def indicator_page_md(domain, subdomain, indicator):
     )
 
 
-def convert_markdown_to_html(markdown_text):
+def convert_markdown_to_html(markdown_text, indicator):
 
     current_tabs_list = []
     next_data_table_or_chart_id = ['']
@@ -427,7 +427,15 @@ def convert_markdown_to_html(markdown_text):
 
         return html6
 
-    def visualisation_generator(ctx, vis_type):
+    def download_section_generator(ctx):
+        html8 = render_template(
+            'components/download-section.html'
+        )
+        html8 = BeautifulSoup(html8, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return html8
+
+    def visualisation_generator(ctx, vis_type, section_name):
         md5 = markdown.Markdown(extensions=[cbe, 'attr_list', 'sane_lists'])
         html55 = md5.convert(ctx.content)
 
@@ -436,7 +444,9 @@ def convert_markdown_to_html(markdown_text):
             id=len(next_data_table_or_chart_id),
             type=vis_type,
             data=[['Src', ctx.content]],
-            guidance=html55
+            guidance=html55,
+            indicator=indicator,
+            section=section_name
         )
         next_data_table_or_chart_id.append('')
         html5 = BeautifulSoup(html5, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
@@ -450,6 +460,7 @@ def convert_markdown_to_html(markdown_text):
         'data_table': data_table_generator,
         'visualisation': visualisation_generator,
         'download_full_dataset_link': download_full_dataset_link_generator,
+        'download_section': download_section_generator,
     })
     md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), cbe, 'attr_list','sane_lists'])
 

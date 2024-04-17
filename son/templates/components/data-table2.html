@@ -1,3 +1,4 @@
+{% set data_file = [data, 'dataTable', 'data'] | attribute %}
 {% set data_table = [data, 'dataTable', 'data'] | table %}
 {% set number_of_heading_rows = ([data, 'dataTableNumberOfHeadingRows'] | attribute) or 1 %}
 {% set number_of_heading_columns = ([data, 'dataTableNumberOfHeadingColumns'] | attribute) or 1 %}
@@ -76,4 +77,12 @@
             document.getElementById('son-show-more-rows-button-{{ id }}').style.display = '';
         </script>
     {% endif %}
+
+    <li class="move-to-download-section">
+        {#  This <li> element will be moved to the "download" tab by some javascript  #}
+        <a href="{{ data_file }}"
+           class="govuk-link">
+            Download the data (CSV, {{ data_file | file_size }})
+        </a>
+    </li>
 </div>
