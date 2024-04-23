@@ -16,7 +16,7 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
 
 ::: tabs
     ::: tab section_name="By year" tab_name="Visualisation"
-        #### Percentage of children living in relative poverty after housing costs, by country over time (UK, 1997 to 2022)
+        #### Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)
 
         ::: visualisation vis_type="chart" xtype="Chart: Multi-line" section_name="By year"
             {
@@ -156,10 +156,19 @@ years starting in 2017, 2018 and 2019.
 A household is in relative poverty if their equivalised income is below 60% of the median income for all households in the UK.
 ‘Equivalised’ means adjusted for the number and ages of the people living in the household.
 
+The data for the analysis by area comes from statistics produced by the Centre for Research in Social Policy at Loughborough University.
+These statistics use Valuation Office Agency rent data and the Understanding Society survey for the year 2018 to 2019.
+
+The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
+be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
+95% chance that the true population value is between 5 and 10, and a 5% chance that it is outside of this range.
+The narrower the confidence interval or range, the more precise the estimate. Read more about
+[confidence intervals](/about-our-analysis#confidence-intervals)
+
 ### Type of data
 Survey data
 
-Read more in State of the Nation 2023 on GOV.UK.
+Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
 ---
 
