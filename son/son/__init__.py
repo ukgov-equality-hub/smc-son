@@ -342,6 +342,20 @@ def indicator_page_md(domain, subdomain, indicator):
     if not Path(file_path).is_file():
         abort(404)
 
+    content = get_content2(file_path, indicator)
+
+    return render_template(
+        'indicator/indicator-md.html',
+        menu=menu,
+        domain=domain,
+        subdomain=subdomain,
+        indicator=indicator,
+        markdown_to_html=str(content),
+        h1_content=get_h1_content(content)
+    )
+
+
+def get_content2(file_path, indicator):
     f = open(file_path, 'r')
     markdown_text = f.read()
     f.close()
@@ -361,14 +375,7 @@ def indicator_page_md(domain, subdomain, indicator):
     add_classes_to_elements_with_tag(soup, 'a', 'govuk-link')
     add_classes_to_elements_with_tag(soup, 'hr', 'govuk-section-break govuk-section-break--l govuk-section-break--visible')
 
-    return render_template(
-        'indicator/indicator-md.html',
-        menu=menu,
-        domain=domain,
-        subdomain=subdomain,
-        indicator=indicator,
-        markdown_to_html=str(soup)
-    )
+    return soup
 
 
 def convert_markdown_to_html(markdown_text, indicator):
@@ -480,6 +487,10 @@ def add_classes_to_elements_with_tag(soup, tag, classes_to_add):
             element['class'] = (' '.join(element['class'])) + ' ' + classes_to_add
         else:
             element['class'] = classes_to_add
+
+
+def get_h1_content(soup):
+    return soup.h1.string
 
 
 @son.route('/output/', defaults={'page_path': ''}, methods=['GET'])
