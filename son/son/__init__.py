@@ -291,15 +291,16 @@ def domain_page(domain):
     if not Path(file_path).is_file():
         abort(404)
 
+    content = get_content2(file_path, None)
+
     return render_template(
-        'domain/domain.html',
+        'indicator/indicator-md.html',
         menu=menu,
         domain=domain,
         subdomain=None,
         indicator=None,
-        title=get_item_title(domain),
-        content=get_content(domain, use_markdown=False),
-        form=None
+        markdown_to_html=str(content),
+        h1_content=get_h1_content(content)
     )
 
 

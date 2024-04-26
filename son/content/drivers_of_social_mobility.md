@@ -1,10 +1,7 @@
-## Summary
+# Drivers of social mobility
 Drivers of social mobility are the background conditions that make social mobility easier.
 
-## Subtitle
-Highlighted data
-
-## Text
+## Highlighted data
 <div class="grid grid3 grid-domain">
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Distribution of parental occupation</h3>
@@ -53,17 +50,14 @@ Highlighted data
     </div>
 </div>
 
-## Subtitle
-Elsewhere in State of the Nation 2023
+## Elsewhere in State of the Nation 2023
+[Mobility outcomes](/mobility_outcomes)
+look at where people end up, typically in their 40s or 50s.
+They look at people’s socio-economic class, income, education and housing.
 
-## Text
-<a href="/mobility_outcomes" class="govuk-link">Mobility outcomes</a> look at where people end up, typically in their 40s or 50s. They look at people’s socio-economic class, income, education and housing.
+[Intermediate outcomes](/intermediate_outcomes)
+focus on the experiences of young people as they move through education and into the labour market.
 
-## Text
-<a href="/intermediate_outcomes" class="govuk-link">Intermediate outcomes</a> focus on the experiences of young people as they move through education and into the labour market.
-
-## Subtitle
-Read the full report
-
-## Text
-<a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places" class="govuk-link">State of the Nation 2023</a> on GOV.UK.
+## Read the full report
+[State of the Nation 2023](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places)
+on GOV.UK.
