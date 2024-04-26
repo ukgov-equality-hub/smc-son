@@ -247,14 +247,21 @@ def health_check():
 
 @son.route('/social_mobility_by_area', methods=['GET'])
 def area_home_page():
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area.md"
+    if not Path(file_path).is_file():
+        abort(404)
+
+    content = get_content2(file_path, None)
+
     return render_template(
-        'area/homepage.html',
+        'indicator/indicator-md.html',
         menu=menu,
         area='Social mobility by area',
         domain='social_mobility_by_area',
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
-        content=get_content('social_mobility_by_area', use_markdown=True)
+        markdown_to_html=str(content),
+        h1_content=get_h1_content(content)
     )
 
 
@@ -274,8 +281,7 @@ def area_page(area):
         area=area,
         domain='social_mobility_by_area',
         selected=[selected - 2, selected - 1, selected, selected + 1, selected + 2],
-        title=get_item_title(area),
-        content=get_content('social_mobility_by_area', use_markdown=False)
+        title=get_item_title(area)
     )
 
 

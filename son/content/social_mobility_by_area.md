@@ -1,85 +1,42 @@
-## Summary
+# Social mobility by area
 This section shows how different areas in the UK are ranked for 5 different measures of social mobility.
 
-## Text
+<!-- This map below is populated by "social-mobility-by-area-map.js" -->
 <div class="area-map">
     <div>
-        <div id="map" class="map"></div>
+        <div id="social-mobility-by-area-map" class="map"></div>
     </div>
-    <div id="areaName" class="govuk-body"></div>
+    <div id="social-mobility-by-area-name" class="govuk-body"></div>
 </div>
-<script>
-    function areaName(a) {
-        document.getElementById('areaName').innerText = a.name
-        document.getElementById('areaName').style.display = a.name == '' ? 'none' : 'block'
-    }
 
-    function areaSelect(a) {
-        location.href = `/social_mobility_by_area/${a.name.toLowerCase().replace(/ /g, '_').replace(/\//g, '_and_')}`
-    }
-
-    (async function () {
-        document.onmousemove = handleMouseMove
-        function handleMouseMove(event) {
-            let eventDoc, doc, body
-
-            event = event || window.event
-            if (event.pageX == null && event.clientX != null) {
-                eventDoc = (event.target && event.target.ownerDocument) || document
-                doc = eventDoc.documentElement
-                body = eventDoc.body
-
-                event.pageX = event.clientX + (doc && doc.scrollLeft || body && body.scrollLeft || 0) - (doc && doc.clientLeft || body && body.clientLeft || 0)
-                event.pageY = event.clientY + (doc && doc.scrollTop  || body && body.scrollTop  || 0) - (doc && doc.clientTop  || body && body.clientTop  || 0 )
-            }
-
-            document.getElementById('areaName').style.top = `${event.pageY - 10}px`
-            document.getElementById('areaName').style.left = `${event.pageX + 20}px`
-        }
-
-        const map = new Choropleth(
-            'map',
-            `${location.protocol}//${location.host}/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json`,
-            `${location.protocol}//${location.host}/static/data/indicators/areas.csv`,
-            {
-                nameField: 'Area_name',
-                valueField: 'Value',
-                areaField: 'ITL221NM',
-                width: 537,
-                height: 704,
-                labels: true,
-                colourScheme: ['#e1e361', '#84b871'],
-                allowZoom: false,
-                background: true,
-                rolloverBehaviour: 'fade',
-                onRollover: 'areaName',
-                onClick: 'areaSelect'
-            }
-        )
-    })()
-</script>
-
-<a name="composite-measures-by-region" />
-
-## Composite measures by region
+## Composite measures by region <a name="composite-measures-by-region" />
 The 5 composite measures of social mobility broken down by region are:
 
-* [Precarious situations](/intermediate_outcomes/composite_indices/precarious_situations) – young people in difficult economic circumstances
-* [Promising prospects](/intermediate_outcomes/composite_indices/promising_prospects) – young people in good economic circumstances
-* [Socio-cultural advantage](/drivers_of_social_mobility/composite_indices/socio-cultural_advantage) – factors that can help people’s chances of social mobility
-* [Childhood poverty and disadvantage](/drivers_of_social_mobility/composite_indices/childhood_poverty_and_disadvantage) – factors that can reduce people’s chances of social mobility
-* [Research and development](/drivers_of_social_mobility/composite_indices/research_and_development) – economic opportunity, innovation and business location, and their effect on social mobility
+* [Precarious situations](/intermediate_outcomes/composite_indices/precarious_situations) –
+  young people in difficult economic circumstances
+* [Promising prospects](/intermediate_outcomes/composite_indices/promising_prospects) –
+  young people in good economic circumstances
+* [Socio-cultural advantage](/drivers_of_social_mobility/composite_indices/socio-cultural_advantage) –
+  factors that can help people’s chances of social mobility
+* [Childhood poverty and disadvantage](/drivers_of_social_mobility/composite_indices/childhood_poverty_and_disadvantage) –
+  factors that can reduce people’s chances of social mobility
+* [Research and development](/drivers_of_social_mobility/composite_indices/research_and_development) –
+  economic opportunity, innovation and business location, and their effect on social mobility
 
-Each of these measures combines data from 3 indicators into a single ‘composite’ score to give a more reliable picture of geographical mobility patterns.
+Each of these measures combines data from 3 indicators into a single ‘composite’ score to give a more
+reliable picture of geographical mobility patterns.
 
-For each composite measure, [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite score. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+For each composite measure, [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite score.
+They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
 
-**We should emphasise that these are purely descriptive statistics and that we are not yet in a position to claim any causal effects of regions on outcomes. And because these statistics are based on sample surveys, they are affected by sampling error.**
+**We should emphasise that these are purely descriptive statistics and that we are not yet in a position to
+claim any causal effects of regions on outcomes. And because these statistics are based on sample surveys,
+they are affected by sampling error.**
 
-<a name="the-41-regions" />
 
-## The 41 regions
-We use the ‘international territorial levels’ (ITLs) system developed by the Office for National Statistics. This divides the UK into:
+## The 41 regions <a name="the-41-regions" />
+We use the ‘international territorial levels’ (ITLs) system developed by the Office for National Statistics.
+This divides the UK into:
 
 * 12 regions (‘ITL1’)
 * 41 regions made up of counties and groups of counties (‘ITL2’)
@@ -87,7 +44,8 @@ We use the ‘international territorial levels’ (ITLs) system developed by the
 
 The data by geography uses the 41 ‘ITL2’ regions. Each region has between 800,000 and 3 million residents.
 
-The data is based on survey data, mainly from the Labour Force Survey (LFS). In future, we hope to combine more years of LFS data to provide breakdowns by the 179 ‘ITL3’ regions.
+The data is based on survey data, mainly from the Labour Force Survey (LFS).
+In future, we hope to combine more years of LFS data to provide breakdowns by the 179 ‘ITL3’ regions.
  
 The 41 ITL2 regions are as follows.
 
@@ -166,4 +124,6 @@ Wales:
 
 [Northern Ireland](/social_mobility_by_area/northern_ireland)
 
-Please see our <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex" target="_blank" class="govuk-link">technical annex</a> and <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/" target="_blank" class="govuk-link">main report</a> for more information.
+Please see our [technical annex](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex)
+and [main report](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/)
+for more information.
