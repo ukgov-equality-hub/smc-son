@@ -492,15 +492,3 @@ def add_classes_to_elements_with_tag(soup, tag, classes_to_add):
 
 def get_h1_content(soup):
     return soup.h1.string
-
-
-@son.route('/output/', defaults={'page_path': ''}, methods=['GET'])
-@son.route('/output/<path:page_path>', methods=['GET'])
-def output(page_path):
-    #if page_path is None or page_path == '':
-    #    page_path = 'index.html'
-    #if page_path.endswith('/'):
-    #    page_path = page_path + 'index.html'
-
-    response = Response('', 401)
-    abort(response)
