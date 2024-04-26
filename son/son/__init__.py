@@ -228,19 +228,15 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
     return content
 
 
-@son.route('/', methods=['GET', 'POST'])
+@son.route('/', methods=['GET'])
 def index():
-    if request.method == 'POST':
-        pass
-
     return render_template(
         'homepage/homepage.html',
         menu=menu,
         domain=None,
         subdomain=None,
         indicator=None,
-        title='Welcome',
-        form=None
+        title='Welcome'
     )
 
 
@@ -258,8 +254,7 @@ def area_home_page():
         domain='social_mobility_by_area',
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
-        content=get_content('social_mobility_by_area', use_markdown=True),
-        form=None
+        content=get_content('social_mobility_by_area', use_markdown=True)
     )
 
 
@@ -280,8 +275,7 @@ def area_page(area):
         domain='social_mobility_by_area',
         selected=[selected - 2, selected - 1, selected, selected + 1, selected + 2],
         title=get_item_title(area),
-        content=get_content('social_mobility_by_area', use_markdown=False),
-        form=None
+        content=get_content('social_mobility_by_area', use_markdown=False)
     )
 
 
