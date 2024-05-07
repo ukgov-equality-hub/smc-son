@@ -1,4 +1,5 @@
 import base64
+import re
 from datetime import datetime
 
 import jmespath
@@ -376,3 +377,9 @@ def jsonDataTableColumns(context, json_text):
         data_table_fields_str += '    "dataTableDecimalPlaces": "' + json.dumps(all_fields_obj['dataTableDecimalPlaces']) + '"\n'
 
     return '{\n' + data_table_fields_str + '}'
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('rereplace')
+def rereplace(context, original_text, pattern, substitution):
+    return re.sub(pattern, substitution, original_text)

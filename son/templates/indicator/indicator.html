@@ -37,7 +37,29 @@
         #### {{ item[1][0][1] | json_query('title') }}
 
         ::: visualisation vis_type="chart" section_name="{{ cur_section.name }}"
-            {{ (item[1][0][1]).replace('\n', '\n                ').replace('\n                }', '\n            }') }}
+            {{ (item[1][0][1] | rereplace('"dataTable[^\n]*\n', '')).replace(',\n}', '\n}').replace('\n', '\n                ').replace('\n                }', '\n            }') }}
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {{ (item[1][0][1] | jsonDataTableColumns).replace('\n', '\n            ') }}
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+{% elif item[0] == 'Map' %}
+::: tabs
+    ::: tab section_name="{{ cur_section.name }}" tab_name="Visualisation"
+        #### {{ item[1][0][1] | json_query('title') }}
+
+        {{ item[1][1][1].replace('\n', '\n        ') }}
+
+        ::: visualisation vis_type="map" section_name="{{ cur_section.name }}"
+            {{ (item[1][0][1] | rereplace('"dataTable[^\n]*\n', '')).replace(',\n}', '\n}').replace('\n', '\n                ').replace('\n                }', '\n            }') }}
         :::
     :::
 
