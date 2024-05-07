@@ -8,6 +8,55 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
+
+<textarea cols="120" rows="40">
+{{ content }}
+</textarea>
+
+<textarea cols="120" rows="40">
+# {{ title }}
+
+{{ [content, 'Summary'] | content }}
+
+[TOC]
+
+## Summary main findings
+
+{{ content[4][1] }}{% set cur_section = namespace(name='') %}
+{% for item in content[5:] %}{% if item[0] == 'Section' %}{% set cur_section.name = item[1] %}
+---
+
+## {{ item[1] }}
+{% elif item[0] == 'H3' %}### {{ item[1] }}{% elif item[0] == 'HTML' %}{% if item[1].startswith('[Download full dataset (CSV)](/static/data/full-datasets/') %}
+::: download_full_dataset_link data_file="/static/data/full-datasets/{{ item[1][57:(item[1].find('.csv'))] }}.csv" :::
+{% else %}
+{{ item[1] }}
+{% endif %}{% elif item[0] == 'Chart' %}
+::: tabs
+    ::: tab section_name="{{ cur_section.name }}" tab_name="Visualisation"
+        #### {{ item[1][0][1] | json_query('title') }}
+
+        ::: visualisation vis_type="chart" section_name="{{ cur_section.name }}"
+            {{ (item[1][0][1]).replace('\n', '\n                ').replace('\n                }', '\n            }') }}
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {{ (item[1][0][1] | jsonDataTableColumns).replace('\n', '\n            ') }}
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+{% else %}
+{{ item }}
+{% endif %}{% endfor %}
+
+</textarea>
+
 <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
     <h1 class="govuk-heading-xl">{{ title }}</h1>
     <p class="govuk-body">{{ [content, 'Summary'] | content }}</p>

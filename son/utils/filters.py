@@ -1,5 +1,7 @@
 import base64
 from datetime import datetime
+
+import jmespath
 from dateutil import tz
 import os
 from pathlib import Path
@@ -349,3 +351,28 @@ def toc_id(context, details):
 @blueprint.app_template_filter('base_64_encode')
 def base_64_encode_filter(context, details):
     return base64.b64encode(details.encode("UTF-8")).decode("UTF-8")
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('json_query')
+def json_query(context, data, expression):
+    some_json = json.loads(data)
+    return jmespath.search(expression, some_json)
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('jsonDataTableColumns')
+def jsonDataTableColumns(context, json_text):
+    all_fields_obj = json.loads(json_text)
+    data_table_fields_str = '    "title": "' + all_fields_obj['title'] + '"\n'
+
+    if 'dataTable' in all_fields_obj:
+        data_table_fields_str += '    "dataTable": "' + all_fields_obj['dataTable'] + '"\n'
+    if 'dataTableAlignColumns' in all_fields_obj:
+        data_table_fields_str += '    "dataTableAlignColumns": "' + json.dumps(all_fields_obj['dataTableAlignColumns']) + '"\n'
+    if 'dataTableAlignRows' in all_fields_obj:
+        data_table_fields_str += '    "dataTableAlignRows": "' + json.dumps(all_fields_obj['dataTableAlignRows']) + '"\n'
+    if 'dataTableDecimalPlaces' in all_fields_obj:
+        data_table_fields_str += '    "dataTableDecimalPlaces": "' + json.dumps(all_fields_obj['dataTableDecimalPlaces']) + '"\n'
+
+    return '{\n' + data_table_fields_str + '}'

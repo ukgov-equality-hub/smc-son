@@ -19,6 +19,7 @@ Flask-UUID==0.2
 Flask-WTF==1.1.1
 Flask-Session==0.4.0
 Jinja2==3.1.2
+jmespath==1.0.1
 jsonpickle~=2.1.0
 markdown-customblocks==1.4.0
 notifications-python-client==6.3.0
