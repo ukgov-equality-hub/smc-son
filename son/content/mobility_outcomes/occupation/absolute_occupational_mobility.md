@@ -1,16 +1,11 @@
-## Code
-MO11
+# Absolute occupational mobility
 
-## Title
-Absolute occupational mobility
-
-## Summary
 Data on upward and downward occupational mobility – having a different occupational class from your parents.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 There is more upward than downward occupational mobility for both men and women.
 
 The chances of both men and women from working-class backgrounds getting a professional job improved greatly over the 20th century.
@@ -37,259 +32,368 @@ People with a disability or long-term limiting condition have a much lower likel
 and much higher chances of downward mobility than the population as a whole. Disabled people from all socio-economic
 backgrounds were also much less likely to enter the professional classes.
 
-## Section
-By decade of birth (upward and downward mobility)
+---
 
-## Chart: Multi-line
-{
-    "code": "MO11",
-    "title": "Percentages of people experiencing occupational mobility (upward, downward, and total), by birth cohort (UK, 1910 to 1999)",
-    "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/MO11_overview_female-20230705.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/MO11_overview_male-20230705.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Value_note",
-    "sort": "Time_period",
-    "scale": "%",
-    "multiply": 100,
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "4th",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#808080", "#5694ca", "#d4351c"],
-    "range": [20, 70],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-decade-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingRows": 2
-}
+## By decade of birth (upward and downward mobility)
 
-## Section
-By decade of birth (long-range mobility)
+::: tabs
+    ::: tab section_name="By decade of birth (upward and downward mobility)" tab_name="Visualisation"
+        #### Percentages of people experiencing occupational mobility (upward, downward, and total), by birth cohort (UK, 1910 to 1999)
 
-## Chart: Multi-line
-{
-    "code": "MO11",
-    "title": "Percentages of people experiencing long-range occupational mobility (upward and downward), by birth cohort (UK, 1910 to 1999)",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/MO11_long_range_female-20230705.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/MO11_long_range_male-20230705.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Value_note",
-    "sort": "Time_period",
-    "scale": "%",
-    "multiply": 100,
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "4th",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [10, 40],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--long-range-mobility--by-decade-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingRows": 2
-}
+        ::: visualisation vis_type="chart" section_name="By decade of birth (upward and downward mobility)"
+            {
+                "code": "MO11",
+                "tooltipTitle": "",
+                "data": [{
+                    "label": "Women",
+                    "data": "/static/data/indicators/MO11_overview_female-20230705.csv"
+                }, {
+                    "label": "Men",
+                    "data": "/static/data/indicators/MO11_overview_male-20230705.csv"
+                }],
+                "toggle": "radio",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Value_note",
+                "sort": "Time_period",
+                "scale": "%",
+                "multiply": 100,
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "4th",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#808080", "#5694ca", "#d4351c"],
+                "range": [20, 70],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
 
-## Section
-By area
+    ::: tab section_name="By decade of birth (upward and downward mobility)" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentages of people experiencing occupational mobility (upward, downward, and total), by birth cohort (UK, 1910 to 1999)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-decade-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-## Map
-# Src
-{
-    "code": "MO11",
-    "title": "Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, by region (UK, 2018 to 2022 combined)",
-    "tooltipTitle": "Percentage of people who experienced long-range mobility",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [{
-        "label": "Long-range upward",
-        "data": "/static/data/indicators/MO11_area_higher_and_lower_working-20230705.csv"
-    }, {
-        "label": "Long-range downward",
-        "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv",
-        "reversePolarity": true
-    }],
-    "toggle": "radio",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "Absolute occupational mobility (%)",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+    ::: tab section_name="By decade of birth (upward and downward mobility)" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+---
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+## By decade of birth (long-range mobility)
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+::: tabs
+    ::: tab section_name="By decade of birth (long-range mobility)" tab_name="Visualisation"
+        #### Percentages of people experiencing long-range occupational mobility (upward and downward), by birth cohort (UK, 1910 to 1999)
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+        ::: visualisation vis_type="chart" section_name="By decade of birth (long-range mobility)"
+            {
+                "code": "MO11",
+                "data": [{
+                    "label": "Women",
+                    "data": "/static/data/indicators/MO11_long_range_female-20230705.csv"
+                }, {
+                    "label": "Men",
+                    "data": "/static/data/indicators/MO11_long_range_male-20230705.csv"
+                }],
+                "toggle": "radio",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Value_note",
+                "sort": "Time_period",
+                "scale": "%",
+                "multiply": 100,
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "4th",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [10, 40],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
 
-## Section
-By occupational class and sex
+    ::: tab section_name="By decade of birth (long-range mobility)" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentages of people experiencing long-range occupational mobility (upward and downward), by birth cohort (UK, 1910 to 1999)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--long-range-mobility--by-decade-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "MO11",
-    "title": "Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO11_occupation-20230705.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Socio-economic background and Sex",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+    ::: tab section_name="By decade of birth (long-range mobility)" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By ethnicity
+---
 
-## Chart: Grouped-bar
-{
-    "code": "MO11",
-    "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by ethnic group (UK, 2014 to 2022 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO11_ethnicity-20230705.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Value_note",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksLength": 4,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By area
 
-## Section
-By disability status
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, by region (UK, 2018 to 2022 combined) {: class="govuk-!-margin-bottom-4"}
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "MO11",
-    "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO11_disability-20230705.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Socio-economic background and Disability status",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
 
-## Section
-About the data
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "MO11",
+                "tooltipTitle": "Percentage of people who experienced long-range mobility",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": [{
+                    "label": "Long-range upward",
+                    "data": "/static/data/indicators/MO11_area_higher_and_lower_working-20230705.csv"
+                }, {
+                    "label": "Long-range downward",
+                    "data": "/static/data/indicators/MO11_area_higher_and_lower_professional-20230705.csv",
+                    "reversePolarity": true
+                }],
+                "toggle": "radio",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "Absolute occupational mobility (%)",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 64 year olds who experienced long-range upward and downward mobility, by region (UK, 2018 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By occupational class and sex
+
+::: tabs
+    ::: tab section_name="By occupational class and sex" tab_name="Visualisation"
+        #### Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)
+
+        ::: visualisation vis_type="chart" section_name="By occupational class and sex"
+            {
+                "code": "MO11",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO11_occupation-20230705.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Socio-economic background and Sex",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By occupational class and sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentages of people aged 25 to 64 years in each occupational class, by socio-economic background and sex (UK, 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By occupational class and sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by ethnic group (UK, 2014 to 2022 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "MO11",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO11_ethnicity-20230705.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Value_note",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksLength": 4,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by ethnic group (UK, 2014 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "MO11",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO11_disability-20230705.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Socio-economic background and Disability status",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 64 years experiencing upward and downward mobility, by disability status (UK, 2014 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO11-absolute-occupational-mobility--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data sources
 * The General Household Survey (1972 to 2005)
 * British Household Panel Survey (1991 to 2009)
@@ -352,8 +456,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO11-absolute-occupational-mobility--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO11-absolute-occupational-mobility--full-dataset.csv" :::

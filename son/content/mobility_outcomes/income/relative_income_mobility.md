@@ -1,41 +1,39 @@
-## Code
-MO22
+# Relative income mobility
 
-## Title
-Relative income mobility
-
-## Summary
 UK data on the link between parents’ and children’s income over time.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 The link between parents’ and children's incomes got stronger between 1991 and 2004, and has remained at a similar level since.
 
 The link is lower when the respondents’ income is measured during their 20s. It increases in their 30s and 40s, before going down again at age 50.
 
-## Section
-By year
+---
 
-## Tabs
-# Tab
-Data
+## By year
 
-# DataTable
-{
-    "dataTable": "/static/data/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableTitle": "Estimates of the strength of intergenerational income mobility (intergenerational elasticity), from 1975 to 2020"
-}
+::: tabs
+    ::: tab section_name="By year of birth" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Estimates of the strength of intergenerational income mobility (intergenerational elasticity), from 1975 to 2020",
+                "dataTable": "/static/data/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"]
+            }
+        :::
+    :::
 
-# Text
-<!-- Do not delete this HTML comment. It is in this .md file to make the #DataTable section above work properly. -->
+    ::: tab section_name="By year of birth" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-About the data
+---
 
-## Text
+## About the data
+
 ### Data source(s)
 * Study period 1975 to 1978 – Atkinson and others (1981), based on a follow up of the 1950 social survey of York.
 * Study period 1991 to 2004 – Blanden and Machin (2008), based on National Child Development Study and Birth Cohort Study 1970.
@@ -78,8 +76,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
+## Download the data
+
 [Download full dataset (CSV)](/static/data/pre-processed-csvs/MO22-relative-income-mobility--by-year--table-format.csv){: target="_blank" class="download" }

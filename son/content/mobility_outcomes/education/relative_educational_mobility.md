@@ -1,16 +1,11 @@
-## Code
-MO32
+# Relative educational mobility
 
-## Title
-Relative educational mobility
-
-## Summary
 Data on how the education level of people in the UK compares to their parents’ education level.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Between 1991 and 2020, relative educational mobility went up for people aged 28 to 37 years.
 This means that people’s chances of getting a degree became less related to whether their parents had a degree or not.
 
@@ -23,165 +18,260 @@ Relative educational mobility was similar:
 
 Relative educational mobility was greater in Scotland, but did not vary significantly across other parts of the UK.
 
-## Section
-By year
+---
 
-## Chart: Single-line
-{
-    "code": "MO32",
-    "title": "Parent:child odds ratios relating to university degrees, respondents aged 28 to 37 years (UK, 1991 to 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO32_overview-20230607.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Ratio",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": [1991, 2001, 2011, 2020],
-    "yticks": [0, 2.5, 5, 7.5, 10, 12.5],
-    "yticks1": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 12.5],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## By year
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Parent:child odds ratios relating to university degrees, respondents aged 28 to 37 years (UK, 1991 to 2020)
 
-## Chart: Single-bar
-{
-    "code": "MO32",
-    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO32_area-20230607.csv",
-    "height": 450,
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "legend": false,
-    "zero": false,
-    "colourScheme": ["#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "MO32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO32_overview-20230607.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Time_period",
+                "scale": "Ratio",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": [1991, 2001, 2011, 2020],
+                "yticks": [0, 2.5, 5, 7.5, 10, 12.5],
+                "yticks1": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 12.5],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Parent:child odds ratios relating to university degrees, respondents aged 28 to 37 years (UK, 1991 to 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Chart: Single-bar
-{
-    "code": "MO32",
-    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO32_gender-20230607.csv",
-    "height": 450,
-    "type": "doty",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [2, 6],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 25,
-    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"]
-}
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By ethnicity
+---
 
-## Chart: Single-bar
-{
-    "code": "MO32",
-    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO32_ethnicity-20230607.csv",
-    "height": 450,
-    "type": "doty",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Category",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+## By area
 
-## Section
-By disability status
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)
 
-## Chart: Single-bar
-{
-    "code": "MO32",
-    "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO32_disability-20230607.csv",
-    "height": 450,
-    "type": "doty",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "xticksLength": 12,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [3, 5],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By area"
+            {
+                "code": "MO32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO32_area-20230607.csv",
+                "height": 450,
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "legend": false,
+                "zero": false,
+                "colourScheme": ["#5694ca"],
+                "margin": [10, 20, 5, 5]
+            }
+        :::
+    :::
 
-## Section
-About the data
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by area (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "MO32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO32_gender-20230607.csv",
+                "height": 450,
+                "type": "doty",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [2, 6],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 25
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by sex (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "MO32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO32_ethnicity-20230607.csv",
+                "height": 450,
+                "type": "doty",
+                "xkey": "Category",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Category",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by ethnicity (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "MO32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO32_disability-20230607.csv",
+                "height": 450,
+                "type": "doty",
+                "xkey": "Category",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "xticksLength": 12,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [3, 5],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Parent:child odds ratios relating to university degrees, respondents aged 25 to 64 years, by disability status (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO32-relative-educational-mobility--by-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 UK Household Longitudinal Survey (UKHLS)
 
@@ -228,8 +318,8 @@ Survey data, weighted using the UKHLS population weights
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO32-relative-educational-mobility--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO32-relative-educational-mobility--full-dataset.csv" :::

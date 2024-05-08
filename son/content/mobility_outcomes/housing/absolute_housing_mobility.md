@@ -1,16 +1,11 @@
-## Code
-MO41
+# Absolute housing mobility
 
-## Title
-Absolute housing mobility
-
-## Summary
 Data on the link in home ownership between people in the UK and their parents.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In the period from 2016 to 2020, 71% of people whose parents were homeowners also owned their own home.
 46% of people whose parents were not homeowners owned their own home.
 
@@ -28,149 +23,225 @@ owned their own home, compared with 35% of people whose parents were not homeown
 Among people whose parents were not homeowners, home ownership was highest in the South West (where 54% of people
 owned their own homes) and Wales (52%).
 
-## Section
-By home ownership status of parents
+---
 
-## Chart: Single-bar
-{
-    "code": "MO41",
-    "title": "Percentage of 25 to 64 year olds who owned their own homes, by ownership status of their parents (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO41_overview-20230503.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "%",
-    "maxBarSize": 150,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## By home ownership status of parents
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By home ownership status of parents" tab_name="Visualisation"
+        #### Percentage of 25 to 64 year olds who owned their own homes, by ownership status of their parents (UK, 2016 to 2020 combined)
 
-## Chart: Grouped-bar
-{
-    "code": "MO41",
-    "title": "Percentage of 25 to 64 year olds who owned their own homes, by area where respondents live and ownership status of their parents (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO41_area-20230503.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Area_name",
-    "sort": "-Value",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-ITL1-region-and-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By home ownership status of parents"
+            {
+                "code": "MO41",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO41_overview-20230503.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "scale": "%",
+                "maxBarSize": 150,
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="By home ownership status of parents" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 64 year olds who owned their own homes, by ownership status of their parents (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "MO41",
-    "title": "Percentage of 25 to 64 year olds who owned their own homes, by sex of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO41_gender-20230503.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Sex",
-    "sort": "SEB",
-    "scale": "%",
-    "maxBarSize": 150,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+    ::: tab section_name="By home ownership status of parents" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By disability status
+---
 
-## Chart: Grouped-bar
-{
-    "code": "MO41",
-    "title": "Percentage of 25 to 64 year olds who owned their own homes, by disability status of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO41_disability-20230503.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "SEB",
-    "scale": "%",
-    "maxBarSize": 150,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By area
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of 25 to 64 year olds who owned their own homes, by area where respondents live and ownership status of their parents (UK, 2016 to 2020 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By area"
+            {
+                "code": "MO41",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO41_area-20230503.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Area_name",
+                "sort": "-Value",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 64 year olds who owned their own homes, by area where respondents live and ownership status of their parents (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-ITL1-region-and-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Percentage of 25 to 64 year olds who owned their own homes, by sex of respondent and ownership status of their parents (UK, 2016 to 2020 combined)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "MO41",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO41_gender-20230503.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Sex",
+                "sort": "SEB",
+                "scale": "%",
+                "maxBarSize": 150,
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 64 year olds who owned their own homes, by sex of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Percentage of 25 to 64 year olds who owned their own homes, by disability status of respondent and ownership status of their parents (UK, 2016 to 2020 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "MO41",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO41_disability-20230503.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "SEB",
+                "scale": "%",
+                "maxBarSize": 150,
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 64 year olds who owned their own homes, by disability status of respondent and ownership status of their parents (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO41-absolute-housing-mobility--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Wealth and Assets Survey (WAS)
 
@@ -200,8 +271,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO41-absolute-housing-mobility--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO41-absolute-housing-mobility--full-dataset.csv" :::
