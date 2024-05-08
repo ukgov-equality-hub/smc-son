@@ -1,16 +1,11 @@
-## Code
-IN31
+# Economic activity
 
-## Title
-Economic activity
-
-## Summary
 Data on the percentage of 25 to 29 year olds who are either in work or looking for work, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In 2021, 88% of all 25 to 29 year olds were economically active, meaning they were either in work or actively looking for work.
 
 77% of 25 to 29 year olds from lower working class backgrounds were economically active – the lowest percentage out
@@ -19,216 +14,309 @@ of all socio-economic backgrounds. Percentages in all other socio-economic group
 Data for 2014 to 2021 combined shows that:
 
 * young women were less likely to be economically active than young men from the same socio-economic background
-  – the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active
+– the gap was largest in the lower working class group, where 71% of young women and 86% of young men were economically active
 * young people from Pakistani, Bangladeshi, Chinese and Other ethnic backgrounds had lower levels of economic activity
 * disabled young people were less likely to be economically active than non-disabled young people from the same
-  socio-economic background – the ‘disability gap’ was relatively small among those from a higher professional background
+socio-economic background – the ‘disability gap’ was relatively small among those from a higher professional background
 
-## Section
-By socio-economic background
+---
 
-## Chart: Single-bar
-{
-    "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by socio-economic background (UK, 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN31_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## By socio-economic background
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Percentage of 25 to 29 year olds who were economically active, by socio-economic background (UK, 2021)
 
-## Map
-# Src
-{
-    "code": "IN31",
-    "title": "Percentage point difference in the likelihood of being economically active at 25 to 29 years old, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage point difference compared to the national average",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/IN31_area-20230327.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "multiply": 100,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "% point diff compared to national avg",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN31_overview-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
-percentage point difference to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 29 year olds who were economically active, by socio-economic background (UK, 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+---
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+## By area
 
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage point difference in the likelihood of being economically active at 25 to 29 years old, compared to the national average (UK, 2018 to 2021 combined) {: class="govuk-!-margin-bottom-4"}
 
-## Section
-By sex
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
+        percentage point difference to the national average.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
 
-## Chart: Grouped-bar
-{
-    "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by sex and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN31_gender-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "IN31",
+                "tooltipTitle": "Percentage point difference compared to the national average",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/IN31_area-20230327.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "multiply": 100,
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "% point diff compared to national avg",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
 
-## Section
-By ethnicity
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage point difference in the likelihood of being economically active at 25 to 29 years old, compared to the national average (UK, 2018 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN31_ethnicity-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By disability status
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN31",
-    "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN31_disability-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Percentage of 25 to 29 year olds who were economically active, by sex and socio-economic background (UK, 2014 to 2021 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN31_gender-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Sex",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 29 year olds who were economically active, by sex and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of 25 to 29 year olds who were economically active, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN31_ethnicity-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 29 year olds who were economically active, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Percentage of 25 to 29 year olds who were economically active, by disability status and socio-economic background (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN31_disability-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 29 year olds who were economically active, by disability status and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN31-economic-activity--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
@@ -241,7 +329,7 @@ UK
 ### What the data measures
 The data shows the percentage of 25 to 29 year olds in the UK who were ‘economically active’, by socio-economic background.
 
-Someone is ‘economically active’ if they are either in work, or available for and actively looking for work. 
+Someone is ‘economically active’ if they are either in work, or available for and actively looking for work.
 
 People can be economically inactive if they are:
 
@@ -253,7 +341,7 @@ People can be economically inactive if they are:
 Data is weighted using LFS probability weights.
 
 For data by ethnicity, the estimated percentages are those for men. Percentages are shown only for people from lower
-working class and higher professional class backgrounds. 
+working class and higher professional class backgrounds.
 
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months or
 more, and if that condition reduced their ability to carry out day-to-day activities.
@@ -271,8 +359,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN31-economic-activity--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN31-economic-activity--full-dataset.csv" :::

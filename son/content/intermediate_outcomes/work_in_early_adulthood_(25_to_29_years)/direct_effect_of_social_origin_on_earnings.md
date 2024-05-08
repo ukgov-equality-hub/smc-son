@@ -1,16 +1,11 @@
-## Code
-IN352
+# Direct effect of social origin on earnings
 
-## Title
-Direct effect of social origin on earnings
-
-## Summary
 Data on how young people’s socio-economic background affects their earnings.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data for the period from 2019 to 2021 shows that young people aged 25 to 29 years from professional backgrounds earned
 significantly more than those from other backgrounds but with the same level of education.
 For example, young people from higher professional backgrounds earned 18% more than those from a lower working class
@@ -24,151 +19,227 @@ socio-economic background. Earnings were lower for young people from the Pakista
 
 Disabled young people earned significantly less than those without a disability from the same socio-economic background.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Single-bar
-{
-    "code": "IN352",
-    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN352_difference-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--relative-difference--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By socio-economic background
 
-## Section
-By sex
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)
 
-## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN352_gender-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 3,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 15],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN352",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN352_difference-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-## Section
-By ethnicity
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those from lower working-class backgrounds, controlling for highest educational level, sex and age (UK, 2019 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--relative-difference--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 3,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 15],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By disability status
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN352",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN352_disability-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 3,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 15],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and socio-economic background (UK, 2014 to 2021 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN352",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN352_gender-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Sex",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 3,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 15],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by sex and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-sex--controlling-for-educational-level--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN352",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN352_ethnicity-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 3,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 15],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by ethnicity and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and socio-economic background (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN352",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN352_disability-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Category",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 3,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 15],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds controlling for educational level and age, by disability and socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN352-direct-effect-of-social-origin-on-earnings--by-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
@@ -188,7 +259,7 @@ Data is weighted using LFS probability weights. Earnings are adjusted for inflat
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
 
 Percentage differences were estimated from a linear regression model of log hourly earnings by socio-economic background,
-controlling for educational level and age. 
+controlling for educational level and age.
 
 For data by sex, ethnicity and disability status, estimates are shown for people aged 27 years with the lowest levels
 of education. For data by ethnicity, a simplified measure of socio-economic background is used (professional and
@@ -206,8 +277,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN352-direct-effect-of-social-origin-on-earnings--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN352-direct-effect-of-social-origin-on-earnings--full-dataset.csv" :::

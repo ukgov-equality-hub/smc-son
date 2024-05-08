@@ -1,226 +1,315 @@
-## Code
-IN13
+# Attainment at age 16
 
-## Title
-Attainment at age 16
-
-## Summary
 Data on the percentage of pupils getting a pass (grade 5 or above) in GCSE English and Maths, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In the 2021 to 2022 school year:
 
 * 50% of all pupils got a pass (grade 5 or above) in both GCSE English and maths
 * 30% of disadvantaged pupils and 57% of all other pupils got a pass (grade 5 or above)
 * the ‘disadvantage gap index’ – which measures the attainment gap between disadvantaged pupils and all other
-  pupils – was at its widest since the 2011 to 2012 school year
+pupils – was at its widest since the 2011 to 2012 school year
 * girls were more likely than boys to get a pass (grade 5 or above), regardless of their disadvantage status – for
-  non-disadvantaged pupils, 60% of girls and 54% of boys got a pass (grade 5 or above), and for disadvantaged pupils,
-  32% of girls and 27% for boys got a pass (grade 5 or above)
+non-disadvantaged pupils, 60% of girls and 54% of boys got a pass (grade 5 or above), and for disadvantaged pupils,
+32% of girls and 27% for boys got a pass (grade 5 or above)
 * there were large variations between pupils eligible for free school meals (FSM) in different ethnic groups
-  – for example, 70% of FSM-eligible pupils from the Chinese ethnic group got a pass (grade 5 or above), compared with
-  6% of Gypsy or Roma pupils
+– for example, 70% of FSM-eligible pupils from the Chinese ethnic group got a pass (grade 5 or above), compared with
+6% of Gypsy or Roma pupils
 * disadvantaged pupils in London, the West Midlands, and Surrey and Sussex were the most likely to get a pass (grade 5
-  or above) – pupils in rural areas of England, such as Cornwall and Cumbria, were less likely to
+or above) – pupils in rural areas of England, such as Cornwall and Cumbria, were less likely to
 
-## Section
-By disadvantage status over time
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN13",
-    "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN13_overview-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Time_period",
-    "sort": "Time_period",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#eb652e", "#0f265c", "#808080"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-year-and-disadvantage--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By disadvantage status over time
 
-## Section
-By year
+::: tabs
+    ::: tab section_name="By disadvantage status over time" tab_name="Visualisation"
+        #### Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)
 
-## Chart: Single-line
-{
-    "code": "IN13",
-    "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN13_year-20230601.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Gap index",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#0f265c"],
-    "range": [0, 5],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 20,
-    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--gap-by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By disadvantage status over time"
+            {
+                "code": "IN13",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN13_overview-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Time_period",
+                "sort": "Time_period",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#eb652e", "#0f265c", "#808080"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
 
-## Section
-By area
+    ::: tab section_name="By disadvantage status over time" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status over time (England, September 2018 to July 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-year-and-disadvantage--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
 
-## Map
-# Src
-{
-    "code": "IN13",
-    "title": "Percentage of students achieving a pass (grade 5 or above) in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
-    "tooltipTitle": "Percentage of 16 year olds getting a pass (grade 5 or above) in GCSE English and maths",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [{
-        "label": "FSM eligible",
-        "data": "/static/data/indicators/IN13_area_fsm_eligible-20230601.csv"
-    }, {
-        "label": "Not FSM eligible",
-        "data": "/static/data/indicators/IN13_area_not_fsm_eligible-20230601.csv"
-    }],
-    "toggle": "radio",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "x1key": "FSM_eligible",
-    "x2key": "Not_known_to_be_FSM_eligible",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "Attainment at age 16 (%)",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ITL2-region-and-FMS--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1]
-}
+    ::: tab section_name="By disadvantage status over time" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+---
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+## By year
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Disadvantage attainment gap index over time (England, September 2010 to July 2022)
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "IN13",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN13_year-20230601.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Time_period",
+                "scale": "Gap index",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#0f265c"],
+                "range": [0, 5],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 20
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Disadvantage attainment gap index over time (England, September 2010 to July 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--gap-by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN13",
-    "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN13_gender-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Sex",
-    "sort": "Sex",
-    "scale": "%",
-    "rounding": "0dp",
-    "maxBarSize": 150,
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#0f265c", "#eb652e"],
-    "range": [0, 70],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-sex-and-disadvantage--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"]
-}
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By ethnicity
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN13",
-    "title": "Percentage of FSM-eligible pupils getting a pass (grade 5 or above) in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN13_ethnicity_fsm-20230601.csv",
-    "height": 600,
-    "type": "bar",
-    "xkey": "Value",
-    "ykey": "Category",
-    "sort": "Value",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": true,
-    "ygrid": false,
-    "xticks": 5,
-    "legend": true,
-    "colourScheme": ["#0f265c"],
-    "domain": [0, 85],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 180,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ethnicity-and-FMS--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+## By area
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of students achieving a pass (grade 5 or above) in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022) {: class="govuk-!-margin-bottom-4"}
 
-## Text
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
+
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "IN13",
+                "tooltipTitle": "Percentage of 16 year olds getting a pass (grade 5 or above) in GCSE English and maths",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": [{
+                    "label": "FSM eligible",
+                    "data": "/static/data/indicators/IN13_area_fsm_eligible-20230601.csv"
+                }, {
+                    "label": "Not FSM eligible",
+                    "data": "/static/data/indicators/IN13_area_not_fsm_eligible-20230601.csv"
+                }],
+                "toggle": "radio",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "x1key": "FSM_eligible",
+                "x2key": "Not_known_to_be_FSM_eligible",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "Attainment at age 16 (%)",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of students achieving a pass (grade 5 or above) in both GCSE English and maths by the end of key stage 4, by region and eligibility for free school meals (FSM) (England, September 2012 to July 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ITL2-region-and-FMS--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN13",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN13_gender-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Sex",
+                "sort": "Sex",
+                "scale": "%",
+                "rounding": "0dp",
+                "maxBarSize": 150,
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#0f265c", "#eb652e"],
+                "range": [0, 70],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of pupils getting a pass (grade 5 or above) in GCSE English and maths, by disadvantage status and sex (England, academic year 2021 to 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-sex-and-disadvantage--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of FSM-eligible pupils getting a pass (grade 5 or above) in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN13",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN13_ethnicity_fsm-20230601.csv",
+                "height": 600,
+                "type": "bar",
+                "xkey": "Value",
+                "ykey": "Category",
+                "sort": "Value",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": true,
+                "ygrid": false,
+                "xticks": 5,
+                "legend": true,
+                "colourScheme": ["#0f265c"],
+                "domain": [0, 85],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 180,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of FSM-eligible pupils getting a pass (grade 5 or above) in GCSE English and maths, by ethnicity (England, academic year 2021 to 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN13-attainment-at-age-16--by-ethnicity-and-FMS--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Department for Education, National curriculum assessments at key stage 4 in England, 2022
 
@@ -260,8 +349,8 @@ Administrative data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN13-attainment-at-age-16--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN13-attainment-at-age-16--full-dataset.csv" :::

@@ -1,21 +1,16 @@
-## Code
-IN32
+# Unemployment
 
-## Title
-Unemployment
-
-## Summary
 Data on the percentage of 25 to 29 year olds who were unemployed, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In 2021, 5% of all 25 to 29 year olds in the UK were unemployed.
 
 There were no significant differences in unemployment among 25 to 29 year olds from different socio-economic backgrounds.
 
-There were no significant differences in unemployment rates between young men and women from the same socio-economic backgrounds. 
+There were no significant differences in unemployment rates between young men and women from the same socio-economic backgrounds.
 
 Young people from the Pakistani and Black ethnic groups were significantly more likely to be unemployed than
 White British young people from the same socio-economic background.
@@ -23,215 +18,308 @@ White British young people from the same socio-economic background.
 Disabled young people were around 3 times more likely to be unemployed than those without a disability, across all
 socio-economic backgrounds.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Single-bar
-{
-    "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background (UK, 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN32_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 10],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## By socio-economic background
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background (UK, 2021)
 
-## Map
-# Src
-{
-    "code": "IN32",
-    "title": "Likelihood of being unemployed at 25 to 29 years old, by region compared to the national average (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "Likelihood of unemployment compared with UK average",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/IN32_area_ratio-20230327.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Multiplier_value",
-    "areaField": "ITL221NM",
-    "scale": "Ratio",
-    "lowerConfidence": "Multiplier_LCI",
-    "upperConfidence": "Multiplier_UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "reversePolarity": true,
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Multiplier_value",
-    "ykey": "Area_name",
-    "sort": "-Multiplier_value",
-    "xgrid": true,
-    "ygrid": true,
-    "xscale": "log",
-    "xticks": 3,
-    "xtitle": "Likelihood compared with UK average",
-    "rotateDomainLabels": false,
-    "legend": false,
-    "range": [-2, 10],
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-ITL2-region--ratio--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN32_overview-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "range": [0, 10],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
-likelihood of being unemployed compared to the UK average. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background (UK, 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-For example, the value for Eastern Scotland (1.89) means that 25 to 29 year olds in that area are nearly twice as likely to be unemployed compared with the UK average. The value for Devon (0.56) means they are just over half as likely to be unemployed.
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+---
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap. This suggests differences between specific regions may not be statistically significant. 
+## By area
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Likelihood of being unemployed at 25 to 29 years old, by region compared to the national average (UK, 2014 to 2021 combined) {: class="govuk-!-margin-bottom-4"}
 
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
+        likelihood of being unemployed compared to the UK average. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        For example, the value for Eastern Scotland (1.89) means that 25 to 29 year olds in that area are nearly twice as likely to be unemployed compared with the UK average. The value for Devon (0.56) means they are just over half as likely to be unemployed.
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap. This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
 
-## Section
-By sex
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "IN32",
+                "tooltipTitle": "Likelihood of unemployment compared with UK average",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/IN32_area_ratio-20230327.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Multiplier_value",
+                "areaField": "ITL221NM",
+                "scale": "Ratio",
+                "lowerConfidence": "Multiplier_LCI",
+                "upperConfidence": "Multiplier_UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "reversePolarity": true,
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Multiplier_value",
+                "ykey": "Area_name",
+                "sort": "-Multiplier_value",
+                "xgrid": true,
+                "ygrid": true,
+                "xscale": "log",
+                "xticks": 3,
+                "xtitle": "Likelihood compared with UK average",
+                "rotateDomainLabels": false,
+                "legend": false,
+                "range": [-2, 10],
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and sex (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN32_gender-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 10],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Likelihood of being unemployed at 25 to 29 years old, by region compared to the national average (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-ITL2-region--ratio--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Section
-By ethnicity
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Chart: Grouped-bar
-{
-    "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN32_ethnicity-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 25],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+---
 
-## Section
-By disability status
+## By sex
 
-## Chart: Grouped-bar
-{
-    "code": "IN32",
-    "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN32_disability-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 25],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and sex (UK, 2014 to 2021 combined)
 
-## Section
-About the data
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN32_gender-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Sex",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 10],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and sex (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN32_ethnicity-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 25],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and disability status (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN32",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN32_disability-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 25],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people aged 25 to 29 years who were unemployed, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN32-unemployment--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
@@ -276,8 +364,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN32-unemployment--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN32-unemployment--full-dataset.csv" :::

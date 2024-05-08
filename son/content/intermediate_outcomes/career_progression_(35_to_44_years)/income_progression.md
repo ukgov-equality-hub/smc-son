@@ -1,73 +1,86 @@
-## Code
-IN43
+# Income progression
 
-## Title
-Income progression
-
-## Summary
 Data on changes in the annual incomes of men and women aged 25 to 44 years in the UK, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data from 2014 to 2021 shows that annual incomes of men and women aged 25 to 44 years from professional backgrounds
 went up more than for those from intermediate or working class backgrounds.
-  
+
 Average incomes increased steadily from the age of 25 to 35 years, and tended to flatten out after. The average increase
 was greater for young people from professional backgrounds than for those from intermediate or working-class backgrounds.
 
 Women’s average earnings were lower, and did not go up as quickly as men’s.
 
-## Section
-By sex
+---
 
-## Chart: Multi-line
-{
-    "code": "IN43",
-    "title": "Income progression of men and women aged 25 to 44, by socio-economic background (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/IN43_gender_female-20230713.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/IN43_gender_male-20230713.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Age",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "sort": "Age",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [10000, 60000],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 80,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/IN43-income-progression--by-age-and-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    "dataTableNumberOfHeadingRows": 2
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Income progression of men and women aged 25 to 44, by socio-economic background (UK, 2014 to 2021 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN43",
+                "tooltipTitle": "",
+                "data": [{
+                    "label": "Women",
+                    "data": "/static/data/indicators/IN43_gender_female-20230713.csv"
+                }, {
+                    "label": "Men",
+                    "data": "/static/data/indicators/IN43_gender_male-20230713.csv"
+                }],
+                "toggle": "radio",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Age",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "sort": "Age",
+                "scale": "£",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "range": [10000, 60000],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 80,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Income progression of men and women aged 25 to 44, by socio-economic background (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN43-income-progression--by-age-and-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
-Office for National Statistics (ONS), Labour Force Survey (LFS) 
+Office for National Statistics (ONS), Labour Force Survey (LFS)
 
 ### Time period
 2014 to 2021 (combined)
@@ -106,8 +119,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN43-income-progression--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN43-income-progression--full-dataset.csv" :::

@@ -1,69 +1,82 @@
-## Code
-IN42
+# Occupational progression
 
-## Title
-Occupational progression
-
-## Summary
 Data on the patterns of upward career mobility into the professional classes for people aged 25 to 44 in the UK, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data from 2014 to 2021 shows that men and women aged 25 to 44 years from professional socio-economic backgrounds
 are more likely to work in professional occupations.
 
 People’s chances of working in the professional classes increased between 25 to 35 years old, and then slowed in their
 late 30s and early 40s. The increase was greater for young people from professional backgrounds.
 
-## Section
-By sex
+---
 
-## Chart: Multi-line
-{
-    "code": "IN42",
-    "title": "Probability of access to the professional classes by socio-economic background, sex and age, controlling for survey year (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": [{
-        "label": "Women",
-        "data": "/static/data/indicators/IN42_gender_female-20230713.csv"
-    }, {
-        "label": "Men",
-        "data": "/static/data/indicators/IN42_gender_male-20230713.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Age",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "sort": "Age",
-    "scale": "Predictive margins",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0.2, 0.8],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 30,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/IN42-occupational-progression--by-age-and-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingRows": 2
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Probability of access to the professional classes by socio-economic background, sex and age, controlling for survey year (UK, 2014 to 2021 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN42",
+                "tooltipTitle": "",
+                "data": [{
+                    "label": "Women",
+                    "data": "/static/data/indicators/IN42_gender_female-20230713.csv"
+                }, {
+                    "label": "Men",
+                    "data": "/static/data/indicators/IN42_gender_male-20230713.csv"
+                }],
+                "toggle": "radio",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Age",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "sort": "Age",
+                "scale": "Predictive margins",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "range": [0.2, 0.8],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 30,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Probability of access to the professional classes by socio-economic background, sex and age, controlling for survey year (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN42-occupational-progression--by-age-and-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics (ONS), Labour Force Survey (LFS)
 
@@ -105,8 +118,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN42-occupational-progression--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN42-occupational-progression--full-dataset.csv" :::
