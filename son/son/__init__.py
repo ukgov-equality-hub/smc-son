@@ -227,19 +227,15 @@ def get_content(domain, subdomain=None, indicator=None, use_markdown=True, print
     return content
 
 
-@son.route('/', methods=['GET', 'POST'])
+@son.route('/', methods=['GET'])
 def index():
-    if request.method == 'POST':
-        pass
-
     return render_template(
         'homepage/homepage.html',
         menu=menu,
         domain=None,
         subdomain=None,
         indicator=None,
-        title='Welcome',
-        form=None
+        title='Welcome'
     )
 
 
