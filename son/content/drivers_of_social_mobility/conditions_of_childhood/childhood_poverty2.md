@@ -10,6 +10,7 @@ The percentage of children living in relative poverty has gone up since 2012, bu
 
 Between 2017 and 2022, the percentage of children living in relative poverty stayed roughly the same at around 30%.
 
+
 ---
 
 ## By year
@@ -37,7 +38,8 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
                 "legend": true,
                 "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
                 "range": [0, 40],
-                "margin": [0, 0, 0, 0],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
                 "rolloverBehaviour": "fade",
                 "clickBehaviour": "isolate"
             }
@@ -73,16 +75,17 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
         
         The regional estimates have a large margin of error – do not rank or compare specific regions.
         
-        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals) –
-        the range of values that the 'true' value for each region is highly likely to be within. In many cases the
-        confidence intervals overlap. This suggests differences between specific regions may not be statistically significant.
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
         
-        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to understand overall regional patterns.
-        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
+
         ::: visualisation vis_type="map" section_name="By area"
             {
                 "code": "DR12",
-                "title": "",
                 "tooltipTitle": "Percentage of children in relative poverty",
                 "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
                 "data": "/static/data/indicators/DR12_area-20230417.csv",
@@ -96,7 +99,6 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
                 "confidenceIntervals": "visible",
                 "height": 700,
                 "dataFormat": "quintile",
-                "quantile": "",
                 "zero": false,
                 "reversePolarity": true,
                 "background": true,
@@ -109,11 +111,12 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
                 "sort": "-Value",
                 "xgrid": true,
                 "ygrid": true,
-                "xtitle": "",
+                "xtitle": "Childhood poverty (%)",
                 "legend": false,
-                "margin": [0, 0, 0, 0],
+                "margin": [10, 20, 5, 5],
                 "backgroundColor": "#fafafa"
             }
+                
         :::
     :::
 
@@ -136,6 +139,7 @@ Between 2017 and 2022, the percentage of children living in relative poverty sta
 ---
 
 ## About the data
+
 
 ### Data source
 Department for Work and Pensions, Households below average income (HBAI) statistics.
@@ -171,8 +175,11 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
+
 ---
 
 ## Download the data
 
 ::: download_full_dataset_link data_file="/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv" :::
+
+
