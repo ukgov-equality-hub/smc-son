@@ -274,9 +274,7 @@ def area_page(area):
         area=area,
         domain='social_mobility_by_area',
         selected=[selected - 2, selected - 1, selected, selected + 1, selected + 2],
-        title=get_item_title(area),
-        content=get_content('social_mobility_by_area', use_markdown=False),
-        form=None
+        title=get_item_title(area)
     )
 
 
