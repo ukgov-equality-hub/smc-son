@@ -2,200 +2,98 @@
 {% from 'components/chart.html' import chart %}
 {% from 'components/map.html' import map %}
 {% from 'components/composite.html' import composite %}
-{% from 'components/data-table.html' import datatable %}
 
-{% macro visualisation(id, type, data, section, indicator) %}
-<div class="govuk-tabs visualisation-tabs" data-module="govuk-tabs">
-    <ul class="govuk-tabs__list" role="tablist">
-        <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-            <a class="govuk-tabs__tab" href="#chart{{ id }}_tab" id="tab_chart{{ id }}_tab" role="tab" aria-controls="chart{{ id }}_tab" aria-selected="true" tabindex="0">
-                Visualisation <span class="govuk-visually-hidden">for {{ section }}</span>
-            </a>
-        </li>
-        <li class="govuk-tabs__list-item" role="presentation">
-            <a class="govuk-tabs__tab" href="#data_table{{ id }}_tab" id="tab_data_table{{ id }}_tab" role="tab" aria-controls="data_table{{ id }}_tab" aria-selected="false" tabindex="-1">
-                Data <span class="govuk-visually-hidden">for {{ section }}</span>
-            </a>
-        </li>
-        <!--<li class="govuk-tabs__list-item" role="presentation">
-            <a class="govuk-tabs__tab" href="#guidance{{ id }}_tab" id="tab_guidance{{ id }}_tab" role="tab" aria-controls="guidance{{ id }}_tab" aria-selected="false" tabindex="-1">
-                Guidance <span class="govuk-visually-hidden">for {{ section }}</span>
-            </a>
-        </li>-->
-        <li class="govuk-tabs__list-item" role="presentation">
-            <a class="govuk-tabs__tab" href="#download{{ id }}_tab" id="tab_download{{ id }}_tab" role="tab" aria-controls="download{{ id }}_tab" aria-selected="false" tabindex="-1">
-                Download <span class="govuk-visually-hidden">for {{ section }}</span>
-            </a>
-        </li>
-    </ul>
+<div id="chart{{ id }}_tab">
+    {% if [data, 'data'] | attribute_type == 'list' %}
 
-    <div id="chart{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_chart{{ id }}_tab">
-        <h3 class="govuk-visually-hidden">
-            Visualisation for {{ section }}
-        </h3>
-
-        {% if [data, 'title'] | attribute != '' %}
-        <h4 class="govuk-heading-s grid-three-quarters">{{ [data, 'title'] | attribute | safe }}</h4>
-        {% endif %}
-
-        <div class="grid-three-quarters">
-        {{ [data, 'Guidance'] | content_list | safe }}
-        </div>
-
-        {% if [data, 'data'] | attribute_type == 'list' %}
         <div class="govuk-form-group">
             {% if [data, 'toggle'] | attribute == 'radio' %}
-            <fieldset class="govuk-fieldset">
-                <legend class="govuk-visually-hidden">
-                    <h3>
-                        Use the radio buttons to choose a dataset to view
-                    </h3>
-                </legend>
-                <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
-                    {% for item in ([data, 'data'] | attribute) %}
-                    <div class="govuk-radios__item">
-                        <input id="range-option{{ id }}_{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange{{ id }}(this.value)"{% if loop.index == loop.length %} checked{% endif %}>
-                        <label for="range-option{{ id }}_{{ loop.index }}" class="govuk-label govuk-radios__label">
-                            {{ item.label }}
-                        </label>
+                <fieldset class="govuk-fieldset">
+                    <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+                        {% for item in ([data, 'data'] | attribute) %}
+                            <div class="govuk-radios__item">
+                                <input id="range-option{{ id }}_{{ loop.index }}" type="radio" value="{{ item.label }}" name="range{{ id }}" class="govuk-radios__input" onclick="selectRange({{ id }}, this.value)"{% if loop.index == loop.length %} checked{% endif %}>
+                                <label for="range-option{{ id }}_{{ loop.index }}" class="govuk-label govuk-radios__label">
+                                    {{ item.label }}
+                                </label>
+                            </div>
+
+                            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
+                                <li class="move-to-download-section">
+                                    {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                                    <a href="javascript:;" class="govuk-link"
+                                       onclick="downloadChart({{ id }}, '{{ item.data }}', '{{ item.label }}', '{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png')">
+                                        Download the {{ item.label }} chart (PNG, <span class="chartSize{{ id }}"></span>)
+                                    </a>
+                                </li>
+                            {% endif %}
+
+                            {% if type == 'map' %}
+                                <li class="move-to-download-section">
+                                    {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                                    <a href="javascript:;" class="govuk-link"
+                                       onclick="downloadMap({{ id }}, '{{ item.data }}', '{{ item.label }}', '{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png')">
+                                        Download the {{ item.label }} map (PNG, <span class="mapSize{{ id }}"></span>)
+                                    </a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
                     </div>
-                    {% endfor %}
-                </div>
-            </fieldset>
+                </fieldset>
             {% else %}
-            <input id="range{{ id }}" type="range" value="{{ ([data, 'data'] | attribute)[-1].label }}" min="{{ ([data, 'data'] | attribute)[0].label }}" max="{{ ([data, 'data'] | attribute)[-1].label }}" step="1" oninput="selectRange{{ id }}(this.value)" list="values{{ id }}">
-            <datalist id="values{{ id }}" class="govuk-body">
-                {% for item in ([data, 'data'] | attribute) %}
-                <option value="0" label="{{ item.label }}"></option>
-                {% endfor %}
-            </datalist>
+                <input id="range{{ id }}" type="range" value="{{ ([data, 'data'] | attribute)[-1].label }}" min="{{ ([data, 'data'] | attribute)[0].label }}" max="{{ ([data, 'data'] | attribute)[-1].label }}" step="1" oninput="selectRange({{ id }}, this.value)" list="values{{ id }}">
+                <datalist id="values{{ id }}" class="govuk-body">
+                    {% for item in ([data, 'data'] | attribute) %}
+                        <option value="0" label="{{ item.label }}"></option>
+                    {% endfor %}
+                </datalist>
             {% endif %}
         </div>
-        <script>
-            const options{{ id }} = {{ [data, 'data'] | attribute | safe | replace("True", "true") }}
+        <script id="toggleOptions{{ id }}" type="text/plain">{{ [data, 'data'] | attribute | tojson | base_64_encode }}</script>
 
-            if (document.getElementById('range{{ id }}')) {
-                document.getElementById('range{{ id }}').addEventListener('input', function (e) {
-                    let target = e.target
-                    target.style.backgroundSize = (target.value - target.min) * 100 / (target.max - target.min) + '% 100%'
-                })
-            }
-
-            function selectRange{{ id }}(id) {
-                const datafile = options{{ id }}.filter(x => x.label == id)[0].data
-                let overrideOptions = options{{ id }}.filter(x => x.label == id)[0]
-                if (typeof overrideOptions.reversePolarity !== 'undefined') {
-                    overrideOptions = { label: overrideOptions.label, reversePolarity: overrideOptions.reversePolarity }
-                } else {
-                    overrideOptions = { label: overrideOptions.label }
-                }
-
-                try {
-                    buildMap({{ id }}, datafile, false, overrideOptions)
-                }
-                catch (e) {}
-                try {
-                    buildChart({{ id }}, datafile, false, overrideOptions)
-                }
-                catch (e) {}
-
-                if (document.getElementById('map_tooltip{{ id }}')) {
-                    document.getElementById('map_tooltip{{ id }}').style.visibility = 'hidden'
-                }
-            }
-        </script>
-        {% endif %}
-
+    {% else %}
         {% if type == 'chart' %}
-        {{ chart(id, data) }}
+            <li class="move-to-download-section">
+                {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, '{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png')">
+                    Download the chart (PNG, <span class="chartSize{{ id }}"></span>)
+                </a>
+            </li>
         {% else %}
+            <li class="move-to-download-section">
+                {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, null, null, '{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}.png')">
+                    Download the map (PNG, <span class="mapSize{{ id }}"></span>)
+                </a>
+            </li>
+            {% if ([data, 'code'] | attribute) not in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
+                <li class="move-to-download-section">
+                    {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                    <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, '{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png')">
+                        Download the chart (PNG, <span class="chartSize{{ id }}"></span>)
+                    </a>
+                </li>
+            {% endif %}
+        {% endif %}
+    {% endif %}
 
+    {% if type == 'chart' %}
+        {{ chart(id, data) }}
+    {% else %}
         <div class="grid grid2 map">
             <div class="grid-map">
                 {{ map(id, data) }}
             </div>
             {% if ([data, 'code'] | attribute) in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
-            <div class="grid-composite">
-                {{ composite(id, data) }}
-            </div>
+                <div class="grid-composite">
+                    {{ composite(id, data) }}
+                </div>
             {% else %}
-            <div class="grid-chart">
-                {{ chart(id, data) }}
-            </div>
+                <div class="grid-chart">
+                    {{ chart(id, data) }}
+                </div>
             {% endif %}
         </div>
-        {% endif %}
-    </div>
+    {% endif %}
 
-    <div id="data_table{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_data_table{{ id }}_tab">
-        <h3 class="govuk-visually-hidden">
-            Data for {{ section }}
-        </h3>
-
-        <div>
-            {{ datatable(id, data) }}
-        </div>
-    </div>
-
-    <!--<div id="guidance{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_guidance{{ id }}_tab">
-        <h3 class="govuk-visually-hidden">
-            Guidance for {{ section }}
-        </h3>
-    </div>-->
-
-    <div id="download{{ id }}_tab" class="govuk-tabs__panel" role="tabpanel" aria-labelledby="tab_download{{ id }}_tab">
-        <h3 class="govuk-visually-hidden">
-            Download for {{ section }}
-        </h3>
-
-        <ul class="govuk-list govuk-list--bullet">
-            {% if [data, 'data'] | attribute_type == 'list' %}
-            {% for item in ([data, 'data'] | attribute) %}
-            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
-            <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, '{{ item.data }}', '{{ item.label }}', `{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png`)">
-                    Download the {{ item.label }} chart (PNG<span class="chartSize{{ id }}"></span>)
-                </a>
-            </li>
-            {% endif %}
-
-            {% if type == 'map' %}
-            <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, '{{ item.data }}', '{{ item.label }}', `{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}__{{ item.label | lower | replace(' ', '_') }}.png`)">
-                    Download the {{ item.label }} map (PNG<span class="mapSize{{ id }}"></span>)
-                </a>
-            </li>
-            {% endif %}
-            {% endfor %}
-            {% else %}
-            {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
-            <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, `{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png`)">
-                    Download the chart (PNG<span class="chartSize{{ id }}"></span>)
-                </a>
-            </li>
-            {% endif %}
-
-            {% if type == 'map' %}
-            <li>
-                <a href="javascript:;" class="govuk-link" onclick="downloadMap({{ id }}, null, null, `{{ indicator | lower | replace(' ', '_') }}__map__{{ section | lower | replace(' ', '_') }}.png`)">
-                    Download the map (PNG<span class="mapSize{{ id }}"></span>)
-                </a>
-            </li>
-            {% endif %}
-            {% endif %}
-
-            {% if [data, 'dataTable'] | attribute %}
-            <li>
-                <a href="{{ [data, 'dataTable'] | attribute }}" class="govuk-link">
-                    Download the data (CSV {{ [data, 'dataTable'] | file_size }})
-                </a>
-            </li>
-            {% endif %}
-        </ul>
-        {% if not ([data, 'code'] | attribute) in ['CI1', 'CI2', 'CI3', 'CI4', 'CI5'] %}
-        <p class="govuk-body">For the full download file, see <a href="#download-the-data" class="govuk-link">Download the data</a>.
-        {% endif %}
-    </div>
 </div>
-{% endmacro %}

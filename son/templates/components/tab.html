@@ -1,0 +1,8 @@
+
+<div class="govuk-tabs__panel" id="{{ ('tab__' + tab_data.section_name + '__' + tab_data.tab_name).replace(' ', '_') }}">
+    <h3 class="govuk-visually-hidden">
+        {{ tab_data.tab_name }}
+    </h3>
+
+    {{ inner_content }}
+</div>

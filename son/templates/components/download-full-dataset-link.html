@@ -1,0 +1,25 @@
+{% set FILE_SIZE = data_file | file_size %}
+{% set csv_columns = data_file | full_dataset_column_names %}
+
+<div {# This <div> is here because we can only return 1 element, so we need a wrapper around the child elements. #}>
+    <p class="govuk-body">
+        <a href="{{ data_file }}"
+           class="govuk-link">
+            Download full dataset (CSV, {{ FILE_SIZE }})
+        </a>
+    </p>
+
+    {% if csv_columns %}
+        <p class="govuk-body">
+            This file contains the following variables:
+        </p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            {% for column_name in csv_columns %}
+                <li>
+                    {{ column_name }}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</div>
