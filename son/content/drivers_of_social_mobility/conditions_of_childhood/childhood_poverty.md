@@ -1,113 +1,144 @@
-## Code
-DR12
+# Childhood poverty
 
-## Title
-Childhood poverty
-
-## Summary
 Data on the percentage of children in the UK living in relative poverty after housing costs.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 The percentage of children living in relative poverty has gone up since 2012, but is below the levels reached in the 1990s.
 
 Between 2017 and 2022, the percentage of children living in relative poverty stayed roughly the same at around 30%.
 
-## Section
-By year
+---
 
-## Chart: Multi-line
-# Src
-{
-    "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR12_overview-20230419.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
-    "range": [0, 40],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
-}
+## By year
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)
 
-## Map
-# Src
-{
-    "code": "DR12",
-    "title": "Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019)",
-    "tooltipTitle": "Percentage of children in relative poverty",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/DR12_area-20230417.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "reversePolarity": true,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "Childhood poverty (%)",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR12",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR12_overview-20230419.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Time_period",
+                "scale": "%",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
+                "range": [0, 40],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of children living in relative poverty after housing costs, by country over time (UK, 1994 to 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-year-and-country--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+---
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+## By area
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019) {: class="govuk-!-margin-bottom-4"}
 
-## Text
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
+
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "DR12",
+                "tooltipTitle": "Percentage of children in relative poverty",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/DR12_area-20230417.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "reversePolarity": true,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "Childhood poverty (%)",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of children living in relative poverty after housing costs, by region (UK, 2018 to 2019)",
+                "dataTable": "/static/data/pre-processed-csvs/DR12-childhood-poverty--by-ILT2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Department for Work and Pensions, Households below average income (HBAI) statistics.
 
@@ -142,8 +173,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR12-childhood-poverty--full-dataset.csv" :::
