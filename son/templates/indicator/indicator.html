@@ -34,7 +34,7 @@
 {% endif %}{% elif item[0] == 'Chart' %}
 ::: tabs
     ::: tab section_name="{{ cur_section.name }}" tab_name="Visualisation"
-        #### {{ item[1][0][1] | json_query('title') }}
+        #### {{ item[1][0][1] | json_property('title') }}
 
         ::: visualisation vis_type="chart" section_name="{{ cur_section.name }}"
             {{ (item[1][0][1] | rereplace('"dataTable[^\n]*\n', '') | rereplace('"title[^\n]*\n', '')).replace(',\n}', '\n}').replace('\n', '\n                ').replace('\n                }', '\n            }') }}
@@ -54,7 +54,7 @@
 {% elif item[0] == 'Map' %}
 ::: tabs
     ::: tab section_name="{{ cur_section.name }}" tab_name="Visualisation"
-        #### {{ item[1][0][1] | json_query('title') }} {{ '{: class="govuk-!-margin-bottom-4"}' }}
+        #### {{ item[1][0][1] | json_property('title') }} {{ '{: class="govuk-!-margin-bottom-4"}' }}
 
         {{ item[1][1][1].replace('\n', '\n        ') }}
 

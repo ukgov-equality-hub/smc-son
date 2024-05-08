@@ -1,8 +1,6 @@
 import base64
 import re
 from datetime import datetime
-
-import jmespath
 from dateutil import tz
 import os
 from pathlib import Path
@@ -355,10 +353,10 @@ def base_64_encode_filter(context, details):
 
 
 @jinja2.pass_context
-@blueprint.app_template_filter('json_query')
-def json_query(context, data, expression):
+@blueprint.app_template_filter('json_property')
+def json_property(context, data, property_name):
     some_json = json.loads(data)
-    return jmespath.search(expression, some_json)
+    return some_json[property_name]
 
 
 @jinja2.pass_context
