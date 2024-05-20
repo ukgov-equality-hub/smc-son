@@ -1,16 +1,11 @@
-## Code
-IN41
+# Further training and qualifications
 
-## Title
-Further training and qualifications
-
-## Summary
 Data on the percentage of people aged 25 and 32 years with a university degree, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data from 2014 and 2021 shows that the percentage of young people with university degrees went up between the ages of 25 and 32 years.
 
 20% of people from working class backgrounds had a degree by 25 years old, rising to 34% by 32 years old.
@@ -19,45 +14,64 @@ Data from 2014 and 2021 shows that the percentage of young people with universit
 
 57% of people from professional backgrounds had a degree by 25 years old, rising to 70% by 32 years old.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN41",
-    "title": "Percentage of young people born in 1989 who had degrees by the ages of 25 and 32 years, by socio-economic background (UK, 2014 and 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN41_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Age",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Age",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN41-further-training-and-qualifications--by-age-and-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1]
-}
+## By socio-economic background
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Percentage of young people born in 1989 who had degrees by the ages of 25 and 32 years, by socio-economic background (UK, 2014 and 2021)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN41",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN41_overview-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Age",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Age",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of young people born in 1989 who had degrees by the ages of 25 and 32 years, by socio-economic background (UK, 2014 and 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/IN41-further-training-and-qualifications--by-age-and-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics (ONS), Labour Force Survey (LFS) from 2014 and 2021
 
@@ -83,7 +97,7 @@ These are based on the National Statistics Socio-economic Classification (NS-SEC
 Data is weighted using LFS probability weights.
 
 The data compares 2 separate samples from surveys carried out in 2014 and 2021. It does not compare the same
-individuals at different time points. 
+individuals at different time points.
 
 The data includes people aged 25 years in the first group, as most young people have completed full-time education
 and started work by that age.
@@ -100,8 +114,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN41-further-training-and-qualifications--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN41-further-training-and-qualifications--full-dataset.csv" :::

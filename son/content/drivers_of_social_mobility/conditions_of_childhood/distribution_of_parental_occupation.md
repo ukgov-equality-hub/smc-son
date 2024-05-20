@@ -1,16 +1,11 @@
-## Code
-DR14
+# Distribution of parental occupation
 
-## Title
-Distribution of parental occupation
-
-## Summary
 Data on the occupation level of adults in families with dependent children.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 20% of adults in families with dependent children were in ‘higher professional’ occupations in 2021, up from 14% in 2014.
 
 46% were in professional occupations (higher or lower) in 2021, up from 39% in 2014.
@@ -19,106 +14,143 @@ Summary main findings
 
 32% were in working class occupations (higher or lower) in 2021, down from 40% in 2014.
 
-## Section
-By year
+---
 
-## Chart: Stacked-bar
-{
-    "code": "DR14",
-    "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR14_overview-20230417.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Time_period",
-    "scale": "%",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
-}
+## By year
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)
 
-## Map
-# Src
-{
-    "code": "DR14",
-    "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "Percentage of adults in a higher professional or lower working class occupation",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": [{
-        "label": "Higher professional",
-        "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv"
-    }, {
-        "label": "Lower working",
-        "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv",
-        "reversePolarity": true
-    }],
-    "toggle": "radio",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "Distribution of parental education (%)",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR14",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR14_overview-20230417.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Time_period",
+                "scale": "%",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of adults in families with dependent children in different occupation levels, over time (UK, 2014 to 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+---
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+## By area
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined) {: class="govuk-!-margin-bottom-4"}
 
-## Text
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest percentages.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
+
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "DR14",
+                "tooltipTitle": "Percentage of adults in a higher professional or lower working class occupation",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": [{
+                "label": "Higher professional",
+                "data": "/static/data/indicators/DR14_area_higher_professional-20230419.csv"
+            }, {
+                "label": "Lower working",
+                "data": "/static/data/indicators/DR14_area_lower_working-20230419.csv",
+                "reversePolarity": true
+            }],
+                "toggle": "radio",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "Distribution of parental education (%)",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of adults in families with dependent children in a higher professional or lower working class occupation, by region (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/DR14-distribution-of-parental-occupation--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Labour Force Survey (LFS), Office for National Statistics
 
@@ -160,8 +192,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR14-distribution-of-parental-occupation--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR14-distribution-of-parental-occupation--full-dataset.csv" :::

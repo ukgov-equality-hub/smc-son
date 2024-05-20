@@ -1,57 +1,67 @@
-## Code
-CI4
+# Childhood poverty and disadvantage
 
-## Title
-Childhood poverty and disadvantage
-
-## Summary
 Data for UK regions on factors that can reduce people’s social mobility chances – childhood poverty,
 youth unemployment, and lower working-class work among parents.
 
-## Map
-# Src
-{
-    "code": "CI4",
-    "title": "Index of childhood poverty and disadvantage, by region (UK, 2014 to 2021 combined)",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/CI4_20230817.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "quantile": "Quintile",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "reversePolarity": true,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/CI4-childhood-poverty-and-disadvantage--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 0]
-}
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Index of childhood poverty and disadvantage, by region (UK, 2014 to 2021 combined)
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
-Areas with the highest scores have the highest levels of childhood poverty and disadvantage.
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        Areas with the highest scores have the highest levels of childhood poverty and disadvantage.
 
-## Section
-Summary main findings
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "CI4",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/CI4_20230817.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "quantile": "Quintile",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "reversePolarity": true,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Index of childhood poverty and disadvantage, by region (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/CI4-childhood-poverty-and-disadvantage--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 0]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## Summary main findings
 Some of the highest levels of childhood poverty and disadvantage are in:
 
 * London
@@ -65,10 +75,9 @@ For example, most of London is in the top 20% of areas for
 [sociocultural advantage](/drivers_of_social_mobility/composite_indices/socio-cultural_advantage), but also
 the bottom 20% for childhood poverty and disadvantage.
 
-## Section
-About the data
+---
 
-## Text
+## About the data
 This page combines data from the following 3 indicators into a single ‘composite’ score to give a more
 reliable picture of geographical mobility patterns:
 
@@ -82,4 +91,11 @@ reliable picture of geographical mobility patterns:
 Indicators are rescaled to make sure they use a common metric.
 The best-performing area’s score is set to 0, and the least well-performing area’s score is set to 1.
 
-See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology" target="_blank" class="govuk-link">technical annex</a> for more information on how each area was scored. 
+See the [technical annex (opens in a new tab)](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology){: target="_blank" }
+for more information on how each area was scored.
+
+---
+
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/CI4-childhood-poverty-and-disadvantage--full-dataset.csv" :::

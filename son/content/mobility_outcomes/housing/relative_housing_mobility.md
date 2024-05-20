@@ -1,16 +1,11 @@
-## Code
-MO42
+# Relative housing mobility
 
-## Title
-Relative housing mobility
-
-## Summary
 Data on the link in home ownership between people in the UK and their parents.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Since 1991, relative housing mobility has gone down. This means the link in home ownership between people and their
 parents has got stronger.
 
@@ -19,134 +14,209 @@ It was also lower among disabled people than non-disabled people.
 
 There were no significant differences in relative housing mobility between UK regions.
 
-## Section
-By year
+---
 
-## Chart: Single-line
-{
-    "code": "MO42",
-    "title": "Odds ratios of the relationship in home ownership between people and their parents (UK, 1991, 2001, 2011, and 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO42_overview-20230602.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 7],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 25,
-    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+## By year
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Odds ratios of the relationship in home ownership between people and their parents (UK, 1991, 2001, 2011, and 2016 to 2020 combined)
 
-## Chart: Single-bar
-{
-    "code": "MO42",
-    "title": "Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO42_area-20230602.csv",
-    "height": 450,
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "legend": false,
-    "zero": false,
-    "colourScheme": ["#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-ITL1-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "MO42",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO42_overview-20230602.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Time_period",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 7],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 25
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Odds ratios of the relationship in home ownership between people and their parents (UK, 1991, 2001, 2011, and 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-## Chart: Single-bar
-{
-    "code": "MO42",
-    "title": "Odds ratios of the relationship in home ownership between people and their parents, by sex (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO42_gender-20230602.csv",
-    "height": 450,
-    "type": "doty",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [2, 4],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
+---
 
-## Section
-By disability
+## By area
 
-## Chart: Single-bar
-{
-    "code": "MO42",
-    "title": "Odds ratios of the relationship in home ownership between people and their parents, by disability status (UK, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO42_disability-20230602.csv",
-    "height": 450,
-    "type": "doty",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "scale": "Ratio",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "xticksLength": 12,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [2, 4],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)
 
-## Section
-About the data
+        ::: visualisation vis_type="chart" section_name="By area"
+            {
+                "code": "MO42",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO42_area-20230602.csv",
+                "height": 450,
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "legend": false,
+                "zero": false,
+                "colourScheme": ["#5694ca"],
+                "margin": [10, 20, 5, 5]
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Odds ratios of the relationship in home ownership between people and their parents, by region (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-ITL1-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Odds ratios of the relationship in home ownership between people and their parents, by sex (UK, 2016 to 2020 combined)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "MO42",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO42_gender-20230602.csv",
+                "height": 450,
+                "type": "doty",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [2, 4],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Odds ratios of the relationship in home ownership between people and their parents, by sex (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability
+
+::: tabs
+    ::: tab section_name="By disability" tab_name="Visualisation"
+        #### Odds ratios of the relationship in home ownership between people and their parents, by disability status (UK, 2016 to 2020 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability"
+            {
+                "code": "MO42",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO42_disability-20230602.csv",
+                "height": 450,
+                "type": "doty",
+                "xkey": "Category",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "scale": "Ratio",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "xticksLength": 12,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [2, 4],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Odds ratios of the relationship in home ownership between people and their parents, by disability status (UK, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO42-relative-housing-mobility--by-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics (ONS), Wealth and Assets Survey (WAS)
 
@@ -185,8 +255,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO42-relative-housing-mobility--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO42-relative-housing-mobility--full-dataset.csv" :::

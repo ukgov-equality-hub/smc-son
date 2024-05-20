@@ -1,24 +1,19 @@
-## Code
-MO52
+# Relative wealth mobility
 
-## Title
-Relative wealth mobility
-
-## Summary
 Information on the relationship in wealth between people and their parents.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 A 10% increase in parents' wealth is associated with around a 3% increase in their children's wealth at a similar stage of life.
 
 Although data is limited, it seems plausible that relative wealth mobility is worsening along with relative housing mobility.
 
-## Section
-About the data
+---
 
-## Text
+## About the data
+
 ### Data source
 Office for National Statistics, Wealth and Assets Survey (WAS)
 
@@ -44,7 +39,7 @@ It includes:
 The survey does not directly measure the wealth of respondents’ parents.
 
 Respondents were asked about their parents’ housing and education. Estimates of parents’ wealth are based on the
-relationships between education, home ownership and wealth. 
+relationships between education, home ownership and wealth.
 
 Data is adjusted for inflation, and weighted using WAS individual weights.
 

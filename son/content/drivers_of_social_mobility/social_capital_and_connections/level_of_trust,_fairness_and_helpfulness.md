@@ -1,60 +1,74 @@
-## Code
-DR42
+# Level of trust, fairness and helpfulness
 
-## Title
-Level of trust, fairness and helpfulness
-
-## Summary
 Data on how trustworthy, fair and helpful people in the UK think other people are.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Between 2002 and 2018:
 
 * on a scale of 0 to 10, people’s average levels of trust in other people went up from 5.1 to 5.2
-  (with a score of 10 meaning “most people can be trusted”)
+(with a score of 10 meaning “most people can be trusted”)
 * people’s average perception of fairness went up from 5.5 to 5.7 (with 10 meaning “most people try to be fair”)
 * people’s average perception of helpfulness went up from 5.4 to 5.8 (with 10 meaning “people mostly try to be helpful”)
 
-## Section
-By year
+---
 
-## Chart: Multi-line
-{
-    "code": "DR42",
-    "title": "People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR42_overview-20230417.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Time_period",
-    "scale": "Mean",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 20,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/DR42-level-of-trust-fairness-and-helpfulness--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1]
-}
+## By year
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR42",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR42_overview-20230417.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Time_period",
+                "scale": "Mean",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 20,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "People’s average levels of trust, perceived fairness and helpfulness (UK, 2002 to 2018)",
+                "dataTable": "/static/data/pre-processed-csvs/DR42-level-of-trust-fairness-and-helpfulness--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 European Social Survey, data for the UK
 
@@ -84,8 +98,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR42-level-of-trust-fairness-and-helpfulness--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR42-level-of-trust-fairness-and-helpfulness--full-dataset.csv" :::

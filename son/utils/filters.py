@@ -1,4 +1,5 @@
 import base64
+import re
 from datetime import datetime
 from dateutil import tz
 import os
@@ -202,6 +203,56 @@ def file_size(context, details):
 
 
 @jinja2.pass_context
+@blueprint.app_template_filter('full_dataset_column_names')
+def full_dataset_column_names(context, file_name):
+    def replace_common_column_name_abbreviations(csv_column_name: str):
+        column_name_replacements = [
+            {'old': 'Ind_', 'new': 'Indicator '},
+            {'old': 'SEB', 'new': 'Socio-economic background'},
+            {'old': 'LCI', 'new': 'Lower confidence interval'},
+            {'old': 'UCI', 'new': 'Upper confidence interval'},
+            {'old': 'SE', 'new': 'Standard error'},
+            {'old': '_', 'new': ' '},
+        ]
+
+        for replacement in column_name_replacements:
+            csv_column_name = csv_column_name.replace(replacement['old'], replacement['new'])
+
+        return csv_column_name
+
+    def csv_column_is_not_empty(csv_file_data, csv_column_index):
+        values_considered_empty = ['', 'NA', 'N/A', 'N\A']
+
+        for csv_row_index in range(len(csv_file_data)):
+            if csv_row_index > 0:
+                csv_cell_value = csv_file_data[csv_row_index][csv_column_index]
+                if csv_cell_value not in values_considered_empty:
+                    return True
+        return False
+
+    csv_column_names = []
+
+    try:
+        file_path = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_name}"
+        if Path(file_path).is_file():
+            with open(file_path, encoding='utf8', errors='ignore') as csv_file:
+                csv_file_data = list(csv.reader(csv_file, delimiter=','))
+
+                csv_header_row = csv_file_data[0]
+                for csv_column_index in range(len(csv_header_row)):
+                    csv_column_name = csv_header_row[csv_column_index]
+                    csv_column_name = replace_common_column_name_abbreviations(csv_column_name)
+
+                    if csv_column_is_not_empty(csv_file_data, csv_column_index):
+                        csv_column_names.append(csv_column_name)
+
+    except:
+        pass
+
+    return csv_column_names
+
+
+@jinja2.pass_context
 @blueprint.app_template_filter('data_table_align_columns')
 def data_table_align_columns_filter(context, details):
     if details:
@@ -299,3 +350,34 @@ def toc_id(context, details):
 @blueprint.app_template_filter('base_64_encode')
 def base_64_encode_filter(context, details):
     return base64.b64encode(details.encode("UTF-8")).decode("UTF-8")
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('json_property')
+def json_property(context, data, property_name):
+    some_json = json.loads(data)
+    return some_json[property_name]
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('jsonDataTableColumns')
+def jsonDataTableColumns(context, json_text):
+    all_fields_obj = json.loads(json_text)
+    data_table_fields_str = '    "title": "' + all_fields_obj['title'] + '",\n'
+
+    if 'dataTable' in all_fields_obj:
+        data_table_fields_str += '    "dataTable": "' + all_fields_obj['dataTable'] + '",\n'
+    if 'dataTableAlignColumns' in all_fields_obj:
+        data_table_fields_str += '    "dataTableAlignColumns": ' + json.dumps(all_fields_obj['dataTableAlignColumns']) + ',\n'
+    if 'dataTableAlignRows' in all_fields_obj:
+        data_table_fields_str += '    "dataTableAlignRows": ' + json.dumps(all_fields_obj['dataTableAlignRows']) + ',\n'
+    if 'dataTableDecimalPlaces' in all_fields_obj:
+        data_table_fields_str += '    "dataTableDecimalPlaces": ' + json.dumps(all_fields_obj['dataTableDecimalPlaces']) + ',\n'
+
+    return '{\n' + data_table_fields_str[:len(data_table_fields_str)-2] + '\n}'
+
+
+@jinja2.pass_context
+@blueprint.app_template_filter('rereplace')
+def rereplace(context, original_text, pattern, substitution):
+    return re.sub(pattern, substitution, original_text)

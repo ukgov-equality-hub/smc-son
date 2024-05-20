@@ -1,16 +1,11 @@
-## Code
-DR11
+# Distribution of earnings
 
-## Title
-Distribution of earnings
-
-## Summary
 Data on inequality in hourly pay between high earners and low earners.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Inequality in hourly pay between high and low earners got narrower between 2010 and 2022.
 
 From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly pay) earned around 4 times as much as
@@ -19,45 +14,61 @@ From 1997 to 2011, ‘high earners’ (people in the 90th percentile for hourly 
 Inequality in hourly pay then went down every year over the next 10 years. In 2022, higher earners earned around 3.1
 times as much as low earners.
 
-## Section
-By year
+---
 
-## Chart: Single-line
-# Src
-{
-    "code": "DR11",
-    "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR11_overview-20230413.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "yrule": [1],
-    "sort": "Time_period",
-    "scale": "Ratio",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 5],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 25,
-    "dataTable": "/static/data/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+## By year
 
-# Guidance
-When the ratio equals 1, there is no gap in earnings
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)
 
-## Section
-About the data
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR11",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR11_overview-20230413.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "yrule": [1],
+                "sort": "Time_period",
+                "scale": "Ratio",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 5],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 25
+            }
+                
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Ratio between the hourly earnings of people in the 90th and 10th percentiles, over time (UK, 1997 to 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/DR11-distribution-of-earnings--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 ONS, Annual Survey of Hours and Earnings (ASHE).
 
@@ -88,8 +99,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR11-distribution-of-earnings--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR11-distribution-of-earnings--full-dataset.csv" :::

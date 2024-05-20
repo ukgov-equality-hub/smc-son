@@ -1,16 +1,11 @@
-## Code
-MO51
+# Level of wealth
 
-## Title
-Level of wealth
-
-## Summary
 Data on the amount of wealth people have at different ages, and on the relationship in wealth between people and their parents.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data from 2016 to 2020 shows that older people had more wealth than younger people, particularly from property and pensions.
 
 Estimated average total wealth by age group was:
@@ -20,42 +15,61 @@ Estimated average total wealth by age group was:
 * £364,000 for 45 to 54 year olds
 * £575,000 for 55 to 64 year olds
 
-## Section
-By age group and type of wealth
+---
 
-## Chart: Multi-line
-{
-    "code": "MO51",
-    "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO51_overview-20230626.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Age",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Age",
-    "scale": "££",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 75,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/MO51-level-of-wealth--by-age-and-type-of-wealth--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
-}
+## By age group and type of wealth
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By age group and type of wealth" tab_name="Visualisation"
+        #### Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By age group and type of wealth"
+            {
+                "code": "MO51",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO51_overview-20230626.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Age",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Age",
+                "scale": "££",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840", "#505a5f", "#f499be", "#85994b", "#6f72af"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 75,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By age group and type of wealth" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Wealth by age group and type of wealth (England, Scotland and Wales, 2016 to 2020 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/MO51-level-of-wealth--by-age-and-type-of-wealth--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 0, 0, 0, 0, 0]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By age group and type of wealth" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Wealth and Assets Survey (WAS)
 
@@ -92,8 +106,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO51-level-of-wealth--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO51-level-of-wealth--full-dataset.csv" :::

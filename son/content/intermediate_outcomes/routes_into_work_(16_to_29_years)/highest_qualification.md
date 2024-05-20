@@ -1,16 +1,11 @@
-## Code
-IN23
+# Highest qualification
 
-## Title
-Highest qualification
-
-## Summary
 Data on the highest qualification achieved of 25 to 29 year olds by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Young people’s socio-economic background is strongly related to the highest qualification level they achieve by
 their mid to late 20s.
 
@@ -18,7 +13,7 @@ In 2021, 71% of 25 to 29 year olds from higher professional backgrounds had a fi
 compared with 27% of those from the lower working class.
 
 Young women from every socio-economic background were more likely to have a first degree and less likely to have
-lower-level qualifications than young men from the same socio-economic background. 
+lower-level qualifications than young men from the same socio-economic background.
 
 Out of all combinations of sex and socio-economic background:
 
@@ -31,212 +26,303 @@ ethnic groups were more likely to have degrees than White people from the same s
 Disabled young people from every socio-economic background were less likely than non-disabled young people to have
 a university degree. They were also more likely to have lower-level qualifications.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Stacked-bar
-{
-    "code": "IN23",
-    "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN23_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1]
-}
+## By socio-economic background
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)
 
-## Map
-# Src
-{
-    "code": "IN23",
-    "title": "Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined)",
-    "tooltipTitle": "Percentage point difference compared to the national average",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/IN23_area-20230327.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "%",
-    "multiply": 100,
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "% point diff compared to national avg",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN23",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN23_overview-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
-percentage point difference to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background (UK, 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+---
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+## By area
 
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined) {: class="govuk-!-margin-bottom-4"}
 
-## Section
-By sex
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest
+        percentage point difference to the national average.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "IN23",
-    "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN23_gender-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Parental educational qualifications and Sex",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "IN23",
+                "tooltipTitle": "Percentage point difference compared to the national average",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/IN23_area-20230327.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "%",
+                "multiply": 100,
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "% point diff compared to national avg",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
 
-## Section
-By ethnicity
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage point difference in the likelihood of having achieved a degree by the age of 25 to 29, compared to the national average (UK, 2018 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN23",
-    "title": "Percentage of 25 to 29 year olds with a university degree, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN23_ethnicity-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1]
-}
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By disability status
+---
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "IN23",
-    "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN23_disability-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Parental educational qualifications and Disability status",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "range": [0, 100],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN23",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN23_gender-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Parental educational qualifications and Sex",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and sex (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of 25 to 29 year olds with a university degree, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN23",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN23_ethnicity-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of 25 to 29 year olds with a university degree, by socio-economic background and ethnicity (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN23",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN23_disability-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Parental educational qualifications and Disability status",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#b58840", "#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "range": [0, 100],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification achieved by 25 to 29 year olds, by socio-economic background and disability status (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN23-highest-qualification--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
@@ -255,7 +341,7 @@ were 14 years old.
 
 For data by ethnicity, the data shows whether young people had a university degree or not.
 This is because the number of people surveyed was too small to measure some qualification levels reliably.
-The percentages shown are those for men. 
+The percentages shown are those for men.
 
 For data by disability status, respondents were asked if they had a health condition or illness lasting 12 months
 or more, and if that condition reduced their ability to carry out day-to-day activities.
@@ -269,8 +355,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN23-highest-qualification--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN23-highest-qualification--full-dataset.csv" :::

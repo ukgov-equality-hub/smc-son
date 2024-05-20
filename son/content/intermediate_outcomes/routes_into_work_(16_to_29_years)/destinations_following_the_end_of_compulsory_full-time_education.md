@@ -1,17 +1,12 @@
-## Code
-IN21
+# Destinations following the end of compulsory full-time education
 
-## Title
-Destinations following the end of compulsory full-time education
-
-## Summary
 Data on young people aged 16 to 24 years in the UK who were in education and training, employment or NEET
 (not in employment, education or training), by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In 2022, young people aged 16 to 24 years from higher professional backgrounds were the most likely to be in
 education and training out of all socio-economic backgrounds.
 People from lower working-class backgrounds were the most likely to be ‘NEET’ (not in employment, education or training).
@@ -29,157 +24,230 @@ to be in education or training, but more likely to be in employment (57%).
 Young people with a disability were much less likely to be in employment and much more likely to be NEET than those
 without a disability, across all socio-economic backgrounds.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Stacked-bar
-{
-    "code": "IN21",
-    "title": "Percentage of young people aged 16 to 24 years who were in education and training, employment or NEET, by socio-economic background (UK, 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN21_overview-20230424.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1]
-}
+## By socio-economic background
 
-## Section
-By sex
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Percentage of young people aged 16 to 24 years who were in education and training, employment or NEET, by socio-economic background (UK, 2022)
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "IN21",
-    "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN21_gender-20230424.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Socia-economic background and Sex",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN21",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN21_overview-20230424.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
 
-## Section
-By ethnicity
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of young people aged 16 to 24 years who were in education and training, employment or NEET, by socio-economic background (UK, 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1]
+            }
+        :::
+    :::
 
-## Chart: Stacked-bar
-{
-    "code": "IN21",
-    "title": "Percentage of young people aged 16 to 24 from lower working-class and higher professional backgrounds in education and training, employment and NEET, by ethnic group (UK, 2014 to 2022 combined)",
-    "tooltipTitle": "",
-    "data": [{
-        "label": "Lower working",
-        "data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv"
-    }, {
-        "label": "Higher professional",
-        "data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
-    }],
-    "toggle": "radio",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Category2",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By disability status
+---
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "IN21",
-    "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by socio-economic background and disability (UK, 2014 to 2022 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN21_disability-20230424.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Socia-economic background and Disability status",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+## By sex
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN21",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN21_gender-20230424.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Socia-economic background and Sex",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of young people aged 16 to 24 years in education and training, employment and NEET, by socio-economic background and sex (UK, 2014 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of young people aged 16 to 24 from lower working-class and higher professional backgrounds in education and training, employment and NEET, by ethnic group (UK, 2014 to 2022 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN21",
+                "tooltipTitle": "",
+                "data": [{
+                    "label": "Lower working",
+                    "data": "/static/data/indicators/IN21_ethnicity_lower_working-20230424.csv"
+                }, {
+                    "label": "Higher professional",
+                    "data": "/static/data/indicators/IN21_ethnicity_higher_professional-20230424.csv"
+                }],
+                "toggle": "radio",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Category2",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of young people aged 16 to 24 from lower working-class and higher professional backgrounds in education and training, employment and NEET, by ethnic group (UK, 2014 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by socio-economic background and disability (UK, 2014 to 2022 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN21",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN21_disability-20230424.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Socia-economic background and Disability status",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of young people aged 16 to 24 years in education and training, employment, and NEET, by socio-economic background and disability (UK, 2014 to 2022 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN21-destinations-after-age-16--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS), 2021
 
@@ -193,16 +261,16 @@ UK
 The data shows the percentage of young people aged 16 to 24 years in the UK who were in education and training,
 employment or ‘NEET’ (not in employment, education or training).
 
-NEET is defined as not in employment, education or training in the week before the survey. 
+NEET is defined as not in employment, education or training in the week before the survey.
 
 Socio-economic background is based on the main earner’s occupation when the respondent was aged 14 years.
-Where there was no earner in the family, SEB is included in the lower working class. 
+Where there was no earner in the family, SEB is included in the lower working class.
 
 ### Things you need to know
-The data used is weighted using the LFS probability weights. 
+The data used is weighted using the LFS probability weights.
 
 Estimated percentages come from a logistic regression model, controlling for gender and ethnic group.
-The model assumes that class effects are the same for each ethnic group. 
+The model assumes that class effects are the same for each ethnic group.
 
 For data by ethnicity, the estimated percentages shown are those for men. We show percentages only for those with
 lower working-class and higher professional backgrounds for illustrative purposes.
@@ -217,8 +285,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN21-destinations-after-age-16--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN21-destinations-after-age-16--full-dataset.csv" :::

@@ -1,230 +1,319 @@
-## Code
-IN34
+# Earnings of young people aged 25 to 29 years
 
-## Title
-Earnings of young people aged 25 to 29 years
-
-## Summary
 Data on the average earnings of 25 to 29 year olds in the UK, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In 2021, young people aged 25 to 29 earned on average £14.40 an hour.
 
 Socio-economic background was strongly related to the level of young people’s earnings. Young people from lower
 working class backgrounds earned £12.40 an hour on average, compared with £16.70 for those from higher professional backgrounds.
 
-Young men earned more than young women across all socio-economic backgrounds. 
+Young men earned more than young women across all socio-economic backgrounds.
 
-25 to 29 year olds from Chinese and Indian ethnic backgrounds earned significantly more than White British young people. 
+25 to 29 year olds from Chinese and Indian ethnic backgrounds earned significantly more than White British young people.
 
 25 to 29 year olds with a disability earned significantly less than those without a disability.
 
-## Section
-By socio-economic background
+---
 
-## Chart: Single-bar
-{
-    "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds (UK, 2021)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN34_overview-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "SEB",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+## By socio-economic background
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By socio-economic background" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds (UK, 2021)
 
-## Map
-# Src
-{
-    "code": "IN34",
-    "title": "Difference in weekly earnings in pounds (£) of 25 to 29 year olds, compared to the national average (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "Difference in weekly earnings compared to the national average",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/IN34_area-20230327.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "confidenceIntervals": "visible",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "Difference in £ compared to the national average",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By socio-economic background"
+            {
+                "code": "IN34",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN34_overview-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "SEB",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest difference in
-earnings compared to the national average.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+    ::: tab section_name="By socio-economic background" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds (UK, 2021)",
+                "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-The regional estimates have a large margin of error – do not rank or compare specific regions.
+    ::: tab section_name="By socio-economic background" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
-– the range of values that the 'true' value for each region is highly likely to be within.
-In many cases the confidence intervals overlap.
-This suggests differences between specific regions may not be statistically significant. 
+---
 
-See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
-understand overall regional patterns.
+## By area
 
-## Section
-By sex
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Difference in weekly earnings in pounds (£) of 25 to 29 year olds, compared to the national average (UK, 2014 to 2021 combined) {: class="govuk-!-margin-bottom-4"}
 
-## Chart: Grouped-bar
-{
-    "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and sex (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN34_gender-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Sex",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest difference in
+        earnings compared to the national average.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        
+        The regional estimates have a large margin of error – do not rank or compare specific regions.
+        
+        The lines either side of the dots represent [confidence intervals](/about-our-analysis#confidence-intervals)
+        – the range of values that the 'true' value for each region is highly likely to be within.
+        In many cases the confidence intervals overlap.
+        This suggests differences between specific regions may not be statistically significant.
+        
+        See the [composite indices](/social_mobility_by_area#composite-measures-by-region) for more precise estimates and to
+        understand overall regional patterns.
 
-## Section
-By ethnicity
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "IN34",
+                "tooltipTitle": "Difference in weekly earnings compared to the national average",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/IN34_area-20230327.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "scale": "£",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "confidenceIntervals": "visible",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "Difference in £ compared to the national average",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+                
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and ethnicity (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN34_ethnicity-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 25],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Difference in weekly earnings in pounds (£) of 25 to 29 year olds, compared to the national average (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
 
-## Section
-By disability status
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Chart: Grouped-bar
-{
-    "code": "IN34",
-    "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and disability (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN34_disability-20230327.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "SEB",
-    "sort": "Category",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+---
 
-## Section
-About the data
+## By sex
 
-## Text
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and sex (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN34",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN34_gender-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Sex",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and sex (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and ethnicity (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN34",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN34_ethnicity-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 25],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and ethnicity (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and disability (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN34",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN34_disability-20230327.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "group": "SEB",
+                "sort": "Category",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of people aged 25 to 29 years, by socio-economic backgrounds and disability (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN34-earnings--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
@@ -238,7 +327,7 @@ UK
 The data show the mean (average) earnings of people aged 25 to 29 in the UK, by socio-economic background.
 
 ### Things you need to know
-Self-employed respondents and those without earnings are excluded. 
+Self-employed respondents and those without earnings are excluded.
 
 The data used is weighted using the LFS probability weights. The charts show 95% confidence intervals.
 
@@ -248,7 +337,7 @@ which includes variables on socio-economic background, sex and ethnic group.
 For data by ethnicity, the model assumes that class effects are the same within each ethnic group.
 However, the assumption does not hold for the White Other group. The means shown are those for men.
 Means are shown only for those with lower working-class and higher professional-class backgrounds, but other
-socio-economic backgrounds are included in the analysis. 
+socio-economic backgrounds are included in the analysis.
 
 Among people with a disability, those in work are a more selective group (since their inactivity rate is higher).
 Because of the skewed distribution of earnings, we take the log of earnings when checking for interactions between
@@ -270,8 +359,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN34-earnings--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN34-earnings--full-dataset.csv" :::

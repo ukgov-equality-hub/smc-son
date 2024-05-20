@@ -1,56 +1,66 @@
-## Code
-CI1
+# Promising prospects
 
-## Title
-Promising prospects
-
-## Summary
 Data on the UK regions with the most 'promising prospects' for 25 to 29 year olds – measured by levels of university
 education, professional work, and earnings.
 
-## Map
-# Src
-{
-    "code": "CI1",
-    "title": "Index of 'promising prospects', by region (UK, 2018 to 2021 combined)",
-    "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
-    "data": "/static/data/indicators/CI1_20230817.csv",
-    "geoFormat": "",
-    "nameField": "Area_name",
-    "valueField": "Value",
-    "areaField": "ITL221NM",
-    "quantile": "Quintile",
-    "height": 700,
-    "dataFormat": "quintile",
-    "zero": false,
-    "background": true,
-    "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
-    "rolloverBehaviour": "outline",
-    "onClick": "mapSelect1",
-    "type": "dot",
-    "xkey": "Value",
-    "ykey": "Area_name",
-    "sort": "-Value",
-    "xgrid": true,
-    "ygrid": true,
-    "xtitle": "",
-    "legend": false,
-    "margin": [10, 20, 5, 5],
-    "backgroundColor": "#fafafa",
-    "dataTable": "/static/data/pre-processed-csvs/CI1-promising-prospects--by-ITL2-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 0]
-}
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Index of 'promising prospects', by region (UK, 2018 to 2021 combined)
 
-# Guidance
-[41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
-They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
-Areas with the highest scores have the most promising prospects for young people.
+        [41 regions in the UK](/social_mobility_by_area#the-41-regions) are ranked from the lowest to highest composite scores.
+        They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+        Areas with the highest scores have the most promising prospects for young people.
 
-## Subtitle
-Summary main findings
+        ::: visualisation vis_type="map" section_name="By area"
+            {
+                "code": "CI1",
+                "map": "/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json",
+                "data": "/static/data/indicators/CI1_20230817.csv",
+                "geoFormat": "",
+                "nameField": "Area_name",
+                "valueField": "Value",
+                "areaField": "ITL221NM",
+                "quantile": "Quintile",
+                "height": 700,
+                "dataFormat": "quintile",
+                "zero": false,
+                "background": true,
+                "colourScheme": ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"],
+                "rolloverBehaviour": "outline",
+                "onClick": "mapSelect1",
+                "type": "dot",
+                "xkey": "Value",
+                "ykey": "Area_name",
+                "sort": "-Value",
+                "xgrid": true,
+                "ygrid": true,
+                "xtitle": "",
+                "legend": false,
+                "margin": [10, 20, 5, 5],
+                "backgroundColor": "#fafafa"
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Index of 'promising prospects', by region (UK, 2018 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/CI1-promising-prospects--by-ITL2-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 0]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## Summary main findings
 Young people brought up in London, Surrey and Sussex, Bedfordshire and Hertfordshire, and North Yorkshire tend to
 have the best prospects in terms of attaining higher qualifications, higher earnings and a professional job.
 
@@ -60,10 +70,7 @@ prospects.
 Prospects for young people may be different within these broad areas – particularly in regions like North Yorkshire,
 which contains both remote rural and urban areas.
 
-## Subtitle
-About the data
-
-## Text
+## About the data
 This page combines data from the following 3 indicators into a single 'composite' score to give a more reliable
 picture of geographical mobility patterns:
 
@@ -80,13 +87,16 @@ from similar social backgrounds.
 Indicators are rescaled to make sure they use a common metric.
 The best-performing area’s score is set to 1, and the least well-performing area’s score is set to 0. 
 
-See the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology" target="_blank" class="govuk-link">technical annex</a> for more information on how each area was scored.
+See the [technical annex (opens in a new tab)](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places/technical-annex#composite-indices-methodology){: target="_blank" }
+for more information on how each area was scored.
 
-## Subtitle
-Data source
-
-## Text
+## Data source
 Labour Force Survey pooled, from 2018 to 2021.
 
-## Text
 Areas are those where respondents lived when they were 14 years old.
+
+---
+
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/CI1-promising-prospects--full-dataset.csv" :::

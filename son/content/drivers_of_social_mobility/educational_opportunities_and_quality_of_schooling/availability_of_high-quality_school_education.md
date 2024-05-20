@@ -1,17 +1,12 @@
-## Code
-DR22
+# Availability of high-quality school education
 
-## Title
-Availability of high-quality school education
-
-## Summary
 Data on the attainment scores of 15 year old students in the UK and internationally, over time.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
-In 2018, the average attainment score for 15 year olds in the UK in reading, maths and science was 504 out of 1,000 – up from 495 in 2006. 
+## Summary main findings
+
+In 2018, the average attainment score for 15 year olds in the UK in reading, maths and science was 504 out of 1,000 – up from 495 in 2006.
 
 Between 2006 and 2018, the UK’s average attainment score was higher than the international average for OECD countries.
 
@@ -19,42 +14,61 @@ In 2018, UK students scored above the OECD averages in reading (504), maths (502
 
 The average attainment score for students in OECD countries was 487 in 2018, up from 485 in 2006 – it peaked at 493 in 2012.
 
-## Section
-By year
+---
 
-## Chart: Grouped-bar
-{
-    "code": "DR22",
-    "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR22_overview-20230417.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Area_name",
-    "ykey": "Value",
-    "group": "Time_period",
-    "sort": "Time_period",
-    "scale": "Average pupil attainment scores",
-    "xgrid": false,
-    "ygrid": true,
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 600],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/DR22-availability-of-high-quality-school-education--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 0, 0]
-}
+## By year
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR22",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR22_overview-20230417.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Area_name",
+                "ykey": "Value",
+                "group": "Time_period",
+                "sort": "Time_period",
+                "scale": "Average pupil attainment scores",
+                "xgrid": false,
+                "ygrid": true,
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 600],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Average pupil attainment score (out of 1,000) in reading, maths and science, over time (UK and OECD average, 2006 to 2018)",
+                "dataTable": "/static/data/pre-processed-csvs/DR22-availability-of-high-quality-school-education--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 0, 0]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Organisation for Economic Cooperation and Development (OECD), Programme for International Student Assessment (PISA)
 
@@ -83,8 +97,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR22-availability-of-high-quality-school-education--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR22-availability-of-high-quality-school-education--full-dataset.csv" :::

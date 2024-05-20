@@ -1,16 +1,11 @@
-## Code
-DR34
+# Labour market earnings of young people
 
-## Title
-Labour market earnings of young people
-
-## Summary
 Data on median (average) hourly pay for 22 to 29 year olds in the UK.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 In 2022, the median (average) real hourly pay for 22 to 29 year olds in the UK was £12.20.
 
 Growth in real hourly pay for 22 to 29 year olds has been low over the last 15 years. This is partly down to sharp falls after:
@@ -18,40 +13,59 @@ Growth in real hourly pay for 22 to 29 year olds has been low over the last 15 y
 * the financial crisis in 2008 – average hourly pay went down from £13.31 in 2009 to £12.21 in 2011
 * the cost of living crisis in 2022 – average hourly pay went down from £13.33 in 2021 to £12.20 in 2022
 
-## Section
-By year
+---
 
-## Chart: Single-line
-{
-    "code": "DR34",
-    "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/DR34_overview-20230414.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Area_name",
-    "sort": "Time_period",
-    "scale": "££",
-    "xgrid": false,
-    "ygrid": true,
-    "xticks": 7,
-    "yticks": 3,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 15],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "dataTable": "/static/data/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 2]
-}
+## By year
 
-## Section
-About the data
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)
 
-## Text
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR34",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/DR34_overview-20230414.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Area_name",
+                "sort": "Time_period",
+                "scale": "££",
+                "xgrid": false,
+                "ygrid": true,
+                "xticks": 7,
+                "yticks": 3,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 15],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Median (average) real hourly pay (£) of 22 to 29 year olds, over time (UK, 1997 to 2022)",
+                "dataTable": "/static/data/pre-processed-csvs/DR34-earnings-of-25-to-29-year-olds--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source(s)
 Office for National Statistics, Annual Survey of Hours and Earnings
 
@@ -75,8 +89,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/DR34-earnings-of-22-to-29-year-olds--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/DR34-earnings-of-22-to-29-year-olds--full-dataset.csv" :::

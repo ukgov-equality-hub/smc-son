@@ -1,16 +1,11 @@
-## Code
-IN351
+# Income returns to education
 
-## Title
-Income returns to education
-
-## Summary
 Data on the effect of different levels of education on the earnings of young people aged 25 to 29 years, by socio-economic background.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 Data for the period from 2019 to 2021 shows that higher levels of education among 25 to 29 year olds are associated with higher earnings.
 Young people with a higher degree – such as a master’s degree – earned 63% more than those from the same socio-economic
 background with no GCSEs. Young people with an undergraduate degree earned 54% more.
@@ -26,186 +21,281 @@ Disabled young people earned significantly less than those without a disability 
 For people with an undergraduate degree (but not a higher degree), disabled young people earned 84% of the hourly
 earnings of those without a disability.
 
-## Section
-Relative differences
+---
 
-## Chart: Single-bar
-{
-    "code": "IN351",
-    "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for socio-economic background, sex and age (UK, 2019 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN351_difference-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "rounding": "0dp",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 10,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
-    "range": [0, 80],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-qualification--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## Relative differences
 
-## Section
-By year
+::: tabs
+    ::: tab section_name="Relative differences" tab_name="Visualisation"
+        #### Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for socio-economic background, sex and age (UK, 2019 to 2021 combined)
 
-## Chart: Multi-line
-{
-    "code": "IN351",
-    "title": "Hourly earnings in pounds (£) of 25 to 29 year olds, by highest qualification controlling for socio-economic background, sex and age (UK, 2014 to 2021, 3-year rolling averages)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN351_overview-20230713.csv",
-    "height": 450,
-    "type": "liney",
-    "xkey": "Time_period",
-    "ykey": "Value",
-    "zkey": "Category",
-    "sort": "Time_period",
-    "scale": "£",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "2nd",
-    "yticks": [7.5, 10, 12.5, 15, 17.5],
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840"],
-    "range": [7.5, 17.5],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 55,
-    "rolloverBehaviour": "fade",
-    "clickBehaviour": "isolate",
-    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-year--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2, 2, 2, 2, 2]
-}
+        ::: visualisation vis_type="chart" section_name="Relative differences"
+            {
+                "code": "IN351",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN351_difference-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "zkey": "Category",
+                "scale": "%",
+                "rounding": "0dp",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 10,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197"],
+                "range": [0, 80],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="Relative differences" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage differences in hourly earnings of 25 to 29 year olds, relative to those with lower level (below GCSE grade 1 or equivalent), controlling for socio-economic background, sex and age (UK, 2019 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-qualification--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Chart: Grouped-bar
-{
-    "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN351_gender-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "-Value",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+    ::: tab section_name="Relative differences" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By ethnicity
+---
 
-## Chart: Grouped-bar
-{
-    "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN351_ethnicity-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "group": "Category2",
-    "sort": "Category2",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+## By year
 
-## Section
-By disability status
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Hourly earnings in pounds (£) of 25 to 29 year olds, by highest qualification controlling for socio-economic background, sex and age (UK, 2014 to 2021, 3-year rolling averages)
 
-## Chart: Grouped-bar
-{
-    "code": "IN351",
-    "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/IN351_disability-20230713.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "group": "Category",
-    "sort": "Category2",
-    "scale": "££",
-    "rounding": "1dp",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "legend": true,
-    "colourScheme": ["#5694ca", "#d4351c"],
-    "range": [0, 20],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 35,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "fade",
-    "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right"],
-    "dataTableDecimalPlaces": [null, 2, 2]
-}
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "IN351",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN351_overview-20230713.csv",
+                "height": 450,
+                "type": "liney",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Time_period",
+                "scale": "£",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "2nd",
+                "yticks": [7.5, 10, 12.5, 15, 17.5],
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c", "#4c2c92", "#d53880", "#28a197", "#b58840"],
+                "range": [7.5, 17.5],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 55,
+                "rolloverBehaviour": "fade",
+                "clickBehaviour": "isolate"
+            }
+        :::
+    :::
 
-## Section
-About the data
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Hourly earnings in pounds (£) of 25 to 29 year olds, by highest qualification controlling for socio-economic background, sex and age (UK, 2014 to 2021, 3-year rolling averages)",
+                "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2, 2, 2, 2, 2]
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for socio-economic background and age (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "IN351",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN351_gender-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "-Value",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and sex, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for socio-economic background and age (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "IN351",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN351_ethnicity-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "group": "Category2",
+                "sort": "Category2",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and ethnicity, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for socio-economic background and age (UK, 2014 to 2021 combined)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "IN351",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/IN351_disability-20230713.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "group": "Category",
+                "sort": "Category2",
+                "scale": "££",
+                "rounding": "1dp",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "colourScheme": ["#5694ca", "#d4351c"],
+                "range": [0, 20],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 35,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "fade"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Mean (average) hourly earnings of 25 to 29 year olds in the UK, by educational level and disability status, controlling for socio-economic background and age (UK, 2014 to 2021 combined)",
+                "dataTable": "/static/data/pre-processed-csvs/IN351-income-returns-to-education--by-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right"],
+                "dataTableDecimalPlaces": [null, 2, 2]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 Office for National Statistics, Labour Force Survey (LFS)
 
@@ -222,13 +312,13 @@ The data shows the effect of different levels of education on the earnings of yo
 Data is weighted using LFS probability weights. Earnings are adjusted for inflation.
 
 Data is combined for 3 years (for example, 2019 to 2021) to give more accurate estimates.
-  
+
 Percentage differences were estimated from a linear regression model of log hourly earnings, by educational level
-controlling for socio-economic background, sex and age. 
+controlling for socio-economic background, sex and age.
 
-For data by year, the estimates refer to the hourly earnings of men from a lower working-class background. 
+For data by year, the estimates refer to the hourly earnings of men from a lower working-class background.
 
-For data by sex, ethnicity and disability status, estimates are shown for people aged 27 years from lower working-class backgrounds. 
+For data by sex, ethnicity and disability status, estimates are shown for people aged 27 years from lower working-class backgrounds.
 
 For data by ethnicity, a simplified measure of educational level is used, (degree-level and non-degree level qualifications)
 so that sample sizes are large enough to analyse.
@@ -245,8 +335,8 @@ Survey data
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/IN351-income-returns-to-education--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/IN351-income-returns-to-education--full-dataset.csv" :::

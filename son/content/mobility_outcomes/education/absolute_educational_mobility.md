@@ -1,16 +1,11 @@
-## Code
-MO31
+# Absolute educational mobility
 
-## Title
-Absolute educational mobility
-
-## Summary
 Data on how the education level of people in the UK compares to their parents' education level.
 
-## Subtitle
-Summary main findings
+[TOC]
 
-## Text
+## Summary main findings
+
 For people whose parents had no qualifications, 70% had some qualifications themselves, and 18% had a university degree.
 
 People whose parents had a university degree were more likely to have a degree themselves (64%) than people whose
@@ -22,193 +17,287 @@ Among people whose parents had university degrees, 67% of women and 61% of men h
 For people whose parents did not have a university degree:
 
 * those from Chinese (64%), White Other (44%), Indian (40%) and Pakistani (37%) ethnic backgrounds were the most
-  likely to have a degree themselves out of all ethnic groups
+likely to have a degree themselves out of all ethnic groups
 * those living in London (39%) and the South East (32%) were the most likely out of all regions to get a degree
-  themselves – those living in the East Midlands (22%), Wales (23%), Yorkshire and the Humber (24%), and the
-  West Midlands (26%) were least likely
+themselves – those living in the East Midlands (22%), Wales (23%), Yorkshire and the Humber (24%), and the
+West Midlands (26%) were least likely
 
 People with a long-term illness or disability were less likely to have a university degree than people without a
 disability from the same education background. They were also more likely to have no qualifications.
 
-## Section
-By highest level of parental qualification
+---
 
-## Chart: Stacked-bar
-{
-    "code": "MO31",
-    "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_overview_total-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "SEB",
-    "ykey": "Value",
-    "zkey": "Category",
-    "scale": "%",
-    "multiply": 100,
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Parental educational qualifications",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
-    "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
-}
+## By highest level of parental qualification
 
-## Section
-By area
+::: tabs
+    ::: tab section_name="By highest level of parental qualification" tab_name="Visualisation"
+        #### Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification (UK, 2020)
 
-## Chart: Single-bar
-{
-    "code": "MO31",
-    "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_area-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Area_name",
-    "ykey": "Value",
-    "zkey": "Area_type",
-    "sort": "Area_name",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "range": [0, 50],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By highest level of parental qualification"
+            {
+                "code": "MO31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO31_overview_total-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "SEB",
+                "ykey": "Value",
+                "zkey": "Category",
+                "scale": "%",
+                "multiply": 100,
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Parental educational qualifications",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
 
-## Section
-By sex
+    ::: tab section_name="By highest level of parental qualification" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1]
+            }
+        :::
+    :::
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "MO31",
-    "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_gender-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Sex",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",
-    "scale": "%",
-    "multiply": 100,
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Parental educational qualifications and Sex",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1],
-    "dataTableNumberOfHeadingColumns": 2
-}
+    ::: tab section_name="By highest level of parental qualification" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
 
-## Section
-By ethnicity
+---
 
-## Chart: Single-bar
-{
-    "code": "MO31",
-    "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by ethnicity (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_ethnicity-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category",
-    "ykey": "Value",
-    "zkey": "Category_type",
-    "sort": "Category",
-    "scale": "%",
-    "lowerConfidence": "LCI",
-    "upperConfidence": "UCI",
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xticksLength": 4,
-    "legend": true,
-    "colourScheme": ["#5694ca"],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 40,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
-    "dataTableAlignColumns": ["left", "right"],
-    "dataTableDecimalPlaces": [null, 1]
-}
+## By area
 
-## Section
-By disability status
+::: tabs
+    ::: tab section_name="By area" tab_name="Visualisation"
+        #### Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)
 
-## Chart: Stacked-grouped-bar
-{
-    "code": "MO31",
-    "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)",
-    "tooltipTitle": "",
-    "data": "/static/data/indicators/MO31_disability-20230601.csv",
-    "height": 450,
-    "type": "bary",
-    "xkey": "Category2",
-    "ykey": "Value",
-    "zkey": "Category",
-    "group": "SEB",    
-    "scale": "%",
-    "multiply": 100,
-    "xgrid": false,
-    "ygrid": true,
-    "xticksSmallScreen": "abreviate",
-    "yticks": 5,
-    "xtitle": "Parental educational qualifications and Disability status",
-    "legend": true,
-    "reverseLegend": true,
-    "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
-    "range1": [0, 70],
-    "margin": [10, 20, 5, 5],
-    "maxLabelLength": 45,
-    "textLabels": "center",
-    "labelColour": "#fff",
-    "clickBehaviour": "filter",
-    "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
-    "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
-    "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]
-}
+        ::: visualisation vis_type="chart" section_name="By area"
+            {
+                "code": "MO31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO31_area-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Area_name",
+                "ykey": "Value",
+                "zkey": "Area_type",
+                "sort": "Area_name",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "range": [0, 50],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
 
-## Section
-About the data
+    ::: tab section_name="By area" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by area of current residence (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-region--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
 
-## Text
+    ::: tab section_name="By area" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By sex
+
+::: tabs
+    ::: tab section_name="By sex" tab_name="Visualisation"
+        #### Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By sex"
+            {
+                "code": "MO31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO31_gender-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Sex",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "multiply": 100,
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Parental educational qualifications and Sex",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and sex (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-sex--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By sex" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By ethnicity
+
+::: tabs
+    ::: tab section_name="By ethnicity" tab_name="Visualisation"
+        #### Percentage of people whose parents did not have a university degree who got a degree themselves, by ethnicity (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By ethnicity"
+            {
+                "code": "MO31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO31_ethnicity-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category",
+                "ykey": "Value",
+                "zkey": "Category_type",
+                "sort": "Category",
+                "scale": "%",
+                "lowerConfidence": "LCI",
+                "upperConfidence": "UCI",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xticksLength": 4,
+                "legend": true,
+                "colourScheme": ["#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 40,
+                "textLabels": "center",
+                "labelColour": "#fff"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of people whose parents did not have a university degree who got a degree themselves, by ethnicity (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-ethnicity--table-format.csv",
+                "dataTableAlignColumns": ["left", "right"],
+                "dataTableDecimalPlaces": [null, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By ethnicity" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## By disability status
+
+::: tabs
+    ::: tab section_name="By disability status" tab_name="Visualisation"
+        #### Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)
+
+        ::: visualisation vis_type="chart" section_name="By disability status"
+            {
+                "code": "MO31",
+                "tooltipTitle": "",
+                "data": "/static/data/indicators/MO31_disability-20230601.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Category2",
+                "ykey": "Value",
+                "zkey": "Category",
+                "group": "SEB",
+                "scale": "%",
+                "multiply": 100,
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "xtitle": "Parental educational qualifications and Disability status",
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "range1": [0, 70],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Highest level of qualification of 25 to 64 year olds, by highest level of parental qualification and disability status (UK, 2020)",
+                "dataTable": "/static/data/pre-processed-csvs/MO31-absolute-educational-mobility--by-SEB-and-disability--table-format.csv",
+                "dataTableAlignColumns": ["left", "left", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, null, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By disability status" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+
+---
+
+## About the data
+
 ### Data source
 The UK Household Longitudinal Survey (UKHLS)
 
@@ -219,7 +308,7 @@ The UK Household Longitudinal Survey (UKHLS)
 UK
 
 ### What the data measures
-The data measures absolute educational mobility among 25 to 64 year olds in the UK. 
+The data measures absolute educational mobility among 25 to 64 year olds in the UK.
 
 Upward absolute educational mobility is when someone has higher level qualifications than their parents.
 Downward mobility is when they have lower qualifications.
@@ -243,7 +332,7 @@ possible that they completed their education before the illness or disability oc
 Because of this, the data is likely to underestimate the effects of disability.
 
 For data by area, the region used is where respondents currently live, not where they grew up.
-Because of this, the percentages may reflect graduates moving in from, or out to, other areas. 
+Because of this, the percentages may reflect graduates moving in from, or out to, other areas.
 
 The error bars show 95% confidence intervals. These intervals show where we expect the true value from a population to
 be 95% of the time. For example, a confidence interval with the range of values from 5 to 10 implies that there is a
@@ -257,8 +346,8 @@ Survey data, weighted using UKHLS population weights.
 ### Full report
 Read more in [State of the Nation 2023 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places).
 
-## Section
-Download the data
+---
 
-## Text
-[Download full dataset (CSV)](/static/data/full-datasets/MO31-absolute-educational-mobility--full-dataset.csv){: target="_blank" class="download" }
+## Download the data
+
+::: download_full_dataset_link data_file="/static/data/full-datasets/MO31-absolute-educational-mobility--full-dataset.csv" :::

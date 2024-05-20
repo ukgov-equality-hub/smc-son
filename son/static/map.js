@@ -961,7 +961,7 @@ class Choropleth {
             if (self.onRollover) {
                 try {
                     const status = getStatus(this)
-                    if (status.name != null && status.value != null) window[self.onRollover](status)
+                    if (status.name != null && status.value != null) self.onRollover(status)
                 }
                 catch (e) {}
             }
@@ -972,7 +972,7 @@ class Choropleth {
         function resetHighlight(event) {
             if (self.onRollover) {
                 try {
-                    window[self.onRollover]({ map: self, name: '' })
+                    self.onRollover({ map: self, name: '' })
                 }
                 catch (e) {}
             }
@@ -986,7 +986,7 @@ class Choropleth {
             if (self.onClick) {
                 try {
                     const status = getStatus(this)
-                    if (status.name != null && status.value != null) window[self.onClick](status)
+                    if (status.name != null && status.value != null) self.onClick(status)
                 }
                 catch (e) {}
             }
