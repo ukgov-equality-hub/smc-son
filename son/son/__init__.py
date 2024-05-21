@@ -1,6 +1,6 @@
 import os
 from pathlib import Path
-from flask import Blueprint, render_template, abort
+from flask import Blueprint, render_template, abort, redirect
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
@@ -87,6 +87,11 @@ def domain_page(domain):
 
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page_without_version(domain, subdomain, indicator):
+    return redirect(f"/{domain}/{subdomain}/{indicator}/latest")
+
+
+@son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
+def indicator_page_latest(domain, subdomain, indicator):
     return get_indicator_page(domain, subdomain, indicator, 1, 0)
 
 
