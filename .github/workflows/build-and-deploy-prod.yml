@@ -1,6 +1,7 @@
 name: 'Terraform, Build, Deploy (production)'
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - 'v*'
