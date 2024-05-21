@@ -1,4 +1,6 @@
+import glob
 import os
+import re
 from pathlib import Path
 from flask import Blueprint, render_template, abort, redirect
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
@@ -92,7 +94,29 @@ def indicator_page_without_version(domain, subdomain, indicator):
 
 @son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
 def indicator_page_latest(domain, subdomain, indicator):
-    return get_indicator_page(domain, subdomain, indicator, 1, 0)
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    if not Path(dir_path).is_dir():
+        abort(404)
+
+    md_file_paths = glob.glob(f"{dir_path}/*.*.md")
+
+    md_file_details = []
+    for md_file_path in md_file_paths:
+        match = re.search(r"/(\d*).(\d*).md$", md_file_path)
+        if match:
+            md_file_details.append({
+                'major_version': int(match.group(1)),
+                'minor_version': int(match.group(2))
+            })
+
+    if len(md_file_details) == 0:
+        abort(404)
+
+    md_file_details.sort(key=lambda x: (x['major_version'], x['minor_version']), reverse=True)
+    latest_major_version = md_file_details[0]['major_version']
+    latest_minor_version = md_file_details[0]['minor_version']
+    
+    return get_indicator_page(domain, subdomain, indicator, latest_major_version, latest_minor_version)
 
 
 @son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
