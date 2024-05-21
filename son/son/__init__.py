@@ -87,7 +87,7 @@ def domain_page(domain):
 
 @son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
 def indicator_page_md(domain, subdomain, indicator):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}.md"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/1.0.md"
     if not Path(file_path).is_file():
         abort(404)
 
