@@ -2,6 +2,51 @@ const maps = {};
 const mapsData = {};
 
 function buildMap(mapId, datafile, download, overrideOptions) {
+    function mapSelect1(a) {
+        let map = undefined, chart = undefined
+
+        try {
+            const el = (a.map || a.chart).el.replace('map', '').replace('chart', '')
+            if (typeof window[`map${el}`] !== 'undefined') map = eval(`map${el}`)
+            if (typeof window[`chart${el}`] !== 'undefined') chart = eval(`chart${el}`)
+
+            if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
+                let performance = ''
+                if (a.quantile == 1) performance = '1 (lowest)'
+                if (a.quantile == 2) performance = '2 (second lowest)'
+                if (a.quantile == 3) performance = '3 (middle)'
+                if (a.quantile == 4) performance = '4 (second highest)'
+                if (a.quantile == 5) performance = '5 (highest)'
+
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
+                document.getElementById(`map_tooltip${el}_area`).innerText = a.name
+                document.getElementById(`map_tooltip${el}_title`).innerText = (a.map || a.chart).tooltipTitle || (a.map || a.chart).title
+                if (typeof (a.map || a.chart).options.label !== 'undefined') {
+                    document.getElementById(`map_tooltip${el}_title`).innerText += ` (${(a.map || a.chart).options.label })`
+                }
+                document.getElementById(`map_tooltip${el}_value`).innerText = a.value
+                if (performance != '') {
+                    document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
+                    document.getElementById(`map_tooltip${el}_performance`).innerText = performance
+                }
+
+                if (map) {
+                    map.resetHighlight()
+                    map.highlight(a.name)
+                }
+                if (chart) {
+                    chart.resetHighlight()
+                    chart.highlight(a.name)
+                }
+            } else {
+                document.getElementById(`map_tooltip${el}`).style.visibility = 'hidden'
+                if (map) map.resetHighlight()
+                if (chart) chart.resetHighlight()
+            }
+        }
+        catch (e) {}
+    }
+
     const mapOptionsBase64 = document.getElementById('mapOptions' + mapId).innerText.trim();
     const mapOptionsText = (new TextDecoder()).decode(Uint8Array.from(atob(mapOptionsBase64), (m) => m.codePointAt(0)));  // Decode the base 64 text
     const options = JSON.parse(mapOptionsText);
@@ -41,6 +86,10 @@ function buildMap(mapId, datafile, download, overrideOptions) {
     }
     else {
         document.getElementById('scaleQunitile' + mapId).classList.remove('reversePolarity');
+    }
+
+    if (options['onClick'] === 'mapSelect1') {
+        options.onClick = mapSelect1;
     }
 
     maps[mapId] = new Choropleth(
