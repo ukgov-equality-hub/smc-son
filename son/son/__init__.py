@@ -121,10 +121,10 @@ def indicator_page_latest(domain, subdomain, indicator):
 
 @son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
 def indicator_page_with_version(domain, subdomain, indicator, major_version, minor_version):
-    return get_indicator_page(domain, subdomain, indicator, major_version, minor_version)
+    return get_indicator_page(domain, subdomain, indicator, int(major_version), int(minor_version))
 
 
-def get_indicator_page(domain, subdomain, indicator, major_version, minor_version):
+def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)

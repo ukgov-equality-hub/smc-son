@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from flask import render_template
 
 
-def get_markdown_content(file_path, indicator):
+def get_markdown_content(file_path: str, indicator: str):
     f = open(file_path, 'r')
     markdown_text = f.read()
     f.close()
