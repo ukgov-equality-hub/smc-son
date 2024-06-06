@@ -6,6 +6,7 @@ from flask import Blueprint, render_template, abort, redirect
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
+from son.utils.page_history import get_page_history, create_page_history_version_for_file, PageHistory, PageHistoryVersion
 
 son = Blueprint('son', __name__)
 logger = Logger()
@@ -44,7 +45,7 @@ def area_home_page():
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_title=get_h1_content(content)
     )
 
 
@@ -83,7 +84,7 @@ def domain_page(domain):
         subdomain=None,
         indicator=None,
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_title=get_h1_content(content)
     )
 
 
@@ -121,15 +122,17 @@ def indicator_page_latest(domain, subdomain, indicator):
 
 @son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
 def indicator_page_with_version(domain, subdomain, indicator, major_version, minor_version):
-    return get_indicator_page(domain, subdomain, indicator, major_version, minor_version)
+    return get_indicator_page(domain, subdomain, indicator, int(major_version), int(minor_version))
 
 
-def get_indicator_page(domain, subdomain, indicator, major_version, minor_version):
+def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
 
     content = get_markdown_content(file_path, indicator)
+    page_history: PageHistory = get_page_history(domain, subdomain, indicator)
+    page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
 
     return render_template(
         'markdown-based-template.html',
@@ -137,6 +140,10 @@ def get_indicator_page(domain, subdomain, indicator, major_version, minor_versio
         domain=domain,
         subdomain=subdomain,
         indicator=indicator,
+        major_version=major_version,
+        minor_version=minor_version,
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_history=page_history,
+        page_history_version=page_history_version,
+        page_title=page_history_version.title
     )
