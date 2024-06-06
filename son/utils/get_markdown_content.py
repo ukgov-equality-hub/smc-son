@@ -4,6 +4,17 @@ from bs4 import BeautifulSoup
 from flask import render_template
 
 
+def get_markdown_header(file_path: str):
+    f = open(file_path, 'r')
+    markdown_text = f.read()
+    f.close()
+
+    md = markdown.Markdown(extensions=['full_yaml_metadata'])
+    md.convert(markdown_text)
+
+    return md.Meta
+
+
 def get_markdown_content(file_path: str, indicator: str):
     f = open(file_path, 'r')
     markdown_text = f.read()
@@ -117,7 +128,7 @@ def convert_markdown_to_html(markdown_text, indicator):
         'download_full_dataset_link': download_full_dataset_link_generator,
         'download_section': download_section_generator,
     })
-    md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), custom_blocks_extensions, 'attr_list','sane_lists'])
+    md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), custom_blocks_extensions, 'attr_list','sane_lists','full_yaml_metadata'])
 
     html = md.convert(markdown_text)
 

@@ -6,6 +6,21 @@
 
 {% block content %}
     <div id="maincontent" class="govuk-!-padding-left-0">
+        {% if not '<h1' in markdown_to_html %}
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+                {{ page_title }}
+            </h1>
+        {% endif %}
+
+        {% if page_history and page_history_version %}
+            {% include 'components/page-history-header.html' %}
+        {% endif %}
+
         {{ markdown_to_html | safe }}
+
+        {% if page_history and page_history_version %}
+            {% include 'components/page-history-footer.html' %}
+        {% endif %}
+
     </div>
 {% endblock %}
