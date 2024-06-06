@@ -44,7 +44,7 @@ def area_home_page():
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_title=get_h1_content(content)
     )
 
 
@@ -83,7 +83,7 @@ def domain_page(domain):
         subdomain=None,
         indicator=None,
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_title=get_h1_content(content)
     )
 
 
@@ -138,5 +138,5 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
         subdomain=subdomain,
         indicator=indicator,
         markdown_to_html=str(content),
-        h1_content=get_h1_content(content)
+        page_title=get_h1_content(content)
     )
