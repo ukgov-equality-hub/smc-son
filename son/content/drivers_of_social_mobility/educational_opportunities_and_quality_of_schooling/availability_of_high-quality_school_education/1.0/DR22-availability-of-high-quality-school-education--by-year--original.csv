@@ -1,0 +1,15 @@
+Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2018,NA,15,Total,NA,NA,487.1259946,NA,NA,NA,0.414769056,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2015,NA,15,Total,NA,NA,490.1763124,NA,NA,NA,0.452385047,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2012,NA,15,Total,NA,NA,493.2069742,NA,NA,NA,0.482900094,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2009,NA,15,Total,NA,NA,490.3437924,NA,NA,NA,0.468172067,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2006,NA,15,Total,NA,NA,485.3536053,NA,NA,NA,0.557573038,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2003,NA,15,Total,NA,NA,494.0859662,NA,NA,NA,0.55469321,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,International Average (OECD),2000,NA,15,Total,NA,NA,493.490987,NA,NA,NA,0.690088241,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2018,NA,15,Total,NA,NA,503.9281094,NA,NA,NA,2.582591327,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2015,NA,15,Total,NA,NA,497.9719311,NA,NA,NA,2.769377224,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2012,NA,15,Total,NA,NA,499.3231153,NA,NA,NA,3.499978271,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2009,NA,15,Total,NA,NA,494.18201,NA,NA,NA,2.280469785,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2006,NA,15,Total,NA,NA,495.0835096,NA,NA,NA,2.2551868,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2003,NA,15,Total,NA,NA,507.012749,NA,NA,NA,2.463892137,Average pupil attainment scores,NA
+DR22,Availability of high-quality school education,NA,NA,United Kingdom,2000,NA,15,Total,NA,NA,523.4433037,NA,NA,NA,2.56114648,Average pupil attainment scores,NA
