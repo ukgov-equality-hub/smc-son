@@ -31,7 +31,7 @@ function buildChart(chartId, datafile, download, overrideOptions) {
 
     charts[chartId] = new Chart(
         'chart' + chartId,
-        `${location.protocol}//${location.host}${chartsData[chartId]}`,
+        chartsData[chartId],
         options
     )
 

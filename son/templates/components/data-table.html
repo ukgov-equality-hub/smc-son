@@ -1,5 +1,5 @@
 {% set data_file = [data, 'dataTable', 'data'] | attribute %}
-{% set data_table = [data, 'dataTable', 'data'] | table %}
+{% set data_table = [data, 'dataTable', markdown_file_parent_directory] | table %}
 {% set number_of_heading_rows = ([data, 'dataTableNumberOfHeadingRows'] | attribute) or 1 %}
 {% set number_of_heading_columns = ([data, 'dataTableNumberOfHeadingColumns'] | attribute) or 1 %}
 {% set number_of_data_rows = [data_table, number_of_heading_rows] | number_of_data_rows %}
@@ -82,7 +82,7 @@
         {#  This <li> element will be moved to the "download" tab by some javascript  #}
         <a href="{{ data_file }}"
            class="govuk-link">
-            Download the data (CSV, {{ data_file | file_size }})
+            Download the data (CSV, {{ (markdown_file_parent_directory + "/" + data_file) | file_size }})
         </a>
     </li>
 </div>

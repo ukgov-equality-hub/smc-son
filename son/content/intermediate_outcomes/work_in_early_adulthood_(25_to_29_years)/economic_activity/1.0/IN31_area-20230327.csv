@@ -1,0 +1,42 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN31","Economic activity of young people","ITL2","TLI3","Inner London - West","2018-2021",NA,"25-29","Total",NA,NA,-0.00151,72,-0.03138628,0.02836628,0.015243,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLI4","Inner London - East","2018-2021",NA,"25-29","Total",NA,NA,-0.00555,185,-0.03249804,0.02139804,0.013749,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLI6","Outer London - South","2018-2021",NA,"25-29","Total",NA,NA,0.000432,145,-0.02728828,0.02815228,0.014143,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLI5","Outer London - East and North East","2018-2021",NA,"25-29","Total",NA,NA,0.011189,236,-0.01439488,0.03677288,0.013053,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLI7","Outer London - West and North West","2018-2021",NA,"25-29","Total",NA,NA,0.00796,172,-0.01906252,0.03498252,0.013787,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLH2","Bedfordshire and Hertfordshire","2018-2021",NA,"25-29","Total",NA,NA,0.004166,295,-0.02044376,0.02877576,0.012556,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","2018-2021",NA,"25-29","Total",NA,NA,0.002685,413,-0.0200314,0.0254014,0.01159,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLD6","Cheshire","2018-2021",NA,"25-29","Total",NA,NA,0.006204,148,-0.0214614,0.0338694,0.014115,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLK3","Cornwall and Isles of Scilly","2018-2021",NA,"25-29","Total",NA,NA,-0.00845,87,-0.037899,0.020999,0.015025,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLD1","Cumbria","2018-2021",NA,"25-29","Total",NA,NA,0.015462,112,-0.01312656,0.04405056,0.014586,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLF1","Derbyshire and Nottinghamshire","2018-2021",NA,"25-29","Total",NA,NA,0.007788,363,-0.0156536,0.0312296,0.01196,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLK4","Devon","2018-2021",NA,"25-29","Total",NA,NA,0.004129,217,-0.0219978,0.0302558,0.01333,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLK2","Dorset and Somerset","2018-2021",NA,"25-29","Total",NA,NA,0.00542,232,-0.02031284,0.03115284,0.013129,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLH1","East Anglia","2018-2021",NA,"25-29","Total",NA,NA,0.00344,414,-0.0193646,0.0262446,0.011635,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLE1","East Yorkshire and Northern Lincolnshire","2018-2021",NA,"25-29","Total",NA,NA,0.010057,166,-0.01719288,0.03730688,0.013903,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLH3","Essex","2018-2021",NA,"25-29","Total",NA,NA,0.007122,276,-0.01769552,0.03193952,0.012662,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","2018-2021",NA,"25-29","Total",NA,NA,0.013062,443,-0.00919576,0.03531976,0.011356,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLD3","Greater Manchester","2018-2021",NA,"25-29","Total",NA,NA,-0.01066,426,-0.03350968,0.01218968,0.011658,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLJ3","Hampshire and Isle of Wight","2018-2021",NA,"25-29","Total",NA,NA,0.0064,294,-0.01817252,0.03097252,0.012537,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLG1","Herefordshire, Worcestershire and Warwickshire","2018-2021",NA,"25-29","Total",NA,NA,0.002397,225,-0.02361808,0.02841208,0.013273,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLJ4","Kent","2018-2021",NA,"25-29","Total",NA,NA,0.002479,283,-0.02228168,0.02723968,0.012633,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLD4","Lancashire","2018-2021",NA,"25-29","Total",NA,NA,0.004451,280,-0.02042532,0.02932732,0.012692,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLF2","Leicestershire, Rutland and Northamptonshire","2018-2021",NA,"25-29","Total",NA,NA,-0.00332,303,-0.0277808,0.0211408,0.01248,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLF3","Lincolnshire","2018-2021",NA,"25-29","Total",NA,NA,-0.00434,136,-0.032221,0.023541,0.014225,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLD7","Merseyside","2018-2021",NA,"25-29","Total",NA,NA,-0.02027,233,-0.04602244,0.00548244,0.013139,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLE2","North Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,-0.00183,155,-0.02931116,0.02565116,0.014021,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLN0","Northern Ireland","2018-2021",NA,"25-29","Total",NA,NA,-0.03323,868,-0.05158932,-0.01487068,0.009367,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLC2","Northumberland, and Tyne and Wear","2018-2021",NA,"25-29","Total",NA,NA,-0.01718,267,-0.04223272,0.00787272,0.012782,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLG2","Shropshire and Staffordshire","2018-2021",NA,"25-29","Total",NA,NA,0.001298,272,-0.02379392,0.02638992,0.012802,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLE3","South Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,-0.01316,245,-0.03857532,0.01225532,0.012967,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLJ2","Surrey, East and West Sussex","2018-2021",NA,"25-29","Total",NA,NA,0.014328,390,-0.008751,0.037407,0.011775,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLC1","Tees Valley and Durham","2018-2021",NA,"25-29","Total",NA,NA,0.00907,242,-0.01666284,0.03480284,0.013129,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLG3","West Midlands","2018-2021",NA,"25-29","Total",NA,NA,0.005798,506,-0.01574632,0.02734232,0.010992,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLE4","West Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,-5.6e-05,390,-0.02319576,0.02308376,0.011806,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLL1","West Wales and The Valleys","2018-2021",NA,"25-29","Total",NA,NA,-0.00144,396,-0.02437984,0.02149984,0.011704,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLL2","East Wales","2018-2021",NA,"25-29","Total",NA,NA,-0.00499,194,-0.0314598,0.0214798,0.013505,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLM6","Highlands and Islands","2018-2021",NA,"25-29","Total",NA,NA,-0.01758,64,-0.04772872,0.01256872,0.015382,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLM7","Eastern Scotland","2018-2021",NA,"25-29","Total",NA,NA,-0.0053,285,-0.029947,0.019347,0.012575,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLM8","West Central Scotland","2018-2021",NA,"25-29","Total",NA,NA,-0.01033,233,-0.03593348,0.01527348,0.013063,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLM9","Southern Scotland","2018-2021",NA,"25-29","Total",NA,NA,0.004559,128,-0.02359836,0.03271636,0.014366,"Random effect",NA
+"IN31","Economic activity of young people","ITL2","TLM5","North Eastern Scotland","2018-2021",NA,"25-29","Total",NA,NA,0.009299,77,-0.02031268,0.03891068,0.015108,"Random effect",NA

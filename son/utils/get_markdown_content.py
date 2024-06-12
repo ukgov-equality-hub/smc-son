@@ -1,3 +1,4 @@
+import os.path
 import customblocks
 import markdown, markdown.extensions.toc
 from bs4 import BeautifulSoup
@@ -20,7 +21,9 @@ def get_markdown_content(file_path: str, indicator: str):
     markdown_text = f.read()
     f.close()
 
-    html = convert_markdown_to_html(markdown_text, indicator)
+    markdown_file_parent_directory = os.path.dirname(file_path)
+
+    html = convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_directory)
 
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -38,7 +41,7 @@ def get_markdown_content(file_path: str, indicator: str):
     return soup
 
 
-def convert_markdown_to_html(markdown_text, indicator):
+def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_directory):
     current_tabs_list = []
     next_data_table_or_chart_id = ['']
 
@@ -84,7 +87,8 @@ def convert_markdown_to_html(markdown_text, indicator):
             data=[['Src', ctx.content]],
             guidance=inner_content_html,
             indicator=indicator,
-            section=section_name
+            section=section_name,
+            markdown_file_parent_directory=markdown_file_parent_directory
         )
         next_data_table_or_chart_id.append('')
         prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
@@ -95,7 +99,8 @@ def convert_markdown_to_html(markdown_text, indicator):
         rendered_html = render_template(
             'components/data-table.html',
             id=len(next_data_table_or_chart_id),
-            data=[['Src', ctx.content]]
+            data=[['Src', ctx.content]],
+            markdown_file_parent_directory=markdown_file_parent_directory
         )
         next_data_table_or_chart_id.append('')
         prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
@@ -105,7 +110,8 @@ def convert_markdown_to_html(markdown_text, indicator):
     def download_full_dataset_link_generator(ctx, data_file):
         rendered_html = render_template(
             'components/download-full-dataset-link.html',
-            data_file=data_file
+            data_file=data_file,
+            markdown_file_parent_directory=markdown_file_parent_directory
         )
         prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
 

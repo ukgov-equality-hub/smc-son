@@ -1,0 +1,39 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Chinese,80.9,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Any other mixed background,34.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Any other mixed background,59.3,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Unclassified,28.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Unclassified,45.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Any other white background,35.2,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Any other white background,55.1,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Gypsy/Roma,5.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Gypsy/Roma,11.6,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Traveller of Irish heritage,7.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Traveller of Irish heritage,22.4,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,White British,21.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Any other black background,36.2,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Any other black background,49.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Black African,45.1,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Black African,58.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Caribbean,26.1,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Caribbean,39.4,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Chinese,69.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Any other Asian background,49.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Any other Asian background,70.9,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Bangladeshi,52.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Bangladeshi,66.6,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Indian,53.4,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Indian,74.9,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Pakistani,40.6,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Pakistani,54.8,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,White and Asian,35.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,White and Asian,67.3,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,White and Black African,35.3,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,White and Black African,54.3,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,White and Black Caribbean,23,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,White and Black Caribbean,44.1,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,Any other ethnic group,41,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,Any other ethnic group,58,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,White British,53.7,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,FSM,16,Total,Ethnicity,White Irish,32.1,NA,NA,NA,NA,Percentage,NA
+IN13,Attaintment at age 16,National,E92000001,England,202122,Not known to be FSM eligible,16,Total,Ethnicity,White Irish,66.6,NA,NA,NA,NA,Percentage,NA

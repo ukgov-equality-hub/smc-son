@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Disadvantaged","11","Girls",NA,NA,47,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Disadvantaged","11","Boys",NA,NA,39,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Not known to be disadvantaged","11","Girls",NA,NA,70,NA,NA,NA,NA,"Percentage",NA
+"IN12","Attaintment at age 11","National","E92000001","England","202122","Not known to be disadvantaged","11","Boys",NA,NA,61,NA,NA,NA,NA,"Percentage",NA

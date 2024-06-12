@@ -2,7 +2,7 @@ import glob
 import os
 import re
 from pathlib import Path
-from flask import Blueprint, render_template, abort, redirect
+from flask import Blueprint, render_template, abort, redirect, send_file
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
@@ -123,6 +123,12 @@ def indicator_page_latest(domain, subdomain, indicator):
 @son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
 def indicator_page_with_version(domain, subdomain, indicator, major_version, minor_version):
     return get_indicator_page(domain, subdomain, indicator, int(major_version), int(minor_version))
+
+
+@son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
+def csv_file_download(domain, subdomain, indicator, major_version, minor_version, csv_file_name):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
+    return send_file(file_path)
 
 
 def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):

@@ -147,6 +147,7 @@ def table_filter(context, details):
     if details:
         data = content_list_filter(context, [details[0], 'Src'])
         field = details[1]
+        markdown_file_parent_directory = details[2]
         try:
             attributes = json.loads(data)
             file_path = ''
@@ -155,7 +156,7 @@ def table_filter(context, details):
 
             if file_path != '':
                 file_path = file_path.replace('data-src:', '').strip()
-                data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
+                data_src = f"{markdown_file_parent_directory}/{file_path}"
                 if Path(data_src).is_file():
                     with open(data_src, encoding='utf-8-sig', errors='ignore') as csv_file:
                         data_table = list(csv.reader(csv_file, delimiter=','))
@@ -187,12 +188,8 @@ def file_size(context, details):
             file_path = details
 
         if file_path != '':
-            if type(file_path) == list and 'data' in file_path[-1]:
-                file_path = file_path[-1]['data']
-            file_path = file_path.replace('data-src:', '').strip()
-            data_src = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_path}"
-            if Path(data_src).is_file():
-                file_size = os.path.getsize(data_src)
+            if Path(file_path).is_file():
+                file_size = os.path.getsize(file_path)
 
         if file_size > -1:
             if file_size > 1000000: file_size = f"{int(file_size / 1000000)}MB"
@@ -204,7 +201,7 @@ def file_size(context, details):
 
 @jinja2.pass_context
 @blueprint.app_template_filter('full_dataset_column_names')
-def full_dataset_column_names(context, file_name):
+def full_dataset_column_names(context, file_path):
     def replace_common_column_name_abbreviations(csv_column_name: str):
         column_name_replacements = [
             {'old': 'Ind_', 'new': 'Indicator '},
@@ -233,7 +230,6 @@ def full_dataset_column_names(context, file_name):
     csv_column_names = []
 
     try:
-        file_path = f"{os.path.dirname(os.path.realpath(__file__))}/..{file_name}"
         if Path(file_path).is_file():
             with open(file_path, encoding='utf8', errors='ignore') as csv_file:
                 csv_file_data = list(csv.reader(csv_file, delimiter=','))

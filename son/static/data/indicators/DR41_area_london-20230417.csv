@@ -1,9 +1,0 @@
-"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"DR41","Civic participation","ITL1",NA,"London","2014",NA,"Adults (16+)","Total",NA,NA,38.5678660841165,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2015",NA,"Adults (16+)","Total",NA,NA,35.3046125703961,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2016",NA,"Adults (16+)","Total",NA,NA,36.9813569370622,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2017",NA,"Adults (16+)","Total",NA,NA,44.3368584044616,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2018",NA,"Adults (16+)","Total",NA,NA,39.1765890135581,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2019",NA,"Adults (16+)","Total",NA,NA,37.131439456011,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2020",NA,"Adults (16+)","Total",NA,NA,44.4,NA,NA,NA,NA,"Percent",NA
-"DR41","Civic participation","ITL1",NA,"London","2021",NA,"Adults (16+)","Total",NA,NA,47.348389533265,NA,NA,NA,NA,"Percent",NA

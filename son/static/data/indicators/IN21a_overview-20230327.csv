@@ -1,7 +1,0 @@
-"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Higher professional","16-24","Total",NA,NA,9.8,1235,8.141822878,11.45817712,1.658177122,"Percentage",NA
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Lower professional","16-24","Total",NA,NA,10.6,1221,8.873319632,12.32668037,1.726680368,"Percentage",NA
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Intermediate","16-24","Total",NA,NA,11.4,1044,9.472177129,13.32782287,1.927822871,"Percentage",NA
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Higher working","16-24","Total",NA,NA,10.3,691,8.033666068,12.56633393,2.266333932,"Percentage",NA
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Lower working","16-24","Total",NA,NA,18.7,735,15.88115953,21.51884047,2.818840467,"Percentage",NA
-"IN21a","Destinations following the end of compulsory full-time education:NEET","Country","K02000001","United Kingdom","2021","Total","16-24","Total",NA,NA,12,4926,11.09252881,12.90747119,0.90747119,"Percentage",NA

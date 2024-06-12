@@ -33,7 +33,7 @@ window.document.addEventListener('DOMContentLoaded', function () {
         const map = new Choropleth(
             'social-mobility-by-area-map',
             `${location.protocol}//${location.host}/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json`,
-            `${location.protocol}//${location.host}/static/data/indicators/areas.csv`,
+            `${location.protocol}//${location.host}/static/data/by-page/social_mobility_by_area/areas.csv`,
             {
                 nameField: 'Area_name',
                 valueField: 'Value',
