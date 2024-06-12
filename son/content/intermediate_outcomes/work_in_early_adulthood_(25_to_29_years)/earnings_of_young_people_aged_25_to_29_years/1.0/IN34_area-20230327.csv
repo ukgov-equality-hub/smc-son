@@ -1,0 +1,42 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN34","Earnings of young people","ITL2","TLI3","Inner London - West","2018-2021",NA,"25-29","Total",NA,NA,2.545391,14,-58.195695,63.286477,30.99035,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLI4","Inner London - East","2018-2021",NA,"25-29","Total",NA,NA,27.03765,47,-24.0052776,78.0805776,26.04231,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLI6","Outer London - South","2018-2021",NA,"25-29","Total",NA,NA,57.32725,30,3.1775852,111.4769148,27.62738,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLI5","Outer London - East and North East","2018-2021",NA,"25-29","Total",NA,NA,51.55183,69,6.3221056,96.7815544,23.07639,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLI7","Outer London - West and North West","2018-2021",NA,"25-29","Total",NA,NA,22.5099,38,-29.599934,74.619734,26.58665,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLH2","Bedfordshire and Hertfordshire","2018-2021",NA,"25-29","Total",NA,NA,23.64937,90,-19.2541088,66.5528488,21.88953,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","2018-2021",NA,"25-29","Total",NA,NA,14.36387,133,-23.3594268,52.0871668,19.24658,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLD6","Cheshire","2018-2021",NA,"25-29","Total",NA,NA,-30.4224,49,-80.4613764,19.6165764,25.53009,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLK3","Cornwall and Isles of Scilly","2018-2021",NA,"25-29","Total",NA,NA,-16.0305,26,-72.4799896,40.4189896,28.80076,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLD1","Cumbria","2018-2021",NA,"25-29","Total",NA,NA,-1.3069,42,-52.61039,49.99659,26.17525,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLF1","Derbyshire and Nottinghamshire","2018-2021",NA,"25-29","Total",NA,NA,-5.92567,119,-44.9676352,33.1162952,19.91937,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLK4","Devon","2018-2021",NA,"25-29","Total",NA,NA,4.503971,56,-44.134311,53.142253,24.81545,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLK2","Dorset and Somerset","2018-2021",NA,"25-29","Total",NA,NA,16.86,74,-27.8394464,61.5594464,22.80584,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLH1","East Anglia","2018-2021",NA,"25-29","Total",NA,NA,-6.61004,113,-46.4881412,33.2680612,20.34597,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLE1","East Yorkshire and Northern Lincolnshire","2018-2021",NA,"25-29","Total",NA,NA,-4.73886,54,-52.93575,43.45803,24.59025,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLH3","Essex","2018-2021",NA,"25-29","Total",NA,NA,10.94569,81,-32.2682528,54.1596328,22.04793,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","2018-2021",NA,"25-29","Total",NA,NA,-23.5748,122,-61.9404476,14.7908476,19.57431,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLD3","Greater Manchester","2018-2021",NA,"25-29","Total",NA,NA,-20.973,104,-61.1000408,19.1540408,20.47298,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLJ3","Hampshire and Isle of Wight","2018-2021",NA,"25-29","Total",NA,NA,22.8243,91,-19.1864576,64.8350576,21.43406,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLG1","Herefordshire, Worcestershire and Warwickshire","2018-2021",NA,"25-29","Total",NA,NA,6.305569,68,-39.1051614,51.7162994,23.16874,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLJ4","Kent","2018-2021",NA,"25-29","Total",NA,NA,-12.2588,81,-55.4727428,30.9551428,22.04793,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLD4","Lancashire","2018-2021",NA,"25-29","Total",NA,NA,-31.9442,71,-77.3549304,13.4665304,23.16874,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLF2","Leicestershire, Rutland and Northamptonshire","2018-2021",NA,"25-29","Total",NA,NA,24.22732,81,-19.1444028,67.5990428,22.12843,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLF3","Lincolnshire","2018-2021",NA,"25-29","Total",NA,NA,-18.2039,33,-71.4504556,35.0426556,27.16661,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLD7","Merseyside","2018-2021",NA,"25-29","Total",NA,NA,-11.3037,61,-58.2451904,35.6377904,23.94974,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLE2","North Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,35.1286,50,-14.4301176,84.6873176,25.28506,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLN0","Northern Ireland","2018-2021",NA,"25-29","Total",NA,NA,-25.2929,198,-57.7096928,7.1238928,16.53918,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLC2","Northumberland, and Tyne and Wear","2018-2021",NA,"25-29","Total",NA,NA,-22.0676,74,-66.7670464,22.6318464,22.80584,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLG2","Shropshire and Staffordshire","2018-2021",NA,"25-29","Total",NA,NA,-10.2862,80,-53.9787356,33.4063356,22.29211,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLE3","South Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,-31.336,69,-76.7467304,14.0747304,23.16874,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLJ2","Surrey, East and West Sussex","2018-2021",NA,"25-29","Total",NA,NA,51.06117,105,10.8079052,91.3144348,20.53738,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLC1","Tees Valley and Durham","2018-2021",NA,"25-29","Total",NA,NA,-31.871,67,-77.6503476,13.9083476,23.35681,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLG3","West Midlands","2018-2021",NA,"25-29","Total",NA,NA,-1.17733,124,-39.2177352,36.8630752,19.40837,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLE4","West Yorkshire","2018-2021",NA,"25-29","Total",NA,NA,-31.4025,105,-71.6557648,8.8507648,20.53738,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLL1","West Wales and The Valleys","2018-2021",NA,"25-29","Total",NA,NA,0.943933,104,-39.3093318,41.1971978,20.53738,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLL2","East Wales","2018-2021",NA,"25-29","Total",NA,NA,-9.85072,53,-58.714304,39.012864,24.9304,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLM6","Highlands and Islands","2018-2021",NA,"25-29","Total",NA,NA,-13.1753,12,-74.3569156,48.0063156,31.21511,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLM7","Eastern Scotland","2018-2021",NA,"25-29","Total",NA,NA,-31.0352,82,-74.093068,12.022668,21.9683,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLM8","West Central Scotland","2018-2021",NA,"25-29","Total",NA,NA,26.78726,63,-19.562232,73.136752,23.6477,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLM9","Southern Scotland","2018-2021",NA,"25-29","Total",NA,NA,-23.7565,30,-78.5344232,31.0214232,27.94792,"Random effect",NA
+"IN34","Earnings of young people","ITL2","TLM5","North Eastern Scotland","2018-2021",NA,"25-29","Total",NA,NA,15.97059,16,-43.0990668,75.0402468,30.13758,"Random effect",NA
