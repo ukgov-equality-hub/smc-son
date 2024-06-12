@@ -1,0 +1,10 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2014",NA,"25-64","Total",NA,NA,0,NA,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2015",NA,"25-64","Total",NA,NA,-0.007,NA,-0.016016,0.002016,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2016",NA,"25-64","Total",NA,NA,-0.008,NA,-0.017016,0.001016,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2017",NA,"25-64","Total",NA,NA,-0.0058,NA,-0.01462,0.00302,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018",NA,"25-64","Total",NA,NA,-0.009,NA,-0.018016,1.6e-05,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2019",NA,"25-64","Total",NA,NA,-0.0122,NA,-0.021216,-0.003184,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2020",NA,"25-64","Total",NA,NA,-0.0116,NA,-0.02042,-0.00278,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2021",NA,"25-64","Total",NA,NA,-0.0228,NA,-0.03162,-0.01398,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2022",NA,"25-64","Total",NA,NA,-0.0125,NA,-0.02132,-0.00368,0.0045,"Unidiff parameter estimates",NA

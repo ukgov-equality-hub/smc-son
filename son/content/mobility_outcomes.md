@@ -12,7 +12,7 @@ They look at people’s socio-economic class, income, education and housing.
         <script>
             new Chart(
                 'chart1',
-                `${location.protocol}//${location.host}/static/data/indicators/MO12_overview-20230623.csv`,
+                `${location.protocol}//${location.host}/static/data/by-page/mobility_outcomes/MO12_overview-20230623.csv`,
                 { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "colourScheme": ["#5694ca"], "range": [-0.035, 0.005], "margin": [0, 0, 0, 0], "maxLabelLength": 60 }
             )
         </script>
@@ -27,7 +27,7 @@ They look at people’s socio-economic class, income, education and housing.
         <script>
             new Chart(
                 'chart2',
-                `${location.protocol}//${location.host}/static/data/indicators/MO31_overview_total-20230601.csv`,
+                `${location.protocol}//${location.host}/static/data/by-page/mobility_outcomes/MO31_overview_total-20230601.csv`,
                 { "height": 200, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "Category", "scale": "%", "multiply": 100, "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#d53880", "#4c2c92", "#d4351c", "#5694ca"], "margin": [0, 0, 0, 0], "maxLabelLength": 50, "labelColour": "#fff" }
             )
         </script>
@@ -42,7 +42,7 @@ They look at people’s socio-economic class, income, education and housing.
         <script>
             new Chart(
                 'chart3',
-                `${location.protocol}//${location.host}/static/data/indicators/MO41_gender-20230503.csv`,
+                `${location.protocol}//${location.host}/static/data/by-page/mobility_outcomes/MO41_gender-20230503.csv`,
                 { "height": 200, "type": "bary", "xkey": "SEB", "ykey": "Value", "group": "Sex", "sort": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>

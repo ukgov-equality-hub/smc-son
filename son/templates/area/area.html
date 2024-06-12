@@ -71,7 +71,7 @@
         const indicators = [ 'Childhood poverty and disadvantage', 'Precarious situations', 'Promising prospects', 'Research and development', 'Socio-cultural advantage' ]
 
         const dataUtils = new DataUtils()
-        let data = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/CI_20230817.csv`)
+        let data = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/by-page/social_mobility_by_area/CI_20230817.csv`)
         data = data.data
 
         const options = {
@@ -90,7 +90,7 @@
         const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'R & D environment'), { ...options, title: 'Research and development' })
         const chart5 = new Chart('chart5', data.filter(x => x['Ind_name'] == 'Socio-cultural advantage'), { ...options, title: 'Socio-cultural advantage' })
 
-        let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/indicators/areas.csv`)
+        let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/by-page/social_mobility_by_area/areas.csv`)
         mapData = mapData.data
         const area = mapData.filter(x => x['Area_name'] == '{{ title | replace("Bath and Bristol", "Bath/Bristol") }}')[0]
         area['Value'] = 2
