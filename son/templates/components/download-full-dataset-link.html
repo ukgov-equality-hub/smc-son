@@ -1,5 +1,5 @@
-{% set FILE_SIZE = data_file | file_size %}
-{% set csv_columns = data_file | full_dataset_column_names %}
+{% set FILE_SIZE = (markdown_file_parent_directory + "/" + data_file) | file_size %}
+{% set csv_columns = (markdown_file_parent_directory + "/" + data_file) | full_dataset_column_names %}
 
 <div {# This <div> is here because we can only return 1 element, so we need a wrapper around the child elements. #}>
     <p class="govuk-body">

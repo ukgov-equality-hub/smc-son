@@ -86,7 +86,7 @@
             </div>
             {% if ([data, 'code'] | attribute) in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
                 <div class="grid-composite">
-                    {{ composite(id, data) }}
+                    {{ composite(id, data, markdown_file_parent_directory) }}
                 </div>
             {% else %}
                 <div class="grid-chart">

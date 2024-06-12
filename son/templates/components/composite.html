@@ -1,6 +1,6 @@
-{% macro composite(id, data) %}
+{% macro composite(id, data, markdown_file_parent_directory) %}
 <div id="ranking" class="ranking-table {% if [data, 'title'] | attribute | safe == 'Research and development' %}showhide{% else %}scroll{% endif %}">
-    {% set data_table = [data, 'dataTable'] | table | sort(attribute = '2', reverse = True) %}
+    {% set data_table = [data, 'dataTable', markdown_file_parent_directory] | table | sort(attribute = '2', reverse = True) %}
     <table id="quintiles{{ id }}" class="govuk-body-s table-container govuk-table">
         <thead>
             <tr >
