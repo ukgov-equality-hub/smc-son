@@ -205,9 +205,13 @@ def full_dataset_column_names(context, file_path):
     def replace_common_column_name_abbreviations(csv_column_name: str):
         column_name_replacements = [
             {'old': 'Ind_', 'new': 'Indicator '},
+            {'old': 'ind_', 'new': 'Indicator '},
             {'old': 'SEB', 'new': 'Socio-economic background'},
+            {'old': 'seb', 'new': 'Socio-economic background'},
             {'old': 'LCI', 'new': 'Lower confidence interval'},
+            {'old': 'lci', 'new': 'Lower confidence interval'},
             {'old': 'UCI', 'new': 'Upper confidence interval'},
+            {'old': 'uci', 'new': 'Upper confidence interval'},
             {'old': 'SE', 'new': 'Standard error'},
             {'old': '_', 'new': ' '},
         ]
@@ -215,7 +219,7 @@ def full_dataset_column_names(context, file_path):
         for replacement in column_name_replacements:
             csv_column_name = csv_column_name.replace(replacement['old'], replacement['new'])
 
-        return csv_column_name
+        return csv_column_name.capitalize()
 
     def csv_column_is_not_empty(csv_file_data, csv_column_index):
         values_considered_empty = ['', 'NA', 'N/A', 'N\A']
