@@ -1,0 +1,15 @@
+ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,test,mathematics,NA,NA,472.3581246,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2022,NA,15,NA,test,mathematics,NA,NA,488.975085,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2018,NA,15,NA,test,mathematics,NA,NA,486.998322,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2018,NA,15,NA,test,mathematics,NA,NA,501.7698992,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2015,NA,15,NA,test,mathematics,NA,NA,484.8793967,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2015,NA,15,NA,test,mathematics,NA,NA,492.4785307,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2012,NA,15,NA,test,mathematics,NA,NA,488.1641537,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2012,NA,15,NA,test,mathematics,NA,NA,493.934231,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2009,NA,15,NA,test,mathematics,NA,NA,491.7185799,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2009,NA,15,NA,test,mathematics,NA,NA,492.4140783,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2006,NA,15,NA,test,mathematics,NA,NA,490.4076084,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2006,NA,15,NA,test,mathematics,NA,NA,495.4441585,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,OECD,2003,NA,15,NA,test,mathematics,NA,NA,499.4635249,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
+IN14,Skills at age 15,NA,NA,UK,2003,NA,15,NA,test,mathematics,NA,NA,508.2580816,NA,NA,NA,NA,score,Averages for age 15 years PISA scale
