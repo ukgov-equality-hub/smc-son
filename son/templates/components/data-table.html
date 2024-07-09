@@ -26,7 +26,7 @@
                                 <th scope="col"
                                     rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
                                     colspan="{{ [data_table, row_number, column_number, 'column'] | data_table_row_column_span }}"
-                                    class="govuk-table__header">{{ cell }}</th>
+                                    class="govuk-table__header">{{ cell | replace("\n", "<br/>") }}</th>
                             {% endif %}
                         {% endfor %}
                     </tr>
@@ -45,7 +45,7 @@
                                     <th scope="row"
                                         rowspan="{{ [data_table, row_number, column_number, 'row'] | data_table_row_column_span }}"
                                         class="govuk-table__header{{ [data, column_number] | data_table_align_columns }}">
-                                        {{ cell }}
+                                        {{ cell | replace("\n", "<br/>") }}
                                     </th>
                                 {% endif %}
                             {% else %}
