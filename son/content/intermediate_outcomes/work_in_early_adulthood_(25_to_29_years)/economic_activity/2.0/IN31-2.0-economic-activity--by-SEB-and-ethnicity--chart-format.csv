@@ -1,0 +1,21 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White British,NA,NA,86.75133746,NA,85.61692554,87.8090168,0.048630625,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White British,NA,NA,94.83586156,NA,94.1901504,95.41330256,0.063594566,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,74.05602821,NA,66.78893409,80.20427873,0.178683561,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,88.89581279,NA,84.74897689,92.02125514,0.186268737,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black African,NA,NA,82.99133722,NA,78.43631257,86.74675583,0.149862244,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black African,NA,NA,93.19016029,NA,90.97740234,94.89072401,0.155809789,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,90.21851877,NA,85.09775964,93.70973233,0.244613704,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,96.27809037,NA,94.08186332,97.67939829,0.248391989,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Chinese,NA,NA,60.54797323,NA,51.73756858,68.72234397,0.183066846,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Chinese,NA,NA,81.14731236,NA,74.98654828,86.07252069,0.184544291,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Indian,NA,NA,83.2660851,NA,79.61738212,86.37342009,0.123493837,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Indian,NA,NA,93.31343588,NA,91.56955509,94.71739636,0.127861474,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Mixed,NA,NA,81.58022658,NA,77.33529316,85.18244683,0.133068519,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Mixed,NA,NA,92.54922282,NA,90.40328898,94.24584414,0.141099638,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Other,NA,NA,71.10223908,NA,66.650792,75.18076619,0.106079949,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Other,NA,NA,87.34280492,NA,84.66365838,89.61135342,0.113851112,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Pakistani,NA,NA,70.15032961,NA,65.37102024,74.52705427,0.111772029,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Pakistani,NA,NA,86.82675374,NA,83.86019779,89.31750385,0.121356268,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White other,NA,NA,87.37834356,NA,85.48407737,89.05705969,0.082523173,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White other,NA,NA,95.10186229,NA,94.1313135,95.91886303,0.097463709,Percentage,NA

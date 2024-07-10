@@ -1,0 +1,7 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,NA,NA,NA,NA,79.76195413,362,75.62306335,83.90084492,0.02111679,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,NA,NA,NA,NA,87.45484885,310,83.76757732,91.14212038,0.01881261,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,NA,NA,NA,NA,88.1715956,503,85.34931941,90.99387178,0.014399368,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,NA,NA,NA,NA,90.06289656,486,87.40314668,92.72264643,0.013570152,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,NA,NA,NA,NA,89.70378093,451,86.89891529,92.50864656,0.014310539,Percentage,NA
+IN31,Economic activity of young people,Country,K02000001,United Kingdom,2022,Total,25 to 29,Total,NA,NA,NA,NA,87.37662919,2112,85.96020144,88.79305694,0.007226672,Percentage,NA
