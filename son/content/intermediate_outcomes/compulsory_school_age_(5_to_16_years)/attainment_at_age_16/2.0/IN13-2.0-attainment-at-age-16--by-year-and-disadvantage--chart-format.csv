@@ -1,0 +1,16 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile
+IN13,Attainment at age 16,Country,E92000001,England,2022/23,Disadvantaged,16,Total,NA,NA,NA,NA,25.2,157984,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2022/23,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,52.4,445664,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2022/23,Total,16,Total,NA,NA,NA,NA,45.3,603648,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2021/22,Disadvantaged,16,Total,NA,NA,NA,NA,29.7,154167,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2021/22,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,57.2,431034,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2021/22,Total,16,Total,NA,NA,NA,NA,50,585201,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2020/21,Disadvantaged,16,Total,NA,NA,NA,NA,31.7,151973,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2020/21,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,59.2,423890,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2020/21,Total,16,Total,NA,NA,NA,NA,51.9,575863,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2019/20,Disadvantaged,16,Total,NA,NA,NA,NA,30.4,146214,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2019/20,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,56.8,415780,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2019/20,Total,16,Total,NA,NA,NA,NA,49.9,561994,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2018/19,Disadvantaged,16,Total,NA,NA,NA,NA,24.8,143317,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2018/19,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,50.1,396729,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2018/19,Total,16,Total,NA,NA,NA,NA,43.4,540046,NA,NA,NA,Percentage,NA,NA

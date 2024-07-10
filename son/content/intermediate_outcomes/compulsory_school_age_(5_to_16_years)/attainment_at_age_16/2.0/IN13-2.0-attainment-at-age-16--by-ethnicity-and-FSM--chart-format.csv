@@ -1,0 +1,18 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Asian background,NA,NA,44,2612,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Bangladeshi,NA,NA,48.8,3790,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Chinese,NA,NA,75.3,227,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Indian,NA,NA,48.6,1676,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Pakistani,NA,NA,36.2,7664,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Black background,NA,NA,29.1,1755,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Black African,NA,NA,42,8720,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Caribbean,NA,NA,22.2,2713,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Mixed background,NA,NA,31.3,3761,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Asian,NA,NA,33,1962,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Black African,NA,NA,29.7,1724,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Black Caribbean,NA,NA,19.2,3713,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other White background,NA,NA,30.6,6698,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Gypsy/Roma,NA,NA,3.3,768,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Traveller of Irish heritage,NA,NA,9.5,126,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White British,NA,NA,18,80990,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White Irish,NA,NA,19.4,299,NA,NA,NA,Percentage,NA,NA
