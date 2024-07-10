@@ -1,0 +1,31 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,Lower level (below CSE grade 1),NA,NA,18.72137732,67,9.380756641,28.06199801,4.765622798,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,Lower level (below CSE grade 1),NA,NA,10.5406786,32,-0.098991632,21.18034883,5.42840318,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,Lower level (below CSE grade 1),NA,NA,8.240582003,41,-0.176632811,16.65779682,4.294497354,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,Lower level (below CSE grade 1),NA,NA,4.677549739,21,-4.353811836,13.70891131,4.607837538,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,Lower level (below CSE grade 1),NA,NA,2.601538092,13,-6.05163795,11.25471413,4.414885735,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,"O level, GCSE and equivalent",NA,NA,21.50114639,80,12.49843053,30.50386224,4.593222375,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,"O level, GCSE and equivalent",NA,NA,17.98031626,56,7.922127855,28.03850466,5.131728776,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,"O level, GCSE and equivalent",NA,NA,12.40240894,63,4.263149313,20.54166856,4.152683482,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,"O level, GCSE and equivalent",NA,NA,10.19546493,54,2.124753055,18.26617681,4.117710143,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,"O level, GCSE and equivalent",NA,NA,4.343095799,24,-3.811610344,12.49780194,4.160564359,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,A level and equivalent,NA,NA,24.41974592,85,15.28657989,33.55291195,4.659778587,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,A level and equivalent,NA,NA,24.28547104,79,14.82951588,33.74142619,4.824466915,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,A level and equivalent,NA,NA,23.00487845,120,15.47466955,30.53508735,3.841943315,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,A level and equivalent,NA,NA,19.49851409,100,11.73320445,27.26382374,3.961892676,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,A level and equivalent,NA,NA,13.99952584,71,5.92840252,22.07064916,4.117920062,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,Further education below degree,NA,NA,5.801454659,24,-3.551331393,15.15424071,4.771829618,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,Further education below degree,NA,NA,6.754452681,22,-3.732610004,17.24151537,5.350542186,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,Further education below degree,NA,NA,7.891827199,40,-0.463509256,16.24716365,4.262926763,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,Further education below degree,NA,NA,4.682638457,27,-3.286392413,12.65166933,4.065832076,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,Further education below degree,NA,NA,4.945536741,27,-3.232840939,13.12391442,4.172641673,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,First degree,NA,NA,21.81692152,79,12.70949567,30.92434736,4.64664584,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,First degree,NA,NA,28.59932117,88,19.15776094,38.04088141,4.817122568,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,First degree,NA,NA,31.65582076,165,24.55854542,38.75309611,3.621058851,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,First degree,NA,NA,37.52478933,186,30.56633798,44.48324068,3.550230281,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,First degree,NA,NA,52.52749144,225,46.00251071,59.05247217,3.329071801,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,Education,Higher degree,NA,NA,7.35979209,26,-2.677161843,17.39674602,5.120894864,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,Education,Higher degree,NA,NA,11.83976025,33,0.816579297,22.86294121,5.624071917,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,Education,Higher degree,NA,NA,16.59628838,73,8.061498833,25.13107792,4.354484462,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,Education,Higher degree,NA,NA,23.42104345,98,15.03608576,31.80600114,4.278039639,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,Education,Higher degree,NA,NA,21.58281208,91,13.13012052,30.03550365,4.312597737,Percentage,NA

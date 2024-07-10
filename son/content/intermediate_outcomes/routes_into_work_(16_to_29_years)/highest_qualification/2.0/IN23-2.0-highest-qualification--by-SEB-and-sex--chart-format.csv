@@ -1,0 +1,61 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,Lower level (below CSE grade 1),NA,NA,24.95835758,640,21.60542167,28.31129348,1.710681582,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,Lower level (below CSE grade 1),NA,NA,18.7812305,575,15.58886674,21.97359427,1.628757025,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,Lower level (below CSE grade 1),NA,NA,15.20429324,384,11.61292027,18.79566622,1.832333149,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,Lower level (below CSE grade 1),NA,NA,10.95517863,322,7.543703566,14.36665369,1.7405485,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,Lower level (below CSE grade 1),NA,NA,12.75109802,401,9.486440248,16.0157558,1.665641723,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,Lower level (below CSE grade 1),NA,NA,9.129419155,322,5.983400011,12.2754383,1.605111808,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,Lower level (below CSE grade 1),NA,NA,5.775002294,162,2.182825422,9.367179167,1.832743302,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,Lower level (below CSE grade 1),NA,NA,4.11990814,123,0.607447205,7.632369075,1.792071906,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,Lower level (below CSE grade 1),NA,NA,3.400259017,85,-0.452666291,7.253184325,1.965778218,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,Lower level (below CSE grade 1),NA,NA,3.053385746,86,-0.582950257,6.689721749,1.855273471,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,"O level, GCSE and equivalent",NA,NA,17.86810715,458,14.35963105,21.37658325,1.790038826,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,"O level, GCSE and equivalent",NA,NA,18.41782775,571,15.23835686,21.59729864,1.622179026,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,"O level, GCSE and equivalent",NA,NA,15.80575688,396,12.21275598,19.39875777,1.833163723,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,"O level, GCSE and equivalent",NA,NA,14.48446975,411,11.08188495,17.88705455,1.736012653,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,"O level, GCSE and equivalent",NA,NA,12.5978713,433,9.472355404,15.72338719,1.594650967,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,"O level, GCSE and equivalent",NA,NA,11.13692182,395,8.034500432,14.2393432,1.582868054,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,"O level, GCSE and equivalent",NA,NA,10.05777203,276,6.509358353,13.60618571,1.810415143,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,"O level, GCSE and equivalent",NA,NA,7.387360752,245,4.112047718,10.66267379,1.671078078,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,"O level, GCSE and equivalent",NA,NA,6.609547076,162,2.7836291,10.43546505,1.951998968,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,"O level, GCSE and equivalent",NA,NA,3.981931911,117,0.438806399,7.525057423,1.807717098,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,A level and equivalent,NA,NA,30.84222331,782,27.60519837,34.07924825,1.651543335,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,A level and equivalent,NA,NA,29.97957577,948,27.06297482,32.89617672,1.48806171,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,A level and equivalent,NA,NA,32.72054475,830,29.5285033,35.91258619,1.628592572,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,A level and equivalent,NA,NA,31.19581303,920,28.20204776,34.18957829,1.527431259,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,A level and equivalent,NA,NA,27.84744311,930,24.96651035,30.72837588,1.469863655,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,A level and equivalent,NA,NA,27.23133817,978,24.44140802,30.02126832,1.423433749,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,A level and equivalent,NA,NA,25.14270312,705,21.94023683,28.34516941,1.633911372,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,A level and equivalent,NA,NA,20.0331712,660,16.97955893,23.08678346,1.557965443,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,A level and equivalent,NA,NA,18.79439271,484,15.31390144,22.27488398,1.775760851,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,A level and equivalent,NA,NA,15.16058166,430,11.77074621,18.5504171,1.729507881,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,Further education below degree,NA,NA,5.665592741,155,2.026040468,9.305145013,1.856914425,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,Further education below degree,NA,NA,7.414478179,226,3.99851102,10.83044534,1.742840387,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,Further education below degree,NA,NA,6.800246822,165,2.958897359,10.64159628,1.959872175,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,Further education below degree,NA,NA,8.01500748,236,4.550747119,11.47926784,1.767479776,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,Further education below degree,NA,NA,7.135126591,230,3.808387585,10.4618656,1.697315819,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,Further education below degree,NA,NA,7.30923971,266,4.181219303,10.43726012,1.595928779,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,Further education below degree,NA,NA,7.256331271,209,3.739240194,10.77342235,1.794434223,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,Further education below degree,NA,NA,6.763069448,228,3.503542655,10.02259624,1.663023874,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,Further education below degree,NA,NA,5.839505389,147,2.048802019,9.630208758,1.934032331,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,Further education below degree,NA,NA,6.022049536,168,2.424667372,9.619431699,1.835399063,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,First degree,NA,NA,15.38213297,378,11.74508115,19.01918479,1.855638684,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,First degree,NA,NA,19.21515255,573,15.98914311,22.44116199,1.645923182,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,First degree,NA,NA,22.47464199,538,18.94741658,26.00186741,1.799604803,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,First degree,NA,NA,27.78386334,759,24.59710871,30.97061798,1.625895222,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,First degree,NA,NA,28.27662935,843,25.23653929,31.31671941,1.551066356,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,First degree,NA,NA,32.76533914,1131,30.02988957,35.5007887,1.395637533,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,First degree,NA,NA,35.2648469,937,32.20550956,38.32418423,1.560886396,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,First degree,NA,NA,42.41761513,1289,39.71958025,45.11565002,1.376548409,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,First degree,NA,NA,43.53068935,940,40.36114992,46.70022879,1.617111958,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,First degree,NA,NA,46.08082135,1175,43.23066373,48.93097897,1.45416205,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Men,Education,Higher degree,NA,NA,4.989157255,111,0.938786641,9.03952787,2.066515619,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Women,Education,Higher degree,NA,NA,6.053704584,169,2.458172565,9.649236603,1.834455112,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Men,Education,Higher degree,NA,NA,6.899495303,145,2.774183783,11.02480682,2.104750775,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Women,Education,Higher degree,NA,NA,7.442173752,193,3.739342737,11.14500477,1.889199497,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Men,Education,Higher degree,NA,NA,11.14763789,295,7.556178341,14.73909743,1.832377319,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Women,Education,Higher degree,NA,NA,12.39905784,389,9.123916833,15.67419884,1.670990307,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Men,Education,Higher degree,NA,NA,16.47012572,394,12.80762827,20.13262317,1.86862115,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Women,Education,Higher degree,NA,NA,19.27887533,551,15.98494263,22.57280803,1.680577908,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Men,Education,Higher degree,NA,NA,21.78482519,481,18.09584704,25.47380334,1.882131709,Percentage,NA
+IN23,Highest qualification,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Women,Education,Higher degree,NA,NA,25.67018664,622,22.23732015,29.10305313,1.751462495,Percentage,NA
