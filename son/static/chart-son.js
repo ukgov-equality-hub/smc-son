@@ -25,6 +25,11 @@ function buildChart(chartId, datafile, download, overrideOptions) {
     } else if (!overrideOptions && !datafile && options.data && typeof options.data.reversePolarity !== 'undefined') {
         options['reversePolarity'] = options.data.reversePolarity
     }
+    if (overrideOptions && typeof overrideOptions.xtitle !== 'undefined') {
+        options['xtitle'] = overrideOptions.xtitle
+    } else if (!overrideOptions && !datafile && options.data && typeof options.data.xtitle !== 'undefined') {
+        options['xtitle'] = options.data.xtitle
+    }
     if (overrideOptions && typeof overrideOptions.filename !== 'undefined') {
         options['filename'] = overrideOptions.filename
     }

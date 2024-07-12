@@ -14,13 +14,15 @@ function buildToggle(id) {
 }
 
 function selectRange(id, toggleValue) {
-    const datafile = toggleData[id].filter(x => x.label === toggleValue)[0].data
+    const toggleOptions = toggleData[id].filter(x => x.label === toggleValue)[0];
+    const datafile = toggleOptions.data
+
     try {
-        buildMap(id, datafile, false)
+        buildMap(id, datafile, false, toggleOptions)
     }
     catch (e) {}
     try {
-        buildChart(id, datafile, false)
+        buildChart(id, datafile, false, toggleOptions)
     }
     catch (e) {}
 
