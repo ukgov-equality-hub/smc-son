@@ -1,0 +1,11 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Total,Disability,No,NA,NA,5.837947776,220,4.493318043,7.182577509,0.006860356,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Total,Disability,Yes,NA,NA,18.23101902,107,16.01672945,20.44530859,0.011297396,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Total,Disability,No,NA,NA,3.791594431,158,2.696246488,4.886942373,0.00558851,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Total,Disability,Yes,NA,NA,12.24325591,60,10.36340519,14.12310664,0.009591075,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Total,Disability,No,NA,NA,4.040892738,207,2.911574321,5.170211155,0.005761829,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Total,Disability,Yes,NA,NA,10.29995952,64,8.556753453,12.04316558,0.008893908,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Total,Disability,No,NA,NA,3.115173778,147,2.118842713,4.111504842,0.005083322,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Total,Disability,Yes,NA,NA,8.390607815,44,6.800592301,9.98062333,0.008112324,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Total,Disability,No,NA,NA,3.203342007,127,2.193469646,4.213214367,0.00515241,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Total,Disability,Yes,NA,NA,8.091228262,34,6.527287289,9.655169235,0.007979291,Percentage,NA

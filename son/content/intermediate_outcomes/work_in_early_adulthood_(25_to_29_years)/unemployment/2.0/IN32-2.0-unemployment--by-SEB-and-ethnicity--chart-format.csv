@@ -1,0 +1,21 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White British,NA,NA,6.699777648,NA,5.834122647,7.683396438,0.075296539,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White British,NA,NA,3.284022179,NA,2.723326261,3.955463771,0.098464025,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,8.178221548,NA,3.957404794,16.14408564,0.393267563,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,4.041358755,NA,1.881221032,8.467840127,0.401477951,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black African,NA,NA,16.98422411,NA,12.34878584,22.90499004,0.190331788,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black African,NA,NA,8.820856049,NA,6.094112585,12.60389748,0.203699067,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,15.99473905,NA,10.27578343,24.04364032,0.259344504,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,8.259642423,NA,5.026709957,13.28107361,0.271036886,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Chinese,NA,NA,16.53948965,NA,8.802894199,28.91937719,0.366988441,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Chinese,NA,NA,8.567819157,NA,4.247908194,16.52279367,0.381493942,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Indian,NA,NA,10.74071921,NA,7.706490887,14.77830475,0.186426574,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Indian,NA,NA,5.383644088,NA,3.769825408,7.633517228,0.190427415,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Mixed,NA,NA,11.99201554,NA,8.366713705,16.89847658,0.204252245,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Mixed,NA,NA,6.053163594,NA,4.111433317,8.827504002,0.207782804,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Other,NA,NA,12.05734849,NA,8.405422237,17.00142689,0.204832604,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Other,NA,NA,6.088379779,NA,4.090509603,8.970772202,0.213648034,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Pakistani,NA,NA,16.02443558,NA,11.94175181,21.16739825,0.174253025,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Pakistani,NA,NA,8.276392544,NA,5.873082989,11.542556,0.188204186,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White other,NA,NA,6.870453783,NA,5.342307355,8.79510563,0.13665295,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White other,NA,NA,3.370826086,NA,2.523944544,4.488783639,0.152067145,Percentage,NA

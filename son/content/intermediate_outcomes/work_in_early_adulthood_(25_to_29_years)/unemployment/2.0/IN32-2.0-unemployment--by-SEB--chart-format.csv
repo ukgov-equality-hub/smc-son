@@ -1,0 +1,7 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Lower working,25 to 29,Total,NA,NA,NA,NA,6.282109371,295,3.513197951,9.05102079,0.014127099,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Higher working,25 to 29,Total,NA,NA,NA,NA,3.948775726,273,1.638533942,6.25901751,0.011786948,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Intermediate,25 to 29,Total,NA,NA,NA,NA,3.017584232,442,1.422729481,4.612438983,0.008137014,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Lower professional,25 to 29,Total,NA,NA,NA,NA,2.171123046,438,0.806242107,3.536003986,0.006963678,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Higher professional,25 to 29,Total,NA,NA,NA,NA,3.052925215,403,1.373235798,4.732614632,0.008569844,Percentage,NA
+IN32,Unemployment of young people,Country,K02000001,United Kingdom,2022,Total,25 to 29,Total,NA,NA,NA,NA,3.475437544,1851,2.641033257,4.309841832,0.004257165,Percentage,NA
