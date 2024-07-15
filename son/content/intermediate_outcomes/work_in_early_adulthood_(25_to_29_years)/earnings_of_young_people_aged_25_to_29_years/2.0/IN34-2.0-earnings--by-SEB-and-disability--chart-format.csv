@@ -1,0 +1,11 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Total,Disability,No,NA,NA,12.3653846,4419,11.92860302,12.80216617,0.222847743,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Total,Disability,No,NA,NA,13.61032974,4533,13.21083846,14.00982101,0.20382208,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Total,Disability,No,NA,NA,14.22256981,5702,13.86305716,14.58208245,0.18342482,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Total,Disability,No,NA,NA,16.22191682,5005,15.85358272,16.59025091,0.187925559,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Total,Disability,No,NA,NA,17.85806649,4311,17.47361332,18.24251965,0.196149575,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Total,Disability,Yes,NA,NA,11.45431871,1156,10.45400749,12.45462994,0.51036287,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Total,Disability,Yes,NA,NA,11.65601908,755,10.62127897,12.69075919,0.527928628,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Total,Disability,Yes,NA,NA,14.25794061,894,13.3169283,15.19895293,0.480108322,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Total,Disability,Yes,NA,NA,14.09135898,751,13.12285111,15.05986685,0.494136669,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Total,Disability,Yes,NA,NA,14.74463854,568,13.77177224,15.71750484,0.496360357,Pounds,NA

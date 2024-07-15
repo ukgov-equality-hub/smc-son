@@ -1,0 +1,21 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White British,NA,NA,11.86908329,NA,11.54864454,12.19841321,0.013961691,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White British,NA,NA,16.48317968,NA,16.07700343,16.89961773,0.01272802,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,10.63887458,NA,9.202737954,12.29912804,0.073975783,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Bangladeshi,NA,NA,14.77472834,NA,12.77428783,17.08843581,0.074215609,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black African,NA,NA,12.9810976,NA,12.01249175,14.02780525,0.039559124,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black African,NA,NA,18.02748863,NA,16.67785154,19.48634365,0.039696335,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,11.75238857,NA,10.55342703,13.08756262,0.054892949,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Black Caribbean,NA,NA,16.32111998,NA,14.64330145,18.19118171,0.055337335,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Chinese,NA,NA,13.83578508,NA,12.0567599,15.87731284,0.07021062,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Chinese,NA,NA,19.21443517,NA,16.76146718,22.02638438,0.069673111,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Indian,NA,NA,12.70327177,NA,11.85653624,13.61047699,0.035188894,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Indian,NA,NA,17.64165825,NA,16.49942462,18.86296722,0.034146832,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Mixed,NA,NA,12.128255,NA,11.19429294,13.14013936,0.040878617,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Mixed,NA,NA,16.84310417,NA,15.56628526,18.22465368,0.040215543,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Other,NA,NA,11.84499016,NA,11.04364925,12.70447735,0.035734319,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Other,NA,NA,16.44972036,NA,15.35924837,17.61761339,0.034990149,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,Pakistani,NA,NA,11.07339546,NA,10.08497402,12.1586914,0.047696534,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,Pakistani,NA,NA,15.37816885,NA,14.01548815,16.8733386,0.047332838,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,Ethnicity,White other,NA,NA,12.07489937,NA,11.59047899,12.57956594,0.020887202,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,Ethnicity,White other,NA,NA,16.76900659,NA,16.1151131,17.44943273,0.02029031,Pounds,NA
