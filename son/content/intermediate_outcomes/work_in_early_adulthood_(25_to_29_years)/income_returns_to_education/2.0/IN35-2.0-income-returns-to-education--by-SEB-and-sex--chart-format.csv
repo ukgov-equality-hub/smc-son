@@ -1,0 +1,13 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,Lower level (below CSE grade 1),NA,NA,9.591341514,311,9.072644523,10.13969321,0.028356254,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,Higher degree,NA,NA,16.16836947,450,15.31320207,17.0712938,0.027715918,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,First degree,NA,NA,14.69811762,1115,14.05060946,15.37546554,0.022978822,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,Further education below degree,NA,NA,12.99813585,271,12.20919292,13.8380593,0.031936573,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,A level and equivalent,NA,NA,12.08849859,1014,11.5890376,12.6094852,0.021520739,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,Highest qualification,"O level, GCSE and equivalent",NA,NA,10.96538621,407,10.4069792,11.55375565,0.026657831,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,Lower level (below CSE grade 1),NA,NA,8.738056203,223,8.252814791,9.251828394,0.029141333,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,Higher degree,NA,NA,14.46047989,581,13.82675915,15.12324589,0.02285752,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,First degree,NA,NA,13.0354502,1577,12.56993781,13.51820228,0.018547988,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,Further education below degree,NA,NA,10.57642698,294,10.01757888,11.16645139,0.027689088,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,A level and equivalent,NA,NA,9.690115151,1034,9.348321226,10.04440577,0.018315923,Pounds,NA
+IN35,Income returns to education,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,Highest qualification,"O level, GCSE and equivalent",NA,NA,9.486949134,373,9.046740524,9.948578012,0.024234129,Pounds,NA
