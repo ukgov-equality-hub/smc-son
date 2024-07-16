@@ -1,0 +1,62 @@
+"ind_code","ind_name","area_type","area_code","area_name","time_period","seb","age","sex","category_type","category","category_type2","category2","value","sample_size","lci","uci","se","unit","value_note"
+"DR51","Broadband speed","Country","K02000001","England",2023,"Total",NA,"Total",NA,NA,NA,NA,77,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Northern Ireland",2023,"Total",NA,"Total",NA,NA,NA,NA,91,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Scotland",2023,"Total",NA,"Total",NA,NA,NA,NA,70,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Wales",2023,"Total",NA,"Total",NA,NA,NA,NA,63,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","United Kingdom",2023,"Total",NA,"Total",NA,NA,NA,NA,76,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","England",2022,"Total",NA,"Total",NA,NA,NA,NA,70,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Northern Ireland",2022,"Total",NA,"Total",NA,NA,NA,NA,85,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Scotland",2022,"Total",NA,"Total",NA,NA,NA,NA,62,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Wales",2022,"Total",NA,"Total",NA,NA,NA,NA,51,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","United Kingdom",2022,"Total",NA,"Total",NA,NA,NA,NA,69,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","England",2021,"Total",NA,"Total",NA,NA,NA,NA,45,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Northern Ireland",2021,"Total",NA,"Total",NA,NA,NA,NA,74,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Scotland",2021,"Total",NA,"Total",NA,NA,NA,NA,50,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Wales",2021,"Total",NA,"Total",NA,NA,NA,NA,35,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","United Kingdom",2021,"Total",NA,"Total",NA,NA,NA,NA,46,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","England",2020,"Total",NA,"Total",NA,NA,NA,NA,25,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Northern Ireland",2020,"Total",NA,"Total",NA,NA,NA,NA,54,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Scotland",2020,"Total",NA,"Total",NA,NA,NA,NA,46,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","Wales",2020,"Total",NA,"Total",NA,NA,NA,NA,18,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","Country","K02000001","United Kingdom",2020,"Total",NA,"Total",NA,NA,NA,NA,27,NA,NA,NA,NA,"Percentage",NA
+"DR51","Broadband speed","ITL2","K02000001","Inner London - West",2023,"Total",NA,"Total","Quintile",4,NA,NA,84.1791263290815,551976,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Inner London - East",2023,"Total",NA,"Total","Quintile",4,NA,NA,84.1311839830167,924966,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Outer London - East and North East",2023,"Total",NA,"Total","Quintile",5,NA,NA,88.5242229138374,699429,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Outer London - South",2023,"Total",NA,"Total","Quintile",5,NA,NA,88.7905362279559,507762,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Outer London - West and North West",2023,"Total",NA,"Total","Quintile",4,NA,NA,83.3113360563009,733483,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Greater Manchester",2023,"Total",NA,"Total","Quintile",5,NA,NA,84.7564637961177,1138787,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Lancashire",2023,"Total",NA,"Total","Quintile",3,NA,NA,73.3533892595425,547641,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Cheshire",2023,"Total",NA,"Total","Quintile",3,NA,NA,74.7491010174455,906735,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Merseyside",2023,"Total",NA,"Total","Quintile",4,NA,NA,83.2654161843628,633017,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Tees Valley and Durham",2023,"Total",NA,"Total","Quintile",1,NA,NA,61.180249465689,1336537,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Northumberland, and Tyne and Wear",2023,"Total",NA,"Total","Quintile",2,NA,NA,63.6836564508694,983617,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Cumbria",2023,"Total",NA,"Total","Quintile",1,NA,NA,37.756042345395,104070,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","East Yorkshire and Northern Lincolnshire",2023,"Total",NA,"Total","Quintile",5,NA,NA,87.3306831887074,401150,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","North Yorkshire",2023,"Total",NA,"Total","Quintile",2,NA,NA,61.9116874722256,260525,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","South Yorkshire",2023,"Total",NA,"Total","Quintile",4,NA,NA,77.5785517837557,514224,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","West Yorkshire",2023,"Total",NA,"Total","Quintile",4,NA,NA,84.3398730477138,913206,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Derbyshire and Nottinghamshire",2023,"Total",NA,"Total","Quintile",3,NA,NA,76.1539965152134,814253,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Leicestershire, Rutland and Northamptonshire",2023,"Total",NA,"Total","Quintile",5,NA,NA,84.6566818360389,1476112,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Lincolnshire",2023,"Total",NA,"Total","Quintile",2,NA,NA,63.0680098236119,239596,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Herefordshire, Worcestershire and Warwickshire",2023,"Total",NA,"Total","Quintile",3,NA,NA,72.3227706485834,484517,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Shropshire and Staffordshire",2023,"Total",NA,"Total","Quintile",1,NA,NA,61.3889396325718,870373,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","West Midlands",2023,"Total",NA,"Total","Quintile",5,NA,NA,91.2527525431083,1152452,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","East Anglia",2023,"Total",NA,"Total","Quintile",2,NA,NA,62.539529384398,908720,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Bedfordshire and Hertfordshire",2023,"Total",NA,"Total","Quintile",4,NA,NA,82.1013496307614,806030,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Essex",2023,"Total",NA,"Total","Quintile",3,NA,NA,74.2508182732842,641311,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Berkshire, Buckinghamshire and Oxfordshire",2023,"Total",NA,"Total","Quintile",4,NA,NA,77.858264095641,1449302,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Surrey, East and West Sussex",2023,"Total",NA,"Total","Quintile",2,NA,NA,70.027456323809,956949,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Hampshire and Isle of Wight",2023,"Total",NA,"Total","Quintile",3,NA,NA,74.9854018543619,707572,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Kent",2023,"Total",NA,"Total","Quintile",2,NA,NA,71.2952340862518,616507,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Gloucestershire, Wiltshire and Bath/Bristol area",2023,"Total",NA,"Total","Quintile",2,NA,NA,70.4721997216857,1357210,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Devon",2023,"Total",NA,"Total","Quintile",2,NA,NA,69.3433369198905,429220,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Dorset and Somerset",2023,"Total",NA,"Total","Quintile",1,NA,NA,61.4655906532046,1190224,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Cornwall and Isles of Scilly",2023,"Total",NA,"Total","Quintile",1,NA,NA,45.8206881164205,846101,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","West Wales and The Valleys",2023,"Total",NA,"Total","Quintile",1,NA,NA,57.1196382880503,565461,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","East Wales",2023,"Total",NA,"Total","Quintile",3,NA,NA,71.9090910692298,408220,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","North Eastern Scotland",2023,"Total",NA,"Total","Quintile",1,NA,NA,57.701708659137,149433,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Eastern Scotland",2023,"Total",NA,"Total","Quintile",3,NA,NA,76.5903146334824,796177,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Highlands and Islands",2023,"Total",NA,"Total","Quintile",1,NA,NA,27.7104817129197,75697,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Southern Scotland",2023,"Total",NA,"Total","Quintile",1,NA,NA,61.3205107610088,313013,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","West Central Scotland",2023,"Total",NA,"Total","Quintile",5,NA,NA,85.6855415675817,676681,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
+"DR51","Broadband speed","ITL2","K02000001","Northern Ireland",2023,"Total",NA,"Total","Quintile",5,NA,NA,91,NA,NA,NA,NA,"Percentage","Gigabit availability (% premises)"
