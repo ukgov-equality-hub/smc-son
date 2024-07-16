@@ -1,0 +1,7 @@
+"ind_code","ind_name","area_type","area_code","area_name","time_period","seb","age","sex","category_type","category","category_type2","category2","value","sample_size","lci","uci","se","unit","value_note"
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2015,"Intermediate","25","Total",NA,NA,NA,NA,37.5715543226013,226,31.2572909324979,43.8858177127047,3.22156295413439,"Percentage",NA
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2022,"Intermediate","32","Total",NA,NA,NA,NA,51.6139826858605,135,43.1838810380078,60.0440843337133,4.30107226931261,"Percentage",NA
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2015,"Professional","25","Total",NA,NA,NA,NA,55.0849958120765,248,48.8942551168871,61.2757365072658,3.15854117101497,"Percentage",NA
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2022,"Professional","32","Total",NA,NA,NA,NA,73.8522243222658,233,68.2096501560417,79.4947984884899,2.87886437052252,"Percentage",NA
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2015,"Working","25","Total",NA,NA,NA,NA,24.9339738503842,230,19.3427147754455,30.5252329253229,2.85268320149932,"Percentage",NA
+"IN41","Further training and qualifications","Country","K02000001","United Kingdom",2022,"Working","32","Total",NA,NA,NA,NA,38.7942447299126,130,30.4177141844984,47.1707752753268,4.27374007419092,"Percentage",NA

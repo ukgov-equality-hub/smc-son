@@ -1,0 +1,7 @@
+ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2015,Working,25,Total,NA,NA,NA,NA,24.93397385,230,19.34271478,30.52523293,2.852683201,Percentage,NA
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2022,Working,32,Total,NA,NA,NA,NA,38.79424473,130,30.41771418,47.17077528,4.273740074,Percentage,NA
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2015,Intermediate,25,Total,NA,NA,NA,NA,37.57155432,226,31.25729093,43.88581771,3.221562954,Percentage,NA
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2022,Intermediate,32,Total,NA,NA,NA,NA,51.61398269,135,43.18388104,60.04408433,4.301072269,Percentage,NA
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2015,Professional,25,Total,NA,NA,NA,NA,55.08499581,248,48.89425512,61.27573651,3.158541171,Percentage,NA
+IN41,Further training and qualifications,Country,K02000001,United Kingdom,2022,Professional,32,Total,NA,NA,NA,NA,73.85222432,233,68.20965016,79.49479849,2.878864371,Percentage,NA
