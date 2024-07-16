@@ -1,0 +1,101 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,44,Women,NA,NA,NA,NA,20648.79362,NA,19521.81466,21775.77257,574.9998281,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,43,Women,NA,NA,NA,NA,21086.19953,NA,20080.92735,22091.47171,512.903394,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,42,Women,NA,NA,NA,NA,21428.49432,NA,20526.95859,22330.03005,459.9756608,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,41,Women,NA,NA,NA,NA,21675.67797,NA,20860.19535,22491.1606,416.0702084,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,40,Women,NA,NA,NA,NA,21827.7505,NA,21081.32652,22574.17447,380.8355574,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,39,Women,NA,NA,NA,NA,21884.71189,NA,21191.52205,22577.90174,353.6747879,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,38,Women,NA,NA,NA,NA,21846.56216,NA,21192.39767,22500.72665,333.7635277,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,37,Women,NA,NA,NA,NA,21713.3013,NA,21085.82306,22340.77954,320.1478421,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,36,Women,NA,NA,NA,NA,21484.92931,NA,20873.60072,22096.25789,311.9080718,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,35,Women,NA,NA,NA,NA,21161.44619,NA,20557.10889,21765.78348,308.3410223,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,34,Women,NA,NA,NA,NA,20742.85193,NA,20137.01607,21348.6878,309.1056119,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,33,Women,NA,NA,NA,NA,20229.14655,NA,19613.14114,20845.15197,314.2942527,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,32,Women,NA,NA,NA,NA,19620.33004,NA,18984.48901,20256.17108,324.4146542,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,31,Women,NA,NA,NA,NA,18916.40241,NA,18249.4555,19583.34931,340.2852847,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,30,Women,NA,NA,NA,NA,18117.36364,NA,17406.15523,18828.57204,362.8681006,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,29,Women,NA,NA,NA,NA,17223.21374,NA,16452.78056,17993.64692,393.0853774,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,28,Women,NA,NA,NA,NA,16233.95271,NA,15387.88079,17080.02463,431.6772787,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Women,NA,NA,NA,NA,15149.58055,NA,14210.48921,16088.67189,479.1370399,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,26,Women,NA,NA,NA,NA,13970.09727,NA,12920.10209,15020.09244,535.7216697,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25,Women,NA,NA,NA,NA,12695.50285,NA,11516.57038,13874.43532,601.5072114,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,44,Women,NA,NA,NA,NA,22777.42195,NA,21678.45578,23876.38811,560.7073251,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,43,Women,NA,NA,NA,NA,23217.86717,NA,22238.47664,24197.25769,499.6982238,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,42,Women,NA,NA,NA,NA,23563.20126,NA,22685.32769,24441.07483,447.902909,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,41,Women,NA,NA,NA,NA,23813.42422,NA,23019.40038,24607.44806,405.1216481,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,40,Women,NA,NA,NA,NA,23968.53605,NA,23241.54634,24695.52575,370.9199302,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,39,Women,NA,NA,NA,NA,24028.53675,NA,23353.1485,24703.92499,344.5921714,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,38,Women,NA,NA,NA,NA,23993.42632,NA,23356.05637,24630.79627,325.1947254,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,37,Women,NA,NA,NA,NA,23863.20476,NA,23252.35088,24474.05865,311.6658709,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,36,Women,NA,NA,NA,NA,23637.87208,NA,23043.98293,24231.76123,303.0102362,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,35,Women,NA,NA,NA,NA,23317.42826,NA,22732.39056,23902.46596,298.4941063,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,34,Women,NA,NA,NA,NA,22901.87331,NA,22318.20047,23485.54616,297.797739,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,33,Women,NA,NA,NA,NA,22391.20724,NA,21801.07996,22981.33452,301.0908802,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,32,Women,NA,NA,NA,NA,21785.43003,NA,21179.77081,22391.08926,309.0154871,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,31,Women,NA,NA,NA,NA,21084.5417,NA,20452.31384,21716.76956,322.5711608,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,30,Women,NA,NA,NA,NA,20288.54224,NA,19616.43317,20960.6513,342.9190907,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,29,Women,NA,NA,NA,NA,19397.43164,NA,18669.97974,20124.88355,371.1557507,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,28,Women,NA,NA,NA,NA,18411.20992,NA,17611.28446,19211.13538,408.1327333,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,27,Women,NA,NA,NA,NA,17329.87707,NA,16439.30998,18220.44415,454.3793105,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,26,Women,NA,NA,NA,NA,16153.43309,NA,15153.60157,17153.2646,510.1274951,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25,Women,NA,NA,NA,NA,14881.87797,NA,13754.12595,16009.63,575.3942604,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,44,Women,NA,NA,NA,NA,25240.95585,NA,24250.54453,26231.36717,505.3211828,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,43,Women,NA,NA,NA,NA,25623.66604,NA,24748.53456,26498.79751,446.5038553,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,42,Women,NA,NA,NA,NA,25911.26509,NA,25132.31188,26690.2183,397.4324084,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,41,Women,NA,NA,NA,NA,26103.75302,NA,25402.23584,26805.2702,357.9235052,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,40,Women,NA,NA,NA,NA,26201.12981,NA,25559.33801,26842.92161,327.4508143,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,39,Women,NA,NA,NA,NA,26203.39548,NA,25605.44888,26801.34207,305.080399,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,38,Women,NA,NA,NA,NA,26110.55001,NA,25543.08935,26678.01068,289.5260675,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,37,Women,NA,NA,NA,NA,25922.59342,NA,25375.08977,26470.09707,279.3437296,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,36,Women,NA,NA,NA,NA,25639.5257,NA,25104.05466,26174.99673,273.2045279,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,35,Women,NA,NA,NA,NA,25261.34685,NA,24731.86048,25790.83322,270.151072,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,34,Women,NA,NA,NA,NA,24788.05687,NA,24259.31179,25316.80194,269.7728521,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,33,Women,NA,NA,NA,NA,24219.65576,NA,23685.98801,24753.3235,272.2844642,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,32,Women,NA,NA,NA,NA,23556.14351,NA,23010.28177,24102.00526,278.5060072,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,31,Women,NA,NA,NA,NA,22797.52014,NA,22229.65019,23365.3901,289.734894,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,30,Women,NA,NA,NA,NA,21943.78565,NA,21341.08948,22546.48181,307.5036922,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,29,Women,NA,NA,NA,NA,20994.94002,NA,20341.74333,21648.13671,333.2697416,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,28,Women,NA,NA,NA,NA,19950.98326,NA,19229.42808,20672.53844,368.1471628,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,27,Women,NA,NA,NA,NA,18811.91537,NA,18002.86626,19620.96448,412.787742,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,26,Women,NA,NA,NA,NA,17577.73635,NA,16661.60009,18493.87261,467.4250491,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25,Women,NA,NA,NA,NA,16248.44621,NA,15205.73075,17291.16166,532.0074585,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,44,Women,NA,NA,NA,NA,29801.50874,NA,28663.68762,30939.32986,580.531647,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,43,Women,NA,NA,NA,NA,30078.3736,NA,29065.53598,31091.21121,516.7633823,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,42,Women,NA,NA,NA,NA,30260.12733,NA,29354.41967,31165.83498,462.104234,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,41,Women,NA,NA,NA,NA,30346.76993,NA,29530.70187,31162.83799,416.368906,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,40,Women,NA,NA,NA,NA,30338.3014,NA,29595.16782,31081.43497,379.1567497,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,39,Women,NA,NA,NA,NA,30234.72174,NA,29549.10739,30920.33609,349.8096671,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,38,Women,NA,NA,NA,NA,30036.03095,NA,29394.28402,30677.77788,327.4279216,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,37,Women,NA,NA,NA,NA,29742.22903,NA,29132.74455,30351.71352,310.9671844,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,36,Women,NA,NA,NA,NA,29353.31599,NA,28766.48953,29940.14244,299.4067529,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,35,Women,NA,NA,NA,NA,28869.29181,NA,28297.08844,29441.49518,291.9458585,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,34,Women,NA,NA,NA,NA,28290.1565,NA,27725.34206,28854.97095,288.1759292,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,33,Women,NA,NA,NA,NA,27615.91007,NA,27051.06926,28180.75088,288.1893819,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,32,Women,NA,NA,NA,NA,26846.5525,NA,26273.06841,27420.0366,292.5993021,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,31,Women,NA,NA,NA,NA,25982.08381,NA,25389.29043,26574.87719,302.4511592,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,30,Women,NA,NA,NA,NA,25022.50399,NA,24397.22708,25647.78089,319.0246923,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,29,Women,NA,NA,NA,NA,23967.81303,NA,23294.42914,24641.19692,343.5695234,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,28,Women,NA,NA,NA,NA,22818.01095,NA,22078.96952,23557.05238,377.0688836,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,27,Women,NA,NA,NA,NA,21573.09774,NA,20749.67276,22396.52271,420.1225022,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,26,Women,NA,NA,NA,NA,20233.0734,NA,19306.07412,21160.07267,472.9675049,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25,Women,NA,NA,NA,NA,18797.93792,NA,17748.21621,19847.65964,535.5821432,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,44,Women,NA,NA,NA,NA,34402.13912,NA,33255.17033,35549.10791,585.1989101,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,43,Women,NA,NA,NA,NA,34610.34036,NA,33588.49588,35632.18484,521.3588057,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,42,Women,NA,NA,NA,NA,34723.43048,NA,33809.25189,35637.60906,466.4262175,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,41,Women,NA,NA,NA,NA,34741.40946,NA,33917.79745,35565.02148,420.2179337,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,40,Women,NA,NA,NA,NA,34664.27732,NA,33914.85532,35413.69932,382.3651887,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,39,Women,NA,NA,NA,NA,34492.03404,NA,33801.57716,35182.49093,352.2803949,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,38,Women,NA,NA,NA,NA,34224.67964,NA,33579.51187,34869.84741,329.1732794,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,37,Women,NA,NA,NA,NA,33862.21411,NA,33250.4362,34473.99201,312.137319,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,36,Women,NA,NA,NA,NA,33404.63744,NA,32816.05976,33993.21512,300.3002522,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,35,Women,NA,NA,NA,NA,32851.94965,NA,32277.67558,33426.22372,293.0023566,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,34,Women,NA,NA,NA,NA,32204.15073,NA,31635.85314,32772.44832,289.9530769,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,33,Women,NA,NA,NA,NA,31461.24068,NA,30890.2582,32032.22315,291.3229433,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,32,Women,NA,NA,NA,NA,30623.2195,NA,30039.65778,31206.78121,297.7410395,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,31,Women,NA,NA,NA,NA,29690.08719,NA,29082.13724,30298.03713,310.1842434,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,30,Women,NA,NA,NA,NA,28661.84375,NA,28015.49803,29308.18947,329.7742832,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,29,Women,NA,NA,NA,NA,27538.48918,NA,26837.71638,28239.26198,357.5437143,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,28,Women,NA,NA,NA,NA,26320.02348,NA,25547.29085,27092.75611,394.258585,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,27,Women,NA,NA,NA,NA,25006.44665,NA,24143.36507,25869.52824,440.3558381,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,26,Women,NA,NA,NA,NA,23597.75869,NA,22625.64431,24569.87308,495.9858406,Predictive margins,NA
+IN43,Income progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25,Women,NA,NA,NA,NA,22093.95961,NA,20994.21373,23193.70549,561.1051479,Predictive margins,NA
