@@ -1,0 +1,101 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25,Men,NA,NA,NA,NA,0.239166981,NA,0.229118125,0.249215837,0.005127062,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,26,Men,NA,NA,NA,NA,0.252442321,NA,0.243384739,0.261499903,0.0046213,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,27,Men,NA,NA,NA,NA,0.264987815,NA,0.25666116,0.273314469,0.004248371,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,28,Men,NA,NA,NA,NA,0.276683352,NA,0.268780872,0.284585832,0.004031952,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,29,Men,NA,NA,NA,NA,0.287422153,NA,0.279641562,0.295202743,0.003969762,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,30,Men,NA,NA,NA,NA,0.297111083,NA,0.289207903,0.305014264,0.004032309,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,31,Men,NA,NA,NA,NA,0.305670494,NA,0.29748823,0.313852758,0.004174701,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,32,Men,NA,NA,NA,NA,0.313033693,NA,0.304503991,0.321563396,0.004351969,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,33,Men,NA,NA,NA,NA,0.319146205,NA,0.310270627,0.328021783,0.004528439,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,34,Men,NA,NA,NA,NA,0.323964912,NA,0.314791419,0.333138406,0.00468044,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,35,Men,NA,NA,NA,NA,0.327457211,NA,0.318057698,0.336856723,0.004795758,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,36,Men,NA,NA,NA,NA,0.329600248,NA,0.320050373,0.339150124,0.004872475,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,37,Men,NA,NA,NA,NA,0.330380331,NA,0.320740795,0.340019866,0.004918221,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,38,Men,NA,NA,NA,NA,0.329792535,NA,0.320090971,0.339494099,0.004949869,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,39,Men,NA,NA,NA,NA,0.327840568,NA,0.318054228,0.337626907,0.004993122,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,40,Men,NA,NA,NA,NA,0.324536871,NA,0.314578478,0.334495264,0.005080906,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,41,Men,NA,NA,NA,NA,0.319902978,NA,0.309614436,0.330191519,0.005249352,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,42,Men,NA,NA,NA,NA,0.313970078,NA,0.303129366,0.32481079,0.005531077,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,43,Men,NA,NA,NA,NA,0.30677976,NA,0.295122413,0.318437107,0.005947735,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower working,44,Men,NA,NA,NA,NA,0.29838485,NA,0.285634517,0.311135183,0.006505391,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25,Men,NA,NA,NA,NA,0.299218976,NA,0.287846282,0.31059167,0.005802501,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,26,Men,NA,NA,NA,NA,0.317088139,NA,0.306961359,0.327214919,0.005166819,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,27,Men,NA,NA,NA,NA,0.334133667,NA,0.324955299,0.343312035,0.004682927,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,28,Men,NA,NA,NA,NA,0.350213097,NA,0.341627466,0.358798729,0.004380505,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,29,Men,NA,NA,NA,NA,0.365203833,NA,0.356855172,0.373552494,0.004259599,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,30,Men,NA,NA,NA,NA,0.379002786,NA,0.370599661,0.387405911,0.004287388,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,31,Men,NA,NA,NA,NA,0.39152524,NA,0.382878969,0.400171511,0.004411444,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,32,Men,NA,NA,NA,NA,0.402703172,NA,0.393728946,0.411677398,0.004578771,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,33,Men,NA,NA,NA,NA,0.412483237,NA,0.403177808,0.421788667,0.004747755,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,34,Men,NA,NA,NA,NA,0.420824623,NA,0.411237605,0.430411641,0.004891426,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,35,Men,NA,NA,NA,NA,0.42769693,NA,0.417904025,0.437489836,0.004996472,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,36,Men,NA,NA,NA,NA,0.433078206,NA,0.423157676,0.442998737,0.005061588,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,37,Men,NA,NA,NA,NA,0.436953233,NA,0.426964206,0.446942261,0.005096536,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,38,Men,NA,NA,NA,NA,0.439312134,NA,0.429273114,0.449351154,0.005122043,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,39,Men,NA,NA,NA,NA,0.440149339,NA,0.430016702,0.450281976,0.005169808,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,40,Men,NA,NA,NA,NA,0.439462954,NA,0.429112089,0.449813818,0.00528115,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,41,Men,NA,NA,NA,NA,0.437254528,NA,0.426469966,0.448039091,0.005502429,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,42,Men,NA,NA,NA,NA,0.433529246,NA,0.42201121,0.445047282,0.005876657,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,43,Men,NA,NA,NA,NA,0.428296519,NA,0.415685822,0.440907217,0.006434148,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher working,44,Men,NA,NA,NA,NA,0.42157098,NA,0.407484202,0.435657757,0.007187263,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25,Men,NA,NA,NA,NA,0.324196907,NA,0.31260374,0.335790074,0.00591499,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,26,Men,NA,NA,NA,NA,0.343875308,NA,0.333704427,0.354046188,0.00518932,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,27,Men,NA,NA,NA,NA,0.362671666,NA,0.353620892,0.37172244,0.004617827,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,28,Men,NA,NA,NA,NA,0.380436967,NA,0.372133815,0.388740119,0.00423638,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,29,Men,NA,NA,NA,NA,0.397045637,NA,0.389104965,0.40498631,0.004051438,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,30,Men,NA,NA,NA,NA,0.412394751,NA,0.404491552,0.42029795,0.004032319,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,31,Men,NA,NA,NA,NA,0.426402337,NA,0.41832133,0.434483345,0.004123039,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,32,Men,NA,NA,NA,NA,0.439005084,NA,0.430646681,0.447363487,0.00426457,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,33,Men,NA,NA,NA,NA,0.45015569,NA,0.441511871,0.45879951,0.004410193,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,34,Men,NA,NA,NA,NA,0.459820106,NA,0.450941703,0.468698509,0.004529881,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,35,Men,NA,NA,NA,NA,0.467974838,NA,0.458941267,0.477008409,0.004609049,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,36,Men,NA,NA,NA,NA,0.474604457,NA,0.465497575,0.483711339,0.004646454,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,37,Men,NA,NA,NA,NA,0.479699404,NA,0.470579471,0.488819336,0.004653112,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,38,Men,NA,NA,NA,NA,0.483254158,NA,0.474135567,0.49237275,0.004652428,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,39,Men,NA,NA,NA,NA,0.485265813,NA,0.476092045,0.494439581,0.00468058,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,40,Men,NA,NA,NA,NA,0.485733066,NA,0.476354459,0.495111673,0.004785092,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,41,Men,NA,NA,NA,NA,0.48465565,NA,0.47481887,0.494492431,0.005018858,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,42,Men,NA,NA,NA,NA,0.482034201,NA,0.471393331,0.492675072,0.005429115,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,43,Men,NA,NA,NA,NA,0.477870563,NA,0.466019983,0.489721144,0.006046326,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,44,Men,NA,NA,NA,NA,0.472168531,NA,0.458683672,0.485653391,0.006880157,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25,Men,NA,NA,NA,NA,0.425938624,NA,0.412764912,0.439112337,0.006721405,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,26,Men,NA,NA,NA,NA,0.452010338,NA,0.440507888,0.463512787,0.005868705,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,27,Men,NA,NA,NA,NA,0.476804753,NA,0.466578967,0.48703054,0.005217334,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,28,Men,NA,NA,NA,NA,0.500168154,NA,0.490774448,0.509561861,0.004792796,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,29,Men,NA,NA,NA,NA,0.521988559,NA,0.513004646,0.530972473,0.004583713,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,30,Men,NA,NA,NA,NA,0.542191541,NA,0.533288145,0.551094938,0.004542633,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,31,Men,NA,NA,NA,NA,0.560734938,NA,0.551709173,0.569760702,0.004605067,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,32,Men,NA,NA,NA,NA,0.577603062,NA,0.568368196,0.586837928,0.004711753,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,33,Men,NA,NA,NA,NA,0.592800893,NA,0.583353513,0.602248273,0.00482018,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,34,Men,NA,NA,NA,NA,0.606348593,NA,0.596733429,0.615963757,0.004905786,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,35,Men,NA,NA,NA,NA,0.618276561,NA,0.60855718,0.627995942,0.004958959,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,36,Men,NA,NA,NA,NA,0.628621139,NA,0.618856849,0.638385429,0.004981872,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,37,Men,NA,NA,NA,NA,0.637420991,NA,0.627647722,0.647194261,0.004986454,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,38,Men,NA,NA,NA,NA,0.644714147,NA,0.634927182,0.654501113,0.004993442,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,39,Men,NA,NA,NA,NA,0.650535642,NA,0.640673413,0.660397871,0.005031842,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,40,Men,NA,NA,NA,NA,0.654915691,NA,0.644846075,0.664985307,0.005137654,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,41,Men,NA,NA,NA,NA,0.657878324,NA,0.647391272,0.668365377,0.005350635,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,42,Men,NA,NA,NA,NA,0.659440421,NA,0.648251277,0.670629565,0.005708852,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,43,Men,NA,NA,NA,NA,0.659611081,NA,0.64737541,0.671846752,0.006242804,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,44,Men,NA,NA,NA,NA,0.658391307,NA,0.644726008,0.672056606,0.006972219,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25,Men,NA,NA,NA,NA,0.478707436,NA,0.465011958,0.492402915,0.006987618,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,26,Men,NA,NA,NA,NA,0.507298417,NA,0.495383192,0.519213642,0.006079308,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,27,Men,NA,NA,NA,NA,0.534304356,NA,0.52373806,0.544870652,0.005391066,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,28,Men,NA,NA,NA,NA,0.559588684,NA,0.549911297,0.569266072,0.004937533,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,29,Men,NA,NA,NA,NA,0.583066734,NA,0.573861972,0.592271495,0.004696393,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,30,Men,NA,NA,NA,NA,0.604698478,NA,0.595654801,0.613742155,0.004614206,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,31,Men,NA,NA,NA,NA,0.624480434,NA,0.615412393,0.633548475,0.004626637,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,32,Men,NA,NA,NA,NA,0.642437509,NA,0.633268585,0.651606434,0.004678109,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,33,Men,NA,NA,NA,NA,0.658615346,NA,0.649343709,0.667886983,0.004730514,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,34,Men,NA,NA,NA,NA,0.673073506,NA,0.663738249,0.682408763,0.004762974,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,35,Men,NA,NA,NA,NA,0.685879651,NA,0.676533886,0.695225415,0.004768335,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,36,Men,NA,NA,NA,NA,0.697104752,NA,0.68779533,0.706414173,0.004749792,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,37,Men,NA,NA,NA,NA,0.706819261,NA,0.697570849,0.716067673,0.004718664,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,38,Men,NA,NA,NA,NA,0.715090142,NA,0.705891605,0.72428868,0.004693218,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,39,Men,NA,NA,NA,NA,0.721978633,NA,0.712770812,0.731186453,0.004697954,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,40,Men,NA,NA,NA,NA,0.72753859,NA,0.718204259,0.73687292,0.004762501,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,41,Men,NA,NA,NA,NA,0.731815313,NA,0.72217382,0.741456806,0.00491922,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,42,Men,NA,NA,NA,NA,0.734844725,NA,0.724654267,0.745035183,0.005199309,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,43,Men,NA,NA,NA,NA,0.736652824,NA,0.725620998,0.74768465,0.005628586,Predictive margins,NA
+IN42,Occupational progression,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,44,Men,NA,NA,NA,NA,0.737255343,NA,0.725054425,0.74945626,0.006225072,Predictive margins,NA
