@@ -1,0 +1,30 @@
+﻿time_period,seb,sample_size,value,sex,category_type,category,ind_code,ind_name,age,area_type,area_code,area_name,lci,uci,se,category_type2,category2,unit,value_note,Quintile,time_period_formatted
+201819,Eligible for free school meals,89742,57,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2018/19
+201718,Eligible for free school meals,87190,57,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2017/18
+201617,Eligible for free school meals,91641,56,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2016/17
+201516,Eligible for free school meals,93538,54,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2015/16
+201415,Eligible for free school meals,97156,51,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2014/15
+201314,Eligible for free school meals,112697,45,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2013/14
+201213,Eligible for free school meals,118945,36,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2012/13
+202223,Eligible for free school meals,109100,51.6,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2022/23
+202122,Eligible for free school meals,113882,49.1,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2021/22
+201819,Not eligible for free school meals,549204,74,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2018/19
+201718,Not eligible for free school meals,565159,74,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2017/18
+201617,Not eligible for free school meals,578223,73,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2016/17
+201516,Not eligible for free school meals,575514,72,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2015/16
+201415,Not eligible for free school meals,557692,69,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2014/15
+201314,Not eligible for free school meals,528634,64,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2013/14
+201213,Not eligible for free school meals,524357,55,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2012/13
+202223,Not eligible for free school meals,495247,71.5,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2022/23
+202122,Not eligible for free school meals,495996,69.5,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2021/22
+201819,Total,638946,72,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2018/19
+201718,Total,652349,72,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2017/18
+201617,Total,669864,71,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2016/17
+201516,Total,669052,69,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2015/16
+201415,Total,654848,66,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2014/15
+201314,Total,641331,60,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2013/14
+201213,Total,643302,52,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2012/13
+202223,Total,618891,67.2,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2022/23
+202122,Total,622583,65.2,Total,NA,Total,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,2021/22
+201920,Total,,,,,,,,,,,,,,,,,,,,2019/20
+202021,Total,,,,,,,,,,,,,,,,,,,,2020/21

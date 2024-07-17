@@ -1,0 +1,11 @@
+﻿time_period,seb,sample_size,value,sex,category_type,category,ind_code,ind_name,age,area_type,area_code,area_name,lci,uci,se,category_type2,category2,unit,value_note,Quintile
+202223,NA,79288,58.1,Total,IDACI decile,1,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,73080,61.1,Total,IDACI decile,2,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,67543,63.6,Total,IDACI decile,3,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,66335,65.6,Total,IDACI decile,4,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,61970,67.9,Total,IDACI decile,5,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,58827,69.3,Total,IDACI decile,6,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,55542,71.1,Total,IDACI decile,7,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,53106,73.2,Total,IDACI decile,8,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,52126,74.4,Total,IDACI decile,9,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,NA,49891,76.6,Total,IDACI decile,10,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
