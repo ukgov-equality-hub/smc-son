@@ -1,34 +1,34 @@
-﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile
-IN13,Attainment at age 16,ITL2,NA,Bedfordshire and Hertfordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,54.9522109,19042,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,56.64630293,23735,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Cheshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,50.84784866,8669,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,Cornwall and Isles of Scilly,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,44.49078139,4556,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,Cumbria,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,44.06235672,4362,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,Derbyshire and Nottinghamshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,49.19487909,17575,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,Devon,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,50.68979933,9568,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,Dorset and Somerset,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,48.82190213,10483,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,East Anglia,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,47.60315981,20381,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,East Yorkshire and Northern Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,45.05106049,7638,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,Essex,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,49.44019904,16881,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,51.5826768,21451,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,Greater Manchester,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,49.81604121,24462,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,Hampshire and Isle of Wight,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,48.23491861,15665,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,51.36355889,11734,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,Inner London - East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,57.45053661,13697,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Inner London - West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,64.98567335,5235,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Kent,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,52.58278918,17152,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,Lancashire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,48.95971324,12833,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,47.79298983,17603,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,48.79840808,6533,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,Merseyside,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,46.08128966,11662,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,North Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,51.34315425,6924,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,"Northumberland, and Tyne and Wear",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,50.07179094,10447,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,Outer London - East and North East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,56.21464084,17499,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Outer London - South,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,63.10206921,11502,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Outer London - West and North West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,62.58123886,17387,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
-IN13,Attainment at age 16,ITL2,NA,Shropshire and Staffordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,43.78672782,13954,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
-IN13,Attainment at age 16,ITL2,NA,South Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,48.99689951,10966,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,"Surrey, East and West Sussex",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,53.37738311,23761,NA,NA,NA,Percentage,NA,Q4
-IN13,Attainment at age 16,ITL2,NA,Tees Valley and Durham,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,49.51167728,9420,NA,NA,NA,Percentage,NA,Q3
-IN13,Attainment at age 16,ITL2,NA,West Midlands,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,49.08028123,24464,NA,NA,NA,Percentage,NA,Q2
-IN13,Attainment at age 16,ITL2,NA,West Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,50.29277174,20323,NA,NA,NA,Percentage,NA,Q3
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile,Quintile_number
+IN13,Attainment at age 16,ITL2,NA,Bedfordshire and Hertfordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.549522109,19042,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.566463029,23735,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Cheshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.508478487,8669,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,Cornwall and Isles of Scilly,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.444907814,4556,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,Cumbria,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.440623567,4362,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,Derbyshire and Nottinghamshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.491948791,17575,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,Devon,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.506897993,9568,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,Dorset and Somerset,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.488219021,10483,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,East Anglia,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.476031598,20381,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,East Yorkshire and Northern Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.450510605,7638,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,Essex,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.49440199,16881,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.515826768,21451,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,Greater Manchester,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.498160412,24462,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,Hampshire and Isle of Wight,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.482349186,15665,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.513635589,11734,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,Inner London - East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.574505366,13697,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Inner London - West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.649856734,5235,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Kent,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.525827892,17152,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,Lancashire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.489597132,12833,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.477929898,17603,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.487984081,6533,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,Merseyside,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.460812897,11662,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,North Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.513431542,6924,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,"Northumberland, and Tyne and Wear",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.500717909,10447,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,Outer London - East and North East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.562146408,17499,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Outer London - South,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.631020692,11502,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Outer London - West and North West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.625812389,17387,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+IN13,Attainment at age 16,ITL2,NA,Shropshire and Staffordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.437867278,13954,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+IN13,Attainment at age 16,ITL2,NA,South Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.489968995,10966,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,"Surrey, East and West Sussex",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.533773831,23761,NA,NA,NA,Percentage,NA,Q4,4
+IN13,Attainment at age 16,ITL2,NA,Tees Valley and Durham,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.495116773,9420,NA,NA,NA,Percentage,NA,Q3,3
+IN13,Attainment at age 16,ITL2,NA,West Midlands,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.490802812,24464,NA,NA,NA,Percentage,NA,Q2,2
+IN13,Attainment at age 16,ITL2,NA,West Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.502927717,20323,NA,NA,NA,Percentage,NA,Q3,3
