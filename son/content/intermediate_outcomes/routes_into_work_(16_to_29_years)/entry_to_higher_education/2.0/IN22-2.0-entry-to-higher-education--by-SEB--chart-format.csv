@@ -1,0 +1,7 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Lower working,18 to 20,Total,Education,NA,NA,NA,21.40186692,205,15.78736693,27.01636691,2.864540813,Percentage,NA
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Higher working,18 to 20,Total,Education,NA,NA,NA,33.52207915,151,25.99248123,41.05167707,3.84163159,Percentage,NA
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Intermediate,18 to 20,Total,Education,NA,NA,NA,29.17075428,249,23.52481068,34.81669789,2.880583471,Percentage,NA
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Lower professional,18 to 20,Total,Education,NA,NA,NA,36.6527689,266,30.86205024,42.44348757,2.954448298,Percentage,NA
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Higher professional,18 to 20,Total,Education,NA,NA,NA,47.12683045,292,41.4012907,52.85237021,2.921193752,Percentage,NA
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Total,18 to 20,Total,Education,NA,NA,NA,32.3718932,1656,30.11831014,34.62547626,1.149787276,Percentage,NA
