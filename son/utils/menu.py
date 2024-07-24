@@ -100,6 +100,10 @@ menu = {
                         {
                             'id': 'IN13',
                             'name': 'Attainment at age 16'
+                        },
+                        {
+                            'id': 'IN14',
+                            'name': 'Skills at age 15'
                         }
                     ]
                 },
