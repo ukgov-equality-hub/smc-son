@@ -1,0 +1,25 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile,time_period_formatted
+IN12,Attainment at age 11,Country,E92000001,England,201516,Disadvantaged,11,Total,NA,NA,NA,NA,39,186503,NA,NA,NA,Percentage,NA,NA,2015/16
+IN12,Attainment at age 11,Country,E92000001,England,201617,Disadvantaged,11,Total,NA,NA,NA,NA,47,189272,NA,NA,NA,Percentage,NA,NA,2016/17
+IN12,Attainment at age 11,Country,E92000001,England,201718,Disadvantaged,11,Total,NA,NA,NA,NA,51,190528,NA,NA,NA,Percentage,NA,NA,2017/18
+IN12,Attainment at age 11,Country,E92000001,England,201819,Disadvantaged,11,Total,NA,NA,NA,NA,51,197294,NA,NA,NA,Percentage,NA,NA,2018/19
+IN12,Attainment at age 11,Country,E92000001,England,201920,Disadvantaged,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2019/20
+IN12,Attainment at age 11,Country,E92000001,England,202021,Disadvantaged,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2020/21
+IN12,Attainment at age 11,Country,E92000001,England,202122,Disadvantaged,11,Total,NA,NA,NA,NA,43,197916,NA,NA,NA,Percentage,NA,NA,2021/22
+IN12,Attainment at age 11,Country,E92000001,England,202223,Disadvantaged,11,Total,NA,NA,NA,NA,44,203558,NA,NA,NA,Percentage,NA,NA,2022/23
+IN12,Attainment at age 11,Country,E92000001,England,201516,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,60,399077,NA,NA,NA,Percentage,NA,NA,2015/16
+IN12,Attainment at age 11,Country,E92000001,England,201617,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,67,409836,NA,NA,NA,Percentage,NA,NA,2016/17
+IN12,Attainment at age 11,Country,E92000001,England,201718,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,70,428831,NA,NA,NA,Percentage,NA,NA,2017/18
+IN12,Attainment at age 11,Country,E92000001,England,201819,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,71,447286,NA,NA,NA,Percentage,NA,NA,2018/19
+IN12,Attainment at age 11,Country,E92000001,England,201920,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2019/20
+IN12,Attainment at age 11,Country,E92000001,England,202021,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2020/21
+IN12,Attainment at age 11,Country,E92000001,England,202122,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,66,466266,NA,NA,NA,Percentage,NA,NA,2021/22
+IN12,Attainment at age 11,Country,E92000001,England,202223,Not known to be disadvantaged,11,Total,NA,NA,NA,NA,66,466913,NA,NA,NA,Percentage,NA,NA,2022/23
+IN12,Attainment at age 11,Country,E92000001,England,201516,Total,11,Total,NA,NA,NA,NA,53,585580,NA,NA,NA,Percentage,NA,NA,2015/16
+IN12,Attainment at age 11,Country,E92000001,England,201617,Total,11,Total,NA,NA,NA,NA,61,599108,NA,NA,NA,Percentage,NA,NA,2016/17
+IN12,Attainment at age 11,Country,E92000001,England,201718,Total,11,Total,NA,NA,NA,NA,64,619359,NA,NA,NA,Percentage,NA,NA,2017/18
+IN12,Attainment at age 11,Country,E92000001,England,201819,Total,11,Total,NA,NA,NA,NA,65,644580,NA,NA,NA,Percentage,NA,NA,2018/19
+IN12,Attainment at age 11,Country,E92000001,England,201920,Total,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2019/20
+IN12,Attainment at age 11,Country,E92000001,England,202021,Total,11,Total,NA,NA,NA,NA,x,x,NA,NA,NA,Percentage,NA,NA,2020/21
+IN12,Attainment at age 11,Country,E92000001,England,202122,Total,11,Total,NA,NA,NA,NA,59,664182,NA,NA,NA,Percentage,NA,NA,2021/22
+IN12,Attainment at age 11,Country,E92000001,England,202223,Total,11,Total,NA,NA,NA,NA,60,670471,NA,NA,NA,Percentage,NA,NA,2022/23
