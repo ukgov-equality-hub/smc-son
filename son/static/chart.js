@@ -1333,6 +1333,10 @@ class Chart {
                 return `${scale == 'currency' ? '£' : scale}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 2))}`
             } else if (['££', '$$', '€€'].includes(scale)) {
                 return `${scale == 'currency' ? '£' : scale.substr(0, 1)}${numberWithCommas(parseFloat(key, 10).toFixed(dp != null ? dp : 0))}`
+            } else if (['£m', '$m', '€m'].includes(scale)) {
+                return `${scale.substr(0, 1)}${numberWithCommas((parseFloat(key)/1000000).toFixed(dp != null ? dp : 0))}m`
+            } else if (['£bn', '$bn', '€bn'].includes(scale)) {
+                return `${scale.substr(0, 1)}${numberWithCommas((parseFloat(key)/1000000000).toFixed(dp != null ? dp : 0))}bn`
             } else if (scale == 'number') {
                 text = numberWithCommas(key)
             } else if (scale.toLowerCase() == 'ratio') {

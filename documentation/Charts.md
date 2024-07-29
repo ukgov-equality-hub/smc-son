@@ -111,6 +111,8 @@ The options include:
     * `%` - percentage
     * `£`, `$`, `€` - currency - values to 2 dp
     * `££`, `$$`, `€€` - currency - whole numbers
+    * `£m`, `$m`, `€m` - currency - whole numbers - in millions
+    * `£bn`, `$bn`, `€bn` - currency - whole numbers - in billions
     * `number` - number format, e.g. 1000 -> 1,000
     * `ratio` - adds 'x' to end of the value
     * `[any text]` - free text
