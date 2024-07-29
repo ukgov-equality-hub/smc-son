@@ -1,0 +1,42 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+DR52,Business expenditure on research and development,ITL2,NA,Bedfordshire and Hertfordshire,2018,Total,NA,Total,Quintile,5,NA,NA,103.1739234,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",2018,Total,NA,Total,Quintile,5,NA,NA,112.3381935,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Cheshire,2018,Total,NA,Total,Quintile,5,NA,NA,90.86884542,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Cornwall and Isles of Scilly,2018,Total,NA,Total,Quintile,1,NA,NA,5.441271072,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Cumbria,2018,Total,NA,Total,Quintile,4,NA,NA,36.5283738,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Derbyshire and Nottinghamshire,2018,Total,NA,Total,Quintile,5,NA,NA,66.82863344,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Devon,2018,Total,NA,Total,Quintile,1,NA,NA,14.6522105,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Dorset and Somerset,2018,Total,NA,Total,Quintile,2,NA,NA,20.90166568,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,East Anglia,2018,Total,NA,Total,Quintile,5,NA,NA,120.2782283,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,East Wales,2018,Total,NA,Total,Quintile,2,NA,NA,20.66185521,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,East Yorkshire and Northern Lincolnshire,2018,Total,NA,Total,Quintile,3,NA,NA,22.3225849,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Eastern Scotland,2018,Total,NA,Total,Quintile,4,NA,NA,44.53598453,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Essex,2018,Total,NA,Total,Quintile,4,NA,NA,42.29012079,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",2018,Total,NA,Total,Quintile,5,NA,NA,58.53429542,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Greater Manchester,2018,Total,NA,Total,Quintile,2,NA,NA,14.99752252,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Hampshire and Isle of Wight,2018,Total,NA,Total,Quintile,4,NA,NA,45.6289925,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",2018,Total,NA,Total,Quintile,5,NA,NA,135.2565577,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Highlands and Islands,2018,Total,NA,Total,Quintile,1,NA,NA,4.495483205,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Inner London - East,2018,Total,NA,Total,Quintile,3,NA,NA,24.30361803,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Inner London - West,2018,Total,NA,Total,Quintile,5,NA,NA,148.6700203,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Kent,2018,Total,NA,Total,Quintile,4,NA,NA,33.92259622,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Lancashire,2018,Total,NA,Total,Quintile,2,NA,NA,19.78444012,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",2018,Total,NA,Total,Quintile,3,NA,NA,24.72796656,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Lincolnshire,2018,Total,NA,Total,Quintile,1,NA,NA,8.639199114,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Merseyside,2018,Total,NA,Total,Quintile,3,NA,NA,33.1233937,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,North Eastern Scotland,2018,Total,NA,Total,Quintile,4,NA,NA,39.70233885,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,North Yorkshire,2018,Total,NA,Total,Quintile,3,NA,NA,32.20176104,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Northern Ireland,2018,Total,NA,Total,Quintile,3,NA,NA,31.27757155,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Northumberland, and Tyne and Wear",2018,Total,NA,Total,Quintile,2,NA,NA,20.20008631,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Outer London - East and North East,2018,Total,NA,Total,Quintile,1,NA,NA,3.042537279,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Outer London - South,2018,Total,NA,Total,Quintile,1,NA,NA,4.508036009,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Outer London - West and North West,2018,Total,NA,Total,Quintile,4,NA,NA,47.42649943,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Shropshire and Staffordshire,2018,Total,NA,Total,Quintile,2,NA,NA,19.78546621,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,South Yorkshire,2018,Total,NA,Total,Quintile,1,NA,NA,10.4567493,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Southern Scotland,2018,Total,NA,Total,Quintile,1,NA,NA,6.740373174,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,"Surrey, East and West Sussex",2018,Total,NA,Total,Quintile,4,NA,NA,46.44934655,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,Tees Valley and Durham,2018,Total,NA,Total,Quintile,2,NA,NA,17.6289869,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,West Central Scotland,2018,Total,NA,Total,Quintile,3,NA,NA,22.12400014,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,West Midlands,2018,Total,NA,Total,Quintile,3,NA,NA,31.40901813,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,West Wales and The Valleys,2018,Total,NA,Total,Quintile,1,NA,NA,12.77203922,NA,NA,NA,NA,British Pound,NA
+DR52,Business expenditure on research and development,ITL2,NA,West Yorkshire,2018,Total,NA,Total,Quintile,2,NA,NA,18.32355353,NA,NA,NA,NA,British Pound,NA
