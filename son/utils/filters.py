@@ -203,9 +203,7 @@ def file_size(context, details):
 @blueprint.app_template_filter('full_dataset_column_names')
 def full_dataset_column_names(context, file_path):
     def replace_common_column_name_abbreviations(csv_column_name: str):
-        column_name_replacements = [
-            {'old': 'Ind_', 'new': 'Indicator '},
-            {'old': 'ind_', 'new': 'Indicator '},
+        full_column_name_replacements = [
             {'old': 'SEB', 'new': 'Socio-economic background'},
             {'old': 'seb', 'new': 'Socio-economic background'},
             {'old': 'LCI', 'new': 'Lower confidence interval'},
@@ -213,10 +211,19 @@ def full_dataset_column_names(context, file_path):
             {'old': 'UCI', 'new': 'Upper confidence interval'},
             {'old': 'uci', 'new': 'Upper confidence interval'},
             {'old': 'SE', 'new': 'Standard error'},
+            {'old': 'se', 'new': 'Standard error'},
+        ]
+        partial_column_name_replacements = [
+            {'old': 'Ind_', 'new': 'Indicator '},
+            {'old': 'ind_', 'new': 'Indicator '},
             {'old': '_', 'new': ' '},
         ]
 
-        for replacement in column_name_replacements:
+        for replacement in full_column_name_replacements:
+            if csv_column_name == replacement['old']:
+                return replacement['new']
+
+        for replacement in partial_column_name_replacements:
             csv_column_name = csv_column_name.replace(replacement['old'], replacement['new'])
 
         return csv_column_name.capitalize()
