@@ -81,9 +81,11 @@
             <div class="grid-map">
                 {{ map(id, data) }}
             </div>
+            {% if not ([data, 'hideCaterpillar'] | attribute) %}
                 <div class="grid-chart">
                     {{ chart(id, data) }}
                 </div>
+            {% endif %}
         </div>
     {% endif %}
 
