@@ -1,7 +1,6 @@
 
 {% from 'components/chart.html' import chart %}
 {% from 'components/map.html' import map %}
-{% from 'components/composite.html' import composite %}
 
 <div id="chart{{ id }}_tab">
     {% if [data, 'data'] | attribute_type == 'list' %}
@@ -66,14 +65,12 @@
                     Download the map (PNG, <span class="mapSize{{ id }}"></span>)
                 </a>
             </li>
-            {% if ([data, 'code'] | attribute) not in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
-                <li class="move-to-download-section">
-                    {#  This <li> element will be moved to the "download" tab by some javascript  #}
-                    <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, '{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png')">
-                        Download the chart (PNG, <span class="chartSize{{ id }}"></span>)
-                    </a>
-                </li>
-            {% endif %}
+            <li class="move-to-download-section">
+                {#  This <li> element will be moved to the "download" tab by some javascript  #}
+                <a href="javascript:;" class="govuk-link" onclick="downloadChart({{ id }}, null, null, '{{ indicator | lower | replace(' ', '_') }}__chart__{{ section | lower | replace(' ', '_') }}.png')">
+                    Download the chart (PNG, <span class="chartSize{{ id }}"></span>)
+                </a>
+            </li>
         {% endif %}
     {% endif %}
 
@@ -84,15 +81,9 @@
             <div class="grid-map">
                 {{ map(id, data) }}
             </div>
-            {% if ([data, 'code'] | attribute) in ['_CI1', '_CI2', '_CI3', '_CI4', '_CI5'] %}
-                <div class="grid-composite">
-                    {{ composite(id, data, markdown_file_parent_directory) }}
-                </div>
-            {% else %}
                 <div class="grid-chart">
                     {{ chart(id, data) }}
                 </div>
-            {% endif %}
         </div>
     {% endif %}
 
