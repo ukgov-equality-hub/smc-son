@@ -6,7 +6,8 @@ from flask import Blueprint, render_template, abort, redirect, send_file
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
-from son.utils.page_history import get_page_history, create_page_history_version_for_file, PageHistory, PageHistoryVersion
+from son.utils.page_history import get_page_history, create_page_history_version_for_file, PageHistory, \
+    PageHistoryVersion, get_page_replacements, PageReplacements
 
 son = Blueprint('son', __name__)
 logger = Logger()
@@ -139,6 +140,7 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
     content = get_markdown_content(file_path, indicator)
     page_history: PageHistory = get_page_history(domain, subdomain, indicator)
     page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
+    page_replacements: PageReplacements = get_page_replacements(domain, subdomain, indicator)
 
     return render_template(
         'markdown-based-template.html',
@@ -151,5 +153,6 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
         markdown_to_html=str(content),
         page_history=page_history,
         page_history_version=page_history_version,
-        page_title=page_history_version.title
+        page_title=page_history_version.title,
+        page_replacements=page_replacements
     )

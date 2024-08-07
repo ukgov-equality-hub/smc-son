@@ -56,6 +56,19 @@ class PageHistory:
         return major_version == latest_version.major_version and minor_version == latest_version.minor_version
 
 
+class Indicator:
+    def __init__(self):
+        self.domain: str = None
+        self.subdomain: str = None
+        self.indicator: str = None
+
+
+class PageReplacements:
+    def __init__(self):
+        self.replaced_by: List[Indicator] = []
+        self.replaces: List[Indicator] = []
+
+
 def get_page_history(domain: str, subdomain: str, indicator: str) -> PageHistory:
     dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
 
@@ -86,3 +99,28 @@ def create_page_history_version_for_file(major_version: int, minor_version: int,
     page_history_version.change_history = header['change_history']
 
     return page_history_version
+
+
+def get_page_replacements(domain: str, subdomain: str, indicator: str) -> PageReplacements:
+    page_replacements = PageReplacements()
+
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/index.md"
+
+    if os.path.isfile(file_path):
+        header = get_markdown_header(file_path)
+        if 'replaces' in header:
+            for replaces in header['replaces']:
+                new_replaces = Indicator()
+                new_replaces.domain = replaces['domain']
+                new_replaces.subdomain = replaces['subdomain']
+                new_replaces.indicator = replaces['indicator']
+                page_replacements.replaces.append(new_replaces)
+        if 'replaced_by' in header:
+            for replaced_by in header['replaced_by']:
+                new_replaced_by = Indicator()
+                new_replaced_by.domain = replaced_by['domain']
+                new_replaced_by.subdomain = replaced_by['subdomain']
+                new_replaced_by.indicator = replaced_by['indicator']
+                page_replacements.replaced_by.append(new_replaced_by)
+
+    return page_replacements

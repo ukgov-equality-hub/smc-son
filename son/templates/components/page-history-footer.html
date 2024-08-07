@@ -59,3 +59,36 @@
         {% endfor %}
     </ul>
 {% endif %}
+
+{% if page_replacements.replaces %}
+    <h3 class="govuk-heading-s">
+        This page replaces:
+    </h3>
+
+    <ul class="govuk-list">
+        {% for replacement in page_replacements.replaces %}
+            <li>
+                <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
+                   class="govuk-link">
+                    {{ replacement.indicator }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% if page_replacements.replaced_by %}
+    <h3 class="govuk-heading-s">
+        This page has been archived. It has been replaced by:
+    </h3>
+
+    <ul class="govuk-list">
+        {% for replacement in page_replacements.replaced_by %}
+            <li>
+                <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
+                   class="govuk-link">
+                    {{ replacement.indicator }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
