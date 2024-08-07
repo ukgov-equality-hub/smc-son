@@ -182,6 +182,9 @@ menu = {
                             'name': 'Childhood conditions'
                         },
                         {
+                            'name': 'Labour market opportunities'
+                        },
+                        {
                             'id': 'CI3',
                             'name': 'Socio-cultural advantage'
                         },
