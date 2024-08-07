@@ -179,6 +179,9 @@ menu = {
                     'name': 'Composite indices',
                     'indicators': [
                         {
+                            'name': 'Childhood conditions'
+                        },
+                        {
                             'id': 'CI3',
                             'name': 'Socio-cultural advantage'
                         },
