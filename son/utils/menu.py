@@ -77,12 +77,7 @@ menu = {
                     'name': 'Composite indices',
                     'indicators': [
                         {
-                            'id': 'CI1',
                             'name': 'Promising prospects'
-                        },
-                        {
-                            'id': 'CI2',
-                            'name': 'Precarious situations'
                         }
                     ]
                 },
@@ -186,18 +181,6 @@ menu = {
                         },
                         {
                             'name': 'Innovation and growth'
-                        },
-                        {
-                            'id': 'CI3',
-                            'name': 'Socio-cultural advantage'
-                        },
-                        {
-                            'id': 'CI4',
-                            'name': 'Childhood poverty and disadvantage'
-                        },
-                        {
-                            'id': 'CI5',
-                            'name': 'Research and development'
                         }
                     ]
                 },
