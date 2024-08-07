@@ -185,6 +185,9 @@ menu = {
                             'name': 'Labour market opportunities'
                         },
                         {
+                            'name': 'Innovation and growth'
+                        },
+                        {
                             'id': 'CI3',
                             'name': 'Socio-cultural advantage'
                         },
