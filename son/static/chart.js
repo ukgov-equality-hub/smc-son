@@ -560,6 +560,8 @@ class Chart {
                 ytitle = null
             }
 
+            let addedXTitle = false;
+
             if ((!(group && orientation == 'y' || ['quartile', 'quintile', 'decile'].includes(chartType))) || (zkey && group)) {
                 marks.push(Plot.axisX({
                     label: xtitle,
@@ -588,11 +590,13 @@ class Chart {
                         }
                     }
                 }))
+                addedXTitle = true;
             }
             if (group && orientation == 'y') {
+                const xTitleToAdd = addedXTitle ? {} : {label: xtitle};
                 marks.push(Plot.axisFx({
                     anchor: 'bottom',
-                    label: xtitle,
+                    ...xTitleToAdd,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
