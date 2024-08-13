@@ -592,6 +592,7 @@ class Chart {
             if (group && orientation == 'y') {
                 marks.push(Plot.axisFx({
                     anchor: 'bottom',
+                    label: xtitle,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
