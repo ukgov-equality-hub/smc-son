@@ -273,7 +273,7 @@ menu = {
                         },
                         {
                             'id': 'DR53',
-                            'name': 'University research students'
+                            'name': 'Postgraduate education'
                         }
                     ]
                 }

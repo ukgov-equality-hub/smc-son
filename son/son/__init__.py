@@ -13,6 +13,11 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
+@son.route('/drivers_of_social_mobility/research_and_development_environment/university_research_students', methods=['GET'])
+def redirect_DR53_university_research_students():
+    return redirect("/drivers_of_social_mobility/research_and_development_environment/postgraduate_education")
+
+
 @son.route('/', methods=['GET'])
 def index():
     return render_template(
