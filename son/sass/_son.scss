@@ -48,8 +48,9 @@
     }
 }
 
-.govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body {
+.govuk-heading-l, .govuk-heading-m, .govuk-heading-s, .govuk-body, .govuk-list {
     max-width: 775px;
+    box-sizing: border-box;
 }
 
 @media(max-width: 40.0625em) {
