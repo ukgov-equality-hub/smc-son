@@ -45,6 +45,19 @@ def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_dire
     current_tabs_list = []
     next_data_table_or_chart_id = ['']
 
+    def details_generator(ctx, summary):
+        md_inner = markdown.Markdown(extensions=[custom_blocks_extensions, 'attr_list', 'sane_lists'])
+        inner_content_html = md_inner.convert(ctx.content)
+
+        rendered_html = render_template(
+            'components/details.html',
+            summary=summary,
+            inner_content=inner_content_html
+        )
+        prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return prettified_html
+
     def tabs_generator(ctx):
         current_tabs_list.clear()
 
@@ -136,6 +149,7 @@ def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_dire
         'visualisation': visualisation_generator,
         'download_full_dataset_link': download_full_dataset_link_generator,
         'download_section': download_section_generator,
+        'details': details_generator,
     })
     md = markdown.Markdown(extensions=[markdown.extensions.toc.TocExtension(toc_depth='2-2'), custom_blocks_extensions, 'attr_list','sane_lists','full_yaml_metadata'])
 
