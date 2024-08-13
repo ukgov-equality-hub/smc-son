@@ -30,7 +30,7 @@
             <ul class="govuk-list">
                 {% for phv in page_history.get_revisions_for_major_version(major_version) %}
                     <li>
-                        <a href="{{ url_for('son.indicator_page_with_version', domain=domain, subdomain=subdomain, indicator=indicator, major_version=phv.major_version, minor_version=phv.minor_version) }}"
+                        <a href="./{{ phv.major_version}}.{{ phv.minor_version }}"
                            class="govuk-link">
                             {{ phv.date.strftime('%-d %B %Y') }}
                         </a>
@@ -51,7 +51,7 @@
         {% for original_minor_version in page_history.get_original_minor_version_for_every_major_version() %}
             {% set latest_minor_version = page_history.get_latest_minor_version_for_major_version(original_minor_version.major_version) %}
             <li>
-                <a href="{{ url_for('son.indicator_page_with_version', domain=domain, subdomain=subdomain, indicator=indicator, major_version=latest_minor_version.major_version, minor_version=latest_minor_version.minor_version) }}"
+                <a href="./{{ latest_minor_version.major_version}}.{{ latest_minor_version.minor_version }}"
                    class="govuk-link">
                     {{ original_minor_version.date.strftime('%-d %B %Y') }}
                 </a>
@@ -60,35 +60,37 @@
     </ul>
 {% endif %}
 
-{% if page_replacements.replaces %}
-    <h3 class="govuk-heading-s">
-        This page replaces:
-    </h3>
+{% if page_replacements is defined %}
+    {% if page_replacements.replaces %}
+        <h3 class="govuk-heading-s">
+            This page replaces:
+        </h3>
 
-    <ul class="govuk-list">
-        {% for replacement in page_replacements.replaces %}
-            <li>
-                <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
-                   class="govuk-link">
-                    {{ replacement.indicator }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
-{% endif %}
-{% if page_replacements.replaced_by %}
-    <h3 class="govuk-heading-s">
-        This page has been archived. It has been replaced by:
-    </h3>
+        <ul class="govuk-list">
+            {% for replacement in page_replacements.replaces %}
+                <li>
+                    <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
+                       class="govuk-link">
+                        {{ replacement.indicator }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% if page_replacements.replaced_by %}
+        <h3 class="govuk-heading-s">
+            This page has been archived. It has been replaced by:
+        </h3>
 
-    <ul class="govuk-list">
-        {% for replacement in page_replacements.replaced_by %}
-            <li>
-                <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
-                   class="govuk-link">
-                    {{ replacement.indicator }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+        <ul class="govuk-list">
+            {% for replacement in page_replacements.replaced_by %}
+                <li>
+                    <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
+                       class="govuk-link">
+                        {{ replacement.indicator }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
 {% endif %}

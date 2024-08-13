@@ -24,7 +24,7 @@
             <p class="govuk-notification-banner__heading" style="max-width: none; width: auto;">
                 There is a new version of this page.
                 View the
-                <a href="{{ url_for('son.indicator_page_latest', domain=domain, subdomain=subdomain, indicator=indicator) }}"
+                <a href="./latest"
                    class="govuk-link">
                     latest version</a>.
             </p>
@@ -32,23 +32,25 @@
     </div>
 {% endif %}
 
-{% if page_replacements.replaced_by %}
-    <div class="govuk-notification-banner" style="max-width: 800px;" role="region" data-module="govuk-notification-banner">
-        <div class="govuk-notification-banner__content">
-            <p class="govuk-notification-banner__heading" style="max-width: none; width: auto;">
-                This page has been archived. It has been replaced by:
-            </p>
+{% if page_replacements is defined %}
+    {% if page_replacements.replaced_by %}
+        <div class="govuk-notification-banner" style="max-width: 800px;" role="region" data-module="govuk-notification-banner">
+            <div class="govuk-notification-banner__content">
+                <p class="govuk-notification-banner__heading" style="max-width: none; width: auto;">
+                    This page has been archived. It has been replaced by:
+                </p>
 
-            <ul class="govuk-list">
-                {% for replacement in page_replacements.replaced_by %}
-                    <li>
-                        <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
-                           class="govuk-link">
-                            {{ replacement.indicator }}
-                        </a>
-                    </li>
-                {% endfor %}
-            </ul>
+                <ul class="govuk-list">
+                    {% for replacement in page_replacements.replaced_by %}
+                        <li>
+                            <a href="{{ url_for('son.indicator_page_latest', domain=(replacement.domain | url_link), subdomain=(replacement.subdomain | url_link), indicator=(replacement.indicator | url_link)) }}"
+                               class="govuk-link">
+                                {{ replacement.indicator }}
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
-    </div>
+    {% endif %}
 {% endif %}

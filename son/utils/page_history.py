@@ -69,9 +69,7 @@ class PageReplacements:
         self.replaces: List[Indicator] = []
 
 
-def get_page_history(domain: str, subdomain: str, indicator: str) -> PageHistory:
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
-
+def get_page_history(dir_path: str) -> PageHistory:
     md_file_paths = glob.glob(f"{dir_path}/*.*.md")
 
     page_history = PageHistory()
@@ -101,10 +99,10 @@ def create_page_history_version_for_file(major_version: int, minor_version: int,
     return page_history_version
 
 
-def get_page_replacements(domain: str, subdomain: str, indicator: str) -> PageReplacements:
+def get_page_replacements(dir_path: str) -> PageReplacements:
     page_replacements = PageReplacements()
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/index.md"
+    file_path = f"{dir_path}/index.md"
 
     if os.path.isfile(file_path):
         header = get_markdown_header(file_path)

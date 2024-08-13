@@ -36,12 +36,31 @@ def health_check():
 
 
 @son.route('/social_mobility_by_area', methods=['GET'])
-def area_home_page():
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area.md"
+def area_home_page_without_version():
+    return redirect("/social_mobility_by_area/latest")
+
+
+@son.route('/social_mobility_by_area/latest', methods=['GET'])
+def area_home_page_latest():
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
+    return get_area_home_page(latest_major_version, latest_minor_version)
+
+
+@son.route('/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
+def area_home_page_with_version(major_version, minor_version):
+    return get_area_home_page(int(major_version), int(minor_version))
+
+
+def get_area_home_page(major_version: int, minor_version: int):
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
 
     content = get_markdown_content(file_path, None)
+    page_history: PageHistory = get_page_history(dir_path)
+    page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
 
     return render_template(
         'markdown-based-template.html',
@@ -50,8 +69,12 @@ def area_home_page():
         domain='social_mobility_by_area',
         selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
+        major_version=major_version,
+        minor_version=minor_version,
         markdown_to_html=str(content),
-        page_title=get_h1_content(content)
+        page_history=page_history,
+        page_history_version=page_history_version,
+        page_title=page_history_version.title
     )
 
 
@@ -107,27 +130,7 @@ def indicator_page_without_version(domain, subdomain, indicator):
 @son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
 def indicator_page_latest(domain, subdomain, indicator):
     dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
-    if not Path(dir_path).is_dir():
-        abort(404)
-
-    md_file_paths = glob.glob(f"{dir_path}/*.*.md")
-
-    md_file_details = []
-    for md_file_path in md_file_paths:
-        match = re.search(r"/(\d*).(\d*).md$", md_file_path)
-        if match:
-            md_file_details.append({
-                'major_version': int(match.group(1)),
-                'minor_version': int(match.group(2))
-            })
-
-    if len(md_file_details) == 0:
-        abort(404)
-
-    md_file_details.sort(key=lambda x: (x['major_version'], x['minor_version']), reverse=True)
-    latest_major_version = md_file_details[0]['major_version']
-    latest_minor_version = md_file_details[0]['minor_version']
-    
+    latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_indicator_page(domain, subdomain, indicator, latest_major_version, latest_minor_version)
 
 
@@ -142,15 +145,36 @@ def csv_file_download(domain, subdomain, indicator, major_version, minor_version
     return send_file(file_path)
 
 
+def get_latest_md_file_in_directory(dir_path):
+    if not Path(dir_path).is_dir():
+        abort(404)
+    md_file_paths = glob.glob(f"{dir_path}/*.*.md")
+    md_file_details = []
+    for md_file_path in md_file_paths:
+        match = re.search(r"/(\d*).(\d*).md$", md_file_path)
+        if match:
+            md_file_details.append({
+                'major_version': int(match.group(1)),
+                'minor_version': int(match.group(2))
+            })
+    if len(md_file_details) == 0:
+        abort(404)
+    md_file_details.sort(key=lambda x: (x['major_version'], x['minor_version']), reverse=True)
+    latest_major_version = md_file_details[0]['major_version']
+    latest_minor_version = md_file_details[0]['minor_version']
+    return latest_major_version, latest_minor_version
+
+
 def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}.md"
+    dir_path: str = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
 
     content = get_markdown_content(file_path, indicator)
-    page_history: PageHistory = get_page_history(domain, subdomain, indicator)
+    page_history: PageHistory = get_page_history(dir_path)
     page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
-    page_replacements: PageReplacements = get_page_replacements(domain, subdomain, indicator)
+    page_replacements: PageReplacements = get_page_replacements(dir_path)
 
     return render_template(
         'markdown-based-template.html',
