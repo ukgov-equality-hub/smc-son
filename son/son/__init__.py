@@ -57,6 +57,11 @@ def area_home_page():
 
 @son.route('/social_mobility_by_area/<area>', methods=['GET'])
 def area_page(area):
+    return redirect(f"/social_mobility_by_area/ITL2_regions/{area}")
+
+
+@son.route('/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
+def area_page_ITL2(area):
     areas = []
     for a in menu['areas']:
         areas.append(url_link(a['name']))
