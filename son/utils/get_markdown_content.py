@@ -61,7 +61,10 @@ def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_dire
         return prettified_html
 
     def tab_generator(ctx, section_name, tab_name):
-        tab_data = {'section_name': section_name, 'tab_name': tab_name}
+        tab_data = {
+            'section_name': section_name.replace("(", "").replace(")", ""),
+            'tab_name': tab_name.replace("(", "").replace(")", "")
+        }
         current_tabs_list.append(tab_data)
 
         md_inner = markdown.Markdown(extensions=[custom_blocks_extensions, 'attr_list', 'sane_lists'])
