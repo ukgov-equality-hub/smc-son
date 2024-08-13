@@ -1,14 +1,14 @@
 ﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile,time_period_formatted
-IN12,Attainment at age 11,Country,E92000001,England,201011,Total,11,Total,NA,NA,NA,NA,3.3408,NA,NA,NA,NA,Disadvantage index,NA,NA,2011
-IN12,Attainment at age 11,Country,E92000001,England,201112,Total,11,Total,NA,NA,NA,NA,3.2339,NA,NA,NA,NA,Disadvantage index,NA,NA,2012
-IN12,Attainment at age 11,Country,E92000001,England,201213,Total,11,Total,NA,NA,NA,NA,3.1588,NA,NA,NA,NA,Disadvantage index,NA,NA,2013
-IN12,Attainment at age 11,Country,E92000001,England,201314,Total,11,Total,NA,NA,NA,NA,3.1534,NA,NA,NA,NA,Disadvantage index,NA,NA,2014
-IN12,Attainment at age 11,Country,E92000001,England,201415,Total,11,Total,NA,NA,NA,NA,3.103,NA,NA,NA,NA,Disadvantage index,NA,NA,2015
-IN12,Attainment at age 11,Country,E92000001,England,201516,Total,11,Total,NA,NA,NA,NA,3.0252,NA,NA,NA,NA,Disadvantage index,NA,NA,2016
-IN12,Attainment at age 11,Country,E92000001,England,201617,Total,11,Total,NA,NA,NA,NA,2.9995,NA,NA,NA,NA,Disadvantage index,NA,NA,2017
-IN12,Attainment at age 11,Country,E92000001,England,201718,Total,11,Total,NA,NA,NA,NA,2.8985,NA,NA,NA,NA,Disadvantage index,NA,NA,2018
-IN12,Attainment at age 11,Country,E92000001,England,201819,Total,11,Total,NA,NA,NA,NA,2.9134,NA,NA,NA,NA,Disadvantage index,NA,NA,2019
-IN12,Attainment at age 11,Country,E92000001,England,201920,Total,11,Total,NA,NA,NA,NA,x,NA,NA,NA,NA,Disadvantage index,NA,NA,2020
-IN12,Attainment at age 11,Country,E92000001,England,202021,Total,11,Total,NA,NA,NA,NA,x,NA,NA,NA,NA,Disadvantage index,NA,NA,2021
-IN12,Attainment at age 11,Country,E92000001,England,202122,Total,11,Total,NA,NA,NA,NA,3.2277,NA,NA,NA,NA,Disadvantage index,NA,NA,2022
-IN12,Attainment at age 11,Country,E92000001,England,202223,Total,11,Total,NA,NA,NA,NA,3.209,NA,NA,NA,NA,Disadvantage index,NA,NA,2023
+IN12,Attainment at age 11,Country,E92000001,England,201011,Total,11,Total,NA,NA,NA,NA,3.3408,NA,NA,NA,NA,Disadvantage index,NA,NA,2010/11
+IN12,Attainment at age 11,Country,E92000001,England,201112,Total,11,Total,NA,NA,NA,NA,3.2339,NA,NA,NA,NA,Disadvantage index,NA,NA,2011/12
+IN12,Attainment at age 11,Country,E92000001,England,201213,Total,11,Total,NA,NA,NA,NA,3.1588,NA,NA,NA,NA,Disadvantage index,NA,NA,2012/13
+IN12,Attainment at age 11,Country,E92000001,England,201314,Total,11,Total,NA,NA,NA,NA,3.1534,NA,NA,NA,NA,Disadvantage index,NA,NA,2013/14
+IN12,Attainment at age 11,Country,E92000001,England,201415,Total,11,Total,NA,NA,NA,NA,3.103,NA,NA,NA,NA,Disadvantage index,NA,NA,2014/15
+IN12,Attainment at age 11,Country,E92000001,England,201516,Total,11,Total,NA,NA,NA,NA,3.0252,NA,NA,NA,NA,Disadvantage index,NA,NA,2015/16
+IN12,Attainment at age 11,Country,E92000001,England,201617,Total,11,Total,NA,NA,NA,NA,2.9995,NA,NA,NA,NA,Disadvantage index,NA,NA,2016/17
+IN12,Attainment at age 11,Country,E92000001,England,201718,Total,11,Total,NA,NA,NA,NA,2.8985,NA,NA,NA,NA,Disadvantage index,NA,NA,2017/18
+IN12,Attainment at age 11,Country,E92000001,England,201819,Total,11,Total,NA,NA,NA,NA,2.9134,NA,NA,NA,NA,Disadvantage index,NA,NA,2018/19
+IN12,Attainment at age 11,Country,E92000001,England,201920,Total,11,Total,NA,NA,NA,NA,x,NA,NA,NA,NA,Disadvantage index,NA,NA,2019/20
+IN12,Attainment at age 11,Country,E92000001,England,202021,Total,11,Total,NA,NA,NA,NA,x,NA,NA,NA,NA,Disadvantage index,NA,NA,2020/21
+IN12,Attainment at age 11,Country,E92000001,England,202122,Total,11,Total,NA,NA,NA,NA,3.2277,NA,NA,NA,NA,Disadvantage index,NA,NA,2021/22
+IN12,Attainment at age 11,Country,E92000001,England,202223,Total,11,Total,NA,NA,NA,NA,3.209,NA,NA,NA,NA,Disadvantage index,NA,NA,2022/23
