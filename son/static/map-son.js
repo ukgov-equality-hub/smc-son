@@ -20,7 +20,7 @@ function buildMap(mapId, datafile, download, overrideOptions) {
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name
-                document.getElementById(`map_tooltip${el}_title`).innerText = (a.map || a.chart).tooltipTitle || (a.map || a.chart).title
+                document.getElementById(`map_tooltip${el}_title`).innerText = options.tooltipTitle || options.title
                 if (typeof (a.map || a.chart).options.label !== 'undefined') {
                     document.getElementById(`map_tooltip${el}_title`).innerText += ` (${(a.map || a.chart).options.label })`
                 }
