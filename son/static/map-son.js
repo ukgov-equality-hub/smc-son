@@ -81,6 +81,11 @@ function buildMap(mapId, datafile, download, overrideOptions) {
     } else if (!overrideOptions && !datafile && options.data && typeof options.data.xtitle !== 'undefined') {
         options['xtitle'] = options.data.xtitle
     }
+    if (overrideOptions && typeof overrideOptions.tooltipTitle !== 'undefined') {
+        options['tooltipTitle'] = overrideOptions.tooltipTitle
+    } else if (!overrideOptions && !datafile && options.data && typeof options.data.tooltipTitle !== 'undefined') {
+        options['tooltipTitle'] = options.data.tooltipTitle
+    }
     if (overrideOptions && typeof overrideOptions.filename !== 'undefined') {
         options['filename'] = overrideOptions.filename
     }
