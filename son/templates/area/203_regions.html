@@ -7,9 +7,13 @@
     <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
         <div class="grid grid2">
             <div>
-                <h1 class="govuk-heading-xl">
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
                     {{ title }}
                 </h1>
+                <p class="govuk-body govuk-body-s govuk-!-margin-bottom-7">
+                    Published: 31 December 9999 <!-- TODO replace this date (9999-12-31) -->
+                </p>
+
                 <p class="govuk-body govuk-!-padding-bottom-3">
                     This page shows how {{ title }} is ranked for the following 4 ‘composite’ measures of social mobility:
                 </p>
@@ -70,6 +74,36 @@
             </div>
         </div>
     </div>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-l" id="page-history">
+        Page history
+    </h2>
+
+    <h3 class="govuk-heading-s">
+        Publication release date:
+    </h3>
+    <p class="govuk-body">
+        31 December 9999 <!-- TODO replace this date (9999-12-31) -->
+    </p>
+
+    <h3 class="govuk-heading-s">
+        This page replaces:
+    </h3>
+    <p class="govuk-body">
+        In 2023, we published regional data for a set of 41 regions.
+        <br>
+        You can find the old regions on the
+        <a href="/social_mobility_by_area/1.0"
+           class="govuk-link">
+           Social mobilty by area homepage, version 1.0</a>.
+    </p>
+    <p class="govuk-body">
+        In 2024, we published data for a new set of 203 regions.
+        <br>
+        This page is one of the new 203 regions.
+    </p>
 
     <style>
         .composite-index-colour-circle {

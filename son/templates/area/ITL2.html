@@ -5,7 +5,33 @@
 <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
     <div class="grid grid2">
         <div>
-            <h1 class="govuk-heading-xl">{{ title }}</h1>
+            <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">{{ title }}</h1>
+
+            <p class="govuk-body govuk-body-s govuk-!-margin-bottom-7">
+                Published: 12 September 2023
+            </p>
+
+            <div class="govuk-notification-banner" style="max-width: 800px;" role="region" data-module="govuk-notification-banner">
+                <div class="govuk-notification-banner__content">
+                    <p class="govuk-notification-banner__heading" style="max-width: none; width: auto;">
+                        This page has been archived.
+                    </p>
+                    <p class="govuk-body">
+                        In 2023, we published regional data for a set of 41 regions.
+                        <br>
+                        This page is one of the 41 regions.
+                    </p>
+                    <p class="govuk-body">
+                        In 2024, we published data for a new set of 203 regions.
+                        <br>
+                        You can find the new regions on the
+                        <a href="/social_mobility_by_area/latest"
+                           class="govuk-link">
+                           Social mobilty by area homepage</a>.
+                    </p>
+                </div>
+            </div>
+
             <p class="govuk-body govuk-!-padding-bottom-3">This page shows how {{ title }} is ranked for the following 5 ‘composite’ measures of social mobility:</p>
             <ul class="govuk-list govuk-list--bullet">
                 <li>Childhood poverty and disadvantage</li>

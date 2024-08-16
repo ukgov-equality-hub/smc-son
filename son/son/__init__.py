@@ -107,12 +107,12 @@ def area_page_ITL2(area):
 @son.route('/social_mobility_by_area/203_regions/<area>', methods=['GET'])
 def area_page_203_regions(area):
 
-    def get_row_from_csv_file(file_path, column_name, search_value):
-        with open(file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
+    def get_row_from_csv_file(csv_file_path, column_name, search_value):
+        with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
             reader = csv.DictReader(csv_file)
 
             for row in reader:
-                if (row[column_name] == search_value):
+                if row[column_name] == search_value:
                     return row
         return None
 
