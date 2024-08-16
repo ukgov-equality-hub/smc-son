@@ -28,7 +28,9 @@ window.document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('social-mobility-by-area-name').style.left = `${event.pageX + 20}px`;
         }
 
-        document.onmousemove = handleMouseMove;
+        document.getElementById('social-mobility-by-area-map-container').onmousemove = handleMouseMove;
+
+        const map_element = document.getElementById('social-mobility-by-area-map');
 
         const map = new Choropleth(
             'social-mobility-by-area-map',
@@ -42,7 +44,7 @@ window.document.addEventListener('DOMContentLoaded', function () {
                 height: 704,
                 labels: true,
                 colourScheme: ['#e1e361', '#84b871'],
-                allowZoom: false,
+                allowZoom: map_element.getAttribute('data-allow-zoom') === 'true',
                 background: true,
                 rolloverBehaviour: 'fade',
                 onRollover: areaName,
@@ -50,5 +52,11 @@ window.document.addEventListener('DOMContentLoaded', function () {
             }
         );
 
+        const zoomInButton = document.getElementById('mapZoomIn');
+        const zoomOutButton = document.getElementById('mapZoomOut');
+        if (zoomInButton && zoomOutButton) {
+            zoomInButton.addEventListener('click', () => map.zoomIn())
+            zoomOutButton.addEventListener('click', () => map.zoomOut())
+        }
     }
 })
