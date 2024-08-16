@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
+    <div class="grid grid2">
+        <div>
+            <h1 class="govuk-heading-xl">{{ title }}</h1>
+            <p class="govuk-body govuk-!-padding-bottom-3">This page shows how {{ title }} is ranked for the following 5 ‘composite’ measures of social mobility:</p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>Childhood poverty and disadvantage</li>
+                <li>Precarious situations</li>
+                <li>Promising prospects</li>
+                <li>Research and development</li>
+                <li>Socio-cultural advantage</li>
+            </ul>
+            <p class="govuk-body">Each of these measures combines data from 3 indicators into a single ‘composite’ score. This provides a more reliable picture of geographical mobility patterns.</p>         
+
+            <h2 class="govuk-heading-l">Rankings</h2>
+            <p class="govuk-body">
+                For each composite measure,
+                <a href="/social_mobility_by_area#the-41-regions" class="govuk-link">41 regions in the UK</a> are ranked from the lowest to highest values. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+            </p>
+            <p class="govuk-body">For example, {{ title }} ranks in the <span id="selectedIndicatorRank"></span> of regions for <span id="selectedIndicator"></span>.</p>
+            <p>&nbsp;</p>
+
+            <div class="govuk-body area-quintile-header">
+                <div>
+                    <span>Quintile 1<br>(lowest 20%)</span>
+                    <span>Quintile 5<br>(highest 20%)</span>
+                </div>
+            </div>
+
+            <div class="govuk-body area-quintile">
+                <div><a href="/drivers_of_social_mobility/composite_indices/childhood_poverty_and_disadvantage" class="govuk-link">Childhood poverty and disadvantage</a></div>
+                <div id="chart1"></div>
+            </div>
+
+            <div class="govuk-body area-quintile">
+                <div><a href="/intermediate_outcomes/composite_indices/precarious_situations" class="govuk-link">Precarious situations</a></div>
+                <div id="chart2"></div>
+            </div>
+
+            <div class="govuk-body area-quintile">
+                <div><a href="/intermediate_outcomes/composite_indices/promising_prospects" class="govuk-link">Promising prospects</a></div>
+                <div id="chart3"></div>
+            </div>
+
+            <div class="govuk-body area-quintile">
+                <div><a href="/drivers_of_social_mobility/composite_indices/research_and_development" class="govuk-link">Research and development</a></div>
+                <div id="chart4"></div>
+            </div>
+
+            <div class="govuk-body area-quintile">
+                <div><a href="/drivers_of_social_mobility/composite_indices/socio-cultural_advantage" class="govuk-link">Socio-cultural advantage</a></div>
+                <div id="chart5"></div>
+            </div>
+        </div>
+        <div>
+            <div class="map-container">
+                <div id="map" class="map"></div>
+            </div>
+            <h2 class="govuk-heading-s">Districts in the {{ title }} region</h2>
+            <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">ITL3 areas:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].itl3 | join(', ') }}</p>
+            <p class="govuk-body-s"><span class="govuk-!-font-weight-bold">Local authorities:</span> {{ (menu['areas'] | selectattr('name', 'equalto', title) | list)[0].la | join(', ') }}</p>
+        </div>
+    </div>
+</div>
+<script>
+    (async function () {
+        const indicators = [ 'Childhood poverty and disadvantage', 'Precarious situations', 'Promising prospects', 'Research and development', 'Socio-cultural advantage' ]
+
+        const dataUtils = new DataUtils()
+        let data = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/by-page/social_mobility_by_area/CI_20230817.csv`)
+        data = data.data
+
+        const options = {
+            type: 'quintile',
+            xkey: 'Value',
+            ykey: 'Area_name',
+            yvalue: '{{ title | replace("Bath and Bristol", "Bath/Bristol") }}',
+            quantile: 'Quintile',
+            colourScheme: ['#ca0020', '#f4a582', '#ffffbf', '#92c5de', '#0571b0'],
+            dataFormat: 'quintile'
+        }
+
+        const chart1 = new Chart('chart1', data.filter(x => x['Ind_name'] == 'Childhood poverty and disadvantage'), { ...options, title: 'Childhood poverty and disadvantage', reversePolarity: true })
+        const chart2 = new Chart('chart2', data.filter(x => x['Ind_name'] == 'Precarious situations'), { ...options, title: 'Precarious situations', reversePolarity: true })
+        const chart3 = new Chart('chart3', data.filter(x => x['Ind_name'] == 'Promising prospects'), { ...options, title: 'Promising prospects' })
+        const chart4 = new Chart('chart4', data.filter(x => x['Ind_name'] == 'R & D environment'), { ...options, title: 'Research and development' })
+        const chart5 = new Chart('chart5', data.filter(x => x['Ind_name'] == 'Socio-cultural advantage'), { ...options, title: 'Socio-cultural advantage' })
+
+        let mapData = await dataUtils.loadDataFromURL(`${location.protocol}//${location.host}/static/data/by-page/social_mobility_by_area/areas.csv`)
+        mapData = mapData.data
+        const area = mapData.filter(x => x['Area_name'] == '{{ title | replace("Bath and Bristol", "Bath/Bristol") }}')[0]
+        area['Value'] = 2
+        mapData = [ ...mapData, area ]
+
+        const map = new Choropleth(
+            'map',
+            `${location.protocol}//${location.host}/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json`,
+            mapData,
+            {
+                nameField: 'Area_name',
+                valueField: 'Value',
+                areaField: 'ITL221NM',
+                width: 300,
+                height: 300,
+                labels: true,
+                colourScheme: ['#84b871', '#e1e361'],
+                allowZoom: false,
+                zoomTo: area.Area_name,
+                highlight: area.Area_name
+            }
+        )
+
+        function rnd(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
+
+        setTimeout(function () {
+            const selected = rnd(1, 5)
+            const indicator = indicators[selected - 1]
+            const quantile = eval(`chart${selected}`).status().quantile
+            let quintile = ''
+            if (quantile == 1) quintile = 'bottom 20%'
+            if (quantile == 2) quintile = 'second lowest 20%'
+            if (quantile == 3) quintile = 'middle 20%'
+            if (quantile == 4) quintile = 'second highest 20%'
+            if (quantile == 5) quintile = 'top 20%'
+
+            document.getElementById('selectedIndicator').innerText = indicator
+            document.getElementById('selectedIndicatorRank').innerText = quintile
+        }, 100)
+    })()
+</script>
+{% endblock %}

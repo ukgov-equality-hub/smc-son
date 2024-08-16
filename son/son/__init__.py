@@ -1,3 +1,4 @@
+import csv
 import glob
 import os
 import re
@@ -94,12 +95,39 @@ def area_page_ITL2(area):
     if selected > len(areas) - 2: selected = len(areas) - 2
 
     return render_template(
-        'area/area.html',
+        'area/ITL2.html',
         menu=menu,
         area=area,
         domain='social_mobility_by_area',
         selected=[selected - 2, selected - 1, selected, selected + 1, selected + 2],
         title=get_item_title(area)
+    )
+
+
+@son.route('/social_mobility_by_area/203_regions/<area>', methods=['GET'])
+def area_page_203_regions(area):
+
+    def get_row_from_csv_file(file_path, column_name, search_value):
+        with open(file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
+            reader = csv.DictReader(csv_file)
+
+            for row in reader:
+                if (row[column_name] == search_value):
+                    return row
+        return None
+
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
+    row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
+    if row_for_region is None:
+        abort(404)
+
+    return render_template(
+        'area/203_regions.html',
+        menu=menu,
+        area=area,
+        domain='social_mobility_by_area',
+        title=row_for_region['region_fullname'],
+        row_for_region=row_for_region
     )
 
 
