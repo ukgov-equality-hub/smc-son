@@ -1,28 +1,188 @@
-{% from 'menu/area-search.html' import areasearch %}
 
 {% macro areamenu(id, menu, selectedarea, selected) %}
-{#{{ areasearch(id, menu, selectedarea, selected) }}#}
+    <nav role="navigation"
+         aria-label="Find an area"
+         class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-0"
+         style="display: block; margin-top: 10px">
+        <h2 class="govuk-heading-m">
+            Find an area
+        </h2>
 
-<nav aria-label="Side navigation" class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-0" role="navigation" style="margin-top: 10px">
-    <ul id="sidemenu" class="moj-side-navigation__list none-collapsible" style="display: none">
-        {% for area in menu.areas | sort(attribute = 'name') %}
-        <li class="moj-side-navigation__item{% if (area.name | url_link) == (selectedarea | url_link) %} is-active{% endif %}{% if not loop.index in selected %} hidden{% endif %}">
-            <a href="/social_mobility_by_area/{{ area.name | url_link }}" class="moj-primary-navigation__link"{% if (area.name | url_link) == (selectedarea | url_link) %} aria-current="page"{% endif %}>{{ area.name }}
-            <div id="{{ area.name }}_matches" class="search-summary"></div></a>
-        </li>
-        {% endfor %}
+        <form id="postcode-search-form" style="display: none">
+            <div class="govuk-form-group">
+                <h3 class="govuk-label-wrapper">
+                    <label for="postcode-search"
+                           class="govuk-label govuk-label--s">
+                        Postcode search
+                    </label>
+                </h3>
+                <div id="postcode-search-hint" class="govuk-hint govuk-!-font-size-16">
+                    Enter a full UK postcode, with or without spaces
+                </div>
+                <p id="postcode-search-error"
+                   class="govuk-error-message"
+                   style="display: none;">
+                    <span class="govuk-visually-hidden">Error:</span>
+                    <span id="postcode-search-error-message"></span>
+                </p>
+                <div style="display: flex;">
+                    <input type="text"
+                           id="postcode-search"
+                           class="govuk-input govuk-input--width-10"
+                           spellcheck="false"
+                           aria-describedby="postcode-search-hint postcode-search-error">
+                    <button type="submit"
+                            data-module="govuk-button"
+                            class="govuk-button"
+                            style="width: fit-content; margin-bottom: 2px;">
+                        Go
+                    </button>
+                </div>
+            </div>
+        </form>
 
-        <li id="sidemenu_showmore" class="_moj-side-navigation__item">
-            <a href="javascript:;" class="govuk-link" onclick="expandnavigation()">Show more</a>
-        </li>
-        <li id="sidemenu_showless" class="_moj-side-navigation__item hidden">
-            <a href="javascript:;" class="govuk-link" onclick="collapsenavigation()">Show less</a>
-        </li>
-    </ul>
+        <div class="govuk-form-group">
+            <h3 class="govuk-label-wrapper">
+                <label for="area-search"
+                       class="govuk-label govuk-label--s">
+                    Area search
+                </label>
+            </h3>
+            <div id="area-search-hint" class="govuk-hint govuk-!-font-size-16">
+                Search by one of
+                <a href="/social_mobility_by_area/latest#the-203-regions"
+                   class="govuk-link">
+                    203 regions</a>.
+                <br>
+                Start typing an area name to see a list of matching areas below
+            </div>
+            <div class="govuk-!-margin-bottom-2" style="display: flex;">
+                <input type="text"
+                       id="area-search"
+                       class="govuk-input govuk-input--width-10"
+                       spellcheck="false"
+                       aria-describedby="area-search-hint">
+            </div>
 
-    <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible" style="display: none">
-    <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
-        <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
-    </ul>
-</nav>
+            <ul id="area-search-results"
+                class="moj-side-navigation__list none-collapsible"
+                style="display: block;">
+            </ul>
+        </div>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+        <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+            <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        (async function() {
+            const postcodeSearchForm = document.getElementById('postcode-search-form');
+            const postcodeSearchFormGroup = postcodeSearchForm.querySelector('.govuk-form-group');
+            const postcodeSearchInput = document.getElementById('postcode-search');
+            const postcodeSearchError = document.getElementById('postcode-search-error');
+            const postcodeSearchErrorMessage = document.getElementById('postcode-search-error-message');
+
+            const areaSearchInput = document.getElementById('area-search');
+            const areaSearchResults = document.getElementById('area-search-results');
+
+            ///////////////////////
+            // POSTCODE SEARCH
+            postcodeSearchForm.addEventListener('submit', async function (event) {
+                event.preventDefault();
+
+                function showPostcodeSearchError(message) {
+                    postcodeSearchFormGroup.classList.add('govuk-form-group--error');
+                    postcodeSearchInput.classList.add('govuk-input--error');
+                    postcodeSearchError.style.display = 'block';
+                    postcodeSearchErrorMessage.innerHTML = message;
+                }
+
+                const rawSearchValue = postcodeSearchInput.value;
+                if (rawSearchValue === '') {
+                    showPostcodeSearchError('Enter a postcode');
+                    return;
+                }
+
+                const trimmedSearchValue = rawSearchValue.replace(/\s+/g, '').toUpperCase();
+                if (trimmedSearchValue.length < 5) {
+                    showPostcodeSearchError('Enter a full UK postcode');
+                    return;
+                }
+
+                const postcodeApiUrl = `https://api.postcodes.io/postcodes/${trimmedSearchValue}`;
+                const postcodeApiResponse = await fetch(postcodeApiUrl);
+                if (!postcodeApiResponse.ok) {
+                    showPostcodeSearchError('We cannot find this postcode.<br>Try the area search below');
+                    return;
+                }
+
+                const postcodeApiJson = await postcodeApiResponse.json();
+                const admin_district = postcodeApiJson.result.codes.admin_district;
+
+                const matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_district));
+
+                window.location.href = `/social_mobility_by_area/203_regions/${matchingRegion.url}`
+            })
+
+            ////////////////////////
+            // AREA NAME SEARCH
+            areaSearchInput.addEventListener('input', async function (event) {
+                areaSearchResults.innerHTML = '';
+
+                const searchText = areaSearchInput.value.trim().toLowerCase();
+                const matchingAreas = regionNamesAndCodes['203_regions'].filter((region) => region.name.toLowerCase().includes(searchText));
+                if (matchingAreas.length <= 20) {
+                    matchingAreas.forEach((matchingArea) => {
+                        const new_li = document.createElement('li');
+                        new_li.classList.add('moj-side-navigation__item');
+
+                        const new_a = document.createElement('a');
+                        new_a.href = `/social_mobility_by_area/203_regions/${matchingArea.url}`;
+                        new_a.classList.add('moj-primary-navigation__link');
+
+                        const lowercaseAreaNme = matchingArea.name.toLowerCase();
+                        const originalCaseAreaName = matchingArea.name;
+                        let lastIndex = -1
+                        let nextIndex = -1;
+                        while ((nextIndex = lowercaseAreaNme.indexOf(searchText, lastIndex + 1)) !== -1) {
+                            const textBeforeStartPosition = lastIndex === -1 ? 0 : lastIndex + searchText.length;
+                            const textBeforeFind = originalCaseAreaName.substring(textBeforeStartPosition, nextIndex);
+                            const new_span = document.createElement('span');
+                            new_span.innerText = textBeforeFind;
+                            new_a.appendChild(new_span);
+
+                            const textFound = originalCaseAreaName.substring(nextIndex, nextIndex + searchText.length);
+                            const new_b = document.createElement('b');
+                            new_b.innerText = textFound;
+                            new_a.appendChild(new_b);
+
+                            lastIndex = nextIndex;
+                        }
+                        const textAfterFind = originalCaseAreaName.substring(lastIndex + searchText.length);
+                        const new_span = document.createElement('span');
+                        new_span.innerText = textAfterFind;
+                        new_a.appendChild(new_span);
+
+                        new_li.appendChild(new_a);
+                        areaSearchResults.appendChild(new_li);
+                    })
+                }
+            })
+
+            //////////////////////////////////////
+            // Load list of regions JSON file
+            const regionCodesUrl = '/static/data/by-page/social_mobility_by_area/203_regions_codes.json';
+            const regionCodesResponse = await fetch(regionCodesUrl);
+            if (!regionCodesResponse.ok) {
+                // Cannot load region list - don't show search bar
+                return;
+            }
+            const regionNamesAndCodes = await regionCodesResponse.json();
+
+            // Only display the postcode search section if javascript is enabled
+            postcodeSearchForm.style.display = 'block';
+        })();
+    </script>
 {% endmacro %}

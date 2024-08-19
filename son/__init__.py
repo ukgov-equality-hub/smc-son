@@ -66,7 +66,7 @@ def create_app(test_config=None):
                                                         "style-src 'self' 'unsafe-inline'; " \
                                                         "img-src 'self' blob: data: https://api.mapbox.com; " \
                                                         "font-src 'self' data:; " \
-                                                        "connect-src 'self' http://localhost:5000 https://*.google-analytics.com https://api.equality-data-store.cabinetoffice.gov.uk; " \
+                                                        "connect-src 'self' http://localhost:5000 https://*.google-analytics.com https://api.postcodes.io;" \
                                                         "form-action 'self' https://www.payments.service.gov.uk;"
 
         return response
