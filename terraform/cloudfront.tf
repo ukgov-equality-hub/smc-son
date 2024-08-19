@@ -18,6 +18,9 @@ resource "aws_cloudfront_cache_policy" "cloudfront_cache_policy_for_elastic_bean
     query_strings_config {
       query_string_behavior = "all"
     }
+
+    enable_accept_encoding_brotli = true
+    enable_accept_encoding_gzip = true
   }
 }
 
