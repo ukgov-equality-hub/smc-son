@@ -14,57 +14,75 @@
                     Published: 31 December 9999 <!-- TODO replace this date (9999-12-31) -->
                 </p>
 
+                <p class="govuk-body">
+                    This page shows how {{ title }} is classified for 4 measures of social mobility.
+                </p>
                 <p class="govuk-body govuk-!-padding-bottom-3">
-                    This page shows how {{ title }} is ranked for the following 4 ‘composite’ measures of social mobility:
+                    {{ title }} is in the:
                 </p>
                 <ul class="govuk-list govuk-list--bullet">
                     <li>
+                        {{ row_for_region['promising_prospects_group_name'] }}
+                        group of areas for
                         <a href="/intermediate_outcomes/composite_indices/promising_prospects/latest"
                            class="govuk-link">
-                            Promising prospects
-                        </a>
-                        -
-                        {{ row_for_region['promising_prospects_group_name'] }}
+                            Promising prospects</a>
                         <div class="composite-index-colour-circle"
                              style="background-color: {{ compositeIndexCircleColours[(row_for_region['promising_prospects_group_id'] | int) - 1] }}"></div>
                     </li>
                     <li>
+                        {{ row_for_region['childhood_conditions_group_name'] }}
+                        group for
                         <a href="/drivers_of_social_mobility/composite_indices/childhood_conditions/latest"
                            class="govuk-link">
-                            Childhood conditions
-                        </a>
-                        -
-                        {{ row_for_region['childhood_conditions_group_name'] }}
+                            Childhood conditions</a>
                         <div class="composite-index-colour-circle"
                              style="background-color: {{ compositeIndexCircleColours[(row_for_region['childhood_conditions_group_id'] | int) - 1] }}"></div>
                     </li>
                     <li>
+                        {{ row_for_region['labour_market_opportunities_group_name'] }}
+                        group for
                         <a href="/drivers_of_social_mobility/composite_indices/labour_market_opportunities/latest"
                            class="govuk-link">
-                            Labour market opportunities
-                        </a>
-                        -
-                        {{ row_for_region['labour_market_opportunities_group_name'] }}
+                            Labour market opportunities</a>
                         <div class="composite-index-colour-circle"
                              style="background-color: {{ compositeIndexCircleColours[(row_for_region['labour_market_opportunities_group_id'] | int) - 1] }}"></div>
                     </li>
                     <li>
+                        {{ row_for_region['innovation_and_growth_group_name'] }}
+                        group for
                         <a href="/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest"
                            class="govuk-link">
-                            Innovation and growth
-                        </a>
-                        -
-                        {{ row_for_region['innovation_and_growth_group_name'] }}
+                            Innovation and growth</a>
                         <div class="composite-index-colour-circle"
                              style="background-color: {{ compositeIndexCircleColours[(row_for_region['innovation_and_growth_group_id'] | int) - 1] }}"></div>
                     </li>
                 </ul>
-                <p class="govuk-body">Each of these measures combines data from 3 indicators into a single ‘composite’ score. This provides a more reliable picture of geographical mobility patterns.</p>
 
-                <h2 class="govuk-heading-l">Rankings</h2>
+                <h2 class="govuk-heading-l">
+                    About the data
+                </h2>
                 <p class="govuk-body">
-                    For each composite measure,
-                    <a href="/social_mobility_by_area#the-41-regions" class="govuk-link">41 regions in the UK</a> are ranked from the lowest to highest values. They are then divided into 5 equally-sized groups (‘quintiles’), from 1 (lowest) to 5 (highest).
+                    Each measure of social mobility combines data from multiple indicators into a single ‘composite’ score.
+                    This helps to give a more reliable picture of geographical mobility patterns than individual indicators.
+                </p>
+                <p class="govuk-body">
+                    For each measure (for example, ‘Innovation and growth’),
+                    <a href="/social_mobility_by_area/latest#list-of-uk-regions"
+                       class="govuk-link">
+                        203 regions in the UK</a>
+                    are classified according to their composite scores.
+                    The following labels show how each area is assessed for different aspects of social mobility:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>most favourable</li>
+                    <li>favourable</li>
+                    <li>middle group</li>
+                    <li>unfavourable</li>
+                    <li>least favourable</li>
+                </ul>
+                <p class="govuk-body">
+                    The groups are not equally sized – the middle group is larger because most local authorities are very close to the average.
                 </p>
             </div>
             <div>
