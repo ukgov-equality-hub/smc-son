@@ -1,128 +1,271 @@
 {% extends 'base.html' %}
 {% from 'menu/area-search.html' import areasearch %}
+
 {% block title %}Social mobility in the UK{% endblock %}
 
 {% block content %}
-<div class="govuk-grid-row govuk-grid-row-full-width">
-    <h1 class="govuk-heading-xl govuk-!-static-margin-top-4 govuk-!-static-margin-bottom-7">
-        State of the Nation 2023: data about social mobility in the UK
-    </h1>
-    <p class="govuk-body">
-        State of the Nation is an annual report into social mobility in the UK. It uses original data and analysis from ​​the Social Mobility Commission (SMC).
-    </p>
-    <p class="govuk-body">
-        State of the Nation uses the SMC’s own measurement framework, the <span class="govuk-!-font-weight-bold">Social Mobility Index</span>.
-    </p>
+    <div class="govuk-grid-row govuk-grid-row-full-width">
 
-    <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
-        Highlighted data
-    </h2>
-    <div class="grid grid3 grid-home">
-        <div class="govuk-body">
-            <h3 class="govuk-heading-s">Mobility outcomes</h3>
-            <div class="chart-container" aria-hidden="true">
-                <div id="chart1"></div>
+        <h1 class="govuk-heading-xl govuk-!-static-margin-top-4 govuk-!-static-margin-bottom-7">
+            State of the Nation 2024: data about social mobility in the UK
+        </h1>
+        <p class="govuk-body">
+            State of the Nation is an annual report into social mobility in the UK.
+            It uses original data and analysis from the Social Mobility Commission (SMC).
+        </p>
+        <p class="govuk-body">
+            State of the Nation uses the SMC’s own measurement framework, the
+            <span class="govuk-!-font-weight-bold">Social Mobility Index</span>.
+        </p>
+
+        <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
+            Highlighted data
+        </h2>
+        <div class="highlighted-data-grid">
+            <div class="highlighted-data-cell">
+                <h3 class="govuk-heading-s">Mobility outcomes</h3>
+                <div class="chart-container" aria-hidden="true">
+                    <div id="chart1"></div>
+                </div>
+                <p class="govuk-body highlighted-data-caption">
+                    There continues to be more upward than downward occupational mobility for men,
+                    this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.
+                </p>
+                <p class="govuk-body highlighted-data-read-more">
+                    <a href="/mobility_outcomes" class="govuk-link">
+                        Read more
+                        <span class="govuk-visually-hidden">about mobility outcomes</span>
+                    </a>
+                </p>
             </div>
-            <p class="govuk-body">There continues to be more upward than downward mobility for men, this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.</p>
-            <a href="/mobility_outcomes" class="govuk-link">Read more <span class="govuk-visually-hidden">about mobility outcomes</span></a>
-        </div>
-        <div class="govuk-body">
-            <h3 class="govuk-heading-s">Intermediate outcomes</h3>
-            <div class="chart-container" aria-hidden="true">
-                <div id="chart2"></div>
+            <div class="highlighted-data-cell">
+                <h3 class="govuk-heading-s">Intermediate outcomes</h3>
+                <div class="chart-container" aria-hidden="true">
+                    <div id="chart2"></div>
+                </div>
+                <p class="govuk-body highlighted-data-caption">
+                    Socio-economic background is strongly related to the level of young people’s earnings.
+                </p>
+                <p class="govuk-body highlighted-data-read-more">
+                    <a href="/intermediate_outcomes" class="govuk-link">
+                        Read more
+                        <span class="govuk-visually-hidden">about intermediate outcomes</span>
+                    </a>
+                </p>
             </div>
-            <p class="govuk-body">Socio-economic background is strongly related to the level of young people’s earnings.</p>
-            <a href="/intermediate_outcomes" class="govuk-link">Read more <span class="govuk-visually-hidden">about intermediate outcomes</span></a>
-        </div>
-        <div class="govuk-body">
-            <h3 class="govuk-heading-s">Drivers of social mobility</h3>
-            <div class="chart-container" aria-hidden="true">
-                <div id="chart3"></div>
+            <div class="highlighted-data-cell">
+                <h3 class="govuk-heading-s">Drivers of social mobility</h3>
+                <div class="chart-container" aria-hidden="true">
+                    <div id="chart3"></div>
+                </div>
+                <p class="govuk-body highlighted-data-caption">
+                    Between 2014 and 2022, the percentage of people with a postgraduate degree has slightly increased.
+                </p>
+                <p class="govuk-body highlighted-data-read-more">
+                    <a href="/drivers_of_social_mobility" class="govuk-link">
+                        Read more
+                        <span class="govuk-visually-hidden">about drivers of social mobility</span>
+                    </a>
+                </p>
             </div>
-            <p class="govuk-body">In 2021, youth unemployment in the UK fell back to pre-pandemic levels.</p>
-            <a href="/drivers_of_social_mobility" class="govuk-link">Read more <span class="govuk-visually-hidden">about drivers of social mobility</span></a>
         </div>
+
+        <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
+            Find data by region
+        </h2>
+        <p class="govuk-body">
+            See how 203 areas of the UK are ranked for 4 different measures of social mobility.
+        </p>
+        <div class="grid grid3 grid-home">
+            <div class="govuk-body double-width">
+                {{ areamenu(showFooter = False) }}
+            </div>
+            <div class="govuk-body">
+                <h3 class="govuk-heading-s" style="color: #0b0c0c;">Featured region</h3>
+                <div class="map-container">
+                    <div id="map" class="map"></div>
+                </div>
+                <a id="featured-region" href="#" class="govuk-link"></a>
+            </div>
+        </div>
+
+        <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
+            More information
+        </h2>
+        <p class="govuk-body">
+            Read the
+            <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places" class="govuk-link">
+                full State of the Nation 2023 report</a>
+            on GOV.UK.
+        </p>
+
+         <p class="govuk-body">
+            Find out more about the SMC on the
+             <a href="https://socialmobility.independent-commission.uk/"
+                class="govuk-link">
+                 Social Mobility Commission website</a>.
+         </p>
     </div>
 
-    <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
-        Find data by region
-    </h2>
-    <p class="govuk-body">See how 41 areas of the UK are ranked for 5 different measures of social mobility.</p>
-    <div class="grid grid3 grid-home">
-        <div class="govuk-body double-width">
-            {{ areasearch(0, menu, '', 'null') }}
-        </div>
-        <div class="govuk-body">
-            <h3 class="govuk-heading-s">Featured region</h3>
-            <div class="map-container">
-                <div id="map" class="map"></div>
-            </div>
-            <a id="featured-region" href="#" class="govuk-link"></a>
-        </div>
-    </div>
-
-      <h2 class="govuk-heading-l govuk-!-static-margin-top-8">
-        More information
-    </h2>
-    <p class="govuk-body">
-        Read the <a href="https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places" class="govuk-link">full State of the Nation 2023 report</a> on GOV.UK.
-    </p>
-
-     <p class="govuk-body">
-        Find out more about the SMC on the <a href="https://socialmobility.independent-commission.uk/" class="govuk-link">Social Mobility Commission website</a>.</p>
-</div>
-<script>
-    (async function () {
-        const dataUtils = new DataUtils()
-
-        new Chart(
-            'chart1',
-            '/static/data/by-page/homepage/MO11_overview_male-20230705.csv',
-            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Value_note", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c", "#4c2c92"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
-        )
-
-        new Chart(
-            'chart2',
-            '/static/data/by-page/homepage/IN34_overview-20230327a.csv',
-            { "height": 220, "type": "bary", "xkey": "SEB", "ykey": "Value", "zkey": "SEB", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
-        )
-
-        new Chart(
-            'chart3',
-            '/static/data/by-page/homepage/DR32_overview-20230417.csv',
-            { "height": 205, "type": "liney", "xkey": "Time_period", "ykey": "Value", "zkey": "Area_name", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
-        )
-
-        let mapData = await dataUtils.loadDataFromURL('/static/data/by-page/homepage/areas.csv')
-        mapData = mapData.data
-        const area = mapData[rnd(0, areas.length - 1)]
-        area['Value'] = 2
-        mapData = [ ...mapData, area ]
-
-        const map = new Choropleth(
-            'map',
-            '/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json',
-            mapData,
-            {
-                nameField: 'Area_name',
-                valueField: 'Value',
-                areaField: 'ITL221NM',
-                width: 300,
-                height: 240,
-                labels: true,
-                colourScheme: ['#84b871', '#e1e361'],
-                allowZoom: false,
-                zoomTo: area.Area_name,
-                highlight: area.Area_name
-            }
-        )
-
-        document.getElementById('featured-region').setAttribute('href', `/social_mobility_by_area/${area.Area_name.toLowerCase().replace(/ /g, '_')}`)
-        document.getElementById('featured-region').innerText = area.Area_name
-
-        function rnd(min, max) {
-            return Math.floor(Math.random() * (max - min + 1) + min)
+    <style>
+        .highlighted-data-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
         }
-    })()
-</script>
+
+        .highlighted-data-cell {
+            background-color: #f3f2f1;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            width: calc(100%/3 - 14px);
+            min-width: 225px;
+        }
+        @media (max-width: 950px) {
+            .highlighted-data-cell {
+                width: calc(100%/2 - 14px);
+            }
+        }
+        @media (max-width: 705px) {
+            .highlighted-data-cell {
+                width: 100%;
+            }
+        }
+
+        .highlighted-data-cell .chart-container {
+            background-color: #fff;
+            height: 230px;
+            margin-bottom: 15px;
+            padding: 20px 0 0 0;
+            box-sizing: border-box;
+        }
+
+        .highlighted-data-cell .chart {
+            width: calc(100% - 20px);
+        }
+
+        .highlighted-data-cell h3 {
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .highlighted-data-caption {
+            flex-grow: 1;
+        }
+
+        .highlighted-data-read-more {
+            margin-bottom: 0;
+        }
+    </style>
+
+    <script>
+        (async function () {
+            const dataUtils = new DataUtils()
+
+            new Chart(
+                'chart1',
+                '/static/data/by-page/homepage/MO11_overview_male-20230705.csv',
+                {
+                    "height": 205,
+                    "type": "liney",
+                    "xkey": "Time_period",
+                    "ykey": "Value",
+                    "zkey": "Value_note",
+                    "sort": "Time_period",
+                    "scale": "%",
+                    "multiply": 100,
+                    "xgrid": false,
+                    "ygrid": true,
+                    "xticks": "first-last",
+                    "yticks": 4,
+                    "legend": false,
+                    "colourScheme": ["#808080", "#5694ca", "#d4351c"],
+                    "range": [0, 70],
+                    "margin": [0, 0, 0, 0],
+                    "maxLabelLength": 45
+                }
+            )
+
+            new Chart(
+                'chart2',
+                '/static/data/by-page/homepage/IN34-2.0-earnings--by-SEB-without-total--chart-format.csv',
+                {
+                    "height": 220,
+                    "type": "bary",
+                    "xkey": "seb",
+                    "ykey": "value",
+                    "zkey": "seb",
+                    "scale": "%",
+                    "xgrid": false,
+                    "ygrid": true,
+                    "xticks": "none",
+                    "yticks": 5,
+                    "legend": false,
+                    "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"],
+                    "range": [0, 20],
+                    "margin": [0, 0, 0, 0],
+                    "maxLabelLength": 45
+                }
+            )
+
+            new Chart(
+                'chart3',
+                '/drivers_of_social_mobility/research_and_development_environment/postgraduate_education/2.0/DR53-2.0-university-research-students--by-year--chart-format.csv',
+                {
+                    "height": 205,
+                    "type": "bary",
+                    "xkey": "time_period",
+                    "ykey": "value",
+                    "zkey": "area_name",
+                    "sort": "time_period",
+                    "scale": "%",
+                    "xgrid": false,
+                    "ygrid": true,
+                    "xticks": "first-last",
+                    "yticks": 4,
+                    "legend": false,
+                    "colourScheme": ["#5694ca", "#d4351c"],
+                    "range": [0, 15],
+                    "margin": [0, 0, 0, 0],
+                    "maxLabelLength": 45
+                }
+            )
+
+            const areas = {{ menu.areas | safe }};
+
+            let mapData = await dataUtils.loadDataFromURL('/static/data/by-page/homepage/areas.csv')
+            mapData = mapData.data
+            const area = mapData[rnd(0, areas.length - 1)]
+            area['Value'] = 2
+            mapData = [ ...mapData, area ]
+
+            const map = new Choropleth(
+                'map',
+                '/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json',
+                mapData,
+                {
+                    nameField: 'Area_name',
+                    valueField: 'Value',
+                    areaField: 'ITL221NM',
+                    width: 300,
+                    height: 240,
+                    labels: true,
+                    colourScheme: ['#84b871', '#e1e361'],
+                    allowZoom: false,
+                    zoomTo: area.Area_name,
+                    highlight: area.Area_name
+                }
+            )
+
+            document.getElementById('featured-region').setAttribute('href', `/social_mobility_by_area/${area.Area_name.toLowerCase().replace(/ /g, '_')}`)
+            document.getElementById('featured-region').innerText = area.Area_name
+
+            function rnd(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min)
+            }
+        })()
+    </script>
 {% endblock %}

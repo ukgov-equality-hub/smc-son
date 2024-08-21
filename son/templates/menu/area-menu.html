@@ -1,5 +1,5 @@
 
-{% macro areamenu(id, menu, selectedarea, selected) %}
+{% macro areamenu(showFooter = True) %}
     <nav role="navigation"
          aria-label="Find an area"
          class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-0"
@@ -51,7 +51,8 @@
             <div id="area-search-hint" class="govuk-hint govuk-!-font-size-16">
                 Search by one of
                 <a href="/social_mobility_by_area/latest#the-203-regions"
-                   class="govuk-link">
+                   class="govuk-link"
+                style="font-size: 1rem;">
                     203 regions</a>.
                 <br>
                 Start typing an area name to see a list of matching areas below
@@ -70,10 +71,12 @@
             </ul>
         </div>
 
-        <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
-        <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
-            <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
-        </ul>
+        {% if showFooter %}
+            <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+            <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+                <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
+            </ul>
+        {% endif %}
     </nav>
 
     <script>
