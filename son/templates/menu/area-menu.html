@@ -120,10 +120,18 @@
 
                 const postcodeApiJson = await postcodeApiResponse.json();
                 const admin_district = postcodeApiJson.result.codes.admin_district;
+                let matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_district));
+                
+                if (!matchingRegion) {
+                    const admin_county = postcodeApiJson.result.codes.admin_county;
+                    matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_county));
+                }
 
-                const matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_district));
-
-                window.location.href = `/social_mobility_by_area/203_regions/${matchingRegion.url}`
+                if (matchingRegion) {
+                    window.location.href = `/social_mobility_by_area/203_regions/${matchingRegion.url}`;
+                } else {
+                    showPostcodeSearchError('We cannot find this region.<br>Try the area search below')
+                }
             })
 
             ////////////////////////
