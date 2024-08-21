@@ -11,7 +11,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart1',
-                `${location.protocol}//${location.host}/static/data/by-page/drivers_of_social_mobility/DR14_overview_no_average-20230417.csv`,
+                '/static/data/by-page/drivers_of_social_mobility/DR14_overview_no_average-20230417.csv',
                 { "height": 200, "type": "bary", "xkey": "Time_period", "ykey": "Value", "zkey": "Category", "sort": "Time_period", "scale": "%", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "colourScheme": ["#1a9e1c", "#00703c", "#eb652e", "#0096ff", "#0f265c", "#808080"], "margin": [0, 0, 0, 0], "maxLabelLength": 50 }
             )
         </script>
@@ -26,7 +26,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart2',
-                `${location.protocol}//${location.host}/static/data/by-page/drivers_of_social_mobility/DR34_overview-20230414.csv`,
+                '/static/data/by-page/drivers_of_social_mobility/DR34_overview-20230414.csv',
                 { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "scale": "££", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 5, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [8, 15], "margin": [0, 0, 0, 0], "maxLabelLength": 45 }
             )
         </script>
@@ -41,7 +41,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart3',
-                `${location.protocol}//${location.host}/static/data/by-page/drivers_of_social_mobility/DR52_overview-20230417.csv`,
+                '/static/data/by-page/drivers_of_social_mobility/DR52_overview-20230417.csv',
                 { "height": 200, "type": "liney", "xkey": "Time_period", "ykey": "Value", "sort": "Time_period", "xgrid": false, "ygrid": true, "xticks": "first-last", "yticks": 2, "legend": false, "showDots": false, "colourScheme": ["#5694ca"], "range": [0, 2], "margin": [0, 0, 0, 0], "maxLabelLength": 35 }
             )
         </script>

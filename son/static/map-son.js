@@ -104,7 +104,7 @@ function buildMap(mapId, datafile, download, overrideOptions) {
 
     maps[mapId] = new Choropleth(
         'map' + mapId,
-        `${location.protocol}//${location.host}${options.map}`,
+        options.map,
         mapsData[mapId],
         options
     )

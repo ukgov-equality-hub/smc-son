@@ -12,7 +12,7 @@ as they move through education and into the labour market.
         <script>
             new Chart(
                 'chart1',
-                `${location.protocol}//${location.host}/static/data/by-page/intermediate_outcomes/IN13_ethnicity_fsm-20230601.csv`,
+                '/static/data/by-page/intermediate_outcomes/IN13_ethnicity_fsm-20230601.csv',
                 { "height": 200, "type": "bar", "xkey": "Value", "ykey": "Category", "sort": "Value", "scale": "%", "rounding": "0dp", "xgrid": true, "ygrid": false, "xticks": 2, "yticks": "none", "legend": false, "colourScheme": ["#0f265c"], "margin": [0, 0, 0, 0], "maxLabelLength": 20 }
             )
         </script>
@@ -27,7 +27,7 @@ as they move through education and into the labour market.
         <script>
             new Chart(
                 'chart2',
-                `${location.protocol}//${location.host}/static/data/by-page/intermediate_outcomes/IN31_gender-20230327.csv`,
+                '/static/data/by-page/intermediate_outcomes/IN31_gender-20230327.csv',
                 { "height": 200, "type": "bary", "xkey": "Sex", "ykey": "Value", "group": "SEB", "sort": "Sex", "scale": "%", "rounding": "0dp", "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
@@ -42,7 +42,7 @@ as they move through education and into the labour market.
         <script>
             new Chart(
                 'chart3',
-                `${location.protocol}//${location.host}/static/data/by-page/intermediate_outcomes/IN34_disability-20230327.csv`,
+                '/static/data/by-page/intermediate_outcomes/IN34_disability-20230327.csv',
                 { "height": 200, "type": "bary", "xkey": "Category", "ykey": "Value", "group": "SEB", "sort": "Category", "scale": "££", "rounding": "1dp", "xgrid": false, "ygrid": true, "xticks": "none", "yticks": 2, "legend": false, "colourScheme": ["#5694ca", "#d4351c"], "margin": [0, 0, 0, 0], "maxLabelLength": 40 }
             )
         </script>
