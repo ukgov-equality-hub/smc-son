@@ -1,0 +1,17 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,level_with_text
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,1,test,reading,414,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 1
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,1,test,reading,447,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 1
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,2,test,reading,423,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 2
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,2,test,reading,457,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 2
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,3.3,test,reading,442,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 3.3
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,3.3,test,reading,483,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 3.3
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,3.4,test,reading,463,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 3.4
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,3.4,test,reading,500,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 3.4
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,4,test,reading,468,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 4
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,4,test,reading,492,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 4
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,5,test,reading,475,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 5
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,5,test,reading,497,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 5
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,6,test,reading,500,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 6
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,6,test,reading,525,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 6
+IN14,Skills at age 15,NA,NA,OECD,2022,NA,15,NA,ISCED level,7,test,reading,508,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 7
+IN14,Skills at age 15,NA,NA,United Kingdom,2022,NA,15,NA,ISCED level,7,test,reading,527,NA,NA,NA,NA,score,Averages for age 15 years PISA scale,Level 7
