@@ -1,0 +1,5 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+DR51,Broadband speed,Country,K02000001,United Kingdom,2023,Total,NA,Total,NA,NA,NA,NA,76,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2022,Total,NA,Total,NA,NA,NA,NA,69,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2021,Total,NA,Total,NA,NA,NA,NA,46,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2020,Total,NA,Total,NA,NA,NA,NA,27,NA,NA,NA,NA,Percentage,NA
