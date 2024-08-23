@@ -8,7 +8,7 @@
             Find an area
         </h2>
 
-        <form id="postcode-search-form" style="display: none">
+        <form id="postcode-search-form" style="display: none" role="search">
             <div class="govuk-form-group">
                 <h3 class="govuk-label-wrapper">
                     <label for="postcode-search"
@@ -21,7 +21,9 @@
                 </div>
                 <p id="postcode-search-error"
                    class="govuk-error-message"
-                   style="display: none;">
+                   style="display: none;"
+                   role="alert"
+                   aria-live="assertive">
                     <span class="govuk-visually-hidden">Error:</span>
                     <span id="postcode-search-error-message"></span>
                 </p>
@@ -30,7 +32,8 @@
                            id="postcode-search"
                            class="govuk-input govuk-input--width-10"
                            spellcheck="false"
-                           aria-describedby="postcode-search-hint postcode-search-error">
+                           aria-describedby="postcode-search-hint postcode-search-error"
+                           role="searchbox">
                     <button type="submit"
                             data-module="govuk-button"
                             class="govuk-button"
@@ -41,7 +44,7 @@
             </div>
         </form>
 
-        <div class="govuk-form-group">
+        <div class="govuk-form-group" role="search">
             <h3 class="govuk-label-wrapper">
                 <label for="area-search"
                        class="govuk-label govuk-label--s">
@@ -62,12 +65,14 @@
                        id="area-search"
                        class="govuk-input govuk-input--width-10"
                        spellcheck="false"
-                       aria-describedby="area-search-hint">
+                       aria-describedby="area-search-hint"
+                       role="searchbox">
             </div>
 
             <ul id="area-search-results"
                 class="moj-side-navigation__list none-collapsible"
-                style="display: block;">
+                style="display: block;"
+                aria-live="polite">
             </ul>
         </div>
 
