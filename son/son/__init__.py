@@ -121,10 +121,10 @@ def area_page_203_regions(area):
     if row_for_region is None:
         abort(404)
 
-    row_for_region['childhood_conditions_group_name'] = row_for_region['childhood_conditions_group_name'].capitalize().replace('group', '').rstrip()
-    row_for_region['innovation_and_growth_group_name'] = row_for_region['innovation_and_growth_group_name'].capitalize().replace('group', '').rstrip()
-    row_for_region['labour_market_opportunities_group_name'] = row_for_region['labour_market_opportunities_group_name'].capitalize().replace('group', '').rstrip()
-    row_for_region['promising_prospects_group_name'] = row_for_region['promising_prospects_group_name'].capitalize().replace('group', '').rstrip()
+    row_for_region['childhood_conditions_group_name'] = row_for_region['childhood_conditions_group_name'].lower().replace('group', '').rstrip()
+    row_for_region['innovation_and_growth_group_name'] = row_for_region['innovation_and_growth_group_name'].lower().replace('group', '').rstrip()
+    row_for_region['labour_market_opportunities_group_name'] = row_for_region['labour_market_opportunities_group_name'].lower().replace('group', '').rstrip()
+    row_for_region['promising_prospects_group_name'] = row_for_region['promising_prospects_group_name'].lower().replace('group', '').rstrip()
 
     return render_template(
         'area/203_regions.html',
