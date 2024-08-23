@@ -53,6 +53,16 @@
     box-sizing: border-box;
 }
 
+.govuk-warning-text {
+    display: flex;
+    align-items: center;
+    max-width: 775px;
+}
+.govuk-warning-text .govuk-warning-text__text p {
+    margin: 0;
+    font-weight: unset;
+}
+
 @media(max-width: 40.0625em) {
     .js-enabled {
         nav.govuk-header__navigation {
