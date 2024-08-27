@@ -17,6 +17,53 @@
                 <p class="govuk-body">
                     This page shows how {{ title }} is classified for 4 measures of social mobility.
                 </p>
+                <dl class="govuk-summary-list" style="width: auto;">
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key" style="width: fit-content;">
+                            <a href="/intermediate_outcomes/composite_indices/promising_prospects/latest"
+                               class="govuk-link">
+                                Promising prospects</a>
+                        </dt>
+                        <dd class="govuk-summary-list__value" style="width: fit-content;">
+                            {{ row_for_region['promising_prospects_group_name'] | capitalize }}
+                            group
+                        </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key" style="width: fit-content;">
+                            <a href="/drivers_of_social_mobility/composite_indices/childhood_conditions/latest"
+                               class="govuk-link">
+                                Childhood conditions</a>
+                        </dt>
+                        <dd class="govuk-summary-list__value" style="width: fit-content;">
+                            {{ row_for_region['childhood_conditions_group_name'] | capitalize }}
+                            group
+                        </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key" style="width: fit-content;">
+                            <a href="/drivers_of_social_mobility/composite_indices/labour_market_opportunities/latest"
+                               class="govuk-link">
+                                Labour market opportunities</a>
+                        </dt>
+                        <dd class="govuk-summary-list__value" style="width: fit-content;">
+                            {{ row_for_region['labour_market_opportunities_group_name'] | capitalize }}
+                            group
+                        </dd>
+                    </div>
+                    <div class="govuk-summary-list__row">
+                        <dt class="govuk-summary-list__key" style="width: fit-content;">
+                            <a href="/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest"
+                               class="govuk-link">
+                                Innovation and growth</a>
+                        </dt>
+                        <dd class="govuk-summary-list__value" style="width: fit-content;">
+                            {{ row_for_region['innovation_and_growth_group_name'] | capitalize }}
+                            group
+                        </dd>
+                    </div>
+                </dl>
+
                 <p class="govuk-body govuk-!-padding-bottom-3">
                     {{ title }} is in the:
                 </p>
