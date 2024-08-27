@@ -63,6 +63,10 @@
     font-weight: unset;
 }
 
+.govuk-hint .govuk-body {
+    color: #505a5f;
+}
+
 @media(max-width: 40.0625em) {
     .js-enabled {
         nav.govuk-header__navigation {

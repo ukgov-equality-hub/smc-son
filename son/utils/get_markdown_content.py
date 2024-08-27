@@ -45,6 +45,31 @@ def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_dire
     current_tabs_list = []
     next_data_table_or_chart_id = ['']
 
+    def hint_generator(ctx):
+        md_inner = markdown.Markdown(extensions=[custom_blocks_extensions, 'attr_list', 'sane_lists'])
+        inner_content_html = md_inner.convert(ctx.content)
+
+        rendered_html = render_template(
+            'components/hint.html',
+            inner_content=inner_content_html
+        )
+        prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return prettified_html
+
+    def inset_text_generator(ctx, classes=''):
+        md_inner = markdown.Markdown(extensions=[custom_blocks_extensions, 'attr_list', 'sane_lists'])
+        inner_content_html = md_inner.convert(ctx.content)
+
+        rendered_html = render_template(
+            'components/inset-text.html',
+            classes=classes,
+            inner_content=inner_content_html
+        )
+        prettified_html = BeautifulSoup(rendered_html, 'html.parser').prettify()  # Removes excess blank lines which the outer Markdown parsed will convert into unwanted extras <br>s
+
+        return prettified_html
+
     def details_generator(ctx, summary):
         md_inner = markdown.Markdown(extensions=[custom_blocks_extensions, 'attr_list', 'sane_lists'])
         inner_content_html = md_inner.convert(ctx.content)
@@ -162,6 +187,8 @@ def convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_dire
         'visualisation': visualisation_generator,
         'download_full_dataset_link': download_full_dataset_link_generator,
         'download_section': download_section_generator,
+        'hint': hint_generator,
+        'inset_text': inset_text_generator,
         'details': details_generator,
         'warning': warning_generator,
     })
