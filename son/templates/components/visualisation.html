@@ -77,7 +77,7 @@
     {% if type == 'chart' %}
         {{ chart(id, data) }}
     {% else %}
-        <div class="grid grid2 map">
+        <div class="grid grid2 map {% if ([data, 'hideCaterpillar'] | attribute) %}map-hide-caterpillar{% endif %}">
             <div class="grid-map">
                 {{ map(id, data) }}
             </div>

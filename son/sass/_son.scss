@@ -490,6 +490,19 @@ div.data-table-data table {
     }
 }
 
+.map-hide-caterpillar {
+    max-width: 875px;
+}
+@media (max-width: 1400px) {
+    .map-hide-caterpillar {
+        height: 820px !important;
+    }
+}
+.map-hide-caterpillar .grid-map {
+    width: 100%;
+}
+
+
 .grid3 {
     height: 300px;
     gap: 20px;
