@@ -174,7 +174,7 @@ menu = {
                     'name': 'Composite indices',
                     'indicators': [
                         {
-                            'name': 'Childhood conditions'
+                            'name': 'Conditions of childhood'
                         },
                         {
                             'name': 'Labour market opportunities for young people'
