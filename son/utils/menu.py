@@ -177,7 +177,7 @@ menu = {
                             'name': 'Childhood conditions'
                         },
                         {
-                            'name': 'Labour market opportunities'
+                            'name': 'Labour market opportunities for young people'
                         },
                         {
                             'name': 'Innovation and growth'
