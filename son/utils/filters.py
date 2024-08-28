@@ -49,9 +49,10 @@ def menuitem_isopen_filter(context, details):
         menu = details[0]
         itemname = details[1]
         selected = details[2]
-        tree = get_menu_tree(menu, selected)
+        nav_item_type = details[3]
+        items_in_tree_to_open = get_menu_tree(menu, selected)
 
-        if itemname in tree:
+        if {'type': nav_item_type, 'name': itemname} in items_in_tree_to_open:
             return ' is-open'
         return ''
     return ''

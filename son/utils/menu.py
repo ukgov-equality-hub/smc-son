@@ -1188,30 +1188,26 @@ def url_link(link):
 
 
 def get_menu_tree(menu, selected):
-    tree = []
+    items_in_tree_to_open = []
 
     if 'domains' in menu:
         for domain in menu['domains']:
             if url_link(domain['name']) == url_link(selected):
-                tree.append(domain['name'])
+                items_in_tree_to_open.append({'type': 'domain', 'name': domain['name']})
                 break
 
             if 'subdomains' in domain:
                 for subdomain in domain['subdomains']:
-                    if url_link(subdomain['name']) == url_link(selected):
-                        tree.append(domain['name'])
-                        tree.append(subdomain['name'])
-                        break
 
                     if 'indicators' in subdomain:
                         for indicator in subdomain['indicators']:
                             if url_link(indicator['name']) == url_link(selected):
-                                tree.append(domain['name'])
-                                tree.append(subdomain['name'])
-                                tree.append(indicator['name'])
+                                items_in_tree_to_open.append({'type': 'domain', 'name': domain['name']})
+                                items_in_tree_to_open.append({'type': 'subdomain', 'name': subdomain['name']})
+                                items_in_tree_to_open.append({'type': 'indicator', 'name': indicator['name']})
                                 break
 
-    return tree
+    return items_in_tree_to_open
 
 
 def get_item_title(link):

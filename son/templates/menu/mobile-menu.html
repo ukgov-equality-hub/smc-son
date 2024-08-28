@@ -3,17 +3,17 @@
         <nav role="navigation" class="moj-side-navigation moj-side-navigation-mobile" aria-label="Mobile navigation">
             <ul class="moj-side-navigation__list collapsible">
                 {% for domain in menu.domains %}
-                <li class="moj-side-navigation__item{{ [domain.name, selected] | menuitem_isactive }}{{ [menu, domain.name, selected] | menuitem_isopen }}">
+                <li class="moj-side-navigation__item{{ [domain.name, selected] | menuitem_isactive }}{{ [menu, domain.name, selected, 'domain'] | menuitem_isopen }}">
                     <a href="/{{ domain.name | url_link }}">{{ domain.name }}</a>
                     <span class="collapsible__toggle-icon"></span>
                     <ul class="moj-side-navigation__list">
                         {% for subdomain in domain.subdomains %}
-                        <li class="moj-side-navigation__item{{ [subdomain.name, selected] | menuitem_isactive }}{{ [menu, subdomain.name, selected] | menuitem_isopen }}">
+                        <li class="moj-side-navigation__item{{ [menu, subdomain.name, selected, 'subdomain'] | menuitem_isopen }}">
                             <span class="subdomain">{{ subdomain.name }}</span>
                             <span class="collapsible__toggle-icon"></span>
                             <ul class="moj-side-navigation__list">
                                 {% for indicator in subdomain.indicators %}
-                                <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected] | menuitem_isopen }}">
+                                <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected, 'indicator'] | menuitem_isopen }}">
                                     <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}/{{ indicator.name | url_link }}">{{ indicator.name }}</a>
                                 </li>
                                 {% endfor %}

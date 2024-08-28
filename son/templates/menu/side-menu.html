@@ -4,12 +4,12 @@
             {% for domain in menu.domains %}
                 {% if (domain.name | url_link) == (selecteddomain | url_link) %}
                 {% for subdomain in domain.subdomains %}
-                <li class="moj-side-navigation__item{{ [subdomain.name, selected] | menuitem_isactive }}{{ [menu, subdomain.name, selected] | menuitem_isopen }}">
+                <li class="moj-side-navigation__item{{ [menu, subdomain.name, selected, 'subdomain'] | menuitem_isopen }}">
                     <a href="javascript:;" link="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}" class="collapsible-level1 collapsible__toggle-link">{{ subdomain.name }}</a>
                     <span class="collapsible__toggle-icon"></span>
                     <ul id="sidemenu" class="moj-side-navigation__list">
                         {% for indicator in subdomain.indicators %}
-                        <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected] | menuitem_isopen }}">
+                        <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected, 'indicator'] | menuitem_isopen }}">
                             <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}/{{ indicator.name | url_link }}">{{ indicator.name }}</a>
                         </li>
                         {% endfor %}
