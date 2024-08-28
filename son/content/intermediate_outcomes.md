@@ -1,6 +1,6 @@
 # Intermediate outcomes
 Intermediate outcomes focus on the experiences of young people
-as they move through education and into the labour market.
+as they move through education and into work.
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
@@ -36,7 +36,7 @@ as they move through education and into the labour market.
             )
         </script>
         <p class="govuk-body">
-            There is great variation across ethnicities in the attainment of pupils eligible for free school meals.
+            The attainment of pupils eligible for free school meals varies greatly across ethnicities.
         </p>
         <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_11/latest"
            class="govuk-link">
@@ -130,8 +130,7 @@ as they move through education and into the labour market.
 
 ## Elsewhere in State of the Nation 2024
 [Mobility outcomes](/mobility_outcomes)
-look at where people end up, typically in their 40s or 50s.
-They look at people’s socio-economic class, income, education and housing.
+look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
 [Drivers of social mobility](/drivers_of_social_mobility)
 are the background conditions that make social mobility easier.

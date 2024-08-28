@@ -36,8 +36,8 @@ Drivers of social mobility are the background conditions that make social mobili
             )
         </script>
         <p class="govuk-body">
-            The percentage of children living in relative poverty in the UK (after housing costs) has gone up since 2012 and is at about 30%.
-            It is below the levels reached in the 1990s, but much higher than in the 1960s and 1970s.
+            The percentage of children living in relative poverty in the UK (after housing costs) has gone up to around 30% since 2012,
+            below the levels reached in the 1990s, but higher than in the 1960s and 1970s.
         </p>
         <a href="/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/latest"
            class="govuk-link">
@@ -79,7 +79,6 @@ Drivers of social mobility are the background conditions that make social mobili
         </script>
         <p class="govuk-body">
             Unemployment among young people is the lowest it has been since 2014, at 11% in 2022.
-            This means that far fewer young people are suffering the negative effects of unemployment.
         </p>
         <a href="/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/latest"
            class="govuk-link">
@@ -121,8 +120,7 @@ Drivers of social mobility are the background conditions that make social mobili
             )
         </script>
         <p class="govuk-body">
-            The percentage of homes and businesses with gigabit internet availability has increased sharply across the UK since 2020, reaching 76% in 2023.
-            This provides a better technical infrastructure for innovation and growth.
+            The percentage of homes and businesses with ‘gigabit’ internet availability has gone up across the UK since 2020, reaching 76% in 2023.
         </p>
         <a href="/drivers_of_social_mobility/research_and_development_environment/broadband_speed/latest"
            class="govuk-link">
@@ -134,8 +132,7 @@ Drivers of social mobility are the background conditions that make social mobili
 
 ## Elsewhere in State of the Nation 2024
 [Mobility outcomes](/mobility_outcomes)
-look at where people end up, typically in their 40s or 50s.
-They look at people’s socio-economic class, income, education and housing.
+look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
 [Intermediate outcomes](/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.

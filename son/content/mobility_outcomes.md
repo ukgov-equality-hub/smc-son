@@ -1,6 +1,5 @@
 # Mobility outcomes
-Mobility outcomes look at where people end up, typically in their 40s or 50s.
-They look at people’s socio-economic class, income, education and housing.
+Mobility outcomes look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
@@ -33,8 +32,11 @@ They look at people’s socio-economic class, income, education and housing.
                 }
             )
         </script>
-        <p class="govuk-body">Relative occupational mobility has been improving since 2014, with significant differences between 2019 to 2022 and the base year 2014.</p>
-        <a href="/mobility_outcomes/occupation/relative_occupational_mobility" class="govuk-link">Read more...</a>
+        <p class="govuk-body">Relative occupational mobility has been improving since 2014, with significant differences between 2019 to 2022.</p>
+        <a href="/mobility_outcomes/occupation/relative_occupational_mobility" class="govuk-link">
+            Read more
+            <span class="govuk-visually-hidden">about relative occupational mobility</span>
+        </a>
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Absolute educational mobility</h3>
@@ -66,7 +68,10 @@ They look at people’s socio-economic class, income, education and housing.
             )
         </script>
         <p class="govuk-body">Upwards educational mobility rates are high, reflecting the expansion of school and higher education qualifications since the 1960s.</p>
-        <a href="/mobility_outcomes/education/absolute_educational_mobility" class="govuk-link">Read more...</a>
+        <a href="/mobility_outcomes/education/absolute_educational_mobility" class="govuk-link">
+            Read more
+            <span class="govuk-visually-hidden">about absolute educational mobility</span>
+        </a>
     </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Absolute housing mobility by sex</h3>
@@ -96,7 +101,10 @@ They look at people’s socio-economic class, income, education and housing.
             )
         </script>
         <p class="govuk-body">Women are significantly less likely than men to own their homes.</p>
-        <a href="/mobility_outcomes/housing/absolute_housing_mobility" class="govuk-link">Read more...</a>
+        <a href="/mobility_outcomes/housing/absolute_housing_mobility" class="govuk-link">
+            Read more
+            <span class="govuk-visually-hidden">about absolute housing mobility</span>
+        </a>
     </div>
 </div>
 
