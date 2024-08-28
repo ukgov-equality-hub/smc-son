@@ -136,5 +136,4 @@ look at people's occupations, educational levels and housing situations, typical
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2023](https://www.gov.uk/government/publications/state-of-the-nation-2023-people-and-places)
-on GOV.UK.
+[State of the Nation 2024 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2024-local-to-national-mapping-opportunities-for-all)
