@@ -8,24 +8,12 @@ window.document.addEventListener('DOMContentLoaded', function () {
         }
 
         function areaSelect(a) {
-            location.href = `/social_mobility_by_area/${a.name.toLowerCase().replace(/ /g, '_').replace(/\//g, '_and_')}`;
+            location.href = `${map_element.getAttribute('data-area-page-url-prefix')}/${a.name.toLowerCase().replace(/ /g, '_').replace(/\//g, '_and_')}`;
         }
 
         function handleMouseMove(event) {
-            let eventDoc, doc, body;
-
-            event = event || window.event
-            if (event.pageX == null && event.clientX != null) {
-                eventDoc = (event.target && event.target.ownerDocument) || document;
-                doc = eventDoc.documentElement;
-                body = eventDoc.body;
-
-                event.pageX = event.clientX + (doc && doc.scrollLeft || body && body.scrollLeft || 0) - (doc && doc.clientLeft || body && body.clientLeft || 0);
-                event.pageY = event.clientY + (doc && doc.scrollTop  || body && body.scrollTop  || 0) - (doc && doc.clientTop  || body && body.clientTop  || 0 );
-            }
-
-            document.getElementById('social-mobility-by-area-name').style.top = `${event.pageY - 10}px`;
-            document.getElementById('social-mobility-by-area-name').style.left = `${event.pageX + 20}px`;
+            document.getElementById('social-mobility-by-area-name').style.top = `${event.offsetY + 10}px`;
+            document.getElementById('social-mobility-by-area-name').style.left = `${event.offsetX + 10}px`;
         }
 
         document.getElementById('social-mobility-by-area-map-container').onmousemove = handleMouseMove;
@@ -34,18 +22,18 @@ window.document.addEventListener('DOMContentLoaded', function () {
 
         const map = new Choropleth(
             'social-mobility-by-area-map',
-            '/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json',
-            '/static/data/by-page/social_mobility_by_area/areas.csv',
+            map_element.getAttribute('data-shapefile-url'),
+            map_element.getAttribute('data-areas-csv-url'),
             {
-                nameField: 'Area_name',
-                valueField: 'Value',
-                areaField: 'ITL221NM',
+                nameField: map_element.getAttribute('data-name-field'),
+                valueField: map_element.getAttribute('data-value-field'),
+                areaField: map_element.getAttribute('data-area-field'),
                 width: 537,
                 height: 704,
                 labels: true,
                 colourScheme: ['#e1e361', '#84b871'],
                 allowZoom: map_element.getAttribute('data-allow-zoom') === 'true',
-                background: true,
+                background: map_element.getAttribute('data-show-background') === 'true',
                 rolloverBehaviour: 'fade',
                 onRollover: areaName,
                 onClick: areaSelect
