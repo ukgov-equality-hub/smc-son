@@ -976,6 +976,21 @@ div.quintile {
         background: #0571b0;
     }
 }
+div.quintile.bigger-middle-group .q1 {
+    width: 5%;
+}
+div.quintile.bigger-middle-group .q2 {
+    width: 10%;
+}
+div.quintile.bigger-middle-group .q3 {
+    width: 70%;
+}
+div.quintile.bigger-middle-group .q4 {
+    width: 10%;
+}
+div.quintile.bigger-middle-group .q5 {
+    width: 5%;
+}
 
 .reversePolarity .quintile {
     div.q1 {
