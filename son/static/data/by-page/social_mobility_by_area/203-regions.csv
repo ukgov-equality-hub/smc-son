@@ -1,5 +1,5 @@
 ﻿region_fullname,value
-Aberdeen City,1
+Aberdeen city,1
 Aberdeenshire,1
 Angus,1
 Argyll and Bute Islands,1
@@ -20,65 +20,65 @@ Bradford,1
 Brent,1
 Bridgend,1
 Brighton and Hove,1
-City of Bristol,1
+Bristol,1
 Bromley,1
 Buckinghamshire,1
 Bury,1
 Caerphilly,1
 Calderdale,1
-Cambridgeshire CC,1
+Cambridgeshire county council,1
 Camden and City of London,1
 Cardiff,1
-Carmarthenshire,1
+Carmarthenshire county council,1
 Central Bedfordshire,1
-Ceredigion,1
+Ceredigion county council,1
 Cheshire East,1
 Cheshire West and Chester,1
-City of Edinburgh,1
+Edinburgh city,1
 Clackmannanshire,1
 Conwy,1
 Cornwall and Isles of Scilly,1
 Coventry,1
 Croydon,1
-Cumbria,1
+Cumbria county council,1
 Darlington,1
-Denbighshire,1
+Denbighshire county council,1
 Derby,1
-Derbyshire,1
-Devon CC,1
+Derbyshire county council,1
+Devon county council,1
 Doncaster,1
 Dorset,1
 Dudley,1
 Dumfries and Galloway,1
-Dundee City,1
-Durham,1
+Dundee city,1
+Durham county council,1
 Ealing,1
 East Ayrshire,1
 East Dunbartonshire,1
 East Lothian,1
 East Renfrewshire,1
 East Riding of Yorkshire,1
-East Sussex CC,1
+East Sussex county council,1
 Enfield,1
-Essex,1
+Essex county council,1
 Falkirk,1
 Fife,1
-Flintshire,1
+Flintshire county council,1
 Gateshead,1
-Glasgow City,1
-Gloucestershire CC,1
+Glasgow,1
+Gloucestershire county council,1
 Greenwich,1
 Gwynedd,1
 Hackney,1
 Halton,1
 Hammersmith and Fulham,1
-Hampshire,1
+Hampshire county council,1
 Haringey,1
 Harrow,1
 Hartlepool,1
 Havering,1
-County of Herefordshire,1
-Hertfordshire CC,1
+Herefordshire,1
+Hertfordshire county council,1
 Highland,1
 Hillingdon,1
 Hounslow,1
@@ -87,18 +87,18 @@ Isle of Anglesey,1
 Isle of Wight,1
 Islington,1
 Kensington and Chelsea,1
-Kent,1
-City of Kingston upon Hull,1
+Kent county council,1
+Hull,1
 Kingston upon Thames,1
 Kirklees,1
 Knowsley,1
 Lambeth,1
-Lancashire,1
+Lancashire county council,1
 Leeds,1
 Leicester,1
-Leicestershire CC,1
+Leicestershire county council,1
 Lewisham,1
-Lincolnshire CC,1
+Lincolnshire county council,1
 Liverpool,1
 Luton,1
 Manchester,1
@@ -108,34 +108,34 @@ Merton,1
 Middlesbrough,1
 Midlothian,1
 Milton Keynes,1
-Monmouthshire,1
+Monmouthshire county council,1
 Moray,1
 Na h-Eileanan Siar,1
 Neath Port Talbot,1
 Newcastle upon Tyne,1
 Newham,1
 Newport,1
-North Ayrshire mainland,1
+North Ayrshire,1
 North East Lincolnshire,1
 North Lanarkshire,1
 North Lincolnshire,1
 North Northamptonshire,1
 North Tyneside,1
-North Yorkshire CC,1
+North Yorkshire county council,1
 Northern Ireland,1
-Northumberland,1
-Norwich and Norfolk,1
+Northumberland county council,1
+Norwich and Norfolk county council,1
 Nottingham,1
-Nottinghamshire,1
+Nottinghamshire county council,1
 Oldham,1
 Orkney Islands,1
-Oxfordshire CC,1
-Pembrokeshire,1
+Oxfordshire county council,1
+Pembrokeshire county council,1
 Perth and Kinross,1
 Peterborough,1
 Plymouth,1
 Portsmouth,1
-Powys,1
+Powys county council,1
 Reading,1
 Redbridge,1
 Redcar and Cleveland,1
@@ -144,7 +144,7 @@ Rhondda Cynon Taf,1
 Richmond upon Thames,1
 Rochdale,1
 Rotherham,1
-Rutland,1
+Rutland county council,1
 Salford,1
 Sandwell,1
 Scottish Borders,1
@@ -154,7 +154,7 @@ Shetland Islands,1
 Shropshire,1
 Slough,1
 Solihull,1
-Somerset CC,1
+Somerset county council,1
 South Ayrshire,1
 South Lanarkshire,1
 South Tyneside,1
@@ -162,14 +162,14 @@ Southampton,1
 Southend-on-Sea,1
 Southwark,1
 St Helens,1
-Staffordshire CC,1
+Staffordshire county council,1
 Stirling,1
 Stockport,1
 Stockton-on-Tees,1
 Stoke-on-Trent,1
-Suffolk CC,1
+Suffolk county council,1
 Sunderland,1
-Surrey,1
+Surrey county council,1
 Sutton,1
 Swansea,1
 Swindon,1
@@ -186,12 +186,12 @@ Walsall,1
 Waltham Forest,1
 Wandsworth,1
 Warrington,1
-Warwickshire CC,1
+Warwickshire county council,1
 West Berkshire,1
 West Dunbartonshire,1
 West Lothian,1
 West Northamptonshire,1
-West Sussex,1
+West Sussex county council,1
 Westminster,1
 Wigan,1
 Wiltshire,1
@@ -199,6 +199,6 @@ Windsor and Maidenhead,1
 Wirral,1
 Wokingham,1
 Wolverhampton,1
-Worcestershire CC,1
+Worcestershire county council,1
 Wrexham,1
 York,1
