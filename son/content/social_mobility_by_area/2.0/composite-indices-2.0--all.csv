@@ -1,5 +1,5 @@
 ﻿region_url,region_fullname,childhood_conditions_group_name,childhood_conditions_group_id,innovation_and_growth_group_name,innovation_and_growth_group_id,labour_market_opportunities_group_name,labour_market_opportunities_group_id,promising_prospects_group_name,promising_prospects_group_id
-aberdeen_city,Aberdeen City,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+aberdeen_city,Aberdeen city,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 aberdeenshire,Aberdeenshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 angus,Angus,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 argyll_and_bute_islands,Argyll and Bute Islands,Middle Group,3,Least Favourable,1,Unfavourable,2,Middle Group,3
@@ -20,65 +20,65 @@ bradford,Bradford,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
 brent,Brent,Middle Group,3,Middle Group,3,Middle Group,3,Most Favourable,5
 bridgend,Bridgend,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 brighton_and_hove,Brighton and Hove,Most Favourable,5,Favourable,4,Middle Group,3,Favourable,4
-city_of_bristol,City of Bristol,Middle Group,3,Favourable,4,Most Favourable,5,Middle Group,3
+bristol,Bristol,Middle Group,3,Favourable,4,Most Favourable,5,Middle Group,3
 bromley,Bromley,Favourable,4,Middle Group,3,Favourable,4,Middle Group,3
 buckinghamshire,Buckinghamshire,Favourable,4,Middle Group,3,Favourable,4,Favourable,4
 bury,Bury,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 caerphilly,Caerphilly,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
 calderdale,Calderdale,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-cambridgeshire_cc,Cambridgeshire CC,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
+cambridgeshire_county_council,Cambridgeshire county council,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
 camden_and_city_of_london,Camden and City of London,Favourable,4,Most Favourable,5,Favourable,4,Most Favourable,5
 cardiff,Cardiff,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
-carmarthenshire,Carmarthenshire,Middle Group,3,Unfavourable,2,Unfavourable,2,Middle Group,3
+carmarthenshire_county_council,Carmarthenshire county council,Middle Group,3,Unfavourable,2,Unfavourable,2,Middle Group,3
 central_bedfordshire,Central Bedfordshire,Middle Group,3,Middle Group,3,Middle Group,3,Favourable,4
-ceredigion,Ceredigion,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
+ceredigion_county_council,Ceredigion county council,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
 cheshire_east,Cheshire East,Middle Group,3,Favourable,4,Middle Group,3,Favourable,4
 cheshire_west_and_chester,Cheshire West and Chester,Favourable,4,Favourable,4,Middle Group,3,Middle Group,3
-city_of_edinburgh,City of Edinburgh,Favourable,4,Favourable,4,Favourable,4,Middle Group,3
+edinburgh_city,Edinburgh city,Favourable,4,Favourable,4,Favourable,4,Middle Group,3
 clackmannanshire,Clackmannanshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 conwy,Conwy,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 cornwall_and_isles_of_scilly,Cornwall and Isles of Scilly,Middle Group,3,Least Favourable,1,Middle Group,3,Least Favourable,1
 coventry,Coventry,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 croydon,Croydon,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-cumbria,Cumbria,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+cumbria_county_council,Cumbria county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 darlington,Darlington,Middle Group,3,Middle Group,3,Unfavourable,2,Middle Group,3
-denbighshire,Denbighshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+denbighshire_county_council,Denbighshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 derby,Derby,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-derbyshire,Derbyshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-devon_cc,Devon CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+derbyshire_county_council,Derbyshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+devon_county_council,Devon county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 doncaster,Doncaster,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
 dorset,Dorset,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 dudley,Dudley,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 dumfries_and_galloway,Dumfries and Galloway,Middle Group,3,Least Favourable,1,Unfavourable,2,Least Favourable,1
-dundee_city,Dundee City,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-durham,Durham,Middle Group,3,Unfavourable,2,Unfavourable,2,Least Favourable,1
+dundee_city,Dundee city,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+durham_county_council,Durham county council,Middle Group,3,Unfavourable,2,Unfavourable,2,Least Favourable,1
 ealing,Ealing,Middle Group,3,Favourable,4,Middle Group,3,Most Favourable,5
 east_ayrshire,East Ayrshire,Middle Group,3,Unfavourable,2,Middle Group,3,Unfavourable,2
 east_dunbartonshire,East Dunbartonshire,Most Favourable,5,Middle Group,3,Middle Group,3,Middle Group,3
 east_lothian,East Lothian,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 east_renfrewshire,East Renfrewshire,Most Favourable,5,Middle Group,3,Middle Group,3,Middle Group,3
 east_riding_of_yorkshire,East Riding of Yorkshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-east_sussex_cc,East Sussex CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+east_sussex_county_council,East Sussex county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 enfield,Enfield,Middle Group,3,Middle Group,3,Middle Group,3,Favourable,4
-essex,Essex,Middle Group,3,Middle Group,3,Favourable,4,Middle Group,3
+essex_county_council,Essex county council,Middle Group,3,Middle Group,3,Favourable,4,Middle Group,3
 falkirk,Falkirk,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 fife,Fife,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-flintshire,Flintshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+flintshire_county_council,Flintshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 gateshead,Gateshead,Middle Group,3,Middle Group,3,Middle Group,3,Least Favourable,1
-glasgow_city,Glasgow City,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-gloucestershire_cc,Gloucestershire CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+glasgow,Glasgow,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+gloucestershire_county_council,Gloucestershire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 greenwich,Greenwich,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 gwynedd,Gwynedd,Middle Group,3,Unfavourable,2,Unfavourable,2,Middle Group,3
 hackney,Hackney,Middle Group,3,Favourable,4,Most Favourable,5,Favourable,4
 halton,Halton,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 hammersmith_and_fulham,Hammersmith and Fulham,Favourable,4,Most Favourable,5,Most Favourable,5,Favourable,4
-hampshire,Hampshire,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
+hampshire_county_council,Hampshire county council,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
 haringey,Haringey,Middle Group,3,Middle Group,3,Middle Group,3,Favourable,4
 harrow,Harrow,Middle Group,3,Middle Group,3,Middle Group,3,Most Favourable,5
 hartlepool,Hartlepool,Unfavourable,2,Middle Group,3,Unfavourable,2,Unfavourable,2
 havering,Havering,Middle Group,3,Middle Group,3,Most Favourable,5,Middle Group,3
-county_of_herefordshire,County of Herefordshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-hertfordshire_cc,Hertfordshire CC,Favourable,4,Favourable,4,Favourable,4,Favourable,4
+herefordshire,Herefordshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+hertfordshire_county_council,Hertfordshire county council,Favourable,4,Favourable,4,Favourable,4,Favourable,4
 highland,Highland,Middle Group,3,Least Favourable,1,Middle Group,3,Middle Group,3
 hillingdon,Hillingdon,Middle Group,3,Middle Group,3,Middle Group,3,Most Favourable,5
 hounslow,Hounslow,Middle Group,3,Favourable,4,Middle Group,3,Most Favourable,5
@@ -87,18 +87,18 @@ isle_of_anglesey,Isle of Anglesey,Middle Group,3,Unfavourable,2,Middle Group,3,M
 isle_of_wight,Isle of Wight,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 islington,Islington,Middle Group,3,Favourable,4,Most Favourable,5,Favourable,4
 kensington_and_chelsea,Kensington and Chelsea,Favourable,4,Most Favourable,5,Favourable,4,Favourable,4
-kent,Kent,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-city_of_kingston_upon_hull,City of Kingston upon Hull,Least Favourable,1,Middle Group,3,Middle Group,3,Unfavourable,2
+kent_county_council,Kent county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+hull,Hull,Least Favourable,1,Middle Group,3,Middle Group,3,Unfavourable,2
 kingston_upon_thames,Kingston upon Thames,Most Favourable,5,Middle Group,3,Middle Group,3,Favourable,4
 kirklees,Kirklees,Middle Group,3,Middle Group,3,Middle Group,3,Unfavourable,2
 knowsley,Knowsley,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 lambeth,Lambeth,Middle Group,3,Favourable,4,Most Favourable,5,Favourable,4
-lancashire,Lancashire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+lancashire_county_council,Lancashire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 leeds,Leeds,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 leicester,Leicester,Least Favourable,1,Middle Group,3,Middle Group,3,Middle Group,3
-leicestershire_cc,Leicestershire CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+leicestershire_county_council,Leicestershire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 lewisham,Lewisham,Middle Group,3,Middle Group,3,Most Favourable,5,Favourable,4
-lincolnshire_cc,Lincolnshire CC,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
+lincolnshire_county_council,Lincolnshire county council,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
 liverpool,Liverpool,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 luton,Luton,Unfavourable,2,Middle Group,3,Middle Group,3,Favourable,4
 manchester,Manchester,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
@@ -108,34 +108,34 @@ merton,Merton,Favourable,4,Middle Group,3,Favourable,4,Middle Group,3
 middlesbrough,Middlesbrough,Least Favourable,1,Middle Group,3,Least Favourable,1,Middle Group,3
 midlothian,Midlothian,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 milton_keynes,Milton Keynes,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
-monmouthshire,Monmouthshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+monmouthshire_county_council,Monmouthshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 moray,Moray,Middle Group,3,Least Favourable,1,Unfavourable,2,Middle Group,3
 na_h-eileanan_siar,Na h-Eileanan Siar,Middle Group,3,Least Favourable,1,Middle Group,3,Middle Group,3
 neath_port_talbot,Neath Port Talbot,Middle Group,3,Unfavourable,2,Unfavourable,2,Middle Group,3
 newcastle_upon_tyne,Newcastle upon Tyne,Middle Group,3,Middle Group,3,Middle Group,3,Unfavourable,2
 newham,Newham,Unfavourable,2,Middle Group,3,Middle Group,3,Favourable,4
 newport,Newport,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-north_ayrshire_mainland,North Ayrshire mainland,Unfavourable,2,Unfavourable,2,Middle Group,3,Unfavourable,2
+north_ayrshire,North Ayrshire,Unfavourable,2,Unfavourable,2,Middle Group,3,Unfavourable,2
 north_east_lincolnshire,North East Lincolnshire,Least Favourable,1,Middle Group,3,Middle Group,3,Unfavourable,2
 north_lanarkshire,North Lanarkshire,Middle Group,3,Middle Group,3,Middle Group,3,Least Favourable,1
 north_lincolnshire,North Lincolnshire,Unfavourable,2,Middle Group,3,Least Favourable,1,Middle Group,3
 north_northamptonshire,North Northamptonshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 north_tyneside,North Tyneside,Middle Group,3,Middle Group,3,Middle Group,3,Unfavourable,2
-north_yorkshire_cc,North Yorkshire CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+north_yorkshire_county_council,North Yorkshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 northern_ireland,Northern Ireland,Middle Group,3,Middle Group,3,Middle Group,3,Least Favourable,1
-northumberland,Northumberland,Middle Group,3,Middle Group,3,Unfavourable,2,Unfavourable,2
-norwich_and_norfolk,Norwich and Norfolk,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+northumberland_county_council,Northumberland county council,Middle Group,3,Middle Group,3,Unfavourable,2,Unfavourable,2
+norwich_and_norfolk_county_council,Norwich and Norfolk county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 nottingham,Nottingham,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
-nottinghamshire,Nottinghamshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+nottinghamshire_county_council,Nottinghamshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 oldham,Oldham,Least Favourable,1,Middle Group,3,Unfavourable,2,Middle Group,3
 orkney_islands,Orkney Islands,Middle Group,3,Least Favourable,1,Middle Group,3,Middle Group,3
-oxfordshire_cc,Oxfordshire CC,Most Favourable,5,Favourable,4,Favourable,4,Middle Group,3
-pembrokeshire,Pembrokeshire,Middle Group,3,Least Favourable,1,Middle Group,3,Middle Group,3
+oxfordshire_county_council,Oxfordshire county council,Most Favourable,5,Favourable,4,Favourable,4,Middle Group,3
+pembrokeshire_county_council,Pembrokeshire county council,Middle Group,3,Least Favourable,1,Middle Group,3,Middle Group,3
 perth_and_kinross,Perth and Kinross,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 peterborough,Peterborough,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
 plymouth,Plymouth,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 portsmouth,Portsmouth,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-powys,Powys,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
+powys_county_council,Powys county council,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
 reading,Reading,Favourable,4,Favourable,4,Favourable,4,Middle Group,3
 redbridge,Redbridge,Middle Group,3,Middle Group,3,Middle Group,3,Most Favourable,5
 redcar_and_cleveland,Redcar and Cleveland,Unfavourable,2,Middle Group,3,Least Favourable,1,Middle Group,3
@@ -144,7 +144,7 @@ rhondda_cynon_taf,Rhondda Cynon Taf,Middle Group,3,Unfavourable,2,Middle Group,3
 richmond_upon_thames,Richmond upon Thames,Most Favourable,5,Most Favourable,5,Middle Group,3,Most Favourable,5
 rochdale,Rochdale,Unfavourable,2,Middle Group,3,Middle Group,3,Unfavourable,2
 rotherham,Rotherham,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
-rutland,Rutland,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
+rutland_county_council,Rutland county council,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
 salford,Salford,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 sandwell,Sandwell,Least Favourable,1,Middle Group,3,Unfavourable,2,Middle Group,3
 scottish_borders,Scottish Borders,Middle Group,3,Least Favourable,1,Middle Group,3,Least Favourable,1
@@ -154,7 +154,7 @@ shetland_islands,Shetland Islands,Middle Group,3,Least Favourable,1,Unfavourable
 shropshire,Shropshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 slough,Slough,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
 solihull,Solihull,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-somerset_cc,Somerset CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+somerset_county_council,Somerset county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 south_ayrshire,South Ayrshire,Middle Group,3,Unfavourable,2,Middle Group,3,Middle Group,3
 south_lanarkshire,South Lanarkshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 south_tyneside,South Tyneside,Middle Group,3,Middle Group,3,Middle Group,3,Least Favourable,1
@@ -162,14 +162,14 @@ southampton,Southampton,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,
 southend-on-sea,Southend-on-Sea,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 southwark,Southwark,Middle Group,3,Middle Group,3,Most Favourable,5,Favourable,4
 st_helens,St Helens,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-staffordshire_cc,Staffordshire CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+staffordshire_county_council,Staffordshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 stirling,Stirling,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
 stockport,Stockport,Favourable,4,Middle Group,3,Favourable,4,Middle Group,3
 stockton-on-tees,Stockton-on-Tees,Middle Group,3,Middle Group,3,Least Favourable,1,Middle Group,3
 stoke-on-trent,Stoke-on-Trent,Least Favourable,1,Middle Group,3,Middle Group,3,Middle Group,3
-suffolk_cc,Suffolk CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+suffolk_county_council,Suffolk county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 sunderland,Sunderland,Unfavourable,2,Middle Group,3,Least Favourable,1,Least Favourable,1
-surrey,Surrey,Most Favourable,5,Middle Group,3,Favourable,4,Most Favourable,5
+surrey_county_council,Surrey county council,Most Favourable,5,Middle Group,3,Favourable,4,Most Favourable,5
 sutton,Sutton,Favourable,4,Middle Group,3,Favourable,4,Middle Group,3
 swansea,Swansea,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 swindon,Swindon,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
@@ -186,12 +186,12 @@ walsall,Walsall,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
 waltham_forest,Waltham Forest,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 wandsworth,Wandsworth,Most Favourable,5,Most Favourable,5,Most Favourable,5,Favourable,4
 warrington,Warrington,Middle Group,3,Favourable,4,Middle Group,3,Middle Group,3
-warwickshire_cc,Warwickshire CC,Middle Group,3,Middle Group,3,Middle Group,3,Favourable,4
+warwickshire_county_council,Warwickshire county council,Middle Group,3,Middle Group,3,Middle Group,3,Favourable,4
 west_berkshire,West Berkshire,Favourable,4,Favourable,4,Favourable,4,Middle Group,3
 west_dunbartonshire,West Dunbartonshire,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
 west_lothian,West Lothian,Middle Group,3,Middle Group,3,Unfavourable,2,Middle Group,3
 west_northamptonshire,West Northamptonshire,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
-west_sussex,West Sussex,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+west_sussex_county_council,West Sussex county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 westminster,Westminster,Middle Group,3,Most Favourable,5,Favourable,4,Middle Group,3
 wigan,Wigan,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 wiltshire,Wiltshire,Favourable,4,Middle Group,3,Middle Group,3,Middle Group,3
@@ -199,6 +199,6 @@ windsor_and_maidenhead,Windsor and Maidenhead,Most Favourable,5,Favourable,4,Fav
 wirral,Wirral,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 wokingham,Wokingham,Most Favourable,5,Favourable,4,Middle Group,3,Middle Group,3
 wolverhampton,Wolverhampton,Unfavourable,2,Middle Group,3,Middle Group,3,Middle Group,3
-worcestershire_cc,Worcestershire CC,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
+worcestershire_county_council,Worcestershire county council,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 wrexham,Wrexham,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
 york,York,Middle Group,3,Middle Group,3,Middle Group,3,Middle Group,3
