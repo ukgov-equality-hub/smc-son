@@ -185,7 +185,7 @@ class Chart {
         let ygrid = options.ygrid === false ? false : grid
         const xscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.xscale) ? options.xscale : null
         const yscale = ['sqrt', 'pow', 'log', 'symlog'].includes(options.yscale) ? options.yscale : null
-        const smallScreenSize = 440
+        const smallScreenSize = 640
         let xticks = options.xticks === false ? false : options.xticks
         if (typeof options.xticksSmallScreen !== 'undefined' && this.width < smallScreenSize) {
             xticks = options.xticksSmallScreen === false ? false : options.xticksSmallScreen
