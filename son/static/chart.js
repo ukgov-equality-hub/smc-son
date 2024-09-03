@@ -566,7 +566,7 @@ class Chart {
                 marks.push(Plot.axisX({
                     label: xtitle,
                     labelArrow: 'none',
-                    labelAnchor: 'center',
+                    labelAnchor: (div.offsetWidth < 600 ? 'right' : 'center'),
                     labelOffset: zkey && group ? 70 : 50,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? ticksId(xticks) : undefined,
