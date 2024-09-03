@@ -137,27 +137,27 @@
 
     <script>
         (async function () {
-            let mapData = await new DataUtils().loadDataFromURL('/static/data/by-page/social_mobility_by_area/areas.csv')
+            let mapData = await new DataUtils().loadDataFromURL('/static/data/by-page/social_mobility_by_area/203-regions.csv')
             mapData = mapData.data
-            const area = mapData.filter(x => x['Area_name'] === '{{ title }}')[0]
-            area['Value'] = 2
+            const area = mapData.filter(x => x['region_fullname'] === '{{ title }}')[0]
+            area['value'] = 2
             mapData = [ ...mapData, area ]
 
             const map = new Choropleth(
                 'map',
-                '/static/data/maps/International_Territorial_Level_2_(January_2021)_UK_BUC.json',
+                '/static/data/maps/UK203regions-simplify2percent.topojson',
                 mapData,
                 {
-                    nameField: 'Area_name',
-                    valueField: 'Value',
-                    areaField: 'ITL221NM',
+                    nameField: 'region_fullname',
+                    valueField: 'value',
+                    areaField: 'Newname',
                     width: 300,
                     height: 300,
                     labels: true,
                     colourScheme: ['#84b871', '#e1e361'],
                     allowZoom: false,
-                    zoomTo: area.Area_name,
-                    highlight: area.Area_name
+                    zoomTo: area.region_fullname,
+                    highlight: area.region_fullname
                 }
             )
         })()
