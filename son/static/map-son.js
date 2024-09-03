@@ -12,11 +12,16 @@ function buildMap(mapId, datafile, download, overrideOptions) {
 
             if (typeof a !== 'undefined' && typeof a.name !== 'undefined' && a.name != '') {
                 let performance = ''
-                if (a.quantile == 1) performance = '1 (lowest)'
-                if (a.quantile == 2) performance = '2 (second lowest)'
-                if (a.quantile == 3) performance = '3 (middle)'
-                if (a.quantile == 4) performance = '4 (second highest)'
-                if (a.quantile == 5) performance = '5 (highest)'
+                if (options.groupLabels instanceof Array) {
+                    performance = options.groupLabels[a.quantile - 1];
+                }
+                else {
+                    if (a.quantile == 1) performance = '1 (lowest)'
+                    if (a.quantile == 2) performance = '2 (second lowest)'
+                    if (a.quantile == 3) performance = '3 (middle)'
+                    if (a.quantile == 4) performance = '4 (second highest)'
+                    if (a.quantile == 5) performance = '5 (highest)'
+                }
 
                 document.getElementById(`map_tooltip${el}`).style.visibility = 'visible'
                 document.getElementById(`map_tooltip${el}_area`).innerText = a.name
@@ -26,7 +31,12 @@ function buildMap(mapId, datafile, download, overrideOptions) {
                 }
                 document.getElementById(`map_tooltip${el}_value`).innerText = a.value
                 if (performance != '') {
-                    document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
+                    if (options.groupLabels instanceof Array) {
+                        document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Group'
+                    }
+                    else {
+                        document.getElementById(`map_tooltip${el}_quintile`).innerText = 'Quintile'
+                    }
                     document.getElementById(`map_tooltip${el}_performance`).innerText = performance
                 }
 
