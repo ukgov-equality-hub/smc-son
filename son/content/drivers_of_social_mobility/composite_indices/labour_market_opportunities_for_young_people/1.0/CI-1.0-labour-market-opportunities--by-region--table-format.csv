@@ -1,5 +1,5 @@
 Region,Index of 'labour market opportunities for young people',Group
-Aberdeen City,0.147281927,Middle Group
+Aberdeen city,0.147281927,Middle Group
 Aberdeenshire,-0.576791067,Middle Group
 Angus,-0.951929528,Middle Group
 Argyll and Bute Islands,-1.115419953,Unfavourable
@@ -20,65 +20,65 @@ Bradford,-0.954229892,Middle Group
 Brent,-0.902547572,Middle Group
 Bridgend,-0.772212096,Middle Group
 Brighton and Hove,0.181466545,Middle Group
-"Bristol, City of",2.066111193,Most Favourable
+Bristol,2.066111193,Most Favourable
 Bromley,1.307860674,Favourable
 Buckinghamshire,1.483198804,Favourable
 Bury,-0.184702245,Middle Group
 Caerphilly,-0.763658736,Middle Group
 Calderdale,-0.343454865,Middle Group
-Cambridgeshire CC,0.789418277,Middle Group
+Cambridgeshire county council,0.789418277,Middle Group
 Camden and City of London,1.886878642,Favourable
 Cardiff,0.350187271,Middle Group
-Carmarthenshire,-1.210745335,Unfavourable
+Carmarthenshire county council,-1.210745335,Unfavourable
 Central Bedfordshire,0.634963414,Middle Group
-Ceredigion,-0.990714934,Middle Group
+Ceredigion county council,-0.990714934,Middle Group
 Cheshire East,0.257980029,Middle Group
 Cheshire West and Chester,0.644240443,Middle Group
-City of Edinburgh,1.222411082,Favourable
+Edinburgh city,1.222411082,Favourable
 Clackmannanshire,-0.34376786,Middle Group
 Conwy,-0.559493999,Middle Group
 Cornwall and Isles of Scilly,-0.486071947,Middle Group
 Coventry,-0.790451855,Middle Group
 Croydon,0.574359475,Middle Group
-Cumbria,-0.309885346,Middle Group
+Cumbria county council,-0.309885346,Middle Group
 Darlington,-1.040382296,Unfavourable
-Denbighshire,-0.699331319,Middle Group
+Denbighshire county council,-0.699331319,Middle Group
 Derby,-0.196427389,Middle Group
-Derbyshire,0.544186333,Middle Group
-Devon CC,0.135399807,Middle Group
+Derbyshire county council,0.544186333,Middle Group
+Devon county council,0.135399807,Middle Group
 Doncaster,-0.997228015,Middle Group
 Dorset,0.087765852,Middle Group
 Dudley,-0.571050699,Middle Group
 Dumfries and Galloway,-1.292668442,Unfavourable
-Dundee City,-0.809429647,Middle Group
-Durham,-1.162067048,Unfavourable
+Dundee city,-0.809429647,Middle Group
+Durham county council,-1.162067048,Unfavourable
 Ealing,0.901105076,Middle Group
 East Ayrshire,-0.894379089,Middle Group
 East Dunbartonshire,-0.060788264,Middle Group
 East Lothian,-0.884393144,Middle Group
 East Renfrewshire,-0.423049651,Middle Group
 East Riding of Yorkshire,-0.356519379,Middle Group
-East Sussex CC,-0.343585445,Middle Group
+East Sussex county council,-0.343585445,Middle Group
 Enfield,-0.484125823,Middle Group
-Essex,1.144065596,Favourable
+Essex county council,1.144065596,Favourable
 Falkirk,-0.522662844,Middle Group
 Fife,-0.916957673,Middle Group
-Flintshire,-0.777963851,Middle Group
+Flintshire county council,-0.777963851,Middle Group
 Gateshead,-0.652115558,Middle Group
-Glasgow City,0.653117214,Middle Group
-Gloucestershire CC,0.327894452,Middle Group
+Glasgow,0.653117214,Middle Group
+Gloucestershire county council,0.327894452,Middle Group
 Greenwich,0.096181718,Middle Group
 Gwynedd,-1.009373775,Unfavourable
 Hackney,2.02530521,Most Favourable
 Halton,-0.132886496,Middle Group
 Hammersmith and Fulham,3.050721128,Most Favourable
-Hampshire,0.650126334,Middle Group
+Hampshire county council,0.650126334,Middle Group
 Haringey,0.621980339,Middle Group
 Harrow,0.209654582,Middle Group
 Hartlepool,-1.454712384,Unfavourable
 Havering,2.019011836,Most Favourable
-"Herefordshire, County of",-0.036998577,Middle Group
-Hertfordshire CC,1.129670038,Favourable
+Herefordshire,-0.036998577,Middle Group
+Hertfordshire county council,1.129670038,Favourable
 Highland,-0.401296354,Middle Group
 Hillingdon,-0.211073298,Middle Group
 Hounslow,0.765882001,Middle Group
@@ -87,18 +87,18 @@ Isle of Anglesey,-0.780202417,Middle Group
 Isle of Wight,-0.506193729,Middle Group
 Islington,2.746992344,Most Favourable
 Kensington and Chelsea,1.011105687,Favourable
-Kent,-0.015973202,Middle Group
-"Kingston upon Hull, City of",-0.911403496,Middle Group
+Kent county council,-0.015973202,Middle Group
+Hull,-0.911403496,Middle Group
 Kingston upon Thames,0.49217675,Middle Group
 Kirklees,-0.777593046,Middle Group
 Knowsley,-0.962783783,Middle Group
 Lambeth,4.213320193,Most Favourable
-Lancashire,0.116483746,Middle Group
+Lancashire county council,0.116483746,Middle Group
 Leeds,0.965447551,Middle Group
 Leicester,-0.703680683,Middle Group
-Leicestershire CC,0.697180401,Middle Group
+Leicestershire county council,0.697180401,Middle Group
 Lewisham,2.081770592,Most Favourable
-Lincolnshire CC,-0.58940673,Middle Group
+Lincolnshire county council,-0.58940673,Middle Group
 Liverpool,-0.333597429,Middle Group
 Luton,-0.301609652,Middle Group
 Manchester,0.252636218,Middle Group
@@ -108,34 +108,34 @@ Merton,1.805150695,Favourable
 Middlesbrough,-1.786239115,Least Favourable
 Midlothian,0.047134067,Middle Group
 Milton Keynes,0.701371685,Middle Group
-Monmouthshire,-0.362552085,Middle Group
+Monmouthshire county council,-0.362552085,Middle Group
 Moray,-1.255378933,Unfavourable
 Na h-Eileanan Siar,-0.975634356,Middle Group
 Neath Port Talbot,-1.190900551,Unfavourable
 Newcastle upon Tyne,0.258673836,Middle Group
 Newham,0.387813642,Middle Group
 Newport,0.270943,Middle Group
-North Ayrshire mainland,-0.956147499,Middle Group
+North Ayrshire,-0.956147499,Middle Group
 North East Lincolnshire,-0.894705487,Middle Group
 North Lanarkshire,-0.747064135,Middle Group
 North Lincolnshire,-1.545757254,Least Favourable
 North Northamptonshire,-0.097572316,Middle Group
 North Tyneside,-0.834521737,Middle Group
-North Yorkshire CC,0.272888934,Middle Group
+North Yorkshire county council,0.272888934,Middle Group
 Northern Ireland,-0.862429096,Middle Group
-Northumberland,-1.469043253,Unfavourable
-Norwich and Norfolk,-0.585860836,Middle Group
+Northumberland county council,-1.469043253,Unfavourable
+Norwich and Norfolk county council,-0.585860836,Middle Group
 Nottingham,-0.056357225,Middle Group
-Nottinghamshire,0.123503717,Middle Group
+Nottinghamshire county council,0.123503717,Middle Group
 Oldham,-1.062952051,Unfavourable
 Orkney Islands,-0.383071065,Middle Group
-Oxfordshire CC,1.404505363,Favourable
-Pembrokeshire,-0.756115379,Middle Group
+Oxfordshire county council,1.404505363,Favourable
+Pembrokeshire county council,-0.756115379,Middle Group
 Perth and Kinross,-0.695056756,Middle Group
 Peterborough,-0.380843211,Middle Group
 Plymouth,0.256859556,Middle Group
 Portsmouth,-0.18053814,Middle Group
-Powys,-0.043509755,Middle Group
+Powys county council,-0.043509755,Middle Group
 Reading,1.291143407,Favourable
 Redbridge,-0.107063316,Middle Group
 Redcar and Cleveland,-1.556638452,Least Favourable
@@ -144,7 +144,7 @@ Rhondda Cynon Taf,-0.841230647,Middle Group
 Richmond upon Thames,0.188222783,Middle Group
 Rochdale,-0.042951571,Middle Group
 Rotherham,-0.813551503,Middle Group
-Rutland,-0.002308511,Middle Group
+Rutland county council,-0.002308511,Middle Group
 Salford,0.58797787,Middle Group
 Sandwell,-1.334234686,Unfavourable
 Scottish Borders,-0.984557062,Middle Group
@@ -154,7 +154,7 @@ Shetland Islands,-1.051344945,Unfavourable
 Shropshire,-0.609218497,Middle Group
 Slough,0.234814815,Middle Group
 Solihull,0.287597928,Middle Group
-Somerset CC,0.462063083,Middle Group
+Somerset county council,0.462063083,Middle Group
 South Ayrshire,-0.69186314,Middle Group
 South Lanarkshire,0.144638285,Middle Group
 South Tyneside,-0.574605605,Middle Group
@@ -162,14 +162,14 @@ Southampton,0.429571781,Middle Group
 Southend-on-Sea,0.501953932,Middle Group
 Southwark,2.84233592,Most Favourable
 St Helens,0.00822831,Middle Group
-Staffordshire CC,0.279452878,Middle Group
+Staffordshire county council,0.279452878,Middle Group
 Stirling,-0.560836309,Middle Group
 Stockport,1.035543165,Favourable
 Stockton-on-Tees,-1.527752621,Least Favourable
 Stoke-on-Trent,-0.464564626,Middle Group
-Suffolk CC,-0.186715388,Middle Group
+Suffolk county council,-0.186715388,Middle Group
 Sunderland,-1.664042181,Least Favourable
-Surrey,1.144794905,Favourable
+Surrey county council,1.144794905,Favourable
 Sutton,1.491632793,Favourable
 Swansea,-0.596029429,Middle Group
 Swindon,0.397702891,Middle Group
@@ -186,12 +186,12 @@ Walsall,-0.597807528,Middle Group
 Waltham Forest,0.07075601,Middle Group
 Wandsworth,3.875274759,Most Favourable
 Warrington,0.894389679,Middle Group
-Warwickshire CC,0.800498256,Middle Group
+Warwickshire county council,0.800498256,Middle Group
 West Berkshire,1.033450002,Favourable
 West Dunbartonshire,-0.314079109,Middle Group
 West Lothian,-1.20098122,Unfavourable
 West Northamptonshire,0.854593343,Middle Group
-West Sussex,0.352347129,Middle Group
+West Sussex county council,0.352347129,Middle Group
 Westminster,1.743839597,Favourable
 Wigan,-0.044294823,Middle Group
 Wiltshire,-0.080430147,Middle Group
@@ -199,6 +199,6 @@ Windsor and Maidenhead,1.110957794,Favourable
 Wirral,0.075780048,Middle Group
 Wokingham,0.939742847,Middle Group
 Wolverhampton,-0.965701131,Middle Group
-Worcestershire CC,0.221895821,Middle Group
+Worcestershire county council,0.221895821,Middle Group
 Wrexham,0.05097255,Middle Group
 York,0.790372888,Middle Group
