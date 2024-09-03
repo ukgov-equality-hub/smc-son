@@ -1,5 +1,5 @@
-﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,quintile
-CI_promising_prospects,Promising prospects,Local Authority,171,Aberdeen City,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.071983713,NA,NA,NA,NA,NA,Group,NA,3
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,group
+CI_promising_prospects,Promising prospects,Local Authority,171,Aberdeen city,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.071983713,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,172,Aberdeenshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.089618375,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,173,Angus,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.595143365,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,174,Argyll and Bute Islands,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.323335448,NA,NA,NA,NA,NA,Group,NA,3
@@ -20,65 +20,65 @@ CI_promising_prospects,Promising prospects,Local Authority,77,Bradford,2014-2022
 CI_promising_prospects,Promising prospects,Local Authority,27,Brent,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.595757503,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,161,Bridgend,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.765263003,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,126,Brighton and Hove,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.223065006,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,136,"Bristol, City of",2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.13227166,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,136,Bristol,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.13227166,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,21,Bromley,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.950306647,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,117,Buckinghamshire,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.828132737,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,40,Bury,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.418221314,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,165,Caerphilly,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.919857423,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,79,Calderdale,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.217593579,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,110,Cambridgeshire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.462216784,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,110,Cambridgeshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.462216784,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,1,Camden and City of London,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.068972258,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,170,Cardiff,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.445109374,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,158,Carmarthenshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.320492463,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,158,Carmarthenshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.320492463,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,113,Central Bedfordshire,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.420926673,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,156,Ceredigion,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.51644716,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,156,Ceredigion county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.51644716,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,46,Cheshire East,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.008659037,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,47,Cheshire West and Chester,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.59312736,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,184,City of Edinburgh,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.81674992,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,184,Edinburgh city,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.81674992,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,176,Clackmannanshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.727187876,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,151,Conwy,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.260346487,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,142,Cornwall and Isles of Scilly,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.401719722,NA,NA,NA,NA,NA,Group,NA,1
 CI_promising_prospects,Promising prospects,Local Authority,101,Coventry,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.870178395,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,22,Croydon,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.965991493,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,67,Cumbria,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.794034476,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,67,Cumbria county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.794034476,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,60,Darlington,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.406718068,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,152,Denbighshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.458645436,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,152,Denbighshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.458645436,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,82,Derby,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.212053921,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,83,Derbyshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.237658698,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,143,Devon CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.139597989,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,83,Derbyshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.237658698,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,143,Devon county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.139597989,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,74,Doncaster,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.900665637,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,144,Dorset,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.01490299,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,104,Dudley,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.233613931,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,178,Dumfries and Galloway,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.550430981,NA,NA,NA,NA,NA,Group,NA,1
-CI_promising_prospects,Promising prospects,Local Authority,179,Dundee City,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.339394681,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,55,Durham,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.698586133,NA,NA,NA,NA,NA,Group,NA,1
+CI_promising_prospects,Promising prospects,Local Authority,179,Dundee city,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.339394681,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,55,Durham county council,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.698586133,NA,NA,NA,NA,NA,Group,NA,1
 CI_promising_prospects,Promising prospects,Local Authority,28,Ealing,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.859409311,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,180,East Ayrshire,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.031046381,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,181,East Dunbartonshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.857027569,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,182,East Lothian,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.276933135,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,183,East Renfrewshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.632652396,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,69,East Riding of Yorkshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.520840053,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,127,East Sussex CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.61115986,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,127,East Sussex county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.61115986,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,20,Enfield,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.387939766,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,116,Essex,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.364193701,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,116,Essex county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.364193701,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,185,Falkirk,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.760025128,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,186,Fife,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.988580307,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,153,Flintshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.406783381,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,153,Flintshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.406783381,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,65,Gateshead,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.578022089,NA,NA,NA,NA,NA,Group,NA,1
-CI_promising_prospects,Promising prospects,Local Authority,187,Glasgow City,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.840401917,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,145,Gloucestershire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.536516695,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,187,Glasgow,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.840401917,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,145,Gloucestershire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.536516695,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,15,Greenwich,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.965309226,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,150,Gwynedd,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.433046026,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,6,Hackney,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.455764984,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,49,Halton,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.537048788,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,4,Hammersmith and Fulham,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.33685429,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,133,Hampshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.595497237,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,133,Hampshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.595497237,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,9,Haringey,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.39315703,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,29,Harrow,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.882786916,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,56,Hartlepool,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.079522745,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,17,Havering,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.678274906,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,92,"Herefordshire, County of",2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.94993249,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,111,Hertfordshire CC,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.832034748,NA,NA,NA,NA,NA,Group,NA,4
+CI_promising_prospects,Promising prospects,Local Authority,92,Herefordshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.94993249,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,111,Hertfordshire county council,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.832034748,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,188,Highland,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.262004704,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,30,Hillingdon,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.166028544,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,31,Hounslow,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.845029231,NA,NA,NA,NA,NA,Group,NA,5
@@ -87,18 +87,18 @@ CI_promising_prospects,Promising prospects,Local Authority,149,Isle of Anglesey,
 CI_promising_prospects,Promising prospects,Local Authority,132,Isle of Wight,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.158473516,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,10,Islington,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.373330551,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,3,Kensington and Chelsea,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.486386732,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,135,Kent,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.595215801,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,68,"Kingston upon Hull, City of",2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.199324752,NA,NA,NA,NA,NA,Group,NA,2
+CI_promising_prospects,Promising prospects,Local Authority,135,Kent county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.595215801,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,68,Hull,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.199324752,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,24,Kingston upon Thames,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.059997294,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,80,Kirklees,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.020677833,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,50,Knowsley,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.596886552,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,13,Lambeth,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.594832167,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,45,Lancashire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.424009961,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,45,Lancashire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.424009961,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,78,Leeds,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.205788172,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,86,Leicester,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.599096496,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,88,Leicestershire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.104716888,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,88,Leicestershire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.104716888,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,11,Lewisham,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.363451776,NA,NA,NA,NA,NA,Group,NA,4
-CI_promising_prospects,Promising prospects,Local Authority,91,Lincolnshire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.678792389,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,91,Lincolnshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.678792389,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,52,Liverpool,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.288679569,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,106,Luton,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.33592399,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,33,Manchester,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.216412505,NA,NA,NA,NA,NA,Group,NA,3
@@ -108,34 +108,34 @@ CI_promising_prospects,Promising prospects,Local Authority,23,Merton,2014-2022,T
 CI_promising_prospects,Promising prospects,Local Authority,58,Middlesbrough,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.445091432,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,190,Midlothian,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.524473655,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,124,Milton Keynes,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.976267294,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,168,Monmouthshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.492901225,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,168,Monmouthshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.492901225,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,191,Moray,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.408801403,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,202,Na h-Eileanan Siar,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.437937078,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,160,Neath Port Talbot,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.503671292,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,62,Newcastle upon Tyne,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.1570523,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,7,Newham,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.263887429,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,169,Newport,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.501751005,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,192,North Ayrshire mainland,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.094311021,NA,NA,NA,NA,NA,Group,NA,2
+CI_promising_prospects,Promising prospects,Local Authority,192,North Ayrshire,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.094311021,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,70,North East Lincolnshire,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.109411045,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,193,North Lanarkshire,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.964888865,NA,NA,NA,NA,NA,Group,NA,1
 CI_promising_prospects,Promising prospects,Local Authority,71,North Lincolnshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.885993176,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,89,North Northamptonshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.865781491,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,63,North Tyneside,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.149582191,NA,NA,NA,NA,NA,Group,NA,2
-CI_promising_prospects,Promising prospects,Local Authority,148,North Yorkshire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.130663819,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,148,North Yorkshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.130663819,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,203,Northern Ireland,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.524673067,NA,NA,NA,NA,NA,Group,NA,1
-CI_promising_prospects,Promising prospects,Local Authority,61,Northumberland,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.381388356,NA,NA,NA,NA,NA,Group,NA,2
-CI_promising_prospects,Promising prospects,Local Authority,102,Norwich and Norfolk,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.315642939,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,61,Northumberland county council,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.381388356,NA,NA,NA,NA,NA,Group,NA,2
+CI_promising_prospects,Promising prospects,Local Authority,102,Norwich and Norfolk county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.315642939,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,85,Nottingham,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.234977874,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,84,Nottinghamshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.595116996,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,84,Nottinghamshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.595116996,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,41,Oldham,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.345360705,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,194,Orkney Islands,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.031116305,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,125,Oxfordshire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.612908393,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,157,Pembrokeshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.410359797,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,125,Oxfordshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.612908393,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,157,Pembrokeshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.410359797,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,195,Perth and Kinross,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.629885758,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,109,Peterborough,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.51947221,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,138,Plymouth,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.647814366,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,130,Portsmouth,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.355424345,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,155,Powys,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.125428852,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,155,Powys county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.125428852,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,120,Reading,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.725902318,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,18,Redbridge,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.047386072,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,59,Redcar and Cleveland,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.655059764,NA,NA,NA,NA,NA,Group,NA,3
@@ -144,7 +144,7 @@ CI_promising_prospects,Promising prospects,Local Authority,163,Rhondda Cynon Taf
 CI_promising_prospects,Promising prospects,Local Authority,32,Richmond upon Thames,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.453477636,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,42,Rochdale,2014-2022,Total,NA,Total,Group,Unfavourable,Z-score,1.055467001,NA,NA,NA,NA,NA,Group,NA,2
 CI_promising_prospects,Promising prospects,Local Authority,75,Rotherham,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.943922731,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,87,Rutland,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.516387069,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,87,Rutland county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.516387069,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,34,Salford,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.384809847,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,105,Sandwell,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.827119,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,175,Scottish Borders,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.617859573,NA,NA,NA,NA,NA,Group,NA,1
@@ -154,7 +154,7 @@ CI_promising_prospects,Promising prospects,Local Authority,197,Shetland Islands,
 CI_promising_prospects,Promising prospects,Local Authority,96,Shropshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.028098087,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,121,Slough,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.583287122,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,103,Solihull,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.204506926,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,146,Somerset CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.488539734,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,146,Somerset county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.488539734,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,198,South Ayrshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.790603927,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,199,South Lanarkshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.961642974,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,64,South Tyneside,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.769726669,NA,NA,NA,NA,NA,Group,NA,1
@@ -162,14 +162,14 @@ CI_promising_prospects,Promising prospects,Local Authority,131,Southampton,2014-
 CI_promising_prospects,Promising prospects,Local Authority,114,Southend-on-Sea,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.672301062,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,12,Southwark,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.800879924,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,51,St Helens,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.73606666,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,98,Staffordshire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.43799275,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,98,Staffordshire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.43799275,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,200,Stirling,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.504982491,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,36,Stockport,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.46726403,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,57,Stockton-on-Tees,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.918718558,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,97,Stoke-on-Trent,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.08489571,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,100,Suffolk CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.619669602,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,100,Suffolk county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.619669602,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,66,Sunderland,2014-2022,Total,NA,Total,Group,Least Favourable,Z-score,1.620157922,NA,NA,NA,NA,NA,Group,NA,1
-CI_promising_prospects,Promising prospects,Local Authority,128,Surrey,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.430343502,NA,NA,NA,NA,NA,Group,NA,5
+CI_promising_prospects,Promising prospects,Local Authority,128,Surrey county council,2014-2022,Total,NA,Total,Group,Most Favourable,Z-score,-2.430343502,NA,NA,NA,NA,NA,Group,NA,5
 CI_promising_prospects,Promising prospects,Local Authority,25,Sutton,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.41009678,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,159,Swansea,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.141873993,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,140,Swindon,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.508734934,NA,NA,NA,NA,NA,Group,NA,3
@@ -186,12 +186,12 @@ CI_promising_prospects,Promising prospects,Local Authority,107,Walsall,2014-2022
 CI_promising_prospects,Promising prospects,Local Authority,19,Waltham Forest,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.767872453,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,5,Wandsworth,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.536525766,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,48,Warrington,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.349263003,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,94,Warwickshire CC,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.060365554,NA,NA,NA,NA,NA,Group,NA,4
+CI_promising_prospects,Promising prospects,Local Authority,94,Warwickshire county council,2014-2022,Total,NA,Total,Group,Favourable,Z-score,-1.060365554,NA,NA,NA,NA,NA,Group,NA,4
 CI_promising_prospects,Promising prospects,Local Authority,119,West Berkshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.595372013,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,177,West Dunbartonshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.803418895,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,201,West Lothian,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.725711879,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,90,West Northamptonshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.324113106,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,129,West Sussex,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.727650147,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,129,West Sussex county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.727650147,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,2,Westminster,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.99064947,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,39,Wigan,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.618856978,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,147,Wiltshire,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.168096345,NA,NA,NA,NA,NA,Group,NA,3
@@ -199,6 +199,6 @@ CI_promising_prospects,Promising prospects,Local Authority,122,Windsor and Maide
 CI_promising_prospects,Promising prospects,Local Authority,54,Wirral,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.530329177,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,123,Wokingham,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.891951348,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,108,Wolverhampton,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.808753192,NA,NA,NA,NA,NA,Group,NA,3
-CI_promising_prospects,Promising prospects,Local Authority,93,Worcestershire CC,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.571848112,NA,NA,NA,NA,NA,Group,NA,3
+CI_promising_prospects,Promising prospects,Local Authority,93,Worcestershire county council,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.571848112,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,154,Wrexham,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,0.353479401,NA,NA,NA,NA,NA,Group,NA,3
 CI_promising_prospects,Promising prospects,Local Authority,72,York,2014-2022,Total,NA,Total,Group,Middle Group,Z-score,-0.170384111,NA,NA,NA,NA,NA,Group,NA,3
