@@ -7,8 +7,13 @@ function buildChart(chartId, datafile, download, overrideOptions) {
     const options = JSON.parse(chartOptionsText);
 
     if (typeof options.data !== 'undefined' && Array.isArray(options.data)) options.data = options.data[options.data.length - 1]
-    if (options.type != 'dot') {
-        options.width = document.getElementById('maincontent').offsetWidth
+    if (options.type != 'dot' && options.width === undefined) {
+        const mainContentWidth = document.getElementById('maincontent').offsetWidth;
+        if (options.maxWidth !== undefined) {
+            options.width = Math.min(mainContentWidth, options.maxWidth);
+        } else {
+            options.width = mainContentWidth;
+        }
     } else if (typeof options.map !== 'undefined') {
         options.height = 800
     }
