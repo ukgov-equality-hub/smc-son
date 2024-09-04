@@ -26,7 +26,8 @@
         </div>
         <div class="govuk-body scale">
             <div id="scaleQunitile{{ id }}" class="scale-qunitile">
-                <div class="grid grid5 quintile {% if [data, 'groupLabels'] | attribute %}bigger-middle-group{% endif %}">
+                <div class="grid grid5 quintile"
+                     style="{% if [data, 'groupLabels'] | attribute %}margin-bottom: 5px;{% endif %}">
                     <div class="q1"></div>
                     <div class="q2"></div>
                     <div class="q3"></div>
@@ -34,9 +35,12 @@
                     <div class="q5"></div>
                 </div>
                 {% if [data, 'groupLabels'] | attribute %}
-                    <div class="grid grid2 scale-legend">
-                        <div>Least Favourable</div>
-                        <div>Most Favourable</div>
+                    <div class="grid grid5 scale-legend">
+                        <div class="map-legend-group-names">Least<br>Favourable</div>
+                        <div class="map-legend-group-names">Unfavourable</div>
+                        <div class="map-legend-group-names">Middle<br>Group</div>
+                        <div class="map-legend-group-names">Favourable</div>
+                        <div class="map-legend-group-names">Most<br>Favourable</div>
                     </div>
                 {% else %}
                     <div class="grid grid2 scale-legend">

@@ -976,21 +976,6 @@ div.quintile {
         background: #0571b0;
     }
 }
-div.quintile.bigger-middle-group .q1 {
-    width: 5%;
-}
-div.quintile.bigger-middle-group .q2 {
-    width: 10%;
-}
-div.quintile.bigger-middle-group .q3 {
-    width: 70%;
-}
-div.quintile.bigger-middle-group .q4 {
-    width: 10%;
-}
-div.quintile.bigger-middle-group .q5 {
-    width: 5%;
-}
 
 .reversePolarity .quintile {
     div.q1 {
@@ -1010,6 +995,13 @@ div.quintile.bigger-middle-group .q5 {
     }
 }
 
+.map-legend-group-names {
+    width: 20% !important;
+    text-align: center !important;
+    font-size: 14px;
+    overflow-wrap: break-word;
+}
+
 div.continuous {
     margin: 0 0 10px 0;
     height: 20px;
@@ -1019,7 +1011,7 @@ div.continuous {
 }
 
 div.scale {
-    margin: 40px 0 0 0;
+    margin: 35px 0 0 0;
 
     div.scale-legend {
         font-size: 1rem;
