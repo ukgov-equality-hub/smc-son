@@ -1,255 +1,255 @@
-"ind_code","ind_name","area_type","area_code","area_name","time_period","seb","age","sex","category_type","category","category_type2","category2","value","sample_size","lci","uci","se","unit","value_note","Quintile"
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Boys",NA,NA,NA,NA,"23.3",69628,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Boys",NA,NA,NA,NA,"49",239025,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Disadvantaged",16,"Boys",NA,NA,NA,NA,"23.6",80790,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be disadvantaged",16,"Boys",NA,NA,NA,NA,"50.1",227863,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Total",16,"Boys",NA,NA,NA,NA,"43.2",308653,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Girls",NA,NA,NA,NA,"26.5",66440,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Girls",NA,NA,NA,NA,"53.5",228555,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Disadvantaged",16,"Girls",NA,NA,NA,NA,"26.8",77194,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be disadvantaged",16,"Girls",NA,NA,NA,NA,"54.7",217801,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Total",16,"Girls",NA,NA,NA,NA,"47.4",294995,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"24.8",136068,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total",NA,NA,NA,NA,"51.2",467580,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Disadvantaged",16,"Total",NA,NA,NA,NA,"25.2",157984,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be disadvantaged",16,"Total",NA,NA,NA,NA,"52.4",445664,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Total",16,"Total",NA,NA,NA,NA,"45.3",603648,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"FSM eligible",16,"Boys",NA,NA,NA,NA,"26.4",61945,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be FSM eligible",16,"Boys",NA,NA,NA,NA,"52.7",237102,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Disadvantaged",16,"Boys",NA,NA,NA,NA,"27.6",78444,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be disadvantaged",16,"Boys",NA,NA,NA,NA,"54.2",220603,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Total",16,"Boys",NA,NA,NA,NA,"47.2",299047,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"FSM eligible",16,"Girls",NA,NA,NA,NA,"30.7",59356,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be FSM eligible",16,"Girls",NA,NA,NA,NA,"58.6",226798,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Disadvantaged",16,"Girls",NA,NA,NA,NA,"32",75723,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be disadvantaged",16,"Girls",NA,NA,NA,NA,"60.3",210431,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Total",16,"Girls",NA,NA,NA,NA,"52.8",286154,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"FSM eligible",16,"Total",NA,NA,NA,NA,"28.5",121301,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be FSM eligible",16,"Total",NA,NA,NA,NA,"55.6",463900,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Disadvantaged",16,"Total",NA,NA,NA,NA,"29.7",154167,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Not known to be disadvantaged",16,"Total",NA,NA,NA,NA,"57.2",431034,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Total",16,"Total",NA,NA,NA,NA,"50",585201,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Disadvantaged",16,"Total",NA,NA,NA,NA,"31.7",151973,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be disadvantaged",16,"Total",NA,NA,NA,NA,"59.2",423890,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"FSM eligible",16,"Boys",NA,NA,NA,NA,"26.8",54890,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"FSM eligible",16,"Girls",NA,NA,NA,NA,"33.1",52948,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be FSM eligible",16,"Girls",NA,NA,NA,NA,"61.1",229266,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be FSM eligible",16,"Boys",NA,NA,NA,NA,"53.1",238759,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"FSM eligible",16,"Total",NA,NA,NA,NA,"29.9",107838,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be FSM eligible",16,"Total",NA,NA,NA,NA,"57",468025,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Disadvantaged",16,"Girls",NA,NA,NA,NA,"35.1",74689,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be disadvantaged",16,"Boys",NA,NA,NA,NA,"55.3",216365,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Disadvantaged",16,"Boys",NA,NA,NA,NA,"28.4",77284,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Not known to be disadvantaged",16,"Girls",NA,NA,NA,NA,"63.3",207525,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Total",16,"Total",NA,NA,NA,NA,"51.9",575863,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Total",16,"Girls",NA,NA,NA,NA,"55.8",282214,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Total",16,"Boys",NA,NA,NA,NA,"48.2",293649,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Disadvantaged",16,"Girls",NA,NA,NA,NA,"34.2",72284,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be disadvantaged",16,"Boys",NA,NA,NA,NA,"52.6",212658,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Disadvantaged",16,"Boys",NA,NA,NA,NA,"26.7",73930,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be disadvantaged",16,"Girls",NA,NA,NA,NA,"61.1",203122,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Disadvantaged",16,"Total",NA,NA,NA,NA,"30.4",146214,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be disadvantaged",16,"Total",NA,NA,NA,NA,"56.8",415780,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"FSM eligible",16,"Boys",NA,NA,NA,NA,"24.3",45070,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"FSM eligible",16,"Girls",NA,NA,NA,NA,"31.4",43596,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be FSM eligible",16,"Girls",NA,NA,NA,NA,"58.3",231810,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be FSM eligible",16,"Boys",NA,NA,NA,NA,"49.9",241518,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"FSM eligible",16,"Total",NA,NA,NA,NA,"27.8",88666,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Not known to be FSM eligible",16,"Total",NA,NA,NA,NA,"54",473328,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Total",16,"Girls",NA,NA,NA,NA,"54.1",275406,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Total",16,"Boys",NA,NA,NA,NA,"45.9",286588,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Total",16,"Total",NA,NA,NA,NA,"49.9",561994,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"FSM eligible",16,"Boys",NA,NA,NA,NA,"20.1",38700,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"FSM eligible",16,"Girls",NA,NA,NA,NA,"25.1",37171,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be FSM eligible",16,"Girls",NA,NA,NA,NA,"50.3",227666,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be FSM eligible",16,"Boys",NA,NA,NA,NA,"43.5",236509,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"FSM eligible",16,"Total",NA,NA,NA,NA,"22.6",75871,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be FSM eligible",16,"Total",NA,NA,NA,NA,"46.8",464175,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Disadvantaged",16,"Girls",NA,NA,NA,NA,"27.7",71093,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be disadvantaged",16,"Boys",NA,NA,NA,NA,"46.7",202985,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Disadvantaged",16,"Boys",NA,NA,NA,NA,"22",72224,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be disadvantaged",16,"Girls",NA,NA,NA,NA,"53.8",193744,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Disadvantaged",16,"Total",NA,NA,NA,NA,"24.8",143317,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Not known to be disadvantaged",16,"Total",NA,NA,NA,NA,"50.1",396729,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Total",16,"Girls",NA,NA,NA,NA,"46.8",264837,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Total",16,"Boys",NA,NA,NA,NA,"40.2",275209,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Total",16,"Total",NA,NA,NA,NA,"43.4",540046,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.6",103920,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"52",366979,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Any other Asian background",NA,NA,"44",2612,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Any other Asian background",NA,NA,"67.3",9540,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Bangladeshi",NA,NA,"48.8",3790,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Bangladeshi",NA,NA,"61.2",7193,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Chinese",NA,NA,"75.3",227,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Chinese",NA,NA,"78.5",3157,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Indian",NA,NA,"48.6",1676,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Indian",NA,NA,"72.1",17931,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Pakistani",NA,NA,"36.2",7664,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Pakistani",NA,NA,"49.6",19581,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"42.3",15969,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"62.6",57402,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Any other Black background",NA,NA,"29.1",1755,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Any other Black background",NA,NA,"45.4",3108,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Black African",NA,NA,"42",8720,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Black African",NA,NA,"53.9",17615,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Caribbean",NA,NA,"22.2",2713,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Caribbean",NA,NA,"36.9",4075,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"36.2",13188,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"50",24798,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Any other Mixed background",NA,NA,"31.3",3761,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Any other Mixed background",NA,NA,"56.1",9820,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"27.3",11160,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"53.2",25565,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","White and Asian",NA,NA,"33",1962,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","White and Asian",NA,NA,"62.6",6825,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","White and Black African",NA,NA,"29.7",1724,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","White and Black African",NA,NA,"51.5",3350,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","White and Black Caribbean",NA,NA,"19.2",3713,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","White and Black Caribbean",NA,NA,"37.7",5570,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"35.5",5105,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"54.2",7885,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"30.6",102139,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"3.2",11340,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"9.5",23737,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"7.4",35077,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"30.6",102139,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"24.7",137222,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"55.8",403431,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"9.4",15663,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.8",49405,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"21.9",65068,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"55.8",403431,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"51",469725,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.1",2919,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"44.1",9051,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Any other White background",NA,NA,"30.6",6698,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Any other White background",NA,NA,"51",31412,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Gypsy/Roma",NA,NA,"3.3",768,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Gypsy/Roma",NA,NA,"12.7",661,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"18.8",88881,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"49.1",345024,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Traveller of Irish heritage",NA,NA,"9.5",126,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Traveller of Irish heritage",NA,NA,"33.3",63,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","White British",NA,NA,"18",80990,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","White British",NA,NA,"48.9",311536,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","White Irish",NA,NA,"19.4",299,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","White Irish",NA,NA,"62.3",1352,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"0.5",6315,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"0.9",6858,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"27.4",53913,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"55.7",257824,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"0",12,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"10.6",1159,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"35.1",5590,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"55.1",15343,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"26.7",26911,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"51.3",94191,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"22.4",43033,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"41.4",90066,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"26.9",7151,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"57.4",61,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"44.6",112,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"61.3",486,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.2",109329,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"31",2572,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"28.4",11103,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"54.3",81,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.8",130907,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"18.9",8713,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"25.6",120609,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"86.3",1573,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"52.8",26034,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"68.8",340,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"71.3",1395,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"70.7",1352,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"51.2",379867,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"59.1",8177,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"53.9",44094,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"62.8",449,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"51.7",462867,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"39.1",29101,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"50.2",407811,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"93.8",24796,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"11.6",363,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"27.7",835,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"22.5",1021,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Not known to be FSM eligible",16,"Total","Ethnicity","Total",NA,NA,"37.1",2911,NA,NA,NA,"Percentage",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201011,"Total",16,"Total",NA,NA,NA,NA,"4.07",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201112,"Total",16,"Total",NA,NA,NA,NA,"3.89",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201213,"Total",16,"Total",NA,NA,NA,NA,"3.81",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201314,"Total",16,"Total",NA,NA,NA,NA,"3.74",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201415,"Total",16,"Total",NA,NA,NA,NA,"3.8",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201516,"Total",16,"Total",NA,NA,NA,NA,"3.78",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201617,"Total",16,"Total",NA,NA,NA,NA,"3.66",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201718,"Total",16,"Total",NA,NA,NA,NA,"3.68",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201819,"Total",16,"Total",NA,NA,NA,NA,"3.7",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",201920,"Total",16,"Total",NA,NA,NA,NA,"3.66",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202021,"Total",16,"Total",NA,NA,NA,NA,"3.79",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202122,"Total",16,"Total",NA,NA,NA,NA,"3.84",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","Country","E92000001","England",202223,"Total",16,"Total",NA,NA,NA,NA,"3.95",NA,NA,NA,NA,"Disadvantage index",NA,NA
-"IN13","Attainment at age 16","ITL2",NA,"Bedfordshire and Hertfordshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.246984491671453",3482,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Bedfordshire and Hertfordshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.549522109022162",19042,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.244944970565651",3907,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.566463029281652",23735,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Cheshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.183537263626251",1798,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Cheshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.50847848656131",8669,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Cornwall and Isles of Scilly",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.192028985507246",1104,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Cornwall and Isles of Scilly",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.444907813871817",4556,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Cumbria",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.186421173762946",869,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Cumbria",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.440623567171022",4362,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Derbyshire and Nottinghamshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.20697012802276",5624,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Derbyshire and Nottinghamshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.491948790896159",17575,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Devon",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.205116491548652",2189,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Devon",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.506897993311037",9568,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Dorset and Somerset",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.220155709342561",2312,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Dorset and Somerset",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.488219021272536",10483,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"East Anglia",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.214314115308151",5030,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"East Anglia",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.476031598057014",20381,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"East Yorkshire and Northern Lincolnshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.205974842767296",2544,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"East Yorkshire and Northern Lincolnshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.450510604870385",7638,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Essex",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.206130483689539",3556,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Essex",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.494401990403412",16881,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.210502072777522",4342,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.515826767982845",21451,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Greater Manchester",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.252270850536746",9688,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Greater Manchester",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.498160412067697",24462,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Hampshire and Isle of Wight",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.169547534316218",3934,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Hampshire and Isle of Wight",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.482349186083626",15665,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.209881422924901",2530,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.513635588886995",11734,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Inner London - East",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.4",8535,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Inner London - East",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.57450536613857",13697,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Inner London - West",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.420995277878678",2753,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Inner London - West",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.649856733524355",5235,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Kent",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.214697406340058",4164,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Kent",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.525827891791045",17152,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Lancashire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.201469842878865",3946,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Lancashire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.489597132393049",12833,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.235967012503325",3759,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.477929898312788",17603,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Lincolnshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.224024024024024",1665,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Lincolnshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.48798408082045",6533,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Merseyside",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.172709163346614",5020,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Merseyside",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.460812896587206",11662,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"North Yorkshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.210843373493976",1162,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"North Yorkshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.513431542461005",6924,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Northumberland, and Tyne and Wear",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.212679425837321",4180,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Northumberland, and Tyne and Wear",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.500717909447688",10447,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - East and North East",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.341822297679683",5301,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - East and North East",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.562146408366192",17499,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - South",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.33501174890903",2979,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - South",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.631020692053556",11502,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - West and North West",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.38827614379085",4896,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Outer London - West and North West",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.62581238856617",17387,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Shropshire and Staffordshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.178487690504103",3412,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"Shropshire and Staffordshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.437867278199799",13954,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"South Yorkshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.222034307803817",4139,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"South Yorkshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.489968995075688",10966,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"Surrey, East and West Sussex",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.21435546875",4096,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"Surrey, East and West Sussex",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.533773831067716",23761,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Tees Valley and Durham",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.229784916961612",3673,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"Tees Valley and Durham",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.495116772823779",9420,NA,NA,NA,"Percentage",NA,"Q3"
-"IN13","Attainment at age 16","ITL2",NA,"West Midlands",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.269588860509187",12137,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
-"IN13","Attainment at age 16","ITL2",NA,"West Midlands",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.490802812295618",24464,NA,NA,NA,"Percentage",NA,"Q2"
-"IN13","Attainment at age 16","ITL2",NA,"West Yorkshire",202223,"FSM eligible",16,"Total",NA,NA,NA,NA,"0.237607537894306",7323,NA,NA,NA,"Percentage",NA,"Q4"
-"IN13","Attainment at age 16","ITL2",NA,"West Yorkshire",202223,"Not FSM eligible",16,"Total",NA,NA,NA,NA,"0.502927717364562",20323,NA,NA,NA,"Percentage",NA,"Q3"
+ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Boys,NA,NA,NA,NA,23.3,69628,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Boys,NA,NA,NA,NA,49,239025,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Disadvantaged,16,Boys,NA,NA,NA,NA,23.6,80790,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,50.1,227863,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Total,16,Boys,NA,NA,NA,NA,43.2,308653,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Girls,NA,NA,NA,NA,26.5,66440,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Girls,NA,NA,NA,NA,53.5,228555,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Disadvantaged,16,Girls,NA,NA,NA,NA,26.8,77194,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,54.7,217801,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Total,16,Girls,NA,NA,NA,NA,47.4,294995,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,NA,NA,NA,NA,24.8,136068,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,NA,NA,NA,NA,51.2,467580,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Disadvantaged,16,Total,NA,NA,NA,NA,25.2,157984,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,52.4,445664,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Total,16,Total,NA,NA,NA,NA,45.3,603648,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,FSM eligible,16,Boys,NA,NA,NA,NA,26.4,61945,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be FSM eligible,16,Boys,NA,NA,NA,NA,52.7,237102,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Disadvantaged,16,Boys,NA,NA,NA,NA,27.6,78444,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,54.2,220603,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Total,16,Boys,NA,NA,NA,NA,47.2,299047,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,FSM eligible,16,Girls,NA,NA,NA,NA,30.7,59356,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be FSM eligible,16,Girls,NA,NA,NA,NA,58.6,226798,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Disadvantaged,16,Girls,NA,NA,NA,NA,32,75723,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,60.3,210431,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Total,16,Girls,NA,NA,NA,NA,52.8,286154,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,FSM eligible,16,Total,NA,NA,NA,NA,28.5,121301,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be FSM eligible,16,Total,NA,NA,NA,NA,55.6,463900,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Disadvantaged,16,Total,NA,NA,NA,NA,29.7,154167,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,57.2,431034,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202122,Total,16,Total,NA,NA,NA,NA,50,585201,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Disadvantaged,16,Total,NA,NA,NA,NA,31.7,151973,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,59.2,423890,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,FSM eligible,16,Boys,NA,NA,NA,NA,26.8,54890,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,FSM eligible,16,Girls,NA,NA,NA,NA,33.1,52948,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be FSM eligible,16,Girls,NA,NA,NA,NA,61.1,229266,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be FSM eligible,16,Boys,NA,NA,NA,NA,53.1,238759,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,FSM eligible,16,Total,NA,NA,NA,NA,29.9,107838,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be FSM eligible,16,Total,NA,NA,NA,NA,57,468025,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Disadvantaged,16,Girls,NA,NA,NA,NA,35.1,74689,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,55.3,216365,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Disadvantaged,16,Boys,NA,NA,NA,NA,28.4,77284,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,63.3,207525,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Total,16,Total,NA,NA,NA,NA,51.9,575863,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Total,16,Girls,NA,NA,NA,NA,55.8,282214,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202021,Total,16,Boys,NA,NA,NA,NA,48.2,293649,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Disadvantaged,16,Girls,NA,NA,NA,NA,34.2,72284,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,52.6,212658,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Disadvantaged,16,Boys,NA,NA,NA,NA,26.7,73930,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,61.1,203122,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Disadvantaged,16,Total,NA,NA,NA,NA,30.4,146214,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,56.8,415780,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,FSM eligible,16,Boys,NA,NA,NA,NA,24.3,45070,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,FSM eligible,16,Girls,NA,NA,NA,NA,31.4,43596,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be FSM eligible,16,Girls,NA,NA,NA,NA,58.3,231810,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be FSM eligible,16,Boys,NA,NA,NA,NA,49.9,241518,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,FSM eligible,16,Total,NA,NA,NA,NA,27.8,88666,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Not known to be FSM eligible,16,Total,NA,NA,NA,NA,54,473328,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Total,16,Girls,NA,NA,NA,NA,54.1,275406,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Total,16,Boys,NA,NA,NA,NA,45.9,286588,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201920,Total,16,Total,NA,NA,NA,NA,49.9,561994,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,FSM eligible,16,Boys,NA,NA,NA,NA,20.1,38700,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,FSM eligible,16,Girls,NA,NA,NA,NA,25.1,37171,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be FSM eligible,16,Girls,NA,NA,NA,NA,50.3,227666,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be FSM eligible,16,Boys,NA,NA,NA,NA,43.5,236509,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,FSM eligible,16,Total,NA,NA,NA,NA,22.6,75871,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be FSM eligible,16,Total,NA,NA,NA,NA,46.8,464175,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Disadvantaged,16,Girls,NA,NA,NA,NA,27.7,71093,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,46.7,202985,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Disadvantaged,16,Boys,NA,NA,NA,NA,22,72224,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,53.8,193744,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Disadvantaged,16,Total,NA,NA,NA,NA,24.8,143317,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Not known to be disadvantaged,16,Total,NA,NA,NA,NA,50.1,396729,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Total,16,Girls,NA,NA,NA,NA,46.8,264837,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Total,16,Boys,NA,NA,NA,NA,40.2,275209,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,201819,Total,16,Total,NA,NA,NA,NA,43.4,540046,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.6,103920,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,52,366979,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Asian background,NA,NA,44,2612,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Any other Asian background,NA,NA,67.3,9540,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Bangladeshi,NA,NA,48.8,3790,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Bangladeshi,NA,NA,61.2,7193,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Chinese,NA,NA,75.3,227,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Chinese,NA,NA,78.5,3157,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Indian,NA,NA,48.6,1676,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Indian,NA,NA,72.1,17931,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Pakistani,NA,NA,36.2,7664,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Pakistani,NA,NA,49.6,19581,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,42.3,15969,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,62.6,57402,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Black background,NA,NA,29.1,1755,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Any other Black background,NA,NA,45.4,3108,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Black African,NA,NA,42,8720,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Black African,NA,NA,53.9,17615,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Caribbean,NA,NA,22.2,2713,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Caribbean,NA,NA,36.9,4075,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,36.2,13188,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,50,24798,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other Mixed background,NA,NA,31.3,3761,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Any other Mixed background,NA,NA,56.1,9820,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,27.3,11160,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,53.2,25565,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Asian,NA,NA,33,1962,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,White and Asian,NA,NA,62.6,6825,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Black African,NA,NA,29.7,1724,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,White and Black African,NA,NA,51.5,3350,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White and Black Caribbean,NA,NA,19.2,3713,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,White and Black Caribbean,NA,NA,37.7,5570,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,35.5,5105,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,54.2,7885,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,30.6,102139,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,3.2,11340,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,9.5,23737,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,7.4,35077,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,30.6,102139,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,24.7,137222,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,55.8,403431,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,9.4,15663,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.8,49405,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,21.9,65068,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,55.8,403431,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,51,469725,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.1,2919,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,44.1,9051,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Any other White background,NA,NA,30.6,6698,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Any other White background,NA,NA,51,31412,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Gypsy/Roma,NA,NA,3.3,768,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Gypsy/Roma,NA,NA,12.7,661,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,18.8,88881,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,49.1,345024,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Traveller of Irish heritage,NA,NA,9.5,126,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Traveller of Irish heritage,NA,NA,33.3,63,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White British,NA,NA,18,80990,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,White British,NA,NA,48.9,311536,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,White Irish,NA,NA,19.4,299,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,White Irish,NA,NA,62.3,1352,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,0.5,6315,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,0.9,6858,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,27.4,53913,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,55.7,257824,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,0,12,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,10.6,1159,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,35.1,5590,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,55.1,15343,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,26.7,26911,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,51.3,94191,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,22.4,43033,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,41.4,90066,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,26.9,7151,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,57.4,61,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,44.6,112,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,61.3,486,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.2,109329,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,31,2572,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,28.4,11103,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,54.3,81,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.8,130907,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,18.9,8713,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,25.6,120609,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,86.3,1573,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,52.8,26034,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,68.8,340,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,71.3,1395,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,70.7,1352,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,51.2,379867,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,59.1,8177,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,53.9,44094,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,62.8,449,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,51.7,462867,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,39.1,29101,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,50.2,407811,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,93.8,24796,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,11.6,363,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,27.7,835,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,FSM eligible,16,Total,Ethnicity,Total,NA,NA,22.5,1021,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be FSM eligible,16,Total,Ethnicity,Total,NA,NA,37.1,2911,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2010/11,Total,16,Total,NA,NA,NA,NA,4.07,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2011/12,Total,16,Total,NA,NA,NA,NA,3.89,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2012/13,Total,16,Total,NA,NA,NA,NA,3.81,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2013/14,Total,16,Total,NA,NA,NA,NA,3.74,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2014/15,Total,16,Total,NA,NA,NA,NA,3.8,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2015/16,Total,16,Total,NA,NA,NA,NA,3.78,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2016/17,Total,16,Total,NA,NA,NA,NA,3.66,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2017/18,Total,16,Total,NA,NA,NA,NA,3.68,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2018/19,Total,16,Total,NA,NA,NA,NA,3.7,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2019/20,Total,16,Total,NA,NA,NA,NA,3.66,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2020/21,Total,16,Total,NA,NA,NA,NA,3.79,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2021/22,Total,16,Total,NA,NA,NA,NA,3.84,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,2022/23,Total,16,Total,NA,NA,NA,NA,3.95,NA,NA,NA,NA,Disadvantage index,NA,NA
+IN13,Attainment at age 16,ITL2,NA,Bedfordshire and Hertfordshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.246984492,3482,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Bedfordshire and Hertfordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.549522109,19042,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.244944971,3907,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.566463029,23735,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Cheshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.183537264,1798,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Cheshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.508478487,8669,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Cornwall and Isles of Scilly,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.192028986,1104,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Cornwall and Isles of Scilly,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.444907814,4556,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Cumbria,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.186421174,869,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Cumbria,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.440623567,4362,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Derbyshire and Nottinghamshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.206970128,5624,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,Derbyshire and Nottinghamshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.491948791,17575,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,Devon,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.205116492,2189,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,Devon,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.506897993,9568,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Dorset and Somerset,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.220155709,2312,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Dorset and Somerset,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.488219021,10483,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,East Anglia,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.214314115,5030,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,East Anglia,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.476031598,20381,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,East Yorkshire and Northern Lincolnshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.205974843,2544,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,East Yorkshire and Northern Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.450510605,7638,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Essex,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.206130484,3556,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,Essex,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.49440199,16881,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.210502073,4342,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.515826768,21451,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Greater Manchester,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.252270851,9688,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Greater Manchester,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.498160412,24462,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Hampshire and Isle of Wight,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.169547534,3934,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Hampshire and Isle of Wight,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.482349186,15665,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.209881423,2530,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.513635589,11734,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Inner London - East,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.4,8535,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Inner London - East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.574505366,13697,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Inner London - West,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.420995278,2753,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Inner London - West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.649856734,5235,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Kent,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.214697406,4164,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Kent,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.525827892,17152,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Lancashire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.201469843,3946,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Lancashire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.489597132,12833,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.235967013,3759,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.477929898,17603,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Lincolnshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.224024024,1665,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Lincolnshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.487984081,6533,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,Merseyside,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.172709163,5020,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Merseyside,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.460812897,11662,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,North Yorkshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.210843373,1162,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,North Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.513431542,6924,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,"Northumberland, and Tyne and Wear",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.212679426,4180,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,"Northumberland, and Tyne and Wear",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.500717909,10447,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,Outer London - East and North East,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.341822298,5301,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Outer London - East and North East,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.562146408,17499,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Outer London - South,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.335011749,2979,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Outer London - South,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.631020692,11502,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Outer London - West and North West,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.388276144,4896,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Outer London - West and North West,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.625812389,17387,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,Shropshire and Staffordshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.178487691,3412,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,Shropshire and Staffordshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.437867278,13954,NA,NA,NA,Percentage,NA,Q1 (Worst 20%)
+IN13,Attainment at age 16,ITL2,NA,South Yorkshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.222034308,4139,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,South Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.489968995,10966,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,"Surrey, East and West Sussex",202223,FSM eligible,16,Total,NA,NA,NA,NA,0.214355469,4096,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,"Surrey, East and West Sussex",202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.533773831,23761,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Tees Valley and Durham,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.229784917,3673,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,Tees Valley and Durham,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.495116773,9420,NA,NA,NA,Percentage,NA,Q3
+IN13,Attainment at age 16,ITL2,NA,West Midlands,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.269588861,12137,NA,NA,NA,Percentage,NA,Q5 (Best 20%)
+IN13,Attainment at age 16,ITL2,NA,West Midlands,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.490802812,24464,NA,NA,NA,Percentage,NA,Q2
+IN13,Attainment at age 16,ITL2,NA,West Yorkshire,202223,FSM eligible,16,Total,NA,NA,NA,NA,0.237607538,7323,NA,NA,NA,Percentage,NA,Q4
+IN13,Attainment at age 16,ITL2,NA,West Yorkshire,202223,Not FSM eligible,16,Total,NA,NA,NA,NA,0.502927717,20323,NA,NA,NA,Percentage,NA,Q3
