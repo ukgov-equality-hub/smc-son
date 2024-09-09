@@ -1,7 +1,7 @@
 # Mobility outcomes
 Mobility outcomes look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
-<strong>We have not updated our mobility outcomes for 2024.</strong> This is because much of the source data is not frequently updated. In addition, we do not expect mobility outcomes to change significantly year on year, because they measure longer-term outcomes that take a while to change. 
+<strong>We have not updated our mobility outcomes for State of the Nation 2024.</strong> This is because much of the source data is not frequently updated. In addition, we do not expect mobility outcomes to change significantly year on year, because they measure longer-term outcomes that take a while to change. 
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
