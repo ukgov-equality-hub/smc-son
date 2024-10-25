@@ -11,7 +11,7 @@ services:
     volumes:
       - ./:/app
     entrypoint: dockerize
-    command: /app/run.sh
+    command: flask run --host=0.0.0.0
 
 volumes:
   dbdata:
