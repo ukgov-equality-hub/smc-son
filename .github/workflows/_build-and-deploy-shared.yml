@@ -60,6 +60,9 @@ jobs:
       - name: 'Checkout Code'
         uses: actions/checkout@v3
 
+      - name: 'Install Terraform'
+        uses: hashicorp/setup-terraform@v3
+
       - name: 'Init Terraform'
         run: |
           terraform init "-backend-config=bucket=${{ inputs.TERRAFORM_STATE_BUCKET }}" "-backend-config=key=${{ inputs.TERRAFORM_STATE_FILE }}" "-backend-config=region=${{ env.AWS_DEFAULT_REGION }}" "-backend-config=access_key=${{ secrets.TERRAFORM_AWS_ACCESS_KEY_ID }}" "-backend-config=secret_key=${{ secrets.TERRAFORM_AWS_SECRET_ACCESS_KEY }}"
