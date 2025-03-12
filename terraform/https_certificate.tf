@@ -3,7 +3,7 @@ resource "aws_acm_certificate" "https_certificate_for_our_domain" {
   // This certificate is for use by CloudFront, so it has to be created in the us-east-1 region (for some reason!)
   provider = aws.us-east-1
 
-  domain_name = "${var.dns_record_subdomain_including_dot}${data.aws_route53_zone.social_mobility_dot_data_dot_gov_dot_uk_zone.name}"
+  domain_name = "${var.dns_record_subdomain_including_dot}${data.aws_route53_zone.route_53_zone_for_our_domain.name}"
   validation_method = "DNS"
 }
 
@@ -21,7 +21,7 @@ resource "aws_route53_record" "example" {
   records         = [each.value.record]
   ttl             = 60
   type            = each.value.type
-  zone_id         = data.aws_route53_zone.social_mobility_dot_data_dot_gov_dot_uk_zone.zone_id
+  zone_id         = data.aws_route53_zone.route_53_zone_for_our_domain.zone_id
 }
 
 resource "aws_acm_certificate_validation" "certificate_validation_waiter" {
