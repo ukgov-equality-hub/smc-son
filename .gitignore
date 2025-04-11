@@ -34,3 +34,9 @@ api/lambdas/awslambda-psycopg2
 
 # Terraform
 .terraform
+
+# R scripts
+.Rproj.user
+.RData
+.Rhistory
+R/output
