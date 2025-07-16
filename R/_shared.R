@@ -2,6 +2,9 @@
 source("_data_frame_utils.R")
 source("_pivot_table.R")
 
+if (!require(R.utils)) {
+  install.packages("R.utils")
+}
 
 # Install and load the reshape2 package if not already installed
 if (!require(reshape2)) {
@@ -9,6 +12,10 @@ if (!require(reshape2)) {
   library(reshape2)
 }
 
+if (!require(tidyverse)) {
+  install.packages("tidyverse")
+  library(tidyverse)
+}
 
 
 ################
@@ -22,6 +29,14 @@ occupational_class_order = c(
   "Lower professional",
   "Higher professional"
 )
+
+occupational_class_order_w_total =
+  c(occupational_class_order, c("Total"))
+
+rev_occupational_class_order = rev(occupational_class_order)
+
+rev_occupational_class_order_w_total =
+  c(rev_occupational_class_order, c("Total"))
 
 neet_values_order = c(
   "Education and training",
