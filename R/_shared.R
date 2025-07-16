@@ -2,6 +2,9 @@
 source("_data_frame_utils.R")
 source("_pivot_table.R")
 
+if (!require(R.utils)) {
+  install.packages("R.utils")
+}
 
 # Install and load the reshape2 package if not already installed
 if (!require(reshape2)) {
@@ -9,6 +12,10 @@ if (!require(reshape2)) {
   library(reshape2)
 }
 
+if (!require(tidyverse)) {
+  install.packages("tidyverse")
+  library(tidyverse)
+}
 
 
 ################
