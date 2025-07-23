@@ -30,6 +30,11 @@ occupational_class_order = c(
   "Higher professional"
 )
 
+rev_occupational_class_order = rev(occupational_class_order)
+
+rev_occupational_class_order_w_total =
+  c(rev_occupational_class_order, c("Total"))
+
 neet_values_order = c(
   "Education and training",
   "Employment",
