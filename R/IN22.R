@@ -22,7 +22,6 @@ indicator_code = "IN22"
 source("_shared.R")
 
 
-
 ###############
 # THE SCRIPT
 
@@ -40,9 +39,6 @@ data = data_frame__remove_columns(
   "year_used",
   "label"
 )
-
-data = data %>% 
-  rename(c("Lower CI" = "lci", "Upper CI" = "uci"))
 
 csv_filename = generate_csv_file_name()
 save_data_frame(data, csv_filename)
@@ -81,10 +77,12 @@ pivot_table = pivot_table__create(
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
   pivot_table_rows_order_values = rev(occupational_class_order),
-  # pivot_table_columns_order_values = c("Percent", "Lower CI", "Upper CI"),
+  # pivot_table_columns_order_values = c("Percent", "lci", "uci"),
   pivot_table_column_names_suffix = " (%)"
 )  %>%
   rename("Percentage (%)" = "Percent (%)")
+  # rename(
+  #   c("Percentage (%)" = "Percent (%)", "Lower CI" = "lci", "Upper CI" = "uci"))
 
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
@@ -132,7 +130,7 @@ pivot_table = pivot_table__create(
   pivot_table_name = "Year",
   pivot_table_rows_order_values = sort(
     unique(data_for_section$average_window), decreasing=TRUE),
-  pivot_table_columns_order_values = rev_occupational_class_order_w_total,
+  pivot_table_columns_order_values = occupational_class_order_w_total,
   pivot_table_column_names_suffix = " (%)"
 )
 

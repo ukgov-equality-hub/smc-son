@@ -30,6 +30,9 @@ occupational_class_order = c(
   "Higher professional"
 )
 
+occupational_class_order_w_total =
+  c(occupational_class_order, c("Total"))
+
 rev_occupational_class_order = rev(occupational_class_order)
 
 rev_occupational_class_order_w_total =
