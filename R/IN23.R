@@ -313,7 +313,7 @@ pivot_table = pivot_table__create(
   pivot_table_name = "Year",
   pivot_table_rows_order_values = sort(
     unique(data_for_section$average_window), decreasing=TRUE),
-  pivot_table_columns_order_values = rev_occupational_class_order_w_total,
+  pivot_table_columns_order_values = occupational_class_order_w_total,
   pivot_table_columns_2_order_values = highest_qualification_order,
   pivot_table_column_names_suffix = " (%)"
 )
