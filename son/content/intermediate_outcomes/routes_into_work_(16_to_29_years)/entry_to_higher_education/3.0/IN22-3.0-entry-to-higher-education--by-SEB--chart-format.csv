@@ -1,0 +1,6 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in22","Entry to higher education","seb","K02000001","country","United Kingdom","he_entry_binary","Degree+","seb","Lower working",,,,,"2024",25.189,19.434,31.774,203,"Percent",
+"in22","Entry to higher education","seb","K02000001","country","United Kingdom","he_entry_binary","Degree+","seb","Higher working",,,,,"2024",29.025,22.161,36.739,159,"Percent",
+"in22","Entry to higher education","seb","K02000001","country","United Kingdom","he_entry_binary","Degree+","seb","Intermediate",,,,,"2024",36.088,29.564,43.631,190,"Percent",
+"in22","Entry to higher education","seb","K02000001","country","United Kingdom","he_entry_binary","Degree+","seb","Lower professional",,,,,"2024",42.375,36.712,48.154,300,"Percent",
+"in22","Entry to higher education","seb","K02000001","country","United Kingdom","he_entry_binary","Degree+","seb","Higher professional",,,,,"2024",45.578,39.208,52.149,239,"Percent",
