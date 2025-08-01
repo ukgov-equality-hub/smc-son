@@ -1,3 +1,4 @@
+
 pivot_table__create = function(
   pivot_table_source,
   pivot_columns_column_name,
@@ -48,9 +49,7 @@ pivot_table__create = function(
       old_column_name = pivot_columns_column_2_name,
       new_column_name = PIVOT_COLUMNS_WORKING_COLUMN_2_NAME
     )
-  }
-  
-  if (has_2_top_header_columns) {
+    # create combined column level 1 and 2 ordered column names
     ordered_cols = c()
     for (col1 in pivot_table_columns_order_values) {
       for (col2 in pivot_table_columns_2_order_values) {
@@ -60,7 +59,7 @@ pivot_table__create = function(
   } else {
     ordered_cols = pivot_table_columns_order_values
   }
-  
+
   
   if (has_2_heading_columns) {
     if (has_2_top_header_columns) {
