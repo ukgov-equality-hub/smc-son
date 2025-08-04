@@ -38,6 +38,10 @@ rev_occupational_class_order = rev(occupational_class_order)
 rev_occupational_class_order_w_total =
   c(rev_occupational_class_order, c("Total"))
 
+occupational_class_order_two_vals = c(
+  "Lower working", "Higher professional"
+)
+
 neet_values_order = c(
   "Education and training",
   "Employment",
@@ -52,6 +56,28 @@ men_women_order = c(
 disability_status_no_yes_order = c(
   "No",
   "Yes"
+)
+
+highest_qualification_order = c(
+  "Lower level (below GCSE grade 1)",
+  "O level, GCSE and equivalent",
+  "A level and equivalent",
+  "Further education below degree",
+  "First degree",
+  "Higher degree"
+)
+
+ethnicity_order = c(
+  "Bangladeshi",
+  "Chinese",
+  "Indian",
+  "Pakistani",
+  "Black African",
+  "Black Caribbean",
+  "Mixed",
+  "White British",
+  "White other",
+  "Other"
 )
 
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
