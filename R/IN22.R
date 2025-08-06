@@ -25,6 +25,9 @@ source("_shared.R")
 ###############
 # THE SCRIPT
 
+## Clear output folder
+unlink(output_folder, recursive=TRUE)
+
 input_file_path = paste0(input_folder, input_file)
 
 # Open the input file
