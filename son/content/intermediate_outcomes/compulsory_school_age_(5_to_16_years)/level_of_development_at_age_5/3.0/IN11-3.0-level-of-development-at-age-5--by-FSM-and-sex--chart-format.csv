@@ -1,0 +1,5 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in11","Level of development at age 5","sex","E92000001","Country","England","sex","Boys","seb","Eligible for free school meals",,,,,2024,43,,,53335,"Percentage",
+"in11","Level of development at age 5","sex","E92000001","Country","England","sex","Girls","seb","Eligible for free school meals",,,,,2024,60,,,51377,"Percentage",
+"in11","Level of development at age 5","sex","E92000001","Country","England","sex","Boys","seb","Not eligible for free school meals",,,,,2024,65,,,250429,"Percentage",
+"in11","Level of development at age 5","sex","E92000001","Country","England","sex","Girls","seb","Not eligible for free school meals",,,,,2024,79,,,238002,"Percentage",
