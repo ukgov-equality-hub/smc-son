@@ -58,16 +58,20 @@ boys_girls_order = c(
   "Girls"
 )
 
+<<<<<<< HEAD
 boys_girls_order_w_total = c(
   boys_girls_order,
   "Total"
 )
 
+=======
+>>>>>>> 07b89b1 (EHD-1855 updating on IN12)
 disability_status_no_yes_order = c(
   "No",
   "Yes"
 )
 
+<<<<<<< HEAD
 fsm_order = c(
   "Eligible for free school meals",
   "Not eligible for free school meals"
@@ -108,6 +112,14 @@ highest_qualification_order = c(
   "Higher degree"
 )
   
+=======
+disadvantage_order_w_total = c(
+  "Disadvantaged",
+  "Not known to be disadvantaged",
+  "Total"
+)
+
+>>>>>>> 07b89b1 (EHD-1855 updating on IN12)
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
 
 
