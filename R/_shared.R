@@ -49,9 +49,20 @@ men_women_order = c(
   "Women"
 )
 
+boys_girls_order = c(
+  "Boys",
+  "Girls"
+)
+
 disability_status_no_yes_order = c(
   "No",
   "Yes"
+)
+
+disadvantage_order_w_total = c(
+  "Disadvantaged",
+  "Not known to be disadvantaged",
+  "Total"
 )
 
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
