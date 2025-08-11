@@ -189,7 +189,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = disadvantage_order_w_total,
+  values_1 = disadvantage_order,
   column_2 = "primary_split_value",
   values_2 = boys_girls_order
 )
@@ -206,8 +206,8 @@ pivot_table = pivot_table__create(
   pivot_columns_column_name = "primary_split_value",
   pivot_rows_column_name = "secondary_split_value",
   pivot_cells_column_name = "value",
-  pivot_table_name = "Disadvantage status	",
-  pivot_table_rows_order_values = disadvantage_order_w_total,
+  pivot_table_name = "Disadvantage status",
+  pivot_table_rows_order_values = disadvantage_order,
   pivot_table_columns_order_values = boys_girls_order,
   pivot_table_column_names_suffix = " (%)"
 ) 
@@ -216,4 +216,43 @@ pivot_table = pivot_table__create(
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
 
+
+
+##########################################
+# SECTION: By ethnicity
+
+section_chart_type = "ethnicity"
+section_csv_name = "ethnicity"
+
+data_for_section = get_data_for_chart_type(data, section_chart_type)
+
+#################
+# CHART FORMAT
+
+data_for_section = data_frame__sort_rows_with_specific_values(
+  data_frame = data_for_section,
+  column_1 = "primary_split_value",
+  values_1 = NULL
+)
+
+csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
+save_data_frame(data_for_section, csv_filename)
+
+#################
+# TABLE FORMAT
+
+
+pivot_table = pivot_table__create(
+  pivot_table_source = data_for_section,
+  pivot_columns_column_name = "unit",
+  pivot_rows_column_name = "primary_split_value",
+  pivot_cells_column_name = "value",
+  pivot_table_name = "Ethnicity",
+  pivot_table_rows_order_values = NULL,
+  pivot_table_column_names_suffix = " (%)"
+) 
+
+
+csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
+save_data_frame(pivot_table, csv_filename)
 
