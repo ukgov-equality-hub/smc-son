@@ -54,6 +54,11 @@ boys_girls_order = c(
   "Girls"
 )
 
+boys_girls_order_w_total = c(
+  boys_girls_order,
+  "Total"
+)
+
 disability_status_no_yes_order = c(
   "No",
   "Yes"
@@ -63,6 +68,24 @@ disadvantage_order_w_total = c(
   "Disadvantaged",
   "Not known to be disadvantaged",
   "Total"
+)
+
+fsm_order = c(
+  "Eligible for free school meals",
+  "Not eligible for free school meals"
+)
+
+fsm_order_w_total = c(
+  fsm_order,
+  "Total"
+)
+
+top_level_ethnicity_order = c(
+  "Asian",
+  "Black",
+  "Mixed",
+  "White",
+  "Other"
 )
 
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
