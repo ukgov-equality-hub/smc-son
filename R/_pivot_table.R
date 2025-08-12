@@ -15,8 +15,8 @@ pivot_table__create = function(
   pivot_table_column_names_suffix = NULL
 ) {
   
-  has_2_heading_columns = !is.null(pivot_rows_column_2_name)
-  has_2_top_header_columns = !is.null(pivot_columns_column_2_name)
+  has_2_columns_of_headings = !is.null(pivot_rows_column_2_name)
+  has_2_rows_of_headings = !is.null(pivot_columns_column_2_name)
   
   PIVOT_COLUMNS_WORKING_COLUMN_NAME = "pivot_columns"
   PIVOT_COLUMNS_WORKING_COLUMN_2_NAME = "pivot_columns_2"
@@ -35,7 +35,7 @@ pivot_table__create = function(
     new_column_name = PIVOT_ROWS_WORKING_COLUMN_NAME
   )
 
-  if (has_2_heading_columns) {
+  if (has_2_columns_of_headings) {
     pivot_table_source = data_frame__rename_column(
       data_frame = pivot_table_source,
       old_column_name = pivot_rows_column_2_name,
@@ -43,7 +43,7 @@ pivot_table__create = function(
     )
   }
   
-  if (has_2_top_header_columns) {
+  if (has_2_rows_of_headings) {
     pivot_table_source = data_frame__rename_column(
       data_frame = pivot_table_source,
       old_column_name = pivot_columns_column_2_name,
@@ -61,14 +61,14 @@ pivot_table__create = function(
   }
 
   
-  if (has_2_heading_columns) {
-    if (has_2_top_header_columns) {
+  if (has_2_columns_of_headings) {
+    if (has_2_rows_of_headings) {
       pivot_table_check = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = length)
     }
     else {
       pivot_table_check = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = length)
     }
-  } else if (has_2_top_header_columns) {
+  } else if (has_2_rows_of_headings) {
       pivot_table_check = dcast(pivot_table_source, pivot_rows ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = length)
   } else {
       pivot_table_check = dcast(pivot_table_source, pivot_rows ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = length)
@@ -80,7 +80,7 @@ pivot_table__create = function(
     data_frame = pivot_table_check_except_label_columns,
     columns_to_remove = PIVOT_ROWS_WORKING_COLUMN_NAME
   )
-  if (has_2_heading_columns) {
+  if (has_2_columns_of_headings) {
     pivot_table_check_except_label_columns = data_frame__remove_columns(
       data_frame = pivot_table_check_except_label_columns,
       columns_to_remove = PIVOT_ROWS_WORKING_COLUMN_2_NAME
@@ -92,14 +92,14 @@ pivot_table__create = function(
   }
   
   
-  if (has_2_heading_columns) {
-    if (has_2_top_header_columns) {
+  if (has_2_columns_of_headings) {
+    if (has_2_rows_of_headings) {
       pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = sum)
     }
     else {
       pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = sum)
     }
-  } else if (has_2_top_header_columns) {
+  } else if (has_2_rows_of_headings) {
       pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = sum)
   } else {
       pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = sum)
@@ -122,7 +122,7 @@ pivot_table__create = function(
   }
   
   if (!is.null(ordered_cols)) {
-    if (has_2_heading_columns) {
+    if (has_2_columns_of_headings) {
       columns_to_choose = c(PIVOT_ROWS_WORKING_COLUMN_NAME, PIVOT_ROWS_WORKING_COLUMN_2_NAME, ordered_cols)
     } else {
       columns_to_choose = c(PIVOT_ROWS_WORKING_COLUMN_NAME, ordered_cols)
@@ -134,7 +134,7 @@ pivot_table__create = function(
     )
   }
   
-  if (has_2_heading_columns) {
+  if (has_2_columns_of_headings) {
     # Remove duplicate values in the first column, so that our HTML generator will create cells with a row-span
     for (i in nrow(pivot_table):2) {
       if (pivot_table[[PIVOT_ROWS_WORKING_COLUMN_NAME]][i] == pivot_table[[PIVOT_ROWS_WORKING_COLUMN_NAME]][i - 1]) {
@@ -158,7 +158,7 @@ pivot_table__create = function(
   }
   
   
-  if (has_2_top_header_columns) {
+  if (has_2_rows_of_headings) {
     # Remove duplicate values in the top header, so that our HTML generator will create cells with a row-span
     first_header = c("pivot_rows")
     second_header = c("")
@@ -189,7 +189,7 @@ pivot_table__create = function(
       new_column_name = pivot_table_name
     )
   }
-  if (!is.null(pivot_table_name_column_2) && has_2_heading_columns) {
+  if (!is.null(pivot_table_name_column_2) && has_2_columns_of_headings) {
     pivot_table = data_frame__rename_column(
       data_frame = pivot_table,
       old_column_name = PIVOT_ROWS_WORKING_COLUMN_2_NAME,
