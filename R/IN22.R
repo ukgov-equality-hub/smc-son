@@ -90,7 +90,7 @@ save_data_frame(pivot_table, csv_filename)
 
 
 ##########################################
-# SECTION: Time series
+# SECTION: Moving average
 
 section_chart_type = "trend_moving_average"
 section_csv_name = "moving-average"

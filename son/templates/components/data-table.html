@@ -5,7 +5,7 @@
 {% set number_of_data_rows = [data_table, number_of_heading_rows] | number_of_data_rows %}
 {% set default_number_of_rows_to_show = 20 %}
 
-<div {# This <div> is here to undo the <div style="display:flex;"> that the parent applies. #}>
+<div class="data-table-wrapper" {# This <div> is here to undo the <div style="display:flex;"> that the parent applies. #}>
     <table id="table{{ id }}" class="govuk-body-s table-container govuk-table">
         <caption class="govuk-table__caption govuk-table__caption--s">
             {{ ([data, 'dataTableTitle'] | attribute) or ([data, 'title'] | attribute) }}
