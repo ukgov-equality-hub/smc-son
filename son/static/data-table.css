@@ -1,3 +1,13 @@
+.data-table-wrapper {
+    overflow-x: auto;
+    width: calc(100vw - 40px);
+}
+@media (min-width: 40.0625em) {
+    .data-table-wrapper {
+        width: calc(100vw - 320px);
+    }
+}
+
 .table-container {
     width: fit-content;
     border-collapse: separate;
