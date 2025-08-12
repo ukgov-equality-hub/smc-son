@@ -53,18 +53,37 @@ men_women_order = c(
   "Women"
 )
 
+boys_girls_order = c(
+  "Boys",
+  "Girls"
+)
+
+boys_girls_order_w_total = c(
+  boys_girls_order,
+  "Total"
+)
+
 disability_status_no_yes_order = c(
   "No",
   "Yes"
 )
 
-highest_qualification_order = c(
-  "Lower level (below GCSE grade 1)",
-  "O level, GCSE and equivalent",
-  "A level and equivalent",
-  "Further education below degree",
-  "First degree",
-  "Higher degree"
+fsm_order = c(
+  "Eligible for free school meals",
+  "Not eligible for free school meals"
+)
+
+fsm_order_w_total = c(
+  fsm_order,
+  "Total"
+)
+
+top_level_ethnicity_order = c(
+  "Asian",
+  "Black",
+  "Mixed",
+  "White",
+  "Other"
 )
 
 ethnicity_order = c(
@@ -80,6 +99,15 @@ ethnicity_order = c(
   "Other"
 )
 
+highest_qualification_order = c(
+  "Lower level (below GCSE grade 1)",
+  "O level, GCSE and equivalent",
+  "A level and equivalent",
+  "Further education below degree",
+  "First degree",
+  "Higher degree"
+)
+  
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
 
 
