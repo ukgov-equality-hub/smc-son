@@ -32,6 +32,19 @@ input_file_path = paste0(input_folder, input_file)
 # Open the input file
 data = read.csv(input_file_path)
 
+# Remove some columns
+data = data_frame__remove_columns(
+  data,
+  "variable_used",
+  "age_used",
+  "weight_used",
+  "year_used",
+  "label"
+)
+
+csv_filename = generate_csv_file_name()
+save_data_frame(data, csv_filename)
+
 
 ##########################################
 # SECTION: By year and disadvantage
