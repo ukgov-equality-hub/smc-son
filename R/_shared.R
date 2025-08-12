@@ -99,6 +99,28 @@ ethnicity_order = c(
   "Other"
 )
 
+ethnicity_order_longer = c(
+  "Bangladeshi",
+  "Chinese",
+  "Indian",
+  "Pakistani",
+  "Any other Asian background",
+  "Black African",
+  "Caribbean",
+  "Any other Black background",
+  "White and Asian",
+  "White and Black African",
+  "White and Black Caribbean",
+  "Any other Mixed background",
+  "White British",
+  "White Irish",
+  "Gypsy/Roma",
+  "Traveller of Irish heritage",
+  "Any other White background",
+  "Any other ethnic group"
+)
+
+
 highest_qualification_order = c(
   "Lower level (below GCSE grade 1)",
   "O level, GCSE and equivalent",
