@@ -108,6 +108,17 @@ highest_qualification_order = c(
   "Higher degree"
 )
   
+
+disadvantage_order = c(
+  "Disadvantaged",
+  "Not known to be disadvantaged"
+)
+
+disadvantage_order_w_total = c(
+  disadvantage_order,
+  "Total"
+)
+
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
 
 
