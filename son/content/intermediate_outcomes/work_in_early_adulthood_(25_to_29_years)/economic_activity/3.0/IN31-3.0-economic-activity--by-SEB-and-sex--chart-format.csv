@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Lower working","sex","Men",,,"2014-2024",85.536,84.167,86.814,2787,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Lower working","sex","Women",,,"2014-2024",71.588,70.03,73.099,3379,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Higher working","sex","Men",,,"2014-2024",92.885,91.838,93.816,2700,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Higher working","sex","Women",,,"2014-2024",80.597,79.147,81.964,3097,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Intermediate","sex","Men",,,"2014-2024",92.575,91.643,93.41,3501,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Intermediate","sex","Women",,,"2014-2024",84.174,82.983,85.302,3893,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Lower professional","sex","Men",,,"2014-2024",93.075,92.1,93.949,3006,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Lower professional","sex","Women",,,"2014-2024",87.539,86.369,88.597,3471,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Higher professional","sex","Men",,,"2014-2024",91.959,90.831,92.958,2611,"Percent",
+"in31","Economic activity","sex","K02000001","country","United Kingdom","economically_active_binary","Active","seb","Higher professional","sex","Women",,,"2014-2024",88.906,87.685,90.004,2909,"Percent",

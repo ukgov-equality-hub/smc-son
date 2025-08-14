@@ -53,6 +53,11 @@ men_women_order = c(
   "Women"
 )
 
+men_women_order_w_total = c(
+  men_women_order,
+  "Total"
+)
+
 boys_girls_order = c(
   "Boys",
   "Girls"
