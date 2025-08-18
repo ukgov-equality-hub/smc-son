@@ -186,7 +186,7 @@ save_data_frame = function(data_frame, filename) {
   )
   
   output_file_absolute_path = R.utils::getAbsolutePath(output_file_path)
-  if (nchar(output_file_absolute_path) > 260) {
+  if (nchar(output_file_absolute_path) > 260 & Sys.info()["sysname"] != "Darwin") {
     # Get a timestamp
     temp_output_folder = paste0(
       "output", "/",
@@ -194,7 +194,7 @@ save_data_frame = function(data_frame, filename) {
       timestamp, "/"
     )
     dir.create(temp_output_folder, recursive = TRUE, showWarnings = FALSE)
-    
+
     warning(paste0("The file path is too long. Saving to ", R.utils::getAbsolutePath(temp_output_folder) ," instead"))
     output_file_path = paste0(
       temp_output_folder,
