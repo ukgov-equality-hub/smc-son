@@ -1,0 +1,5 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,2024,24.3,,,84276,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,2024,27.8,,,80323,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,2024,51,,,234749,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,2024,55.9,,,225002,"Percentage",
