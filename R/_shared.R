@@ -186,22 +186,22 @@ save_data_frame = function(data_frame, filename) {
   )
   
   output_file_absolute_path = R.utils::getAbsolutePath(output_file_path)
-  # if (nchar(output_file_absolute_path) > 260) {
-  #   # Get a timestamp
-  #   temp_output_folder = paste0(
-  #     "output", "/",
-  #     indicator_code, "-",
-  #     timestamp, "/"
-  #   )
-  #   dir.create(temp_output_folder, recursive = TRUE, showWarnings = FALSE)
-  #   
-  #   warning(paste0("The file path is too long. Saving to ", R.utils::getAbsolutePath(temp_output_folder) ," instead"))
-  #   output_file_path = paste0(
-  #     temp_output_folder,
-  #     filename
-  #   )
-  # }
-  
+  if (nchar(output_file_absolute_path) > 260) {
+    # Get a timestamp
+    temp_output_folder = paste0(
+      "output", "/",
+      indicator_code, "-",
+      timestamp, "/"
+    )
+    dir.create(temp_output_folder, recursive = TRUE, showWarnings = FALSE)
+
+    warning(paste0("The file path is too long. Saving to ", R.utils::getAbsolutePath(temp_output_folder) ," instead"))
+    output_file_path = paste0(
+      temp_output_folder,
+      filename
+    )
+  }
+
   write.csv(
     data_frame,
     file = output_file_path,
