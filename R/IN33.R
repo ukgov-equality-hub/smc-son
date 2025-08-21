@@ -108,7 +108,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type) %>%
     primary_split_value = as.numeric(primary_split_value),
     average_window = paste(primary_split_value - 2, primary_split_value, sep=" to "),
     tertiary_split_value = rename_profession_occupational_class[tertiary_split_value],
-    background_label = paste0(secondary_split_value, " background")
+    background_label = if_else(secondary_split_value=="Total", "Total", paste0(secondary_split_value, " background"))
   )
 
 
@@ -150,7 +150,7 @@ pivot_table = pivot_table__create(
   pivot_table_name = "Year",
   pivot_table_rows_order_values = sort(
     unique(data_for_section$average_window), decreasing=TRUE),
-  pivot_table_columns_order_values = paste0(occupational_class_order_w_total, " background"),
+  pivot_table_columns_order_values = c(paste0(occupational_class_order, " background"),"Total"),
   pivot_table_columns_2_order_values = occupational_class_order,
   pivot_table_column_names_suffix = " (%)"
 )
