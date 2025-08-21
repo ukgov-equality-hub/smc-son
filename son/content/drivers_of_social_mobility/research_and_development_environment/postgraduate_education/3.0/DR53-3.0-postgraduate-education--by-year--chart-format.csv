@@ -1,0 +1,12 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","seb_three_cat"
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2014",,,,,"2014-2024",9.313,9.064,9.57,51086,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2015",,,,,"2014-2024",10.934,10.662,11.215,49290,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2016",,,,,"2014-2024",11.976,11.683,12.273,46797,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2017",,,,,"2014-2024",12.145,11.852,12.447,46714,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2018",,,,,"2014-2024",12.445,12.146,12.749,46438,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2019",,,,,"2014-2024",13.105,12.797,13.421,45232,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2020",,,,,"2014-2024",13.933,13.579,14.292,36527,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2021",,,,,"2014-2024",14.233,13.921,14.552,47401,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2022",,,,,"2014-2024",15.086,14.717,15.46,35904,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2023",,,,,"2014-2024",16.187,15.706,16.677,22328,"Percent",,
+"dr53","Postgraduate education","trend","K02000001","country","United Kingdom","higher_degree_binary","Higher degree","year","2024",,,,,"2014-2024",16.107,15.699,16.521,30902,"Percent",,
