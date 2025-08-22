@@ -134,6 +134,15 @@ highest_qualification_order = c(
   "First degree",
   "Higher degree"
 )
+
+
+parental_qualification_order = c(
+  "Lower level (below GCSE grade 1)",
+  "O level, GCSE and equivalent",
+  "A level and equivalent",
+  "Further education below degree",
+  "Degree level or above"
+)
   
 
 disadvantage_order = c(
