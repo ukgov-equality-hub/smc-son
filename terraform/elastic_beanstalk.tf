@@ -1,6 +1,6 @@
 
 locals {
-  main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2 v3.5.0 running Python 3.8"
+  main_app_elastic_beanstalk_solution_stack_name = "64bit Amazon Linux 2023 v4.7.1 running Python 3.13"
   main_app_elastic_beanstalk_ec2_instance_type = "t4g.micro"
 
   main_app_elastic_beanstalk_min_instances = 2
@@ -26,6 +26,16 @@ resource "aws_s3_bucket_public_access_block" "main_app_elastic_beanstalk_code_s3
 
 resource "aws_elastic_beanstalk_application" "main_app_elastic_beanstalk_application" {
   name = "${var.service_name}__${var.environment}__Elastic_Beanstalk_Application"
+
+  appversion_lifecycle {
+    service_role = data.aws_iam_role.elastic_beanstalk_service_role.arn
+    max_count = 30
+    delete_source_from_s3 = true
+  }
+}
+
+data "aws_iam_role" "elastic_beanstalk_service_role" {
+  name = "aws-elasticbeanstalk-service-role"
 }
 
 data "aws_iam_instance_profile" "elastic_beanstalk" {
