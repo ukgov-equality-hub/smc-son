@@ -176,7 +176,7 @@ generate_csv_file_name = function(split = NULL, format = NULL) {
     output_file_name = paste0(
       indicator_code, "-",
       version, "-",
-      gsub("_", "-", indicator_name), "--",
+      gsub(",","",gsub("_", "-", indicator_name)), "--",
       "by-", split, "--",
       format, "-format",
       ".csv"
@@ -186,7 +186,7 @@ generate_csv_file_name = function(split = NULL, format = NULL) {
     output_file_name = paste0(
       indicator_code, "-",
       version, "-",
-      gsub("_", "-", indicator_name), "--",
+      gsub(",","",gsub("_", "-", indicator_name)), "--",
       "full-dataset",
       ".csv"
     )
