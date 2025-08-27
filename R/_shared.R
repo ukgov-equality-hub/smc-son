@@ -156,6 +156,14 @@ disadvantage_order_w_total = c(
   "Total"
 )
 
+nations_order = c(
+  "England",
+  "Scotland",
+  "Wales",
+  "Northern Ireland",
+  "United Kingdom"
+)
+
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
 
 
