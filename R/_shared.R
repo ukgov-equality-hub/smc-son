@@ -48,6 +48,7 @@ neet_values_order = c(
   "NEET"
 )
 
+
 men_women_order = c(
   "Men",
   "Women"
