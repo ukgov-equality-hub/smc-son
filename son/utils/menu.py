@@ -281,11 +281,11 @@ menu = {
                         },
                         {
                             'id': 'DR54',
-                            'name': 'New Economy Jobs'
+                            'name': 'Occupations in the \'new economy\''
                         },
                         {
                             'id': 'DR55',
-                            'name': 'GVA per capita'
+                            'name': 'Gross value added (GVA) per capita'
                         }
                     ]
                 }
