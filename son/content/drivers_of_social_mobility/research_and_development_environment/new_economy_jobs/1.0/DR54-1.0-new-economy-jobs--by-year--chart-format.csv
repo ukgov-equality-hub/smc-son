@@ -1,0 +1,12 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2014","rdjob",1,,,,,"2014-2024",12.258,11.944,12.581,41080,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2015","rdjob",1,,,,,"2014-2024",12.141,11.822,12.467,39684,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2016","rdjob",1,,,,,"2014-2024",12.698,12.366,13.039,37988,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2017","rdjob",1,,,,,"2014-2024",12.52,12.19,12.858,37955,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2018","rdjob",1,,,,,"2014-2024",13.451,13.109,13.798,37986,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2019","rdjob",1,,,,,"2014-2024",13.542,13.195,13.894,37147,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2020","rdjob",1,,,,,"2014-2024",15.138,14.734,15.548,30013,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2021","rdjob",1,,,,,"2014-2024",15.241,14.886,15.605,38761,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2022","rdjob",1,,,,,"2014-2024",15.952,15.532,16.378,29028,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2023","rdjob",1,,,,,"2014-2024",16.687,16.149,17.243,18006,"Percent",
+"dr54","New economy jobs","trend","K02000001","country","United Kingdom","year","2024","rdjob",1,,,,,"2014-2024",15.879,15.432,16.336,25317,"Percent",
