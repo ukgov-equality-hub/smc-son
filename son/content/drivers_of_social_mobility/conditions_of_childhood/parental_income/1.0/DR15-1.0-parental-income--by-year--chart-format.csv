@@ -1,0 +1,12 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2014",,,,,,,"2014-2024",19.376,19.004,19.748,4341,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2015",,,,,,,"2014-2024",19.525,19.137,19.912,4241,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2016",,,,,,,"2014-2024",19.896,19.489,20.302,4038,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2017",,,,,,,"2014-2024",20.014,19.628,20.4,4181,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2018",,,,,,,"2014-2024",19.869,19.469,20.269,3951,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2019",,,,,,,"2014-2024",20.758,20.348,21.167,3979,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2020",,,,,,,"2014-2024",22.815,22.351,23.279,3260,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2021",,,,,,,"2014-2024",22.76,22.33,23.191,3630,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2022",,,,,,,"2014-2024",21.543,21.069,22.017,2742,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2023",,,,,,,"2014-2024",21.309,20.71,21.908,1691,"£",
+"dr15","Estimated hourly pay for individuals with dependent children","trend","K02000001","country","United Kingdom","year","2024",,,,,,,"2014-2024",21.469,21.021,21.916,2736,"£",
