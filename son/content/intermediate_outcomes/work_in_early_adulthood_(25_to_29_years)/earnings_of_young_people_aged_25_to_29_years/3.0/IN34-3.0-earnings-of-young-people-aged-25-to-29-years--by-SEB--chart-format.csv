@@ -1,0 +1,7 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Lower working",,,,,,,"2024-2024",14.517,13.124,15.91,94,"Percent",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Higher working",,,,,,,"2024-2024",16.471,15.014,17.928,96,"Percent",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Intermediate",,,,,,,"2024-2024",17.05,15.802,18.299,123,"Percent",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Lower professional",,,,,,,"2024-2024",17.499,16.313,18.686,133,"Percent",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Higher professional",,,,,,,"2024-2024",19.051,17.811,20.291,123,"Percent",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Total",,,,,,,"2024-2024",17.064,16.476,17.653,569,"Percent",
