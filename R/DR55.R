@@ -9,7 +9,7 @@ input_file = "2025-01-01-dr55-full-dataset.csv"
 output_folder_prefix = "../son/content"
 domain = "drivers_of_social_mobility"
 subdomain = "research_and_development_environment"
-indicator_name = "gva_per_capita"
+indicator_name = "gross_value_added_(gva)_per_capita"
 version = "1.0"
 
 indicator_code = "DR55"
@@ -101,8 +101,14 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 #################
 # CHART FORMAT
 
+data_for_section_w_nulls = data_for_section %>% mutate(
+  secondary_split_value = case_when(
+    value != 0 ~ secondary_split_value,
+    .default = 6)
+)
+
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+save_data_frame(data_for_section_w_nulls, csv_filename)
 
 #################
 # TABLE FORMAT
@@ -118,3 +124,4 @@ pivot_table = pivot_table__create(
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
+

@@ -9,7 +9,7 @@ input_file = "2025-01-01-dr54-full-dataset.csv"
 output_folder_prefix = "../son/content"
 domain = "drivers_of_social_mobility"
 subdomain = "research_and_development_environment"
-indicator_name = "new_economy_jobs"
+indicator_name = "occupations_in_the_'new_economy'"
 version = "1.0"
 
 indicator_code = "DR54"
