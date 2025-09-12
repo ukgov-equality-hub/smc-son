@@ -25,6 +25,9 @@ source("_shared.R")
 ###############
 # THE SCRIPT
 
+## Clear output folder
+unlink(output_folder, recursive=TRUE)
+
 input_file_path = paste0(input_folder, input_file)
 
 # Open the input file
@@ -54,7 +57,7 @@ neet_values_for_chart = c(
 
 neet_values_for_table  = c(
   "In employment (not in education or training)",
-  "Education and apprenticeships/WBL",
+  "Education and apprenticeships/work-based learning",
   "Other training",
   "NEET"
 )
@@ -78,7 +81,11 @@ data_for_section = data_frame__sort_rows_with_specific_values(
     unique(data_for_section$secondary_split_value), decreasing=TRUE),
   column_2 = "primary_split_value",
   values_2 = neet_values_for_chart
-)
+) %>% mutate(
+  primary_split_value = ifelse(
+    primary_split_value=="Education and apprenticeships/WBL",
+    "Education and apprenticeships/work-based learning",
+    primary_split_value))
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
 save_data_frame(data_for_section, csv_filename)
@@ -98,7 +105,7 @@ pivot_table = pivot_table__create(
   pivot_table_column_names_suffix = " (%)"
 ) %>% rename(
   c("Employment (%)" = "In employment (not in education or training) (%)",
-    "Education (including apprenticeships and work-based learning) (%)" = "Education and apprenticeships/WBL (%)",
+    "Education (including apprenticeships and work-based learning) (%)" = "Education and apprenticeships/work-based learning (%)",
     "Not in employment, education or training (%)" = "NEET (%)")
 )
 

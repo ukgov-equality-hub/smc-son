@@ -21,13 +21,11 @@ indicator_code = "DR51"
 
 source("_shared.R")
 
+###############
+# THE SCRIPT
 
 ## Clear output folder
 unlink(output_folder, recursive=TRUE)
-
-
-###############
-# THE SCRIPT
 
 input_file_path = paste0(input_folder, input_file)
 
