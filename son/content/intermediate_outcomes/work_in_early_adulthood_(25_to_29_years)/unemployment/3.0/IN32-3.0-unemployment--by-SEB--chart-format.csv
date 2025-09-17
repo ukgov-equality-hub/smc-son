@@ -1,6 +1,0 @@
-"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
-"in32","Unemployment","seb","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower working",,,,,"2024",6.116,3.767,9.928,274,"Percent",
-"in32","Unemployment","seb","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher working",,,,,"2024",5.621,3.316,9.355,265,"Percent",
-"in32","Unemployment","seb","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Intermediate",,,,,"2024",4.971,3.138,7.522,428,"Percent",
-"in32","Unemployment","seb","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower professional",,,,,"2024",4.353,2.693,6.962,411,"Percent",
-"in32","Unemployment","seb","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher professional",,,,,"2024",2.206,0.935,4.526,329,"Percent",
