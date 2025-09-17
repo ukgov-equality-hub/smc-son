@@ -202,10 +202,6 @@ menu = {
                         {
                             'id': 'DR14',
                             'name': 'Distribution of parental occupation'
-                        },
-                        {
-                            'id': 'DR15',
-                            'name': 'Parental income'
                         }
                     ]
                 },
@@ -278,14 +274,6 @@ menu = {
                         {
                             'id': 'DR53',
                             'name': 'Postgraduate education'
-                        },
-                        {
-                            'id': 'DR54',
-                            'name': 'New Economy Jobs'
-                        },
-                        {
-                            'id': 'DR55',
-                            'name': 'GVA per capita'
                         }
                     ]
                 }
