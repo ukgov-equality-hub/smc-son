@@ -136,6 +136,7 @@ highest_qualification_order = c(
   "Higher degree"
 )
 
+degree_no_degree_order = c("Degree", "No degree")
 
 parental_qualification_order = c(
   "Lower level (below GCSE grade 1)",

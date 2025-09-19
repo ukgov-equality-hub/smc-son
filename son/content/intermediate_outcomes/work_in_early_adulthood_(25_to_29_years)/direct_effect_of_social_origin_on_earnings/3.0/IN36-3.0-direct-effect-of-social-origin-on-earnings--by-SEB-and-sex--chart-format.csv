@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Men",,,,,"2014-2024",10.563,10.007,11.149,668,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Men",,,,,"2014-2024",10.689,10.116,11.294,740,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Men",,,,,"2014-2024",11.03,10.447,11.646,923,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Men",,,,,"2014-2024",11.708,11.059,12.394,862,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Men",,,,,"2014-2024",12.371,11.664,13.12,800,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Women",,,,,"2014-2024",10.156,9.617,10.724,746,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Women",,,,,"2014-2024",10.642,10.076,11.24,865,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Women",,,,,"2014-2024",11.052,10.47,11.666,1057,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Women",,,,,"2014-2024",11.638,11.011,12.301,997,"Percent",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Women",,,,,"2014-2024",12.328,11.649,13.047,936,"Percent",
