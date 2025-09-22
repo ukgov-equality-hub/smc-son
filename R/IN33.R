@@ -74,14 +74,20 @@ save_data_frame(data_for_section, csv_filename)
 
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
-  pivot_columns_column_name = "primary_split_value",
-  pivot_rows_column_name = "secondary_split_value",
+  pivot_columns_column_name = "primary_split_type",
+  pivot_columns_column_2_name = "primary_split_value",
+  pivot_rows_column_name = "secondary_split_type",
+  pivot_rows_column_2_name = "secondary_split_value",
   pivot_cells_column_name = "value",
-  pivot_table_name = "Socio-economic background",
-  pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_columns_order_values = occupational_class_order,
+  pivot_table_name = "",
+  pivot_table_name_column_2 = "",
+  pivot_table_rows_order_values = unique(data_for_section$secondary_split_type),
+  pivot_table_rows_2_order_values = rev(occupational_class_order),
+  pivot_table_columns_order_values = unique(data_for_section$primary_split_type),
+  pivot_table_columns_2_order_values = occupational_class_order,
   pivot_table_column_names_suffix = " (%)"
 )
+
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)

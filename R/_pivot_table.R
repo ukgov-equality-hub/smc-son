@@ -160,21 +160,41 @@ pivot_table__create = function(
   
   if (has_2_rows_of_headings) {
     # Remove duplicate values in the top header, so that our HTML generator will create cells with a row-span
-    first_header = c("pivot_rows")
-    second_header = c("")
-    for (concatenated_col in names(pivot_table)[c(-1)]){
-      first_header <- append(first_header, str_split_i(concatenated_col, "_", 1))
-      second_header <- append(second_header, str_split_i(concatenated_col, "_", 2))
-    }
-    
-    first_header_deduped = c("pivot_rows")
-    for (i in length(first_header):2) {
-      if (first_header[i] == first_header[i - 1]) {
-        first_header_deduped[i] = ""
-      } else {
-        first_header_deduped[i] = first_header[i]
+    if (has_2_columns_of_headings) {
+      first_header = c("pivot_rows", "pivot_rows_2")
+      second_header = c("", "")
+      for (concatenated_col in names(pivot_table)[c(-1,-2)]){
+        first_header <- append(first_header, str_split_i(concatenated_col, "_", 1))
+        second_header <- append(second_header, str_split_i(concatenated_col, "_", 2))
+      }
+      
+      first_header_deduped = c("pivot_rows", "pivot_rows_2")
+      for (i in length(first_header):3) {
+        if (first_header[i] == first_header[i - 1]) {
+          first_header_deduped[i] = ""
+        } else {
+          first_header_deduped[i] = first_header[i]
+        }
+      }
+      
+    } else {
+      first_header = c("pivot_rows")
+      second_header = c("")
+      for (concatenated_col in names(pivot_table)[c(-1)]){
+        first_header <- append(first_header, str_split_i(concatenated_col, "_", 1))
+        second_header <- append(second_header, str_split_i(concatenated_col, "_", 2))
+      }
+      
+      first_header_deduped = c("pivot_rows")
+      for (i in length(first_header):2) {
+        if (first_header[i] == first_header[i - 1]) {
+          first_header_deduped[i] = ""
+        } else {
+          first_header_deduped[i] = first_header[i]
+        }
       }
     }
+    
     
     names(pivot_table) <- first_header_deduped
     pivot_table <- rbind(second_header, pivot_table)
