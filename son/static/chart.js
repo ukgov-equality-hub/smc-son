@@ -197,6 +197,7 @@ class Chart {
         const xticksLength = options.xticksLength || null
         const filterNaN = options.filterNaN === false ? false : true
         const legend = options.legend || false
+        const legendTitle = options.legendTitle || false
         const reverseLegend = options.reverseLegend || false
         this.legendCheckboxes = options.legendCheckboxes || false
         const swatchSize = 20
@@ -749,6 +750,11 @@ class Chart {
                 }
 
                 legendDiv = document.createElement('div')
+                if (legendTitle) {
+                    const ltitle = document.createElement('p')
+                    ltitle.textContent = legendTitle;
+                    legendDiv.appendChild(ltitle)
+                }
                 legendDiv.setAttribute('id', `${self.el}_legend`)
                 legendDiv.classList.add('chart-legend')
                 const legendStyle = { marginTop: `${group && [-3, 'abreviate'].includes(xticks) ? '15' : swatchSize * 1.75}px` }
