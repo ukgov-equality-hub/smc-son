@@ -1,7 +1,7 @@
 # Mobility outcomes
 Mobility outcomes look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
-<strong>We have not updated our mobility outcomes for State of the Nation 2024.</strong> This is because much of the source data is not frequently updated. In addition, we do not expect mobility outcomes to change significantly year on year, because they measure longer-term outcomes that take a while to change. 
+<strong>We have not updated our mobility outcomes for State of the Nation 2025.</strong> This is because much of the source data is not frequently updated. In addition, we do not expect mobility outcomes to change significantly year on year, because they measure longer-term outcomes that take a while to change. 
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
@@ -110,7 +110,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
     </div>
 </div>
 
-## Elsewhere in State of the Nation 2024
+## Elsewhere in State of the Nation 2025
 [Intermediate outcomes](/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.
 
@@ -118,4 +118,4 @@ focus on the experiences of young people as they move through education and into
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2024 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2024-local-to-national-mapping-opportunities-for-all)
+[State of the Nation 2025 on GOV.UK]()
