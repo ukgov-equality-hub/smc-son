@@ -6,7 +6,7 @@ as they move through education and into work.
 <div class="grid grid3 grid-domain">
     <div class="govuk-body">
         <h3 class="govuk-heading-s">
-            Key stage 2 by ethnicity
+            Key stage 4 by ethnicity
         </h3>
         <div class="chart-container" aria-hidden="true">
             <div id="chart1"></div>
@@ -38,10 +38,10 @@ as they move through education and into work.
         <p class="govuk-body">
             The attainment of pupils eligible for free school meals varies greatly across ethnicities.
         </p>
-        <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_11/latest"
+        <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/latest"
            class="govuk-link">
             Read more
-            <span class="govuk-visually-hidden">about attainment at age 11</span>
+            <span class="govuk-visually-hidden">about attainment at age 16</span>
         </a>
     </div>
     <div class="govuk-body">
@@ -128,7 +128,7 @@ as they move through education and into work.
     </div>
 </div>
 
-## Elsewhere in State of the Nation 2024
+## Elsewhere in State of the Nation 2025
 [Mobility outcomes](/mobility_outcomes)
 look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
@@ -136,4 +136,4 @@ look at people's occupations, educational levels and housing situations, typical
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2024 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2024-local-to-national-mapping-opportunities-for-all)
+[State of the Nation 2025 on GOV.UK]()
