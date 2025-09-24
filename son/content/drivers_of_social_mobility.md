@@ -78,7 +78,7 @@ Drivers of social mobility are the background conditions that make social mobili
             )
         </script>
         <p class="govuk-body">
-            Unemployment among young people is the lowest it has been since 2014, at 11% in 2022.
+            Unemployment among young people is the highest it has been since 2020, at 16% in 2024.
         </p>
         <a href="/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/latest"
            class="govuk-link">
@@ -120,7 +120,7 @@ Drivers of social mobility are the background conditions that make social mobili
             )
         </script>
         <p class="govuk-body">
-            The percentage of homes and businesses with ‘gigabit’ internet availability has gone up across the UK since 2020, reaching 76% in 2023.
+            The percentage of homes and businesses with access to a gigabit-capable broadband connection has gone up across the UK since 2020, reaching 82% in 2024.
         </p>
         <a href="/drivers_of_social_mobility/research_and_development_environment/broadband_speed/latest"
            class="govuk-link">
@@ -130,7 +130,7 @@ Drivers of social mobility are the background conditions that make social mobili
     </div>
 </div>
 
-## Elsewhere in State of the Nation 2024
+## Elsewhere in State of the Nation 2025
 [Mobility outcomes](/mobility_outcomes)
 look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
@@ -138,4 +138,4 @@ look at people's occupations, educational levels and housing situations, typical
 focus on the experiences of young people as they move through education and into work.
 
 ## Read the full report
-[State of the Nation 2024 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2024-local-to-national-mapping-opportunities-for-all)
+[State of the Nation 2025 on GOV.UK]()
