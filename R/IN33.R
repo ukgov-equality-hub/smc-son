@@ -53,7 +53,8 @@ section_chart_type = "seb"
 section_csv_name = "SEB"
 
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section = get_data_for_chart_type(data, section_chart_type) %>% 
+  mutate(primary_split_type = "Occupation")
 
 #################
 # CHART FORMAT
@@ -74,12 +75,14 @@ save_data_frame(data_for_section, csv_filename)
 
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
-  pivot_columns_column_name = "primary_split_value",
+  pivot_columns_column_name = "primary_split_type",
+  pivot_columns_column_2_name = "primary_split_value",
   pivot_rows_column_name = "secondary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
   pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_columns_order_values = occupational_class_order,
+  pivot_table_columns_order_values = unique(data_for_section$primary_split_type),
+  pivot_table_columns_2_order_values = occupational_class_order,
   pivot_table_column_names_suffix = " (%)"
 )
 
@@ -140,6 +143,7 @@ for (occupational_class in rev_occupational_class_order_w_total) {
 
 #################
 # TABLE FORMAT
+
 
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
