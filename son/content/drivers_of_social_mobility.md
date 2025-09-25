@@ -37,7 +37,7 @@ Drivers of social mobility are the background conditions that make social mobili
         </script>
         <p class="govuk-body">
             The percentage of children living in relative poverty in the UK (after housing costs) has gone up to around 30% since 2012,
-            below the levels reached in the 1990s, but higher than in the 1960s and 1970s.
+            below the levels reached in the 1990s.
         </p>
         <a href="/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/latest"
            class="govuk-link">
