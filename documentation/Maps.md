@@ -81,6 +81,13 @@ Additionally, TopoJSON files containing outlines of Europe used to generate map 
 
 [NUTS](https://en.wikipedia.org/wiki/Nomenclature_of_Territorial_Units_for_Statistics) are boundaries for EU countries, provided at different resolutions.
 
+#### Special 205 areas map
+
+There is a special map created for SMC by the academics they work with `UK205regions.zip`. 
+
+To get this into the right format, I unzipped it and opened `UK205regions.prj` in a text editor. `PROJCS["British_National_Grid"` indicates that it has the [EPSG:27700 coordinate reference system](https://epsg.io/27700)
+Upload to [mapshaper](https://mapshaper.org/) and in the console `proj crs="EPSG:4326"` (or `proj init="EPSG:27700" crs="EPSG:4326"` if it doesn't pick up the original CRS automatically), simplify to 2%, export as topojson
+
 ### Options
 
 The options include:
