@@ -56,6 +56,34 @@
                     <div id="max_{{ id }}"></div>
                 </div>
             </div>
+            <div id="scaleSevenCategories{{ id }}" class="scale-seven-categories">
+                <div class="grid grid7 seven-categories"
+                     style="{% if [data, 'groupLabels'] | attribute %}margin-bottom: 5px;{% endif %}">
+                    <div class="c1"></div>
+                    <div class="c2"></div>
+                    <div class="c3"></div>
+                    <div class="c4"></div>
+                    <div class="c5"></div>
+                    <div class="c6"></div>
+                    <div class="c7"></div>
+                </div>
+                {% if [data, 'groupLabels'] | attribute %}
+                    <div class="grid grid7 scale-legend">
+                        <div class="map-legend-group-names">Least<br>Favourable</div>
+                        <div class="map-legend-group-names">Unfavourable</div>
+                        <div class="map-legend-group-names">Lower<br>Middling</div>
+                        <div class="map-legend-group-names">Middling</div>
+                        <div class="map-legend-group-names">Upper<br>Middling</div>
+                        <div class="map-legend-group-names">Favourable</div>
+                        <div class="map-legend-group-names">Most<br>Favourable</div>
+                    </div>
+                {% else %}
+                    <div class="grid grid2 scale-legend">
+                        <div>Q1 - Lowest 20%</div>
+                        <div>Q5 - Highest 20%</div>
+                    </div>
+                {% endif %}
+            </div>
         </div>
     </div>
 

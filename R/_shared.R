@@ -165,6 +165,33 @@ nations_order = c(
   "United Kingdom"
 )
 
+composite_index_categories_old = c(
+  "most unfavourable",
+  "unfavourable",
+  "lower middling",
+  "middling",
+  "upper middling",
+  "favourable",
+  "most favourable"
+)
+
+composite_index_categories_order = c(
+  "Least Favourable",
+  "Unfavourable",
+  "Lower Middling",
+  "Middling",
+  "Upper Middling",
+  "Favourable",
+  "Most Favourable"
+)
+
+composite_index_categories_rename <- data.frame(
+  old_name = composite_index_categories_old,
+  new_name = composite_index_categories_order,
+  group_number = 1:7
+)
+
+
 timestamp = format(Sys.time(), "%Y%m%d-%H%M%S")
 
 
