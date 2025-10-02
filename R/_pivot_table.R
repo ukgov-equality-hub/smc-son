@@ -94,17 +94,18 @@ pivot_table__create = function(
   
   if (has_2_columns_of_headings) {
     if (has_2_rows_of_headings) {
-      pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = sum)
+      pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name)
     }
     else {
-      pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = sum)
+      pivot_table = dcast(pivot_table_source, pivot_rows + pivot_rows_2 ~ pivot_columns, value.var = pivot_cells_column_name)
     }
   } else if (has_2_rows_of_headings) {
-      pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name, fun.aggregate = sum)
+      pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns + pivot_columns_2, value.var = pivot_cells_column_name)
   } else {
-      pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns, value.var = pivot_cells_column_name, fun.aggregate = sum)
+      pivot_table = dcast(pivot_table_source, pivot_rows ~ pivot_columns, value.var = pivot_cells_column_name)
   }
   
+
   if (!is.null(pivot_table_rows_order_values) && !is.null(pivot_table_rows_2_order_values)) {
     pivot_table = data_frame__sort_rows_with_specific_values(
       data_frame = pivot_table,

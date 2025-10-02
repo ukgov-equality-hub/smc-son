@@ -1,0 +1,206 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","group_number"
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Aberdeen City","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.521,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Aberdeenshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.108,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Angus","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.082,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.213,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Barking and Dagenham","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.084,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Barnet","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.722,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Barnsley","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.243,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.167,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bedford","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.048,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bexley","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.091,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Birmingham","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.13,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.059,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Blackpool","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.57,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Blaenau Gwent","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.595,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bolton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.564,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.211,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bracknell Forest","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.544,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bradford","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.032,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Brent","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.285,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bridgend","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.225,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Brighton and Hove","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.408,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bristol, City of","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.524,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bromley","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.775,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Buckinghamshire","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.667,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Bury","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.4,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Caerphilly","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.946,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Calderdale","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.26,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.921,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Camden and City of London","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.178,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cardiff","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.626,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Carmarthenshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.696,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Central Bedfordshire","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.513,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Ceredigion","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.575,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cheshire East","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.225,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.704,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","City of Edinburgh","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.724,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Clackmannanshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.667,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Conwy","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.86,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.454,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Coventry","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.709,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Croydon","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.633,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Cumbria","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.587,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Darlington","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.204,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Denbighshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.615,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Derby","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.681,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Derbyshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.156,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Devon CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.394,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Doncaster","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.181,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Dorset","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.333,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Dudley","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.355,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.633,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Dundee City","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.595,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Durham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.613,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Ealing","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.516,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Ayrshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.341,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Dunbartonshire","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.1,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Lothian","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.266,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Renfrewshire","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.218,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.015,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","East Sussex CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.009,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Enfield","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.095,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Essex","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.231,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Falkirk","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.318,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Fife","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.29,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Flintshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.8,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Gateshead","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.749,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Glasgow City","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.416,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Gloucestershire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.435,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Greenwich","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.13,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Gwynedd","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.924,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hackney","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.197,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Halton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.821,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.963,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hampshire","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.89,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Haringey","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.554,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Harrow","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.664,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hartlepool","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.326,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Havering","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.667,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Herefordshire, County of","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.423,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hertfordshire CC","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.477,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Highland","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.391,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hillingdon","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.211,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Hounslow","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.633,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Inverclyde","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.68,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Isle of Anglesey","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.419,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Isle of Wight","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.018,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Islington","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.46,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.688,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Kent","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.2,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-2.029,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Kingston upon Thames","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.931,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Kirklees","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.459,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Knowsley","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.173,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Lambeth","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.857,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Lancashire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.306,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Leeds","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.014,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Leicester","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.742,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Leicestershire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.295,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Lewisham","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.289,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Lincolnshire CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.643,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Liverpool","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.479,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Luton","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.11,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Manchester","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.711,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Medway","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.799,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.181,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Merton","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.014,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Middlesbrough","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.27,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Midlothian","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.015,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Milton Keynes","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.887,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Monmouthshire","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.857,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Moray","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.334,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.317,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Neath Port Talbot","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.425,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.425,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Newham","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.274,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Newport","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.572,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.051,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North East Lincolnshire","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.734,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Lanarkshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.565,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Lincolnshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.04,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Northamptonshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.529,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Somerset","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.88,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Tyneside","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.099,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","North Yorkshire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.38,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Northern Ireland","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.603,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Northumberland","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.202,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.496,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Nottingham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.963,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Nottinghamshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.022,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Oldham","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.404,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Orkney Islands","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.363,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Oxfordshire CC","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.598,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Pembrokeshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.702,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Perth and Kinross","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.533,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Peterborough","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.75,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Plymouth","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.59,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Portsmouth","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.294,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Powys","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.736,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Reading","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.199,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Redbridge","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.019,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.134,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Renfrewshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.008,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.631,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Richmond upon Thames","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",3.477,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Rochdale","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.245,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Rotherham","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.594,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Rutland","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.127,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Salford","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.748,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Sandwell","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-2.013,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Scottish Borders","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.751,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Sefton","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.256,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Sheffield","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.202,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Shetland Islands","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.142,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Shropshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.021,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Slough","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.543,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Solihull","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.907,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Somerset CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.003,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","South Ayrshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.159,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","South Gloucestershire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.343,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","South Lanarkshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.145,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","South Tyneside","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.9,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Southampton","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.329,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Southend-on-Sea","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.099,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Southwark","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.829,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","St Helens","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.738,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Staffordshire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.008,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Stirling","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.408,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Stockport","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.087,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.397,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2012 to 2017","zscore_category","Least Favourable",,,,,"2012 to 2017",-1.599,,,,"z-score",,1
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Suffolk CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.275,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Sunderland","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.253,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Surrey","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.916,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Sutton","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.328,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Swansea","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.576,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Swindon","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.233,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Tameside","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.792,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Telford and Wrekin","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.456,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Thurrock","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.621,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Torbay","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.734,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Torfaen","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.407,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Tower Hamlets","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.075,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Trafford","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.134,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.395,,,,"z-score",,6
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wakefield","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.023,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Walsall","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.17,,,,"z-score",,2
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Waltham Forest","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.07,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wandsworth","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",3.098,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Warrington","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.817,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Warwickshire CC","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.708,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","West Berkshire","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.693,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","West Dunbartonshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.394,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","West Lothian","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.112,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","West Northamptonshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.102,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","West Sussex","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.694,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Westminster","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.888,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wigan","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.664,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wiltshire","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.895,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.312,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wirral","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.125,,,,"z-score",,4
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wokingham","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.498,,,,"z-score",,7
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wolverhampton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.81,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Worcestershire CC","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.66,,,,"z-score",,5
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","Wrexham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.584,,,,"z-score",,3
+"ci1","Conditions of Childhood","composite_index",,"Local Authority","York","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.785,,,,"z-score",,5

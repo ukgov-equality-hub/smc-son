@@ -557,6 +557,13 @@ div.data-table-data table {
     }
 }
 
+.grid7 {
+    > div {
+        width: 14%;
+    }
+}
+
+
 .grid-three-quarters {
     max-width: 775px;
 }
@@ -974,6 +981,37 @@ div.quintile {
     }
     div.q5 {
         background: #0571b0;
+    }
+}
+
+div.seven-categories {
+    margin: 0 0 10px 0;
+    height: 20px;
+
+    div {
+        vertical-align: middle;
+    }
+
+    div.c1 {
+        background: #ca0020;
+    }
+    div.c2 {
+        background: #f3a582;
+    }
+    div.c3 {
+        background: #FFEBCC;
+    }
+    div.c4 {
+        background: #ffffbf;
+    }
+    div.c5 {
+        background: #C9E2F2;
+    }
+    div.c6 {
+        background: #92c5de;
+    }
+    div.c7 {
+        background: #0671b0;
     }
 }
 
