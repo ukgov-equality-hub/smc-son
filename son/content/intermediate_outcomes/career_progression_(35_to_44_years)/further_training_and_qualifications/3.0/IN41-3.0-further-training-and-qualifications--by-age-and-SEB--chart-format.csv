@@ -1,0 +1,7 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","age_with_text"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Working","age",25,,,,,2017,20.339,14.971,25.707,216,"Percentage",,"Age 25"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Working","age",32,,,,,2024,32.936,25.066,40.806,137,"Percentage",,"Age 32"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Intermediate","age",25,,,,,2017,36.544,29.547,43.54,182,"Percentage",,"Age 25"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Intermediate","age",32,,,,,2024,44.979,37.905,52.053,190,"Percentage",,"Age 32"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Professional","age",25,,,,,2017,63.9,57.959,69.842,251,"Percentage",,"Age 25"
+"in41","Further training and qualifications","seb","K02000001","country","United Kingdom","seb_three_cat","Professional","age",32,,,,,2024,72.663,66.097,79.229,177,"Percentage",,"Age 32"
