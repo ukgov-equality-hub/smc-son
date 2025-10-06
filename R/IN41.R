@@ -47,7 +47,8 @@ save_data_frame(data, csv_filename)
 
 age_order = c(25, 32)
 three_sebs_order = c("Working", "Intermediate", "Professional")
-three_sebs_order_w_percentages = c("Working (%)", "Intermediate (%)", "Professional (%)")
+two_sebs_order = c("Working", "Professional")
+two_sebs_order_w_percentages = c("Working (%)", "Professional (%)")
 
 
 ##########################################
@@ -106,7 +107,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 #################
 # CHART FORMAT
 
-for (seb  in three_sebs_order) {
+for (seb  in two_sebs_order) {
   
   data_for_section_filtered = data_frame__filter(
     data_frame = data_for_section,
@@ -142,7 +143,7 @@ pivot_table = pivot_table__create(
   pivot_columns_column_2_name = "tertiary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Year of birth",
-  pivot_table_columns_order_values = three_sebs_order_w_percentages,
+  pivot_table_columns_order_values = two_sebs_order_w_percentages,
   pivot_table_columns_2_order_values = age_order,
   pivot_table_rows_order_values = unique(data_for_section$secondary_split_value, decreasing=FALSE),
 )
