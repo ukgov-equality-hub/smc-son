@@ -1,0 +1,206 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","group_number"
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Aberdeen City","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.108,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Aberdeenshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.044,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Angus","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.403,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.955,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Barking and Dagenham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.691,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Barnet","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.38,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Barnsley","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.102,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.871,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bedford","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.177,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bexley","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.163,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Birmingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.107,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.116,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Blackpool","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.919,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Blaenau Gwent","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.233,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bolton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.825,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.133,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bracknell Forest","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.326,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bradford","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.424,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Brent","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.763,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bridgend","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.352,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Brighton and Hove","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.093,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bristol, City of","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.495,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bromley","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.985,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Buckinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.2,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Bury","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.141,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Caerphilly","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.692,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Calderdale","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.396,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.821,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Camden and City of London","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",5.828,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cardiff","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.852,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Carmarthenshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.654,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Central Bedfordshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.189,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Ceredigion","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.042,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cheshire East","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.219,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.2,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","City of Edinburgh","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.695,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Clackmannanshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.563,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Conwy","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.427,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.744,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Coventry","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.307,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Croydon","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.621,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Cumbria","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.604,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Darlington","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.706,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Denbighshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.759,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Derby","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.142,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Derbyshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.512,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Devon CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.307,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Doncaster","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.142,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Dorset","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.664,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Dudley","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.774,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.98,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Dundee City","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.333,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Durham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.658,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Ealing","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.96,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Ayrshire","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.128,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Dunbartonshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.62,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Lothian","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.301,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Renfrewshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.358,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.557,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","East Sussex CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.288,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Enfield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.15,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Essex","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.451,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Falkirk","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.289,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Fife","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.195,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Flintshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.392,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Gateshead","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.706,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Glasgow City","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.626,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Gloucestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.217,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Greenwich","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.714,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Gwynedd","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.389,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hackney","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.072,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Halton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.499,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.13,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hampshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.041,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Haringey","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.458,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Harrow","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.968,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hartlepool","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.957,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Havering","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.148,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Herefordshire, County of","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.499,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hertfordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.47,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Highland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hillingdon","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.641,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Hounslow","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.135,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Inverclyde","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.553,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Isle of Anglesey","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.657,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Isle of Wight","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.649,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Islington","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.829,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.494,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Kent","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.285,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.977,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Kingston upon Thames","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.387,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Kirklees","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.233,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Knowsley","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.857,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Lambeth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.887,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Lancashire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.434,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Leeds","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.38,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Leicester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.211,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Leicestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.011,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Lewisham","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.278,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Lincolnshire CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.832,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Liverpool","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.012,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Luton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.496,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Manchester","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.822,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Medway","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.629,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.061,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Merton","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.162,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Middlesbrough","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.743,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Midlothian","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.124,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Milton Keynes","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.683,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Monmouthshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.045,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Moray","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.889,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.987,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Neath Port Talbot","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.825,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.29,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Newham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.312,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Newport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.368,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.065,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North East Lincolnshire","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.378,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Lanarkshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.942,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Lincolnshire","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.139,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Northamptonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.728,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Somerset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.023,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Tyneside","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.099,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","North Yorkshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.377,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Northern Ireland","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.437,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Northumberland","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.453,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Nottingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.014,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Nottinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.132,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Oldham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.899,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Orkney Islands","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.784,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Oxfordshire CC","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.682,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Pembrokeshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.993,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Perth and Kinross","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.188,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Peterborough","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.477,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Plymouth","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.659,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Portsmouth","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.334,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Powys","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.606,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Reading","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.581,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Redbridge","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.525,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.209,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Renfrewshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.478,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.711,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Richmond upon Thames","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.063,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Rochdale","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.97,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Rotherham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.799,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Rutland","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.254,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Salford","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.087,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Sandwell","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.025,,,,"z-score",,2
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Scottish Borders","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.524,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Sefton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.558,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Sheffield","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.547,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Shetland Islands","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.982,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Shropshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.414,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Slough","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.663,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Solihull","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.34,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Somerset CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.554,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","South Ayrshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.781,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","South Gloucestershire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.417,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","South Lanarkshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.769,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","South Tyneside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.732,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Southampton","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.516,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Southend-on-Sea","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.738,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Southwark","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.817,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","St Helens","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.811,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Staffordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.395,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Stirling","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.77,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Stockport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.173,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.593,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.829,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Suffolk CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.75,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Sunderland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.977,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Surrey","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.785,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Sutton","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.006,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Swansea","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.162,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Swindon","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.341,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Tameside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.585,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Telford and Wrekin","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.393,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Thurrock","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.514,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Torbay","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.94,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Torfaen","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.896,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Tower Hamlets","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.496,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Trafford","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.973,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.24,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wakefield","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.753,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Walsall","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.923,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Waltham Forest","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.446,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wandsworth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.664,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Warrington","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.092,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Warwickshire CC","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.675,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","West Berkshire","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.197,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","West Dunbartonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.915,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","West Lothian","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.055,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","West Northamptonshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.189,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","West Sussex","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.268,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Westminster","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",5.162,,,,"z-score",,7
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wigan","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wiltshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.061,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.955,,,,"z-score",,5
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wirral","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.668,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wokingham","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.439,,,,"z-score",,6
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wolverhampton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Worcestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.376,,,,"z-score",,4
+"ci3","Innovation and Growth","composite_index",,"Local Authority","Wrexham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.881,,,,"z-score",,3
+"ci3","Innovation and Growth","composite_index",,"Local Authority","York","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.917,,,,"z-score",,5
