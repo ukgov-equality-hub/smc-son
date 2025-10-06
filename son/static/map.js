@@ -653,7 +653,7 @@ class Choropleth {
             function getMarkColour(data, x) {
                 const val = getValue(x, areaField, valueField, data)
                 if (val == null) return 'grey'
-                if (['quartile', 'quintile', 'decile'].includes(dataFormat)) {
+                if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = getValue(x, areaField, quantile, data)
                     const r = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
