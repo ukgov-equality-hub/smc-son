@@ -53,7 +53,8 @@ section_chart_type = "seb"
 section_csv_name = "SEB"
 
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section = get_data_for_chart_type(data, section_chart_type) %>% 
+  filter(primary_split_value != "Total")
 
 #################
 # CHART FORMAT
@@ -108,6 +109,7 @@ data_for_section = data_frame__sort_rows_with_specific_values(
 )
   
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
+
 save_data_frame(data_for_section, csv_filename)
 
 #################
