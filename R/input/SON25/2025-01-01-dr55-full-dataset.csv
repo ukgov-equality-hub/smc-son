@@ -1,203 +1,177 @@
-"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","variable_used","weight_used","age_used","year_used","label"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","1998",NA,NA,NA,NA,"1998",25350.906,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25351%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","1999",NA,NA,NA,NA,"1999",26066.993,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26067%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2000",NA,NA,NA,NA,"2000",27135.922,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27136%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2001",NA,NA,NA,NA,"2001",27731.32,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27731%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2002",NA,NA,NA,NA,"2002",28043.478,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28043%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2003",NA,NA,NA,NA,"2003",28783.333,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28783%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2004",NA,NA,NA,NA,"2004",29305.761,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29306%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2005",NA,NA,NA,NA,"2005",29964.08,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29964%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2006",NA,NA,NA,NA,"2006",30486.713,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30487%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2007",NA,NA,NA,NA,"2007",31056.164,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31056%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2008",NA,NA,NA,NA,"2008",30771.768,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30772%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2009",NA,NA,NA,NA,"2009",29150.579,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29151%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2010",NA,NA,NA,NA,"2010",29600,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29600%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2011",NA,NA,NA,NA,"2011",29727.503,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29728%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2012",NA,NA,NA,NA,"2012",30009.988,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30010%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2013",NA,NA,NA,NA,"2013",30334.149,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30334%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2014",NA,NA,NA,NA,"2014",31106.538,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31107%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2015",NA,NA,NA,NA,"2015",31473.621,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31474%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2016",NA,NA,NA,NA,"2016",31845.701,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31846%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2017",NA,NA,NA,NA,"2017",32560.185,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32560%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2018",NA,NA,NA,NA,"2018",32821.995,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32822%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2019",NA,NA,NA,NA,"2019",33218.646,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33219%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2020",NA,NA,NA,NA,"2020",29928.346,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29928%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2021",NA,NA,NA,NA,"2021",32358.051,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32358%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2022",NA,NA,NA,NA,"2022",33521,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33521%"
-"dr55","GVA per capita","trend","K02000001","country","United Kingdom","area_name","United Kingdom","time_period","2023",NA,NA,NA,NA,"2023",33305.351,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33305%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","1998",NA,NA,NA,NA,"1998",24851.03,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24851%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","1999",NA,NA,NA,NA,"1999",25618.898,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25619%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2000",NA,NA,NA,NA,"2000",26704.403,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26704%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2001",NA,NA,NA,NA,"2001",27263.889,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27264%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2002",NA,NA,NA,NA,"2002",27632.53,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27633%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2003",NA,NA,NA,NA,"2003",28396.171,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28396%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2004",NA,NA,NA,NA,"2004",28909.353,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28909%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2005",NA,NA,NA,NA,"2005",29609.551,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29610%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2006",NA,NA,NA,NA,"2006",30262.724,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30263%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2007",NA,NA,NA,NA,"2007",30927.224,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30927%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2008",NA,NA,NA,NA,"2008",30714.472,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30714%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2009",NA,NA,NA,NA,"2009",29031.606,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29032%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2010",NA,NA,NA,NA,"2010",29645.12,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29645%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2011",NA,NA,NA,NA,"2011",29856.423,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29856%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2012",NA,NA,NA,NA,"2012",30276.119,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30276%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2013",NA,NA,NA,NA,"2013",30659.341,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30659%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2014",NA,NA,NA,NA,"2014",31444.043,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31444%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2015",NA,NA,NA,NA,"2015",31810.427,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"31810%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2016",NA,NA,NA,NA,"2016",32186.047,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32186%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2017",NA,NA,NA,NA,"2017",32868.421,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32868%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2018",NA,NA,NA,NA,"2018",33146.067,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33146%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2019",NA,NA,NA,NA,"2019",33531.868,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33532%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2020",NA,NA,NA,NA,"2020",30198.545,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30199%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2021",NA,NA,NA,NA,"2021",32731.092,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"32731%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2022",NA,NA,NA,NA,"2022",33902,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33902%"
-"dr55","GVA per capita","trend","K02000001","country","England","area_name","England","time_period","2023",NA,NA,NA,NA,"2023",33731.123,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33731%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","1998",NA,NA,NA,NA,"1998",18185.185,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"18185%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","1999",NA,NA,NA,NA,"1999",18555.556,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"18556%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2000",NA,NA,NA,NA,"2000",19322.115,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"19322%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2001",NA,NA,NA,NA,"2001",19810.51,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"19811%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2002",NA,NA,NA,NA,"2002",20075.969,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20076%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2003",NA,NA,NA,NA,"2003",20686.747,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20687%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2004",NA,NA,NA,NA,"2004",21133.041,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21133%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2005",NA,NA,NA,NA,"2005",21281.87,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21282%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2006",NA,NA,NA,NA,"2006",21874.652,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21875%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2007",NA,NA,NA,NA,"2007",21893.243,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21893%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2008",NA,NA,NA,NA,"2008",21144.343,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21144%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2009",NA,NA,NA,NA,"2009",20419.108,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20419%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2010",NA,NA,NA,NA,"2010",20699.115,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20699%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2011",NA,NA,NA,NA,"2011",21198.999,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21199%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2012",NA,NA,NA,NA,"2012",21496.305,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21496%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2013",NA,NA,NA,NA,"2013",21853.688,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21854%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2014",NA,NA,NA,NA,"2014",22150.718,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22151%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2015",NA,NA,NA,NA,"2015",22660.735,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22661%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2016",NA,NA,NA,NA,"2016",23194.152,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23194%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2017",NA,NA,NA,NA,"2017",23579.977,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23580%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2018",NA,NA,NA,NA,"2018",24170.843,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24171%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2019",NA,NA,NA,NA,"2019",24533.259,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24533%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2020",NA,NA,NA,NA,"2020",22094.837,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22095%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2021",NA,NA,NA,NA,"2021",23387.885,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23388%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2022",NA,NA,NA,NA,"2022",23934,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23934%"
-"dr55","GVA per capita","trend","K02000001","country","Wales","area_name","Wales","time_period","2023",NA,NA,NA,NA,"2023",23659.926,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23660%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","1998",NA,NA,NA,NA,"1998",22198.068,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22198%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","1999",NA,NA,NA,NA,"1999",22547.504,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22548%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2000",NA,NA,NA,NA,"2000",23355.2,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23355%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2001",NA,NA,NA,NA,"2001",24260.597,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24261%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2002",NA,NA,NA,NA,"2002",24570.336,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24570%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2003",NA,NA,NA,NA,"2003",25316.964,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25317%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2004",NA,NA,NA,NA,"2004",26044.669,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26045%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2005",NA,NA,NA,NA,"2005",26877.292,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26877%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2006",NA,NA,NA,NA,"2006",27651.639,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27652%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2007",NA,NA,NA,NA,"2007",28083.221,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28083%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2008",NA,NA,NA,NA,"2008",28314.694,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28315%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2009",NA,NA,NA,NA,"2009",27251.263,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27251%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2010",NA,NA,NA,NA,"2010",27209.391,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27209%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2011",NA,NA,NA,NA,"2011",27415.829,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27416%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2012",NA,NA,NA,NA,"2012",27744.129,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27744%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2013",NA,NA,NA,NA,"2013",28356.364,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28356%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2014",NA,NA,NA,NA,"2014",29142.174,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29142%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2015",NA,NA,NA,NA,"2015",29278.903,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29279%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2016",NA,NA,NA,NA,"2016",29236.749,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29237%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2017",NA,NA,NA,NA,"2017",30092.7,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30093%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2018",NA,NA,NA,NA,"2018",29984.091,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29984%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2019",NA,NA,NA,NA,"2019",30320.755,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30321%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2020",NA,NA,NA,NA,"2020",26918.835,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26919%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2021",NA,NA,NA,NA,"2021",29242.616,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29243%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2022",NA,NA,NA,NA,"2022",30634,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30634%"
-"dr55","GVA per capita","trend","K02000001","country","Scotland","area_name","Scotland","time_period","2023",NA,NA,NA,NA,"2023",30659.633,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30660%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","1998",NA,NA,NA,NA,"1998",20570.423,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20570%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","1999",NA,NA,NA,NA,"1999",21339.1,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21339%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2000",NA,NA,NA,NA,"2000",22734.589,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22735%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2001",NA,NA,NA,NA,"2001",23193.603,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23194%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2002",NA,NA,NA,NA,"2002",23214.754,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23215%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2003",NA,NA,NA,NA,"2003",24131.537,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24132%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2004",NA,NA,NA,NA,"2004",24556.414,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24556%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2005",NA,NA,NA,NA,"2005",25170.953,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25171%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2006",NA,NA,NA,NA,"2006",25679.883,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25680%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2007",NA,NA,NA,NA,"2007",25279.267,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25279%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2008",NA,NA,NA,NA,"2008",24325.203,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24325%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2009",NA,NA,NA,NA,"2009",22975.033,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22975%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2010",NA,NA,NA,NA,"2010",22511.14,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22511%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2011",NA,NA,NA,NA,"2011",22823.298,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22823%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2012",NA,NA,NA,NA,"2012",23153.846,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23154%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2013",NA,NA,NA,NA,"2013",23386.65,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23387%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2014",NA,NA,NA,NA,"2014",23696.139,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23696%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2015",NA,NA,NA,NA,"2015",23811.665,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23812%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2016",NA,NA,NA,NA,"2016",24709.33,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24709%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2017",NA,NA,NA,NA,"2017",25151.231,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25151%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2018",NA,NA,NA,NA,"2018",25161.697,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25162%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2019",NA,NA,NA,NA,"2019",25845.465,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25845%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2020",NA,NA,NA,NA,"2020",23051.975,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23052%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2021",NA,NA,NA,NA,"2021",25872.093,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25872%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2022",NA,NA,NA,NA,"2022",26538,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26538%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2023",NA,NA,NA,NA,"2023",26795.6,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26796%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","1998",NA,NA,NA,NA,"1998",20570.423,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"20570%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","1999",NA,NA,NA,NA,"1999",21339.1,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"21339%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2000",NA,NA,NA,NA,"2000",22734.589,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22735%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2001",NA,NA,NA,NA,"2001",23193.603,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23194%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2002",NA,NA,NA,NA,"2002",23214.754,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23215%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2003",NA,NA,NA,NA,"2003",24131.537,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24132%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2004",NA,NA,NA,NA,"2004",24556.414,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24556%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2005",NA,NA,NA,NA,"2005",25170.953,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25171%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2006",NA,NA,NA,NA,"2006",25679.883,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25680%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2007",NA,NA,NA,NA,"2007",25279.267,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25279%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2008",NA,NA,NA,NA,"2008",24325.203,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24325%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2009",NA,NA,NA,NA,"2009",22975.033,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22975%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2010",NA,NA,NA,NA,"2010",22511.14,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22511%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2011",NA,NA,NA,NA,"2011",22823.298,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22823%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2012",NA,NA,NA,NA,"2012",23153.846,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23154%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2013",NA,NA,NA,NA,"2013",23386.65,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23387%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2014",NA,NA,NA,NA,"2014",23696.139,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23696%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2015",NA,NA,NA,NA,"2015",23811.665,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23812%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2016",NA,NA,NA,NA,"2016",24709.33,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24709%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2017",NA,NA,NA,NA,"2017",25151.231,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25151%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2018",NA,NA,NA,NA,"2018",25161.697,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25162%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2019",NA,NA,NA,NA,"2019",25845.465,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25845%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2020",NA,NA,NA,NA,"2020",23051.975,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23052%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2021",NA,NA,NA,NA,"2021",25872.093,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25872%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2022",NA,NA,NA,NA,"2022",26538,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26538%"
-"dr55","GVA per capita","trend","K02000001","country","Northern Ireland","area_name","Northern Ireland","time_period","2023",NA,NA,NA,NA,"2023",26795.6,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26796%"
-"dr55","GVA per capita","geography",NA,"ITL2","Tees Valley","area_name","Tees Valley","quintile","1",NA,NA,NA,NA,"2023",23933,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"23933%"
-"dr55","GVA per capita","geography",NA,"ITL2","Northumberland, Durham and Tyne & Wear","area_name","Northumberland, Durham and Tyne & Wear","quintile","1",NA,NA,NA,NA,"2023",25920,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25920%"
-"dr55","GVA per capita","geography",NA,"ITL2","Cumbria","area_name","Cumbria","quintile","3",NA,NA,NA,NA,"2023",29812,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29812%"
-"dr55","GVA per capita","geography",NA,"ITL2","Greater Manchester","area_name","Greater Manchester","quintile","4",NA,NA,NA,NA,"2023",34033,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"34033%"
-"dr55","GVA per capita","geography",NA,"ITL2","Lancashire","area_name","Lancashire","quintile","2",NA,NA,NA,NA,"2023",27430,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27430%"
-"dr55","GVA per capita","geography",NA,"ITL2","Cheshire","area_name","Cheshire","quintile","5",NA,NA,NA,NA,"2023",42013,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"42013%"
-"dr55","GVA per capita","geography",NA,"ITL2","Merseyside","area_name","Merseyside","quintile","2",NA,NA,NA,NA,"2023",27308,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27308%"
-"dr55","GVA per capita","geography",NA,"ITL2","East Yorkshire and Northern Lincolnshire","area_name","East Yorkshire and Northern Lincolnshire","quintile","2",NA,NA,NA,NA,"2023",27994,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27994%"
-"dr55","GVA per capita","geography",NA,"ITL2","North Yorkshire","area_name","North Yorkshire","quintile","4",NA,NA,NA,NA,"2023",34103,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"34103%"
-"dr55","GVA per capita","geography",NA,"ITL2","South Yorkshire","area_name","South Yorkshire","quintile","1",NA,NA,NA,NA,"2023",24977,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24977%"
-"dr55","GVA per capita","geography",NA,"ITL2","West Yorkshire","area_name","West Yorkshire","quintile","3",NA,NA,NA,NA,"2023",30646,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30646%"
-"dr55","GVA per capita","geography",NA,"ITL2","Derbyshire and Nottinghamshire","area_name","Derbyshire and Nottinghamshire","quintile","2",NA,NA,NA,NA,"2023",27377,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27377%"
-"dr55","GVA per capita","geography",NA,"ITL2","Leicestershire, Rutland and Northamptonshire","area_name","Leicestershire, Rutland and Northamptonshire","quintile","3",NA,NA,NA,NA,"2023",30163,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"30163%"
-"dr55","GVA per capita","geography",NA,"ITL2","Lincolnshire","area_name","Lincolnshire","quintile","1",NA,NA,NA,NA,"2023",24342,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24342%"
-"dr55","GVA per capita","geography",NA,"ITL2","Herefordshire, Worcestershire and Warwickshire","area_name","Herefordshire, Worcestershire and Warwickshire","quintile","4",NA,NA,NA,NA,"2023",33484,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33484%"
-"dr55","GVA per capita","geography",NA,"ITL2","Shropshire and Staffordshire","area_name","Shropshire and Staffordshire","quintile","1",NA,NA,NA,NA,"2023",25930,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"25930%"
-"dr55","GVA per capita","geography",NA,"ITL2","West Midlands","area_name","West Midlands","quintile","2",NA,NA,NA,NA,"2023",27965,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27965%"
-"dr55","GVA per capita","geography",NA,"ITL2","Bedfordshire and Hertfordshire","area_name","Bedfordshire and Hertfordshire","quintile","4",NA,NA,NA,NA,"2023",35425,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"35425%"
-"dr55","GVA per capita","geography",NA,"ITL2","Essex","area_name","Essex","quintile","3",NA,NA,NA,NA,"2023",28893,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28893%"
-"dr55","GVA per capita","geography",NA,"ITL2","Cambridgeshire and Peterborough","area_name","Cambridgeshire and Peterborough","quintile","5",NA,NA,NA,NA,"2023",37087,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"37087%"
-"dr55","GVA per capita","geography",NA,"ITL2","Norfolk","area_name","Norfolk","quintile","1",NA,NA,NA,NA,"2023",26356,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26356%"
-"dr55","GVA per capita","geography",NA,"ITL2","Suffolk","area_name","Suffolk","quintile","3",NA,NA,NA,NA,"2023",29594,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29594%"
-"dr55","GVA per capita","geography",NA,"ITL2","Inner London - West","area_name","Inner London - West","quintile","5",NA,NA,NA,NA,"2023",250416,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"250416%"
-"dr55","GVA per capita","geography",NA,"ITL2","Inner London - East","area_name","Inner London - East","quintile","5",NA,NA,NA,NA,"2023",60657,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"60657%"
-"dr55","GVA per capita","geography",NA,"ITL2","Outer London - East and North East","area_name","Outer London - East and North East","quintile","1",NA,NA,NA,NA,"2023",22522,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22522%"
-"dr55","GVA per capita","geography",NA,"ITL2","Outer London - South","area_name","Outer London - South","quintile","3",NA,NA,NA,NA,"2023",28003,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28003%"
-"dr55","GVA per capita","geography",NA,"ITL2","Outer London - West and North West","area_name","Outer London - West and North West","quintile","4",NA,NA,NA,NA,"2023",33912,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33912%"
-"dr55","GVA per capita","geography",NA,"ITL2","Berkshire, Buckinghamshire and Oxfordshire","area_name","Berkshire, Buckinghamshire and Oxfordshire","quintile","5",NA,NA,NA,NA,"2023",46633,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"46633%"
-"dr55","GVA per capita","geography",NA,"ITL2","Surrey, East and West Sussex","area_name","Surrey, East and West Sussex","quintile","4",NA,NA,NA,NA,"2023",35880,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"35880%"
-"dr55","GVA per capita","geography",NA,"ITL2","Hampshire and Isle of Wight","area_name","Hampshire and Isle of Wight","quintile","4",NA,NA,NA,NA,"2023",35671,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"35671%"
-"dr55","GVA per capita","geography",NA,"ITL2","Kent","area_name","Kent","quintile","3",NA,NA,NA,NA,"2023",28974,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28974%"
-"dr55","GVA per capita","geography",NA,"ITL2","Cornwall and Isles of Scilly","area_name","Cornwall and Isles of Scilly","quintile","1",NA,NA,NA,NA,"2023",24891,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"24891%"
-"dr55","GVA per capita","geography",NA,"ITL2","Devon","area_name","Devon","quintile","2",NA,NA,NA,NA,"2023",26696,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26696%"
-"dr55","GVA per capita","geography",NA,"ITL2","West of England","area_name","West of England","quintile","5",NA,NA,NA,NA,"2023",44160,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"44160%"
-"dr55","GVA per capita","geography",NA,"ITL2","North Somerset, Somerset and Dorset","area_name","North Somerset, Somerset and Dorset","quintile","3",NA,NA,NA,NA,"2023",28129,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"28129%"
-"dr55","GVA per capita","geography",NA,"ITL2","Gloucestershire and Wiltshire","area_name","Gloucestershire and Wiltshire","quintile","4",NA,NA,NA,NA,"2023",35475,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"35475%"
-"dr55","GVA per capita","geography",NA,"ITL2","North Wales","area_name","North Wales","quintile","2",NA,NA,NA,NA,"2023",27395,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"27395%"
-"dr55","GVA per capita","geography",NA,"ITL2","Mid and South West Wales","area_name","Mid and South West Wales","quintile","1",NA,NA,NA,NA,"2023",22878,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"22878%"
-"dr55","GVA per capita","geography",NA,"ITL2","South East Wales","area_name","South East Wales","quintile","2",NA,NA,NA,NA,"2023",26684,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26684%"
-"dr55","GVA per capita","geography",NA,"ITL2","Eastern Scotland","area_name","Eastern Scotland","quintile","2",NA,NA,NA,NA,"2023",26536,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"26536%"
-"dr55","GVA per capita","geography",NA,"ITL2","East Central Scotland","area_name","East Central Scotland","quintile","5",NA,NA,NA,NA,"2023",45836,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"45836%"
-"dr55","GVA per capita","geography",NA,"ITL2","Highlands and Islands","area_name","Highlands and Islands","quintile",NA,NA,NA,NA,NA,"2023",NA,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"NA%"
-"dr55","GVA per capita","geography",NA,"ITL2","West Central Scotland","area_name","West Central Scotland","quintile","4",NA,NA,NA,NA,"2023",33792,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"33792%"
-"dr55","GVA per capita","geography",NA,"ITL2","North Eastern Scotland","area_name","North Eastern Scotland","quintile","5",NA,NA,NA,NA,"2023",37295,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"37295%"
-"dr55","GVA per capita","geography",NA,"ITL2","Southern Scotland","area_name","Southern Scotland","quintile",NA,NA,NA,NA,NA,"2023",NA,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"NA%"
-"dr55","GVA per capita","geography",NA,"ITL2","Northern Ireland","area_name","Northern Ireland","quintile","3",NA,NA,NA,NA,"2023",29234,"NA","NA",NA,"£",NA,NA,NA,NA,NA,"29234%"
+measure_code,measure_title,chart_type,area_code,area_type,area_name,primary_split_type,primary_split_value,secondary_split_type,secondary_split_value,tertiary_split_type,tertiary_split_value,fourth_split_type,fourth_split_value,time_period,value,lci,uci,sample_size,unit,value_note,variable_used,weight_used,age_used,year_used,label
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,1998,NA,NA,NA,NA,1998,25350.906,NA,NA,NA,£,NA,NA,NA,NA,NA,25351%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,1999,NA,NA,NA,NA,1999,26066.993,NA,NA,NA,£,NA,NA,NA,NA,NA,26067%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2000,NA,NA,NA,NA,2000,27135.922,NA,NA,NA,£,NA,NA,NA,NA,NA,27136%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2001,NA,NA,NA,NA,2001,27731.32,NA,NA,NA,£,NA,NA,NA,NA,NA,27731%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2002,NA,NA,NA,NA,2002,28043.478,NA,NA,NA,£,NA,NA,NA,NA,NA,28043%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2003,NA,NA,NA,NA,2003,28783.333,NA,NA,NA,£,NA,NA,NA,NA,NA,28783%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2004,NA,NA,NA,NA,2004,29305.761,NA,NA,NA,£,NA,NA,NA,NA,NA,29306%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2005,NA,NA,NA,NA,2005,29964.08,NA,NA,NA,£,NA,NA,NA,NA,NA,29964%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2006,NA,NA,NA,NA,2006,30486.713,NA,NA,NA,£,NA,NA,NA,NA,NA,30487%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2007,NA,NA,NA,NA,2007,31056.164,NA,NA,NA,£,NA,NA,NA,NA,NA,31056%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2008,NA,NA,NA,NA,2008,30771.768,NA,NA,NA,£,NA,NA,NA,NA,NA,30772%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2009,NA,NA,NA,NA,2009,29150.579,NA,NA,NA,£,NA,NA,NA,NA,NA,29151%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2010,NA,NA,NA,NA,2010,29600,NA,NA,NA,£,NA,NA,NA,NA,NA,29600%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2011,NA,NA,NA,NA,2011,29727.503,NA,NA,NA,£,NA,NA,NA,NA,NA,29728%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2012,NA,NA,NA,NA,2012,30009.988,NA,NA,NA,£,NA,NA,NA,NA,NA,30010%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2013,NA,NA,NA,NA,2013,30334.149,NA,NA,NA,£,NA,NA,NA,NA,NA,30334%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2014,NA,NA,NA,NA,2014,31106.538,NA,NA,NA,£,NA,NA,NA,NA,NA,31107%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2015,NA,NA,NA,NA,2015,31473.621,NA,NA,NA,£,NA,NA,NA,NA,NA,31474%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2016,NA,NA,NA,NA,2016,31845.701,NA,NA,NA,£,NA,NA,NA,NA,NA,31846%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2017,NA,NA,NA,NA,2017,32560.185,NA,NA,NA,£,NA,NA,NA,NA,NA,32560%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2018,NA,NA,NA,NA,2018,32821.995,NA,NA,NA,£,NA,NA,NA,NA,NA,32822%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2019,NA,NA,NA,NA,2019,33218.646,NA,NA,NA,£,NA,NA,NA,NA,NA,33219%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2020,NA,NA,NA,NA,2020,29928.346,NA,NA,NA,£,NA,NA,NA,NA,NA,29928%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2021,NA,NA,NA,NA,2021,32358.051,NA,NA,NA,£,NA,NA,NA,NA,NA,32358%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2022,NA,NA,NA,NA,2022,33521,NA,NA,NA,£,NA,NA,NA,NA,NA,33521%
+dr55,GVA per capita,trend,K02000001,country,United Kingdom,area_name,United Kingdom,time_period,2023,NA,NA,NA,NA,2023,33305.351,NA,NA,NA,£,NA,NA,NA,NA,NA,33305%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,1998,NA,NA,NA,NA,1998,24851.03,NA,NA,NA,£,NA,NA,NA,NA,NA,24851%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,1999,NA,NA,NA,NA,1999,25618.898,NA,NA,NA,£,NA,NA,NA,NA,NA,25619%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2000,NA,NA,NA,NA,2000,26704.403,NA,NA,NA,£,NA,NA,NA,NA,NA,26704%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2001,NA,NA,NA,NA,2001,27263.889,NA,NA,NA,£,NA,NA,NA,NA,NA,27264%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2002,NA,NA,NA,NA,2002,27632.53,NA,NA,NA,£,NA,NA,NA,NA,NA,27633%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2003,NA,NA,NA,NA,2003,28396.171,NA,NA,NA,£,NA,NA,NA,NA,NA,28396%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2004,NA,NA,NA,NA,2004,28909.353,NA,NA,NA,£,NA,NA,NA,NA,NA,28909%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2005,NA,NA,NA,NA,2005,29609.551,NA,NA,NA,£,NA,NA,NA,NA,NA,29610%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2006,NA,NA,NA,NA,2006,30262.724,NA,NA,NA,£,NA,NA,NA,NA,NA,30263%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2007,NA,NA,NA,NA,2007,30927.224,NA,NA,NA,£,NA,NA,NA,NA,NA,30927%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2008,NA,NA,NA,NA,2008,30714.472,NA,NA,NA,£,NA,NA,NA,NA,NA,30714%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2009,NA,NA,NA,NA,2009,29031.606,NA,NA,NA,£,NA,NA,NA,NA,NA,29032%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2010,NA,NA,NA,NA,2010,29645.12,NA,NA,NA,£,NA,NA,NA,NA,NA,29645%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2011,NA,NA,NA,NA,2011,29856.423,NA,NA,NA,£,NA,NA,NA,NA,NA,29856%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2012,NA,NA,NA,NA,2012,30276.119,NA,NA,NA,£,NA,NA,NA,NA,NA,30276%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2013,NA,NA,NA,NA,2013,30659.341,NA,NA,NA,£,NA,NA,NA,NA,NA,30659%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2014,NA,NA,NA,NA,2014,31444.043,NA,NA,NA,£,NA,NA,NA,NA,NA,31444%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2015,NA,NA,NA,NA,2015,31810.427,NA,NA,NA,£,NA,NA,NA,NA,NA,31810%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2016,NA,NA,NA,NA,2016,32186.047,NA,NA,NA,£,NA,NA,NA,NA,NA,32186%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2017,NA,NA,NA,NA,2017,32868.421,NA,NA,NA,£,NA,NA,NA,NA,NA,32868%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2018,NA,NA,NA,NA,2018,33146.067,NA,NA,NA,£,NA,NA,NA,NA,NA,33146%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2019,NA,NA,NA,NA,2019,33531.868,NA,NA,NA,£,NA,NA,NA,NA,NA,33532%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2020,NA,NA,NA,NA,2020,30198.545,NA,NA,NA,£,NA,NA,NA,NA,NA,30199%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2021,NA,NA,NA,NA,2021,32731.092,NA,NA,NA,£,NA,NA,NA,NA,NA,32731%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2022,NA,NA,NA,NA,2022,33902,NA,NA,NA,£,NA,NA,NA,NA,NA,33902%
+dr55,GVA per capita,trend,K02000001,country,England,area_name,England,time_period,2023,NA,NA,NA,NA,2023,33731.123,NA,NA,NA,£,NA,NA,NA,NA,NA,33731%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,1998,NA,NA,NA,NA,1998,18185.185,NA,NA,NA,£,NA,NA,NA,NA,NA,18185%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,1999,NA,NA,NA,NA,1999,18555.556,NA,NA,NA,£,NA,NA,NA,NA,NA,18556%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2000,NA,NA,NA,NA,2000,19322.115,NA,NA,NA,£,NA,NA,NA,NA,NA,19322%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2001,NA,NA,NA,NA,2001,19810.51,NA,NA,NA,£,NA,NA,NA,NA,NA,19811%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2002,NA,NA,NA,NA,2002,20075.969,NA,NA,NA,£,NA,NA,NA,NA,NA,20076%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2003,NA,NA,NA,NA,2003,20686.747,NA,NA,NA,£,NA,NA,NA,NA,NA,20687%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2004,NA,NA,NA,NA,2004,21133.041,NA,NA,NA,£,NA,NA,NA,NA,NA,21133%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2005,NA,NA,NA,NA,2005,21281.87,NA,NA,NA,£,NA,NA,NA,NA,NA,21282%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2006,NA,NA,NA,NA,2006,21874.652,NA,NA,NA,£,NA,NA,NA,NA,NA,21875%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2007,NA,NA,NA,NA,2007,21893.243,NA,NA,NA,£,NA,NA,NA,NA,NA,21893%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2008,NA,NA,NA,NA,2008,21144.343,NA,NA,NA,£,NA,NA,NA,NA,NA,21144%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2009,NA,NA,NA,NA,2009,20419.108,NA,NA,NA,£,NA,NA,NA,NA,NA,20419%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2010,NA,NA,NA,NA,2010,20699.115,NA,NA,NA,£,NA,NA,NA,NA,NA,20699%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2011,NA,NA,NA,NA,2011,21198.999,NA,NA,NA,£,NA,NA,NA,NA,NA,21199%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2012,NA,NA,NA,NA,2012,21496.305,NA,NA,NA,£,NA,NA,NA,NA,NA,21496%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2013,NA,NA,NA,NA,2013,21853.688,NA,NA,NA,£,NA,NA,NA,NA,NA,21854%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2014,NA,NA,NA,NA,2014,22150.718,NA,NA,NA,£,NA,NA,NA,NA,NA,22151%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2015,NA,NA,NA,NA,2015,22660.735,NA,NA,NA,£,NA,NA,NA,NA,NA,22661%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2016,NA,NA,NA,NA,2016,23194.152,NA,NA,NA,£,NA,NA,NA,NA,NA,23194%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2017,NA,NA,NA,NA,2017,23579.977,NA,NA,NA,£,NA,NA,NA,NA,NA,23580%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2018,NA,NA,NA,NA,2018,24170.843,NA,NA,NA,£,NA,NA,NA,NA,NA,24171%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2019,NA,NA,NA,NA,2019,24533.259,NA,NA,NA,£,NA,NA,NA,NA,NA,24533%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2020,NA,NA,NA,NA,2020,22094.837,NA,NA,NA,£,NA,NA,NA,NA,NA,22095%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2021,NA,NA,NA,NA,2021,23387.885,NA,NA,NA,£,NA,NA,NA,NA,NA,23388%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2022,NA,NA,NA,NA,2022,23934,NA,NA,NA,£,NA,NA,NA,NA,NA,23934%
+dr55,GVA per capita,trend,K02000001,country,Wales,area_name,Wales,time_period,2023,NA,NA,NA,NA,2023,23659.926,NA,NA,NA,£,NA,NA,NA,NA,NA,23660%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,1998,NA,NA,NA,NA,1998,22198.068,NA,NA,NA,£,NA,NA,NA,NA,NA,22198%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,1999,NA,NA,NA,NA,1999,22547.504,NA,NA,NA,£,NA,NA,NA,NA,NA,22548%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2000,NA,NA,NA,NA,2000,23355.2,NA,NA,NA,£,NA,NA,NA,NA,NA,23355%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2001,NA,NA,NA,NA,2001,24260.597,NA,NA,NA,£,NA,NA,NA,NA,NA,24261%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2002,NA,NA,NA,NA,2002,24570.336,NA,NA,NA,£,NA,NA,NA,NA,NA,24570%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2003,NA,NA,NA,NA,2003,25316.964,NA,NA,NA,£,NA,NA,NA,NA,NA,25317%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2004,NA,NA,NA,NA,2004,26044.669,NA,NA,NA,£,NA,NA,NA,NA,NA,26045%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2005,NA,NA,NA,NA,2005,26877.292,NA,NA,NA,£,NA,NA,NA,NA,NA,26877%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2006,NA,NA,NA,NA,2006,27651.639,NA,NA,NA,£,NA,NA,NA,NA,NA,27652%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2007,NA,NA,NA,NA,2007,28083.221,NA,NA,NA,£,NA,NA,NA,NA,NA,28083%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2008,NA,NA,NA,NA,2008,28314.694,NA,NA,NA,£,NA,NA,NA,NA,NA,28315%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2009,NA,NA,NA,NA,2009,27251.263,NA,NA,NA,£,NA,NA,NA,NA,NA,27251%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2010,NA,NA,NA,NA,2010,27209.391,NA,NA,NA,£,NA,NA,NA,NA,NA,27209%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2011,NA,NA,NA,NA,2011,27415.829,NA,NA,NA,£,NA,NA,NA,NA,NA,27416%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2012,NA,NA,NA,NA,2012,27744.129,NA,NA,NA,£,NA,NA,NA,NA,NA,27744%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2013,NA,NA,NA,NA,2013,28356.364,NA,NA,NA,£,NA,NA,NA,NA,NA,28356%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2014,NA,NA,NA,NA,2014,29142.174,NA,NA,NA,£,NA,NA,NA,NA,NA,29142%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2015,NA,NA,NA,NA,2015,29278.903,NA,NA,NA,£,NA,NA,NA,NA,NA,29279%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2016,NA,NA,NA,NA,2016,29236.749,NA,NA,NA,£,NA,NA,NA,NA,NA,29237%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2017,NA,NA,NA,NA,2017,30092.7,NA,NA,NA,£,NA,NA,NA,NA,NA,30093%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2018,NA,NA,NA,NA,2018,29984.091,NA,NA,NA,£,NA,NA,NA,NA,NA,29984%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2019,NA,NA,NA,NA,2019,30320.755,NA,NA,NA,£,NA,NA,NA,NA,NA,30321%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2020,NA,NA,NA,NA,2020,26918.835,NA,NA,NA,£,NA,NA,NA,NA,NA,26919%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2021,NA,NA,NA,NA,2021,29242.616,NA,NA,NA,£,NA,NA,NA,NA,NA,29243%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2022,NA,NA,NA,NA,2022,30634,NA,NA,NA,£,NA,NA,NA,NA,NA,30634%
+dr55,GVA per capita,trend,K02000001,country,Scotland,area_name,Scotland,time_period,2023,NA,NA,NA,NA,2023,30659.633,NA,NA,NA,£,NA,NA,NA,NA,NA,30660%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,1998,NA,NA,NA,NA,1998,20570.423,NA,NA,NA,£,NA,NA,NA,NA,NA,20570%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,1999,NA,NA,NA,NA,1999,21339.1,NA,NA,NA,£,NA,NA,NA,NA,NA,21339%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2000,NA,NA,NA,NA,2000,22734.589,NA,NA,NA,£,NA,NA,NA,NA,NA,22735%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2001,NA,NA,NA,NA,2001,23193.603,NA,NA,NA,£,NA,NA,NA,NA,NA,23194%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2002,NA,NA,NA,NA,2002,23214.754,NA,NA,NA,£,NA,NA,NA,NA,NA,23215%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2003,NA,NA,NA,NA,2003,24131.537,NA,NA,NA,£,NA,NA,NA,NA,NA,24132%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2004,NA,NA,NA,NA,2004,24556.414,NA,NA,NA,£,NA,NA,NA,NA,NA,24556%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2005,NA,NA,NA,NA,2005,25170.953,NA,NA,NA,£,NA,NA,NA,NA,NA,25171%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2006,NA,NA,NA,NA,2006,25679.883,NA,NA,NA,£,NA,NA,NA,NA,NA,25680%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2007,NA,NA,NA,NA,2007,25279.267,NA,NA,NA,£,NA,NA,NA,NA,NA,25279%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2008,NA,NA,NA,NA,2008,24325.203,NA,NA,NA,£,NA,NA,NA,NA,NA,24325%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2009,NA,NA,NA,NA,2009,22975.033,NA,NA,NA,£,NA,NA,NA,NA,NA,22975%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2010,NA,NA,NA,NA,2010,22511.14,NA,NA,NA,£,NA,NA,NA,NA,NA,22511%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2011,NA,NA,NA,NA,2011,22823.298,NA,NA,NA,£,NA,NA,NA,NA,NA,22823%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2012,NA,NA,NA,NA,2012,23153.846,NA,NA,NA,£,NA,NA,NA,NA,NA,23154%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2013,NA,NA,NA,NA,2013,23386.65,NA,NA,NA,£,NA,NA,NA,NA,NA,23387%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2014,NA,NA,NA,NA,2014,23696.139,NA,NA,NA,£,NA,NA,NA,NA,NA,23696%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2015,NA,NA,NA,NA,2015,23811.665,NA,NA,NA,£,NA,NA,NA,NA,NA,23812%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2016,NA,NA,NA,NA,2016,24709.33,NA,NA,NA,£,NA,NA,NA,NA,NA,24709%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2017,NA,NA,NA,NA,2017,25151.231,NA,NA,NA,£,NA,NA,NA,NA,NA,25151%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2018,NA,NA,NA,NA,2018,25161.697,NA,NA,NA,£,NA,NA,NA,NA,NA,25162%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2019,NA,NA,NA,NA,2019,25845.465,NA,NA,NA,£,NA,NA,NA,NA,NA,25845%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2020,NA,NA,NA,NA,2020,23051.975,NA,NA,NA,£,NA,NA,NA,NA,NA,23052%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2021,NA,NA,NA,NA,2021,25872.093,NA,NA,NA,£,NA,NA,NA,NA,NA,25872%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2022,NA,NA,NA,NA,2022,26538,NA,NA,NA,£,NA,NA,NA,NA,NA,26538%
+dr55,GVA per capita,trend,K02000001,country,Northern Ireland,area_name,Northern Ireland,time_period,2023,NA,NA,NA,NA,2023,26795.6,NA,NA,NA,£,NA,NA,NA,NA,NA,26796%
+dr55,GVA per capita,geography,NA,ITL2,Tees Valley,area_name,Tees Valley,quintile,1,NA,NA,NA,NA,2023,23933,NA,NA,NA,£,NA,NA,NA,NA,NA,23933%
+dr55,GVA per capita,geography,NA,ITL2,"Northumberland, Durham and Tyne & Wear",area_name,"Northumberland, Durham and Tyne & Wear",quintile,1,NA,NA,NA,NA,2023,25920,NA,NA,NA,£,NA,NA,NA,NA,NA,25920%
+dr55,GVA per capita,geography,NA,ITL2,Cumbria,area_name,Cumbria,quintile,3,NA,NA,NA,NA,2023,29812,NA,NA,NA,£,NA,NA,NA,NA,NA,29812%
+dr55,GVA per capita,geography,NA,ITL2,Greater Manchester,area_name,Greater Manchester,quintile,4,NA,NA,NA,NA,2023,34033,NA,NA,NA,£,NA,NA,NA,NA,NA,34033%
+dr55,GVA per capita,geography,NA,ITL2,Lancashire,area_name,Lancashire,quintile,2,NA,NA,NA,NA,2023,27430,NA,NA,NA,£,NA,NA,NA,NA,NA,27430%
+dr55,GVA per capita,geography,NA,ITL2,Cheshire,area_name,Cheshire,quintile,5,NA,NA,NA,NA,2023,42013,NA,NA,NA,£,NA,NA,NA,NA,NA,42013%
+dr55,GVA per capita,geography,NA,ITL2,Merseyside,area_name,Merseyside,quintile,2,NA,NA,NA,NA,2023,27308,NA,NA,NA,£,NA,NA,NA,NA,NA,27308%
+dr55,GVA per capita,geography,NA,ITL2,East Yorkshire and Northern Lincolnshire,area_name,East Yorkshire and Northern Lincolnshire,quintile,2,NA,NA,NA,NA,2023,27994,NA,NA,NA,£,NA,NA,NA,NA,NA,27994%
+dr55,GVA per capita,geography,NA,ITL2,North Yorkshire,area_name,North Yorkshire,quintile,4,NA,NA,NA,NA,2023,34103,NA,NA,NA,£,NA,NA,NA,NA,NA,34103%
+dr55,GVA per capita,geography,NA,ITL2,South Yorkshire,area_name,South Yorkshire,quintile,1,NA,NA,NA,NA,2023,24977,NA,NA,NA,£,NA,NA,NA,NA,NA,24977%
+dr55,GVA per capita,geography,NA,ITL2,West Yorkshire,area_name,West Yorkshire,quintile,3,NA,NA,NA,NA,2023,30646,NA,NA,NA,£,NA,NA,NA,NA,NA,30646%
+dr55,GVA per capita,geography,NA,ITL2,Derbyshire and Nottinghamshire,area_name,Derbyshire and Nottinghamshire,quintile,2,NA,NA,NA,NA,2023,27377,NA,NA,NA,£,NA,NA,NA,NA,NA,27377%
+dr55,GVA per capita,geography,NA,ITL2,"Leicestershire, Rutland and Northamptonshire",area_name,"Leicestershire, Rutland and Northamptonshire",quintile,3,NA,NA,NA,NA,2023,30163,NA,NA,NA,£,NA,NA,NA,NA,NA,30163%
+dr55,GVA per capita,geography,NA,ITL2,Lincolnshire,area_name,Lincolnshire,quintile,1,NA,NA,NA,NA,2023,24342,NA,NA,NA,£,NA,NA,NA,NA,NA,24342%
+dr55,GVA per capita,geography,NA,ITL2,"Herefordshire, Worcestershire and Warwickshire",area_name,"Herefordshire, Worcestershire and Warwickshire",quintile,4,NA,NA,NA,NA,2023,33484,NA,NA,NA,£,NA,NA,NA,NA,NA,33484%
+dr55,GVA per capita,geography,NA,ITL2,Shropshire and Staffordshire,area_name,Shropshire and Staffordshire,quintile,1,NA,NA,NA,NA,2023,25930,NA,NA,NA,£,NA,NA,NA,NA,NA,25930%
+dr55,GVA per capita,geography,NA,ITL2,West Midlands,area_name,West Midlands,quintile,2,NA,NA,NA,NA,2023,27965,NA,NA,NA,£,NA,NA,NA,NA,NA,27965%
+dr55,GVA per capita,geography,NA,ITL2,Bedfordshire and Hertfordshire,area_name,Bedfordshire and Hertfordshire,quintile,4,NA,NA,NA,NA,2023,35425,NA,NA,NA,£,NA,NA,NA,NA,NA,35425%
+dr55,GVA per capita,geography,NA,ITL2,Essex,area_name,Essex,quintile,3,NA,NA,NA,NA,2023,28893,NA,NA,NA,£,NA,NA,NA,NA,NA,28893%
+dr55,GVA per capita,geography,NA,ITL2,Cambridgeshire and Peterborough,area_name,Cambridgeshire and Peterborough,quintile,5,NA,NA,NA,NA,2023,37087,NA,NA,NA,£,NA,NA,NA,NA,NA,37087%
+dr55,GVA per capita,geography,NA,ITL2,Norfolk,area_name,Norfolk,quintile,1,NA,NA,NA,NA,2023,26356,NA,NA,NA,£,NA,NA,NA,NA,NA,26356%
+dr55,GVA per capita,geography,NA,ITL2,Suffolk,area_name,Suffolk,quintile,3,NA,NA,NA,NA,2023,29594,NA,NA,NA,£,NA,NA,NA,NA,NA,29594%
+dr55,GVA per capita,geography,NA,ITL2,Inner London - West,area_name,Inner London - West,quintile,5,NA,NA,NA,NA,2023,250416,NA,NA,NA,£,NA,NA,NA,NA,NA,250416%
+dr55,GVA per capita,geography,NA,ITL2,Inner London - East,area_name,Inner London - East,quintile,5,NA,NA,NA,NA,2023,60657,NA,NA,NA,£,NA,NA,NA,NA,NA,60657%
+dr55,GVA per capita,geography,NA,ITL2,Outer London - East and North East,area_name,Outer London - East and North East,quintile,1,NA,NA,NA,NA,2023,22522,NA,NA,NA,£,NA,NA,NA,NA,NA,22522%
+dr55,GVA per capita,geography,NA,ITL2,Outer London - South,area_name,Outer London - South,quintile,3,NA,NA,NA,NA,2023,28003,NA,NA,NA,£,NA,NA,NA,NA,NA,28003%
+dr55,GVA per capita,geography,NA,ITL2,Outer London - West and North West,area_name,Outer London - West and North West,quintile,4,NA,NA,NA,NA,2023,33912,NA,NA,NA,£,NA,NA,NA,NA,NA,33912%
+dr55,GVA per capita,geography,NA,ITL2,"Berkshire, Buckinghamshire and Oxfordshire",area_name,"Berkshire, Buckinghamshire and Oxfordshire",quintile,5,NA,NA,NA,NA,2023,46633,NA,NA,NA,£,NA,NA,NA,NA,NA,46633%
+dr55,GVA per capita,geography,NA,ITL2,"Surrey, East and West Sussex",area_name,"Surrey, East and West Sussex",quintile,4,NA,NA,NA,NA,2023,35880,NA,NA,NA,£,NA,NA,NA,NA,NA,35880%
+dr55,GVA per capita,geography,NA,ITL2,Hampshire and Isle of Wight,area_name,Hampshire and Isle of Wight,quintile,4,NA,NA,NA,NA,2023,35671,NA,NA,NA,£,NA,NA,NA,NA,NA,35671%
+dr55,GVA per capita,geography,NA,ITL2,Kent,area_name,Kent,quintile,3,NA,NA,NA,NA,2023,28974,NA,NA,NA,£,NA,NA,NA,NA,NA,28974%
+dr55,GVA per capita,geography,NA,ITL2,Cornwall and Isles of Scilly,area_name,Cornwall and Isles of Scilly,quintile,1,NA,NA,NA,NA,2023,24891,NA,NA,NA,£,NA,NA,NA,NA,NA,24891%
+dr55,GVA per capita,geography,NA,ITL2,Devon,area_name,Devon,quintile,2,NA,NA,NA,NA,2023,26696,NA,NA,NA,£,NA,NA,NA,NA,NA,26696%
+dr55,GVA per capita,geography,NA,ITL2,West of England,area_name,West of England,quintile,5,NA,NA,NA,NA,2023,44160,NA,NA,NA,£,NA,NA,NA,NA,NA,44160%
+dr55,GVA per capita,geography,NA,ITL2,"North Somerset, Somerset and Dorset",area_name,"North Somerset, Somerset and Dorset",quintile,3,NA,NA,NA,NA,2023,28129,NA,NA,NA,£,NA,NA,NA,NA,NA,28129%
+dr55,GVA per capita,geography,NA,ITL2,Gloucestershire and Wiltshire,area_name,Gloucestershire and Wiltshire,quintile,4,NA,NA,NA,NA,2023,35475,NA,NA,NA,£,NA,NA,NA,NA,NA,35475%
+dr55,GVA per capita,geography,NA,ITL2,North Wales,area_name,North Wales,quintile,2,NA,NA,NA,NA,2023,27395,NA,NA,NA,£,NA,NA,NA,NA,NA,27395%
+dr55,GVA per capita,geography,NA,ITL2,Mid and South West Wales,area_name,Mid and South West Wales,quintile,1,NA,NA,NA,NA,2023,22878,NA,NA,NA,£,NA,NA,NA,NA,NA,22878%
+dr55,GVA per capita,geography,NA,ITL2,South East Wales,area_name,South East Wales,quintile,2,NA,NA,NA,NA,2023,26684,NA,NA,NA,£,NA,NA,NA,NA,NA,26684%
+dr55,GVA per capita,geography,NA,ITL2,Eastern Scotland,area_name,Eastern Scotland,quintile,2,NA,NA,NA,NA,2023,26536,NA,NA,NA,£,NA,NA,NA,NA,NA,26536%
+dr55,GVA per capita,geography,NA,ITL2,East Central Scotland,area_name,East Central Scotland,quintile,5,NA,NA,NA,NA,2023,45836,NA,NA,NA,£,NA,NA,NA,NA,NA,45836%
+dr55,GVA per capita,geography,NA,ITL2,Highlands and Islands,area_name,Highlands and Islands,quintile,NA,NA,NA,NA,NA,2023,NA,NA,NA,NA,£,NA,NA,NA,NA,NA,NA%
+dr55,GVA per capita,geography,NA,ITL2,West Central Scotland,area_name,West Central Scotland,quintile,4,NA,NA,NA,NA,2023,33792,NA,NA,NA,£,NA,NA,NA,NA,NA,33792%
+dr55,GVA per capita,geography,NA,ITL2,North Eastern Scotland,area_name,North Eastern Scotland,quintile,5,NA,NA,NA,NA,2023,37295,NA,NA,NA,£,NA,NA,NA,NA,NA,37295%
+dr55,GVA per capita,geography,NA,ITL2,Southern Scotland,area_name,Southern Scotland,quintile,NA,NA,NA,NA,NA,2023,NA,NA,NA,NA,£,NA,NA,NA,NA,NA,NA%
+dr55,GVA per capita,geography,NA,ITL2,Northern Ireland,area_name,Northern Ireland,quintile,3,NA,NA,NA,NA,2023,29234,NA,NA,NA,£,NA,NA,NA,NA,NA,29234%
