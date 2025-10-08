@@ -67,6 +67,9 @@ data_for_section = data_frame__sort_rows_with_specific_values(
   values_2 = trust_fair_help_order
 )
 
+data_for_section <- data_for_section %>% 
+  mutate(value = round_half_up(value, digits=1))
+
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
 save_data_frame(data_for_section, csv_filename)
 
