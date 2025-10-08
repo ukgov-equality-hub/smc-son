@@ -17,6 +17,11 @@ if (!require(tidyverse)) {
   library(tidyverse)
 }
 
+if (!require(janitor)) {
+  install.packages("janitor")
+  library(janitor)
+}
+
 
 ################
 # STATIC DATA

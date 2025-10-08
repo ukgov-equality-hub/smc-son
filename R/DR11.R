@@ -64,14 +64,20 @@ data_for_section = data_frame__sort_rows_with_specific_values(
   values_1 = NULL
 )
 
+data_for_section_chart <- data_for_section %>% 
+  mutate(value = round_half_up(value, digits=1))
+
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+save_data_frame(data_for_section_chart, csv_filename)
 
 #################
 # TABLE FORMAT
 
+data_for_section_table <- data_for_section %>% 
+  mutate(value = round_half_up(value, digits=2))
+
 pivot_table = pivot_table__create(
-  pivot_table_source = data_for_section,
+  pivot_table_source = data_for_section_table,
   pivot_columns_column_name = "unit",
   pivot_rows_column_name = "primary_split_value",
   pivot_cells_column_name = "value",
