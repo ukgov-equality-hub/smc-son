@@ -14,12 +14,12 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart1',
-                '/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_11/2.0/IN12-2.0-attainment-at-age-11--by-ethnicity--chart-format.csv',
+                '/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/3.0/IN13-3.0-attainment-at-age-16--by-ethnicity--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bar",
                     "xkey": "value",
-                    "ykey": "category",
+                    "ykey": "primary_split_value",
                     "sort": "value",
                     "scale": "%",
                     "rounding": "0dp",
@@ -29,7 +29,7 @@ as they move through education and into work.
                     "yticks": "none",
                     "legend": false,
                     "colourScheme": ["#0f265c"],
-                    "domain": [0, 80],
+                    "domain": [0, 85],
                     "margin": [0, 0, 0, 0],
                     "maxLabelLength": 20
                 }
@@ -54,14 +54,14 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart2',
-                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/2.0/IN31-2.0-economic-activity--by-SEB-and-sex--chart-format.csv',
+                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/3.0/IN31-3.0-economic-activity--by-SEB-and-sex--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
-                    "xkey": "sex",
+                    "xkey": "tertiary_split_value",
                     "ykey": "value",
-                    "group": "seb",
-                    "sort": "sex",
+                    "group": "secondary_split_value",
+                    "sort": "tertiary_split_value",
                     "scale": "%",
                     "rounding": "0dp",
                     "xgrid": false,
@@ -95,14 +95,14 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart3',
-                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/2.0/IN34-2.0-earnings--by-SEB-and-disability--chart-format.csv',
+                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB-and-disability--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
-                    "xkey": "category",
+                    "xkey": "secondary_split_value",
                     "ykey": "value",
-                    "group": "seb",
-                    "sort": "category",
+                    "group": "primary_split_value",
+                    "sort": "secondary_split_value",
                     "scale": "££",
                     "rounding": "1dp",
                     "xgrid": false,
