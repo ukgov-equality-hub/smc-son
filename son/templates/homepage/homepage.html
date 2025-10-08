@@ -191,13 +191,13 @@
 
             new Chart(
                 'chart2',
-                '/static/data/by-page/homepage/IN34-2.0-earnings--by-SEB-without-total--chart-format.csv',
+                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB--chart-format.csv',
                 {
                     "height": 220,
                     "type": "bary",
-                    "xkey": "seb",
+                    "xkey": "primary_split_value",
                     "ykey": "value",
-                    "zkey": "seb",
+                    "zkey": "primary_split_value",
                     "scale": "££",
                     "rounding": "1dp",
                     "xgrid": false,
@@ -214,14 +214,14 @@
 
             new Chart(
                 'chart3',
-                '/drivers_of_social_mobility/research_and_development_environment/postgraduate_education/2.0/DR53-2.0-university-research-students--by-year--chart-format.csv',
+                '/drivers_of_social_mobility/research_and_development_environment/postgraduate_education/3.0/DR53-3.0-postgraduate-education--by-year--chart-format.csv',
                 {
                     "height": 205,
                     "type": "bary",
-                    "xkey": "time_period",
+                    "xkey": "secondary_split_value",
                     "ykey": "value",
                     "zkey": "area_name",
-                    "sort": "time_period",
+                    "sort": "secondary_split_value",
                     "scale": "%",
                     "xgrid": false,
                     "ygrid": true,
@@ -229,13 +229,13 @@
                     "yticks": 4,
                     "legend": false,
                     "colourScheme": ["#5694ca", "#d4351c"],
-                    "range": [0, 15],
+                    "range": [0, 20],
                     "margin": [0, 0, 0, 0],
                     "maxLabelLength": 45
                 }
             )
 
-            let mapData = await dataUtils.loadDataFromURL('/static/data/by-page/homepage/203-regions.csv')
+            let mapData = await dataUtils.loadDataFromURL('/static/data/by-page/homepage/205-regions.csv')
             mapData = mapData.data
             const area = mapData[rnd(0, mapData.length - 1)]
             area['value'] = 2
@@ -243,10 +243,10 @@
 
             const map = new Choropleth(
                 'map',
-                '/static/data/maps/UK203regions-simplify2percent.topojson',
+                '/static/data/maps/2025-UK205regions.json',
                 mapData,
                 {
-                    nameField: 'region_fullname',
+                    nameField: 'area_name',
                     valueField: 'value',
                     areaField: 'Newname',
                     width: 300,
@@ -254,8 +254,8 @@
                     labels: true,
                     colourScheme: ['#84b871', '#e1e361'],
                     allowZoom: false,
-                    zoomTo: area.region_fullname,
-                    highlight: area.region_fullname
+                    zoomTo: area.area_name,
+                    highlight: area.area_name
                 }
             )
 

@@ -1,0 +1,247 @@
+{% extends 'base.html' %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    {% set compositeIndexCircleColours = ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"] %}
+
+    <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
+        <div class="grid grid2">
+            <div>
+                <h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+                    {{ title }}
+                </h1>
+                <p class="govuk-body govuk-body-s govuk-!-margin-bottom-7">
+                    Published: 11 September 2025
+                </p>
+
+                <p class="govuk-body">
+                    This page shows how {{ title }} is classified for the following 4 measures of social mobility for the period from 2000 to 2024:
+                </p>
+
+
+                <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header"></th>
+                    <th scope="col" class="govuk-table__header">2018 to 2020</th>
+                    <th scope="col" class="govuk-table__header">2021 to 2024</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                        <a href="/intermediate_outcomes/composite_indices/promising_prospects/latest"
+                            class="govuk-link">
+                            Promising prospects</a>
+                    </th>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['promising_prospects_group_name_2018_to_2020'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['promising_prospects_group_name_2021_to_2024'] | capitalize }}
+                        group
+                    </td>
+                </tr>
+                </tbody>
+                </table>
+
+
+                <table class="govuk-table">
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                    <th scope="col" class="govuk-table__header"></th>
+                    <th scope="col" class="govuk-table__header">2000 to 2005</th>
+                    <th scope="col" class="govuk-table__header">2006 to 2011</th>
+                    <th scope="col" class="govuk-table__header">2012 to 2017</th>
+                    <th scope="col" class="govuk-table__header">2018 to 2024</th>
+                    </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+
+                    <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                        <a href="/drivers_of_social_mobility/composite_indices/conditions_of_childhood/latest"
+                            class="govuk-link">
+                            Conditions of childhood</a>
+                    </th>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['childhood_conditions_group_name_2000_to_2005'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['childhood_conditions_group_name_2006_to_2011'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['childhood_conditions_group_name_2012_to_2017'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['childhood_conditions_group_name_2018_to_2024'] | capitalize }}
+                        group
+                    </td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                        <a href="/drivers_of_social_mobility/composite_indices/labour_market_opportunities_for_young_people/latest"
+                            class="govuk-link">
+                            Labour market opportunities for young people</a>
+                    </th>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['labour_market_opportunities_group_name_2000_to_2005'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['labour_market_opportunities_group_name_2006_to_2011'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['labour_market_opportunities_group_name_2012_to_2017'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['labour_market_opportunities_group_name_2018_to_2024'] | capitalize }}
+                        group
+                    </td>
+                    </tr>
+
+                    <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">
+                        <a href="/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest"
+                            class="govuk-link">
+                            Innovation and growth</a>
+                    </th>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['innovation_and_growth_group_name_2000_to_2005'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['innovation_and_growth_group_name_2006_to_2011'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['innovation_and_growth_group_name_2012_to_2017'] | capitalize }}
+                        group
+                    </td>
+                    <td class="govuk-table__cell">
+                        {{ row_for_region['innovation_and_growth_group_name_2018_to_2024'] | capitalize }}
+                        group
+                    </td>
+                    </tr>
+
+
+                </tbody>
+                </table>
+
+
+                <h2 class="govuk-heading-l">
+                    How areas are classified
+                </h2>
+                <p class="govuk-body">
+                    Each measure of social mobility combines data from multiple indicators into a single ‘composite’ score.
+                </p>
+                <p class="govuk-body">
+                    For each measure (for example, ‘Innovation and growth’),
+                    <a href="/social_mobility_by_area/latest#list-of-uk-regions"
+                       class="govuk-link">
+                        205 local authorities in the UK</a>
+                    are classified according to their composite scores.
+                    The following labels show how each area is classified:
+                </p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li>most favourable group</li>
+                    <li>favourable group</li>
+                    <li>upper middle group</li>
+                    <li>middle group</li>
+                    <li>lower middle group</li>
+                    <li>unfavourable group</li>
+                    <li>least favourable group</li>
+                </ul>
+                <p class="govuk-body">
+                    The groups are not equally sized – the middle group is larger because most local authorities are very near the average.
+                </p>
+            </div>
+            <div>
+                <div class="map-container">
+                    <div id="map" class="map"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-l" id="page-history">
+        Page history
+    </h2>
+
+    <p class="govuk-body">
+        In 2023, we published data for 41 regions.
+        <br>
+        You can see these on the
+        <a href="/social_mobility_by_area/1.0#the-41-regions"
+           class="govuk-link">
+           Social mobility by area homepage, version 1.0</a>.
+    </p>
+    <p class="govuk-body">
+        In 2024, we published data for 203 local authorities.
+        <br>
+        You can see these on the
+        <a href="/social_mobility_by_area/2.0#list-of-uk-regions"
+           class="govuk-link">
+           Social mobility by area homepage, version 2.0</a>.
+    </p>
+    <p class="govuk-body">
+        In 2025, we published data for 205 local authorities.
+        <br>
+        {{ title }} is one of them.
+    </p>
+
+    <h3 class="govuk-heading-s">
+        Publication release date:
+    </h3>
+    <p class="govuk-body">
+        11 September 2025
+    </p>
+
+    <style>
+        .composite-index-colour-circle {
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #505a5f;
+        }
+    </style>
+
+    <script>
+        (async function () {
+            let mapData = await new DataUtils().loadDataFromURL('/static/data/by-page/social_mobility_by_area/205-regions.csv')
+            mapData = mapData.data
+            const area = mapData.filter(x => x['area_name'] === '{{ title }}')[0]
+            area['value'] = 2
+            mapData = [ ...mapData, area ]
+
+            const map = new Choropleth(
+                'map',
+                '/static/data/maps/2025-UK205regions.json',
+                mapData,
+                {
+                    nameField: 'area_name',
+                    valueField: 'value',
+                    areaField: 'Newname',
+                    width: 300,
+                    height: 300,
+                    labels: true,
+                    colourScheme: ['#84b871', '#e1e361'],
+                    allowZoom: false,
+                    zoomTo: area.area_name,
+                    highlight: area.area_name
+                }
+            )
+        })()
+    </script>
+{% endblock %}

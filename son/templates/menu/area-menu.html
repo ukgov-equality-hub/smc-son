@@ -53,7 +53,7 @@
             </h3>
             <div id="area-search-hint" class="govuk-hint govuk-!-font-size-16">
                 Search by one of
-                <a href="/social_mobility_by_area/latest#the-203-regions"
+                <a href="/social_mobility_by_area/latest#the-205-regions"
                    class="govuk-link"
                 style="font-size: 1rem;">
                     205 regions</a>.
@@ -128,15 +128,15 @@
 
                 const postcodeApiJson = await postcodeApiResponse.json();
                 const admin_district = postcodeApiJson.result.codes.admin_district;
-                let matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_district));
+                let matchingRegion = regionNamesAndCodes['205_regions'].find((region) => region.codes.includes(admin_district));
                 
                 if (!matchingRegion) {
                     const admin_county = postcodeApiJson.result.codes.admin_county;
-                    matchingRegion = regionNamesAndCodes['203_regions'].find((region) => region.codes.includes(admin_county));
+                    matchingRegion = regionNamesAndCodes['205_regions'].find((region) => region.codes.includes(admin_county));
                 }
 
                 if (matchingRegion) {
-                    window.location.href = `/social_mobility_by_area/203_regions/${matchingRegion.url}`;
+                    window.location.href = `/social_mobility_by_area/205_regions/${matchingRegion.url}`;
                 } else {
                     showPostcodeSearchError('We cannot find this region.<br>Try the area search below')
                 }
@@ -148,14 +148,14 @@
                 areaSearchResults.innerHTML = '';
 
                 const searchText = areaSearchInput.value.trim().toLowerCase();
-                const matchingAreas = regionNamesAndCodes['203_regions'].filter((region) => region.name.toLowerCase().includes(searchText));
+                const matchingAreas = regionNamesAndCodes['205_regions'].filter((region) => region.name.toLowerCase().includes(searchText));
                 if (matchingAreas.length <= 20) {
                     matchingAreas.forEach((matchingArea) => {
                         const new_li = document.createElement('li');
                         new_li.classList.add('moj-side-navigation__item');
 
                         const new_a = document.createElement('a');
-                        new_a.href = `/social_mobility_by_area/203_regions/${matchingArea.url}`;
+                        new_a.href = `/social_mobility_by_area/205_regions/${matchingArea.url}`;
                         new_a.classList.add('moj-primary-navigation__link');
 
                         const lowercaseAreaNme = matchingArea.name.toLowerCase();
@@ -189,7 +189,7 @@
 
             //////////////////////////////////////
             // Load list of regions JSON file
-            const regionCodesUrl = '/static/data/by-page/social_mobility_by_area/203_regions_codes.json';
+            const regionCodesUrl = '/static/data/by-page/social_mobility_by_area/205_regions_codes.json';
             const regionCodesResponse = await fetch(regionCodesUrl);
             if (!regionCodesResponse.ok) {
                 // Cannot load region list - don't show search bar
