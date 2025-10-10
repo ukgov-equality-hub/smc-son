@@ -84,9 +84,9 @@ for (time_period  in time_periods_desc_order) {
 data_for_section = data_for_section %>%
   mutate(value = as.character(value)) %>% 
   rename(
-    c("Index of 'conditions of childhood' ('Z-scores')" = "value",
+    c("Index of 'promising prospects' ('Z-scores')" = "value",
       "Group" = "secondary_split_value") ) %>%
-  pivot_longer(cols = c("Index of 'conditions of childhood' ('Z-scores')", "Group"),
+  pivot_longer(cols = c("Index of 'promising prospects' ('Z-scores')", "Group"),
                names_to = "metric",
                values_to = "value")
 
@@ -99,7 +99,7 @@ pivot_table = pivot_table__create(
   pivot_cells_column_name = "value",
   pivot_table_name = "Region",
   pivot_table_columns_order_values = time_periods_desc_order,
-  pivot_table_columns_2_order_values = c("Index of 'conditions of childhood' ('Z-scores')", "Group")
+  pivot_table_columns_2_order_values = c("Index of 'promising prospects' ('Z-scores')", "Group")
 ) 
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
