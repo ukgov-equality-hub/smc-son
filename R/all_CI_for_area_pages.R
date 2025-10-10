@@ -1,19 +1,22 @@
 
-#################################################
-# INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
+############
+# IMPORTS
+
+output_folder_prefix = NULL
+domain = NULL
+subdomain = NULL
+indicator_name = NULL
+source("_shared.R")
+
+###############
+# THE SCRIPT
+
 
 input_folder = "input/SON25/"
 
 output_folder = "../son/content/social_mobility_by_area/3.0/"
 
 
-############
-# IMPORTS
-
-source("_shared.R")
-
-###############
-# THE SCRIPT
 
 ## Clear output folder
 unlink(output_folder, recursive=TRUE)
@@ -137,5 +140,12 @@ data_ci4 = dcast(data_ci4, area_name ~ metric + primary_split_value , value.var 
 data_ci1_ci2_ci3_ci4 = inner_join(data_ci1_ci2_ci3, data_ci4, by = "area_name", unmatched="error", relationship = "one-to-one")
 
 
+
+data_ci1_ci2_ci3_ci4 = data_ci1_ci2_ci3_ci4 %>% 
+  mutate(
+    region_url = str_replace_all(tolower(area_name)," ", "_")) %>% 
+  rename("region_fullname" = "area_name")
+
 csv_filename = "composite-indices-3.0--all.csv"
 save_data_frame(data_ci1_ci2_ci3_ci4, csv_filename)
+
