@@ -89,3 +89,18 @@ pivot_table = pivot_table__create(
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
 
+#################
+# FOR DRIVERS PAGE CHART
+
+section_csv_name = "year-UKonly"
+
+data_for_section_filtered = data_frame__filter(
+  data_frame = data_for_section,
+  column_name = "primary_split_value",
+  values = c("United Kingdom")
+)
+
+csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
+save_data_frame(data_for_section_filtered, csv_filename)
+
+
