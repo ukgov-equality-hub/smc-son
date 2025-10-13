@@ -13,18 +13,18 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart1',
-                '/static/data/by-page/drivers_of_social_mobility/DR12-2.0-childhood-poverty--by-year-and-country--uk-only--chart-format.csv',
+                '/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/3.0/DR12-3.0-childhood-poverty--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
-                    "xkey": "time_period",
+                    "xkey": "secondary_split_value",
                     "ykey": "value",
-                    "zkey": "area_name",
-                    "sort": "time_period",
+                    "zkey": "primary_split_value",
+                    "sort": "secondary_split_value",
                     "scale": "%",
                     "xgrid": false,
                     "ygrid": true,
-                    "xticks": [1997, 2012, 2023],
+                    "xticks": "first-last",
                     "yticks": 2,
                     "legend": false,
                     "showDots": false,
@@ -55,13 +55,13 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart2',
-                '/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/2.0/DR32-2.0-youth-unemployment--by-year--chart-format.csv',
+                '/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/3.0/DR32-3.0-youth-unemployment--by-year--chart-format.csv',
                 {
                     "type": "bary",
-                    "xkey": "time_period",
+                    "xkey": "secondary_split_value",
                     "ykey": "value",
                     "zkey": "area_name",
-                    "sort": "time_period",
+                    "sort": "secondary_split_value",
                     "scale": "%",
                     "rounding": "0dp",
                     "xgrid": false,
@@ -96,14 +96,14 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart3',
-                '/static/data/by-page/drivers_of_social_mobility/DR51-2.0-broadband-speed--by-year-and-country--uk-only--chart-format.csv',
+                '/drivers_of_social_mobility/research_and_development_environment/broadband_speed/3.0/DR51-3.0-broadband-speed--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
-                    "xkey": "time_period",
+                    "xkey": "secondary_split_value",
                     "ykey": "value",
-                    "zkey": "area_name",
-                    "sort": "time_period",
+                    "zkey": "primary_split_value",
+                    "sort": "secondary_split_value",
                     "scale": "%",
                     "rounding": "0dp",
                     "xgrid": false,
