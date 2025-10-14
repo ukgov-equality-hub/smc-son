@@ -141,8 +141,8 @@
             "codes": ["E08000033"]
         },
         {
-            "name": "Cambridgeshire county council",
-            "url": "cambridgeshire_county_council",
+            "name": "Cambridgeshire CC",
+            "url": "cambridgeshire_cc",
             "codes": ["E10000003", "E07000008", "E07000009", "E07000010", "E07000011", "E07000012"]
         },
         {
@@ -156,8 +156,8 @@
             "codes": ["W06000015"]
         },
         {
-            "name": "Carmarthenshire county council",
-            "url": "carmarthenshire_county_council",
+            "name": "Carmarthenshire",
+            "url": "carmarthenshire",
             "codes": ["W06000010"]
         },
         {
@@ -166,8 +166,8 @@
             "codes": ["E06000056"]
         },
         {
-            "name": "Ceredigion county council",
-            "url": "ceredigion_county_council",
+            "name": "Ceredigion",
+            "url": "ceredigion",
             "codes": ["W06000008"]
         },
         {
@@ -181,18 +181,18 @@
             "codes": ["E06000050"]
         },
         {
-            "name": "Bristol",
-            "url": "bristol",
+            "name": "Bristol, City of",
+            "url": "bristol,_city_of",
             "codes": ["E06000023"]
         },
         {
-            "name": "Edinburgh city",
-            "url": "edinburgh_city",
+            "name": "City of Edinburgh",
+            "url": "city_of_edinburgh",
             "codes": ["S12000036"]
         },
         {
-            "name": "Hull",
-            "url": "hull",
+            "name": "Kingston upon Hull, City of",
+            "url": "kingston_upon_hull,_city_of",
             "codes": ["E06000010"]
         },
         {
@@ -211,8 +211,8 @@
             "codes": ["E06000052", "E06000053"]
         },
         {
-            "name": "Herefordshire",
-            "url": "herefordshire",
+            "name": "Herefordshire, County of",
+            "url": "herefordshire,_county_of",
             "codes": ["E06000019"]
         },
         {
@@ -226,8 +226,8 @@
             "codes": ["E09000008"]
         },
         {
-            "name": "Cumbria county council",
-            "url": "cumbria_county_council",
+            "name": "Cumbria",
+            "url": "cumbria",
             "codes": ["E06000063", "E06000064"]
         },
         {
@@ -236,8 +236,8 @@
             "codes": ["E06000005"]
         },
         {
-            "name": "Denbighshire county council",
-            "url": "denbighshire_county_council",
+            "name": "Denbighshire",
+            "url": "denbighshire",
             "codes": ["W06000004"]
         },
         {
@@ -246,13 +246,13 @@
             "codes": ["E06000015"]
         },
         {
-            "name": "Derbyshire county council",
-            "url": "derbyshire_county_council",
+            "name": "Derbyshire",
+            "url": "derbyshire",
             "codes": ["E10000007", "E07000032", "E07000033", "E07000034", "E07000035", "E07000036", "E07000037", "E07000038", "E07000039"]
         },
         {
-            "name": "Devon county council",
-            "url": "devon_county_council",
+            "name": "Devon CC",
+            "url": "devon_cc",
             "codes": ["E10000008", "E07000040", "E07000041", "E07000042", "E07000043", "E07000044", "E07000045", "E07000046", "E07000047"]
         },
         {
@@ -281,8 +281,8 @@
             "codes": ["S12000042"]
         },
         {
-            "name": "Durham county council",
-            "url": "durham_county_council",
+            "name": "Durham",
+            "url": "durham",
             "codes": ["E06000047"]
         },
         {
@@ -316,8 +316,8 @@
             "codes": ["E06000011"]
         },
         {
-            "name": "East Sussex county council",
-            "url": "east_sussex_county_council",
+            "name": "East Sussex CC",
+            "url": "east_sussex_cc",
             "codes": ["E10000011", "E07000061", "E07000062", "E07000063", "E07000064", "E07000065"]
         },
         {
@@ -326,8 +326,8 @@
             "codes": ["E09000010"]
         },
         {
-            "name": "Essex county council",
-            "url": "essex_county_council",
+            "name": "Essex",
+            "url": "essex",
             "codes": ["E10000012", "E07000066", "E07000067", "E07000068", "E07000069", "E07000070", "E07000071", "E07000072", "E07000073", "E07000074", "E07000075", "E07000076", "E07000077"]
         },
         {
@@ -341,8 +341,8 @@
             "codes": ["S12000047"]
         },
         {
-            "name": "Flintshire county council",
-            "url": "flintshire_county_council",
+            "name": "Flintshire",
+            "url": "flintshire",
             "codes": ["W06000005"]
         },
         {
@@ -351,13 +351,13 @@
             "codes": ["E08000037"]
         },
         {
-            "name": "Glasgow",
-            "url": "glasgow",
+            "name": "Glasgow City",
+            "url": "glasgow_city",
             "codes": ["S12000049"]
         },
         {
-            "name": "Gloucestershire county council",
-            "url": "gloucestershire_county_council",
+            "name": "Gloucestershire CC",
+            "url": "gloucestershire_cc",
             "codes": ["E10000013", "E07000078", "E07000079", "E07000080", "E07000081", "E07000082", "E07000083"]
         },
         {
@@ -386,8 +386,8 @@
             "codes": ["E09000013"]
         },
         {
-            "name": "Hampshire county council",
-            "url": "hampshire_county_council",
+            "name": "Hampshire",
+            "url": "hampshire",
             "codes": ["E10000014", "E07000084", "E07000085", "E07000086", "E07000087", "E07000088", "E07000089", "E07000090", "E07000091", "E07000092", "E07000093", "E07000094"]
         },
         {
@@ -411,8 +411,8 @@
             "codes": ["E09000016"]
         },
         {
-            "name": "Hertfordshire county council",
-            "url": "hertfordshire_county_council",
+            "name": "Hertfordshire CC",
+            "url": "hertfordshire_cc",
             "codes": ["E10000015", "E07000095", "E07000096", "E07000098", "E07000099", "E07000102", "E07000103", "E07000240", "E07000241", "E07000242", "E07000243"]
         },
         {
@@ -456,8 +456,8 @@
             "codes": ["E09000020"]
         },
         {
-            "name": "Kent county council",
-            "url": "kent_county_council",
+            "name": "Kent",
+            "url": "kent",
             "codes": ["E10000016", "E07000105", "E07000106", "E07000107", "E07000108", "E07000109", "E07000110", "E07000111", "E07000112", "E07000113", "E07000114", "E07000115", "E07000116"]
         },
         {
@@ -481,8 +481,8 @@
             "codes": ["E09000022"]
         },
         {
-            "name": "Lancashire county council",
-            "url": "lancashire_county_council",
+            "name": "Lancashire",
+            "url": "lancashire",
             "codes": ["E10000017", "E07000117", "E07000118", "E07000119", "E07000120", "E07000121", "E07000122", "E07000123", "E07000124", "E07000125", "E07000126", "E07000127", "E07000128"]
         },
         {
@@ -496,8 +496,8 @@
             "codes": ["E06000016"]
         },
         {
-            "name": "Leicestershire county council",
-            "url": "leicestershire_county_council",
+            "name": "Leicestershire CC",
+            "url": "leicestershire_cc",
             "codes": ["E10000018", "E07000129", "E07000130", "E07000131", "E07000132", "E07000133", "E07000134", "E07000135"]
         },
         {
@@ -506,8 +506,8 @@
             "codes": ["E09000023"]
         },
         {
-            "name": "Lincolnshire county council",
-            "url": "lincolnshire_county_council",
+            "name": "Lincolnshire CC",
+            "url": "lincolnshire_cc",
             "codes": ["E10000019", "E07000136", "E07000137", "E07000138", "E07000139", "E07000140", "E07000141", "E07000142"]
         },
         {
@@ -556,8 +556,8 @@
             "codes": ["E06000042"]
         },
         {
-            "name": "Monmouthshire county council",
-            "url": "monmouthshire_county_council",
+            "name": "Monmouthshire",
+            "url": "monmouthshire",
             "codes": ["W06000021"]
         },
         {
@@ -591,13 +591,13 @@
             "codes": ["W06000022"]
         },
         {
-            "name": "Norfolk county council",
-            "url": "norfolk_county_council",
+            "name": "Norwich and Norfolk",
+            "url": "norwich_and_norfolk",
             "codes": ["E10000020", "E07000143", "E07000144", "E07000145", "E07000146", "E07000147", "E07000148", "E07000149"]
         },
         {
-            "name": "North Ayrshire",
-            "url": "north_ayrshire",
+            "name": "North Ayrshire mainland",
+            "url": "north_ayrshire_mainland",
             "codes": ["S12000021"]
         },
         {
@@ -626,8 +626,8 @@
             "codes": ["E08000022"]
         },
         {
-            "name": "North Yorkshire county council",
-            "url": "north_yorkshire_county_council",
+            "name": "North Yorkshire CC",
+            "url": "north_yorkshire_cc",
             "codes": ["E06000065"]
         },
         {
@@ -636,8 +636,8 @@
             "codes": ["N09000001", "N09000002", "N09000003", "N09000004", "N09000005", "N09000006", "N09000007", "N09000008", "N09000009", "N09000010", "N09000011"]
         },
         {
-            "name": "Northumberland county council",
-            "url": "northumberland_county_council",
+            "name": "Northumberland",
+            "url": "northumberland",
             "codes": ["E06000057"]
         },
         {
@@ -646,8 +646,8 @@
             "codes": ["E06000018"]
         },
         {
-            "name": "Nottinghamshire county council",
-            "url": "nottinghamshire_county_council",
+            "name": "Nottinghamshire",
+            "url": "nottinghamshire",
             "codes": ["E10000024", "E07000170", "E07000171", "E07000172", "E07000173", "E07000174", "E07000175", "E07000176"]
         },
         {
@@ -661,13 +661,13 @@
             "codes": ["S12000023"]
         },
         {
-            "name": "Oxfordshire county council",
-            "url": "oxfordshire_county_council",
+            "name": "Oxfordshire CC",
+            "url": "oxfordshire_cc",
             "codes": ["E10000025", "E07000177", "E07000178", "E07000179", "E07000180", "E07000181"]
         },
         {
-            "name": "Pembrokeshire county council",
-            "url": "pembrokeshire_county_council",
+            "name": "Pembrokeshire",
+            "url": "pembrokeshire",
             "codes": ["W06000009"]
         },
         {
@@ -691,8 +691,8 @@
             "codes": ["E06000044"]
         },
         {
-            "name": "Powys county council",
-            "url": "powys_county_council",
+            "name": "Powys",
+            "url": "powys",
             "codes": ["W06000023"]
         },
         {
@@ -736,8 +736,8 @@
             "codes": ["E08000018"]
         },
         {
-            "name": "Rutland county council",
-            "url": "rutland_county_council",
+            "name": "Rutland",
+            "url": "rutland",
             "codes": ["E06000017"]
         },
         {
@@ -786,8 +786,8 @@
             "codes": ["E08000029"]
         },
         {
-            "name": "Somerset county council",
-            "url": "somerset_county_council",
+            "name": "Somerset CC",
+            "url": "somerset_cc",
             "codes": ["E06000066"]
         },
         {
@@ -826,8 +826,8 @@
             "codes": ["E08000013"]
         },
         {
-            "name": "Staffordshire county council",
-            "url": "staffordshire_county_council",
+            "name": "Staffordshire CC",
+            "url": "staffordshire_cc",
             "codes": ["E10000028", "E07000192", "E07000193", "E07000194", "E07000195", "E07000196", "E07000197", "E07000198", "E07000199"]
         },
         {
@@ -851,8 +851,8 @@
             "codes": ["E06000021"]
         },
         {
-            "name": "Suffolk county council",
-            "url": "suffolk_county_council",
+            "name": "Suffolk CC",
+            "url": "suffolk_cc",
             "codes": ["E10000029", "E07000200", "E07000202", "E07000203", "E07000244", "E07000245"]
         },
         {
@@ -861,8 +861,8 @@
             "codes": ["E08000024"]
         },
         {
-            "name": "Surrey county council",
-            "url": "surrey_county_council",
+            "name": "Surrey",
+            "url": "surrey",
             "codes": ["E10000030", "E07000207", "E07000208", "E07000209", "E07000210", "E07000211", "E07000212", "E07000213", "E07000214", "E07000215", "E07000216", "E07000217"]
         },
         {
@@ -946,8 +946,8 @@
             "codes": ["E06000007"]
         },
         {
-            "name": "Warwickshire county council",
-            "url": "warwickshire_county_council",
+            "name": "Warwickshire CC",
+            "url": "warwickshire_cc",
             "codes": ["E10000031", "E07000218", "E07000219", "E07000220", "E07000221", "E07000222"]
         },
         {
@@ -971,8 +971,8 @@
             "codes": ["E06000062"]
         },
         {
-            "name": "West Sussex county council",
-            "url": "west_sussex_county_council",
+            "name": "West Sussex",
+            "url": "west_sussex",
             "codes": ["E10000032", "E07000223", "E07000224", "E07000225", "E07000226", "E07000227", "E07000228", "E07000229"]
         },
         {
@@ -1011,8 +1011,8 @@
             "codes": ["E08000031"]
         },
         {
-            "name": "Worcestershire county council",
-            "url": "worcestershire_county_council",
+            "name": "Worcestershire CC",
+            "url": "worcestershire_cc",
             "codes": ["E10000034", "E07000234", "E07000235", "E07000236", "E07000237", "E07000238", "E07000239"]
         },
         {
@@ -1021,8 +1021,8 @@
             "codes": ["W06000006"]
         },
         {
-            "name": "City of York",
-            "url": "city_of_york",
+            "name": "York",
+            "url": "york",
             "codes": ["E06000014"]
         }
     ]

@@ -259,8 +259,8 @@
                 }
             )
 
-            document.getElementById('featured-region').setAttribute('href', `/social_mobility_by_area/203_regions/${area.region_fullname.toLowerCase().replace(/ /g, '_')}`)
-            document.getElementById('featured-region').innerText = area.region_fullname
+            document.getElementById('featured-region').setAttribute('href', `/social_mobility_by_area/205_regions/${area.area_name.toLowerCase().replace(/ /g, '_')}`)
+            document.getElementById('featured-region').innerText = area.area_name
 
             function rnd(min, max) {
                 return Math.floor(Math.random() * (max - min + 1) + min)
