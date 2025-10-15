@@ -136,6 +136,35 @@ def area_page_203_regions(area):
     )
 
 
+
+@son.route('/social_mobility_by_area/205_regions/<area>', methods=['GET'])
+def area_page_205_regions(area):
+
+    def get_row_from_csv_file(csv_file_path, column_name, search_value):
+        with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
+            reader = csv.DictReader(csv_file)
+
+            for row in reader:
+                if row[column_name] == search_value:
+                    return row
+        return None
+
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
+    row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
+    if row_for_region is None:
+        abort(404)
+
+    return render_template(
+        'area/205_regions.html',
+        menu=menu,
+        area=area,
+        domain='social_mobility_by_area',
+        title=row_for_region['region_fullname'],
+        row_for_region=row_for_region
+    )
+
+
+
 @son.route('/<domain>', methods=['GET'])
 def domain_page(domain):
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
