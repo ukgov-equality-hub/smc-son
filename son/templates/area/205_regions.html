@@ -2,7 +2,19 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-    {% set compositeIndexCircleColours = ["#ca0020", "#f4a582", "#ffffbf", "#92c5de", "#0571b0"] %}
+    {% set compositeIndexColours = ["#ca0020", "#f3a582", "#FFEBCC", "#ffffbf", "#C9E2F2", "#92c5de", "#0671b0"] %}
+    {% set textColours = ["#ffffff", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#ffffff"] %}
+
+    {% macro cell(group_name_col, group_number_col) %}
+        {% set  group_number = row_for_region[group_number_col] | int - 1 %}
+        {% set  background_colour = compositeIndexColours[group_number] %}
+        {% set text_colour = textColours[group_number] %}
+
+        <td class="govuk-table__cell" style="background-color:{{ background_colour }}; color:{{ text_colour }};">
+            {{ row_for_region[group_name_col] | capitalize }} 
+            group
+        </td>                                                   
+    {% endmacro %}
 
     <div id="maincontent" class="govuk-grid-row govuk-grid-row-full-width">
         <div class="grid grid2">
@@ -34,14 +46,8 @@
                             class="govuk-link">
                             Promising prospects</a>
                     </th>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['promising_prospects_group_name_2018_to_2020'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['promising_prospects_group_name_2021_to_2024'] | capitalize }}
-                        group
-                    </td>
+                    {{ cell("promising_prospects_group_name_2018_to_2020", "promising_prospects_group_id_2018_to_2020") }}
+                    {{ cell("promising_prospects_group_name_2021_to_2024", "promising_prospects_group_id_2021_to_2024") }}
                 </tr>
                 </tbody>
                 </table>
@@ -65,22 +71,10 @@
                             class="govuk-link">
                             Conditions of childhood</a>
                     </th>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['childhood_conditions_group_name_2000_to_2005'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['childhood_conditions_group_name_2006_to_2011'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['childhood_conditions_group_name_2012_to_2017'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['childhood_conditions_group_name_2018_to_2024'] | capitalize }}
-                        group
-                    </td>
+                    {{ cell("childhood_conditions_group_name_2000_to_2005", "childhood_conditions_group_id_2000_to_2005") }}
+                    {{ cell("childhood_conditions_group_name_2006_to_2011", "childhood_conditions_group_id_2006_to_2011") }}
+                    {{ cell("childhood_conditions_group_name_2012_to_2017", "childhood_conditions_group_id_2012_to_2017") }}
+                    {{ cell("childhood_conditions_group_name_2018_to_2024", "childhood_conditions_group_id_2018_to_2024") }}
                     </tr>
 
                     <tr class="govuk-table__row">
@@ -89,22 +83,10 @@
                             class="govuk-link">
                             Labour market opportunities for young people</a>
                     </th>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['labour_market_opportunities_group_name_2000_to_2005'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['labour_market_opportunities_group_name_2006_to_2011'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['labour_market_opportunities_group_name_2012_to_2017'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['labour_market_opportunities_group_name_2018_to_2024'] | capitalize }}
-                        group
-                    </td>
+                    {{ cell("labour_market_opportunities_group_name_2000_to_2005", "labour_market_opportunities_group_id_2000_to_2005") }}
+                    {{ cell("labour_market_opportunities_group_name_2006_to_2011", "labour_market_opportunities_group_id_2006_to_2011") }}
+                    {{ cell("labour_market_opportunities_group_name_2012_to_2017", "labour_market_opportunities_group_id_2012_to_2017") }}
+                    {{ cell("labour_market_opportunities_group_name_2018_to_2024", "labour_market_opportunities_group_id_2018_to_2024") }}
                     </tr>
 
                     <tr class="govuk-table__row">
@@ -113,22 +95,10 @@
                             class="govuk-link">
                             Innovation and growth</a>
                     </th>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['innovation_and_growth_group_name_2000_to_2005'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['innovation_and_growth_group_name_2006_to_2011'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['innovation_and_growth_group_name_2012_to_2017'] | capitalize }}
-                        group
-                    </td>
-                    <td class="govuk-table__cell">
-                        {{ row_for_region['innovation_and_growth_group_name_2018_to_2024'] | capitalize }}
-                        group
-                    </td>
+                    {{ cell("innovation_and_growth_group_name_2000_to_2005", "innovation_and_growth_group_id_2000_to_2005") }}
+                    {{ cell("innovation_and_growth_group_name_2006_to_2011", "innovation_and_growth_group_id_2006_to_2011") }}
+                    {{ cell("innovation_and_growth_group_name_2012_to_2017", "innovation_and_growth_group_id_2012_to_2017") }}
+                    {{ cell("innovation_and_growth_group_name_2018_to_2024", "innovation_and_growth_group_id_2018_to_2024") }}
                     </tr>
 
 
