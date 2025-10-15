@@ -154,14 +154,6 @@ def area_page_205_regions(area):
     if row_for_region is None:
         abort(404)
 
-    row_for_region['promising_prospects_group_name_2018_to_2020'] = row_for_region['promising_prospects_group_name_2018_to_2020'].lower().replace('group', '').rstrip()
-    row_for_region['promising_prospects_group_name_2021_to_2024'] = row_for_region['promising_prospects_group_name_2021_to_2024'].lower().replace('group', '').rstrip()
-
-    # row_for_region['childhood_conditions_group_name'] = row_for_region['childhood_conditions_group_name'].lower().replace('group', '').rstrip()
-    # row_for_region['innovation_and_growth_group_name'] = row_for_region['innovation_and_growth_group_name'].lower().replace('group', '').rstrip()
-    # row_for_region['labour_market_opportunities_group_name'] = row_for_region['labour_market_opportunities_group_name'].lower().replace('group', '').rstrip()
-    
-
     return render_template(
         'area/205_regions.html',
         menu=menu,
