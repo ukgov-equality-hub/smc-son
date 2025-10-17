@@ -1,0 +1,85 @@
+
+.classification-0 {
+    background-color: #ca0020;
+    color: #ffffff;
+}
+
+.classification-1 {
+    background-color: #f3a582;
+}
+
+.classification-2 {
+    background-color: #FFEBCC;
+}
+
+.classification-3 {
+    background-color: #ffffbf;
+}
+
+.classification-4 {
+    background-color: #C9E2F2;
+}
+
+.classification-5 {
+    background-color: #92c5de;
+}
+
+.classification-6 {
+    background-color: #0671b0;
+    color: #ffffff;
+}
+
+
+.area-table-container {
+    border-collapse: separate;
+    position: relative;
+    table-layout: fixed;
+}
+
+.area-table-container caption {
+    width: fit-content;
+    max-width: 775px;
+}
+
+.area-table-container thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.area-table-container thead tr th {
+    position: relative;
+    align-self: flex-start;
+    height: auto;
+    display: table-cell;
+    background-color: #ffffff;
+}
+
+.area-table-container tbody td.no-data {
+    color: #555;
+    text-align: center;
+}
+
+.area-table-container .no-data {
+    color: #b1b4b6;
+    font-size: 14px;
+}
+
+@media (min-width: 40.0625em) {
+    .area-table-container .no-data {
+        font-size: 16px;
+    }
+}
+
+.area-table-container .govuk-table__header,
+.area-table-container .govuk-table__cell {
+    padding: 10px;
+    border-right: 1px solid #b1b4b6;
+}
+
+.area-table-container .govuk-table__header:last-child,
+.area-table-container .govuk-table__cell:last-child {
+    padding: 10px;
+    border-right: none;
+}
+

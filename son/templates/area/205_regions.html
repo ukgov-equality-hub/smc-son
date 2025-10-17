@@ -2,15 +2,10 @@
 {% block title %}{{ title }}{% endblock %}
 
 {% block content %}
-    {% set compositeIndexColours = ["#ca0020", "#f3a582", "#FFEBCC", "#ffffbf", "#C9E2F2", "#92c5de", "#0671b0"] %}
-    {% set textColours = ["#ffffff", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#0b0c0c", "#ffffff"] %}
 
     {% macro cell(group_name_col, group_number_col) %}
         {% set  group_number = row_for_region[group_number_col] | int - 1 %}
-        {% set  background_colour = compositeIndexColours[group_number] %}
-        {% set text_colour = textColours[group_number] %}
-
-        <td class="govuk-table__cell" style="background-color:{{ background_colour }}; color:{{ text_colour }};">
+        <td class="govuk-table__cell {{ "classification-" ~ group_number }}">
             {{ row_for_region[group_name_col] | capitalize }} 
             group
         </td>                                                   
@@ -30,81 +25,102 @@
                     This page shows how {{ title }} is classified for the following 4 measures of social mobility for the period from 2000 to 2024:
                 </p>
 
-
-                <table class="govuk-table">
-                <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                    <th scope="col" class="govuk-table__header"></th>
-                    <th scope="col" class="govuk-table__header">2018 to 2020</th>
-                    <th scope="col" class="govuk-table__header">2021 to 2024</th>
+                <table class="govuk-body-s area-table-container govuk-table" style="width:60%;">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header"></th>
+                        <th scope="col" class="govuk-table__header">2018 to 2020</th>
+                        <th scope="col" class="govuk-table__header">2021 to 2024</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                            <a href="/intermediate_outcomes/composite_indices/promising_prospects/latest"
+                                class="govuk-link">
+                                Promising prospects</a>
+                        </th>
+                        {{ cell("promising_prospects_group_name_2018_to_2020", "promising_prospects_group_id_2018_to_2020") }}
+                        {{ cell("promising_prospects_group_name_2021_to_2024", "promising_prospects_group_id_2021_to_2024") }}
                     </tr>
-                </thead>
-                <tbody class="govuk-table__body">
-                    <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">
-                        <a href="/intermediate_outcomes/composite_indices/promising_prospects/latest"
-                            class="govuk-link">
-                            Promising prospects</a>
-                    </th>
-                    {{ cell("promising_prospects_group_name_2018_to_2020", "promising_prospects_group_id_2018_to_2020") }}
-                    {{ cell("promising_prospects_group_name_2021_to_2024", "promising_prospects_group_id_2021_to_2024") }}
-                </tr>
-                </tbody>
+                    </tbody>
                 </table>
 
+                <table class="govuk-body-s area-table-container govuk-table">
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                        <th scope="col" class="govuk-table__header"></th>
+                        <th scope="col" class="govuk-table__header">2000 to 2005</th>
+                        <th scope="col" class="govuk-table__header">2006 to 2011</th>
+                        <th scope="col" class="govuk-table__header">2012 to 2017</th>
+                        <th scope="col" class="govuk-table__header">2018 to 2024</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
 
-                <table class="govuk-table">
-                <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                    <th scope="col" class="govuk-table__header"></th>
-                    <th scope="col" class="govuk-table__header">2000 to 2005</th>
-                    <th scope="col" class="govuk-table__header">2006 to 2011</th>
-                    <th scope="col" class="govuk-table__header">2012 to 2017</th>
-                    <th scope="col" class="govuk-table__header">2018 to 2024</th>
-                    </tr>
-                </thead>
-                <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                            <a href="/drivers_of_social_mobility/composite_indices/conditions_of_childhood/latest"
+                                class="govuk-link">
+                                Conditions of childhood</a>
+                        </th>
+                        {{ cell("childhood_conditions_group_name_2000_to_2005", "childhood_conditions_group_id_2000_to_2005") }}
+                        {{ cell("childhood_conditions_group_name_2006_to_2011", "childhood_conditions_group_id_2006_to_2011") }}
+                        {{ cell("childhood_conditions_group_name_2012_to_2017", "childhood_conditions_group_id_2012_to_2017") }}
+                        {{ cell("childhood_conditions_group_name_2018_to_2024", "childhood_conditions_group_id_2018_to_2024") }}
+                        </tr>
 
-                    <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">
-                        <a href="/drivers_of_social_mobility/composite_indices/conditions_of_childhood/latest"
-                            class="govuk-link">
-                            Conditions of childhood</a>
-                    </th>
-                    {{ cell("childhood_conditions_group_name_2000_to_2005", "childhood_conditions_group_id_2000_to_2005") }}
-                    {{ cell("childhood_conditions_group_name_2006_to_2011", "childhood_conditions_group_id_2006_to_2011") }}
-                    {{ cell("childhood_conditions_group_name_2012_to_2017", "childhood_conditions_group_id_2012_to_2017") }}
-                    {{ cell("childhood_conditions_group_name_2018_to_2024", "childhood_conditions_group_id_2018_to_2024") }}
-                    </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                            <a href="/drivers_of_social_mobility/composite_indices/labour_market_opportunities_for_young_people/latest"
+                                class="govuk-link">
+                                Labour market opportunities for young people</a>
+                        </th>
+                        {{ cell("labour_market_opportunities_group_name_2000_to_2005", "labour_market_opportunities_group_id_2000_to_2005") }}
+                        {{ cell("labour_market_opportunities_group_name_2006_to_2011", "labour_market_opportunities_group_id_2006_to_2011") }}
+                        {{ cell("labour_market_opportunities_group_name_2012_to_2017", "labour_market_opportunities_group_id_2012_to_2017") }}
+                        {{ cell("labour_market_opportunities_group_name_2018_to_2024", "labour_market_opportunities_group_id_2018_to_2024") }}
+                        </tr>
 
-                    <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">
-                        <a href="/drivers_of_social_mobility/composite_indices/labour_market_opportunities_for_young_people/latest"
-                            class="govuk-link">
-                            Labour market opportunities for young people</a>
-                    </th>
-                    {{ cell("labour_market_opportunities_group_name_2000_to_2005", "labour_market_opportunities_group_id_2000_to_2005") }}
-                    {{ cell("labour_market_opportunities_group_name_2006_to_2011", "labour_market_opportunities_group_id_2006_to_2011") }}
-                    {{ cell("labour_market_opportunities_group_name_2012_to_2017", "labour_market_opportunities_group_id_2012_to_2017") }}
-                    {{ cell("labour_market_opportunities_group_name_2018_to_2024", "labour_market_opportunities_group_id_2018_to_2024") }}
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">
-                        <a href="/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest"
-                            class="govuk-link">
-                            Innovation and growth</a>
-                    </th>
-                    {{ cell("innovation_and_growth_group_name_2000_to_2005", "innovation_and_growth_group_id_2000_to_2005") }}
-                    {{ cell("innovation_and_growth_group_name_2006_to_2011", "innovation_and_growth_group_id_2006_to_2011") }}
-                    {{ cell("innovation_and_growth_group_name_2012_to_2017", "innovation_and_growth_group_id_2012_to_2017") }}
-                    {{ cell("innovation_and_growth_group_name_2018_to_2024", "innovation_and_growth_group_id_2018_to_2024") }}
-                    </tr>
+                        <tr class="govuk-table__row">
+                        <th scope="row" class="govuk-table__header">
+                            <a href="/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest"
+                                class="govuk-link">
+                                Innovation and growth</a>
+                        </th>
+                        {{ cell("innovation_and_growth_group_name_2000_to_2005", "innovation_and_growth_group_id_2000_to_2005") }}
+                        {{ cell("innovation_and_growth_group_name_2006_to_2011", "innovation_and_growth_group_id_2006_to_2011") }}
+                        {{ cell("innovation_and_growth_group_name_2012_to_2017", "innovation_and_growth_group_id_2012_to_2017") }}
+                        {{ cell("innovation_and_growth_group_name_2018_to_2024", "innovation_and_growth_group_id_2018_to_2024") }}
+                        </tr>
 
 
-                </tbody>
+                    </tbody>
                 </table>
 
+                <div class="govuk-body scale">
+                    <div id="scaleSevenCategories{{ id }}" class="scale-seven-categories">
+                        <div class="grid grid7 seven-categories"
+                            style="margin-bottom: 5px;">
+                            <div class="c1"></div>
+                            <div class="c2"></div>
+                            <div class="c3"></div>
+                            <div class="c4"></div>
+                            <div class="c5"></div>
+                            <div class="c6"></div>
+                            <div class="c7"></div>
+                        </div>
+                        <div class="grid grid7 scale-legend">
+                            <div class="map-legend-group-names">Least<br>Favourable</div>
+                            <div class="map-legend-group-names">Unfavourable</div>
+                            <div class="map-legend-group-names">Lower<br>Middling</div>
+                            <div class="map-legend-group-names">Middling</div>
+                            <div class="map-legend-group-names">Upper<br>Middling</div>
+                            <div class="map-legend-group-names">Favourable</div>
+                            <div class="map-legend-group-names">Most<br>Favourable</div>
+                        </div>
+                    </div>
+                </div>
 
                 <h2 class="govuk-heading-l">
                     How areas are classified
@@ -123,9 +139,9 @@
                 <ul class="govuk-list govuk-list--bullet">
                     <li>most favourable group</li>
                     <li>favourable group</li>
-                    <li>upper middle group</li>
-                    <li>middle group</li>
-                    <li>lower middle group</li>
+                    <li>upper middling group</li>
+                    <li>middling group</li>
+                    <li>lower middling group</li>
                     <li>unfavourable group</li>
                     <li>least favourable group</li>
                 </ul>
