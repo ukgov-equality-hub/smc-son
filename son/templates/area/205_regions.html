@@ -6,8 +6,7 @@
     {% macro cell(group_name_col, group_number_col) %}
         {% set  group_number = row_for_region[group_number_col] | int - 1 %}
         <td class="govuk-table__cell {{ "classification-" ~ group_number }}">
-            {{ row_for_region[group_name_col] | capitalize }} 
-            group
+            {{ row_for_region[group_name_col] | capitalize }}
         </td>                                                   
     {% endmacro %}
 
