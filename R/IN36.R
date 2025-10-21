@@ -219,7 +219,7 @@ save_data_frame(pivot_table, csv_filename)
 # SECTION: By disability
 
 section_chart_type = "disability"
-section_csv_name = "disability"
+section_csv_name = "SEB-and-disability"
 
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)

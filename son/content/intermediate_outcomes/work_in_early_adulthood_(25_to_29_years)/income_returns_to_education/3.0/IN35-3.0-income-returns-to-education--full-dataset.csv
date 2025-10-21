@@ -67,47 +67,47 @@
 "in35","Income returns to education","trend","K02000001","country","United Kingdom","year","2024","edu","O level, GCSE and equivalent",,,,,"2022 to 2024",12.651,11.741,13.632,569,"Pounds","Mean hourly earnings"
 "in35","Income returns to education","trend","K02000001","country","United Kingdom","year","2024","edu","Higher degree",,,,,"2022 to 2024",17.349,16.213,18.564,569,"Pounds","Mean hourly earnings"
 "in35","Income returns to education","trend","K02000001","country","United Kingdom","year","2024","edu","Total",,,,,"2022 to 2024",16.206,15.919,16.499,569,"Pounds","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Higher degree","sex","Men","seb","Lower working",,,"2014-2024",17.505,16.669,18.383,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","First degree","sex","Men","seb","Lower working",,,"2014-2024",16.082,15.431,16.761,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Further education below degree","sex","Men","seb","Lower working",,,"2014-2024",14.128,13.344,14.957,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","A level and equivalent","sex","Men","seb","Lower working",,,"2014-2024",13.289,12.779,13.82,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","O level, GCSE and equivalent","sex","Men","seb","Lower working",,,"2014-2024",12.15,11.578,12.75,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Lower level (below GCSE grade 1)","sex","Men","seb","Lower working",,,"2014-2024",10.563,10.007,11.149,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Higher degree","sex","Women","seb","Lower working",,,"2014-2024",15.864,15.242,16.511,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","First degree","sex","Women","seb","Lower working",,,"2014-2024",14.146,13.683,14.624,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Further education below degree","sex","Women","seb","Lower working",,,"2014-2024",11.926,11.334,12.549,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","A level and equivalent","sex","Women","seb","Lower working",,,"2014-2024",10.803,10.443,11.175,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","O level, GCSE and equivalent","sex","Women","seb","Lower working",,,"2014-2024",10.795,10.332,11.278,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Lower level (below GCSE grade 1)","sex","Women","seb","Lower working",,,"2014-2024",10.156,9.617,10.724,,"Pound","Mean hourly earnings"
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","White British",,,,,"2014-2024",11.793,11.525,12.067,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","White British",,,,,"2014-2024",15.468,15.065,15.881,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Bangladeshi",,,,,"2014-2024",9.11,8.058,10.299,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Bangladeshi",,,,,"2014-2024",11.949,10.566,13.512,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Black African",,,,,"2014-2024",11.553,10.805,12.353,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Black African",,,,,"2014-2024",15.154,14.171,16.204,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Black Caribbean",,,,,"2014-2024",11.432,10.37,12.603,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Black Caribbean",,,,,"2014-2024",14.995,13.588,16.547,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Chinese",,,,,"2014-2024",11.309,10.154,12.596,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Chinese",,,,,"2014-2024",14.833,13.327,16.51,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Indian",,,,,"2014-2024",11.341,10.722,11.996,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Indian",,,,,"2014-2024",14.875,14.064,15.734,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Mixed",,,,,"2014-2024",11.673,10.958,12.435,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Mixed",,,,,"2014-2024",15.31,14.362,16.322,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Other",,,,,"2014-2024",11.012,10.349,11.719,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Other",,,,,"2014-2024",14.444,13.572,15.372,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Pakistani",,,,,"2014-2024",10.609,9.763,11.528,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Pakistani",,,,,"2014-2024",13.915,12.802,15.124,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","White other",,,,,"2014-2024",11.578,11.171,12,,"Percent",
-"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","White other",,,,,"2014-2024",15.186,14.628,15.765,,"Percent",
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Higher degree","disability","Yes",,,,,"2014-2024",16.884,15.283,18.654,124,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","First degree","disability","Yes",,,,,"2014-2024",13.728,12.681,14.861,317,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Further education below degree","disability","Yes",,,,,"2014-2024",11.563,10.387,12.872,80,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","A level and equivalent","disability","Yes",,,,,"2014-2024",11.548,10.7,12.464,271,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","O level, GCSE and equivalent","disability","Yes",,,,,"2014-2024",10.818,9.845,11.888,115,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Lower level (below GCSE grade 1)","disability","Yes",,,,,"2014-2024",10.153,8.893,11.591,49,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Higher degree","disability","No",,,,,"2014-2024",16.597,16.054,17.158,1108,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","First degree","disability","No",,,,,"2014-2024",15.191,14.77,15.623,2731,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Further education below degree","disability","No",,,,,"2014-2024",13.31,12.773,13.87,545,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","A level and equivalent","disability","No",,,,,"2014-2024",12.147,11.816,12.488,1963,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","O level, GCSE and equivalent","disability","No",,,,,"2014-2024",11.659,11.259,12.073,750,"Percent","Mean hourly earnings"
-"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Lower level (below GCSE grade 1)","disability","No",,,,,"2014-2024",10.379,9.973,10.802,513,"Percent","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Higher degree","sex","Men","seb","Lower working",,,"2014-2024",17.505,16.669,18.383,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","First degree","sex","Men","seb","Lower working",,,"2014-2024",16.082,15.431,16.761,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Further education below degree","sex","Men","seb","Lower working",,,"2014-2024",14.128,13.344,14.957,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","A level and equivalent","sex","Men","seb","Lower working",,,"2014-2024",13.289,12.779,13.82,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","O level, GCSE and equivalent","sex","Men","seb","Lower working",,,"2014-2024",12.15,11.578,12.75,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Lower level (below GCSE grade 1)","sex","Men","seb","Lower working",,,"2014-2024",10.563,10.007,11.149,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Higher degree","sex","Women","seb","Lower working",,,"2014-2024",15.864,15.242,16.511,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","First degree","sex","Women","seb","Lower working",,,"2014-2024",14.146,13.683,14.624,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Further education below degree","sex","Women","seb","Lower working",,,"2014-2024",11.926,11.334,12.549,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","A level and equivalent","sex","Women","seb","Lower working",,,"2014-2024",10.803,10.443,11.175,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","O level, GCSE and equivalent","sex","Women","seb","Lower working",,,"2014-2024",10.795,10.332,11.278,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","sex","K02000001","country","United Kingdom","Degree","Lower level (below GCSE grade 1)","sex","Women","seb","Lower working",,,"2014-2024",10.156,9.617,10.724,,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","White British",,,,,"2014-2024",11.793,11.525,12.067,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","White British",,,,,"2014-2024",15.468,15.065,15.881,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Bangladeshi",,,,,"2014-2024",9.11,8.058,10.299,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Bangladeshi",,,,,"2014-2024",11.949,10.566,13.512,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Black African",,,,,"2014-2024",11.553,10.805,12.353,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Black African",,,,,"2014-2024",15.154,14.171,16.204,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Black Caribbean",,,,,"2014-2024",11.432,10.37,12.603,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Black Caribbean",,,,,"2014-2024",14.995,13.588,16.547,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Chinese",,,,,"2014-2024",11.309,10.154,12.596,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Chinese",,,,,"2014-2024",14.833,13.327,16.51,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Indian",,,,,"2014-2024",11.341,10.722,11.996,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Indian",,,,,"2014-2024",14.875,14.064,15.734,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Mixed",,,,,"2014-2024",11.673,10.958,12.435,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Mixed",,,,,"2014-2024",15.31,14.362,16.322,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Other",,,,,"2014-2024",11.012,10.349,11.719,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Other",,,,,"2014-2024",14.444,13.572,15.372,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","Pakistani",,,,,"2014-2024",10.609,9.763,11.528,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","Pakistani",,,,,"2014-2024",13.915,12.802,15.124,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","No degree","ethnicity","White other",,,,,"2014-2024",11.578,11.171,12,,"Pounds",
+"in35","Income returns to education","ethnicity","K02000001","country","United Kingdom","degree","Degree","ethnicity","White other",,,,,"2014-2024",15.186,14.628,15.765,,"Pounds",
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Higher degree","disability","Yes",,,,,"2014-2024",16.884,15.283,18.654,124,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","First degree","disability","Yes",,,,,"2014-2024",13.728,12.681,14.861,317,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Further education below degree","disability","Yes",,,,,"2014-2024",11.563,10.387,12.872,80,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","A level and equivalent","disability","Yes",,,,,"2014-2024",11.548,10.7,12.464,271,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","O level, GCSE and equivalent","disability","Yes",,,,,"2014-2024",10.818,9.845,11.888,115,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Lower level (below GCSE grade 1)","disability","Yes",,,,,"2014-2024",10.153,8.893,11.591,49,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Higher degree","disability","No",,,,,"2014-2024",16.597,16.054,17.158,1108,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","First degree","disability","No",,,,,"2014-2024",15.191,14.77,15.623,2731,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Further education below degree","disability","No",,,,,"2014-2024",13.31,12.773,13.87,545,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","A level and equivalent","disability","No",,,,,"2014-2024",12.147,11.816,12.488,1963,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","O level, GCSE and equivalent","disability","No",,,,,"2014-2024",11.659,11.259,12.073,750,"Pounds","Mean hourly earnings"
+"in35","Income returns to education","disability","K02000001","country","United Kingdom","edu","Lower level (below GCSE grade 1)","disability","No",,,,,"2014-2024",10.379,9.973,10.802,513,"Pounds","Mean hourly earnings"
