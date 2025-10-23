@@ -85,7 +85,7 @@ pivot_table = pivot_table__create(
   pivot_table_rows_order_values = sort(
     unique(data_for_section$primary_split_value), decreasing=TRUE)
 )  %>%
-  rename("Ratio of earnings" = "Percent")
+  rename("Ratio of earnings" = "Ratio")
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
