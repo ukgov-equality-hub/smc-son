@@ -136,4 +136,4 @@ look at people's occupations, educational levels and housing situations, typical
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2025 on GOV.UK]()
+[State of the Nation 2025 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2025-the-evolving-story-of-social-mobility-in-the-uk)
