@@ -10,7 +10,7 @@ output_folder_prefix = "../son/content"
 domain = "drivers_of_social_mobility"
 subdomain = "social_capital_and_connections"
 indicator_name = "level_of_trust,_fairness_and_helpfulness" 
-version = "3.0"
+version = "3.1"
 
 indicator_code = "DR42"
 
