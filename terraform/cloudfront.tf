@@ -53,7 +53,7 @@ resource "aws_cloudfront_distribution" "distribution_for_elastic_beanstalk_envir
   viewer_certificate {
     acm_certificate_arn = aws_acm_certificate_validation.certificate_validation_waiter.certificate_arn
     cloudfront_default_certificate = false
-    minimum_protocol_version = "TLSv1"
+    minimum_protocol_version = "TLSv1.2_2021"
     ssl_support_method = "sni-only"
   }
 
