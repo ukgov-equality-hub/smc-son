@@ -1,15 +1,10 @@
 {
-  "name": "son-flask",
-  "version": "1.0.0",
-  "description": "Used for installing GOV UK frontend",
-  "author": "Alistair Knight",
-  "license": "ISC",
   "scripts": {
     "build": "sass son/sass/app.scss son/static/app.css --style=compressed"
   },
   "dependencies": {
     "@ministryofjustice/frontend": "^1.6.2",
-    "govuk-frontend": "^3.14.0",
-    "sass": "^1.45.0"
+    "govuk-frontend": "^6.1.0",
+    "sass": "^1.99.0"
   }
 }

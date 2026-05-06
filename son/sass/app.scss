@@ -1,6 +1,6 @@
 $govuk-new-link-styles: true;
 $govuk-assets-path: "/static/assets/";
-@import "./../../node_modules/govuk-frontend/govuk/all";
+@import "./../../node_modules/govuk-frontend/dist/govuk";
 //@import "./related-navigation";
 //@import "./patterns/interuption-card";
 

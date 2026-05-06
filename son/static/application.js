@@ -487,7 +487,7 @@
     this.$module = $module || document;
 
     this.$nav = this.$module.querySelector('.mobile-navigation');
-    this.$navToggler = this.$module.querySelector('.govuk-js-header-toggle');
+    this.$navToggler = this.$module.querySelector('#mobile-nav-button');
     this.$navButtons = this.$module.querySelectorAll('.collapsible__toggle-icon');
     this.$navLinks = this.$module.querySelectorAll('.collapsible__toggle-link');
 
