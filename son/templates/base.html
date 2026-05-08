@@ -48,7 +48,7 @@
         document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');
     </script>
 
-    {% include "policies/cookie-banner.html" %}
+    {% include "shared/cookie-banner.html" %}
 
     <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
@@ -225,17 +225,17 @@
                         <h2 class="govuk-visually-hidden">Support links</h2>
                         <ul class="govuk-footer__inline-list">
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.privacy_policy') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.privacy_policy') }}">
                                     Privacy policy
                                 </a>
                             </li>
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.accessibility_statement') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.accessibility_statement') }}">
                                     Accessibility statement
                                 </a>
                             </li>
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.cookies') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.cookies') }}">
                                     Cookies
                                 </a>
                             </li>
