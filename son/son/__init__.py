@@ -252,3 +252,16 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
         page_title=page_history_version.title,
         page_replacements=page_replacements
     )
+
+
+@son.route('/about-our-analysis', methods=['GET'])
+def about_our_analysis():
+    return render_template(
+        'shared/about-our-analysis.html',
+        menu=menu,
+        domain=None,
+        subdomain=None,
+        indicator=None,
+        title='About our analysis',
+        form=None
+    )

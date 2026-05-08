@@ -41,16 +41,3 @@ def cookies():
         title='Cookies',
         form=None
     )
-
-
-@shared.route('/about-our-analysis', methods=['GET'])
-def about_our_analysis():
-    return render_template(
-        'shared/about-our-analysis.html',
-        menu=menu,
-        domain=None,
-        subdomain=None,
-        indicator=None,
-        title='About our analysis',
-        form=None
-    )
