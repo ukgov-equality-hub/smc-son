@@ -4,6 +4,11 @@ from son.utils.menu import menu
 shared = Blueprint('shared', __name__)
 
 
+@shared.route('/health-check', methods=['GET'])
+def health_check():
+    return 'Health OK'
+
+
 @shared.route('/privacy-policy', methods=['GET'])
 def privacy_policy():
     return render_template(

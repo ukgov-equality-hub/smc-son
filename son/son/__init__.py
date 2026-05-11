@@ -31,11 +31,6 @@ def index():
     )
 
 
-@son.route('/health-check', methods=['GET'])
-def health_check():
-    return 'Health OK'
-
-
 @son.route('/social_mobility_by_area', methods=['GET'])
 def area_home_page_without_version():
     return redirect("/social_mobility_by_area/latest")
