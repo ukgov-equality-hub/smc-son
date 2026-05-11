@@ -86,7 +86,6 @@ def area_page_ITL2(area):
 
 @son.route('/state-of-the-nation/social_mobility_by_area/203_regions/<area>', methods=['GET'])
 def area_page_203_regions(area):
-
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
         with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
             reader = csv.DictReader(csv_file)
@@ -116,10 +115,8 @@ def area_page_203_regions(area):
     )
 
 
-
 @son.route('/state-of-the-nation/social_mobility_by_area/205_regions/<area>', methods=['GET'])
 def area_page_205_regions(area):
-
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
         with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
             reader = csv.DictReader(csv_file)
@@ -142,7 +139,6 @@ def area_page_205_regions(area):
         title=row_for_region['region_fullname'],
         row_for_region=row_for_region
     )
-
 
 
 @son.route('/state-of-the-nation/<domain>', methods=['GET'])
