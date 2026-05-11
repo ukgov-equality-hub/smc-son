@@ -1,0 +1,3 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2014,Total,18 to 20,Total,Education,NA,NA,NA,3.85943923,NA,NA,NA,NA,Ratio,The ratio between higher professional and lower working in edu
+IN22,Entry of youg people into higher education,Country,K02000001,United Kingdom,2022,Total,18 to 20,Total,Education,NA,NA,NA,2.201996238,NA,NA,NA,NA,Ratio,The ratio between higher professional and lower working in edu

@@ -1,0 +1,5 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,Quintile
+IN13,Attainment at age 16,Country,E92000001,England,202223,Disadvantaged,16,Boys,NA,NA,NA,NA,23.6,80790,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be disadvantaged,16,Boys,NA,NA,NA,NA,50.1,227863,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Disadvantaged,16,Girls,NA,NA,NA,NA,26.8,77194,NA,NA,NA,Percentage,NA,NA
+IN13,Attainment at age 16,Country,E92000001,England,202223,Not known to be disadvantaged,16,Girls,NA,NA,NA,NA,54.7,217801,NA,NA,NA,Percentage,NA,NA

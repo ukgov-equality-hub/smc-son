@@ -1,0 +1,45 @@
+Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR21,Further education and training opportunities,National,E92000001,England,2021,NA,16-18,Total,Participation type,Other training (less overlaps),4.352699205,83304.87368,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2021,NA,16-18,Total,Participation type,NEET,6.42763383,123016.3628,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2021,NA,16-18,Total,Participation type,In employment (not in education or training),7.971591884,152565.6664,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2021,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,81.24807508,1554980.097,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2020,NA,16-18,Total,Participation type,Other training (less overlaps),4.204729309,78268.42916,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2020,NA,16-18,Total,Participation type,NEET,6.699208517,124701.613,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2020,NA,16-18,Total,Participation type,In employment (not in education or training),6.987821126,130073.9578,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2020,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,82.10824105,1528394,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2019,NA,16-18,Total,Participation type,Other training (less overlaps),4.608806224,84653.21617,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2019,NA,16-18,Total,Participation type,NEET,6.696374727,122997.069,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2019,NA,16-18,Total,Participation type,In employment (not in education or training),7.439398531,136644.7148,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2019,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,81.25542052,1492476,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2018,NA,16-18,Total,Participation type,Other training (less overlaps),4.995048431,91827.02228,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2018,NA,16-18,Total,Participation type,NEET,6.555402913,120511.9705,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2018,NA,16-18,Total,Participation type,In employment (not in education or training),7.789447315,143198.1616,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2018,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,80.66010134,1482823.846,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2017,NA,16-18,Total,Participation type,Other training (less overlaps),5.199745866,97478.6478,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2017,NA,16-18,Total,Participation type,NEET,6.447187803,120864.2048,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2017,NA,16-18,Total,Participation type,In employment (not in education or training),7.896497986,148034.1474,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2017,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,80.45656834,1508304,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2016,NA,16-18,Total,Participation type,Other training (less overlaps),5.229383295,99701.27786,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2016,NA,16-18,Total,Participation type,NEET,6.327293514,120633.584,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2016,NA,16-18,Total,Participation type,In employment (not in education or training),7.292989002,139045.1382,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2016,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,81.15033419,1547179,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2015,NA,16-18,Total,Participation type,Other training (less overlaps),5.103490443,98977.50193,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2015,NA,16-18,Total,Participation type,NEET,6.633183489,128644.4912,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2015,NA,16-18,Total,Participation type,In employment (not in education or training),6.943150014,134656.0068,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2015,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,81.32017605,1577130,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2014,NA,16-18,Total,Participation type,Other training (less overlaps),4.820231071,94051.48101,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2014,NA,16-18,Total,Participation type,NEET,7.63198487,148913.915,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2014,NA,16-18,Total,Participation type,In employment (not in education or training),6.495427077,126737.604,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2014,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,81.05235698,1581479,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2013,NA,16-18,Total,Participation type,Other training (less overlaps),4.502481942,88036.57916,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2013,NA,16-18,Total,Participation type,NEET,7.740123571,151341.8622,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2013,NA,16-18,Total,Participation type,In employment (not in education or training),6.901050926,134935.5587,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2013,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,80.85634356,1580976,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2012,NA,16-18,Total,Participation type,Other training (less overlaps),4.387191321,86241.65211,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2012,NA,16-18,Total,Participation type,NEET,9.243357719,181702.2287,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2012,NA,16-18,Total,Participation type,In employment (not in education or training),7.087392113,139321.1192,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2012,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,79.28205885,1558495,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2011,NA,16-18,Total,Participation type,Other training (less overlaps),3.958449763,78432.00399,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2011,NA,16-18,Total,Participation type,NEET,9.774231276,193664.8416,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2011,NA,16-18,Total,Participation type,In employment (not in education or training),6.766387676,134067.9753,NA,NA,NA,Percentage,NA
+DR21,Further education and training opportunities,National,E92000001,England,2011,NA,16-18,Total,Participation type,Education and apprenticeships/WBL,79.50093129,1575217,NA,NA,NA,Percentage,NA

@@ -1,0 +1,6 @@
+﻿time_period,seb,sample_size,value,sex,category_type,category,ind_code,ind_name,age,area_type,area_code,area_name,lci,uci,se,category_type2,category2,unit,value_note,Quintile,ethnicity
+202223,Eligible for free school meals,36741,57.7,Girls,Ethnicity,White,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,White
+202223,Eligible for free school meals,5233,65,Girls,Ethnicity,Mixed/multiple ethnic groups,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,Mixed
+202223,Eligible for free school meals,4533,65.9,Girls,Ethnicity,Asian/Asian British,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,Asian
+202223,Eligible for free school meals,4340,65.3,Girls,Ethnicity,Black/African/Caribbean/Black British,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,Black
+202223,Eligible for free school meals,1772,58.5,Girls,Ethnicity,Other ethnic group,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA,Other

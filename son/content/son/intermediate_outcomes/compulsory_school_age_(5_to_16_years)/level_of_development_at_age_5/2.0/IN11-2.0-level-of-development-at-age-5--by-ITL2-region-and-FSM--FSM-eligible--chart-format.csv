@@ -1,0 +1,34 @@
+﻿time_period,seb,sample_size,value,sex,category_type,category,ind_code,ind_name,age,area_type,area_code,area_name,lci,uci,se,category_type2,category2,unit,value_note,Quintile,Quintile_number
+202223,FSM eligible,2742,0.468271335,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Bedfordshire and Hertfordshire,NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,3428,0.490956826,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,1442,0.490984743,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Cheshire,NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,798,0.486215539,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Cornwall and Isles of Scilly,NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,664,0.459337349,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Cumbria,NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,5125,0.519804878,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Derbyshire and Nottinghamshire,NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,1806,0.471207087,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Devon,NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,1711,0.48918761,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Dorset and Somerset,NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,4307,0.477362433,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,East Anglia,NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,1980,0.537373737,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,East Yorkshire and Northern Lincolnshire,NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,3476,0.500863061,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Essex,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,3504,0.468321918,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,7856,0.507255601,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Greater Manchester,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,3093,0.517620433,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Hampshire and Isle of Wight,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,2280,0.497807018,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,5510,0.604174229,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Inner London - East,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,1872,0.575854701,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Inner London - West,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,3720,0.514784946,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Kent,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,3046,0.496060407,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Lancashire,NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,2567,0.501363459,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,1647,0.548876746,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Lincolnshire,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,4191,0.486518731,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Merseyside,NA,NA,NA,NA,NA,Percentage,NA,Q2,2
+202223,FSM eligible,885,0.499435028,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,North Yorkshire,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,3526,0.519852524,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Northumberland, and Tyne and Wear",NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,3911,0.582971107,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Outer London - East and North East,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,2239,0.542206342,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Outer London - South,NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,3112,0.551413882,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Outer London - West and North West,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,3125,0.52416,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Shropshire and Staffordshire,NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,3728,0.519849785,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,South Yorkshire,NA,NA,NA,NA,NA,Percentage,NA,Q4,4
+202223,FSM eligible,3757,0.474580783,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,"Surrey, East and West Sussex",NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1
+202223,FSM eligible,3489,0.506735454,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,Tees Valley and Durham,NA,NA,NA,NA,NA,Percentage,NA,Q3,3
+202223,FSM eligible,9386,0.546345621,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,West Midlands,NA,NA,NA,NA,NA,Percentage,NA,Q5 (Best 20%),5
+202223,FSM eligible,5177,0.482132509,Total,NA,NA,IN11,Level of development at age 5,5,ITL2,NA,West Yorkshire,NA,NA,NA,NA,NA,Percentage,NA,Q1 (Worst 20%),1

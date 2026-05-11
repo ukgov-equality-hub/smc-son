@@ -1,0 +1,5 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO32","Relative educational mobility","National",NA,"United Kingdom",1991,NA,"25-64","Total",NA,NA,9.75,NA,9,10.58,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2001,NA,"25-64","Total",NA,NA,7.76,NA,7.31,8.24,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2011,NA,"25-64","Total",NA,NA,7.3,NA,6.96,7.8,NA,"Odds ratio",NA
+"MO32","Relative educational mobility","National",NA,"United Kingdom",2020,NA,"25-64","Total",NA,NA,4,NA,3.23,4.85,NA,"Odds ratio",NA

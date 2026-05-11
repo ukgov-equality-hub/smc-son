@@ -1,0 +1,11 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Men,NA,NA,NA,NA,13.0891194,2532,12.45185984,13.72637895,0.325132427,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Men,NA,NA,NA,NA,14.06596726,2460,13.474589,14.65734552,0.301723604,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Men,NA,NA,NA,NA,14.86865052,3139,14.33824832,15.39905273,0.270613368,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Men,NA,NA,NA,NA,16.8794287,2684,16.32514746,17.43370995,0.282796554,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Men,NA,NA,NA,NA,18.20304906,2300,17.62726177,18.77883634,0.293769021,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower working,25 to 29,Women,NA,NA,NA,NA,11.32824727,3067,10.83450351,11.82199103,0.25191008,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher working,25 to 29,Women,NA,NA,NA,NA,12.66721648,2845,12.20912661,13.12530636,0.233719324,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Intermediate,25 to 29,Women,NA,NA,NA,NA,13.50595205,3483,13.09079621,13.92110789,0.211814202,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Lower professional,25 to 29,Women,NA,NA,NA,NA,15.1072884,3096,14.68990112,15.52467567,0.21295269,Pounds,NA
+IN34,Earnings of young people,Country,K02000001,United Kingdom,2014 to 2022,Higher professional,25 to 29,Women,NA,NA,NA,NA,16.80098041,2599,16.36805449,17.23390633,0.220880572,Pounds,NA

@@ -1,0 +1,144 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN11","Level of development at age 5","National","E92000001","England","201819","Total",5,"Total",NA,NA,72,458815,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201819","FSM",5,"Total",NA,NA,57,50732,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201819","All other pupils",5,"Total",NA,NA,74,408083,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","Total",5,"Total",NA,NA,72,466668,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","FSM",5,"Total",NA,NA,57,49312,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201718","All other pupils",5,"Total",NA,NA,74,417356,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","Total",5,"Total",NA,NA,71,473626,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","FSM",5,"Total",NA,NA,56,51316,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201617","All other pupils",5,"Total",NA,NA,73,422310,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","Total",5,"Total",NA,NA,69,463601,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","FSM",5,"Total",NA,NA,54,50890,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201516","All other pupils",5,"Total",NA,NA,72,412711,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","Total",5,"Total",NA,NA,66,433881,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","FSM",5,"Total",NA,NA,51,49747,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201415","All other pupils",5,"Total",NA,NA,69,384134,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","Total",5,"Total",NA,NA,60,387086,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","FSM",5,"Total",NA,NA,45,50452,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201314","All other pupils",5,"Total",NA,NA,64,336634,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","Total",5,"Total",NA,NA,52,332438,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","FSM",5,"Total",NA,NA,36,43079,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201213","All other pupils",5,"Total",NA,NA,55,289359,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201920","Total",5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","201920",NA,5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202021",NA,5,"Total",NA,NA,NA,NA,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","Total",5,"Total",NA,NA,65.2,405723,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total",NA,NA,49.1,55944,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total",NA,NA,68.8,349779,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls",NA,NA,56.6,31589,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys",NA,NA,41.9,24355,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls",NA,NA,75.4,187334,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys",NA,NA,62.4,162445,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","White",47,36797,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","White",70.5,254593,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","Mixed/multiple ethnic groups",54.7,5908,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","Mixed/multiple ethnic groups",70.8,24440,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","Asian/Asian British",56,5556,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","Asian/Asian British",66.3,42895,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","Black/African/Caribbean/Black British",55.2,4903,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","Black/African/Caribbean/Black British",62.7,13982,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","Other ethnic group",47.7,1749,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","Other ethnic group",58.2,5762,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Total","Ethnicity","Unclassified",45.6,1031,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Total","Ethnicity","Unclassified",50.2,8107,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","White",54.3,20836,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","White",39.9,15961,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","White",77.1,135666,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","White",64.3,118927,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","Mixed/multiple ethnic groups",62.6,3293,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Mixed/multiple ethnic groups",47.2,2615,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","Mixed/multiple ethnic groups",77.2,13104,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Mixed/multiple ethnic groups",64.6,11336,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","Asian/Asian British",63.6,3119,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Asian/Asian British",48.7,2437,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","Asian/Asian British",73,23120,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Asian/Asian British",59.9,19775,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","Black/African/Caribbean/Black British",63.2,2806,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Black/African/Caribbean/Black British",47.1,2097,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","Black/African/Caribbean/Black British",71.4,7902,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Black/African/Caribbean/Black British",54.1,6080,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","Other ethnic group",54,955,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Other ethnic group",41.8,794,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","Other ethnic group",64.5,3131,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Other ethnic group",52.1,2631,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Girls","Ethnicity","Unclassified",54.7,580,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Unclassified",37.6,451,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Girls","Ethnicity","Unclassified",55.7,4411,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","All other pupils",5,"Boys","Ethnicity","Unclassified",44.9,3696,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","1",55.3,44848,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","2",58.8,43627,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","3",61.3,42222,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","4",63.7,42321,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","5",65.6,40651,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","6",67.8,39546,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","7",69.3,38678,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","8",71.4,37647,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","9",72.7,37841,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122",NA,5,"Total","IDACI decile","10",75.3,37693,NA,NA,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Bedfordshire and Hertfordshire","2021-2022","FSM eligible",11,"Total",NA,NA,43.68,2807,41.83128392,45.5349627,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire","2021-2022","FSM eligible",11,"Total",NA,NA,45.81,3475,44.11742102,47.45802461,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cheshire","2021-2022","FSM eligible",11,"Total",NA,NA,47.18,1401,44.46812095,49.76244085,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cornwall and Isles of Scilly","2021-2022","FSM eligible",11,"Total",NA,NA,47.04,795,43.40327603,50.45613377,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cumbria","2021-2022","FSM eligible",11,"Total",NA,NA,35.96,648,32.25607741,39.78609938,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Derbyshire and Nottinghamshire","2021-2022","FSM eligible",11,"Total",NA,NA,49.18,5218,47.81066813,50.54211329,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Devon","2021-2022","FSM eligible",11,"Total",NA,NA,46.36,1924,44.06277881,48.56802868,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Dorset and Somerset","2021-2022","FSM eligible",11,"Total",NA,NA,47.13,1918,44.82629922,49.34322541,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"East Anglia","2021-2022","FSM eligible",11,"Total",NA,NA,46.48,4464,44.98902278,47.93675881,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"East Yorkshire and Northern Lincolnshire","2021-2022","FSM eligible",11,"Total",NA,NA,53.15,2124,50.95847976,55.24762287,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Essex","2021-2022","FSM eligible",11,"Total",NA,NA,48.75,3321,47.00699906,50.43578664,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","FSM eligible",11,"Total",NA,NA,45.28,3662,43.65429368,46.90486569,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Greater Manchester","2021-2022","FSM eligible",11,"Total",NA,NA,47.46,8009,46.36033528,48.55973173,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Hampshire and Isle of Wight","2021-2022","FSM eligible",11,"Total",NA,NA,48.8,3537,47.13854024,50.46028122,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire","2021-2022","FSM eligible",11,"Total",NA,NA,46.63,2271,44.51930221,48.66432666,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Inner London - East","2021-2022","FSM eligible",11,"Total",NA,NA,58.75,5743,57.4637008,60.02696709,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Inner London - West","2021-2022","FSM eligible",11,"Total",NA,NA,55.43,1963,53.19436468,57.64014285,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Kent","2021-2022","FSM eligible",11,"Total",NA,NA,47.89,3846,46.27827381,49.46079832,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Lancashire","2021-2022","FSM eligible",11,"Total",NA,NA,45.88,3241,44.12357139,47.58401793,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Leicestershire, Rutland and Northamptonshire","2021-2022","FSM eligible",11,"Total",NA,NA,47.85,2671,45.93733954,49.76188067,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Lincolnshire","2021-2022","FSM eligible",11,"Total",NA,NA,48.53,1696,46.12219061,50.93480513,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Merseyside","2021-2022","FSM eligible",11,"Total",NA,NA,45.46,4274,43.93663634,46.94466336,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"North Yorkshire","2021-2022","FSM eligible",11,"Total",NA,NA,48.33,956,45.11567852,51.54737947,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Northumberland, and Tyne and Wear","2021-2022","FSM eligible",11,"Total",NA,NA,49.09,3722,47.4682855,50.7061756,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - East and North East","2021-2022","FSM eligible",11,"Total",NA,NA,54.48,4145,52.94446618,55.99976327,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - South","2021-2022","FSM eligible",11,"Total",NA,NA,55.2,2223,53.10024014,57.27740821,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - West and North West","2021-2022","FSM eligible",11,"Total",NA,NA,54.76,3201,52.98927824,56.46785635,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Shropshire and Staffordshire","2021-2022","FSM eligible",11,"Total",NA,NA,49.9,3134,48.10670295,51.63827069,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"South Yorkshire","2021-2022","FSM eligible",11,"Total",NA,NA,49.85,3876,48.25884889,51.43178719,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Surrey, East and West Sussex","2021-2022","FSM eligible",11,"Total",NA,NA,46.9,3932,45.32751662,48.47160531,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Tees Valley and Durham","2021-2022","FSM eligible",11,"Total",NA,NA,48.39,3635,46.72670001,50.0022071,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"West Midlands","2021-2022","FSM eligible",11,"Total",NA,NA,51.47,10233,50.48742614,52.4336613,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"West Yorkshire","2021-2022","FSM eligible",11,"Total",NA,NA,46.43,5817,45.12755967,47.70739427,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Bedfordshire and Hertfordshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,66.32,20261,65.66398639,66.97038826,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.41,24890,68.83269898,69.98156903,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cheshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,70.42,8906,69.45307818,71.35996127,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cornwall and Isles of Scilly","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.24,4645,67.88596064,70.56129305,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Cumbria","2021-2022","Not FSM eligible",11,"Total",NA,NA,65.74,3923,64.20565707,67.20092832,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Derbyshire and Nottinghamshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.81,18778,68.14109447,69.47156659,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Devon","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.76,9602,67.81866344,69.6829649,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Dorset and Somerset","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.89,10915,68.00880547,69.75481549,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"East Anglia","2021-2022","Not FSM eligible",11,"Total",NA,NA,67.31,21735,66.67797236,67.92977268,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"East Yorkshire and Northern Lincolnshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.17,7974,67.12374419,69.1810026,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Essex","2021-2022","Not FSM eligible",11,"Total",NA,NA,70.18,18074,69.50523806,70.84457738,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","Not FSM eligible",11,"Total",NA,NA,70.73,23402,70.14135148,71.31149156,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Greater Manchester","2021-2022","Not FSM eligible",11,"Total",NA,NA,64.61,27364,64.03685296,65.17360933,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Hampshire and Isle of Wight","2021-2022","Not FSM eligible",11,"Total",NA,NA,72.13,17435,71.45295504,72.78972959,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,70.03,11999,69.19377841,70.84150217,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Inner London - East","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.94,18868,69.27857642,70.59231469,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Inner London - West","2021-2022","Not FSM eligible",11,"Total",NA,NA,72.25,5788,71.06228111,73.38658635,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Kent","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.73,17874,69.04746695,70.40006518,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Lancashire","2021-2022","Not FSM eligible",11,"Total",NA,NA,65.82,13913,65.0211448,66.60452208,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Leicestershire, Rutland and Northamptonshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,67.05,18897,66.37227699,67.71783303,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Lincolnshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.53,5967,67.33133301,69.70432524,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Merseyside","2021-2022","Not FSM eligible",11,"Total",NA,NA,64.91,13196,64.08472318,65.72076278,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"North Yorkshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,71.82,6706,70.72272107,72.89084664,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Northumberland, and Tyne and Wear","2021-2022","Not FSM eligible",11,"Total",NA,NA,68.99,11337,68.12585332,69.83739578,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - East and North East","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.88,20937,69.24972317,70.49734499,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - South","2021-2022","Not FSM eligible",11,"Total",NA,NA,72.29,12872,71.50662914,73.06065924,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Outer London - West and North West","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.27,20524,68.62888495,69.89615494,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Shropshire and Staffordshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.04,14353,68.2741719,69.79376766,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"South Yorkshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,69.73,11849,68.89116551,70.55393945,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Surrey, East and West Sussex","2021-2022","Not FSM eligible",11,"Total",NA,NA,72.43,25835,71.87952535,72.97317697,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"Tees Valley and Durham","2021-2022","Not FSM eligible",11,"Total",NA,NA,70.2,9400,69.25532426,71.11512763,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"West Midlands","2021-2022","Not FSM eligible",11,"Total",NA,NA,65.62,27426,65.05096883,66.17885754,NA,"Percentage",NA
+"IN11","Attainment at age 5","ITL2",NA,"West Yorkshire","2021-2022","Not FSM eligible",11,"Total",NA,NA,66.79,23056,66.17737794,67.39749882,NA,"Percentage",NA

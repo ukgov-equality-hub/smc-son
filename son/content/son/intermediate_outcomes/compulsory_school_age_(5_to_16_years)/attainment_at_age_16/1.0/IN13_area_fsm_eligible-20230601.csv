@@ -1,0 +1,34 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN13","Attainment at age 16","ITL2","TLC1","Tees Valley and Durham","2021-2022","FSM eligible","16","Total",NA,NA,25.4761039,NA,21.90050455,29.05170324,1.824285379,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLC2","Northumberland, and Tyne and Wear","2021-2022","FSM eligible","16","Total",NA,NA,23.78628377,NA,20.35704372,27.21552382,1.74961227,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLD4","Lancashire","2021-2022","FSM eligible","16","Total",NA,NA,24.05491803,NA,20.15622788,27.95360819,1.989127631,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLD3","Greater Manchester","2021-2022","FSM eligible","16","Total",NA,NA,28.89754516,NA,25.89071883,31.90437149,1.534095068,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLD6","Cheshire","2021-2022","FSM eligible","16","Total",NA,NA,21.874,NA,18.23823166,25.50976834,1.854983848,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLD1","Cumbria","2021-2022","FSM eligible","16","Total",NA,NA,22.9,NA,19.80044997,25.99955003,1.581403078,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLD7","Merseyside","2021-2022","FSM eligible","16","Total",NA,NA,22.38005019,NA,19.45440773,25.30569264,1.492674722,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLE3","South Yorkshire","2021-2022","FSM eligible","16","Total",NA,NA,24.93217438,NA,22.10673235,27.75761641,1.441552055,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLE4","West Yorkshire","2021-2022","FSM eligible","16","Total",NA,NA,27.41408176,NA,24.99957899,29.82858452,1.231889167,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLE1","East Yorkshire and Northern Lincolnshire","2021-2022","FSM eligible","16","Total",NA,NA,24.92936326,NA,21.18000031,28.67872621,1.912940282,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLE2","North Yorkshire","2021-2022","FSM eligible","16","Total",NA,NA,23.8,NA,17.95604381,29.64395619,2.981610303,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLF1","Derbyshire and Nottinghamshire","2021-2022","FSM eligible","16","Total",NA,NA,23.24662953,NA,20.39759164,26.09566741,1.453590759,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLF2","Leicestershire, Rutland and Northamptonshire","2021-2022","FSM eligible","16","Total",NA,NA,26.37230246,NA,22.97401441,29.77059052,1.733820437,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLF3","Lincolnshire","2021-2022","FSM eligible","16","Total",NA,NA,24.5,NA,22.17627546,26.82372454,1.185573746,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLG3","West Midlands","2021-2022","FSM eligible","16","Total",NA,NA,31.75211387,NA,29.53462124,33.96960651,1.131373793,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLG1","Herefordshire, Worcestershire and Warwickshire","2021-2022","FSM eligible","16","Total",NA,NA,24.4,NA,18.65893251,30.14106749,2.929116066,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLG2","Shropshire and Staffordshire","2021-2022","FSM eligible","16","Total",NA,NA,21.37017544,NA,17.75749963,24.98285124,1.843201942,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLH2","Bedfordshire and Hertfordshire","2021-2022","FSM eligible","16","Total",NA,NA,28.13959391,NA,24.01736517,32.26182265,2.103177929,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLH1","East Anglia","2021-2022","FSM eligible","16","Total",NA,NA,22.2,NA,18.62448439,25.77551561,1.824242657,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLH3","Essex","2021-2022","FSM eligible","16","Total",NA,NA,27.45226337,NA,22.63437055,32.2701562,2.458108583,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLI3","Inner London - West","2021-2022","FSM eligible","16","Total",NA,NA,49.49381488,NA,44.85236753,54.13526223,2.368085384,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLI4","Inner London - East","2021-2022","FSM eligible","16","Total",NA,NA,43.7609677,NA,40.61802499,46.90391041,1.603542197,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLI5","Outer London - East and North East","2021-2022","FSM eligible","16","Total",NA,NA,36.50062788,NA,32.82915991,40.17209584,1.873197941,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLI7","Outer London - West and North West","2021-2022","FSM eligible","16","Total",NA,NA,42.49449625,NA,38.57029043,46.41870206,2.002145824,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLI6","Outer London - South","2021-2022","FSM eligible","16","Total",NA,NA,36.4873546,NA,32.33624429,40.63846491,2.117913423,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","2021-2022","FSM eligible","16","Total",NA,NA,28.07324455,NA,23.14647795,33.00001116,2.513656431,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLJ2","Surrey, East and West Sussex","2021-2022","FSM eligible","16","Total",NA,NA,29.2,NA,24.60410388,33.79589612,2.344844957,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLJ3","Hampshire and Isle of Wight","2021-2022","FSM eligible","16","Total",NA,NA,23.12263766,NA,19.23086202,27.0144133,1.985599815,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLJ4","Kent","2021-2022","FSM eligible","16","Total",NA,NA,24.2,NA,20.63026653,27.76973347,1.821292588,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","2021-2022","FSM eligible","16","Total",NA,NA,24.23351846,NA,20.3888978,28.07813912,1.961541154,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLK2","Dorset and Somerset","2021-2022","FSM eligible","16","Total",NA,NA,29.124,NA,25.50369106,32.74430894,1.8470964,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLK3","Cornwall and Isles of Scilly","2021-2022","FSM eligible","16","Total",NA,NA,22.4,NA,19.65776633,25.14223367,1.399098809,"Percentage",NA
+"IN13","Attainment at age 16","ITL2","TLK4","Devon","2021-2022","FSM eligible","16","Total",NA,NA,22.79400922,NA,18.7347053,26.85331313,2.071073428,"Percentage",NA

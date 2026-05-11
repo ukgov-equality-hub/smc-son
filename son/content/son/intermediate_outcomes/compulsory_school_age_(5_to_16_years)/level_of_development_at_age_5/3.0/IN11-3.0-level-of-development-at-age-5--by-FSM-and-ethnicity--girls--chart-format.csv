@@ -1,0 +1,6 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","ethnicity","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","seb"
+"in11","Level of development at age 5","ethnicity_sex","E92000001","Country","England","sex","Girls","ethnicity","White",,,,,2024,58,,,34749,"Percentage",,"Eligible for free school meals"
+"in11","Level of development at age 5","ethnicity_sex","E92000001","Country","England","sex","Girls","ethnicity","Mixed",,,,,2024,64,,,5144,"Percentage",,"Eligible for free school meals"
+"in11","Level of development at age 5","ethnicity_sex","E92000001","Country","England","sex","Girls","ethnicity","Asian",,,,,2024,67,,,4561,"Percentage",,"Eligible for free school meals"
+"in11","Level of development at age 5","ethnicity_sex","E92000001","Country","England","sex","Girls","ethnicity","Black",,,,,2024,67,,,4220,"Percentage",,"Eligible for free school meals"
+"in11","Level of development at age 5","ethnicity_sex","E92000001","Country","England","sex","Girls","ethnicity","Other",,,,,2024,62,,,1757,"Percentage",,"Eligible for free school meals"

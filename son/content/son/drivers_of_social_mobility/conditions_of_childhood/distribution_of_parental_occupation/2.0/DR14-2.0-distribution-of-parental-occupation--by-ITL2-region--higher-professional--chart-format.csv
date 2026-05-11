@@ -1,0 +1,42 @@
+ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+DR14,Distribution of parental occupation,ITL2,TLH2,Cornwall and Isles of Scilly,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,10.33475719,1256,8.651217131,12.01829725,0.85894901,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Devon,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,14.44978492,2865,13.16232119,15.73724864,0.656869249,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Dorset and Somerset,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.52101585,3535,14.32731425,16.71471745,0.609031427,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,"Gloucestershire, Wiltshire and Bath/Bristol area",2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,20.55705589,6074,19.54074448,21.5733673,0.518526229,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Hampshire and Isle of Wight,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,18.77873056,4973,17.69326801,19.8641931,0.553807423,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,"Surrey, East and West Sussex",2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,21.92060749,6948,20.94781397,22.89340102,0.496323228,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Kent,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,16.60888483,4174,15.47984315,17.73792652,0.576041676,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Outer London - South,2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,23.9960298,3441,22.5691034,25.42295619,0.72802367,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Outer London - East and North East,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.30712432,4656,14.27288789,16.34136074,0.527671646,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Inner London - East,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,18.03893762,4454,16.90968728,19.16818797,0.576148137,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Inner London - West,2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,29.68633972,1756,27.54940136,31.82327808,1.090274674,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Outer London - West and North West,2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,21.3386834,4913,20.1930462,22.48432059,0.584508772,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,"Berkshire, Buckinghamshire and Oxfordshire",2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,24.36961532,6785,23.34807941,25.39115123,0.52119179,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Bedfordshire and Hertfordshire,2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,21.34102618,4936,20.19801552,22.48403685,0.583168708,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Essex,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,16.21631683,4302,15.11483661,17.31779705,0.561979704,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,"Herefordshire, Worcestershire and Warwickshire",2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,19.01268903,3844,17.7721951,20.25318296,0.632905067,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,West Midlands,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,11.63775071,6926,10.88251462,12.3929868,0.385324535,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,"Leicestershire, Rutland and Northamptonshire",2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.50272623,5226,14.52143763,16.48401484,0.500657452,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,East Anglia,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,16.78758845,6636,15.88831641,17.6868605,0.458812269,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Lincolnshire,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,13.19441683,1840,11.64803731,14.74079635,0.788969143,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Shropshire and Staffordshire,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,14.51269135,3979,13.41824645,15.60713626,0.558390257,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Cheshire,2014 to 2022,Higher professional,40,Total,Quintile,5,NA,NA,21.58592689,2243,19.88328312,23.28857065,0.868695798,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Derbyshire and Nottinghamshire,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.11507897,5451,14.16417105,16.06598689,0.485157103,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,East Yorkshire and Northern Lincolnshire,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,9.930450385,2373,8.727131672,11.1337691,0.613938119,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,South Yorkshire,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,10.76360886,2932,9.641786628,11.88543109,0.57235828,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,West Yorkshire,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,14.51435399,6763,13.67483247,15.3538755,0.428327305,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Greater Manchester,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,14.79205948,7396,13.98294127,15.60117769,0.412815414,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Lancashire,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,12.23727537,3944,11.21448876,13.26006198,0.521829903,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Merseyside,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.62952294,3399,14.40871146,16.85033441,0.622862997,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,North Yorkshire,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,17.24119445,2421,15.73649605,18.74589285,0.767703264,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Tees Valley and Durham,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,9.690758971,3235,8.671313688,10.71020426,0.520125145,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Cumbria,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,11.62841791,1296,9.883117456,13.37371836,0.890459415,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Northumberland and Tyne and Wear,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,13.15982312,3544,12.04682459,14.27282165,0.567856392,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Northern Ireland,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,12.37540037,10232,11.73733018,13.01347057,0.325546017,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,West Wales and The Valleys,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,9.724287755,5063,8.908144359,10.54043115,0.416399691,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,East Wales,2014 to 2022,Higher professional,40,Total,Quintile,3,NA,NA,15.20393865,2916,13.90068723,16.50719007,0.664924193,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Southern Scotland,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,11.23822109,2305,9.948836755,12.52760543,0.657849153,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Eastern Scotland,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,17.05196385,4843,15.99273672,18.11119097,0.540422001,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,West Central Scotland,2014 to 2022,Higher professional,40,Total,Quintile,2,NA,NA,14.84208379,3173,13.60505163,16.07911594,0.631138853,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,North Eastern Scotland,2014 to 2022,Higher professional,40,Total,Quintile,4,NA,NA,19.00560752,1162,16.74969963,21.2615154,1.150973409,Percentage,NA
+DR14,Distribution of parental occupation,ITL2,TLH2,Highlands and Islands,2014 to 2022,Higher professional,40,Total,Quintile,1,NA,NA,11.49003148,815,9.300586835,13.67947612,1.117063594,Percentage,NA

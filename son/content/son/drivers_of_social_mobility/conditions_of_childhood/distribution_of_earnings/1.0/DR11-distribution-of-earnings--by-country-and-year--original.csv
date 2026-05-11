@@ -1,0 +1,89 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+DR11,Distribution of earnings,Country,E92000001,England,2021,NA,NA,Total,NA,NA,3.352486188,22576,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2021,NA,NA,Total,NA,NA,2.765555556,1200,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2021,NA,NA,Total,NA,NA,2.961832061,2236,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2021,NA,NA,Total,NA,NA,2.873176207,1074,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2020,NA,NA,Total,NA,NA,3.496559633,21616,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2020,NA,NA,Total,NA,NA,2.852704258,1137,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2020,NA,NA,Total,NA,NA,3.055865922,2155,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2020,NA,NA,Total,NA,NA,3.031725888,1002,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2019,NA,NA,Total,NA,NA,3.540669856,22420,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2019,NA,NA,Total,NA,NA,2.957575758,1140,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2019,NA,NA,Total,NA,NA,3.09540636,2269,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2019,NA,NA,Total,NA,NA,2.922046285,873,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2018,NA,NA,Total,NA,NA,3.621079046,22191,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2018,NA,NA,Total,NA,NA,3,1121,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2018,NA,NA,Total,NA,NA,3.20625,2320,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2018,NA,NA,Total,NA,NA,3.005108557,792,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2017,NA,NA,Total,NA,NA,3.646133683,22037,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2017,NA,NA,Total,NA,NA,3.074567244,1119,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2017,NA,NA,Total,NA,NA,3.22997416,2260,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2017,NA,NA,Total,NA,NA,3.082666667,824,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2016,NA,NA,Total,NA,NA,3.692622951,21613,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2016,NA,NA,Total,NA,NA,3.171745152,1094,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2016,NA,NA,Total,NA,NA,3.284552846,2218,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2016,NA,NA,Total,NA,NA,3.2125,833,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2015,NA,NA,Total,NA,NA,3.791304348,21822,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2015,NA,NA,Total,NA,NA,3.38,2244,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2015,NA,NA,Total,NA,NA,3.451219512,792,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2014,NA,NA,Total,NA,NA,3.892053973,21006,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2014,NA,NA,Total,NA,NA,3.468335788,2199,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2014,NA,NA,Total,NA,NA,3.534700315,722,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2013,NA,NA,Total,NA,NA,3.937784522,20624,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2013,NA,NA,Total,NA,NA,3.536036036,2166,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2013,NA,NA,Total,NA,NA,3.5792,709,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2012,NA,NA,Total,NA,NA,3.930769231,20255,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2012,NA,NA,Total,NA,NA,3.540832049,2132,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2012,NA,NA,Total,NA,NA,3.544715447,753,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2011,NA,NA,Total,NA,NA,4.026771654,20413,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2011,NA,NA,Total,NA,NA,3.60443038,2162,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2011,NA,NA,Total,NA,NA,3.695,715,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2010,NA,NA,Total,NA,NA,4.036565978,20280,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2010,NA,NA,Total,NA,NA,3.647058824,2204,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2010,NA,NA,Total,NA,NA,3.61,720,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2009,NA,NA,Total,NA,NA,4.016051364,20330,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2009,NA,NA,Total,NA,NA,3.632423756,2184,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2009,NA,NA,Total,NA,NA,3.605,691,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2008,NA,NA,Total,NA,NA,4.03,20641,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2008,NA,NA,Total,NA,NA,3.538971808,2197,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2008,NA,NA,Total,NA,NA,3.674137931,712,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2007,NA,NA,Total,NA,NA,4.013675214,20543,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2007,NA,NA,Total,NA,NA,3.567986231,2152,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2007,NA,NA,Total,NA,NA,3.555160142,703,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2006,NA,NA,Total,NA,NA,4.033928571,19922,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2006,NA,NA,Total,NA,NA,3.7,2090,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2006,NA,NA,Total,NA,NA,3.794007491,696,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2005,NA,NA,Total,NA,NA,4.051851852,19883,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2005,NA,NA,Total,NA,NA,3.740037951,2136,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2005,NA,NA,Total,NA,NA,3.75146771,621,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2004,NA,NA,Total,NA,NA,4.036538462,18367,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2004,NA,NA,Total,NA,NA,3.599214145,1978,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2004,NA,NA,Total,NA,NA,3.492,594,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2003,NA,NA,Total,NA,NA,4.055555556,18654,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2003,NA,NA,Total,NA,NA,3.515463918,995,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2003,NA,NA,Total,NA,NA,3.534136546,1960,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2003,NA,NA,Total,NA,NA,3.542443064,600,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2002,NA,NA,Total,NA,NA,4.108333333,18454,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2002,NA,NA,Total,NA,NA,3.545652174,966,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2002,NA,NA,Total,NA,NA,3.642706131,1941,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2002,NA,NA,Total,NA,NA,3.610503282,614,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2001,NA,NA,Total,NA,NA,4.105263158,18372,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2001,NA,NA,Total,NA,NA,3.54214123,925,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2001,NA,NA,Total,NA,NA,3.773333333,1938,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2001,NA,NA,Total,NA,NA,3.586206897,623,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,2000,NA,NA,Total,NA,NA,4.03196347,18285,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,2000,NA,NA,Total,NA,NA,3.088477366,933,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,2000,NA,NA,Total,NA,NA,3.184,1916,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,2000,NA,NA,Total,NA,NA,3.167364017,587,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,1999,NA,NA,Total,NA,NA,4.030952381,18194,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,1999,NA,NA,Total,NA,NA,3.6,898,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,1999,NA,NA,Total,NA,NA,3.782082324,1848,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,1999,NA,NA,Total,NA,NA,3.656641604,560,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,1998,NA,NA,Total,NA,NA,4.075,17839,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,1998,NA,NA,Total,NA,NA,3.632545932,864,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,1998,NA,NA,Total,NA,NA,3.757575758,1913,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,1998,NA,NA,Total,NA,NA,3.729442971,552,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,E92000001,England,1997,NA,NA,Total,NA,NA,4.041775457,17564,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,W92000004,Wales,1997,NA,NA,Total,NA,NA,3.689373297,835,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,S92000003,Scotland,1997,NA,NA,Total,NA,NA,3.860589812,1891,NA,NA,NA,Ratio,NA
+DR11,Distribution of earnings,Country,N92000002,Northern Ireland,1997,NA,NA,Total,NA,NA,3.911931818,568,NA,NA,NA,Ratio,NA

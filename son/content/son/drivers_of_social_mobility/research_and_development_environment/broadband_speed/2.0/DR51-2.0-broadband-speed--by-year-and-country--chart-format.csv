@@ -1,0 +1,21 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note
+DR51,Broadband speed,Country,K02000001,United Kingdom,2023,Total,NA,Total,NA,NA,NA,NA,76,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2022,Total,NA,Total,NA,NA,NA,NA,69,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2021,Total,NA,Total,NA,NA,NA,NA,46,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,United Kingdom,2020,Total,NA,Total,NA,NA,NA,NA,27,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,England,2023,Total,NA,Total,NA,NA,NA,NA,77,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,England,2022,Total,NA,Total,NA,NA,NA,NA,70,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,England,2021,Total,NA,Total,NA,NA,NA,NA,45,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,England,2020,Total,NA,Total,NA,NA,NA,NA,25,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Scotland,2023,Total,NA,Total,NA,NA,NA,NA,70,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Scotland,2022,Total,NA,Total,NA,NA,NA,NA,62,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Scotland,2021,Total,NA,Total,NA,NA,NA,NA,50,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Scotland,2020,Total,NA,Total,NA,NA,NA,NA,46,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Wales,2023,Total,NA,Total,NA,NA,NA,NA,63,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Wales,2022,Total,NA,Total,NA,NA,NA,NA,51,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Wales,2021,Total,NA,Total,NA,NA,NA,NA,35,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Wales,2020,Total,NA,Total,NA,NA,NA,NA,18,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Northern Ireland,2023,Total,NA,Total,NA,NA,NA,NA,91,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Northern Ireland,2022,Total,NA,Total,NA,NA,NA,NA,85,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Northern Ireland,2021,Total,NA,Total,NA,NA,NA,NA,74,NA,NA,NA,NA,Percentage,NA
+DR51,Broadband speed,Country,K02000001,Northern Ireland,2020,Total,NA,Total,NA,NA,NA,NA,54,NA,NA,NA,NA,Percentage,NA

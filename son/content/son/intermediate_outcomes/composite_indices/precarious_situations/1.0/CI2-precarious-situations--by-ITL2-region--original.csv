@@ -1,0 +1,42 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note,Quintile
+CI2,Precarious situations,ITL2,TLH2,Bedfordshire and Hertfordshire,NA,NA,NA,Total,NA,NA,0.301524639,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,Total,NA,NA,0.329232982,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLD6,Cheshire,NA,NA,NA,Total,NA,NA,0.240735392,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLK3,Cornwall and Isles of Scilly,NA,NA,NA,Total,NA,NA,0.489063097,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLD1,Cumbria,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLF1,Derbyshire and Nottinghamshire,NA,NA,NA,Total,NA,NA,0.193447581,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLK4,Devon,NA,NA,NA,Total,NA,NA,0.201100974,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLK2,Dorset and Somerset,NA,NA,NA,Total,NA,NA,0.230378461,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLH1,East Anglia,NA,NA,NA,Total,NA,NA,0.303149327,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLL2,East Wales,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLE1,East Yorkshire and Northern Lincolnshire,NA,NA,NA,Total,NA,NA,0.16044414,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLM7,Eastern Scotland,NA,NA,NA,Total,NA,NA,0.532966067,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLH3,Essex,NA,NA,NA,Total,NA,NA,0.224220964,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,Total,NA,NA,0.133566521,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,0.507892158,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLJ3,Hampshire and Isle of Wight,NA,NA,NA,Total,NA,NA,0.204385115,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLG1,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,Total,NA,NA,0.376801824,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLM6,Highlands and Islands,NA,NA,NA,Total,NA,NA,0.455113757,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLI4,Inner London - East,NA,NA,NA,Total,NA,NA,0.457052344,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLI3,Inner London - West,NA,NA,NA,Total,NA,NA,0.514564755,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,0.272071805,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLD4,Lancashire,NA,NA,NA,Total,NA,NA,0.356494893,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLF2,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,Total,NA,NA,0.221869937,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLF3,Lincolnshire,NA,NA,NA,Total,NA,NA,0.277110255,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLD7,Merseyside,NA,NA,NA,Total,NA,NA,0.554116649,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLM5,North Eastern Scotland,NA,NA,NA,Total,NA,NA,0.355665563,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLE2,North Yorkshire,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLN0,Northern Ireland,NA,NA,NA,Total,NA,NA,0.475651884,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLC2,"Northumberland, and Tyne and Wear",NA,NA,NA,Total,NA,NA,0.836101369,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLI5,Outer London - East and North East,NA,NA,NA,Total,NA,NA,0.241233245,NA,NA,NA,NA,NA,NA,2
+CI2,Precarious situations,ITL2,TLI6,Outer London - South,NA,NA,NA,Total,NA,NA,0.527374647,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLI7,Outer London - West and North West,NA,NA,NA,Total,NA,NA,0.399208822,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLG2,Shropshire and Staffordshire,NA,NA,NA,Total,NA,NA,0.31953563,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLE3,South Yorkshire,NA,NA,NA,Total,NA,NA,0.507731047,NA,NA,NA,NA,NA,NA,5
+CI2,Precarious situations,ITL2,TLM9,Southern Scotland,NA,NA,NA,Total,NA,NA,0.187734704,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLJ2,"Surrey, East and West Sussex",NA,NA,NA,Total,NA,NA,0.084704639,NA,NA,NA,NA,NA,NA,1
+CI2,Precarious situations,ITL2,TLC1,Tees Valley and Durham,NA,NA,NA,Total,NA,NA,0.289586433,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLM8,West Central Scotland,NA,NA,NA,Total,NA,NA,0.425035222,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLG3,West Midlands,NA,NA,NA,Total,NA,NA,0.362219459,NA,NA,NA,NA,NA,NA,4
+CI2,Precarious situations,ITL2,TLL1,West Wales and The Valleys,NA,NA,NA,Total,NA,NA,0.308985194,NA,NA,NA,NA,NA,NA,3
+CI2,Precarious situations,ITL2,TLE4,West Yorkshire,NA,NA,NA,Total,NA,NA,0.370555355,NA,NA,NA,NA,NA,NA,4

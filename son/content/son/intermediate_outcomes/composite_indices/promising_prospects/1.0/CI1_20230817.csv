@@ -1,0 +1,42 @@
+"Ind_code","Ind_name","Area_code","Area_name","Area_type","Age","SEB","Category_type","Category","Value","LCI","UCI","SE","Sample_size","Time_period","Unit","Value_note","Sex","Quintile"
+"CI1","Promising prospects","TLH2","Bedfordshire and Hertfordshire","ITL2",NA,NA,NA,NA,0.642002273,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLJ1","Berkshire, Buckinghamshire and Oxfordshire","ITL2",NA,NA,NA,NA,0.415468845,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLD6","Cheshire","ITL2",NA,NA,NA,NA,0.156786672,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLK3","Cornwall and Isles of Scilly","ITL2",NA,NA,NA,NA,0.229938213,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLD1","Cumbria","ITL2",NA,NA,NA,NA,0.360233401,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLF1","Derbyshire and Nottinghamshire","ITL2",NA,NA,NA,NA,0.25111879,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLK4","Devon","ITL2",NA,NA,NA,NA,0.430095801,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLK2","Dorset and Somerset","ITL2",NA,NA,NA,NA,0.447603284,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLH1","East Anglia","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLL2","East Wales","ITL2",NA,NA,NA,NA,0.340387397,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLE1","East Yorkshire and Northern Lincolnshire","ITL2",NA,NA,NA,NA,0.322373786,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLM7","Eastern Scotland","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLH3","Essex","ITL2",NA,NA,NA,NA,0.419147895,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLK1","Gloucestershire, Wiltshire and Bath/Bristol area","ITL2",NA,NA,NA,NA,0.210194444,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLD3","Greater Manchester","ITL2",NA,NA,NA,NA,0.260798572,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLJ3","Hampshire and Isle of Wight","ITL2",NA,NA,NA,NA,0.284456234,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLG1","Herefordshire, Worcestershire and Warwickshire","ITL2",NA,NA,NA,NA,0.415275206,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLM6","Highlands and Islands","ITL2",NA,NA,NA,NA,0.285128351,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLI4","Inner London - East","ITL2",NA,NA,NA,NA,0.640524955,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLI3","Inner London - West","ITL2",NA,NA,NA,NA,0.514215393,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLJ4","Kent","ITL2",NA,NA,NA,NA,0.292406439,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLD4","Lancashire","ITL2",NA,NA,NA,NA,0,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLF2","Leicestershire, Rutland and Northamptonshire","ITL2",NA,NA,NA,NA,0.470585508,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLF3","Lincolnshire","ITL2",NA,NA,NA,NA,0.117450904,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLD7","Merseyside","ITL2",NA,NA,NA,NA,0.275045261,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLM5","North Eastern Scotland","ITL2",NA,NA,NA,NA,0.37462946,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLE2","North Yorkshire","ITL2",NA,NA,NA,NA,0.591729886,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLN0","Northern Ireland","ITL2",NA,NA,NA,NA,0.252119882,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLC2","Northumberland, and Tyne and Wear","ITL2",NA,NA,NA,NA,0.181324286,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLI5","Outer London - East and North East","ITL2",NA,NA,NA,NA,0.705026477,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLI6","Outer London - South","ITL2",NA,NA,NA,NA,0.49845474,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLI7","Outer London - West and North West","ITL2",NA,NA,NA,NA,0.600074903,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLG2","Shropshire and Staffordshire","ITL2",NA,NA,NA,NA,0.270478988,NA,NA,NA,NA,NA,NA,NA,"Total",2
+"CI1","Promising prospects","TLE3","South Yorkshire","ITL2",NA,NA,NA,NA,0.076701765,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLM9","Southern Scotland","ITL2",NA,NA,NA,NA,0.131566033,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLJ2","Surrey, East and West Sussex","ITL2",NA,NA,NA,NA,0.870359624,NA,NA,NA,NA,NA,NA,NA,"Total",5
+"CI1","Promising prospects","TLC1","Tees Valley and Durham","ITL2",NA,NA,NA,NA,0.040580522,NA,NA,NA,NA,NA,NA,NA,"Total",1
+"CI1","Promising prospects","TLM8","West Central Scotland","ITL2",NA,NA,NA,NA,0.297985392,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLG3","West Midlands","ITL2",NA,NA,NA,NA,0.39184467,NA,NA,NA,NA,NA,NA,NA,"Total",4
+"CI1","Promising prospects","TLL1","West Wales and The Valleys","ITL2",NA,NA,NA,NA,0.297828072,NA,NA,NA,NA,NA,NA,NA,"Total",3
+"CI1","Promising prospects","TLE4","West Yorkshire","ITL2",NA,NA,NA,NA,0.102969694,NA,NA,NA,NA,NA,NA,NA,"Total",1
