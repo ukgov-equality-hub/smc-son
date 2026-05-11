@@ -74,7 +74,11 @@ def create_app(test_config=None):
     # Filters
     app.register_blueprint(filters.blueprint)
 
-    # Catalogue
+    # Redirects
+    from son.redirects import redirects
+    app.register_blueprint(redirects)
+
+    # SON
     from son.son import son
     app.register_blueprint(son)
 

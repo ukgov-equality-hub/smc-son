@@ -3,7 +3,7 @@ import glob
 import os
 import re
 from pathlib import Path
-from flask import Blueprint, render_template, abort, redirect, send_file
+from flask import Blueprint, render_template, abort, send_file
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
@@ -12,11 +12,6 @@ from son.utils.page_history import get_page_history, create_page_history_version
 
 son = Blueprint('son', __name__)
 logger = Logger()
-
-
-@son.route('/drivers_of_social_mobility/research_and_development_environment/university_research_students', methods=['GET'])
-def redirect_DR53_university_research_students():
-    return redirect("/drivers_of_social_mobility/research_and_development_environment/postgraduate_education")
 
 
 @son.route('/', methods=['GET'])
@@ -29,11 +24,6 @@ def index():
         indicator=None,
         title='Welcome'
     )
-
-
-@son.route('/social_mobility_by_area', methods=['GET'])
-def area_home_page_without_version():
-    return redirect("/social_mobility_by_area/latest")
 
 
 @son.route('/social_mobility_by_area/latest', methods=['GET'])
@@ -72,11 +62,6 @@ def get_area_home_page(major_version: int, minor_version: int):
         page_history_version=page_history_version,
         page_title=page_history_version.title
     )
-
-
-@son.route('/social_mobility_by_area/<area>', methods=['GET'])
-def area_page(area):
-    return redirect(f"/social_mobility_by_area/ITL2_regions/{area}")
 
 
 @son.route('/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
@@ -177,11 +162,6 @@ def domain_page(domain):
         markdown_to_html=str(content),
         page_title=get_h1_content(content)
     )
-
-
-@son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
-def indicator_page_without_version(domain, subdomain, indicator):
-    return redirect(f"/{domain}/{subdomain}/{indicator}/latest")
 
 
 @son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
