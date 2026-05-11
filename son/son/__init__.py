@@ -14,7 +14,7 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-@son.route('/', methods=['GET'])
+@son.route('/state-of-the-nation', methods=['GET'])
 def index():
     return render_template(
         'homepage/homepage.html',
@@ -26,14 +26,14 @@ def index():
     )
 
 
-@son.route('/social_mobility_by_area/latest', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
 def area_home_page_latest():
     dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_area_home_page(latest_major_version, latest_minor_version)
 
 
-@son.route('/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
 def area_home_page_with_version(major_version, minor_version):
     return get_area_home_page(int(major_version), int(minor_version))
 
@@ -64,7 +64,7 @@ def get_area_home_page(major_version: int, minor_version: int):
     )
 
 
-@son.route('/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
 def area_page_ITL2(area):
     areas = []
     for a in menu['areas']:
@@ -84,7 +84,7 @@ def area_page_ITL2(area):
     )
 
 
-@son.route('/social_mobility_by_area/203_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/203_regions/<area>', methods=['GET'])
 def area_page_203_regions(area):
 
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
@@ -117,7 +117,7 @@ def area_page_203_regions(area):
 
 
 
-@son.route('/social_mobility_by_area/205_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/205_regions/<area>', methods=['GET'])
 def area_page_205_regions(area):
 
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
@@ -145,7 +145,7 @@ def area_page_205_regions(area):
 
 
 
-@son.route('/<domain>', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>', methods=['GET'])
 def domain_page(domain):
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
     if not Path(file_path).is_file():
@@ -164,19 +164,19 @@ def domain_page(domain):
     )
 
 
-@son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
 def indicator_page_latest(domain, subdomain, indicator):
     dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_indicator_page(domain, subdomain, indicator, latest_major_version, latest_minor_version)
 
 
-@son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
 def indicator_page_with_version(domain, subdomain, indicator, major_version, minor_version):
     return get_indicator_page(domain, subdomain, indicator, int(major_version), int(minor_version))
 
 
-@son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
 def csv_file_download(domain, subdomain, indicator, major_version, minor_version, csv_file_name):
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
     return send_file(file_path)
@@ -229,7 +229,7 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
     )
 
 
-@son.route('/about-our-analysis', methods=['GET'])
+@son.route('/state-of-the-nation/about-our-analysis', methods=['GET'])
 def about_our_analysis():
     return render_template(
         'shared/about-our-analysis.html',
