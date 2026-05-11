@@ -114,7 +114,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
 [Intermediate outcomes](/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.
 
-[Drivers of social mobility](/drivers_of_social_mobility)
+[Drivers of social mobility](/state-of-the-nation/drivers_of_social_mobility)
 are the background conditions that make social mobility easier.
 
 ## Read the full report

@@ -132,7 +132,7 @@ as they move through education and into work.
 [Mobility outcomes](/mobility_outcomes)
 look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
-[Drivers of social mobility](/drivers_of_social_mobility)
+[Drivers of social mobility](/state-of-the-nation/drivers_of_social_mobility)
 are the background conditions that make social mobility easier.
 
 ## Read the full report

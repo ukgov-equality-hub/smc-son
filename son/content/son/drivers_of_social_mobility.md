@@ -13,7 +13,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart1',
-                '/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/3.0/DR12-3.0-childhood-poverty--by-year-UKonly--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/3.0/DR12-3.0-childhood-poverty--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
@@ -39,7 +39,7 @@ Drivers of social mobility are the background conditions that make social mobili
             The percentage of children living in relative poverty in the UK (after housing costs) has gone up to around 30% since 2012,
             below the levels reached in the 1990s.
         </p>
-        <a href="/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/latest"
+        <a href="/state-of-the-nation/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about childhood poverty</span>
@@ -55,7 +55,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart2',
-                '/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/3.0/DR32-3.0-youth-unemployment--by-year--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/3.0/DR32-3.0-youth-unemployment--by-year--chart-format.csv',
                 {
                     "type": "bary",
                     "xkey": "secondary_split_value",
@@ -80,7 +80,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <p class="govuk-body">
             Unemployment among young people is the highest it has been since 2020, at 16% in 2024.
         </p>
-        <a href="/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/latest"
+        <a href="/state-of-the-nation/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about youth unemployment</span>
@@ -96,7 +96,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart3',
-                '/drivers_of_social_mobility/research_and_development_environment/broadband_speed/3.0/DR51-3.0-broadband-speed--by-year-UKonly--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/research_and_development_environment/broadband_speed/3.0/DR51-3.0-broadband-speed--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
@@ -122,7 +122,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <p class="govuk-body">
             The percentage of homes and businesses with access to a gigabit-capable broadband connection has gone up across the UK since 2020, reaching 82% in 2024.
         </p>
-        <a href="/drivers_of_social_mobility/research_and_development_environment/broadband_speed/latest"
+        <a href="/state-of-the-nation/drivers_of_social_mobility/research_and_development_environment/broadband_speed/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about broadband speed</span>
