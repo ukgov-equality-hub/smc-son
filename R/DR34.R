@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-dr34-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "work_opportunities_for_young_people"
 indicator_name = "labour_market_earnings_of_young_people"

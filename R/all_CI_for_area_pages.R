@@ -14,7 +14,7 @@ source("_shared.R")
 
 input_folder = "input/SON25/"
 
-output_folder = "../son/content/social_mobility_by_area/3.0/"
+output_folder = "../son/content/son/social_mobility_by_area/3.0/"
 
 
 

@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-in21-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "routes_into_work_(16_to_29_years)"
 indicator_name = "destinations_following_the_end_of_compulsory_full-time_education"

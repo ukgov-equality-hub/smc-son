@@ -28,7 +28,7 @@ def index():
 
 @son.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
 def area_home_page_latest():
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_area_home_page(latest_major_version, latest_minor_version)
 
@@ -39,7 +39,7 @@ def area_home_page_with_version(major_version, minor_version):
 
 
 def get_area_home_page(major_version: int, minor_version: int):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
     file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
@@ -95,7 +95,7 @@ def area_page_203_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
@@ -126,7 +126,7 @@ def area_page_205_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
@@ -143,7 +143,7 @@ def area_page_205_regions(area):
 
 @son.route('/state-of-the-nation/<domain>', methods=['GET'])
 def domain_page(domain):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}.md"
     if not Path(file_path).is_file():
         abort(404)
 
@@ -162,7 +162,7 @@ def domain_page(domain):
 
 @son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
 def indicator_page_latest(domain, subdomain, indicator):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_indicator_page(domain, subdomain, indicator, latest_major_version, latest_minor_version)
 
@@ -174,7 +174,7 @@ def indicator_page_with_version(domain, subdomain, indicator, major_version, min
 
 @son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
 def csv_file_download(domain, subdomain, indicator, major_version, minor_version, csv_file_name):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
     return send_file(file_path)
 
 
@@ -199,7 +199,7 @@ def get_latest_md_file_in_directory(dir_path):
 
 
 def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):
-    dir_path: str = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    dir_path: str = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}"
     file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)

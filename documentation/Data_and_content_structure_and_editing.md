@@ -13,7 +13,7 @@ The file `/son/utils/menu.py` stores a JSON object containing the structure of t
 
 ## Content
 
-Content is stored in `.md` (markdown) files in the `/son/content/` folder. The folder contains individual markdown files for each domain homepage (e.g. mobility_outcomes.md). Individual indicator markdown files are stored within subfolders.
+Content is stored in `.md` (markdown) files in the `/son/content/son/` folder. The folder contains individual markdown files for each domain homepage (e.g. mobility_outcomes.md). Individual indicator markdown files are stored within subfolders.
 
 Whilst the markdown files contain mostly markdown, certain tags have been used to control the content on the site:
 
