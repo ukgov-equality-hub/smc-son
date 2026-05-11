@@ -111,7 +111,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
 </div>
 
 ## Elsewhere in State of the Nation 2025
-[Intermediate outcomes](/intermediate_outcomes)
+[Intermediate outcomes](/state-of-the-nation/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.
 
 [Drivers of social mobility](/state-of-the-nation/drivers_of_social_mobility)

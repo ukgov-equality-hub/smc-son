@@ -14,7 +14,7 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart1',
-                '/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/3.0/IN13-3.0-attainment-at-age-16--by-ethnicity--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/3.0/IN13-3.0-attainment-at-age-16--by-ethnicity--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bar",
@@ -38,7 +38,7 @@ as they move through education and into work.
         <p class="govuk-body">
             The attainment of pupils eligible for free school meals varies greatly across ethnicities.
         </p>
-        <a href="/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/latest"
+        <a href="/state-of-the-nation/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about attainment at age 16</span>
@@ -54,7 +54,7 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart2',
-                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/3.0/IN31-3.0-economic-activity--by-SEB-and-sex--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/3.0/IN31-3.0-economic-activity--by-SEB-and-sex--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
@@ -79,7 +79,7 @@ as they move through education and into work.
         <p class="govuk-body">
             Young women are less likely to be economically active than young men from the same socio-economic background.
         </p>
-        <a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/latest"
+        <a href="/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about economic activity</span>
@@ -95,7 +95,7 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart3',
-                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB-and-disability--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB-and-disability--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
@@ -120,7 +120,7 @@ as they move through education and into work.
         <p class="govuk-body">
             Young people with a disability tend to earn significantly less than those without a disability.
         </p>
-        <a href="/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/latest"
+        <a href="/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/latest"
            class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about earnings of young people aged 25 to 29 years</span>

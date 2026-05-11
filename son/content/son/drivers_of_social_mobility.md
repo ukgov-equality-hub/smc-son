@@ -131,10 +131,10 @@ Drivers of social mobility are the background conditions that make social mobili
 </div>
 
 ## Elsewhere in State of the Nation 2025
-[Mobility outcomes](/mobility_outcomes)
+[Mobility outcomes](/state-of-the-nation/mobility_outcomes)
 look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
-[Intermediate outcomes](/intermediate_outcomes)
+[Intermediate outcomes](/state-of-the-nation/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.
 
 ## Read the full report
