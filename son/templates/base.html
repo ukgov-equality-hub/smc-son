@@ -112,7 +112,7 @@
                     <ul class="govuk-service-navigation__list" id="navigation">
                         {% for thisdomain in menu.domains %}
                             <li class="govuk-service-navigation__item {% if (thisdomain.name | url_link) == (domain | url_link) %}govuk-service-navigation__item--active{% endif %}">
-                                <a href="/{{ thisdomain.name | url_link }}"
+                                <a href="/state-of-the-nation/{{ thisdomain.name | url_link }}"
                                    class="govuk-service-navigation__link"
                                    {% if (thisdomain.name | url_link) == (domain | url_link) %} aria-current="true"{% endif %}>
                                     {% if (thisdomain.name | url_link) == (domain | url_link) %}

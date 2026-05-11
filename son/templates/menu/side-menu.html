@@ -10,7 +10,7 @@
                     <ul id="sidemenu" class="moj-side-navigation__list">
                         {% for indicator in subdomain.indicators %}
                         <li class="moj-side-navigation__item{{ [indicator.name, selected] | menuitem_isactive }}{{ [menu, indicator.name, selected, 'indicator'] | menuitem_isopen }}">
-                            <a href="/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}/{{ indicator.name | url_link }}">{{ indicator.name }}</a>
+                            <a href="/state-of-the-nation/{{ domain.name | url_link }}/{{ subdomain.name | url_link }}/{{ indicator.name | url_link }}/latest">{{ indicator.name }}</a>
                         </li>
                         {% endfor %}
                     </ul>
@@ -22,7 +22,7 @@
 
         <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
         <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
-            <li class="moj-side-navigation__item"><a href="/about-our-analysis">About our analysis</a></li>
+            <li class="moj-side-navigation__item"><a href="/state-of-the-nation/about-our-analysis">About our analysis</a></li>
         </ul>
     </nav>
 {% endmacro %}
