@@ -129,7 +129,7 @@ as they move through education and into work.
 </div>
 
 ## Elsewhere in State of the Nation 2025
-[Mobility outcomes](/mobility_outcomes)
+[Mobility outcomes](/state-of-the-nation/mobility_outcomes)
 look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
 [Drivers of social mobility](/state-of-the-nation/drivers_of_social_mobility)

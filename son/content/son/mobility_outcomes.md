@@ -35,7 +35,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
             )
         </script>
         <p class="govuk-body">Relative occupational mobility has been improving since 2014, with significant differences between 2019 to 2022.</p>
-        <a href="/mobility_outcomes/occupation/relative_occupational_mobility" class="govuk-link">
+        <a href="/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about relative occupational mobility</span>
         </a>
@@ -70,7 +70,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
             )
         </script>
         <p class="govuk-body">Upwards educational mobility rates are high, reflecting the expansion of school and higher education qualifications since the 1960s.</p>
-        <a href="/mobility_outcomes/education/absolute_educational_mobility" class="govuk-link">
+        <a href="/state-of-the-nation/mobility_outcomes/education/absolute_educational_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about absolute educational mobility</span>
         </a>
@@ -103,7 +103,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
             )
         </script>
         <p class="govuk-body">Women are significantly less likely than men to own their homes.</p>
-        <a href="/mobility_outcomes/housing/absolute_housing_mobility" class="govuk-link">
+        <a href="/state-of-the-nation/mobility_outcomes/housing/absolute_housing_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about absolute housing mobility</span>
         </a>
