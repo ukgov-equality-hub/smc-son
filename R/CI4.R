@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-ci4-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "composite_indices"
 indicator_name = "promising_prospects"

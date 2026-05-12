@@ -3,7 +3,7 @@ import glob
 import os
 import re
 from pathlib import Path
-from flask import Blueprint, render_template, abort, redirect, send_file
+from flask import Blueprint, render_template, abort, send_file
 from son.utils.get_markdown_content import get_markdown_content, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
@@ -14,12 +14,7 @@ son = Blueprint('son', __name__)
 logger = Logger()
 
 
-@son.route('/drivers_of_social_mobility/research_and_development_environment/university_research_students', methods=['GET'])
-def redirect_DR53_university_research_students():
-    return redirect("/drivers_of_social_mobility/research_and_development_environment/postgraduate_education")
-
-
-@son.route('/', methods=['GET'])
+@son.route('/state-of-the-nation', methods=['GET'])
 def index():
     return render_template(
         'homepage/homepage.html',
@@ -31,30 +26,20 @@ def index():
     )
 
 
-@son.route('/health-check', methods=['GET'])
-def health_check():
-    return 'Health OK'
-
-
-@son.route('/social_mobility_by_area', methods=['GET'])
-def area_home_page_without_version():
-    return redirect("/social_mobility_by_area/latest")
-
-
-@son.route('/social_mobility_by_area/latest', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
 def area_home_page_latest():
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_area_home_page(latest_major_version, latest_minor_version)
 
 
-@son.route('/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
 def area_home_page_with_version(major_version, minor_version):
     return get_area_home_page(int(major_version), int(minor_version))
 
 
 def get_area_home_page(major_version: int, minor_version: int):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
     file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
@@ -79,12 +64,7 @@ def get_area_home_page(major_version: int, minor_version: int):
     )
 
 
-@son.route('/social_mobility_by_area/<area>', methods=['GET'])
-def area_page(area):
-    return redirect(f"/social_mobility_by_area/ITL2_regions/{area}")
-
-
-@son.route('/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
 def area_page_ITL2(area):
     areas = []
     for a in menu['areas']:
@@ -104,9 +84,8 @@ def area_page_ITL2(area):
     )
 
 
-@son.route('/social_mobility_by_area/203_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/203_regions/<area>', methods=['GET'])
 def area_page_203_regions(area):
-
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
         with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
             reader = csv.DictReader(csv_file)
@@ -116,7 +95,7 @@ def area_page_203_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
@@ -136,10 +115,8 @@ def area_page_203_regions(area):
     )
 
 
-
-@son.route('/social_mobility_by_area/205_regions/<area>', methods=['GET'])
+@son.route('/state-of-the-nation/social_mobility_by_area/205_regions/<area>', methods=['GET'])
 def area_page_205_regions(area):
-
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
         with open(csv_file_path, encoding='utf-8-sig', errors='ignore') as csv_file:
             reader = csv.DictReader(csv_file)
@@ -149,7 +126,7 @@ def area_page_205_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
@@ -164,10 +141,9 @@ def area_page_205_regions(area):
     )
 
 
-
-@son.route('/<domain>', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>', methods=['GET'])
 def domain_page(domain):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}.md"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}.md"
     if not Path(file_path).is_file():
         abort(404)
 
@@ -184,26 +160,21 @@ def domain_page(domain):
     )
 
 
-@son.route('/<domain>/<subdomain>/<indicator>', methods=['GET'])
-def indicator_page_without_version(domain, subdomain, indicator):
-    return redirect(f"/{domain}/{subdomain}/{indicator}/latest")
-
-
-@son.route('/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/latest', methods=['GET'])
 def indicator_page_latest(domain, subdomain, indicator):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}"
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
     return get_indicator_page(domain, subdomain, indicator, latest_major_version, latest_minor_version)
 
 
-@son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>', methods=['GET'])
 def indicator_page_with_version(domain, subdomain, indicator, major_version, minor_version):
     return get_indicator_page(domain, subdomain, indicator, int(major_version), int(minor_version))
 
 
-@son.route('/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
+@son.route('/state-of-the-nation/<domain>/<subdomain>/<indicator>/<major_version>.<minor_version>/<csv_file_name>.csv', methods=['GET'])
 def csv_file_download(domain, subdomain, indicator, major_version, minor_version, csv_file_name):
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}/{major_version}.{minor_version}/{csv_file_name}.csv"
     return send_file(file_path)
 
 
@@ -228,7 +199,7 @@ def get_latest_md_file_in_directory(dir_path):
 
 
 def get_indicator_page(domain: str, subdomain: str, indicator: str, major_version: int, minor_version: int):
-    dir_path: str = f"{os.path.dirname(os.path.realpath(__file__))}/../content/{domain}/{subdomain}/{indicator}"
+    dir_path: str = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/{domain}/{subdomain}/{indicator}"
     file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
@@ -251,4 +222,17 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
         page_history_version=page_history_version,
         page_title=page_history_version.title,
         page_replacements=page_replacements
+    )
+
+
+@son.route('/state-of-the-nation/about-our-analysis', methods=['GET'])
+def about_our_analysis():
+    return render_template(
+        'shared/about-our-analysis.html',
+        menu=menu,
+        domain=None,
+        subdomain=None,
+        indicator=None,
+        title='About our analysis',
+        form=None
     )

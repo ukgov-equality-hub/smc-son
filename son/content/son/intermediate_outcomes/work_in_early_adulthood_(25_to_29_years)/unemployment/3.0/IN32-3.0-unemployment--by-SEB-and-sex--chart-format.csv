@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower working","sex","Men",,,"2014-2024",7.504,6.491,8.636,2415,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower working","sex","Women",,,"2014-2024",7.047,6.062,8.145,2417,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher working","sex","Men",,,"2014-2024",4.911,4.104,5.838,2510,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher working","sex","Women",,,"2014-2024",4.475,3.717,5.383,2501,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Intermediate","sex","Men",,,"2014-2024",4.103,3.448,4.844,3251,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Intermediate","sex","Women",,,"2014-2024",4.97,4.274,5.804,3250,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower professional","sex","Men",,,"2014-2024",3.822,3.152,4.61,2804,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower professional","sex","Women",,,"2014-2024",3.752,3.13,4.524,3026,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher professional","sex","Men",,,"2014-2024",3.902,3.175,4.766,2413,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher professional","sex","Women",,,"2014-2024",3.047,2.447,3.823,2579,"Percent",

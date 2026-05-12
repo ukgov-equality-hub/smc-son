@@ -74,7 +74,11 @@ def create_app(test_config=None):
     # Filters
     app.register_blueprint(filters.blueprint)
 
-    # Catalogue
+    # Redirects
+    from son.redirects import redirects
+    app.register_blueprint(redirects)
+
+    # SON
     from son.son import son
     app.register_blueprint(son)
 
@@ -82,8 +86,8 @@ def create_app(test_config=None):
     from son.feedback import feedback
     app.register_blueprint(feedback)
 
-    # Policies
-    from son.policies import policies
-    app.register_blueprint(policies)
+    # Shared
+    from son.shared import shared
+    app.register_blueprint(shared)
 
     return app

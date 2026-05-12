@@ -1,0 +1,821 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","group_number"
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeen City","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.668,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeenshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.876,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Angus","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.87,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.742,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barking and Dagenham","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.032,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnet","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.4,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnsley","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.403,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.173,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bedford","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.026,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bexley","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.792,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Birmingham","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.289,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.671,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackpool","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.645,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blaenau Gwent","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.162,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bolton","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.211,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.089,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bracknell Forest","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.498,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bradford","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.641,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brent","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.645,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bridgend","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.961,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brighton and Hove","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.205,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bristol, City of","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.803,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bromley","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.646,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Buckinghamshire","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.565,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bury","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.328,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Caerphilly","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.949,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Calderdale","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.273,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.745,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Camden and City of London","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.184,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cardiff","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.567,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Carmarthenshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.99,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Central Bedfordshire","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.571,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ceredigion","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.309,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire East","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.381,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.365,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","City of Edinburgh","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.956,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Clackmannanshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.579,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Conwy","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.957,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.251,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Coventry","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.261,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Croydon","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.034,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cumbria","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.879,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Darlington","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.816,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Denbighshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.753,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derby","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.107,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derbyshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.665,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Devon CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.487,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Doncaster","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.614,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dorset","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.574,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dudley","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.099,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.957,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dundee City","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.985,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Durham","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.203,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ealing","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.453,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Ayrshire","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.002,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Dunbartonshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.271,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Lothian","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.799,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Renfrewshire","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.532,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.708,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Sussex CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.498,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Enfield","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.57,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Essex","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.872,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Falkirk","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.222,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Fife","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.732,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Flintshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.179,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gateshead","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.17,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Glasgow City","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.119,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gloucestershire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.122,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Greenwich","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.113,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gwynedd","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.048,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hackney","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.605,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Halton","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.635,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",3.605,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hampshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.465,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Haringey","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.474,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Harrow","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.376,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hartlepool","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.081,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Havering","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.547,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Herefordshire, County of","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.646,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hertfordshire CC","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.408,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Highland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.858,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hillingdon","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.065,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hounslow","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.868,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Inverclyde","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.631,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Anglesey","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.325,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Wight","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.82,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Islington","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.304,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.871,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kent","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.101,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.279,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Thames","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.723,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kirklees","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.19,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Knowsley","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.673,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lambeth","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.168,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lancashire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.324,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leeds","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.056,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicester","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.742,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicestershire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.148,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lewisham","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.568,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lincolnshire CC","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.026,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Liverpool","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.653,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Luton","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.186,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Manchester","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.117,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Medway","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.183,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.075,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merton","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.633,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Middlesbrough","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.198,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Midlothian","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.025,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Milton Keynes","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.564,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Monmouthshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.647,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Moray","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.002,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.898,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Neath Port Talbot","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.922,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.276,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newham","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.316,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newport","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.414,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.112,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North East Lincolnshire","time_period","2000 to 2005","zscore_category","Least Favourable",,,,,"2000 to 2005",-1.678,,,,"z-score",,1
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lanarkshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.571,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lincolnshire","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.001,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Northamptonshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.091,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Somerset","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.109,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Tyneside","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.043,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Yorkshire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.064,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northern Ireland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.976,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northumberland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.83,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.392,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottingham","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.564,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottinghamshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.494,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oldham","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.649,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Orkney Islands","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.678,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oxfordshire CC","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.911,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Pembrokeshire","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.046,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Perth and Kinross","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.189,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Peterborough","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.532,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Plymouth","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.474,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Portsmouth","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.023,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Powys","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.805,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Reading","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.371,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redbridge","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.189,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.994,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Renfrewshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.4,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.284,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Richmond upon Thames","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.319,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rochdale","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.537,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rotherham","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.55,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rutland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.573,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Salford","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.019,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sandwell","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.591,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Scottish Borders","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.991,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sefton","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.491,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sheffield","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.32,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shetland Islands","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.701,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shropshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.419,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Slough","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.327,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Solihull","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.433,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Somerset CC","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.651,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Ayrshire","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.688,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Gloucestershire","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.562,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Lanarkshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.154,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Tyneside","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.871,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southampton","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.054,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southend-on-Sea","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.247,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southwark","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.25,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","St Helens","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.416,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Staffordshire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.203,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stirling","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.414,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockport","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.138,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.068,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.178,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Suffolk CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.07,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sunderland","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.849,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Surrey","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.269,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sutton","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.69,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swansea","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.154,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swindon","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.261,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tameside","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.017,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Telford and Wrekin","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.529,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Thurrock","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.005,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torbay","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.802,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torfaen","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.445,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tower Hamlets","time_period","2000 to 2005","zscore_category","Favourable",,,,,"2000 to 2005",1.382,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Trafford","time_period","2000 to 2005","zscore_category","Upper Middling",,,,,"2000 to 2005",0.672,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.745,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wakefield","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.739,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Walsall","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.668,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Waltham Forest","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.087,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wandsworth","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",4.085,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warrington","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.283,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warwickshire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.194,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Berkshire","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.534,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Dunbartonshire","time_period","2000 to 2005","zscore_category","Unfavourable",,,,,"2000 to 2005",-1.076,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Lothian","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.288,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Northamptonshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.194,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Sussex","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",0.148,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Westminster","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",2.874,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wigan","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wiltshire","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.363,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.956,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wirral","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.377,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wokingham","time_period","2000 to 2005","zscore_category","Most Favourable",,,,,"2000 to 2005",1.645,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wolverhampton","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.781,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Worcestershire CC","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.379,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wrexham","time_period","2000 to 2005","zscore_category","Lower Middling",,,,,"2000 to 2005",-0.729,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","York","time_period","2000 to 2005","zscore_category","Middling",,,,,"2000 to 2005",-0.224,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeen City","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.485,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeenshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.241,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Angus","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.341,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.255,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barking and Dagenham","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.113,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnet","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",1.577,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnsley","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.302,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.608,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bedford","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.499,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bexley","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.597,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Birmingham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.566,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.81,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackpool","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.645,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blaenau Gwent","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.263,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bolton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.208,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.503,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bracknell Forest","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.24,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bradford","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.444,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brent","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.596,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bridgend","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.638,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brighton and Hove","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.227,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bristol, City of","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.358,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bromley","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",1.943,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Buckinghamshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.324,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bury","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.153,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Caerphilly","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.298,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Calderdale","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.424,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.754,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Camden and City of London","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",3.358,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cardiff","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.694,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Carmarthenshire","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.389,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Central Bedfordshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ceredigion","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.445,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire East","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.128,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.433,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","City of Edinburgh","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.774,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Clackmannanshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.682,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Conwy","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.921,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.917,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Coventry","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.517,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Croydon","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.061,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cumbria","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.576,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Darlington","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.654,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Denbighshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.94,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derby","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.254,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derbyshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.302,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Devon CC","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.688,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Doncaster","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.399,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dorset","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.307,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dudley","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.11,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.344,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dundee City","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.188,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Durham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.543,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ealing","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.648,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Ayrshire","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.322,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Dunbartonshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.82,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Lothian","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.442,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Renfrewshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.95,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.459,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Sussex CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.344,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Enfield","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.145,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Essex","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.497,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Falkirk","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.595,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Fife","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.702,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Flintshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.171,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gateshead","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.249,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Glasgow City","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.092,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gloucestershire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.124,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Greenwich","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.365,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gwynedd","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.809,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hackney","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.229,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Halton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.099,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",3.944,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hampshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.317,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Haringey","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.703,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Harrow","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.361,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hartlepool","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.401,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Havering","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.194,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Herefordshire, County of","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.563,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hertfordshire CC","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.079,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Highland","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.94,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hillingdon","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.675,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hounslow","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.81,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Inverclyde","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.575,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Anglesey","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.885,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Wight","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.889,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Islington","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",2.633,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",3.449,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kent","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.313,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.277,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Thames","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.594,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kirklees","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.509,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Knowsley","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.669,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lambeth","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",2.849,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lancashire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.566,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leeds","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.207,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicester","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.983,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicestershire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.112,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lewisham","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.026,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lincolnshire CC","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.825,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Liverpool","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.49,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Luton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.434,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Manchester","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.09,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Medway","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.268,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.071,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merton","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",1.752,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Middlesbrough","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.062,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Midlothian","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.132,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Milton Keynes","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.663,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Monmouthshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.14,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Moray","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.74,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.607,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Neath Port Talbot","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.568,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.542,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.506,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newport","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.485,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.3,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North East Lincolnshire","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.163,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lanarkshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.558,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lincolnshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.76,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Northamptonshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Somerset","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.134,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Tyneside","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.01,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Yorkshire CC","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.668,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northern Ireland","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.849,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northumberland","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.219,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottingham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.611,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottinghamshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.616,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oldham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.752,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Orkney Islands","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.945,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oxfordshire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.468,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Pembrokeshire","time_period","2006 to 2011","zscore_category","Least Favourable",,,,,"2006 to 2011",-1.531,,,,"z-score",,1
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Perth and Kinross","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.508,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Peterborough","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.475,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Plymouth","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Portsmouth","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.42,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Powys","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.128,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Reading","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",1.672,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redbridge","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.752,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.548,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Renfrewshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.273,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.947,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Richmond upon Thames","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",2.185,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rochdale","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.43,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rotherham","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.543,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rutland","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.629,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Salford","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.246,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sandwell","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.108,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Scottish Borders","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.316,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sefton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.12,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sheffield","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.095,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shetland Islands","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.431,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shropshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.461,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Slough","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.487,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Solihull","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.172,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Somerset CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.285,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Ayrshire","time_period","2006 to 2011","zscore_category","Unfavourable",,,,,"2006 to 2011",-1.115,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Gloucestershire","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.934,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Lanarkshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.39,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Tyneside","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.229,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southampton","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.537,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southend-on-Sea","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.925,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southwark","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",2.091,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","St Helens","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.563,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Staffordshire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.297,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stirling","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.606,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockport","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.918,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.253,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.603,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Suffolk CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.16,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sunderland","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.803,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Surrey","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.764,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sutton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.371,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swansea","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.898,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swindon","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.48,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tameside","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.387,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Telford and Wrekin","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.38,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Thurrock","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.89,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torbay","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.822,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torfaen","time_period","2006 to 2011","zscore_category","Least Favourable",,,,,"2006 to 2011",-1.538,,,,"z-score",,1
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tower Hamlets","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",1.972,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Trafford","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.504,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.47,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wakefield","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.391,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Walsall","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.534,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Waltham Forest","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.035,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wandsworth","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",4.592,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warrington","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.168,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warwickshire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.24,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Berkshire","time_period","2006 to 2011","zscore_category","Upper Middling",,,,,"2006 to 2011",0.854,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Dunbartonshire","time_period","2006 to 2011","zscore_category","Lower Middling",,,,,"2006 to 2011",-0.654,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Lothian","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.459,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Northamptonshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.013,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Sussex","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.074,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Westminster","time_period","2006 to 2011","zscore_category","Most Favourable",,,,,"2006 to 2011",3.486,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wigan","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.114,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wiltshire","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.293,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.282,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wirral","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.242,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wokingham","time_period","2006 to 2011","zscore_category","Favourable",,,,,"2006 to 2011",1.46,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wolverhampton","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.436,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Worcestershire CC","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.189,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wrexham","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",-0.278,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","York","time_period","2006 to 2011","zscore_category","Middling",,,,,"2006 to 2011",0.121,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeen City","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.856,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeenshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.014,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Angus","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.455,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.146,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barking and Dagenham","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.054,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnet","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.083,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnsley","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.172,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.292,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bedford","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.206,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bexley","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.21,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Birmingham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.901,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.55,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackpool","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.475,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blaenau Gwent","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.336,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bolton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.535,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.215,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bracknell Forest","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.069,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bradford","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.765,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brent","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.463,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bridgend","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.503,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brighton and Hove","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.357,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bristol, City of","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.31,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bromley","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.248,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Buckinghamshire","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.665,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bury","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.221,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Caerphilly","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.734,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Calderdale","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.244,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.762,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Camden and City of London","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.685,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cardiff","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.204,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Carmarthenshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.101,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Central Bedfordshire","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.153,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ceredigion","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.36,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire East","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.188,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.151,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","City of Edinburgh","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.163,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Clackmannanshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.475,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Conwy","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.366,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.871,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Coventry","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.739,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Croydon","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.237,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cumbria","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.34,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Darlington","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.358,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Denbighshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.078,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derby","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.305,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derbyshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.021,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Devon CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.733,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Doncaster","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.715,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dorset","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.201,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dudley","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.658,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.345,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dundee City","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.281,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Durham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.939,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ealing","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.523,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Ayrshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.18,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Dunbartonshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.336,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Lothian","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.721,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Renfrewshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.582,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.041,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Sussex CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.602,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Enfield","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.472,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Essex","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.614,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Falkirk","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.376,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Fife","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.54,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Flintshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.574,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gateshead","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.495,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Glasgow City","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.744,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gloucestershire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.051,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Greenwich","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.667,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gwynedd","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.42,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hackney","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.92,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Halton","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.361,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.64,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hampshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.471,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Haringey","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.23,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Harrow","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.002,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hartlepool","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.249,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Havering","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.331,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Herefordshire, County of","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.625,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hertfordshire CC","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.528,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Highland","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.969,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hillingdon","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.549,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hounslow","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.655,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Inverclyde","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.238,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Anglesey","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.703,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Wight","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.356,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Islington","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",3.274,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.706,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kent","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.149,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.52,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Thames","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.121,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kirklees","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.664,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Knowsley","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.644,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lambeth","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",4.191,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lancashire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.305,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leeds","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.512,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicester","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.652,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicestershire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.296,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lewisham","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.561,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lincolnshire CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.643,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Liverpool","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.896,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Luton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.531,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Manchester","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.091,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Medway","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.56,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.061,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merton","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.481,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Middlesbrough","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.606,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Midlothian","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.097,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Milton Keynes","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.318,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Monmouthshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.308,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Moray","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.168,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.03,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Neath Port Talbot","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.258,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.257,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newham","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.361,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newport","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.148,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.968,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North East Lincolnshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.424,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lanarkshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.597,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lincolnshire","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.295,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Northamptonshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.04,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Somerset","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.243,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Tyneside","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.078,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Yorkshire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.44,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northern Ireland","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.065,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northumberland","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.115,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.37,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottingham","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.362,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottinghamshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.648,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oldham","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.485,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Orkney Islands","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.509,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oxfordshire CC","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.294,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Pembrokeshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.42,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Perth and Kinross","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.771,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Peterborough","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.537,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Plymouth","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.232,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Portsmouth","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.052,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Powys","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.892,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Reading","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.706,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redbridge","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.107,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.21,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Renfrewshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.246,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.024,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Richmond upon Thames","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.613,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rochdale","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.484,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rotherham","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.386,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rutland","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.34,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Salford","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.143,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sandwell","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.022,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Scottish Borders","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.827,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sefton","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.001,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sheffield","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.398,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shetland Islands","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.079,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shropshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.37,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Slough","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.197,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Solihull","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.512,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Somerset CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.607,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Ayrshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.666,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Gloucestershire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.403,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Lanarkshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.153,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Tyneside","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.335,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southampton","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.334,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southend-on-Sea","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.914,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southwark","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.51,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","St Helens","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.602,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Staffordshire CC","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.584,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stirling","time_period","2012 to 2017","zscore_category","Unfavourable",,,,,"2012 to 2017",-1.16,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockport","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.022,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.347,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.552,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Suffolk CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.365,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sunderland","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.806,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Surrey","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.529,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sutton","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.529,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swansea","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.886,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swindon","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.242,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tameside","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.158,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Telford and Wrekin","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.609,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Thurrock","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.065,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torbay","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.021,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torfaen","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.724,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tower Hamlets","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.63,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Trafford","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.517,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.471,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wakefield","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.201,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Walsall","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.396,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Waltham Forest","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.091,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wandsworth","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",4.445,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warrington","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.161,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warwickshire CC","time_period","2012 to 2017","zscore_category","Upper Middling",,,,,"2012 to 2017",0.689,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Berkshire","time_period","2012 to 2017","zscore_category","Favourable",,,,,"2012 to 2017",1.093,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Dunbartonshire","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.815,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Lothian","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.736,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Northamptonshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.258,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Sussex","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.089,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Westminster","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.629,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wigan","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.418,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wiltshire","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",0.003,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",2.15,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wirral","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.354,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wokingham","time_period","2012 to 2017","zscore_category","Most Favourable",,,,,"2012 to 2017",1.625,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wolverhampton","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.872,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Worcestershire CC","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.004,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wrexham","time_period","2012 to 2017","zscore_category","Lower Middling",,,,,"2012 to 2017",-0.699,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","York","time_period","2012 to 2017","zscore_category","Middling",,,,,"2012 to 2017",-0.326,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeen City","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.098,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeenshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.897,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Angus","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.978,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.193,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barking and Dagenham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.41,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnet","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.311,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnsley","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.465,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.132,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bedford","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.776,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bexley","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.836,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Birmingham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.562,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.545,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackpool","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.266,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blaenau Gwent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.788,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bolton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.624,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.161,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bracknell Forest","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.317,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bradford","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.625,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brent","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.243,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bridgend","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.968,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brighton and Hove","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.232,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bristol, City of","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.249,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bromley","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.146,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Buckinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.287,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bury","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.05,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Caerphilly","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.809,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Calderdale","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.27,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.014,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Camden and City of London","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.737,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cardiff","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.248,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Carmarthenshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.867,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Central Bedfordshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.735,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ceredigion","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.647,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire East","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.157,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.048,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","City of Edinburgh","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.635,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Clackmannanshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.744,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Conwy","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.473,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.062,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Coventry","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.381,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Croydon","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.613,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cumbria","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.618,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Darlington","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.712,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Denbighshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.975,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derby","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.079,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derbyshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.111,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Devon CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Doncaster","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.783,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dorset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.305,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dudley","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.313,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.938,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dundee City","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.069,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Durham","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.113,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ealing","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.683,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Ayrshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.643,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Dunbartonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.718,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Lothian","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.812,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Renfrewshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.554,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.281,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Sussex CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.563,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Enfield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.376,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Essex","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.715,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Falkirk","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.585,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Fife","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.11,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Flintshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.455,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gateshead","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.594,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Glasgow City","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.62,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gloucestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.186,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Greenwich","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.412,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gwynedd","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.873,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hackney","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.468,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Halton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.027,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.774,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hampshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.019,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Haringey","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.238,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Harrow","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.087,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hartlepool","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.834,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Havering","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.254,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Herefordshire, County of","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.499,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hertfordshire CC","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.696,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Highland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.916,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hillingdon","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.214,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hounslow","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.827,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Inverclyde","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.626,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Anglesey","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.939,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Wight","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.651,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Islington","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.911,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.886,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.601,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.928,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Thames","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.762,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kirklees","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.177,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Knowsley","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.732,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lambeth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",4.134,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lancashire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.748,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leeds","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.706,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.304,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.008,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lewisham","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.097,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lincolnshire CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.934,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Liverpool","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.145,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Luton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.27,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Manchester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.398,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Medway","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.287,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.791,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merton","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.203,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Middlesbrough","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.127,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Midlothian","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.321,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Milton Keynes","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.537,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Monmouthshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.288,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Moray","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.259,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.099,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Neath Port Talbot","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.031,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.421,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newham","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.44,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.052,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.041,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North East Lincolnshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.396,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lanarkshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.724,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lincolnshire","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.228,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Northamptonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.991,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Somerset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.128,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Tyneside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.534,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Yorkshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.321,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northern Ireland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.948,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northumberland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.861,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.724,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.213,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.054,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oldham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.573,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Orkney Islands","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.808,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oxfordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.457,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Pembrokeshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.903,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Perth and Kinross","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.915,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Peterborough","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.222,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Plymouth","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.156,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Portsmouth","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.083,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Powys","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.159,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Reading","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.883,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redbridge","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.129,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.788,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Renfrewshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.007,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.66,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Richmond upon Thames","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.139,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rochdale","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.068,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rotherham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.691,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rutland","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.09,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Salford","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.077,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sandwell","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.869,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Scottish Borders","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.043,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sefton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.254,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sheffield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.119,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shetland Islands","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.08,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shropshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.908,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Slough","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.177,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Solihull","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.089,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Somerset CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.122,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Ayrshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.424,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Gloucestershire","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.117,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Lanarkshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.048,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Tyneside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.524,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southampton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.492,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southend-on-Sea","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.533,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southwark","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.524,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","St Helens","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.432,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Staffordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.123,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stirling","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.832,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.352,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.298,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.559,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Suffolk CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.392,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sunderland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.913,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Surrey","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.802,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sutton","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.439,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swansea","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.62,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swindon","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.12,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tameside","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.377,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Telford and Wrekin","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.906,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Thurrock","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.578,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torbay","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.9,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torfaen","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.198,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tower Hamlets","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.829,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Trafford","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.77,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.39,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wakefield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.072,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Walsall","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.339,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Waltham Forest","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.936,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wandsworth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.799,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warrington","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.133,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warwickshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.168,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Berkshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.58,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Dunbartonshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.026,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Lothian","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.933,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Northamptonshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.594,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Sussex","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.21,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Westminster","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.66,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wigan","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.235,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wiltshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.372,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.49,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wirral","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.42,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wokingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.325,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wolverhampton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.683,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Worcestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.028,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wrexham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.519,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","York","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.592,,,,"z-score",,5

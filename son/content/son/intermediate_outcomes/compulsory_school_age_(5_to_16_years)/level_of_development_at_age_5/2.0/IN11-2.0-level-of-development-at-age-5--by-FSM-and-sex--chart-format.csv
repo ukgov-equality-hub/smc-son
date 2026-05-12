@@ -1,0 +1,5 @@
+﻿time_period,seb,sample_size,value,sex,category_type,category,ind_code,ind_name,age,area_type,area_code,area_name,lci,uci,se,category_type2,category2,unit,value_note,Quintile
+202223,Eligible for free school meals,53612,59.7,Girls,NA,NA,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,Eligible for free school meals,55488,43.7,Boys,NA,NA,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,Not eligible for free school meals,241678,78.2,Girls,NA,NA,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA
+202223,Not eligible for free school meals,253569,65,Boys,NA,NA,IN11,Level of development at age 5,5,Country,E92000001,England,NA,NA,NA,NA,NA,Percentage,NA,NA

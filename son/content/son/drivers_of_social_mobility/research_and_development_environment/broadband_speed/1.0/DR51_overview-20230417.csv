@@ -1,0 +1,7 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR51","Broadband speed","National",NA,"United Kingdom",2014,NA,NA,NA,NA,NA,1,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","National",NA,"United Kingdom",2015,NA,NA,NA,NA,NA,1.17822811119771,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","National",NA,"United Kingdom",2016,NA,NA,NA,NA,NA,1.70381917381138,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","National",NA,"United Kingdom",2017,NA,NA,NA,NA,NA,2.15900233826968,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","National",NA,"United Kingdom",2018,NA,NA,NA,NA,NA,2.34502468173552,NA,NA,NA,NA,"Megabits per second",NA
+"DR51","Broadband speed","National",NA,"United Kingdom",2019,NA,NA,NA,NA,NA,2.98882826708236,NA,NA,NA,NA,"Megabits per second",NA

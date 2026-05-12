@@ -1,0 +1,10 @@
+﻿ind_code,ind_name,area_type,area_code,area_name,time_period,seb,age,sex,category_type,category,category_type2,category2,value,sample_size,lci,uci,se,unit,value_note,lci_percent,uci_percent
+DR53,University research students,Country,K02000001,United Kingdom,2014,Total,25 to 29,Total,Higher Education,NA,NA,NA,9.313336679,4634,0.084765738,0.101500996,0.004269199,Percentage,NA,8.4765738,10.1500996
+DR53,University research students,Country,K02000001,United Kingdom,2015,Total,25 to 29,Total,Higher Education,NA,NA,NA,10.93444489,5168,0.100836045,0.117852852,0.004341022,Percentage,NA,10.0836045,11.7852852
+DR53,University research students,Country,K02000001,United Kingdom,2016,Total,25 to 29,Total,Higher Education,NA,NA,NA,11.97560516,5336,0.111044442,0.128467661,0.004444699,Percentage,NA,11.1044442,12.8467661
+DR53,University research students,Country,K02000001,United Kingdom,2017,Total,25 to 29,Total,Higher Education,NA,NA,NA,12.14524358,5443,0.112774376,0.130130496,0.004427582,Percentage,NA,11.2774376,13.0130496
+DR53,University research students,Country,K02000001,United Kingdom,2018,Total,25 to 29,Total,Higher Education,NA,NA,NA,12.44498701,5446,0.11568279,0.13321695,0.004473,Percentage,NA,11.568279,13.321695
+DR53,University research students,Country,K02000001,United Kingdom,2019,Total,25 to 29,Total,Higher Education,NA,NA,NA,13.10486232,5633,0.122236102,0.139861144,0.004496184,Percentage,NA,12.2236102,13.9861144
+DR53,University research students,Country,K02000001,United Kingdom,2020,Total,25 to 29,Total,Higher Education,NA,NA,NA,13.93251305,4879,0.129608293,0.149041968,0.00495757,Percentage,NA,12.9608293,14.9041968
+DR53,University research students,Country,K02000001,United Kingdom,2021,Total,25 to 29,Total,Higher Education,NA,NA,NA,14.23314818,6621,0.133915506,0.150747458,0.004293865,Percentage,NA,13.3915506,15.0747458
+DR53,University research students,Country,K02000001,United Kingdom,2022,Total,25 to 29,Total,Higher Education,NA,NA,NA,15.08582047,5153,0.14108582,0.16063059,0.004985911,Percentage,NA,14.108582,16.063059

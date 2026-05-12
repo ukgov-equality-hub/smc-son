@@ -1,0 +1,210 @@
+"time_period","seb","sample_size","value","sex","category_type","category","ind_code","ind_name","age","area_type","area_code","area_name","lci","uci","se","category_type2","category2","unit","value_note","Quintile"
+"201819","Total",638946,72,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201819","Eligible for free school meals",89742,57,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201819","Not eligible for free school meals",549204,74,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201718","Total",652349,72,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201718","Eligible for free school meals",87190,57,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201718","Not eligible for free school meals",565159,74,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201617","Total",669864,71,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201617","Eligible for free school meals",91641,56,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201617","Not eligible for free school meals",578223,73,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201516","Total",669052,69,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201516","Eligible for free school meals",93538,54,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201516","Not eligible for free school meals",575514,72,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201415","Total",654848,66,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201415","Eligible for free school meals",97156,51,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201415","Not eligible for free school meals",557692,69,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201314","Total",641331,60,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201314","Eligible for free school meals",112697,45,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201314","Not eligible for free school meals",528634,64,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201213","Total",643302,52,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201213","Eligible for free school meals",118945,36,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201213","Not eligible for free school meals",524357,55,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201920","Total",NA,NA,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"201920","FSM",NA,NA,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202021","All other pupils",NA,NA,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",618891,67.2,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",302276,74.2,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",316615,60.6,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",109100,51.6,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",53612,59.7,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",55488,43.7,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",495247,71.5,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",241678,78.2,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",253569,65,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",430226,68.6,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",209655,75.5,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",220571,62,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",74939,49.5,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",36741,57.7,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",38198,41.6,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",351663,72.8,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",171189,79.5,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",180474,66.5,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",46152,68.7,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",22530,75.7,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",23622,62.1,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",10624,56.4,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",5233,65,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",5391,48.1,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",34975,72.6,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",17027,79.1,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",17948,66.4,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",75255,66.7,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",37069,73.4,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",38186,60.1,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",9206,58,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",4533,65.9,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",4673,50.2,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",65003,68.1,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",32029,74.7,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",32974,61.6,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",32825,62.8,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",16314,71.1,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",16511,54.6,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",8568,57.7,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",4340,65.3,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",4228,49.9,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",23983,64.7,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",11848,73.3,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",12135,56.3,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",13932,59.1,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",6795,66,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Total",7137,52.5,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",3617,51.2,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",1772,58.5,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Eligible for free school meals",1845,44.1,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",10156,62.2,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",4955,68.9,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","Not eligible for free school meals",5201,55.8,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",622583,65.2,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",304334,71.9,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",318249,58.7,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",113882,49.1,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",55804,56.6,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",58078,41.9,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",495996,69.5,"Total",NA,"Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",242375,76.2,"Girls",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",253621,63.1,"Boys",NA,NA,"IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",439484,66.3,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",214421,73,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",225063,59.9,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",78348,47,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",38370,54.3,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",39978,39.9,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",357398,70.7,"Total","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",174295,77.3,"Girls","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",183103,64.5,"Boys","Ethnicity","White","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",45311,67,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",22223,73.8,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",23088,60.4,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",10799,54.7,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",5257,62.6,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",5542,47.2,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",34005,71.1,"Total","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",16724,77.4,"Girls","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",17281,64.9,"Boys","Ethnicity","Mixed/multiple ethnic groups","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",74613,64.9,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",36592,71.7,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",38021,58.4,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",9916,56,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",4907,63.6,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",5009,48.7,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",63689,66.5,"Total","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",31162,73.2,"Girls","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",32527,60,"Boys","Ethnicity","Asian/Asian British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",31183,60.6,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",15501,69.1,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",15682,52.1,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",8889,55.2,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",4441,63.2,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",4448,47.1,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",21998,62.9,"Total","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",10930,71.6,"Girls","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",11068,54.4,"Boys","Ethnicity","Black/African/Caribbean/Black British","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",13574,55.3,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",6620,61.7,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Total",6954,49.3,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",3668,47.7,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",1768,54,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Eligible for free school meals",1900,41.8,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",9750,58.5,"Total","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",4781,64.9,"Girls","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202122","Not eligible for free school meals",4969,52.4,"Boys","Ethnicity","Other ethnic group","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,618891,67.2,"Total","IDACI decile","Total","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,79288,58.1,"Total","IDACI decile","1","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,73080,61.1,"Total","IDACI decile","2","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,67543,63.6,"Total","IDACI decile","3","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,66335,65.6,"Total","IDACI decile","4","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,61970,67.9,"Total","IDACI decile","5","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,58827,69.3,"Total","IDACI decile","6","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,55542,71.1,"Total","IDACI decile","7","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,53106,73.2,"Total","IDACI decile","8","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,52126,74.4,"Total","IDACI decile","9","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223",NA,49891,76.6,"Total","IDACI decile","10","IN11","Level of development at age 5",5,"Country","E92000001","England",NA,NA,NA,NA,NA,"Percentage",NA,NA
+"202223","FSM eligible",2742,0.468271334792123,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Bedfordshire and Hertfordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",19998,0.701170117011701,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Bedfordshire and Hertfordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",3428,0.49095682613769,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",24391,0.72744044934607,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",1442,0.490984743411928,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cheshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",8716,0.726480036714089,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cheshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",798,0.486215538847118,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cornwall and Isles of Scilly",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",4484,0.712756467439786,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cornwall and Isles of Scilly",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",664,0.45933734939759,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cumbria",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",3815,0.689908256880734,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Cumbria",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",5125,0.51980487804878,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Derbyshire and Nottinghamshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",17948,0.707989748161355,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Derbyshire and Nottinghamshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",1806,0.471207087486157,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Devon",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",9433,0.704123820629704,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Devon",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",1711,0.489187609585038,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Dorset and Somerset",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",10515,0.719828815977176,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Dorset and Somerset",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",4307,0.477362433248201,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"East Anglia",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",21326,0.706180249460752,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"East Anglia",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",1980,0.537373737373737,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"East Yorkshire and Northern Lincolnshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",7862,0.715339608242178,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"East Yorkshire and Northern Lincolnshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",3476,0.500863060989643,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Essex",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",17555,0.731757334092851,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Essex",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",3504,0.468321917808219,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",22827,0.726639505848337,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",7856,0.507255600814664,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Greater Manchester",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",26138,0.681192134057694,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Greater Manchester",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",3093,0.51762043323634,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Hampshire and Isle of Wight",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",17221,0.739910574298821,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Hampshire and Isle of Wight",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",2280,0.49780701754386,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",12077,0.726918936822058,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",5510,0.604174228675136,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Inner London - East",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",17340,0.734140715109573,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Inner London - East",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",1872,0.575854700854701,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Inner London - West",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",5086,0.743609909555643,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Inner London - West",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",3720,0.514784946236559,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Kent",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",17701,0.724422349019829,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Kent",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","FSM eligible",3046,0.496060407091267,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Lancashire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",13473,0.682253395680249,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Lancashire",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",2567,0.501363459291001,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",18582,0.705736734474222,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",1647,0.548876745598057,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Lincolnshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",5679,0.720197217820039,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Lincolnshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",4191,0.486518730613219,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Merseyside",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","Not FSM eligible",12708,0.688385269121813,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Merseyside",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",885,0.499435028248588,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"North Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",6504,0.735239852398524,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"North Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",3526,0.519852524106636,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Northumberland, and Tyne and Wear",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",11351,0.718262708131442,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Northumberland, and Tyne and Wear",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",3911,0.582971107133725,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - East and North East",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",20360,0.717387033398821,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - East and North East",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",2239,0.542206342117017,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - South",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",12184,0.73908404464872,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - South",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",3112,0.551413881748072,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - West and North West",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",20425,0.723133414932681,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Outer London - West and North West",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",3125,0.52416,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Shropshire and Staffordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",14036,0.716372185807923,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Shropshire and Staffordshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q2"
+"202223","FSM eligible",3728,0.519849785407725,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"South Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q4"
+"202223","Not FSM eligible",11507,0.721473885461024,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"South Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",3757,0.47458078253926,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Surrey, East and West Sussex",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",25092,0.746652319464371,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Surrey, East and West Sussex",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","FSM eligible",3489,0.506735454284895,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Tees Valley and Durham",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","Not FSM eligible",9303,0.717725464903795,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"Tees Valley and Durham",NA,NA,NA,NA,NA,"Percentage",NA,"Q3"
+"202223","FSM eligible",9386,0.546345621137865,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"West Midlands",NA,NA,NA,NA,NA,"Percentage",NA,"Q5 (Best 20%)"
+"202223","Not FSM eligible",27113,0.687087375059934,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"West Midlands",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","FSM eligible",5177,0.482132509175198,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"West Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"
+"202223","Not FSM eligible",22497,0.687736142596791,"Total",NA,NA,"IN11","Level of development at age 5",5,"ITL2",NA,"West Yorkshire",NA,NA,NA,NA,NA,"Percentage",NA,"Q1 (Worst 20%)"

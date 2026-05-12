@@ -1,0 +1,42 @@
+﻿Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note,Quintile
+CI4,Childhood poverty and disadvantage,ITL2,TLH2,Bedfordshire and Hertfordshire,NA,NA,NA,Total,NA,NA,0.263436498,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLJ1,"Berkshire, Buckinghamshire and Oxfordshire",NA,NA,NA,Total,NA,NA,0.165000597,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLD6,Cheshire,NA,NA,NA,Total,NA,NA,0.223892788,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLK3,Cornwall and Isles of Scilly,NA,NA,NA,Total,NA,NA,0.390466631,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLD1,Cumbria,NA,NA,NA,Total,NA,NA,0.329367943,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLF1,Derbyshire and Nottinghamshire,NA,NA,NA,Total,NA,NA,0.43657324,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLK4,Devon,NA,NA,NA,Total,NA,NA,0.304115598,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLK2,Dorset and Somerset,NA,NA,NA,Total,NA,NA,0.228298874,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLH1,East Anglia,NA,NA,NA,Total,NA,NA,0.375048584,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLL2,East Wales,NA,NA,NA,Total,NA,NA,0.385473243,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLE1,East Yorkshire and Northern Lincolnshire,NA,NA,NA,Total,NA,NA,0.623857298,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLM7,Eastern Scotland,NA,NA,NA,Total,NA,NA,0.304781463,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLH3,Essex,NA,NA,NA,Total,NA,NA,0.289326944,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLK1,"Gloucestershire, Wiltshire and Bath/Bristol area",NA,NA,NA,Total,NA,NA,0.18653779,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLD3,Greater Manchester,NA,NA,NA,Total,NA,NA,0.638230272,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLJ3,Hampshire and Isle of Wight,NA,NA,NA,Total,NA,NA,0.263857817,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLG1,"Herefordshire, Worcestershire and Warwickshire",NA,NA,NA,Total,NA,NA,0.26956072,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLM6,Highlands and Islands,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLI4,Inner London - East,NA,NA,NA,Total,NA,NA,0.998637194,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLI3,Inner London - West,NA,NA,NA,Total,NA,NA,0.611177687,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLJ4,Kent,NA,NA,NA,Total,NA,NA,0.349428005,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLD4,Lancashire,NA,NA,NA,Total,NA,NA,0.466605009,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLF2,"Leicestershire, Rutland and Northamptonshire",NA,NA,NA,Total,NA,NA,0.415318188,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLF3,Lincolnshire,NA,NA,NA,Total,NA,NA,0.422947402,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLD7,Merseyside,NA,NA,NA,Total,NA,NA,0.440576043,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLM5,North Eastern Scotland,NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLE2,North Yorkshire,NA,NA,NA,Total,NA,NA,0.17060666,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLN0,Northern Ireland,NA,NA,NA,Total,NA,NA,0.343050828,NA,NA,NA,NA,NA,NA,2
+CI4,Childhood poverty and disadvantage,ITL2,TLC2,"Northumberland, and Tyne and Wear",NA,NA,NA,Total,NA,NA,0.595625478,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLI5,Outer London - East and North East,NA,NA,NA,Total,NA,NA,0.698109398,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLI6,Outer London - South,NA,NA,NA,Total,NA,NA,0.441122923,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLI7,Outer London - West and North West,NA,NA,NA,Total,NA,NA,0.652368431,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLG2,Shropshire and Staffordshire,NA,NA,NA,Total,NA,NA,0.400215916,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLE3,South Yorkshire,NA,NA,NA,Total,NA,NA,0.547996936,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLM9,Southern Scotland,NA,NA,NA,Total,NA,NA,0.36693868,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLJ2,"Surrey, East and West Sussex",NA,NA,NA,Total,NA,NA,0.000000001,NA,NA,NA,NA,NA,NA,1
+CI4,Childhood poverty and disadvantage,ITL2,TLC1,Tees Valley and Durham,NA,NA,NA,Total,NA,NA,0.608387493,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLM8,West Central Scotland,NA,NA,NA,Total,NA,NA,0.387278698,NA,NA,NA,NA,NA,NA,3
+CI4,Childhood poverty and disadvantage,ITL2,TLG3,West Midlands,NA,NA,NA,Total,NA,NA,0.775057231,NA,NA,NA,NA,NA,NA,5
+CI4,Childhood poverty and disadvantage,ITL2,TLL1,West Wales and The Valleys,NA,NA,NA,Total,NA,NA,0.440964795,NA,NA,NA,NA,NA,NA,4
+CI4,Childhood poverty and disadvantage,ITL2,TLE4,West Yorkshire,NA,NA,NA,Total,NA,NA,0.626413647,NA,NA,NA,NA,NA,NA,5

@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-in34-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "work_in_early_adulthood_(25_to_29_years)"
 indicator_name = "earnings_of_young_people_aged_25_to_29_years"

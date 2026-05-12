@@ -1,0 +1,206 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note","group_number"
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeen City","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.098,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Aberdeenshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.897,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Angus","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.978,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Argyll and Bute Islands","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.193,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barking and Dagenham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.41,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnet","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.311,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Barnsley","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.465,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bath and North East Somerset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.132,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bedford","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.776,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bexley","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.836,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Birmingham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.562,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackburn with Darwen","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.545,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blackpool","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.266,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Blaenau Gwent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.788,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bolton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.624,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bournemouth, Christchurch and Poole","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.161,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bracknell Forest","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.317,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bradford","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.625,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brent","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.243,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bridgend","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.968,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Brighton and Hove","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.232,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bristol, City of","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.249,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bromley","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.146,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Buckinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.287,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Bury","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.05,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Caerphilly","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.809,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Calderdale","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.27,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cambridgeshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.014,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Camden and City of London","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.737,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cardiff","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.248,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Carmarthenshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.867,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Central Bedfordshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.735,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ceredigion","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.647,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire East","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.157,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cheshire West and Chester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.048,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","City of Edinburgh","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.635,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Clackmannanshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.744,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Conwy","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.473,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cornwall and Isles of Scilly","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.062,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Coventry","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.381,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Croydon","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.613,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Cumbria","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.618,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Darlington","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.712,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Denbighshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.975,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derby","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.079,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Derbyshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.111,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Devon CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.684,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Doncaster","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.783,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dorset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.305,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dudley","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.313,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dumfries and Galloway","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.938,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Dundee City","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.069,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Durham","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.113,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Ealing","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.683,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Ayrshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.643,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Dunbartonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.718,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Lothian","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.812,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Renfrewshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.554,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Riding of Yorkshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.281,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","East Sussex CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.563,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Enfield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.376,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Essex","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.715,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Falkirk","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.585,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Fife","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.11,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Flintshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.455,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gateshead","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.594,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Glasgow City","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.62,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gloucestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.186,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Greenwich","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.412,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Gwynedd","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.873,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hackney","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.468,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Halton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.027,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hammersmith and Fulham","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.774,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hampshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.019,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Haringey","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.238,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Harrow","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.087,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hartlepool","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.834,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Havering","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.254,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Herefordshire, County of","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.499,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hertfordshire CC","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.696,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Highland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.916,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hillingdon","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.214,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Hounslow","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.827,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Inverclyde","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.626,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Anglesey","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.939,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Isle of Wight","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.651,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Islington","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.911,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kensington and Chelsea","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",1.886,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.601,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Hull, City of","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.928,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kingston upon Thames","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.762,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Kirklees","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.177,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Knowsley","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.732,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lambeth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",4.134,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lancashire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.748,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leeds","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.706,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.304,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Leicestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.008,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lewisham","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.097,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Lincolnshire CC","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.934,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Liverpool","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.145,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Luton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.27,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Manchester","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.398,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Medway","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.287,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merthyr Tydfil","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.791,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Merton","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.203,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Middlesbrough","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.127,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Midlothian","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.321,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Milton Keynes","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.537,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Monmouthshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.288,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Moray","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.259,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Na h-Eileanan Siar","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.099,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Neath Port Talbot","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.031,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newcastle upon Tyne","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.421,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newham","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.44,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Newport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.052,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Ayrshire mainland","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.041,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North East Lincolnshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.396,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lanarkshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.724,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Lincolnshire","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.228,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Northamptonshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.991,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Somerset","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.128,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Tyneside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.534,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","North Yorkshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.321,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northern Ireland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.948,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Northumberland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.861,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Norwich and Norfolk","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.724,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.213,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Nottinghamshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.054,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oldham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.573,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Orkney Islands","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.808,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Oxfordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.457,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Pembrokeshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.903,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Perth and Kinross","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.915,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Peterborough","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.222,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Plymouth","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.156,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Portsmouth","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.083,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Powys","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.159,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Reading","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.883,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redbridge","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.129,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Redcar and Cleveland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.788,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Renfrewshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.007,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rhondda Cynon Taf","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.66,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Richmond upon Thames","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.139,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rochdale","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.068,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rotherham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.691,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Rutland","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.09,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Salford","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.077,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sandwell","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.869,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Scottish Borders","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.043,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sefton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.254,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sheffield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.119,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shetland Islands","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.08,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Shropshire","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.908,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Slough","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.177,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Solihull","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.089,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Somerset CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.122,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Ayrshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.424,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Gloucestershire","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.117,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Lanarkshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.048,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","South Tyneside","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.524,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southampton","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.492,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southend-on-Sea","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.533,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Southwark","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.524,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","St Helens","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.432,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Staffordshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.123,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stirling","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.832,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockport","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.352,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stockton-on-Tees","time_period","2018 to 2024","zscore_category","Unfavourable",,,,,"2018 to 2024",-1.298,,,,"z-score",,2
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Stoke-on-Trent","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.559,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Suffolk CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.392,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sunderland","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.913,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Surrey","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.802,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Sutton","time_period","2018 to 2024","zscore_category","Favourable",,,,,"2018 to 2024",1.439,,,,"z-score",,6
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swansea","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.62,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Swindon","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.12,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tameside","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.377,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Telford and Wrekin","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.906,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Thurrock","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.578,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torbay","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.9,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Torfaen","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.198,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Tower Hamlets","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.829,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Trafford","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.77,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Vale of Glamorgan","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.39,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wakefield","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.072,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Walsall","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.339,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Waltham Forest","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.936,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wandsworth","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",3.799,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warrington","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.133,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Warwickshire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.168,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Berkshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.58,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Dunbartonshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.026,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Lothian","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.933,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Northamptonshire","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.594,,,,"z-score",,5
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","West Sussex","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.21,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Westminster","time_period","2018 to 2024","zscore_category","Most Favourable",,,,,"2018 to 2024",2.66,,,,"z-score",,7
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wigan","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.235,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wiltshire","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.372,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Windsor and Maidenhead","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.49,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wirral","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",-0.42,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wokingham","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.325,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wolverhampton","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.683,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Worcestershire CC","time_period","2018 to 2024","zscore_category","Middling",,,,,"2018 to 2024",0.028,,,,"z-score",,4
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","Wrexham","time_period","2018 to 2024","zscore_category","Lower Middling",,,,,"2018 to 2024",-0.519,,,,"z-score",,3
+"ci2","Labour Market Outcomes","composite_index",,"Local Authority","York","time_period","2018 to 2024","zscore_category","Upper Middling",,,,,"2018 to 2024",0.592,,,,"z-score",,5

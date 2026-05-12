@@ -1,0 +1,39 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"DR53","FTE university research students","ITL2",NA,"Tees Valley and Durham",2016,NA,NA,"Total",NA,NA,1335,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Northumberland, and Tyne and Wear",2016,NA,NA,"Total",NA,NA,2390,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Cumbria",2016,NA,NA,"Total",NA,NA,45,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Greater Manchester",2016,NA,NA,"Total",NA,NA,4300,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Lancashire",2016,NA,NA,"Total",NA,NA,1680,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Cheshire",2016,NA,NA,"Total",NA,NA,230,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Merseyside",2016,NA,NA,"Total",NA,NA,2090,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"East Yorkshire and Northern Lincolnshire",2016,NA,NA,"Total",NA,NA,640,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"North Yorkshire",2016,NA,NA,"Total",NA,NA,1240,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"South Yorkshire",2016,NA,NA,"Total",NA,NA,2515,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"West Yorkshire",2016,NA,NA,"Total",NA,NA,3515,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Derbyshire and Nottinghamshire",2016,NA,NA,"Total",NA,NA,3200,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Leicestershire, Rutland and Northamptonshire",2016,NA,NA,"Total",NA,NA,2370,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Lincolnshire",2016,NA,NA,"Total",NA,NA,330,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire",2016,NA,NA,"Total",NA,NA,80,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Shropshire and Staffordshire",2016,NA,NA,"Total",NA,NA,510,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"West Midlands",2016,NA,NA,"Total",NA,NA,4765,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"East Anglia",2016,NA,NA,"Total",NA,NA,5470,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Bedfordshire and Hertfordshire",2016,NA,NA,"Total",NA,NA,1280,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Essex",2016,NA,NA,"Total",NA,NA,880,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Inner London - West",2016,NA,NA,"Total",NA,NA,12860,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Inner London - East",2016,NA,NA,"Total",NA,NA,2250,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Outer London - East and North East",2016,NA,NA,"Total",NA,NA,330,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Outer London - South",2016,NA,NA,"Total",NA,NA,335,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Outer London - West and North West",2016,NA,NA,"Total",NA,NA,870,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire",2016,NA,NA,"Total",NA,NA,6150,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Surrey, East and West Sussex",2016,NA,NA,"Total",NA,NA,2580,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Hampshire and Isle of Wight",2016,NA,NA,"Total",NA,NA,2795,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Kent",2016,NA,NA,"Total",NA,NA,1365,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area",2016,NA,NA,"Total",NA,NA,3225,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Dorset and Somerset",2016,NA,NA,"Total",NA,NA,420,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Cornwall and Isles of Scilly",2016,NA,NA,"Total",NA,NA,15,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Devon",2016,NA,NA,"Total",NA,NA,1625,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"West Wales and The Valleys",2016,NA,NA,"Total",NA,NA,1705,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"East Wales",2016,NA,NA,"Total",NA,NA,1635,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"North Eastern Scotland",2016,NA,NA,"Total",NA,NA,1015,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Highlands and Islands",2016,NA,NA,"Total",NA,NA,70,NA,NA,NA,NA,"Number of students",NA
+"DR53","FTE university research students","ITL2",NA,"Northern Ireland",2016,NA,NA,"Total",NA,NA,1770,NA,NA,NA,NA,"Number of students",NA

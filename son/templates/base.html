@@ -48,7 +48,7 @@
         document.body.className += ' js-enabled' + ('noModule' in HTMLScriptElement.prototype ? ' govuk-frontend-supported' : '');
     </script>
 
-    {% include "policies/cookie-banner.html" %}
+    {% include "shared/cookie-banner.html" %}
 
     <a href="#main-content" class="govuk-skip-link" data-module="govuk-skip-link">Skip to main content</a>
 
@@ -95,7 +95,7 @@
         <div class="govuk-width-container">
             <div class="govuk-service-navigation__container">
                 <span class="govuk-service-navigation__service-name">
-                    <a href="/" class="govuk-service-navigation__link">
+                    <a href="{{ url_for('son.index') }}" class="govuk-service-navigation__link">
                         State of the Nation
                     </a>
                 </span>
@@ -112,7 +112,7 @@
                     <ul class="govuk-service-navigation__list" id="navigation">
                         {% for thisdomain in menu.domains %}
                             <li class="govuk-service-navigation__item {% if (thisdomain.name | url_link) == (domain | url_link) %}govuk-service-navigation__item--active{% endif %}">
-                                <a href="/{{ thisdomain.name | url_link }}"
+                                <a href="/state-of-the-nation/{{ thisdomain.name | url_link }}"
                                    class="govuk-service-navigation__link"
                                    {% if (thisdomain.name | url_link) == (domain | url_link) %} aria-current="true"{% endif %}>
                                     {% if (thisdomain.name | url_link) == (domain | url_link) %}
@@ -225,17 +225,17 @@
                         <h2 class="govuk-visually-hidden">Support links</h2>
                         <ul class="govuk-footer__inline-list">
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.privacy_policy') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.privacy_policy') }}">
                                     Privacy policy
                                 </a>
                             </li>
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.accessibility_statement') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.accessibility_statement') }}">
                                     Accessibility statement
                                 </a>
                             </li>
                             <li class="govuk-footer__inline-list-item">
-                                <a class="govuk-footer__link" href="{{ url_for('policies.cookies') }}">
+                                <a class="govuk-footer__link" href="{{ url_for('shared.cookies') }}">
                                     Cookies
                                 </a>
                             </li>

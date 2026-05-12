@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-ci2-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "composite_indices"
 indicator_name = "labour_market_opportunities_for_young_people"

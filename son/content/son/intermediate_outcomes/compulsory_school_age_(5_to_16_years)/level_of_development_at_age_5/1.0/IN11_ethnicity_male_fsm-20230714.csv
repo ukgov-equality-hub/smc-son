@@ -1,0 +1,6 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","White",39.9,15961,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Other",41.8,794,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Mixed",47.2,2615,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Black",47.1,2097,NA,NA,NA,"Percentage",NA
+"IN11","Level of development at age 5","National","E92000001","England","202122","FSM",5,"Boys","Ethnicity","Asian",48.7,2437,NA,NA,NA,"Percentage",NA

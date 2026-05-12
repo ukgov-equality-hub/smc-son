@@ -1,0 +1,76 @@
+"Ind_code","Ind_name","Area_type","Area_code","Area_name","Time_period","SEB","Age","Sex","Category_type","Category","Value","Sample_size","LCI","UCI","SE","Unit","Value_note"
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2014",NA,"25-64","Total",NA,NA,0,NA,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2015",NA,"25-64","Total",NA,NA,-0.007,NA,-0.016016,0.002016,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2016",NA,"25-64","Total",NA,NA,-0.008,NA,-0.017016,0.001016,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2017",NA,"25-64","Total",NA,NA,-0.0058,NA,-0.01462,0.00302,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018",NA,"25-64","Total",NA,NA,-0.009,NA,-0.018016,1.6e-05,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2019",NA,"25-64","Total",NA,NA,-0.0122,NA,-0.021216,-0.003184,0.0046,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2020",NA,"25-64","Total",NA,NA,-0.0116,NA,-0.02042,-0.00278,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2021",NA,"25-64","Total",NA,NA,-0.0228,NA,-0.03162,-0.01398,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2022",NA,"25-64","Total",NA,NA,-0.0125,NA,-0.02132,-0.00368,0.0045,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64",NA,"Sex","Men",0,NA,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000002","United Kingdom","2018-22",NA,"25-64",NA,"Sex","Women",-0.0079,NA,-0.012016,-0.003784,0.0021,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000003","United Kingdom","2018-22",NA,"25-64",NA,"Disability","No",0,NA,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000004","United Kingdom","2018-22",NA,"25-64",NA,"Disability","Yes",0.0084,NA,0.002716,0.014084,0.0029,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","White British",0,12252,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","White other",0.018,12252,0.006632,0.029368,0.0058,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Mixed",-0.006,12252,-0.030892,0.018892,0.0127,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Black Caribbean",-0.075,12252,-0.109888,-0.040112,0.0178,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Black African",-0.067,12252,-0.090716,-0.043284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Indian",-0.012,12252,-0.029444,0.005444,0.0089,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Pakistani",-0.05,12252,-0.073716,-0.026284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Bangladeshi",-0.075,12252,-0.11126,-0.03874,0.0185,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Chinese",-0.034,12252,-0.07516,0.00716,0.021,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Men","Ethnicity","Other",-0.025,12252,-0.042444,-0.007556,0.0089,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","White British",0,13995,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","White other",-0.002,13995,-0.013172,0.009172,0.0057,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Mixed",-0.034,13995,-0.057716,-0.010284,0.0121,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Black Caribbean",-0.066,13995,-0.09834,-0.03366,0.0165,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Black African",-0.034,13995,-0.056932,-0.011068,0.0117,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Indian",-0.055,13995,-0.072248,-0.037752,0.0088,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Pakistani",-0.116,13995,-0.138932,-0.093068,0.0117,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Bangladeshi",-0.072,13995,-0.10924,-0.03476,0.019,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Chinese",-0.106,13995,-0.138144,-0.073856,0.0164,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","Country","K02000001","United Kingdom","2018-22",NA,"25-64","Women","Ethnicity","Other",-0.063,13995,-0.079464,-0.046536,0.0084,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Inner London - West","2018-22",NA,"25-64","Total",NA,NA,0,2800,0,0,0,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Inner London - East","2018-22",NA,"25-64","Total",NA,NA,-0.0091,5697,-0.041636,0.023436,0.0166,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Outer London - South","2018-22",NA,"25-64","Total",NA,NA,-0.0158,3401,-0.053432,0.021832,0.0192,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Outer London - East and North East","2018-22",NA,"25-64","Total",NA,NA,-0.0321,5081,-0.065224,0.001024,0.0169,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Outer London - West and North West","2018-22",NA,"25-64","Total",NA,NA,-0.0432,4865,-0.076324,-0.010076,0.0169,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Bedfordshire and Hertfordshire","2018-22",NA,"25-64","Total",NA,NA,-0.0197,6924,-0.05106,0.01166,0.016,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Berkshire, Buckinghamshire and Oxfordshire","2018-22",NA,"25-64","Total",NA,NA,-0.0103,7485,-0.041072,0.020472,0.0157,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Cheshire","2018-22",NA,"25-64","Total",NA,NA,-0.0037,3419,-0.039764,0.032364,0.0184,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Cornwall and Isles of Scilly","2018-22",NA,"25-64","Total",NA,NA,-0.0253,1936,-0.06842,0.01782,0.022,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Cumbria","2018-22",NA,"25-64","Total",NA,NA,-0.0195,2321,-0.06164,0.02264,0.0215,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Derbyshire and Nottinghamshire","2018-22",NA,"25-64","Total",NA,NA,-0.0083,8022,-0.038876,0.022276,0.0156,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Devon","2018-22",NA,"25-64","Total",NA,NA,-0.0223,4230,-0.057972,0.013372,0.0182,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Dorset and Somerset","2018-22",NA,"25-64","Total",NA,NA,1e-04,4414,-0.035572,0.035772,0.0182,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"East Anglia","2018-22",NA,"25-64","Total",NA,NA,0.0064,7949,-0.024568,0.037368,0.0158,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"East Yorkshire and Northern Lincolnshire","2018-22",NA,"25-64","Total",NA,NA,-0.0116,3530,-0.04786,0.02466,0.0185,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Essex","2018-22",NA,"25-64","Total",NA,NA,-0.0314,5833,-0.063544,0.000744,0.0164,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Gloucestershire, Wiltshire and Bath/Bristol area","2018-22",NA,"25-64","Total",NA,NA,-0.0036,8915,-0.034176,0.026976,0.0156,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Greater Manchester","2018-22",NA,"25-64","Total",NA,NA,-0.0191,9598,-0.049088,0.010888,0.0153,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Hampshire and Isle of Wight","2018-22",NA,"25-64","Total",NA,NA,-0.0286,6551,-0.060352,0.003152,0.0162,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Herefordshire, Worcestershire and Warwickshire","2018-22",NA,"25-64","Total",NA,NA,-0.0185,4106,-0.053192,0.016192,0.0177,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Kent","2018-22",NA,"25-64","Total",NA,NA,-0.0147,5841,-0.046648,0.017248,0.0163,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Lancashire","2018-22",NA,"25-64","Total",NA,NA,-0.028,5623,-0.060536,0.004536,0.0166,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Leicestershire, Rutland and Northamptonshire","2018-22",NA,"25-64","Total",NA,NA,-0.0321,5816,-0.064048,-0.000152,0.0163,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Lincolnshire","2018-22",NA,"25-64","Total",NA,NA,0.0025,2644,-0.037288,0.042288,0.0203,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Merseyside","2018-22",NA,"25-64","Total",NA,NA,-0.0229,5872,-0.054848,0.009048,0.0163,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"North Yorkshire","2018-22",NA,"25-64","Total",NA,NA,-0.0261,3171,-0.06432,0.01212,0.0195,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Northern Ireland","2018-22",NA,"25-64","Total",NA,NA,0.0212,18866,-0.010356,0.052756,0.0161,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Northumberland, and Tyne and Wear","2018-22",NA,"25-64","Total",NA,NA,-0.005,6374,-0.037536,0.027536,0.0166,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Shropshire and Staffordshire","2018-22",NA,"25-64","Total",NA,NA,-0.0057,5795,-0.037648,0.026248,0.0163,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"South Yorkshire","2018-22",NA,"25-64","Total",NA,NA,-0.0108,5229,-0.04412,0.02252,0.017,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Surrey, East and West Sussex","2018-22",NA,"25-64","Total",NA,NA,-0.0193,8562,-0.049876,0.011276,0.0156,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Tees Valley and Durham","2018-22",NA,"25-64","Total",NA,NA,-0.0029,5291,-0.036612,0.030812,0.0172,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"West Midlands","2018-22",NA,"25-64","Total",NA,NA,-0.0266,10967,-0.055804,0.002604,0.0149,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"West Yorkshire","2018-22",NA,"25-64","Total",NA,NA,-0.0134,8734,-0.043976,0.017176,0.0156,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"West Wales and The Valleys","2018-22",NA,"25-64","Total",NA,NA,-0.009,7746,-0.040164,0.022164,0.0159,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"East Wales","2018-22",NA,"25-64","Total",NA,NA,-0.0341,4200,-0.068008,-0.000192,0.0173,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Highlands and Islands","2018-22",NA,"25-64","Total",NA,NA,-0.061,1577,-0.103924,-0.018076,0.0219,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Eastern Scotland","2018-22",NA,"25-64","Total",NA,NA,-0.002,6833,-0.033164,0.029164,0.0159,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"West Central Scotland","2018-22",NA,"25-64","Total",NA,NA,-0.0059,6842,-0.036868,0.025068,0.0158,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"Southern Scotland","2018-22",NA,"25-64","Total",NA,NA,-0.0124,3616,-0.04866,0.02386,0.0185,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility","ITL2",NA,"North Eastern Scotland","2018-22",NA,"25-64","Total",NA,NA,0.001,1754,-0.040748,0.042748,0.0213,"Unidiff parameter estimates",NA
+"MO12","Relative occupational mobility",NA,NA,"Abroad","2018-22",NA,"25-64","Total",NA,NA,-0.0221,26003,-0.048952,0.004752,0.0137,"Unidiff parameter estimates",NA

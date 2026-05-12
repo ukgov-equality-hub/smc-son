@@ -6,7 +6,7 @@ input_folder = "input/SON25/"
 
 input_file = "2025-01-01-dr21-full-dataset.csv"
 
-output_folder_prefix = "../son/content"
+output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "educational_opportunities_and_quality_of_schooling"
 indicator_name = "further_education_and_training_opportunities"

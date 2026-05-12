@@ -31,7 +31,7 @@
                     this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.
                 </p>
                 <p class="govuk-body highlighted-data-read-more">
-                    <a href="/mobility_outcomes" class="govuk-link">
+                    <a href="/state-of-the-nation/mobility_outcomes" class="govuk-link">
                         Read more
                         <span class="govuk-visually-hidden">about mobility outcomes</span>
                     </a>
@@ -46,7 +46,7 @@
                     Socio-economic background is strongly related to the level of young people’s earnings.
                 </p>
                 <p class="govuk-body highlighted-data-read-more">
-                    <a href="/intermediate_outcomes" class="govuk-link">
+                    <a href="/state-of-the-nation/intermediate_outcomes" class="govuk-link">
                         Read more
                         <span class="govuk-visually-hidden">about intermediate outcomes</span>
                     </a>
@@ -61,7 +61,7 @@
                     Between 2014 and 2024, the percentage of people with a postgraduate degree has slightly increased.
                 </p>
                 <p class="govuk-body highlighted-data-read-more">
-                    <a href="/drivers_of_social_mobility" class="govuk-link">
+                    <a href="/state-of-the-nation/drivers_of_social_mobility" class="govuk-link">
                         Read more
                         <span class="govuk-visually-hidden">about drivers of social mobility</span>
                     </a>
@@ -191,7 +191,7 @@
 
             new Chart(
                 'chart2',
-                '/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB--chart-format.csv',
                 {
                     "height": 220,
                     "type": "bary",
@@ -214,7 +214,7 @@
 
             new Chart(
                 'chart3',
-                '/drivers_of_social_mobility/research_and_development_environment/postgraduate_education/3.0/DR53-3.0-postgraduate-education--by-year--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/research_and_development_environment/postgraduate_education/3.0/DR53-3.0-postgraduate-education--by-year--chart-format.csv',
                 {
                     "height": 205,
                     "type": "bary",
@@ -259,7 +259,7 @@
                 }
             )
 
-            document.getElementById('featured-region').setAttribute('href', `/social_mobility_by_area/205_regions/${area.area_name.toLowerCase().replace(/ /g, '_')}`)
+            document.getElementById('featured-region').setAttribute('href', `/state-of-the-nation/social_mobility_by_area/205_regions/${area.area_name.toLowerCase().replace(/ /g, '_')}`)
             document.getElementById('featured-region').innerText = area.area_name
 
             function rnd(min, max) {
