@@ -1,0 +1,4137 @@
+﻿provider,decile,cumulative_percentage,group,location_no,location_yes
+"Imperial College of Science, Technology and Medicine",0,0,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",1,3,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",2,7,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",3,11,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",4,18,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",5,25,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",6,33,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",7,42,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",8,50,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",9,60,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",10,100,enrolment,1,1
+University of Durham,0,0,enrolment,1,1
+University of Durham,1,1,enrolment,1,1
+University of Durham,2,3,enrolment,1,1
+University of Durham,3,6,enrolment,1,1
+University of Durham,4,11,enrolment,1,1
+University of Durham,5,18,enrolment,1,1
+University of Durham,6,25,enrolment,1,1
+University of Durham,7,35,enrolment,1,1
+University of Durham,8,46,enrolment,1,1
+University of Durham,9,60,enrolment,1,1
+University of Durham,10,100,enrolment,1,1
+The University of Kent,0,0,enrolment,1,1
+The University of Kent,1,6,enrolment,1,1
+The University of Kent,2,14,enrolment,1,1
+The University of Kent,3,24,enrolment,1,1
+The University of Kent,4,37,enrolment,1,1
+The University of Kent,5,48,enrolment,1,1
+The University of Kent,6,60,enrolment,1,1
+The University of Kent,7,70,enrolment,1,1
+The University of Kent,8,80,enrolment,1,1
+The University of Kent,9,90,enrolment,1,1
+The University of Kent,10,100,enrolment,1,1
+University of Manchester,0,0,enrolment,1,1
+University of Manchester,1,4,enrolment,1,1
+University of Manchester,2,9,enrolment,1,1
+University of Manchester,3,15,enrolment,1,1
+University of Manchester,4,24,enrolment,1,1
+University of Manchester,5,33,enrolment,1,1
+University of Manchester,6,41,enrolment,1,1
+University of Manchester,7,52,enrolment,1,1
+University of Manchester,8,64,enrolment,1,1
+University of Manchester,9,78,enrolment,1,1
+University of Manchester,10,100,enrolment,1,1
+The University of Sussex,0,0,enrolment,1,1
+The University of Sussex,1,3,enrolment,1,1
+The University of Sussex,2,7,enrolment,1,1
+The University of Sussex,3,13,enrolment,1,1
+The University of Sussex,4,22,enrolment,1,1
+The University of Sussex,5,32,enrolment,1,1
+The University of Sussex,6,45,enrolment,1,1
+The University of Sussex,7,56,enrolment,1,1
+The University of Sussex,8,69,enrolment,1,1
+The University of Sussex,9,83,enrolment,1,1
+The University of Sussex,10,100,enrolment,1,1
+Oxford Brookes University,0,0,enrolment,1,1
+Oxford Brookes University,1,2,enrolment,1,1
+Oxford Brookes University,2,5,enrolment,1,1
+Oxford Brookes University,3,9,enrolment,1,1
+Oxford Brookes University,4,14,enrolment,1,1
+Oxford Brookes University,5,20,enrolment,1,1
+Oxford Brookes University,6,28,enrolment,1,1
+Oxford Brookes University,7,38,enrolment,1,1
+Oxford Brookes University,8,49,enrolment,1,1
+Oxford Brookes University,9,62,enrolment,1,1
+Oxford Brookes University,10,100,enrolment,1,1
+The University of Winchester,0,0,enrolment,1,1
+The University of Winchester,1,2,enrolment,1,1
+The University of Winchester,2,6,enrolment,1,1
+The University of Winchester,3,12,enrolment,1,1
+The University of Winchester,4,19,enrolment,1,1
+The University of Winchester,5,30,enrolment,1,1
+The University of Winchester,6,43,enrolment,1,1
+The University of Winchester,7,57,enrolment,1,1
+The University of Winchester,8,72,enrolment,1,1
+The University of Winchester,9,89,enrolment,1,1
+The University of Winchester,10,100,enrolment,1,1
+The Manchester Metropolitan University,0,0,enrolment,1,1
+The Manchester Metropolitan University,1,8,enrolment,1,1
+The Manchester Metropolitan University,2,17,enrolment,1,1
+The Manchester Metropolitan University,3,27,enrolment,1,1
+The Manchester Metropolitan University,4,39,enrolment,1,1
+The Manchester Metropolitan University,5,48,enrolment,1,1
+The Manchester Metropolitan University,6,57,enrolment,1,1
+The Manchester Metropolitan University,7,67,enrolment,1,1
+The Manchester Metropolitan University,8,78,enrolment,1,1
+The Manchester Metropolitan University,9,90,enrolment,1,1
+The Manchester Metropolitan University,10,100,enrolment,1,1
+University of Plymouth,0,0,enrolment,1,1
+University of Plymouth,1,3,enrolment,1,1
+University of Plymouth,2,8,enrolment,1,1
+University of Plymouth,3,15,enrolment,1,1
+University of Plymouth,4,22,enrolment,1,1
+University of Plymouth,5,33,enrolment,1,1
+University of Plymouth,6,48,enrolment,1,1
+University of Plymouth,7,64,enrolment,1,1
+University of Plymouth,8,78,enrolment,1,1
+University of Plymouth,9,90,enrolment,1,1
+University of Plymouth,10,100,enrolment,1,1
+The University of Exeter,0,0,enrolment,1,1
+The University of Exeter,1,1,enrolment,1,1
+The University of Exeter,2,3,enrolment,1,1
+The University of Exeter,3,6,enrolment,1,1
+The University of Exeter,4,10,enrolment,1,1
+The University of Exeter,5,16,enrolment,1,1
+The University of Exeter,6,25,enrolment,1,1
+The University of Exeter,7,35,enrolment,1,1
+The University of Exeter,8,47,enrolment,1,1
+The University of Exeter,9,60,enrolment,1,1
+The University of Exeter,10,100,enrolment,1,1
+The University of Lincoln,0,0,enrolment,1,1
+The University of Lincoln,1,3,enrolment,1,1
+The University of Lincoln,2,7,enrolment,1,1
+The University of Lincoln,3,14,enrolment,1,1
+The University of Lincoln,4,23,enrolment,1,1
+The University of Lincoln,5,34,enrolment,1,1
+The University of Lincoln,6,48,enrolment,1,1
+The University of Lincoln,7,63,enrolment,1,1
+The University of Lincoln,8,78,enrolment,1,1
+The University of Lincoln,9,94,enrolment,1,1
+The University of Lincoln,10,100,enrolment,1,1
+University of Nottingham,0,0,enrolment,1,1
+University of Nottingham,1,2,enrolment,1,1
+University of Nottingham,2,5,enrolment,1,1
+University of Nottingham,3,10,enrolment,1,1
+University of Nottingham,4,16,enrolment,1,1
+University of Nottingham,5,24,enrolment,1,1
+University of Nottingham,6,34,enrolment,1,1
+University of Nottingham,7,44,enrolment,1,1
+University of Nottingham,8,57,enrolment,1,1
+University of Nottingham,9,72,enrolment,1,1
+University of Nottingham,10,100,enrolment,1,1
+Liverpool Hope University,0,0,enrolment,1,1
+Liverpool Hope University,1,9,enrolment,1,1
+Liverpool Hope University,2,18,enrolment,1,1
+Liverpool Hope University,3,28,enrolment,1,1
+Liverpool Hope University,4,38,enrolment,1,1
+Liverpool Hope University,5,49,enrolment,1,1
+Liverpool Hope University,6,58,enrolment,1,1
+Liverpool Hope University,7,69,enrolment,1,1
+Liverpool Hope University,8,82,enrolment,1,1
+Liverpool Hope University,9,94,enrolment,1,1
+Liverpool Hope University,10,100,enrolment,1,1
+Buckinghamshire New University,0,0,enrolment,1,1
+Buckinghamshire New University,1,6,enrolment,1,1
+Buckinghamshire New University,2,15,enrolment,1,1
+Buckinghamshire New University,3,25,enrolment,1,1
+Buckinghamshire New University,4,35,enrolment,1,1
+Buckinghamshire New University,5,47,enrolment,1,1
+Buckinghamshire New University,6,59,enrolment,1,1
+Buckinghamshire New University,7,69,enrolment,1,1
+Buckinghamshire New University,8,82,enrolment,1,1
+Buckinghamshire New University,9,93,enrolment,1,1
+Buckinghamshire New University,10,100,enrolment,1,1
+The University of Birmingham,0,0,enrolment,1,1
+The University of Birmingham,1,4,enrolment,1,1
+The University of Birmingham,2,8,enrolment,1,1
+The University of Birmingham,3,14,enrolment,1,1
+The University of Birmingham,4,20,enrolment,1,1
+The University of Birmingham,5,27,enrolment,1,1
+The University of Birmingham,6,35,enrolment,1,1
+The University of Birmingham,7,45,enrolment,1,1
+The University of Birmingham,8,57,enrolment,1,1
+The University of Birmingham,9,72,enrolment,1,1
+The University of Birmingham,10,100,enrolment,1,1
+The University of Liverpool,0,0,enrolment,1,1
+The University of Liverpool,1,3,enrolment,1,1
+The University of Liverpool,2,6,enrolment,1,1
+The University of Liverpool,3,12,enrolment,1,1
+The University of Liverpool,4,18,enrolment,1,1
+The University of Liverpool,5,26,enrolment,1,1
+The University of Liverpool,6,36,enrolment,1,1
+The University of Liverpool,7,47,enrolment,1,1
+The University of Liverpool,8,61,enrolment,1,1
+The University of Liverpool,9,80,enrolment,1,1
+The University of Liverpool,10,100,enrolment,1,1
+Solent University,0,0,enrolment,1,1
+Solent University,1,4,enrolment,1,1
+Solent University,2,9,enrolment,1,1
+Solent University,3,17,enrolment,1,1
+Solent University,4,25,enrolment,1,1
+Solent University,5,37,enrolment,1,1
+Solent University,6,50,enrolment,1,1
+Solent University,7,64,enrolment,1,1
+Solent University,8,78,enrolment,1,1
+Solent University,9,91,enrolment,1,1
+Solent University,10,100,enrolment,1,1
+The University of Lancaster,0,0,enrolment,1,1
+The University of Lancaster,1,2,enrolment,1,1
+The University of Lancaster,2,5,enrolment,1,1
+The University of Lancaster,3,10,enrolment,1,1
+The University of Lancaster,4,17,enrolment,1,1
+The University of Lancaster,5,26,enrolment,1,1
+The University of Lancaster,6,35,enrolment,1,1
+The University of Lancaster,7,47,enrolment,1,1
+The University of Lancaster,8,62,enrolment,1,1
+The University of Lancaster,9,83,enrolment,1,1
+The University of Lancaster,10,100,enrolment,1,1
+De Montfort University,0,0,enrolment,1,1
+De Montfort University,1,7,enrolment,1,1
+De Montfort University,2,17,enrolment,1,1
+De Montfort University,3,28,enrolment,1,1
+De Montfort University,4,42,enrolment,1,1
+De Montfort University,5,53,enrolment,1,1
+De Montfort University,6,63,enrolment,1,1
+De Montfort University,7,73,enrolment,1,1
+De Montfort University,8,83,enrolment,1,1
+De Montfort University,9,94,enrolment,1,1
+De Montfort University,10,100,enrolment,1,1
+The University of Hull,0,0,enrolment,1,1
+The University of Hull,1,6,enrolment,1,1
+The University of Hull,2,14,enrolment,1,1
+The University of Hull,3,23,enrolment,1,1
+The University of Hull,4,32,enrolment,1,1
+The University of Hull,5,41,enrolment,1,1
+The University of Hull,6,51,enrolment,1,1
+The University of Hull,7,63,enrolment,1,1
+The University of Hull,8,77,enrolment,1,1
+The University of Hull,9,90,enrolment,1,1
+The University of Hull,10,100,enrolment,1,1
+The University of West London,0,0,enrolment,1,1
+The University of West London,1,13,enrolment,1,1
+The University of West London,2,28,enrolment,1,1
+The University of West London,3,43,enrolment,1,1
+The University of West London,4,56,enrolment,1,1
+The University of West London,5,68,enrolment,1,1
+The University of West London,6,75,enrolment,1,1
+The University of West London,7,82,enrolment,1,1
+The University of West London,8,88,enrolment,1,1
+The University of West London,9,93,enrolment,1,1
+The University of West London,10,100,enrolment,1,1
+Leeds Beckett University,0,0,enrolment,1,1
+Leeds Beckett University,1,5,enrolment,1,1
+Leeds Beckett University,2,11,enrolment,1,1
+Leeds Beckett University,3,19,enrolment,1,1
+Leeds Beckett University,4,29,enrolment,1,1
+Leeds Beckett University,5,39,enrolment,1,1
+Leeds Beckett University,6,49,enrolment,1,1
+Leeds Beckett University,7,60,enrolment,1,1
+Leeds Beckett University,8,74,enrolment,1,1
+Leeds Beckett University,9,90,enrolment,1,1
+Leeds Beckett University,10,100,enrolment,1,1
+The University of Huddersfield,0,0,enrolment,1,1
+The University of Huddersfield,1,11,enrolment,1,1
+The University of Huddersfield,2,22,enrolment,1,1
+The University of Huddersfield,3,32,enrolment,1,1
+The University of Huddersfield,4,50,enrolment,1,1
+The University of Huddersfield,5,60,enrolment,1,1
+The University of Huddersfield,6,70,enrolment,1,1
+The University of Huddersfield,7,80,enrolment,1,1
+The University of Huddersfield,8,89,enrolment,1,1
+The University of Huddersfield,9,96,enrolment,1,1
+The University of Huddersfield,10,100,enrolment,1,1
+University of Hertfordshire,0,0,enrolment,1,1
+University of Hertfordshire,1,9,enrolment,1,1
+University of Hertfordshire,2,21,enrolment,1,1
+University of Hertfordshire,3,35,enrolment,1,1
+University of Hertfordshire,4,48,enrolment,1,1
+University of Hertfordshire,5,61,enrolment,1,1
+University of Hertfordshire,6,70,enrolment,1,1
+University of Hertfordshire,7,80,enrolment,1,1
+University of Hertfordshire,8,88,enrolment,1,1
+University of Hertfordshire,9,95,enrolment,1,1
+University of Hertfordshire,10,100,enrolment,1,1
+Middlesex University,0,0,enrolment,1,1
+Middlesex University,1,18,enrolment,1,1
+Middlesex University,2,38,enrolment,1,1
+Middlesex University,3,54,enrolment,1,1
+Middlesex University,4,70,enrolment,1,1
+Middlesex University,5,80,enrolment,1,1
+Middlesex University,6,85,enrolment,1,1
+Middlesex University,7,89,enrolment,1,1
+Middlesex University,8,93,enrolment,1,1
+Middlesex University,9,96,enrolment,1,1
+Middlesex University,10,100,enrolment,1,1
+The University of Reading,0,0,enrolment,1,1
+The University of Reading,1,3,enrolment,1,1
+The University of Reading,2,7,enrolment,1,1
+The University of Reading,3,13,enrolment,1,1
+The University of Reading,4,21,enrolment,1,1
+The University of Reading,5,31,enrolment,1,1
+The University of Reading,6,41,enrolment,1,1
+The University of Reading,7,51,enrolment,1,1
+The University of Reading,8,63,enrolment,1,1
+The University of Reading,9,79,enrolment,1,1
+The University of Reading,10,100,enrolment,1,1
+Newcastle University,0,0,enrolment,1,1
+Newcastle University,1,2,enrolment,1,1
+Newcastle University,2,4,enrolment,1,1
+Newcastle University,3,8,enrolment,1,1
+Newcastle University,4,13,enrolment,1,1
+Newcastle University,5,20,enrolment,1,1
+Newcastle University,6,28,enrolment,1,1
+Newcastle University,7,39,enrolment,1,1
+Newcastle University,8,52,enrolment,1,1
+Newcastle University,9,70,enrolment,1,1
+Newcastle University,10,100,enrolment,1,1
+The University of Bristol,0,0,enrolment,1,1
+The University of Bristol,1,2,enrolment,1,1
+The University of Bristol,2,4,enrolment,1,1
+The University of Bristol,3,7,enrolment,1,1
+The University of Bristol,4,11,enrolment,1,1
+The University of Bristol,5,17,enrolment,1,1
+The University of Bristol,6,26,enrolment,1,1
+The University of Bristol,7,37,enrolment,1,1
+The University of Bristol,8,49,enrolment,1,1
+The University of Bristol,9,62,enrolment,1,1
+The University of Bristol,10,100,enrolment,1,1
+The University of Brighton,0,0,enrolment,1,1
+The University of Brighton,1,4,enrolment,1,1
+The University of Brighton,2,10,enrolment,1,1
+The University of Brighton,3,18,enrolment,1,1
+The University of Brighton,4,29,enrolment,1,1
+The University of Brighton,5,40,enrolment,1,1
+The University of Brighton,6,54,enrolment,1,1
+The University of Brighton,7,66,enrolment,1,1
+The University of Brighton,8,79,enrolment,1,1
+The University of Brighton,9,91,enrolment,1,1
+The University of Brighton,10,100,enrolment,1,1
+The University of Sunderland,0,0,enrolment,1,1
+The University of Sunderland,1,9,enrolment,1,1
+The University of Sunderland,2,18,enrolment,1,1
+The University of Sunderland,3,31,enrolment,1,1
+The University of Sunderland,4,43,enrolment,1,1
+The University of Sunderland,5,57,enrolment,1,1
+The University of Sunderland,6,68,enrolment,1,1
+The University of Sunderland,7,77,enrolment,1,1
+The University of Sunderland,8,84,enrolment,1,1
+The University of Sunderland,9,95,enrolment,1,1
+The University of Sunderland,10,100,enrolment,1,1
+Royal Holloway and Bedford New College,0,0,enrolment,1,1
+Royal Holloway and Bedford New College,1,5,enrolment,1,1
+Royal Holloway and Bedford New College,2,10,enrolment,1,1
+Royal Holloway and Bedford New College,3,17,enrolment,1,1
+Royal Holloway and Bedford New College,4,28,enrolment,1,1
+Royal Holloway and Bedford New College,5,39,enrolment,1,1
+Royal Holloway and Bedford New College,6,49,enrolment,1,1
+Royal Holloway and Bedford New College,7,59,enrolment,1,1
+Royal Holloway and Bedford New College,8,69,enrolment,1,1
+Royal Holloway and Bedford New College,9,79,enrolment,1,1
+Royal Holloway and Bedford New College,10,100,enrolment,1,1
+The University of Essex,0,0,enrolment,1,1
+The University of Essex,1,9,enrolment,1,1
+The University of Essex,2,19,enrolment,1,1
+The University of Essex,3,31,enrolment,1,1
+The University of Essex,4,44,enrolment,1,1
+The University of Essex,5,56,enrolment,1,1
+The University of Essex,6,66,enrolment,1,1
+The University of Essex,7,76,enrolment,1,1
+The University of Essex,8,85,enrolment,1,1
+The University of Essex,9,93,enrolment,1,1
+The University of Essex,10,100,enrolment,1,1
+University College London,0,0,enrolment,1,1
+University College London,1,4,enrolment,1,1
+University College London,2,9,enrolment,1,1
+University College London,3,16,enrolment,1,1
+University College London,4,24,enrolment,1,1
+University College London,5,31,enrolment,1,1
+University College London,6,38,enrolment,1,1
+University College London,7,45,enrolment,1,1
+University College London,8,53,enrolment,1,1
+University College London,9,60,enrolment,1,1
+University College London,10,100,enrolment,1,1
+The University of Surrey,0,0,enrolment,1,1
+The University of Surrey,1,4,enrolment,1,1
+The University of Surrey,2,10,enrolment,1,1
+The University of Surrey,3,16,enrolment,1,1
+The University of Surrey,4,25,enrolment,1,1
+The University of Surrey,5,36,enrolment,1,1
+The University of Surrey,6,48,enrolment,1,1
+The University of Surrey,7,59,enrolment,1,1
+The University of Surrey,8,69,enrolment,1,1
+The University of Surrey,9,81,enrolment,1,1
+The University of Surrey,10,100,enrolment,1,1
+The University of Oxford,0,0,enrolment,1,1
+The University of Oxford,1,1,enrolment,1,1
+The University of Oxford,2,3,enrolment,1,1
+The University of Oxford,3,6,enrolment,1,1
+The University of Oxford,4,11,enrolment,1,1
+The University of Oxford,5,17,enrolment,1,1
+The University of Oxford,6,24,enrolment,1,1
+The University of Oxford,7,33,enrolment,1,1
+The University of Oxford,8,43,enrolment,1,1
+The University of Oxford,9,56,enrolment,1,1
+The University of Oxford,10,100,enrolment,1,1
+"University of the West of England, Bristol",0,0,enrolment,1,1
+"University of the West of England, Bristol",1,2,enrolment,1,1
+"University of the West of England, Bristol",2,6,enrolment,1,1
+"University of the West of England, Bristol",3,12,enrolment,1,1
+"University of the West of England, Bristol",4,18,enrolment,1,1
+"University of the West of England, Bristol",5,28,enrolment,1,1
+"University of the West of England, Bristol",6,41,enrolment,1,1
+"University of the West of England, Bristol",7,57,enrolment,1,1
+"University of the West of England, Bristol",8,73,enrolment,1,1
+"University of the West of England, Bristol",9,88,enrolment,1,1
+"University of the West of England, Bristol",10,100,enrolment,1,1
+The University of East Anglia,0,0,enrolment,1,1
+The University of East Anglia,1,3,enrolment,1,1
+The University of East Anglia,2,8,enrolment,1,1
+The University of East Anglia,3,14,enrolment,1,1
+The University of East Anglia,4,22,enrolment,1,1
+The University of East Anglia,5,31,enrolment,1,1
+The University of East Anglia,6,43,enrolment,1,1
+The University of East Anglia,7,58,enrolment,1,1
+The University of East Anglia,8,71,enrolment,1,1
+The University of East Anglia,9,84,enrolment,1,1
+The University of East Anglia,10,100,enrolment,1,1
+Teesside University,0,0,enrolment,1,1
+Teesside University,1,12,enrolment,1,1
+Teesside University,2,23,enrolment,1,1
+Teesside University,3,34,enrolment,1,1
+Teesside University,4,46,enrolment,1,1
+Teesside University,5,54,enrolment,1,1
+Teesside University,6,64,enrolment,1,1
+Teesside University,7,72,enrolment,1,1
+Teesside University,8,83,enrolment,1,1
+Teesside University,9,94,enrolment,1,1
+Teesside University,10,100,enrolment,1,1
+Edge Hill University,0,0,enrolment,1,1
+Edge Hill University,1,6,enrolment,1,1
+Edge Hill University,2,13,enrolment,1,1
+Edge Hill University,3,21,enrolment,1,1
+Edge Hill University,4,31,enrolment,1,1
+Edge Hill University,5,40,enrolment,1,1
+Edge Hill University,6,52,enrolment,1,1
+Edge Hill University,7,63,enrolment,1,1
+Edge Hill University,8,78,enrolment,1,1
+Edge Hill University,9,94,enrolment,1,1
+Edge Hill University,10,100,enrolment,1,1
+University of Worcester,0,0,enrolment,1,1
+University of Worcester,1,5,enrolment,1,1
+University of Worcester,2,10,enrolment,1,1
+University of Worcester,3,18,enrolment,1,1
+University of Worcester,4,29,enrolment,1,1
+University of Worcester,5,39,enrolment,1,1
+University of Worcester,6,50,enrolment,1,1
+University of Worcester,7,64,enrolment,1,1
+University of Worcester,8,78,enrolment,1,1
+University of Worcester,9,91,enrolment,1,1
+University of Worcester,10,100,enrolment,1,1
+Keele University,0,0,enrolment,1,1
+Keele University,1,6,enrolment,1,1
+Keele University,2,13,enrolment,1,1
+Keele University,3,22,enrolment,1,1
+Keele University,4,34,enrolment,1,1
+Keele University,5,43,enrolment,1,1
+Keele University,6,53,enrolment,1,1
+Keele University,7,63,enrolment,1,1
+Keele University,8,75,enrolment,1,1
+Keele University,9,89,enrolment,1,1
+Keele University,10,100,enrolment,1,1
+University of Cumbria,0,0,enrolment,1,1
+University of Cumbria,1,6,enrolment,1,1
+University of Cumbria,2,11,enrolment,1,1
+University of Cumbria,3,18,enrolment,1,1
+University of Cumbria,4,28,enrolment,1,1
+University of Cumbria,5,40,enrolment,1,1
+University of Cumbria,6,51,enrolment,1,1
+University of Cumbria,7,63,enrolment,1,1
+University of Cumbria,8,78,enrolment,1,1
+University of Cumbria,9,93,enrolment,1,1
+University of Cumbria,10,100,enrolment,1,1
+Staffordshire University,0,0,enrolment,1,1
+Staffordshire University,1,9,enrolment,1,1
+Staffordshire University,2,19,enrolment,1,1
+Staffordshire University,3,29,enrolment,1,1
+Staffordshire University,4,42,enrolment,1,1
+Staffordshire University,5,53,enrolment,1,1
+Staffordshire University,6,63,enrolment,1,1
+Staffordshire University,7,73,enrolment,1,1
+Staffordshire University,8,84,enrolment,1,1
+Staffordshire University,9,96,enrolment,1,1
+Staffordshire University,10,100,enrolment,1,1
+Falmouth University,0,0,enrolment,1,1
+Falmouth University,1,2,enrolment,1,1
+Falmouth University,2,6,enrolment,1,1
+Falmouth University,3,12,enrolment,1,1
+Falmouth University,4,18,enrolment,1,1
+Falmouth University,5,27,enrolment,1,1
+Falmouth University,6,42,enrolment,1,1
+Falmouth University,7,56,enrolment,1,1
+Falmouth University,8,70,enrolment,1,1
+Falmouth University,9,84,enrolment,1,1
+Falmouth University,10,100,enrolment,1,1
+University of Chester,0,0,enrolment,1,1
+University of Chester,1,4,enrolment,1,1
+University of Chester,2,11,enrolment,1,1
+University of Chester,3,20,enrolment,1,1
+University of Chester,4,27,enrolment,1,1
+University of Chester,5,38,enrolment,1,1
+University of Chester,6,48,enrolment,1,1
+University of Chester,7,61,enrolment,1,1
+University of Chester,8,76,enrolment,1,1
+University of Chester,9,92,enrolment,1,1
+University of Chester,10,100,enrolment,1,1
+Birmingham City University,0,0,enrolment,1,1
+Birmingham City University,1,14,enrolment,1,1
+Birmingham City University,2,26,enrolment,1,1
+Birmingham City University,3,38,enrolment,1,1
+Birmingham City University,4,52,enrolment,1,1
+Birmingham City University,5,61,enrolment,1,1
+Birmingham City University,6,69,enrolment,1,1
+Birmingham City University,7,77,enrolment,1,1
+Birmingham City University,8,85,enrolment,1,1
+Birmingham City University,9,94,enrolment,1,1
+Birmingham City University,10,100,enrolment,1,1
+University of Derby,0,0,enrolment,1,1
+University of Derby,1,6,enrolment,1,1
+University of Derby,2,13,enrolment,1,1
+University of Derby,3,22,enrolment,1,1
+University of Derby,4,34,enrolment,1,1
+University of Derby,5,45,enrolment,1,1
+University of Derby,6,57,enrolment,1,1
+University of Derby,7,70,enrolment,1,1
+University of Derby,8,82,enrolment,1,1
+University of Derby,9,96,enrolment,1,1
+University of Derby,10,100,enrolment,1,1
+Liverpool John Moores University,0,0,enrolment,1,1
+Liverpool John Moores University,1,6,enrolment,1,1
+Liverpool John Moores University,2,13,enrolment,1,1
+Liverpool John Moores University,3,24,enrolment,1,1
+Liverpool John Moores University,4,33,enrolment,1,1
+Liverpool John Moores University,5,43,enrolment,1,1
+Liverpool John Moores University,6,53,enrolment,1,1
+Liverpool John Moores University,7,64,enrolment,1,1
+Liverpool John Moores University,8,76,enrolment,1,1
+Liverpool John Moores University,9,91,enrolment,1,1
+Liverpool John Moores University,10,100,enrolment,1,1
+University of Bedfordshire,0,0,enrolment,1,1
+University of Bedfordshire,1,13,enrolment,1,1
+University of Bedfordshire,2,25,enrolment,1,1
+University of Bedfordshire,3,37,enrolment,1,1
+University of Bedfordshire,4,54,enrolment,1,1
+University of Bedfordshire,5,65,enrolment,1,1
+University of Bedfordshire,6,73,enrolment,1,1
+University of Bedfordshire,7,82,enrolment,1,1
+University of Bedfordshire,8,88,enrolment,1,1
+University of Bedfordshire,9,94,enrolment,1,1
+University of Bedfordshire,10,100,enrolment,1,1
+Aston University,0,0,enrolment,1,1
+Aston University,1,11,enrolment,1,1
+Aston University,2,23,enrolment,1,1
+Aston University,3,37,enrolment,1,1
+Aston University,4,58,enrolment,1,1
+Aston University,5,68,enrolment,1,1
+Aston University,6,75,enrolment,1,1
+Aston University,7,82,enrolment,1,1
+Aston University,8,87,enrolment,1,1
+Aston University,9,92,enrolment,1,1
+Aston University,10,100,enrolment,1,1
+Coventry University,0,0,enrolment,1,1
+Coventry University,1,11,enrolment,1,1
+Coventry University,2,23,enrolment,1,1
+Coventry University,3,36,enrolment,1,1
+Coventry University,4,52,enrolment,1,1
+Coventry University,5,63,enrolment,1,1
+Coventry University,6,72,enrolment,1,1
+Coventry University,7,79,enrolment,1,1
+Coventry University,8,86,enrolment,1,1
+Coventry University,9,93,enrolment,1,1
+Coventry University,10,100,enrolment,1,1
+The University of Southampton,0,0,enrolment,1,1
+The University of Southampton,1,2,enrolment,1,1
+The University of Southampton,2,5,enrolment,1,1
+The University of Southampton,3,9,enrolment,1,1
+The University of Southampton,4,15,enrolment,1,1
+The University of Southampton,5,24,enrolment,1,1
+The University of Southampton,6,35,enrolment,1,1
+The University of Southampton,7,48,enrolment,1,1
+The University of Southampton,8,62,enrolment,1,1
+The University of Southampton,9,79,enrolment,1,1
+The University of Southampton,10,100,enrolment,1,1
+London School of Economics and Political Science,0,0,enrolment,1,1
+London School of Economics and Political Science,1,4,enrolment,1,1
+London School of Economics and Political Science,2,9,enrolment,1,1
+London School of Economics and Political Science,3,14,enrolment,1,1
+London School of Economics and Political Science,4,24,enrolment,1,1
+London School of Economics and Political Science,5,32,enrolment,1,1
+London School of Economics and Political Science,6,42,enrolment,1,1
+London School of Economics and Political Science,7,49,enrolment,1,1
+London School of Economics and Political Science,8,56,enrolment,1,1
+London School of Economics and Political Science,9,65,enrolment,1,1
+London School of Economics and Political Science,10,100,enrolment,1,1
+The University of Warwick,0,0,enrolment,1,1
+The University of Warwick,1,4,enrolment,1,1
+The University of Warwick,2,8,enrolment,1,1
+The University of Warwick,3,14,enrolment,1,1
+The University of Warwick,4,23,enrolment,1,1
+The University of Warwick,5,31,enrolment,1,1
+The University of Warwick,6,41,enrolment,1,1
+The University of Warwick,7,51,enrolment,1,1
+The University of Warwick,8,62,enrolment,1,1
+The University of Warwick,9,75,enrolment,1,1
+The University of Warwick,10,100,enrolment,1,1
+King's College London,0,0,enrolment,1,1
+King's College London,1,7,enrolment,1,1
+King's College London,2,15,enrolment,1,1
+King's College London,3,25,enrolment,1,1
+King's College London,4,36,enrolment,1,1
+King's College London,5,44,enrolment,1,1
+King's College London,6,51,enrolment,1,1
+King's College London,7,58,enrolment,1,1
+King's College London,8,65,enrolment,1,1
+King's College London,9,71,enrolment,1,1
+King's College London,10,100,enrolment,1,1
+The Nottingham Trent University,0,0,enrolment,1,1
+The Nottingham Trent University,1,4,enrolment,1,1
+The Nottingham Trent University,2,9,enrolment,1,1
+The Nottingham Trent University,3,16,enrolment,1,1
+The Nottingham Trent University,4,25,enrolment,1,1
+The Nottingham Trent University,5,35,enrolment,1,1
+The Nottingham Trent University,6,46,enrolment,1,1
+The Nottingham Trent University,7,58,enrolment,1,1
+The Nottingham Trent University,8,72,enrolment,1,1
+The Nottingham Trent University,9,87,enrolment,1,1
+The Nottingham Trent University,10,100,enrolment,1,1
+The University of Leicester,0,0,enrolment,1,1
+The University of Leicester,1,5,enrolment,1,1
+The University of Leicester,2,13,enrolment,1,1
+The University of Leicester,3,24,enrolment,1,1
+The University of Leicester,4,36,enrolment,1,1
+The University of Leicester,5,46,enrolment,1,1
+The University of Leicester,6,56,enrolment,1,1
+The University of Leicester,7,65,enrolment,1,1
+The University of Leicester,8,75,enrolment,1,1
+The University of Leicester,9,86,enrolment,1,1
+The University of Leicester,10,100,enrolment,1,1
+Sheffield Hallam University,0,0,enrolment,1,1
+Sheffield Hallam University,1,6,enrolment,1,1
+Sheffield Hallam University,2,12,enrolment,1,1
+Sheffield Hallam University,3,19,enrolment,1,1
+Sheffield Hallam University,4,29,enrolment,1,1
+Sheffield Hallam University,5,39,enrolment,1,1
+Sheffield Hallam University,6,51,enrolment,1,1
+Sheffield Hallam University,7,64,enrolment,1,1
+Sheffield Hallam University,8,78,enrolment,1,1
+Sheffield Hallam University,9,93,enrolment,1,1
+Sheffield Hallam University,10,100,enrolment,1,1
+The University of Northampton,0,0,enrolment,1,1
+The University of Northampton,1,11,enrolment,1,1
+The University of Northampton,2,24,enrolment,1,1
+The University of Northampton,3,36,enrolment,1,1
+The University of Northampton,4,49,enrolment,1,1
+The University of Northampton,5,60,enrolment,1,1
+The University of Northampton,6,69,enrolment,1,1
+The University of Northampton,7,78,enrolment,1,1
+The University of Northampton,8,87,enrolment,1,1
+The University of Northampton,9,97,enrolment,1,1
+The University of Northampton,10,100,enrolment,1,1
+Anglia Ruskin University,0,0,enrolment,1,1
+Anglia Ruskin University,1,5,enrolment,1,1
+Anglia Ruskin University,2,12,enrolment,1,1
+Anglia Ruskin University,3,20,enrolment,1,1
+Anglia Ruskin University,4,30,enrolment,1,1
+Anglia Ruskin University,5,41,enrolment,1,1
+Anglia Ruskin University,6,53,enrolment,1,1
+Anglia Ruskin University,7,68,enrolment,1,1
+Anglia Ruskin University,8,82,enrolment,1,1
+Anglia Ruskin University,9,91,enrolment,1,1
+Anglia Ruskin University,10,100,enrolment,1,1
+The University of Central Lancashire,0,0,enrolment,1,1
+The University of Central Lancashire,1,8,enrolment,1,1
+The University of Central Lancashire,2,17,enrolment,1,1
+The University of Central Lancashire,3,27,enrolment,1,1
+The University of Central Lancashire,4,42,enrolment,1,1
+The University of Central Lancashire,5,53,enrolment,1,1
+The University of Central Lancashire,6,64,enrolment,1,1
+The University of Central Lancashire,7,72,enrolment,1,1
+The University of Central Lancashire,8,83,enrolment,1,1
+The University of Central Lancashire,9,94,enrolment,1,1
+The University of Central Lancashire,10,100,enrolment,1,1
+York St John University,0,0,enrolment,1,1
+York St John University,1,4,enrolment,1,1
+York St John University,2,9,enrolment,1,1
+York St John University,3,16,enrolment,1,1
+York St John University,4,25,enrolment,1,1
+York St John University,5,35,enrolment,1,1
+York St John University,6,48,enrolment,1,1
+York St John University,7,61,enrolment,1,1
+York St John University,8,77,enrolment,1,1
+York St John University,9,93,enrolment,1,1
+York St John University,10,100,enrolment,1,1
+"University of the Arts, London",0,0,enrolment,1,1
+"University of the Arts, London",1,5,enrolment,1,1
+"University of the Arts, London",2,11,enrolment,1,1
+"University of the Arts, London",3,20,enrolment,1,1
+"University of the Arts, London",4,29,enrolment,1,1
+"University of the Arts, London",5,41,enrolment,1,1
+"University of the Arts, London",6,50,enrolment,1,1
+"University of the Arts, London",7,60,enrolment,1,1
+"University of the Arts, London",8,71,enrolment,1,1
+"University of the Arts, London",9,81,enrolment,1,1
+"University of the Arts, London",10,100,enrolment,1,1
+The University of Westminster,0,0,enrolment,1,1
+The University of Westminster,1,17,enrolment,1,1
+The University of Westminster,2,35,enrolment,1,1
+The University of Westminster,3,51,enrolment,1,1
+The University of Westminster,4,66,enrolment,1,1
+The University of Westminster,5,76,enrolment,1,1
+The University of Westminster,6,81,enrolment,1,1
+The University of Westminster,7,85,enrolment,1,1
+The University of Westminster,8,89,enrolment,1,1
+The University of Westminster,9,92,enrolment,1,1
+The University of Westminster,10,100,enrolment,1,1
+University of Gloucestershire,0,0,enrolment,1,1
+University of Gloucestershire,1,3,enrolment,1,1
+University of Gloucestershire,2,6,enrolment,1,1
+University of Gloucestershire,3,12,enrolment,1,1
+University of Gloucestershire,4,18,enrolment,1,1
+University of Gloucestershire,5,27,enrolment,1,1
+University of Gloucestershire,6,40,enrolment,1,1
+University of Gloucestershire,7,56,enrolment,1,1
+University of Gloucestershire,8,74,enrolment,1,1
+University of Gloucestershire,9,92,enrolment,1,1
+University of Gloucestershire,10,100,enrolment,1,1
+The University of Leeds,0,0,enrolment,1,1
+The University of Leeds,1,2,enrolment,1,1
+The University of Leeds,2,5,enrolment,1,1
+The University of Leeds,3,10,enrolment,1,1
+The University of Leeds,4,17,enrolment,1,1
+The University of Leeds,5,24,enrolment,1,1
+The University of Leeds,6,33,enrolment,1,1
+The University of Leeds,7,45,enrolment,1,1
+The University of Leeds,8,58,enrolment,1,1
+The University of Leeds,9,75,enrolment,1,1
+The University of Leeds,10,100,enrolment,1,1
+The University of Chichester,0,0,enrolment,1,1
+The University of Chichester,1,3,enrolment,1,1
+The University of Chichester,2,8,enrolment,1,1
+The University of Chichester,3,14,enrolment,1,1
+The University of Chichester,4,20,enrolment,1,1
+The University of Chichester,5,31,enrolment,1,1
+The University of Chichester,6,45,enrolment,1,1
+The University of Chichester,7,61,enrolment,1,1
+The University of Chichester,8,78,enrolment,1,1
+The University of Chichester,9,92,enrolment,1,1
+The University of Chichester,10,100,enrolment,1,1
+Kingston University,0,0,enrolment,1,1
+Kingston University,1,12,enrolment,1,1
+Kingston University,2,27,enrolment,1,1
+Kingston University,3,39,enrolment,1,1
+Kingston University,4,53,enrolment,1,1
+Kingston University,5,64,enrolment,1,1
+Kingston University,6,72,enrolment,1,1
+Kingston University,7,79,enrolment,1,1
+Kingston University,8,85,enrolment,1,1
+Kingston University,9,91,enrolment,1,1
+Kingston University,10,100,enrolment,1,1
+Brunel University London,0,0,enrolment,1,1
+Brunel University London,1,15,enrolment,1,1
+Brunel University London,2,31,enrolment,1,1
+Brunel University London,3,43,enrolment,1,1
+Brunel University London,4,62,enrolment,1,1
+Brunel University London,5,74,enrolment,1,1
+Brunel University London,6,81,enrolment,1,1
+Brunel University London,7,86,enrolment,1,1
+Brunel University London,8,90,enrolment,1,1
+Brunel University London,9,93,enrolment,1,1
+Brunel University London,10,100,enrolment,1,1
+Bournemouth University,0,0,enrolment,1,1
+Bournemouth University,1,3,enrolment,1,1
+Bournemouth University,2,8,enrolment,1,1
+Bournemouth University,3,15,enrolment,1,1
+Bournemouth University,4,23,enrolment,1,1
+Bournemouth University,5,36,enrolment,1,1
+Bournemouth University,6,49,enrolment,1,1
+Bournemouth University,7,62,enrolment,1,1
+Bournemouth University,8,74,enrolment,1,1
+Bournemouth University,9,89,enrolment,1,1
+Bournemouth University,10,100,enrolment,1,1
+University for the Creative Arts,0,0,enrolment,1,1
+University for the Creative Arts,1,5,enrolment,1,1
+University for the Creative Arts,2,11,enrolment,1,1
+University for the Creative Arts,3,19,enrolment,1,1
+University for the Creative Arts,4,29,enrolment,1,1
+University for the Creative Arts,5,41,enrolment,1,1
+University for the Creative Arts,6,54,enrolment,1,1
+University for the Creative Arts,7,66,enrolment,1,1
+University for the Creative Arts,8,79,enrolment,1,1
+University for the Creative Arts,9,90,enrolment,1,1
+University for the Creative Arts,10,100,enrolment,1,1
+The University of East London,0,0,enrolment,1,1
+The University of East London,1,22,enrolment,1,1
+The University of East London,2,38,enrolment,1,1
+The University of East London,3,54,enrolment,1,1
+The University of East London,4,69,enrolment,1,1
+The University of East London,5,78,enrolment,1,1
+The University of East London,6,83,enrolment,1,1
+The University of East London,7,88,enrolment,1,1
+The University of East London,8,92,enrolment,1,1
+The University of East London,9,96,enrolment,1,1
+The University of East London,10,100,enrolment,1,1
+Roehampton University,0,0,enrolment,1,1
+Roehampton University,1,16,enrolment,1,1
+Roehampton University,2,34,enrolment,1,1
+Roehampton University,3,49,enrolment,1,1
+Roehampton University,4,61,enrolment,1,1
+Roehampton University,5,71,enrolment,1,1
+Roehampton University,6,78,enrolment,1,1
+Roehampton University,7,83,enrolment,1,1
+Roehampton University,8,90,enrolment,1,1
+Roehampton University,9,94,enrolment,1,1
+Roehampton University,10,100,enrolment,1,1
+Canterbury Christ Church University,0,0,enrolment,1,1
+Canterbury Christ Church University,1,8,enrolment,1,1
+Canterbury Christ Church University,2,16,enrolment,1,1
+Canterbury Christ Church University,3,27,enrolment,1,1
+Canterbury Christ Church University,4,40,enrolment,1,1
+Canterbury Christ Church University,5,53,enrolment,1,1
+Canterbury Christ Church University,6,67,enrolment,1,1
+Canterbury Christ Church University,7,79,enrolment,1,1
+Canterbury Christ Church University,8,89,enrolment,1,1
+Canterbury Christ Church University,9,96,enrolment,1,1
+Canterbury Christ Church University,10,100,enrolment,1,1
+London South Bank University,0,0,enrolment,1,1
+London South Bank University,1,19,enrolment,1,1
+London South Bank University,2,36,enrolment,1,1
+London South Bank University,3,49,enrolment,1,1
+London South Bank University,4,63,enrolment,1,1
+London South Bank University,5,72,enrolment,1,1
+London South Bank University,6,79,enrolment,1,1
+London South Bank University,7,85,enrolment,1,1
+London South Bank University,8,89,enrolment,1,1
+London South Bank University,9,94,enrolment,1,1
+London South Bank University,10,100,enrolment,1,1
+"City St George's, University of London",0,0,enrolment,1,1
+"City St George's, University of London",1,17,enrolment,1,1
+"City St George's, University of London",2,32,enrolment,1,1
+"City St George's, University of London",3,46,enrolment,1,1
+"City St George's, University of London",4,61,enrolment,1,1
+"City St George's, University of London",5,72,enrolment,1,1
+"City St George's, University of London",6,78,enrolment,1,1
+"City St George's, University of London",7,82,enrolment,1,1
+"City St George's, University of London",8,85,enrolment,1,1
+"City St George's, University of London",9,88,enrolment,1,1
+"City St George's, University of London",10,100,enrolment,1,1
+Goldsmiths College,0,0,enrolment,1,1
+Goldsmiths College,1,15,enrolment,1,1
+Goldsmiths College,2,28,enrolment,1,1
+Goldsmiths College,3,42,enrolment,1,1
+Goldsmiths College,4,55,enrolment,1,1
+Goldsmiths College,5,63,enrolment,1,1
+Goldsmiths College,6,70,enrolment,1,1
+Goldsmiths College,7,76,enrolment,1,1
+Goldsmiths College,8,83,enrolment,1,1
+Goldsmiths College,9,89,enrolment,1,1
+Goldsmiths College,10,100,enrolment,1,1
+Bath Spa University,0,0,enrolment,1,1
+Bath Spa University,1,2,enrolment,1,1
+Bath Spa University,2,6,enrolment,1,1
+Bath Spa University,3,11,enrolment,1,1
+Bath Spa University,4,16,enrolment,1,1
+Bath Spa University,5,26,enrolment,1,1
+Bath Spa University,6,42,enrolment,1,1
+Bath Spa University,7,58,enrolment,1,1
+Bath Spa University,8,75,enrolment,1,1
+Bath Spa University,9,88,enrolment,1,1
+Bath Spa University,10,100,enrolment,1,1
+The University of Wolverhampton,0,0,enrolment,1,1
+The University of Wolverhampton,1,15,enrolment,1,1
+The University of Wolverhampton,2,29,enrolment,1,1
+The University of Wolverhampton,3,43,enrolment,1,1
+The University of Wolverhampton,4,59,enrolment,1,1
+The University of Wolverhampton,5,70,enrolment,1,1
+The University of Wolverhampton,6,78,enrolment,1,1
+The University of Wolverhampton,7,85,enrolment,1,1
+The University of Wolverhampton,8,90,enrolment,1,1
+The University of Wolverhampton,9,96,enrolment,1,1
+The University of Wolverhampton,10,100,enrolment,1,1
+The University of Salford,0,0,enrolment,1,1
+The University of Salford,1,9,enrolment,1,1
+The University of Salford,2,19,enrolment,1,1
+The University of Salford,3,31,enrolment,1,1
+The University of Salford,4,44,enrolment,1,1
+The University of Salford,5,55,enrolment,1,1
+The University of Salford,6,64,enrolment,1,1
+The University of Salford,7,72,enrolment,1,1
+The University of Salford,8,83,enrolment,1,1
+The University of Salford,9,93,enrolment,1,1
+The University of Salford,10,100,enrolment,1,1
+University of Northumbria at Newcastle,0,0,enrolment,1,1
+University of Northumbria at Newcastle,1,4,enrolment,1,1
+University of Northumbria at Newcastle,2,10,enrolment,1,1
+University of Northumbria at Newcastle,3,18,enrolment,1,1
+University of Northumbria at Newcastle,4,29,enrolment,1,1
+University of Northumbria at Newcastle,5,39,enrolment,1,1
+University of Northumbria at Newcastle,6,49,enrolment,1,1
+University of Northumbria at Newcastle,7,59,enrolment,1,1
+University of Northumbria at Newcastle,8,71,enrolment,1,1
+University of Northumbria at Newcastle,9,88,enrolment,1,1
+University of Northumbria at Newcastle,10,100,enrolment,1,1
+"St Mary's University, Twickenham",0,0,enrolment,1,1
+"St Mary's University, Twickenham",1,6,enrolment,1,1
+"St Mary's University, Twickenham",2,15,enrolment,1,1
+"St Mary's University, Twickenham",3,27,enrolment,1,1
+"St Mary's University, Twickenham",4,40,enrolment,1,1
+"St Mary's University, Twickenham",5,52,enrolment,1,1
+"St Mary's University, Twickenham",6,62,enrolment,1,1
+"St Mary's University, Twickenham",7,71,enrolment,1,1
+"St Mary's University, Twickenham",8,80,enrolment,1,1
+"St Mary's University, Twickenham",9,90,enrolment,1,1
+"St Mary's University, Twickenham",10,100,enrolment,1,1
+The University of Bradford,0,0,enrolment,1,1
+The University of Bradford,1,16,enrolment,1,1
+The University of Bradford,2,30,enrolment,1,1
+The University of Bradford,3,43,enrolment,1,1
+The University of Bradford,4,68,enrolment,1,1
+The University of Bradford,5,80,enrolment,1,1
+The University of Bradford,6,85,enrolment,1,1
+The University of Bradford,7,89,enrolment,1,1
+The University of Bradford,8,92,enrolment,1,1
+The University of Bradford,9,94,enrolment,1,1
+The University of Bradford,10,100,enrolment,1,1
+The University of York,0,0,enrolment,1,1
+The University of York,1,2,enrolment,1,1
+The University of York,2,5,enrolment,1,1
+The University of York,3,9,enrolment,1,1
+The University of York,4,15,enrolment,1,1
+The University of York,5,23,enrolment,1,1
+The University of York,6,34,enrolment,1,1
+The University of York,7,46,enrolment,1,1
+The University of York,8,60,enrolment,1,1
+The University of York,9,76,enrolment,1,1
+The University of York,10,100,enrolment,1,1
+The University of Greenwich,0,0,enrolment,1,1
+The University of Greenwich,1,16,enrolment,1,1
+The University of Greenwich,2,31,enrolment,1,1
+The University of Greenwich,3,46,enrolment,1,1
+The University of Greenwich,4,61,enrolment,1,1
+The University of Greenwich,5,70,enrolment,1,1
+The University of Greenwich,6,79,enrolment,1,1
+The University of Greenwich,7,85,enrolment,1,1
+The University of Greenwich,8,91,enrolment,1,1
+The University of Greenwich,9,96,enrolment,1,1
+The University of Greenwich,10,100,enrolment,1,1
+The University of Cambridge,0,0,enrolment,1,1
+The University of Cambridge,1,1,enrolment,1,1
+The University of Cambridge,2,3,enrolment,1,1
+The University of Cambridge,3,6,enrolment,1,1
+The University of Cambridge,4,11,enrolment,1,1
+The University of Cambridge,5,17,enrolment,1,1
+The University of Cambridge,6,25,enrolment,1,1
+The University of Cambridge,7,36,enrolment,1,1
+The University of Cambridge,8,45,enrolment,1,1
+The University of Cambridge,9,59,enrolment,1,1
+The University of Cambridge,10,100,enrolment,1,1
+Leeds Trinity University,0,0,enrolment,1,1
+Leeds Trinity University,1,7,enrolment,1,1
+Leeds Trinity University,2,16,enrolment,1,1
+Leeds Trinity University,3,25,enrolment,1,1
+Leeds Trinity University,4,37,enrolment,1,1
+Leeds Trinity University,5,51,enrolment,1,1
+Leeds Trinity University,6,63,enrolment,1,1
+Leeds Trinity University,7,73,enrolment,1,1
+Leeds Trinity University,8,83,enrolment,1,1
+Leeds Trinity University,9,93,enrolment,1,1
+Leeds Trinity University,10,100,enrolment,1,1
+The University of Sheffield,0,0,enrolment,1,1
+The University of Sheffield,1,2,enrolment,1,1
+The University of Sheffield,2,5,enrolment,1,1
+The University of Sheffield,3,10,enrolment,1,1
+The University of Sheffield,4,17,enrolment,1,1
+The University of Sheffield,5,26,enrolment,1,1
+The University of Sheffield,6,37,enrolment,1,1
+The University of Sheffield,7,49,enrolment,1,1
+The University of Sheffield,8,64,enrolment,1,1
+The University of Sheffield,9,83,enrolment,1,1
+The University of Sheffield,10,100,enrolment,1,1
+Queen Mary University of London,0,0,enrolment,1,1
+Queen Mary University of London,1,13,enrolment,1,1
+Queen Mary University of London,2,26,enrolment,1,1
+Queen Mary University of London,3,40,enrolment,1,1
+Queen Mary University of London,4,55,enrolment,1,1
+Queen Mary University of London,5,66,enrolment,1,1
+Queen Mary University of London,6,73,enrolment,1,1
+Queen Mary University of London,7,78,enrolment,1,1
+Queen Mary University of London,8,83,enrolment,1,1
+Queen Mary University of London,9,88,enrolment,1,1
+Queen Mary University of London,10,100,enrolment,1,1
+Norwich University of the Arts,0,0,enrolment,1,1
+Norwich University of the Arts,1,5,enrolment,1,1
+Norwich University of the Arts,2,12,enrolment,1,1
+Norwich University of the Arts,3,18,enrolment,1,1
+Norwich University of the Arts,4,26,enrolment,1,1
+Norwich University of the Arts,5,35,enrolment,1,1
+Norwich University of the Arts,6,49,enrolment,1,1
+Norwich University of the Arts,7,65,enrolment,1,1
+Norwich University of the Arts,8,81,enrolment,1,1
+Norwich University of the Arts,9,92,enrolment,1,1
+Norwich University of the Arts,10,100,enrolment,1,1
+Loughborough University,0,0,enrolment,1,1
+Loughborough University,1,3,enrolment,1,1
+Loughborough University,2,7,enrolment,1,1
+Loughborough University,3,13,enrolment,1,1
+Loughborough University,4,19,enrolment,1,1
+Loughborough University,5,28,enrolment,1,1
+Loughborough University,6,38,enrolment,1,1
+Loughborough University,7,49,enrolment,1,1
+Loughborough University,8,61,enrolment,1,1
+Loughborough University,9,75,enrolment,1,1
+Loughborough University,10,100,enrolment,1,1
+Ravensbourne University London,0,0,enrolment,1,1
+Ravensbourne University London,1,8,enrolment,1,1
+Ravensbourne University London,2,18,enrolment,1,1
+Ravensbourne University London,3,32,enrolment,1,1
+Ravensbourne University London,4,44,enrolment,1,1
+Ravensbourne University London,5,57,enrolment,1,1
+Ravensbourne University London,6,65,enrolment,1,1
+Ravensbourne University London,7,74,enrolment,1,1
+Ravensbourne University London,8,82,enrolment,1,1
+Ravensbourne University London,9,91,enrolment,1,1
+Ravensbourne University London,10,100,enrolment,1,1
+"St George's, University of London",0,0,enrolment,1,1
+"St George's, University of London",1,8,enrolment,1,1
+"St George's, University of London",2,18,enrolment,1,1
+"St George's, University of London",3,28,enrolment,1,1
+"St George's, University of London",4,42,enrolment,1,1
+"St George's, University of London",5,52,enrolment,1,1
+"St George's, University of London",6,61,enrolment,1,1
+"St George's, University of London",7,66,enrolment,1,1
+"St George's, University of London",8,73,enrolment,1,1
+"St George's, University of London",9,80,enrolment,1,1
+"St George's, University of London",10,100,enrolment,1,1
+Leeds Arts University,0,0,enrolment,1,1
+Leeds Arts University,1,4,enrolment,1,1
+Leeds Arts University,2,8,enrolment,1,1
+Leeds Arts University,3,13,enrolment,1,1
+Leeds Arts University,4,19,enrolment,1,1
+Leeds Arts University,5,29,enrolment,1,1
+Leeds Arts University,6,39,enrolment,1,1
+Leeds Arts University,7,52,enrolment,1,1
+Leeds Arts University,8,68,enrolment,1,1
+Leeds Arts University,9,83,enrolment,1,1
+Leeds Arts University,10,100,enrolment,1,1
+"Imperial College of Science, Technology and Medicine",0,0,equal,1,1
+"Imperial College of Science, Technology and Medicine",1,10,equal,1,1
+"Imperial College of Science, Technology and Medicine",2,20,equal,1,1
+"Imperial College of Science, Technology and Medicine",3,30,equal,1,1
+"Imperial College of Science, Technology and Medicine",4,40,equal,1,1
+"Imperial College of Science, Technology and Medicine",5,50,equal,1,1
+"Imperial College of Science, Technology and Medicine",6,60,equal,1,1
+"Imperial College of Science, Technology and Medicine",7,70,equal,1,1
+"Imperial College of Science, Technology and Medicine",8,80,equal,1,1
+"Imperial College of Science, Technology and Medicine",9,90,equal,1,1
+"Imperial College of Science, Technology and Medicine",10,100,equal,1,1
+University of Durham,0,0,equal,1,1
+University of Durham,1,10,equal,1,1
+University of Durham,2,20,equal,1,1
+University of Durham,3,30,equal,1,1
+University of Durham,4,40,equal,1,1
+University of Durham,5,50,equal,1,1
+University of Durham,6,60,equal,1,1
+University of Durham,7,70,equal,1,1
+University of Durham,8,80,equal,1,1
+University of Durham,9,90,equal,1,1
+University of Durham,10,100,equal,1,1
+The University of Kent,0,0,equal,1,1
+The University of Kent,1,10,equal,1,1
+The University of Kent,2,20,equal,1,1
+The University of Kent,3,30,equal,1,1
+The University of Kent,4,40,equal,1,1
+The University of Kent,5,50,equal,1,1
+The University of Kent,6,60,equal,1,1
+The University of Kent,7,70,equal,1,1
+The University of Kent,8,80,equal,1,1
+The University of Kent,9,90,equal,1,1
+The University of Kent,10,100,equal,1,1
+University of Manchester,0,0,equal,1,1
+University of Manchester,1,10,equal,1,1
+University of Manchester,2,20,equal,1,1
+University of Manchester,3,30,equal,1,1
+University of Manchester,4,40,equal,1,1
+University of Manchester,5,50,equal,1,1
+University of Manchester,6,60,equal,1,1
+University of Manchester,7,70,equal,1,1
+University of Manchester,8,80,equal,1,1
+University of Manchester,9,90,equal,1,1
+University of Manchester,10,100,equal,1,1
+The University of Sussex,0,0,equal,1,1
+The University of Sussex,1,10,equal,1,1
+The University of Sussex,2,20,equal,1,1
+The University of Sussex,3,30,equal,1,1
+The University of Sussex,4,40,equal,1,1
+The University of Sussex,5,50,equal,1,1
+The University of Sussex,6,60,equal,1,1
+The University of Sussex,7,70,equal,1,1
+The University of Sussex,8,80,equal,1,1
+The University of Sussex,9,90,equal,1,1
+The University of Sussex,10,100,equal,1,1
+Oxford Brookes University,0,0,equal,1,1
+Oxford Brookes University,1,10,equal,1,1
+Oxford Brookes University,2,20,equal,1,1
+Oxford Brookes University,3,30,equal,1,1
+Oxford Brookes University,4,40,equal,1,1
+Oxford Brookes University,5,50,equal,1,1
+Oxford Brookes University,6,60,equal,1,1
+Oxford Brookes University,7,70,equal,1,1
+Oxford Brookes University,8,80,equal,1,1
+Oxford Brookes University,9,90,equal,1,1
+Oxford Brookes University,10,100,equal,1,1
+The University of Winchester,0,0,equal,1,1
+The University of Winchester,1,10,equal,1,1
+The University of Winchester,2,20,equal,1,1
+The University of Winchester,3,30,equal,1,1
+The University of Winchester,4,40,equal,1,1
+The University of Winchester,5,50,equal,1,1
+The University of Winchester,6,60,equal,1,1
+The University of Winchester,7,70,equal,1,1
+The University of Winchester,8,80,equal,1,1
+The University of Winchester,9,90,equal,1,1
+The University of Winchester,10,100,equal,1,1
+The Manchester Metropolitan University,0,0,equal,1,1
+The Manchester Metropolitan University,1,10,equal,1,1
+The Manchester Metropolitan University,2,20,equal,1,1
+The Manchester Metropolitan University,3,30,equal,1,1
+The Manchester Metropolitan University,4,40,equal,1,1
+The Manchester Metropolitan University,5,50,equal,1,1
+The Manchester Metropolitan University,6,60,equal,1,1
+The Manchester Metropolitan University,7,70,equal,1,1
+The Manchester Metropolitan University,8,80,equal,1,1
+The Manchester Metropolitan University,9,90,equal,1,1
+The Manchester Metropolitan University,10,100,equal,1,1
+University of Plymouth,0,0,equal,1,1
+University of Plymouth,1,10,equal,1,1
+University of Plymouth,2,20,equal,1,1
+University of Plymouth,3,30,equal,1,1
+University of Plymouth,4,40,equal,1,1
+University of Plymouth,5,50,equal,1,1
+University of Plymouth,6,60,equal,1,1
+University of Plymouth,7,70,equal,1,1
+University of Plymouth,8,80,equal,1,1
+University of Plymouth,9,90,equal,1,1
+University of Plymouth,10,100,equal,1,1
+The University of Exeter,0,0,equal,1,1
+The University of Exeter,1,10,equal,1,1
+The University of Exeter,2,20,equal,1,1
+The University of Exeter,3,30,equal,1,1
+The University of Exeter,4,40,equal,1,1
+The University of Exeter,5,50,equal,1,1
+The University of Exeter,6,60,equal,1,1
+The University of Exeter,7,70,equal,1,1
+The University of Exeter,8,80,equal,1,1
+The University of Exeter,9,90,equal,1,1
+The University of Exeter,10,100,equal,1,1
+The University of Lincoln,0,0,equal,1,1
+The University of Lincoln,1,10,equal,1,1
+The University of Lincoln,2,20,equal,1,1
+The University of Lincoln,3,30,equal,1,1
+The University of Lincoln,4,40,equal,1,1
+The University of Lincoln,5,50,equal,1,1
+The University of Lincoln,6,60,equal,1,1
+The University of Lincoln,7,70,equal,1,1
+The University of Lincoln,8,80,equal,1,1
+The University of Lincoln,9,90,equal,1,1
+The University of Lincoln,10,100,equal,1,1
+University of Nottingham,0,0,equal,1,1
+University of Nottingham,1,10,equal,1,1
+University of Nottingham,2,20,equal,1,1
+University of Nottingham,3,30,equal,1,1
+University of Nottingham,4,40,equal,1,1
+University of Nottingham,5,50,equal,1,1
+University of Nottingham,6,60,equal,1,1
+University of Nottingham,7,70,equal,1,1
+University of Nottingham,8,80,equal,1,1
+University of Nottingham,9,90,equal,1,1
+University of Nottingham,10,100,equal,1,1
+Liverpool Hope University,0,0,equal,1,1
+Liverpool Hope University,1,10,equal,1,1
+Liverpool Hope University,2,20,equal,1,1
+Liverpool Hope University,3,30,equal,1,1
+Liverpool Hope University,4,40,equal,1,1
+Liverpool Hope University,5,50,equal,1,1
+Liverpool Hope University,6,60,equal,1,1
+Liverpool Hope University,7,70,equal,1,1
+Liverpool Hope University,8,80,equal,1,1
+Liverpool Hope University,9,90,equal,1,1
+Liverpool Hope University,10,100,equal,1,1
+Buckinghamshire New University,0,0,equal,1,1
+Buckinghamshire New University,1,10,equal,1,1
+Buckinghamshire New University,2,20,equal,1,1
+Buckinghamshire New University,3,30,equal,1,1
+Buckinghamshire New University,4,40,equal,1,1
+Buckinghamshire New University,5,50,equal,1,1
+Buckinghamshire New University,6,60,equal,1,1
+Buckinghamshire New University,7,70,equal,1,1
+Buckinghamshire New University,8,80,equal,1,1
+Buckinghamshire New University,9,90,equal,1,1
+Buckinghamshire New University,10,100,equal,1,1
+The University of Birmingham,0,0,equal,1,1
+The University of Birmingham,1,10,equal,1,1
+The University of Birmingham,2,20,equal,1,1
+The University of Birmingham,3,30,equal,1,1
+The University of Birmingham,4,40,equal,1,1
+The University of Birmingham,5,50,equal,1,1
+The University of Birmingham,6,60,equal,1,1
+The University of Birmingham,7,70,equal,1,1
+The University of Birmingham,8,80,equal,1,1
+The University of Birmingham,9,90,equal,1,1
+The University of Birmingham,10,100,equal,1,1
+The University of Liverpool,0,0,equal,1,1
+The University of Liverpool,1,10,equal,1,1
+The University of Liverpool,2,20,equal,1,1
+The University of Liverpool,3,30,equal,1,1
+The University of Liverpool,4,40,equal,1,1
+The University of Liverpool,5,50,equal,1,1
+The University of Liverpool,6,60,equal,1,1
+The University of Liverpool,7,70,equal,1,1
+The University of Liverpool,8,80,equal,1,1
+The University of Liverpool,9,90,equal,1,1
+The University of Liverpool,10,100,equal,1,1
+Solent University,0,0,equal,1,1
+Solent University,1,10,equal,1,1
+Solent University,2,20,equal,1,1
+Solent University,3,30,equal,1,1
+Solent University,4,40,equal,1,1
+Solent University,5,50,equal,1,1
+Solent University,6,60,equal,1,1
+Solent University,7,70,equal,1,1
+Solent University,8,80,equal,1,1
+Solent University,9,90,equal,1,1
+Solent University,10,100,equal,1,1
+The University of Lancaster,0,0,equal,1,1
+The University of Lancaster,1,10,equal,1,1
+The University of Lancaster,2,20,equal,1,1
+The University of Lancaster,3,30,equal,1,1
+The University of Lancaster,4,40,equal,1,1
+The University of Lancaster,5,50,equal,1,1
+The University of Lancaster,6,60,equal,1,1
+The University of Lancaster,7,70,equal,1,1
+The University of Lancaster,8,80,equal,1,1
+The University of Lancaster,9,90,equal,1,1
+The University of Lancaster,10,100,equal,1,1
+De Montfort University,0,0,equal,1,1
+De Montfort University,1,10,equal,1,1
+De Montfort University,2,20,equal,1,1
+De Montfort University,3,30,equal,1,1
+De Montfort University,4,40,equal,1,1
+De Montfort University,5,50,equal,1,1
+De Montfort University,6,60,equal,1,1
+De Montfort University,7,70,equal,1,1
+De Montfort University,8,80,equal,1,1
+De Montfort University,9,90,equal,1,1
+De Montfort University,10,100,equal,1,1
+The University of Hull,0,0,equal,1,1
+The University of Hull,1,10,equal,1,1
+The University of Hull,2,20,equal,1,1
+The University of Hull,3,30,equal,1,1
+The University of Hull,4,40,equal,1,1
+The University of Hull,5,50,equal,1,1
+The University of Hull,6,60,equal,1,1
+The University of Hull,7,70,equal,1,1
+The University of Hull,8,80,equal,1,1
+The University of Hull,9,90,equal,1,1
+The University of Hull,10,100,equal,1,1
+The University of West London,0,0,equal,1,1
+The University of West London,1,10,equal,1,1
+The University of West London,2,20,equal,1,1
+The University of West London,3,30,equal,1,1
+The University of West London,4,40,equal,1,1
+The University of West London,5,50,equal,1,1
+The University of West London,6,60,equal,1,1
+The University of West London,7,70,equal,1,1
+The University of West London,8,80,equal,1,1
+The University of West London,9,90,equal,1,1
+The University of West London,10,100,equal,1,1
+Leeds Beckett University,0,0,equal,1,1
+Leeds Beckett University,1,10,equal,1,1
+Leeds Beckett University,2,20,equal,1,1
+Leeds Beckett University,3,30,equal,1,1
+Leeds Beckett University,4,40,equal,1,1
+Leeds Beckett University,5,50,equal,1,1
+Leeds Beckett University,6,60,equal,1,1
+Leeds Beckett University,7,70,equal,1,1
+Leeds Beckett University,8,80,equal,1,1
+Leeds Beckett University,9,90,equal,1,1
+Leeds Beckett University,10,100,equal,1,1
+The University of Huddersfield,0,0,equal,1,1
+The University of Huddersfield,1,10,equal,1,1
+The University of Huddersfield,2,20,equal,1,1
+The University of Huddersfield,3,30,equal,1,1
+The University of Huddersfield,4,40,equal,1,1
+The University of Huddersfield,5,50,equal,1,1
+The University of Huddersfield,6,60,equal,1,1
+The University of Huddersfield,7,70,equal,1,1
+The University of Huddersfield,8,80,equal,1,1
+The University of Huddersfield,9,90,equal,1,1
+The University of Huddersfield,10,100,equal,1,1
+University of Hertfordshire,0,0,equal,1,1
+University of Hertfordshire,1,10,equal,1,1
+University of Hertfordshire,2,20,equal,1,1
+University of Hertfordshire,3,30,equal,1,1
+University of Hertfordshire,4,40,equal,1,1
+University of Hertfordshire,5,50,equal,1,1
+University of Hertfordshire,6,60,equal,1,1
+University of Hertfordshire,7,70,equal,1,1
+University of Hertfordshire,8,80,equal,1,1
+University of Hertfordshire,9,90,equal,1,1
+University of Hertfordshire,10,100,equal,1,1
+Middlesex University,0,0,equal,1,1
+Middlesex University,1,10,equal,1,1
+Middlesex University,2,20,equal,1,1
+Middlesex University,3,30,equal,1,1
+Middlesex University,4,40,equal,1,1
+Middlesex University,5,50,equal,1,1
+Middlesex University,6,60,equal,1,1
+Middlesex University,7,70,equal,1,1
+Middlesex University,8,80,equal,1,1
+Middlesex University,9,90,equal,1,1
+Middlesex University,10,100,equal,1,1
+The University of Reading,0,0,equal,1,1
+The University of Reading,1,10,equal,1,1
+The University of Reading,2,20,equal,1,1
+The University of Reading,3,30,equal,1,1
+The University of Reading,4,40,equal,1,1
+The University of Reading,5,50,equal,1,1
+The University of Reading,6,60,equal,1,1
+The University of Reading,7,70,equal,1,1
+The University of Reading,8,80,equal,1,1
+The University of Reading,9,90,equal,1,1
+The University of Reading,10,100,equal,1,1
+Newcastle University,0,0,equal,1,1
+Newcastle University,1,10,equal,1,1
+Newcastle University,2,20,equal,1,1
+Newcastle University,3,30,equal,1,1
+Newcastle University,4,40,equal,1,1
+Newcastle University,5,50,equal,1,1
+Newcastle University,6,60,equal,1,1
+Newcastle University,7,70,equal,1,1
+Newcastle University,8,80,equal,1,1
+Newcastle University,9,90,equal,1,1
+Newcastle University,10,100,equal,1,1
+The University of Bristol,0,0,equal,1,1
+The University of Bristol,1,10,equal,1,1
+The University of Bristol,2,20,equal,1,1
+The University of Bristol,3,30,equal,1,1
+The University of Bristol,4,40,equal,1,1
+The University of Bristol,5,50,equal,1,1
+The University of Bristol,6,60,equal,1,1
+The University of Bristol,7,70,equal,1,1
+The University of Bristol,8,80,equal,1,1
+The University of Bristol,9,90,equal,1,1
+The University of Bristol,10,100,equal,1,1
+The University of Brighton,0,0,equal,1,1
+The University of Brighton,1,10,equal,1,1
+The University of Brighton,2,20,equal,1,1
+The University of Brighton,3,30,equal,1,1
+The University of Brighton,4,40,equal,1,1
+The University of Brighton,5,50,equal,1,1
+The University of Brighton,6,60,equal,1,1
+The University of Brighton,7,70,equal,1,1
+The University of Brighton,8,80,equal,1,1
+The University of Brighton,9,90,equal,1,1
+The University of Brighton,10,100,equal,1,1
+The University of Sunderland,0,0,equal,1,1
+The University of Sunderland,1,10,equal,1,1
+The University of Sunderland,2,20,equal,1,1
+The University of Sunderland,3,30,equal,1,1
+The University of Sunderland,4,40,equal,1,1
+The University of Sunderland,5,50,equal,1,1
+The University of Sunderland,6,60,equal,1,1
+The University of Sunderland,7,70,equal,1,1
+The University of Sunderland,8,80,equal,1,1
+The University of Sunderland,9,90,equal,1,1
+The University of Sunderland,10,100,equal,1,1
+Royal Holloway and Bedford New College,0,0,equal,1,1
+Royal Holloway and Bedford New College,1,10,equal,1,1
+Royal Holloway and Bedford New College,2,20,equal,1,1
+Royal Holloway and Bedford New College,3,30,equal,1,1
+Royal Holloway and Bedford New College,4,40,equal,1,1
+Royal Holloway and Bedford New College,5,50,equal,1,1
+Royal Holloway and Bedford New College,6,60,equal,1,1
+Royal Holloway and Bedford New College,7,70,equal,1,1
+Royal Holloway and Bedford New College,8,80,equal,1,1
+Royal Holloway and Bedford New College,9,90,equal,1,1
+Royal Holloway and Bedford New College,10,100,equal,1,1
+The University of Essex,0,0,equal,1,1
+The University of Essex,1,10,equal,1,1
+The University of Essex,2,20,equal,1,1
+The University of Essex,3,30,equal,1,1
+The University of Essex,4,40,equal,1,1
+The University of Essex,5,50,equal,1,1
+The University of Essex,6,60,equal,1,1
+The University of Essex,7,70,equal,1,1
+The University of Essex,8,80,equal,1,1
+The University of Essex,9,90,equal,1,1
+The University of Essex,10,100,equal,1,1
+University College London,0,0,equal,1,1
+University College London,1,10,equal,1,1
+University College London,2,20,equal,1,1
+University College London,3,30,equal,1,1
+University College London,4,40,equal,1,1
+University College London,5,50,equal,1,1
+University College London,6,60,equal,1,1
+University College London,7,70,equal,1,1
+University College London,8,80,equal,1,1
+University College London,9,90,equal,1,1
+University College London,10,100,equal,1,1
+The University of Surrey,0,0,equal,1,1
+The University of Surrey,1,10,equal,1,1
+The University of Surrey,2,20,equal,1,1
+The University of Surrey,3,30,equal,1,1
+The University of Surrey,4,40,equal,1,1
+The University of Surrey,5,50,equal,1,1
+The University of Surrey,6,60,equal,1,1
+The University of Surrey,7,70,equal,1,1
+The University of Surrey,8,80,equal,1,1
+The University of Surrey,9,90,equal,1,1
+The University of Surrey,10,100,equal,1,1
+The University of Oxford,0,0,equal,1,1
+The University of Oxford,1,10,equal,1,1
+The University of Oxford,2,20,equal,1,1
+The University of Oxford,3,30,equal,1,1
+The University of Oxford,4,40,equal,1,1
+The University of Oxford,5,50,equal,1,1
+The University of Oxford,6,60,equal,1,1
+The University of Oxford,7,70,equal,1,1
+The University of Oxford,8,80,equal,1,1
+The University of Oxford,9,90,equal,1,1
+The University of Oxford,10,100,equal,1,1
+"University of the West of England, Bristol",0,0,equal,1,1
+"University of the West of England, Bristol",1,10,equal,1,1
+"University of the West of England, Bristol",2,20,equal,1,1
+"University of the West of England, Bristol",3,30,equal,1,1
+"University of the West of England, Bristol",4,40,equal,1,1
+"University of the West of England, Bristol",5,50,equal,1,1
+"University of the West of England, Bristol",6,60,equal,1,1
+"University of the West of England, Bristol",7,70,equal,1,1
+"University of the West of England, Bristol",8,80,equal,1,1
+"University of the West of England, Bristol",9,90,equal,1,1
+"University of the West of England, Bristol",10,100,equal,1,1
+The University of East Anglia,0,0,equal,1,1
+The University of East Anglia,1,10,equal,1,1
+The University of East Anglia,2,20,equal,1,1
+The University of East Anglia,3,30,equal,1,1
+The University of East Anglia,4,40,equal,1,1
+The University of East Anglia,5,50,equal,1,1
+The University of East Anglia,6,60,equal,1,1
+The University of East Anglia,7,70,equal,1,1
+The University of East Anglia,8,80,equal,1,1
+The University of East Anglia,9,90,equal,1,1
+The University of East Anglia,10,100,equal,1,1
+Teesside University,0,0,equal,1,1
+Teesside University,1,10,equal,1,1
+Teesside University,2,20,equal,1,1
+Teesside University,3,30,equal,1,1
+Teesside University,4,40,equal,1,1
+Teesside University,5,50,equal,1,1
+Teesside University,6,60,equal,1,1
+Teesside University,7,70,equal,1,1
+Teesside University,8,80,equal,1,1
+Teesside University,9,90,equal,1,1
+Teesside University,10,100,equal,1,1
+Edge Hill University,0,0,equal,1,1
+Edge Hill University,1,10,equal,1,1
+Edge Hill University,2,20,equal,1,1
+Edge Hill University,3,30,equal,1,1
+Edge Hill University,4,40,equal,1,1
+Edge Hill University,5,50,equal,1,1
+Edge Hill University,6,60,equal,1,1
+Edge Hill University,7,70,equal,1,1
+Edge Hill University,8,80,equal,1,1
+Edge Hill University,9,90,equal,1,1
+Edge Hill University,10,100,equal,1,1
+University of Worcester,0,0,equal,1,1
+University of Worcester,1,10,equal,1,1
+University of Worcester,2,20,equal,1,1
+University of Worcester,3,30,equal,1,1
+University of Worcester,4,40,equal,1,1
+University of Worcester,5,50,equal,1,1
+University of Worcester,6,60,equal,1,1
+University of Worcester,7,70,equal,1,1
+University of Worcester,8,80,equal,1,1
+University of Worcester,9,90,equal,1,1
+University of Worcester,10,100,equal,1,1
+Keele University,0,0,equal,1,1
+Keele University,1,10,equal,1,1
+Keele University,2,20,equal,1,1
+Keele University,3,30,equal,1,1
+Keele University,4,40,equal,1,1
+Keele University,5,50,equal,1,1
+Keele University,6,60,equal,1,1
+Keele University,7,70,equal,1,1
+Keele University,8,80,equal,1,1
+Keele University,9,90,equal,1,1
+Keele University,10,100,equal,1,1
+University of Cumbria,0,0,equal,1,1
+University of Cumbria,1,10,equal,1,1
+University of Cumbria,2,20,equal,1,1
+University of Cumbria,3,30,equal,1,1
+University of Cumbria,4,40,equal,1,1
+University of Cumbria,5,50,equal,1,1
+University of Cumbria,6,60,equal,1,1
+University of Cumbria,7,70,equal,1,1
+University of Cumbria,8,80,equal,1,1
+University of Cumbria,9,90,equal,1,1
+University of Cumbria,10,100,equal,1,1
+Staffordshire University,0,0,equal,1,1
+Staffordshire University,1,10,equal,1,1
+Staffordshire University,2,20,equal,1,1
+Staffordshire University,3,30,equal,1,1
+Staffordshire University,4,40,equal,1,1
+Staffordshire University,5,50,equal,1,1
+Staffordshire University,6,60,equal,1,1
+Staffordshire University,7,70,equal,1,1
+Staffordshire University,8,80,equal,1,1
+Staffordshire University,9,90,equal,1,1
+Staffordshire University,10,100,equal,1,1
+Falmouth University,0,0,equal,1,1
+Falmouth University,1,10,equal,1,1
+Falmouth University,2,20,equal,1,1
+Falmouth University,3,30,equal,1,1
+Falmouth University,4,40,equal,1,1
+Falmouth University,5,50,equal,1,1
+Falmouth University,6,60,equal,1,1
+Falmouth University,7,70,equal,1,1
+Falmouth University,8,80,equal,1,1
+Falmouth University,9,90,equal,1,1
+Falmouth University,10,100,equal,1,1
+University of Chester,0,0,equal,1,1
+University of Chester,1,10,equal,1,1
+University of Chester,2,20,equal,1,1
+University of Chester,3,30,equal,1,1
+University of Chester,4,40,equal,1,1
+University of Chester,5,50,equal,1,1
+University of Chester,6,60,equal,1,1
+University of Chester,7,70,equal,1,1
+University of Chester,8,80,equal,1,1
+University of Chester,9,90,equal,1,1
+University of Chester,10,100,equal,1,1
+Birmingham City University,0,0,equal,1,1
+Birmingham City University,1,10,equal,1,1
+Birmingham City University,2,20,equal,1,1
+Birmingham City University,3,30,equal,1,1
+Birmingham City University,4,40,equal,1,1
+Birmingham City University,5,50,equal,1,1
+Birmingham City University,6,60,equal,1,1
+Birmingham City University,7,70,equal,1,1
+Birmingham City University,8,80,equal,1,1
+Birmingham City University,9,90,equal,1,1
+Birmingham City University,10,100,equal,1,1
+University of Derby,0,0,equal,1,1
+University of Derby,1,10,equal,1,1
+University of Derby,2,20,equal,1,1
+University of Derby,3,30,equal,1,1
+University of Derby,4,40,equal,1,1
+University of Derby,5,50,equal,1,1
+University of Derby,6,60,equal,1,1
+University of Derby,7,70,equal,1,1
+University of Derby,8,80,equal,1,1
+University of Derby,9,90,equal,1,1
+University of Derby,10,100,equal,1,1
+Liverpool John Moores University,0,0,equal,1,1
+Liverpool John Moores University,1,10,equal,1,1
+Liverpool John Moores University,2,20,equal,1,1
+Liverpool John Moores University,3,30,equal,1,1
+Liverpool John Moores University,4,40,equal,1,1
+Liverpool John Moores University,5,50,equal,1,1
+Liverpool John Moores University,6,60,equal,1,1
+Liverpool John Moores University,7,70,equal,1,1
+Liverpool John Moores University,8,80,equal,1,1
+Liverpool John Moores University,9,90,equal,1,1
+Liverpool John Moores University,10,100,equal,1,1
+University of Bedfordshire,0,0,equal,1,1
+University of Bedfordshire,1,10,equal,1,1
+University of Bedfordshire,2,20,equal,1,1
+University of Bedfordshire,3,30,equal,1,1
+University of Bedfordshire,4,40,equal,1,1
+University of Bedfordshire,5,50,equal,1,1
+University of Bedfordshire,6,60,equal,1,1
+University of Bedfordshire,7,70,equal,1,1
+University of Bedfordshire,8,80,equal,1,1
+University of Bedfordshire,9,90,equal,1,1
+University of Bedfordshire,10,100,equal,1,1
+Aston University,0,0,equal,1,1
+Aston University,1,10,equal,1,1
+Aston University,2,20,equal,1,1
+Aston University,3,30,equal,1,1
+Aston University,4,40,equal,1,1
+Aston University,5,50,equal,1,1
+Aston University,6,60,equal,1,1
+Aston University,7,70,equal,1,1
+Aston University,8,80,equal,1,1
+Aston University,9,90,equal,1,1
+Aston University,10,100,equal,1,1
+Coventry University,0,0,equal,1,1
+Coventry University,1,10,equal,1,1
+Coventry University,2,20,equal,1,1
+Coventry University,3,30,equal,1,1
+Coventry University,4,40,equal,1,1
+Coventry University,5,50,equal,1,1
+Coventry University,6,60,equal,1,1
+Coventry University,7,70,equal,1,1
+Coventry University,8,80,equal,1,1
+Coventry University,9,90,equal,1,1
+Coventry University,10,100,equal,1,1
+The University of Southampton,0,0,equal,1,1
+The University of Southampton,1,10,equal,1,1
+The University of Southampton,2,20,equal,1,1
+The University of Southampton,3,30,equal,1,1
+The University of Southampton,4,40,equal,1,1
+The University of Southampton,5,50,equal,1,1
+The University of Southampton,6,60,equal,1,1
+The University of Southampton,7,70,equal,1,1
+The University of Southampton,8,80,equal,1,1
+The University of Southampton,9,90,equal,1,1
+The University of Southampton,10,100,equal,1,1
+London School of Economics and Political Science,0,0,equal,1,1
+London School of Economics and Political Science,1,10,equal,1,1
+London School of Economics and Political Science,2,20,equal,1,1
+London School of Economics and Political Science,3,30,equal,1,1
+London School of Economics and Political Science,4,40,equal,1,1
+London School of Economics and Political Science,5,50,equal,1,1
+London School of Economics and Political Science,6,60,equal,1,1
+London School of Economics and Political Science,7,70,equal,1,1
+London School of Economics and Political Science,8,80,equal,1,1
+London School of Economics and Political Science,9,90,equal,1,1
+London School of Economics and Political Science,10,100,equal,1,1
+The University of Warwick,0,0,equal,1,1
+The University of Warwick,1,10,equal,1,1
+The University of Warwick,2,20,equal,1,1
+The University of Warwick,3,30,equal,1,1
+The University of Warwick,4,40,equal,1,1
+The University of Warwick,5,50,equal,1,1
+The University of Warwick,6,60,equal,1,1
+The University of Warwick,7,70,equal,1,1
+The University of Warwick,8,80,equal,1,1
+The University of Warwick,9,90,equal,1,1
+The University of Warwick,10,100,equal,1,1
+King's College London,0,0,equal,1,1
+King's College London,1,10,equal,1,1
+King's College London,2,20,equal,1,1
+King's College London,3,30,equal,1,1
+King's College London,4,40,equal,1,1
+King's College London,5,50,equal,1,1
+King's College London,6,60,equal,1,1
+King's College London,7,70,equal,1,1
+King's College London,8,80,equal,1,1
+King's College London,9,90,equal,1,1
+King's College London,10,100,equal,1,1
+The Nottingham Trent University,0,0,equal,1,1
+The Nottingham Trent University,1,10,equal,1,1
+The Nottingham Trent University,2,20,equal,1,1
+The Nottingham Trent University,3,30,equal,1,1
+The Nottingham Trent University,4,40,equal,1,1
+The Nottingham Trent University,5,50,equal,1,1
+The Nottingham Trent University,6,60,equal,1,1
+The Nottingham Trent University,7,70,equal,1,1
+The Nottingham Trent University,8,80,equal,1,1
+The Nottingham Trent University,9,90,equal,1,1
+The Nottingham Trent University,10,100,equal,1,1
+The University of Leicester,0,0,equal,1,1
+The University of Leicester,1,10,equal,1,1
+The University of Leicester,2,20,equal,1,1
+The University of Leicester,3,30,equal,1,1
+The University of Leicester,4,40,equal,1,1
+The University of Leicester,5,50,equal,1,1
+The University of Leicester,6,60,equal,1,1
+The University of Leicester,7,70,equal,1,1
+The University of Leicester,8,80,equal,1,1
+The University of Leicester,9,90,equal,1,1
+The University of Leicester,10,100,equal,1,1
+Sheffield Hallam University,0,0,equal,1,1
+Sheffield Hallam University,1,10,equal,1,1
+Sheffield Hallam University,2,20,equal,1,1
+Sheffield Hallam University,3,30,equal,1,1
+Sheffield Hallam University,4,40,equal,1,1
+Sheffield Hallam University,5,50,equal,1,1
+Sheffield Hallam University,6,60,equal,1,1
+Sheffield Hallam University,7,70,equal,1,1
+Sheffield Hallam University,8,80,equal,1,1
+Sheffield Hallam University,9,90,equal,1,1
+Sheffield Hallam University,10,100,equal,1,1
+The University of Northampton,0,0,equal,1,1
+The University of Northampton,1,10,equal,1,1
+The University of Northampton,2,20,equal,1,1
+The University of Northampton,3,30,equal,1,1
+The University of Northampton,4,40,equal,1,1
+The University of Northampton,5,50,equal,1,1
+The University of Northampton,6,60,equal,1,1
+The University of Northampton,7,70,equal,1,1
+The University of Northampton,8,80,equal,1,1
+The University of Northampton,9,90,equal,1,1
+The University of Northampton,10,100,equal,1,1
+Anglia Ruskin University,0,0,equal,1,1
+Anglia Ruskin University,1,10,equal,1,1
+Anglia Ruskin University,2,20,equal,1,1
+Anglia Ruskin University,3,30,equal,1,1
+Anglia Ruskin University,4,40,equal,1,1
+Anglia Ruskin University,5,50,equal,1,1
+Anglia Ruskin University,6,60,equal,1,1
+Anglia Ruskin University,7,70,equal,1,1
+Anglia Ruskin University,8,80,equal,1,1
+Anglia Ruskin University,9,90,equal,1,1
+Anglia Ruskin University,10,100,equal,1,1
+The University of Central Lancashire,0,0,equal,1,1
+The University of Central Lancashire,1,10,equal,1,1
+The University of Central Lancashire,2,20,equal,1,1
+The University of Central Lancashire,3,30,equal,1,1
+The University of Central Lancashire,4,40,equal,1,1
+The University of Central Lancashire,5,50,equal,1,1
+The University of Central Lancashire,6,60,equal,1,1
+The University of Central Lancashire,7,70,equal,1,1
+The University of Central Lancashire,8,80,equal,1,1
+The University of Central Lancashire,9,90,equal,1,1
+The University of Central Lancashire,10,100,equal,1,1
+York St John University,0,0,equal,1,1
+York St John University,1,10,equal,1,1
+York St John University,2,20,equal,1,1
+York St John University,3,30,equal,1,1
+York St John University,4,40,equal,1,1
+York St John University,5,50,equal,1,1
+York St John University,6,60,equal,1,1
+York St John University,7,70,equal,1,1
+York St John University,8,80,equal,1,1
+York St John University,9,90,equal,1,1
+York St John University,10,100,equal,1,1
+"University of the Arts, London",0,0,equal,1,1
+"University of the Arts, London",1,10,equal,1,1
+"University of the Arts, London",2,20,equal,1,1
+"University of the Arts, London",3,30,equal,1,1
+"University of the Arts, London",4,40,equal,1,1
+"University of the Arts, London",5,50,equal,1,1
+"University of the Arts, London",6,60,equal,1,1
+"University of the Arts, London",7,70,equal,1,1
+"University of the Arts, London",8,80,equal,1,1
+"University of the Arts, London",9,90,equal,1,1
+"University of the Arts, London",10,100,equal,1,1
+The University of Westminster,0,0,equal,1,1
+The University of Westminster,1,10,equal,1,1
+The University of Westminster,2,20,equal,1,1
+The University of Westminster,3,30,equal,1,1
+The University of Westminster,4,40,equal,1,1
+The University of Westminster,5,50,equal,1,1
+The University of Westminster,6,60,equal,1,1
+The University of Westminster,7,70,equal,1,1
+The University of Westminster,8,80,equal,1,1
+The University of Westminster,9,90,equal,1,1
+The University of Westminster,10,100,equal,1,1
+University of Gloucestershire,0,0,equal,1,1
+University of Gloucestershire,1,10,equal,1,1
+University of Gloucestershire,2,20,equal,1,1
+University of Gloucestershire,3,30,equal,1,1
+University of Gloucestershire,4,40,equal,1,1
+University of Gloucestershire,5,50,equal,1,1
+University of Gloucestershire,6,60,equal,1,1
+University of Gloucestershire,7,70,equal,1,1
+University of Gloucestershire,8,80,equal,1,1
+University of Gloucestershire,9,90,equal,1,1
+University of Gloucestershire,10,100,equal,1,1
+The University of Leeds,0,0,equal,1,1
+The University of Leeds,1,10,equal,1,1
+The University of Leeds,2,20,equal,1,1
+The University of Leeds,3,30,equal,1,1
+The University of Leeds,4,40,equal,1,1
+The University of Leeds,5,50,equal,1,1
+The University of Leeds,6,60,equal,1,1
+The University of Leeds,7,70,equal,1,1
+The University of Leeds,8,80,equal,1,1
+The University of Leeds,9,90,equal,1,1
+The University of Leeds,10,100,equal,1,1
+The University of Chichester,0,0,equal,1,1
+The University of Chichester,1,10,equal,1,1
+The University of Chichester,2,20,equal,1,1
+The University of Chichester,3,30,equal,1,1
+The University of Chichester,4,40,equal,1,1
+The University of Chichester,5,50,equal,1,1
+The University of Chichester,6,60,equal,1,1
+The University of Chichester,7,70,equal,1,1
+The University of Chichester,8,80,equal,1,1
+The University of Chichester,9,90,equal,1,1
+The University of Chichester,10,100,equal,1,1
+Kingston University,0,0,equal,1,1
+Kingston University,1,10,equal,1,1
+Kingston University,2,20,equal,1,1
+Kingston University,3,30,equal,1,1
+Kingston University,4,40,equal,1,1
+Kingston University,5,50,equal,1,1
+Kingston University,6,60,equal,1,1
+Kingston University,7,70,equal,1,1
+Kingston University,8,80,equal,1,1
+Kingston University,9,90,equal,1,1
+Kingston University,10,100,equal,1,1
+Brunel University London,0,0,equal,1,1
+Brunel University London,1,10,equal,1,1
+Brunel University London,2,20,equal,1,1
+Brunel University London,3,30,equal,1,1
+Brunel University London,4,40,equal,1,1
+Brunel University London,5,50,equal,1,1
+Brunel University London,6,60,equal,1,1
+Brunel University London,7,70,equal,1,1
+Brunel University London,8,80,equal,1,1
+Brunel University London,9,90,equal,1,1
+Brunel University London,10,100,equal,1,1
+Bournemouth University,0,0,equal,1,1
+Bournemouth University,1,10,equal,1,1
+Bournemouth University,2,20,equal,1,1
+Bournemouth University,3,30,equal,1,1
+Bournemouth University,4,40,equal,1,1
+Bournemouth University,5,50,equal,1,1
+Bournemouth University,6,60,equal,1,1
+Bournemouth University,7,70,equal,1,1
+Bournemouth University,8,80,equal,1,1
+Bournemouth University,9,90,equal,1,1
+Bournemouth University,10,100,equal,1,1
+University for the Creative Arts,0,0,equal,1,1
+University for the Creative Arts,1,10,equal,1,1
+University for the Creative Arts,2,20,equal,1,1
+University for the Creative Arts,3,30,equal,1,1
+University for the Creative Arts,4,40,equal,1,1
+University for the Creative Arts,5,50,equal,1,1
+University for the Creative Arts,6,60,equal,1,1
+University for the Creative Arts,7,70,equal,1,1
+University for the Creative Arts,8,80,equal,1,1
+University for the Creative Arts,9,90,equal,1,1
+University for the Creative Arts,10,100,equal,1,1
+The University of East London,0,0,equal,1,1
+The University of East London,1,10,equal,1,1
+The University of East London,2,20,equal,1,1
+The University of East London,3,30,equal,1,1
+The University of East London,4,40,equal,1,1
+The University of East London,5,50,equal,1,1
+The University of East London,6,60,equal,1,1
+The University of East London,7,70,equal,1,1
+The University of East London,8,80,equal,1,1
+The University of East London,9,90,equal,1,1
+The University of East London,10,100,equal,1,1
+Roehampton University,0,0,equal,1,1
+Roehampton University,1,10,equal,1,1
+Roehampton University,2,20,equal,1,1
+Roehampton University,3,30,equal,1,1
+Roehampton University,4,40,equal,1,1
+Roehampton University,5,50,equal,1,1
+Roehampton University,6,60,equal,1,1
+Roehampton University,7,70,equal,1,1
+Roehampton University,8,80,equal,1,1
+Roehampton University,9,90,equal,1,1
+Roehampton University,10,100,equal,1,1
+Canterbury Christ Church University,0,0,equal,1,1
+Canterbury Christ Church University,1,10,equal,1,1
+Canterbury Christ Church University,2,20,equal,1,1
+Canterbury Christ Church University,3,30,equal,1,1
+Canterbury Christ Church University,4,40,equal,1,1
+Canterbury Christ Church University,5,50,equal,1,1
+Canterbury Christ Church University,6,60,equal,1,1
+Canterbury Christ Church University,7,70,equal,1,1
+Canterbury Christ Church University,8,80,equal,1,1
+Canterbury Christ Church University,9,90,equal,1,1
+Canterbury Christ Church University,10,100,equal,1,1
+London South Bank University,0,0,equal,1,1
+London South Bank University,1,10,equal,1,1
+London South Bank University,2,20,equal,1,1
+London South Bank University,3,30,equal,1,1
+London South Bank University,4,40,equal,1,1
+London South Bank University,5,50,equal,1,1
+London South Bank University,6,60,equal,1,1
+London South Bank University,7,70,equal,1,1
+London South Bank University,8,80,equal,1,1
+London South Bank University,9,90,equal,1,1
+London South Bank University,10,100,equal,1,1
+"City St George's, University of London",0,0,equal,1,1
+"City St George's, University of London",1,10,equal,1,1
+"City St George's, University of London",2,20,equal,1,1
+"City St George's, University of London",3,30,equal,1,1
+"City St George's, University of London",4,40,equal,1,1
+"City St George's, University of London",5,50,equal,1,1
+"City St George's, University of London",6,60,equal,1,1
+"City St George's, University of London",7,70,equal,1,1
+"City St George's, University of London",8,80,equal,1,1
+"City St George's, University of London",9,90,equal,1,1
+"City St George's, University of London",10,100,equal,1,1
+Goldsmiths College,0,0,equal,1,1
+Goldsmiths College,1,10,equal,1,1
+Goldsmiths College,2,20,equal,1,1
+Goldsmiths College,3,30,equal,1,1
+Goldsmiths College,4,40,equal,1,1
+Goldsmiths College,5,50,equal,1,1
+Goldsmiths College,6,60,equal,1,1
+Goldsmiths College,7,70,equal,1,1
+Goldsmiths College,8,80,equal,1,1
+Goldsmiths College,9,90,equal,1,1
+Goldsmiths College,10,100,equal,1,1
+Bath Spa University,0,0,equal,1,1
+Bath Spa University,1,10,equal,1,1
+Bath Spa University,2,20,equal,1,1
+Bath Spa University,3,30,equal,1,1
+Bath Spa University,4,40,equal,1,1
+Bath Spa University,5,50,equal,1,1
+Bath Spa University,6,60,equal,1,1
+Bath Spa University,7,70,equal,1,1
+Bath Spa University,8,80,equal,1,1
+Bath Spa University,9,90,equal,1,1
+Bath Spa University,10,100,equal,1,1
+The University of Wolverhampton,0,0,equal,1,1
+The University of Wolverhampton,1,10,equal,1,1
+The University of Wolverhampton,2,20,equal,1,1
+The University of Wolverhampton,3,30,equal,1,1
+The University of Wolverhampton,4,40,equal,1,1
+The University of Wolverhampton,5,50,equal,1,1
+The University of Wolverhampton,6,60,equal,1,1
+The University of Wolverhampton,7,70,equal,1,1
+The University of Wolverhampton,8,80,equal,1,1
+The University of Wolverhampton,9,90,equal,1,1
+The University of Wolverhampton,10,100,equal,1,1
+The University of Salford,0,0,equal,1,1
+The University of Salford,1,10,equal,1,1
+The University of Salford,2,20,equal,1,1
+The University of Salford,3,30,equal,1,1
+The University of Salford,4,40,equal,1,1
+The University of Salford,5,50,equal,1,1
+The University of Salford,6,60,equal,1,1
+The University of Salford,7,70,equal,1,1
+The University of Salford,8,80,equal,1,1
+The University of Salford,9,90,equal,1,1
+The University of Salford,10,100,equal,1,1
+University of Northumbria at Newcastle,0,0,equal,1,1
+University of Northumbria at Newcastle,1,10,equal,1,1
+University of Northumbria at Newcastle,2,20,equal,1,1
+University of Northumbria at Newcastle,3,30,equal,1,1
+University of Northumbria at Newcastle,4,40,equal,1,1
+University of Northumbria at Newcastle,5,50,equal,1,1
+University of Northumbria at Newcastle,6,60,equal,1,1
+University of Northumbria at Newcastle,7,70,equal,1,1
+University of Northumbria at Newcastle,8,80,equal,1,1
+University of Northumbria at Newcastle,9,90,equal,1,1
+University of Northumbria at Newcastle,10,100,equal,1,1
+"St Mary's University, Twickenham",0,0,equal,1,1
+"St Mary's University, Twickenham",1,10,equal,1,1
+"St Mary's University, Twickenham",2,20,equal,1,1
+"St Mary's University, Twickenham",3,30,equal,1,1
+"St Mary's University, Twickenham",4,40,equal,1,1
+"St Mary's University, Twickenham",5,50,equal,1,1
+"St Mary's University, Twickenham",6,60,equal,1,1
+"St Mary's University, Twickenham",7,70,equal,1,1
+"St Mary's University, Twickenham",8,80,equal,1,1
+"St Mary's University, Twickenham",9,90,equal,1,1
+"St Mary's University, Twickenham",10,100,equal,1,1
+The University of Bradford,0,0,equal,1,1
+The University of Bradford,1,10,equal,1,1
+The University of Bradford,2,20,equal,1,1
+The University of Bradford,3,30,equal,1,1
+The University of Bradford,4,40,equal,1,1
+The University of Bradford,5,50,equal,1,1
+The University of Bradford,6,60,equal,1,1
+The University of Bradford,7,70,equal,1,1
+The University of Bradford,8,80,equal,1,1
+The University of Bradford,9,90,equal,1,1
+The University of Bradford,10,100,equal,1,1
+The University of York,0,0,equal,1,1
+The University of York,1,10,equal,1,1
+The University of York,2,20,equal,1,1
+The University of York,3,30,equal,1,1
+The University of York,4,40,equal,1,1
+The University of York,5,50,equal,1,1
+The University of York,6,60,equal,1,1
+The University of York,7,70,equal,1,1
+The University of York,8,80,equal,1,1
+The University of York,9,90,equal,1,1
+The University of York,10,100,equal,1,1
+The University of Greenwich,0,0,equal,1,1
+The University of Greenwich,1,10,equal,1,1
+The University of Greenwich,2,20,equal,1,1
+The University of Greenwich,3,30,equal,1,1
+The University of Greenwich,4,40,equal,1,1
+The University of Greenwich,5,50,equal,1,1
+The University of Greenwich,6,60,equal,1,1
+The University of Greenwich,7,70,equal,1,1
+The University of Greenwich,8,80,equal,1,1
+The University of Greenwich,9,90,equal,1,1
+The University of Greenwich,10,100,equal,1,1
+The University of Cambridge,0,0,equal,1,1
+The University of Cambridge,1,10,equal,1,1
+The University of Cambridge,2,20,equal,1,1
+The University of Cambridge,3,30,equal,1,1
+The University of Cambridge,4,40,equal,1,1
+The University of Cambridge,5,50,equal,1,1
+The University of Cambridge,6,60,equal,1,1
+The University of Cambridge,7,70,equal,1,1
+The University of Cambridge,8,80,equal,1,1
+The University of Cambridge,9,90,equal,1,1
+The University of Cambridge,10,100,equal,1,1
+Leeds Trinity University,0,0,equal,1,1
+Leeds Trinity University,1,10,equal,1,1
+Leeds Trinity University,2,20,equal,1,1
+Leeds Trinity University,3,30,equal,1,1
+Leeds Trinity University,4,40,equal,1,1
+Leeds Trinity University,5,50,equal,1,1
+Leeds Trinity University,6,60,equal,1,1
+Leeds Trinity University,7,70,equal,1,1
+Leeds Trinity University,8,80,equal,1,1
+Leeds Trinity University,9,90,equal,1,1
+Leeds Trinity University,10,100,equal,1,1
+The University of Sheffield,0,0,equal,1,1
+The University of Sheffield,1,10,equal,1,1
+The University of Sheffield,2,20,equal,1,1
+The University of Sheffield,3,30,equal,1,1
+The University of Sheffield,4,40,equal,1,1
+The University of Sheffield,5,50,equal,1,1
+The University of Sheffield,6,60,equal,1,1
+The University of Sheffield,7,70,equal,1,1
+The University of Sheffield,8,80,equal,1,1
+The University of Sheffield,9,90,equal,1,1
+The University of Sheffield,10,100,equal,1,1
+Queen Mary University of London,0,0,equal,1,1
+Queen Mary University of London,1,10,equal,1,1
+Queen Mary University of London,2,20,equal,1,1
+Queen Mary University of London,3,30,equal,1,1
+Queen Mary University of London,4,40,equal,1,1
+Queen Mary University of London,5,50,equal,1,1
+Queen Mary University of London,6,60,equal,1,1
+Queen Mary University of London,7,70,equal,1,1
+Queen Mary University of London,8,80,equal,1,1
+Queen Mary University of London,9,90,equal,1,1
+Queen Mary University of London,10,100,equal,1,1
+Norwich University of the Arts,0,0,equal,1,1
+Norwich University of the Arts,1,10,equal,1,1
+Norwich University of the Arts,2,20,equal,1,1
+Norwich University of the Arts,3,30,equal,1,1
+Norwich University of the Arts,4,40,equal,1,1
+Norwich University of the Arts,5,50,equal,1,1
+Norwich University of the Arts,6,60,equal,1,1
+Norwich University of the Arts,7,70,equal,1,1
+Norwich University of the Arts,8,80,equal,1,1
+Norwich University of the Arts,9,90,equal,1,1
+Norwich University of the Arts,10,100,equal,1,1
+Loughborough University,0,0,equal,1,1
+Loughborough University,1,10,equal,1,1
+Loughborough University,2,20,equal,1,1
+Loughborough University,3,30,equal,1,1
+Loughborough University,4,40,equal,1,1
+Loughborough University,5,50,equal,1,1
+Loughborough University,6,60,equal,1,1
+Loughborough University,7,70,equal,1,1
+Loughborough University,8,80,equal,1,1
+Loughborough University,9,90,equal,1,1
+Loughborough University,10,100,equal,1,1
+Ravensbourne University London,0,0,equal,1,1
+Ravensbourne University London,1,10,equal,1,1
+Ravensbourne University London,2,20,equal,1,1
+Ravensbourne University London,3,30,equal,1,1
+Ravensbourne University London,4,40,equal,1,1
+Ravensbourne University London,5,50,equal,1,1
+Ravensbourne University London,6,60,equal,1,1
+Ravensbourne University London,7,70,equal,1,1
+Ravensbourne University London,8,80,equal,1,1
+Ravensbourne University London,9,90,equal,1,1
+Ravensbourne University London,10,100,equal,1,1
+"St George's, University of London",0,0,equal,1,1
+"St George's, University of London",1,10,equal,1,1
+"St George's, University of London",2,20,equal,1,1
+"St George's, University of London",3,30,equal,1,1
+"St George's, University of London",4,40,equal,1,1
+"St George's, University of London",5,50,equal,1,1
+"St George's, University of London",6,60,equal,1,1
+"St George's, University of London",7,70,equal,1,1
+"St George's, University of London",8,80,equal,1,1
+"St George's, University of London",9,90,equal,1,1
+"St George's, University of London",10,100,equal,1,1
+Leeds Arts University,0,0,equal,1,1
+Leeds Arts University,1,10,equal,1,1
+Leeds Arts University,2,20,equal,1,1
+Leeds Arts University,3,30,equal,1,1
+Leeds Arts University,4,40,equal,1,1
+Leeds Arts University,5,50,equal,1,1
+Leeds Arts University,6,60,equal,1,1
+Leeds Arts University,7,70,equal,1,1
+Leeds Arts University,8,80,equal,1,1
+Leeds Arts University,9,90,equal,1,1
+Leeds Arts University,10,100,equal,1,1
+"Imperial College of Science, Technology and Medicine",0,0,required,1,0
+"Imperial College of Science, Technology and Medicine",1,1,required,1,0
+"Imperial College of Science, Technology and Medicine",2,3,required,1,0
+"Imperial College of Science, Technology and Medicine",3,7,required,1,0
+"Imperial College of Science, Technology and Medicine",4,13,required,1,0
+"Imperial College of Science, Technology and Medicine",5,20,required,1,0
+"Imperial College of Science, Technology and Medicine",6,29,required,1,0
+"Imperial College of Science, Technology and Medicine",7,40,required,1,0
+"Imperial College of Science, Technology and Medicine",8,52,required,1,0
+"Imperial College of Science, Technology and Medicine",9,68,required,1,0
+"Imperial College of Science, Technology and Medicine",10,100,required,1,0
+"Imperial College of Science, Technology and Medicine",0,0,required,0,1
+"Imperial College of Science, Technology and Medicine",1,3,required,0,1
+"Imperial College of Science, Technology and Medicine",2,7,required,0,1
+"Imperial College of Science, Technology and Medicine",3,13,required,0,1
+"Imperial College of Science, Technology and Medicine",4,22,required,0,1
+"Imperial College of Science, Technology and Medicine",5,29,required,0,1
+"Imperial College of Science, Technology and Medicine",6,36,required,0,1
+"Imperial College of Science, Technology and Medicine",7,43,required,0,1
+"Imperial College of Science, Technology and Medicine",8,50,required,0,1
+"Imperial College of Science, Technology and Medicine",9,59,required,0,1
+"Imperial College of Science, Technology and Medicine",10,100,required,0,1
+University of Durham,0,0,required,1,0
+University of Durham,1,2,required,1,0
+University of Durham,2,5,required,1,0
+University of Durham,3,10,required,1,0
+University of Durham,4,17,required,1,0
+University of Durham,5,25,required,1,0
+University of Durham,6,35,required,1,0
+University of Durham,7,46,required,1,0
+University of Durham,8,59,required,1,0
+University of Durham,9,75,required,1,0
+University of Durham,10,100,required,1,0
+University of Durham,0,0,required,0,1
+University of Durham,1,2,required,0,1
+University of Durham,2,5,required,0,1
+University of Durham,3,10,required,0,1
+University of Durham,4,16,required,0,1
+University of Durham,5,24,required,0,1
+University of Durham,6,32,required,0,1
+University of Durham,7,42,required,0,1
+University of Durham,8,55,required,0,1
+University of Durham,9,72,required,0,1
+University of Durham,10,100,required,0,1
+The University of Kent,0,0,required,1,0
+The University of Kent,1,5,required,1,0
+The University of Kent,2,11,required,1,0
+The University of Kent,3,18,required,1,0
+The University of Kent,4,27,required,1,0
+The University of Kent,5,37,required,1,0
+The University of Kent,6,48,required,1,0
+The University of Kent,7,59,required,1,0
+The University of Kent,8,71,required,1,0
+The University of Kent,9,85,required,1,0
+The University of Kent,10,100,required,1,0
+The University of Kent,0,0,required,0,1
+The University of Kent,1,4,required,0,1
+The University of Kent,2,9,required,0,1
+The University of Kent,3,16,required,0,1
+The University of Kent,4,25,required,0,1
+The University of Kent,5,35,required,0,1
+The University of Kent,6,46,required,0,1
+The University of Kent,7,57,required,0,1
+The University of Kent,8,69,required,0,1
+The University of Kent,9,80,required,0,1
+The University of Kent,10,100,required,0,1
+University of Manchester,0,0,required,1,0
+University of Manchester,1,4,required,1,0
+University of Manchester,2,9,required,1,0
+University of Manchester,3,16,required,1,0
+University of Manchester,4,24,required,1,0
+University of Manchester,5,33,required,1,0
+University of Manchester,6,43,required,1,0
+University of Manchester,7,54,required,1,0
+University of Manchester,8,66,required,1,0
+University of Manchester,9,80,required,1,0
+University of Manchester,10,100,required,1,0
+University of Manchester,0,0,required,0,1
+University of Manchester,1,6,required,0,1
+University of Manchester,2,13,required,0,1
+University of Manchester,3,22,required,0,1
+University of Manchester,4,32,required,0,1
+University of Manchester,5,41,required,0,1
+University of Manchester,6,50,required,0,1
+University of Manchester,7,59,required,0,1
+University of Manchester,8,70,required,0,1
+University of Manchester,9,83,required,0,1
+University of Manchester,10,100,required,0,1
+The University of Sussex,0,0,required,1,0
+The University of Sussex,1,4,required,1,0
+The University of Sussex,2,9,required,1,0
+The University of Sussex,3,16,required,1,0
+The University of Sussex,4,25,required,1,0
+The University of Sussex,5,34,required,1,0
+The University of Sussex,6,44,required,1,0
+The University of Sussex,7,55,required,1,0
+The University of Sussex,8,67,required,1,0
+The University of Sussex,9,81,required,1,0
+The University of Sussex,10,100,required,1,0
+The University of Sussex,0,0,required,0,1
+The University of Sussex,1,4,required,0,1
+The University of Sussex,2,9,required,0,1
+The University of Sussex,3,16,required,0,1
+The University of Sussex,4,24,required,0,1
+The University of Sussex,5,33,required,0,1
+The University of Sussex,6,44,required,0,1
+The University of Sussex,7,56,required,0,1
+The University of Sussex,8,68,required,0,1
+The University of Sussex,9,80,required,0,1
+The University of Sussex,10,100,required,0,1
+Oxford Brookes University,0,0,required,1,0
+Oxford Brookes University,1,5,required,1,0
+Oxford Brookes University,2,11,required,1,0
+Oxford Brookes University,3,18,required,1,0
+Oxford Brookes University,4,27,required,1,0
+Oxford Brookes University,5,37,required,1,0
+Oxford Brookes University,6,48,required,1,0
+Oxford Brookes University,7,59,required,1,0
+Oxford Brookes University,8,71,required,1,0
+Oxford Brookes University,9,84,required,1,0
+Oxford Brookes University,10,100,required,1,0
+Oxford Brookes University,0,0,required,0,1
+Oxford Brookes University,1,4,required,0,1
+Oxford Brookes University,2,9,required,0,1
+Oxford Brookes University,3,16,required,0,1
+Oxford Brookes University,4,24,required,0,1
+Oxford Brookes University,5,33,required,0,1
+Oxford Brookes University,6,43,required,0,1
+Oxford Brookes University,7,53,required,0,1
+Oxford Brookes University,8,65,required,0,1
+Oxford Brookes University,9,78,required,0,1
+Oxford Brookes University,10,100,required,0,1
+The University of Winchester,0,0,required,1,0
+The University of Winchester,1,5,required,1,0
+The University of Winchester,2,11,required,1,0
+The University of Winchester,3,19,required,1,0
+The University of Winchester,4,28,required,1,0
+The University of Winchester,5,38,required,1,0
+The University of Winchester,6,49,required,1,0
+The University of Winchester,7,60,required,1,0
+The University of Winchester,8,72,required,1,0
+The University of Winchester,9,85,required,1,0
+The University of Winchester,10,100,required,1,0
+The University of Winchester,0,0,required,0,1
+The University of Winchester,1,4,required,0,1
+The University of Winchester,2,9,required,0,1
+The University of Winchester,3,15,required,0,1
+The University of Winchester,4,23,required,0,1
+The University of Winchester,5,32,required,0,1
+The University of Winchester,6,42,required,0,1
+The University of Winchester,7,53,required,0,1
+The University of Winchester,8,66,required,0,1
+The University of Winchester,9,81,required,0,1
+The University of Winchester,10,100,required,0,1
+The Manchester Metropolitan University,0,0,required,1,0
+The Manchester Metropolitan University,1,5,required,1,0
+The Manchester Metropolitan University,2,11,required,1,0
+The Manchester Metropolitan University,3,18,required,1,0
+The Manchester Metropolitan University,4,27,required,1,0
+The Manchester Metropolitan University,5,37,required,1,0
+The Manchester Metropolitan University,6,48,required,1,0
+The Manchester Metropolitan University,7,59,required,1,0
+The Manchester Metropolitan University,8,71,required,1,0
+The Manchester Metropolitan University,9,84,required,1,0
+The Manchester Metropolitan University,10,100,required,1,0
+The Manchester Metropolitan University,0,0,required,0,1
+The Manchester Metropolitan University,1,7,required,0,1
+The Manchester Metropolitan University,2,15,required,0,1
+The Manchester Metropolitan University,3,25,required,0,1
+The Manchester Metropolitan University,4,36,required,0,1
+The Manchester Metropolitan University,5,45,required,0,1
+The Manchester Metropolitan University,6,53,required,0,1
+The Manchester Metropolitan University,7,62,required,0,1
+The Manchester Metropolitan University,8,73,required,0,1
+The Manchester Metropolitan University,9,86,required,0,1
+The Manchester Metropolitan University,10,100,required,0,1
+University of Plymouth,0,0,required,1,0
+University of Plymouth,1,5,required,1,0
+University of Plymouth,2,11,required,1,0
+University of Plymouth,3,18,required,1,0
+University of Plymouth,4,27,required,1,0
+University of Plymouth,5,37,required,1,0
+University of Plymouth,6,48,required,1,0
+University of Plymouth,7,59,required,1,0
+University of Plymouth,8,71,required,1,0
+University of Plymouth,9,84,required,1,0
+University of Plymouth,10,100,required,1,0
+University of Plymouth,0,0,required,0,1
+University of Plymouth,1,5,required,0,1
+University of Plymouth,2,10,required,0,1
+University of Plymouth,3,18,required,0,1
+University of Plymouth,4,26,required,0,1
+University of Plymouth,5,36,required,0,1
+University of Plymouth,6,48,required,0,1
+University of Plymouth,7,61,required,0,1
+University of Plymouth,8,74,required,0,1
+University of Plymouth,9,85,required,0,1
+University of Plymouth,10,100,required,0,1
+The University of Exeter,0,0,required,1,0
+The University of Exeter,1,2,required,1,0
+The University of Exeter,2,5,required,1,0
+The University of Exeter,3,10,required,1,0
+The University of Exeter,4,17,required,1,0
+The University of Exeter,5,25,required,1,0
+The University of Exeter,6,35,required,1,0
+The University of Exeter,7,46,required,1,0
+The University of Exeter,8,59,required,1,0
+The University of Exeter,9,75,required,1,0
+The University of Exeter,10,100,required,1,0
+The University of Exeter,0,0,required,0,1
+The University of Exeter,1,2,required,0,1
+The University of Exeter,2,5,required,0,1
+The University of Exeter,3,9,required,0,1
+The University of Exeter,4,15,required,0,1
+The University of Exeter,5,22,required,0,1
+The University of Exeter,6,33,required,0,1
+The University of Exeter,7,45,required,0,1
+The University of Exeter,8,58,required,0,1
+The University of Exeter,9,73,required,0,1
+The University of Exeter,10,100,required,0,1
+The University of Lincoln,0,0,required,1,0
+The University of Lincoln,1,5,required,1,0
+The University of Lincoln,2,11,required,1,0
+The University of Lincoln,3,18,required,1,0
+The University of Lincoln,4,27,required,1,0
+The University of Lincoln,5,37,required,1,0
+The University of Lincoln,6,48,required,1,0
+The University of Lincoln,7,59,required,1,0
+The University of Lincoln,8,71,required,1,0
+The University of Lincoln,9,84,required,1,0
+The University of Lincoln,10,100,required,1,0
+The University of Lincoln,0,0,required,0,1
+The University of Lincoln,1,5,required,0,1
+The University of Lincoln,2,11,required,0,1
+The University of Lincoln,3,18,required,0,1
+The University of Lincoln,4,27,required,0,1
+The University of Lincoln,5,37,required,0,1
+The University of Lincoln,6,47,required,0,1
+The University of Lincoln,7,58,required,0,1
+The University of Lincoln,8,71,required,0,1
+The University of Lincoln,9,85,required,0,1
+The University of Lincoln,10,100,required,0,1
+University of Nottingham,0,0,required,1,0
+University of Nottingham,1,2,required,1,0
+University of Nottingham,2,5,required,1,0
+University of Nottingham,3,10,required,1,0
+University of Nottingham,4,17,required,1,0
+University of Nottingham,5,25,required,1,0
+University of Nottingham,6,35,required,1,0
+University of Nottingham,7,46,required,1,0
+University of Nottingham,8,59,required,1,0
+University of Nottingham,9,75,required,1,0
+University of Nottingham,10,100,required,1,0
+University of Nottingham,0,0,required,0,1
+University of Nottingham,1,2,required,0,1
+University of Nottingham,2,5,required,0,1
+University of Nottingham,3,10,required,0,1
+University of Nottingham,4,17,required,0,1
+University of Nottingham,5,25,required,0,1
+University of Nottingham,6,34,required,0,1
+University of Nottingham,7,45,required,0,1
+University of Nottingham,8,59,required,0,1
+University of Nottingham,9,76,required,0,1
+University of Nottingham,10,100,required,0,1
+Liverpool Hope University,0,0,required,1,0
+Liverpool Hope University,1,5,required,1,0
+Liverpool Hope University,2,11,required,1,0
+Liverpool Hope University,3,18,required,1,0
+Liverpool Hope University,4,27,required,1,0
+Liverpool Hope University,5,37,required,1,0
+Liverpool Hope University,6,48,required,1,0
+Liverpool Hope University,7,59,required,1,0
+Liverpool Hope University,8,71,required,1,0
+Liverpool Hope University,9,84,required,1,0
+Liverpool Hope University,10,100,required,1,0
+Liverpool Hope University,0,0,required,0,1
+Liverpool Hope University,1,6,required,0,1
+Liverpool Hope University,2,12,required,0,1
+Liverpool Hope University,3,21,required,0,1
+Liverpool Hope University,4,30,required,0,1
+Liverpool Hope University,5,40,required,0,1
+Liverpool Hope University,6,50,required,0,1
+Liverpool Hope University,7,61,required,0,1
+Liverpool Hope University,8,73,required,0,1
+Liverpool Hope University,9,89,required,0,1
+Liverpool Hope University,10,100,required,0,1
+Buckinghamshire New University,0,0,required,1,0
+Buckinghamshire New University,1,5,required,1,0
+Buckinghamshire New University,2,11,required,1,0
+Buckinghamshire New University,3,19,required,1,0
+Buckinghamshire New University,4,28,required,1,0
+Buckinghamshire New University,5,38,required,1,0
+Buckinghamshire New University,6,49,required,1,0
+Buckinghamshire New University,7,60,required,1,0
+Buckinghamshire New University,8,72,required,1,0
+Buckinghamshire New University,9,85,required,1,0
+Buckinghamshire New University,10,100,required,1,0
+Buckinghamshire New University,0,0,required,0,1
+Buckinghamshire New University,1,5,required,0,1
+Buckinghamshire New University,2,11,required,0,1
+Buckinghamshire New University,3,18,required,0,1
+Buckinghamshire New University,4,27,required,0,1
+Buckinghamshire New University,5,37,required,0,1
+Buckinghamshire New University,6,47,required,0,1
+Buckinghamshire New University,7,57,required,0,1
+Buckinghamshire New University,8,67,required,0,1
+Buckinghamshire New University,9,80,required,0,1
+Buckinghamshire New University,10,100,required,0,1
+The University of Birmingham,0,0,required,1,0
+The University of Birmingham,1,4,required,1,0
+The University of Birmingham,2,9,required,1,0
+The University of Birmingham,3,16,required,1,0
+The University of Birmingham,4,24,required,1,0
+The University of Birmingham,5,33,required,1,0
+The University of Birmingham,6,43,required,1,0
+The University of Birmingham,7,54,required,1,0
+The University of Birmingham,8,66,required,1,0
+The University of Birmingham,9,80,required,1,0
+The University of Birmingham,10,100,required,1,0
+The University of Birmingham,0,0,required,0,1
+The University of Birmingham,1,7,required,0,1
+The University of Birmingham,2,14,required,0,1
+The University of Birmingham,3,23,required,0,1
+The University of Birmingham,4,33,required,0,1
+The University of Birmingham,5,42,required,0,1
+The University of Birmingham,6,51,required,0,1
+The University of Birmingham,7,61,required,0,1
+The University of Birmingham,8,71,required,0,1
+The University of Birmingham,9,83,required,0,1
+The University of Birmingham,10,100,required,0,1
+The University of Liverpool,0,0,required,1,0
+The University of Liverpool,1,4,required,1,0
+The University of Liverpool,2,9,required,1,0
+The University of Liverpool,3,16,required,1,0
+The University of Liverpool,4,25,required,1,0
+The University of Liverpool,5,34,required,1,0
+The University of Liverpool,6,44,required,1,0
+The University of Liverpool,7,55,required,1,0
+The University of Liverpool,8,67,required,1,0
+The University of Liverpool,9,81,required,1,0
+The University of Liverpool,10,100,required,1,0
+The University of Liverpool,0,0,required,0,1
+The University of Liverpool,1,6,required,0,1
+The University of Liverpool,2,12,required,0,1
+The University of Liverpool,3,21,required,0,1
+The University of Liverpool,4,30,required,0,1
+The University of Liverpool,5,39,required,0,1
+The University of Liverpool,6,49,required,0,1
+The University of Liverpool,7,59,required,0,1
+The University of Liverpool,8,71,required,0,1
+The University of Liverpool,9,85,required,0,1
+The University of Liverpool,10,100,required,0,1
+Solent University,0,0,required,1,0
+Solent University,1,5,required,1,0
+Solent University,2,11,required,1,0
+Solent University,3,19,required,1,0
+Solent University,4,28,required,1,0
+Solent University,5,38,required,1,0
+Solent University,6,49,required,1,0
+Solent University,7,60,required,1,0
+Solent University,8,72,required,1,0
+Solent University,9,85,required,1,0
+Solent University,10,100,required,1,0
+Solent University,0,0,required,0,1
+Solent University,1,5,required,0,1
+Solent University,2,11,required,0,1
+Solent University,3,18,required,0,1
+Solent University,4,27,required,0,1
+Solent University,5,37,required,0,1
+Solent University,6,47,required,0,1
+Solent University,7,58,required,0,1
+Solent University,8,70,required,0,1
+Solent University,9,83,required,0,1
+Solent University,10,100,required,0,1
+The University of Lancaster,0,0,required,1,0
+The University of Lancaster,1,4,required,1,0
+The University of Lancaster,2,9,required,1,0
+The University of Lancaster,3,16,required,1,0
+The University of Lancaster,4,24,required,1,0
+The University of Lancaster,5,33,required,1,0
+The University of Lancaster,6,43,required,1,0
+The University of Lancaster,7,54,required,1,0
+The University of Lancaster,8,66,required,1,0
+The University of Lancaster,9,80,required,1,0
+The University of Lancaster,10,100,required,1,0
+The University of Lancaster,0,0,required,0,1
+The University of Lancaster,1,4,required,0,1
+The University of Lancaster,2,9,required,0,1
+The University of Lancaster,3,16,required,0,1
+The University of Lancaster,4,25,required,0,1
+The University of Lancaster,5,34,required,0,1
+The University of Lancaster,6,44,required,0,1
+The University of Lancaster,7,55,required,0,1
+The University of Lancaster,8,69,required,0,1
+The University of Lancaster,9,85,required,0,1
+The University of Lancaster,10,100,required,0,1
+De Montfort University,0,0,required,1,0
+De Montfort University,1,5,required,1,0
+De Montfort University,2,11,required,1,0
+De Montfort University,3,19,required,1,0
+De Montfort University,4,28,required,1,0
+De Montfort University,5,38,required,1,0
+De Montfort University,6,49,required,1,0
+De Montfort University,7,60,required,1,0
+De Montfort University,8,72,required,1,0
+De Montfort University,9,85,required,1,0
+De Montfort University,10,100,required,1,0
+De Montfort University,0,0,required,0,1
+De Montfort University,1,6,required,0,1
+De Montfort University,2,13,required,0,1
+De Montfort University,3,22,required,0,1
+De Montfort University,4,33,required,0,1
+De Montfort University,5,43,required,0,1
+De Montfort University,6,53,required,0,1
+De Montfort University,7,63,required,0,1
+De Montfort University,8,74,required,0,1
+De Montfort University,9,87,required,0,1
+De Montfort University,10,100,required,0,1
+The University of Hull,0,0,required,1,0
+The University of Hull,1,5,required,1,0
+The University of Hull,2,11,required,1,0
+The University of Hull,3,18,required,1,0
+The University of Hull,4,27,required,1,0
+The University of Hull,5,37,required,1,0
+The University of Hull,6,48,required,1,0
+The University of Hull,7,59,required,1,0
+The University of Hull,8,71,required,1,0
+The University of Hull,9,84,required,1,0
+The University of Hull,10,100,required,1,0
+The University of Hull,0,0,required,0,1
+The University of Hull,1,5,required,0,1
+The University of Hull,2,11,required,0,1
+The University of Hull,3,19,required,0,1
+The University of Hull,4,28,required,0,1
+The University of Hull,5,37,required,0,1
+The University of Hull,6,47,required,0,1
+The University of Hull,7,58,required,0,1
+The University of Hull,8,71,required,0,1
+The University of Hull,9,85,required,0,1
+The University of Hull,10,100,required,0,1
+The University of West London,0,0,required,1,0
+The University of West London,1,5,required,1,0
+The University of West London,2,11,required,1,0
+The University of West London,3,19,required,1,0
+The University of West London,4,28,required,1,0
+The University of West London,5,38,required,1,0
+The University of West London,6,49,required,1,0
+The University of West London,7,60,required,1,0
+The University of West London,8,72,required,1,0
+The University of West London,9,85,required,1,0
+The University of West London,10,100,required,1,0
+The University of West London,0,0,required,0,1
+The University of West London,1,7,required,0,1
+The University of West London,2,15,required,0,1
+The University of West London,3,25,required,0,1
+The University of West London,4,38,required,0,1
+The University of West London,5,48,required,0,1
+The University of West London,6,57,required,0,1
+The University of West London,7,65,required,0,1
+The University of West London,8,73,required,0,1
+The University of West London,9,82,required,0,1
+The University of West London,10,100,required,0,1
+Leeds Beckett University,0,0,required,1,0
+Leeds Beckett University,1,5,required,1,0
+Leeds Beckett University,2,11,required,1,0
+Leeds Beckett University,3,19,required,1,0
+Leeds Beckett University,4,28,required,1,0
+Leeds Beckett University,5,38,required,1,0
+Leeds Beckett University,6,49,required,1,0
+Leeds Beckett University,7,60,required,1,0
+Leeds Beckett University,8,72,required,1,0
+Leeds Beckett University,9,85,required,1,0
+Leeds Beckett University,10,100,required,1,0
+Leeds Beckett University,0,0,required,0,1
+Leeds Beckett University,1,6,required,0,1
+Leeds Beckett University,2,12,required,0,1
+Leeds Beckett University,3,20,required,0,1
+Leeds Beckett University,4,31,required,0,1
+Leeds Beckett University,5,40,required,0,1
+Leeds Beckett University,6,49,required,0,1
+Leeds Beckett University,7,60,required,0,1
+Leeds Beckett University,8,72,required,0,1
+Leeds Beckett University,9,87,required,0,1
+Leeds Beckett University,10,100,required,0,1
+The University of Huddersfield,0,0,required,1,0
+The University of Huddersfield,1,5,required,1,0
+The University of Huddersfield,2,11,required,1,0
+The University of Huddersfield,3,18,required,1,0
+The University of Huddersfield,4,27,required,1,0
+The University of Huddersfield,5,37,required,1,0
+The University of Huddersfield,6,48,required,1,0
+The University of Huddersfield,7,59,required,1,0
+The University of Huddersfield,8,71,required,1,0
+The University of Huddersfield,9,84,required,1,0
+The University of Huddersfield,10,100,required,1,0
+The University of Huddersfield,0,0,required,0,1
+The University of Huddersfield,1,6,required,0,1
+The University of Huddersfield,2,12,required,0,1
+The University of Huddersfield,3,20,required,0,1
+The University of Huddersfield,4,31,required,0,1
+The University of Huddersfield,5,42,required,0,1
+The University of Huddersfield,6,52,required,0,1
+The University of Huddersfield,7,63,required,0,1
+The University of Huddersfield,8,75,required,0,1
+The University of Huddersfield,9,88,required,0,1
+The University of Huddersfield,10,100,required,0,1
+University of Hertfordshire,0,0,required,1,0
+University of Hertfordshire,1,5,required,1,0
+University of Hertfordshire,2,11,required,1,0
+University of Hertfordshire,3,18,required,1,0
+University of Hertfordshire,4,27,required,1,0
+University of Hertfordshire,5,37,required,1,0
+University of Hertfordshire,6,48,required,1,0
+University of Hertfordshire,7,59,required,1,0
+University of Hertfordshire,8,71,required,1,0
+University of Hertfordshire,9,84,required,1,0
+University of Hertfordshire,10,100,required,1,0
+University of Hertfordshire,0,0,required,0,1
+University of Hertfordshire,1,6,required,0,1
+University of Hertfordshire,2,13,required,0,1
+University of Hertfordshire,3,21,required,0,1
+University of Hertfordshire,4,31,required,0,1
+University of Hertfordshire,5,42,required,0,1
+University of Hertfordshire,6,52,required,0,1
+University of Hertfordshire,7,61,required,0,1
+University of Hertfordshire,8,71,required,0,1
+University of Hertfordshire,9,82,required,0,1
+University of Hertfordshire,10,100,required,0,1
+Middlesex University,0,0,required,1,0
+Middlesex University,1,5,required,1,0
+Middlesex University,2,11,required,1,0
+Middlesex University,3,19,required,1,0
+Middlesex University,4,28,required,1,0
+Middlesex University,5,38,required,1,0
+Middlesex University,6,49,required,1,0
+Middlesex University,7,60,required,1,0
+Middlesex University,8,72,required,1,0
+Middlesex University,9,85,required,1,0
+Middlesex University,10,100,required,1,0
+Middlesex University,0,0,required,0,1
+Middlesex University,1,8,required,0,1
+Middlesex University,2,17,required,0,1
+Middlesex University,3,28,required,0,1
+Middlesex University,4,40,required,0,1
+Middlesex University,5,51,required,0,1
+Middlesex University,6,61,required,0,1
+Middlesex University,7,69,required,0,1
+Middlesex University,8,78,required,0,1
+Middlesex University,9,86,required,0,1
+Middlesex University,10,100,required,0,1
+The University of Reading,0,0,required,1,0
+The University of Reading,1,5,required,1,0
+The University of Reading,2,11,required,1,0
+The University of Reading,3,18,required,1,0
+The University of Reading,4,27,required,1,0
+The University of Reading,5,37,required,1,0
+The University of Reading,6,48,required,1,0
+The University of Reading,7,59,required,1,0
+The University of Reading,8,71,required,1,0
+The University of Reading,9,85,required,1,0
+The University of Reading,10,100,required,1,0
+The University of Reading,0,0,required,0,1
+The University of Reading,1,4,required,0,1
+The University of Reading,2,9,required,0,1
+The University of Reading,3,15,required,0,1
+The University of Reading,4,23,required,0,1
+The University of Reading,5,32,required,0,1
+The University of Reading,6,42,required,0,1
+The University of Reading,7,52,required,0,1
+The University of Reading,8,63,required,0,1
+The University of Reading,9,78,required,0,1
+The University of Reading,10,100,required,0,1
+Newcastle University,0,0,required,1,0
+Newcastle University,1,3,required,1,0
+Newcastle University,2,7,required,1,0
+Newcastle University,3,12,required,1,0
+Newcastle University,4,19,required,1,0
+Newcastle University,5,27,required,1,0
+Newcastle University,6,37,required,1,0
+Newcastle University,7,48,required,1,0
+Newcastle University,8,61,required,1,0
+Newcastle University,9,76,required,1,0
+Newcastle University,10,100,required,1,0
+Newcastle University,0,0,required,0,1
+Newcastle University,1,3,required,0,1
+Newcastle University,2,6,required,0,1
+Newcastle University,3,12,required,0,1
+Newcastle University,4,19,required,0,1
+Newcastle University,5,26,required,0,1
+Newcastle University,6,34,required,0,1
+Newcastle University,7,42,required,0,1
+Newcastle University,8,52,required,0,1
+Newcastle University,9,67,required,0,1
+Newcastle University,10,100,required,0,1
+The University of Bristol,0,0,required,1,0
+The University of Bristol,1,2,required,1,0
+The University of Bristol,2,5,required,1,0
+The University of Bristol,3,10,required,1,0
+The University of Bristol,4,17,required,1,0
+The University of Bristol,5,25,required,1,0
+The University of Bristol,6,35,required,1,0
+The University of Bristol,7,46,required,1,0
+The University of Bristol,8,59,required,1,0
+The University of Bristol,9,75,required,1,0
+The University of Bristol,10,100,required,1,0
+The University of Bristol,0,0,required,0,1
+The University of Bristol,1,2,required,0,1
+The University of Bristol,2,4,required,0,1
+The University of Bristol,3,7,required,0,1
+The University of Bristol,4,12,required,0,1
+The University of Bristol,5,18,required,0,1
+The University of Bristol,6,25,required,0,1
+The University of Bristol,7,33,required,0,1
+The University of Bristol,8,44,required,0,1
+The University of Bristol,9,60,required,0,1
+The University of Bristol,10,100,required,0,1
+The University of Brighton,0,0,required,1,0
+The University of Brighton,1,5,required,1,0
+The University of Brighton,2,11,required,1,0
+The University of Brighton,3,19,required,1,0
+The University of Brighton,4,28,required,1,0
+The University of Brighton,5,38,required,1,0
+The University of Brighton,6,49,required,1,0
+The University of Brighton,7,60,required,1,0
+The University of Brighton,8,72,required,1,0
+The University of Brighton,9,85,required,1,0
+The University of Brighton,10,100,required,1,0
+The University of Brighton,0,0,required,0,1
+The University of Brighton,1,5,required,0,1
+The University of Brighton,2,11,required,0,1
+The University of Brighton,3,18,required,0,1
+The University of Brighton,4,27,required,0,1
+The University of Brighton,5,36,required,0,1
+The University of Brighton,6,48,required,0,1
+The University of Brighton,7,60,required,0,1
+The University of Brighton,8,71,required,0,1
+The University of Brighton,9,82,required,0,1
+The University of Brighton,10,100,required,0,1
+The University of Sunderland,0,0,required,1,0
+The University of Sunderland,1,5,required,1,0
+The University of Sunderland,2,11,required,1,0
+The University of Sunderland,3,19,required,1,0
+The University of Sunderland,4,28,required,1,0
+The University of Sunderland,5,38,required,1,0
+The University of Sunderland,6,49,required,1,0
+The University of Sunderland,7,60,required,1,0
+The University of Sunderland,8,72,required,1,0
+The University of Sunderland,9,85,required,1,0
+The University of Sunderland,10,100,required,1,0
+The University of Sunderland,0,0,required,0,1
+The University of Sunderland,1,6,required,0,1
+The University of Sunderland,2,12,required,0,1
+The University of Sunderland,3,20,required,0,1
+The University of Sunderland,4,32,required,0,1
+The University of Sunderland,5,43,required,0,1
+The University of Sunderland,6,53,required,0,1
+The University of Sunderland,7,63,required,0,1
+The University of Sunderland,8,74,required,0,1
+The University of Sunderland,9,88,required,0,1
+The University of Sunderland,10,100,required,0,1
+Royal Holloway and Bedford New College,0,0,required,1,0
+Royal Holloway and Bedford New College,1,4,required,1,0
+Royal Holloway and Bedford New College,2,9,required,1,0
+Royal Holloway and Bedford New College,3,16,required,1,0
+Royal Holloway and Bedford New College,4,25,required,1,0
+Royal Holloway and Bedford New College,5,34,required,1,0
+Royal Holloway and Bedford New College,6,44,required,1,0
+Royal Holloway and Bedford New College,7,55,required,1,0
+Royal Holloway and Bedford New College,8,67,required,1,0
+Royal Holloway and Bedford New College,9,81,required,1,0
+Royal Holloway and Bedford New College,10,100,required,1,0
+Royal Holloway and Bedford New College,0,0,required,0,1
+Royal Holloway and Bedford New College,1,5,required,0,1
+Royal Holloway and Bedford New College,2,10,required,0,1
+Royal Holloway and Bedford New College,3,17,required,0,1
+Royal Holloway and Bedford New College,4,26,required,0,1
+Royal Holloway and Bedford New College,5,36,required,0,1
+Royal Holloway and Bedford New College,6,45,required,0,1
+Royal Holloway and Bedford New College,7,55,required,0,1
+Royal Holloway and Bedford New College,8,66,required,0,1
+Royal Holloway and Bedford New College,9,78,required,0,1
+Royal Holloway and Bedford New College,10,100,required,0,1
+The University of Essex,0,0,required,1,0
+The University of Essex,1,5,required,1,0
+The University of Essex,2,11,required,1,0
+The University of Essex,3,18,required,1,0
+The University of Essex,4,27,required,1,0
+The University of Essex,5,37,required,1,0
+The University of Essex,6,48,required,1,0
+The University of Essex,7,59,required,1,0
+The University of Essex,8,71,required,1,0
+The University of Essex,9,84,required,1,0
+The University of Essex,10,100,required,1,0
+The University of Essex,0,0,required,0,1
+The University of Essex,1,5,required,0,1
+The University of Essex,2,11,required,0,1
+The University of Essex,3,19,required,0,1
+The University of Essex,4,29,required,0,1
+The University of Essex,5,39,required,0,1
+The University of Essex,6,49,required,0,1
+The University of Essex,7,61,required,0,1
+The University of Essex,8,73,required,0,1
+The University of Essex,9,85,required,0,1
+The University of Essex,10,100,required,0,1
+University College London,0,0,required,1,0
+University College London,1,2,required,1,0
+University College London,2,5,required,1,0
+University College London,3,10,required,1,0
+University College London,4,17,required,1,0
+University College London,5,25,required,1,0
+University College London,6,35,required,1,0
+University College London,7,46,required,1,0
+University College London,8,59,required,1,0
+University College London,9,75,required,1,0
+University College London,10,100,required,1,0
+University College London,0,0,required,0,1
+University College London,1,6,required,0,1
+University College London,2,12,required,0,1
+University College London,3,21,required,0,1
+University College London,4,32,required,0,1
+University College London,5,40,required,0,1
+University College London,6,47,required,0,1
+University College London,7,54,required,0,1
+University College London,8,61,required,0,1
+University College London,9,69,required,0,1
+University College London,10,100,required,0,1
+The University of Surrey,0,0,required,1,0
+The University of Surrey,1,4,required,1,0
+The University of Surrey,2,9,required,1,0
+The University of Surrey,3,16,required,1,0
+The University of Surrey,4,25,required,1,0
+The University of Surrey,5,34,required,1,0
+The University of Surrey,6,44,required,1,0
+The University of Surrey,7,55,required,1,0
+The University of Surrey,8,67,required,1,0
+The University of Surrey,9,81,required,1,0
+The University of Surrey,10,100,required,1,0
+The University of Surrey,0,0,required,0,1
+The University of Surrey,1,4,required,0,1
+The University of Surrey,2,9,required,0,1
+The University of Surrey,3,15,required,0,1
+The University of Surrey,4,23,required,0,1
+The University of Surrey,5,32,required,0,1
+The University of Surrey,6,41,required,0,1
+The University of Surrey,7,50,required,0,1
+The University of Surrey,8,61,required,0,1
+The University of Surrey,9,74,required,0,1
+The University of Surrey,10,100,required,0,1
+The University of Oxford,0,0,required,1,0
+The University of Oxford,1,2,required,1,0
+The University of Oxford,2,5,required,1,0
+The University of Oxford,3,10,required,1,0
+The University of Oxford,4,16,required,1,0
+The University of Oxford,5,24,required,1,0
+The University of Oxford,6,34,required,1,0
+The University of Oxford,7,45,required,1,0
+The University of Oxford,8,58,required,1,0
+The University of Oxford,9,74,required,1,0
+The University of Oxford,10,100,required,1,0
+The University of Oxford,0,0,required,0,1
+The University of Oxford,1,1,required,0,1
+The University of Oxford,2,3,required,0,1
+The University of Oxford,3,6,required,0,1
+The University of Oxford,4,11,required,0,1
+The University of Oxford,5,17,required,0,1
+The University of Oxford,6,25,required,0,1
+The University of Oxford,7,34,required,0,1
+The University of Oxford,8,44,required,0,1
+The University of Oxford,9,57,required,0,1
+The University of Oxford,10,100,required,0,1
+"University of the West of England, Bristol",0,0,required,1,0
+"University of the West of England, Bristol",1,5,required,1,0
+"University of the West of England, Bristol",2,11,required,1,0
+"University of the West of England, Bristol",3,18,required,1,0
+"University of the West of England, Bristol",4,27,required,1,0
+"University of the West of England, Bristol",5,37,required,1,0
+"University of the West of England, Bristol",6,48,required,1,0
+"University of the West of England, Bristol",7,59,required,1,0
+"University of the West of England, Bristol",8,71,required,1,0
+"University of the West of England, Bristol",9,84,required,1,0
+"University of the West of England, Bristol",10,100,required,1,0
+"University of the West of England, Bristol",0,0,required,0,1
+"University of the West of England, Bristol",1,4,required,0,1
+"University of the West of England, Bristol",2,9,required,0,1
+"University of the West of England, Bristol",3,15,required,0,1
+"University of the West of England, Bristol",4,23,required,0,1
+"University of the West of England, Bristol",5,33,required,0,1
+"University of the West of England, Bristol",6,43,required,0,1
+"University of the West of England, Bristol",7,54,required,0,1
+"University of the West of England, Bristol",8,67,required,0,1
+"University of the West of England, Bristol",9,83,required,0,1
+"University of the West of England, Bristol",10,100,required,0,1
+The University of East Anglia,0,0,required,1,0
+The University of East Anglia,1,5,required,1,0
+The University of East Anglia,2,10,required,1,0
+The University of East Anglia,3,17,required,1,0
+The University of East Anglia,4,26,required,1,0
+The University of East Anglia,5,35,required,1,0
+The University of East Anglia,6,45,required,1,0
+The University of East Anglia,7,56,required,1,0
+The University of East Anglia,8,68,required,1,0
+The University of East Anglia,9,82,required,1,0
+The University of East Anglia,10,100,required,1,0
+The University of East Anglia,0,0,required,0,1
+The University of East Anglia,1,4,required,0,1
+The University of East Anglia,2,9,required,0,1
+The University of East Anglia,3,16,required,0,1
+The University of East Anglia,4,25,required,0,1
+The University of East Anglia,5,34,required,0,1
+The University of East Anglia,6,45,required,0,1
+The University of East Anglia,7,57,required,0,1
+The University of East Anglia,8,69,required,0,1
+The University of East Anglia,9,82,required,0,1
+The University of East Anglia,10,100,required,0,1
+Teesside University,0,0,required,1,0
+Teesside University,1,5,required,1,0
+Teesside University,2,11,required,1,0
+Teesside University,3,19,required,1,0
+Teesside University,4,28,required,1,0
+Teesside University,5,38,required,1,0
+Teesside University,6,49,required,1,0
+Teesside University,7,60,required,1,0
+Teesside University,8,72,required,1,0
+Teesside University,9,85,required,1,0
+Teesside University,10,100,required,1,0
+Teesside University,0,0,required,0,1
+Teesside University,1,7,required,0,1
+Teesside University,2,14,required,0,1
+Teesside University,3,24,required,0,1
+Teesside University,4,34,required,0,1
+Teesside University,5,43,required,0,1
+Teesside University,6,54,required,0,1
+Teesside University,7,64,required,0,1
+Teesside University,8,76,required,0,1
+Teesside University,9,89,required,0,1
+Teesside University,10,100,required,0,1
+Edge Hill University,0,0,required,1,0
+Edge Hill University,1,5,required,1,0
+Edge Hill University,2,11,required,1,0
+Edge Hill University,3,18,required,1,0
+Edge Hill University,4,27,required,1,0
+Edge Hill University,5,37,required,1,0
+Edge Hill University,6,48,required,1,0
+Edge Hill University,7,59,required,1,0
+Edge Hill University,8,71,required,1,0
+Edge Hill University,9,84,required,1,0
+Edge Hill University,10,100,required,1,0
+Edge Hill University,0,0,required,0,1
+Edge Hill University,1,5,required,0,1
+Edge Hill University,2,11,required,0,1
+Edge Hill University,3,19,required,0,1
+Edge Hill University,4,28,required,0,1
+Edge Hill University,5,37,required,0,1
+Edge Hill University,6,47,required,0,1
+Edge Hill University,7,59,required,0,1
+Edge Hill University,8,72,required,0,1
+Edge Hill University,9,88,required,0,1
+Edge Hill University,10,100,required,0,1
+University of Worcester,0,0,required,1,0
+University of Worcester,1,5,required,1,0
+University of Worcester,2,11,required,1,0
+University of Worcester,3,18,required,1,0
+University of Worcester,4,27,required,1,0
+University of Worcester,5,37,required,1,0
+University of Worcester,6,48,required,1,0
+University of Worcester,7,59,required,1,0
+University of Worcester,8,71,required,1,0
+University of Worcester,9,84,required,1,0
+University of Worcester,10,100,required,1,0
+University of Worcester,0,0,required,0,1
+University of Worcester,1,5,required,0,1
+University of Worcester,2,10,required,0,1
+University of Worcester,3,17,required,0,1
+University of Worcester,4,25,required,0,1
+University of Worcester,5,34,required,0,1
+University of Worcester,6,44,required,0,1
+University of Worcester,7,55,required,0,1
+University of Worcester,8,68,required,0,1
+University of Worcester,9,81,required,0,1
+University of Worcester,10,100,required,0,1
+Keele University,0,0,required,1,0
+Keele University,1,5,required,1,0
+Keele University,2,11,required,1,0
+Keele University,3,18,required,1,0
+Keele University,4,27,required,1,0
+Keele University,5,37,required,1,0
+Keele University,6,48,required,1,0
+Keele University,7,59,required,1,0
+Keele University,8,71,required,1,0
+Keele University,9,84,required,1,0
+Keele University,10,100,required,1,0
+Keele University,0,0,required,0,1
+Keele University,1,5,required,0,1
+Keele University,2,11,required,0,1
+Keele University,3,19,required,0,1
+Keele University,4,29,required,0,1
+Keele University,5,39,required,0,1
+Keele University,6,49,required,0,1
+Keele University,7,60,required,0,1
+Keele University,8,73,required,0,1
+Keele University,9,88,required,0,1
+Keele University,10,100,required,0,1
+University of Cumbria,0,0,required,1,0
+University of Cumbria,1,5,required,1,0
+University of Cumbria,2,11,required,1,0
+University of Cumbria,3,19,required,1,0
+University of Cumbria,4,28,required,1,0
+University of Cumbria,5,38,required,1,0
+University of Cumbria,6,49,required,1,0
+University of Cumbria,7,60,required,1,0
+University of Cumbria,8,72,required,1,0
+University of Cumbria,9,85,required,1,0
+University of Cumbria,10,100,required,1,0
+University of Cumbria,0,0,required,0,1
+University of Cumbria,1,5,required,0,1
+University of Cumbria,2,11,required,0,1
+University of Cumbria,3,18,required,0,1
+University of Cumbria,4,27,required,0,1
+University of Cumbria,5,37,required,0,1
+University of Cumbria,6,48,required,0,1
+University of Cumbria,7,59,required,0,1
+University of Cumbria,8,71,required,0,1
+University of Cumbria,9,86,required,0,1
+University of Cumbria,10,100,required,0,1
+Staffordshire University,0,0,required,1,0
+Staffordshire University,1,5,required,1,0
+Staffordshire University,2,11,required,1,0
+Staffordshire University,3,19,required,1,0
+Staffordshire University,4,28,required,1,0
+Staffordshire University,5,38,required,1,0
+Staffordshire University,6,49,required,1,0
+Staffordshire University,7,60,required,1,0
+Staffordshire University,8,72,required,1,0
+Staffordshire University,9,85,required,1,0
+Staffordshire University,10,100,required,1,0
+Staffordshire University,0,0,required,0,1
+Staffordshire University,1,5,required,0,1
+Staffordshire University,2,11,required,0,1
+Staffordshire University,3,19,required,0,1
+Staffordshire University,4,28,required,0,1
+Staffordshire University,5,37,required,0,1
+Staffordshire University,6,47,required,0,1
+Staffordshire University,7,58,required,0,1
+Staffordshire University,8,71,required,0,1
+Staffordshire University,9,86,required,0,1
+Staffordshire University,10,100,required,0,1
+Falmouth University,0,0,required,1,0
+Falmouth University,1,5,required,1,0
+Falmouth University,2,11,required,1,0
+Falmouth University,3,18,required,1,0
+Falmouth University,4,27,required,1,0
+Falmouth University,5,37,required,1,0
+Falmouth University,6,48,required,1,0
+Falmouth University,7,59,required,1,0
+Falmouth University,8,71,required,1,0
+Falmouth University,9,84,required,1,0
+Falmouth University,10,100,required,1,0
+Falmouth University,0,0,required,0,1
+Falmouth University,1,4,required,0,1
+Falmouth University,2,9,required,0,1
+Falmouth University,3,16,required,0,1
+Falmouth University,4,24,required,0,1
+Falmouth University,5,35,required,0,1
+Falmouth University,6,49,required,0,1
+Falmouth University,7,62,required,0,1
+Falmouth University,8,74,required,0,1
+Falmouth University,9,85,required,0,1
+Falmouth University,10,100,required,0,1
+University of Chester,0,0,required,1,0
+University of Chester,1,5,required,1,0
+University of Chester,2,11,required,1,0
+University of Chester,3,18,required,1,0
+University of Chester,4,27,required,1,0
+University of Chester,5,37,required,1,0
+University of Chester,6,48,required,1,0
+University of Chester,7,59,required,1,0
+University of Chester,8,71,required,1,0
+University of Chester,9,84,required,1,0
+University of Chester,10,100,required,1,0
+University of Chester,0,0,required,0,1
+University of Chester,1,5,required,0,1
+University of Chester,2,11,required,0,1
+University of Chester,3,18,required,0,1
+University of Chester,4,27,required,0,1
+University of Chester,5,36,required,0,1
+University of Chester,6,46,required,0,1
+University of Chester,7,57,required,0,1
+University of Chester,8,70,required,0,1
+University of Chester,9,84,required,0,1
+University of Chester,10,100,required,0,1
+Birmingham City University,0,0,required,1,0
+Birmingham City University,1,5,required,1,0
+Birmingham City University,2,11,required,1,0
+Birmingham City University,3,19,required,1,0
+Birmingham City University,4,28,required,1,0
+Birmingham City University,5,38,required,1,0
+Birmingham City University,6,49,required,1,0
+Birmingham City University,7,60,required,1,0
+Birmingham City University,8,72,required,1,0
+Birmingham City University,9,85,required,1,0
+Birmingham City University,10,100,required,1,0
+Birmingham City University,0,0,required,0,1
+Birmingham City University,1,10,required,0,1
+Birmingham City University,2,19,required,0,1
+Birmingham City University,3,30,required,0,1
+Birmingham City University,4,41,required,0,1
+Birmingham City University,5,50,required,0,1
+Birmingham City University,6,59,required,0,1
+Birmingham City University,7,68,required,0,1
+Birmingham City University,8,77,required,0,1
+Birmingham City University,9,88,required,0,1
+Birmingham City University,10,100,required,0,1
+University of Derby,0,0,required,1,0
+University of Derby,1,5,required,1,0
+University of Derby,2,11,required,1,0
+University of Derby,3,19,required,1,0
+University of Derby,4,28,required,1,0
+University of Derby,5,38,required,1,0
+University of Derby,6,49,required,1,0
+University of Derby,7,60,required,1,0
+University of Derby,8,72,required,1,0
+University of Derby,9,85,required,1,0
+University of Derby,10,100,required,1,0
+University of Derby,0,0,required,0,1
+University of Derby,1,5,required,0,1
+University of Derby,2,11,required,0,1
+University of Derby,3,19,required,0,1
+University of Derby,4,28,required,0,1
+University of Derby,5,37,required,0,1
+University of Derby,6,47,required,0,1
+University of Derby,7,58,required,0,1
+University of Derby,8,71,required,0,1
+University of Derby,9,86,required,0,1
+University of Derby,10,100,required,0,1
+Liverpool John Moores University,0,0,required,1,0
+Liverpool John Moores University,1,5,required,1,0
+Liverpool John Moores University,2,11,required,1,0
+Liverpool John Moores University,3,18,required,1,0
+Liverpool John Moores University,4,27,required,1,0
+Liverpool John Moores University,5,37,required,1,0
+Liverpool John Moores University,6,48,required,1,0
+Liverpool John Moores University,7,59,required,1,0
+Liverpool John Moores University,8,71,required,1,0
+Liverpool John Moores University,9,84,required,1,0
+Liverpool John Moores University,10,100,required,1,0
+Liverpool John Moores University,0,0,required,0,1
+Liverpool John Moores University,1,7,required,0,1
+Liverpool John Moores University,2,14,required,0,1
+Liverpool John Moores University,3,24,required,0,1
+Liverpool John Moores University,4,34,required,0,1
+Liverpool John Moores University,5,44,required,0,1
+Liverpool John Moores University,6,54,required,0,1
+Liverpool John Moores University,7,64,required,0,1
+Liverpool John Moores University,8,75,required,0,1
+Liverpool John Moores University,9,88,required,0,1
+Liverpool John Moores University,10,100,required,0,1
+University of Bedfordshire,0,0,required,1,0
+University of Bedfordshire,1,5,required,1,0
+University of Bedfordshire,2,11,required,1,0
+University of Bedfordshire,3,19,required,1,0
+University of Bedfordshire,4,28,required,1,0
+University of Bedfordshire,5,38,required,1,0
+University of Bedfordshire,6,49,required,1,0
+University of Bedfordshire,7,60,required,1,0
+University of Bedfordshire,8,72,required,1,0
+University of Bedfordshire,9,85,required,1,0
+University of Bedfordshire,10,100,required,1,0
+University of Bedfordshire,0,0,required,0,1
+University of Bedfordshire,1,6,required,0,1
+University of Bedfordshire,2,13,required,0,1
+University of Bedfordshire,3,21,required,0,1
+University of Bedfordshire,4,32,required,0,1
+University of Bedfordshire,5,43,required,0,1
+University of Bedfordshire,6,53,required,0,1
+University of Bedfordshire,7,63,required,0,1
+University of Bedfordshire,8,73,required,0,1
+University of Bedfordshire,9,84,required,0,1
+University of Bedfordshire,10,100,required,0,1
+Aston University,0,0,required,1,0
+Aston University,1,5,required,1,0
+Aston University,2,10,required,1,0
+Aston University,3,17,required,1,0
+Aston University,4,26,required,1,0
+Aston University,5,35,required,1,0
+Aston University,6,45,required,1,0
+Aston University,7,56,required,1,0
+Aston University,8,68,required,1,0
+Aston University,9,82,required,1,0
+Aston University,10,100,required,1,0
+Aston University,0,0,required,0,1
+Aston University,1,10,required,0,1
+Aston University,2,19,required,0,1
+Aston University,3,30,required,0,1
+Aston University,4,41,required,0,1
+Aston University,5,49,required,0,1
+Aston University,6,58,required,0,1
+Aston University,7,67,required,0,1
+Aston University,8,77,required,0,1
+Aston University,9,88,required,0,1
+Aston University,10,100,required,0,1
+Coventry University,0,0,required,1,0
+Coventry University,1,5,required,1,0
+Coventry University,2,11,required,1,0
+Coventry University,3,18,required,1,0
+Coventry University,4,27,required,1,0
+Coventry University,5,37,required,1,0
+Coventry University,6,48,required,1,0
+Coventry University,7,59,required,1,0
+Coventry University,8,71,required,1,0
+Coventry University,9,84,required,1,0
+Coventry University,10,100,required,1,0
+Coventry University,0,0,required,0,1
+Coventry University,1,6,required,0,1
+Coventry University,2,12,required,0,1
+Coventry University,3,20,required,0,1
+Coventry University,4,30,required,0,1
+Coventry University,5,39,required,0,1
+Coventry University,6,49,required,0,1
+Coventry University,7,59,required,0,1
+Coventry University,8,70,required,0,1
+Coventry University,9,83,required,0,1
+Coventry University,10,100,required,0,1
+The University of Southampton,0,0,required,1,0
+The University of Southampton,1,2,required,1,0
+The University of Southampton,2,5,required,1,0
+The University of Southampton,3,10,required,1,0
+The University of Southampton,4,17,required,1,0
+The University of Southampton,5,25,required,1,0
+The University of Southampton,6,35,required,1,0
+The University of Southampton,7,46,required,1,0
+The University of Southampton,8,59,required,1,0
+The University of Southampton,9,75,required,1,0
+The University of Southampton,10,100,required,1,0
+The University of Southampton,0,0,required,0,1
+The University of Southampton,1,2,required,0,1
+The University of Southampton,2,5,required,0,1
+The University of Southampton,3,9,required,0,1
+The University of Southampton,4,15,required,0,1
+The University of Southampton,5,22,required,0,1
+The University of Southampton,6,30,required,0,1
+The University of Southampton,7,41,required,0,1
+The University of Southampton,8,54,required,0,1
+The University of Southampton,9,70,required,0,1
+The University of Southampton,10,100,required,0,1
+London School of Economics and Political Science,0,0,required,1,0
+London School of Economics and Political Science,1,2,required,1,0
+London School of Economics and Political Science,2,5,required,1,0
+London School of Economics and Political Science,3,9,required,1,0
+London School of Economics and Political Science,4,15,required,1,0
+London School of Economics and Political Science,5,22,required,1,0
+London School of Economics and Political Science,6,31,required,1,0
+London School of Economics and Political Science,7,42,required,1,0
+London School of Economics and Political Science,8,55,required,1,0
+London School of Economics and Political Science,9,71,required,1,0
+London School of Economics and Political Science,10,100,required,1,0
+London School of Economics and Political Science,0,0,required,0,1
+London School of Economics and Political Science,1,5,required,0,1
+London School of Economics and Political Science,2,10,required,0,1
+London School of Economics and Political Science,3,18,required,0,1
+London School of Economics and Political Science,4,29,required,0,1
+London School of Economics and Political Science,5,37,required,0,1
+London School of Economics and Political Science,6,44,required,0,1
+London School of Economics and Political Science,7,51,required,0,1
+London School of Economics and Political Science,8,58,required,0,1
+London School of Economics and Political Science,9,66,required,0,1
+London School of Economics and Political Science,10,100,required,0,1
+The University of Warwick,0,0,required,1,0
+The University of Warwick,1,2,required,1,0
+The University of Warwick,2,5,required,1,0
+The University of Warwick,3,10,required,1,0
+The University of Warwick,4,17,required,1,0
+The University of Warwick,5,25,required,1,0
+The University of Warwick,6,35,required,1,0
+The University of Warwick,7,46,required,1,0
+The University of Warwick,8,59,required,1,0
+The University of Warwick,9,75,required,1,0
+The University of Warwick,10,100,required,1,0
+The University of Warwick,0,0,required,0,1
+The University of Warwick,1,2,required,0,1
+The University of Warwick,2,5,required,0,1
+The University of Warwick,3,10,required,0,1
+The University of Warwick,4,16,required,0,1
+The University of Warwick,5,23,required,0,1
+The University of Warwick,6,32,required,0,1
+The University of Warwick,7,43,required,0,1
+The University of Warwick,8,55,required,0,1
+The University of Warwick,9,73,required,0,1
+The University of Warwick,10,100,required,0,1
+King's College London,0,0,required,1,0
+King's College London,1,4,required,1,0
+King's College London,2,9,required,1,0
+King's College London,3,16,required,1,0
+King's College London,4,24,required,1,0
+King's College London,5,33,required,1,0
+King's College London,6,43,required,1,0
+King's College London,7,54,required,1,0
+King's College London,8,66,required,1,0
+King's College London,9,80,required,1,0
+King's College London,10,100,required,1,0
+King's College London,0,0,required,0,1
+King's College London,1,9,required,0,1
+King's College London,2,18,required,0,1
+King's College London,3,28,required,0,1
+King's College London,4,40,required,0,1
+King's College London,5,49,required,0,1
+King's College London,6,56,required,0,1
+King's College London,7,63,required,0,1
+King's College London,8,70,required,0,1
+King's College London,9,77,required,0,1
+King's College London,10,100,required,0,1
+The Nottingham Trent University,0,0,required,1,0
+The Nottingham Trent University,1,5,required,1,0
+The Nottingham Trent University,2,11,required,1,0
+The Nottingham Trent University,3,18,required,1,0
+The Nottingham Trent University,4,27,required,1,0
+The Nottingham Trent University,5,37,required,1,0
+The Nottingham Trent University,6,48,required,1,0
+The Nottingham Trent University,7,59,required,1,0
+The Nottingham Trent University,8,71,required,1,0
+The Nottingham Trent University,9,84,required,1,0
+The Nottingham Trent University,10,100,required,1,0
+The Nottingham Trent University,0,0,required,0,1
+The Nottingham Trent University,1,5,required,0,1
+The Nottingham Trent University,2,11,required,0,1
+The Nottingham Trent University,3,19,required,0,1
+The Nottingham Trent University,4,28,required,0,1
+The Nottingham Trent University,5,37,required,0,1
+The Nottingham Trent University,6,47,required,0,1
+The Nottingham Trent University,7,57,required,0,1
+The Nottingham Trent University,8,69,required,0,1
+The Nottingham Trent University,9,82,required,0,1
+The Nottingham Trent University,10,100,required,0,1
+The University of Leicester,0,0,required,1,0
+The University of Leicester,1,4,required,1,0
+The University of Leicester,2,9,required,1,0
+The University of Leicester,3,16,required,1,0
+The University of Leicester,4,25,required,1,0
+The University of Leicester,5,34,required,1,0
+The University of Leicester,6,44,required,1,0
+The University of Leicester,7,55,required,1,0
+The University of Leicester,8,67,required,1,0
+The University of Leicester,9,81,required,1,0
+The University of Leicester,10,100,required,1,0
+The University of Leicester,0,0,required,0,1
+The University of Leicester,1,5,required,0,1
+The University of Leicester,2,11,required,0,1
+The University of Leicester,3,19,required,0,1
+The University of Leicester,4,30,required,0,1
+The University of Leicester,5,40,required,0,1
+The University of Leicester,6,50,required,0,1
+The University of Leicester,7,60,required,0,1
+The University of Leicester,8,72,required,0,1
+The University of Leicester,9,86,required,0,1
+The University of Leicester,10,100,required,0,1
+Sheffield Hallam University,0,0,required,1,0
+Sheffield Hallam University,1,5,required,1,0
+Sheffield Hallam University,2,11,required,1,0
+Sheffield Hallam University,3,18,required,1,0
+Sheffield Hallam University,4,27,required,1,0
+Sheffield Hallam University,5,37,required,1,0
+Sheffield Hallam University,6,48,required,1,0
+Sheffield Hallam University,7,59,required,1,0
+Sheffield Hallam University,8,71,required,1,0
+Sheffield Hallam University,9,84,required,1,0
+Sheffield Hallam University,10,100,required,1,0
+Sheffield Hallam University,0,0,required,0,1
+Sheffield Hallam University,1,6,required,0,1
+Sheffield Hallam University,2,12,required,0,1
+Sheffield Hallam University,3,20,required,0,1
+Sheffield Hallam University,4,30,required,0,1
+Sheffield Hallam University,5,39,required,0,1
+Sheffield Hallam University,6,49,required,0,1
+Sheffield Hallam University,7,60,required,0,1
+Sheffield Hallam University,8,72,required,0,1
+Sheffield Hallam University,9,85,required,0,1
+Sheffield Hallam University,10,100,required,0,1
+The University of Northampton,0,0,required,1,0
+The University of Northampton,1,5,required,1,0
+The University of Northampton,2,11,required,1,0
+The University of Northampton,3,19,required,1,0
+The University of Northampton,4,28,required,1,0
+The University of Northampton,5,38,required,1,0
+The University of Northampton,6,49,required,1,0
+The University of Northampton,7,60,required,1,0
+The University of Northampton,8,72,required,1,0
+The University of Northampton,9,85,required,1,0
+The University of Northampton,10,100,required,1,0
+The University of Northampton,0,0,required,0,1
+The University of Northampton,1,5,required,0,1
+The University of Northampton,2,11,required,0,1
+The University of Northampton,3,18,required,0,1
+The University of Northampton,4,28,required,0,1
+The University of Northampton,5,37,required,0,1
+The University of Northampton,6,47,required,0,1
+The University of Northampton,7,59,required,0,1
+The University of Northampton,8,72,required,0,1
+The University of Northampton,9,85,required,0,1
+The University of Northampton,10,100,required,0,1
+Anglia Ruskin University,0,0,required,1,0
+Anglia Ruskin University,1,5,required,1,0
+Anglia Ruskin University,2,11,required,1,0
+Anglia Ruskin University,3,19,required,1,0
+Anglia Ruskin University,4,28,required,1,0
+Anglia Ruskin University,5,38,required,1,0
+Anglia Ruskin University,6,49,required,1,0
+Anglia Ruskin University,7,60,required,1,0
+Anglia Ruskin University,8,72,required,1,0
+Anglia Ruskin University,9,85,required,1,0
+Anglia Ruskin University,10,100,required,1,0
+Anglia Ruskin University,0,0,required,0,1
+Anglia Ruskin University,1,5,required,0,1
+Anglia Ruskin University,2,12,required,0,1
+Anglia Ruskin University,3,20,required,0,1
+Anglia Ruskin University,4,30,required,0,1
+Anglia Ruskin University,5,40,required,0,1
+Anglia Ruskin University,6,51,required,0,1
+Anglia Ruskin University,7,62,required,0,1
+Anglia Ruskin University,8,74,required,0,1
+Anglia Ruskin University,9,86,required,0,1
+Anglia Ruskin University,10,100,required,0,1
+The University of Central Lancashire,0,0,required,1,0
+The University of Central Lancashire,1,5,required,1,0
+The University of Central Lancashire,2,11,required,1,0
+The University of Central Lancashire,3,18,required,1,0
+The University of Central Lancashire,4,27,required,1,0
+The University of Central Lancashire,5,37,required,1,0
+The University of Central Lancashire,6,48,required,1,0
+The University of Central Lancashire,7,59,required,1,0
+The University of Central Lancashire,8,71,required,1,0
+The University of Central Lancashire,9,84,required,1,0
+The University of Central Lancashire,10,100,required,1,0
+The University of Central Lancashire,0,0,required,0,1
+The University of Central Lancashire,1,5,required,0,1
+The University of Central Lancashire,2,11,required,0,1
+The University of Central Lancashire,3,19,required,0,1
+The University of Central Lancashire,4,30,required,0,1
+The University of Central Lancashire,5,40,required,0,1
+The University of Central Lancashire,6,49,required,0,1
+The University of Central Lancashire,7,59,required,0,1
+The University of Central Lancashire,8,72,required,0,1
+The University of Central Lancashire,9,88,required,0,1
+The University of Central Lancashire,10,100,required,0,1
+York St John University,0,0,required,1,0
+York St John University,1,5,required,1,0
+York St John University,2,11,required,1,0
+York St John University,3,19,required,1,0
+York St John University,4,28,required,1,0
+York St John University,5,38,required,1,0
+York St John University,6,49,required,1,0
+York St John University,7,60,required,1,0
+York St John University,8,72,required,1,0
+York St John University,9,85,required,1,0
+York St John University,10,100,required,1,0
+York St John University,0,0,required,0,1
+York St John University,1,4,required,0,1
+York St John University,2,9,required,0,1
+York St John University,3,16,required,0,1
+York St John University,4,25,required,0,1
+York St John University,5,34,required,0,1
+York St John University,6,43,required,0,1
+York St John University,7,53,required,0,1
+York St John University,8,65,required,0,1
+York St John University,9,80,required,0,1
+York St John University,10,100,required,0,1
+"University of the Arts, London",0,0,required,1,0
+"University of the Arts, London",1,5,required,1,0
+"University of the Arts, London",2,11,required,1,0
+"University of the Arts, London",3,18,required,1,0
+"University of the Arts, London",4,27,required,1,0
+"University of the Arts, London",5,37,required,1,0
+"University of the Arts, London",6,48,required,1,0
+"University of the Arts, London",7,59,required,1,0
+"University of the Arts, London",8,71,required,1,0
+"University of the Arts, London",9,84,required,1,0
+"University of the Arts, London",10,100,required,1,0
+"University of the Arts, London",0,0,required,0,1
+"University of the Arts, London",1,10,required,0,1
+"University of the Arts, London",2,21,required,0,1
+"University of the Arts, London",3,33,required,0,1
+"University of the Arts, London",4,46,required,0,1
+"University of the Arts, London",5,55,required,0,1
+"University of the Arts, London",6,62,required,0,1
+"University of the Arts, London",7,69,required,0,1
+"University of the Arts, London",8,76,required,0,1
+"University of the Arts, London",9,83,required,0,1
+"University of the Arts, London",10,100,required,0,1
+The University of Westminster,0,0,required,1,0
+The University of Westminster,1,5,required,1,0
+The University of Westminster,2,11,required,1,0
+The University of Westminster,3,19,required,1,0
+The University of Westminster,4,28,required,1,0
+The University of Westminster,5,38,required,1,0
+The University of Westminster,6,49,required,1,0
+The University of Westminster,7,60,required,1,0
+The University of Westminster,8,72,required,1,0
+The University of Westminster,9,85,required,1,0
+The University of Westminster,10,100,required,1,0
+The University of Westminster,0,0,required,0,1
+The University of Westminster,1,10,required,0,1
+The University of Westminster,2,21,required,0,1
+The University of Westminster,3,33,required,0,1
+The University of Westminster,4,45,required,0,1
+The University of Westminster,5,54,required,0,1
+The University of Westminster,6,61,required,0,1
+The University of Westminster,7,68,required,0,1
+The University of Westminster,8,75,required,0,1
+The University of Westminster,9,82,required,0,1
+The University of Westminster,10,100,required,0,1
+University of Gloucestershire,0,0,required,1,0
+University of Gloucestershire,1,5,required,1,0
+University of Gloucestershire,2,11,required,1,0
+University of Gloucestershire,3,18,required,1,0
+University of Gloucestershire,4,27,required,1,0
+University of Gloucestershire,5,37,required,1,0
+University of Gloucestershire,6,48,required,1,0
+University of Gloucestershire,7,59,required,1,0
+University of Gloucestershire,8,71,required,1,0
+University of Gloucestershire,9,84,required,1,0
+University of Gloucestershire,10,100,required,1,0
+University of Gloucestershire,0,0,required,0,1
+University of Gloucestershire,1,4,required,0,1
+University of Gloucestershire,2,9,required,0,1
+University of Gloucestershire,3,15,required,0,1
+University of Gloucestershire,4,22,required,0,1
+University of Gloucestershire,5,30,required,0,1
+University of Gloucestershire,6,39,required,0,1
+University of Gloucestershire,7,50,required,0,1
+University of Gloucestershire,8,64,required,0,1
+University of Gloucestershire,9,78,required,0,1
+University of Gloucestershire,10,100,required,0,1
+The University of Leeds,0,0,required,1,0
+The University of Leeds,1,4,required,1,0
+The University of Leeds,2,9,required,1,0
+The University of Leeds,3,16,required,1,0
+The University of Leeds,4,24,required,1,0
+The University of Leeds,5,33,required,1,0
+The University of Leeds,6,43,required,1,0
+The University of Leeds,7,54,required,1,0
+The University of Leeds,8,66,required,1,0
+The University of Leeds,9,80,required,1,0
+The University of Leeds,10,100,required,1,0
+The University of Leeds,0,0,required,0,1
+The University of Leeds,1,5,required,0,1
+The University of Leeds,2,11,required,0,1
+The University of Leeds,3,18,required,0,1
+The University of Leeds,4,28,required,0,1
+The University of Leeds,5,37,required,0,1
+The University of Leeds,6,46,required,0,1
+The University of Leeds,7,57,required,0,1
+The University of Leeds,8,70,required,0,1
+The University of Leeds,9,85,required,0,1
+The University of Leeds,10,100,required,0,1
+The University of Chichester,0,0,required,1,0
+The University of Chichester,1,5,required,1,0
+The University of Chichester,2,11,required,1,0
+The University of Chichester,3,18,required,1,0
+The University of Chichester,4,27,required,1,0
+The University of Chichester,5,37,required,1,0
+The University of Chichester,6,48,required,1,0
+The University of Chichester,7,59,required,1,0
+The University of Chichester,8,71,required,1,0
+The University of Chichester,9,84,required,1,0
+The University of Chichester,10,100,required,1,0
+The University of Chichester,0,0,required,0,1
+The University of Chichester,1,4,required,0,1
+The University of Chichester,2,9,required,0,1
+The University of Chichester,3,16,required,0,1
+The University of Chichester,4,24,required,0,1
+The University of Chichester,5,34,required,0,1
+The University of Chichester,6,45,required,0,1
+The University of Chichester,7,56,required,0,1
+The University of Chichester,8,68,required,0,1
+The University of Chichester,9,81,required,0,1
+The University of Chichester,10,100,required,0,1
+Kingston University,0,0,required,1,0
+Kingston University,1,5,required,1,0
+Kingston University,2,11,required,1,0
+Kingston University,3,19,required,1,0
+Kingston University,4,28,required,1,0
+Kingston University,5,38,required,1,0
+Kingston University,6,49,required,1,0
+Kingston University,7,60,required,1,0
+Kingston University,8,72,required,1,0
+Kingston University,9,85,required,1,0
+Kingston University,10,100,required,1,0
+Kingston University,0,0,required,0,1
+Kingston University,1,6,required,0,1
+Kingston University,2,13,required,0,1
+Kingston University,3,21,required,0,1
+Kingston University,4,31,required,0,1
+Kingston University,5,41,required,0,1
+Kingston University,6,50,required,0,1
+Kingston University,7,59,required,0,1
+Kingston University,8,68,required,0,1
+Kingston University,9,79,required,0,1
+Kingston University,10,100,required,0,1
+Brunel University London,0,0,required,1,0
+Brunel University London,1,5,required,1,0
+Brunel University London,2,11,required,1,0
+Brunel University London,3,18,required,1,0
+Brunel University London,4,27,required,1,0
+Brunel University London,5,37,required,1,0
+Brunel University London,6,48,required,1,0
+Brunel University London,7,59,required,1,0
+Brunel University London,8,71,required,1,0
+Brunel University London,9,84,required,1,0
+Brunel University London,10,100,required,1,0
+Brunel University London,0,0,required,0,1
+Brunel University London,1,6,required,0,1
+Brunel University London,2,13,required,0,1
+Brunel University London,3,21,required,0,1
+Brunel University London,4,33,required,0,1
+Brunel University London,5,44,required,0,1
+Brunel University London,6,54,required,0,1
+Brunel University London,7,63,required,0,1
+Brunel University London,8,72,required,0,1
+Brunel University London,9,82,required,0,1
+Brunel University London,10,100,required,0,1
+Bournemouth University,0,0,required,1,0
+Bournemouth University,1,5,required,1,0
+Bournemouth University,2,11,required,1,0
+Bournemouth University,3,18,required,1,0
+Bournemouth University,4,27,required,1,0
+Bournemouth University,5,37,required,1,0
+Bournemouth University,6,48,required,1,0
+Bournemouth University,7,59,required,1,0
+Bournemouth University,8,71,required,1,0
+Bournemouth University,9,84,required,1,0
+Bournemouth University,10,100,required,1,0
+Bournemouth University,0,0,required,0,1
+Bournemouth University,1,4,required,0,1
+Bournemouth University,2,9,required,0,1
+Bournemouth University,3,15,required,0,1
+Bournemouth University,4,23,required,0,1
+Bournemouth University,5,34,required,0,1
+Bournemouth University,6,46,required,0,1
+Bournemouth University,7,58,required,0,1
+Bournemouth University,8,71,required,0,1
+Bournemouth University,9,84,required,0,1
+Bournemouth University,10,100,required,0,1
+University for the Creative Arts,0,0,required,1,0
+University for the Creative Arts,1,5,required,1,0
+University for the Creative Arts,2,11,required,1,0
+University for the Creative Arts,3,18,required,1,0
+University for the Creative Arts,4,27,required,1,0
+University for the Creative Arts,5,37,required,1,0
+University for the Creative Arts,6,48,required,1,0
+University for the Creative Arts,7,59,required,1,0
+University for the Creative Arts,8,71,required,1,0
+University for the Creative Arts,9,84,required,1,0
+University for the Creative Arts,10,100,required,1,0
+University for the Creative Arts,0,0,required,0,1
+University for the Creative Arts,1,4,required,0,1
+University for the Creative Arts,2,9,required,0,1
+University for the Creative Arts,3,16,required,0,1
+University for the Creative Arts,4,24,required,0,1
+University for the Creative Arts,5,33,required,0,1
+University for the Creative Arts,6,42,required,0,1
+University for the Creative Arts,7,52,required,0,1
+University for the Creative Arts,8,64,required,0,1
+University for the Creative Arts,9,78,required,0,1
+University for the Creative Arts,10,100,required,0,1
+The University of East London,0,0,required,1,0
+The University of East London,1,5,required,1,0
+The University of East London,2,11,required,1,0
+The University of East London,3,19,required,1,0
+The University of East London,4,28,required,1,0
+The University of East London,5,38,required,1,0
+The University of East London,6,49,required,1,0
+The University of East London,7,60,required,1,0
+The University of East London,8,72,required,1,0
+The University of East London,9,85,required,1,0
+The University of East London,10,100,required,1,0
+The University of East London,0,0,required,0,1
+The University of East London,1,10,required,0,1
+The University of East London,2,21,required,0,1
+The University of East London,3,34,required,0,1
+The University of East London,4,48,required,0,1
+The University of East London,5,58,required,0,1
+The University of East London,6,66,required,0,1
+The University of East London,7,73,required,0,1
+The University of East London,8,80,required,0,1
+The University of East London,9,87,required,0,1
+The University of East London,10,100,required,0,1
+Roehampton University,0,0,required,1,0
+Roehampton University,1,5,required,1,0
+Roehampton University,2,11,required,1,0
+Roehampton University,3,19,required,1,0
+Roehampton University,4,28,required,1,0
+Roehampton University,5,38,required,1,0
+Roehampton University,6,49,required,1,0
+Roehampton University,7,60,required,1,0
+Roehampton University,8,72,required,1,0
+Roehampton University,9,85,required,1,0
+Roehampton University,10,100,required,1,0
+Roehampton University,0,0,required,0,1
+Roehampton University,1,7,required,0,1
+Roehampton University,2,15,required,0,1
+Roehampton University,3,25,required,0,1
+Roehampton University,4,37,required,0,1
+Roehampton University,5,47,required,0,1
+Roehampton University,6,55,required,0,1
+Roehampton University,7,63,required,0,1
+Roehampton University,8,71,required,0,1
+Roehampton University,9,80,required,0,1
+Roehampton University,10,100,required,0,1
+Canterbury Christ Church University,0,0,required,1,0
+Canterbury Christ Church University,1,5,required,1,0
+Canterbury Christ Church University,2,11,required,1,0
+Canterbury Christ Church University,3,19,required,1,0
+Canterbury Christ Church University,4,28,required,1,0
+Canterbury Christ Church University,5,38,required,1,0
+Canterbury Christ Church University,6,49,required,1,0
+Canterbury Christ Church University,7,60,required,1,0
+Canterbury Christ Church University,8,72,required,1,0
+Canterbury Christ Church University,9,85,required,1,0
+Canterbury Christ Church University,10,100,required,1,0
+Canterbury Christ Church University,0,0,required,0,1
+Canterbury Christ Church University,1,5,required,0,1
+Canterbury Christ Church University,2,11,required,0,1
+Canterbury Christ Church University,3,18,required,0,1
+Canterbury Christ Church University,4,27,required,0,1
+Canterbury Christ Church University,5,37,required,0,1
+Canterbury Christ Church University,6,47,required,0,1
+Canterbury Christ Church University,7,58,required,0,1
+Canterbury Christ Church University,8,69,required,0,1
+Canterbury Christ Church University,9,80,required,0,1
+Canterbury Christ Church University,10,100,required,0,1
+London South Bank University,0,0,required,1,0
+London South Bank University,1,5,required,1,0
+London South Bank University,2,11,required,1,0
+London South Bank University,3,19,required,1,0
+London South Bank University,4,28,required,1,0
+London South Bank University,5,38,required,1,0
+London South Bank University,6,49,required,1,0
+London South Bank University,7,60,required,1,0
+London South Bank University,8,72,required,1,0
+London South Bank University,9,85,required,1,0
+London South Bank University,10,100,required,1,0
+London South Bank University,0,0,required,0,1
+London South Bank University,1,11,required,0,1
+London South Bank University,2,22,required,0,1
+London South Bank University,3,34,required,0,1
+London South Bank University,4,48,required,0,1
+London South Bank University,5,57,required,0,1
+London South Bank University,6,64,required,0,1
+London South Bank University,7,71,required,0,1
+London South Bank University,8,77,required,0,1
+London South Bank University,9,84,required,0,1
+London South Bank University,10,100,required,0,1
+"City St George's, University of London",0,0,required,1,0
+"City St George's, University of London",1,5,required,1,0
+"City St George's, University of London",2,11,required,1,0
+"City St George's, University of London",3,18,required,1,0
+"City St George's, University of London",4,27,required,1,0
+"City St George's, University of London",5,36,required,1,0
+"City St George's, University of London",6,46,required,1,0
+"City St George's, University of London",7,57,required,1,0
+"City St George's, University of London",8,69,required,1,0
+"City St George's, University of London",9,83,required,1,0
+"City St George's, University of London",10,100,required,1,0
+"City St George's, University of London",0,0,required,0,1
+"City St George's, University of London",1,10,required,0,1
+"City St George's, University of London",2,21,required,0,1
+"City St George's, University of London",3,33,required,0,1
+"City St George's, University of London",4,45,required,0,1
+"City St George's, University of London",5,54,required,0,1
+"City St George's, University of London",6,61,required,0,1
+"City St George's, University of London",7,68,required,0,1
+"City St George's, University of London",8,74,required,0,1
+"City St George's, University of London",9,81,required,0,1
+"City St George's, University of London",10,100,required,0,1
+Goldsmiths College,0,0,required,1,0
+Goldsmiths College,1,5,required,1,0
+Goldsmiths College,2,11,required,1,0
+Goldsmiths College,3,18,required,1,0
+Goldsmiths College,4,27,required,1,0
+Goldsmiths College,5,37,required,1,0
+Goldsmiths College,6,48,required,1,0
+Goldsmiths College,7,59,required,1,0
+Goldsmiths College,8,71,required,1,0
+Goldsmiths College,9,84,required,1,0
+Goldsmiths College,10,100,required,1,0
+Goldsmiths College,0,0,required,0,1
+Goldsmiths College,1,10,required,0,1
+Goldsmiths College,2,20,required,0,1
+Goldsmiths College,3,32,required,0,1
+Goldsmiths College,4,46,required,0,1
+Goldsmiths College,5,56,required,0,1
+Goldsmiths College,6,63,required,0,1
+Goldsmiths College,7,70,required,0,1
+Goldsmiths College,8,77,required,0,1
+Goldsmiths College,9,84,required,0,1
+Goldsmiths College,10,100,required,0,1
+Bath Spa University,0,0,required,1,0
+Bath Spa University,1,5,required,1,0
+Bath Spa University,2,11,required,1,0
+Bath Spa University,3,18,required,1,0
+Bath Spa University,4,27,required,1,0
+Bath Spa University,5,37,required,1,0
+Bath Spa University,6,48,required,1,0
+Bath Spa University,7,59,required,1,0
+Bath Spa University,8,71,required,1,0
+Bath Spa University,9,84,required,1,0
+Bath Spa University,10,100,required,1,0
+Bath Spa University,0,0,required,0,1
+Bath Spa University,1,4,required,0,1
+Bath Spa University,2,9,required,0,1
+Bath Spa University,3,15,required,0,1
+Bath Spa University,4,22,required,0,1
+Bath Spa University,5,31,required,0,1
+Bath Spa University,6,42,required,0,1
+Bath Spa University,7,54,required,0,1
+Bath Spa University,8,67,required,0,1
+Bath Spa University,9,81,required,0,1
+Bath Spa University,10,100,required,0,1
+The University of Wolverhampton,0,0,required,1,0
+The University of Wolverhampton,1,5,required,1,0
+The University of Wolverhampton,2,11,required,1,0
+The University of Wolverhampton,3,19,required,1,0
+The University of Wolverhampton,4,28,required,1,0
+The University of Wolverhampton,5,38,required,1,0
+The University of Wolverhampton,6,49,required,1,0
+The University of Wolverhampton,7,60,required,1,0
+The University of Wolverhampton,8,72,required,1,0
+The University of Wolverhampton,9,85,required,1,0
+The University of Wolverhampton,10,100,required,1,0
+The University of Wolverhampton,0,0,required,0,1
+The University of Wolverhampton,1,7,required,0,1
+The University of Wolverhampton,2,15,required,0,1
+The University of Wolverhampton,3,25,required,0,1
+The University of Wolverhampton,4,37,required,0,1
+The University of Wolverhampton,5,47,required,0,1
+The University of Wolverhampton,6,57,required,0,1
+The University of Wolverhampton,7,67,required,0,1
+The University of Wolverhampton,8,77,required,0,1
+The University of Wolverhampton,9,89,required,0,1
+The University of Wolverhampton,10,100,required,0,1
+The University of Salford,0,0,required,1,0
+The University of Salford,1,5,required,1,0
+The University of Salford,2,11,required,1,0
+The University of Salford,3,18,required,1,0
+The University of Salford,4,27,required,1,0
+The University of Salford,5,37,required,1,0
+The University of Salford,6,48,required,1,0
+The University of Salford,7,59,required,1,0
+The University of Salford,8,71,required,1,0
+The University of Salford,9,84,required,1,0
+The University of Salford,10,100,required,1,0
+The University of Salford,0,0,required,0,1
+The University of Salford,1,7,required,0,1
+The University of Salford,2,15,required,0,1
+The University of Salford,3,25,required,0,1
+The University of Salford,4,36,required,0,1
+The University of Salford,5,46,required,0,1
+The University of Salford,6,55,required,0,1
+The University of Salford,7,65,required,0,1
+The University of Salford,8,76,required,0,1
+The University of Salford,9,89,required,0,1
+The University of Salford,10,100,required,0,1
+University of Northumbria at Newcastle,0,0,required,1,0
+University of Northumbria at Newcastle,1,5,required,1,0
+University of Northumbria at Newcastle,2,11,required,1,0
+University of Northumbria at Newcastle,3,18,required,1,0
+University of Northumbria at Newcastle,4,27,required,1,0
+University of Northumbria at Newcastle,5,37,required,1,0
+University of Northumbria at Newcastle,6,48,required,1,0
+University of Northumbria at Newcastle,7,59,required,1,0
+University of Northumbria at Newcastle,8,71,required,1,0
+University of Northumbria at Newcastle,9,84,required,1,0
+University of Northumbria at Newcastle,10,100,required,1,0
+University of Northumbria at Newcastle,0,0,required,0,1
+University of Northumbria at Newcastle,1,6,required,0,1
+University of Northumbria at Newcastle,2,12,required,0,1
+University of Northumbria at Newcastle,3,20,required,0,1
+University of Northumbria at Newcastle,4,30,required,0,1
+University of Northumbria at Newcastle,5,40,required,0,1
+University of Northumbria at Newcastle,6,49,required,0,1
+University of Northumbria at Newcastle,7,57,required,0,1
+University of Northumbria at Newcastle,8,66,required,0,1
+University of Northumbria at Newcastle,9,79,required,0,1
+University of Northumbria at Newcastle,10,100,required,0,1
+"St Mary's University, Twickenham",0,0,required,1,0
+"St Mary's University, Twickenham",1,5,required,1,0
+"St Mary's University, Twickenham",2,11,required,1,0
+"St Mary's University, Twickenham",3,19,required,1,0
+"St Mary's University, Twickenham",4,28,required,1,0
+"St Mary's University, Twickenham",5,38,required,1,0
+"St Mary's University, Twickenham",6,49,required,1,0
+"St Mary's University, Twickenham",7,60,required,1,0
+"St Mary's University, Twickenham",8,72,required,1,0
+"St Mary's University, Twickenham",9,85,required,1,0
+"St Mary's University, Twickenham",10,100,required,1,0
+"St Mary's University, Twickenham",0,0,required,0,1
+"St Mary's University, Twickenham",1,6,required,0,1
+"St Mary's University, Twickenham",2,13,required,0,1
+"St Mary's University, Twickenham",3,21,required,0,1
+"St Mary's University, Twickenham",4,32,required,0,1
+"St Mary's University, Twickenham",5,42,required,0,1
+"St Mary's University, Twickenham",6,51,required,0,1
+"St Mary's University, Twickenham",7,60,required,0,1
+"St Mary's University, Twickenham",8,69,required,0,1
+"St Mary's University, Twickenham",9,80,required,0,1
+"St Mary's University, Twickenham",10,100,required,0,1
+The University of Bradford,0,0,required,1,0
+The University of Bradford,1,5,required,1,0
+The University of Bradford,2,11,required,1,0
+The University of Bradford,3,19,required,1,0
+The University of Bradford,4,28,required,1,0
+The University of Bradford,5,38,required,1,0
+The University of Bradford,6,49,required,1,0
+The University of Bradford,7,60,required,1,0
+The University of Bradford,8,72,required,1,0
+The University of Bradford,9,85,required,1,0
+The University of Bradford,10,100,required,1,0
+The University of Bradford,0,0,required,0,1
+The University of Bradford,1,7,required,0,1
+The University of Bradford,2,14,required,0,1
+The University of Bradford,3,23,required,0,1
+The University of Bradford,4,36,required,0,1
+The University of Bradford,5,46,required,0,1
+The University of Bradford,6,55,required,0,1
+The University of Bradford,7,65,required,0,1
+The University of Bradford,8,76,required,0,1
+The University of Bradford,9,88,required,0,1
+The University of Bradford,10,100,required,0,1
+The University of York,0,0,required,1,0
+The University of York,1,4,required,1,0
+The University of York,2,9,required,1,0
+The University of York,3,16,required,1,0
+The University of York,4,24,required,1,0
+The University of York,5,33,required,1,0
+The University of York,6,43,required,1,0
+The University of York,7,54,required,1,0
+The University of York,8,66,required,1,0
+The University of York,9,80,required,1,0
+The University of York,10,100,required,1,0
+The University of York,0,0,required,0,1
+The University of York,1,4,required,0,1
+The University of York,2,9,required,0,1
+The University of York,3,15,required,0,1
+The University of York,4,23,required,0,1
+The University of York,5,32,required,0,1
+The University of York,6,42,required,0,1
+The University of York,7,53,required,0,1
+The University of York,8,66,required,0,1
+The University of York,9,83,required,0,1
+The University of York,10,100,required,0,1
+The University of Greenwich,0,0,required,1,0
+The University of Greenwich,1,5,required,1,0
+The University of Greenwich,2,11,required,1,0
+The University of Greenwich,3,19,required,1,0
+The University of Greenwich,4,28,required,1,0
+The University of Greenwich,5,38,required,1,0
+The University of Greenwich,6,49,required,1,0
+The University of Greenwich,7,60,required,1,0
+The University of Greenwich,8,72,required,1,0
+The University of Greenwich,9,85,required,1,0
+The University of Greenwich,10,100,required,1,0
+The University of Greenwich,0,0,required,0,1
+The University of Greenwich,1,10,required,0,1
+The University of Greenwich,2,21,required,0,1
+The University of Greenwich,3,33,required,0,1
+The University of Greenwich,4,46,required,0,1
+The University of Greenwich,5,56,required,0,1
+The University of Greenwich,6,64,required,0,1
+The University of Greenwich,7,71,required,0,1
+The University of Greenwich,8,78,required,0,1
+The University of Greenwich,9,85,required,0,1
+The University of Greenwich,10,100,required,0,1
+The University of Cambridge,0,0,required,1,0
+The University of Cambridge,1,2,required,1,0
+The University of Cambridge,2,5,required,1,0
+The University of Cambridge,3,9,required,1,0
+The University of Cambridge,4,15,required,1,0
+The University of Cambridge,5,23,required,1,0
+The University of Cambridge,6,32,required,1,0
+The University of Cambridge,7,43,required,1,0
+The University of Cambridge,8,56,required,1,0
+The University of Cambridge,9,72,required,1,0
+The University of Cambridge,10,100,required,1,0
+The University of Cambridge,0,0,required,0,1
+The University of Cambridge,1,2,required,0,1
+The University of Cambridge,2,4,required,0,1
+The University of Cambridge,3,7,required,0,1
+The University of Cambridge,4,12,required,0,1
+The University of Cambridge,5,18,required,0,1
+The University of Cambridge,6,26,required,0,1
+The University of Cambridge,7,35,required,0,1
+The University of Cambridge,8,46,required,0,1
+The University of Cambridge,9,59,required,0,1
+The University of Cambridge,10,100,required,0,1
+Leeds Trinity University,0,0,required,1,0
+Leeds Trinity University,1,5,required,1,0
+Leeds Trinity University,2,11,required,1,0
+Leeds Trinity University,3,19,required,1,0
+Leeds Trinity University,4,28,required,1,0
+Leeds Trinity University,5,38,required,1,0
+Leeds Trinity University,6,49,required,1,0
+Leeds Trinity University,7,60,required,1,0
+Leeds Trinity University,8,72,required,1,0
+Leeds Trinity University,9,85,required,1,0
+Leeds Trinity University,10,100,required,1,0
+Leeds Trinity University,0,0,required,0,1
+Leeds Trinity University,1,6,required,0,1
+Leeds Trinity University,2,12,required,0,1
+Leeds Trinity University,3,20,required,0,1
+Leeds Trinity University,4,30,required,0,1
+Leeds Trinity University,5,39,required,0,1
+Leeds Trinity University,6,49,required,0,1
+Leeds Trinity University,7,59,required,0,1
+Leeds Trinity University,8,71,required,0,1
+Leeds Trinity University,9,86,required,0,1
+Leeds Trinity University,10,100,required,0,1
+The University of Sheffield,0,0,required,1,0
+The University of Sheffield,1,4,required,1,0
+The University of Sheffield,2,9,required,1,0
+The University of Sheffield,3,16,required,1,0
+The University of Sheffield,4,24,required,1,0
+The University of Sheffield,5,33,required,1,0
+The University of Sheffield,6,43,required,1,0
+The University of Sheffield,7,54,required,1,0
+The University of Sheffield,8,66,required,1,0
+The University of Sheffield,9,80,required,1,0
+The University of Sheffield,10,100,required,1,0
+The University of Sheffield,0,0,required,0,1
+The University of Sheffield,1,5,required,0,1
+The University of Sheffield,2,10,required,0,1
+The University of Sheffield,3,16,required,0,1
+The University of Sheffield,4,25,required,0,1
+The University of Sheffield,5,33,required,0,1
+The University of Sheffield,6,42,required,0,1
+The University of Sheffield,7,53,required,0,1
+The University of Sheffield,8,66,required,0,1
+The University of Sheffield,9,80,required,0,1
+The University of Sheffield,10,100,required,0,1
+Queen Mary University of London,0,0,required,1,0
+Queen Mary University of London,1,4,required,1,0
+Queen Mary University of London,2,9,required,1,0
+Queen Mary University of London,3,16,required,1,0
+Queen Mary University of London,4,25,required,1,0
+Queen Mary University of London,5,34,required,1,0
+Queen Mary University of London,6,44,required,1,0
+Queen Mary University of London,7,55,required,1,0
+Queen Mary University of London,8,67,required,1,0
+Queen Mary University of London,9,81,required,1,0
+Queen Mary University of London,10,100,required,1,0
+Queen Mary University of London,0,0,required,0,1
+Queen Mary University of London,1,12,required,0,1
+Queen Mary University of London,2,23,required,0,1
+Queen Mary University of London,3,37,required,0,1
+Queen Mary University of London,4,49,required,0,1
+Queen Mary University of London,5,57,required,0,1
+Queen Mary University of London,6,64,required,0,1
+Queen Mary University of London,7,71,required,0,1
+Queen Mary University of London,8,77,required,0,1
+Queen Mary University of London,9,84,required,0,1
+Queen Mary University of London,10,100,required,0,1
+Norwich University of the Arts,0,0,required,1,0
+Norwich University of the Arts,1,5,required,1,0
+Norwich University of the Arts,2,11,required,1,0
+Norwich University of the Arts,3,18,required,1,0
+Norwich University of the Arts,4,27,required,1,0
+Norwich University of the Arts,5,37,required,1,0
+Norwich University of the Arts,6,48,required,1,0
+Norwich University of the Arts,7,59,required,1,0
+Norwich University of the Arts,8,71,required,1,0
+Norwich University of the Arts,9,84,required,1,0
+Norwich University of the Arts,10,100,required,1,0
+Norwich University of the Arts,0,0,required,0,1
+Norwich University of the Arts,1,4,required,0,1
+Norwich University of the Arts,2,9,required,0,1
+Norwich University of the Arts,3,16,required,0,1
+Norwich University of the Arts,4,25,required,0,1
+Norwich University of the Arts,5,34,required,0,1
+Norwich University of the Arts,6,45,required,0,1
+Norwich University of the Arts,7,57,required,0,1
+Norwich University of the Arts,8,68,required,0,1
+Norwich University of the Arts,9,80,required,0,1
+Norwich University of the Arts,10,100,required,0,1
+Loughborough University,0,0,required,1,0
+Loughborough University,1,4,required,1,0
+Loughborough University,2,9,required,1,0
+Loughborough University,3,16,required,1,0
+Loughborough University,4,25,required,1,0
+Loughborough University,5,34,required,1,0
+Loughborough University,6,44,required,1,0
+Loughborough University,7,55,required,1,0
+Loughborough University,8,67,required,1,0
+Loughborough University,9,81,required,1,0
+Loughborough University,10,100,required,1,0
+Loughborough University,0,0,required,0,1
+Loughborough University,1,4,required,0,1
+Loughborough University,2,9,required,0,1
+Loughborough University,3,15,required,0,1
+Loughborough University,4,23,required,0,1
+Loughborough University,5,31,required,0,1
+Loughborough University,6,41,required,0,1
+Loughborough University,7,52,required,0,1
+Loughborough University,8,64,required,0,1
+Loughborough University,9,79,required,0,1
+Loughborough University,10,100,required,0,1
+Ravensbourne University London,0,0,required,1,0
+Ravensbourne University London,1,5,required,1,0
+Ravensbourne University London,2,11,required,1,0
+Ravensbourne University London,3,19,required,1,0
+Ravensbourne University London,4,28,required,1,0
+Ravensbourne University London,5,38,required,1,0
+Ravensbourne University London,6,49,required,1,0
+Ravensbourne University London,7,60,required,1,0
+Ravensbourne University London,8,72,required,1,0
+Ravensbourne University London,9,85,required,1,0
+Ravensbourne University London,10,100,required,1,0
+Ravensbourne University London,0,0,required,0,1
+Ravensbourne University London,1,11,required,0,1
+Ravensbourne University London,2,22,required,0,1
+Ravensbourne University London,3,35,required,0,1
+Ravensbourne University London,4,48,required,0,1
+Ravensbourne University London,5,57,required,0,1
+Ravensbourne University London,6,64,required,0,1
+Ravensbourne University London,7,71,required,0,1
+Ravensbourne University London,8,78,required,0,1
+Ravensbourne University London,9,85,required,0,1
+Ravensbourne University London,10,100,required,0,1
+"St George's, University of London",0,0,required,1,0
+"St George's, University of London",1,5,required,1,0
+"St George's, University of London",2,10,required,1,0
+"St George's, University of London",3,17,required,1,0
+"St George's, University of London",4,26,required,1,0
+"St George's, University of London",5,35,required,1,0
+"St George's, University of London",6,45,required,1,0
+"St George's, University of London",7,56,required,1,0
+"St George's, University of London",8,68,required,1,0
+"St George's, University of London",9,82,required,1,0
+"St George's, University of London",10,100,required,1,0
+"St George's, University of London",0,0,required,0,1
+"St George's, University of London",1,6,required,0,1
+"St George's, University of London",2,14,required,0,1
+"St George's, University of London",3,23,required,0,1
+"St George's, University of London",4,35,required,0,1
+"St George's, University of London",5,45,required,0,1
+"St George's, University of London",6,54,required,0,1
+"St George's, University of London",7,62,required,0,1
+"St George's, University of London",8,70,required,0,1
+"St George's, University of London",9,79,required,0,1
+"St George's, University of London",10,100,required,0,1
+Leeds Arts University,0,0,required,1,0
+Leeds Arts University,1,5,required,1,0
+Leeds Arts University,2,11,required,1,0
+Leeds Arts University,3,18,required,1,0
+Leeds Arts University,4,27,required,1,0
+Leeds Arts University,5,37,required,1,0
+Leeds Arts University,6,48,required,1,0
+Leeds Arts University,7,59,required,1,0
+Leeds Arts University,8,71,required,1,0
+Leeds Arts University,9,85,required,1,0
+Leeds Arts University,10,100,required,1,0
+Leeds Arts University,0,0,required,0,1
+Leeds Arts University,1,6,required,0,1
+Leeds Arts University,2,12,required,0,1
+Leeds Arts University,3,20,required,0,1
+Leeds Arts University,4,31,required,0,1
+Leeds Arts University,5,40,required,0,1
+Leeds Arts University,6,49,required,0,1
+Leeds Arts University,7,59,required,0,1
+Leeds Arts University,8,71,required,0,1
+Leeds Arts University,9,85,required,0,1
+Leeds Arts University,10,100,required,0,1
