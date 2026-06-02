@@ -109,11 +109,11 @@
                     </button>
                     <ul class="govuk-service-navigation__list" id="navigation">
                         {% for menu_item in universities_menu.menu %}
-                            <li class="govuk-service-navigation__item {% if path == menu_item.url %}govuk-service-navigation__item--active{% endif %}">
+                            <li class="govuk-service-navigation__item {% if path.startswith(menu_item.url) %}govuk-service-navigation__item--active{% endif %}">
                                 <a href="{{ menu_item.url }}"
                                    class="govuk-service-navigation__link"
-                                   {% if path == menu_item.url %} aria-current="true"{% endif %}>
-                                    {% if path == menu_item.url %}
+                                   {% if path.startswith(menu_item.url) %} aria-current="true"{% endif %}>
+                                    {% if path.startswith(menu_item.url) %}
                                         <strong class="govuk-service-navigation__active-fallback">
                                             {{ menu_item.name }}
                                         </strong>
@@ -124,6 +124,14 @@
                             </li>
                         {% endfor %}
                     </ul>
+                    <style>
+                        #navigation {
+                            display: block !important;
+                        }
+                        #navigation[hidden] {
+                            display: none !important;
+                        }
+                    </style>
                 </nav>
             </div>
         </div>
