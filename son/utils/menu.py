@@ -1195,6 +1195,24 @@ menu = {
 }
 
 
+universities_menu = {
+    'menu': [
+        {
+            'name': 'By university',
+            'url': '/universities/by-university'
+        },
+        {
+            'name': 'Rankings',
+            'url': '/universities/rankings'
+        },
+        {
+            'name': 'About the data',
+            'url': '/universities/about-the-data'
+        }
+    ]
+}
+
+
 def url_link(link):
     return str(link).lower().replace(' ', '_')
 

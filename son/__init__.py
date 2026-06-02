@@ -82,6 +82,10 @@ def create_app(test_config=None):
     from son.son import son
     app.register_blueprint(son)
 
+    # Universities
+    from son.universities import universities
+    app.register_blueprint(universities)
+
     # Feedback
     from son.feedback import feedback
     app.register_blueprint(feedback)

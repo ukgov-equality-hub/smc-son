@@ -1,0 +1,113 @@
+{% extends 'base-universities.html' %}
+{% block title %}By university{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-l">
+                By university
+            </h1>
+            <p class="govuk-body">
+                Use the search box on the left to find a university, or select from the list below.
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li><a href="{{ url_for('universities.by_university', university_slug="anglia-ruskin-university") }}" class="govuk-link">Anglia Ruskin University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-the-arts-london") }}" class="govuk-link">University of the Arts, London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="aston-university") }}" class="govuk-link">Aston University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="bath-spa-university") }}" class="govuk-link">Bath Spa University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-bedfordshire") }}" class="govuk-link">University of Bedfordshire</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-birmingham") }}" class="govuk-link">The University of Birmingham</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="birmingham-city-university") }}" class="govuk-link">Birmingham City University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="bournemouth-university") }}" class="govuk-link">Bournemouth University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-bradford") }}" class="govuk-link">The University of Bradford</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-brighton") }}" class="govuk-link">The University of Brighton</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-bristol") }}" class="govuk-link">The University of Bristol</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="brunel-university-london") }}" class="govuk-link">Brunel University London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="buckinghamshire-new-university") }}" class="govuk-link">Buckinghamshire New University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-cambridge") }}" class="govuk-link">The University of Cambridge</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="canterbury-christ-church-university") }}" class="govuk-link">Canterbury Christ Church University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-central-lancashire") }}" class="govuk-link">The University of Central Lancashire</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-chester") }}" class="govuk-link">University of Chester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-chichester") }}" class="govuk-link">The University of Chichester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="city-st-georges-university-of-london") }}" class="govuk-link">City St George's, University of London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="coventry-university") }}" class="govuk-link">Coventry University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-for-the-creative-arts") }}" class="govuk-link">University for the Creative Arts</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-cumbria") }}" class="govuk-link">University of Cumbria</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="de-montfort-university") }}" class="govuk-link">De Montfort University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-derby") }}" class="govuk-link">University of Derby</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-durham") }}" class="govuk-link">University of Durham</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-east-anglia") }}" class="govuk-link">The University of East Anglia</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-east-london") }}" class="govuk-link">The University of East London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="edge-hill-university") }}" class="govuk-link">Edge Hill University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-essex") }}" class="govuk-link">The University of Essex</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-exeter") }}" class="govuk-link">The University of Exeter</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="falmouth-university") }}" class="govuk-link">Falmouth University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-gloucestershire") }}" class="govuk-link">University of Gloucestershire</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="goldsmiths-college") }}" class="govuk-link">Goldsmiths College</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-greenwich") }}" class="govuk-link">The University of Greenwich</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-hertfordshire") }}" class="govuk-link">University of Hertfordshire</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-huddersfield") }}" class="govuk-link">The University of Huddersfield</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-hull") }}" class="govuk-link">The University of Hull</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="imperial-college-of-science-technology-and-medicine") }}" class="govuk-link">Imperial College of Science, Technology and Medicine</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="keele-university") }}" class="govuk-link">Keele University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-kent") }}" class="govuk-link">The University of Kent</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="kings-college-london") }}" class="govuk-link">King's College London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="kingston-university") }}" class="govuk-link">Kingston University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-lancaster") }}" class="govuk-link">The University of Lancaster</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-leeds") }}" class="govuk-link">The University of Leeds</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="leeds-arts-university") }}" class="govuk-link">Leeds Arts University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="leeds-beckett-university") }}" class="govuk-link">Leeds Beckett University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="leeds-trinity-university") }}" class="govuk-link">Leeds Trinity University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-leicester") }}" class="govuk-link">The University of Leicester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-lincoln") }}" class="govuk-link">The University of Lincoln</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-liverpool") }}" class="govuk-link">The University of Liverpool</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="liverpool-hope-university") }}" class="govuk-link">Liverpool Hope University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="liverpool-john-moores-university") }}" class="govuk-link">Liverpool John Moores University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="london-school-of-economics-and-political-science") }}" class="govuk-link">London School of Economics and Political Science</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="london-south-bank-university") }}" class="govuk-link">London South Bank University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="loughborough-university") }}" class="govuk-link">Loughborough University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-manchester") }}" class="govuk-link">University of Manchester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-manchester-metropolitan-university") }}" class="govuk-link">The Manchester Metropolitan University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="middlesex-university") }}" class="govuk-link">Middlesex University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="newcastle-university") }}" class="govuk-link">Newcastle University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-northampton") }}" class="govuk-link">The University of Northampton</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-northumbria-at-newcastle") }}" class="govuk-link">University of Northumbria at Newcastle</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="norwich-university-of-the-arts") }}" class="govuk-link">Norwich University of the Arts</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-nottingham") }}" class="govuk-link">University of Nottingham</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-nottingham-trent-university") }}" class="govuk-link">The Nottingham Trent University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-oxford") }}" class="govuk-link">The University of Oxford</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="oxford-brookes-university") }}" class="govuk-link">Oxford Brookes University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-plymouth") }}" class="govuk-link">University of Plymouth</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="queen-mary-university-of-london") }}" class="govuk-link">Queen Mary University of London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="ravensbourne-university-london") }}" class="govuk-link">Ravensbourne University London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-reading") }}" class="govuk-link">The University of Reading</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="roehampton-university") }}" class="govuk-link">Roehampton University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="royal-holloway-and-bedford-new-college") }}" class="govuk-link">Royal Holloway and Bedford New College</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-salford") }}" class="govuk-link">The University of Salford</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-sheffield") }}" class="govuk-link">The University of Sheffield</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="sheffield-hallam-university") }}" class="govuk-link">Sheffield Hallam University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="solent-university") }}" class="govuk-link">Solent University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-southampton") }}" class="govuk-link">The University of Southampton</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="st-georges-university-of-london") }}" class="govuk-link">St George's, University of London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="st-marys-university-twickenham") }}" class="govuk-link">St Mary's University, Twickenham</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="staffordshire-university") }}" class="govuk-link">Staffordshire University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-sunderland") }}" class="govuk-link">The University of Sunderland</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-surrey") }}" class="govuk-link">The University of Surrey</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-sussex") }}" class="govuk-link">The University of Sussex</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="teesside-university") }}" class="govuk-link">Teesside University</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-college-london") }}" class="govuk-link">University College London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-warwick") }}" class="govuk-link">The University of Warwick</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-west-london") }}" class="govuk-link">The University of West London</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-the-west-of-england-bristol") }}" class="govuk-link">University of the West of England, Bristol</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-westminster") }}" class="govuk-link">The University of Westminster</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-winchester") }}" class="govuk-link">The University of Winchester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-wolverhampton") }}" class="govuk-link">The University of Wolverhampton</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="university-of-worcester") }}" class="govuk-link">University of Worcester</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="the-university-of-york") }}" class="govuk-link">The University of York</a></li>
+                <li><a href="{{ url_for('universities.by_university', university_slug="york-st-john-university") }}" class="govuk-link">York St John University</a></li>
+            </ul>
+
+        </div>
+    </div>
+{% endblock %}
