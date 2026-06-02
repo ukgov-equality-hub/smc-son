@@ -1,0 +1,380 @@
+{
+  "universities": [
+    {
+      "university_name": "Anglia Ruskin University",
+      "university_slug": "anglia-ruskin-university"
+    },
+    {
+      "university_name": "University of the Arts, London",
+      "university_slug": "university-of-the-arts-london"
+    },
+    {
+      "university_name": "Aston University",
+      "university_slug": "aston-university"
+    },
+    {
+      "university_name": "Bath Spa University",
+      "university_slug": "bath-spa-university"
+    },
+    {
+      "university_name": "University of Bedfordshire",
+      "university_slug": "university-of-bedfordshire"
+    },
+    {
+      "university_name": "The University of Birmingham",
+      "university_slug": "the-university-of-birmingham"
+    },
+    {
+      "university_name": "Birmingham City University",
+      "university_slug": "birmingham-city-university"
+    },
+    {
+      "university_name": "Bournemouth University",
+      "university_slug": "bournemouth-university"
+    },
+    {
+      "university_name": "The University of Bradford",
+      "university_slug": "the-university-of-bradford"
+    },
+    {
+      "university_name": "The University of Brighton",
+      "university_slug": "the-university-of-brighton"
+    },
+    {
+      "university_name": "The University of Bristol",
+      "university_slug": "the-university-of-bristol"
+    },
+    {
+      "university_name": "Brunel University London",
+      "university_slug": "brunel-university-london"
+    },
+    {
+      "university_name": "Buckinghamshire New University",
+      "university_slug": "buckinghamshire-new-university"
+    },
+    {
+      "university_name": "The University of Cambridge",
+      "university_slug": "the-university-of-cambridge"
+    },
+    {
+      "university_name": "Canterbury Christ Church University",
+      "university_slug": "canterbury-christ-church-university"
+    },
+    {
+      "university_name": "The University of Central Lancashire",
+      "university_slug": "the-university-of-central-lancashire"
+    },
+    {
+      "university_name": "University of Chester",
+      "university_slug": "university-of-chester"
+    },
+    {
+      "university_name": "The University of Chichester",
+      "university_slug": "the-university-of-chichester"
+    },
+    {
+      "university_name": "City St George's, University of London",
+      "university_slug": "city-st-georges-university-of-london"
+    },
+    {
+      "university_name": "Coventry University",
+      "university_slug": "coventry-university"
+    },
+    {
+      "university_name": "University for the Creative Arts",
+      "university_slug": "university-for-the-creative-arts"
+    },
+    {
+      "university_name": "University of Cumbria",
+      "university_slug": "university-of-cumbria"
+    },
+    {
+      "university_name": "De Montfort University",
+      "university_slug": "de-montfort-university"
+    },
+    {
+      "university_name": "University of Derby",
+      "university_slug": "university-of-derby"
+    },
+    {
+      "university_name": "University of Durham",
+      "university_slug": "university-of-durham"
+    },
+    {
+      "university_name": "The University of East Anglia",
+      "university_slug": "the-university-of-east-anglia"
+    },
+    {
+      "university_name": "The University of East London",
+      "university_slug": "the-university-of-east-london"
+    },
+    {
+      "university_name": "Edge Hill University",
+      "university_slug": "edge-hill-university"
+    },
+    {
+      "university_name": "The University of Essex",
+      "university_slug": "the-university-of-essex"
+    },
+    {
+      "university_name": "The University of Exeter",
+      "university_slug": "the-university-of-exeter"
+    },
+    {
+      "university_name": "Falmouth University",
+      "university_slug": "falmouth-university"
+    },
+    {
+      "university_name": "University of Gloucestershire",
+      "university_slug": "university-of-gloucestershire"
+    },
+    {
+      "university_name": "Goldsmiths College",
+      "university_slug": "goldsmiths-college"
+    },
+    {
+      "university_name": "The University of Greenwich",
+      "university_slug": "the-university-of-greenwich"
+    },
+    {
+      "university_name": "University of Hertfordshire",
+      "university_slug": "university-of-hertfordshire"
+    },
+    {
+      "university_name": "The University of Huddersfield",
+      "university_slug": "the-university-of-huddersfield"
+    },
+    {
+      "university_name": "The University of Hull",
+      "university_slug": "the-university-of-hull"
+    },
+    {
+      "university_name": "Imperial College of Science, Technology and Medicine",
+      "university_slug": "imperial-college-of-science-technology-and-medicine"
+    },
+    {
+      "university_name": "Keele University",
+      "university_slug": "keele-university"
+    },
+    {
+      "university_name": "The University of Kent",
+      "university_slug": "the-university-of-kent"
+    },
+    {
+      "university_name": "King's College London",
+      "university_slug": "kings-college-london"
+    },
+    {
+      "university_name": "Kingston University",
+      "university_slug": "kingston-university"
+    },
+    {
+      "university_name": "The University of Lancaster",
+      "university_slug": "the-university-of-lancaster"
+    },
+    {
+      "university_name": "The University of Leeds",
+      "university_slug": "the-university-of-leeds"
+    },
+    {
+      "university_name": "Leeds Arts University",
+      "university_slug": "leeds-arts-university"
+    },
+    {
+      "university_name": "Leeds Beckett University",
+      "university_slug": "leeds-beckett-university"
+    },
+    {
+      "university_name": "Leeds Trinity University",
+      "university_slug": "leeds-trinity-university"
+    },
+    {
+      "university_name": "The University of Leicester",
+      "university_slug": "the-university-of-leicester"
+    },
+    {
+      "university_name": "The University of Lincoln",
+      "university_slug": "the-university-of-lincoln"
+    },
+    {
+      "university_name": "The University of Liverpool",
+      "university_slug": "the-university-of-liverpool"
+    },
+    {
+      "university_name": "Liverpool Hope University",
+      "university_slug": "liverpool-hope-university"
+    },
+    {
+      "university_name": "Liverpool John Moores University",
+      "university_slug": "liverpool-john-moores-university"
+    },
+    {
+      "university_name": "London School of Economics and Political Science",
+      "university_slug": "london-school-of-economics-and-political-science"
+    },
+    {
+      "university_name": "London South Bank University",
+      "university_slug": "london-south-bank-university"
+    },
+    {
+      "university_name": "Loughborough University",
+      "university_slug": "loughborough-university"
+    },
+    {
+      "university_name": "University of Manchester",
+      "university_slug": "university-of-manchester"
+    },
+    {
+      "university_name": "The Manchester Metropolitan University",
+      "university_slug": "the-manchester-metropolitan-university"
+    },
+    {
+      "university_name": "Middlesex University",
+      "university_slug": "middlesex-university"
+    },
+    {
+      "university_name": "Newcastle University",
+      "university_slug": "newcastle-university"
+    },
+    {
+      "university_name": "The University of Northampton",
+      "university_slug": "the-university-of-northampton"
+    },
+    {
+      "university_name": "University of Northumbria at Newcastle",
+      "university_slug": "university-of-northumbria-at-newcastle"
+    },
+    {
+      "university_name": "Norwich University of the Arts",
+      "university_slug": "norwich-university-of-the-arts"
+    },
+    {
+      "university_name": "University of Nottingham",
+      "university_slug": "university-of-nottingham"
+    },
+    {
+      "university_name": "The Nottingham Trent University",
+      "university_slug": "the-nottingham-trent-university"
+    },
+    {
+      "university_name": "The University of Oxford",
+      "university_slug": "the-university-of-oxford"
+    },
+    {
+      "university_name": "Oxford Brookes University",
+      "university_slug": "oxford-brookes-university"
+    },
+    {
+      "university_name": "University of Plymouth",
+      "university_slug": "university-of-plymouth"
+    },
+    {
+      "university_name": "Queen Mary University of London",
+      "university_slug": "queen-mary-university-of-london"
+    },
+    {
+      "university_name": "Ravensbourne University London",
+      "university_slug": "ravensbourne-university-london"
+    },
+    {
+      "university_name": "The University of Reading",
+      "university_slug": "the-university-of-reading"
+    },
+    {
+      "university_name": "Roehampton University",
+      "university_slug": "roehampton-university"
+    },
+    {
+      "university_name": "Royal Holloway and Bedford New College",
+      "university_slug": "royal-holloway-and-bedford-new-college"
+    },
+    {
+      "university_name": "The University of Salford",
+      "university_slug": "the-university-of-salford"
+    },
+    {
+      "university_name": "The University of Sheffield",
+      "university_slug": "the-university-of-sheffield"
+    },
+    {
+      "university_name": "Sheffield Hallam University",
+      "university_slug": "sheffield-hallam-university"
+    },
+    {
+      "university_name": "Solent University",
+      "university_slug": "solent-university"
+    },
+    {
+      "university_name": "The University of Southampton",
+      "university_slug": "the-university-of-southampton"
+    },
+    {
+      "university_name": "St George's, University of London",
+      "university_slug": "st-georges-university-of-london"
+    },
+    {
+      "university_name": "St Mary's University, Twickenham",
+      "university_slug": "st-marys-university-twickenham"
+    },
+    {
+      "university_name": "Staffordshire University",
+      "university_slug": "staffordshire-university"
+    },
+    {
+      "university_name": "The University of Sunderland",
+      "university_slug": "the-university-of-sunderland"
+    },
+    {
+      "university_name": "The University of Surrey",
+      "university_slug": "the-university-of-surrey"
+    },
+    {
+      "university_name": "The University of Sussex",
+      "university_slug": "the-university-of-sussex"
+    },
+    {
+      "university_name": "Teesside University",
+      "university_slug": "teesside-university"
+    },
+    {
+      "university_name": "University College London",
+      "university_slug": "university-college-london"
+    },
+    {
+      "university_name": "The University of Warwick",
+      "university_slug": "the-university-of-warwick"
+    },
+    {
+      "university_name": "The University of West London",
+      "university_slug": "the-university-of-west-london"
+    },
+    {
+      "university_name": "University of the West of England, Bristol",
+      "university_slug": "university-of-the-west-of-england-bristol"
+    },
+    {
+      "university_name": "The University of Westminster",
+      "university_slug": "the-university-of-westminster"
+    },
+    {
+      "university_name": "The University of Winchester",
+      "university_slug": "the-university-of-winchester"
+    },
+    {
+      "university_name": "The University of Wolverhampton",
+      "university_slug": "the-university-of-wolverhampton"
+    },
+    {
+      "university_name": "University of Worcester",
+      "university_slug": "university-of-worcester"
+    },
+    {
+      "university_name": "The University of York",
+      "university_slug": "the-university-of-york"
+    },
+    {
+      "university_name": "York St John University",
+      "university_slug": "york-st-john-university"
+    }
+  ]
+}

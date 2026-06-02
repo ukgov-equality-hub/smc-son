@@ -1,0 +1,37 @@
+{% extends 'base-shared.html' %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="govuk-width-container">
+        <main class="govuk-main-wrapper">
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+
+                    <h1 class="govuk-heading-l">
+                        Social Mobility Commission data explorer
+                    </h1>
+                    <p class="govuk-body">
+                        Here's some tools that you might want to look at...
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>
+                            <a href="{{ url_for('son.index') }}"
+                               class="govuk-link">
+                                State of the Nation
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ url_for('universities.index') }}"
+                               class="govuk-link">
+                                Universities
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </main>
+    </div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'base-universities.html' %}
+{% block title %}Universities{% endblock %}
+
+{% block content %}
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+
+            <h1 class="govuk-heading-l">
+                Universities
+            </h1>
+            <p class="govuk-body">
+                TODO intro content about the Universities tool
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="{{ url_for('universities.by_university_homepage') }}"
+                       class="govuk-link">
+                        By university
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('universities.rankings') }}"
+                       class="govuk-link">
+                        Rankings
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('universities.about_the_data') }}"
+                       class="govuk-link">
+                        About the data
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+{% endblock %}
