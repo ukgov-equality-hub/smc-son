@@ -5,6 +5,7 @@
 input_folder = "input/Universities/2026/"
 
 input_file_rankings = "university_rankings_data.csv"
+input_file_deciles = "university_data.csv"
 
 output_folder = "../son/content/universities/2026/"
 
@@ -82,4 +83,93 @@ json_obj <- list(
 )
 
 save_json_file(json_obj, "universities.json", pretty_print = TRUE, output_folder_override = "../son/static/data/by-page/universities/")
+
+
+#########################
+# PROCESS DECILES DATA
+
+input_file_path_deciles = paste0(input_folder, input_file_deciles)
+
+# Open the input file
+data_deciles = read.csv(input_file_path_deciles)
+
+# Rename some columns
+data_deciles = data_frame__rename_column(
+  data_frame = data_deciles,
+  old_column_name = 'provider',
+  new_column_name = 'university_name'
+)
+
+# Add university_slug
+data_deciles$university_slug <- data_deciles$university_name %>%
+  str_to_lower() %>%
+  str_remove_all("[[:punct:]]") %>%
+  str_replace_all("\\s+", "-")
+
+# Replace the values in the column "group" to make them more readable
+data_deciles <- data_deciles %>%
+  mutate(group = recode(group,
+                        "enrolment" = "Enrolment",
+                        "equal" = "Equal",
+                        "required" = "Required"
+  ))
+
+# Loop through the list of universities
+for (slug in unique(data_deciles$university_slug)) {
+  data_deciles_by_university <- data_deciles[data_deciles$university_slug == slug, ]
+  
+  # WITH LOCATION WEIGHTING
+  # Get the rows with location weighting
+  data_deciles_by_university_with_location_weighting <- data_deciles_by_university[
+    data_deciles_by_university$location_yes == 1, ]
+  
+  # Create the Chart Format table
+  data_deciles_by_university_with_location_weighting <-
+    data_deciles_by_university_with_location_weighting[, c("university_name",
+                                                           "university_slug",
+                                                           "group",
+                                                           "decile",
+                                                           "cumulative_percentage")]
+  
+  filename_chart_format <- paste0("by-university/", slug, "--with-location-weighting--chart-format.csv")
+  save_data_frame(data_deciles_by_university_with_location_weighting, filename_chart_format)
+  
+  # WITHOUT LOCATION WEIGHTING
+  # Get the rows without location weighting
+  data_deciles_by_university_without_location_weighting <- data_deciles_by_university[
+    data_deciles_by_university$location_no == 1, ]
+  
+  # Create the Chart Format table
+  data_deciles_by_university_without_location_weighting <-
+    data_deciles_by_university_without_location_weighting[, c("university_name",
+                                                              "university_slug",
+                                                              "group",
+                                                              "decile",
+                                                              "cumulative_percentage")]
+  
+  filename_chart_format <- paste0("by-university/", slug, "--without-location-weighting--chart-format.csv")
+  save_data_frame(data_deciles_by_university_without_location_weighting, filename_chart_format)
+  
+  # TABLE FORMAT
+  # 
+  data_deciles_by_university <- data_deciles_by_university %>%
+    mutate(group = case_when(
+      group == "Required" & location_yes == 1 ~ "Required (with location weighting)",
+      group == "Required" & location_no == 1 ~ "Required (without location weighting)",
+      TRUE ~ group
+    ))
+
+  # Create the pivot table
+  pivot_table = pivot_table__create(
+    pivot_table_source = data_deciles_by_university,
+    pivot_columns_column_name = "group",
+    pivot_rows_column_name = "decile",
+    pivot_cells_column_name = "cumulative_percentage",
+    pivot_table_name = "Decile",
+    pivot_table_rows_order_values = sort(unique(data_deciles_by_university$decile))
+  )
+  
+  filename_table_format <- paste0("by-university/", slug, "--table-format.csv")
+  save_data_frame(pivot_table, filename_table_format)
+}
 
