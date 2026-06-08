@@ -4,7 +4,7 @@ import os
 import re
 from pathlib import Path
 from flask import Blueprint, render_template, abort, send_file
-from son.utils.get_markdown_content import get_markdown_content, get_h1_content
+from son.utils.get_markdown_content import get_markdown_content_from_file, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
 from son.utils.page_history import get_page_history, create_page_history_version_for_file, PageHistory, \
@@ -44,7 +44,7 @@ def get_area_home_page(major_version: int, minor_version: int):
     if not Path(file_path).is_file():
         abort(404)
 
-    content = get_markdown_content(file_path, None)
+    content = get_markdown_content_from_file(file_path, None)
     page_history: PageHistory = get_page_history(dir_path)
     page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
 
@@ -147,7 +147,7 @@ def domain_page(domain):
     if not Path(file_path).is_file():
         abort(404)
 
-    content = get_markdown_content(file_path, None)
+    content = get_markdown_content_from_file(file_path, None)
 
     return render_template(
         'markdown-based-template.html',
@@ -204,7 +204,7 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
     if not Path(file_path).is_file():
         abort(404)
 
-    content = get_markdown_content(file_path, indicator)
+    content = get_markdown_content_from_file(file_path, indicator)
     page_history: PageHistory = get_page_history(dir_path)
     page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
     page_replacements: PageReplacements = get_page_replacements(dir_path)
