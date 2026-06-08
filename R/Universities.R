@@ -6,7 +6,7 @@ input_folder = "input/Universities/2026/"
 
 input_file_rankings = "university_rankings_data.csv"
 
-output_folder = "../son/content/universities/"
+output_folder = "../son/content/universities/2026/"
 
 
 ############
