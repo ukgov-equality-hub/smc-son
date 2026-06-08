@@ -1,13 +1,85 @@
 {% extends 'base-universities.html' %}
-{% block title %}{{ university_slug }}{% endblock %}
+{% block title %}{{ row_for_university['university_name'] }}{% endblock %}
 
 {% block content %}
     <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
 
             <h1 class="govuk-heading-l">
-                {{ university_slug }}
+                {{ row_for_university['university_name'] }}
             </h1>
+
+            <dl class="university-rankings-stats">
+                <div>
+                    <dt class="govuk-hint">
+                        Equal access ranking
+                    </dt>
+                    <dd class="govuk-body">
+                        {{ row_for_university['equal_access_ranking'] }}
+                        of 94
+                    </dd>
+                </div>
+                <div>
+                    <dt class="govuk-hint">
+                        Social mobility coefficient ranking
+                    </dt>
+                    <dd class="govuk-body">
+                        {{ row_for_university['social_mobility_coefficient_ranking'] }}
+                        of 94
+                    </dd>
+                </div>
+                <div>
+                    <dt class="govuk-hint">
+                        Social mobility with location
+                    </dt>
+                    <dd class="govuk-body">
+                        {{ row_for_university['social_mobility_with_location'] }}
+                        of 94
+                    </dd>
+                </div>
+            </dl>
+
+            <style>
+                .university-rankings-stats {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 775px;
+                    margin: 0 -15px;
+                }
+                @media (min-width: 455px) {
+                    .university-rankings-stats {
+                        flex-direction: row;
+                    }
+                }
+                @media (min-width: 640px) {
+                    .university-rankings-stats {
+                        flex-direction: column;
+                    }
+                }
+                @media (min-width: 865px) {
+                    .university-rankings-stats {
+                        flex-direction: row;
+                    }
+                }
+                .university-rankings-stats div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 33%;
+                    padding: 0 15px;
+                }
+                .university-rankings-stats dt {
+                    margin-bottom: 10px;
+                }
+                .university-rankings-stats dd {
+                    margin-left: 0;
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+            </style>
+
             <p class="govuk-body">
                 TODO
             </p>
