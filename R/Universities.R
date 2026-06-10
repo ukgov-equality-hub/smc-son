@@ -73,6 +73,63 @@ csv_filename = 'university_rankings.csv'
 save_data_frame(data_rankings, csv_filename)
 
 
+########################################
+# CREATE RANKINGS TABLE-FORMAT TABLES
+
+create_and_save_ranking_table_format = function(input_data_frame, rank_column, university_name_column, coefficient_column, csv_filename) {
+  working_data_frame <- input_data_frame[, c(rank_column,
+                                             university_name_column,
+                                             coefficient_column)]
+  
+  # Make column names easier to read
+  working_data_frame = data_frame__rename_column(
+    data_frame = working_data_frame,
+    old_column_name = rank_column,
+    new_column_name = 'Rank'
+  )
+  working_data_frame = data_frame__rename_column(
+    data_frame = working_data_frame,
+    old_column_name = university_name_column,
+    new_column_name = 'University name'
+  )
+  working_data_frame = data_frame__rename_column(
+    data_frame = working_data_frame,
+    old_column_name = coefficient_column,
+    new_column_name = 'Equal access'
+  )
+  
+  # Sort by ranking
+  working_data_frame <- working_data_frame[order(working_data_frame$Rank), ]
+  
+  # Save CSV
+  save_data_frame(working_data_frame, paste0('rankings/', csv_filename))
+}
+
+create_and_save_ranking_table_format(
+  input_data_frame = data_rankings,
+  rank_column = 'equal_access_ranking',
+  university_name_column = 'university_name',
+  coefficient_column = 'equal',
+  csv_filename = 'university_rankings_equal.csv'
+)
+
+create_and_save_ranking_table_format(
+  input_data_frame = data_rankings,
+  rank_column = 'social_mobility_coefficient_ranking',
+  university_name_column = 'university_name',
+  coefficient_column = 'no_location',
+  csv_filename = 'university_rankings_without_location.csv'
+)
+
+create_and_save_ranking_table_format(
+  input_data_frame = data_rankings,
+  rank_column = 'social_mobility_with_location',
+  university_name_column = 'university_name',
+  coefficient_column = 'location',
+  csv_filename = 'university_rankings_with_location.csv'
+)
+
+
 ################################
 # CREATE JSON FILE FOR SEARCH
 
