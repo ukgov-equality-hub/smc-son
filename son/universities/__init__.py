@@ -77,9 +77,9 @@ def by_university_csv_file(filename: str):
 
 
 @universities.route('/universities/rankings', methods=['GET'])
-def rankings():
+def rankings_homepage():
     return render_template(
-        'universities/rankings.html',
+        'universities/rankings-homepage.html',
         path=request.path,
         universities_menu=universities_menu
     )
