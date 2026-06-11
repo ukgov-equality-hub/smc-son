@@ -358,7 +358,7 @@ class Chart {
                 } else {
                     chartData = (data[i].data || data[i]).map(x => ({
                         ...x,
-                        [xkey]: orientation != 'y' && isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey].toString(),
+                        [xkey]: isNumeric(x[xkey]) ? parseFloat(x[xkey], 10) : x[xkey].toString(),
                         [ykey]: orientation == 'y' && isNumeric(x[ykey]) ? parseFloat(x[ykey], 10) : x[ykey].toString(),
                         [zkey]: isNumeric(x[zkey]) ? parseFloat(x[zkey], 10) : x[zkey] || null
                     }))

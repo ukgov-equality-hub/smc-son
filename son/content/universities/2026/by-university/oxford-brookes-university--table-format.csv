@@ -1,0 +1,12 @@
+"Decile","Enrolment","Equal","Required (with location weighting)","Required (without location weighting)"
+0,0,0,0,0
+1,2,10,4,5
+2,5,20,9,11
+3,9,30,16,18
+4,14,40,24,27
+5,20,50,33,37
+6,28,60,43,48
+7,38,70,53,59
+8,49,80,65,71
+9,62,90,78,84
+10,100,100,100,100

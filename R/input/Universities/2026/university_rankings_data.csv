@@ -1,95 +1,95 @@
-﻿ProviderName,no_location,location,equal
-"Imperial College of Science, Technology and Medicine",20,-4,-201
-University of Durham,-63,-49,-245
-The University of Kent,77,84,-21
-University of Manchester,-18,-58,-130
-The University of Sussex,-14,0,-120
-Oxford Brookes University,-132,-93,-223
-The University of Winchester,-32,3,-120
-The Manchester Metropolitan University,72,27,-19
-University of Plymouth,0,-1,-89
-The University of Exeter,-79,-57,-247
-The University of Lincoln,5,3,-86
-University of Nottingham,-18,-14,-186
-Liverpool Hope University,84,63,-5
-Buckinghamshire New University,64,81,-19
-The University of Birmingham,-54,-103,-168
-The University of Liverpool,-49,-92,-161
-Solent University,9,27,-75
-The University of Lancaster,-51,-55,-163
-De Montfort University,94,66,10
-The University of Hull,38,27,-53
-The University of West London,180,136,96
-Leeds Beckett University,12,-2,-74
-The University of Huddersfield,149,119,60
-University of Hertfordshire,146,126,57
-Middlesex University,257,184,173
-The University of Reading,-43,-4,-141
-Newcastle University,-53,-24,-214
-The University of Bristol,-63,9,-235
-The University of Brighton,29,41,-59
-The University of Sunderland,117,91,32
-Royal Holloway and Bedford New College,9,17,-95
-The University of Essex,117,108,29
-University College London,8,-66,-170
-The University of Surrey,2,46,-102
-The University of Oxford,-69,-12,-256
-"University of the West of England, Bristol",-31,-1,-125
-The University of East Anglia,-15,-11,-116
-Teesside University,120,84,32
-Edge Hill University,41,33,-52
-University of Worcester,23,45,-66
-Keele University,38,32,-52
-University of Cumbria,22,30,-62
-Staffordshire University,102,99,18
-Falmouth University,-42,-47,-133
-University of Chester,16,27,-73
-Birmingham City University,152,71,66
-University of Derby,59,63,-25
-Liverpool John Moores University,44,-1,-47
-University of Bedfordshire,164,135,81
-Aston University,184,99,83
-Coventry University,154,141,65
-The University of Southampton,1,27,-171
-London School of Economics and Political Science,43,-17,-155
-The University of Warwick,41,47,-141
-King's College London,34,-37,-78
-The Nottingham Trent University,-7,2,-98
-The University of Leicester,60,32,-44
-Sheffield Hallam University,29,14,-59
-The University of Northampton,145,149,61
-Anglia Ruskin University,38,27,-48
-The University of Central Lancashire,99,87,10
-York St John University,2,34,-82
-"University of the Arts, London",10,-79,-82
-The University of Westminster,228,151,142
-University of Gloucestershire,-31,20,-122
-The University of Leeds,-66,-89,-181
-The University of Chichester,-9,7,-98
-Kingston University,155,154,72
-Brunel University London,219,187,125
-Bournemouth University,0,14,-91
-University for the Creative Arts,33,67,-56
-The University of East London,253,141,170
-Roehampton University,210,175,126
-Canterbury Christ Church University,108,117,25
-London South Bank University,219,124,136
-"City St George's, University of London",210,109,111
-Goldsmiths College,164,63,71
-Bath Spa University,-35,-2,-126
-The University of Wolverhampton,198,153,115
-The University of Salford,111,66,20
-University of Northumbria at Newcastle,8,15,-83
-"St Mary's University, Twickenham",79,69,-7
-The University of Bradford,233,189,147
-The University of York,-66,-53,-180
-The University of Greenwich,211,110,125
-The University of Cambridge,-51,-11,-247
-Leeds Trinity University,81,76,-2
-The University of Sheffield,-40,-38,-157
-Queen Mary University of London,178,48,72
-Norwich University of the Arts,26,46,-67
-Loughborough University,-45,-33,-157
-Ravensbourne University London,107,-7,21
-"St George's, University of London",81,38,-22
-Leeds Arts University,-38,-61,-135
+"ProviderName","no_location","location","equal","rank_no_location","rank_location","rank_equal"
+"Imperial College of Science, Technology and Medicine",20,-4,-201,54,70,87
+"University of Durham",-63,-49,-245,88,83,91
+"The University of Kent",77,84,-21,35,24,36
+"University of Manchester",-18,-58,-130,72,87,71
+"The University of Sussex",-14,0,-120,70,64,66
+"Oxford Brookes University",-132,-93,-223,94,93,89
+"The University of Winchester",-32,3,-120,76,61,66
+"The Manchester Metropolitan University",72,27,-19,36,48,34
+"University of Plymouth",0,-1,-89,66,65,59
+"The University of Exeter",-79,-57,-247,93,86,92
+"The University of Lincoln",5,3,-86,62,61,58
+"University of Nottingham",-18,-14,-186,72,76,86
+"Liverpool Hope University",84,63,-5,31,33,32
+"Buckinghamshire New University",64,81,-19,37,26,34
+"The University of Birmingham",-54,-103,-168,87,94,81
+"The University of Liverpool",-49,-92,-161,83,92,79
+"Solent University",9,27,-75,58,48,53
+"The University of Lancaster",-51,-55,-163,84,85,80
+"De Montfort University",94,66,10,30,31,29
+"The University of Hull",38,27,-53,44,48,44
+"The University of West London",180,136,96,12,11,11
+"Leeds Beckett University",12,-2,-74,56,68,52
+"The University of Huddersfield",149,119,60,19,15,20
+"University of Hertfordshire",146,126,57,20,13,21
+"Middlesex University",257,184,173,1,3,1
+"The University of Reading",-43,-4,-141,81,70,74
+"Newcastle University",-53,-24,-214,86,78,88
+"The University of Bristol",-63,9,-235,88,59,90
+"The University of Brighton",29,41,-59,49,41,46
+"The University of Sunderland",117,91,32,23,22,22
+"Royal Holloway and Bedford New College",9,17,-95,58,55,61
+"The University of Essex",117,108,29,23,19,24
+"University College London",8,-66,-170,60,89,82
+"The University of Surrey",2,46,-102,63,38,64
+"The University of Oxford",-69,-12,-256,92,75,94
+"University of the West of England, Bristol",-31,-1,-125,74,65,69
+"The University of East Anglia",-15,-11,-116,71,73,65
+"Teesside University",120,84,32,22,24,22
+"Edge Hill University",41,33,-52,42,44,42
+"University of Worcester",23,45,-66,52,40,49
+"Keele University",38,32,-52,44,45,42
+"University of Cumbria",22,30,-62,53,47,48
+"Staffordshire University",102,99,18,28,20,28
+"Falmouth University",-42,-47,-133,80,82,72
+"University of Chester",16,27,-73,55,48,51
+"Birmingham City University",152,71,66,18,28,17
+"University of Derby",59,63,-25,39,33,38
+"Liverpool John Moores University",44,-1,-47,40,65,40
+"University of Bedfordshire",164,135,81,14,12,13
+"Aston University",184,99,83,11,20,12
+"Coventry University",154,141,65,17,9,18
+"The University of Southampton",1,27,-171,65,48,83
+"London School of Economics and Political Science",43,-17,-155,41,77,76
+"The University of Warwick",41,47,-141,42,37,74
+"King's College London",34,-37,-78,47,80,54
+"The Nottingham Trent University",-7,2,-98,68,63,62
+"The University of Leicester",60,32,-44,38,45,39
+"Sheffield Hallam University",29,14,-59,49,57,46
+"The University of Northampton",145,149,61,21,8,19
+"Anglia Ruskin University",38,27,-48,44,48,41
+"The University of Central Lancashire",99,87,10,29,23,29
+"York St John University",2,34,-82,63,43,55
+"University of the Arts, London",10,-79,-82,57,90,55
+"The University of Westminster",228,151,142,4,7,4
+"University of Gloucestershire",-31,20,-122,74,54,68
+"The University of Leeds",-66,-89,-181,90,91,85
+"The University of Chichester",-9,7,-98,69,60,62
+"Kingston University",155,154,72,16,5,14
+"Brunel University London",219,187,125,5,2,7
+"Bournemouth University",0,14,-91,66,57,60
+"University for the Creative Arts",33,67,-56,48,30,45
+"The University of East London",253,141,170,2,9,2
+"Roehampton University",210,175,126,8,4,6
+"Canterbury Christ Church University",108,117,25,26,16,25
+"London South Bank University",219,124,136,5,14,5
+"City St George's, University of London",210,109,111,8,18,10
+"Goldsmiths College",164,63,71,14,33,16
+"Bath Spa University",-35,-2,-126,77,68,70
+"The University of Wolverhampton",198,153,115,10,6,9
+"The University of Salford",111,66,20,25,31,27
+"University of Northumbria at Newcastle",8,15,-83,60,56,57
+"St Mary's University, Twickenham",79,69,-7,34,29,33
+"The University of Bradford",233,189,147,3,1,3
+"The University of York",-66,-53,-180,90,84,84
+"The University of Greenwich",211,110,125,7,17,7
+"The University of Cambridge",-51,-11,-247,84,73,92
+"Leeds Trinity University",81,76,-2,32,27,31
+"The University of Sheffield",-40,-38,-157,79,81,77
+"Queen Mary University of London",178,48,72,13,36,14
+"Norwich University of the Arts",26,46,-67,51,38,50
+"Loughborough University",-45,-33,-157,82,79,77
+"Ravensbourne University London",107,-7,21,27,72,26
+"St George's, University of London",81,38,-22,32,42,37
+"Leeds Arts University",-38,-61,-135,78,88,73

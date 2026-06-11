@@ -16,13 +16,17 @@ def get_markdown_header(file_path: str):
     return md.Meta
 
 
-def get_markdown_content(file_path: str, indicator: str):
+def get_markdown_content_from_file(file_path: str, indicator: str):
     f = open(file_path, 'r')
     markdown_text = f.read()
     f.close()
 
     markdown_file_parent_directory = os.path.dirname(file_path)
 
+    return get_markdown_content(markdown_text, indicator, markdown_file_parent_directory)
+
+
+def get_markdown_content(markdown_text: str, indicator: str, markdown_file_parent_directory: str):
     html = convert_markdown_to_html(markdown_text, indicator, markdown_file_parent_directory)
 
     soup = BeautifulSoup(html, 'html.parser')

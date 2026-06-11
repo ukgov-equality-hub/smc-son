@@ -27,6 +27,11 @@ if (!require(jsonlite)) {
   library(jsonlite)
 }
 
+if (!require(dplyr)) {
+  install.packages("dplyr")
+  library(dplyr)
+}
+
 
 ################
 # STATIC DATA
