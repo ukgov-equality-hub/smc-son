@@ -40,6 +40,27 @@
             </ul>
         </div>
 
+        <h2 class="govuk-heading-m">
+            Rankings
+        </h2>
+        <ul class="moj-side-navigation__list">
+            <li class="moj-side-navigation__item">
+                <a href="{{ url_for('universities.individual_ranking', ranking_slug='equal-access-ranking') }}">
+                    Equal access
+                </a>
+            </li>
+            <li class="moj-side-navigation__item">
+                <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient') }}">
+                    Social mobility coefficient
+                </a>
+            </li>
+            <li class="moj-side-navigation__item">
+                <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}">
+                    Social mobility coefficient (location weighting)
+                </a>
+            </li>
+        </ul>
+
         <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
         <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
             <li class="moj-side-navigation__item">
