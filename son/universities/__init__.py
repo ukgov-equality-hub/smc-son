@@ -4,7 +4,7 @@ from pathlib import Path
 
 from flask import Blueprint, render_template, request, abort, send_file
 
-from son.utils.get_markdown_content import get_markdown_content
+from son.utils.get_markdown_content import get_markdown_content, get_markdown_content_from_file, get_markdown_header
 from son.utils.menu import universities_menu
 
 universities = Blueprint('universities', __name__)
@@ -77,12 +77,36 @@ def by_university_csv_file(filename: str):
 
 
 @universities.route('/universities/rankings', methods=['GET'])
-def rankings():
+def rankings_homepage():
     return render_template(
-        'universities/rankings.html',
+        'universities/rankings-homepage.html',
         path=request.path,
         universities_menu=universities_menu
     )
+
+
+@universities.route('/universities/rankings/<ranking_slug>', methods=['GET'])
+def individual_ranking(ranking_slug):
+    file_path_content = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/rankings/{ranking_slug}.md"
+    if not Path(file_path_content).is_file():
+        abort(404)
+
+    markdown_to_html = get_markdown_content_from_file(file_path_content, 'UNIV')
+    markdown_header = get_markdown_header(file_path_content)
+
+    return render_template(
+        'markdown-based-template-universities.html',
+        page_title=markdown_header['title'],
+        path=request.path,
+        universities_menu=universities_menu,
+        markdown_to_html=markdown_to_html
+    )
+
+
+@universities.route('/universities/rankings/<filename>.csv', methods=['GET'])
+def rankings_csv_file(filename: str):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/rankings/{filename}.csv"
+    return send_file(file_path)
 
 
 @universities.route('/universities/about-the-data', methods=['GET'])
