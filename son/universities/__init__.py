@@ -19,15 +19,6 @@ def index():
     )
 
 
-@universities.route('/universities/by-university', methods=['GET'])
-def by_university_homepage():
-    return render_template(
-        'universities/by-university-homepage.html',
-        path=request.path,
-        universities_menu=universities_menu
-    )
-
-
 @universities.route('/universities/by-university/<university_slug>', methods=['GET'])
 def by_university(university_slug):
     def get_row_from_csv_file(csv_file_path, column_name, search_value):

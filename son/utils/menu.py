@@ -1198,10 +1198,6 @@ menu = {
 universities_menu = {
     'menu': [
         {
-            'name': 'By university',
-            'url': '/universities/by-university'
-        },
-        {
             'name': 'Rankings',
             'url': '/universities/rankings'
         },
