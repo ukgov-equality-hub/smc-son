@@ -17,10 +17,10 @@
             </h3>
             <div id="universities-search-hint" class="govuk-hint govuk-!-font-size-16">
                 Search by one of
-                <a href="#"
+                <a href="{{ url_for('universities.by_university_homepage') }}"
                    class="govuk-link"
                 style="font-size: 1rem;">
-                    N universities</a>.
+                    94 universities</a>.
                 <br>
                 Start typing a university name to see a list of matching universities below
             </div>
@@ -56,13 +56,18 @@
             </li>
             <li class="moj-side-navigation__item">
                 <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}">
-                    Social mobility coefficient (location weighting)
+                    Social mobility coefficient (location-adjusted)
                 </a>
             </li>
         </ul>
 
         <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
         <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+            <li class="moj-side-navigation__item">
+                <a href="#">
+                    Read the summary and technical report here
+                </a>
+            </li>
             <li class="moj-side-navigation__item">
                 <a href="{{ url_for('universities.about_the_data') }}">
                     About the data

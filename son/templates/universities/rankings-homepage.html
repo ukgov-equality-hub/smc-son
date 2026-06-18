@@ -9,7 +9,8 @@
                 Rankings
             </h1>
             <p class="govuk-body">
-                TODO Lead paragraph
+                Understanding the metrics presented in this tool is key to gaining insights into social mobility at universities.
+                Here's a brief guide:
             </p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
                 <li>
@@ -18,9 +19,8 @@
                         Equal access
                     </a>
                     <br>
-                    This metric assesses how effectively a university recruits students from lower socioeconomic
-                    backgrounds compared to the demographic makeup of its surrounding area.
-                    A higher 'Equal access' score indicates better recruitment of disadvantaged students.
+                    This metric compares a university's actual student intake against the socio-economic makeup of all young people in England.
+                    It provides a baseline showing how representative the student body is of the general population, regardless of their academic grades.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient') }}"
@@ -28,20 +28,19 @@
                         Social mobility coefficient
                     </a>
                     <br>
-                    This coefficient measures the impact of socioeconomic background on student outcomes
-                    (e.g. degree attainment, employment).
-                    It accounts for factors like prior academic achievement and chosen field of study.
-                    A higher coefficient suggests that a university is more successful at mitigating the
-                    disadvantages faced by students from lower socioeconomic backgrounds.
+                    This metric compares the students who actually enrol against the specific pool of young people
+                    across the country who achieved the required grades for that university.
+                    A positive score means the university successfully recruits a more disadvantaged cohort than its
+                    available qualified pool, while a negative score suggests there is room for improvement.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}"
                        class="govuk-link govuk-!-font-weight-bold">
-                        Social mobility coefficient (location weighting)
+                        Social mobility coefficient location-adjusted
                     </a>
                     <br>
-                    Similar to the Social mobility coefficient, but this version incorporates a weighting based on
-                    the student's geographical location.
+                    This adjusts the previous score to account for geography by placing higher importance on qualified
+                    students who live close to the university campus.
                     This provides a more nuanced view by considering local socioeconomic factors that might influence
                     student outcomes, offering a fairer comparison between institutions in different regions.
                 </li>

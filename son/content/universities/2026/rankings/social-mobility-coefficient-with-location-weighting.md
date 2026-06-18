@@ -2,13 +2,20 @@
 title: 'Social mobility coefficient (with location weighting) ranking'
 ---
 
-Similar to "social mobility coefficient", but incorporates location weighting, providing a nuanced view of local socioeconomic factors.
+Measures how universities actually intake compares against the specific pool of young people who achieved the required
+grades for that university (same as the ‘social mobility coefficient’), but it accounts for geography by giving higher
+importance on qualified students who live close to the university campus. This better reflects the reality that many
+disadvantaged students prefer to study locally. 
+
+You should use the location-adjusted view for universities that recruit locally, but look at the non-adjusted view for
+universities that recruit nationally.
+
 
 ::: tabs
     ::: tab section_name="Social mobility coefficient with location weighting ranking" tab_name="Data"
         ::: data_table
             {
-                "title": "TODO DATA TABLE HEADING",
+                "title": "Ranking of universities based on the social mobility coefficient location-adjusted",
                 "dataTable": "university_rankings_with_location.csv",
                 "dataTableAlignColumns": ["left", "left", "right"],
                 "dataTableDecimalPlaces": [null, null, 0]

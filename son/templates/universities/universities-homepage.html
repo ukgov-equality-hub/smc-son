@@ -6,31 +6,55 @@
         <div class="govuk-grid-column-two-thirds">
 
             <h1 class="govuk-heading-l">
-                Universities
+                University benchmarks for better social mobility
             </h1>
             <p class="govuk-body">
-                TODO intro content about the Universities tool
+                This is a tool developed by the Social Mobility Commission to help students, parents, and universities
+                and policy makers to explore detailed benchmarks on university access and social mobility.
+                It is a diagnostic tool for understanding how universities support disadvantaged students.
+            </p>
+            <p class="govuk-body">
+                You can find the following sections:
             </p>
             <ul class="govuk-list govuk-list--bullet">
                 <li>
                     <a href="{{ url_for('universities.by_university_homepage') }}"
                        class="govuk-link">
-                        By university
+                        Benchmarks by university
                     </a>
+                    <br>
+                    Dive into data for individual universities. View detailed cumulative percentage charts and see how
+                    selected universities rank on key social mobility metrics.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.rankings_homepage') }}"
                        class="govuk-link">
-                        Rankings
+                        Overall rankings
                     </a>
+                    <br>
+                    Explore how to interpret each metric – equal access, social mobility coefficient, and social
+                    mobility coefficient location adjusted – and how all universities compare across them.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.about_the_data') }}"
                        class="govuk-link">
                         About the data
                     </a>
+                    <br>
+                    Find important information regarding the methodology, data sources, and limitations of the data.
                 </li>
             </ul>
+            <p class="govuk-body">
+                This analysis tracks real students' educational journeys using official government records, following them from
+                their GCSEs in 2015 to 2016 to their university enrolment at age 18 or 19 (usually enrolments in 2018 to 2020).
+                We deliberately used this pre-pandemic data to provide a clear, fair, and stable reference point for
+                university admissions before the disruptions caused by COVID-19.
+            </p>
+            <p class="govuk-body">
+                The specific datasets used are: National Pupil Database (NPD) from DfE, Higher Education Statistics
+                Agency (HESA) student record, Get Information About Schools (GIAS) service from DfE and National
+                Statistics Postcode Lookup provided by the Office for National Statistics (ONS).
+            </p>
 
         </div>
     </div>
