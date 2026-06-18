@@ -149,9 +149,11 @@
     </div>
 
     <div class="dashboard-container govuk-width-container">
-        <div class="dashboard-area-menu">
-            {{ universities_sidebar() }}
-        </div>
+        {% if path != '/universities/about-the-data' %}
+            <div class="dashboard-area-menu">
+                {{ universities_sidebar(path) }}
+            </div>
+        {% endif %}
 
         <main id="main-content" role="main" class="govuk-main-wrapper">
             {% block content %}{% endblock %}
