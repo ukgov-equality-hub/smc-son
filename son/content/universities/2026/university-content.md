@@ -31,6 +31,7 @@ For example, 41% of students qualified for Anglia Ruskin University come from th
                 "xkey": "decile",
                 "ykey": "cumulative_percentage",
                 "zkey": "group",
+                "scale": "%",
                 "xgrid": false,
                 "ygrid": true,
                 "xticks": 11,
