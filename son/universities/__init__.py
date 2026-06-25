@@ -30,7 +30,7 @@ def by_university(university_slug):
                     return row
         return None
 
-    file_path_rankings = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university_rankings.csv"
+    file_path_rankings = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-rankings--full-dataset.csv"
     row_for_university = get_row_from_csv_file(file_path_rankings, 'university_slug', university_slug)
     if row_for_university is None:
         abort(404)

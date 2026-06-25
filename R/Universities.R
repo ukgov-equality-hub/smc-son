@@ -30,20 +30,35 @@ data_rankings = data_frame__rename_column(
   old_column_name = 'ProviderName',
   new_column_name = 'university_name'
 )
+  data_rankings = data_frame__rename_column(
+    data_frame = data_rankings,
+    old_column_name = 'equal',
+    new_column_name = 'equal_access_coefficient'
+  )
 data_rankings = data_frame__rename_column(
   data_frame = data_rankings,
   old_column_name = 'rank_equal',
   new_column_name = 'equal_access_ranking'
 )
+  data_rankings = data_frame__rename_column(
+    data_frame = data_rankings,
+    old_column_name = 'no_location',
+    new_column_name = 'social_mobility_coefficient'
+  )
 data_rankings = data_frame__rename_column(
   data_frame = data_rankings,
   old_column_name = 'rank_no_location',
-  new_column_name = 'social_mobility_coefficient_ranking'
+    new_column_name = 'social_mobility_ranking'
 )
+  data_rankings = data_frame__rename_column(
+    data_frame = data_rankings,
+    old_column_name = 'location',
+    new_column_name = 'social_mobility_with_location_coefficient'
+  )
 data_rankings = data_frame__rename_column(
   data_frame = data_rankings,
   old_column_name = 'rank_location',
-  new_column_name = 'social_mobility_with_location'
+    new_column_name = 'social_mobility_with_location_ranking'
 )
 
 
@@ -63,17 +78,26 @@ data_rankings$university_name_for_sorting <- NULL
 data_rankings$university_slug <- data_rankings$university_name %>%
   str_to_lower() %>%
   str_remove_all("[[:punct:]]") %>%
-  str_replace_all("\\s+", "-")
-
-
-########################
-# CREATE RANKINGS CSV
-
-csv_filename = 'university_rankings.csv'
-save_data_frame(data_rankings, csv_filename)
-
-
-########################################
+    str_replace_all("\\s+", "-")
+  
+  
+  ############################
+  # CREATE FULL DATASET CSV
+  
+  data_rankings_csv <- data_rankings[, c("university_name",
+                                         "university_slug",
+                                         "equal_access_coefficient",
+                                         "social_mobility_coefficient",
+                                         "social_mobility_with_location_coefficient",
+                                         "equal_access_ranking",
+                                         "social_mobility_ranking",
+                                         "social_mobility_with_location_ranking")]
+  
+  csv_filename = 'university-rankings--full-dataset.csv'
+  save_data_frame(data_rankings_csv, csv_filename)
+  
+  
+  ########################################
 # CREATE RANKINGS TABLE-FORMAT TABLES
 
 create_and_save_ranking_table_format = function(input_data_frame, rank_column, university_name_column, coefficient_column, csv_filename) {
@@ -109,23 +133,23 @@ create_and_save_ranking_table_format(
   input_data_frame = data_rankings,
   rank_column = 'equal_access_ranking',
   university_name_column = 'university_name',
-  coefficient_column = 'equal',
+    coefficient_column = 'equal_access_coefficient',
     csv_filename = 'university-rankings--equal-access--table-format.csv'
 )
 
 create_and_save_ranking_table_format(
   input_data_frame = data_rankings,
-  rank_column = 'social_mobility_coefficient_ranking',
+    rank_column = 'social_mobility_ranking',
   university_name_column = 'university_name',
-  coefficient_column = 'no_location',
+    coefficient_column = 'social_mobility_coefficient',
     csv_filename = 'university-rankings--social-mobility-coefficient-without-location--table-format.csv'
 )
 
 create_and_save_ranking_table_format(
   input_data_frame = data_rankings,
-  rank_column = 'social_mobility_with_location',
+    rank_column = 'social_mobility_with_location_ranking',
   university_name_column = 'university_name',
-  coefficient_column = 'location',
+    coefficient_column = 'social_mobility_with_location_coefficient',
     csv_filename = 'university-rankings--social-mobility-coefficient-with-location--table-format.csv'
 )
 
