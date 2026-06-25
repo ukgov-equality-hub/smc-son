@@ -110,7 +110,7 @@ create_and_save_ranking_table_format(
   rank_column = 'equal_access_ranking',
   university_name_column = 'university_name',
   coefficient_column = 'equal',
-  csv_filename = 'university_rankings_equal.csv'
+    csv_filename = 'university-rankings--equal-access--table-format.csv'
 )
 
 create_and_save_ranking_table_format(
@@ -118,7 +118,7 @@ create_and_save_ranking_table_format(
   rank_column = 'social_mobility_coefficient_ranking',
   university_name_column = 'university_name',
   coefficient_column = 'no_location',
-  csv_filename = 'university_rankings_without_location.csv'
+    csv_filename = 'university-rankings--social-mobility-coefficient-without-location--table-format.csv'
 )
 
 create_and_save_ranking_table_format(
@@ -126,7 +126,7 @@ create_and_save_ranking_table_format(
   rank_column = 'social_mobility_with_location',
   university_name_column = 'university_name',
   coefficient_column = 'location',
-  csv_filename = 'university_rankings_with_location.csv'
+    csv_filename = 'university-rankings--social-mobility-coefficient-with-location--table-format.csv'
 )
 
 

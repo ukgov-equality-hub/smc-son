@@ -16,7 +16,7 @@ universities that recruit nationally.
         ::: data_table
             {
                 "title": "Ranking of universities based on the social mobility coefficient location-adjusted",
-                "dataTable": "university_rankings_with_location.csv",
+                "dataTable": "university-rankings--social-mobility-coefficient-with-location--table-format.csv",
                 "dataTableAlignColumns": ["left", "left", "right"],
                 "dataTableDecimalPlaces": [null, null, 0]
             }

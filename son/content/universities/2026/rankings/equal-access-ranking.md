@@ -10,7 +10,7 @@ It provides a baseline showing how representative the student body is of the gen
         ::: data_table
             {
                 "title": "Ranking of universities based on the equal access coefficient",
-                "dataTable": "university_rankings_equal.csv",
+                "dataTable": "university-rankings--equal-access--table-format.csv",
                 "dataTableAlignColumns": ["left", "left", "right"],
                 "dataTableDecimalPlaces": [null, null, 0]
             }
