@@ -24,7 +24,7 @@
                         Social mobility coefficient ranking
                     </dt>
                     <dd class="govuk-body">
-                        {{ row_for_university['social_mobility_coefficient_ranking'] }}
+                        {{ row_for_university['social_mobility_ranking'] }}
                         of 94
                     </dd>
                 </div>
@@ -33,7 +33,7 @@
                         Social mobility with location
                     </dt>
                     <dd class="govuk-body">
-                        {{ row_for_university['social_mobility_with_location'] }}
+                        {{ row_for_university['social_mobility_with_location_ranking'] }}
                         of 94
                     </dd>
                 </div>
@@ -89,9 +89,20 @@
                 Download the data
             </h2>
 
-            <p class="govuk-body">
-                TODO
-            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    <a href="{{ url_for('universities.download_the_data_csv_file', filename='university-rankings--full-dataset') }}"
+                       class="govuk-link">
+                        Rankings data (CSV, 8KB)
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('universities.download_the_data_csv_file', filename='university-deciles--full-dataset') }}"
+                       class="govuk-link">
+                        Deciles data (CSV, 359KB)
+                    </a>
+                </li>
+            </ul>
 
         </div>
     </div>

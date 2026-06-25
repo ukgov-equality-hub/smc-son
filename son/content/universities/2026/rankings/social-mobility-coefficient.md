@@ -16,7 +16,7 @@ This ranking might be more appropriate to assess those universities who are gene
         ::: data_table
             {
                 "title": "Ranking of universities based on the social mobility coefficient",
-                "dataTable": "university_rankings_without_location.csv",
+                "dataTable": "university-rankings--social-mobility-coefficient-without-location--table-format.csv",
                 "dataTableAlignColumns": ["left", "left", "right"],
                 "dataTableDecimalPlaces": [null, null, 0]
             }
@@ -27,3 +27,7 @@ This ranking might be more appropriate to assess those universities who are gene
         ::: download_section :::
     :::
 :::
+
+## Download the data
+* [Rankings data (CSV, 8KB)](/universities/download-the-data/university-rankings--full-dataset.csv)
+* [Deciles data (CSV, 359KB)](/universities/download-the-data/university-deciles--full-dataset.csv)

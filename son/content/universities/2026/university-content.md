@@ -31,6 +31,8 @@ For example, 41% of students qualified for Anglia Ruskin University come from th
                 "xkey": "decile",
                 "ykey": "cumulative_percentage",
                 "zkey": "group",
+                "scale": "%",
+                "rounding": "0",
                 "xgrid": false,
                 "ygrid": true,
                 "xticks": 11,
@@ -38,12 +40,13 @@ For example, 41% of students qualified for Anglia Ruskin University come from th
                 "xtitle": "Deciles",
                 "ytitle": "Cumulative percentage of students",
                 "legend": true,
-                "colourScheme": ["#4c2c92", "#5694ca", "#d4351c", "#d53880", "#28a197"],
+                "colourScheme": ["#5694ca", "#F46A25", "#d4351c"],
                 "range": [0, 100],
                 "margin": [10, 20, 5, 5],
                 "maxLabelLength": 40,
                 "rolloverBehaviour": "fade",
-                "clickBehaviour": "isolate"
+                "clickBehaviour": "isolate",
+                "tooltipDataTitle": "Decile: {x}, {z}: {y}"
             }
         :::
     :::

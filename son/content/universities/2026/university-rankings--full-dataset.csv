@@ -1,0 +1,95 @@
+"university_name","university_slug","equal_access_coefficient","social_mobility_coefficient","social_mobility_with_location_coefficient","equal_access_ranking","social_mobility_ranking","social_mobility_with_location_ranking"
+"Anglia Ruskin University","anglia-ruskin-university",-48,38,27,41,44,48
+"University of the Arts, London","university-of-the-arts-london",-82,10,-79,55,57,90
+"Aston University","aston-university",83,184,99,12,11,20
+"Bath Spa University","bath-spa-university",-126,-35,-2,70,77,68
+"University of Bedfordshire","university-of-bedfordshire",81,164,135,13,14,12
+"The University of Birmingham","the-university-of-birmingham",-168,-54,-103,81,87,94
+"Birmingham City University","birmingham-city-university",66,152,71,17,18,28
+"Bournemouth University","bournemouth-university",-91,0,14,60,66,57
+"The University of Bradford","the-university-of-bradford",147,233,189,3,3,1
+"The University of Brighton","the-university-of-brighton",-59,29,41,46,49,41
+"The University of Bristol","the-university-of-bristol",-235,-63,9,90,88,59
+"Brunel University London","brunel-university-london",125,219,187,7,5,2
+"Buckinghamshire New University","buckinghamshire-new-university",-19,64,81,34,37,26
+"The University of Cambridge","the-university-of-cambridge",-247,-51,-11,92,84,73
+"Canterbury Christ Church University","canterbury-christ-church-university",25,108,117,25,26,16
+"The University of Central Lancashire","the-university-of-central-lancashire",10,99,87,29,29,23
+"University of Chester","university-of-chester",-73,16,27,51,55,48
+"The University of Chichester","the-university-of-chichester",-98,-9,7,62,69,60
+"City St George's, University of London","city-st-georges-university-of-london",111,210,109,10,8,18
+"Coventry University","coventry-university",65,154,141,18,17,9
+"University for the Creative Arts","university-for-the-creative-arts",-56,33,67,45,48,30
+"University of Cumbria","university-of-cumbria",-62,22,30,48,53,47
+"De Montfort University","de-montfort-university",10,94,66,29,30,31
+"University of Derby","university-of-derby",-25,59,63,38,39,33
+"University of Durham","university-of-durham",-245,-63,-49,91,88,83
+"The University of East Anglia","the-university-of-east-anglia",-116,-15,-11,65,71,73
+"The University of East London","the-university-of-east-london",170,253,141,2,2,9
+"Edge Hill University","edge-hill-university",-52,41,33,42,42,44
+"The University of Essex","the-university-of-essex",29,117,108,24,23,19
+"The University of Exeter","the-university-of-exeter",-247,-79,-57,92,93,86
+"Falmouth University","falmouth-university",-133,-42,-47,72,80,82
+"University of Gloucestershire","university-of-gloucestershire",-122,-31,20,68,74,54
+"Goldsmiths College","goldsmiths-college",71,164,63,16,14,33
+"The University of Greenwich","the-university-of-greenwich",125,211,110,7,7,17
+"University of Hertfordshire","university-of-hertfordshire",57,146,126,21,20,13
+"The University of Huddersfield","the-university-of-huddersfield",60,149,119,20,19,15
+"The University of Hull","the-university-of-hull",-53,38,27,44,44,48
+"Imperial College of Science, Technology and Medicine","imperial-college-of-science-technology-and-medicine",-201,20,-4,87,54,70
+"Keele University","keele-university",-52,38,32,42,44,45
+"The University of Kent","the-university-of-kent",-21,77,84,36,35,24
+"King's College London","kings-college-london",-78,34,-37,54,47,80
+"Kingston University","kingston-university",72,155,154,14,16,5
+"The University of Lancaster","the-university-of-lancaster",-163,-51,-55,80,84,85
+"The University of Leeds","the-university-of-leeds",-181,-66,-89,85,90,91
+"Leeds Arts University","leeds-arts-university",-135,-38,-61,73,78,88
+"Leeds Beckett University","leeds-beckett-university",-74,12,-2,52,56,68
+"Leeds Trinity University","leeds-trinity-university",-2,81,76,31,32,27
+"The University of Leicester","the-university-of-leicester",-44,60,32,39,38,45
+"The University of Lincoln","the-university-of-lincoln",-86,5,3,58,62,61
+"The University of Liverpool","the-university-of-liverpool",-161,-49,-92,79,83,92
+"Liverpool Hope University","liverpool-hope-university",-5,84,63,32,31,33
+"Liverpool John Moores University","liverpool-john-moores-university",-47,44,-1,40,40,65
+"London School of Economics and Political Science","london-school-of-economics-and-political-science",-155,43,-17,76,41,77
+"London South Bank University","london-south-bank-university",136,219,124,5,5,14
+"Loughborough University","loughborough-university",-157,-45,-33,77,82,79
+"University of Manchester","university-of-manchester",-130,-18,-58,71,72,87
+"The Manchester Metropolitan University","the-manchester-metropolitan-university",-19,72,27,34,36,48
+"Middlesex University","middlesex-university",173,257,184,1,1,3
+"Newcastle University","newcastle-university",-214,-53,-24,88,86,78
+"The University of Northampton","the-university-of-northampton",61,145,149,19,21,8
+"University of Northumbria at Newcastle","university-of-northumbria-at-newcastle",-83,8,15,57,60,56
+"Norwich University of the Arts","norwich-university-of-the-arts",-67,26,46,50,51,38
+"University of Nottingham","university-of-nottingham",-186,-18,-14,86,72,76
+"The Nottingham Trent University","the-nottingham-trent-university",-98,-7,2,62,68,63
+"The University of Oxford","the-university-of-oxford",-256,-69,-12,94,92,75
+"Oxford Brookes University","oxford-brookes-university",-223,-132,-93,89,94,93
+"University of Plymouth","university-of-plymouth",-89,0,-1,59,66,65
+"Queen Mary University of London","queen-mary-university-of-london",72,178,48,14,13,36
+"Ravensbourne University London","ravensbourne-university-london",21,107,-7,26,27,72
+"The University of Reading","the-university-of-reading",-141,-43,-4,74,81,70
+"Roehampton University","roehampton-university",126,210,175,6,8,4
+"Royal Holloway and Bedford New College","royal-holloway-and-bedford-new-college",-95,9,17,61,58,55
+"The University of Salford","the-university-of-salford",20,111,66,27,25,31
+"The University of Sheffield","the-university-of-sheffield",-157,-40,-38,77,79,81
+"Sheffield Hallam University","sheffield-hallam-university",-59,29,14,46,49,57
+"Solent University","solent-university",-75,9,27,53,58,48
+"The University of Southampton","the-university-of-southampton",-171,1,27,83,65,48
+"St George's, University of London","st-georges-university-of-london",-22,81,38,37,32,42
+"St Mary's University, Twickenham","st-marys-university-twickenham",-7,79,69,33,34,29
+"Staffordshire University","staffordshire-university",18,102,99,28,28,20
+"The University of Sunderland","the-university-of-sunderland",32,117,91,22,23,22
+"The University of Surrey","the-university-of-surrey",-102,2,46,64,63,38
+"The University of Sussex","the-university-of-sussex",-120,-14,0,66,70,64
+"Teesside University","teesside-university",32,120,84,22,22,24
+"University College London","university-college-london",-170,8,-66,82,60,89
+"The University of Warwick","the-university-of-warwick",-141,41,47,74,42,37
+"The University of West London","the-university-of-west-london",96,180,136,11,12,11
+"University of the West of England, Bristol","university-of-the-west-of-england-bristol",-125,-31,-1,69,74,65
+"The University of Westminster","the-university-of-westminster",142,228,151,4,4,7
+"The University of Winchester","the-university-of-winchester",-120,-32,3,66,76,61
+"The University of Wolverhampton","the-university-of-wolverhampton",115,198,153,9,10,6
+"University of Worcester","university-of-worcester",-66,23,45,49,52,40
+"The University of York","the-university-of-york",-180,-66,-53,84,90,84
+"York St John University","york-st-john-university",-82,2,34,55,63,43
