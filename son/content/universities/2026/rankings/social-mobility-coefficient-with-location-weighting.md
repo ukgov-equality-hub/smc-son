@@ -27,3 +27,7 @@ universities that recruit nationally.
         ::: download_section :::
     :::
 :::
+
+## Download the data
+* [Rankings data (CSV, 8KB)](/universities/download-the-data/university-rankings--full-dataset.csv)
+* [Deciles data (CSV, 359KB)](/universities/download-the-data/university-deciles--full-dataset.csv)

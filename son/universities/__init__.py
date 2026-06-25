@@ -100,6 +100,12 @@ def rankings_csv_file(filename: str):
     return send_file(file_path)
 
 
+@universities.route('/universities/download-the-data/<filename>.csv', methods=['GET'])
+def download_the_data_csv_file(filename: str):
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/{filename}.csv"
+    return send_file(file_path)
+
+
 @universities.route('/universities/about-the-data', methods=['GET'])
 def about_the_data():
     return render_template(
