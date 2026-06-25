@@ -204,6 +204,7 @@ class Chart {
         let margin = options.margin || [ options.marginTop || 10, options.marginRight || 10, options.marginBottom || 10, options.marginLeft || 10 ]
         this.title = options.title || ''
         this.tooltipTitle = options.tooltipTitle || undefined
+        const tooltipDataTitle = options.tooltipDataTitle || undefined
         this.rolloverBehaviour = ['outline', 'fade'].includes(options.rolloverBehaviour) ? options.rolloverBehaviour : ''
         this.clickBehaviour = ['outline', 'fade', 'filter', 'isolate'].includes(options.clickBehaviour) ? options.clickBehaviour : ''
         this.isInteractive = this.rolloverBehaviour != '' || this.clickBehaviour != ''
@@ -1171,7 +1172,15 @@ class Chart {
                     parent
                         .on('click', clicked)
                         .on('pointerenter pointermove', function (event) {
-                            let text = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            const toolTipTextX = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}`;
+                            const toolTipTextY = `${getLabelText(this.getAttribute('data-value'), 'tooltip')}`;
+                            let text = '';
+                            if (tooltipDataTitle) {
+                                text = tooltipDataTitle.replace('{x}', toolTipTextX).replace('{y}', toolTipTextY).replace('{z}', this.getAttribute('data-group'));
+                            }
+                            else {
+                                text = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
+                            }
                             if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${chartType}`
                             }
