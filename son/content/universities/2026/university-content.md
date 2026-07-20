@@ -40,7 +40,7 @@ For example, 41% of students qualified for Anglia Ruskin University come from th
                 "xtitle": "Deciles",
                 "ytitle": "Cumulative percentage of students",
                 "legend": true,
-                "colourScheme": ["#5694ca", "#F46A25", "#d4351c"],
+                "colourScheme": ["#5694ca", "#ba8e23", "#d4351c"],
                 "range": [0, 100],
                 "margin": [10, 20, 5, 5],
                 "maxLabelLength": 40,
