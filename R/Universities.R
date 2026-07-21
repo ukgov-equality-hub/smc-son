@@ -100,7 +100,7 @@
   ########################################
   # CREATE RANKINGS TABLE-FORMAT TABLES
   
-  create_and_save_ranking_table_format = function(input_data_frame, rank_column, university_name_column, coefficient_column, csv_filename) {
+  create_and_save_ranking_table_format = function(input_data_frame, rank_column, university_name_column, coefficient_column, coefficient_title, csv_filename) {
     working_data_frame <- input_data_frame[, c(rank_column,
                                                university_name_column,
                                                coefficient_column)]
@@ -119,7 +119,7 @@
     working_data_frame = data_frame__rename_column(
       data_frame = working_data_frame,
       old_column_name = coefficient_column,
-      new_column_name = 'Equal access'
+      new_column_name = coefficient_title
     )
     
     # Sort by ranking
@@ -134,6 +134,7 @@
     rank_column = 'equal_access_ranking',
     university_name_column = 'university_name',
     coefficient_column = 'equal_access_coefficient',
+    coefficient_title = 'Equal access coefficient',
     csv_filename = 'university-rankings--equal-access--table-format.csv'
   )
   
@@ -142,6 +143,7 @@
     rank_column = 'social_mobility_ranking',
     university_name_column = 'university_name',
     coefficient_column = 'social_mobility_coefficient',
+    coefficient_title = 'Social mobility coefficient',
     csv_filename = 'university-rankings--social-mobility-coefficient-without-location--table-format.csv'
   )
   
@@ -150,6 +152,7 @@
     rank_column = 'social_mobility_with_location_ranking',
     university_name_column = 'university_name',
     coefficient_column = 'social_mobility_with_location_coefficient',
+    coefficient_title = 'Social mobility coefficient (location-adjusted)',
     csv_filename = 'university-rankings--social-mobility-coefficient-with-location--table-format.csv'
   )
   
