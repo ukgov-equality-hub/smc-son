@@ -2,13 +2,14 @@
 title: 'Social mobility coefficient (with location weighting) ranking'
 ---
 
-Measures how universities actually intake compares against the specific pool of young people who achieved the required
-grades for that university (same as the ‘social mobility coefficient’), but it accounts for geography by giving higher
-importance on qualified students who live close to the university campus. This better reflects the reality that many
-disadvantaged students prefer to study locally. 
+This coefficient measures how each university’s student intake compares with the pool of 18 to 19 year olds in England
+who achieved the required grades for that university. 
 
-You should use the location-adjusted view for universities that recruit locally, but look at the non-adjusted view for
-universities that recruit nationally.
+It adjusts the social mobility coefficient for location, by giving more importance to qualified students who live close to the university.
+This better reflects the reality that many disadvantaged students prefer to study locally. 
+
+This ranking might be more appropriate to assess universities that recruit locally.
+
 
 
 ::: tabs

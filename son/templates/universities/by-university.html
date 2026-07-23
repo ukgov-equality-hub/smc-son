@@ -8,84 +8,145 @@
             <h1 class="govuk-heading-l">
                 {{ row_for_university['university_name'] }}
             </h1>
+            <p class="govuk-body">
+                Publication date: dd/mmm/yyyy
+            </p>
 
-            <dl class="university-rankings-stats">
-                <div>
-                    <dt class="govuk-hint">
-                        Equal access ranking
-                    </dt>
-                    <dd class="govuk-body">
-                        {{ row_for_university['equal_access_ranking'] }}
-                        of 94
-                    </dd>
-                </div>
-                <div>
-                    <dt class="govuk-hint">
-                        Social mobility coefficient ranking
-                    </dt>
-                    <dd class="govuk-body">
-                        {{ row_for_university['social_mobility_ranking'] }}
-                        of 94
-                    </dd>
-                </div>
-                <div>
-                    <dt class="govuk-hint">
-                        Social mobility with location
-                    </dt>
-                    <dd class="govuk-body">
-                        {{ row_for_university['social_mobility_with_location_ranking'] }}
-                        of 94
-                    </dd>
-                </div>
-            </dl>
+            <p class="govuk-body">
+                Contents:
+            </p>
+            <ol class="govuk-list govuk-list--number">
+                <li><a href="#summary-main-findings" class="govuk-link">Summary main findings</a></li>
+                <li><a href="#data-by-socio-economic-status" class="govuk-link">Data by socio-economic status</a></li>
+                <li><a href="#things-you-need-to-know" class="govuk-link">Things you need to know</a></li>
+                <li><a href="#data-sources" class="govuk-link">Data sources</a></li>
+                <li><a href="#download-the-data" class="govuk-link">Download the data</a></li>
+            </ol>
 
-            <style>
-                .university-rankings-stats {
-                    display: flex;
-                    flex-direction: column;
-                    max-width: 775px;
-                    margin: 0 -15px;
-                }
-                @media (min-width: 455px) {
-                    .university-rankings-stats {
-                        flex-direction: row;
-                    }
-                }
-                @media (min-width: 640px) {
-                    .university-rankings-stats {
-                        flex-direction: column;
-                    }
-                }
-                @media (min-width: 865px) {
-                    .university-rankings-stats {
-                        flex-direction: row;
-                    }
-                }
-                .university-rankings-stats div {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    flex-grow: 1;
-                    flex-shrink: 1;
-                    flex-basis: 33%;
-                    padding: 0 15px;
-                }
-                .university-rankings-stats dt {
-                    margin-bottom: 10px;
-                }
-                .university-rankings-stats dd {
-                    margin-left: 0;
-                    font-weight: bold;
-                    font-size: 24px;
-                }
-            </style>
+            <h2 id="summary-main-findings"
+                class="govuk-heading-m">
+                Summary main findings
+            </h2>
+            <p class="govuk-body">
+                The data shows that Anglia Ruskin University had an:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    Equal access ranking of
+                    <strong>
+                        {{ row_for_university['equal_access_ranking'] }} out of 94 universities in the UK
+                    </strong>
+                </li>
+                <li>
+                    Social mobility coefficient ranking of
+                    <strong>
+                        {{ row_for_university['social_mobility_ranking'] }} out of 94
+                    </strong>
+                </li>
+                <li>
+                    Social mobility coefficient ranking (adjusted for location) of
+                    <strong>
+                        {{ row_for_university['social_mobility_with_location_ranking'] }} out of 94
+                    </strong>
+                </li>
+            </ul>
+            <p class="govuk-body">
+                Students from the least advantaged half of the population made up:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    TODO% of students qualified for {{ row_for_university['university_name'] }}
+                </li>
+                <li>
+                    TODO% of its actual student intake
+                </li>
+            </ul>
+            <p class="govuk-body">
+                This shows [the university’s student intake closely matches the available pool of qualified students].
+            </p>
+
+            <h2 id="data-by-socio-economic-status"
+                class="govuk-heading-m">
+                Data by socio-economic status
+            </h2>
 
             <div id="maincontent" style="padding: 0;">
                 {{ university_content | safe }}
             </div>
 
-            <h2 class="govuk-heading-m"
-                id="download-the-data">
+            <h2 id="things-you-need-to-know"
+                class="govuk-heading-m">
+                Things you need to know
+            </h2>
+            <p class="govuk-body">
+                Socio-economic status ‘deciles’ are calculated by grouping students into 10 equal groups,
+                from decile 1 (the most socio-economically disadvantaged students) to decile 10 (the most advantaged).
+            </p>
+            <p class="govuk-body">
+                The socio-economic status of students is based on:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>whether they received free school meal</li>
+                <li>whether they attended a state or independent school</li>
+                <li>the wealth of their local neighbourhood</li>
+            </ul>
+            <p class="govuk-body">
+                To estimate the percentage of students who met each university’s academic requirements, we use the actual
+                A-level and BTEC grades of the students who successfully enrolled, not the advertised entry guidelines.
+                We excluded the lowest 10% of these grades to account for special cases.
+            </p>
+            <p class="govuk-body">
+                The location adjustment gives more importance to qualified students who both:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>meet the university’s entry requirements</li>
+                <li>live close to the university</li>
+            </ul>
+            <p class="govuk-body">
+                This reflects the reality that many disadvantaged students prefer to study locally.
+            </p>
+            <p class="govuk-body">
+                You should use:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>the social mobility coefficient ranking (adjusted for location) for universities that recruit locally</li>
+                <li>the non-adjusted view for universities that recruit nationally</li>
+            </ul>
+
+            <h2 id="data-sources"
+                class="govuk-heading-m">
+                Data sources
+            </h2>
+            <p class="govuk-body">
+                This analysis tracks real students' educational journeys using official government records.
+                The data follows students from their GCSEs in the 2015 to 2016 academic year, to their university
+                enrolment at age 18 or 19 (between 2018 and 2020).
+                We deliberately used  data from before the COVID-19 pandemic to provide a clear, fair, and stable
+                reference point before the disruptions caused by the pandemic.
+            </p>
+            <p class="govuk-body">
+                The specific datasets used are:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>National Pupil Database (NPD) from the Department for Education (DfE)</li>
+                <li>student record data from the Higher Education Statistics Agency (HESA)</li>
+                <li>Get Information About Schools (GIAS) service from DfE</li>
+                <li>National Statistics Postcode Lookup from the Office for National Statistics (ONS)</li>
+            </ul>
+            <p class="govuk-body">
+                See
+                <a href="{{ url_for('universities.about_the_data') }}"
+                   class="govuk-link">
+                    About the data
+                </a>
+                for more information about the data and methodology. You can also
+                <a href="#"
+                   class="govuk-link">
+                    read the full report</a>.
+            </p>
+
+            <h2 id="download-the-data"
+                class="govuk-heading-m">
                 Download the data
             </h2>
 
