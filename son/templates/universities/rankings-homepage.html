@@ -9,8 +9,7 @@
                 Rankings
             </h1>
             <p class="govuk-body">
-                Understanding the metrics presented in this tool is key to gaining insights into social mobility at universities.
-                Here's a brief guide:
+                Explore rankings tables that show how all 94 universities compare for the following 3 social mobility metrics:
             </p>
             <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
                 <li>
@@ -19,8 +18,9 @@
                         Equal access
                     </a>
                     <br>
-                    This metric compares a university's actual student intake against the socio-economic makeup of all young people in England.
-                    It provides a baseline showing how representative the student body is of the general population, regardless of their academic grades.
+                    This metric compares each university's student intake against the socio-economic makeup of all
+                    18 to 19 year olds in England. It shows how representative each university’s student body is of
+                    the general population, regardless of their academic grades.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient') }}"
@@ -28,21 +28,17 @@
                         Social mobility coefficient
                     </a>
                     <br>
-                    This metric compares the students who actually enrol against the specific pool of young people
-                    across the country who achieved the required grades for that university.
-                    A positive score means the university successfully recruits a more disadvantaged cohort than its
-                    available qualified pool, while a negative score suggests there is room for improvement.
+                    This metric compares the students who enrol at each university against the pool of 18 to 19
+                    year olds in England who achieved the required grades for that university.
                 </li>
                 <li>
                     <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}"
                        class="govuk-link govuk-!-font-weight-bold">
-                        Social mobility coefficient location-adjusted
+                        Social mobility coefficient (adjusted for location)
                     </a>
                     <br>
-                    This adjusts the previous score to account for geography by placing higher importance on qualified
-                    students who live close to the university campus.
-                    This provides a more nuanced view by considering local socioeconomic factors that might influence
-                    student outcomes, offering a fairer comparison between institutions in different regions.
+                    This adjusts the social mobility coefficient to account for geography by giving more importance to
+                    qualified students who live close to the university.
                 </li>
             </ul>
 
