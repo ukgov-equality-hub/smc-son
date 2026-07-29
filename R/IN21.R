@@ -172,8 +172,8 @@ for (time_period in time_periods) {
     values = c(time_period)
   )
   
-  # Replace "2014-2025" with "2014-2025 (pooled)"
-  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (pooled)"
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
   
   data_for_section_filtered = data_frame__sort_rows_with_specific_values(
     data_frame = data_for_section_filtered,
@@ -207,9 +207,9 @@ pivot_table = pivot_table__create(
   pivot_table_column_names_suffix = " (%)"
 )
 
-# Replace "2014-2025" with "2014-2025 (pooled)"
+# Replace "2014-2025" with "2014-2025 (combined)"
 cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
-if (length(cols)) pivot_table[1, cols] <- "2014-2025 (pooled) (%)"
+if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
@@ -300,8 +300,8 @@ for (time_period in time_periods) {
     values = c(time_period)
   )
   
-  # Replace "2014-2025" with "2014-2025 (pooled)"
-  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (pooled)"
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
   
   data_for_section_filtered = data_frame__sort_rows_with_specific_values(
     data_frame = data_for_section_filtered,
@@ -336,9 +336,9 @@ pivot_table = pivot_table__create(
   pivot_table_column_names_suffix = " (%)"
 )
 
-# Replace "2014-2025" with "2014-2025 (pooled)"
+# Replace "2014-2025" with "2014-2025 (combined)"
 cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
-if (length(cols)) pivot_table[1, cols] <- "2014-2025 (pooled) (%)"
+if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
