@@ -4,6 +4,10 @@ $govuk-assets-path: "/static/assets/";
 //@import "./related-navigation";
 //@import "./patterns/interuption-card";
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0px;

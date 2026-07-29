@@ -2,36 +2,98 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-    <div class="govuk-width-container">
-        <main class="govuk-main-wrapper">
+    <h1 class="govuk-heading-xl">
+        Explore social mobility data
+    </h1>
 
-            <div class="govuk-grid-row">
-                <div class="govuk-grid-column-two-thirds">
-
-                    <h1 class="govuk-heading-l">
-                        Social Mobility Commission data explorer
-                    </h1>
-                    <p class="govuk-body">
-                        Here's some tools that you might want to look at...
-                    </p>
-                    <ul class="govuk-list govuk-list--bullet">
-                        <li>
-                            <a href="{{ url_for('son.index') }}"
-                               class="govuk-link">
-                                State of the Nation
-                            </a>
-                        </li>
-                        <li>
-                            <a href="{{ url_for('universities.index') }}"
-                               class="govuk-link">
-                                Universities
-                            </a>
-                        </li>
-                    </ul>
-
-                </div>
+    <div class="homepage-cards">
+        <div class="homepage-card-container">
+            <div class="homepage-card">
+                <h2 class="govuk-heading-l">
+                    State of the nation
+                </h2>
+                <p class="govuk-body">
+                    State of the Nation is an annual report into social mobility in the UK.
+                    It uses original data and analysis from the Social Mobility Commission (SMC).
+                </p>
+                <a href="{{ url_for('son.index') }}"
+                   role="button"
+                   draggable="false"
+                   class="govuk-button govuk-button--start govuk-!-margin-bottom-0"
+                   data-module="govuk-button">
+                    Explore
+                    <span class="govuk-visually-hidden">
+                        State of the Nation
+                    </span>
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                </a>
             </div>
-
-        </main>
+        </div>
+        <div class="homepage-card-container">
+            <div class="homepage-card">
+                <h2 class="govuk-heading-l">
+                    University benchmarking
+                </h2>
+                <p class="govuk-body">
+                    An interactive tool for students, parents, universities and policy makers
+                    to explore detailed benchmarks on university access and social mobility.
+                </p>
+                <a href="{{ url_for('universities.index') }}"
+                   role="button"
+                   draggable="false"
+                   class="govuk-button govuk-button--start govuk-!-margin-bottom-0"
+                   data-module="govuk-button">
+                    Explore
+                    <span class="govuk-visually-hidden">
+                        University benchmarking
+                    </span>
+                    <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+                        <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
     </div>
+
+    <h2 class="govuk-heading-l">
+        About the Social Mobility Commission
+    </h2>
+    <p class="govuk-body">
+        The Social Mobility Commission is an independent statutory body (an organisation created by an act of Parliament),
+        and exists to help create a country where the circumstances of someone’s birth do not determine their outcomes in life.
+    </p>
+    <p class="govuk-body govuk-!-margin-bottom-8">
+        Find out more about the SMC on the
+        <a href="https://socialmobility.independent-commission.uk/"
+           class="govuk-link">
+            Social Mobility Commission website</a>.
+    </p>
+
+    <style>
+        .homepage-cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 0 -15px 20px -15px;
+            max-width: 1000px;
+        }
+        .homepage-card-container {
+            width: 100%;
+            padding: 0 15px;
+            display: flex;
+        }
+        @media (min-width: 910px) {
+            .homepage-card-container {
+                width: 50%;
+            }
+        }
+        .homepage-card {
+            background: #f3f2f1;
+            border-bottom: 4px solid #1d70b8;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+    </style>
 {% endblock %}
