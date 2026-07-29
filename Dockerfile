@@ -24,13 +24,13 @@ RUN pip3 install -r requirements.txt
 COPY package.json package.json
 COPY package-lock.json package-lock.json
 
-RUN \. "$HOME/.nvm/nvm.sh" && npm ci
+#RUN \. "$HOME/.nvm/nvm.sh" && npm ci
 
 # Build the JS and CSS files
-RUN \. "$HOME/.nvm/nvm.sh" && npm run build
+#RUN \. "$HOME/.nvm/nvm.sh" && npm run build
 
 ADD . .
 
 #RUN rm /app/admin -r
-CMD flask run --host=0.0.0.0
+CMD flask run --host=0.0.0.0 --debug
 # CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
