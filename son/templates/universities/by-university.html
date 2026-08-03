@@ -28,23 +28,23 @@
                 Summary main findings
             </h2>
             <p class="govuk-body">
-                The data shows that Anglia Ruskin University had an:
+                The data shows that {{ row_for_university['university_name'] }} had an:
             </p>
             <ul class="govuk-list govuk-list--bullet">
                 <li>
-                    Equal access ranking of
+                    equal access ranking of
                     <strong>
                         {{ row_for_university['equal_access_ranking'] }} out of 94 universities in the UK
                     </strong>
                 </li>
                 <li>
-                    Social mobility coefficient ranking of
+                    social mobility coefficient ranking of
                     <strong>
                         {{ row_for_university['social_mobility_ranking'] }} out of 94
                     </strong>
                 </li>
                 <li>
-                    Social mobility coefficient ranking (adjusted for location) of
+                    social mobility coefficient ranking (adjusted for location) of
                     <strong>
                         {{ row_for_university['social_mobility_with_location_ranking'] }} out of 94
                     </strong>
@@ -91,8 +91,8 @@
                 <li>the wealth of their local neighbourhood</li>
             </ul>
             <p class="govuk-body">
-                To estimate the percentage of students who met each university’s academic requirements, we use the actual
-                A-level and BTEC grades of the students who successfully enrolled, not the advertised entry guidelines.
+                We use the actual A-level and BTEC grades of the students who successfully enrolled to estimate the
+                percentage of those who met each university’s academic requirements, not the advertised entry guidelines.
                 We excluded the lowest 10% of these grades to account for special cases.
             </p>
             <p class="govuk-body">
@@ -121,7 +121,7 @@
                 This analysis tracks real students' educational journeys using official government records.
                 The data follows students from their GCSEs in the 2015 to 2016 academic year, to their university
                 enrolment at age 18 or 19 (between 2018 and 2020).
-                We deliberately used  data from before the COVID-19 pandemic to provide a clear, fair, and stable
+                We deliberately used data from before the COVID-19 pandemic to provide a clear, fair, and stable
                 reference point before the disruptions caused by the pandemic.
             </p>
             <p class="govuk-body">

@@ -16,8 +16,6 @@
         ::: visualisation vis_type="chart" section_name="By university"
             {
                 "code": "UNIV",
-                "title": "TODO CHART TITLE",
-                "tooltipTitle": "",
                 "data": [{
                     "label": "Without location weighting",
                     "data": "PATH_TO_CSV__WITHOUT_LOCATION_WEIGHTING"
@@ -54,7 +52,7 @@
     ::: tab section_name="By university" tab_name="Data"
         ::: data_table
             {
-                "title": "TODO DATA TABLE HEADING",
+                "title": "Cumulative percentage of students who met the academic entry requirements for this university, and who enrolled, by socio-economic status (2018 to 2020)",
                 "dataTable": "PATH_TO_CSV__TABLE_FORMAT",
                 "dataTableAlignColumns": ["left", "right", "right", "right", "right"],
                 "dataTableDecimalPlaces": [null, 0, 0, 0, 0]
