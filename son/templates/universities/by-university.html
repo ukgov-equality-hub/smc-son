@@ -50,20 +50,48 @@
                     </strong>
                 </li>
             </ul>
+
             <p class="govuk-body">
-                Students from the least advantaged half of the population made up:
+                18 to 19 year olds from the least advantaged half of the population made up:
             </p>
             <ul class="govuk-list govuk-list--bullet">
                 <li>
-                    TODO% of students qualified for {{ row_for_university['university_name'] }}
+                    {{ commentary_row_for_university['required_5th_decile_without_location_adjustment'] }}%
+                    of candidates who met the entry requirements for {{ row_for_university['university_name'] }}
                 </li>
                 <li>
-                    TODO% of its actual student intake
+                    {{ commentary_row_for_university['required_5th_decile_with_location_adjustment'] }}%
+                    of candidates who met the entry requirements, weighted to favour those who live closer to the university
+                    – read more about our
+                    <a href="{{ url_for('universities.about_the_data') }}#location-adjustment"
+                       class="govuk-link">
+                        location adjustment
+                    </a>
+                </li>
+                <li>
+                    {{ commentary_row_for_university['enrolment_5th_decile'] }}%
+                    of the actual student intake
                 </li>
             </ul>
             <p class="govuk-body">
-                This shows [the university’s student intake closely matches the available pool of qualified students].
+                This shows that:
             </p>
+            {%
+                set commentary_options = {
+                    'COMMENTARY_HIGH': 'the university is successfully recruiting candidates from disadvantaged backgrounds',
+                    'COMMENTARY_MEDIUM': 'the university\'s student intake closely matches the available pool of qualified students',
+                    'COMMENTARY_LOW': 'the university is under-recruiting qualified candidates from disadvantaged backgrounds',
+                }
+            %}
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    {{ commentary_options[commentary_row_for_university['commentary_option_without_location_adjustment']] }}
+                </li>
+                <li>
+                    with location adjustment,
+                    {{ commentary_options[commentary_row_for_university['commentary_option_with_location_adjustment']] }}
+                </li>
+            </ul>
 
             <h2 id="data-by-socio-economic-status"
                 class="govuk-heading-m">

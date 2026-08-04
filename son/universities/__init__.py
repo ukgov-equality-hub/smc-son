@@ -44,6 +44,11 @@ def by_university(university_slug):
     if row_for_university is None:
         abort(404)
 
+    file_path_commentary = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-commentary.csv"
+    commentary_row_for_university = get_row_from_csv_file(file_path_commentary, 'provider', row_for_university['university_name'])
+    if commentary_row_for_university is None:
+        abort(404)
+
     file_path_content = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-content.md"
     if not Path(file_path_content).is_file():
         abort(404)
@@ -66,6 +71,7 @@ def by_university(university_slug):
         universities_menu=universities_menu,
         university_slug=university_slug,
         row_for_university=row_for_university,
+        commentary_row_for_university=commentary_row_for_university,
         university_content=university_content
     )
 
