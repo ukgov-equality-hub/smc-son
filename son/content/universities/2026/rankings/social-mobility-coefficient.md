@@ -2,13 +2,14 @@
 title: 'Social mobility coefficient ranking'
 ---
 
-Measures how universities actually intake compares against the specific pool of young people across the country who
-achieved the required grades for that university. 
+Our social mobility coefficient measures how each university’s student intake compares with the pool of 18 to 19
+year olds in England who achieved the required grades for that university. 
 
-A positive score means the university successfully recruits a more disadvantaged cohort than its available qualified
-pool, while a negative score suggests there is room for improvement. 
+A positive score means the university successfully recruits a more disadvantaged group of students than its available qualified pool.
+A negative score suggests there is room for improvement. 
 
-This ranking might be more appropriate to assess those universities who are generally national recruiters.
+This ranking might be more appropriate to assess universities that recruit nationally.
+
 
 
 ::: tabs

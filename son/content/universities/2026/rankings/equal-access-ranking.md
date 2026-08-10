@@ -2,8 +2,8 @@
 title: 'Equal access ranking'
 ---
 
-Measures how universities actual student intake compares to the socio-economic makeup of all young people in England.
-It provides a baseline showing how representative the student body is of the general population, regardless of their academic grades.
+Our equal access ranking measures how each university’s student intake compares with the socio-economic makeup of all 18 to 19 year olds in England.
+It shows how representative each university’s student body is of the general population, regardless of their academic grades.
 
 ::: tabs
     ::: tab section_name="Equal access ranking" tab_name="Data"

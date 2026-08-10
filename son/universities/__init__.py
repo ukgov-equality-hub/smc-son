@@ -19,6 +19,15 @@ def index():
     )
 
 
+@universities.route('/universities/by-university', methods=['GET'])
+def by_university_homepage():
+    return render_template(
+        'universities/by-university-homepage.html',
+        path=request.path,
+        universities_menu=universities_menu
+    )
+
+
 @universities.route('/universities/by-university/<university_slug>', methods=['GET'])
 def by_university(university_slug):
     def get_row_from_csv_file(csv_file_path, column_name, search_value):
@@ -33,6 +42,11 @@ def by_university(university_slug):
     file_path_rankings = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-rankings--full-dataset.csv"
     row_for_university = get_row_from_csv_file(file_path_rankings, 'university_slug', university_slug)
     if row_for_university is None:
+        abort(404)
+
+    file_path_commentary = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-commentary.csv"
+    commentary_row_for_university = get_row_from_csv_file(file_path_commentary, 'provider', row_for_university['university_name'])
+    if commentary_row_for_university is None:
         abort(404)
 
     file_path_content = f"{os.path.dirname(os.path.realpath(__file__))}/../content/universities/2026/university-content.md"
@@ -57,6 +71,7 @@ def by_university(university_slug):
         universities_menu=universities_menu,
         university_slug=university_slug,
         row_for_university=row_for_university,
+        commentary_row_for_university=commentary_row_for_university,
         university_content=university_content
     )
 

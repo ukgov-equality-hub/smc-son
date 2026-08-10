@@ -9,7 +9,188 @@
                 About the data
             </h1>
             <p class="govuk-body">
-                TODO
+                Information about the methodology and introduction to the main statistical concepts.
+                For more information, see the
+                <a href="https://socialmobility.independent-commission.uk/who-gets-in-university-benchmarks-for-better-social-mobility-technical-report/#technical-appendix"
+                   class="govuk-link">
+                    full technical annex</a>.
+            </p>
+            <p class="govuk-body">
+                This analysis explores how different universities in England support social mobility.
+                It focuses exclusively on the point of university access and enrolment, rather than combining access
+                metrics with graduate salaries.
+            </p>
+
+            <h2 class="govuk-heading-m">
+                Understanding the benchmark curves
+            </h2>
+            <p class="govuk-body">
+                The core of this benchmarking tool is a set of graphs for 94 higher education providers in England.
+                Each graph plots cumulative percentages on the Y axis against 10 equally-sized socio-economic status
+                (SES) deciles on the X axis. Decile 1 is the most disadvantaged and decile 10 is the most advantaged.
+            </p>
+            <p class="govuk-body">
+                Every university's chart displays 3 fundamental lines:
+            </p>
+            <ul class="govuk-list govuk-list--spaced">
+                <li>
+                    <h3 class="govuk-heading-s">
+                        Yellow line (equal distribution)
+                    </h3>
+                    <p class="govuk-body">
+                        This represents a hypothetical, ideal scenario where the university's student population is
+                        perfectly representative of the wider population of young people in England.
+                        This means exactly 10% of enrolling students are taken from each of the 10 SES deciles.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="govuk-heading-s">
+                        Blue line (students enrolling)
+                    </h3>
+                    <p class="govuk-body">
+                        This represents the actual socio-economic profile of full-time, first-year undergraduate
+                        students enrolling at the university at age 18 or 19.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="govuk-heading-s">
+                        Red line (students meeting entry requirements)
+                    </h3>
+                    <p class="govuk-body">
+                        This represents the socio-economic profile of the sub-population of young people nationally who
+                        met the university's minimum academic entry requirements.
+                    </p>
+                </li>
+            </ul>
+            <p class="govuk-body">
+                To make the benchmark as realistic as possible, entry requirements are not based on advertised grades.
+                Instead, they are calculated from the actual qualifications held by enrolling students on each course.
+                The bottom 10% of achievers are excluded to prevent contextual offers or mitigating circumstances from
+                skewing the entry standard.
+            </p>
+
+            <h2 class="govuk-heading-m">
+                Socio-economic status (SES) and disadvantage
+            </h2>
+            <p class="govuk-body">
+                We use 3 distinct indicators from administrative student records to place young people into 10 granular deciles:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>individual-level income: free school meals (FSM) eligibility during year 11</li>
+                <li>school-level wealth: attendance at an independent (private fee-paying) school</li>
+                <li>neighbourhood-level deprivation: the Income Deprivation Affecting Children Index (IDACI) score of the student's home postcode</li>
+            </ul>
+            <p class="govuk-body">
+                Individual-level indicators – school type and FSM eligibility – were given the highest priority and weight in the model.
+                This choice was made because they are direct, individual measures of household socio-economic status.
+                IDACI is an area-based indicator.
+            </p>
+            <p class="govuk-body">
+                The IDACI score was treated as a secondary metric. Rather than acting as an equal third weight, it was used to:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>refine the sorting of students within the broader categories set by FSM and school type</li>
+                <li>distribute the remaining state-school pupils who did not qualify for FSM</li>
+            </ul>
+
+            <h2 id="location-adjustment"
+                class="govuk-heading-m">
+                Accounting for geography: the location weighting
+            </h2>
+            <p class="govuk-body">
+                Socioeconomic recruitment is heavily influenced by geography. Disadvantaged students are statistically
+                much more likely to study close to home due to financial or personal reasons.
+                To account for this, the tool provides a toggle for location weighting:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>
+                    Unadjusted model (national):
+                    This model assumes the university recruits nationally. The red line represents all qualified students across England.
+                </li>
+                <li>
+                    Location-adjusted model (local):
+                    This model adjusts the expected pool (the red line) by calculating the exact physical distance
+                    between each student's home postcode at age 16 and the university, applying an inverse distance weight.
+                </li>
+            </ul>
+            <p class="govuk-body">
+                We set a minimum theoretical distance of 1 kilometre, effectively capping the maximum location weight at 1.
+                This is to ensure that minor differences in close proximity do not distort the expected curves
+                – for example, a large independent boarding school being located directly next to a university campus.
+            </p>
+            <ul class="govuk-list govuk-list--spaced">
+                <li>
+                    <h3 class="govuk-heading-s">
+                        National recruiters
+                    </h3>
+                    <p class="govuk-body">
+                        For high-tariff institutions with national appeal, such as Oxford and Cambridge, students are
+                        historically willing to travel long distances.
+                        For these universities, we recommend focusing on the unadjusted benchmarks.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="govuk-heading-s">
+                        Local and regional recruiters
+                    </h3>
+                    <p class="govuk-body">
+                        For institutions that mainly attract candidates locally, the location-adjusted figures give a
+                        much fairer and more representative benchmark of the qualified talent pool available on their doorstep.
+                    </p>
+                </li>
+            </ul>
+
+            <h2 class="govuk-heading-m">
+                The social mobility coefficient
+            </h2>
+            <p class="govuk-body">
+                The social mobility coefficient is a clear, comparative metric that represents the area in our charts
+                between the enrolment line (blue) and the entry requirements line (red).
+            </p>
+            <p class="govuk-body">
+                A positive score means the university is ‘over-performing’.
+                It is enrolling students who are <i>more</i> disadvantaged than the pool of 18 to 19 year olds who meet
+                its entry requirements.
+            </p>
+            <p class="govuk-body">
+                A negative score means the university is ‘under-performing’.
+                It is enrolling students who are significantly <i>more</i> advantaged than the pool of qualified 18 to 19 year olds.
+            </p>
+            <p class="govuk-body">
+                A score of zero represents a perfect match. This is where the university's actual intake perfectly
+                matches the socio-economic profile of qualified candidates.
+            </p>
+
+            <h2 class="govuk-heading-m">
+                Limitations and technical caveats
+            </h2>
+            <p class="govuk-body">
+                Our analysis tracks students who took GCSEs in the 2015 to 2016 school year and enrolled in higher
+                education in September <b>2018 or 2019</b>.
+                We did this to establish a stable baseline that would not be affected by the COVID-19 pandemic,
+                which saw a trend towards higher grades associated with teacher assessment.
+                Trends in access to higher education may have changed since the COVID-19 pandemic.
+            </p>
+            <p class="govuk-body">
+                Strict data owner interpretations of the Digital Economy Act 2017 mean that schools and universities
+                are treated as "bodies corporate" and their names cannot be disclosed in connection with application datasets.
+                As a result, we were unable to plot an <b>"application curve"</b>, and the data cannot definitively show
+                whether under-representation is due to student application choices or institutional admissions practices.
+            </p>
+            <p class="govuk-body">
+                The model focuses strictly on 18 to 19 year olds entering full-time undergraduate courses through
+                traditional A level and Level 3 BTEC routes. It does not include:
+            </p>
+            <ul class="govuk-list govuk-list--bullet">
+                <li>mature students</li>
+                <li>part-time learners</li>
+                <li>foundation years</li>
+                <li>degree apprenticeships</li>
+            </ul>
+            <p class="govuk-body">
+                The data is restricted to higher education providers and school leavers in <b>England</b>.
+                This is because school census records (such as FSM eligibility) are devolved, and deprivation indices
+                are calculated differently in England, Scotland and Wales.
             </p>
 
         </div>
