@@ -15,23 +15,29 @@
             <p class="govuk-body">
                 You can explore the data in 2 ways:
             </p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <ul class="govuk-list govuk-list--spaced">
                 <li>
-                    <a href="{{ url_for('universities.by_university_homepage') }}"
-                       class="govuk-link govuk-!-font-weight-bold">
-                        By university
-                    </a>
-                    <br>
-                    See how 94 individual universities rank on 3 social mobility metrics
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+                        <a href="{{ url_for('universities.by_university_homepage') }}"
+                           class="govuk-link govuk-!-font-weight-bold">
+                            By university
+                        </a>
+                    </h2>
+                    <p class="govuk-body">
+                        See how 94 individual universities rank on 3 social mobility metrics
+                    </p>
                 </li>
                 <li>
-                    <a href="{{ url_for('universities.rankings_homepage') }}"
-                       class="govuk-link govuk-!-font-weight-bold">
-                        By rankings tables
-                    </a>
-                    <br>
-                    Explore 3 rankings tables that show how all 94 universities compare for  equal access and the
-                    social mobility coefficient (with and without adjusting for location)
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+                        <a href="{{ url_for('universities.rankings_homepage') }}"
+                           class="govuk-link govuk-!-font-weight-bold">
+                            By rankings tables
+                        </a>
+                    </h2>
+                    <p class="govuk-body">
+                        Explore 3 rankings tables that show how all 94 universities compare for  equal access and the
+                        social mobility coefficient (with and without adjusting for location)
+                    </p>
                 </li>
             </ul>
 

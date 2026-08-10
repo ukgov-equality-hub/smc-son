@@ -11,34 +11,43 @@
             <p class="govuk-body">
                 Explore rankings tables that show how all 94 universities compare for the following 3 social mobility metrics:
             </p>
-            <ul class="govuk-list govuk-list--bullet govuk-list--spaced">
+            <ul class="govuk-list govuk-list--spaced">
                 <li>
-                    <a href="{{ url_for('universities.individual_ranking', ranking_slug='equal-access-ranking') }}"
-                       class="govuk-link govuk-!-font-weight-bold">
-                        Equal access
-                    </a>
-                    <br>
-                    This metric compares each university's student intake against the socio-economic makeup of all
-                    18 to 19 year olds in England. It shows how representative each university’s student body is of
-                    the general population, regardless of their academic grades.
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+                        <a href="{{ url_for('universities.individual_ranking', ranking_slug='equal-access-ranking') }}"
+                           class="govuk-link govuk-!-font-weight-bold">
+                            Equal access
+                        </a>
+                    </h2>
+                    <p class="govuk-body">
+                        This metric compares each university's student intake against the socio-economic makeup of all
+                        18 to 19 year olds in England. It shows how representative each university’s student body is of
+                        the general population, regardless of their academic grades.
+                    </p>
                 </li>
                 <li>
-                    <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient') }}"
-                       class="govuk-link govuk-!-font-weight-bold">
-                        Social mobility coefficient
-                    </a>
-                    <br>
-                    This metric compares the students who enrol at each university against the pool of 18 to 19
-                    year olds in England who achieved the required grades for that university.
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+                        <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient') }}"
+                           class="govuk-link govuk-!-font-weight-bold">
+                            Social mobility coefficient
+                        </a>
+                    </h2>
+                    <p class="govuk-body">
+                        This metric compares the students who enrol at each university against the pool of 18 to 19
+                        year olds in England who achieved the required grades for that university.
+                    </p>
                 </li>
                 <li>
-                    <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}"
-                       class="govuk-link govuk-!-font-weight-bold">
-                        Social mobility coefficient (adjusted for location)
-                    </a>
-                    <br>
-                    This adjusts the social mobility coefficient to account for geography by giving more importance to
-                    qualified students who live close to the university.
+                    <h2 class="govuk-heading-s govuk-!-margin-bottom-2">
+                        <a href="{{ url_for('universities.individual_ranking', ranking_slug='social-mobility-coefficient-with-location-weighting') }}"
+                           class="govuk-link govuk-!-font-weight-bold">
+                            Social mobility coefficient (adjusted for location)
+                        </a>
+                    </h2>
+                    <p class="govuk-body">
+                        This adjusts the social mobility coefficient to account for geography by giving more importance to
+                        qualified students who live close to the university.
+                    </p>
                 </li>
             </ul>
 
