@@ -443,7 +443,7 @@ class Chart {
                 if (!filteredData) self.chartData = chartData
                 self.originalData = originalData || chartData
                 domain = domain.filter(function (value, index, array) { return array.indexOf(value) === index })
-                if (orientation == 'y') domain = domain.map(x => x.toString())
+                //if (orientation == 'y') domain = domain.map(x => x.toString())
 
                 const chartOptions = {
                     x: xkey,
