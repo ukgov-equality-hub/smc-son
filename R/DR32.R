@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr32-full-dataset.csv"
+input_file = "2026-01-01-dr32-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "work_opportunities_for_young_people"
 indicator_name = "youth_unemployment"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "DR32"
 
@@ -99,6 +99,8 @@ section_csv_name = "ITL2-region"
 
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- data_for_section[data_for_section$primary_split_value == "Unemployed", ]
 
 #################
 # CHART FORMAT
