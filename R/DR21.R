@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr21-full-dataset.csv"
+input_file = "2026-01-01-dr21-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "educational_opportunities_and_quality_of_schooling"
 indicator_name = "further_education_and_training_opportunities"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "DR21"
 
