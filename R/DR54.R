@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr54-full-dataset.csv"
+input_file = "2026-01-01-dr54-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "research_and_development_environment"
 indicator_name = "occupations_in_the_'new_economy'"
-version = "1.0"
+version = "2.0"
 
 indicator_code = "DR54"
 
@@ -55,6 +55,8 @@ section_chart_type = "trend"
 section_csv_name = "year"
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- subset(data_for_section, secondary_split_value == 1)
 
 #################
 # CHART FORMAT
