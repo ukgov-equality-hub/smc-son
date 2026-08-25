@@ -1,0 +1,13 @@
+Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+MO32,Relative educational mobility,National,K02000001,United Kingdom,1991,NA,28-37,Total,NA,NA,9.74,NA,8.96,10.59,0.415816326530612,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,1991,NA,28-37,Men,NA,NA,9.39,NA,8.35,10.55,0.5612244897959187,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,1991,NA,28-37,Women,NA,NA,10.41,NA,9.21,11.75,0.6479591836734692,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2001,NA,28-37,Total,NA,NA,7.73,NA,7.28,8.21,0.23724489795918383,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2001,NA,28-37,Men,NA,NA,7.8,NA,7.15,8.51,0.34693877551020397,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2001,NA,28-37,Women,NA,NA,7.65,NA,7.03,8.34,0.33418367346938765,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2011,NA,28-37,Total,NA,NA,7.31,NA,6.84,7.83,0.25255102040816335,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2011,NA,28-37,Men,NA,NA,7.4,NA,6.74,8.13,0.354591836734694,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2011,NA,28-37,Women,NA,NA,7.37,NA,6.68,8.14,0.372448979591837,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2021,NA,28-37,Total,NA,NA,3.93,NA,3.77,4.1,0.08418367346938767,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2021,NA,28-37,Men,NA,NA,3.94,NA,3.72,4.18,0.11734693877551008,Odds ratio,NA
+MO32,Relative educational mobility,National,K02000001,United Kingdom,2021,NA,28-37,Women,NA,NA,4.04,NA,3.81,4.29,0.12244897959183673,Odds ratio,NA

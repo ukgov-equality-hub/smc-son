@@ -1,0 +1,15 @@
+Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,1991,NA,28-37,Men,NA,NA,0.22,NA,0.206,0.234,0.00714285714285715,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2001,NA,28-37,Men,NA,NA,0.225,NA,0.211,0.239,0.007142857142857143,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2011,NA,28-37,Men,NA,NA,0.24,NA,0.228,0.252,0.0061224489795918356,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2021,NA,28-37,Men,NA,NA,0.215,NA,0.203,0.227,0.0061224489795918356,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2001,NA,40-46,Men,NA,NA,0.191,NA,0.175,0.207,0.00816326530612245,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2011,NA,40-46,Men,NA,NA,0.205,NA,0.189,0.221,0.00816326530612245,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2021,NA,40-46,Men,NA,NA,0.226,NA,0.212,0.24,0.007142857142857143,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,1991,NA,28-37,Women,NA,NA,0.2,NA,0.184,0.216,0.00816326530612245,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2001,NA,28-37,Women,NA,NA,0.233,NA,0.219,0.247,0.007142857142857143,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2011,NA,28-37,Women,NA,NA,0.29,NA,0.276,0.304,0.007142857142857135,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2021,NA,28-37,Women,NA,NA,0.254,NA,0.242,0.266,0.0061224489795918425,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2001,NA,40-46,Women,NA,NA,0.178,NA,0.16,0.196,0.009183673469387756,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2011,NA,40-46,Women,NA,NA,0.206,NA,0.188,0.224,0.009183673469387756,Regression coefficient,NA
+MO22,Relative occupational wage mobility,National,K02000001,United Kingdom,2021,NA,40-46,Women,NA,NA,0.254,NA,0.238,0.27,0.008163265306122457,Regression coefficient,NA

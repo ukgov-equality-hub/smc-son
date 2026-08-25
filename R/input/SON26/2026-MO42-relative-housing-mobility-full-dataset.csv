@@ -1,0 +1,22 @@
+Ind_code,Ind_name,Area_type,Area_code,Area_name,Time_period,SEB,Age,Sex,Category_type,Category,Value,Sample_size,LCI,UCI,SE,Unit,Value_note
+MO42,Relative housing mobility,National,K02000001,United Kingdom,1991,NA,28-37,Total,NA,NA,2.86,NA,2.75,2.97,0.056122448979591885,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,1991,NA,28-37,Men,NA,NA,2.94,NA,2.78,3.11,0.08418367346938778,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,1991,NA,28-37,Women,NA,NA,2.78,NA,2.63,2.94,0.07908163265306124,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,28-37,Total,NA,NA,3.1,NA,2.99,3.22,0.0586734693877551,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,28-37,Men,NA,NA,2.92,NA,2.76,3.08,0.08163265306122457,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,28-37,Women,NA,NA,3.25,NA,3.09,3.42,0.08418367346938778,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,28-37,Total,NA,NA,3.71,NA,3.56,3.87,0.07908163265306124,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,28-37,Men,NA,NA,3.46,NA,3.26,3.68,0.10714285714285723,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,28-37,Women,NA,NA,3.93,NA,3.7,4.16,0.1173469387755102,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,28-37,Total,NA,NA,4.64,NA,4.46,4.83,0.09438775510204085,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,28-37,Men,NA,NA,4.62,NA,4.36,4.89,0.1352040816326529,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,28-37,Women,NA,NA,4.66,NA,4.41,4.92,0.13010204081632648,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,38-47,Total,NA,NA,2.6,NA,2.49,2.72,0.0586734693877551,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,38-47,Men,NA,NA,2.57,NA,2.41,2.73,0.08163265306122446,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2001,NA,38-47,Women,NA,NA,2.63,NA,2.48,2.79,0.07908163265306124,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,38-47,Total,NA,NA,3.01,NA,2.9,3.13,0.0586734693877551,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,38-47,Men,NA,NA,2.83,NA,2.68,2.99,0.07908163265306124,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2011,NA,38-47,Women,NA,NA,3.18,NA,3.02,3.35,0.08418367346938778,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,38-47,Total,NA,NA,4.09,NA,3.92,4.27,0.08928571428571419,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,38-47,Men,NA,NA,3.94,NA,3.7,4.18,0.12244897959183662,Odds ratio,NA
+MO42,Relative housing mobility,National,K02000001,United Kingdom,2021,NA,38-47,Women,NA,NA,4.22,NA,3.98,4.47,0.12499999999999994,Odds ratio,NA
