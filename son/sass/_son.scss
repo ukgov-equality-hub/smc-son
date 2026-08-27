@@ -1260,3 +1260,7 @@ div.area-map {
     padding-top: 13px;
     padding-bottom: 13px;
 }
+
+.govuk-radios--inline .govuk-radios__label {
+  max-width: unset;
+}

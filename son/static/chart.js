@@ -414,8 +414,8 @@ class Chart {
                         [group]: x[group],
                         [quantile]: x[quantile],
                         labelkey: x[labelKey] || null,
-                        lci: isNumeric(x[lci]) ? parseFloat(x[lci], 10) : x[lci],
-                        uci: isNumeric(x[uci]) ? parseFloat(x[uci], 10) : x[uci],
+                        lci: isNumeric(x[lci]) ? parseFloat(x[lci], 10) : (x[lci] === "" ? null : x[lci]),
+                        uci: isNumeric(x[uci]) ? parseFloat(x[uci], 10) : (x[uci] === "" ? null : x[uci]),
                         _ci: '|'
                     }))
                     let mlci = d3.min((data[i].data || data[i]), x => parseFloat(x[lci], 10))

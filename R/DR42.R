@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr42-full-dataset.csv"
+input_file = "2026-01-01-dr42-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "social_capital_and_connections"
 indicator_name = "level_of_trust,_fairness_and_helpfulness" 
-version = "3.1"
+version = "4.0"
 
 indicator_code = "DR42"
 

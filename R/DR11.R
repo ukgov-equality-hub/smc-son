@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr11-full-dataset.csv"
+input_file = "2026-01-01-dr11-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "conditions_of_childhood"
 indicator_name = "distribution_of_earnings"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "DR11"
 
@@ -85,7 +85,7 @@ pivot_table = pivot_table__create(
   pivot_table_rows_order_values = sort(
     unique(data_for_section$primary_split_value), decreasing=TRUE)
 )  %>%
-  rename("Ratio of earnings" = "Ratio")
+  rename("Ratio of earnings" = "ratio")
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)

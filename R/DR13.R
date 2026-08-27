@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-dr13-full-dataset.csv"
+input_file = "2026-01-01-dr13-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "conditions_of_childhood"
 indicator_name = "distribution_of_parental_education"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "DR13"
 
@@ -61,7 +61,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "primary_split_value",
-  values_1 = parental_qualification_order,
+  values_1 = parental_qualification_order_cse,
   column_2 = "secondary_split_value",
   values_2 = NULL
 )
@@ -80,7 +80,7 @@ pivot_table = pivot_table__create(
   pivot_table_name = "Year",
   pivot_table_rows_order_values = sort(
     unique(data_for_section$secondary_split_value), decreasing=TRUE),
-  pivot_table_columns_order_values = parental_qualification_order,
+  pivot_table_columns_order_values = parental_qualification_order_cse,
   pivot_table_column_names_suffix = " (%)"
 )
 

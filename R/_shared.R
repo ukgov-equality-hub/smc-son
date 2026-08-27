@@ -151,6 +151,14 @@ parental_qualification_order = c(
   "Degree level or above"
 )
   
+parental_qualification_order_cse = c(
+  "Lower level (below CSE grade 1)",
+  "O level, GCSE and equivalent",
+  "A level and equivalent",
+  "Further education below degree",
+  "Degree level or above"
+)
+  
 
 disadvantage_order = c(
   "Disadvantaged",
@@ -237,7 +245,7 @@ save_data_frame = function(data_frame, filename) {
   )
   
   output_file_absolute_path = R.utils::getAbsolutePath(output_file_path)
-  if (nchar(output_file_absolute_path) > 260 & Sys.info()["sysname"] != "Darwin") {
+  if (nchar(output_file_absolute_path) > 255 & Sys.info()["sysname"] != "Darwin") {
     # Get a timestamp
     temp_output_folder = paste0(
       "output", "/",
