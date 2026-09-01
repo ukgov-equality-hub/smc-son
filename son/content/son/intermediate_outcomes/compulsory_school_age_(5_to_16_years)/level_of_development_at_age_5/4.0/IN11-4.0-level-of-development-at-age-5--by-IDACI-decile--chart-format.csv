@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",1,,,,,,,"2024/25",58.933,,,74574,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",2,,,,,,,"2024/25",62.232,,,68936,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",3,,,,,,,"2024/25",64.556,,,64798,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",4,,,,,,,"2024/25",67.13,,,63574,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",5,,,,,,,"2024/25",68.942,,,59273,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",6,,,,,,,"2024/25",70.421,,,55881,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",7,,,,,,,"2024/25",72.282,,,53853,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",8,,,,,,,"2024/25",73.803,,,50522,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",9,,,,,,,"2024/25",75.393,,,49933,"Percentage",
+"in11","Level of development at age 5","level_idaci","E92000001","Country","England","idaci_decile",10,,,,,,,"2024/25",77.651,,,46844,"Percentage",
