@@ -198,6 +198,7 @@ class Chart {
         const filterNaN = options.filterNaN === false ? false : true
         const legend = options.legend || false
         const legendTitle = options.legendTitle || false
+        const legendsText = options.legendsText || undefined
         const reverseLegend = options.reverseLegend || false
         this.legendCheckboxes = options.legendCheckboxes || false
         const swatchSize = 20
@@ -728,16 +729,16 @@ class Chart {
                 } else {
                     legends = domain
                 }
+            } else if (group) {
+                legends = [...new Set((originalData || chartData).flat().map(x => x[ykey]))]
+            } else if (x1key && x2key) {
+                legends = legendsText
             } else {
-                if (group) {
-                    legends = [...new Set((originalData || chartData).flat().map(x => x[ykey]))]
-                } else {
-                    legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
-                }
+                legends = [...new Set((originalData || chartData).flat().map(x => x[zkey]))]
             }
             self.legends = legends
 
-            if ((zkey || (ykey && group)) && legend && !plotted) {
+            if ((zkey || (ykey && group) || (x1key && x2key)) && legend && !plotted) {
                 let legendDiv
                 if (self.clickBehaviour == 'filter') {
                     self.hidden = []
@@ -855,7 +856,7 @@ class Chart {
                     })
                 }
             } else {
-                if ((zkey || (ykey && group)) && legend && plotted && !filteredData) {
+                if ((zkey || (ykey && group) || (x1key && x2key)) && legend && plotted && !filteredData) {
                     const series = []
                     d3.select(`#${self.el}_legend`).selectAll('[data-faded="true"], [data-isolated="true"]').each(function () {
                         series.push(d3.select(this).attr('data-series'))
