@@ -199,6 +199,7 @@ class Chart {
         const legend = options.legend || false
         const legendTitle = options.legendTitle || false
         const legendsText = options.legendsText || undefined
+        const legendMaxItemsPerRow = options.legendMaxItemsPerRow || undefined
         const reverseLegend = options.reverseLegend || false
         this.legendCheckboxes = options.legendCheckboxes || false
         const swatchSize = 20
@@ -446,6 +447,11 @@ class Chart {
                 domain = domain.filter(function (value, index, array) { return array.indexOf(value) === index })
                 //if (orientation == 'y') domain = domain.map(x => x.toString())
 
+                function foo(x) {
+                    console.log("foo: ", chartData);
+                    return "5,10";
+                }
+
                 const chartOptions = {
                     x: xkey,
                     y: ykey,
@@ -454,7 +460,8 @@ class Chart {
                     fill: x => ['line', 'linex', 'liney'].includes(currentType) ? '' : getMarkColour(originalData || chartData, x),
                     stroke: x => ['line', 'linex', 'liney'].includes(currentType) ? getMarkColour(originalData || chartData, x) : '',
                     strokeWidth: x => ['line', 'linex', 'liney'].includes(currentType) ? 5 : 0,
-                    title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[currentGroup]}`
+                    title: x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[currentGroup]}`,
+                    strokeDasharray: foo(chartData)
                 }
                 if (self.debug) console.log(`chartData ${self.el}`, xkey, ykey, orientation, chartData)
                 if (self.debug) console.log('chartOptions', chartOptions)
@@ -700,7 +707,7 @@ class Chart {
                 marginRight: margin[1],
                 marginBottom: rotateDomainLabels ? maxLabelLength(data, group && orientation != 'y' ? group : xkey, style) + margin[2] : margin[2] + (xtitle != null && xtitle != '' ? 40 : 0) + (zkey && group && xtitle ? 15 : 0) + 20,
                 marginLeft: maxLabelLength(data, group && orientation != 'y' ? group : ykey, style) + margin[3] + (ytitle != null ? 10 : 0),
-                style: style
+                style: style,
             }
             let plot = Plot.plot(plotOptions)
 
@@ -795,6 +802,9 @@ class Chart {
                         //l.addEventListener('pointerenter pointermove', highlight)
                         l.addEventListener('pointerout', resetHighlight)
                         legendDiv.appendChild(l)
+                    }
+                    if (legendMaxItemsPerRow && (i + 1) % legendMaxItemsPerRow == 0) {
+                        legendDiv.appendChild(document.createElement('br'))
                     }
                 }
 
