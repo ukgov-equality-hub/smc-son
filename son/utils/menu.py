@@ -293,6 +293,66 @@ menu = {
         },
         {
             'name': 'Social mobility by area'
+        },
+        {
+            'name': 'Social mobility summaries',
+            'subdomains': [
+                {
+                    'name': 'Protected characteristics',
+                    'indicators': [
+                        {
+                            'name': 'Sex'
+                        },
+                        {
+                            'name': 'Ethnicity'
+                        },
+                        {
+                            'name': 'Disability'
+                        }
+                    ]
+                },
+                {
+                    'name': 'Regions',
+                    'indicators': [
+                        {
+                            'name': 'North East England'
+                        },
+                        {
+                            'name': 'North West England'
+                        },
+                        {
+                            'name': 'Yorkshire and The Humber'
+                        },
+                        {
+                            'name': 'East Midlands'
+                        },
+                        {
+                            'name': 'West Midlands'
+                        },
+                        {
+                            'name': 'East of England'
+                        },
+                        {
+                            'name': 'London'
+                        },
+                        {
+                            'name': 'South East England'
+                        },
+                        {
+                            'name': 'South West England'
+                        },
+                        {
+                            'name': 'Wales'
+                        },
+                        {
+                            'name': 'Scotland'
+                        },
+                        {
+                            'name': 'Northern Ireland'
+                        },
+                    ]
+                }
+            ]
         }
     ],
     'areas': [
