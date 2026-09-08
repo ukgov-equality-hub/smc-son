@@ -174,6 +174,7 @@ class Chart {
         let ytitle = options.ytitle || null
         const maxBarSize = options.maxBarSize || -1
         const colourScheme = options.colourScheme || ['#C6322A','#F2B06E', '#FFFEC6', '#B1D678', '#47934B']
+        const strokeDasharrayScheme = options.strokeDasharrayScheme || null
         const textLabels = ['top', 'right', 'bottom', 'left', 'center', 'outside'].includes(options.textLabels) ? options.textLabels : Array.isArray(options.textLabels) ? options.textLabels : ''
         const labelColour = options.labelColour || '#000'
         const labelKey = options.labelKey || null
@@ -474,7 +475,16 @@ class Chart {
                     marks.push(Plot.dot(chartData, { r: 3, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (currentType == 'liney') {
-                    marks.push(Plot.lineY(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
+                    if (categories && strokeDasharrayScheme) {
+                        categories.forEach(category => {
+                            const filteredData = chartData.filter(x => x[zkey] === category);
+                            chartOptions['strokeDasharray'] = strokeDasharrayScheme[categories.indexOf(category)];
+                            marks.push(Plot.lineY(filteredData, { sort: xkey, ...chartOptions }));
+                        });
+                    }
+                    else {
+                        marks.push(Plot.lineY(chartData, { sort: zkey ? xkey : xkey, ...chartOptions }))
+                    }
                     marks.push(Plot.dot(chartData, { r: showDots ? 3 : 0.001, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
                 if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(currentType)) {
@@ -790,7 +800,10 @@ class Chart {
                             l.style.marginLeft = 0
                             l.style.paddingLeft = 0
                         }
-                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}"><rect width="100%" height="100%"></rect></svg>${ticksId(orientation == 'y' ? xticks : yticks) == -3 && !((zkey && zkey != xkey) || group) ? '(' + abreviate(legendDomain[i]) + ') ' : ''}${legendDomain[i]}`
+                        const svgContent = (strokeDasharrayScheme && strokeDasharrayScheme[categories.indexOf(legendDomain[i])]
+                            ? `<path stroke-width="5" stroke-linecap="round" d="M5 5 L 15 5 M5 15 L15 15"></path>`
+                            : `<rect width="100%" height="100%"></rect>`);
+                        l.innerHTML = `<svg width="${swatchSize}" height="${swatchSize}" fill="${legendRange[i]}" stroke="${legendRange[i]}">${svgContent}</svg>${ticksId(orientation == 'y' ? xticks : yticks) == -3 && !((zkey && zkey != xkey) || group) ? '(' + abreviate(legendDomain[i]) + ') ' : ''}${legendDomain[i]}`
                         l.setAttribute('data-series', legendDomain[i])
                         l.addEventListener('click', clicked)
                         //l.addEventListener('pointerenter pointermove', highlight)
