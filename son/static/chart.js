@@ -199,6 +199,7 @@ class Chart {
         const legend = options.legend || false
         const legendTitle = options.legendTitle || false
         const legendsText = options.legendsText || undefined
+        const legendMaxItemsPerRow = options.legendMaxItemsPerRow || undefined
         const reverseLegend = options.reverseLegend || false
         this.legendCheckboxes = options.legendCheckboxes || false
         const swatchSize = 20
@@ -795,6 +796,9 @@ class Chart {
                         //l.addEventListener('pointerenter pointermove', highlight)
                         l.addEventListener('pointerout', resetHighlight)
                         legendDiv.appendChild(l)
+                    }
+                    if (legendMaxItemsPerRow && (i + 1) % legendMaxItemsPerRow == 0) {
+                        legendDiv.appendChild(document.createElement('br'))
                     }
                 }
 
