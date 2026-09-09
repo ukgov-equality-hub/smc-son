@@ -315,37 +315,37 @@ menu = {
                     'name': 'Regions',
                     'indicators': [
                         {
-                            'name': 'North East England'
+                            'name': 'North East (England)'
                         },
                         {
-                            'name': 'North West England'
+                            'name': 'North West (England)'
                         },
                         {
                             'name': 'Yorkshire and The Humber'
                         },
                         {
-                            'name': 'East Midlands'
+                            'name': 'East Midlands (England)'
                         },
                         {
-                            'name': 'West Midlands'
+                            'name': 'West Midlands (England)'
                         },
                         {
-                            'name': 'East of England'
+                            'name': 'East (England)'
                         },
                         {
                             'name': 'London'
                         },
                         {
-                            'name': 'South East England'
+                            'name': 'South East (England)'
                         },
                         {
-                            'name': 'South West England'
-                        },
-                        {
-                            'name': 'Wales'
+                            'name': 'South West (England)'
                         },
                         {
                             'name': 'Scotland'
+                        },
+                        {
+                            'name': 'Wales'
                         },
                         {
                             'name': 'Northern Ireland'
