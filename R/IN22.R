@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in22-full-dataset.csv"
+input_file = "2026-01-01-in22-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "routes_into_work_(16_to_29_years)"
 indicator_name = "entry_to_higher_education"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN22"
 
@@ -60,10 +60,10 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = occupational_class_order,
-  # column_2 = "secondary_split_value",
-  # values_2 = occupational_class_order
+  values_1 = rev_occupational_class_order
 ) %>% filter(!is.na(secondary_split_value))
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -108,12 +108,9 @@ data_for_section$secondary_split_value <- replace_na(data_for_section$secondary_
 
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
-  column_1 = "primary_split_value",
-  values_1 = NULL,
-  column_2 = "secondary_split_value",
-  values_2 = occupational_class_order
+  column_1 = "secondary_split_value",
+  values_1 = rev_occupational_class_order
 ) %>% 
-  # mutate_at("primary_split_value", as.numeric) %>% 
   mutate(
     primary_split_value = as.numeric(primary_split_value),
     average_window = paste(primary_split_value - 2, primary_split_value, sep=" to "),
