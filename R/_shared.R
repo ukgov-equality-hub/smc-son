@@ -79,6 +79,11 @@ disability_status_no_yes_order = c(
   "Yes"
 )
 
+disability_status_yes_no_order = c(
+  "Yes",
+  "No"
+)
+
 fsm_order = c(
   "Eligible for free school meals",
   "Not eligible for free school meals"
@@ -155,6 +160,15 @@ ethnicity_order_longer_2 = c(
 
 highest_qualification_order = c(
   "Lower level (below GCSE grade 1)",
+  "O level, GCSE and equivalent",
+  "A level and equivalent",
+  "Further education below degree",
+  "First degree",
+  "Higher degree"
+)
+
+highest_qualification_order_cse = c(
+  "Lower level (below CSE grade 1)",
   "O level, GCSE and equivalent",
   "A level and equivalent",
   "Further education below degree",
