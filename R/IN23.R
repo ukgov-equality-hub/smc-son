@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in23-full-dataset.csv"
+input_file = "2026-01-01-in23-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "routes_into_work_(16_to_29_years)"
 indicator_name = "highest_qualification"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN23"
 
@@ -62,10 +62,11 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "primary_split_value",
-  values_1 = highest_qualification_order,
+  values_1 = highest_qualification_order_cse,
   column_2 = "secondary_split_value",
-  values_2 = occupational_class_order
+  values_2 = rev_occupational_class_order
 )  %>% filter(!is.na(secondary_split_value))
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
 save_data_frame(data_for_section, csv_filename)
@@ -80,7 +81,7 @@ pivot_table = pivot_table__create(
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
   pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_columns_order_values = highest_qualification_order,
+  pivot_table_columns_order_values = highest_qualification_order_cse,
   pivot_table_column_names_suffix = " (%)"
 )
 
@@ -122,27 +123,48 @@ save_data_frame(pivot_table, csv_filename)
 ####################
 # SECTION: By sex
 
-section_chart_type = "sex"
 section_csv_name = "SEB-and-sex"
 
+section_chart_type = "sex"
+data_for_section__sex = get_data_for_chart_type(data, section_chart_type)
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+section_chart_type = "sex_time_comparison"
+data_for_section__sex_time_comparison = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- rbind(data_for_section__sex, data_for_section__sex_time_comparison)
+rownames(data_for_section) <- NULL   # reset row names
+
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 #################
 # CHART FORMAT
 
-data_for_section = data_frame__sort_rows_with_specific_values(
-  data_frame = data_for_section,
-  column_1 = "primary_split_value",
-  values_1 = highest_qualification_order,
-  column_2 = "secondary_split_value",
-  values_2 = occupational_class_order,
-  column_3 = "tertiary_split_value",
-  values_3 = men_women_order
-)
+time_periods <- unique(data_for_section$time_period)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  
+  data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+    data_frame = data_for_section_filtered,
+    column_1 = "primary_split_value",
+    values_1 = highest_qualification_order_cse,
+    column_2 = "secondary_split_value",
+    values_2 = rev(occupational_class_order),
+    column_3 = "tertiary_split_value",
+    values_3 = men_women_order
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "chart")
+  save_data_frame(data_for_section_filtered, csv_filename)
+}
 
 #################
 # TABLE FORMAT
@@ -150,15 +172,21 @@ save_data_frame(data_for_section, csv_filename)
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "primary_split_value",
+  pivot_columns_column_2_name = "time_period",
   pivot_rows_column_name = "secondary_split_value",
   pivot_rows_column_2_name = "tertiary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
   pivot_table_name_column_2 = "Sex",
   pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_columns_order_values = highest_qualification_order,
+  pivot_table_columns_order_values = highest_qualification_order_cse,
+  pivot_table_columns_2_order_values = list("2014-2019", "2020-2025", "2014-2025"),
   pivot_table_column_names_suffix = " (%)"
 )
+
+# Replace "2014-2025" with "2014-2025 (combined)"
+cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
+if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
@@ -168,23 +196,48 @@ save_data_frame(pivot_table, csv_filename)
 ##########################
 # SECTION: By ethnicity
 
-section_chart_type = "ethnicity"
 section_csv_name = "SEB-and-ethnicity"
 
+section_chart_type = "ethnicity"
+data_for_section__ethnicity = get_data_for_chart_type(data, section_chart_type)
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+section_chart_type = "ethnicity_time_comparison"
+data_for_section__ethnicity_time_comparison = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- rbind(data_for_section__ethnicity, data_for_section__ethnicity_time_comparison)
+rownames(data_for_section) <- NULL   # reset row names
+
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
+
 
 #################
 # CHART FORMAT
 
-data_for_section = data_frame__sort_rows_with_specific_values(
-  data_frame = data_for_section,
-  column_1 = "secondary_split_value",
-  values_1 = occupational_class_order
-)
+time_periods <- unique(data_for_section$time_period)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  
+  data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+    data_frame = data_for_section_filtered,
+    column_1 = "tertiary_split_value",
+    values_1 = ethnicity_order,
+    column_2 = "secondary_split_value",
+    values_2 = rev_occupational_class_order
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "chart")
+  save_data_frame(data_for_section_filtered, csv_filename)
+}
+
 
 #################
 # TABLE FORMAT
@@ -192,13 +245,19 @@ save_data_frame(data_for_section, csv_filename)
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "secondary_split_value",
+  pivot_columns_column_2_name = "time_period",
   pivot_rows_column_name = "tertiary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Ethnicity",
   pivot_table_rows_order_values = ethnicity_order,
   pivot_table_columns_order_values = occupational_class_order_two_vals,
+  pivot_table_columns_2_order_values = list("2014-2019", "2020-2025", "2014-2025"),
   pivot_table_column_names_suffix = " (%)"
 )
+
+# Replace "2014-2025" with "2014-2025 (combined)"
+cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
+if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
@@ -207,48 +266,80 @@ save_data_frame(pivot_table, csv_filename)
 ###########################
 # SECTION: By disability
 
-section_chart_type = "disability"
 section_csv_name = "SEB-and-disability"
 
+section_chart_type = "disability"
+data_for_section__disability = get_data_for_chart_type(data, section_chart_type)
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+section_chart_type = "disability_time_comparison"
+data_for_section__disability_time_comparison = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- rbind(data_for_section__disability, data_for_section__disability_time_comparison)
+rownames(data_for_section) <- NULL   # reset row names
+
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 #################
 # CHART FORMAT
 
-data_for_section = data_frame__sort_rows_with_specific_values(
-  data_frame = data_for_section,
-  column_1 = "primary_split_value",
-  values_1 = highest_qualification_order,
-  column_2 = "secondary_split_value",
-  values_2 = occupational_class_order,
-  column_3 = "tertiary_split_value",
-  values_3 = disability_status_no_yes_order
-)
+time_periods <- unique(data_for_section$time_period)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  
+  data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+    data_frame = data_for_section_filtered,
+    column_1 = "primary_split_value",
+    values_1 = highest_qualification_order_cse,
+    column_2 = "secondary_split_value",
+    values_2 = rev_occupational_class_order,
+    column_3 = "tertiary_split_value",
+    values_3 = disability_status_yes_no_order
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "chart")
+  save_data_frame(data_for_section_filtered, csv_filename)
+}
 
 #################
 # TABLE FORMAT
 
-pivot_table = pivot_table__create(
-  pivot_table_source = data_for_section,
-  pivot_columns_column_name = "primary_split_value",
-  pivot_rows_column_name = "secondary_split_value",
-  pivot_rows_column_2_name = "tertiary_split_value",
-  pivot_cells_column_name = "value",
-  pivot_table_name = "Socio-economic background",
-  pivot_table_name_column_2 = "Disability",
-  pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_rows_2_order_values = rev(disability_status_no_yes_order),
-  pivot_table_columns_order_values = highest_qualification_order,
-  pivot_table_column_names_suffix = " (%)"
-)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
-save_data_frame(pivot_table, csv_filename)
-
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace "2014-2025" with "2014-2025 (combined)"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  
+  pivot_table = pivot_table__create(
+    pivot_table_source = data_for_section_filtered,
+    pivot_columns_column_name = "primary_split_value",
+    pivot_rows_column_name = "secondary_split_value",
+    pivot_rows_column_2_name = "tertiary_split_value",
+    pivot_cells_column_name = "value",
+    pivot_table_name = "Socio-economic background",
+    pivot_table_name_column_2 = "Disability",
+    pivot_table_rows_order_values = rev(occupational_class_order),
+    pivot_table_rows_2_order_values = rev(disability_status_no_yes_order),
+    pivot_table_columns_order_values = highest_qualification_order_cse,
+    pivot_table_column_names_suffix = " (%)"
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "table")
+  save_data_frame(pivot_table, csv_filename)
+}
 
 
 ##########################################
@@ -263,7 +354,7 @@ rename_highest_degree = c(
   "further"="Further education below degree",
   "a_level"="A level and equivalent",
   "gcse_level"="O level, GCSE and equivalent",
-  "lower"="Lower level (below GCSE grade 1)"
+  "lower"="Lower level (below CSE grade 1)"
 )
 
 
@@ -291,7 +382,7 @@ for (occupational_class in rev_occupational_class_order_w_total) {
     column_1 = "primary_split_value",
     values_1 = NULL,
     column_2 = "tertiary_split_value",
-    values_2 = highest_qualification_order
+    values_2 = highest_qualification_order_cse
   )
 
   snake_occupational_class = str_replace_all(str_to_lower(occupational_class)," ", "-")
@@ -314,7 +405,7 @@ pivot_table = pivot_table__create(
   pivot_table_rows_order_values = sort(
     unique(data_for_section$average_window), decreasing=TRUE),
   pivot_table_columns_order_values = occupational_class_order_w_total,
-  pivot_table_columns_2_order_values = highest_qualification_order,
+  pivot_table_columns_2_order_values = highest_qualification_order_cse,
   pivot_table_column_names_suffix = " (%)"
 )
 
