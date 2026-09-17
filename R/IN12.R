@@ -104,7 +104,10 @@ data_for_section = data_frame__filter(
   data_frame = data_for_section,
   column_name = "primary_split_type",
   values = c("time_period")
-)
+) %>% 
+  mutate(
+    value_for_chart = replace_na(as.character(value), "x")
+  )
 
 #################
 # CHART FORMAT
@@ -187,7 +190,10 @@ save_data_frame(pivot_table, csv_filename)
 section_chart_type = "sex"
 section_csv_name = "sex-and-disadvantage"
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section = get_data_for_chart_type(data, section_chart_type) %>% 
+  mutate(
+    value_for_chart = replace_na(as.character(value), "x")
+  )
 
 #################
 # CHART FORMAT

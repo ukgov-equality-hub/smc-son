@@ -11,12 +11,12 @@
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2018/19",,,,,"2018/19",65,,,"644580","Percentage",
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2018/19",,,,,"2018/19",51,,,"197294","Percentage",
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2018/19",,,,,"2018/19",71,,,"447286","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2019/20",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2019/20",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2019/20",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2020/21",,,,,"2020/21",0,,,"x","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2020/21",,,,,"2020/21",0,,,"x","Percentage",
-"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2020/21",,,,,"2020/21",0,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2019/20",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2019/20",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2019/20",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2020/21",,,,,"2020/21",,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2020/21",,,,,"2020/21",,,,"x","Percentage",
+"in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2020/21",,,,,"2020/21",,,,"x","Percentage",
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Total","time_period","2021/22",,,,,"2021/22",59,,,"664182","Percentage",
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2021/22",,,,,"2021/22",43,,,"197916","Percentage",
 "in12","Attainment at age 11","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2021/22",,,,,"2021/22",66,,,"466266","Percentage",
@@ -38,8 +38,8 @@
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2016/17",,,,,,,"2016/17",2.999,,,,"Disadvantage index",
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2017/18",,,,,,,"2017/18",2.898,,,,"Disadvantage index",
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2018/19",,,,,,,"2018/19",2.913,,,,"Disadvantage index",
-"in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2019/20",,,,,,,"2019/20",0,,,,"Disadvantage index",
-"in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2020/21",,,,,,,"2020/21",0,,,,"Disadvantage index",
+"in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2019/20",,,,,,,"2019/20",,,,,"Disadvantage index",
+"in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2020/21",,,,,,,"2020/21",,,,,"Disadvantage index",
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2021/22",,,,,,,"2021/22",3.228,,,,"Disadvantage index",
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2022/23",,,,,,,"2022/23",3.209,,,,"Disadvantage index",
 "in12","Attainment at age 11","trend","E92000001","Country","England","time_period","2023/24",,,,,,,"2023/24",3.131,,,,"Disadvantage index",
@@ -60,14 +60,14 @@
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2018/19",66,,,"228488","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2018/19",76,,,"218793","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2018/19",57,,,"96904","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2019/20",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2020/21",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2020/21",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2020/21",0,,,"x","Percentage",
-"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2020/21",0,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2019/20",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2020/21",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2020/21",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2020/21",,,,"x","Percentage",
+"in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2020/21",,,,"x","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2021/22",39,,,"101378","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2021/22",61,,,"238498","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2021/22",47,,,"96538","Percentage",
@@ -84,176 +84,40 @@
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2024/25",51,,,"101275","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2024/25",66,,,"226303","Percentage",
 "in12","Attainment at age 11","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2024/25",44,,,"106024","Percentage",
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2015/16",42,,,"2404","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2015/16",32,,,"58319","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2015/16",37,,,"273","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2015/16",47,,,"1058","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2015/16",46,,,"5599","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2015/16",52,,,"2302","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2015/16",34,,,"2453","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2015/16",41,,,"2207","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2015/16",39,,,"5083","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2015/16",38,,,"2947","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2015/16",42,,,"1203","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2015/16",49,,,"1266","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2015/16",42,,,"903","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2015/16",12,,,"645","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2015/16",40,,,"1075","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2015/16",17,,,"284","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2015/16",67,,,"144","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2016/17",50,,,"2577","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2016/17",45,,,"2982","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2016/17",54,,,"5317","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2016/17",48,,,"2332","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2016/17",39,,,"58527","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2016/17",59,,,"2346","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2016/17",49,,,"4862","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2016/17",50,,,"1033","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2016/17",48,,,"1227","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2016/17",15,,,"705","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2016/17",43,,,"256","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2016/17",44,,,"2651","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2016/17",58,,,"1005","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2016/17",17,,,"329","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2016/17",51,,,"1347","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2016/17",50,,,"1183","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2016/17",66,,,"149","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2017/18",49,,,"2665","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2017/18",43,,,"58374","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2017/18",44,,,"2713","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2017/18",57,,,"5212","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2017/18",53,,,"2335","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2017/18",53,,,"4817","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2017/18",48,,,"2907","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2017/18",54,,,"1114","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2017/18",15,,,"757","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2017/18",20,,,"325","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2017/18",58,,,"1319","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2017/18",61,,,"940","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2017/18",52,,,"1283","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2017/18",63,,,"2198","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2017/18",51,,,"1064","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2017/18",40,,,"255","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2017/18",77,,,"145","Percentage","This contains those that are FSM eligible ONLY"
 "in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2018/19",51,,,"3273","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2018/19",52,,,"2934","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2018/19",44,,,"69098","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2018/19",55,,,"5494","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2018/19",53,,,"1350","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2018/19",66,,,"2464","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2018/19",17,,,"879","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2018/19",60,,,"6441","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2018/19",49,,,"3866","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2018/19",47,,,"3268","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2018/19",53,,,"1552","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2018/19",23,,,"328","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2018/19",75,,,"199","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2018/19",57,,,"1755","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2018/19",54,,,"1385","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2018/19",62,,,"1252","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2018/19",47,,,"291","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2019/20",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2020/21",0,,,"x","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2021/22",45,,,"5637","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2021/22",38,,,"104497","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2021/22",51,,,"7795","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2021/22",56,,,"9732","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2021/22",63,,,"3624","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2021/22",39,,,"4894","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2021/22",34,,,"399","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2021/22",48,,,"4740","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2021/22",15,,,"420","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2021/22",44,,,"7879","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2021/22",49,,,"2340","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2021/22",48,,,"2160","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2021/22",12,,,"1264","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2021/22",53,,,"2929","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2021/22",50,,,"2126","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2021/22",75,,,"365","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2021/22",59,,,"1942","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2022/23",45,,,"6213","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2022/23",40,,,"112210","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2022/23",41,,,"5406","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2022/23",48,,,"2265","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2022/23",60,,,"2159","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2022/23",14,,,"1464","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2022/23",50,,,"5202","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2022/23",52,,,"2586","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2022/23",54,,,"3414","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2022/23",53,,,"8974","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2022/23",58,,,"10293","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2022/23",42,,,"10148","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2022/23",51,,,"2273","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2022/23",63,,,"4001","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2022/23",39,,,"377","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2022/23",71,,,"533","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2022/23",18,,,"433","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2023/24",47,,,"7094","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2023/24",41,,,"116224","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2023/24",56,,,"3726","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2023/24",55,,,"9535","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2023/24",53,,,"2805","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2023/24",47,,,"11034","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2023/24",61,,,"11128","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2023/24",52,,,"2505","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2023/24",16,,,"384","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2023/24",53,,,"5710","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2023/24",66,,,"4233","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2023/24",14,,,"1550","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2023/24",43,,,"5330","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2023/24",54,,,"2263","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2023/24",64,,,"2316","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2023/24",35,,,"361","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2023/24",73,,,"554","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Mixed background",,,,,,,"2018/19",52,,,"2934","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White British",,,,,,,"2018/19",44,,,"69098","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Pakistani",,,,,,,"2018/19",55,,,"5494","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White and Black African",,,,,,,"2018/19",53,,,"1350","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Bangladeshi",,,,,,,"2018/19",66,,,"2464","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Gypsy or Roma",,,,,,,"2018/19",17,,,"879","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black African",,,,,,,"2018/19",60,,,"6441","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other White background",,,,,,,"2018/19",49,,,"3866","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black Caribbean",,,,,,,"2018/19",47,,,"3268","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White and Asian",,,,,,,"2018/19",53,,,"1552","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Traveller of Irish heritage",,,,,,,"2018/19",23,,,"328","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Chinese",,,,,,,"2018/19",75,,,"199","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Asian",,,,,,,"2018/19",57,,,"1755","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Black background",,,,,,,"2018/19",54,,,"1385","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Indian",,,,,,,"2018/19",62,,,"1252","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White Irish",,,,,,,"2018/19",47,,,"291","Percentage","This contains those that are FSM eligible ONLY"
 "in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2024/25",49,,,"7851","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Gypsy or Roma",,,,,,,"2024/25",18,,,"1664","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - White British",,,,,,,"2024/25",43,,,"116657","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Black African",,,,,,,"2024/25",53,,,"2615","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - Any other Mixed background",,,,,,,"2024/25",54,,,"6066","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Any other White background",,,,,,,"2024/25",52,,,"11604","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Pakistani",,,,,,,"2024/25",58,,,"11139","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Indian",,,,,,,"2024/25",67,,,"2467","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Any other Black background",,,,,,,"2024/25",55,,,"2429","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black Caribbean",,,,,,,"2024/25",43,,,"5502","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black - Black African",,,,,,,"2024/25",62,,,"11609","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Any other Asian",,,,,,,"2024/25",58,,,"4170","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Bangladeshi",,,,,,,"2024/25",69,,,"4763","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Mixed - White and Asian",,,,,,,"2024/25",55,,,"3005","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Asian - Chinese",,,,,,,"2024/25",80,,,"558","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Irish",,,,,,,"2024/25",38,,,"352","Percentage","This contains those that are FSM eligible ONLY"
-"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White - Traveller of Irish heritage",,,,,,,"2024/25",19,,,"424","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Gypsy or Roma",,,,,,,"2024/25",18,,,"1664","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White British",,,,,,,"2024/25",43,,,"116657","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White and Black African",,,,,,,"2024/25",53,,,"2615","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Mixed background",,,,,,,"2024/25",54,,,"6066","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other White background",,,,,,,"2024/25",52,,,"11604","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Pakistani",,,,,,,"2024/25",58,,,"11139","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Indian",,,,,,,"2024/25",67,,,"2467","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Black background",,,,,,,"2024/25",55,,,"2429","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black Caribbean",,,,,,,"2024/25",43,,,"5502","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Black African",,,,,,,"2024/25",62,,,"11609","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Any other Asian",,,,,,,"2024/25",58,,,"4170","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Bangladeshi",,,,,,,"2024/25",69,,,"4763","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White and Asian",,,,,,,"2024/25",55,,,"3005","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Chinese",,,,,,,"2024/25",80,,,"558","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","White Irish",,,,,,,"2024/25",38,,,"352","Percentage","This contains those that are FSM eligible ONLY"
+"in12","Attainment at age 11","ethnicity","E92000001","Country","England","ethnicity","Traveller of Irish heritage",,,,,,,"2024/25",19,,,"424","Percentage","This contains those that are FSM eligible ONLY"
 "in12","Attainment at age 11","geography_map",,"ITL2","Bedfordshire and Hertfordshire","seb","FSM eligible","area_name","Bedfordshire and Hertfordshire","quintile",2,,,"2025",41.918,,,,"Percent",
 "in12","Attainment at age 11","geography_map",,"ITL2","Berkshire, Buckinghamshire and Oxfordshire","seb","FSM eligible","area_name","Berkshire, Buckinghamshire and Oxfordshire","quintile",2,,,"2025",44.345,,,,"Percent",
 "in12","Attainment at age 11","geography_map",,"ITL2","Cheshire","seb","FSM eligible","area_name","Cheshire","quintile",3,,,"2025",44.938,,,,"Percent",
