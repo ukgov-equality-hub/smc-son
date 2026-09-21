@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in42-full-dataset.csv"
+input_file = "2026-01-01-in42-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "/career_progression_(35_to_44_years)"
 indicator_name = "occupational_progression"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN42"
 
@@ -60,7 +60,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 # CHART FORMAT
 
 for (sex  in men_women_order) {
-  for (survey_year in c("2014 to 2016", "2022 to 2024"))
+  for (survey_year in c("2014 to 2016", "2023 to 2025"))
   {
     data_for_section_filtered = data_frame__filter(
       data_frame = data_for_section,
@@ -109,7 +109,7 @@ pivot_table = pivot_table__create(
   pivot_table_name_column_2 = "Age (years)",
   pivot_table_columns_order_values = occupational_class_order,
   pivot_table_columns_2_order_values = men_women_order,
-  pivot_table_rows_order_values = c("2022 to 2024", "2014 to 2016"),
+  pivot_table_rows_order_values = c("2023 to 2025", "2014 to 2016"),
   pivot_table_rows_2_order_values = unique(data_for_section$primary_split_value, decreasing=FALSE),
   pivot_table_column_names_suffix = " (%)"
 )
