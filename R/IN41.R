@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in41-full-dataset.csv"
+input_file = "2026-01-01-in41-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "/career_progression_(35_to_44_years)"
 indicator_name = "further_training_and_qualifications"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN41"
 
