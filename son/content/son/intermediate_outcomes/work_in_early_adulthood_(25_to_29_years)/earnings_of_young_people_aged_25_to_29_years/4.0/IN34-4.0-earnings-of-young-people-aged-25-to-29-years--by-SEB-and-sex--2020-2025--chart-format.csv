@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","sex","Women",,,,,"2020 to 2025",19.458,18.711,20.206,458,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","sex","Men",,,,,"2020 to 2025",21.287,20.38,22.193,412,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","sex","Women",,,,,"2020 to 2025",17.435,16.813,18.057,479,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","sex","Men",,,,,"2020 to 2025",19.939,18.951,20.928,397,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","sex","Women",,,,,"2020 to 2025",16.643,15.974,17.312,455,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","sex","Men",,,,,"2020 to 2025",18.143,17.411,18.875,375,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher working","sex","Women",,,,,"2020 to 2025",15.904,15.235,16.574,325,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher working","sex","Men",,,,,"2020 to 2025",16.655,15.679,17.63,262,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower working","sex","Women",,,,,"2020 to 2025",13.793,13.293,14.293,287,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower working","sex","Men",,,,,"2020 to 2025",16.117,15.291,16.944,254,"£",

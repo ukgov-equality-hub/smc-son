@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","disability","Disabled",,,,,"2020 to 2025",17.8,16.45,19.15,123,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","disability","Not disabled",,,,,"2020 to 2025",20.84,20.195,21.485,746,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","disability","Disabled",,,,,"2020 to 2025",16.946,15.646,18.246,126,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","disability","Not disabled",,,,,"2020 to 2025",18.98,18.344,19.617,749,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","disability","Disabled",,,,,"2020 to 2025",15.563,14.296,16.829,126,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","disability","Not disabled",,,,,"2020 to 2025",17.74,17.203,18.276,703,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher working","disability","Disabled",,,,,"2020 to 2025",14.785,13.641,15.929,79,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher working","disability","Not disabled",,,,,"2020 to 2025",16.539,15.889,17.188,505,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower working","disability","Disabled",,,,,"2020 to 2025",14.13,13.288,14.973,102,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower working","disability","Not disabled",,,,,"2020 to 2025",15.158,14.592,15.723,439,"£",

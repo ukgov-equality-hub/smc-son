@@ -59,6 +59,11 @@ men_women_order = c(
   "Women"
 )
 
+women_men_order = c(
+  "Women",
+  "Men"
+)
+
 men_women_order_w_total = c(
   men_women_order,
   "Total"

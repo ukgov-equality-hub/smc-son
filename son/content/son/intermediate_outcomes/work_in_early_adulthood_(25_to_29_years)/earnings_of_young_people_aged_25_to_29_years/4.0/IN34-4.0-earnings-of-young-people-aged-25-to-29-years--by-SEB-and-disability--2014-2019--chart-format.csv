@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","disability","Disabled",,,,,"2014 to 2019",17.081,15.656,18.506,102,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","disability","Not disabled",,,,,"2014 to 2019",20.14,19.512,20.767,922,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","disability","Disabled",,,,,"2014 to 2019",15.578,14.191,16.965,105,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","disability","Not disabled",,,,,"2014 to 2019",18.103,17.584,18.621,1055,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","disability","Disabled",,,,,"2014 to 2019",16.523,14.873,18.173,109,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","disability","Not disabled",,,,,"2014 to 2019",15.765,15.351,16.178,1193,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher working","disability","Disabled",,,,,"2014 to 2019",12.9,11.831,13.97,105,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Higher working","disability","Not disabled",,,,,"2014 to 2019",15.144,14.664,15.624,1007,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower working","disability","Disabled",,,,,"2014 to 2019",12.837,11.501,14.173,106,"£",
+"in34","Earnings of young people","disability_time_comparison","K02000001","country","United Kingdom","seb","Lower working","disability","Not disabled",,,,,"2014 to 2019",13.591,13.242,13.939,857,"£",
