@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in35-full-dataset.csv"
+input_file = "2026-01-01-in35-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "work_in_early_adulthood_(25_to_29_years)"
 indicator_name = "income_returns_to_education"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN35"
 
@@ -53,6 +53,7 @@ section_csv_name = "qualification"
 
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section <- data_for_section[data_for_section$primary_split_value != "Total", ]
 
 #################
 # CHART FORMAT
@@ -60,7 +61,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "primary_split_value",
-  values_1 = rev(highest_qualification_order)
+  values_1 = rev(highest_qualification_order_cse)
 ) 
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -75,7 +76,7 @@ pivot_table = pivot_table__create(
   pivot_columns_column_name = "unit",
   pivot_cells_column_name = "value",
   pivot_table_name = "Highest qualification",
-  pivot_table_rows_order_values = rev(highest_qualification_order)
+  pivot_table_rows_order_values = rev(highest_qualification_order_cse)
 ) %>% rename("Percentage difference relative to lower level (%)" = "Percentage")
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
@@ -98,10 +99,9 @@ data_for_section = get_data_for_chart_type(data, section_chart_type) %>%
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = rev(highest_qualification_order),
+  values_1 = rev(highest_qualification_order_cse),
   column_2 = "time_period",
-  values_2 = sort(
-    unique(data_for_section$time_period))
+  values_2 = sort(unique(data_for_section$time_period))
 ) 
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -116,9 +116,8 @@ pivot_table = pivot_table__create(
   pivot_rows_column_name = "time_period",
   pivot_cells_column_name = "value",
   pivot_table_name = "Year",
-  pivot_table_rows_order_values = sort(
-    unique(data_for_section$time_period), decreasing=TRUE),
-  pivot_table_columns_order_values = highest_qualification_order,
+  pivot_table_rows_order_values = sort(unique(data_for_section$time_period), decreasing=TRUE),
+  pivot_table_columns_order_values = highest_qualification_order_cse,
   pivot_table_column_names_suffix = " (£)"
 )
 
@@ -143,9 +142,9 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = men_women_order,
+  values_1 = women_men_order,
   column_2 = "primary_split_value",
-  values_2 = highest_qualification_order
+  values_2 = highest_qualification_order_cse
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -160,8 +159,8 @@ pivot_table = pivot_table__create(
   pivot_rows_column_name = "primary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Highest qualification",
-  pivot_table_rows_order_values = rev(highest_qualification_order),
-  pivot_table_columns_order_values = men_women_order,
+  pivot_table_rows_order_values = rev(highest_qualification_order_cse),
+  pivot_table_columns_order_values = women_men_order,
   pivot_table_column_names_suffix = " (£)"
 )
 
@@ -184,9 +183,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "primary_split_value",
-  values_1 = degree_no_degree_order,
-  column_2 = "secondary_split_value",
-  values_2 = ethnicity_order
+  values_1 = degree_no_degree_order
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -220,6 +217,17 @@ section_csv_name = "disability"
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)
 
+data_for_section$secondary_split_value <- replace(
+  data_for_section$secondary_split_value,
+  data_for_section$secondary_split_value == "Yes",
+  "Disabled"
+)
+data_for_section$secondary_split_value <- replace(
+  data_for_section$secondary_split_value,
+  data_for_section$secondary_split_value == "No",
+  "Not disabled"
+)
+
 #################
 # CHART FORMAT
 
@@ -228,7 +236,7 @@ data_for_section = data_frame__sort_rows_with_specific_values(
   column_1 = "secondary_split_value",
   values_1 = disability_status_no_yes_order,
   column_2 = "primary_split_value",
-  values_2 = rev(highest_qualification_order),
+  values_2 = rev(highest_qualification_order_cse),
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -243,9 +251,10 @@ pivot_table = pivot_table__create(
   pivot_rows_column_name = "primary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Highest qualification",
-  pivot_table_rows_order_values = rev(highest_qualification_order),
-  pivot_table_columns_order_values = rev(disability_status_no_yes_order)
-) %>% rename("Disabled (£)" = "Yes", "Not disabled (£)" = "No")
+  pivot_table_rows_order_values = rev(highest_qualification_order_cse),
+  pivot_table_columns_order_values = c("Disabled", "Not disabled"),
+  pivot_table_column_names_suffix = " (£)"
+)
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
