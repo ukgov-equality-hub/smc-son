@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Women",,,,,"2014-2025",12.745,12.053,13.476,1019,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Women",,,,,"2014-2025",11.86,11.229,12.527,1097,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Women",,,,,"2014-2025",11.426,10.833,12.052,1144,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Women",,,,,"2014-2025",10.998,10.419,11.61,923,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Women",,,,,"2014-2025",10.436,9.888,11.015,790,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Men",,,,,"2014-2025",12.917,12.21,13.665,881,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Men",,,,,"2014-2025",12.25,11.598,12.939,941,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Men",,,,,"2014-2025",11.485,10.903,12.099,990,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Men",,,,,"2014-2025",11.139,10.562,11.747,779,"Pounds",
+"in36","Direct effect of social origins on hourly earnings","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Men",,,,,"2014-2025",11.024,10.467,11.611,719,"Pounds",
