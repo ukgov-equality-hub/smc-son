@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher professional","sex","Men",,,"2014 to 2025 (combined)",3.845,3.175,4.679,2669,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher professional","sex","Women",,,"2014 to 2025 (combined)",3.025,2.428,3.722,2857,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower professional","sex","Men",,,"2014 to 2025 (combined)",3.878,3.241,4.645,3064,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower professional","sex","Women",,,"2014 to 2025 (combined)",3.762,3.161,4.492,3314,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Intermediate","sex","Men",,,"2014 to 2025 (combined)",4.414,3.778,5.171,3504,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Intermediate","sex","Women",,,"2014 to 2025 (combined)",5.081,4.397,5.875,3539,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher working","sex","Men",,,"2014 to 2025 (combined)",5.175,4.382,6.106,2665,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Higher working","sex","Women",,,"2014 to 2025 (combined)",4.724,3.964,5.615,2668,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower working","sex","Men",,,"2014 to 2025 (combined)",7.642,6.66,8.734,2620,"Percent",
+"in32","Unemployment","sex","K02000001","country","United Kingdom","unemp_binary","Unemployed","seb","Lower working","sex","Women",,,"2014 to 2025 (combined)",6.945,6.002,8.004,2580,"Percent",

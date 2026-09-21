@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in32-full-dataset.csv"
+input_file = "2026-01-01-in32-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "work_in_early_adulthood_(25_to_29_years)"
 indicator_name = "unemployment"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN32"
 
@@ -53,7 +53,8 @@ section_chart_type = "seb"
 section_csv_name = "SEB"
 
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section = get_data_for_chart_type(data, section_chart_type) %>%
+  filter(secondary_split_value != "Total")
 
 
 #################
@@ -62,8 +63,8 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = occupational_class_order
-)  %>% filter(!is.na(secondary_split_value))
+  values_1 = rev_occupational_class_order
+)
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
 save_data_frame(data_for_section, csv_filename)
@@ -104,10 +105,8 @@ data_for_section = get_data_for_chart_type(data, section_chart_type) %>%
 
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
-  column_1 = "primary_split_value",
-  values_1 = NULL,
-  column_2 = "secondary_split_value",
-  values_2 = occupational_class_order_w_total
+  column_1 = "secondary_split_value",
+  values_1 = rev_occupational_class_order_w_total
 )
   
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
@@ -123,8 +122,7 @@ pivot_table = pivot_table__create(
   pivot_rows_column_name = "average_window",
   pivot_cells_column_name = "value",
   pivot_table_name = "Year",
-  pivot_table_rows_order_values = sort(
-    unique(data_for_section$average_window), decreasing=TRUE),
+  pivot_table_rows_order_values = sort(unique(data_for_section$average_window), decreasing=TRUE),
   pivot_table_columns_order_values = occupational_class_order_w_total,
   pivot_table_column_names_suffix = " (%)"
 )
@@ -132,8 +130,6 @@ pivot_table = pivot_table__create(
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
-
-
 
 
 ##########################################
@@ -167,47 +163,78 @@ csv_filename = generate_csv_file_name(split = section_csv_name, format = "table"
 save_data_frame(pivot_table, csv_filename)
 
 
-
 ####################
 # SECTION: By sex
 
-section_chart_type = "sex"
 section_csv_name = "SEB-and-sex"
 
+section_chart_type = "sex"
+data_for_section__sex = get_data_for_chart_type(data, section_chart_type)
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+section_chart_type = "sex_time_comparison"
+data_for_section__sex_time_comparison = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- rbind(data_for_section__sex, data_for_section__sex_time_comparison)
+rownames(data_for_section) <- NULL   # reset row names
+
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 #################
 # CHART FORMAT
 
-data_for_section = data_frame__sort_rows_with_specific_values(
-  data_frame = data_for_section,
-  column_1 = "secondary_split_value",
-  values_1 = occupational_class_order,
-  column_2 = "tertiary_split_value",
-  values_2 = men_women_order
-)
+time_periods <- unique(data_for_section$time_period)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace time period labels
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2019"] <- "2014 to 2019"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2020-2025"] <- "2020 to 2025"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+  
+  
+  data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+    data_frame = data_for_section_filtered,
+    column_1 = "secondary_split_value",
+    values_1 = rev_occupational_class_order,
+    column_2 = "tertiary_split_value",
+    values_2 = men_women_order
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "chart")
+  save_data_frame(data_for_section_filtered, csv_filename)
+}
+
 
 #################
 # TABLE FORMAT
 
+# Replace time period labels
+data_for_section$time_period[data_for_section$time_period == "2014-2019"] <- "2014 to 2019"
+data_for_section$time_period[data_for_section$time_period == "2020-2025"] <- "2020 to 2025"
+data_for_section$time_period[data_for_section$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "tertiary_split_value",
+  pivot_columns_column_2_name = "time_period",
   pivot_rows_column_name = "secondary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
-  pivot_table_name_column_2 = "Sex",
   pivot_table_rows_order_values = rev(occupational_class_order),
   pivot_table_columns_order_values = men_women_order,
+  pivot_table_columns_2_order_values = list("2014 to 2019", "2020 to 2025", "2014 to 2025 (combined)"),
   pivot_table_column_names_suffix = " (%)"
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
+
 
 
 ##########################
@@ -216,8 +243,8 @@ save_data_frame(pivot_table, csv_filename)
 section_chart_type = "ethnicity"
 section_csv_name = "SEB-and-ethnicity"
 
-
 data_for_section = get_data_for_chart_type(data, section_chart_type)
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
 
 #################
 # CHART FORMAT
@@ -225,11 +252,14 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "secondary_split_value",
-  values_1 = occupational_class_order
+  values_1 = rev_occupational_class_order,
+  column_2 = "tertiary_split_value",
+  values_2 = sort(unique(data_for_section$tertiary_split_value))
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
 save_data_frame(data_for_section, csv_filename)
+
 
 #################
 # TABLE FORMAT
@@ -252,41 +282,83 @@ save_data_frame(pivot_table, csv_filename)
 ###########################
 # SECTION: By disability
 
-section_chart_type = "disability"
 section_csv_name = "SEB-and-disability"
 
+section_chart_type = "disability"
+data_for_section__disability = get_data_for_chart_type(data, section_chart_type)
 
-data_for_section = get_data_for_chart_type(data, section_chart_type)
+section_chart_type = "disability_time_comparison"
+data_for_section__disability_time_comparison = get_data_for_chart_type(data, section_chart_type)
+
+data_for_section <- rbind(data_for_section__disability, data_for_section__disability_time_comparison)
+rownames(data_for_section) <- NULL   # reset row names
+
+
+data_for_section <- data_for_section[data_for_section$secondary_split_value != "Total", ]
+
+data_for_section$tertiary_split_value <- replace(
+  data_for_section$tertiary_split_value,
+  data_for_section$tertiary_split_value == "Yes",
+  "Disabled"
+)
+
+data_for_section$tertiary_split_value <- replace(
+  data_for_section$tertiary_split_value,
+  data_for_section$tertiary_split_value == "No",
+  "Not disabled"
+)
 
 #################
 # CHART FORMAT
 
-data_for_section = data_frame__sort_rows_with_specific_values(
-  data_frame = data_for_section,
-  column_1 = "secondary_split_value",
-  values_1 = occupational_class_order,
-  column_2 = "tertiary_split_value",
-  values_2 = disability_status_no_yes_order
-)
+time_periods <- unique(data_for_section$time_period)
 
-csv_filename = generate_csv_file_name(split = section_csv_name, format = "chart")
-save_data_frame(data_for_section, csv_filename)
+for (time_period in time_periods) {
+  data_for_section_filtered = data_frame__filter(
+    data_frame = data_for_section,
+    column_name = "time_period",
+    values = c(time_period)
+  )
+  
+  # Replace time period labels
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2019"] <- "2014 to 2019"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2020-2025"] <- "2020 to 2025"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+  
+  data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+    data_frame = data_for_section_filtered,
+    column_1 = "secondary_split_value",
+    values_1 = rev_occupational_class_order,
+    column_2 = "tertiary_split_value",
+    values_2 = disability_status_yes_no_order
+  )
+  
+  csv_filename = generate_csv_file_name(split = paste0(section_csv_name, "--", time_period), format = "chart")
+  save_data_frame(data_for_section_filtered, csv_filename)
+}
+
 
 #################
 # TABLE FORMAT
 
+# Replace time period labels
+data_for_section$time_period[data_for_section$time_period == "2014-2019"] <- "2014 to 2019"
+data_for_section$time_period[data_for_section$time_period == "2020-2025"] <- "2020 to 2025"
+data_for_section$time_period[data_for_section$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "tertiary_split_value",
+  pivot_columns_column_2_name = "time_period",
   pivot_rows_column_name = "secondary_split_value",
   pivot_cells_column_name = "value",
   pivot_table_name = "Socio-economic background",
   pivot_table_rows_order_values = rev(occupational_class_order),
-  pivot_table_columns_order_values = rev(disability_status_no_yes_order),
+  pivot_table_columns_order_values = c("Disabled", "Not disabled"),
+  pivot_table_columns_2_order_values = list("2014 to 2019", "2020 to 2025", "2014 to 2025 (combined)"),
   pivot_table_column_names_suffix = " (%)"
-) %>% rename(
-  c("Disabled (%)"="Yes (%)", "Not disabled (%)"="No (%)")
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
+

@@ -235,7 +235,7 @@ class DataUtils {
         const csvFormat = this.isCSV(data)
         if (!csvFormat) return data
 
-        const rows = data.split(csvFormat.newline)
+        const rows = data.split(/\r?\n/)
         const result = []
         const headers = this.substituteCommas(rows[0]).split(csvFormat.delimiter)
         for (let i = 1; i < rows.length; i++) {

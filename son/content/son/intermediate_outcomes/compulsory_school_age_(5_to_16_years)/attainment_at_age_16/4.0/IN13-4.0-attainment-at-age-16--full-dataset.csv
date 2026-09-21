@@ -1,0 +1,161 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2024/25",,,,,"2024/25",45.4,,,625648,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2024/25",,,,,"2024/25",25.8,,,176226,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2024/25",,,,,"2024/25",53.1,,,449422,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2023/24",,,,,"2023/24",45.9,,,629207,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2023/24",,,,,"2023/24",25.8,,,166573,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2023/24",,,,,"2023/24",53.1,,,462634,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2022/23",,,,,"2022/23",45.3,,,606915,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2022/23",,,,,"2022/23",25.2,,,159363,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2022/23",,,,,"2022/23",52.4,,,447552,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2021/22",,,,,"2021/22",49.8,,,587660,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2021/22",,,,,"2021/22",29.6,,,154849,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2021/22",,,,,"2021/22",57,,,432811,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2020/21",,,,,"2020/21",51.9,,,575863,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2020/21",,,,,"2020/21",31.7,,,151973,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2020/21",,,,,"2020/21",59.2,,,423890,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2019/20",,,,,"2019/20",49.9,,,561994,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2019/20",,,,,"2019/20",30.4,,,146214,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2019/20",,,,,"2019/20",56.8,,,415780,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Total","time_period","2018/19",,,,,"2018/19",43.2,,,542621,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Disadvantaged","time_period","2018/19",,,,,"2018/19",24.7,,,143816,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","seb","Not known to be disadvantaged","time_period","2018/19",,,,,"2018/19",49.9,,,398805,"Percentage",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2024/25",,,,,,,"2024/25",3.92,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2023/24",,,,,,,"2023/24",3.93,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2022/23",,,,,,,"2022/23",3.94,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2021/22",,,,,,,"2021/22",3.84,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2020/21",,,,,,,"2020/21",3.79,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2019/20",,,,,,,"2019/20",3.66,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2018/19",,,,,,,"2018/19",3.7,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2017/18",,,,,,,"2017/18",3.68,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2016/17",,,,,,,"2016/17",3.66,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2015/16",,,,,,,"2015/16",3.78,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2014/15",,,,,,,"2014/15",3.79,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2013/14",,,,,,,"2013/14",3.74,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2012/13",,,,,,,"2012/13",3.8,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2011/12",,,,,,,"2011/12",3.89,,,,"Disadvantage index",
+"in13","Attainment at age 16","trend","E92000001","Country","England","time_period","2010/11",,,,,,,"2010/11",4.07,,,,"Disadvantage index",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2024/25",24.8,,,90504,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2024/25",26.9,,,85722,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2024/25",51.5,,,230194,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2024/25",54.9,,,219228,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2023/24",24.1,,,85478,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2023/24",27.7,,,81095,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2023/24",50.7,,,236473,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2023/24",55.7,,,226161,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2022/23",23.6,,,81637,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2022/23",26.9,,,77726,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2022/23",50.2,,,228974,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2022/23",54.8,,,218578,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2021/22",27.4,,,78887,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2021/22",31.9,,,75962,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2021/22",54,,,221630,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2021/22",60.1,,,211181,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2020/21",28.4,,,77284,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2020/21",35.1,,,74689,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2020/21",55.3,,,216365,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2020/21",63.3,,,207525,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Disadvantaged",,,,,"2019/20",26.7,,,73930,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Disadvantaged",,,,,"2019/20",34.2,,,72284,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Boys","seb","Not known to be disadvantaged",,,,,"2019/20",52.6,,,212658,"Percentage",
+"in13","Attainment at age 16","sex","E92000001","Country","England","sex","Girls","seb","Not known to be disadvantaged",,,,,"2019/20",61.1,,,203122,"Percentage",
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Black African",,,,,,,"2024/25",41,,,10862,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2024/25",34.7,,,6722,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Asian",,,,,,,"2024/25",43,,,3487,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Black background",,,,,,,"2024/25",31.4,,,2103,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Mixed background",,,,,,,"2024/25",32.6,,,4826,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other White background",,,,,,,"2024/25",33.1,,,9428,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Bangladeshi",,,,,,,"2024/25",48.5,,,4599,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Black Caribbean",,,,,,,"2024/25",20.3,,,3082,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Chinese",,,,,,,"2024/25",73.1,,,346,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White British",,,,,,,"2024/25",19.1,,,92148,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Gypsy or Roma",,,,,,,"2024/25",3.8,,,968,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Indian",,,,,,,"2024/25",48.2,,,2357,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White Irish",,,,,,,"2024/25",22.3,,,341,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Traveller of Irish heritage",,,,,,,"2024/25",7.1,,,112,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Pakistani",,,,,,,"2024/25",36,,,9758,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Asian",,,,,,,"2024/25",31.9,,,2322,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Black African",,,,,,,"2024/25",30.7,,,2169,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Black Caribbean",,,,,,,"2024/25",18.8,,,4310,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Black African",,,,,,,"2018/19",33.5,,,4326,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other ethnic group",,,,,,,"2018/19",34,,,2388,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Asian",,,,,,,"2018/19",40.5,,,1170,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Black background",,,,,,,"2018/19",23.5,,,909,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other Mixed background",,,,,,,"2018/19",28.4,,,1886,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Any other White background",,,,,,,"2018/19",28.6,,,2539,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Bangladeshi",,,,,,,"2018/19",42.3,,,2504,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Black Caribbean",,,,,,,"2018/19",17.6,,,1896,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Chinese",,,,,,,"2018/19",69.2,,,130,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White British",,,,,,,"2018/19",17.7,,,47358,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Gypsy or Roma",,,,,,,"2018/19",4.5,,,418,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Indian",,,,,,,"2018/19",46.5,,,1070,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White Irish",,,,,,,"2018/19",26.2,,,214,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Traveller of Irish heritage",,,,,,,"2018/19",11.8,,,85,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","Pakistani",,,,,,,"2018/19",31.5,,,4650,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Asian",,,,,,,"2018/19",26.8,,,847,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Black African",,,,,,,"2018/19",28.8,,,699,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","ethnicity","E92000001","Country","England","ethnicity","White and Black Caribbean",,,,,,,"2018/19",16.8,,,1974,"Percentage","This contains those that are FSM eligible ONLY"
+"in13","Attainment at age 16","geography_map",,"ITL2","Bedfordshire and Hertfordshire","seb","FSM eligible","area_name","Bedfordshire and Hertfordshire","quintile",4,,,"2025",26.351,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Berkshire, Buckinghamshire and Oxfordshire","seb","FSM eligible","area_name","Berkshire, Buckinghamshire and Oxfordshire","quintile",4,,,"2025",26.035,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cheshire","seb","FSM eligible","area_name","Cheshire","quintile",1,,,"2025",18.882,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cornwall and Isles of Scilly","seb","FSM eligible","area_name","Cornwall and Isles of Scilly","quintile",1,,,"2025",21.54,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cumbria","seb","FSM eligible","area_name","Cumbria","quintile",1,,,"2025",18.756,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Derbyshire and Nottinghamshire","seb","FSM eligible","area_name","Derbyshire and Nottinghamshire","quintile",2,,,"2025",23.007,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Devon","seb","FSM eligible","area_name","Devon","quintile",3,,,"2025",24.261,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Dorset and Somerset","seb","FSM eligible","area_name","Dorset and Somerset","quintile",3,,,"2025",23.674,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","East Anglia","seb","FSM eligible","area_name","East Anglia","quintile",2,,,"2025",23.256,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","East Yorkshire and Northern Lincolnshire","seb","FSM eligible","area_name","East Yorkshire and Northern Lincolnshire","quintile",3,,,"2025",23.695,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Essex","seb","FSM eligible","area_name","Essex","quintile",5,,,"2025",28.773,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Gloucestershire, Wiltshire and Bath/Bristol area","seb","FSM eligible","area_name","Gloucestershire, Wiltshire and Bath/Bristol area","quintile",2,,,"2025",22.214,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Greater Manchester","seb","FSM eligible","area_name","Greater Manchester","quintile",4,,,"2025",27.204,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Hampshire and Isle of Wight","seb","FSM eligible","area_name","Hampshire and Isle of Wight","quintile",1,,,"2025",20.932,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Herefordshire, Worcestershire and Warwickshire","seb","FSM eligible","area_name","Herefordshire, Worcestershire and Warwickshire","quintile",2,,,"2025",23.214,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Inner London - East","seb","FSM eligible","area_name","Inner London - East","quintile",5,,,"2025",39.577,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Inner London - West","seb","FSM eligible","area_name","Inner London - West","quintile",5,,,"2025",41.128,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Kent","seb","FSM eligible","area_name","Kent","quintile",2,,,"2025",23.256,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Lancashire","seb","FSM eligible","area_name","Lancashire","quintile",3,,,"2025",23.66,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Leicestershire, Rutland and Northamptonshire","seb","FSM eligible","area_name","Leicestershire, Rutland and Northamptonshire","quintile",3,,,"2025",23.512,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Merseyside","seb","FSM eligible","area_name","Merseyside","quintile",1,,,"2025",20.319,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","North Yorkshire","seb","FSM eligible","area_name","North Yorkshire","quintile",2,,,"2025",23.403,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Northumberland, and Tyne and Wear","seb","FSM eligible","area_name","Northumberland, and Tyne and Wear","quintile",2,,,"2025",23.148,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - East and North East","seb","FSM eligible","area_name","Outer London - East and North East","quintile",5,,,"2025",32.946,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - South","seb","FSM eligible","area_name","Outer London - South","quintile",5,,,"2025",33.174,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - West and North West","seb","FSM eligible","area_name","Outer London - West and North West","quintile",5,,,"2025",37.5,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Shropshire and Staffordshire","seb","FSM eligible","area_name","Shropshire and Staffordshire","quintile",1,,,"2025",19.149,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","South Yorkshire","seb","FSM eligible","area_name","South Yorkshire","quintile",1,,,"2025",22.213,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Surrey, East and West Sussex","seb","FSM eligible","area_name","Surrey, East and West Sussex","quintile",3,,,"2025",25.125,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Tees Valley and Durham","seb","FSM eligible","area_name","Tees Valley and Durham","quintile",4,,,"2025",26.265,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","West Midlands","seb","FSM eligible","area_name","West Midlands","quintile",4,,,"2025",28.464,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","West Yorkshire","seb","FSM eligible","area_name","West Yorkshire","quintile",4,,,"2025",25.65,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Bedfordshire and Hertfordshire","seb","Not FSM eligible","area_name","Bedfordshire and Hertfordshire","quintile",1,,,"2025",47.141,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Berkshire, Buckinghamshire and Oxfordshire","seb","Not FSM eligible","area_name","Berkshire, Buckinghamshire and Oxfordshire","quintile",5,,,"2025",58.889,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cheshire","seb","Not FSM eligible","area_name","Cheshire","quintile",3,,,"2025",51.219,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cornwall and Isles of Scilly","seb","Not FSM eligible","area_name","Cornwall and Isles of Scilly","quintile",2,,,"2025",49.383,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Cumbria","seb","Not FSM eligible","area_name","Cumbria","quintile",1,,,"2025",44.027,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Derbyshire and Nottinghamshire","seb","Not FSM eligible","area_name","Derbyshire and Nottinghamshire","quintile",2,,,"2025",48.452,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Devon","seb","Not FSM eligible","area_name","Devon","quintile",4,,,"2025",55.047,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Dorset and Somerset","seb","Not FSM eligible","area_name","Dorset and Somerset","quintile",3,,,"2025",51.298,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","East Anglia","seb","Not FSM eligible","area_name","East Anglia","quintile",1,,,"2025",45.606,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","East Yorkshire and Northern Lincolnshire","seb","Not FSM eligible","area_name","East Yorkshire and Northern Lincolnshire","quintile",1,,,"2025",45.578,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Essex","seb","Not FSM eligible","area_name","Essex","quintile",5,,,"2025",57.498,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Gloucestershire, Wiltshire and Bath/Bristol area","seb","Not FSM eligible","area_name","Gloucestershire, Wiltshire and Bath/Bristol area","quintile",3,,,"2025",50.774,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Greater Manchester","seb","Not FSM eligible","area_name","Greater Manchester","quintile",3,,,"2025",50.632,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Hampshire and Isle of Wight","seb","Not FSM eligible","area_name","Hampshire and Isle of Wight","quintile",1,,,"2025",45.852,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Herefordshire, Worcestershire and Warwickshire","seb","Not FSM eligible","area_name","Herefordshire, Worcestershire and Warwickshire","quintile",2,,,"2025",47.329,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Inner London - East","seb","Not FSM eligible","area_name","Inner London - East","quintile",5,,,"2025",56.653,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Inner London - West","seb","Not FSM eligible","area_name","Inner London - West","quintile",5,,,"2025",66.578,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Kent","seb","Not FSM eligible","area_name","Kent","quintile",2,,,"2025",50.105,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Lancashire","seb","Not FSM eligible","area_name","Lancashire","quintile",1,,,"2025",46.591,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Leicestershire, Rutland and Northamptonshire","seb","Not FSM eligible","area_name","Leicestershire, Rutland and Northamptonshire","quintile",2,,,"2025",47.323,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Merseyside","seb","Not FSM eligible","area_name","Merseyside","quintile",2,,,"2025",48.084,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","North Yorkshire","seb","Not FSM eligible","area_name","North Yorkshire","quintile",4,,,"2025",54.44,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Northumberland, and Tyne and Wear","seb","Not FSM eligible","area_name","Northumberland, and Tyne and Wear","quintile",4,,,"2025",53.088,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - East and North East","seb","Not FSM eligible","area_name","Outer London - East and North East","quintile",4,,,"2025",55.909,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - South","seb","Not FSM eligible","area_name","Outer London - South","quintile",5,,,"2025",63.675,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Outer London - West and North West","seb","Not FSM eligible","area_name","Outer London - West and North West","quintile",5,,,"2025",62.475,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Shropshire and Staffordshire","seb","Not FSM eligible","area_name","Shropshire and Staffordshire","quintile",1,,,"2025",42.651,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","South Yorkshire","seb","Not FSM eligible","area_name","South Yorkshire","quintile",3,,,"2025",51.114,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Surrey, East and West Sussex","seb","Not FSM eligible","area_name","Surrey, East and West Sussex","quintile",4,,,"2025",55.543,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","Tees Valley and Durham","seb","Not FSM eligible","area_name","Tees Valley and Durham","quintile",3,,,"2025",51.117,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","West Midlands","seb","Not FSM eligible","area_name","West Midlands","quintile",2,,,"2025",50.572,,,,"Percent",
+"in13","Attainment at age 16","geography_map",,"ITL2","West Yorkshire","seb","Not FSM eligible","area_name","West Yorkshire","quintile",4,,,"2025",52.565,,,,"Percent",

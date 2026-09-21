@@ -172,8 +172,10 @@ for (time_period in time_periods) {
     values = c(time_period)
   )
   
-  # Replace "2014-2025" with "2014-2025 (combined)"
-  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  # Replace time period labels
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2019"] <- "2014 to 2019"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2020-2025"] <- "2020 to 2025"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
   
   data_for_section_filtered = data_frame__sort_rows_with_specific_values(
     data_frame = data_for_section_filtered,
@@ -192,6 +194,11 @@ for (time_period in time_periods) {
 #################
 # TABLE FORMAT
 
+# Replace time period labels
+data_for_section$time_period[data_for_section$time_period == "2014-2019"] <- "2014 to 2019"
+data_for_section$time_period[data_for_section$time_period == "2020-2025"] <- "2020 to 2025"
+data_for_section$time_period[data_for_section$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "primary_split_value",
@@ -203,13 +210,9 @@ pivot_table = pivot_table__create(
   pivot_table_name_column_2 = "Sex",
   pivot_table_rows_order_values = rev(occupational_class_order),
   pivot_table_columns_order_values = neet_values_order,
-  pivot_table_columns_2_order_values = list("2014-2019", "2020-2025", "2014-2025"),
+  pivot_table_columns_2_order_values = list("2014 to 2019", "2020 to 2025", "2014 to 2025 (combined)"),
   pivot_table_column_names_suffix = " (%)"
 )
-
-# Replace "2014-2025" with "2014-2025 (combined)"
-cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
-if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
@@ -300,8 +303,10 @@ for (time_period in time_periods) {
     values = c(time_period)
   )
   
-  # Replace "2014-2025" with "2014-2025 (combined)"
-  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014-2025 (combined)"
+  # Replace time period labels
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2019"] <- "2014 to 2019"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2020-2025"] <- "2020 to 2025"
+  data_for_section_filtered$time_period[data_for_section_filtered$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
   
   data_for_section_filtered = data_frame__sort_rows_with_specific_values(
     data_frame = data_for_section_filtered,
@@ -320,6 +325,11 @@ for (time_period in time_periods) {
 #################
 # TABLE FORMAT
 
+# Replace time period labels
+data_for_section$time_period[data_for_section$time_period == "2014-2019"] <- "2014 to 2019"
+data_for_section$time_period[data_for_section$time_period == "2020-2025"] <- "2020 to 2025"
+data_for_section$time_period[data_for_section$time_period == "2014-2025"] <- "2014 to 2025 (combined)"
+
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_columns_column_name = "primary_split_value",
@@ -332,13 +342,9 @@ pivot_table = pivot_table__create(
   pivot_table_rows_order_values = rev(occupational_class_order),
   pivot_table_rows_2_order_values = rev(disability_status_no_yes_order),
   pivot_table_columns_order_values = neet_values_order,
-  pivot_table_columns_2_order_values = list("2014-2019", "2020-2025", "2014-2025"),
+  pivot_table_columns_2_order_values = list("2014 to 2019", "2020 to 2025", "2014 to 2025 (combined)"),
   pivot_table_column_names_suffix = " (%)"
 )
-
-# Replace "2014-2025" with "2014-2025 (combined)"
-cols <- which(as.character(unlist(pivot_table[1, ])) == "2014-2025 (%)")
-if (length(cols)) pivot_table[1, cols] <- "2014-2025 (combined) (%)"
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
 save_data_frame(pivot_table, csv_filename)
