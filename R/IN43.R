@@ -103,14 +103,14 @@ pivot_table = pivot_table__create(
   pivot_rows_column_2_name = "primary_split_value",
   pivot_columns_column_name = "secondary_split_value",
   pivot_columns_column_2_name = "tertiary_split_value",
-  pivot_cells_column_name = "percentage_value",
+  pivot_cells_column_name = "value",
   pivot_table_name = "Survey period",
   pivot_table_name_column_2 = "Age (years)",
   pivot_table_columns_order_values = occupational_class_order,
   pivot_table_columns_2_order_values = men_women_order,
   pivot_table_rows_order_values = c("2023 to 2025", "2014 to 2016"),
   pivot_table_rows_2_order_values = unique(data_for_section$primary_split_value, decreasing=FALSE),
-  pivot_table_column_names_suffix = " (%)"
+  pivot_table_column_names_suffix = " (£)"
 )
 
 csv_filename = generate_csv_file_name(split = section_csv_name, format = "table")
