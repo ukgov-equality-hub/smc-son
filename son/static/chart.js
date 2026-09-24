@@ -581,7 +581,7 @@ class Chart {
                     label: xtitle,
                     labelArrow: 'none',
                     labelAnchor: (div.offsetWidth < 600 ? 'right' : 'center'),
-                    labelOffset: zkey && group ? 70 : 50,
+                    labelOffset: zkey && group ? 85 : 65,
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 6,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
@@ -614,6 +614,7 @@ class Chart {
                     lineWidth: rotateDomainLabels ? undefined : xticksLength ? xticksLength : 8,
                     ticks: xticks ? ticksId(xticks) : undefined,
                     tickRotate: rotateDomainLabels ? 90 : undefined,
+                    tickPadding: 20,
                     tickFormat: (x, i, t) => {
                         if ([-1, 'none', 'hide'].includes(xticks)) {
                             return null

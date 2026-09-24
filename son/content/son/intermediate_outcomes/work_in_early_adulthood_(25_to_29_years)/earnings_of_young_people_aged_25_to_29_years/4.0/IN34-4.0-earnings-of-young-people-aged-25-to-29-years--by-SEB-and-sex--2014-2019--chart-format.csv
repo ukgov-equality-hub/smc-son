@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","sex","Women",,,,,"2014 to 2019",18.785,18.115,19.455,561,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher professional","sex","Men",,,,,"2014 to 2019",20.806,19.844,21.769,469,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","sex","Women",,,,,"2014 to 2019",16.983,16.31,17.656,618,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower professional","sex","Men",,,,,"2014 to 2019",18.757,18.053,19.462,544,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","sex","Women",,,,,"2014 to 2019",15.101,14.597,15.605,689,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Intermediate","sex","Men",,,,,"2014 to 2019",16.471,15.844,17.097,615,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher working","sex","Women",,,,,"2014 to 2019",14.089,13.507,14.672,598,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Higher working","sex","Men",,,,,"2014 to 2019",15.735,15.056,16.413,517,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower working","sex","Women",,,,,"2014 to 2019",12.701,12.296,13.106,503,"£",
+"in34","Earnings of young people","sex_time_comparison","K02000001","country","United Kingdom","seb","Lower working","sex","Men",,,,,"2014 to 2019",14.204,13.664,14.745,465,"£",

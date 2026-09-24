@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Higher professional","disability","Disabled",,,,,"2014 to 2025 (combined)",17.548,16.562,18.533,225,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Higher professional","disability","Not disabled",,,,,"2014 to 2025 (combined)",20.521,20.073,20.969,1668,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Lower professional","disability","Disabled",,,,,"2014 to 2025 (combined)",16.46,15.505,17.415,231,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Lower professional","disability","Not disabled",,,,,"2014 to 2025 (combined)",18.554,18.15,18.958,1804,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Intermediate","disability","Disabled",,,,,"2014 to 2025 (combined)",15.901,14.898,16.904,235,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Intermediate","disability","Not disabled",,,,,"2014 to 2025 (combined)",16.709,16.379,17.04,1896,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Higher working","disability","Disabled",,,,,"2014 to 2025 (combined)",13.98,13.193,14.767,184,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Higher working","disability","Not disabled",,,,,"2014 to 2025 (combined)",15.775,15.389,16.161,1512,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Lower working","disability","Disabled",,,,,"2014 to 2025 (combined)",13.634,12.878,14.389,208,"£",
+"in34","Earnings of young people","disability","K02000001","country","United Kingdom","seb","Lower working","disability","Not disabled",,,,,"2014 to 2025 (combined)",14.311,14.003,14.619,1296,"£",

@@ -1,0 +1,6 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Higher professional",,,,,,,"2014-2025",20.763,19.487,22.039,,"£",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Lower professional",,,,,,,"2014-2025",18.279,17.055,19.503,,"£",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Intermediate",,,,,,,"2014-2025",17.02,16.056,17.984,,"£",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Higher working",,,,,,,"2014-2025",16.624,15.458,17.791,,"£",
+"in34","Earnings of young people","seb","K02000001","country","United Kingdom","seb","Lower working",,,,,,,"2014-2025",14.764,13.833,15.694,,"£",

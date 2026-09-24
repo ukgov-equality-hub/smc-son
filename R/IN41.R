@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-in41-full-dataset.csv"
+input_file = "2026-01-01-in41-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "intermediate_outcomes"
 subdomain = "/career_progression_(35_to_44_years)"
 indicator_name = "further_training_and_qualifications"
-version = "3.0"
+version = "4.0"
 
 indicator_code = "IN41"
 
@@ -67,7 +67,7 @@ data_for_section = get_data_for_chart_type(data, section_chart_type)
 data_for_section = data_frame__sort_rows_with_specific_values(
   data_frame = data_for_section,
   column_1 = "primary_split_value",
-  values_1 = three_sebs_order,
+  values_1 = rev(three_sebs_order),
   column_2 = "secondary_split_value",
   values_2 = age_order
 )  %>% mutate(age_with_text = paste0("Age ", secondary_split_value))

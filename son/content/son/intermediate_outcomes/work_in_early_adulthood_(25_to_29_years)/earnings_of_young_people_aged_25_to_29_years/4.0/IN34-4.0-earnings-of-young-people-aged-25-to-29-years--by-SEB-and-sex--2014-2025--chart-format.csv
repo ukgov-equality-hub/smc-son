@@ -1,0 +1,11 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","tertiary_split_type","tertiary_split_value","fourth_split_type","fourth_split_value","time_period","value","lci","uci","sample_size","unit","value_note"
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Women",,,,,"2014 to 2025 (combined)",19.159,18.659,19.659,1019,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Higher professional","sex","Men",,,,,"2014 to 2025 (combined)",21.074,20.416,21.732,881,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Women",,,,,"2014 to 2025 (combined)",17.224,16.766,17.682,1097,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Lower professional","sex","Men",,,,,"2014 to 2025 (combined)",19.378,18.783,19.973,941,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Women",,,,,"2014 to 2025 (combined)",15.891,15.482,16.301,1144,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Intermediate","sex","Men",,,,,"2014 to 2025 (combined)",17.283,16.807,17.759,990,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Women",,,,,"2014 to 2025 (combined)",14.946,14.506,15.386,923,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Higher working","sex","Men",,,,,"2014 to 2025 (combined)",16.159,15.599,16.719,779,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Women",,,,,"2014 to 2025 (combined)",13.248,12.933,13.563,790,"£",
+"in34","Earnings of young people","sex","K02000001","country","United Kingdom","seb","Lower working","sex","Men",,,,,"2014 to 2025 (combined)",15.094,14.626,15.561,719,"£",
