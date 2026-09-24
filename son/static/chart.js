@@ -165,6 +165,7 @@ class Chart {
         const reversePolarity = options.reversePolarity || false
         const scale = options.scale ? options.scale : ''
         const rounding = options.rounding || null
+        const yAxisRounding = options.yAxisRounding || null
         const limit = options.limit || 0
         let domain = options.domain || null
         let range = options.range || null
@@ -1358,7 +1359,7 @@ class Chart {
             if (!isNumeric(key)) return key
             let text
             let dp = null
-            if (!['axis', 'xaxis', 'yaxis'].includes(pos)) {
+            if ((!['axis', 'xaxis', 'yaxis'].includes(pos)) || (pos == 'yaxis' && yAxisRounding)) {
                 if (isNumeric(rounding)) {
                     dp = rounding
                 } else if (rounding && rounding.substr(-2) == 'dp' && isNumeric(rounding.substr(0, rounding.length - 2))) {
