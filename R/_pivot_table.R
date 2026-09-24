@@ -85,7 +85,7 @@ pivot_table__create = function(
       columns_to_remove = PIVOT_ROWS_WORKING_COLUMN_2_NAME
     )
   }
-  if (!all(pivot_table_check_except_label_columns == 1)) {
+  if (!all(pivot_table_check_except_label_columns <= 1)) {
     print(pivot_table_check)
     stop("Each cell in the pivot table should be the aggregate of just 1 source cell")
   }
