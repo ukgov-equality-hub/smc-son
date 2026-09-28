@@ -304,7 +304,7 @@ class Chart {
             if (!range && orientation != 'y') range = Array.from(new Set(data.flat().map(x => x[group || ykey])))
             if (!range && orientation == 'y') range = [min, max]
 
-            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType)) {
+            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType)) {
                 dataFormat = chartType
                 self.height = 35
                 margin = [0, -7, 0, -7]
@@ -488,7 +488,7 @@ class Chart {
                     }
                     marks.push(Plot.dot(chartData, { r: showDots ? 3 : 0.001, ...chartOptions, fill: x => getMarkColour(originalData || chartData, x) }))
                 }
-                if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(currentType)) {
+                if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(currentType)) {
                     xticks = getScaledTicks(currentType)
                     xgrid = false
                     ygrid = false
@@ -577,7 +577,7 @@ class Chart {
 
             let addedXTitle = false;
 
-            if ((!(group && orientation == 'y' || ['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType))) || (zkey && group)) {
+            if ((!(group && orientation == 'y' || ['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType))) || (zkey && group)) {
                 marks.push(Plot.axisX({
                     label: xtitle,
                     labelArrow: 'none',
@@ -631,7 +631,7 @@ class Chart {
                     dy: zkey ? 20 : undefined
                 }))
             }
-            if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType))) {
+            if (!(group && orientation != 'y' || ['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType))) {
                 marks.push(Plot.axisY({
                     label: ytitle,
                     labelAnchor: 'center',
@@ -658,7 +658,7 @@ class Chart {
                 }))
             }
 
-            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType)) {
+            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType)) {
                 xOptions = { axis: null, domain: domain, ticks: getScaledTicks(chartType) }
                 yOptions = { axis: null, domain: [yvalue], ticks: 1 }
             } else if (!group) {
@@ -731,7 +731,7 @@ class Chart {
 
             // Legend
             let legends
-            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                 legends = getQuantileTicks(dataFormat).map((x, i) => `${dataFormat.substr(0, 1).toUpperCase()}${dataFormat.substr(1).toLowerCase()} ${i + 1}`)
                 if (reversePolarity) legends.reverse()
             } else if (zkey) {
@@ -954,7 +954,7 @@ class Chart {
             function getMarkColour(data, x) {
                 const val = x[xkey]
                 if (val == null) return 'grey'
-                if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+                if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = x[quantile]
                     const r = getQuantileRanges(data.map(x => x[xkey]).sort(function (a, b) { return a - b }), dataFormat)
@@ -1166,7 +1166,7 @@ class Chart {
                                 .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
                                 .attr('data-value', val)
                                 .attr('data-quantile', x => {
-                                    if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+                                    if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                                         if (quantile && quantile != '' && data[quantile] && isNumeric(data[quantile])) {
                                             return data[quantile]
                                         }
@@ -1201,7 +1201,7 @@ class Chart {
                             else {
                                 text = `${this.getAttribute('data-name')}${zkey && group ? ', ' + this.getAttribute('data-series') : ''}: ${getLabelText(this.getAttribute('data-value'), 'tooltip')}`
                             }
-                            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType)) {
+                            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType)) {
                                 text = `${this.getAttribute('data-name')}: ${ordinal(this.getAttribute('data-quantile'), 'tooltip')} ${chartType}`
                             }
 
@@ -1409,7 +1409,7 @@ class Chart {
 
         function maxLabelLength(data, key, style) {
             if (maximumLabelLength > 0) return maximumLabelLength
-            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(chartType)) return 0
+            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(chartType)) return 0
             let max = (Array.isArray(data[0]) ? data.flat() : data).map(x => { return { 'text': formatNumber(x[key]), 'length': (isNumeric(x[key]) ? parseInt(x[key], 10) : x[key] ? x[key] : '').toString().length }}).sort(function (a, b) { return b['length'] - a['length'] })
             if (max[0] && max[0].text) {
                 return labelLength(getLabelText(max[0].text, 'axis'), style) * 1.1
