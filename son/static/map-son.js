@@ -68,6 +68,7 @@ function buildMap(mapId, datafile, download, overrideOptions) {
     document.getElementById('scaleQunitile' + mapId).style.display = 'none'
     document.getElementById('scaleContinuous' + mapId).style.display = 'none'
     document.getElementById('scaleSevenCategories' + mapId).style.display = 'none'
+    document.getElementById('scaleSevenCategoriesNew' + mapId).style.display = 'none'
     if (typeof options.dataFormat !== 'undefined') {
         if (options.dataFormat == 'quintile') {
             document.getElementById('scaleQunitile' + mapId).style.display = 'block'
@@ -75,6 +76,8 @@ function buildMap(mapId, datafile, download, overrideOptions) {
             document.getElementById('scaleContinuous' + mapId).style.display = 'block'
         } else if (options.dataFormat == 'sevenCategories') {
             document.getElementById('scaleSevenCategories' + mapId).style.display = 'block'
+        } else if (options.dataFormat == 'sevenCategoriesNew') {
+            document.getElementById('scaleSevenCategoriesNew' + mapId).style.display = 'block'
         }
     }
 

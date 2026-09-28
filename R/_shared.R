@@ -238,6 +238,16 @@ composite_index_categories_order = c(
   "Most Favourable"
 )
 
+composite_index_categories_2026_order = c(
+  "Bottom 5%",
+  "Bottom 15-5%",
+  "Bottom 30-15%",
+  "30-70%",
+  "Top 15-30%",
+  "Top 5-15%",
+  "Top 5%"
+)
+
 composite_index_categories_rename <- data.frame(
   old_name = composite_index_categories_old,
   new_name = composite_index_categories_order,
