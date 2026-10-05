@@ -81,6 +81,9 @@ save_data_frame(data_for_section, csv_filename)
 #################
 # TABLE FORMAT
 
+data_for_section$Age <- gsub("-", " to ", paste0("Aged ", data_for_section$Age))
+ages_ascending <- sort(unique(data_for_section$Age))
+
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
   pivot_rows_column_name = "Time_period",

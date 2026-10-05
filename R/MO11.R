@@ -67,7 +67,6 @@ data_for_section$split_value <- paste(
 
 directions <- unique(data_for_section$Value_note)
 time_periods_descending <- sort(unique(data_for_section$Time_period), decreasing = TRUE)
-ages_ascending <- sort(unique(data_for_section$Age))
 
 for (direction in directions) {
   data_for_section_filtered = data_frame__filter(
@@ -94,6 +93,8 @@ for (direction in directions) {
 #################
 # TABLE FORMAT
 
+data_for_section$Age <- gsub("-", " to ", paste0("Aged ", data_for_section$Age))
+ages_ascending <- sort(unique(data_for_section$Age))
 
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
