@@ -479,8 +479,7 @@ class Chart {
                     if (categories && strokeDasharrayScheme) {
                         categories.forEach(category => {
                             const filteredData = chartData.filter(x => x[zkey] === category);
-                            chartOptions['strokeDasharray'] = strokeDasharrayScheme[categories.indexOf(category)];
-                            marks.push(Plot.lineY(filteredData, { sort: xkey, ...chartOptions }));
+                            marks.push(Plot.lineY(filteredData, { sort: xkey, strokeDasharray: strokeDasharrayScheme[categories.indexOf(category)], ...chartOptions }));
                         });
                     }
                     else {
