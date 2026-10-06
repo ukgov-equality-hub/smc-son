@@ -4,6 +4,19 @@ menu = {
             'name': 'Mobility outcomes',
             'subdomains': [
                 {
+                    'name': 'Education',
+                    'indicators': [
+                        {
+                            'id': 'MO31',
+                            'name': 'Absolute educational mobility'
+                        },
+                        {
+                            'id': 'MO32',
+                            'name': 'Relative educational mobility'
+                        }
+                    ]
+                },
+                {
                     'name': 'Occupation',
                     'indicators': [
                         {
@@ -26,19 +39,6 @@ menu = {
                         {
                             'id': 'MO22',
                             'name': 'Relative income mobility'
-                        }
-                    ]
-                },
-                {
-                    'name': 'Education',
-                    'indicators': [
-                        {
-                            'id': 'MO31',
-                            'name': 'Absolute educational mobility'
-                        },
-                        {
-                            'id': 'MO32',
-                            'name': 'Relative educational mobility'
                         }
                     ]
                 },
