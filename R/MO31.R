@@ -95,7 +95,7 @@ pivot_table = pivot_table__create(
   pivot_table_name = "Mobility direction",
   pivot_table_name_column_2 = "Year",
   pivot_table_columns_order_values = men_women_order,
-  pivot_table_rows_order_values = c("Upward", "Downward"),
+  pivot_table_rows_order_values = c("Downward", "Upward"),
   pivot_table_rows_2_order_values = time_periods_descending,
   pivot_table_column_names_suffix = " (%)"
 )
