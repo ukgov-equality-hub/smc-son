@@ -26,20 +26,26 @@ def index():
     )
 
 
-@son.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
-def area_home_page_latest():
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
+@son.route('/state-of-the-nation/social_mobility_by_area/<by_area_section>/latest', methods=['GET'])
+def area_home_page_latest(by_area_section):
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/{by_area_section}"
+    if not Path(dir_path).is_dir():
+        abort(404)
+
     latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
-    return get_area_home_page(latest_major_version, latest_minor_version)
+    return get_area_home_page(by_area_section, latest_major_version, latest_minor_version)
 
 
-@son.route('/state-of-the-nation/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
-def area_home_page_with_version(major_version, minor_version):
-    return get_area_home_page(int(major_version), int(minor_version))
+@son.route('/state-of-the-nation/social_mobility_by_area/<by_area_section>/<major_version>.<minor_version>', methods=['GET'])
+def area_home_page_with_version(by_area_section, major_version, minor_version):
+    return get_area_home_page(by_area_section, int(major_version), int(minor_version))
 
 
-def get_area_home_page(major_version: int, minor_version: int):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
+def get_area_home_page(by_area_section: str, major_version: int, minor_version: int):
+    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/{by_area_section}"
+    if not Path(dir_path).is_dir():
+        abort(404)
+
     file_path = f"{dir_path}/{major_version}.{minor_version}.md"
     if not Path(file_path).is_file():
         abort(404)
@@ -95,7 +101,7 @@ def area_page_203_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/2.0/composite-indices-2.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/by_local_authority_area/2.0/composite-indices-2.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
@@ -126,7 +132,7 @@ def area_page_205_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/by_local_authority_area/3.0/composite-indices-3.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
