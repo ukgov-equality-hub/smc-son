@@ -59,7 +59,6 @@ def get_area_home_page(by_area_section: str, major_version: int, minor_version: 
         menu=menu,
         area='Social mobility by area',
         domain='social_mobility_by_area',
-        selected=[1, 2, 3, 4, 5],
         title=get_item_title('social_mobility_by_area'),
         major_version=major_version,
         minor_version=minor_version,
