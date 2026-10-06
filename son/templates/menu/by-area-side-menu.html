@@ -1,0 +1,33 @@
+{% macro byAreaSideMenu(selected) %}
+    {% set pages = [
+        {
+            'name': 'By local authority area',
+            'url': '/state-of-the-nation/social_mobility_by_area/by_local_authority_area'
+        },
+        {
+            'name': 'By census area',
+            'url': '/state-of-the-nation/social_mobility_by_area/by_census_area'
+        },
+        {
+            'name': 'By travel to work area',
+            'url': '/state-of-the-nation/social_mobility_by_area/by_travel_to_work_area'
+        }
+    ] %}
+    <nav aria-label="Side navigation" class="moj-side-navigation govuk-!-padding-right-4 govuk-!-padding-top-2" role="navigation">
+        <ul id="sidemenu" class="moj-side-navigation__list collapsible govuk-!-margin-bottom-7">
+            {% for page in pages %}
+            <li class="moj-side-navigation__item {{ 'is-active' if request.path.startswith(page.url) else '' }}">
+                <a href="{{ page.url }}"
+                   style="font-weight: bold">
+                    {{ page.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-!-margin-top-3 govuk-!-margin-bottom-3 govuk-section-break--visible">
+        <ul class="govuk-!-font-size-14 govuk-!-margin-left-0 govuk-!-font-size-14 govuk-!-margin-left-0 moj-side-navigation__list">
+            <li class="moj-side-navigation__item"><a href="/state-of-the-nation/about-our-analysis">About our analysis</a></li>
+        </ul>
+    </nav>
+{% endmacro %}
