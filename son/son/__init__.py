@@ -159,6 +159,7 @@ def domain_page(domain):
         'markdown-based-template.html',
         menu=menu,
         domain=domain,
+        area=(domain == 'social_mobility_by_area'),
         subdomain=None,
         indicator=None,
         markdown_to_html=str(content),
