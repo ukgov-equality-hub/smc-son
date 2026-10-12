@@ -2,15 +2,15 @@
 #################################################
 # INPUTS FOR THIS SCRIPT - CHANGE THIS SECTION
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-input_file = "2025-01-01-ci2-full-dataset.csv"
+input_file = "2026-01-01-ci2-full-dataset.csv"
 
 output_folder_prefix = "../son/content/son"
 domain = "drivers_of_social_mobility"
 subdomain = "composite_indices"
 indicator_name = "labour_market_opportunities_for_young_people"
-version = "2.0"
+version = "3.0"
 
 indicator_code = "CI2"
 
@@ -35,15 +35,21 @@ data = read.csv(input_file_path)
 # Remove some columns
 data = data_frame__remove_columns(
   data,
+  "tertiary_split_type",
+  "tertiary_split_value",
+  "fourth_split_type",
+  "fourth_split_value",
+  "lci",
+  "uci",
+  "sample_size",
+  "value_note",
   "variable_used",
-  "age_used",
   "weight_used",
-  "year_used",
-  "label"
+  "age_used",
+  "year_used"
 )
 
-data$group_number = composite_index_categories_rename$group_number[match(data$secondary_split_value, composite_index_categories_rename$old_name)]
-data$secondary_split_value = composite_index_categories_rename$new_name[match(data$secondary_split_value, composite_index_categories_rename$old_name)]
+data$split_order <- as.numeric(factor(data$secondary_split_value, levels = composite_index_categories_2026_order))
 
 csv_filename = generate_csv_file_name()
 save_data_frame(data, csv_filename)
@@ -53,11 +59,11 @@ save_data_frame(data, csv_filename)
 # SECTION: By area
 
 section_chart_type = "composite_index"
-section_csv_name = "UK205regions"
+section_csv_name = "area"
 
 data_for_section = get_data_for_chart_type(data, section_chart_type)
 
-time_periods_desc_order = c("2018 to 2024", "2012 to 2017", "2006 to 2011", "2000 to 2005")
+time_periods_desc_order <- sort(unique(data_for_section$primary_split_value), decreasing = TRUE)
 
 #################
 # CHART FORMAT

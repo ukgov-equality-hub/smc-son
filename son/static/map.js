@@ -152,7 +152,7 @@ class Choropleth {
         const nameField = options.nameField || ''
         const areaField = options.areaField || nameField
         const valueField = options.valueField || ''
-        const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile', 'sevenCategories'].includes(options.dataFormat) ? options.dataFormat : 'linear'
+        const dataFormat = ['categorical', 'sequential', 'linear', 'quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(options.dataFormat) ? options.dataFormat : 'linear'
         const quantile = options.quantile || undefined
         const reversePolarity = options.reversePolarity || false
         const scale = options.scale ? options.scale : ''
@@ -366,7 +366,7 @@ class Choropleth {
 
             // Legend
             let legends
-            if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+            if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                 legends = getQuantileTicks(dataFormat).map((x, i) => `${dataFormat.substr(0, 1).toUpperCase()}${dataFormat.substr(1).toLowerCase()} ${i + 1}`)
                 if (reversePolarity) legends.reverse()
             } else if (dataFormat == 'sequential') {
@@ -505,7 +505,7 @@ class Choropleth {
                 })
                 .attr('data-colour', x => getMarkColour(data, x))
                 .attr('data-quantile', x => {
-                    if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+                    if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                         let val = getValue(x, areaField, quantile, data)
                         if (quantile && quantile != '' && val && isNumeric(val)) {
                             return val
@@ -653,7 +653,7 @@ class Choropleth {
             function getMarkColour(data, x) {
                 const val = getValue(x, areaField, valueField, data)
                 if (val == null) return 'grey'
-                if (['quartile', 'quintile', 'decile', 'sevenCategories'].includes(dataFormat)) {
+                if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                     let q = null
                     if (quantile && quantile != '') q = getValue(x, areaField, quantile, data)
                     const r = getQuantileRanges(data.map(x => x[valueField]).sort(function (a, b) { return a - b }), dataFormat)
