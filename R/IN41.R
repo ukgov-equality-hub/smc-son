@@ -134,7 +134,10 @@ for (seb  in two_sebs_order) {
 # TABLE FORMAT
 
 data_for_section <- data_for_section %>% 
-  mutate(primary_split_value = paste0(primary_split_value, " (%)"))
+  mutate(primary_split_value = paste0(primary_split_value, " (%)")) %>% 
+  mutate(tertiary_split_value = paste0("Age ", tertiary_split_value))
+
+ages_ascending <- sort(unique(data_for_section$tertiary_split_value))
 
 pivot_table = pivot_table__create(
   pivot_table_source = data_for_section,
@@ -144,7 +147,7 @@ pivot_table = pivot_table__create(
   pivot_cells_column_name = "value",
   pivot_table_name = "Year of birth",
   pivot_table_columns_order_values = two_sebs_order_w_percentages,
-  pivot_table_columns_2_order_values = age_order,
+  pivot_table_columns_2_order_values = ages_ascending,
   pivot_table_rows_order_values = unique(data_for_section$secondary_split_value, decreasing=FALSE),
 )
 

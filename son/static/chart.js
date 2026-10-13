@@ -1157,13 +1157,16 @@ class Chart {
                         const data = chartData.filter(x => `${x[xkey]}|${x[ykey]}|${x[zkey]}|${x[group]}` == (text.substr(text.length - 3) == '|CI' ? text.substr(0, text.length - 3) : text))[0]
                         if (data) {
                             const val = parseFloat(data[orientation == 'y' ? ykey : xkey], 10)
+                            const value_for_tooltip = ((chartType === 'dot' && legendsText && x1key && x2key)
+                                ? `${legendsText[0]}: ${getLabelText(data[x1key], 'tooltip')}, ${legendsText[1]}: ${getLabelText(data[x2key], 'tooltip')}`
+                                : val);
                             parent
                                 .classed(`plot-item${text.substr(text.length - 3) == '|CI' ? ' confidence-interval' : ''}`, true)
                                 .attr('data-title', text)
                                 .attr('data-name', `${data[orientation == 'y' ? xkey : ykey]}`)
                                 .attr('data-group', group ? data[group] : zkey ? data[zkey] : '')
                                 .attr('data-series', `${zkey ? data[zkey] : data[orientation == 'y' ? xkey : ykey]}`)
-                                .attr('data-value', val)
+                                .attr('data-value', value_for_tooltip)
                                 .attr('data-quantile', x => {
                                     if (['quartile', 'quintile', 'decile', 'sevenCategories', 'sevenCategoriesNew'].includes(dataFormat)) {
                                         if (quantile && quantile != '' && data[quantile] && isNumeric(data[quantile])) {
