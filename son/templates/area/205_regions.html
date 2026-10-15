@@ -20,6 +20,82 @@
                     Published: 18 December 2025
                 </p>
 
+                <ol class="govuk-list govuk-list--number">
+                    <li>
+                        <a href="#occupational-structure"
+                           class="govuk-link">
+                            Occupational structure
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#composite-indices"
+                           class="govuk-link">
+                            Composite indices
+                        </a>
+                    </li>
+                </ol>
+
+                <h2 class="govuk-heading-l"
+                    id="occupational-structure">
+                    Occupational structure
+                </h2>
+
+                {{ markdown_to_html_str('
+::: tabs
+    ::: tab section_name="By year" tab_name="Visualisation"
+        #### Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)
+
+        ::: visualisation vis_type="chart" section_name="By year"
+            {
+                "code": "DR13",
+                "title": "Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)",
+                "tooltipTitle": "",
+                "data": "1.0/DR13_overview-20230419.csv",
+                "height": 450,
+                "type": "bary",
+                "xkey": "Time_period",
+                "ykey": "Value",
+                "zkey": "Category",
+                "sort": "Time_period",
+                "scale": "%",
+                "xgrid": false,
+                "ygrid": true,
+                "xticksSmallScreen": "abreviate",
+                "yticks": 5,
+                "legend": true,
+                "reverseLegend": true,
+                "colourScheme":  ["#28a197", "#d53880", "#4c2c92", "#d4351c", "#5694ca"],
+                "margin": [10, 20, 5, 5],
+                "maxLabelLength": 45,
+                "textLabels": "center",
+                "labelColour": "#fff",
+                "clickBehaviour": "filter"
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Data"
+        ::: data_table
+            {
+                "title": "Percentage of adults in families with dependent children in different education levels, over time (UK, 2014 to 2021)",
+                "dataTable": "1.0/DR13-distribution-of-parental-education--by-year--table-format.csv",
+                "dataTableAlignColumns": ["left", "right", "right", "right", "right", "right"],
+                "dataTableDecimalPlaces": [null, 1, 1, 1, 1, 1]
+            }
+        :::
+    :::
+
+    ::: tab section_name="By year" tab_name="Download"
+        ::: download_section :::
+    :::
+:::
+                ') | safe }}
+
+                <h2 class="govuk-heading-l"
+                    id="composite-indices">
+                    Composite indices
+                </h2>
+
                 <p class="govuk-body">
                     This page shows how {{ title }} is classified for the following 4 measures of social mobility.
                 </p>
@@ -107,9 +183,9 @@
 
                 
 
-                <h2 class="govuk-heading-l">
+                <h3 class="govuk-heading-m">
                     How areas are classified
-                </h2>
+                </h3>
                 <p class="govuk-body">
                     Each measure of social mobility combines data from multiple indicators into a single ‘composite’ score.
                 </p>
@@ -203,17 +279,6 @@
     <p class="govuk-body">
         18 December 2025
     </p>
-
-    <style>
-        .composite-index-colour-circle {
-            display: inline-block;
-            vertical-align: middle;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            border: 1px solid #505a5f;
-        }
-    </style>
 
     <script>
         (async function () {

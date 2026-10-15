@@ -4,7 +4,7 @@ import os
 import re
 from pathlib import Path
 from flask import Blueprint, render_template, abort, send_file
-from son.utils.get_markdown_content import get_markdown_content_from_file, get_h1_content
+from son.utils.get_markdown_content import get_markdown_content, get_markdown_content_from_file, get_h1_content
 from son.utils.menu import menu, get_item_title, url_link
 from son.utils.logger import Logger
 from son.utils.page_history import get_page_history, create_page_history_version_for_file, PageHistory, \
@@ -126,6 +126,11 @@ def area_page_205_regions(area):
                     return row
         return None
 
+    def markdown_to_html_str(markdown_text):
+        file_path_content = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/foo.md"
+        html = str(get_markdown_content(markdown_text, 'AREA', os.path.dirname(file_path_content)))
+        return html
+
     file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/3.0/composite-indices-3.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
@@ -137,7 +142,8 @@ def area_page_205_regions(area):
         area=area,
         domain='social_mobility_by_area',
         title=row_for_region['region_fullname'],
-        row_for_region=row_for_region
+        row_for_region=row_for_region,
+        markdown_to_html_str=markdown_to_html_str
     )
 
 
