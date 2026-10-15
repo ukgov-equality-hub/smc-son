@@ -212,6 +212,7 @@ def get_indicator_page(domain: str, subdomain: str, indicator: str, major_versio
     return render_template(
         'markdown-based-template.html',
         menu=menu,
+        area=(domain=='social_mobility_by_area'),
         domain=domain,
         subdomain=subdomain,
         indicator=indicator,

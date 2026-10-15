@@ -292,7 +292,31 @@ menu = {
             ]
         },
         {
-            'name': 'Social mobility by area'
+            'name': 'Social mobility by area',
+            'subdomains': [
+                {
+                    'name': 'By local authority',
+                    'indicators': [
+                        {
+                            'name': 'Composite indices'
+                        },
+                        {
+                            'name': 'Occupational structure'
+                        }
+                    ]
+                },
+                {
+                    'name': 'By travel to work area',
+                    'indicators': [
+                        {
+                            'name': 'Labour market opportunities for young people'
+                        },
+                        {
+                            'name': 'Innovation and growth'
+                        },
+                    ]
+                }
+            ]
         },
         {
             'name': 'Social mobility summaries',
