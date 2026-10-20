@@ -1,0 +1,220 @@
+"measure_code","measure_title","chart_type","area_code","area_type","area_name","primary_split_type","primary_split_value","secondary_split_type","secondary_split_value","time_period","value","unit","group_number","split_order"
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Aberdeen","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.969,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Aberystwyth","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.037,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Alness and Invergordon","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.689,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Andover","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.961,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Arbroath and Montrose","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.063,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Ashford","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.115,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Aviemore and Grantown-on-Spey","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.64,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Ayr","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.748,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Banbury","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.1,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bangor and Holyhead","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.087,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Barnsley","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.024,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Barnstaple","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.43,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Barrow-in-Furness","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.684,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Basingstoke","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.854,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bath","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.032,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bedford","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.994,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Berwick","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.962,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bideford","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.136,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Birkenhead","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.053,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Birmingham","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.542,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Blackburn","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.38,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Blackpool","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.195,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Blandford Forum and Gillingham","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.198,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Blyth and Ashington","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.23,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Boston","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.677,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bournemouth","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.679,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bradford","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.84,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Brecon","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.069,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bridgend","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.337,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bridgwater","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.006,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bridlington","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.717,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bridport","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.609,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Brighton","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.384,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bristol","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.868,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Broadford and Kyle of Lochalsh","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.408,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bude","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.609,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Burnley","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.95,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Burton upon Trent","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.843,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Bury St Edmunds","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.598,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Buxton","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.289,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cambridge","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.727,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Campbeltown","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.486,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Canterbury","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.034,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cardiff","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.766,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cardigan","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.921,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Carlisle","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.504,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Chelmsford","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.839,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cheltenham","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.595,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Chester","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.838,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Chesterfield","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.367,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Chichester and Bognor Regis","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.127,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cinderford and Ross-on-Wye","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.118,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Clacton","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.092,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Colchester","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.172,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Colwyn Bay","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.245,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Corby","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.05,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Coventry","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.066,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Crawley","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.717,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Crewe","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.74,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Cromer and Sheringham","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.707,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dalbeattie and Castle Douglas","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.04,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Darlington","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.363,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Derby","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.136,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Doncaster","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.43,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dorchester and Weymouth","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.26,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dudley","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.855,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dumbarton and Helensburgh","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.763,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dumfries","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.532,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dundee","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.605,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dunfermline and Kirkcaldy","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.15,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Dunoon and Rothesay","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.231,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Durham and Bishop Auckland","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.256,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Eastbourne","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.037,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Edinburgh","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.261,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Elgin","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.4,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Evesham","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.938,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Exeter","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.032,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Falkirk and Stirling","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.221,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Falmouth","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.705,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Folkestone and Dover","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.38,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Fort William","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.743,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Fraserburgh","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.02,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Galashiels and Peebles","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.946,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Girvan","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.224,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Glasgow","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.795,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Gloucester","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.063,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Golspie and Brora","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.495,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Grantham","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.564,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Great Yarmouth","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.241,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Greenock","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.864,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Grimsby","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.175,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Guildford and Aldershot","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.749,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Halifax","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.095,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Harrogate","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.858,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hartlepool","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.161,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hastings","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.072,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Haverfordwest and Milford Haven","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.072,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hawick and Kelso","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.688,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hereford","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.235,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hexham","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.34,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","High Wycombe and Aylesbury","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.912,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Huddersfield","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.949,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Hull","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.441,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Huntingdon","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.239,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Inverness","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.295,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Ipswich","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.229,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Isle of Wight","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.795,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Kendal","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.563,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Kettering and Wellingborough","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.545,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Kilmarnock and Irvine","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.208,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","King's Lynn","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.252,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Kingsbridge and Dartmouth","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.716,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Lancaster and Morecambe","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.208,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Launceston","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.785,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Leamington Spa","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.53,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Leeds","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.476,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Leicester","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.46,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Lincoln","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.354,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Liskeard","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.17,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Liverpool","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.126,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Livingston","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.491,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Llandrindod Wells and Builth Wells","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.397,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Llanelli","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.426,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Lochgilphead","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.386,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","London","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.207,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Lowestoft","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.161,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Ludlow","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.11,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Luton","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.124,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Malton","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.78,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Manchester","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.744,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Mansfield","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.404,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Margate and Ramsgate","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.956,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Medway","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.906,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Merthyr Tydfil","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.198,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Middlesbrough and Stockton","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.383,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Milton Keynes","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.83,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Minehead","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.277,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Motherwell and Airdrie","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.188,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Mull and Islay","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.589,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Newbury","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.785,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Newcastle","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.174,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Newport","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.371,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Newton Stewart","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.805,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Newtown and Welshpool","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.805,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","North Ireland","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.872,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Northallerton","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.496,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Northampton","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.323,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Norwich","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.362,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Nottingham","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.841,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Oban","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.427,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Orkney Islands","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.244,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Oswestry","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.039,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Oxford","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.696,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Pembroke and Tenby","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.18,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Penrith","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.086,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Penzance","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.024,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Perth","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.378,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Peterborough","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.19,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Peterhead","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.442,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Pitlochry and Aberfeldy","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.465,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Plymouth","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.546,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Poole","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.688,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Portree","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.432,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Portsmouth","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.572,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Preston","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.542,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Pwllheli and Porthmadog","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.215,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Reading","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",2.127,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Redruth and Truro","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.141,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Rhyl","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.447,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Salisbury","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.439,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Scarborough","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.516,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Scunthorpe","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.806,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Sheffield","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.183,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Shetland Islands","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.193,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Shrewsbury","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.396,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Sidmouth","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.392,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Skegness and Louth","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-2.082,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Skipton","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.809,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Slough and Heathrow","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.031,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Southampton","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.395,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Southend","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.688,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Spalding","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.284,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","St Andrews and Cupar","time_period","2022 to 2025","zscore_category","Bottom 5%","2022 to 2025",-1.622,"z-score",1,1
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","St Austell and Newquay","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.957,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Stafford","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.55,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Stevenage and Welwyn Garden City","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.7,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Stoke-on-Trent","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.379,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Stranraer","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.162,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Street and Wells","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.099,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Sunderland","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.343,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Swansea","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.791,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Swindon","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.635,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Taunton","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.383,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Telford","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.489,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Thetford and Mildenhall","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.524,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Thurso","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.444,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Torquay and Paignton","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.034,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Trowbridge","time_period","2022 to 2025","zscore_category","Top 5%","2022 to 2025",1.531,"z-score",7,7
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Tunbridge Wells","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.838,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Turriff and Banff","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.046,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Tywyn and Dolgellau","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.292,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Ullapool","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.688,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wadebridge","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.909,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wakefield and Castleford","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.23,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Warrington and Wigan","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.515,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Western Isles","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.469,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Weston-super-Mare","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.036,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Whitby","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.715,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Whitehaven","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.474,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wick","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.32,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wisbech","time_period","2022 to 2025","zscore_category","Bottom 15-5%","2022 to 2025",-1.019,"z-score",2,2
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wolverhampton and Walsall","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.165,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Worcester and Kidderminster","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.212,"z-score",6,6
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Workington","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.298,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Worksop and Retford","time_period","2022 to 2025","zscore_category","Bottom 30-15%","2022 to 2025",-0.894,"z-score",3,3
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Worthing","time_period","2022 to 2025","zscore_category","Top 15-30%","2022 to 2025",0.614,"z-score",5,5
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Wrexham","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",-0.166,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","Yeovil","time_period","2022 to 2025","zscore_category","30-70%","2022 to 2025",0.417,"z-score",4,4
+"ci2","Labour Market Outcomes","composite_index",,"Travel to Work Area","York","time_period","2022 to 2025","zscore_category","Top 5-15%","2022 to 2025",1.369,"z-score",6,6
