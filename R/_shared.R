@@ -218,6 +218,14 @@ nations_order = c(
   "United Kingdom"
 )
 
+nations_order_uk_first = c(
+  "United Kingdom",
+  "England",
+  "Scotland",
+  "Wales",
+  "Northern Ireland"
+)
+
 composite_index_categories_old = c(
   "most unfavourable",
   "unfavourable",
