@@ -9,7 +9,14 @@
             By local authority
         </h2>
         <ul class="govuk-!-margin-left-0 moj-side-navigation__list govuk-!-margin-bottom-0">
-            <li class="moj-side-navigation__item {{ 'moj-side-navigation__item--active' if request.path.startswith('/state-of-the-nation/social_mobility_by_area/by_local_authority/composite_indices/') else '' }}">
+            {%
+                set is_composite_index_subpage =
+                    request.path.startswith('/state-of-the-nation/social_mobility_by_area/by_local_authority/composite_indices/') or
+                    request.path.startswith('/state-of-the-nation/social_mobility_by_area/205_regions/') or
+                    request.path.startswith('/state-of-the-nation/social_mobility_by_area/203_regions/') or
+                    request.path.startswith('/state-of-the-nation/social_mobility_by_area/ITL2_regions/')
+            %}
+            <li class="moj-side-navigation__item {{ 'moj-side-navigation__item--active' if is_composite_index_subpage else '' }}">
                 <a href="/state-of-the-nation/social_mobility_by_area/by_local_authority/composite_indices/latest">
                     Composite indices
                 </a>
