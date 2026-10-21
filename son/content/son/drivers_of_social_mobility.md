@@ -13,7 +13,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart1',
-                '/state-of-the-nation/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/3.0/DR12-3.0-childhood-poverty--by-year-UKonly--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/conditions_of_childhood/childhood_poverty/4.0/DR12-4.0-childhood-poverty--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
@@ -55,7 +55,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart2',
-                '/state-of-the-nation/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/3.0/DR32-3.0-youth-unemployment--by-year--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/work_opportunities_for_young_people/youth_unemployment/4.0/DR32-4.0-youth-unemployment--by-year--chart-format.csv',
                 {
                     "type": "bary",
                     "xkey": "secondary_split_value",
@@ -96,7 +96,7 @@ Drivers of social mobility are the background conditions that make social mobili
         <script>
             new Chart(
                 'chart3',
-                '/state-of-the-nation/drivers_of_social_mobility/research_and_development_environment/broadband_speed/3.0/DR51-3.0-broadband-speed--by-year-UKonly--chart-format.csv',
+                '/state-of-the-nation/drivers_of_social_mobility/research_and_development_environment/broadband_speed/4.0/DR51-4.0-broadband-speed--by-year-UKonly--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",

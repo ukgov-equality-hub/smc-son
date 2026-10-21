@@ -13,22 +13,23 @@ Mobility outcomes look at people's occupations, educational levels and housing s
         <script>
             new Chart(
                 'chart1',
-                '/static/data/by-page/mobility_outcomes/MO12_overview-20230623.csv',
+                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-TODO--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
                     "xkey": "Time_period",
                     "ykey": "Value",
-                    "zkey": "Area_name",
+                    "zkey": "split_value",
                     "sort": "Time_period",
                     "scale": "%",
                     "xgrid": false,
                     "ygrid": true,
                     "xticks": "first-last",
-                    "yticks": 2,
+                    "yticks": 4,
                     "legend": false,
-                    "colourScheme": ["#5694ca"],
-                    "range": [-0.035, 0.005],
+                    "colourScheme": ["#5694ca", "#5694ca", "#d4351c", "#d4351c"],
+                    "strokeDasharrayScheme": [null, "5,10", null, "5,10"],
+                    "range": [3, 6],
                     "margin": [0, 0, 0, 0],
                     "maxLabelLength": 60
                 }

@@ -14,13 +14,13 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart1',
-                '/state-of-the-nation/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/3.0/IN13-3.0-attainment-at-age-16--by-ethnicity--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/compulsory_school_age_(5_to_16_years)/attainment_at_age_16/4.0/IN13-4.0-attainment-at-age-16--by-ethnicity--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bar",
-                    "xkey": "value",
-                    "ykey": "primary_split_value",
-                    "sort": "value",
+                    "xkey": "value_2024_25",
+                    "ykey": "ethnicity",
+                    "sort": "value_2024_25",
                     "scale": "%",
                     "rounding": "0dp",
                     "xgrid": true,
@@ -54,7 +54,7 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart2',
-                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/3.0/IN31-3.0-economic-activity--by-SEB-and-sex--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/economic_activity/4.0/IN31-4.0-economic-activity--by-SEB-and-sex--2020-2025--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
@@ -95,7 +95,7 @@ as they move through education and into work.
         <script>
             new Chart(
                 'chart3',
-                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/3.0/IN34-3.0-earnings-of-young-people-aged-25-to-29-years--by-SEB-and-disability--chart-format.csv',
+                '/state-of-the-nation/intermediate_outcomes/work_in_early_adulthood_(25_to_29_years)/earnings_of_young_people_aged_25_to_29_years/4.0/IN34-4.0-earnings-of-young-people-aged-25-to-29-years--by-SEB-and-disability--2020-2025--chart-format.csv',
                 {
                     "height": 200,
                     "type": "bary",
