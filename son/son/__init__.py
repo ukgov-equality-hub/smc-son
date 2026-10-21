@@ -26,44 +26,6 @@ def index():
     )
 
 
-@son.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
-def area_home_page_latest():
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
-    latest_major_version, latest_minor_version = get_latest_md_file_in_directory(dir_path)
-    return get_area_home_page(latest_major_version, latest_minor_version)
-
-
-@son.route('/state-of-the-nation/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
-def area_home_page_with_version(major_version, minor_version):
-    return get_area_home_page(int(major_version), int(minor_version))
-
-
-def get_area_home_page(major_version: int, minor_version: int):
-    dir_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area"
-    file_path = f"{dir_path}/{major_version}.{minor_version}.md"
-    if not Path(file_path).is_file():
-        abort(404)
-
-    content = get_markdown_content_from_file(file_path, None)
-    page_history: PageHistory = get_page_history(dir_path)
-    page_history_version: PageHistoryVersion = create_page_history_version_for_file(major_version, minor_version, file_path)
-
-    return render_template(
-        'markdown-based-template.html',
-        menu=menu,
-        area='Social mobility by area',
-        domain='social_mobility_by_area',
-        selected=[1, 2, 3, 4, 5],
-        title=get_item_title('social_mobility_by_area'),
-        major_version=major_version,
-        minor_version=minor_version,
-        markdown_to_html=str(content),
-        page_history=page_history,
-        page_history_version=page_history_version,
-        page_title=page_history_version.title
-    )
-
-
 @son.route('/state-of-the-nation/social_mobility_by_area/ITL2_regions/<area>', methods=['GET'])
 def area_page_ITL2(area):
     areas = []
@@ -152,6 +114,7 @@ def domain_page(domain):
     return render_template(
         'markdown-based-template.html',
         menu=menu,
+        area=(domain == 'social_mobility_by_area'),
         domain=domain,
         subdomain=None,
         indicator=None,

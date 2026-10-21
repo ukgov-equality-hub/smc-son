@@ -13,22 +13,27 @@ def DR53_university_research_students():
 
 @redirects.route('/social_mobility_by_area', methods=['GET'])
 def area_home_page_without_version():
-    return redirect("/state-of-the-nation/social_mobility_by_area/latest")
-
-
-@redirects.route('/state-of-the-nation/social_mobility_by_area', methods=['GET'])
-def son_area_home_page_without_version():
-    return redirect("/state-of-the-nation/social_mobility_by_area/latest")
+    return redirect("/state-of-the-nation/social_mobility_by_area")
 
 
 @redirects.route('/social_mobility_by_area/latest', methods=['GET'])
 def area_home_page_latest():
-    return redirect("/state-of-the-nation/social_mobility_by_area/latest")
+    return redirect("/state-of-the-nation/social_mobility_by_area")
+
+
+@redirects.route('/state-of-the-nation/social_mobility_by_area/latest', methods=['GET'])
+def son_area_home_page_latest():
+    return redirect("/state-of-the-nation/social_mobility_by_area")
 
 
 @redirects.route('/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
 def area_home_page_with_version(major_version, minor_version):
-    return redirect(f"/state-of-the-nation/social_mobility_by_area/{major_version}.{minor_version}")
+    return redirect(f"/state-of-the-nation/social_mobility_by_area/by_local_authority/composite_indices/{major_version}.{minor_version}")
+
+
+@redirects.route('/state-of-the-nation/social_mobility_by_area/<major_version>.<minor_version>', methods=['GET'])
+def son_area_home_page_with_version(major_version, minor_version):
+    return redirect(f"/state-of-the-nation/social_mobility_by_area/by_local_authority/composite_indices/{major_version}.{minor_version}")
 
 
 @redirects.route('/social_mobility_by_area/<area>', methods=['GET'])
