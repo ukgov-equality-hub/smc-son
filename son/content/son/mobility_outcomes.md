@@ -1,7 +1,8 @@
 # Mobility outcomes
-Mobility outcomes look at people's occupations, educational levels and housing situations, typically in their 40s and 50s.
 
-<strong>We have not updated our mobility outcomes for State of the Nation 2025.</strong> This is because much of the source data is not frequently updated. In addition, we do not expect mobility outcomes to change significantly year on year, because they measure longer-term outcomes that take a while to change. 
+State of the Nation 2023 tracked national mobility trends across occupation, income, education, and housing. We have updated this analysis with the latest data from the ONS Longitudinal Study (ONS-LS). 
+
+On each mobility page, we feature our ONS-LS analysis alongside breakdowns by protected characteristics such as ethnicity and sex.
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
@@ -35,7 +36,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
                 }
             )
         </script>
-        <p class="govuk-body">Relative occupational mobility has been improving since 2014, with significant differences between 2019 to 2022.</p>
+        <p class="govuk-body">The strength of the link in occupational class between children and their parents has stayed fairly steady.</p>
         <a href="/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about relative occupational mobility</span>
@@ -70,7 +71,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
                 }
             )
         </script>
-        <p class="govuk-body">Upwards educational mobility rates are high, reflecting the expansion of school and higher education qualifications since the 1960s.</p>
+        <p class="govuk-body">Upward educational mobility has gone up substantially over the last 30 years, with more young people from non-graduate backgrounds getting degrees than their parents.</p>
         <a href="/state-of-the-nation/mobility_outcomes/education/absolute_educational_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about absolute educational mobility</span>
@@ -103,7 +104,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
                 }
             )
         </script>
-        <p class="govuk-body">Women are significantly less likely than men to own their homes.</p>
+        <p class="govuk-body">Upward housing mobility (moving from rented to owned accommodation) has gone down significantly, with twice as much downward mobility as upward mobility.</p>
         <a href="/state-of-the-nation/mobility_outcomes/housing/absolute_housing_mobility/latest" class="govuk-link">
             Read more
             <span class="govuk-visually-hidden">about absolute housing mobility</span>
@@ -111,7 +112,7 @@ Mobility outcomes look at people's occupations, educational levels and housing s
     </div>
 </div>
 
-## Elsewhere in State of the Nation 2025
+## Elsewhere in State of the Nation 2026
 [Intermediate outcomes](/state-of-the-nation/intermediate_outcomes)
 focus on the experiences of young people as they move through education and into work.
 
@@ -119,4 +120,4 @@ focus on the experiences of young people as they move through education and into
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2025 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2025-the-evolving-story-of-social-mobility-in-the-uk)
+[State of the Nation 2026 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2025-the-evolving-story-of-social-mobility-in-the-uk)
