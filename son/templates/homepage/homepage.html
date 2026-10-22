@@ -27,8 +27,7 @@
                     <div id="chart1"></div>
                 </div>
                 <p class="govuk-body highlighted-data-caption">
-                    There continues to be more upward than downward occupational mobility for men,
-                    this surplus has been shrinking in recent decades and chances of long-range upward mobility have been declining.
+                    The strength of the link in occupational class between children and their parents has stayed fairly steady.
                 </p>
                 <p class="govuk-body highlighted-data-read-more">
                     <a href="/state-of-the-nation/mobility_outcomes" class="govuk-link">
@@ -167,25 +166,25 @@
 
             new Chart(
                 'chart1',
-                '/static/data/by-page/homepage/MO11_overview_male-20230705.csv',
+                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-TODO--chart-format.csv',
                 {
-                    "height": 205,
+                    "height": 200,
                     "type": "liney",
                     "xkey": "Time_period",
                     "ykey": "Value",
-                    "zkey": "Value_note",
+                    "zkey": "split_value",
                     "sort": "Time_period",
                     "scale": "%",
-                    "multiply": 100,
                     "xgrid": false,
                     "ygrid": true,
                     "xticks": "first-last",
                     "yticks": 4,
                     "legend": false,
-                    "colourScheme": ["#808080", "#5694ca", "#d4351c"],
-                    "range": [0, 70],
+                    "colourScheme": ["#5694ca", "#5694ca", "#d4351c", "#d4351c"],
+                    "strokeDasharrayScheme": [null, "5,10", null, "5,10"],
+                    "range": [3, 6],
                     "margin": [0, 0, 0, 0],
-                    "maxLabelLength": 45
+                    "maxLabelLength": 60
                 }
             )
 
