@@ -87,6 +87,25 @@ for (time_period in time_periods_desc_order) {
 }
 
 
+###################################
+# CHART FORMAT (for domain page)
+
+data_for_section_filtered = data_frame__filter(
+  data_frame = data_for_section,
+  column_name = "area_name",
+  values = c("United Kingdom")
+)
+
+data_for_section_filtered = data_frame__sort_rows_with_specific_values(
+  data_frame = data_for_section_filtered,
+  column_1 = "primary_split_value",
+  values_1 = occupational_class_order
+)
+
+csv_filename = generate_csv_file_name(split = "area--uk-only", format = "chart")
+save_data_frame(data_for_section_filtered, csv_filename)
+
+
 #################
 # TABLE FORMAT
 
