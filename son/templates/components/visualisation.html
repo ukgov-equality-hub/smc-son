@@ -39,6 +39,22 @@
                         {% endfor %}
                     </div>
                 </fieldset>
+            {% elif [data, 'toggle'] | attribute == 'select' %}
+                <div class="govuk-form-group">
+                    <label class="govuk-label" for="range{{ id }}">
+                        {{ [data, 'toggleLabel'] | attribute }}
+                    </label>
+                    <select class="govuk-select"
+                            id="range{{ id }}"
+                            name="range{{ id }}"
+                            onclick="selectRange({{ id }}, this.value)">
+                        {% for item in ([data, 'data'] | attribute) %}
+                            <option value="{{ item.label }}" {% if loop.index == loop.length %} selected{% endif %}>
+                                {{ item.label }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
             {% else %}
                 <input id="range{{ id }}" type="range" value="{{ ([data, 'data'] | attribute)[-1].label }}" min="{{ ([data, 'data'] | attribute)[0].label }}" max="{{ ([data, 'data'] | attribute)[-1].label }}" step="1" oninput="selectRange({{ id }}, this.value)" list="values{{ id }}">
                 <datalist id="values{{ id }}" class="govuk-body">
