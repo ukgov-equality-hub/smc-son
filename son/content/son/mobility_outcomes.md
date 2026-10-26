@@ -1,47 +1,12 @@
 # Mobility outcomes
 
-State of the Nation 2023 tracked national mobility trends across occupation, income, education, and housing. We have updated this analysis with the latest data from the ONS Longitudinal Study (ONS-LS). 
+State of the Nation 2023 tracked national mobility trends across occupation, income, education, and housing.
+This year for 2026, we have updated this analysis with the latest data from the ONS Longitudinal Study (ONS-LS). 
 
 On each mobility page, we feature our ONS-LS analysis alongside breakdowns by protected characteristics such as ethnicity and sex.
 
 ## Highlighted content
 <div class="grid grid3 grid-domain">
-    <div class="govuk-body">
-        <h3 class="govuk-heading-s">Relative occupational mobility trend</h3>
-        <div class="chart-container" aria-hidden="true">
-            <div id="chart1"></div>
-        </div>
-        <script>
-            new Chart(
-                'chart1',
-                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-year--chart-format.csv',
-                {
-                    "height": 200,
-                    "type": "liney",
-                    "xkey": "Time_period",
-                    "ykey": "Value",
-                    "zkey": "split_value",
-                    "sort": "Time_period",
-                    "scale": "%",
-                    "xgrid": false,
-                    "ygrid": true,
-                    "xticks": "first-last",
-                    "yticks": 4,
-                    "legend": false,
-                    "colourScheme": ["#5694ca", "#5694ca", "#d4351c", "#d4351c"],
-                    "strokeDasharrayScheme": [null, "5,10", null, "5,10"],
-                    "range": [3, 6],
-                    "margin": [0, 0, 0, 0],
-                    "maxLabelLength": 60
-                }
-            )
-        </script>
-        <p class="govuk-body">The strength of the link in occupational class between children and their parents has stayed fairly steady.</p>
-        <a href="/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/latest" class="govuk-link">
-            Read more
-            <span class="govuk-visually-hidden">about relative occupational mobility</span>
-        </a>
-    </div>
     <div class="govuk-body">
         <h3 class="govuk-heading-s">Absolute educational mobility</h3>
         <div class="chart-container" aria-hidden="true">
@@ -78,7 +43,43 @@ On each mobility page, we feature our ONS-LS analysis alongside breakdowns by pr
         </a>
     </div>
     <div class="govuk-body">
-        <h3 class="govuk-heading-s">Absolute housing mobility by sex</h3>
+        <h3 class="govuk-heading-s">Relative occupational mobility trend</h3>
+        <div class="chart-container" aria-hidden="true">
+            <div id="chart1"></div>
+        </div>
+        <script>
+            new Chart(
+                'chart1',
+                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-year--chart-format.csv',
+                {
+                    "height": 200,
+                    "type": "liney",
+                    "xkey": "Time_period",
+                    "ykey": "Value",
+                    "zkey": "split_value",
+                    "sort": "Time_period",
+                    "scale": "%",
+                    "xgrid": false,
+                    "ygrid": true,
+                    "xticks": "first-last",
+                    "yticks": 4,
+                    "legend": false,
+                    "colourScheme": ["#5694ca", "#5694ca", "#d4351c", "#d4351c"],
+                    "strokeDasharrayScheme": [null, "5,10", null, "5,10"],
+                    "range": [0, 6],
+                    "margin": [0, 0, 0, 0],
+                    "maxLabelLength": 60
+                }
+            )
+        </script>
+        <p class="govuk-body">The strength of the link in occupational class between children and their parents has stayed fairly steady.</p>
+        <a href="/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/latest" class="govuk-link">
+            Read more
+            <span class="govuk-visually-hidden">about relative occupational mobility</span>
+        </a>
+    </div>
+    <div class="govuk-body">
+        <h3 class="govuk-heading-s">Absolute housing mobility</h3>
         <div class="chart-container" aria-hidden="true">
             <div id="chart3"></div>
         </div>
