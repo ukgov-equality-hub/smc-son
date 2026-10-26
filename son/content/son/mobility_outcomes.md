@@ -14,7 +14,7 @@ On each mobility page, we feature our ONS-LS analysis alongside breakdowns by pr
         <script>
             new Chart(
                 'chart1',
-                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-TODO--chart-format.csv',
+                '/state-of-the-nation/mobility_outcomes/occupation/relative_occupational_mobility/2.0/MO12-2.0-relative-occupational-mobility--by-year--chart-format.csv',
                 {
                     "height": 200,
                     "type": "liney",
