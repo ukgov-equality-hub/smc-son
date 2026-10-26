@@ -47,9 +47,9 @@ save_data_frame(data, csv_filename)
 
 
 ##########################################
-# SECTION: By TODO
+# SECTION: By year and sex
 
-section_csv_name = "TODO"
+section_csv_name = "year-and-sex"
 
 data_for_section = data
 
