@@ -25,4 +25,4 @@ They highlight overall regional performance alongside the best and worst perform
 
 ## Read the full report
 
-State of the Nation 2026 on GOV.UK
+[State of the Nation 2026 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2026-whos-getting-ahead)

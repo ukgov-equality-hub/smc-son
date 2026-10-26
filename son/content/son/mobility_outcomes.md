@@ -120,4 +120,4 @@ focus on the experiences of young people as they move through education and into
 are the background conditions that make social mobility easier.
 
 ## Read the full report
-[State of the Nation 2026 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2025-the-evolving-story-of-social-mobility-in-the-uk)
+[State of the Nation 2026 on GOV.UK](https://www.gov.uk/government/publications/state-of-the-nation-2026-whos-getting-ahead)
