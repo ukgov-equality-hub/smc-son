@@ -12,9 +12,9 @@ source("_shared.R")
 # THE SCRIPT
 
 
-input_folder = "input/SON25/"
+input_folder = "input/SON26/"
 
-output_folder = "../son/content/son/social_mobility_by_area/3.0/"
+output_folder = "../son/content/son/social_mobility_by_area/by_local_authority/composite_indices/4.0/"
 
 
 
@@ -32,23 +32,29 @@ read_process_ci_input_file = function(input_file_path) {
   # Remove some columns
   data = data_frame__remove_columns(
     data,
+    "tertiary_split_type",
+    "tertiary_split_value",
+    "fourth_split_type",
+    "fourth_split_value",
+    "lci",
+    "uci",
+    "sample_size",
+    "value_note",
     "variable_used",
-    "age_used",
     "weight_used",
-    "year_used",
-    "label"
+    "age_used",
+    "year_used"
   )
   
-  data$group_number = composite_index_categories_rename$group_number[match(data$secondary_split_value, composite_index_categories_rename$old_name)]
-  data$secondary_split_value = composite_index_categories_rename$new_name[match(data$secondary_split_value, composite_index_categories_rename$old_name)]
-  
+  data$group_number <- as.numeric(factor(data$secondary_split_value, levels = composite_index_categories_2026_order))
+
   return(data)
 }
 
 
 ##### CI1
 
-input_file = "2025-01-01-ci1-full-dataset.csv"
+input_file = "2026-01-01-ci1-full-dataset.csv"
 indicator_code = "CI1"
 input_file_path = paste0(input_folder, input_file)
 
@@ -60,7 +66,7 @@ data_ci1 = data_ci1 %>%
     primary_split_value = str_replace_all(primary_split_value," ", "_")) %>% 
   rename(
     c("childhood_conditions_group_id" = "group_number",
-      "childhood_conditions_group_name" = "secondary_split_value")) %>% 
+      "childhood_conditions_group_name" = "secondary_split_value")) %>%
   pivot_longer(cols = c("childhood_conditions_group_id", "childhood_conditions_group_name"),
                names_to = "metric",
                values_to = "metric_value")
@@ -70,7 +76,7 @@ data_ci1 = dcast(data_ci1, area_name ~ metric + primary_split_value , value.var 
 
 ##### CI2
 
-input_file = "2025-01-01-ci2-full-dataset.csv"
+input_file = "2026-01-01-ci2-full-dataset.csv"
 indicator_code = "CI2"
 input_file_path = paste0(input_folder, input_file)
 
@@ -94,7 +100,7 @@ data_ci1_ci2 = inner_join(data_ci1, data_ci2, by = "area_name", unmatched="error
 
 ##### CI3
 
-input_file = "2025-01-01-ci3-full-dataset.csv"
+input_file = "2026-01-01-ci3-full-dataset.csv"
 indicator_code = "CI3"
 input_file_path = paste0(input_folder, input_file)
 
@@ -118,7 +124,7 @@ data_ci1_ci2_ci3 = inner_join(data_ci1_ci2, data_ci3, by = "area_name", unmatche
 
 ##### CI4
 
-input_file = "2025-01-01-ci4-full-dataset.csv"
+input_file = "2026-01-01-ci4-full-dataset.csv"
 indicator_code = "CI4"
 input_file_path = paste0(input_folder, input_file)
 
@@ -146,6 +152,6 @@ data_ci1_ci2_ci3_ci4 = data_ci1_ci2_ci3_ci4 %>%
     region_url = str_replace_all(tolower(area_name)," ", "_")) %>% 
   rename("region_fullname" = "area_name")
 
-csv_filename = "composite-indices-3.0--all.csv"
+csv_filename = "composite-indices-4.0--all.csv"
 save_data_frame(data_ci1_ci2_ci3_ci4, csv_filename)
 

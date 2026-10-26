@@ -88,7 +88,7 @@ def area_page_205_regions(area):
                     return row
         return None
 
-    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/by_local_authority/composite_indices/3.0/composite-indices-3.0--all.csv"
+    file_path = f"{os.path.dirname(os.path.realpath(__file__))}/../content/son/social_mobility_by_area/by_local_authority/composite_indices/4.0/composite-indices-4.0--all.csv"
     row_for_region = get_row_from_csv_file(file_path, 'region_url', area)
     if row_for_region is None:
         abort(404)
