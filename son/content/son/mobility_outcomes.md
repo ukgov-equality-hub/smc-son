@@ -1,7 +1,7 @@
 # Mobility outcomes
 
-State of the Nation 2023 tracked national mobility trends across occupation, income, education, and housing.
-This year for 2026, we have updated this analysis with the latest data from the ONS Longitudinal Study (ONS-LS). 
+State of the Nation 2023 tracked national mobility trends across education, occupation, income, and housing.
+This year we have updated this analysis with the latest data from the ONS Longitudinal Study (ONS-LS). 
 
 On each mobility page, we feature our ONS-LS analysis alongside breakdowns by protected characteristics such as ethnicity and sex.
 
