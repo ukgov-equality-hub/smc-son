@@ -1,6 +1,6 @@
 # Social mobility summaries
 
-The new protected characteristic summary pages bring together analysis across all 47 indicators of social mobility. They focus on findings by sex, ethnicity and disability.
+The new protected characteristic summary pages bring together analysis across indicators of social mobility. They focus on findings by sex, ethnicity and disability.
 
 - [Sex](/state-of-the-nation/social_mobility_summaries/protected_characteristics/sex/latest)
 - [Ethnicity](/state-of-the-nation/social_mobility_summaries/protected_characteristics/ethnicity/latest)
@@ -8,10 +8,18 @@ The new protected characteristic summary pages bring together analysis across al
 
 Our regional summary pages for the 12 UK regions are based on composite indices by local area:
 
-- [promising prospects](/state-of-the-nation/intermediate_outcomes/composite_indices/promising_prospects/latest)
-- [conditions of childhood](/state-of-the-nation/drivers_of_social_mobility/composite_indices/conditions_of_childhood/latest)
-- [labour market opportunities for young people](/state-of-the-nation/drivers_of_social_mobility/composite_indices/labour_market_opportunities_for_young_people/latest)
-- [innovation and growth](/state-of-the-nation/drivers_of_social_mobility/composite_indices/innovation_and_growth/latest)
+- [North East (England)](/state-of-the-nation/social_mobility_summaries/regions/north_east_(england)/latest)
+- [North West (England)](/state-of-the-nation/social_mobility_summaries/regions/north_west_(england)/latest)
+- [Yorkshire and The Humber](/state-of-the-nation/social_mobility_summaries/regions/yorkshire_and_the_humber/latest)
+- [East Midlands (England)](/state-of-the-nation/social_mobility_summaries/regions/east_midlands_(england)/latest)
+- [West Midlands (England)](/state-of-the-nation/social_mobility_summaries/regions/west_midlands_(england)/latest)
+- [East (England)](/state-of-the-nation/social_mobility_summaries/regions/east_(england)/latest)
+- [London](/state-of-the-nation/social_mobility_summaries/regions/london/latest)
+- [South East (England)](/state-of-the-nation/social_mobility_summaries/regions/south_east_(england)/latest)
+- [South West (England)](/state-of-the-nation/social_mobility_summaries/regions/south_west_(england)/latest)
+- [Scotland](/state-of-the-nation/social_mobility_summaries/regions/scotland/latest)
+- [Wales](/state-of-the-nation/social_mobility_summaries/regions/wales/latest)
+- [Northern Ireland](/state-of-the-nation/social_mobility_summaries/regions/northern_ireland/latest)
 
 They highlight overall regional performance alongside the best and worst performing local authorities within each region.
 
